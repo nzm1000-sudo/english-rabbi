@@ -23,25 +23,25 @@ export function ProgressScreen() {
 
       <section className="result-hero" style={{ alignItems: 'stretch', textAlign: 'start' }}>
         <div className="rank">
-          <span className="rank-badge" style={{ background: '#fff', color: '#4128c9' }}>{r.current.level}</span>
+          <span className="rank-badge">{r.current.level}</span>
           <div className="grow">
             <div style={{ fontWeight: 700, fontSize: 'var(--t-xl)' }}>
               {r.current.he} <En className="small">{r.current.name}</En>
             </div>
-            <div className="small" style={{ opacity: 0.9 }}>
+            <div className="small muted">
               דרגה {r.current.level} מתוך {RANKS.length}
             </div>
           </div>
         </div>
         {r.next && (
           <>
-            <div className="progress" style={{ background: 'rgb(255 255 255 / 0.25)' }} role="progressbar" aria-valuenow={Math.round(r.progress * 100)} aria-valuemin={0} aria-valuemax={100}>
+            <div className="progress" role="progressbar" aria-valuenow={Math.round(r.progress * 100)} aria-valuemin={0} aria-valuemax={100}>
               <span style={{ width: `${Math.round(r.progress * 100)}%` }} />
             </div>
             <div className="small">
               לדרגה הבאה ({r.next.he}): {r.missing.join(' · ')}
             </div>
-            <p className="xs" style={{ opacity: 0.85 }}>דרגה עולה רק כשיש גם נקודות, גם מילים שנזכרות לאורך זמן, וגם מיומנויות בשליטה. אי אפשר לעלות רק מכמות.</p>
+            <p className="xs muted">דרגה עולה רק כשיש גם נקודות, גם מילים שנזכרות לאורך זמן, וגם מיומנויות בשליטה. אי אפשר לעלות רק מכמות.</p>
           </>
         )}
       </section>
