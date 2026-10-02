@@ -7,6 +7,7 @@ import { ParentDashboard } from '@/features/parent/ParentDashboard';
 import { VoiceLab } from '@/features/voice-lab/VoiceLab';
 import { LearnHub, LessonScreen } from '@/features/lessons/LearnHub';
 import { ProgressScreen } from '@/features/progress/ProgressScreen';
+import { FamilySetup } from '@/features/students/FamilySetup';
 import { useStudent } from './hooks';
 import { SpeechPrefsProvider } from './speechPrefs';
 import type { ReactNode } from 'react';
@@ -18,6 +19,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<StudentPicker />} />
         <Route path="/new" element={<StudentForm />} />
+        <Route path="/setup" element={<FamilySetup />} />
         <Route path="/s/:sid" element={<WithStudentSpeech><HomeScreen /></WithStudentSpeech>} />
         <Route path="/s/:sid/settings" element={<StudentForm />} />
         <Route path="/s/:sid/practice/:mode" element={<WithStudentSpeech><PracticeScreen /></WithStudentSpeech>} />
