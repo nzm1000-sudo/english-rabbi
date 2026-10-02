@@ -1,0 +1,74 @@
+[
+  {
+    "id": "vocabulary.learn-teach",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "מתבלבל/ת בין learn ל־teach",
+      "en": "Confuses learn and teach"
+    },
+    "tip": {
+      "he": "בעברית ללמוד וללמד נשמעים דומה. learn = ללמוד (התלמיד). teach = ללמד (המורה).",
+      "en": "learn = get knowledge (the student). teach = give knowledge (the teacher)."
+    }
+  },
+  {
+    "id": "vocabulary.remember-remind",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "מתבלבל/ת בין remember ל־remind",
+      "en": "Confuses remember and remind"
+    },
+    "tip": {
+      "he": "remember = לזכור (בראש שלי). remind = להזכיר (למישהו אחר): Remind me to call Grandma.",
+      "en": "remember = keep in your own mind. remind = make someone else remember: Remind me to call Grandma."
+    }
+  },
+  {
+    "id": "vocabulary.bored-boring",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "מתבלבל/ת בין bored ל־boring",
+      "en": "Confuses bored and boring"
+    },
+    "tip": {
+      "he": "ed מתארת איך אני מרגיש/ה: I am bored = משועמם. ing מתארת את הדבר: The movie is boring = משעמם.",
+      "en": "-ed describes how a person feels: I am bored. -ing describes the thing: The movie is boring."
+    }
+  },
+  {
+    "id": "vocabulary.hour-clock-watch",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "משתמש/ת ב־clock או watch במקום hour (כי שעה ושעון דומים בעברית)",
+      "en": "Uses clock or watch instead of hour"
+    },
+    "tip": {
+      "he": "שעה ושעון נשמעים דומה בעברית. באנגלית: hour = 60 דקות, clock = שעון קיר, watch = שעון יד.",
+      "en": "hour = 60 minutes, clock = a clock on the wall, watch = a clock on your wrist."
+    }
+  },
+  {
+    "id": "vocabulary.trip-travel",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "משתמש/ת ב־travel כשם עצם במקום trip",
+      "en": "Uses travel as a countable noun instead of trip"
+    },
+    "tip": {
+      "he": "travel הוא בעיקר פועל: I love to travel. לטיול אחד אומרים a trip: How was your trip?",
+      "en": "travel is mostly a verb: I love to travel. For one journey say a trip: How was your trip?"
+    }
+  },
+  {
+    "id": "vocabulary.drive-ride",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "מתבלבל/ת בין drive ל־ride",
+      "en": "Confuses drive and ride"
+    },
+    "tip": {
+      "he": "drive = לנהוג ברכב (מכונית, אוטובוס). ride = לרכוב (אופניים, סוס) או לנסוע כנוסע/ת.",
+      "en": "drive = control a car or bus. ride = ride a bike or a horse, or travel as a passenger."
+    }
+  }
+]

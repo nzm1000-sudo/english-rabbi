@@ -1,0 +1,8 @@
+{
+  "name": "tts-prerender",
+  "private": true,
+  "type": "module",
+  "description": "Generates natural neural-voice audio for fixed content with Kokoro-82M (Apache-2.0). Runs on a computer, not on the phone.",
+  "scripts": { "render": "node prerender.mjs" },
+  "dependencies": { "kokoro-js": "1.2.1" }
+}

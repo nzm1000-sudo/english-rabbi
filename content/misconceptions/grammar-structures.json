@@ -1,0 +1,542 @@
+[
+  {
+    "id": "conditionals.would-in-if-clause",
+    "skill": "grammar.conditionals.second",
+    "note": {
+      "he": "שם/ה would אחרי if (If I would have...)",
+      "en": "Puts would after if (If I would have...)"
+    },
+    "tip": {
+      "he": "would בא רק בחלק של התוצאה. אחרי if: עבר פשוט (If I had) או had + V3 (If I had known).",
+      "en": "would goes only in the result part. After if: Past Simple (If I had) or had + V3 (If I had known)."
+    }
+  },
+  {
+    "id": "conditionals.third-form",
+    "skill": "grammar.conditionals.third",
+    "note": {
+      "he": "לא בונה נכון תנאי שלישי (would + פועל במקום would have + V3)",
+      "en": "Builds the third conditional wrongly (would + verb instead of would have + V3)"
+    },
+    "tip": {
+      "he": "עבר שלא קרה: If + had + V3, would have + V3. If I had known, I would have come.",
+      "en": "Unreal past: If + had + V3, would have + V3."
+    }
+  },
+  {
+    "id": "wish.tense-backshift",
+    "skill": "grammar.wish",
+    "note": {
+      "he": "לא מזיז/ה את הזמן אחורה אחרי wish (I wish I have)",
+      "en": "Does not move the tense back after wish (I wish I have)"
+    },
+    "tip": {
+      "he": "על ההווה: wish + עבר (I wish I had). על העבר: wish + had + V3 (I wish I had gone).",
+      "en": "About now: wish + past (I wish I had). About the past: wish + had + V3."
+    }
+  },
+  {
+    "id": "modals.to-after-modal",
+    "skill": "grammar.modals",
+    "note": {
+      "he": "שם/ה to אחרי מודל (must to, can to, should to)",
+      "en": "Puts to after a modal (must to, can to, should to)"
+    },
+    "tip": {
+      "he": "אחרי can, must, should, may, might, could בא פועל בסיס בלי to: You should go.",
+      "en": "After can, must, should, may, might, could: base verb with no to."
+    }
+  },
+  {
+    "id": "modals.mustnt-dont-have-to",
+    "skill": "grammar.modals",
+    "note": {
+      "he": "מתבלבל/ת בין mustn't (אסור) ל־don't have to (לא חייבים)",
+      "en": "Confuses mustn't (not allowed) and don't have to (not necessary)"
+    },
+    "tip": {
+      "he": "mustn't = אסור. don't have to = לא חובה, אבל מותר.",
+      "en": "mustn't = not allowed. don't have to = not necessary, but allowed."
+    }
+  },
+  {
+    "id": "modals.double-modal",
+    "skill": "grammar.modals",
+    "note": {
+      "he": "שם/ה שני מודלים ביחד (will can, must can)",
+      "en": "Puts two modals together (will can, must can)"
+    },
+    "tip": {
+      "he": "אי אפשר will + can. בעתיד אומרים will be able to.",
+      "en": "No will + can. In the future, say will be able to."
+    }
+  },
+  {
+    "id": "modals.must-past",
+    "skill": "grammar.modals",
+    "note": {
+      "he": "משתמש/ת ב־must לחובה בעבר",
+      "en": "Uses must for a past obligation"
+    },
+    "tip": {
+      "he": "ל־must אין עבר. חובה בעבר: had to.",
+      "en": "must has no past. Past obligation: had to."
+    }
+  },
+  {
+    "id": "modals.deduction-mustnt",
+    "skill": "grammar.modals.deduction",
+    "note": {
+      "he": "משתמש/ת ב־mustn't להסקה שלילית במקום can't",
+      "en": "Uses mustn't for negative deduction instead of can't"
+    },
+    "tip": {
+      "he": "בטוח שכן: must. בטוח שלא: can't. mustn't פירושו רק 'אסור'.",
+      "en": "Sure it is true: must. Sure it is not: can't. mustn't only means not allowed."
+    }
+  },
+  {
+    "id": "modals.deduction-past",
+    "skill": "grammar.modals.deduction",
+    "note": {
+      "he": "בונה הסקה על העבר בלי have + V3 (must had, can't saw)",
+      "en": "Builds past deduction without have + V3 (must had, can't saw)"
+    },
+    "tip": {
+      "he": "הסקה על העבר: must / might / can't + have + V3.",
+      "en": "Past deduction: must / might / can't + have + V3."
+    }
+  },
+  {
+    "id": "relative.resumptive-pronoun",
+    "skill": "grammar.relative-clauses",
+    "note": {
+      "he": "חוזר/ת על המושא במשפט הזיקה (the book that I read it)",
+      "en": "Repeats the object in a relative clause (the book that I read it)"
+    },
+    "tip": {
+      "he": "בעברית 'שקראתי אותו'. באנגלית that או which כבר מחליפים את it: the book that I read.",
+      "en": "Hebrew repeats it. In English that or which already replaces it."
+    }
+  },
+  {
+    "id": "relative.who-whose",
+    "skill": "grammar.relative-clauses",
+    "note": {
+      "he": "מתבלבל/ת בין whose ל־who's",
+      "en": "Confuses whose and who's"
+    },
+    "tip": {
+      "he": "whose = שה...שלו (שייכות). who's = who is.",
+      "en": "whose shows possession. who's = who is."
+    }
+  },
+  {
+    "id": "relative.where-which",
+    "skill": "grammar.relative-clauses",
+    "note": {
+      "he": "משתמש/ת ב־which במקום where למקום",
+      "en": "Uses which instead of where for a place"
+    },
+    "tip": {
+      "he": "מקום + משפט שלם: where (the town where I live). או which + מילת יחס: the town which I live in.",
+      "en": "Place + full clause: where. Or which + preposition: the town which I live in."
+    }
+  },
+  {
+    "id": "relative.that-non-defining",
+    "skill": "grammar.relative-clauses",
+    "note": {
+      "he": "משתמש/ת ב־that אחרי פסיק",
+      "en": "Uses that after a comma (non-defining clause)"
+    },
+    "tip": {
+      "he": "כשיש פסיקים: who לאנשים, which לדברים. אף פעם לא that.",
+      "en": "With commas: who for people, which for things. Never that."
+    }
+  },
+  {
+    "id": "gerund-infinitive.after-preposition",
+    "skill": "grammar.gerunds-infinitives",
+    "note": {
+      "he": "משתמש/ת ב־to או בפועל בסיס אחרי מילת יחס",
+      "en": "Uses to or the base verb after a preposition"
+    },
+    "tip": {
+      "he": "אחרי מילת יחס (in, at, of, about, before, instead of, look forward to) בא ing.",
+      "en": "After a preposition, use -ing."
+    }
+  },
+  {
+    "id": "gerund-infinitive.let-make-to",
+    "skill": "grammar.gerunds-infinitives",
+    "note": {
+      "he": "שם/ה to אחרי let או make",
+      "en": "Puts to after let or make"
+    },
+    "tip": {
+      "he": "let / make + אדם + פועל בסיס: let us leave, made me laugh.",
+      "en": "let / make + person + base verb."
+    }
+  },
+  {
+    "id": "reported.no-backshift",
+    "skill": "grammar.reported-speech",
+    "note": {
+      "he": "לא מזיז/ה את הזמן אחורה בדיבור עקיף",
+      "en": "Does not move the tense back in reported speech"
+    },
+    "tip": {
+      "he": "am/is → was, are → were, will → would, have done → had done.",
+      "en": "am/is → was, are → were, will → would, have done → had done."
+    }
+  },
+  {
+    "id": "reported.question-order",
+    "skill": "grammar.reported-speech",
+    "note": {
+      "he": "שומר/ת על סדר של שאלה בשאלה מדווחת או עקיפה",
+      "en": "Keeps question word order in a reported or indirect question"
+    },
+    "tip": {
+      "he": "בשאלה מדווחת או עקיפה: נושא + פועל, בלי do/did: She asked where I lived. Can you tell me what time it is?",
+      "en": "In reported and indirect questions: subject + verb, no do/did: She asked where I lived. Can you tell me what time it is?"
+    }
+  },
+  {
+    "id": "question-tags.polarity",
+    "skill": "grammar.question-tags",
+    "note": {
+      "he": "לא הופך/ת חיובי ושלילי ב־question tag",
+      "en": "Does not reverse positive/negative in the question tag"
+    },
+    "tip": {
+      "he": "משפט חיובי, tag שלילי. משפט שלילי, tag חיובי.",
+      "en": "Positive sentence, negative tag. Negative sentence, positive tag."
+    }
+  },
+  {
+    "id": "question-tags.auxiliary",
+    "skill": "grammar.question-tags",
+    "note": {
+      "he": "משתמש/ת ב־isn't it לכל משפט, כמו 'נכון?' בעברית",
+      "en": "Uses isn't it for every sentence, like Hebrew 'נכון?'"
+    },
+    "tip": {
+      "he": "ה־tag לוקח את פועל העזר מהמשפט ואת הנושא: You can ..., can't you?",
+      "en": "The tag repeats the auxiliary and subject of the sentence."
+    }
+  },
+  {
+    "id": "articles.the-generic",
+    "skill": "grammar.articles",
+    "note": {
+      "he": "שם/ה the לפני דבר כללי (the life, the music)",
+      "en": "Uses the for general meaning (the life, the music)"
+    },
+    "tip": {
+      "he": "על דבר כללי לא שמים the: Life is short. I love music. the רק לדבר מסוים.",
+      "en": "General ideas take no article. Use the only for something specific."
+    }
+  },
+  {
+    "id": "articles.a-uncountable",
+    "skill": "grammar.articles",
+    "note": {
+      "he": "שם/ה a / an לפני שם עצם שלא נספר (an information, an advice)",
+      "en": "Uses a / an with uncountable nouns (an information, an advice)"
+    },
+    "tip": {
+      "he": "information, advice, furniture לא נספרים: some information, a piece of advice.",
+      "en": "information, advice, furniture are uncountable: some information, a piece of advice."
+    }
+  },
+  {
+    "id": "articles.the-proper-names",
+    "skill": "grammar.articles",
+    "note": {
+      "he": "שם/ה the לפני שמות של מדינות וערים (the Israel)",
+      "en": "Puts the before country and city names (the Israel)"
+    },
+    "tip": {
+      "he": "רוב השמות בלי the: Israel, Haifa, France. יוצאי דופן: the USA, the UK.",
+      "en": "Most names take no the. Exceptions: the USA, the UK."
+    }
+  },
+  {
+    "id": "prepositions.place",
+    "skill": "grammar.prepositions",
+    "note": {
+      "he": "מתבלבל/ת בין in, on, at למקום",
+      "en": "Confuses in, on and at for place"
+    },
+    "tip": {
+      "he": "in = בתוך / עיר. on = על משטח. at = נקודה מסוימת (at the door).",
+      "en": "in = inside / a city. on = on a surface. at = a specific point."
+    }
+  },
+  {
+    "id": "prepositions.dependent",
+    "skill": "grammar.prepositions",
+    "note": {
+      "he": "בוחר/ת מילת יחס לפי העברית (depend in, afraid from, good in)",
+      "en": "Picks the preposition from Hebrew (depend in, afraid from, good in)"
+    },
+    "tip": {
+      "he": "מילות יחס קבועות לומדים כצמד: depend on, afraid of, good at, interested in, listen to.",
+      "en": "Learn fixed prepositions as pairs: depend on, afraid of, good at."
+    }
+  },
+  {
+    "id": "quantifiers.few-little",
+    "skill": "grammar.quantifiers",
+    "note": {
+      "he": "מתבלבל/ת בין few / a few ל־little / a little",
+      "en": "Confuses few / a few with little / a little"
+    },
+    "tip": {
+      "he": "few לנספרים, little ללא נספרים. a few / a little = כמה (חיובי). few / little = מעט מדי.",
+      "en": "few for countable, little for uncountable. a few / a little = some; few / little = not enough."
+    }
+  },
+  {
+    "id": "quantifiers.some-any",
+    "skill": "grammar.quantifiers",
+    "note": {
+      "he": "מתבלבל/ת בין some ל־any",
+      "en": "Confuses some and any"
+    },
+    "tip": {
+      "he": "some במשפט חיובי ובהצעות. any בשלילה ובשאלות.",
+      "en": "some in positive sentences and offers. any in negatives and questions."
+    }
+  },
+  {
+    "id": "comparatives.than-from",
+    "skill": "grammar.comparatives",
+    "note": {
+      "he": "משתמש/ת ב־from בהשוואה (bigger from), כמו 'מ' בעברית",
+      "en": "Uses from in comparisons (bigger from), like Hebrew מ"
+    },
+    "tip": {
+      "he": "בהשוואה באנגלית: than. bigger than, as big as.",
+      "en": "Comparisons use than: bigger than, as big as."
+    }
+  },
+  {
+    "id": "comparatives.irregular",
+    "skill": "grammar.comparatives",
+    "note": {
+      "he": "מוסיף/ה er לשמות תואר חריגים (gooder, badder)",
+      "en": "Adds -er to irregular adjectives (gooder, badder)"
+    },
+    "tip": {
+      "he": "good → better → best. bad → worse → worst.",
+      "en": "good → better → best. bad → worse → worst."
+    }
+  },
+  {
+    "id": "pronouns.its-its",
+    "skill": "grammar.pronouns",
+    "note": {
+      "he": "מתבלבל/ת בין its ל־it's",
+      "en": "Confuses its and it's"
+    },
+    "tip": {
+      "he": "it's = it is. its = שלו/שלה (לדבר או חיה). אם אפשר לומר it is, כותבים it's.",
+      "en": "it's = it is. its shows possession."
+    }
+  },
+  {
+    "id": "pronouns.their-there",
+    "skill": "grammar.pronouns",
+    "note": {
+      "he": "מתבלבל/ת בין their, there ו־they're",
+      "en": "Confuses their, there and they're"
+    },
+    "tip": {
+      "he": "their = שלהם. there = שם / יש. they're = they are.",
+      "en": "their = belonging to them. there = place / there is. they're = they are."
+    }
+  },
+  {
+    "id": "pronouns.reflexive",
+    "skill": "grammar.pronouns",
+    "note": {
+      "he": "בונה reflexive לא נכון (hisself, theirselves)",
+      "en": "Builds reflexives wrongly (hisself, theirselves)"
+    },
+    "tip": {
+      "he": "himself, themselves (מ־him ו־them). myself, yourself, herself (מ־my, your, her).",
+      "en": "himself, themselves; myself, yourself, herself."
+    }
+  },
+  {
+    "id": "there-is.agreement",
+    "skill": "grammar.there-is",
+    "note": {
+      "he": "לא מתאים/ה is / are לשם העצם אחרי there",
+      "en": "Does not match is / are to the noun after there"
+    },
+    "tip": {
+      "he": "there is + יחיד או לא נספר. there are + רבים.",
+      "en": "there is + singular or uncountable. there are + plural."
+    }
+  },
+  {
+    "id": "there-is.have-for-there",
+    "skill": "grammar.there-is",
+    "note": {
+      "he": "משתמש/ת ב־have או it has במקום there is (כמו 'יש' בעברית)",
+      "en": "Uses have or it has instead of there is (like Hebrew יש)"
+    },
+    "tip": {
+      "he": "יש (קיים) = there is / there are. have = יש ל... (I have a dog).",
+      "en": "יש meaning exists = there is / are. have = possess."
+    }
+  },
+  {
+    "id": "plurals.irregular-s",
+    "skill": "grammar.plurals",
+    "note": {
+      "he": "מוסיף/ה s לרבים חריגים (childs, mouses, sheeps)",
+      "en": "Adds -s to irregular plurals (childs, mouses, sheeps)"
+    },
+    "tip": {
+      "he": "child → children, man → men, mouse → mice, tooth → teeth, sheep → sheep.",
+      "en": "child → children, mouse → mice, sheep → sheep."
+    }
+  },
+  {
+    "id": "plurals.uncountable-s",
+    "skill": "grammar.plurals",
+    "note": {
+      "he": "מוסיף/ה s לשמות עצם שלא נספרים (informations, furnitures)",
+      "en": "Adds -s to uncountable nouns (informations, furnitures)"
+    },
+    "tip": {
+      "he": "information, advice, furniture, homework, equipment: בלי s.",
+      "en": "information, advice, furniture, homework: no -s."
+    }
+  },
+  {
+    "id": "adverbs.adjective-for-adverb",
+    "skill": "grammar.adverbs",
+    "note": {
+      "he": "משתמש/ת בשם תואר במקום תואר פועל (drives careful)",
+      "en": "Uses an adjective instead of an adverb (drives careful)"
+    },
+    "tip": {
+      "he": "פועל מתואר בתואר פועל: drive carefully, speak quietly.",
+      "en": "Verbs are described by adverbs: drive carefully."
+    }
+  },
+  {
+    "id": "adverbs.good-well",
+    "skill": "grammar.adverbs",
+    "note": {
+      "he": "משתמש/ת ב־good במקום well",
+      "en": "Uses good instead of well"
+    },
+    "tip": {
+      "he": "good מתאר שם עצם (a good player). well מתאר פועל (plays well).",
+      "en": "good describes a noun. well describes a verb."
+    }
+  },
+  {
+    "id": "word-order.frequency-adverb",
+    "skill": "grammar.word-order",
+    "note": {
+      "he": "שם/ה תואר תדירות במקום הלא נכון (I go always)",
+      "en": "Puts frequency adverbs in the wrong place (I go always)"
+    },
+    "tip": {
+      "he": "always, usually, never: לפני הפועל הראשי, אבל אחרי be (She is always late).",
+      "en": "Frequency adverbs: before the main verb, after be."
+    }
+  },
+  {
+    "id": "word-order.verb-object",
+    "skill": "grammar.word-order",
+    "note": {
+      "he": "מכניס/ה תואר פועל בין הפועל למושא (I like very much pizza)",
+      "en": "Puts an adverb between the verb and its object (I like very much pizza)"
+    },
+    "tip": {
+      "he": "פועל + מושא יחד, ותואר הפועל אחריהם: I like pizza very much.",
+      "en": "Verb + object together, adverb after: I like pizza very much."
+    }
+  },
+  {
+    "id": "connectors.despite-of",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "כותב/ת despite of",
+      "en": "Writes despite of"
+    },
+    "tip": {
+      "he": "despite בלי of. או in spite of עם of.",
+      "en": "despite without of, or in spite of with of."
+    }
+  },
+  {
+    "id": "connectors.despite-although",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "שם/ה although לפני שם עצם או ing (although the rain)",
+      "en": "Uses although before a noun or -ing (although the rain)"
+    },
+    "tip": {
+      "he": "although + משפט שלם. לפני שם עצם או ing: despite / in spite of.",
+      "en": "although + full clause. Before a noun or -ing: despite / in spite of."
+    }
+  },
+  {
+    "id": "connectors.although-but",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "משתמש/ת ב־although וגם ב־but באותו משפט",
+      "en": "Uses although and but in the same sentence"
+    },
+    "tip": {
+      "he": "בעברית 'למרות ש... אבל'. באנגלית מילה אחת בלבד: although או but.",
+      "en": "Hebrew can use both; English uses only one: although or but."
+    }
+  },
+  {
+    "id": "connectors.because-of",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "משתמש/ת ב־because לפני שם עצם",
+      "en": "Uses because before a noun"
+    },
+    "tip": {
+      "he": "because + משפט (because it rained). because of + שם עצם (because of the rain).",
+      "en": "because + clause; because of + noun."
+    }
+  },
+  {
+    "id": "connectors.purpose",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "מבטא/ת מטרה עם for + פועל (for buy) או in order to לפני משפט",
+      "en": "Expresses purpose with for + verb (for buy) or in order to before a clause"
+    },
+    "tip": {
+      "he": "מטרה: to / in order to + פועל. so that + משפט עם נושא.",
+      "en": "Purpose: to / in order to + verb. so that + clause."
+    }
+  },
+  {
+    "id": "connectors.unless-not",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "מוסיף/ה שלילה אחרי unless",
+      "en": "Adds a negative after unless"
+    },
+    "tip": {
+      "he": "unless = if not. לכן אחריו פועל חיובי: unless you hurry.",
+      "en": "unless = if not, so the verb after it is positive."
+    }
+  }
+]

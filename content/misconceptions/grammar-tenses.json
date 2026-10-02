@@ -1,0 +1,350 @@
+[
+  {
+    "id": "present-simple.be-plus-verb",
+    "skill": "grammar.present-simple",
+    "note": {
+      "he": "מכניס/ה am / is / are לפני פועל רגיל (I am go)",
+      "en": "Puts am / is / are before a base verb (I am go)"
+    },
+    "tip": {
+      "he": "בעברית \"אני הולך/ת\" זו מילה אחת. באנגלית: I go, או I am going. אין I am go.",
+      "en": "Say I go or I am going. Never I am go."
+    }
+  },
+  {
+    "id": "present-simple.progressive-for-habit",
+    "skill": "grammar.present-simple",
+    "note": {
+      "he": "משתמש/ת ב־ing להרגלים ועובדות קבועות",
+      "en": "Uses -ing for habits and permanent facts"
+    },
+    "tip": {
+      "he": "הרגל או עובדה (every day, usually, always) = Present Simple: She drinks coffee every morning.",
+      "en": "Habits and facts (every day, usually) use the Present Simple: She drinks coffee every morning."
+    }
+  },
+  {
+    "id": "present-simple.does-plus-s",
+    "skill": "grammar.present-simple.questions-negatives",
+    "note": {
+      "he": "מוסיף/ה s לפועל אחרי does / doesn't",
+      "en": "Adds -s to the verb after does / doesn't"
+    },
+    "tip": {
+      "he": "ה־s כבר נמצאת ב־does. אחריו בא פועל בסיס: Does she like? She doesn't like.",
+      "en": "The -s is already in does. Use the base verb after it: Does she like? She doesn't like."
+    }
+  },
+  {
+    "id": "present-simple.question-without-do",
+    "skill": "grammar.present-simple.questions-negatives",
+    "note": {
+      "he": "שואל/ת שאלה בלי do / does (Where you live?)",
+      "en": "Asks a question without do / does (Where you live?)"
+    },
+    "tip": {
+      "he": "בעברית שואלים בטון. באנגלית צריך פועל עזר: Where do you live?",
+      "en": "Hebrew asks with intonation. English needs a helping verb: Where do you live?"
+    }
+  },
+  {
+    "id": "present-progressive.simple-for-now",
+    "skill": "grammar.present-progressive",
+    "note": {
+      "he": "משתמש/ת בהווה פשוט לפעולה שקורית עכשיו (כמו בעברית)",
+      "en": "Uses the Present Simple for an action happening now (as in Hebrew)"
+    },
+    "tip": {
+      "he": "בעברית יש הווה אחד. באנגלית, מה שקורה עכשיו: am / is / are + ing. Look! It is raining.",
+      "en": "Hebrew has one present. In English, for now use am / is / are + -ing: Look! It is raining."
+    }
+  },
+  {
+    "id": "present-progressive.missing-be",
+    "skill": "grammar.present-progressive",
+    "note": {
+      "he": "שוכח/ת am / is / are לפני ing (She cooking)",
+      "en": "Leaves out am / is / are before -ing (She cooking)"
+    },
+    "tip": {
+      "he": "בהווה מתמשך צריך שני חלקים: is + cooking. She is cooking.",
+      "en": "The Present Progressive needs two parts: is + cooking. She is cooking."
+    }
+  },
+  {
+    "id": "present-progressive.stative-verbs",
+    "skill": "grammar.present-progressive",
+    "note": {
+      "he": "מוסיף/ה ing לפעלי מצב (I am knowing)",
+      "en": "Adds -ing to state verbs (I am knowing)"
+    },
+    "tip": {
+      "he": "know, like, want, understand, belong הם פעלי מצב. אומרים I know, גם כשמדובר בעכשיו.",
+      "en": "know, like, want, understand and belong are state verbs. Say I know, even about now."
+    }
+  },
+  {
+    "id": "present-progressive.ing-spelling",
+    "skill": "grammar.present-progressive",
+    "note": {
+      "he": "טועה בכתיב של ing (writeing, swiming)",
+      "en": "Misspells -ing forms (writeing, swiming)"
+    },
+    "tip": {
+      "he": "e שקטה נופלת: write → writing. עיצור + תנועה קצרה + עיצור: מכפילים: swim → swimming.",
+      "en": "Drop a silent e: writing. Double the last consonant after a short vowel: swimming."
+    }
+  },
+  {
+    "id": "past-simple.spelling",
+    "skill": "grammar.past-simple",
+    "note": {
+      "he": "טועה בכתיב של ed (stoped, studyed)",
+      "en": "Misspells -ed forms (stoped, studyed)"
+    },
+    "tip": {
+      "he": "stop → stopped (מכפילים). study → studied (y הופך ל־i). play → played (תנועה לפני y).",
+      "en": "stop → stopped (double). study → studied (y to i). play → played (vowel before y)."
+    }
+  },
+  {
+    "id": "past-simple.was-plus-verb",
+    "skill": "grammar.past-simple.questions-negatives",
+    "note": {
+      "he": "משתמש/ת ב־was / were עם פועל בסיס (I wasn't go, Were you eat?)",
+      "en": "Uses was / were with a base verb (I wasn't go, Were you eat?)"
+    },
+    "tip": {
+      "he": "עם פועל רגיל בעבר משתמשים ב־did: Did you eat? I didn't go. was / were באים עם שם תואר, מקום או ing.",
+      "en": "With a normal verb in the past use did: Did you eat? I didn't go."
+    }
+  },
+  {
+    "id": "past-simple.question-without-did",
+    "skill": "grammar.past-simple.questions-negatives",
+    "note": {
+      "he": "שואל/ת שאלה בעבר בלי did (What you ate?)",
+      "en": "Asks a past question without did (What you ate?)"
+    },
+    "tip": {
+      "he": "שאלה בעבר: מילת שאלה + did + נושא + פועל בסיס. What did you eat?",
+      "en": "Past question: question word + did + subject + base verb. What did you eat?"
+    }
+  },
+  {
+    "id": "past-progressive.form",
+    "skill": "grammar.past-progressive",
+    "note": {
+      "he": "בונה עבר מתמשך בלי was / were או בלי ing",
+      "en": "Builds the Past Progressive without was / were or without -ing"
+    },
+    "tip": {
+      "he": "עבר מתמשך = was / were + ing. I was walking. They were playing.",
+      "en": "Past Progressive = was / were + -ing. I was walking. They were playing."
+    }
+  },
+  {
+    "id": "past-progressive.during-while",
+    "skill": "grammar.past-progressive",
+    "note": {
+      "he": "משתמש/ת ב־during לפני משפט (during I was...)",
+      "en": "Uses during before a clause (during I was...)"
+    },
+    "tip": {
+      "he": "while + נושא ופועל: while I was sleeping. during + שם עצם: during the night.",
+      "en": "while + subject and verb: while I was sleeping. during + noun: during the night."
+    }
+  },
+  {
+    "id": "past-progressive.short-action",
+    "skill": "grammar.past-progressive",
+    "note": {
+      "he": "משתמש/ת בעבר מתמשך לפעולה קצרה ופתאומית",
+      "en": "Uses the Past Progressive for a short, sudden action"
+    },
+    "tip": {
+      "he": "הפעולה הארוכה: was + ing. הפעולה הקצרה שקטעה: Past Simple. I was skiing when I broke my leg.",
+      "en": "Long action: was + -ing. The short action: Past Simple. I was skiing when I broke my leg."
+    }
+  },
+  {
+    "id": "used-to.form",
+    "skill": "grammar.used-to",
+    "note": {
+      "he": "טועה בצורה של used to (I use to, didn't used to)",
+      "en": "Gets the form of used to wrong (I use to, didn't used to)"
+    },
+    "tip": {
+      "he": "במשפט חיובי: used to. אחרי did / didn't: use to. I used to swim. I didn't use to swim.",
+      "en": "Positive: used to. After did / didn't: use to."
+    }
+  },
+  {
+    "id": "used-to.be-used-to",
+    "skill": "grammar.used-to",
+    "note": {
+      "he": "מבלבל/ת בין used to (הרגל בעבר) ל־be used to (רגיל ל)",
+      "en": "Confuses used to (past habit) with be used to (accustomed to)"
+    },
+    "tip": {
+      "he": "used to + פועל בסיס = הרגל שהיה פעם ונגמר. be used to + ing = להיות רגילים ל. I used to swim. I am used to swimming.",
+      "en": "used to + base verb = past habit. be used to + -ing = accustomed to."
+    }
+  },
+  {
+    "id": "future.will-in-time-clause",
+    "skill": "grammar.future",
+    "note": {
+      "he": "משתמש/ת ב־will אחרי when / as soon as / until (כמו בעברית)",
+      "en": "Uses will after when / as soon as / until (as in Hebrew)"
+    },
+    "tip": {
+      "he": "בעברית \"כשאגיע\" בעתיד. באנגלית אחרי מילות זמן: הווה פשוט. I'll call you when I get home.",
+      "en": "Hebrew uses the future here. English uses the Present Simple after time words: when I get home."
+    }
+  },
+  {
+    "id": "future.going-to-form",
+    "skill": "grammar.future",
+    "note": {
+      "he": "בונה going to בלי be, בלי to, או בלי פועל בסיס",
+      "en": "Builds going to without be, without to, or without a base verb"
+    },
+    "tip": {
+      "he": "המבנה המלא: am / is / are + going to + פועל בסיס. It is going to rain.",
+      "en": "The full form: am / is / are + going to + base verb. It is going to rain."
+    }
+  },
+  {
+    "id": "present-perfect.yet-already",
+    "skill": "grammar.present-perfect",
+    "note": {
+      "he": "מבלבל/ת בין yet ל־already",
+      "en": "Confuses yet and already"
+    },
+    "tip": {
+      "he": "already במשפט חיובי (I have already eaten). yet בשלילה ובשאלה, בסוף המשפט (I haven't eaten yet).",
+      "en": "already in positive sentences. yet in negatives and questions, at the end."
+    }
+  },
+  {
+    "id": "present-perfect.been-gone",
+    "skill": "grammar.present-perfect",
+    "note": {
+      "he": "מבלבל/ת בין has been to ל־has gone to",
+      "en": "Confuses has been to and has gone to"
+    },
+    "tip": {
+      "he": "has been to = ביקר וחזר. has gone to = נסע ועדיין שם.",
+      "en": "has been to = visited and came back. has gone to = went and is still there."
+    }
+  },
+  {
+    "id": "present-perfect.past-for-unfinished",
+    "skill": "grammar.present-perfect.vs-past-simple",
+    "note": {
+      "he": "משתמש/ת ב־Past Simple לתקופה שעוד לא נגמרה (since, so far, still)",
+      "en": "Uses the Past Simple for a period that is not over (since, so far, still)"
+    },
+    "tip": {
+      "he": "since, so far, still מראים שהתקופה נמשכת עד עכשיו, ולכן Present Perfect: I haven't seen him since May.",
+      "en": "since, so far and still show the period continues, so use the Present Perfect."
+    }
+  },
+  {
+    "id": "present-perfect-progressive.hebrew-present",
+    "skill": "grammar.present-perfect-progressive",
+    "note": {
+      "he": "משתמש/ת בהווה לפעולה שנמשכת עד עכשיו (\"אני מחכה כבר שעה\")",
+      "en": "Uses the present for an action lasting until now (as in Hebrew)"
+    },
+    "tip": {
+      "he": "בעברית \"אני מחכה כבר שעה\". באנגלית: I have been waiting for an hour.",
+      "en": "Hebrew uses the present. English: I have been waiting for an hour."
+    }
+  },
+  {
+    "id": "present-perfect-progressive.completed-number",
+    "skill": "grammar.present-perfect-progressive",
+    "note": {
+      "he": "משתמש/ת ב־have been + ing כשסופרים דברים שהסתיימו",
+      "en": "Uses have been + -ing when counting finished things"
+    },
+    "tip": {
+      "he": "כמות שהסתיימה = Present Perfect: I have written three emails. התהליך = have been writing.",
+      "en": "A finished amount = Present Perfect: I have written three emails. The activity = have been writing."
+    }
+  },
+  {
+    "id": "past-perfect.sequence",
+    "skill": "grammar.past-perfect",
+    "note": {
+      "he": "לא משתמש/ת ב־Past Perfect לפעולה שקרתה לפני פעולה אחרת בעבר",
+      "en": "Does not use the Past Perfect for an action before another past action"
+    },
+    "tip": {
+      "he": "שתי פעולות בעבר: המוקדמת יותר = had + צורה שלישית. When I arrived, he had left.",
+      "en": "Two past actions: the earlier one = had + past participle. When I arrived, he had left."
+    }
+  },
+  {
+    "id": "past-perfect.had-plus-past",
+    "skill": "grammar.past-perfect",
+    "note": {
+      "he": "משתמש/ת בצורת עבר אחרי had (had went, had saw)",
+      "en": "Uses the past form after had (had went, had saw)"
+    },
+    "tip": {
+      "he": "אחרי had באה הצורה השלישית: had gone, had seen, had eaten.",
+      "en": "After had use the third form: had gone, had seen, had eaten."
+    }
+  },
+  {
+    "id": "past-perfect.present-perfect-in-past",
+    "skill": "grammar.past-perfect",
+    "note": {
+      "he": "משתמש/ת ב־have / has בסיפור על העבר במקום had",
+      "en": "Uses have / has instead of had in a past story"
+    },
+    "tip": {
+      "he": "כשהסיפור כולו בעבר, have / has הופכים ל־had: I knew the ending because I had seen the movie.",
+      "en": "When the story is in the past, have / has becomes had."
+    }
+  },
+  {
+    "id": "passive.active-form",
+    "skill": "grammar.passive",
+    "note": {
+      "he": "משתמש/ת בפעיל כשהנושא מקבל את הפעולה (English speaks)",
+      "en": "Uses the active form when the subject receives the action (English speaks)"
+    },
+    "tip": {
+      "he": "לשאול: הנושא עושה או שעושים לו? אם עושים לו: be + צורה שלישית. English is spoken.",
+      "en": "Ask: does the subject act, or is it acted on? If acted on: be + past participle."
+    }
+  },
+  {
+    "id": "passive.by-from",
+    "skill": "grammar.passive",
+    "note": {
+      "he": "משתמש/ת ב־from במקום by בסביל",
+      "en": "Uses from instead of by in the passive"
+    },
+    "tip": {
+      "he": "מי שעשה את הפעולה בא אחרי by: written by, painted by.",
+      "en": "The doer comes after by: written by, painted by."
+    }
+  },
+  {
+    "id": "passive.tense",
+    "skill": "grammar.passive",
+    "note": {
+      "he": "בוחר/ת זמן לא נכון ל־be בסביל",
+      "en": "Uses the wrong tense of be in the passive"
+    },
+    "tip": {
+      "he": "הזמן נמצא ב־be: is made (הווה), was made (עבר), is being made (עכשיו), has been made.",
+      "en": "The tense is in be: is made, was made, is being made, has been made."
+    }
+  }
+]

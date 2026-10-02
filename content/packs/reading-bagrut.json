@@ -1,0 +1,4063 @@
+{
+  "packId": "reading-bagrut",
+  "schemaVersion": 1,
+  "title": "Bagrut Reading: Unseen Passages",
+  "items": [
+    {
+      "id": "rd.biscuit.how-out",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "A2",
+      "difficulty": 0.2,
+      "prompt": "How did Biscuit get out?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Through the garden gate"
+        },
+        {
+          "id": "b",
+          "text": "Through a hole in the fence"
+        },
+        {
+          "id": "c",
+          "text": "Through an open window"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בפסקה השנייה מה Mrs. Levi עשתה בטעות.",
+          "en": "Look in the second paragraph for what Mrs. Levi did by mistake."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: She left the garden gate open by mistake, and Biscuit ran out. השער נשאר פתוח והכלב יצא. הפארק הוא המקום שבו מצאו אותו, לא המקום שממנו ברח.",
+        "en": "The text says: She left the garden gate open by mistake, and Biscuit ran out. The park is where he was found, not where he escaped from."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.where-is-biscuit",
+      "source": "original"
+    },
+    {
+      "id": "rd.biscuit.missing",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "In \"Biscuit, was missing\", the word \"missing\" means...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "lost"
+        },
+        {
+          "id": "b",
+          "text": "hurt"
+        },
+        {
+          "id": "c",
+          "text": "hungry"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה קרה לכלב מיד אחרי זה? מה המשפחה עשתה כדי לעזור?",
+          "en": "What happened to the dog next? What did the family do to help?"
+        }
+      ],
+      "explanation": {
+        "he": "missing פירושו נעדר, לא נמצא במקום. ההקשר עוזר: Biscuit ran out, ואחר כך הכינו posters כדי למצוא אותו.",
+        "en": "missing means lost, not where he should be. The context helps: Biscuit ran out, and they made posters to find him."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.where-is-biscuit",
+      "source": "original"
+    },
+    {
+      "id": "rd.biscuit.he-boy",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "The word \"He\" in \"He found Biscuit sleeping under a bench\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "a boy from the next street"
+        },
+        {
+          "id": "b",
+          "text": "the writer's brother"
+        },
+        {
+          "id": "c",
+          "text": "Biscuit"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שבא ממש לפני המשפט הזה.",
+          "en": "Read the sentence just before this one."
+        },
+        {
+          "he": "מי התקשר ביום שלישי בבוקר?",
+          "en": "Who called on Tuesday morning?"
+        }
+      ],
+      "explanation": {
+        "he": "המשפט הקודם: a boy from the next street called. ה־He שמצא את Biscuit הוא הילד הזה. Biscuit לא יכול למצוא את עצמו.",
+        "en": "The sentence before says: a boy from the next street called. He is that boy. Biscuit cannot find himself."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.where-is-biscuit",
+      "source": "original"
+    },
+    {
+      "id": "rd.biscuit.tf-same-day",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "True or false: Biscuit was found on the same day he went missing.",
+      "instruction": {
+        "he": "נכון או לא נכון?",
+        "en": "True or false?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את ימי השבוע בקטע.",
+          "en": "Look for the days of the week in the text."
+        }
+      ],
+      "explanation": {
+        "he": "Biscuit ברח ביום ראשון (On Sunday evening) ונמצא ביום שלישי (on Tuesday morning). בקטע נאמר גם: For two days, nothing happened.",
+        "en": "Biscuit ran out on Sunday evening and was found on Tuesday morning. The text also says: For two days, nothing happened."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.where-is-biscuit",
+      "source": "original"
+    },
+    {
+      "id": "rd.biscuit.last",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "Which of these happened LAST?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mrs. Levi brought a chocolate cake."
+        },
+        {
+          "id": "b",
+          "text": "A boy called the family."
+        },
+        {
+          "id": "c",
+          "text": "The writer put posters on trees."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש מילות זמן: On Sunday, on Tuesday, Yesterday.",
+          "en": "Look for time words: On Sunday, on Tuesday, Yesterday."
+        }
+      ],
+      "explanation": {
+        "he": "הסדר: קודם posters, אחר כך ביום שלישי ילד התקשר, ובסוף Yesterday, Mrs. Levi brought us a big chocolate cake.",
+        "en": "The order: first the posters, then the call on Tuesday, and last: Yesterday, Mrs. Levi brought us a big chocolate cake."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.where-is-biscuit",
+      "source": "original"
+    },
+    {
+      "id": "rd.biscuit.main",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "What is the blog post mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "How people helped to find a lost dog"
+        },
+        {
+          "id": "b",
+          "text": "How to make good posters"
+        },
+        {
+          "id": "c",
+          "text": "Why dogs like to sleep in the park"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "על מה מדברות כל הפסקאות יחד, לא רק משפט אחד?",
+          "en": "What do all the paragraphs talk about together, not just one sentence?"
+        }
+      ],
+      "explanation": {
+        "he": "כל הפוסט מספר על Biscuit שנעלם ועל איך מצאו אותו בעזרת posters, group chat וילד מהרחוב הבא. posters ו־park הם רק פרטים.",
+        "en": "The whole post tells how Biscuit got lost and how people helped find him. Posters and the park are only details."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.where-is-biscuit",
+      "source": "original"
+    },
+    {
+      "id": "rd.carfree.end-time",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "A2",
+      "difficulty": 0.2,
+      "prompt": "When does the car-free day end?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "At six in the evening"
+        },
+        {
+          "id": "b",
+          "text": "At eight in the morning"
+        },
+        {
+          "id": "c",
+          "text": "At midnight"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בפסקה הראשונה את המילים from ... to.",
+          "en": "Look for from ... to in the first paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: from eight in the morning to six in the evening. היום מתחיל בשמונה בבוקר ונגמר בשש בערב.",
+        "en": "The text says: from eight in the morning to six in the evening."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.day-without-cars",
+      "source": "original"
+    },
+    {
+      "id": "rd.carfree.why-start",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "Why did the car-free day start?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Parents wanted cleaner air for their children."
+        },
+        {
+          "id": "b",
+          "text": "Shop owners wanted more customers."
+        },
+        {
+          "id": "c",
+          "text": "The town had no money for buses."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המשפט The idea started.",
+          "en": "Find the sentence The idea started."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: A group of parents wanted their children to breathe cleaner air. בעלי החנויות דווקא דאגו בהתחלה.",
+        "en": "The text says: A group of parents wanted their children to breathe cleaner air. The shop owners were actually worried at first."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.day-without-cars",
+      "source": "original"
+    },
+    {
+      "id": "rd.carfree.they-owners",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "The word \"They\" in \"They thought fewer people would come to their shops\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "some shop owners"
+        },
+        {
+          "id": "b",
+          "text": "a group of parents"
+        },
+        {
+          "id": "c",
+          "text": "the children"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למי יש shops? לחפש במשפט הקודם.",
+          "en": "Who has shops? Look at the sentence before."
+        }
+      ],
+      "explanation": {
+        "he": "המשפט הקודם: some shop owners were worried. הם אלה שחשבו שפחות אנשים יבואו לחנויות שלהם (their shops).",
+        "en": "The sentence before: some shop owners were worried. They are the ones who have shops."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.day-without-cars",
+      "source": "original"
+    },
+    {
+      "id": "rd.carfree.opposite",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "\"But the opposite happened.\" What does this mean here?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "More people came to the shops, not fewer."
+        },
+        {
+          "id": "b",
+          "text": "Fewer people came to the shops."
+        },
+        {
+          "id": "c",
+          "text": "The shops were closed for the day."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "opposite פירושו ההפך. ההפך ממה?",
+          "en": "opposite means the reverse. The reverse of what?"
+        },
+        {
+          "he": "מה בעלי החנויות חשבו שיקרה?",
+          "en": "What did the shop owners think would happen?"
+        }
+      ],
+      "explanation": {
+        "he": "בעלי החנויות חשבו ש־fewer people would come. ההפך קרה: Many families came ... and they bought ice cream, books and cold drinks.",
+        "en": "The shop owners thought fewer people would come. The opposite happened: many families came and bought things."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.day-without-cars",
+      "source": "original"
+    },
+    {
+      "id": "rd.carfree.tf-owners",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "True or false: Today, the shop owners are against the car-free day.",
+      "instruction": {
+        "he": "נכון או לא נכון?",
+        "en": "True or false?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק מה בעלי החנויות עושים היום (Now).",
+          "en": "Check what the shop owners do now."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: Now the shop owners help to plan the day. הם כבר לא נגד, הם עוזרים לתכנן.",
+        "en": "The text says: Now the shop owners help to plan the day. They are not against it."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.day-without-cars",
+      "source": "original"
+    },
+    {
+      "id": "rd.carfree.main",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "What is the text mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A town's yearly day without cars and how it became popular"
+        },
+        {
+          "id": "b",
+          "text": "How people in a small town can get free bike repairs"
+        },
+        {
+          "id": "c",
+          "text": "Why the shop owners in Green Hill are worried about cars"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחזור לכותרת ולמשפט הראשון.",
+          "en": "Go back to the title and the first sentence."
+        }
+      ],
+      "explanation": {
+        "he": "הכותרת והמשפט הראשון אומרים: Once a year, the small town of Green Hill has a day without cars. שאר הקטע מסביר איך הרעיון התחיל ואיך אנשים הגיבו. התיקון החינמי לאופניים הוא רק פרט.",
+        "en": "The title and the first sentence give the main idea. The rest explains how it started and how people reacted. Free bike repairs are only a detail."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.day-without-cars",
+      "source": "original"
+    },
+    {
+      "id": "rd.noa.why-start",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "A2",
+      "difficulty": 0.2,
+      "prompt": "Why did Noa start cooking?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Her grandmother broke her arm and needed help."
+        },
+        {
+          "id": "b",
+          "text": "She wanted to be famous on the internet."
+        },
+        {
+          "id": "c",
+          "text": "She took a cooking class at school."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בפסקה השנייה: It all started when...",
+          "en": "Look in the second paragraph: It all started when..."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: Her grandmother broke her arm and could not cook, so Noa helped her. המילה so מראה את הסיבה והתוצאה.",
+        "en": "The text says: Her grandmother broke her arm and could not cook, so Noa helped her."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.noas-kitchen",
+      "source": "original"
+    },
+    {
+      "id": "rd.noa.first",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Which of these happened FIRST?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Noa wrote her grandmother's recipes in a notebook."
+        },
+        {
+          "id": "b",
+          "text": "Noa's brother filmed her."
+        },
+        {
+          "id": "c",
+          "text": "Thousands of people watched Noa's video."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את הביטוי A year later. מה קרה לפניו?",
+          "en": "Find A year later. What happened before it?"
+        }
+      ],
+      "explanation": {
+        "he": "קודם, בגיל אחת עשרה, Noa wrote everything in a notebook. רק A year later אחיה צילם אותה, ואז אנשים צפו בסרטון.",
+        "en": "First, at eleven, Noa wrote everything in a notebook. A year later her brother filmed her, and then people watched."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.noas-kitchen",
+      "source": "original"
+    },
+    {
+      "id": "rd.noa.ingredients",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "In \"simple dishes ... with cheap ingredients\", the word \"ingredients\" means...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the foods you use to make a dish"
+        },
+        {
+          "id": "b",
+          "text": "kitchen tools like pots and knives"
+        },
+        {
+          "id": "c",
+          "text": "short cooking videos"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה צריך לקנות כדי לבשל מנה? ומה יכול להיות cheap?",
+          "en": "What do you buy to cook a dish? What can be cheap?"
+        }
+      ],
+      "explanation": {
+        "he": "ingredients הם המצרכים, מה שמכניסים לתוך המנה. Noa מבשלת מנות פשוטות ממצרכים זולים.",
+        "en": "Ingredients are the foods that go into a dish. Noa cooks simple dishes with cheap ones."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.noas-kitchen",
+      "source": "original"
+    },
+    {
+      "id": "rd.noa.tf-chef",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "True or false: Noa wants to work as a chef in the future.",
+      "instruction": {
+        "he": "נכון או לא נכון?",
+        "en": "True or false?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש מה Noa אומרת על העתיד שלה.",
+          "en": "Find what Noa says about her future."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: Noa does not want to be a chef. \"I want to be a doctor.\" הבישול הוא תחביב (hobby).",
+        "en": "The text says: Noa does not want to be a chef. She wants to be a doctor. Cooking is her hobby."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.noas-kitchen",
+      "source": "original"
+    },
+    {
+      "id": "rd.noa.she-grandma",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "The word \"She\" in \"She watches every video twice\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Noa's grandmother"
+        },
+        {
+          "id": "b",
+          "text": "Noa"
+        },
+        {
+          "id": "c",
+          "text": "a teenager who cooks at home"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שלפני, באותה פסקה.",
+          "en": "Read the sentence before it, in the same paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "המשפט הקודם: Her grandmother is still her biggest fan. היא זו שצופה בכל סרטון פעמיים. Noa לא צופה בסרטונים של עצמה כמו מעריצה.",
+        "en": "The sentence before: Her grandmother is still her biggest fan. She is the one who watches every video twice."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.noas-kitchen",
+      "source": "original"
+    },
+    {
+      "id": "rd.noa.proud",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.6,
+      "prompt": "What can we understand about Noa's grandmother?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She is proud of Noa's videos."
+        },
+        {
+          "id": "b",
+          "text": "She does not like the internet."
+        },
+        {
+          "id": "c",
+          "text": "She still cannot cook."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילים biggest fan.",
+          "en": "Look for the words biggest fan."
+        },
+        {
+          "he": "מי צופה בכל סרטון פעמיים, ולמה?",
+          "en": "Who watches every video twice, and why?"
+        }
+      ],
+      "explanation": {
+        "he": "הסבתא היא her biggest fan והיא watches every video twice. מכאן אפשר להסיק שהיא גאה בנכדה. אין בקטע מידע שהיא לא אוהבת אינטרנט או שהיא עדיין לא מבשלת.",
+        "en": "She is Noa's biggest fan and watches every video twice, so she is proud. Nothing says she dislikes the internet or still cannot cook."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.noas-kitchen",
+      "source": "original"
+    },
+    {
+      "id": "rd.final.position",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "A2",
+      "difficulty": 0.2,
+      "prompt": "What was Tom's role in the team?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He was the goalkeeper."
+        },
+        {
+          "id": "b",
+          "text": "He was the coach."
+        },
+        {
+          "id": "c",
+          "text": "He was a fan watching the game."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "התשובה נמצאת בפסקה הראשונה.",
+          "en": "The answer is in the first paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: Tom was the goalkeeper. המאמנת היא אישה (she), ו־Tom משחק בקבוצה, הוא לא צופה מהצד.",
+        "en": "The text says: Tom was the goalkeeper. The coach is a woman, and Tom plays in the team, he is not a fan."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rainy-final",
+      "source": "original"
+    },
+    {
+      "id": "rd.final.nervous",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "Why was Tom nervous before the game?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He made a big mistake in the last game."
+        },
+        {
+          "id": "b",
+          "text": "He was sick and cold."
+        },
+        {
+          "id": "c",
+          "text": "He did not like playing in the rain."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילה because ליד nervous.",
+          "en": "Find because next to nervous."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: He was nervous, because in the last game he made a big mistake. because נותן את הסיבה.",
+        "en": "The text says: He was nervous, because in the last game he made a big mistake."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rainy-final",
+      "source": "original"
+    },
+    {
+      "id": "rd.final.earned",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "The coach says, \"You earned this.\" Here, \"earned\" means...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "got it because you worked hard for it"
+        },
+        {
+          "id": "b",
+          "text": "bought it with your own money"
+        },
+        {
+          "id": "c",
+          "text": "lost it during the game"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למה המאמנת נותנת לTom את הכדור דווקא עכשיו?",
+          "en": "Why does the coach give Tom the ball now?"
+        }
+      ],
+      "explanation": {
+        "he": "Tom הציל את המשחק כשתפס את הכדור. earned פירושו הרווחת, קיבלת בזכות מה שעשית.",
+        "en": "Tom saved the game. earned means you got it because of what you did."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rainy-final",
+      "source": "original"
+    },
+    {
+      "id": "rd.final.tf-won",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "A2",
+      "difficulty": 0.7,
+      "prompt": "True or false: The Blue Hawks beat the other team in the last game of the season.",
+      "instruction": {
+        "he": "נכון או לא נכון?",
+        "en": "True or false?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק את התוצאה של המשחק.",
+          "en": "Check the score of the game."
+        },
+        {
+          "he": "לנצח במשחק ולנצח בליגה זה לא אותו דבר.",
+          "en": "Winning the game and winning the league are not the same."
+        }
+      ],
+      "explanation": {
+        "he": "The game ended 0-0, כלומר תיקו. הקבוצה זכתה באליפות (the champions) כי נקודה אחת הספיקה, אבל לא ניצחה במשחק עצמו.",
+        "en": "The game ended 0-0, a draw. They won the league because one point was enough, but they did not win the game."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rainy-final",
+      "source": "original"
+    },
+    {
+      "id": "rd.final.last",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Which of these happened LAST?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The coach gave Tom the ball."
+        },
+        {
+          "id": "b",
+          "text": "Tom caught the ball with both hands."
+        },
+        {
+          "id": "c",
+          "text": "The players kept falling on the wet grass."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילים After the game.",
+          "en": "Look for After the game."
+        }
+      ],
+      "explanation": {
+        "he": "השחקנים נפלו ב־first half, Tom תפס את הכדור ב־second half, ו־After the game, the coach gave Tom the ball.",
+        "en": "The players fell in the first half, Tom caught the ball in the second half, and after the game the coach gave him the ball."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rainy-final",
+      "source": "original"
+    },
+    {
+      "id": "rd.final.feel-end",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "How did Tom feel at the end?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Happy, even though he was wet and cold"
+        },
+        {
+          "id": "b",
+          "text": "Angry about the cold and the rain"
+        },
+        {
+          "id": "c",
+          "text": "Sad because his team did not score"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את שני המשפטים האחרונים.",
+          "en": "Read the last two sentences."
+        }
+      ],
+      "explanation": {
+        "he": "Tom smiled, ובקטע נאמר: He was wet and cold, but he did not care. הוא שמח, והקור והגשם לא הפריעו לו.",
+        "en": "Tom smiled. He was wet and cold, but he did not care. So he was happy."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rainy-final",
+      "source": "original"
+    },
+    {
+      "id": "rd.phones.main",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "What is the writer's main point?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The phone rule has made life at school better."
+        },
+        {
+          "id": "b",
+          "text": "Phones should be banned everywhere, not only at school."
+        },
+        {
+          "id": "c",
+          "text": "Students should decide for themselves when to use phones."
+        },
+        {
+          "id": "d",
+          "text": "The phone rule has made school more stressful."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את סוף הפסקה הראשונה: I believe...",
+          "en": "Read the end of the first paragraph: I believe..."
+        }
+      ],
+      "explanation": {
+        "he": "הכותב/ת אומר/ת: I believe it is one of the best decisions our school has ever made. שאר הקטע נותן דוגמאות לשינויים טובים בהפסקות ובשיעורים. בסוף נאמר שטלפונים הם wonderful tools, אז לא מדובר באיסור בכל מקום.",
+        "en": "The writer says it is one of the best decisions the school has made. The rest gives examples. The writer also calls phones wonderful tools, so it is not a ban everywhere."
+      },
+      "interests": [
+        "school",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.phones-off-heads-up",
+      "source": "original"
+    },
+    {
+      "id": "rd.phones.tf-start",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "B1",
+      "difficulty": 0.3,
+      "prompt": "True or false: At first, the writer supported the new rule.",
+      "instruction": {
+        "he": "נכון או לא נכון?",
+        "en": "True or false?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק מה הכותב/ת הרגיש/ה בספטמבר.",
+          "en": "Check how the writer felt in September."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: Many students were angry, and I was one of them. רק Six months later, I have changed my mind.",
+        "en": "The text says: Many students were angry, and I was one of them. The writer changed their mind later."
+      },
+      "interests": [
+        "school",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.phones-off-heads-up",
+      "source": "original"
+    },
+    {
+      "id": "rd.phones.concentrate",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "In \"I find it much easier to concentrate\", the word \"concentrate\" means...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "give all your attention to something"
+        },
+        {
+          "id": "b",
+          "text": "feel tired and bored"
+        },
+        {
+          "id": "c",
+          "text": "talk to the people around you"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה קורה בשיעור כשהטלפון לא רוטט בכיס?",
+          "en": "What happens in class without a phone buzzing in your pocket?"
+        }
+      ],
+      "explanation": {
+        "he": "בלי טלפון שמזמזם בכיס קל יותר להתרכז. concentrate פירושו להתרכז. התוצאה בקטע: הציונים במתמטיקה עלו.",
+        "en": "Without a buzzing phone it is easier to concentrate, to focus. The result: better grades in maths."
+      },
+      "interests": [
+        "school",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.phones-off-heads-up",
+      "source": "original"
+    },
+    {
+      "id": "rd.phones.teacher",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B1",
+      "difficulty": 0.7,
+      "prompt": "Why does the writer mention the new private teacher?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To admit that the rule may not be the only reason for better grades"
+        },
+        {
+          "id": "b",
+          "text": "To advise other students to find a private teacher too"
+        },
+        {
+          "id": "c",
+          "text": "To complain that the maths lessons at school are too hard"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילה although במשפט על הציונים.",
+          "en": "Find although in the sentence about grades."
+        },
+        {
+          "he": "I admit פירושו אני מודה. במה הכותב/ת מודה?",
+          "en": "I admit means I confess. What does the writer confess?"
+        }
+      ],
+      "explanation": {
+        "he": "I admit that my new private teacher may also be part of the reason. הכותב/ת מודה בהגינות שייתכן שגם המורה הפרטי עזר, ולא רק הכלל החדש.",
+        "en": "The writer admits that the private teacher may also be part of the reason, so the rule may not be the only cause."
+      },
+      "interests": [
+        "school",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.phones-off-heads-up",
+      "source": "original"
+    },
+    {
+      "id": "rd.phones.this-parents",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "The word \"this\" in \"the school office could solve this easily\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "parents not being able to reach their children"
+        },
+        {
+          "id": "b",
+          "text": "fights that started online"
+        },
+        {
+          "id": "c",
+          "text": "students' low grades in maths"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "this מחליף בעיה. לחפש את הבעיה במשפט הקודם.",
+          "en": "this replaces a problem. Find it in the sentence before."
+        }
+      ],
+      "explanation": {
+        "he": "המשפט הקודם: Some parents complain that they cannot reach their children during the day. המזכירות יכולה לפתור את זה by passing on urgent messages.",
+        "en": "The sentence before: parents cannot reach their children. The office could solve this by passing on urgent messages."
+      },
+      "interests": [
+        "school",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.phones-off-heads-up",
+      "source": "original"
+    },
+    {
+      "id": "rd.phones.fact",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Which sentence from the text is a FACT, not an opinion?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Last September, our school decided that students must keep their phones in their lockers."
+        },
+        {
+          "id": "b",
+          "text": "I believe it is one of the best decisions our school has ever made."
+        },
+        {
+          "id": "c",
+          "text": "Phones are wonderful tools, but we do not need them every minute."
+        },
+        {
+          "id": "d",
+          "text": "The school office could solve this easily."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "עובדה אפשר לבדוק. דעה היא מה שמישהו חושב.",
+          "en": "A fact can be checked. An opinion is what someone thinks."
+        },
+        {
+          "he": "מילים כמו I believe, wonderful, could easily מראות דעה.",
+          "en": "Words like I believe, wonderful, could easily show opinion."
+        }
+      ],
+      "explanation": {
+        "he": "את ההחלטה של בית הספר בספטמבר אפשר לבדוק, לכן זו עובדה. I believe ו־In my opinion מסמנים דעה, ו־wonderful הוא שיפוט אישי.",
+        "en": "The school's decision can be checked, so it is a fact. I believe, wonderful and In my opinion show opinions."
+      },
+      "interests": [
+        "school",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.phones-off-heads-up",
+      "source": "original"
+    },
+    {
+      "id": "rd.coral.why-start",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "B1",
+      "difficulty": 0.3,
+      "prompt": "Why did the Port Amari project begin?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A storm had destroyed much of the local reef."
+        },
+        {
+          "id": "b",
+          "text": "Tourists asked for an underwater garden."
+        },
+        {
+          "id": "c",
+          "text": "Scientists wanted to study bleaching."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את השנה 2019.",
+          "en": "Look for the year 2019."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: The Port Amari project began in 2019, after a storm destroyed much of the local reef. ה־bleaching מתואר כבעיה כללית בעולם, לא כסיבה לפרויקט הזה.",
+        "en": "The project began after a storm destroyed much of the local reef. Bleaching is described as a general world problem."
+      },
+      "interests": [
+        "science",
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.gardeners-under-the-sea",
+      "source": "original"
+    },
+    {
+      "id": "rd.coral.bleaching",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "According to the text, \"bleaching\" is...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "when warm water makes coral lose its colour"
+        },
+        {
+          "id": "b",
+          "text": "when divers clean broken coral before moving it"
+        },
+        {
+          "id": "c",
+          "text": "when fish leave a reef because it is damaged"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שלפני Scientists call this.",
+          "en": "Read the sentence before Scientists call this."
+        }
+      ],
+      "explanation": {
+        "he": "When the water becomes too warm, the coral loses its colour and often dies. Scientists call this bleaching. המילה this מתייחסת לתהליך הזה.",
+        "en": "When the water becomes too warm, the coral loses its colour. Scientists call this bleaching."
+      },
+      "interests": [
+        "science",
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.gardeners-under-the-sea",
+      "source": "original"
+    },
+    {
+      "id": "rd.coral.tf-floor",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "True or false: Coral reefs cover a large part of the sea floor.",
+      "instruction": {
+        "he": "נכון או לא נכון?",
+        "en": "True or false?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש מספרים באחוזים בפסקה השנייה.",
+          "en": "Look for percentages in the second paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: they cover less than one percent of the sea floor. פחות מאחוז אחד זה חלק קטן מאוד. רבע (a quarter) מתייחס לסוגי החיים בים, לא לשטח.",
+        "en": "Reefs cover less than one percent of the sea floor. A quarter refers to kinds of sea life, not the area."
+      },
+      "interests": [
+        "science",
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.gardeners-under-the-sea",
+      "source": "original"
+    },
+    {
+      "id": "rd.coral.after-frames",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "What do the divers do AFTER the coral pieces grow on the metal frames?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "They move the pieces back onto the reef."
+        },
+        {
+          "id": "b",
+          "text": "They collect broken pieces of coral."
+        },
+        {
+          "id": "c",
+          "text": "They tie the pieces to the frames."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לסדר את השלבים בפסקה השלישית.",
+          "en": "Put the steps in the third paragraph in order."
+        }
+      ],
+      "explanation": {
+        "he": "השלבים: collect broken pieces, tie them to metal frames, ורק When the pieces have grown large enough, the divers move them back onto the reef.",
+        "en": "The steps: collect pieces, tie them to frames, and when they have grown, move them back onto the reef."
+      },
+      "interests": [
+        "science",
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.gardeners-under-the-sea",
+      "source": "original"
+    },
+    {
+      "id": "rd.coral.them-fish",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "The word \"them\" in \"the tourists who come to watch them\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the fish"
+        },
+        {
+          "id": "b",
+          "text": "the metal frames"
+        },
+        {
+          "id": "c",
+          "text": "the scientists"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה חוזר לשונית באותו משפט?",
+          "en": "What is returning to the reef in the same sentence?"
+        }
+      ],
+      "explanation": {
+        "he": "Today, fish are slowly returning to the reef, and so are the tourists who come to watch them. התיירים באים לראות את הדגים.",
+        "en": "Fish are returning, and so are the tourists who come to watch them, the fish."
+      },
+      "interests": [
+        "science",
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.gardeners-under-the-sea",
+      "source": "original"
+    },
+    {
+      "id": "rd.coral.second-chance",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "What does Dalia Moss mean when she says \"we can give ours a second chance\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Their work can help their own reef to recover."
+        },
+        {
+          "id": "b",
+          "text": "They plan to build a new reef in another country."
+        },
+        {
+          "id": "c",
+          "text": "They will try the project again because it failed."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "ours מחליף מילה. איזו? לקרוא את החלק הראשון של הציטוט.",
+          "en": "ours replaces a word. Which one? Read the first part of the quote."
+        },
+        {
+          "he": "האם הפרויקט נכשל? מה קורה היום לדגים?",
+          "en": "Did the project fail? What is happening to the fish today?"
+        }
+      ],
+      "explanation": {
+        "he": "ours פירושו our reef. היא אומרת שאי אפשר להציל כל שונית, אבל אפשר לעזור לשונית שלהם להתאושש. הפרויקט לא נכשל: fish are slowly returning.",
+        "en": "ours means our reef. They cannot save every reef, but they can help theirs recover. The project did not fail: fish are returning."
+      },
+      "interests": [
+        "science",
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.gardeners-under-the-sea",
+      "source": "original"
+    },
+    {
+      "id": "rd.lyon.purpose",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "What is the main purpose of Daniel's email?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To tell his friend about his new life in France"
+        },
+        {
+          "id": "b",
+          "text": "To ask his friend for help with French"
+        },
+        {
+          "id": "c",
+          "text": "To invite his friend to visit Lyon"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "על מה מדברת רוב ההודעה?",
+          "en": "What is most of the email about?"
+        }
+      ],
+      "explanation": {
+        "he": "רוב ההודעה מספרת על המשפחה, על בית הספר ועל השפה בליון. Daniel מבקש להיפגש רק בחופשה, אחרי שיחזור (I'll be back on 20 December), ולא מזמין לצרפת.",
+        "en": "Most of the email describes the family, school and language in Lyon. Daniel suggests meeting after he comes back, not in France."
+      },
+      "interests": [
+        "travel",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.greetings-from-lyon",
+      "source": "original"
+    },
+    {
+      "id": "rd.lyon.hugo",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Why did Hugo look disappointed?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He expected Daniel's life in Israel to be more exciting."
+        },
+        {
+          "id": "b",
+          "text": "He wanted Daniel to take a different bus to school."
+        },
+        {
+          "id": "c",
+          "text": "Daniel did not answer his question about Israel."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה Hugo שאל, ומה Daniel ענה?",
+          "en": "What did Hugo ask, and what did Daniel answer?"
+        },
+        {
+          "he": "like him: מה זה אומר על החיים של Daniel?",
+          "en": "like him: what does that say about Daniel's life?"
+        }
+      ],
+      "explanation": {
+        "he": "Hugo שאל אם Daniel רוכב על גמל לבית הספר. Daniel ענה שהוא נוסע באוטובוס like him, כמו Hugo. Hugo ציפה לתשובה מיוחדת וקיבל תשובה רגילה. Daniel כן ענה לשאלה.",
+        "en": "Hugo asked about riding a camel. Daniel said he takes the bus, like Hugo. Hugo expected something exciting and got something ordinary."
+      },
+      "interests": [
+        "travel",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.greetings-from-lyon",
+      "source": "original"
+    },
+    {
+      "id": "rd.lyon.lunch",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "How has Daniel's opinion about the long lunch changed?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "At first he thought it was a waste of time, but now he loves it."
+        },
+        {
+          "id": "b",
+          "text": "At first he loved it, but now he thinks it is too long."
+        },
+        {
+          "id": "c",
+          "text": "He has always thought it was a waste of time."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש At first ו־now בפסקה על בית הספר.",
+          "en": "Find At first and now in the paragraph about school."
+        }
+      ],
+      "explanation": {
+        "he": "At first I thought it was a waste of time, but now I love it. המילה but מראה את השינוי.",
+        "en": "At first I thought it was a waste of time, but now I love it. But shows the change."
+      },
+      "interests": [
+        "travel",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.greetings-from-lyon",
+      "source": "original"
+    },
+    {
+      "id": "rd.lyon.get-used",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "In \"I still can't get used to eating cheese after every meal\", \"get used to\" means...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "become comfortable with something new"
+        },
+        {
+          "id": "b",
+          "text": "stop doing something"
+        },
+        {
+          "id": "c",
+          "text": "enjoy something very much"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה still רומזת שעדיין יש קושי.",
+          "en": "The word still shows there is still a difficulty."
+        }
+      ],
+      "explanation": {
+        "he": "get used to פירושו להתרגל. Daniel עדיין לא התרגל לגבינה אחרי כל ארוחה, כי זה חדש בשבילו.",
+        "en": "get used to means become comfortable with something new. Daniel is still not used to cheese after every meal."
+      },
+      "interests": [
+        "travel",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.greetings-from-lyon",
+      "source": "original"
+    },
+    {
+      "id": "rd.lyon.she-camille",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "The word \"she\" in \"she corrects my French\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Camille"
+        },
+        {
+          "id": "b",
+          "text": "Daniel's teacher in Lyon"
+        },
+        {
+          "id": "c",
+          "text": "Mrs. Moreau"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מי עוזרת לDaniel כל ערב? לקרוא את המשפט הקודם.",
+          "en": "Who helps Daniel every evening? Read the sentence before."
+        }
+      ],
+      "explanation": {
+        "he": "Camille helps me a lot. Every evening we sit together: I help her with her English homework, and she corrects my French. Daniel עוזר לה באנגלית, והיא מתקנת לו את הצרפתית.",
+        "en": "Camille helps Daniel. He helps her with English, and she corrects his French."
+      },
+      "interests": [
+        "travel",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.greetings-from-lyon",
+      "source": "original"
+    },
+    {
+      "id": "rd.lyon.tf-french",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "True or false: Daniel did not learn any French before he came to Lyon.",
+      "instruction": {
+        "he": "נכון או לא נכון?",
+        "en": "True or false?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בפסקה על השפה את המילים before I came.",
+          "en": "Find before I came in the paragraph about the language."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: I studied French for a year before I came. הקושי הוא שאנשים מדברים מהר.",
+        "en": "The text says: I studied French for a year before I came. The problem is that people speak fast."
+      },
+      "interests": [
+        "travel",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.greetings-from-lyon",
+      "source": "original"
+    },
+    {
+      "id": "rd.lena.main",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "What is the main idea of the text?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It is possible to succeed in sport even if you start late."
+        },
+        {
+          "id": "b",
+          "text": "Running can cause serious knee injuries."
+        },
+        {
+          "id": "c",
+          "text": "Doctors should tell more people to walk to work."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחזור לכותרת ולציטוט בסוף.",
+          "en": "Go back to the title and the quote at the end."
+        }
+      ],
+      "explanation": {
+        "he": "הכותרת היא The Runner Who Started Late, והקטע מתאר את Lena שהתחילה לרוץ בגיל 31 וזכתה באליפות. הפציעה ועצת הרופא הם פרטים בסיפור.",
+        "en": "The title and the whole story show that Lena started at 31 and still won a championship. The injury and the doctor are details."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.runner-who-started-late",
+      "source": "original"
+    },
+    {
+      "id": "rd.lena.why-walk",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "B1",
+      "difficulty": 0.3,
+      "prompt": "Why did Lena start walking?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Her doctor said she needed to lower her blood pressure."
+        },
+        {
+          "id": "b",
+          "text": "She wanted to win a charity run."
+        },
+        {
+          "id": "c",
+          "text": "The tram to her work stopped running."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את השנה 2009.",
+          "en": "Look for the year 2009."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: her doctor told her that she needed to lower her blood pressure. He suggested walking. היא הלכה ברגל במקום לנסוע בחשמלית, אבל לא נאמר שהחשמלית הפסיקה לפעול.",
+        "en": "Her doctor told her to lower her blood pressure and suggested walking. Nothing says the tram stopped running."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.runner-who-started-late",
+      "source": "original"
+    },
+    {
+      "id": "rd.lena.first",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Which of these happened FIRST?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She started to jog part of the way to work."
+        },
+        {
+          "id": "b",
+          "text": "She entered a charity run."
+        },
+        {
+          "id": "c",
+          "text": "A coach offered to train her."
+        },
+        {
+          "id": "d",
+          "text": "She won a national championship."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לסדר לפי השנים: 2009, 2011, 2015.",
+          "en": "Order by the years: 2009, 2011, 2015."
+        }
+      ],
+      "explanation": {
+        "he": "אחרי 2009 היא הלכה ברגל ואחרי כמה חודשים התחילה לרוץ חלק מהדרך. רק ב־2011 נרשמה למרוץ, אחר כך המאמן הציע לאמן אותה, וב־2015 זכתה באליפות.",
+        "en": "After 2009 she walked and then jogged part of the way. The run was in 2011, then the coach, and the championship in 2015."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.runner-who-started-late",
+      "source": "original"
+    },
+    {
+      "id": "rd.lena.note",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "\"The girl who always had a note to get out of sports lessons\" tells us that, as a girl, Lena...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "tried to avoid sport"
+        },
+        {
+          "id": "b",
+          "text": "was the best athlete in her class"
+        },
+        {
+          "id": "c",
+          "text": "was a very good student in all subjects"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "get out of פירושו להתחמק, לא להשתתף.",
+          "en": "get out of means to avoid taking part."
+        }
+      ],
+      "explanation": {
+        "he": "ילדה שתמיד הביאה פתק כדי לא להשתתף בשיעורי ספורט ניסתה להימנע מספורט. זה מנוגד לגמרי ל־best athlete.",
+        "en": "A girl who always had a note to get out of sports lessons was avoiding sport."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.runner-who-started-late",
+      "source": "original"
+    },
+    {
+      "id": "rd.lena.tf-olympics",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "True or false: Lena took part in the Olympic Games.",
+      "instruction": {
+        "he": "נכון או לא נכון?",
+        "en": "True or false?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילה Olympics.",
+          "en": "Find the word Olympics."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע נאמר: Lena never reached the Olympics. פציעה בברך ב־2016 סיימה את הקריירה שלה.",
+        "en": "The text says: Lena never reached the Olympics. A knee injury ended her career."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.runner-who-started-late",
+      "source": "original"
+    },
+    {
+      "id": "rd.lena.both",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.7,
+      "prompt": "What does Lena mean when she says \"I was both\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She was old and slow when she began, too."
+        },
+        {
+          "id": "b",
+          "text": "She was a coach and a runner at the same time."
+        },
+        {
+          "id": "c",
+          "text": "She was a bank clerk and a runner at the same time."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "both מתייחס לשני דברים מהמשפט הקודם בציטוט.",
+          "en": "both refers to two things in the previous sentence of the quote."
+        },
+        {
+          "he": "מה אנשים אומרים על עצמם?",
+          "en": "What do people say about themselves?"
+        }
+      ],
+      "explanation": {
+        "he": "אנשים אומרים they are too old or too slow. Lena עונה שגם היא הייתה גם מבוגרת וגם איטית, ובכל זאת הצליחה. כך היא מעודדת אותם.",
+        "en": "People say they are too old or too slow. Lena says she was both, and still succeeded, to encourage them."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.runner-who-started-late",
+      "source": "original"
+    },
+    {
+      "id": "rd.robot.after-shows",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "B1",
+      "difficulty": 0.3,
+      "prompt": "What does Pip do after it shows where a book is?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It goes to the right shelf and waits there."
+        },
+        {
+          "id": "b",
+          "text": "It brings the book to the visitor."
+        },
+        {
+          "id": "c",
+          "text": "It prints a map of the library."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בפסקה השנייה את המילה Then.",
+          "en": "Find the word Then in the second paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "Then it rolls slowly to the right shelf and waits there with a little light flashing. Pip לא מביא את הספר בעצמו.",
+        "en": "Then it rolls slowly to the right shelf and waits there. It does not bring the book."
+      },
+      "interests": [
+        "technology",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.robot-at-the-library",
+      "source": "original"
+    },
+    {
+      "id": "rd.robot.replace",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "In \"the robot would replace them\", the word \"replace\" means...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "take their place and do their job"
+        },
+        {
+          "id": "b",
+          "text": "help them with hard questions"
+        },
+        {
+          "id": "c",
+          "text": "break and need repairs"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "ממה פחדו הספרנים? למה היו nervous?",
+          "en": "What were the librarians afraid of?"
+        }
+      ],
+      "explanation": {
+        "he": "הספרנים היו לחוצים כי חששו שהרובוט יחליף אותם, כלומר יעשה את העבודה שלהם במקומם. replace פירושו להחליף.",
+        "en": "The librarians worried the robot would replace them, do their job instead of them."
+      },
+      "interests": [
+        "technology",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.robot-at-the-library",
+      "source": "original"
+    },
+    {
+      "id": "rd.robot.that-replace",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "The word \"That\" in \"That hasn't happened\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the robot taking the librarians' jobs"
+        },
+        {
+          "id": "b",
+          "text": "the robot climbing the stairs"
+        },
+        {
+          "id": "c",
+          "text": "the robot looking like a film robot"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שלפני הציטוט של Omar Haddad.",
+          "en": "Read the sentence before Omar Haddad's quote."
+        }
+      ],
+      "explanation": {
+        "he": "המשפט הקודם: Some of them worried that the robot would replace them. Omar עונה: That hasn't happened, כלומר הרובוט לא החליף אותם.",
+        "en": "The sentence before: they worried the robot would replace them. That has not happened."
+      },
+      "interests": [
+        "technology",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.robot-at-the-library",
+      "source": "original"
+    },
+    {
+      "id": "rd.robot.toilets",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Why does Omar Haddad mention questions about the toilets?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "As an example of the simple questions Pip answers"
+        },
+        {
+          "id": "b",
+          "text": "Because the toilets are very hard to find"
+        },
+        {
+          "id": "c",
+          "text": "Because Pip often gets lost near the toilets"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילה like לפני toilets.",
+          "en": "Find the word like before toilets."
+        }
+      ],
+      "explanation": {
+        "he": "Pip answers the simple questions, like where the toilets are. המילה like פותחת דוגמה. הוא רוצה להראות שהרובוט עושה את העבודה הפשוטה והספרנים פנויים לעבודה המעניינת.",
+        "en": "like introduces an example of simple questions. This shows Pip does the simple work, so librarians have time for interesting work."
+      },
+      "interests": [
+        "technology",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.robot-at-the-library",
+      "source": "original"
+    },
+    {
+      "id": "rd.robot.tf-floors",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "True or false: Pip can work on every floor of the library.",
+      "instruction": {
+        "he": "נכון או לא נכון?",
+        "en": "True or false?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בפסקה Pip is not perfect.",
+          "en": "Look in the paragraph Pip is not perfect."
+        }
+      ],
+      "explanation": {
+        "he": "It cannot climb stairs, so it only works on the ground floor. הוא עובד רק בקומת הקרקע.",
+        "en": "It cannot climb stairs, so it only works on the ground floor."
+      },
+      "interests": [
+        "technology",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.robot-at-the-library",
+      "source": "original"
+    },
+    {
+      "id": "rd.robot.title",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Which title fits the text best?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A Helpful Robot With a Few Problems"
+        },
+        {
+          "id": "b",
+          "text": "Robots Will Take Our Jobs"
+        },
+        {
+          "id": "c",
+          "text": "How to Build a Library Robot"
+        },
+        {
+          "id": "d",
+          "text": "A Robot That Only Makes Mistakes"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הקטע מדבר גם על יתרונות וגם על חסרונות.",
+          "en": "The text talks about good points and problems."
+        }
+      ],
+      "explanation": {
+        "he": "הרובוט עוזר (ביקורים עלו ב־fifteen percent) אבל Pip is not perfect. הוא לא לקח את העבודה של הספרנים, והוא לא רק טועה.",
+        "en": "Pip helps (visits rose by fifteen percent), but Pip is not perfect. It did not take jobs, and it does not only make mistakes."
+      },
+      "interests": [
+        "technology",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.robot-at-the-library",
+      "source": "original"
+    },
+    {
+      "id": "rd.bell.church",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Why does the writer mention that visitors think it is a church bell?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To introduce the bell's surprising real history"
+        },
+        {
+          "id": "b",
+          "text": "To criticise visitors for not reading guidebooks"
+        },
+        {
+          "id": "c",
+          "text": "To show that Marrow Bay is a religious town"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שבא מיד אחרי: In fact...",
+          "en": "Read the next sentence: In fact..."
+        }
+      ],
+      "explanation": {
+        "he": "Visitors usually assume it is a church bell. In fact, its history is far more practical, and far more tragic. הכותב/ת מציג/ה טעות נפוצה כדי לפתוח את הסיפור האמיתי והמפתיע.",
+        "en": "The writer presents a common mistake to introduce the real, surprising story: In fact, its history is far more practical."
+      },
+      "interests": [
+        "travel",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.bell-of-marrow-bay",
+      "source": "original"
+    },
+    {
+      "id": "rd.bell.original-use",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "B2",
+      "difficulty": 0.4,
+      "prompt": "What was the bell originally used for?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To help sailors find the harbour entrance in fog"
+        },
+        {
+          "id": "b",
+          "text": "To remember the fishermen who died at sea"
+        },
+        {
+          "id": "c",
+          "text": "To call people to church on Sundays"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בפסקה השנייה את המילים so that.",
+          "en": "Find so that in the second paragraph."
+        },
+        {
+          "he": "להבחין בין השימוש בעבר לשימוש היום.",
+          "en": "Separate the old use from the use today."
+        }
+      ],
+      "explanation": {
+        "he": "someone would ring it every few minutes ... so that the sailors could follow the sound. הזיכרון של מי שמת בים הוא השימוש מאז 1968, לא המטרה המקורית.",
+        "en": "It was rung in fog so that the sailors could follow the sound. Remembering the dead is the use since 1968, not the original one."
+      },
+      "interests": [
+        "travel",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.bell-of-marrow-bay",
+      "source": "original"
+    },
+    {
+      "id": "rd.bell.margit",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "What is the writer's attitude towards the story of Margit Aldren?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Careful: it may not be completely true."
+        },
+        {
+          "id": "b",
+          "text": "Certain: it is fully supported by the town's records."
+        },
+        {
+          "id": "c",
+          "text": "Critical: the town invented it to attract tourists."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לשים לב לביטוי is said to have.",
+          "en": "Notice the phrase is said to have."
+        },
+        {
+          "he": "מה קרה לרשומות של אותה שנה?",
+          "en": "What happened to the records from that year?"
+        }
+      ],
+      "explanation": {
+        "he": "is said to have פירושו מספרים ש... בלי הוכחה. ובהמשך: Whether the story is entirely true is uncertain, since the town's records from that year were lost in a fire. הכותב/ת זהיר/ה, אבל לא טוען/ת שהסיפור הומצא.",
+        "en": "is said to have and Whether the story is entirely true is uncertain show caution. The writer does not say it was invented."
+      },
+      "interests": [
+        "travel",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.bell-of-marrow-bay",
+      "source": "original"
+    },
+    {
+      "id": "rd.bell.decision",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "The words \"the decision\" in \"but the decision caused such anger\" refer to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the plan to take down the bell and sell it"
+        },
+        {
+          "id": "b",
+          "text": "building a lighthouse with an electric foghorn"
+        },
+        {
+          "id": "c",
+          "text": "ringing the bell once a day at sunset"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איזו החלטה התקבלה באותו משפט ממש?",
+          "en": "Which decision appears in the same sentence?"
+        }
+      ],
+      "explanation": {
+        "he": "The town council voted to take it down and sell it, but the decision caused such anger. הכעס היה על התוכנית להוריד ולמכור את הפעמון. הצלצול בשקיעה הוא הפתרון שבא אחר כך (Instead).",
+        "en": "The council voted to take it down and sell it, and that decision caused anger. Ringing at sunset came later, instead."
+      },
+      "interests": [
+        "travel",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.bell-of-marrow-bay",
+      "source": "original"
+    },
+    {
+      "id": "rd.bell.reversed",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "In \"it was reversed within a week\", the word \"reversed\" means...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "cancelled and changed to the opposite"
+        },
+        {
+          "id": "b",
+          "text": "repeated a second time"
+        },
+        {
+          "id": "c",
+          "text": "made official by law"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה קרה לפעמון בסוף? האם נמכר?",
+          "en": "What happened to the bell in the end? Was it sold?"
+        }
+      ],
+      "explanation": {
+        "he": "בגלל הכעס ההחלטה בוטלה, והפעמון לא נמכר. Instead, the council agreed that the bell would be rung once a day. reversed פירושו בוטל, הפך לכיוון ההפוך.",
+        "en": "Because of the anger the decision was cancelled. Instead, the bell is rung once a day. reversed means changed to the opposite."
+      },
+      "interests": [
+        "travel",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.bell-of-marrow-bay",
+      "source": "original"
+    },
+    {
+      "id": "rd.bell.ending",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.8,
+      "prompt": "What does the last paragraph suggest?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The tradition still matters to the town, though it is no longer practical."
+        },
+        {
+          "id": "b",
+          "text": "The bell is now useless, so the town should stop ringing it."
+        },
+        {
+          "id": "c",
+          "text": "Many fishermen still need the bell to find their way home."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לשים לב למילה Yet בתחילת המשפט האחרון.",
+          "en": "Notice the word Yet at the start of the last sentence."
+        },
+        {
+          "he": "מה המשמעות של even when there is no boat in the harbour?",
+          "en": "What does even when there is no boat in the harbour suggest?"
+        }
+      ],
+      "explanation": {
+        "he": "few residents still fish, Yet every evening, someone ... rings the bell, even when there is no boat in the harbour. Yet מראה ניגוד: אין צורך מעשי, ובכל זאת ממשיכים. המסורת חשובה לעיר. הכותב/ת לא אומר/ת שצריך להפסיק.",
+        "en": "Few people fish, yet someone rings the bell every evening, even with no boat to hear it. The tradition matters, though it is not practical."
+      },
+      "interests": [
+        "travel",
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.bell-of-marrow-bay",
+      "source": "original"
+    },
+    {
+      "id": "rd.sleep.main",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "What is the main idea of the text?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Teenagers sleep late for biological reasons, so schools may need to start later."
+        },
+        {
+          "id": "b",
+          "text": "Teenagers are simply lazy, so parents should make them go to bed earlier."
+        },
+        {
+          "id": "c",
+          "text": "Melatonin is a dangerous hormone that harms the sleep of young people."
+        },
+        {
+          "id": "d",
+          "text": "School sports teams should train early in the morning instead of in the evening."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המשפט עם however בפסקה הראשונה, ואת השאלה בסוף.",
+          "en": "Find the sentence with however in the first paragraph, and the question at the end."
+        }
+      ],
+      "explanation": {
+        "he": "Sleep researchers, however, argue that the problem is largely biological. הקטע מסביר את השעון הביולוגי, מתאר ניסוי עם שעת התחלה מאוחרת, ושואל בסוף למה היום נבנה לפי המבוגרים. הוא דוחה את רעיון ה־laziness.",
+        "en": "The text says the problem is largely biological, describes a later start time trial, and asks why the school day is built for adults."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.teenagers-and-sleep",
+      "source": "original"
+    },
+    {
+      "id": "rd.sleep.jet-lag",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "What does the writer mean by \"a state of permanent jet lag\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Teenagers always feel like travellers who have just changed time zones."
+        },
+        {
+          "id": "b",
+          "text": "Teenagers travel to other countries more often than adults do."
+        },
+        {
+          "id": "c",
+          "text": "Teenagers sleep too much during the day and feel bored."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "jet lag היא העייפות אחרי טיסה בין אזורי זמן.",
+          "en": "jet lag is the tiredness after flying between time zones."
+        },
+        {
+          "he": "permanent פירושו קבוע, כל הזמן.",
+          "en": "permanent means all the time."
+        }
+      ],
+      "explanation": {
+        "he": "הגוף של המתבגרים מוכן לישון רק באחת עשרה או בחצות, אבל השעון מעיר אותם בשש וחצי. הם מרגישים כל הזמן כמו אחרי טיסה לאזור זמן אחר, כי השעון הפנימי לא מתאים לשעה בפועל.",
+        "en": "Their body clock says sleep late, but the alarm rings at 6:30, so they always feel like someone with jet lag."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.teenagers-and-sleep",
+      "source": "original"
+    },
+    {
+      "id": "rd.sleep.tf-teachers",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "True or false: The teachers who suggested the change expected such good results.",
+      "instruction": {
+        "he": "נכון או לא נכון?",
+        "en": "True or false?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילה surprised.",
+          "en": "Find the word surprised."
+        }
+      ],
+      "explanation": {
+        "he": "The results surprised even the teachers who had suggested the change. אם התוצאות הפתיעו אותם, הם לא ציפו לתוצאות כל כך טובות.",
+        "en": "The results surprised even the teachers who suggested the change, so they did not expect them."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.teenagers-and-sleep",
+      "source": "original"
+    },
+    {
+      "id": "rd.sleep.this-knew",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "The word \"this\" in \"and this alone may have changed their behaviour\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the fact that the students knew they were part of an experiment"
+        },
+        {
+          "id": "b",
+          "text": "the later start of the first lesson"
+        },
+        {
+          "id": "c",
+          "text": "the dark winter afternoons"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את תחילת אותו משפט.",
+          "en": "Read the beginning of the same sentence."
+        }
+      ],
+      "explanation": {
+        "he": "The students at Hollins Park knew they were part of an experiment, and this alone may have changed their behaviour. המבקרים טוענים שעצם הידיעה על הניסוי יכלה לשנות את ההתנהגות.",
+        "en": "The students knew they were in an experiment, and this fact alone may have changed their behaviour."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.teenagers-and-sleep",
+      "source": "original"
+    },
+    {
+      "id": "rd.sleep.critics",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "According to the critics, why might the results at Hollins Park not be reliable?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The students may have acted differently because they knew they were being studied."
+        },
+        {
+          "id": "b",
+          "text": "The teachers may have changed the students' marks to look better."
+        },
+        {
+          "id": "c",
+          "text": "The trial lasted too long for the results to be useful."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילה Critics.",
+          "en": "Find the word Critics."
+        }
+      ],
+      "explanation": {
+        "he": "המבקרים אומרים שבית ספר אחד הוא לא מספיק הוכחה, ושהתלמידים ידעו שהם בניסוי. ייתכן שהתנהגו אחרת בגלל זה. אין בקטע מידע על שינוי ציונים או על אורך הניסוי כבעיה.",
+        "en": "Critics say one school is not enough evidence, and students who know they are studied may behave differently."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.teenagers-and-sleep",
+      "source": "original"
+    },
+    {
+      "id": "rd.sleep.question",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "Why does the writer end the text with a question?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To make readers think about whether the school day should change"
+        },
+        {
+          "id": "b",
+          "text": "To ask scientists for more information about melatonin"
+        },
+        {
+          "id": "c",
+          "text": "To show that the Hollins Park trial failed"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "האם הכותב/ת מצפה לתשובה, או רוצה שנחשוב?",
+          "en": "Does the writer expect an answer, or want us to think?"
+        }
+      ],
+      "explanation": {
+        "he": "זו שאלה רטורית: If we know that teenage brains work on a different schedule, why do we continue...? היא גורמת לקורא/ת לחשוב שאולי צריך לשנות את סדר היום. הניסוי לא נכשל, התוצאות היו טובות.",
+        "en": "It is a rhetorical question that makes readers think the school day may need to change. The trial did not fail."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.teenagers-and-sleep",
+      "source": "original"
+    },
+    {
+      "id": "rd.algo.main",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "What is the writer's main argument?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Algorithms narrow our taste, so we should sometimes look for music ourselves."
+        },
+        {
+          "id": "b",
+          "text": "Streaming apps are dangerous, so people should delete them completely."
+        },
+        {
+          "id": "c",
+          "text": "Music was better in the days of CDs, mixtapes and small cafés."
+        },
+        {
+          "id": "d",
+          "text": "Music algorithms usually choose songs that people do not really like."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את הפסקה השלישית ואת הפסקה האחרונה.",
+          "en": "Read the third paragraph and the last one."
+        },
+        {
+          "he": "האם הכותב/ת מציע/ה למחוק את האפליקציה?",
+          "en": "Does the writer suggest deleting the app?"
+        }
+      ],
+      "explanation": {
+        "he": "our taste does not grow. It gets narrower. ובסוף: I am not suggesting that we delete our apps ... But once a week, I try to choose something the algorithm would never pick. האלגוריתם דווקא It is rarely wrong.",
+        "en": "The writer says our taste gets narrower, and suggests choosing something different once a week, not deleting apps. The algorithm is rarely wrong."
+      },
+      "interests": [
+        "music",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.let-the-algorithm-rest",
+      "source": "original"
+    },
+    {
+      "id": "rd.algo.that-problem",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "The word \"that\" in \"And that, I have come to believe, is exactly the problem\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the fact that the algorithm is rarely wrong"
+        },
+        {
+          "id": "b",
+          "text": "the writer's love of sad piano songs"
+        },
+        {
+          "id": "c",
+          "text": "the writer's habit of running with loud music"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט הקצר שלפני.",
+          "en": "Read the short sentence just before."
+        }
+      ],
+      "explanation": {
+        "he": "המשפט הקודם: It is rarely wrong. הבעיה היא דווקא שהאלגוריתם כמעט אף פעם לא טועה, ולכן נותן לנו רק עוד מאותו דבר.",
+        "en": "The sentence before: It is rarely wrong. The problem is exactly that the algorithm is almost never wrong."
+      },
+      "interests": [
+        "music",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.let-the-algorithm-rest",
+      "source": "original"
+    },
+    {
+      "id": "rd.algo.path",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "Why does the writer describe \"a path that is walked so often that the grass on either side disappears\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To show how our taste narrows when we only get more of the same"
+        },
+        {
+          "id": "b",
+          "text": "To suggest that people should listen to music while they walk"
+        },
+        {
+          "id": "c",
+          "text": "To compare music apps to maps that show us the way"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שהדימוי הזה מסיים.",
+          "en": "Read the sentence this image completes."
+        }
+      ],
+      "explanation": {
+        "he": "It gets narrower, like a path... המילה like פותחת דימוי. כמו שביל שהולכים בו שוב ושוב, הטעם שלנו נעשה צר כי שומעים רק מה שכבר אהבנו.",
+        "en": "like introduces an image. Like a path used again and again, our taste gets narrower because we only hear more of the same."
+      },
+      "interests": [
+        "music",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.let-the-algorithm-rest",
+      "source": "original"
+    },
+    {
+      "id": "rd.algo.opinion",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Which sentence from the text is an OPINION?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It is excellent at giving us what we want and terrible at giving us what we did not know we wanted."
+        },
+        {
+          "id": "b",
+          "text": "Every Monday, a streaming app presents a playlist."
+        },
+        {
+          "id": "c",
+          "text": "I still use mine every day."
+        },
+        {
+          "id": "d",
+          "text": "A teenager in a small village can listen to the same rare jazz recording as a professor in New York."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש מילים של שיפוט, כמו excellent או terrible.",
+          "en": "Look for judging words, like excellent or terrible."
+        }
+      ],
+      "explanation": {
+        "he": "excellent ו־terrible הן מילים של הערכה אישית, ולכן זו דעה. את שאר המשפטים אפשר לבדוק: מתי מגיע הפלייליסט, באיזו תדירות הכותב/ת משתמש/ת באפליקציה, ומה אפשר לשמוע ממקומות שונים.",
+        "en": "excellent and terrible are judgements, so this is an opinion. The other sentences can be checked."
+      },
+      "interests": [
+        "music",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.let-the-algorithm-rest",
+      "source": "original"
+    },
+    {
+      "id": "rd.algo.library-card",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"Having a library card does not make anyone a reader.\" What does the writer mean?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Being able to reach music is not the same as really exploring it."
+        },
+        {
+          "id": "b",
+          "text": "Libraries are no longer useful today."
+        },
+        {
+          "id": "c",
+          "text": "People should read more books instead of listening to music."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שלפני: access is not the same as discovery.",
+          "en": "Read the sentence before: access is not the same as discovery."
+        }
+      ],
+      "explanation": {
+        "he": "זו דוגמה למשפט הקודם: access is not the same as discovery. כרטיס ספרייה נותן גישה, אבל לא הופך אותך לקורא/ת. כך גם גישה לכל המוזיקה לא אומרת שמגלים מוזיקה חדשה.",
+        "en": "It illustrates access is not the same as discovery. A card gives access but does not make you a reader."
+      },
+      "interests": [
+        "music",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.let-the-algorithm-rest",
+      "source": "original"
+    },
+    {
+      "id": "rd.algo.wrong",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.8,
+      "prompt": "What does the writer mean by \"Occasionally, I am wonderfully wrong\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sometimes music the writer expected to hate turns out to be great."
+        },
+        {
+          "id": "b",
+          "text": "The writer often chooses the wrong songs for running."
+        },
+        {
+          "id": "c",
+          "text": "The algorithm sometimes makes surprising mistakes."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "במה הכותב/ת בטוח/ה? לחפש את המילים I am sure I hate.",
+          "en": "What is the writer sure about? Find I am sure I hate."
+        },
+        {
+          "he": "Most of the time, I am right about it. נכון לגבי מה?",
+          "en": "Most of the time, I am right about it. Right about what?"
+        }
+      ],
+      "explanation": {
+        "he": "הכותב/ת בוחר/ת a style of music I am sure I hate. לרוב הוא/היא צודק/ת ובאמת לא אוהב/ת. אבל לפעמים מתברר שהוא/היא טעה/תה, וזו טעות נפלאה: מגלים מוזיקה טובה. זה בדיוק ה־discovery שהכותב/ת מחפש/ת.",
+        "en": "The writer picks music they are sure they hate. Usually they are right, but sometimes they are wonderfully wrong and discover something they love."
+      },
+      "interests": [
+        "music",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.let-the-algorithm-rest",
+      "source": "original"
+    },
+    {
+      "id": "rd.rex.grandfather",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Why did Yael's grandfather probably stop talking about films after the Rex closed?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Losing the cinema made him very sad."
+        },
+        {
+          "id": "b",
+          "text": "He preferred the new multiplex."
+        },
+        {
+          "id": "c",
+          "text": "He had forgotten everything about his job."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כמה שנים הוא עבד ב־Rex?",
+          "en": "How many years did he work at the Rex?"
+        },
+        {
+          "he": "ומה הוא השאיר ל־Yael בחדר ההקרנה?",
+          "en": "And what did he leave for Yael in the projection room?"
+        }
+      ],
+      "explanation": {
+        "he": "הוא עבד שם forty years, והקולנוע היה חלק גדול מחייו. כשנסגר, he stopped talking about films altogether. אפשר להסיק שזה כאב לו. הסרטים שהשאיר for Yael מראים שהוא לא שכח דבר.",
+        "en": "He worked there forty years. When it closed he stopped talking about films, which suggests sadness. The films he left show he did not forget."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.the-projector",
+      "source": "original"
+    },
+    {
+      "id": "rd.rex.they-cans",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "The word \"They\" in \"They contained hours of home movies\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the six metal film cans"
+        },
+        {
+          "id": "b",
+          "text": "the grey sheets on the seats"
+        },
+        {
+          "id": "c",
+          "text": "the feature films"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שלפני: The cans did not contain...",
+          "en": "Read the sentence before: The cans did not contain..."
+        }
+      ],
+      "explanation": {
+        "he": "The cans did not contain feature films. They contained hours of home movies. They מחליף את the cans. לא ייתכן שזה feature films, כי נאמר שהן לא היו בפחיות.",
+        "en": "The cans did not contain feature films. They, the cans, contained home movies."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.the-projector",
+      "source": "original"
+    },
+    {
+      "id": "rd.rex.red-coat",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "Who is probably the small girl in the red coat?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Yael as a child"
+        },
+        {
+          "id": "b",
+          "text": "Yael's mother as a teenager"
+        },
+        {
+          "id": "c",
+          "text": "A child from the town that nobody knew"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איפה Yael בילתה בימי שישי כשהייתה ילדה?",
+          "en": "Where did Yael spend Friday afternoons as a child?"
+        },
+        {
+          "he": "לשים לב למה שכתוב על הפחיות: for Yael.",
+          "en": "Notice what is written on the cans: for Yael."
+        }
+      ],
+      "explanation": {
+        "he": "Yael spent Friday afternoons in the cinema as a child, והסרטים הושארו for Yael. הילדה שיושבת שוב ושוב בקולנוע ריק היא כנראה Yael. האמא מוזכרת בנפרד as a teenager.",
+        "en": "Yael spent Fridays at the cinema as a child, and the films were for Yael. The mother is mentioned separately, as a teenager."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.the-projector",
+      "source": "original"
+    },
+    {
+      "id": "rd.rex.flickered",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "In \"the first images finally flickered across the torn screen\", \"flickered\" means...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "appeared with an unsteady, flashing light"
+        },
+        {
+          "id": "b",
+          "text": "disappeared completely"
+        },
+        {
+          "id": "c",
+          "text": "made a very loud noise"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מקרן ישן מראה תמונות על מסך קרוע. איך זה נראה?",
+          "en": "An old projector shows images on a torn screen. How does it look?"
+        }
+      ],
+      "explanation": {
+        "he": "flicker פירושו להבהב, אור שרועד. המילה finally מראה שהתמונות סוף סוף הופיעו, לא נעלמו.",
+        "en": "flicker means to shine with an unsteady, flashing light. finally shows the images appeared, not disappeared."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.the-projector",
+      "source": "original"
+    },
+    {
+      "id": "rd.rex.first",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "Which of these happened FIRST?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Yael found a key in her grandfather's garage."
+        },
+        {
+          "id": "b",
+          "text": "Yael found six film cans in the projection room."
+        },
+        {
+          "id": "c",
+          "text": "A retired engineer helped Yael."
+        },
+        {
+          "id": "d",
+          "text": "The Rex opened for one night."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה Yael הייתה צריכה כדי להיכנס לקולנוע?",
+          "en": "What did Yael need to get into the cinema?"
+        }
+      ],
+      "explanation": {
+        "he": "קודם Yael מצאה את המפתח (found the key), אחר כך נכנסה ומצאה את הפחיות, אחר כך המהנדס עזר לה במשך שלושה חודשים, ו־Last month הקולנוע נפתח לערב אחד.",
+        "en": "First she found the key, then the cans, then the engineer helped her, and last month the Rex opened for one night."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.the-projector",
+      "source": "original"
+    },
+    {
+      "id": "rd.rex.phones",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "Why does the writer end with \"for two hours nobody looked at a phone\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To show how much the films held the audience's attention"
+        },
+        {
+          "id": "b",
+          "text": "To explain that phones were not allowed in the cinema"
+        },
+        {
+          "id": "c",
+          "text": "To show that there was no internet in the old cinema"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה זה אומר על הקהל, שאף אחד לא הסתכל בטלפון?",
+          "en": "What does it say about the audience that nobody looked at a phone?"
+        }
+      ],
+      "explanation": {
+        "he": "בקטע לא נאמר שהטלפונים נאסרו. העובדה שאף אחד לא הסתכל בטלפון במשך שעתיים מראה שהקהל היה מרותק לסרטים של הסבא.",
+        "en": "Nothing says phones were banned. Nobody looking at a phone for two hours shows the films held everyone's attention."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.the-projector",
+      "source": "original"
+    }
+  ],
+  "passages": [
+    {
+      "id": "passage.where-is-biscuit",
+      "title": "Where Is Biscuit?",
+      "level": "A2",
+      "text": "Hi everyone! This is my second post this week, and it has a happy ending.\n\nOn Sunday evening, our neighbour Mrs. Levi knocked on our door. She was crying. Her small brown dog, Biscuit, was missing. She left the garden gate open by mistake, and Biscuit ran out.\n\nMy brother and I made posters with Biscuit's photo and put them on trees in our street. We also shared the photo in our building's group chat. For two days, nothing happened. Then, on Tuesday morning, a boy from the next street called. He found Biscuit sleeping under a bench in the park, next to the playground. We ran there with Mrs. Levi. When Biscuit saw her, he jumped into her arms.\n\nYesterday, Mrs. Levi brought us a big chocolate cake to say thank you. It was delicious! Next time, she says, she will close the gate.",
+      "interests": [
+        "animals"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.day-without-cars",
+      "title": "A Day Without Cars",
+      "level": "A2",
+      "text": "Once a year, the small town of Green Hill has a day without cars. On this day, from eight in the morning to six in the evening, no cars or buses can drive in the town centre. People walk, ride bikes or use skateboards. The streets become very quiet, and children can play in the middle of the road.\n\nThe idea started five years ago. A group of parents wanted their children to breathe cleaner air. At first, some shop owners were worried. They thought fewer people would come to their shops. But the opposite happened. Many families came to the centre to walk around, and they bought ice cream, books and cold drinks. Now the shop owners help to plan the day.\n\nThis year, the town will also offer free bike repairs in the main square. Some people want a car-free day every month.",
+      "interests": [
+        "travel"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.noas-kitchen",
+      "title": "Noa's Kitchen",
+      "level": "A2",
+      "text": "Noa Peretz is fifteen years old, and she already has her own cooking show on the internet.\n\nIt all started when she was eleven. Her grandmother broke her arm and could not cook, so Noa helped her in the kitchen every afternoon. Her grandmother explained each step, and Noa wrote everything in a notebook.\n\nA year later, Noa's older brother filmed her making her grandmother's lentil soup. He put the video online, and thousands of people watched it. Today, Noa makes a new video every Friday. She cooks simple dishes that teenagers can make at home with cheap ingredients.\n\nNoa does not want to be a chef. \"I want to be a doctor,\" she says. \"Cooking is my hobby, and it helps me relax after school.\" Her grandmother is still her biggest fan. She watches every video twice.",
+      "interests": [
+        "food"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rainy-final",
+      "title": "The Rainy Final",
+      "level": "A2",
+      "text": "It was the last game of the season, and it was raining hard. Tom's team, the Blue Hawks, needed only one point to win the league. Tom was the goalkeeper. He was nervous, because in the last game he made a big mistake and the other team scored.\n\nIn the first half, nobody scored. The ball was heavy and the grass was wet, so the players kept falling. In the second half, the other team's best player ran toward the goal and kicked the ball very hard. Tom jumped to the left and caught it with both hands. His teammates shouted his name.\n\nThe game ended 0-0. One point was enough, and the Blue Hawks were the champions. After the game, the coach gave Tom the ball. \"You earned this,\" she said. Tom smiled. He was wet and cold, but he did not care.",
+      "interests": [
+        "sports"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.phones-off-heads-up",
+      "title": "Phones Off, Heads Up",
+      "level": "B1",
+      "text": "Last September, our school decided that students must keep their phones in their lockers from the first bell until the last. Many students were angry, and I was one of them. I was sure the new rule would make school boring and stressful. Six months later, I have changed my mind. I believe it is one of the best decisions our school has ever made.\n\nThe first change I noticed was during the breaks. Before the rule, the schoolyard was strangely quiet. Everyone sat on benches, looking down at a screen. Now the yard is noisy again. People play basketball, argue about music and even talk to students from other classes. According to the school counsellor, the number of fights that started online has dropped by half since September.\n\nThe second change happened in class. Without a phone buzzing in my pocket, I find it much easier to concentrate. My grades in maths have gone up, although I admit that my new private teacher may also be part of the reason.\n\nOf course, the rule is not perfect. Some parents complain that they cannot reach their children during the day. In my opinion, the school office could solve this easily by passing on urgent messages.\n\nPhones are wonderful tools, but we do not need them every minute. Sometimes the best thing a screen can do for us is stay dark.",
+      "interests": [
+        "school",
+        "technology"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.gardeners-under-the-sea",
+      "title": "Gardeners Under the Sea",
+      "level": "B1",
+      "text": "Off the coast of a small fishing village called Port Amari, a group of volunteer divers spends every Saturday working in an unusual garden. The garden is ten metres under the sea, and instead of flowers, they grow coral.\n\nCoral reefs look like colourful rocks, but they are actually made of millions of tiny animals. Reefs are home to about a quarter of all kinds of sea life, even though they cover less than one percent of the sea floor. Sadly, many reefs around the world are dying. When the water becomes too warm, the coral loses its colour and often dies. Scientists call this \"bleaching\".\n\nThe Port Amari project began in 2019, after a storm destroyed much of the local reef. The divers collect small broken pieces of living coral and tie them to metal frames that look like underwater tables. When the pieces have grown large enough, the divers move them back onto the reef.\n\nThe work is slow. A piece of coral the size of a finger may need twelve months to grow as big as a hand. Not every piece survives, either: in the first year, almost half of them died. Since then, the divers have learned which kinds of coral grow best in their bay.\n\nToday, fish are slowly returning to the reef, and so are the tourists who come to watch them. \"We cannot save every reef,\" says the project leader, Dalia Moss, \"but we can give ours a second chance.\"",
+      "interests": [
+        "science",
+        "animals"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.greetings-from-lyon",
+      "title": "Greetings from Lyon",
+      "level": "B1",
+      "text": "Subject: Greetings from Lyon!\n\nHi Yoav,\n\nSorry I haven't written for so long. The last three weeks have been crazy, but in a good way!\n\nAs you know, I'm spending the semester at a school in Lyon, France, as part of an exchange programme. I'm staying with the Moreau family. They have two kids: Camille, who is my age, and Hugo, who is eight and never stops asking me questions about Israel. On my first evening, he wanted to know if I ride a camel to school. I told him I take the bus, like him. He looked really disappointed!\n\nSchool here is very different. Lessons start at eight and finish at five, and lunch takes almost two hours. At first I thought it was a waste of time, but now I love it. Everyone sits together and actually talks. The food is excellent, too, although I still can't get used to eating cheese after every meal.\n\nThe hardest part is the language. I studied French for a year before I came, but people speak so fast that I sometimes understand only half. Camille helps me a lot. Every evening we sit together: I help her with her English homework, and she corrects my French.\n\nI'll be back on 20 December. Can we meet during the holiday? I've got a small present for you, but I won't tell you what it is!\n\nWrite soon,\nDaniel",
+      "interests": [
+        "travel",
+        "school"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.runner-who-started-late",
+      "title": "The Runner Who Started Late",
+      "level": "B1",
+      "text": "Most professional athletes begin training as children. Lena Varga did not run her first race until she was thirty-one.\n\nLena grew up in a small town, where she later worked as a bank clerk. She describes her younger self as \"the girl who always had a note to get out of sports lessons\". Everything changed in 2009, when her doctor told her that she needed to lower her blood pressure. He suggested walking for thirty minutes a day. Lena began walking to work instead of taking the tram, and after a few months, she started to jog part of the way.\n\nIn 2011, a colleague persuaded her to enter a ten-kilometre charity run. She finished in the top twenty, ahead of many runners who had trained for years. A local coach who saw the race offered to train her for free. Within three years, Lena had moved up to the marathon, and in 2015 she won her country's marathon championship at the age of thirty-five.\n\nLena never reached the Olympics. A knee injury in 2016 ended her professional career. However, she says she has no regrets. Today she runs a club for adults who have never done any sport before. \"People tell me they are too old or too slow,\" she says. \"I tell them that I was both.\"",
+      "interests": [
+        "sports"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.robot-at-the-library",
+      "title": "The Robot at the Library",
+      "level": "B1",
+      "text": "When the public library in Riverton got a robot last spring, many people expected something from a science-fiction film. Instead, they met Pip: a white machine about one metre tall, with a round screen for a face and two wheels instead of legs.\n\nPip's main job is to help visitors find books. A visitor can say the title or the name of the writer, and Pip shows on its screen where the book is. Then it rolls slowly to the right shelf and waits there with a little light flashing. Pip can also tell children stories in four languages and remind visitors when their books are due.\n\nThe librarians were nervous at first. Some of them worried that the robot would replace them. \"That hasn't happened,\" says head librarian Omar Haddad. \"Pip answers the simple questions, like where the toilets are, about two hundred times a day. That gives us more time for the interesting work, such as helping a student with a research project or finding the right book for a child who hates reading.\"\n\nPip is not perfect. It cannot climb stairs, so it only works on the ground floor, and it sometimes misunderstands people who speak quickly or quietly. Last month it led an elderly man who was looking for a book about gardens to the section on war history.\n\nStill, visits to the library have risen by fifteen percent since Pip arrived, and the library plans to buy a second robot next year.",
+      "interests": [
+        "technology",
+        "books"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.bell-of-marrow-bay",
+      "title": "The Bell of Marrow Bay",
+      "level": "B2",
+      "text": "Every evening at sunset, someone in Marrow Bay, a fishing town on a rocky northern coast, rings a bronze bell on the cliff above the harbour. Visitors usually assume it is a church bell. In fact, its history is far more practical, and far more tragic.\n\nIn the winter of 1781, a sudden storm caught eleven fishing boats outside the harbour. Thick fog came in with the wind, and the fishermen, unable to see the narrow entrance between the rocks, sailed in circles for hours. Only four boats came home. The following spring, the town's widows sold their wedding rings and silver to pay for a bell. On foggy nights, someone would ring it every few minutes until the last boat was safe, so that the sailors could follow the sound.\n\nFor generations, the job of bell-ringer passed from parent to child within the Aldren family. The most famous of them, Margit Aldren, is said to have rung the bell for nineteen hours without a break during the great fog of 1852, saving the entire fleet. Whether the story is entirely true is uncertain, since the town's records from that year were lost in a fire. What is certain is that the bell became the town's symbol, appearing on its flag and even on the labels of its tinned fish.\n\nWhen a lighthouse with an electric foghorn was built in 1968, the bell was no longer needed. The town council voted to take it down and sell it, but the decision caused such anger that it was reversed within a week. Instead, the council agreed that the bell would be rung once a day, at sunset, in memory of those lost at sea.\n\nToday, few residents still fish for a living, and most of the young people have moved to the cities. Yet every evening, someone climbs the cliff path and rings the bell, even when there is no boat in the harbour to hear it.",
+      "interests": [
+        "travel",
+        "books"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.teenagers-and-sleep",
+      "title": "Why Teenagers Can't Fall Asleep",
+      "level": "B2",
+      "text": "Parents often complain that teenagers stay up too late and then cannot get out of bed in the morning. It is easy to see this as laziness. Sleep researchers, however, argue that the problem is largely biological.\n\nDuring adolescence, the body's internal clock shifts. Melatonin, the hormone that makes us feel sleepy, starts to be released later in the evening than it is in children or adults. As a result, many teenagers simply do not feel tired until eleven o'clock or even midnight. Since most of them still need between eight and ten hours of sleep, an alarm at half past six leaves them in a state of permanent jet lag.\n\nSome schools have started to take this seriously. At Hollins Park, a secondary school that took part in a two-year trial, the first lesson was moved from 8:00 to 9:15. The results surprised even the teachers who had suggested the change. Students slept, on average, forty minutes longer. Fewer of them arrived late, and their marks in morning lessons improved. Perhaps most interestingly, the school nurse reported fewer visits from students complaining of headaches and stress.\n\nNot everyone was convinced. Some parents found it difficult to organise their own working day around the new timetable, and the sports teams had to train later in the afternoon, when it was already getting dark in winter. Critics also point out that a single school is not enough evidence. The students at Hollins Park knew they were part of an experiment, and this alone may have changed their behaviour.\n\nStill, the trial raises an uncomfortable question. If we know that teenage brains work on a different schedule, why do we continue to design the school day around the needs of adults?",
+      "interests": [
+        "science",
+        "school"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.let-the-algorithm-rest",
+      "title": "Let the Algorithm Rest",
+      "level": "B2",
+      "text": "I used to discover music by accident: a song on a friend's mixtape, a band playing in the corner of a café, a CD with a strange cover that I bought because I liked the colours. Most of those accidents were disappointing. A few changed my life.\n\nToday, my phone discovers music for me. Every Monday, a streaming app presents a playlist that it claims was \"made just for you\", and the frightening thing is that it usually is. The algorithm knows that I like sad piano songs in the evening and loud guitars when I go running. It is rarely wrong. And that, I have come to believe, is exactly the problem.\n\nAn algorithm learns from what we have already enjoyed, so it tends to offer more of the same. It is excellent at giving us what we want and terrible at giving us what we did not know we wanted. Over time, our taste does not grow. It gets narrower, like a path that is walked so often that the grass on either side disappears.\n\nSupporters of streaming will reply that never in history has so much music been so easy to reach, and they are right. A teenager in a small village can listen to the same rare jazz recording as a professor in New York. But access is not the same as discovery. Having a library card does not make anyone a reader.\n\nI am not suggesting that we delete our apps. I still use mine every day. But once a week, I try to choose something the algorithm would never pick for me: a radio station from another country, an album recommended by my grandmother, a style of music I am sure I hate. Most of the time, I am right about it. Occasionally, I am wonderfully wrong.",
+      "interests": [
+        "music",
+        "technology"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.the-projector",
+      "title": "The Projector",
+      "level": "B2",
+      "text": "The Rex Cinema had been closed for eleven years when Yael found the key. It was in a biscuit tin in her grandfather's garage, tied to a paper label in his small, careful handwriting: Rex, side door.\n\nHer grandfather had been the cinema's projectionist for forty years. As a child, Yael had spent Friday afternoons in his tiny room at the back of the hall, watching dust dance in the beam of light while he changed the heavy reels. When the Rex closed, unable to compete with the multiplex in the new shopping centre, he stopped talking about films altogether. He died the following spring.\n\nThe side door opened more easily than she expected. Inside, the seats were covered in grey sheets, and the air smelled of damp carpet. But the projection room was exactly as she remembered it. The old machine stood under a plastic cover, and beside it, on a shelf, were six metal film cans, each labelled with a date and the words \"for Yael\".\n\nIt took her three months, and the help of a retired engineer she found online, to make the projector work again. When the first images finally flickered across the torn screen, she understood. The cans did not contain feature films. They contained hours of home movies: her mother as a teenager, her grandparents dancing at a wedding, and, again and again, a small girl in a red coat sitting in the front row of an empty cinema, laughing at cartoons.\n\nLast month, the Rex opened its doors for one night. Three hundred people from the town came, many of whom had had their first date in those seats. Yael did not show a new blockbuster. She showed her grandfather's films, and for two hours nobody looked at a phone.",
+      "interests": [
+        "movies"
+      ],
+      "source": "original"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.reading-main-idea",
+      "skill": "reading.main-idea",
+      "level": "A2",
+      "title": {
+        "he": "איך ניגשים ל־unseen ומוצאים את הרעיון המרכזי",
+        "en": "Approaching an Unseen Text: the Main Idea"
+      },
+      "goal": "לדעת איך לקרוא קטע לא מוכר בצורה מסודרת ולמצוא את הרעיון המרכזי שלו.",
+      "blocks": [
+        {
+          "kind": "text",
+          "he": "ב־unseen לא צריך להבין כל מילה. המטרה היא לענות על השאלות, ולכל תשובה יש הוכחה בקטע. קוראים בשלבים, ולא נבהלים ממילים לא מוכרות."
+        },
+        {
+          "kind": "table",
+          "head": [
+            "שלב",
+            "מה עושים"
+          ],
+          "rows": [
+            [
+              "1. כותרת",
+              "קוראים את הכותרת ומנחשים על מה הקטע."
+            ],
+            [
+              "2. שאלות",
+              "עוברים על השאלות לפני הקריאה, כדי לדעת מה מחפשים."
+            ],
+            [
+              "3. קריאה ראשונה",
+              "קוראים את כל הקטע ברצף, בלי לעצור על כל מילה."
+            ],
+            [
+              "4. תשובות",
+              "לכל שאלה חוזרים לחלק המתאים בקטע ומחפשים הוכחה."
+            ]
+          ]
+        },
+        {
+          "kind": "rule",
+          "he": "הרעיון המרכזי הוא מה שכל הקטע אומר יחד, לא פרט אחד",
+          "pattern": "main idea = what the whole text is about"
+        },
+        {
+          "kind": "text",
+          "he": "איפה מחפשים? בדרך כלל בכותרת, במשפט הראשון ובפסקה האחרונה. גם מילה שחוזרת שוב ושוב בקטע רומזת על הנושא.",
+          "en": "Look at the title, the first sentence, the last paragraph and repeated words."
+        },
+        {
+          "kind": "examples",
+          "items": [
+            {
+              "en": "Our town has a new bike path. It goes from the station to the beach. Many people now ride to work.",
+              "he": "הרעיון המרכזי: שביל האופניים החדש בעיר.",
+              "note": "המשפט הראשון נותן את הנושא"
+            },
+            {
+              "en": "Bees visit flowers. They carry pollen from one plant to another. Without bees, many fruits would not grow.",
+              "he": "הרעיון המרכזי: הדבורים חשובות לצמחים ולפירות.",
+              "note": "המשפט האחרון מסכם"
+            }
+          ]
+        },
+        {
+          "kind": "mistake",
+          "wrong": "Main idea: The bike path goes to the beach.",
+          "right": "Main idea: The town has a new bike path that many people use.",
+          "he": "טעות נפוצה היא לבחור פרט נכון מהקטע. הוא נכון, אבל הוא לא מה שכל הקטע מדבר עליו."
+        },
+        {
+          "kind": "tip",
+          "he": "כדי לבדוק תשובה של main idea, אפשר לשאול: האם התשובה הזאת מתאימה לכל הפסקאות, או רק לאחת מהן? אם רק לאחת, זה פרט."
+        }
+      ],
+      "source": "original"
+    },
+    {
+      "id": "lesson.reading-inference",
+      "skill": "reading.inference",
+      "level": "B1",
+      "title": {
+        "he": "להסיק מסקנות מהטקסט",
+        "en": "Making Inferences"
+      },
+      "goal": "להבין מה הטקסט אומר בלי לומר במפורש, ולמצוא את הרמזים שמוכיחים את זה.",
+      "blocks": [
+        {
+          "kind": "text",
+          "he": "לפעמים הכותב/ת לא אומר/ת משהו ישירות, אבל נותן/ת רמזים. להסיק (infer) פירושו לחבר את הרמזים ולהגיע למסקנה. בשאלות כאלה מופיעות מילים כמו probably, suggest, we can understand, what does the writer mean."
+        },
+        {
+          "kind": "rule",
+          "he": "רמז מהטקסט + היגיון = מסקנה",
+          "pattern": "clue in the text + logic = inference"
+        },
+        {
+          "kind": "table",
+          "head": [
+            "Clue",
+            "Inference"
+          ],
+          "rows": [
+            [
+              "She checked her watch for the fifth time.",
+              "She is waiting and impatient."
+            ],
+            [
+              "He left the restaurant without finishing his food.",
+              "He did not like the food, or he was in a hurry."
+            ],
+            [
+              "The streets were wet and people carried umbrellas.",
+              "It was raining or had just rained."
+            ]
+          ]
+        },
+        {
+          "kind": "examples",
+          "items": [
+            {
+              "en": "Dana smiled when she opened the letter, then called her mother right away.",
+              "he": "אפשר להסיק שבמכתב היו חדשות טובות.",
+              "note": "smiled + called right away"
+            },
+            {
+              "en": "Nobody in the class had heard of the new teacher before.",
+              "he": "אפשר להסיק שהמורה חדש/ה בבית הספר.",
+              "note": "had heard of ... before"
+            }
+          ]
+        },
+        {
+          "kind": "mistake",
+          "wrong": "He left without finishing his food, so he was sick.",
+          "right": "He left without finishing his food, so maybe he did not like it or was in a hurry.",
+          "he": "מסקנה צריכה להיות מבוססת על הטקסט. תשובה שנשמעת הגיונית בחיים, אבל אין לה רמז בקטע, היא טעות."
+        },
+        {
+          "kind": "tip",
+          "he": "לפני שבוחרים תשובה, כדאי למצוא בקטע את המילים שמוכיחות אותה. אם אי אפשר להצביע על רמז, כנראה זו לא התשובה. מילים כמו but, yet, still מסמנות לעיתים קרובות רמז חשוב."
+        }
+      ],
+      "source": "original"
+    },
+    {
+      "id": "lesson.reading-reference",
+      "skill": "reading.reference",
+      "level": "A2",
+      "title": {
+        "he": "מילות הפניה: למי זה מתייחס?",
+        "en": "Reference Words"
+      },
+      "goal": "לזהות למה מתייחסות מילים כמו it, they, this ו־which בטקסט.",
+      "blocks": [
+        {
+          "kind": "text",
+          "he": "כדי לא לחזור על אותה מילה, האנגלית משתמשת במילות הפניה. כדי להבין את הטקסט צריך לדעת על מי או על מה הן מדברות. בדרך כלל התשובה נמצאת לפני המילה, במשפט הקודם או באותו משפט."
+        },
+        {
+          "kind": "table",
+          "head": [
+            "Word",
+            "מתייחס ל..."
+          ],
+          "rows": [
+            [
+              "he / him / his",
+              "זכר אחד (או חיה עם שם)"
+            ],
+            [
+              "she / her",
+              "נקבה אחת"
+            ],
+            [
+              "it / its",
+              "דבר אחד, חיה או רעיון"
+            ],
+            [
+              "they / them / their",
+              "כמה אנשים או דברים"
+            ],
+            [
+              "this / that",
+              "דבר או רעיון שלם שהוזכר קודם"
+            ],
+            [
+              "which / who",
+              "המילה שבאה ממש לפני"
+            ]
+          ]
+        },
+        {
+          "kind": "rule",
+          "he": "בודקים את התשובה: מחליפים את המילה בתשובה וקוראים שוב",
+          "pattern": "They decided to stay. → The players decided to stay."
+        },
+        {
+          "kind": "examples",
+          "items": [
+            {
+              "en": "The students planted trees. They watered them every day.",
+              "he": "They = the students, them = the trees",
+              "note": "מי משקה ומה מושקה"
+            },
+            {
+              "en": "Parents cannot call their kids during class. The office could solve this.",
+              "he": "this = הבעיה שהורים לא יכולים להתקשר",
+              "note": "this מחליף רעיון שלם"
+            }
+          ]
+        },
+        {
+          "kind": "mistake",
+          "wrong": "Tom gave the ball to his brother. He was happy. (He = the ball)",
+          "right": "He = Tom or his brother. The ball cannot be happy.",
+          "he": "לא בוחרים אוטומטית את שם העצם הקרוב ביותר. בודקים גם מספר (יחיד או רבים), מין, והאם זה הגיוני."
+        },
+        {
+          "kind": "tip",
+          "he": "בעברית לפעמים משמיטים את הנושא (\"הלכתי\"), אבל באנגלית תמיד יש נושא. לכן יש באנגלית הרבה מילות הפניה, וכדאי לעצור ולשאול: מי זה?"
+        }
+      ],
+      "source": "original"
+    }
+  ]
+}

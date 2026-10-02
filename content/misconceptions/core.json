@@ -1,0 +1,278 @@
+[
+  {
+    "id": "quantifiers.much-many",
+    "skill": "grammar.quantifiers",
+    "note": {
+      "he": "מתבלבל/ת בין much ל־many",
+      "en": "Confuses much and many"
+    },
+    "tip": {
+      "he": "many עם דברים שאפשר לספור (books, friends). much עם דברים שלא סופרים (water, time).",
+      "en": "many + countable nouns (books, friends). much + uncountable nouns (water, time)."
+    }
+  },
+  {
+    "id": "past-simple.overregularization",
+    "skill": "grammar.past-simple.irregular",
+    "note": {
+      "he": "מוסיף/ה ed לפעלים חריגים (goed, buyed)",
+      "en": "Adds -ed to irregular verbs (goed, buyed)"
+    },
+    "tip": {
+      "he": "לפעלים חריגים יש צורת עבר משלהם: go → went, buy → bought. כדאי לשנן אותם בקבוצות קטנות.",
+      "en": "Irregular verbs have their own past form: go → went, buy → bought. Learn them in small groups."
+    }
+  },
+  {
+    "id": "past-simple.did-plus-past",
+    "skill": "grammar.past-simple.questions-negatives",
+    "note": {
+      "he": "משתמש/ת בפועל בעבר אחרי did",
+      "en": "Uses a past verb after did"
+    },
+    "tip": {
+      "he": "did כבר מסמן עבר. אחריו בא הפועל בצורת הבסיס: Did you go? ולא Did you went?",
+      "en": "did already shows the past. Use the base verb after it: Did you go?, not Did you went?"
+    }
+  },
+  {
+    "id": "present-simple.missing-s",
+    "skill": "grammar.present-simple.third-person",
+    "note": {
+      "he": "שוכח/ת s בגוף שלישי יחיד",
+      "en": "Forgets -s with he / she / it"
+    },
+    "tip": {
+      "he": "he, she, it בהווה פשוט: מוסיפים s לפועל. She walks, He plays.",
+      "en": "With he, she, it in the Present Simple, add -s: She walks, He plays."
+    }
+  },
+  {
+    "id": "present-simple.do-does",
+    "skill": "grammar.present-simple.questions-negatives",
+    "note": {
+      "he": "מתבלבל/ת בין do ל־does",
+      "en": "Confuses do and does"
+    },
+    "tip": {
+      "he": "does עם he, she, it. do עם I, you, we, they.",
+      "en": "does with he, she, it. do with I, you, we, they."
+    }
+  },
+  {
+    "id": "present-perfect.hebrew-present",
+    "skill": "grammar.present-perfect",
+    "note": {
+      "he": "משתמש/ת בהווה פשוט למשהו שנמשך עד עכשיו (כמו בעברית)",
+      "en": "Uses the Present Simple for something that continues until now (as in Hebrew)"
+    },
+    "tip": {
+      "he": "בעברית אומרים \"אני גר פה חמש שנים\". באנגלית: I have lived here for five years.",
+      "en": "In Hebrew we use the present. In English: I have lived here for five years."
+    }
+  },
+  {
+    "id": "present-perfect.with-past-time",
+    "skill": "grammar.present-perfect.vs-past-simple",
+    "note": {
+      "he": "משתמש/ת ב־Present Perfect עם זמן עבר מוגדר (yesterday, last year)",
+      "en": "Uses the Present Perfect with a finished time (yesterday, last year)"
+    },
+    "tip": {
+      "he": "כשיש זמן עבר מוגדר, כמו yesterday או in 2020, משתמשים ב־Past Simple.",
+      "en": "With a finished time like yesterday or in 2020, use the Past Simple."
+    }
+  },
+  {
+    "id": "present-perfect.past-participle",
+    "skill": "grammar.present-perfect",
+    "note": {
+      "he": "משתמש/ת בצורת עבר במקום בצורה השלישית אחרי have",
+      "en": "Uses the past form instead of the past participle after have"
+    },
+    "tip": {
+      "he": "אחרי have / has באה הצורה השלישית: have been, have seen, have gone.",
+      "en": "After have / has use the third form: have been, have seen, have gone."
+    }
+  },
+  {
+    "id": "present-perfect.for-since",
+    "skill": "grammar.present-perfect",
+    "note": {
+      "he": "מתבלבל/ת בין for ל־since",
+      "en": "Confuses for and since"
+    },
+    "tip": {
+      "he": "for עם משך זמן (for two years). since עם נקודת התחלה (since 2015).",
+      "en": "for + a length of time (for two years). since + a starting point (since 2015)."
+    }
+  },
+  {
+    "id": "conditionals.will-in-if-clause",
+    "skill": "grammar.conditionals.first",
+    "note": {
+      "he": "מכניס/ה will אחרי if",
+      "en": "Puts will after if"
+    },
+    "tip": {
+      "he": "בחלק של if משתמשים בהווה: If it rains, we will stay home.",
+      "en": "Use the present after if: If it rains, we will stay home."
+    }
+  },
+  {
+    "id": "relative.which-for-people",
+    "skill": "grammar.relative-clauses",
+    "note": {
+      "he": "משתמש/ת ב־which לאנשים",
+      "en": "Uses which for people"
+    },
+    "tip": {
+      "he": "who לאנשים, which לדברים.",
+      "en": "who for people, which for things."
+    }
+  },
+  {
+    "id": "gerund-infinitive.choice",
+    "skill": "grammar.gerunds-infinitives",
+    "note": {
+      "he": "מתבלבל/ת בין ing ל־to אחרי פעלים",
+      "en": "Mixes up -ing and to after verbs"
+    },
+    "tip": {
+      "he": "יש פעלים שבאים עם ing (enjoy, finish) ויש פעלים שבאים עם to (decide, want). כדאי ללמוד אותם כזוגות.",
+      "en": "Some verbs take -ing (enjoy, finish), others take to (decide, want). Learn them as pairs."
+    }
+  },
+  {
+    "id": "articles.missing-a",
+    "skill": "grammar.articles",
+    "note": {
+      "he": "משמיט/ה a לפני מקצוע או דבר אחד (כמו בעברית)",
+      "en": "Leaves out a before a job or a single thing (as in Hebrew)"
+    },
+    "tip": {
+      "he": "בעברית אומרים \"היא מורה\". באנגלית: She is a teacher.",
+      "en": "In Hebrew there is no a. In English: She is a teacher."
+    }
+  },
+  {
+    "id": "articles.a-an",
+    "skill": "grammar.articles",
+    "note": {
+      "he": "מתבלבל/ת בין a ל־an",
+      "en": "Confuses a and an"
+    },
+    "tip": {
+      "he": "an לפני צליל של תנועה: an apple, an engineer, an hour.",
+      "en": "Use an before a vowel sound: an apple, an engineer, an hour."
+    }
+  },
+  {
+    "id": "prepositions.time",
+    "skill": "grammar.prepositions",
+    "note": {
+      "he": "מתבלבל/ת בין in, on ו־at בזמנים",
+      "en": "Confuses in, on and at for time"
+    },
+    "tip": {
+      "he": "in לחודשים ושנים, on לימים ותאריכים, at לשעות.",
+      "en": "in for months and years, on for days and dates, at for clock times."
+    }
+  },
+  {
+    "id": "comparatives.double",
+    "skill": "grammar.comparatives",
+    "note": {
+      "he": "מחבר/ת more עם er (more easier)",
+      "en": "Combines more with -er (more easier)"
+    },
+    "tip": {
+      "he": "מילה קצרה מקבלת er. מילה ארוכה מקבלת more. לא את שניהם.",
+      "en": "Short words take -er. Long words take more. Never both."
+    }
+  },
+  {
+    "id": "word-order.adjective-after-noun",
+    "skill": "grammar.word-order",
+    "note": {
+      "he": "שם תואר אחרי שם העצם (כמו בעברית)",
+      "en": "Puts the adjective after the noun (as in Hebrew)"
+    },
+    "tip": {
+      "he": "באנגלית התואר בא לפני שם העצם: a good student.",
+      "en": "In English the adjective comes before the noun: a good student."
+    }
+  },
+  {
+    "id": "connectors.contrast-cause",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "מתבלבל/ת בין מילת ניגוד (although) למילת סיבה (because)",
+      "en": "Confuses contrast (although) with cause (because)"
+    },
+    "tip": {
+      "he": "although = למרות ש. because = כי. כדאי לשאול: יש כאן ניגוד או סיבה?",
+      "en": "although shows contrast. because shows a reason. Ask: is this a contrast or a reason?"
+    }
+  },
+  {
+    "id": "passive.form",
+    "skill": "grammar.passive",
+    "note": {
+      "he": "בונה סביל בלי be או בלי הצורה השלישית",
+      "en": "Builds the passive without be or without the past participle"
+    },
+    "tip": {
+      "he": "סביל = be + צורה שלישית: was written, is made.",
+      "en": "Passive = be + past participle: was written, is made."
+    }
+  },
+  {
+    "id": "past-progressive.interrupted",
+    "skill": "grammar.past-progressive",
+    "note": {
+      "he": "לא משתמש/ת בעבר מתמשך לפעולה שנקטעה",
+      "en": "Does not use the Past Progressive for an interrupted action"
+    },
+    "tip": {
+      "he": "פעולה ארוכה שנקטעה: was / were + ing. I was watching TV when the phone rang.",
+      "en": "For a long action that was interrupted: was / were + -ing."
+    }
+  },
+  {
+    "id": "vocabulary.borrow-lend",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "מתבלבל/ת בין borrow ל־lend",
+      "en": "Confuses borrow and lend"
+    },
+    "tip": {
+      "he": "borrow = לקחת בהשאלה. lend = לתת בהשאלה. Can I borrow your pen? / Can you lend me your pen?",
+      "en": "borrow = take for a while. lend = give for a while."
+    }
+  },
+  {
+    "id": "listening.vowel-length",
+    "skill": "listening.words",
+    "note": {
+      "he": "לא מבחין/ה בין תנועה קצרה לארוכה (ship / sheep)",
+      "en": "Does not hear short vs long vowels (ship / sheep)"
+    },
+    "tip": {
+      "he": "בעברית אין הבדל בין i קצרה לארוכה. כדאי להקשיב שוב ולשים לב לאורך הצליל.",
+      "en": "Hebrew has no short/long i contrast. Listen again for the length of the sound."
+    }
+  },
+  {
+    "id": "word-order.sentence",
+    "skill": "grammar.word-order",
+    "note": {
+      "he": "בונה משפט עם המילים הנכונות בסדר שגוי",
+      "en": "Uses the right words in the wrong order"
+    },
+    "tip": {
+      "he": "באנגלית הסדר הבסיסי הוא: נושא, פועל, משלים, ואחר כך מקום וזמן.",
+      "en": "Basic English order: subject, verb, object, then place and time."
+    }
+  }
+]

@@ -1,0 +1,6744 @@
+{
+  "packId": "bagrut-mix",
+  "schemaVersion": 1,
+  "title": "Bagrut mix: connectors, collocations, meaning, confusing words",
+  "items": [
+    {
+      "id": "bg.conn.so-hungry",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.2,
+      "prompt": "I was hungry, ___ I made a sandwich.",
+      "audioText": "I was hungry, so I made a sandwich.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "so"
+        },
+        {
+          "id": "b",
+          "text": "because",
+          "misconception": "connectors.cause-result"
+        },
+        {
+          "id": "c",
+          "text": "but"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה בא קודם: הרעב או הכריך?",
+          "en": "What came first: the hunger or the sandwich?"
+        }
+      ],
+      "explanation": {
+        "he": "החלק השני הוא תוצאה של הראשון: הייתי רעב/ה ולכן הכנתי כריך. לתוצאה משתמשים ב־so.",
+        "en": "The second part is a result of the first, so we use so."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.because-rain",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.2,
+      "prompt": "We stayed at home ___ it was raining.",
+      "audioText": "We stayed at home because it was raining.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "because"
+        },
+        {
+          "id": "b",
+          "text": "so",
+          "misconception": "connectors.cause-result"
+        },
+        {
+          "id": "c",
+          "text": "but"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "החלק השני מסביר למה נשארנו בבית?",
+          "en": "Does the second part explain why we stayed home?"
+        }
+      ],
+      "explanation": {
+        "he": "הגשם הוא הסיבה שנשארנו בבית. לסיבה משתמשים ב־because. so היה הופך את הסדר: הגשם היה תוצאה.",
+        "en": "The rain is the reason, so we use because."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.but-football",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.2,
+      "prompt": "My brother likes football, ___ I prefer basketball.",
+      "audioText": "My brother likes football, but I prefer basketball.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "but"
+        },
+        {
+          "id": "b",
+          "text": "so"
+        },
+        {
+          "id": "c",
+          "text": "because",
+          "misconception": "connectors.contrast-cause"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "שני האנשים אוהבים אותו דבר או דברים שונים?",
+          "en": "Do the two people like the same thing or different things?"
+        }
+      ],
+      "explanation": {
+        "he": "יש כאן ניגוד בין שני אנשים. לניגוד משתמשים ב־but.",
+        "en": "There is a contrast between two people, so we use but."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.and-guitar",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.1,
+      "prompt": "She plays the piano ___ the guitar.",
+      "audioText": "She plays the piano and the guitar.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "and"
+        },
+        {
+          "id": "b",
+          "text": "so"
+        },
+        {
+          "id": "c",
+          "text": "because"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "היא מנגנת בשני כלים. מה מחבר ביניהם?",
+          "en": "She plays two instruments. What joins them?"
+        }
+      ],
+      "explanation": {
+        "he": "מוסיפים עוד פריט לרשימה, ולכן and.",
+        "en": "We add another item, so we use and."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.or-hurry",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Hurry up, ___ you'll miss the bus.",
+      "audioText": "Hurry up, or you'll miss the bus.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "or"
+        },
+        {
+          "id": "b",
+          "text": "so"
+        },
+        {
+          "id": "c",
+          "text": "because"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה יקרה אם לא ממהרים?",
+          "en": "What will happen if you don't hurry?"
+        }
+      ],
+      "explanation": {
+        "he": "or אחרי בקשה פירושו 'אחרת': אם לא ממהרים, מפספסים את האוטובוס.",
+        "en": "After a request, or means 'if not': if you don't hurry, you'll miss the bus."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.although-test",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "___ the test was hard, Noa got a good grade.",
+      "audioText": "Although the test was hard, Noa got a good grade.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Although"
+        },
+        {
+          "id": "b",
+          "text": "Because",
+          "misconception": "connectors.contrast-cause"
+        },
+        {
+          "id": "c",
+          "text": "So"
+        },
+        {
+          "id": "d",
+          "text": "Despite",
+          "misconception": "connectors.despite-clause"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מבחן קשה וציון טוב. זה מפתיע או צפוי?",
+          "en": "A hard test and a good grade. Is that surprising or expected?"
+        }
+      ],
+      "explanation": {
+        "he": "יש כאן ניגוד מפתיע, ואחרי המילה בא משפט שלם (the test was hard). לכן Although. despite בא רק עם שם עצם או עם ing, לא עם משפט שלם.",
+        "en": "The result is surprising and a full clause follows, so Although. Despite needs a noun or an -ing form, not a clause."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.although-trained",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "___ he trained every day, he didn't win the race.",
+      "audioText": "Although he trained every day, he didn't win the race.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Although"
+        },
+        {
+          "id": "b",
+          "text": "Because",
+          "misconception": "connectors.contrast-cause"
+        },
+        {
+          "id": "c",
+          "text": "Despite",
+          "misconception": "connectors.despite-clause"
+        },
+        {
+          "id": "d",
+          "text": "Unless",
+          "misconception": "connectors.unless-if"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "התאמן כל יום ולא ניצח. זה צפוי?",
+          "en": "He trained every day and didn't win. Is that expected?"
+        }
+      ],
+      "explanation": {
+        "he": "מצפים שאימון יביא לניצחון, אבל זה לא קרה. זה ניגוד, ואחריו משפט שלם, לכן Although.",
+        "en": "We expect training to bring a win, but it didn't. Contrast + full clause = Although."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.because-party",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "I couldn't sleep ___ my neighbors were having a loud party.",
+      "audioText": "I couldn't sleep because my neighbors were having a loud party.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "because"
+        },
+        {
+          "id": "b",
+          "text": "although",
+          "misconception": "connectors.contrast-cause"
+        },
+        {
+          "id": "c",
+          "text": "so"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המסיבה היא הסיבה או התוצאה?",
+          "en": "Is the party the reason or the result?"
+        }
+      ],
+      "explanation": {
+        "he": "המסיבה הרועשת היא הסיבה שלא נרדמתי, לכן because.",
+        "en": "The loud party is the reason I couldn't sleep, so because."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.moreover-hotel",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "The hotel was very expensive. ___, the rooms were small and dirty.",
+      "audioText": "The hotel was very expensive. Moreover, the rooms were small and dirty.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Moreover"
+        },
+        {
+          "id": "b",
+          "text": "However",
+          "misconception": "connectors.addition-contrast"
+        },
+        {
+          "id": "c",
+          "text": "Therefore"
+        },
+        {
+          "id": "d",
+          "text": "For example"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "שני המשפטים חיוביים, שליליים, או אחד מכל סוג?",
+          "en": "Are both sentences positive, negative, or one of each?"
+        }
+      ],
+      "explanation": {
+        "he": "שני המשפטים מתארים דברים רעים. המשפט השני מוסיף עוד חיסרון, לכן Moreover (בנוסף). However מתאים רק לניגוד.",
+        "en": "Both sentences are negative. The second adds another problem, so Moreover. However is only for contrast."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.however-hotel",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "The hotel was far from the beach. ___, the rooms were large and comfortable.",
+      "audioText": "The hotel was far from the beach. However, the rooms were large and comfortable.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "However"
+        },
+        {
+          "id": "b",
+          "text": "In addition",
+          "misconception": "connectors.addition-contrast"
+        },
+        {
+          "id": "c",
+          "text": "Therefore"
+        },
+        {
+          "id": "d",
+          "text": "For example"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המשפט הראשון הוא חיסרון. מה המשפט השני?",
+          "en": "The first sentence is a disadvantage. What is the second?"
+        }
+      ],
+      "explanation": {
+        "he": "חיסרון ואחריו יתרון: זה ניגוד. However מתחיל משפט חדש ומראה ניגוד.",
+        "en": "A disadvantage, then an advantage: that is contrast. However starts a new sentence and shows contrast."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.therefore-ice",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "The roads were covered in ice. ___, the schools were closed for the day.",
+      "audioText": "The roads were covered in ice. Therefore, the schools were closed for the day.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Therefore"
+        },
+        {
+          "id": "b",
+          "text": "However",
+          "misconception": "connectors.addition-contrast"
+        },
+        {
+          "id": "c",
+          "text": "Otherwise"
+        },
+        {
+          "id": "d",
+          "text": "Instead"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למה בתי הספר נסגרו?",
+          "en": "Why were the schools closed?"
+        }
+      ],
+      "explanation": {
+        "he": "הקרח הוא הסיבה, והסגירה היא התוצאה. Therefore פירושו 'לכן'.",
+        "en": "The ice is the cause and closing the schools is the result. Therefore means 'for that reason'."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.as-a-result-exam",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "Dan didn't study for the exam. ___, he failed it.",
+      "audioText": "Dan didn't study for the exam. As a result, he failed it.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "As a result"
+        },
+        {
+          "id": "b",
+          "text": "On the other hand"
+        },
+        {
+          "id": "c",
+          "text": "For example"
+        },
+        {
+          "id": "d",
+          "text": "Otherwise"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הכישלון קרה בגלל משהו?",
+          "en": "Did the failure happen because of something?"
+        }
+      ],
+      "explanation": {
+        "he": "הכישלון הוא תוצאה של חוסר הלמידה. As a result פירושו 'כתוצאה מכך'.",
+        "en": "Failing is a result of not studying, so As a result."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.in-addition-swim",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "Swimming is good for your heart. ___, it helps you relax.",
+      "audioText": "Swimming is good for your heart. In addition, it helps you relax.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "In addition"
+        },
+        {
+          "id": "b",
+          "text": "However",
+          "misconception": "connectors.addition-contrast"
+        },
+        {
+          "id": "c",
+          "text": "As a result"
+        },
+        {
+          "id": "d",
+          "text": "Instead"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המשפט השני מוסיף עוד יתרון או מתנגד לראשון?",
+          "en": "Does the second sentence add another advantage or go against the first?"
+        }
+      ],
+      "explanation": {
+        "he": "שני יתרונות של שחייה. המשפט השני מוסיף, לכן In addition (בנוסף).",
+        "en": "Two advantages of swimming. The second one adds, so In addition."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.on-the-other-hand-city",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Living in a big city is exciting. ___, it can be very noisy and expensive.",
+      "audioText": "Living in a big city is exciting. On the other hand, it can be very noisy and expensive.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "On the other hand"
+        },
+        {
+          "id": "b",
+          "text": "In addition",
+          "misconception": "connectors.addition-contrast"
+        },
+        {
+          "id": "c",
+          "text": "As a result"
+        },
+        {
+          "id": "d",
+          "text": "For example"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המשפט הראשון חיובי. מה עם השני?",
+          "en": "The first sentence is positive. What about the second?"
+        }
+      ],
+      "explanation": {
+        "he": "יתרון ואחריו חסרונות: זה ניגוד. On the other hand (מצד שני) מציג את הצד השני.",
+        "en": "An advantage and then disadvantages: contrast. On the other hand shows the other side."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.despite-rain",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "___ the heavy rain, the match went on.",
+      "audioText": "Despite the heavy rain, the match went on.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Despite"
+        },
+        {
+          "id": "b",
+          "text": "Although",
+          "misconception": "connectors.despite-clause"
+        },
+        {
+          "id": "c",
+          "text": "Because of"
+        },
+        {
+          "id": "d",
+          "text": "Unless"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה בא אחרי הרווח: משפט שלם או שם עצם?",
+          "en": "What comes after the gap: a full clause or a noun?"
+        }
+      ],
+      "explanation": {
+        "he": "המשחק המשיך למרות הגשם: ניגוד. אחרי הרווח בא שם עצם (the heavy rain), ולכן Despite. Although צריך משפט שלם עם פועל.",
+        "en": "The match continued even with the rain: contrast. A noun follows, so Despite. Although needs a clause with a verb."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.in-spite-of-delays",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "They enjoyed the trip ___ the long delays at the airport.",
+      "audioText": "They enjoyed the trip in spite of the long delays at the airport.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "in spite of"
+        },
+        {
+          "id": "b",
+          "text": "although",
+          "misconception": "connectors.despite-clause"
+        },
+        {
+          "id": "c",
+          "text": "because of"
+        },
+        {
+          "id": "d",
+          "text": "so"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "יש פועל אחרי הרווח?",
+          "en": "Is there a verb after the gap?"
+        }
+      ],
+      "explanation": {
+        "he": "נהנו למרות העיכובים: ניגוד. אחרי הרווח בא שם עצם, ולכן in spite of. although צריך משפט עם פועל.",
+        "en": "They enjoyed it even with the delays. A noun follows, so in spite of, not although."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.whereas-horror",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "My sister loves horror movies, ___ I can't watch them at all.",
+      "audioText": "My sister loves horror movies, whereas I can't watch them at all.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "whereas"
+        },
+        {
+          "id": "b",
+          "text": "because",
+          "misconception": "connectors.contrast-cause"
+        },
+        {
+          "id": "c",
+          "text": "so"
+        },
+        {
+          "id": "d",
+          "text": "unless"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "האחות ואני דומים או שונים?",
+          "en": "Are my sister and I similar or different?"
+        }
+      ],
+      "explanation": {
+        "he": "משווים בין שני אנשים שונים. whereas (ואילו) מראה ניגוד בין שני צדדים.",
+        "en": "We compare two different people. whereas shows a contrast between two sides."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.whereas-north",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "In the north it rains a lot in winter, ___ the south stays dry almost all year.",
+      "audioText": "In the north it rains a lot in winter, whereas the south stays dry almost all year.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "whereas"
+        },
+        {
+          "id": "b",
+          "text": "therefore"
+        },
+        {
+          "id": "c",
+          "text": "unless"
+        },
+        {
+          "id": "d",
+          "text": "because"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצפון והדרום דומים או שונים?",
+          "en": "Are the north and the south similar or different?"
+        }
+      ],
+      "explanation": {
+        "he": "משווים בין שני אזורים הפוכים: גשום ויבש. whereas (ואילו) מתאים להשוואה כזאת.",
+        "en": "Two opposite areas are compared, so whereas."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.unless-projects",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "You won't pass the course ___ you hand in all the projects.",
+      "audioText": "You won't pass the course unless you hand in all the projects.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "unless"
+        },
+        {
+          "id": "b",
+          "text": "if",
+          "misconception": "connectors.unless-if"
+        },
+        {
+          "id": "c",
+          "text": "because"
+        },
+        {
+          "id": "d",
+          "text": "although"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה צריך לקרות כדי לעבור?",
+          "en": "What has to happen to pass?"
+        }
+      ],
+      "explanation": {
+        "he": "unless = if not. אי אפשר לעבור את הקורס בלי להגיש את כל העבודות. עם if המשפט אומר שמי שמגיש לא עובר, וזה לא הגיוני.",
+        "en": "unless = if not: you won't pass if you don't hand in the projects."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.unless-picnic",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "We'll have the picnic in the park ___ it rains.",
+      "audioText": "We'll have the picnic in the park unless it rains.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "unless"
+        },
+        {
+          "id": "b",
+          "text": "if",
+          "misconception": "connectors.unless-if"
+        },
+        {
+          "id": "c",
+          "text": "so"
+        },
+        {
+          "id": "d",
+          "text": "because"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הפיקניק יתקיים כשיורד גשם או כשלא יורד?",
+          "en": "Will the picnic happen when it rains or when it doesn't?"
+        }
+      ],
+      "explanation": {
+        "he": "unless = if not. נעשה פיקניק אם לא ירד גשם.",
+        "en": "unless = if not: we'll have the picnic if it doesn't rain."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.unless-act",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "___ we act now, many of these animals will disappear.",
+      "audioText": "Unless we act now, many of these animals will disappear.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Unless"
+        },
+        {
+          "id": "b",
+          "text": "If",
+          "misconception": "connectors.unless-if"
+        },
+        {
+          "id": "c",
+          "text": "Because"
+        },
+        {
+          "id": "d",
+          "text": "Although"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה יציל את החיות: לפעול או לא לפעול?",
+          "en": "What will save the animals: acting or not acting?"
+        }
+      ],
+      "explanation": {
+        "he": "החיות ייעלמו אם לא נפעל. unless = if not. עם If המשפט אומר שהפעולה תגרום להיעלמות, וזה הפוך.",
+        "en": "The animals will disappear if we don't act. unless = if not."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.otherwise-coat",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Wear a coat. ___, you'll catch a cold.",
+      "audioText": "Wear a coat. Otherwise, you'll catch a cold.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Otherwise"
+        },
+        {
+          "id": "b",
+          "text": "However"
+        },
+        {
+          "id": "c",
+          "text": "Moreover"
+        },
+        {
+          "id": "d",
+          "text": "For example"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה יקרה אם לא לובשים מעיל?",
+          "en": "What will happen if you don't wear a coat?"
+        }
+      ],
+      "explanation": {
+        "he": "Otherwise פירושו 'אחרת': בלי מעיל אפשר להצטנן.",
+        "en": "Otherwise means 'if not': if you don't wear a coat, you'll catch a cold."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.otherwise-late",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "We need to leave now. ___, we'll be late for the show.",
+      "audioText": "We need to leave now. Otherwise, we'll be late for the show.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Otherwise"
+        },
+        {
+          "id": "b",
+          "text": "Therefore",
+          "misconception": "connectors.cause-result"
+        },
+        {
+          "id": "c",
+          "text": "In addition"
+        },
+        {
+          "id": "d",
+          "text": "Instead"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "האיחור יקרה אם יוצאים או אם לא יוצאים?",
+          "en": "Will we be late if we leave, or if we don't?"
+        }
+      ],
+      "explanation": {
+        "he": "נאחר רק אם לא נצא עכשיו. Otherwise = אחרת. Therefore היה אומר שהיציאה גורמת לאיחור.",
+        "en": "We'll be late only if we don't leave now. Otherwise = if not."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.for-example-vitamin",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Many fruits are rich in vitamin C. ___, oranges and kiwis contain a lot of it.",
+      "audioText": "Many fruits are rich in vitamin C. For example, oranges and kiwis contain a lot of it.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "For example"
+        },
+        {
+          "id": "b",
+          "text": "However"
+        },
+        {
+          "id": "c",
+          "text": "Otherwise"
+        },
+        {
+          "id": "d",
+          "text": "Instead"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "oranges and kiwis הם סוגים של מה?",
+          "en": "oranges and kiwis are kinds of what?"
+        }
+      ],
+      "explanation": {
+        "he": "תפוזים וקיווי הם דוגמאות לפירות עם ויטמין C. לכן For example.",
+        "en": "Oranges and kiwis are examples of such fruits, so For example."
+      },
+      "interests": [
+        "food",
+        "science"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.for-example-owls",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Some birds hunt only at night. Owls, ___, catch their food in the dark.",
+      "audioText": "Some birds hunt only at night. Owls, for example, catch their food in the dark.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "for example"
+        },
+        {
+          "id": "b",
+          "text": "however"
+        },
+        {
+          "id": "c",
+          "text": "otherwise"
+        },
+        {
+          "id": "d",
+          "text": "instead"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "ינשופים הם חלק מהקבוצה במשפט הראשון?",
+          "en": "Are owls part of the group in the first sentence?"
+        }
+      ],
+      "explanation": {
+        "he": "ינשופים הם דוגמה לציפורים שצדות בלילה. for example יכול לבוא גם באמצע משפט.",
+        "en": "Owls are an example of birds that hunt at night. for example can come in the middle of a sentence."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.instead-beach",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "We didn't go to the beach. ___, we went to a museum.",
+      "audioText": "We didn't go to the beach. Instead, we went to a museum.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Instead"
+        },
+        {
+          "id": "b",
+          "text": "Moreover"
+        },
+        {
+          "id": "c",
+          "text": "For example"
+        },
+        {
+          "id": "d",
+          "text": "Otherwise"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המוזיאון בא בנוסף לחוף או במקום החוף?",
+          "en": "Was the museum in addition to the beach or in place of it?"
+        }
+      ],
+      "explanation": {
+        "he": "המוזיאון בא במקום החוף. Instead פירושו 'במקום זה'.",
+        "en": "The museum replaced the beach. Instead means 'in place of that'."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.instead-of-bus",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "___ taking the bus, she walked to school.",
+      "audioText": "Instead of taking the bus, she walked to school.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Instead of"
+        },
+        {
+          "id": "b",
+          "text": "Because of"
+        },
+        {
+          "id": "c",
+          "text": "Unless"
+        },
+        {
+          "id": "d",
+          "text": "Although"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "היא נסעה באוטובוס בסוף?",
+          "en": "Did she take the bus in the end?"
+        }
+      ],
+      "explanation": {
+        "he": "היא הלכה ברגל במקום לנסוע. Instead of + ing פירושו 'במקום ל...'.",
+        "en": "She walked and didn't take the bus. Instead of + -ing = in place of."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.so-museum",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "The museum was closed on Monday, ___ we visited it on Tuesday.",
+      "audioText": "The museum was closed on Monday, so we visited it on Tuesday.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "so"
+        },
+        {
+          "id": "b",
+          "text": "because",
+          "misconception": "connectors.cause-result"
+        },
+        {
+          "id": "c",
+          "text": "although"
+        },
+        {
+          "id": "d",
+          "text": "unless"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למה ביקרנו ביום שלישי?",
+          "en": "Why did we visit on Tuesday?"
+        }
+      ],
+      "explanation": {
+        "he": "המוזיאון היה סגור, ולכן ביקרנו ביום אחר. התוצאה באה אחרי so.",
+        "en": "The museum was closed, so we went another day. The result comes after so."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.because-tired",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Noa was tired ___ she had worked all night.",
+      "audioText": "Noa was tired because she had worked all night.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "because"
+        },
+        {
+          "id": "b",
+          "text": "so",
+          "misconception": "connectors.cause-result"
+        },
+        {
+          "id": "c",
+          "text": "but"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה הסיבה ומה התוצאה?",
+          "en": "What is the cause and what is the result?"
+        }
+      ],
+      "explanation": {
+        "he": "העבודה כל הלילה היא הסיבה לעייפות. הסיבה באה אחרי because.",
+        "en": "Working all night is the reason she was tired, so because."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.but-called",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "I called him three times, ___ he didn't answer.",
+      "audioText": "I called him three times, but he didn't answer.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "but"
+        },
+        {
+          "id": "b",
+          "text": "so"
+        },
+        {
+          "id": "c",
+          "text": "because"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מצפים שיענה אחרי שלוש שיחות?",
+          "en": "Do we expect him to answer after three calls?"
+        }
+      ],
+      "explanation": {
+        "he": "התקשרתי שלוש פעמים, והוא בכל זאת לא ענה: ניגוד. לכן but.",
+        "en": "I called three times and still no answer: contrast, so but."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.and-bread",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.1,
+      "prompt": "We bought bread, cheese ___ tomatoes for the trip.",
+      "audioText": "We bought bread, cheese and tomatoes for the trip.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "and"
+        },
+        {
+          "id": "b",
+          "text": "but"
+        },
+        {
+          "id": "c",
+          "text": "so"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "זו רשימה של דברים. מה בא לפני הפריט האחרון?",
+          "en": "It's a list. What comes before the last item?"
+        }
+      ],
+      "explanation": {
+        "he": "ברשימה משתמשים ב־and לפני הפריט האחרון.",
+        "en": "In a list, use and before the last item."
+      },
+      "interests": [
+        "food",
+        "travel"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.however-phone",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "My phone is quite old. ___, it still works perfectly.",
+      "audioText": "My phone is quite old. However, it still works perfectly.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "However"
+        },
+        {
+          "id": "b",
+          "text": "Although",
+          "misconception": "connectors.although-however"
+        },
+        {
+          "id": "c",
+          "text": "Therefore"
+        },
+        {
+          "id": "d",
+          "text": "For example"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה פותחת משפט חדש אחרי נקודה. מה מתאים כאן?",
+          "en": "The word starts a new sentence after a full stop. What fits?"
+        }
+      ],
+      "explanation": {
+        "he": "יש ניגוד: ישן אבל עובד. However פותח משפט חדש ובא אחריו פסיק. Although מחבר שני חלקים באותו משפט ולא בא לבד עם פסיק.",
+        "en": "There is contrast. However starts a new sentence with a comma. Although joins two clauses in one sentence."
+      },
+      "interests": [
+        "technology"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.although-film",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "___ the film got bad reviews, it was a big success.",
+      "audioText": "Although the film got bad reviews, it was a big success.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Although"
+        },
+        {
+          "id": "b",
+          "text": "However",
+          "misconception": "connectors.although-however"
+        },
+        {
+          "id": "c",
+          "text": "Despite",
+          "misconception": "connectors.despite-clause"
+        },
+        {
+          "id": "d",
+          "text": "Therefore"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כמה משפטים יש כאן, ואיפה הפסיק?",
+          "en": "How many clauses are there, and where is the comma?"
+        }
+      ],
+      "explanation": {
+        "he": "שני חלקים באותו משפט עם ניגוד: Although. However לא מחבר שני חלקים בתוך משפט אחד, ו־Despite לא בא לפני משפט עם פועל.",
+        "en": "Two clauses in one sentence with contrast: Although. However doesn't join clauses, and Despite isn't followed by a clause."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.therefore-company",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "The company lost a lot of money last year. It has ___ decided to close two of its stores.",
+      "audioText": "The company lost a lot of money last year. It has therefore decided to close two of its stores.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "therefore"
+        },
+        {
+          "id": "b",
+          "text": "however",
+          "misconception": "connectors.addition-contrast"
+        },
+        {
+          "id": "c",
+          "text": "otherwise"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למה החברה סוגרת חנויות?",
+          "en": "Why is the company closing stores?"
+        }
+      ],
+      "explanation": {
+        "he": "ההפסד הוא הסיבה, והסגירה היא התוצאה. therefore יכול לבוא גם באמצע משפט.",
+        "en": "Losing money is the cause and closing stores is the result. therefore can come mid-sentence."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.as-a-result-home",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Many people now work from home. ___, there is less traffic in the mornings.",
+      "audioText": "Many people now work from home. As a result, there is less traffic in the mornings.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "As a result"
+        },
+        {
+          "id": "b",
+          "text": "For example"
+        },
+        {
+          "id": "c",
+          "text": "Otherwise"
+        },
+        {
+          "id": "d",
+          "text": "Although",
+          "misconception": "connectors.although-however"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למה יש פחות פקקים?",
+          "en": "Why is there less traffic?"
+        }
+      ],
+      "explanation": {
+        "he": "העבודה מהבית גורמת לפחות פקקים. As a result מציג תוצאה ופותח משפט חדש.",
+        "en": "Working from home causes less traffic. As a result shows a result and starts a new sentence."
+      },
+      "interests": [
+        "technology"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.despite-ill",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "___ feeling ill, she went to work.",
+      "audioText": "Despite feeling ill, she went to work.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Despite"
+        },
+        {
+          "id": "b",
+          "text": "Because of"
+        },
+        {
+          "id": "c",
+          "text": "Instead of"
+        },
+        {
+          "id": "d",
+          "text": "Unless"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מצפים שמי שחולה ילך לעבודה?",
+          "en": "Do we expect a sick person to go to work?"
+        }
+      ],
+      "explanation": {
+        "he": "היא הלכה לעבודה למרות שהרגישה רע: ניגוד. Despite + ing מתאים כאן.",
+        "en": "She went to work even though she felt ill. Despite + -ing shows contrast."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.moreover-cycling",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Cycling to school is cheap. ___, it keeps you fit.",
+      "audioText": "Cycling to school is cheap. Moreover, it keeps you fit.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Moreover"
+        },
+        {
+          "id": "b",
+          "text": "However",
+          "misconception": "connectors.addition-contrast"
+        },
+        {
+          "id": "c",
+          "text": "Otherwise"
+        },
+        {
+          "id": "d",
+          "text": "Instead"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "שני המשפטים הם יתרונות?",
+          "en": "Are both sentences advantages?"
+        }
+      ],
+      "explanation": {
+        "he": "זול ובריא: שני יתרונות. Moreover מוסיף עוד נקודה באותו כיוון.",
+        "en": "Cheap and healthy: two advantages. Moreover adds another point."
+      },
+      "interests": [
+        "sports",
+        "school"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.so-last-day",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "It was the last day of school, ___ everyone was in a great mood.",
+      "audioText": "It was the last day of school, so everyone was in a great mood.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "so"
+        },
+        {
+          "id": "b",
+          "text": "because",
+          "misconception": "connectors.cause-result"
+        },
+        {
+          "id": "c",
+          "text": "although"
+        },
+        {
+          "id": "d",
+          "text": "unless"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה גרם למצב הרוח הטוב?",
+          "en": "What caused the good mood?"
+        }
+      ],
+      "explanation": {
+        "he": "היום האחרון הוא הסיבה, ומצב הרוח הוא התוצאה. לכן so.",
+        "en": "The last day is the cause and the good mood is the result, so so."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.in-addition-to-languages",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "___ English, Maya speaks Arabic and French.",
+      "audioText": "In addition to English, Maya speaks Arabic and French.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "In addition to"
+        },
+        {
+          "id": "b",
+          "text": "Despite"
+        },
+        {
+          "id": "c",
+          "text": "Because of"
+        },
+        {
+          "id": "d",
+          "text": "Unless"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מאיה יודעת אנגלית?",
+          "en": "Does Maya speak English?"
+        }
+      ],
+      "explanation": {
+        "he": "מאיה יודעת אנגלית ועוד שתי שפות. In addition to פירושו 'בנוסף ל'.",
+        "en": "Maya speaks English and two more languages. In addition to means 'as well as'."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.on-the-other-hand-cars",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Electric cars are quiet and clean. ___, they are still quite expensive to buy.",
+      "audioText": "Electric cars are quiet and clean. On the other hand, they are still quite expensive to buy.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "On the other hand"
+        },
+        {
+          "id": "b",
+          "text": "As a result"
+        },
+        {
+          "id": "c",
+          "text": "Moreover",
+          "misconception": "connectors.addition-contrast"
+        },
+        {
+          "id": "d",
+          "text": "For example"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המחיר הגבוה הוא יתרון או חיסרון?",
+          "en": "Is the high price an advantage or a disadvantage?"
+        }
+      ],
+      "explanation": {
+        "he": "יתרונות ואחריהם חיסרון: ניגוד. On the other hand מציג את הצד השני. Moreover מוסיף נקודה באותו כיוון.",
+        "en": "Advantages, then a disadvantage: On the other hand. Moreover adds a point in the same direction."
+      },
+      "interests": [
+        "technology"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.so-forgot-keys",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "I forgot my keys, ___ I had to wait outside.",
+      "audioText": "I forgot my keys, so I had to wait outside.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "so"
+        },
+        {
+          "id": "b",
+          "text": "because",
+          "misconception": "connectors.cause-result"
+        },
+        {
+          "id": "c",
+          "text": "but"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למה חיכיתי בחוץ?",
+          "en": "Why did I wait outside?"
+        }
+      ],
+      "explanation": {
+        "he": "שכחתי מפתחות, ולכן חיכיתי בחוץ. התוצאה באה אחרי so.",
+        "en": "I forgot my keys, and the result was waiting outside: so."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.conn.whereas-sleep",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "Teenagers need about nine hours of sleep, ___ most adults need only seven or eight.",
+      "audioText": "Teenagers need about nine hours of sleep, whereas most adults need only seven or eight.",
+      "instruction": {
+        "he": "לבחור את מילת הקישור המתאימה",
+        "en": "Choose the linking word that fits"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "whereas"
+        },
+        {
+          "id": "b",
+          "text": "therefore"
+        },
+        {
+          "id": "c",
+          "text": "for example"
+        },
+        {
+          "id": "d",
+          "text": "unless"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "משווים בין שתי קבוצות?",
+          "en": "Are two groups compared?"
+        }
+      ],
+      "explanation": {
+        "he": "משווים מתבגרים למבוגרים: מספרים שונים. whereas (ואילו) מתאים להשוואה.",
+        "en": "Teenagers and adults are compared, so whereas."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut",
+        "connector"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.make-a-decision",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:make-a-decision",
+      "prompt": "It took me a week to ___ a decision.",
+      "audioText": "It took me a week to make a decision.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "make"
+        },
+        {
+          "id": "b",
+          "text": "do",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "receive",
+          "misconception": "collocations.hebrew-literal"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "באנגלית לא 'מקבלים' החלטה. איזה פועל מתאים?",
+          "en": "In English you don't 'receive' a decision. Which verb fits?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים make a decision. בעברית 'מקבלים החלטה', אבל באנגלית receive לא מתאים.",
+        "en": "We say make a decision. In Hebrew we 'receive' a decision, but not in English."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.do-homework",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "col:do-homework",
+      "prompt": "I have to ___ my homework before dinner.",
+      "audioText": "I have to do my homework before dinner.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "do"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "learn"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "שיעורי בית הם עבודה ומשימה. איזה פועל הולך עם משימות?",
+          "en": "Homework is a task. Which verb goes with tasks?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים do homework. do הולך עם משימות ועבודות. make הולך עם יצירה של משהו חדש.",
+        "en": "We say do homework. do goes with tasks; make is for creating something."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.take-a-photo",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:take-a-photo",
+      "prompt": "Can you ___ a photo of us next to the tree?",
+      "audioText": "Can you take a photo of us next to the tree?",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "take"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.take-make"
+        },
+        {
+          "id": "c",
+          "text": "do",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "באנגלית אותו פועל הולך עם a photo, a picture ו־a selfie. איזה מהם?",
+          "en": "English uses one verb with a photo, a picture and a selfie. Which one?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים take a photo. make a photo ו־do a photo לא נשמעים טבעי באנגלית.",
+        "en": "We say take a photo, not make or do a photo."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.catch-a-cold",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:catch-a-cold",
+      "prompt": "Wear a jacket or you'll ___ a cold.",
+      "audioText": "Wear a jacket or you'll catch a cold.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "catch"
+        },
+        {
+          "id": "b",
+          "text": "take"
+        },
+        {
+          "id": "c",
+          "text": "make",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "זה צירוף קבוע. חושבים על מחלה שעוברת מאדם לאדם, כמו כדור.",
+          "en": "It is a fixed phrase. Think of an illness passed from person to person, like a ball."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים catch a cold. זה צירוף קבוע.",
+        "en": "We say catch a cold. It's a fixed phrase."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.heavy-rain",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "col:heavy-rain",
+      "prompt": "___ rain caused flooding in several towns.",
+      "audioText": "Heavy rain caused flooding in several towns.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Heavy"
+        },
+        {
+          "id": "b",
+          "text": "Strong",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "Big"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית 'גשם חזק'. באנגלית התרגום המילולי לא עובד.",
+          "en": "In Hebrew the rain is 'strong'. In English the literal word doesn't work."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים heavy rain. strong rain הוא תרגום מילולי מעברית.",
+        "en": "We say heavy rain. strong rain is a literal translation from Hebrew."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.pay-attention",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "col:pay-attention",
+      "prompt": "Please ___ attention to the instructions.",
+      "audioText": "Please pay attention to the instructions.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "pay"
+        },
+        {
+          "id": "b",
+          "text": "put",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "make",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית \"שמים לב\". באנגלית התרגום המילולי put לא מתאים.",
+          "en": "In Hebrew we 'put' attention. In English the literal put doesn't work."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים pay attention. בעברית 'שמים לב', אבל put attention לא נכון באנגלית.",
+        "en": "We say pay attention. put attention is a translation from Hebrew."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.make-a-mistake",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:make-a-mistake",
+      "prompt": "Everyone ___ mistakes when they learn a new language.",
+      "audioText": "Everyone makes mistakes when they learn a new language.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "makes"
+        },
+        {
+          "id": "b",
+          "text": "does",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "gets"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית 'עושים טעות'. באנגלית משתמשים בפועל אחר.",
+          "en": "In Hebrew we 'do' a mistake. English uses another verb."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים make a mistake. do a mistake הוא תרגום מעברית.",
+        "en": "We say make a mistake, not do a mistake."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.have-a-party",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:have-a-party",
+      "prompt": "We're going to ___ a party for Dan's birthday.",
+      "audioText": "We're going to have a party for Dan's birthday.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "have"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "do",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית \"עושים מסיבה\". באנגלית התרגום המילולי לא מתאים.",
+          "en": "In Hebrew we 'make' a party. The literal translation doesn't work in English."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים have a party (וגם throw a party). make a party הוא תרגום מעברית.",
+        "en": "We say have a party (or throw a party). make a party comes from Hebrew."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.take-a-shower",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:take-a-shower",
+      "prompt": "I always ___ a shower after football practice.",
+      "audioText": "I always take a shower after football practice.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "take"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.take-make"
+        },
+        {
+          "id": "c",
+          "text": "do",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית 'עושים מקלחת'. באנגלית?",
+          "en": "In Hebrew we 'make' a shower. In English?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים take a shower (וגם have a shower). make a shower לא נכון.",
+        "en": "We say take a shower (or have a shower), not make a shower."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.take-a-break",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "col:take-a-break",
+      "prompt": "We've been studying for hours. Let's ___ a break.",
+      "audioText": "We've been studying for hours. Let's take a break.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "take"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.take-make"
+        },
+        {
+          "id": "c",
+          "text": "do",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית \"עושים הפסקה\". באנגלית משתמשים באותו פועל כמו ב־a shower.",
+          "en": "In Hebrew we 'make' a break. English uses the same verb as with a shower."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים take a break. make a break הוא תרגום מעברית.",
+        "en": "We say take a break, not make a break."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.make-money",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:make-money",
+      "prompt": "He ___ a lot of money selling old games online.",
+      "audioText": "He made a lot of money selling old games online.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "made"
+        },
+        {
+          "id": "b",
+          "text": "did",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "won"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כסף 'נוצר' מהעבודה. איזה פועל מתאים ליצירה?",
+          "en": "Money is 'created' by work. Which verb fits creating?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים make money. בעברית 'עושים כסף', אבל באנגלית do money לא נכון. won מתאים לפרס או להגרלה.",
+        "en": "We say make money. won is for a prize, not for selling."
+      },
+      "interests": [
+        "games",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.make-noise",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:make-noise",
+      "prompt": "Please don't ___ so much noise. The baby is sleeping.",
+      "audioText": "Please don't make so much noise. The baby is sleeping.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "make"
+        },
+        {
+          "id": "b",
+          "text": "do",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "say"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "רעש הוא משהו שנוצר.",
+          "en": "Noise is something you create."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים make noise. do noise לא נכון.",
+        "en": "We say make noise, not do noise."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.do-the-dishes",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:do-the-dishes",
+      "prompt": "It's your turn to ___ the dishes tonight.",
+      "audioText": "It's your turn to do the dishes tonight.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "do"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "take"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "שטיפת כלים היא מטלה בבית.",
+          "en": "Washing up is a house job."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים do the dishes. מטלות בית הולכות עם do: do the dishes, do the laundry.",
+        "en": "We say do the dishes. House jobs go with do."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.do-the-shopping",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:do-the-shopping",
+      "prompt": "My dad usually ___ the shopping on Friday.",
+      "audioText": "My dad usually does the shopping on Friday.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "does"
+        },
+        {
+          "id": "b",
+          "text": "makes",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "goes"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "קניות הן מטלה קבועה. איזה פועל הולך עם מטלות?",
+          "en": "Shopping is a regular job. Which verb goes with jobs?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים do the shopping. בעברית 'עושים קניות', ובאנגלית כאן באמת do. goes מתאים רק בלי the: goes shopping.",
+        "en": "We say do the shopping. goes works only without the: goes shopping."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.have-an-accident",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "col:have-an-accident",
+      "prompt": "My uncle ___ a car accident last year, but he wasn't hurt.",
+      "audioText": "My uncle had a car accident last year, but he wasn't hurt.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "had"
+        },
+        {
+          "id": "b",
+          "text": "did",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "made",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית \"עשה תאונה\". באנגלית התרגום המילולי לא מתאים.",
+          "en": "In Hebrew he 'did' an accident. The literal translation doesn't work in English."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים have an accident. did an accident הוא תרגום מעברית.",
+        "en": "We say have an accident, not do an accident."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.make-progress",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "col:make-progress",
+      "prompt": "Your English has improved a lot. You're ___ great progress.",
+      "audioText": "Your English has improved a lot. You're making great progress.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "making"
+        },
+        {
+          "id": "b",
+          "text": "doing",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "taking"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "התקדמות היא משהו שבונים ויוצרים.",
+          "en": "Progress is something you build."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים make progress. do progress לא נכון.",
+        "en": "We say make progress, not do progress."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.do-your-best",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "col:do-your-best",
+      "prompt": "Don't worry about the result. Just ___ your best.",
+      "audioText": "Don't worry about the result. Just do your best.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "do"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "take"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "זה ביטוי קבוע. חושבים על הפועל שהולך עם homework ועם the dishes.",
+          "en": "It is a fixed phrase. Think of the verb used with homework and the dishes."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים do your best (לעשות כמיטב יכולתך).",
+        "en": "We say do your best."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.keep-a-secret",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:keep-a-secret",
+      "prompt": "Can you ___ a secret? Don't tell anyone.",
+      "audioText": "Can you keep a secret? Don't tell anyone.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "keep"
+        },
+        {
+          "id": "b",
+          "text": "save",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "hold"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית 'שומרים סוד'. 'לשמור' באנגלית יכול להיות save או keep.",
+          "en": "In Hebrew we 'guard' a secret. Is it save or keep?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים keep a secret. save פירושו לשמור לעתיד או לחסוך, ולא מתאים לסוד.",
+        "en": "We say keep a secret. save is for saving for later, not for secrets."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.keep-a-promise",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:keep-a-promise",
+      "prompt": "She always ___ her promises.",
+      "audioText": "She always keeps her promises.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "keeps"
+        },
+        {
+          "id": "b",
+          "text": "saves",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "does",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית 'שומרים הבטחה'. איזה 'לשמור' מתאים?",
+          "en": "In Hebrew we 'guard' a promise. Which verb fits?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים keep a promise. save a promise הוא תרגום מעברית.",
+        "en": "We say keep a promise, not save a promise."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.high-price",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "col:high-price",
+      "prompt": "The tickets were sold at a very ___ price.",
+      "audioText": "The tickets were sold at a very high price.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "high"
+        },
+        {
+          "id": "b",
+          "text": "long"
+        },
+        {
+          "id": "c",
+          "text": "tall",
+          "misconception": "collocations.high-tall"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחיר הוא מספר. איזו מילה מתאימה למספר גדול?",
+          "en": "A price is a number. Which word fits a big number?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים a high price. בעברית אומרים \"מחיר יקר\", אבל באנגלית המוצר expensive והמחיר high. tall ו־long לא מתארים מחיר.",
+        "en": "We say a high price. A thing is expensive; its price is high. tall and long do not describe prices."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.turn-on-the-light",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:turn-on-the-light",
+      "prompt": "It's dark in here. Can you ___ the light?",
+      "audioText": "It's dark in here. Can you turn on the light?",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "turn on"
+        },
+        {
+          "id": "b",
+          "text": "open",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "make"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית \"פותחים את האור\". באנגלית התרגום המילולי לא מתאים.",
+          "en": "In Hebrew we 'open' the light. The literal word doesn't work in English."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים turn on the light (וגם switch on). open the light הוא תרגום מעברית.",
+        "en": "We say turn on the light. open the light comes from Hebrew."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.turn-off-the-tv",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:turn-off-the-tv",
+      "prompt": "Please ___ the TV before you go to bed.",
+      "audioText": "Please turn off the TV before you go to bed.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "turn off"
+        },
+        {
+          "id": "b",
+          "text": "close",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "stop"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית 'סוגרים את הטלוויזיה'. באנגלית?",
+          "en": "In Hebrew we 'close' the TV. In English?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים turn off the TV. close the TV הוא תרגום מעברית.",
+        "en": "We say turn off the TV, not close the TV."
+      },
+      "interests": [
+        "movies",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.tall-brother",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:tall-brother",
+      "prompt": "My brother is very ___. He's almost two meters.",
+      "audioText": "My brother is very tall. He's almost two meters.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "tall"
+        },
+        {
+          "id": "b",
+          "text": "high",
+          "misconception": "collocations.high-tall"
+        },
+        {
+          "id": "c",
+          "text": "long",
+          "misconception": "collocations.hebrew-literal"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "על אנשים משתמשים במילה מיוחדת לגובה.",
+          "en": "There is a special word for people's height."
+        }
+      ],
+      "explanation": {
+        "he": "על אנשים אומרים tall. high מתאים למחיר, לטמפרטורה ולדברים שנמצאים גבוה מעל הקרקע. long לא מתאר גובה של אנשים.",
+        "en": "For people we say tall. high is for prices, temperatures and things far above the ground. long does not describe people's height."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.high-temperature",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:high-temperature",
+      "prompt": "The temperature was very ___ yesterday: 38 degrees.",
+      "audioText": "The temperature was very high yesterday: 38 degrees.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "high"
+        },
+        {
+          "id": "b",
+          "text": "tall",
+          "misconception": "collocations.high-tall"
+        },
+        {
+          "id": "c",
+          "text": "strong",
+          "misconception": "collocations.hebrew-literal"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "טמפרטורה היא מספר. איזו מילה מתאימה למספר גדול?",
+          "en": "Temperature is a number. Which word fits a big number?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים a high temperature. tall רק לאנשים ולדברים צרים וגבוהים, כמו עץ.",
+        "en": "We say a high temperature. tall is for people and narrow things like trees."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.say-sorry",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:say-sorry",
+      "prompt": "You should ___ sorry to your sister.",
+      "audioText": "You should say sorry to your sister.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "say"
+        },
+        {
+          "id": "b",
+          "text": "tell",
+          "misconception": "collocations.say-tell"
+        },
+        {
+          "id": "c",
+          "text": "speak"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי הרווח בא sorry, לא אדם.",
+          "en": "After the gap comes sorry, not a person."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים say sorry. tell בא בדרך כלל עם אדם אחריו: tell her.",
+        "en": "We say say sorry. tell usually needs a person after it."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.tell-the-truth",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:tell-the-truth",
+      "prompt": "I promise to ___ the truth.",
+      "audioText": "I promise to tell the truth.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "tell"
+        },
+        {
+          "id": "b",
+          "text": "say",
+          "misconception": "collocations.say-tell"
+        },
+        {
+          "id": "c",
+          "text": "talk"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "זה צירוף קבוע כמו tell a lie.",
+          "en": "It's a fixed phrase like tell a lie."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים tell the truth ו־tell a lie.",
+        "en": "We say tell the truth and tell a lie."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.tell-a-joke",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:tell-a-joke",
+      "prompt": "Grandpa loves to ___ jokes at dinner.",
+      "audioText": "Grandpa loves to tell jokes at dinner.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "tell"
+        },
+        {
+          "id": "b",
+          "text": "say",
+          "misconception": "collocations.say-tell"
+        },
+        {
+          "id": "c",
+          "text": "speak"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "זה צירוף קבוע, כמו ___ a story.",
+          "en": "It is a fixed phrase, like ___ a story."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים tell a joke, כמו tell a story.",
+        "en": "We say tell a joke, like tell a story."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.tell-me-the-way",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "col:tell-me-the-way",
+      "prompt": "Can you ___ me the way to the station?",
+      "audioText": "Can you tell me the way to the station?",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "tell"
+        },
+        {
+          "id": "b",
+          "text": "say",
+          "misconception": "collocations.say-tell"
+        },
+        {
+          "id": "c",
+          "text": "speak"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי הרווח בא me. איזה פועל בא ישר עם אדם?",
+          "en": "After the gap comes me. Which verb goes straight to a person?"
+        }
+      ],
+      "explanation": {
+        "he": "tell + אדם: tell me. say לא בא ישר לפני אדם: אומרים say to me.",
+        "en": "tell + person: tell me. We don't say say me."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.prices-rise",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "col:prices-rise",
+      "prompt": "Prices ___ every year.",
+      "audioText": "Prices rise every year.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "rise"
+        },
+        {
+          "id": "b",
+          "text": "raise",
+          "misconception": "collocations.raise-rise"
+        },
+        {
+          "id": "c",
+          "text": "lift"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המחירים עולים לבד. אף אחד לא מרים אותם במשפט.",
+          "en": "Prices go up by themselves here. Nobody raises them in the sentence."
+        }
+      ],
+      "explanation": {
+        "he": "rise = לעלות (לבד, בלי מושא). raise = להרים משהו (צריך מושא). Prices rise.",
+        "en": "rise = go up by itself (no object). raise = lift something (needs an object)."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.raise-your-hand",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "col:raise-your-hand",
+      "prompt": "If you know the answer, ___ your hand.",
+      "audioText": "If you know the answer, raise your hand.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "raise"
+        },
+        {
+          "id": "b",
+          "text": "rise",
+          "misconception": "collocations.raise-rise"
+        },
+        {
+          "id": "c",
+          "text": "grow"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "יש מושא: your hand. מי מרים אותו?",
+          "en": "There is an object: your hand. Who lifts it?"
+        }
+      ],
+      "explanation": {
+        "he": "raise = להרים משהו, ויש אחריו מושא (your hand). rise לא בא עם מושא.",
+        "en": "raise + object: raise your hand. rise has no object."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.sun-rises",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "col:sun-rises",
+      "prompt": "The sun ___ in the east.",
+      "audioText": "The sun rises in the east.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "rises"
+        },
+        {
+          "id": "b",
+          "text": "raises",
+          "misconception": "collocations.raise-rise"
+        },
+        {
+          "id": "c",
+          "text": "gets up"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "השמש עולה לבד. יש מושא אחרי הרווח?",
+          "en": "The sun comes up by itself. Is there an object?"
+        }
+      ],
+      "explanation": {
+        "he": "rise = לעלות לבד. The sun rises. raises צריך מושא.",
+        "en": "rise = go up by itself: The sun rises."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.have-fun",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:have-fun",
+      "prompt": "We ___ a lot of fun at the water park.",
+      "audioText": "We had a lot of fun at the water park.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "had"
+        },
+        {
+          "id": "b",
+          "text": "made",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "did",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית \"עשינו כיף\". באנגלית התרגום המילולי לא מתאים.",
+          "en": "In Hebrew we 'did' fun. The literal translation doesn't work in English."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים have fun. make fun of פירושו ללעוג למישהו, וזה משהו אחר לגמרי.",
+        "en": "We say have fun. make fun of means to laugh at someone."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.take-pills",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:take-pills",
+      "prompt": "You need to ___ these pills twice a day.",
+      "audioText": "You need to take these pills twice a day.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "take"
+        },
+        {
+          "id": "b",
+          "text": "eat"
+        },
+        {
+          "id": "c",
+          "text": "make",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "חושבים על הפועל שהולך עם medicine. לא אוכלים תרופות באנגלית.",
+          "en": "Think of the verb used with medicine. You don't eat medicine in English."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים take pills / take medicine. לא אוכלים כדורים באנגלית.",
+        "en": "We say take pills or take medicine, not eat pills."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.take-an-exam",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:take-an-exam",
+      "prompt": "The students will ___ their final English exam next week.",
+      "audioText": "The students will take their final English exam next week.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "take"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "give"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כאן התלמידים הם אלה שנבחנים, לא המורה.",
+          "en": "Here the students are the ones being tested, not the teacher."
+        }
+      ],
+      "explanation": {
+        "he": "תלמידים take an exam. give an exam אומר המורה. make an exam לא נכון.",
+        "en": "Students take an exam; teachers give one."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.make-an-effort",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "col:make-an-effort",
+      "prompt": "If you ___ an effort, you'll see results.",
+      "audioText": "If you make an effort, you'll see results.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "make"
+        },
+        {
+          "id": "b",
+          "text": "do",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "take"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מאמץ הוא משהו שיוצרים.",
+          "en": "An effort is something you create."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים make an effort. do an effort לא נכון.",
+        "en": "We say make an effort."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.do-a-favor",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:do-a-favor",
+      "prompt": "Could you ___ me a favor and close the window?",
+      "audioText": "Could you do me a favor and close the window?",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "do"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "take"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית 'לעשות טובה'. איזה פועל באנגלית מתאים כאן?",
+          "en": "In Hebrew you 'do' a favor. Which English verb?"
+        }
+      ],
+      "explanation": {
+        "he": "אומרים do someone a favor. make me a favor לא נכון.",
+        "en": "We say do someone a favor."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.strong-coffee",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "col:strong-coffee",
+      "prompt": "I can't sleep after I drink ___ coffee.",
+      "audioText": "I can't sleep after I drink strong coffee.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "strong"
+        },
+        {
+          "id": "b",
+          "text": "heavy",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "hard"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "גשם הוא heavy, אבל קפה?",
+          "en": "Rain is heavy, but coffee?"
+        }
+      ],
+      "explanation": {
+        "he": "קפה חזק הוא strong coffee. heavy מתאים לגשם ולתנועה.",
+        "en": "We say strong coffee. heavy is for rain and traffic."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.heavy-traffic",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.6,
+      "unit": "col:heavy-traffic",
+      "prompt": "There was ___ traffic on the way to Tel Aviv, so we were late.",
+      "audioText": "There was heavy traffic on the way to Tel Aviv, so we were late.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "heavy"
+        },
+        {
+          "id": "b",
+          "text": "strong",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "big"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "גם כאן משתמשים באותו שם תואר כמו לגשם.",
+          "en": "Use the same adjective as for rain."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים heavy traffic (עומס כבד). strong traffic ו־big traffic לא נכונים.",
+        "en": "We say heavy traffic."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.make-friends",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "col:make-friends",
+      "prompt": "It's easy to ___ friends at summer camp.",
+      "audioText": "It's easy to make friends at summer camp.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "make"
+        },
+        {
+          "id": "b",
+          "text": "do",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "take"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "חברויות 'נוצרות'.",
+          "en": "Friendships are created."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים make friends. זה צירוף קבוע.",
+        "en": "We say make friends."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.take-care",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "col:take-care",
+      "prompt": "Who will ___ care of the dog while we're away?",
+      "audioText": "Who will take care of the dog while we're away?",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "take"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.take-make"
+        },
+        {
+          "id": "c",
+          "text": "do",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית 'לטפל ב'. באנגלית: ___ care of.",
+          "en": "In Hebrew 'to look after'. In English: ___ care of."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים take care of. זה צירוף קבוע.",
+        "en": "We say take care of."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.col.take-a-risk",
+      "type": "choice",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.6,
+      "unit": "col:take-a-risk",
+      "prompt": "Starting a new business means ___ a risk.",
+      "audioText": "Starting a new business means taking a risk.",
+      "instruction": {
+        "he": "לבחור את המילה שמתאימה בצירוף",
+        "en": "Choose the word that goes with the phrase"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "taking"
+        },
+        {
+          "id": "b",
+          "text": "doing",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "making",
+          "misconception": "collocations.take-make"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "באנגלית משתמשים כאן באותו פועל כמו ב־a break וב־a photo.",
+          "en": "English uses the same verb as with a break and a photo."
+        }
+      ],
+      "explanation": {
+        "he": "אומרים take a risk. do a risk לא נכון.",
+        "en": "We say take a risk."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.hardly-anyone",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"Hardly anyone came to the meeting.\" What does the writer mean?",
+      "audioText": "Hardly anyone came to the meeting.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Very few people came to the meeting."
+        },
+        {
+          "id": "b",
+          "text": "Nobody came to the meeting.",
+          "misconception": "reading.hidden-negative"
+        },
+        {
+          "id": "c",
+          "text": "Many people came to the meeting late."
+        },
+        {
+          "id": "d",
+          "text": "People found it hard to get to the meeting."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "האם hardly קשור ל־hard? חושבים כמה אנשים באו.",
+          "en": "Is hardly about \"hard\"? Think about how many people came."
+        }
+      ],
+      "explanation": {
+        "he": "hardly anyone = כמעט אף אחד, כלומר מעט מאוד אנשים. זה לא 'אף אחד' לגמרי, ואין קשר לקושי (hard).",
+        "en": "hardly anyone = almost nobody: very few people, but not zero."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.no-sooner",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"I had no sooner sat down than the phone rang.\" Which sentence has the same meaning?",
+      "audioText": "I had no sooner sat down than the phone rang.",
+      "instruction": {
+        "he": "לבחור משפט שאומר אותו דבר",
+        "en": "Choose the sentence with the same meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The phone rang right after I sat down."
+        },
+        {
+          "id": "b",
+          "text": "I sat down right after the phone rang."
+        },
+        {
+          "id": "c",
+          "text": "The phone rang a long time after I sat down."
+        },
+        {
+          "id": "d",
+          "text": "I didn't sit down because the phone rang."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "no sooner... than מתאר שני דברים שקרו כמעט יחד. מה קרה קודם?",
+          "en": "no sooner... than shows two things that happened almost together. Which was first?"
+        }
+      ],
+      "explanation": {
+        "he": "no sooner A than B = מיד אחרי A קרה B. קודם התיישבתי, ומיד הטלפון צלצל.",
+        "en": "no sooner A than B = B happened immediately after A."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.not-until-london",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"It wasn't until she moved to London that she started to enjoy cooking.\" Which sentence has the same meaning?",
+      "audioText": "It wasn't until she moved to London that she started to enjoy cooking.",
+      "instruction": {
+        "he": "לבחור משפט שאומר אותו דבר",
+        "en": "Choose the sentence with the same meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She began to enjoy cooking only after she moved to London."
+        },
+        {
+          "id": "b",
+          "text": "She stopped enjoying cooking when she moved to London.",
+          "misconception": "reading.hidden-negative"
+        },
+        {
+          "id": "c",
+          "text": "She enjoyed cooking long before she moved to London."
+        },
+        {
+          "id": "d",
+          "text": "She moved to London because she enjoyed cooking."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "It wasn't until X אומר מתי משהו התחיל. מה קרה קודם?",
+          "en": "It wasn't until X tells us when something started. What came first?"
+        }
+      ],
+      "explanation": {
+        "he": "המבנה It wasn't until... that אומר שהדבר התחיל רק בזמן מסוים. היא התחילה ליהנות מבישול רק אחרי המעבר ללונדון. המילה wasn't לא אומרת שהיא הפסיקה.",
+        "en": "It wasn't until... that = only from that time. She started enjoying cooking only after the move."
+      },
+      "interests": [
+        "food",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.anything-but",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"The film was anything but boring.\" What does the writer mean?",
+      "audioText": "The film was anything but boring.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The film was very interesting."
+        },
+        {
+          "id": "b",
+          "text": "The film was boring in every way.",
+          "misconception": "reading.hidden-negative"
+        },
+        {
+          "id": "c",
+          "text": "Only part of the film was boring."
+        },
+        {
+          "id": "d",
+          "text": "Everything in the film was boring except the music."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "anything but פירושו המילולי \"הכול חוץ מ\".",
+          "en": "Literally, anything but means \"everything except\"."
+        }
+      ],
+      "explanation": {
+        "he": "anything but X = בכלל לא X. הסרט בכלל לא היה משעמם, כלומר הוא היה מעניין מאוד.",
+        "en": "anything but X = not X at all. The film was far from boring."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.if-not-for-teacher",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"If it hadn't been for my teacher, I would have given up.\" What does the writer mean?",
+      "audioText": "If it hadn't been for my teacher, I would have given up.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "My teacher helped me not to give up."
+        },
+        {
+          "id": "b",
+          "text": "I gave up because my teacher wasn't there.",
+          "misconception": "reading.unreal-past"
+        },
+        {
+          "id": "c",
+          "text": "My teacher told me to give up."
+        },
+        {
+          "id": "d",
+          "text": "I gave up before I met my teacher."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המשפט מתאר מצב דמיוני בעבר. זה באמת קרה?",
+          "en": "The sentence describes an unreal past. Did it really happen?"
+        }
+      ],
+      "explanation": {
+        "he": "If it hadn't been for X = אלמלא X. בזכות המורה לא ויתרתי. הוויתור לא קרה באמת.",
+        "en": "If it hadn't been for X = without X. Thanks to my teacher, I didn't give up."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.cant-have-seen",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"He can't have seen my message; his phone was off.\" What does the writer mean?",
+      "audioText": "He can't have seen my message; his phone was off.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It's impossible that he saw my message."
+        },
+        {
+          "id": "b",
+          "text": "He wasn't allowed to see my message."
+        },
+        {
+          "id": "c",
+          "text": "He saw my message but couldn't answer."
+        },
+        {
+          "id": "d",
+          "text": "He has to see my message soon."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "can't have + V3 מביע מסקנה על העבר.",
+          "en": "can't have + past participle is a conclusion about the past."
+        }
+      ],
+      "explanation": {
+        "he": "can't have seen = בטוח שלא ראה. הטלפון היה כבוי, ולכן זה בלתי אפשרי שראה את ההודעה.",
+        "en": "can't have seen = I'm sure he didn't see it."
+      },
+      "interests": [
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.used-to-live",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"We used to live near the sea.\" Which sentence has the same meaning?",
+      "audioText": "We used to live near the sea.",
+      "instruction": {
+        "he": "לבחור משפט שאומר אותו דבר",
+        "en": "Choose the sentence with the same meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "We lived near the sea before, but not now."
+        },
+        {
+          "id": "b",
+          "text": "We are used to living near the sea."
+        },
+        {
+          "id": "c",
+          "text": "We still live near the sea today."
+        },
+        {
+          "id": "d",
+          "text": "We would like to live near the sea."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "used to + פועל ו־be used to + ing הם שני מבנים שונים. איזה מהם יש כאן?",
+          "en": "used to + verb and be used to + -ing are different. Which one is here?"
+        }
+      ],
+      "explanation": {
+        "he": "used to live = גרנו פעם, ועכשיו כבר לא. be used to living פירושו 'רגילים לגור', וזה משהו אחר.",
+        "en": "used to live = we lived there before, not now. be used to = be familiar with."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.rather-walk",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"I'd rather walk than take the bus.\" Which sentence has the same meaning?",
+      "audioText": "I'd rather walk than take the bus.",
+      "instruction": {
+        "he": "לבחור משפט שאומר אותו דבר",
+        "en": "Choose the sentence with the same meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I prefer walking to taking the bus."
+        },
+        {
+          "id": "b",
+          "text": "I have to walk because there is no bus."
+        },
+        {
+          "id": "c",
+          "text": "I walked because I missed the bus."
+        },
+        {
+          "id": "d",
+          "text": "I take the bus more often than I walk."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "I'd rather = I would rather. מה זה מביע?",
+          "en": "I'd rather = I would rather. What does it show?"
+        }
+      ],
+      "explanation": {
+        "he": "I'd rather A than B = אני מעדיף/ה A על פני B. זו העדפה, לא חובה.",
+        "en": "I'd rather A than B = I prefer A to B."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.had-better",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"You'd better leave now if you want to catch the train.\" What does the writer mean?",
+      "audioText": "You'd better leave now if you want to catch the train.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It's a good idea for you to leave now."
+        },
+        {
+          "id": "b",
+          "text": "You left earlier than the others."
+        },
+        {
+          "id": "c",
+          "text": "It was better that you left."
+        },
+        {
+          "id": "d",
+          "text": "You are better at leaving early than others."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "You'd better = You had better, אבל זו לא צורת עבר.",
+          "en": "You'd better = You had better, but it isn't past."
+        }
+      ],
+      "explanation": {
+        "he": "had better + פועל = כדאי לך (עצה חזקה להווה ולעתיד). למרות had, זה לא עבר.",
+        "en": "had better + verb = strong advice about now or the future."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.too-heavy",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"The box was too heavy for me to lift.\" What does the writer mean?",
+      "audioText": "The box was too heavy for me to lift.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I couldn't lift the box."
+        },
+        {
+          "id": "b",
+          "text": "I lifted the box easily."
+        },
+        {
+          "id": "c",
+          "text": "The box was heavy, but I lifted it."
+        },
+        {
+          "id": "d",
+          "text": "The box was too light to carry."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "too + שם תואר + to: האם הפעולה הצליחה?",
+          "en": "too + adjective + to: did the action succeed?"
+        }
+      ],
+      "explanation": {
+        "he": "too heavy to lift = כבד מדי, ולכן לא הצלחתי להרים.",
+        "en": "too heavy to lift = so heavy that I couldn't lift it."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.not-old-enough",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"She isn't old enough to drive.\" Which sentence has the same meaning?",
+      "audioText": "She isn't old enough to drive.",
+      "instruction": {
+        "he": "לבחור משפט שאומר אותו דבר",
+        "en": "Choose the sentence with the same meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She is too young to drive."
+        },
+        {
+          "id": "b",
+          "text": "She is too old to drive."
+        },
+        {
+          "id": "c",
+          "text": "She drives, but not very well."
+        },
+        {
+          "id": "d",
+          "text": "She is old, but she doesn't like driving."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "enough = מספיק. מה אין לה מספיק?",
+          "en": "enough = sufficient. What doesn't she have enough of?"
+        }
+      ],
+      "explanation": {
+        "he": "not old enough to drive = היא עוד צעירה מדי בשביל לנהוג. כלומר too young.",
+        "en": "not old enough = too young."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.not-only-record",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"Not only did he win the race, but he also broke the record.\" Which sentence has the same meaning?",
+      "audioText": "Not only did he win the race, but he also broke the record.",
+      "instruction": {
+        "he": "לבחור משפט שאומר אותו דבר",
+        "en": "Choose the sentence with the same meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He won the race and broke the record."
+        },
+        {
+          "id": "b",
+          "text": "He broke the record but didn't win the race."
+        },
+        {
+          "id": "c",
+          "text": "He didn't win the race, but he broke the record.",
+          "misconception": "reading.hidden-negative"
+        },
+        {
+          "id": "d",
+          "text": "He won the race but didn't break the record."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "Not only... but also מוסיף, לא שולל.",
+          "en": "Not only... but also adds; it doesn't make a negative."
+        }
+      ],
+      "explanation": {
+        "he": "Not only A but also B = גם A וגם B. המילה not לא אומרת שהוא לא ניצח.",
+        "en": "Not only A but also B = both A and B."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.the-more-the-better",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"The more you practice, the better you get.\" What does the writer mean?",
+      "audioText": "The more you practice, the better you get.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "If you practice more, you will improve more."
+        },
+        {
+          "id": "b",
+          "text": "You only need to practice a little."
+        },
+        {
+          "id": "c",
+          "text": "It's better to practice than to win."
+        },
+        {
+          "id": "d",
+          "text": "Practice is more important than talent."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "The more... the better מראה ששני דברים גדלים יחד.",
+          "en": "The more... the better shows two things growing together."
+        }
+      ],
+      "explanation": {
+        "he": "ככל שמתאמנים יותר, משתפרים יותר. שני הדברים עולים יחד.",
+        "en": "The more practice, the more improvement."
+      },
+      "interests": [
+        "music",
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.few-friends",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "\"I've got few friends in this town.\" What does the writer mean?",
+      "audioText": "I've got few friends in this town.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I don't have many friends here."
+        },
+        {
+          "id": "b",
+          "text": "I have quite a lot of friends here."
+        },
+        {
+          "id": "c",
+          "text": "I have no friends here at all.",
+          "misconception": "reading.hidden-negative"
+        },
+        {
+          "id": "d",
+          "text": "I have some good friends here, which is great."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "יש הבדל בין few לבין a few.",
+          "en": "There is a difference between few and a few."
+        }
+      ],
+      "explanation": {
+        "he": "few (בלי a) = מעט, ובטון שלילי: אין לי הרבה חברים. a few = כמה, בטון חיובי.",
+        "en": "few (without a) = not many, a negative idea. a few = some, a positive idea."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.little-hope",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "\"There's little hope that they'll find the lost cat.\" What does the writer mean?",
+      "audioText": "There's little hope that they'll find the lost cat.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "They probably won't find the cat."
+        },
+        {
+          "id": "b",
+          "text": "There's a good chance they'll find the cat."
+        },
+        {
+          "id": "c",
+          "text": "They have already found the cat."
+        },
+        {
+          "id": "d",
+          "text": "They hope the cat is small."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "little (בלי a) עם שם עצם שלא סופרים = מעט מאוד.",
+          "en": "little (without a) with an uncountable noun = very little."
+        }
+      ],
+      "explanation": {
+        "he": "little hope = כמעט אין תקווה. כנראה לא ימצאו את החתול. אין קשר לגודל של החתול.",
+        "en": "little hope = almost no hope. They probably won't find it."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.no-longer",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"He no longer works at the bank.\" What does the writer mean?",
+      "audioText": "He no longer works at the bank.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He worked at the bank before, but he doesn't now."
+        },
+        {
+          "id": "b",
+          "text": "He has worked at the bank for a long time."
+        },
+        {
+          "id": "c",
+          "text": "He works long hours at the bank."
+        },
+        {
+          "id": "d",
+          "text": "He has never worked at the bank."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "no longer קשור לזמן, לא לאורך.",
+          "en": "no longer is about time, not length."
+        }
+      ],
+      "explanation": {
+        "he": "no longer = כבר לא. פעם עבד בבנק, ועכשיו לא.",
+        "en": "no longer = not any more."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.should-have-told",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "\"You should have told me earlier.\" What does the writer mean?",
+      "audioText": "You should have told me earlier.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "You didn't tell me in time, and that was a mistake."
+        },
+        {
+          "id": "b",
+          "text": "You told me early, and that was the right thing.",
+          "misconception": "reading.unreal-past"
+        },
+        {
+          "id": "c",
+          "text": "You must tell me now."
+        },
+        {
+          "id": "d",
+          "text": "You told me too early."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "should have + V3 מדבר על העבר. זה קרה?",
+          "en": "should have + past participle is about the past. Did it happen?"
+        }
+      ],
+      "explanation": {
+        "he": "should have told = היית צריך/ה לספר, אבל לא סיפרת. זו ביקורת על משהו שלא קרה.",
+        "en": "should have told = you didn't tell me, and you should have."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.neednt-have-bought",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"You needn't have bought flowers, but they're lovely!\" What does the writer mean?",
+      "audioText": "You needn't have bought flowers, but they're lovely!",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "You bought flowers, but it wasn't necessary."
+        },
+        {
+          "id": "b",
+          "text": "You didn't buy flowers, and that was fine."
+        },
+        {
+          "id": "c",
+          "text": "You had to buy flowers."
+        },
+        {
+          "id": "d",
+          "text": "You forgot to buy flowers."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "needn't have + V3: הפעולה קרתה או לא?",
+          "en": "needn't have + past participle: did the action happen?"
+        }
+      ],
+      "explanation": {
+        "he": "needn't have bought = קנית, אבל לא היה צורך. הפרחים קיימים (they're lovely).",
+        "en": "needn't have bought = you bought them, but it wasn't necessary."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.wish-studied",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"I wish I had studied harder for the test.\" What does the writer mean?",
+      "audioText": "I wish I had studied harder for the test.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I didn't study hard, and I'm sorry about it."
+        },
+        {
+          "id": "b",
+          "text": "I studied hard, and I'm glad I did.",
+          "misconception": "reading.unreal-past"
+        },
+        {
+          "id": "c",
+          "text": "I hope to study harder for the next test."
+        },
+        {
+          "id": "d",
+          "text": "I studied harder than the others."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "I wish + had + V3 מביע חרטה על העבר.",
+          "en": "I wish + had + past participle shows regret about the past."
+        }
+      ],
+      "explanation": {
+        "he": "I wish I had studied = הלוואי שהייתי לומד/ת. בפועל לא למדתי מספיק, ואני מצטער/ת.",
+        "en": "I wish I had studied = I didn't study enough and I regret it."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.no-use-calling",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"It's no use calling him; he never answers his phone.\" What does the writer mean?",
+      "audioText": "It's no use calling him; he never answers his phone.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Calling him won't help."
+        },
+        {
+          "id": "b",
+          "text": "It's free to call him."
+        },
+        {
+          "id": "c",
+          "text": "You can't use the phone to call him."
+        },
+        {
+          "id": "d",
+          "text": "He uses his phone all the time."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "It's no use לא מדבר על \"שימוש\" בטלפון.",
+          "en": "It's no use is not about using the phone."
+        }
+      ],
+      "explanation": {
+        "he": "It's no use calling = אין טעם להתקשר, כי הוא לא עונה. אין קשר ל'שימוש' בטלפון.",
+        "en": "It's no use calling = calling won't help."
+      },
+      "interests": [
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.couldnt-care-less",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"I couldn't care less about the score.\" What does the writer mean?",
+      "audioText": "I couldn't care less about the score.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The score doesn't matter to me at all."
+        },
+        {
+          "id": "b",
+          "text": "I care a lot about the score."
+        },
+        {
+          "id": "c",
+          "text": "I care less about the score than I used to."
+        },
+        {
+          "id": "d",
+          "text": "I'm worried that I can't see the score."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אי אפשר לדאוג פחות ממה שאני דואג/ת עכשיו. כמה זה?",
+          "en": "I can't care any less than I do now. How much is that?"
+        }
+      ],
+      "explanation": {
+        "he": "couldn't care less = לא אכפת לי בכלל. כמות הדאגה כבר באפס.",
+        "en": "couldn't care less = I don't care at all."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.rarely-snow",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"Rarely do we see snow in Tel Aviv.\" Which sentence has the same meaning?",
+      "audioText": "Rarely do we see snow in Tel Aviv.",
+      "instruction": {
+        "he": "לבחור משפט שאומר אותו דבר",
+        "en": "Choose the sentence with the same meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Snow in Tel Aviv is very unusual."
+        },
+        {
+          "id": "b",
+          "text": "We often see snow in Tel Aviv."
+        },
+        {
+          "id": "c",
+          "text": "We never see snow in Tel Aviv.",
+          "misconception": "reading.hidden-negative"
+        },
+        {
+          "id": "d",
+          "text": "We see snow in Tel Aviv every winter."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "rarely = לעיתים רחוקות.",
+          "en": "rarely = not often."
+        }
+      ],
+      "explanation": {
+        "he": "Rarely do we see = לעיתים רחוקות אנחנו רואים. כמעט אין שלג, אבל זה לא 'אף פעם'. היפוך הסדר (do we) מוסיף הדגשה.",
+        "en": "Rarely = almost never, but not never. The inversion adds emphasis."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.cant-wait",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"She can't wait to start high school.\" What does the writer mean?",
+      "audioText": "She can't wait to start high school.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She is very excited about starting high school."
+        },
+        {
+          "id": "b",
+          "text": "She doesn't want to start high school."
+        },
+        {
+          "id": "c",
+          "text": "She isn't allowed to start high school yet."
+        },
+        {
+          "id": "d",
+          "text": "She has no time to wait for the bus to school."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "can't wait לא מדבר על היכולת לחכות. זה ביטוי של רגש. איזה?",
+          "en": "can't wait isn't about being able to wait. It shows a feeling. Which one?"
+        }
+      ],
+      "explanation": {
+        "he": "can't wait to = מחכה בקוצר רוח, מאוד מתרגש/ת. זה לא קשור ליכולת לחכות.",
+        "en": "can't wait to = be very excited about."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.worth-reading",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"This book is worth reading.\" What does the writer mean?",
+      "audioText": "This book is worth reading.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It's a good idea to read this book."
+        },
+        {
+          "id": "b",
+          "text": "This book is very expensive."
+        },
+        {
+          "id": "c",
+          "text": "Reading this book is a waste of time."
+        },
+        {
+          "id": "d",
+          "text": "This book costs more than other books."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "worth כאן לא מדבר על מחיר.",
+          "en": "worth here is not about price."
+        }
+      ],
+      "explanation": {
+        "he": "worth reading = שווה לקרוא, כי הוא טוב. אין קשר למחיר.",
+        "en": "worth reading = it's good, you should read it."
+      },
+      "interests": [
+        "books"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.as-long-as",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"You can go out as long as you finish your homework first.\" Which sentence has the same meaning?",
+      "audioText": "You can go out as long as you finish your homework first.",
+      "instruction": {
+        "he": "לבחור משפט שאומר אותו דבר",
+        "en": "Choose the sentence with the same meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "You can go out only if you finish your homework first."
+        },
+        {
+          "id": "b",
+          "text": "You can go out while you do your homework."
+        },
+        {
+          "id": "c",
+          "text": "You can't go out today."
+        },
+        {
+          "id": "d",
+          "text": "You can stay out for a long time after your homework."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "as long as כאן הוא תנאי, לא אורך זמן.",
+          "en": "as long as is a condition here, not a length of time."
+        }
+      ],
+      "explanation": {
+        "he": "as long as = בתנאי ש. מותר לצאת רק אם קודם מסיימים שיעורי בית.",
+        "en": "as long as = only if."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.far-from-easy",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"Far from being easy, the test was the hardest of the year.\" What does the writer mean?",
+      "audioText": "Far from being easy, the test was the hardest of the year.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The test was very difficult."
+        },
+        {
+          "id": "b",
+          "text": "The test was quite easy."
+        },
+        {
+          "id": "c",
+          "text": "The test took place far from school."
+        },
+        {
+          "id": "d",
+          "text": "The test was easier than the others."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "far from כאן לא מדבר על מרחק.",
+          "en": "far from here is not about distance."
+        }
+      ],
+      "explanation": {
+        "he": "far from easy = רחוק מלהיות קל, כלומר קשה מאוד. אין כאן מרחק פיזי.",
+        "en": "far from easy = not easy at all."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.barely-passed",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"He barely passed the exam.\" What does the writer mean?",
+      "audioText": "He barely passed the exam.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He passed, but only just."
+        },
+        {
+          "id": "b",
+          "text": "He failed by a few points.",
+          "misconception": "reading.hidden-negative"
+        },
+        {
+          "id": "c",
+          "text": "He passed with a very high grade."
+        },
+        {
+          "id": "d",
+          "text": "He passed without studying."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "barely = בקושי. הוא עבר או לא?",
+          "en": "barely = with difficulty. Did he pass or not?"
+        }
+      ],
+      "explanation": {
+        "he": "barely passed = עבר בקושי, עם ציון נמוך מאוד. הוא כן עבר.",
+        "en": "barely passed = he passed with a very low grade."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.even-though-rich",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"Even though he's rich, he lives in a tiny apartment.\" Which sentence has the same meaning?",
+      "audioText": "Even though he's rich, he lives in a tiny apartment.",
+      "instruction": {
+        "he": "לבחור משפט שאומר אותו דבר",
+        "en": "Choose the sentence with the same meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He has a lot of money, but he lives in a small apartment."
+        },
+        {
+          "id": "b",
+          "text": "He lives in a small apartment because he is poor."
+        },
+        {
+          "id": "c",
+          "text": "He became rich by selling his apartment."
+        },
+        {
+          "id": "d",
+          "text": "He is rich because his apartment is small."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "Even though מראה ניגוד.",
+          "en": "Even though shows contrast."
+        }
+      ],
+      "explanation": {
+        "he": "Even though = למרות ש. יש לו הרבה כסף, ובכל זאת הוא גר בדירה קטנה.",
+        "en": "Even though = in spite of the fact that."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.had-i-known",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.8,
+      "prompt": "\"Had I known about the party, I would have come.\" What does the writer mean?",
+      "audioText": "Had I known about the party, I would have come.",
+      "instruction": {
+        "he": "לקרוא את המשפט ולבחור מה הכותב/ת מתכוון/ת לומר",
+        "en": "Read the sentence and choose what the writer means"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I didn't come because I didn't know about the party."
+        },
+        {
+          "id": "b",
+          "text": "I knew about the party, but I didn't come.",
+          "misconception": "reading.unreal-past"
+        },
+        {
+          "id": "c",
+          "text": "I came to the party because I knew about it."
+        },
+        {
+          "id": "d",
+          "text": "I will come to the party now that I know."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "Had I known = If I had known. זה מצב אמיתי או דמיוני?",
+          "en": "Had I known = If I had known. Real or unreal?"
+        }
+      ],
+      "explanation": {
+        "he": "Had I known = אילו ידעתי. בפועל לא ידעתי על המסיבה, ולכן לא באתי.",
+        "en": "Had I known = If I had known. In fact I didn't know, so I didn't come."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.meaning.since-kids",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"She hasn't seen her cousin since they were kids.\" Which sentence has the same meaning?",
+      "audioText": "She hasn't seen her cousin since they were kids.",
+      "instruction": {
+        "he": "לבחור משפט שאומר אותו דבר",
+        "en": "Choose the sentence with the same meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The last time she saw her cousin was when they were kids."
+        },
+        {
+          "id": "b",
+          "text": "She has seen her cousin a lot in recent months."
+        },
+        {
+          "id": "c",
+          "text": "She met her cousin for the first time last year."
+        },
+        {
+          "id": "d",
+          "text": "She sees her cousin every week."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "since מסמן נקודת התחלה. מה לא קרה מאז?",
+          "en": "since marks a starting point. What hasn't happened since then?"
+        }
+      ],
+      "explanation": {
+        "he": "hasn't seen since they were kids = מאז הילדות לא נפגשו. הפעם האחרונה הייתה בילדות.",
+        "en": "She hasn't seen her since childhood: the last time was when they were kids."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.lose-ticket",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "pair:lose-loose",
+      "prompt": "Hold your ticket tightly so you don't ___ it.",
+      "audioText": "Hold your ticket tightly so you don't lose it.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "lose"
+        },
+        {
+          "id": "b",
+          "text": "loose",
+          "misconception": "vocabulary.sound-alike-spelling"
+        },
+        {
+          "id": "c",
+          "text": "lost"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "צריך פועל: לאבד.",
+          "en": "You need a verb meaning 'not have any more'."
+        }
+      ],
+      "explanation": {
+        "he": "lose (o אחת) = לאבד, פועל. loose (שתי o) = רפוי, שם תואר. אחרי don't בא פועל בצורת בסיס.",
+        "en": "lose = verb (לאבד). loose = adjective (רפוי). After don't, use the base verb."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.loose-jeans",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "pair:lose-loose",
+      "prompt": "These jeans are too ___. I need a belt.",
+      "audioText": "These jeans are too loose. I need a belt.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "loose"
+        },
+        {
+          "id": "b",
+          "text": "lose",
+          "misconception": "vocabulary.sound-alike-spelling"
+        },
+        {
+          "id": "c",
+          "text": "lost"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "צריך שם תואר שמתאר מכנסיים גדולים מדי.",
+          "en": "You need an adjective for clothes that are too big."
+        }
+      ],
+      "explanation": {
+        "he": "loose = רפוי, רחב מדי. lose הוא פועל: לאבד.",
+        "en": "loose = not tight. lose is a verb."
+      },
+      "interests": [
+        "fashion"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.affect-sleep",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "pair:affect-effect",
+      "prompt": "Lack of sleep can ___ your memory.",
+      "audioText": "Lack of sleep can affect your memory.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "affect"
+        },
+        {
+          "id": "b",
+          "text": "effect",
+          "misconception": "vocabulary.sound-alike-spelling"
+        },
+        {
+          "id": "c",
+          "text": "effort"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי can בא פועל.",
+          "en": "After can comes a verb."
+        }
+      ],
+      "explanation": {
+        "he": "affect = פועל: להשפיע על. effect = שם עצם: השפעה. אחרי can צריך פועל.",
+        "en": "affect = verb (to influence). effect = noun (the result)."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.effect-rule",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "pair:affect-effect",
+      "prompt": "The new rule had a big ___ on students.",
+      "audioText": "The new rule had a big effect on students.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "effect"
+        },
+        {
+          "id": "b",
+          "text": "affect",
+          "misconception": "vocabulary.sound-alike-spelling"
+        },
+        {
+          "id": "c",
+          "text": "effort"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לפני הרווח יש a big. מה בא אחרי שם תואר?",
+          "en": "Before the gap: a big. What comes after an adjective?"
+        }
+      ],
+      "explanation": {
+        "he": "a big effect = השפעה גדולה. אחרי a + שם תואר בא שם עצם, effect. affect הוא פועל.",
+        "en": "After a big we need a noun: effect."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.quiet-library",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "pair:quiet-quite",
+      "prompt": "The library was very ___, so I could study well.",
+      "audioText": "The library was very quiet, so I could study well.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "quiet"
+        },
+        {
+          "id": "b",
+          "text": "quite",
+          "misconception": "vocabulary.sound-alike-spelling"
+        },
+        {
+          "id": "c",
+          "text": "quit"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איך הספרייה הייתה, אם היה אפשר ללמוד?",
+          "en": "What was the library like, if I could study?"
+        }
+      ],
+      "explanation": {
+        "he": "quiet (ie) = שקט. quite (te) = די, למדי. quit = להפסיק.",
+        "en": "quiet = שקט. quite = די. quit = stop."
+      },
+      "interests": [
+        "books",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.than-taller",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "pair:than-then",
+      "prompt": "My sister is taller ___ me.",
+      "audioText": "My sister is taller than me.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "than"
+        },
+        {
+          "id": "b",
+          "text": "then",
+          "misconception": "vocabulary.sound-alike-spelling"
+        },
+        {
+          "id": "c",
+          "text": "that"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "יש כאן השוואה: taller.",
+          "en": "There is a comparison: taller."
+        }
+      ],
+      "explanation": {
+        "he": "than (a) בא אחרי השוואה: taller than. then (e) = ואז, אחר כך.",
+        "en": "than follows a comparison. then = after that."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.then-beach",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "pair:than-then",
+      "prompt": "First we had lunch, and ___ we went to the beach.",
+      "audioText": "First we had lunch, and then we went to the beach.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "then"
+        },
+        {
+          "id": "b",
+          "text": "than",
+          "misconception": "vocabulary.sound-alike-spelling"
+        },
+        {
+          "id": "c",
+          "text": "them"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה קרה אחרי ארוחת הצהריים?",
+          "en": "What happened after lunch?"
+        }
+      ],
+      "explanation": {
+        "he": "then = ואז, אחר כך. than רק בהשוואות.",
+        "en": "then = after that. than is only for comparisons."
+      },
+      "interests": [
+        "travel",
+        "food"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.its-tail",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "pair:its-it's",
+      "prompt": "The dog is wagging ___ tail.",
+      "audioText": "The dog is wagging its tail.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "its"
+        },
+        {
+          "id": "b",
+          "text": "it's",
+          "misconception": "vocabulary.sound-alike-spelling"
+        },
+        {
+          "id": "c",
+          "text": "it"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הזנב שייך לכלב. צריך מילת שייכות.",
+          "en": "The tail belongs to the dog. You need a possessive."
+        }
+      ],
+      "explanation": {
+        "he": "its (בלי גרש) = שלו/שלה, לדברים ולבעלי חיים. it's = it is.",
+        "en": "its = belonging to it. it's = it is."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.its-raining",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "pair:its-it's",
+      "prompt": "___ raining, so take an umbrella.",
+      "audioText": "It's raining, so take an umbrella.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It's"
+        },
+        {
+          "id": "b",
+          "text": "Its",
+          "misconception": "vocabulary.sound-alike-spelling"
+        },
+        {
+          "id": "c",
+          "text": "It"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אפשר לכתוב כאן It is?",
+          "en": "Can you write It is here?"
+        }
+      ],
+      "explanation": {
+        "he": "It's = It is. It is raining. בלי גרש זו מילת שייכות.",
+        "en": "It's = It is. Its without the apostrophe shows possession."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.advice-phone",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "pair:advice-advise",
+      "prompt": "Can you give me some ___ about which phone to buy?",
+      "audioText": "Can you give me some advice about which phone to buy?",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "advice"
+        },
+        {
+          "id": "b",
+          "text": "advise",
+          "misconception": "vocabulary.sound-alike-spelling"
+        },
+        {
+          "id": "c",
+          "text": "advices"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי some צריך שם עצם.",
+          "en": "After some, we need a noun."
+        }
+      ],
+      "explanation": {
+        "he": "advice (c) = עצה, שם עצם שלא סופרים, ולכן אין advices. advise (s) = לייעץ, פועל.",
+        "en": "advice = noun (uncountable, no -s). advise = verb."
+      },
+      "interests": [
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.advise-save",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "pair:advice-advise",
+      "prompt": "I ___ you to save your work often.",
+      "audioText": "I advise you to save your work often.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "advise"
+        },
+        {
+          "id": "b",
+          "text": "advice",
+          "misconception": "vocabulary.sound-alike-spelling"
+        },
+        {
+          "id": "c",
+          "text": "advices"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי I בא פועל.",
+          "en": "After I comes a verb."
+        }
+      ],
+      "explanation": {
+        "he": "advise = לייעץ, פועל. advice = עצה, שם עצם. I advise you to...",
+        "en": "advise = verb: I advise you to... advice is a noun."
+      },
+      "interests": [
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.taught-bike",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "pair:learn-teach",
+      "prompt": "My mom ___ me how to ride a bike.",
+      "audioText": "My mom taught me how to ride a bike.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "taught"
+        },
+        {
+          "id": "b",
+          "text": "learned",
+          "misconception": "vocabulary.learn-teach"
+        },
+        {
+          "id": "c",
+          "text": "studied"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מי מעביר את הידע למי?",
+          "en": "Who passes the knowledge to whom?"
+        }
+      ],
+      "explanation": {
+        "he": "teach (taught) = ללמד מישהו. learn = ללמוד בעצמך. בעברית 'למד' ו'לימד' דומים, אבל באנגלית אלה פעלים שונים.",
+        "en": "teach = give knowledge to someone. learn = get knowledge yourself."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.learn-chess",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "pair:learn-teach",
+      "prompt": "I want to ___ how to play chess. Can you show me?",
+      "audioText": "I want to learn how to play chess. Can you show me?",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "learn"
+        },
+        {
+          "id": "b",
+          "text": "teach",
+          "misconception": "vocabulary.learn-teach"
+        },
+        {
+          "id": "c",
+          "text": "explain"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מי מקבל את הידע: אני או מישהו אחר?",
+          "en": "Who gets the knowledge: me or someone else?"
+        }
+      ],
+      "explanation": {
+        "he": "learn = ללמוד, לקבל ידע. teach = ללמד מישהו אחר. אני רוצה ללמוד, לכן learn.",
+        "en": "learn = get knowledge. I want to get it, so learn."
+      },
+      "interests": [
+        "games"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.remind-grandma",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "pair:remember-remind",
+      "prompt": "Can you ___ me to call grandma tonight?",
+      "audioText": "Can you remind me to call grandma tonight?",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "remind"
+        },
+        {
+          "id": "b",
+          "text": "remember",
+          "misconception": "vocabulary.remember-remind"
+        },
+        {
+          "id": "c",
+          "text": "remain"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מישהו אחר עוזר לי לא לשכוח.",
+          "en": "Someone else helps me not forget."
+        }
+      ],
+      "explanation": {
+        "he": "remind someone = להזכיר למישהו. remember = לזכור בעצמי. בעברית 'להזכיר' ו'לזכור' דומים.",
+        "en": "remind someone = make them remember. remember = keep in your own mind."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.remember-keys",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "pair:remember-remind",
+      "prompt": "I can't ___ where I put my keys.",
+      "audioText": "I can't remember where I put my keys.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "remember"
+        },
+        {
+          "id": "b",
+          "text": "remind",
+          "misconception": "vocabulary.remember-remind"
+        },
+        {
+          "id": "c",
+          "text": "remain"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אני מנסה למצוא את המידע בראש שלי.",
+          "en": "I'm trying to find the information in my own head."
+        }
+      ],
+      "explanation": {
+        "he": "remember = לזכור. remind = להזכיר למישהו אחר, ולכן צריך אחריו אדם.",
+        "en": "remember = keep in mind. remind needs a person: remind me."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.stole-bike",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "pair:rob-steal",
+      "prompt": "Someone ___ my bike from outside the school.",
+      "audioText": "Someone stole my bike from outside the school.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "stole"
+        },
+        {
+          "id": "b",
+          "text": "robbed",
+          "misconception": "vocabulary.rob-steal"
+        },
+        {
+          "id": "c",
+          "text": "stealed"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה נלקח: אדם/מקום או חפץ?",
+          "en": "What was taken: a person/place or an object?"
+        }
+      ],
+      "explanation": {
+        "he": "steal + חפץ: stole my bike. rob + אדם או מקום: robbed a bank. העבר של steal הוא stole.",
+        "en": "steal + thing (stole my bike). rob + person or place."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.robbed-bank",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "pair:rob-steal",
+      "prompt": "Two men ___ a bank in the city center yesterday.",
+      "audioText": "Two men robbed a bank in the city center yesterday.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "robbed"
+        },
+        {
+          "id": "b",
+          "text": "stole",
+          "misconception": "vocabulary.rob-steal"
+        },
+        {
+          "id": "c",
+          "text": "stealed"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "a bank הוא חפץ או מקום?",
+          "en": "Is a bank an object or a place?"
+        }
+      ],
+      "explanation": {
+        "he": "rob + מקום או אדם: rob a bank. steal + החפץ שנלקח: steal money.",
+        "en": "rob + place or person. steal + the thing taken."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.hear-louder",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "pair:hear-listen",
+      "prompt": "Speak louder, please. I can't ___ you.",
+      "audioText": "Speak louder, please. I can't hear you.",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "hear"
+        },
+        {
+          "id": "b",
+          "text": "listen",
+          "misconception": "vocabulary.hear-listen"
+        },
+        {
+          "id": "c",
+          "text": "sound"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הבעיה היא שהקול חלש. זה קורה בלי מאמץ או בכוונה?",
+          "en": "The voice is too quiet. Is this about effort or about the sound reaching me?"
+        }
+      ],
+      "explanation": {
+        "he": "hear = לשמוע, הקול מגיע לאוזניים. listen (to) = להקשיב בכוונה. כשהקול חלש מדי, לא שומעים: can't hear.",
+        "en": "hear = sound reaches you. listen to = pay attention on purpose."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.watch-tv",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "pair:see-watch-look",
+      "prompt": "Do you want to ___ TV with me?",
+      "audioText": "Do you want to watch TV with me?",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "watch"
+        },
+        {
+          "id": "b",
+          "text": "see",
+          "misconception": "vocabulary.see-watch-look"
+        },
+        {
+          "id": "c",
+          "text": "look",
+          "misconception": "vocabulary.see-watch-look"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית 'לראות טלוויזיה'. באנגלית?",
+          "en": "In Hebrew we 'see' TV. In English?"
+        }
+      ],
+      "explanation": {
+        "he": "watch = לצפות במשהו שזז לאורך זמן: watch TV, watch a game. see TV הוא תרגום מעברית.",
+        "en": "watch = look at something moving for some time: watch TV."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "bg.pair.look-photo",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "pair:see-watch-look",
+      "prompt": "___ at this photo. Isn't it funny?",
+      "audioText": "Look at this photo. Isn't it funny?",
+      "instruction": {
+        "he": "לבחור את המילה הנכונה",
+        "en": "Choose the correct word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Look"
+        },
+        {
+          "id": "b",
+          "text": "See",
+          "misconception": "vocabulary.see-watch-look"
+        },
+        {
+          "id": "c",
+          "text": "Watch",
+          "misconception": "vocabulary.see-watch-look"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי הרווח בא at.",
+          "en": "After the gap comes at."
+        }
+      ],
+      "explanation": {
+        "he": "look at = להסתכל על משהו בכוונה. see לא בא עם at. watch מתאים לדבר שזז לאורך זמן.",
+        "en": "look at = turn your eyes to something. see doesn't take at."
+      },
+      "interests": [],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    }
+  ],
+  "passages": [],
+  "lessons": [
+    {
+      "id": "lesson.connectors-logic",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "title": {
+        "he": "מילות קישור לפי משמעות",
+        "en": "Linking words by meaning"
+      },
+      "goal": "לזהות את הקשר ההגיוני בין שני משפטים ולבחור את מילת הקישור המתאימה.",
+      "blocks": [
+        {
+          "kind": "text",
+          "he": "מילת קישור מראה מה הקשר בין שני רעיונות: הוספה, ניגוד, סיבה, תוצאה, דוגמה או תנאי. בשאלות בבגרות כדאי לשאול קודם: מה הקשר בין שני החלקים? רק אחר כך בוחרים מילה.",
+          "en": "A linking word shows the relation between two ideas. First find the relation, then choose the word."
+        },
+        {
+          "kind": "table",
+          "head": [
+            "קשר",
+            "מילים",
+            "דוגמה"
+          ],
+          "rows": [
+            [
+              "הוספה",
+              "and, moreover, in addition, also",
+              "It's cheap. Moreover, it's healthy."
+            ],
+            [
+              "ניגוד",
+              "but, although, however, whereas, on the other hand, despite, in spite of",
+              "It was late. However, we kept working."
+            ],
+            [
+              "סיבה",
+              "because, because of, since",
+              "We stayed home because it was raining."
+            ],
+            [
+              "תוצאה",
+              "so, therefore, as a result",
+              "It was icy. As a result, schools closed."
+            ],
+            [
+              "דוגמה",
+              "for example, for instance, such as",
+              "Some fruits, for example oranges, have vitamin C."
+            ],
+            [
+              "תנאי",
+              "if, unless, otherwise, as long as",
+              "Hurry up. Otherwise, you'll be late."
+            ],
+            [
+              "החלפה",
+              "instead, instead of",
+              "We didn't fly. Instead, we took a train."
+            ]
+          ]
+        },
+        {
+          "kind": "rule",
+          "he": "מה בא אחרי המילה? משפט שלם עם פועל, או שם עצם / ing",
+          "pattern": "although + clause | despite / in spite of + noun or -ing"
+        },
+        {
+          "kind": "examples",
+          "items": [
+            {
+              "en": "Although it was raining, we went out.",
+              "he": "למרות שירד גשם, יצאנו.",
+              "note": "although + משפט"
+            },
+            {
+              "en": "Despite the rain, we went out.",
+              "he": "למרות הגשם, יצאנו.",
+              "note": "despite + שם עצם"
+            },
+            {
+              "en": "It was raining. However, we went out.",
+              "he": "ירד גשם. עם זאת, יצאנו.",
+              "note": "However פותח משפט חדש"
+            },
+            {
+              "en": "You won't pass unless you study.",
+              "he": "לא תעבור/י אם לא תלמד/י.",
+              "note": "unless = if not"
+            }
+          ]
+        },
+        {
+          "kind": "mistake",
+          "wrong": "Despite it was raining, we went out.",
+          "right": "Although it was raining, we went out.",
+          "he": "despite לא בא לפני משפט עם פועל. לפני משפט משתמשים ב־although."
+        },
+        {
+          "kind": "mistake",
+          "wrong": "I was tired, because I went to bed early.",
+          "right": "I was tired, so I went to bed early.",
+          "he": "because מציג סיבה ו־so מציג תוצאה. כדאי לבדוק מה קרה קודם."
+        },
+        {
+          "kind": "tip",
+          "he": "However, Therefore, Moreover, As a result ו־On the other hand פותחים בדרך כלל משפט חדש, ואחריהם בא פסיק. but, so, because ו־although מחברים שני חלקים בתוך אותו משפט."
+        }
+      ],
+      "source": "original"
+    },
+    {
+      "id": "lesson.collocations",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "title": {
+        "he": "צירופים קבועים: make, do, take, have",
+        "en": "Collocations: make, do, take, have"
+      },
+      "goal": "לבחור את הפועל שהולך באנגלית עם שם העצם, ולא לתרגם מילה במילה מעברית.",
+      "blocks": [
+        {
+          "kind": "text",
+          "he": "צירוף (collocation) הוא זוג מילים שדוברי אנגלית משתמשים בו יחד. בעברית 'עושים' כמעט הכול, אבל באנגלית יש make, do, take ו־have, ולכל אחד שמות עצם משלו. כדאי ללמוד את הצירוף כולו ולא מילה בודדת.",
+          "en": "A collocation is a pair of words that go together. Learn the whole phrase."
+        },
+        {
+          "kind": "table",
+          "head": [
+            "make (ליצור משהו)",
+            "do (משימה או עבודה)"
+          ],
+          "rows": [
+            [
+              "make a decision",
+              "do homework"
+            ],
+            [
+              "make a mistake",
+              "do the dishes"
+            ],
+            [
+              "make money",
+              "do the shopping"
+            ],
+            [
+              "make noise",
+              "do your best"
+            ],
+            [
+              "make progress",
+              "do someone a favor"
+            ],
+            [
+              "make friends",
+              "do research"
+            ]
+          ]
+        },
+        {
+          "kind": "table",
+          "head": [
+            "take",
+            "have"
+          ],
+          "rows": [
+            [
+              "take a photo",
+              "have a party"
+            ],
+            [
+              "take a break",
+              "have fun"
+            ],
+            [
+              "take a shower",
+              "have an accident"
+            ],
+            [
+              "take a risk",
+              "have breakfast"
+            ],
+            [
+              "take an exam",
+              "have a good time"
+            ]
+          ]
+        },
+        {
+          "kind": "examples",
+          "items": [
+            {
+              "en": "Heavy rain closed the roads.",
+              "he": "גשם חזק סגר את הכבישים.",
+              "note": "heavy rain, לא strong rain"
+            },
+            {
+              "en": "Please pay attention.",
+              "he": "בבקשה לשים לב.",
+              "note": "pay attention, לא put attention"
+            },
+            {
+              "en": "Can you turn on the light?",
+              "he": "אפשר להדליק את האור?",
+              "note": "turn on, לא open"
+            },
+            {
+              "en": "She always keeps her promises.",
+              "he": "היא תמיד שומרת על ההבטחות שלה.",
+              "note": "keep, לא save"
+            }
+          ]
+        },
+        {
+          "kind": "mistake",
+          "wrong": "I did a mistake in the test.",
+          "right": "I made a mistake in the test.",
+          "he": "בעברית 'עשיתי טעות', אבל באנגלית make a mistake."
+        },
+        {
+          "kind": "mistake",
+          "wrong": "We need to do a decision.",
+          "right": "We need to make a decision.",
+          "he": "בעברית 'מקבלים החלטה'. באנגלית make a decision."
+        },
+        {
+          "kind": "tip",
+          "he": "כלל אצבע: make כשנוצר משהו חדש (רעש, כסף, החלטה). do כשמבצעים משימה (שיעורי בית, כלים, קניות). אבל יש הרבה יוצאים מן הכלל, ולכן כדאי לשנן את הצירופים."
+        }
+      ],
+      "source": "original"
+    }
+  ]
+}
