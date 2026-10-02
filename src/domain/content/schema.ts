@@ -130,14 +130,68 @@ export const OrderItem = z.object({
   alternatives: z.array(z.string().min(1)).default([]),
   audioText: EnglishText.optional(),
   distractors: z.array(z.object({ text: z.string().min(1), misconception: z.string().optional() })).default([]),
+  /** "he": `prompt` is a Hebrew sentence to translate, shown above the tiles. */
+  promptLanguage: z.enum(['en', 'he']).optional(),
 });
 
-export const ContentItem = z.union([ChoiceItem, TypedItem, OpenWritingItem, OrderItem]);
+/**
+ * Spot the mistake: one word in `sentence` is wrong. The learner taps it and
+ * picks the fix. Tokens are the sentence split on spaces; `wrongIndex`
+ * points at the wrong token. `correction` replaces that token ("" deletes
+ * it) and must turn `sentence` into `corrected`.
+ */
+export const FixItem = z
+  .object({
+    ...base,
+    type: z.literal('fix'),
+    /** Not shown. Kept so every item has a prompt. */
+    prompt: z.string().min(1).default('Find the mistake'),
+    sentence: z.string().min(1),
+    wrongIndex: z.number().int().min(0),
+    correction: z.string(),
+    /** Other replacements offered with the correction. Wrong in this sentence. */
+    distractors: z.array(z.string()).min(2).max(3),
+    corrected: z.string().min(1),
+    /** Read after the answer. Must equal `corrected`. */
+    audioText: EnglishText.optional(),
+    /** Shown in the banner: what the learner meant, in Hebrew. */
+    meaning: z.string().min(1).optional(),
+  })
+  .refine((i) => i.wrongIndex < i.sentence.trim().split(/\s+/).length, { message: 'wrongIndex out of range' })
+  .refine((i) => applyFix(i.sentence, i.wrongIndex, i.correction) === i.corrected.trim(), {
+    message: 'sentence with the correction must equal corrected',
+  })
+  .refine((i) => !i.audioText || i.audioText === i.corrected, { message: 'audioText must equal corrected' })
+  .refine((i) => !i.distractors.some((d) => d.trim().toLowerCase() === i.correction.trim().toLowerCase()), {
+    message: 'a distractor equals the correction',
+  });
+
+/** Replaces token `index` (keeping its punctuation) and returns the sentence. */
+export function applyFix(sentence: string, index: number, correction: string): string {
+  const tokens = sentence.trim().split(/\s+/);
+  const tok = tokens[index] ?? '';
+  const lead = tok.match(/^[^\p{L}\p{N}']*/u)?.[0] ?? '';
+  const trail = tok.match(/[^\p{L}\p{N}']*$/u)?.[0] ?? '';
+  const out = [...tokens];
+  if (correction.trim()) {
+    out[index] = lead + correction.trim() + trail;
+  } else {
+    out.splice(index, 1);
+    // A deleted last word leaves its end mark on the word before it.
+    if (trail && index > 0 && index === tokens.length - 1) out[index - 1] += trail;
+  }
+  const joined = out.join(' ');
+  // Keep the capital at the start of the sentence.
+  return index === 0 && joined ? joined[0]!.toUpperCase() + joined.slice(1) : joined;
+}
+
+export const ContentItem = z.union([ChoiceItem, TypedItem, OpenWritingItem, OrderItem, FixItem]);
 export type ContentItem = z.infer<typeof ContentItem>;
 export type ChoiceItem = z.infer<typeof ChoiceItem>;
 export type TypedItem = z.infer<typeof TypedItem>;
 export type OpenWritingItem = z.infer<typeof OpenWritingItem>;
 export type OrderItem = z.infer<typeof OrderItem>;
+export type FixItem = z.infer<typeof FixItem>;
 
 export const Passage = z.object({
   id: z.string().min(1),
@@ -219,9 +273,77 @@ export const ContentPack = z.object({
   items: z.array(z.unknown()).default([]),
   passages: z.array(z.unknown()).default([]),
   lessons: z.array(z.unknown()).default([]),
+  stories: z.array(z.unknown()).default([]),
 });
 export type ContentPack = z.infer<typeof ContentPack>;
 
 export function unitOf(item: Pick<ContentItem, 'id' | 'unit'>): string {
   return item.unit ?? `item:${item.id}`;
+}
+
+/**
+ * A short graded story. Read stories have narration; dialogue stories are
+ * spoken by two voices (A: female voice, B: male voice). Lines without a
+ * speaker are narration, read by voice A.
+ *
+ * Every English word in the lines must have a glossary entry (key: the
+ * lowercase word as written, without punctuation), except the very common
+ * words in STORY_STOPWORDS. Tapping a word shows its gloss and saves it to
+ * the learner's "my words".
+ */
+export const StoryLine = z.object({
+  speaker: z.enum(['A', 'B']).optional(),
+  en: z.string().min(1),
+  he: z.string().min(1),
+});
+export type StoryLine = z.infer<typeof StoryLine>;
+
+export const StoryQuestion = z.object({
+  /** Shown after this line index (0-based). */
+  after: z.number().int().min(0),
+  item: ChoiceItem,
+});
+
+export const Story = z
+  .object({
+    id: z.string().regex(/^[a-z0-9][a-z0-9.-]*$/),
+    title: Bilingual,
+    kind: z.enum(['read', 'dialogue']),
+    level: z.enum(CEFR_LEVELS),
+    /** Names of the two dialogue voices, e.g. { A: "Tamar", B: "Ari" }. */
+    cast: z.object({ A: z.string().min(1), B: z.string().min(1) }).optional(),
+    lines: z.array(StoryLine).min(4),
+    glossary: z.record(z.string(), z.object({ lemma: z.string().min(1), he: z.string().min(1) })),
+    questions: z.array(StoryQuestion).min(2),
+    /** One Hebrew sentence: the value or idea of the story. */
+    moral: z.string().min(1).optional(),
+    tags: z.array(z.string()).default([]),
+    source: SourceRef,
+  })
+  .refine((s) => s.questions.every((q) => q.after < s.lines.length), { message: 'question after a missing line' })
+  .refine((s) => s.kind === 'read' || (!!s.cast && s.lines.every((l) => !!l.speaker)), {
+    message: 'dialogue stories need a cast and a speaker on every line',
+  });
+export type Story = z.infer<typeof Story>;
+
+/** Words so common that stories need no glossary entry for them. */
+export const STORY_STOPWORDS = new Set(
+  (
+    "a an the and or but so if of to in on at for from with by as is am are was were be been do does did not no yes " +
+    "i you he she it we they me him her us them my your his its our their this that these those there here " +
+    "what who how when where why oh ok okay mr mrs ms"
+  ).split(' '),
+);
+
+/** Lowercase words of a line, without punctuation, as used for glossary keys. */
+export function storyWords(text: string): string[] {
+  return text
+    .split(/\s+/)
+    .map((t) => t.replace(/^[^\p{L}\p{N}']+|[^\p{L}\p{N}']+$/gu, '').toLowerCase().replace(/[\u2018\u2019]/g, "'"))
+    .filter(Boolean);
+}
+
+/** Glossary entry for a word, trying the possessive base too ("ari's" -> "ari"). */
+export function glossFor(story: Pick<Story, 'glossary'>, word: string) {
+  return story.glossary[word] ?? (word.endsWith("'s") ? story.glossary[word.slice(0, -2)] : undefined);
 }

@@ -10,7 +10,7 @@
  * on the content pack still containing the item in the same form.
  */
 
-export type InteractionKind = 'choice' | 'typed' | 'open-writing' | 'order';
+export type InteractionKind = 'choice' | 'typed' | 'open-writing' | 'order' | 'fix';
 
 export interface AttemptRecord {
   /** Option id for choice items, typed text for typed items. */

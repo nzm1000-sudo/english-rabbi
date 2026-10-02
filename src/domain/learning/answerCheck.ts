@@ -30,6 +30,8 @@ export function normalizeAnswer(s: string): string {
     .replace(/\s+/g, ' ')
     .trim()
     .replace(/[.!?,;:]+$/g, '')
+    // Commas inside a sentence never change whether a translation is right.
+    .replace(/\s*,\s*/g, ' ')
     .trim();
   for (const [re, rep] of CONTRACTIONS) t = t.replace(re, rep);
   return t.replace(/\s+/g, ' ');

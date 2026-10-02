@@ -117,6 +117,7 @@ export const SKILLS: readonly SkillNode[] = [
   S('writing.message-email', 'הודעה ומייל', 'Messages and emails', 'A2', undefined, false),
   S('writing.opinion', 'פסקת דעה', 'Opinion paragraph', 'B1', undefined, false),
   S('writing.spelling', 'איות', 'Spelling', 'A1'),
+  S('writing.translation', 'תרגום משפטים לאנגלית', 'Translating sentences into English', 'A1'),
 
   // Listening
   S('listening.words', 'זיהוי מילים בשמיעה', 'Recognizing words', 'A1'),

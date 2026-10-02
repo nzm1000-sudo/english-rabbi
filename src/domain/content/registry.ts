@@ -6,12 +6,17 @@ import {
   Misconception,
   Passage,
   Source,
+  Story,
+  STORY_STOPWORDS,
+  glossFor,
+  storyWords,
   unitOf,
   type ContentItem as Item,
   type Lesson as LessonT,
   type Misconception as MisconceptionT,
   type Passage as PassageT,
   type Source as SourceT,
+  type Story as StoryT,
 } from './schema';
 
 export interface LoadIssue {
@@ -27,6 +32,8 @@ export interface ContentRegistry {
   sources: ReadonlyMap<string, SourceT>;
   misconceptions: ReadonlyMap<string, MisconceptionT>;
   lessons: ReadonlyMap<string, LessonT>;
+  /** Graded stories, in pack order. Their questions are not in `items`. */
+  stories: ReadonlyMap<string, StoryT>;
   /** Lessons for a skill, or for its nearest ancestor that has one. */
   lessonsForSkill(skill: SkillId): LessonT[];
   /** Items that are valid but blocked from students (licensing). */
@@ -69,6 +76,7 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
 
   const passages = new Map<string, PassageT>();
   const lessons = new Map<string, LessonT>();
+  const stories = new Map<string, StoryT>();
   const items: Item[] = [];
   const quarantined: Item[] = [];
   const seen = new Set<string>();
@@ -117,6 +125,21 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
       lessons.set(r.data.id, r.data);
     }
 
+    for (const st of pack.stories) {
+      const r = Story.safeParse(st);
+      if (!r.success) {
+        issues.push({ packId: pack.packId, id: idOf(st), severity: 'error', reason: r.error.message });
+        continue;
+      }
+      const problem = checkStory(r.data, { sources, misconceptions, passages, seen }, stories);
+      if (problem) {
+        issues.push({ packId: pack.packId, id: r.data.id, severity: problem.severity, reason: problem.reason });
+        continue;
+      }
+      for (const q of r.data.questions) seen.add(q.item.id);
+      stories.set(r.data.id, r.data);
+    }
+
     for (const it of pack.items) {
       const r = ContentItem.safeParse(it);
       if (!r.success) {
@@ -145,6 +168,7 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
     items,
     passages,
     lessons,
+    stories,
     lessonsForSkill: (skill) => {
       for (const id of lineage(skill)) {
         const ls = lessonsBySkill.get(id);
@@ -192,6 +216,25 @@ function checkReferences(
   const src = ctx.sources.get(item.source);
   if (!src) return { severity: 'quarantined', reason: `unknown source "${item.source}"` };
   if (src.status !== 'approved') return { severity: 'quarantined', reason: `source "${src.id}" is ${src.status}` };
+  return null;
+}
+
+function checkStory(
+  story: StoryT,
+  ctx: Parameters<typeof checkReferences>[1],
+  stories: Map<string, StoryT>,
+): { severity: LoadIssue['severity']; reason: string } | null {
+  if (stories.has(story.id)) return { severity: 'error', reason: 'duplicate story id' };
+  const src = ctx.sources.get(story.source);
+  if (!src || src.status !== 'approved') return { severity: 'quarantined', reason: `source "${story.source}" not approved` };
+  const missing = [...new Set(story.lines.flatMap((l) => storyWords(l.en)))].filter((w) => !STORY_STOPWORDS.has(w) && !glossFor(story, w));
+  if (missing.length) return { severity: 'error', reason: `no glossary entry for: ${missing.join(', ')}` };
+  for (const q of story.questions) {
+    const p = checkReferences(q.item, ctx);
+    if (p) return { severity: p.severity, reason: `${q.item.id}: ${p.reason}` };
+  }
+  const ids = story.questions.map((q) => q.item.id);
+  if (new Set(ids).size !== ids.length) return { severity: 'error', reason: 'duplicate question id' };
   return null;
 }
 
