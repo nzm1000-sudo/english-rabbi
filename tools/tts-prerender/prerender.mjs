@@ -5,6 +5,7 @@
  *   npm install
  *   node prerender.mjs                 # all texts, both accents, normal + slow
  *   node prerender.mjs --limit 5       # quick test
+ *   node prerender.mjs --prune         # also delete audio of removed texts
  *
  * Output: ../../public/audio/<key>.mp3 and ../../public/audio/manifest.json.
  * The app's PrerenderedProvider looks texts up by the same key (audioKey.ts),
@@ -63,6 +64,21 @@ const manifest = fs.existsSync(manifestPath)
   : { version: 1, engine: 'kokoro-82m-v1.0', entries: {} };
 
 const texts = collectTexts().slice(0, limit);
+
+// --prune: delete audio for texts that no longer exist in the content.
+if (process.argv.includes('--prune')) {
+  const keep = new Set();
+  for (const text of collectTexts()) for (const accent of ACCENTS) for (const rate of Object.keys(RATES)) keep.add(audioKey(VOICES[accent].A, rate, text));
+  let removed = 0;
+  for (const [key, url] of Object.entries(manifest.entries)) {
+    if (keep.has(key)) continue;
+    fs.rmSync(path.join(root, 'public', url), { force: true });
+    delete manifest.entries[key];
+    removed++;
+  }
+  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 1));
+  console.log(`pruned ${removed} files`);
+}
 const jobs = [];
 for (const text of texts) {
   for (const accent of ACCENTS) {

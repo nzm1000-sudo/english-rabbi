@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.0
+- Content: about 1,300 original exercises for 3/4/5 units (vocabulary A1-C1, word
+  formation, tenses, sentence structures, 13 bagrut-style reading passages,
+  listening incl. minimal pairs and dictation, connectors, collocations,
+  phrasal verbs, idioms, riddles), every pack reviewed by a second pass.
+- Lessons: about 30 lessons with Hebrew explanations, English examples with
+  audio, tables and typical Israeli mistakes; reachable from any exercise.
+- Games: quiz, lightning round, bagrut-style mock exam, daily challenge,
+  riddles, mistake gym, focused practice per skill.
+- Ranks that require points, remembered words and mastered skills together;
+  achievements.
+- Audio cached at runtime with a "download all" button for offline use.
+- GitHub Pages deployment and CI.
+
 ## 0.1.1
 - Natural American voice (Kokoro af_heart) for all fixed content, normal and slow, offline.
 - Reading passages play sentence by sentence from pre-rendered audio.

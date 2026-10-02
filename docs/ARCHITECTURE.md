@@ -109,6 +109,39 @@ one free retry. Asking for help when none is left never reveals the answer.
 Hebrew below A2/B1, mixed (English + Hebrew) around B1, English from B2.
 New students start in Hebrew.
 
+## Session modes and games (`src/features/practice/modes.ts`)
+
+Every practice mode and game is a configuration of the same engine:
+selection policy (practice / placement), flow policy (`teach` = hint ladder,
+`test` = one attempt), feedback (`full` / `brief` / `none`), optional time
+limit, and either an adaptive pool or a fixed list.
+
+| Mode | Pool | Flow | Notes |
+|---|---|---|---|
+| lesson, vocabulary, grammar, reading, listening | adaptive | teach | reading stays on one passage up to 4 questions |
+| review | due units | teach | |
+| skill | items of one skill subtree | teach | opened from lessons and weak-skill card |
+| mistakes | items targeting repeated mistakes or lapsed units | teach | "mistake gym" |
+| riddles | tag `riddle` | teach | |
+| quiz | all non-passage items | test | 10 items, target 70% |
+| lightning | quick vocabulary choice items | test, brief | 60 s, one tap, streak scoring |
+| exam | fixed: one passage at track level + vocabulary + grammar | test, none | score per domain |
+| daily | fixed per student per day | teach | one per day |
+
+Games log `game.finished`. Every answer in every mode is a normal
+`item.completed` event, so games train the same learner model.
+
+## Ranks and achievements (`learning/progression.ts`)
+
+A rank requires XP, remembered words (retrievability >= 0.7) and mastered
+sub-skills together. XP alone never raises a rank.
+
+## Lessons
+
+`Lesson` blocks: text, rule, examples (with audio), table, mistake, tip.
+`registry.lessonsForSkill` walks up the skill tree, so every exercise can
+offer the closest lesson.
+
 ## Persistence (`src/data`)
 
 - Dexie schema with append-only version list (`schema.ts`). Never edit a
@@ -133,6 +166,10 @@ AudioPlayback             plays blobs/urls; separate from generation
 Recorder / SpeechRecognizer / PronunciationAssessor   interfaces only
 ```
 Cache key `audioKey(voice, rate, text)` is shared with the pre-render tool.
+Audio files are fetched whole and played from memory (Safari's audio element
+uses Range requests that a service worker cannot cache reliably). The service
+worker caches them on first use (`audio-v1`); the parent screen can download
+all of them for offline use.
 Slow mode is generated slower by the engine (Kokoro speed 0.8, Web Speech
 rate 0.8), never time-stretched. One accent per student; dialogue speakers
 A/B map to two fixed voices of that accent. See `docs/TTS-EVALUATION.md`.
