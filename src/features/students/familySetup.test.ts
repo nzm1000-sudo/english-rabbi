@@ -2,7 +2,7 @@ import { birthYearFromAge, decodeFamily, encodeFamily } from './familySetup';
 
 describe('family setup link', () => {
   it('round-trips names and ages', () => {
-    const fam = [{ name: 'נעה', age: 17 }, { name: 'בארי יעקב', age: 11 }];
+    const fam = [{ name: 'דנה', age: 14 }, { name: 'עומר בן', age: 10 }];
     expect(decodeFamily(decodeURIComponent(encodeFamily(fam)))).toEqual(fam);
   });
 
