@@ -1,12 +1,14 @@
-import { domainOf, isKnownSkill, type Domain, type SkillId } from '../skills/taxonomy';
+import { domainOf, isKnownSkill, lineage, type Domain, type SkillId } from '../skills/taxonomy';
 import {
   ContentItem,
   ContentPack,
+  Lesson,
   Misconception,
   Passage,
   Source,
   unitOf,
   type ContentItem as Item,
+  type Lesson as LessonT,
   type Misconception as MisconceptionT,
   type Passage as PassageT,
   type Source as SourceT,
@@ -24,6 +26,9 @@ export interface ContentRegistry {
   passages: ReadonlyMap<string, PassageT>;
   sources: ReadonlyMap<string, SourceT>;
   misconceptions: ReadonlyMap<string, MisconceptionT>;
+  lessons: ReadonlyMap<string, LessonT>;
+  /** Lessons for a skill, or for its nearest ancestor that has one. */
+  lessonsForSkill(skill: SkillId): LessonT[];
   /** Items that are valid but blocked from students (licensing). */
   quarantined: readonly Item[];
   issues: readonly LoadIssue[];
@@ -61,6 +66,7 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
   }
 
   const passages = new Map<string, PassageT>();
+  const lessons = new Map<string, LessonT>();
   const items: Item[] = [];
   const quarantined: Item[] = [];
   const seen = new Set<string>();
@@ -87,6 +93,28 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
       passages.set(r.data.id, r.data);
     }
 
+    for (const l of pack.lessons) {
+      const r = Lesson.safeParse(l);
+      if (!r.success) {
+        issues.push({ packId: pack.packId, id: idOf(l), severity: 'error', reason: r.error.message });
+        continue;
+      }
+      if (!isKnownSkill(r.data.skill)) {
+        issues.push({ packId: pack.packId, id: r.data.id, severity: 'error', reason: `unknown skill "${r.data.skill}"` });
+        continue;
+      }
+      if (lessons.has(r.data.id)) {
+        issues.push({ packId: pack.packId, id: r.data.id, severity: 'error', reason: 'duplicate lesson id' });
+        continue;
+      }
+      const src = sources.get(r.data.source);
+      if (!src || src.status !== 'approved') {
+        issues.push({ packId: pack.packId, id: r.data.id, severity: 'quarantined', reason: `source "${r.data.source}" not approved` });
+        continue;
+      }
+      lessons.set(r.data.id, r.data);
+    }
+
     for (const it of pack.items) {
       const r = ContentItem.safeParse(it);
       if (!r.success) {
@@ -110,9 +138,18 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
   const byDomainIdx = groupBy(items, (i) => domainOf(i.skill));
   const byUnitIdx = groupBy(items, (i) => unitOf(i));
 
+  const lessonsBySkill = groupBy([...lessons.values()], (l) => l.skill);
   return {
     items,
     passages,
+    lessons,
+    lessonsForSkill: (skill) => {
+      for (const id of lineage(skill)) {
+        const ls = lessonsBySkill.get(id);
+        if (ls?.length) return ls;
+      }
+      return [];
+    },
     sources,
     misconceptions,
     quarantined,

@@ -162,12 +162,46 @@ export const Misconception = z.object({
 });
 export type Misconception = z.infer<typeof Misconception>;
 
+/**
+ * Lesson: a short explanation of one skill, read before or after practice.
+ * Hebrew-first, with English examples. Blocks keep layout out of content.
+ */
+export const LessonBlock = z.discriminatedUnion('kind', [
+  z.object({ kind: z.literal('text'), he: z.string().min(1), en: z.string().optional() }),
+  z.object({ kind: z.literal('rule'), he: z.string().min(1), pattern: z.string().min(1) }),
+  z.object({
+    kind: z.literal('examples'),
+    items: z.array(z.object({ en: z.string().min(1), he: z.string().optional(), note: z.string().optional() })).min(1),
+  }),
+  z.object({ kind: z.literal('mistake'), wrong: z.string().min(1), right: z.string().min(1), he: z.string().min(1) }),
+  z.object({ kind: z.literal('tip'), he: z.string().min(1) }),
+  z.object({
+    kind: z.literal('table'),
+    head: z.array(z.string()).min(2),
+    rows: z.array(z.array(z.string())).min(1),
+  }),
+]);
+export type LessonBlock = z.infer<typeof LessonBlock>;
+
+export const Lesson = z.object({
+  id: z.string().regex(/^[a-z0-9][a-z0-9.-]*$/),
+  skill: z.string().min(1),
+  level: z.enum(CEFR_LEVELS),
+  title: Bilingual,
+  /** One Hebrew sentence: what the learner will be able to do. */
+  goal: z.string().min(1),
+  blocks: z.array(LessonBlock).min(2),
+  source: SourceRef,
+});
+export type Lesson = z.infer<typeof Lesson>;
+
 export const ContentPack = z.object({
   packId: z.string().min(1),
   schemaVersion: z.literal(1),
   title: z.string(),
   items: z.array(z.unknown()).default([]),
   passages: z.array(z.unknown()).default([]),
+  lessons: z.array(z.unknown()).default([]),
 });
 export type ContentPack = z.infer<typeof ContentPack>;
 

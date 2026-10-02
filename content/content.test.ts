@@ -2,7 +2,7 @@ import { contentRegistry as reg } from './index';
 import { buildRegistry } from '@/domain/content/registry';
 import { DOMAINS } from '@/domain/skills/taxonomy';
 import sources from './sources.json';
-import misconceptions from './misconceptions.json';
+import misconceptions from './misconceptions/core.json';
 
 describe('content packs', () => {
   it('load without any errors or quarantined items', () => {

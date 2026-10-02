@@ -56,6 +56,9 @@ export const SKILLS: readonly SkillNode[] = [
   S('vocabulary.context', 'מילה בהקשר', 'Words in context', 'A2'),
   S('vocabulary.synonyms-antonyms', 'מילים נרדפות והפכים', 'Synonyms and antonyms', 'A2'),
   S('vocabulary.collocations', 'צירופי מילים', 'Collocations', 'B1'),
+  S('vocabulary.word-formation', 'בניית מילים (תחיליות וסיומות)', 'Word formation', 'B1'),
+  S('vocabulary.phrasal-verbs', 'פעלים עם מילת יחס (Phrasal verbs)', 'Phrasal verbs', 'B1'),
+  S('vocabulary.idioms', 'ניבים וביטויים', 'Idioms and expressions', 'B2'),
 
   // Grammar: tenses
   S('grammar.present-simple', 'הווה פשוט', 'Present Simple', 'A1'),
@@ -86,6 +89,16 @@ export const SKILLS: readonly SkillNode[] = [
   S('grammar.comparatives', 'השוואה (er / more / most)', 'Comparatives and superlatives', 'A2'),
   S('grammar.word-order', 'סדר מילים', 'Word order', 'A1'),
   S('grammar.connectors', 'מילות קישור', 'Linking words', 'B1'),
+  S('grammar.pronouns', 'כינויי גוף ושייכות', 'Pronouns and possessives', 'A1'),
+  S('grammar.there-is', 'There is / There are', 'There is / there are', 'A1'),
+  S('grammar.plurals', 'רבים', 'Plural nouns', 'A1'),
+  S('grammar.adverbs', 'תארי פועל', 'Adverbs', 'A2'),
+  S('grammar.used-to', 'Used to', 'Used to', 'A2', ['grammar.past-simple']),
+  S('grammar.present-perfect-progressive', 'הווה מושלם מתמשך', 'Present Perfect Progressive', 'B1', ['grammar.present-perfect']),
+  S('grammar.modals.deduction', 'מודאליים להסקה (must / can\'t / might)', 'Modals of deduction', 'B2', ['grammar.modals']),
+  S('grammar.reported-speech', 'דיבור עקיף', 'Reported speech', 'B1', ['grammar.past-simple']),
+  S('grammar.question-tags', 'שאלות זנב (Question tags)', 'Question tags', 'B1'),
+  S('grammar.wish', 'Wish / If only', 'Wish and if only', 'B2', ['grammar.conditionals.second']),
 
   // Reading
   S('reading.details', 'איתור פרטים', 'Finding details', 'A1'),
@@ -93,6 +106,10 @@ export const SKILLS: readonly SkillNode[] = [
   S('reading.inference', 'הסקת מסקנות', 'Inference', 'B1'),
   S('reading.vocabulary-in-context', 'משמעות מילה מתוך הקטע', 'Vocabulary in context', 'A2'),
   S('reading.true-false', 'נכון / לא נכון', 'True / false', 'A1'),
+  S('reading.reference', 'הפניה (למה מתייחסת המילה)', 'Reference words', 'A2'),
+  S('reading.sequence', 'סדר אירועים', 'Sequence of events', 'A2'),
+  S('reading.purpose', 'מטרת הכותב', "Writer's purpose", 'B1'),
+  S('reading.fact-opinion', 'עובדה או דעה', 'Fact or opinion', 'B1'),
 
   // Writing (assessment requires an evaluator, added in a later stage)
   S('writing.sentence', 'כתיבת משפט', 'Writing a sentence', 'A1', undefined, false),
