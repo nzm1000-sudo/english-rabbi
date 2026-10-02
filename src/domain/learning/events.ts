@@ -81,11 +81,15 @@ export interface EventMap {
   'audio.played': { text: string; replay: boolean; provider: string };
   'game.finished': GameResult;
   'lesson.viewed': { lessonId: string; skill: string };
+  'story.completed': { storyId: string; correct: number; total: number };
+  'word.saved': { lemma: string; storyId?: string };
+  'word.removed': { lemma: string };
+  'speaking.shadowed': { text: string; rating: 1 | 2 | 3 };
 }
 
 /** Result of a quiz, lightning round, exam or daily challenge. */
 export interface GameResult {
-  game: 'quiz' | 'lightning' | 'exam' | 'daily' | 'riddles' | 'mistakes' | 'match';
+  game: 'quiz' | 'lightning' | 'exam' | 'daily' | 'riddles' | 'mistakes' | 'match' | 'fix' | 'translate';
   day: string;
   correct: number;
   total: number;

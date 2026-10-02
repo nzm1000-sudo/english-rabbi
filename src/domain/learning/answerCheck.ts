@@ -1,4 +1,4 @@
-import type { ChoiceItem, OrderItem, TypedItem } from '../content/schema';
+import type { ChoiceItem, FixItem, OrderItem, TypedItem } from '../content/schema';
 
 export interface CheckResult {
   correct: boolean;
@@ -134,4 +134,18 @@ export function checkOrder(item: OrderItem, tokens: string[]): CheckResult {
     nearMiss: false,
     ...(trap?.misconception ? { misconception: trap.misconception } : !trap && sameWords ? { misconception: 'word-order.sentence' } : {}),
   };
+}
+
+/** Spot the mistake. Answer: the tapped token index and the chosen fix. */
+export function checkFix(item: FixItem, index: number, fix: string | null): CheckResult {
+  if (index !== item.wrongIndex) return { correct: false, nearMiss: false };
+  if (fix === null || fix.trim().toLowerCase() !== item.correction.trim().toLowerCase()) {
+    return { correct: false, nearMiss: false, ...(item.targetsMisconceptions[0] ? { misconception: item.targetsMisconceptions[0] } : {}) };
+  }
+  return { correct: true, nearMiss: false };
+}
+
+/** Tokens of a fix sentence, as shown to tap. */
+export function fixTokens(item: Pick<FixItem, 'sentence'>): string[] {
+  return item.sentence.trim().split(/\s+/);
 }

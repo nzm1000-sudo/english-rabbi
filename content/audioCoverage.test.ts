@@ -13,8 +13,9 @@ import manifestJson from '../public/audio/manifest.json';
 const manifest = manifestJson as { entries: Record<string, string> };
 const files = new Set(Object.keys(import.meta.glob('../public/audio/*.mp3')).map((f) => f.replace('../public/', '')));
 
-function speakable(): string[] {
+function speakable(): { text: string; speaker: 'A' | 'B' }[] {
   const out = new Set<string>();
+  const byB = new Set<string>();
   for (const i of reg.items) {
     if ('audioText' in i && i.audioText) out.add(i.audioText);
     if (i.word) {
@@ -23,11 +24,15 @@ function speakable(): string[] {
     }
   }
   for (const p of reg.passages.values()) out.add(p.text);
-  return [...out];
+  for (const st of reg.stories.values()) {
+    for (const l of st.lines) (l.speaker === 'B' ? byB : out).add(l.en);
+    for (const g of Object.values(st.glossary)) out.add(g.lemma);
+  }
+  return [...[...out].map((text) => ({ text, speaker: 'A' as const })), ...[...byB].map((text) => ({ text, speaker: 'B' as const }))];
 }
 
-function covered(text: string, rate: 'normal' | 'slow'): boolean {
-  const voice = NEURAL_VOICES['en-US'].A;
+function covered({ text, speaker }: { text: string; speaker: 'A' | 'B' }, rate: 'normal' | 'slow'): boolean {
+  const voice = NEURAL_VOICES['en-US'][speaker];
   const t = canonicalSpeechText(text);
   if (manifest.entries[audioKey(voice, rate, t)]) return true;
   const parts = splitSentences(t);
@@ -36,7 +41,7 @@ function covered(text: string, rate: 'normal' | 'slow'): boolean {
 
 describe('pre-rendered audio', () => {
   it.each(['normal', 'slow'] as const)('covers every speakable text at %s speed', (rate) => {
-    const missing = speakable().filter((t) => !covered(t, rate));
+    const missing = speakable().filter((t) => !covered(t, rate)).map((t) => `${t.speaker}: ${t.text}`);
     expect(missing).toEqual([]);
   });
 

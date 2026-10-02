@@ -1,0 +1,4189 @@
+{
+  "packId": "stories-read-2",
+  "schemaVersion": 1,
+  "title": "Stories: Shapiro Family Reading 2",
+  "items": [],
+  "stories": [
+    {
+      "id": "story.r2.lost-wallet",
+      "title": {
+        "he": "הארנק האבוד",
+        "en": "The Lost Wallet"
+      },
+      "kind": "read",
+      "level": "B1",
+      "lines": [
+        {
+          "en": "On Monday morning, Ari walked to school with his friend Moshe.",
+          "he": "ביום שני בבוקר ארי הלך לבית הספר עם חברו משה."
+        },
+        {
+          "en": "Near the bus stop, Ari saw a brown wallet lying on the sidewalk.",
+          "he": "ליד תחנת האוטובוס ארי ראה ארנק חום מונח על המדרכה."
+        },
+        {
+          "en": "He picked it up and looked inside it carefully.",
+          "he": "הוא הרים אותו והסתכל בתוכו בזהירות."
+        },
+        {
+          "en": "There was a lot of money, a bus card and an old family photo.",
+          "he": "בתוכו היה הרבה כסף, כרטיס אוטובוס ותמונה משפחתית ישנה."
+        },
+        {
+          "en": "\"Let's just leave it here,\" said Moshe. \"We'll be late for class.\"",
+          "he": "\"בוא פשוט נשאיר אותו כאן\", אמר משה. \"נאחר לשיעור.\""
+        },
+        {
+          "en": "But Ari remembered what Rabbi Gold had taught them about returning lost things.",
+          "he": "אבל ארי נזכר במה שהרב גולד לימד אותם על השבת אבדה."
+        },
+        {
+          "en": "\"Someone is looking for this right now,\" Ari said. \"We have to help.\"",
+          "he": "\"מישהו מחפש את זה עכשיו\", אמר ארי. \"אנחנו חייבים לעזור.\""
+        },
+        {
+          "en": "There was no phone number in the wallet, only a name: Avraham Levi.",
+          "he": "בארנק לא היה מספר טלפון, רק שם: אברהם לוי."
+        },
+        {
+          "en": "At school, Ari asked Rabbi Gold for advice during the break.",
+          "he": "בבית הספר ארי ביקש עצה מהרב גולד בהפסקה."
+        },
+        {
+          "en": "Rabbi Gold called the shul office, and the secretary there gave him Avraham Levi's address.",
+          "he": "הרב גולד התקשר למשרד של בית הכנסת, והמזכירה שם נתנה לו את הכתובת של אברהם לוי."
+        },
+        {
+          "en": "After school, the boys walked to a small apartment on a quiet street.",
+          "he": "אחרי הלימודים שני הבנים הלכו לדירה קטנה ברחוב שקט."
+        },
+        {
+          "en": "An old man opened the door, and his eyes filled with tears.",
+          "he": "איש זקן פתח את הדלת, ועיניו התמלאו דמעות."
+        },
+        {
+          "en": "\"My granddaughter's wedding is next week,\" he said. \"This money was my gift for her.\"",
+          "he": "\"החתונה של הנכדה שלי בשבוע הבא\", הוא אמר. \"הכסף הזה היה המתנה שלי בשבילה.\""
+        },
+        {
+          "en": "He wanted to give Ari a reward, but Ari politely said no.",
+          "he": "הוא רצה לתת לארי פרס, אבל ארי סירב בנימוס."
+        },
+        {
+          "en": "That evening, Ari felt happier than if he had found a treasure.",
+          "he": "באותו ערב ארי הרגיש שמח יותר מאשר אילו מצא אוצר."
+        }
+      ],
+      "glossary": {
+        "monday": {
+          "lemma": "Monday",
+          "he": "יום שני"
+        },
+        "morning": {
+          "lemma": "morning",
+          "he": "בוקר"
+        },
+        "ari": {
+          "lemma": "Ari",
+          "he": "ארי (שם)"
+        },
+        "walked": {
+          "lemma": "walk",
+          "he": "הלך"
+        },
+        "school": {
+          "lemma": "school",
+          "he": "בית ספר"
+        },
+        "friend": {
+          "lemma": "friend",
+          "he": "חבר"
+        },
+        "moshe": {
+          "lemma": "Moshe",
+          "he": "משה (שם)"
+        },
+        "near": {
+          "lemma": "near",
+          "he": "ליד"
+        },
+        "bus": {
+          "lemma": "bus",
+          "he": "אוטובוס"
+        },
+        "stop": {
+          "lemma": "stop",
+          "he": "תחנה"
+        },
+        "saw": {
+          "lemma": "see",
+          "he": "ראה"
+        },
+        "brown": {
+          "lemma": "brown",
+          "he": "חום"
+        },
+        "wallet": {
+          "lemma": "wallet",
+          "he": "ארנק"
+        },
+        "lying": {
+          "lemma": "lie",
+          "he": "מונח"
+        },
+        "sidewalk": {
+          "lemma": "sidewalk",
+          "he": "מדרכה"
+        },
+        "picked": {
+          "lemma": "pick up",
+          "he": "הרים"
+        },
+        "up": {
+          "lemma": "pick up",
+          "he": "(הרים)"
+        },
+        "looked": {
+          "lemma": "look",
+          "he": "הסתכל"
+        },
+        "inside": {
+          "lemma": "inside",
+          "he": "בתוך"
+        },
+        "carefully": {
+          "lemma": "carefully",
+          "he": "בזהירות"
+        },
+        "lot": {
+          "lemma": "a lot",
+          "he": "הרבה"
+        },
+        "money": {
+          "lemma": "money",
+          "he": "כסף"
+        },
+        "card": {
+          "lemma": "card",
+          "he": "כרטיס"
+        },
+        "old": {
+          "lemma": "old",
+          "he": "ישנה; זקן"
+        },
+        "family": {
+          "lemma": "family",
+          "he": "משפחה"
+        },
+        "photo": {
+          "lemma": "photo",
+          "he": "תמונה"
+        },
+        "let's": {
+          "lemma": "let us",
+          "he": "בואו נ..."
+        },
+        "just": {
+          "lemma": "just",
+          "he": "פשוט"
+        },
+        "leave": {
+          "lemma": "leave",
+          "he": "להשאיר"
+        },
+        "said": {
+          "lemma": "say",
+          "he": "אמר"
+        },
+        "we'll": {
+          "lemma": "we will",
+          "he": "אנחנו נ..."
+        },
+        "late": {
+          "lemma": "late",
+          "he": "מאוחר"
+        },
+        "class": {
+          "lemma": "class",
+          "he": "שיעור"
+        },
+        "remembered": {
+          "lemma": "remember",
+          "he": "נזכר"
+        },
+        "rabbi": {
+          "lemma": "rabbi",
+          "he": "רב"
+        },
+        "gold": {
+          "lemma": "Gold",
+          "he": "גולד (שם משפחה)"
+        },
+        "had": {
+          "lemma": "have",
+          "he": "(עבר מוקדם: had taught)"
+        },
+        "taught": {
+          "lemma": "teach",
+          "he": "לימד"
+        },
+        "about": {
+          "lemma": "about",
+          "he": "על"
+        },
+        "returning": {
+          "lemma": "return",
+          "he": "השבה, החזרה"
+        },
+        "lost": {
+          "lemma": "lost",
+          "he": "אבודים"
+        },
+        "things": {
+          "lemma": "thing",
+          "he": "דברים"
+        },
+        "someone": {
+          "lemma": "someone",
+          "he": "מישהו"
+        },
+        "looking": {
+          "lemma": "look for",
+          "he": "מחפש"
+        },
+        "right": {
+          "lemma": "right now",
+          "he": "ממש (עכשיו)"
+        },
+        "now": {
+          "lemma": "now",
+          "he": "עכשיו"
+        },
+        "have": {
+          "lemma": "have to",
+          "he": "חייבים"
+        },
+        "help": {
+          "lemma": "help",
+          "he": "לעזור"
+        },
+        "phone": {
+          "lemma": "phone",
+          "he": "טלפון"
+        },
+        "number": {
+          "lemma": "number",
+          "he": "מספר"
+        },
+        "only": {
+          "lemma": "only",
+          "he": "רק"
+        },
+        "name": {
+          "lemma": "name",
+          "he": "שם"
+        },
+        "avraham": {
+          "lemma": "Avraham",
+          "he": "אברהם (שם)"
+        },
+        "levi": {
+          "lemma": "Levi",
+          "he": "לוי (שם משפחה)"
+        },
+        "asked": {
+          "lemma": "ask",
+          "he": "שאל, ביקש"
+        },
+        "advice": {
+          "lemma": "advice",
+          "he": "עצה"
+        },
+        "during": {
+          "lemma": "during",
+          "he": "במהלך"
+        },
+        "break": {
+          "lemma": "break",
+          "he": "הפסקה"
+        },
+        "called": {
+          "lemma": "call",
+          "he": "התקשר"
+        },
+        "shul": {
+          "lemma": "shul",
+          "he": "בית כנסת"
+        },
+        "office": {
+          "lemma": "office",
+          "he": "משרד"
+        },
+        "secretary": {
+          "lemma": "secretary",
+          "he": "מזכירה"
+        },
+        "after": {
+          "lemma": "after",
+          "he": "אחרי"
+        },
+        "boys": {
+          "lemma": "boy",
+          "he": "בנים, ילדים"
+        },
+        "small": {
+          "lemma": "small",
+          "he": "קטן"
+        },
+        "apartment": {
+          "lemma": "apartment",
+          "he": "דירה"
+        },
+        "quiet": {
+          "lemma": "quiet",
+          "he": "שקט"
+        },
+        "street": {
+          "lemma": "street",
+          "he": "רחוב"
+        },
+        "man": {
+          "lemma": "man",
+          "he": "איש"
+        },
+        "opened": {
+          "lemma": "open",
+          "he": "פתח"
+        },
+        "door": {
+          "lemma": "door",
+          "he": "דלת"
+        },
+        "eyes": {
+          "lemma": "eye",
+          "he": "עיניים"
+        },
+        "filled": {
+          "lemma": "fill",
+          "he": "התמלאו"
+        },
+        "tears": {
+          "lemma": "tear",
+          "he": "דמעות"
+        },
+        "granddaughter": {
+          "lemma": "granddaughter",
+          "he": "נכדה"
+        },
+        "wedding": {
+          "lemma": "wedding",
+          "he": "חתונה"
+        },
+        "next": {
+          "lemma": "next",
+          "he": "הבא"
+        },
+        "week": {
+          "lemma": "week",
+          "he": "שבוע"
+        },
+        "gift": {
+          "lemma": "gift",
+          "he": "מתנה"
+        },
+        "wanted": {
+          "lemma": "want",
+          "he": "רצה"
+        },
+        "give": {
+          "lemma": "give",
+          "he": "לתת"
+        },
+        "reward": {
+          "lemma": "reward",
+          "he": "פרס"
+        },
+        "politely": {
+          "lemma": "politely",
+          "he": "בנימוס"
+        },
+        "evening": {
+          "lemma": "evening",
+          "he": "ערב"
+        },
+        "felt": {
+          "lemma": "feel",
+          "he": "הרגיש"
+        },
+        "happier": {
+          "lemma": "happy",
+          "he": "שמח יותר"
+        },
+        "than": {
+          "lemma": "than",
+          "he": "מאשר"
+        },
+        "found": {
+          "lemma": "find",
+          "he": "מצא"
+        },
+        "treasure": {
+          "lemma": "treasure",
+          "he": "אוצר"
+        },
+        "gave": {
+          "lemma": "give",
+          "he": "נתנה"
+        },
+        "address": {
+          "lemma": "address",
+          "he": "כתובת"
+        }
+      },
+      "questions": [
+        {
+          "after": 3,
+          "item": {
+            "id": "story.r2.lost-wallet.q1",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "What did Ari find inside the wallet?",
+            "options": [
+              {
+                "id": "a",
+                "text": "money, a bus card and a family photo"
+              },
+              {
+                "id": "b",
+                "text": "money and a phone number"
+              },
+              {
+                "id": "c",
+                "text": "a bus card and a letter"
+              },
+              {
+                "id": "d",
+                "text": "only an old family photo"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "בשורה הרביעית: a lot of money, a bus card and an old family photo.",
+              "en": "Line 4 lists money, a bus card and a family photo."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 6,
+          "item": {
+            "id": "story.r2.lost-wallet.q2",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "Why did Moshe want to leave the wallet on the sidewalk?",
+            "options": [
+              {
+                "id": "a",
+                "text": "He was worried that they would be late for class."
+              },
+              {
+                "id": "b",
+                "text": "He thought the wallet was empty."
+              },
+              {
+                "id": "c",
+                "text": "He knew who the owner was."
+              },
+              {
+                "id": "d",
+                "text": "He wanted to keep the money."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "משה אומר: We'll be late for class. הוא דאג שהם יאחרו.",
+              "en": "Moshe says they will be late for class."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 11,
+          "item": {
+            "id": "story.r2.lost-wallet.q3",
+            "type": "choice",
+            "skill": "reading.vocabulary-in-context",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "\"His eyes filled with tears\" shows that the old man was...",
+            "options": [
+              {
+                "id": "a",
+                "text": "very moved"
+              },
+              {
+                "id": "b",
+                "text": "angry at the boys"
+              },
+              {
+                "id": "c",
+                "text": "bored"
+              },
+              {
+                "id": "d",
+                "text": "confused"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "דמעות בעיניים כשמקבלים משהו יקר בחזרה מראות התרגשות גדולה.",
+              "en": "Tears when he got his wallet back show strong emotion."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 14,
+          "item": {
+            "id": "story.r2.lost-wallet.q4",
+            "type": "choice",
+            "skill": "reading.main-idea",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "What is the main idea of the story?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Returning lost things takes effort, but it is the right thing to do."
+              },
+              {
+                "id": "b",
+                "text": "Children should not walk to school alone."
+              },
+              {
+                "id": "c",
+                "text": "It is important to save money for a wedding."
+              },
+              {
+                "id": "d",
+                "text": "Good friends always agree with each other."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי השקיע מאמץ כדי להחזיר את הארנק, וזה הדבר החשוב בסיפור.",
+              "en": "Ari worked hard to return the wallet. That is the main idea."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "השבת אבדה דורשת מאמץ, אבל השמחה של הבעלים שווה הכול.",
+      "tags": [
+        "chesed",
+        "honesty",
+        "school",
+        "mitzvah"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.r2.mrs-klein",
+      "title": {
+        "he": "ביקור אצל גברת קליין",
+        "en": "A Visit to Mrs. Klein"
+      },
+      "kind": "read",
+      "level": "B1",
+      "lines": [
+        {
+          "en": "Mrs. Klein has lived next door to the Shapiro family for many years.",
+          "he": "גברת קליין גרה בשכנות למשפחת שפירא כבר שנים רבות."
+        },
+        {
+          "en": "Her children live abroad, so she usually spends her days alone.",
+          "he": "הילדים שלה גרים בחו\"ל, ולכן היא בדרך כלל מבלה את ימיה לבד."
+        },
+        {
+          "en": "Last week, Tamar noticed that Mrs. Klein had not come out for days.",
+          "he": "בשבוע שעבר תמר שמה לב שגברת קליין לא יצאה מהבית כבר כמה ימים."
+        },
+        {
+          "en": "Ima told her that Mrs. Klein was sick with a bad flu.",
+          "he": "אמא סיפרה לה שגברת קליין חולה בשפעת קשה."
+        },
+        {
+          "en": "\"Visiting the sick is a great mitzvah,\" Ima said. \"Maybe you can go after school.\"",
+          "he": "\"ביקור חולים הוא מצווה גדולה\", אמרה אמא. \"אולי תוכלי ללכת אחרי בית הספר.\""
+        },
+        {
+          "en": "Tamar had never visited a sick person alone, and she didn't know what to say.",
+          "he": "תמר אף פעם לא ביקרה חולה לבד, והיא לא ידעה מה להגיד."
+        },
+        {
+          "en": "Her hands shook a little as she carried the chicken soup she had made with Ima.",
+          "he": "הידיים שלה רעדו קצת כשהיא נשאה את מרק העוף שהכינה עם אמא."
+        },
+        {
+          "en": "Mrs. Klein opened the door slowly. She looked pale and tired, but she smiled.",
+          "he": "גברת קליין פתחה את הדלת לאט. היא נראתה חיוורת ועייפה, אבל היא חייכה."
+        },
+        {
+          "en": "Tamar warmed the soup and sat with her in the small living room.",
+          "he": "תמר חיממה את המרק וישבה איתה בסלון הקטן."
+        },
+        {
+          "en": "At first they didn't know what to talk about, and the room was very quiet.",
+          "he": "בהתחלה הן לא ידעו על מה לדבר, והחדר היה שקט מאוד."
+        },
+        {
+          "en": "Then Tamar noticed an old photo of a young woman in front of a school.",
+          "he": "ואז תמר שמה לב לתמונה ישנה של אישה צעירה מול בית ספר."
+        },
+        {
+          "en": "\"That was me,\" said Mrs. Klein. \"I was a teacher for forty years.\"",
+          "he": "\"זאת הייתי אני\", אמרה גברת קליין. \"הייתי מורה ארבעים שנה.\""
+        },
+        {
+          "en": "She told Tamar funny stories about her students, and they both laughed a lot.",
+          "he": "כשתמר הלכה, גברת קליין החזיקה את ידה ואמרה: \"את התרופה הכי טובה שלי.\""
+        },
+        {
+          "en": "When Tamar left, Mrs. Klein held her hand and said, \"You are my best medicine.\"",
+          "he": "תמר חזרה כל יום באותו שבוע, ותוך זמן קצר גברת קליין הרגישה הרבה יותר טוב."
+        },
+        {
+          "en": "Tamar came back every day that week, and soon Mrs. Klein felt much better.",
+          "he": "תמר חזרה כל יום באותו שבוע, ומהר מאוד גברת קליין הרגישה הרבה יותר טוב."
+        }
+      ],
+      "glossary": {
+        "klein": {
+          "lemma": "Klein",
+          "he": "קליין (שם משפחה)"
+        },
+        "has": {
+          "lemma": "have",
+          "he": "(has lived: גרה כבר)"
+        },
+        "lived": {
+          "lemma": "live",
+          "he": "גרה"
+        },
+        "next": {
+          "lemma": "next door",
+          "he": "בשכנות, בדלת הסמוכה"
+        },
+        "door": {
+          "lemma": "door",
+          "he": "דלת"
+        },
+        "shapiro": {
+          "lemma": "Shapiro",
+          "he": "שפירא (שם משפחה)"
+        },
+        "family": {
+          "lemma": "family",
+          "he": "משפחה"
+        },
+        "many": {
+          "lemma": "many",
+          "he": "הרבה, רבים"
+        },
+        "years": {
+          "lemma": "year",
+          "he": "שנים"
+        },
+        "children": {
+          "lemma": "child",
+          "he": "ילדים"
+        },
+        "live": {
+          "lemma": "live",
+          "he": "גרים"
+        },
+        "abroad": {
+          "lemma": "abroad",
+          "he": "בחו\"ל"
+        },
+        "usually": {
+          "lemma": "usually",
+          "he": "בדרך כלל"
+        },
+        "spends": {
+          "lemma": "spend",
+          "he": "מבלה"
+        },
+        "days": {
+          "lemma": "day",
+          "he": "ימים"
+        },
+        "alone": {
+          "lemma": "alone",
+          "he": "לבד"
+        },
+        "last": {
+          "lemma": "last",
+          "he": "שעבר"
+        },
+        "week": {
+          "lemma": "week",
+          "he": "שבוע"
+        },
+        "tamar": {
+          "lemma": "Tamar",
+          "he": "תמר (שם)"
+        },
+        "noticed": {
+          "lemma": "notice",
+          "he": "שמה לב"
+        },
+        "had": {
+          "lemma": "have",
+          "he": "(עבר מוקדם: had come, had made)"
+        },
+        "come": {
+          "lemma": "come out",
+          "he": "יצאה"
+        },
+        "out": {
+          "lemma": "come out",
+          "he": "(יצאה) החוצה"
+        },
+        "ima": {
+          "lemma": "Ima",
+          "he": "אמא"
+        },
+        "told": {
+          "lemma": "tell",
+          "he": "סיפרה"
+        },
+        "sick": {
+          "lemma": "sick",
+          "he": "חולה"
+        },
+        "bad": {
+          "lemma": "bad",
+          "he": "קשה, רע"
+        },
+        "flu": {
+          "lemma": "flu",
+          "he": "שפעת"
+        },
+        "visiting": {
+          "lemma": "visit",
+          "he": "ביקור"
+        },
+        "mitzvah": {
+          "lemma": "mitzvah",
+          "he": "מצווה"
+        },
+        "said": {
+          "lemma": "say",
+          "he": "אמרה"
+        },
+        "maybe": {
+          "lemma": "maybe",
+          "he": "אולי"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכולה"
+        },
+        "go": {
+          "lemma": "go",
+          "he": "ללכת"
+        },
+        "after": {
+          "lemma": "after",
+          "he": "אחרי"
+        },
+        "school": {
+          "lemma": "school",
+          "he": "בית ספר"
+        },
+        "made": {
+          "lemma": "make",
+          "he": "הכינה"
+        },
+        "chicken": {
+          "lemma": "chicken",
+          "he": "עוף"
+        },
+        "soup": {
+          "lemma": "soup",
+          "he": "מרק"
+        },
+        "opened": {
+          "lemma": "open",
+          "he": "פתחה"
+        },
+        "slowly": {
+          "lemma": "slowly",
+          "he": "לאט"
+        },
+        "looked": {
+          "lemma": "look",
+          "he": "נראתה"
+        },
+        "pale": {
+          "lemma": "pale",
+          "he": "חיוורת"
+        },
+        "tired": {
+          "lemma": "tired",
+          "he": "עייפה"
+        },
+        "smiled": {
+          "lemma": "smile",
+          "he": "חייכה"
+        },
+        "warmed": {
+          "lemma": "warm",
+          "he": "חיממה"
+        },
+        "sat": {
+          "lemma": "sit",
+          "he": "ישבה"
+        },
+        "small": {
+          "lemma": "small",
+          "he": "קטן"
+        },
+        "living": {
+          "lemma": "living room",
+          "he": "סלון"
+        },
+        "room": {
+          "lemma": "room",
+          "he": "חדר"
+        },
+        "first": {
+          "lemma": "at first",
+          "he": "בהתחלה"
+        },
+        "didn't": {
+          "lemma": "do not",
+          "he": "לא"
+        },
+        "know": {
+          "lemma": "know",
+          "he": "ידעו"
+        },
+        "talk": {
+          "lemma": "talk",
+          "he": "לדבר"
+        },
+        "about": {
+          "lemma": "about",
+          "he": "על"
+        },
+        "very": {
+          "lemma": "very",
+          "he": "מאוד"
+        },
+        "quiet": {
+          "lemma": "quiet",
+          "he": "שקט"
+        },
+        "then": {
+          "lemma": "then",
+          "he": "ואז"
+        },
+        "old": {
+          "lemma": "old",
+          "he": "ישנה"
+        },
+        "photo": {
+          "lemma": "photo",
+          "he": "תמונה"
+        },
+        "young": {
+          "lemma": "young",
+          "he": "צעירה"
+        },
+        "woman": {
+          "lemma": "woman",
+          "he": "אישה"
+        },
+        "front": {
+          "lemma": "in front of",
+          "he": "מול"
+        },
+        "teacher": {
+          "lemma": "teacher",
+          "he": "מורה"
+        },
+        "forty": {
+          "lemma": "forty",
+          "he": "ארבעים"
+        },
+        "funny": {
+          "lemma": "funny",
+          "he": "מצחיק"
+        },
+        "stories": {
+          "lemma": "story",
+          "he": "סיפורים"
+        },
+        "students": {
+          "lemma": "student",
+          "he": "תלמידים"
+        },
+        "both": {
+          "lemma": "both",
+          "he": "שתיהן"
+        },
+        "laughed": {
+          "lemma": "laugh",
+          "he": "צחקו"
+        },
+        "lot": {
+          "lemma": "a lot",
+          "he": "הרבה"
+        },
+        "left": {
+          "lemma": "leave",
+          "he": "הלכה, יצאה"
+        },
+        "held": {
+          "lemma": "hold",
+          "he": "אחזה"
+        },
+        "hand": {
+          "lemma": "hand",
+          "he": "יד"
+        },
+        "best": {
+          "lemma": "good",
+          "he": "הכי טובה"
+        },
+        "medicine": {
+          "lemma": "medicine",
+          "he": "תרופה"
+        },
+        "came": {
+          "lemma": "come back",
+          "he": "חזרה"
+        },
+        "back": {
+          "lemma": "back",
+          "he": "בחזרה"
+        },
+        "every": {
+          "lemma": "every",
+          "he": "כל"
+        },
+        "day": {
+          "lemma": "day",
+          "he": "יום"
+        },
+        "soon": {
+          "lemma": "soon",
+          "he": "בקרוב, מהר"
+        },
+        "much": {
+          "lemma": "much",
+          "he": "הרבה"
+        },
+        "better": {
+          "lemma": "good",
+          "he": "טוב יותר"
+        },
+        "great": {
+          "lemma": "great",
+          "he": "גדולה"
+        },
+        "never": {
+          "lemma": "never",
+          "he": "אף פעם לא"
+        },
+        "visited": {
+          "lemma": "visit",
+          "he": "ביקרה"
+        },
+        "person": {
+          "lemma": "person",
+          "he": "אדם"
+        },
+        "say": {
+          "lemma": "say",
+          "he": "להגיד"
+        },
+        "hands": {
+          "lemma": "hand",
+          "he": "ידיים"
+        },
+        "shook": {
+          "lemma": "shake",
+          "he": "רעדו"
+        },
+        "little": {
+          "lemma": "a little",
+          "he": "קצת"
+        },
+        "carried": {
+          "lemma": "carry",
+          "he": "נשאה"
+        },
+        "felt": {
+          "lemma": "feel",
+          "he": "הרגישה"
+        }
+      },
+      "questions": [
+        {
+          "after": 2,
+          "item": {
+            "id": "story.r2.mrs-klein.q1",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "Why is Mrs. Klein usually alone?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Her children live in another country."
+              },
+              {
+                "id": "b",
+                "text": "She does not like visitors."
+              },
+              {
+                "id": "c",
+                "text": "She works all day at a school."
+              },
+              {
+                "id": "d",
+                "text": "She has just moved to the neighborhood."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "Her children live abroad. abroad פירושו בחו\"ל, במדינה אחרת.",
+              "en": "abroad means in another country."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 6,
+          "item": {
+            "id": "story.r2.mrs-klein.q2",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "How did Tamar feel before the visit?",
+            "options": [
+              {
+                "id": "a",
+                "text": "nervous"
+              },
+              {
+                "id": "b",
+                "text": "angry"
+              },
+              {
+                "id": "c",
+                "text": "bored"
+              },
+              {
+                "id": "d",
+                "text": "very proud"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "תמר לא ידעה מה להגיד, והידיים שלה רעדו. אלה סימנים שהיא הייתה לחוצה.",
+              "en": "She did not know what to say, and her hands shook. These show she was nervous."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 7,
+          "item": {
+            "id": "story.r2.mrs-klein.q3",
+            "type": "choice",
+            "skill": "reading.vocabulary-in-context",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "The word \"pale\" in \"She looked pale and tired\" means...",
+            "options": [
+              {
+                "id": "a",
+                "text": "with little color in her face"
+              },
+              {
+                "id": "b",
+                "text": "very happy"
+              },
+              {
+                "id": "c",
+                "text": "very old"
+              },
+              {
+                "id": "d",
+                "text": "dressed nicely"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "pale פירושו חיוור. אדם חולה נראה לפעמים בלי צבע בפנים.",
+              "en": "pale means having little color in the face, as sick people often do."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 12,
+          "item": {
+            "id": "story.r2.mrs-klein.q4",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "What did Mrs. Klein mean when she said \"You are my best medicine\"?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Tamar's visit made her feel better."
+              },
+              {
+                "id": "b",
+                "text": "Tamar brought her medicine from the pharmacy."
+              },
+              {
+                "id": "c",
+                "text": "Tamar wants to become a doctor."
+              },
+              {
+                "id": "d",
+                "text": "The soup was too hot to eat."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "היא לא מדברת על תרופה אמיתית. הביקור של תמר עזר לה להרגיש טוב יותר.",
+              "en": "She means that Tamar's visit helped her feel better."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "ביקור חולים מחזק את הגוף ואת הלב.",
+      "tags": [
+        "chesed",
+        "bikur-cholim",
+        "mitzvah",
+        "family"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.r2.sukkah-rain",
+      "title": {
+        "he": "סוכה בגשם",
+        "en": "A Sukkah in the Rain"
+      },
+      "kind": "read",
+      "level": "B1",
+      "lines": [
+        {
+          "en": "A few days before Sukkot, the whole Shapiro family went out to the yard.",
+          "he": "כמה ימים לפני סוכות, כל משפחת שפירא יצאה לחצר."
+        },
+        {
+          "en": "Abba and Ari built the walls of the sukkah, and Rivka helped them hold the poles.",
+          "he": "אבא וארי בנו את דפנות הסוכה, ורבקה עזרה להם להחזיק את המוטות."
+        },
+        {
+          "en": "Tamar and Ima hung colorful decorations that the children had made at school.",
+          "he": "תמר ואמא תלו קישוטים צבעוניים שהילדים הכינו בבית הספר."
+        },
+        {
+          "en": "Even baby Eli sat in his stroller and clapped his hands.",
+          "he": "אפילו התינוק אלי ישב בעגלה שלו ומחא כפיים."
+        },
+        {
+          "en": "Finally, they put green branches on the roof, and the sukkah was ready.",
+          "he": "לבסוף הם שמו ענפים ירוקים על הגג, והסוכה הייתה מוכנה."
+        },
+        {
+          "en": "That night, everyone went to sleep happy and excited.",
+          "he": "באותו לילה כולם הלכו לישון שמחים ונרגשים."
+        },
+        {
+          "en": "But at midnight, Ari woke up to the sound of strong wind and heavy rain.",
+          "he": "אבל בחצות ארי התעורר מרעש של רוח חזקה וגשם כבד."
+        },
+        {
+          "en": "In the morning, the yard looked terrible.",
+          "he": "בבוקר החצר נראתה נורא."
+        },
+        {
+          "en": "One wall had fallen down, and the wet decorations were lying in the mud.",
+          "he": "דופן אחת נפלה, והקישוטים הרטובים היו מונחים בבוץ."
+        },
+        {
+          "en": "Tamar almost cried. \"All our work is ruined!\" she said.",
+          "he": "תמר כמעט בכתה. \"כל העבודה שלנו נהרסה!\" היא אמרה."
+        },
+        {
+          "en": "Abba smiled calmly. \"A sukkah is supposed to be a temporary home,\" he said.",
+          "he": "אבא חייך ברוגע. \"סוכה אמורה להיות דירה זמנית\", הוא אמר."
+        },
+        {
+          "en": "\"It reminds us that our real protection comes from God, not from strong walls.\"",
+          "he": "\"היא מזכירה לנו שההגנה האמיתית שלנו באה מה', ולא מקירות חזקים.\""
+        },
+        {
+          "en": "So the family worked together again, and this time they tied every wall tightly.",
+          "he": "אז המשפחה עבדה שוב יחד, והפעם הם קשרו כל דופן חזק."
+        },
+        {
+          "en": "Tamar dried the decorations in the sun and hung them up again.",
+          "he": "תמר ייבשה את הקישוטים בשמש ותלתה אותם שוב."
+        },
+        {
+          "en": "On the first night of the holiday, the sky was clear and full of stars.",
+          "he": "בלילה הראשון של החג, השמיים היו בהירים ומלאי כוכבים."
+        },
+        {
+          "en": "Sitting in their sukkah, the Shapiros felt it was more beautiful than ever.",
+          "he": "כשישבו בסוכה שלהם, בני משפחת שפירא הרגישו שהיא יפה יותר מאי פעם."
+        }
+      ],
+      "glossary": {
+        "few": {
+          "lemma": "few",
+          "he": "כמה"
+        },
+        "days": {
+          "lemma": "day",
+          "he": "ימים"
+        },
+        "before": {
+          "lemma": "before",
+          "he": "לפני"
+        },
+        "sukkot": {
+          "lemma": "Sukkot",
+          "he": "חג הסוכות"
+        },
+        "whole": {
+          "lemma": "whole",
+          "he": "כל, שלם"
+        },
+        "shapiro": {
+          "lemma": "Shapiro",
+          "he": "שפירא (שם משפחה)"
+        },
+        "family": {
+          "lemma": "family",
+          "he": "משפחה"
+        },
+        "went": {
+          "lemma": "go",
+          "he": "יצאה, הלכו"
+        },
+        "out": {
+          "lemma": "out",
+          "he": "החוצה"
+        },
+        "yard": {
+          "lemma": "yard",
+          "he": "חצר"
+        },
+        "abba": {
+          "lemma": "Abba",
+          "he": "אבא"
+        },
+        "ari": {
+          "lemma": "Ari",
+          "he": "ארי (שם)"
+        },
+        "built": {
+          "lemma": "build",
+          "he": "בנו"
+        },
+        "walls": {
+          "lemma": "wall",
+          "he": "דפנות, קירות"
+        },
+        "sukkah": {
+          "lemma": "sukkah",
+          "he": "סוכה"
+        },
+        "rivka": {
+          "lemma": "Rivka",
+          "he": "רבקה (שם)"
+        },
+        "helped": {
+          "lemma": "help",
+          "he": "עזרה"
+        },
+        "hold": {
+          "lemma": "hold",
+          "he": "להחזיק"
+        },
+        "poles": {
+          "lemma": "pole",
+          "he": "מוטות"
+        },
+        "tamar": {
+          "lemma": "Tamar",
+          "he": "תמר (שם)"
+        },
+        "ima": {
+          "lemma": "Ima",
+          "he": "אמא"
+        },
+        "hung": {
+          "lemma": "hang",
+          "he": "תלו"
+        },
+        "colorful": {
+          "lemma": "colorful",
+          "he": "צבעוני"
+        },
+        "decorations": {
+          "lemma": "decoration",
+          "he": "קישוטים"
+        },
+        "children": {
+          "lemma": "child",
+          "he": "ילדים"
+        },
+        "had": {
+          "lemma": "have",
+          "he": "(עבר מוקדם)"
+        },
+        "made": {
+          "lemma": "make",
+          "he": "הכינו"
+        },
+        "school": {
+          "lemma": "school",
+          "he": "בית ספר"
+        },
+        "even": {
+          "lemma": "even",
+          "he": "אפילו"
+        },
+        "baby": {
+          "lemma": "baby",
+          "he": "תינוק"
+        },
+        "eli": {
+          "lemma": "Eli",
+          "he": "אלי (שם)"
+        },
+        "sat": {
+          "lemma": "sit",
+          "he": "ישב"
+        },
+        "stroller": {
+          "lemma": "stroller",
+          "he": "עגלת תינוק"
+        },
+        "clapped": {
+          "lemma": "clap",
+          "he": "מחא (כפיים)"
+        },
+        "hands": {
+          "lemma": "hand",
+          "he": "ידיים"
+        },
+        "finally": {
+          "lemma": "finally",
+          "he": "לבסוף"
+        },
+        "put": {
+          "lemma": "put",
+          "he": "שמו"
+        },
+        "green": {
+          "lemma": "green",
+          "he": "ירוק"
+        },
+        "branches": {
+          "lemma": "branch",
+          "he": "ענפים"
+        },
+        "roof": {
+          "lemma": "roof",
+          "he": "גג"
+        },
+        "ready": {
+          "lemma": "ready",
+          "he": "מוכן"
+        },
+        "night": {
+          "lemma": "night",
+          "he": "לילה"
+        },
+        "everyone": {
+          "lemma": "everyone",
+          "he": "כולם"
+        },
+        "sleep": {
+          "lemma": "sleep",
+          "he": "לישון"
+        },
+        "happy": {
+          "lemma": "happy",
+          "he": "שמח"
+        },
+        "excited": {
+          "lemma": "excited",
+          "he": "נרגש"
+        },
+        "midnight": {
+          "lemma": "midnight",
+          "he": "חצות"
+        },
+        "woke": {
+          "lemma": "wake up",
+          "he": "התעורר"
+        },
+        "up": {
+          "lemma": "wake up; hang up",
+          "he": "(התעורר); (תלתה)"
+        },
+        "sound": {
+          "lemma": "sound",
+          "he": "רעש, קול"
+        },
+        "strong": {
+          "lemma": "strong",
+          "he": "חזק"
+        },
+        "wind": {
+          "lemma": "wind",
+          "he": "רוח"
+        },
+        "heavy": {
+          "lemma": "heavy",
+          "he": "כבד"
+        },
+        "rain": {
+          "lemma": "rain",
+          "he": "גשם"
+        },
+        "morning": {
+          "lemma": "morning",
+          "he": "בוקר"
+        },
+        "looked": {
+          "lemma": "look",
+          "he": "נראתה"
+        },
+        "terrible": {
+          "lemma": "terrible",
+          "he": "נורא"
+        },
+        "one": {
+          "lemma": "one",
+          "he": "אחד"
+        },
+        "wall": {
+          "lemma": "wall",
+          "he": "דופן, קיר"
+        },
+        "fallen": {
+          "lemma": "fall",
+          "he": "נפלה"
+        },
+        "down": {
+          "lemma": "fall down",
+          "he": "(נפלה) למטה"
+        },
+        "wet": {
+          "lemma": "wet",
+          "he": "רטוב"
+        },
+        "lying": {
+          "lemma": "lie",
+          "he": "מונח"
+        },
+        "mud": {
+          "lemma": "mud",
+          "he": "בוץ"
+        },
+        "almost": {
+          "lemma": "almost",
+          "he": "כמעט"
+        },
+        "cried": {
+          "lemma": "cry",
+          "he": "בכתה"
+        },
+        "all": {
+          "lemma": "all",
+          "he": "כל"
+        },
+        "work": {
+          "lemma": "work",
+          "he": "עבודה"
+        },
+        "ruined": {
+          "lemma": "ruin",
+          "he": "נהרס"
+        },
+        "said": {
+          "lemma": "say",
+          "he": "אמר, אמרה"
+        },
+        "smiled": {
+          "lemma": "smile",
+          "he": "חייך"
+        },
+        "calmly": {
+          "lemma": "calmly",
+          "he": "ברוגע"
+        },
+        "supposed": {
+          "lemma": "be supposed to",
+          "he": "אמורה"
+        },
+        "temporary": {
+          "lemma": "temporary",
+          "he": "זמני"
+        },
+        "home": {
+          "lemma": "home",
+          "he": "דירה, בית"
+        },
+        "reminds": {
+          "lemma": "remind",
+          "he": "מזכירה"
+        },
+        "real": {
+          "lemma": "real",
+          "he": "אמיתי"
+        },
+        "protection": {
+          "lemma": "protection",
+          "he": "הגנה"
+        },
+        "comes": {
+          "lemma": "come",
+          "he": "באה"
+        },
+        "god": {
+          "lemma": "God",
+          "he": "ה', הקדוש ברוך הוא"
+        },
+        "worked": {
+          "lemma": "work",
+          "he": "עבדה"
+        },
+        "together": {
+          "lemma": "together",
+          "he": "יחד"
+        },
+        "again": {
+          "lemma": "again",
+          "he": "שוב"
+        },
+        "time": {
+          "lemma": "time",
+          "he": "פעם"
+        },
+        "tied": {
+          "lemma": "tie",
+          "he": "קשרו"
+        },
+        "every": {
+          "lemma": "every",
+          "he": "כל"
+        },
+        "tightly": {
+          "lemma": "tightly",
+          "he": "בחוזקה"
+        },
+        "dried": {
+          "lemma": "dry",
+          "he": "ייבשה"
+        },
+        "sun": {
+          "lemma": "sun",
+          "he": "שמש"
+        },
+        "first": {
+          "lemma": "first",
+          "he": "ראשון"
+        },
+        "holiday": {
+          "lemma": "holiday",
+          "he": "חג"
+        },
+        "sky": {
+          "lemma": "sky",
+          "he": "שמיים"
+        },
+        "clear": {
+          "lemma": "clear",
+          "he": "בהיר, ברור"
+        },
+        "full": {
+          "lemma": "full",
+          "he": "מלא"
+        },
+        "stars": {
+          "lemma": "star",
+          "he": "כוכבים"
+        },
+        "sitting": {
+          "lemma": "sit",
+          "he": "ישבו (כשישבו)"
+        },
+        "shapiros": {
+          "lemma": "Shapiros",
+          "he": "בני משפחת שפירא"
+        },
+        "felt": {
+          "lemma": "feel",
+          "he": "הרגישו"
+        },
+        "more": {
+          "lemma": "more",
+          "he": "יותר"
+        },
+        "beautiful": {
+          "lemma": "beautiful",
+          "he": "יפה"
+        },
+        "than": {
+          "lemma": "than",
+          "he": "מאשר"
+        },
+        "ever": {
+          "lemma": "ever",
+          "he": "אי פעם"
+        }
+      },
+      "questions": [
+        {
+          "after": 3,
+          "item": {
+            "id": "story.r2.sukkah-rain.q1",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "Who hung the decorations in the sukkah?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Tamar and Ima"
+              },
+              {
+                "id": "b",
+                "text": "Abba and Ari"
+              },
+              {
+                "id": "c",
+                "text": "Rivka"
+              },
+              {
+                "id": "d",
+                "text": "baby Eli"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "Tamar and Ima hung colorful decorations. תמר ואמא תלו את הקישוטים.",
+              "en": "Line 3 says Tamar and Ima hung the decorations."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 8,
+          "item": {
+            "id": "story.r2.sukkah-rain.q2",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "What did the family find in the yard in the morning?",
+            "options": [
+              {
+                "id": "a",
+                "text": "One wall had fallen, and the decorations were in the mud."
+              },
+              {
+                "id": "b",
+                "text": "The roof had flown away to the neighbors' yard."
+              },
+              {
+                "id": "c",
+                "text": "The sukkah was dry and perfect."
+              },
+              {
+                "id": "d",
+                "text": "Baby Eli's stroller was broken."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "One wall had fallen down... the wet decorations were lying in the mud.",
+              "en": "One wall fell and the decorations were in the mud."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 10,
+          "item": {
+            "id": "story.r2.sukkah-rain.q3",
+            "type": "choice",
+            "skill": "reading.vocabulary-in-context",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "The word \"temporary\" in \"a temporary home\" means...",
+            "options": [
+              {
+                "id": "a",
+                "text": "not lasting for a long time"
+              },
+              {
+                "id": "b",
+                "text": "very expensive"
+              },
+              {
+                "id": "c",
+                "text": "very strong"
+              },
+              {
+                "id": "d",
+                "text": "close to the family"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "temporary פירושו זמני. סוכה היא דירה לכמה ימים בלבד.",
+              "en": "temporary means for a short time only."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 15,
+          "item": {
+            "id": "story.r2.sukkah-rain.q4",
+            "type": "choice",
+            "skill": "reading.main-idea",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "What is the main idea of the story?",
+            "options": [
+              {
+                "id": "a",
+                "text": "When a family works together, problems can be fixed."
+              },
+              {
+                "id": "b",
+                "text": "It is dangerous to build a sukkah in the yard."
+              },
+              {
+                "id": "c",
+                "text": "Decorations should be made only at school."
+              },
+              {
+                "id": "d",
+                "text": "It always rains on Sukkot."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "הסוכה נפלה, אבל כל המשפחה תיקנה אותה יחד, והיא יצאה יפה יותר.",
+              "en": "The family fixed the sukkah together, and it was even more beautiful."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "כשעובדים יחד, אפשר לתקן כמעט כל דבר.",
+      "tags": [
+        "sukkot",
+        "family",
+        "holidays"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.r2.seder-questions",
+      "title": {
+        "he": "השאלות של ליל הסדר",
+        "en": "The Seder Questions"
+      },
+      "kind": "read",
+      "level": "B1",
+      "lines": [
+        {
+          "en": "Two weeks before Pesach, the Shapiro home became very busy.",
+          "he": "שבועיים לפני פסח, הבית של משפחת שפירא נהיה עמוס מאוד."
+        },
+        {
+          "en": "Every room was cleaned, and Ari searched under the beds for old crumbs.",
+          "he": "כל חדר נוקה, וארי חיפש פירורים ישנים מתחת למיטות."
+        },
+        {
+          "en": "Ima and Rivka cooked in the kitchen for many hours.",
+          "he": "אמא ורבקה בישלו במטבח שעות רבות."
+        },
+        {
+          "en": "Tamar set the table with a white tablecloth and Grandma Chana's silver cups.",
+          "he": "תמר ערכה את השולחן עם מפה לבנה וגביעי הכסף של סבתא חנה."
+        },
+        {
+          "en": "Grandpa Yosef and Grandma Chana arrived just before sunset, carrying boxes of matzah.",
+          "he": "סבא יוסף וסבתא חנה הגיעו ממש לפני השקיעה, עם קופסאות מצה בידיים."
+        },
+        {
+          "en": "Ari was nervous because this year he had to ask the Four Questions alone.",
+          "he": "ארי היה לחוץ כי השנה הוא היה צריך לשאול את \"מה נשתנה\" לבד."
+        },
+        {
+          "en": "He had practiced them many times with Rabbi Gold at school.",
+          "he": "הוא תרגל אותן פעמים רבות עם הרב גולד בבית הספר."
+        },
+        {
+          "en": "When everyone sat down, Abba made Kiddush and the seder began.",
+          "he": "כשכולם התיישבו, אבא עשה קידוש והסדר התחיל."
+        },
+        {
+          "en": "Ari stood up, took a deep breath, and sang the questions in a clear voice.",
+          "he": "ארי קם, לקח נשימה עמוקה ושר את השאלות בקול ברור."
+        },
+        {
+          "en": "\"Why is this night different from all other nights?\" he asked.",
+          "he": "\"מה נשתנה הלילה הזה מכל הלילות?\" הוא שאל."
+        },
+        {
+          "en": "Grandpa Yosef smiled and said, \"That is exactly what the seder is for.\"",
+          "he": "סבא יוסף חייך ואמר: \"בדיוק בשביל זה יש סדר.\""
+        },
+        {
+          "en": "\"On this night, children ask questions, and parents tell the story of leaving Egypt.\"",
+          "he": "\"בלילה הזה הילדים שואלים שאלות, וההורים מספרים את סיפור יציאת מצרים.\""
+        },
+        {
+          "en": "During the seder, Tamar asked about the bitter herbs, and Rivka asked about the four cups.",
+          "he": "במהלך הסדר תמר שאלה על המרור, ורבקה שאלה על ארבע הכוסות."
+        },
+        {
+          "en": "Each question led to a long and interesting conversation around the table.",
+          "he": "כל שאלה הובילה לשיחה ארוכה ומעניינת סביב השולחן."
+        },
+        {
+          "en": "Late at night, Ari understood that asking questions is also a way of learning.",
+          "he": "מאוחר בלילה ארי הבין ששאילת שאלות היא גם דרך ללמוד."
+        }
+      ],
+      "glossary": {
+        "two": {
+          "lemma": "two",
+          "he": "שניים"
+        },
+        "weeks": {
+          "lemma": "week",
+          "he": "שבועות"
+        },
+        "before": {
+          "lemma": "before",
+          "he": "לפני"
+        },
+        "pesach": {
+          "lemma": "Pesach",
+          "he": "פסח"
+        },
+        "shapiro": {
+          "lemma": "Shapiro",
+          "he": "שפירא (שם משפחה)"
+        },
+        "home": {
+          "lemma": "home",
+          "he": "בית"
+        },
+        "became": {
+          "lemma": "become",
+          "he": "נהיה"
+        },
+        "very": {
+          "lemma": "very",
+          "he": "מאוד"
+        },
+        "busy": {
+          "lemma": "busy",
+          "he": "עמוס"
+        },
+        "every": {
+          "lemma": "every",
+          "he": "כל"
+        },
+        "room": {
+          "lemma": "room",
+          "he": "חדר"
+        },
+        "cleaned": {
+          "lemma": "clean",
+          "he": "נוקה"
+        },
+        "ari": {
+          "lemma": "Ari",
+          "he": "ארי (שם)"
+        },
+        "searched": {
+          "lemma": "search",
+          "he": "חיפש"
+        },
+        "under": {
+          "lemma": "under",
+          "he": "מתחת ל"
+        },
+        "beds": {
+          "lemma": "bed",
+          "he": "מיטות"
+        },
+        "old": {
+          "lemma": "old",
+          "he": "ישן"
+        },
+        "crumbs": {
+          "lemma": "crumb",
+          "he": "פירורים"
+        },
+        "ima": {
+          "lemma": "Ima",
+          "he": "אמא"
+        },
+        "rivka": {
+          "lemma": "Rivka",
+          "he": "רבקה (שם)"
+        },
+        "cooked": {
+          "lemma": "cook",
+          "he": "בישלו"
+        },
+        "kitchen": {
+          "lemma": "kitchen",
+          "he": "מטבח"
+        },
+        "many": {
+          "lemma": "many",
+          "he": "הרבה, רבים"
+        },
+        "hours": {
+          "lemma": "hour",
+          "he": "שעות"
+        },
+        "tamar": {
+          "lemma": "Tamar",
+          "he": "תמר (שם)"
+        },
+        "set": {
+          "lemma": "set the table",
+          "he": "ערכה"
+        },
+        "table": {
+          "lemma": "table",
+          "he": "שולחן"
+        },
+        "white": {
+          "lemma": "white",
+          "he": "לבן"
+        },
+        "tablecloth": {
+          "lemma": "tablecloth",
+          "he": "מפה"
+        },
+        "grandma": {
+          "lemma": "grandma",
+          "he": "סבתא"
+        },
+        "chana's": {
+          "lemma": "Chana",
+          "he": "של חנה"
+        },
+        "silver": {
+          "lemma": "silver",
+          "he": "כסף (מתכת)"
+        },
+        "cups": {
+          "lemma": "cup",
+          "he": "כוסות, גביעים"
+        },
+        "grandpa": {
+          "lemma": "grandpa",
+          "he": "סבא"
+        },
+        "yosef": {
+          "lemma": "Yosef",
+          "he": "יוסף (שם)"
+        },
+        "chana": {
+          "lemma": "Chana",
+          "he": "חנה (שם)"
+        },
+        "arrived": {
+          "lemma": "arrive",
+          "he": "הגיעו"
+        },
+        "just": {
+          "lemma": "just",
+          "he": "ממש"
+        },
+        "sunset": {
+          "lemma": "sunset",
+          "he": "שקיעה"
+        },
+        "carrying": {
+          "lemma": "carry",
+          "he": "כשהם נושאים"
+        },
+        "boxes": {
+          "lemma": "box",
+          "he": "קופסאות"
+        },
+        "matzah": {
+          "lemma": "matzah",
+          "he": "מצה"
+        },
+        "nervous": {
+          "lemma": "nervous",
+          "he": "לחוץ"
+        },
+        "because": {
+          "lemma": "because",
+          "he": "כי"
+        },
+        "year": {
+          "lemma": "year",
+          "he": "שנה"
+        },
+        "had": {
+          "lemma": "have",
+          "he": "היה צריך (had to); (עבר מוקדם: had practiced)"
+        },
+        "ask": {
+          "lemma": "ask",
+          "he": "לשאול"
+        },
+        "four": {
+          "lemma": "four",
+          "he": "ארבע"
+        },
+        "questions": {
+          "lemma": "question",
+          "he": "שאלות"
+        },
+        "alone": {
+          "lemma": "alone",
+          "he": "לבד"
+        },
+        "practiced": {
+          "lemma": "practice",
+          "he": "תרגל"
+        },
+        "times": {
+          "lemma": "time",
+          "he": "פעמים"
+        },
+        "rabbi": {
+          "lemma": "rabbi",
+          "he": "רב"
+        },
+        "gold": {
+          "lemma": "Gold",
+          "he": "גולד (שם משפחה)"
+        },
+        "school": {
+          "lemma": "school",
+          "he": "בית ספר"
+        },
+        "everyone": {
+          "lemma": "everyone",
+          "he": "כולם"
+        },
+        "sat": {
+          "lemma": "sit down",
+          "he": "התיישבו"
+        },
+        "down": {
+          "lemma": "sit down",
+          "he": "(התיישבו)"
+        },
+        "abba": {
+          "lemma": "Abba",
+          "he": "אבא"
+        },
+        "made": {
+          "lemma": "make Kiddush",
+          "he": "עשה (קידוש)"
+        },
+        "kiddush": {
+          "lemma": "Kiddush",
+          "he": "קידוש"
+        },
+        "seder": {
+          "lemma": "seder",
+          "he": "ליל הסדר"
+        },
+        "began": {
+          "lemma": "begin",
+          "he": "התחיל"
+        },
+        "stood": {
+          "lemma": "stand up",
+          "he": "קם"
+        },
+        "up": {
+          "lemma": "stand up",
+          "he": "(קם)"
+        },
+        "took": {
+          "lemma": "take a breath",
+          "he": "לקח (נשימה)"
+        },
+        "deep": {
+          "lemma": "deep",
+          "he": "עמוק"
+        },
+        "breath": {
+          "lemma": "breath",
+          "he": "נשימה"
+        },
+        "sang": {
+          "lemma": "sing",
+          "he": "שר"
+        },
+        "clear": {
+          "lemma": "clear",
+          "he": "בהיר, ברור"
+        },
+        "voice": {
+          "lemma": "voice",
+          "he": "קול"
+        },
+        "night": {
+          "lemma": "night",
+          "he": "לילה"
+        },
+        "different": {
+          "lemma": "different",
+          "he": "שונה"
+        },
+        "all": {
+          "lemma": "all",
+          "he": "כל"
+        },
+        "other": {
+          "lemma": "other",
+          "he": "אחר"
+        },
+        "nights": {
+          "lemma": "night",
+          "he": "לילות"
+        },
+        "asked": {
+          "lemma": "ask",
+          "he": "שאל, שאלה"
+        },
+        "smiled": {
+          "lemma": "smile",
+          "he": "חייך"
+        },
+        "said": {
+          "lemma": "say",
+          "he": "אמר"
+        },
+        "exactly": {
+          "lemma": "exactly",
+          "he": "בדיוק"
+        },
+        "children": {
+          "lemma": "child",
+          "he": "ילדים"
+        },
+        "parents": {
+          "lemma": "parent",
+          "he": "הורים"
+        },
+        "tell": {
+          "lemma": "tell",
+          "he": "לספר"
+        },
+        "story": {
+          "lemma": "story",
+          "he": "סיפור"
+        },
+        "leaving": {
+          "lemma": "leave",
+          "he": "יציאה"
+        },
+        "egypt": {
+          "lemma": "Egypt",
+          "he": "מצרים"
+        },
+        "during": {
+          "lemma": "during",
+          "he": "במהלך"
+        },
+        "about": {
+          "lemma": "about",
+          "he": "על"
+        },
+        "bitter": {
+          "lemma": "bitter",
+          "he": "מר"
+        },
+        "herbs": {
+          "lemma": "herb",
+          "he": "עשבים (מרור)"
+        },
+        "each": {
+          "lemma": "each",
+          "he": "כל"
+        },
+        "question": {
+          "lemma": "question",
+          "he": "שאלה"
+        },
+        "led": {
+          "lemma": "lead",
+          "he": "הובילה"
+        },
+        "long": {
+          "lemma": "long",
+          "he": "ארוך"
+        },
+        "interesting": {
+          "lemma": "interesting",
+          "he": "מעניין"
+        },
+        "conversation": {
+          "lemma": "conversation",
+          "he": "שיחה"
+        },
+        "around": {
+          "lemma": "around",
+          "he": "סביב"
+        },
+        "late": {
+          "lemma": "late",
+          "he": "מאוחר"
+        },
+        "understood": {
+          "lemma": "understand",
+          "he": "הבין"
+        },
+        "asking": {
+          "lemma": "ask",
+          "he": "שאילת"
+        },
+        "also": {
+          "lemma": "also",
+          "he": "גם"
+        },
+        "way": {
+          "lemma": "way",
+          "he": "דרך"
+        },
+        "learning": {
+          "lemma": "learn",
+          "he": "למידה"
+        }
+      },
+      "questions": [
+        {
+          "after": 2,
+          "item": {
+            "id": "story.r2.seder-questions.q1",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "How did Ari help to get ready for Pesach?",
+            "options": [
+              {
+                "id": "a",
+                "text": "He searched under the beds for crumbs."
+              },
+              {
+                "id": "b",
+                "text": "He cooked in the kitchen with Ima."
+              },
+              {
+                "id": "c",
+                "text": "He set the table with silver cups."
+              },
+              {
+                "id": "d",
+                "text": "He bought boxes of matzah."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "Ari searched under the beds for old crumbs. ארי חיפש פירורים מתחת למיטות.",
+              "en": "Line 2 says Ari searched under the beds for crumbs."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 6,
+          "item": {
+            "id": "story.r2.seder-questions.q2",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "Why was Ari nervous?",
+            "options": [
+              {
+                "id": "a",
+                "text": "He had to ask the Four Questions by himself."
+              },
+              {
+                "id": "b",
+                "text": "He had not practiced the questions."
+              },
+              {
+                "id": "c",
+                "text": "His grandparents were late."
+              },
+              {
+                "id": "d",
+                "text": "He did not like matzah."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "Ari was nervous because this year he had to ask the Four Questions alone.",
+              "en": "He had to ask the questions alone."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 10,
+          "item": {
+            "id": "story.r2.seder-questions.q3",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "What does Grandpa mean when he says \"That is exactly what the seder is for\"?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The seder is meant to make children ask and learn."
+              },
+              {
+                "id": "b",
+                "text": "The seder is only for adults."
+              },
+              {
+                "id": "c",
+                "text": "Ari asked the wrong question."
+              },
+              {
+                "id": "d",
+                "text": "Ari sang too quietly."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "השורה הבאה מסבירה: בלילה הזה הילדים שואלים וההורים מספרים. הסדר נועד לשאלות.",
+              "en": "The next line explains: children ask and parents tell the story."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 14,
+          "item": {
+            "id": "story.r2.seder-questions.q4",
+            "type": "choice",
+            "skill": "reading.main-idea",
+            "level": "B1",
+            "difficulty": 0.5,
+            "prompt": "What did Ari learn by the end of the night?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Asking questions is a way of learning."
+              },
+              {
+                "id": "b",
+                "text": "The seder should end early."
+              },
+              {
+                "id": "c",
+                "text": "Only children may ask questions."
+              },
+              {
+                "id": "d",
+                "text": "Singing is more important than eating."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "בשורה האחרונה: asking questions is also a way of learning.",
+              "en": "The last line says asking questions is a way of learning."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "בליל הסדר לומדים דרך שאלות, וכל שאלה פותחת דלת.",
+      "tags": [
+        "pesach",
+        "family",
+        "holidays",
+        "torah-learning"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.r2.rivka-tutor",
+      "title": {
+        "he": "השיעור של רבקה",
+        "en": "Rivka's Lesson"
+      },
+      "kind": "read",
+      "level": "B2",
+      "lines": [
+        {
+          "en": "In the spring of her last year of high school, Rivka had a lot on her mind.",
+          "he": "באביב של השנה האחרונה שלה בתיכון, לרבקה היו הרבה דברים בראש."
+        },
+        {
+          "en": "Her final exams were only two months away, and she was especially worried about English and math.",
+          "he": "בחינות הבגרות שלה היו רק בעוד חודשיים, והיא דאגה במיוחד לגבי אנגלית ומתמטיקה."
+        },
+        {
+          "en": "At the same time, every student in her class had to choose a chesed project for the year.",
+          "he": "באותו זמן, כל תלמידה בכיתה שלה הייתה צריכה לבחור פרויקט חסד לשנה."
+        },
+        {
+          "en": "Rivka decided to tutor Leah, a fourth-grade girl from her neighborhood who was struggling with reading.",
+          "he": "רבקה החליטה לתת שיעורים ללאה, ילדה בכיתה ד' מהשכונה שלה, שהתקשתה בקריאה."
+        },
+        {
+          "en": "On the first day, Leah refused to open her book and kept looking out of the window.",
+          "he": "ביום הראשון לאה סירבה לפתוח את הספר והמשיכה להסתכל מהחלון."
+        },
+        {
+          "en": "Rivka explained the lesson again and again, but Leah only shrugged and said, \"I'm just not smart.\"",
+          "he": "רבקה הסבירה את השיעור שוב ושוב, אבל לאה רק משכה בכתפיים ואמרה: \"אני פשוט לא חכמה.\""
+        },
+        {
+          "en": "Walking home, Rivka felt frustrated and wondered if she was wasting precious time that she needed for studying.",
+          "he": "בדרך הביתה רבקה הרגישה מתוסכלת ותהתה אם היא מבזבזת זמן יקר שהיא צריכה ללימודים."
+        },
+        {
+          "en": "That evening, she told Grandma Chana about the difficult afternoon.",
+          "he": "באותו ערב היא סיפרה לסבתא חנה על אחר הצהריים הקשה."
+        },
+        {
+          "en": "\"Before you teach her to read,\" Grandma said gently, \"maybe you need to teach her to believe in herself.\"",
+          "he": "\"לפני שתלמדי אותה לקרוא\", אמרה סבתא בעדינות, \"אולי את צריכה ללמד אותה להאמין בעצמה.\""
+        },
+        {
+          "en": "The next week, Rivka brought a short story about a brave girl and let Leah choose where to start.",
+          "he": "בשבוע הבא רבקה הביאה סיפור קצר על ילדה אמיצה ונתנה ללאה לבחור מאיפה להתחיל."
+        },
+        {
+          "en": "She stopped correcting every small mistake and praised each sentence that Leah managed to read alone.",
+          "he": "היא הפסיקה לתקן כל טעות קטנה ושיבחה כל משפט שלאה הצליחה לקרוא לבד."
+        },
+        {
+          "en": "Slowly, Leah began to look forward to their meetings, and sometimes she even read ahead at home.",
+          "he": "לאט לאט לאה התחילה לחכות לפגישות שלהן, ולפעמים היא אפילו קראה קדימה בבית."
+        },
+        {
+          "en": "Rivka also discovered that explaining things simply helped her understand her own material better.",
+          "he": "רבקה גם גילתה שכשהיא מסבירה דברים בפשטות, היא עצמה מבינה טוב יותר את החומר שלה."
+        },
+        {
+          "en": "When she sat down for her English exam, she felt surprisingly calm and confident.",
+          "he": "כשהיא התיישבה לבחינה באנגלית, היא הרגישה רגועה ובטוחה בעצמה באופן מפתיע."
+        },
+        {
+          "en": "A few days later, a small envelope arrived at the Shapiros' door.",
+          "he": "כמה ימים אחר כך הגיעה מעטפה קטנה לדלת של משפחת שפירא."
+        },
+        {
+          "en": "Inside was a card in large, careful letters: \"Thank you for teaching me that I can.\"",
+          "he": "בפנים היה כרטיס באותיות גדולות ומוקפדות: \"תודה שלימדת אותי שאני יכולה.\""
+        },
+        {
+          "en": "Rivka realized that in teaching Leah, she had learned one of the most important lessons of the year: patience.",
+          "he": "רבקה הבינה שכשלימדה את לאה, היא עצמה למדה את אחד השיעורים החשובים ביותר של השנה: סבלנות."
+        }
+      ],
+      "glossary": {
+        "spring": {
+          "lemma": "spring",
+          "he": "אביב"
+        },
+        "last": {
+          "lemma": "last",
+          "he": "אחרון"
+        },
+        "year": {
+          "lemma": "year",
+          "he": "שנה"
+        },
+        "high": {
+          "lemma": "high school",
+          "he": "תיכון (high school)"
+        },
+        "school": {
+          "lemma": "school",
+          "he": "בית ספר"
+        },
+        "rivka": {
+          "lemma": "Rivka",
+          "he": "רבקה (שם)"
+        },
+        "had": {
+          "lemma": "have",
+          "he": "היו לה (had a lot); הייתה צריכה (had to); (עבר מוקדם: had learned)"
+        },
+        "lot": {
+          "lemma": "a lot",
+          "he": "הרבה"
+        },
+        "mind": {
+          "lemma": "mind",
+          "he": "ראש, מחשבות"
+        },
+        "final": {
+          "lemma": "final exams",
+          "he": "בחינות סיום"
+        },
+        "exams": {
+          "lemma": "exam",
+          "he": "בחינות"
+        },
+        "only": {
+          "lemma": "only",
+          "he": "רק"
+        },
+        "two": {
+          "lemma": "two",
+          "he": "שניים"
+        },
+        "months": {
+          "lemma": "month",
+          "he": "חודשים"
+        },
+        "away": {
+          "lemma": "away",
+          "he": "בעוד (זמן)"
+        },
+        "especially": {
+          "lemma": "especially",
+          "he": "במיוחד"
+        },
+        "worried": {
+          "lemma": "worried",
+          "he": "דאגה, מודאגת"
+        },
+        "about": {
+          "lemma": "about",
+          "he": "על"
+        },
+        "english": {
+          "lemma": "English",
+          "he": "אנגלית"
+        },
+        "math": {
+          "lemma": "math",
+          "he": "מתמטיקה"
+        },
+        "same": {
+          "lemma": "same",
+          "he": "אותו"
+        },
+        "time": {
+          "lemma": "time",
+          "he": "זמן"
+        },
+        "every": {
+          "lemma": "every",
+          "he": "כל"
+        },
+        "student": {
+          "lemma": "student",
+          "he": "תלמידה"
+        },
+        "class": {
+          "lemma": "class",
+          "he": "כיתה"
+        },
+        "choose": {
+          "lemma": "choose",
+          "he": "לבחור"
+        },
+        "chesed": {
+          "lemma": "chesed",
+          "he": "חסד"
+        },
+        "project": {
+          "lemma": "project",
+          "he": "פרויקט"
+        },
+        "decided": {
+          "lemma": "decide",
+          "he": "החליטה"
+        },
+        "tutor": {
+          "lemma": "tutor",
+          "he": "לתת שיעורים פרטיים"
+        },
+        "leah": {
+          "lemma": "Leah",
+          "he": "לאה (שם)"
+        },
+        "fourth-grade": {
+          "lemma": "fourth-grade",
+          "he": "של כיתה ד'"
+        },
+        "girl": {
+          "lemma": "girl",
+          "he": "ילדה"
+        },
+        "neighborhood": {
+          "lemma": "neighborhood",
+          "he": "שכונה"
+        },
+        "struggling": {
+          "lemma": "struggle",
+          "he": "מתקשה"
+        },
+        "reading": {
+          "lemma": "read",
+          "he": "קריאה"
+        },
+        "first": {
+          "lemma": "first",
+          "he": "ראשון"
+        },
+        "day": {
+          "lemma": "day",
+          "he": "יום"
+        },
+        "refused": {
+          "lemma": "refuse",
+          "he": "סירבה"
+        },
+        "open": {
+          "lemma": "open",
+          "he": "לפתוח"
+        },
+        "book": {
+          "lemma": "book",
+          "he": "ספר"
+        },
+        "kept": {
+          "lemma": "keep",
+          "he": "המשיכה"
+        },
+        "looking": {
+          "lemma": "look",
+          "he": "להסתכל"
+        },
+        "out": {
+          "lemma": "out of",
+          "he": "מ (החלון)"
+        },
+        "window": {
+          "lemma": "window",
+          "he": "חלון"
+        },
+        "explained": {
+          "lemma": "explain",
+          "he": "הסבירה"
+        },
+        "lesson": {
+          "lemma": "lesson",
+          "he": "שיעור"
+        },
+        "again": {
+          "lemma": "again",
+          "he": "שוב"
+        },
+        "shrugged": {
+          "lemma": "shrug",
+          "he": "משכה בכתפיים"
+        },
+        "said": {
+          "lemma": "say",
+          "he": "אמרה"
+        },
+        "i'm": {
+          "lemma": "I am",
+          "he": "אני"
+        },
+        "just": {
+          "lemma": "just",
+          "he": "פשוט"
+        },
+        "smart": {
+          "lemma": "smart",
+          "he": "חכמה"
+        },
+        "walking": {
+          "lemma": "walk",
+          "he": "בדרך (הליכה)"
+        },
+        "home": {
+          "lemma": "home",
+          "he": "הביתה, בית"
+        },
+        "felt": {
+          "lemma": "feel",
+          "he": "הרגישה"
+        },
+        "frustrated": {
+          "lemma": "frustrated",
+          "he": "מתוסכלת"
+        },
+        "wondered": {
+          "lemma": "wonder",
+          "he": "תהתה"
+        },
+        "wasting": {
+          "lemma": "waste",
+          "he": "מבזבזת"
+        },
+        "precious": {
+          "lemma": "precious",
+          "he": "יקר, חשוב מאוד"
+        },
+        "needed": {
+          "lemma": "need",
+          "he": "הייתה צריכה"
+        },
+        "studying": {
+          "lemma": "study",
+          "he": "לימודים"
+        },
+        "evening": {
+          "lemma": "evening",
+          "he": "ערב"
+        },
+        "told": {
+          "lemma": "tell",
+          "he": "סיפרה"
+        },
+        "grandma": {
+          "lemma": "grandma",
+          "he": "סבתא"
+        },
+        "chana": {
+          "lemma": "Chana",
+          "he": "חנה (שם)"
+        },
+        "difficult": {
+          "lemma": "difficult",
+          "he": "קשה"
+        },
+        "afternoon": {
+          "lemma": "afternoon",
+          "he": "אחר הצהריים"
+        },
+        "before": {
+          "lemma": "before",
+          "he": "לפני"
+        },
+        "teach": {
+          "lemma": "teach",
+          "he": "ללמד"
+        },
+        "read": {
+          "lemma": "read",
+          "he": "לקרוא, קראה"
+        },
+        "gently": {
+          "lemma": "gently",
+          "he": "בעדינות"
+        },
+        "maybe": {
+          "lemma": "maybe",
+          "he": "אולי"
+        },
+        "need": {
+          "lemma": "need",
+          "he": "צריך"
+        },
+        "believe": {
+          "lemma": "believe",
+          "he": "להאמין"
+        },
+        "herself": {
+          "lemma": "herself",
+          "he": "בעצמה"
+        },
+        "next": {
+          "lemma": "next",
+          "he": "הבא"
+        },
+        "week": {
+          "lemma": "week",
+          "he": "שבוע"
+        },
+        "brought": {
+          "lemma": "bring",
+          "he": "הביאה"
+        },
+        "short": {
+          "lemma": "short",
+          "he": "קצר"
+        },
+        "story": {
+          "lemma": "story",
+          "he": "סיפור"
+        },
+        "brave": {
+          "lemma": "brave",
+          "he": "אמיץ"
+        },
+        "let": {
+          "lemma": "let",
+          "he": "נתנה, הרשתה"
+        },
+        "start": {
+          "lemma": "start",
+          "he": "להתחיל"
+        },
+        "stopped": {
+          "lemma": "stop",
+          "he": "הפסיקה"
+        },
+        "correcting": {
+          "lemma": "correct",
+          "he": "לתקן"
+        },
+        "small": {
+          "lemma": "small",
+          "he": "קטן"
+        },
+        "mistake": {
+          "lemma": "mistake",
+          "he": "טעות"
+        },
+        "praised": {
+          "lemma": "praise",
+          "he": "שיבחה"
+        },
+        "each": {
+          "lemma": "each",
+          "he": "כל"
+        },
+        "sentence": {
+          "lemma": "sentence",
+          "he": "משפט"
+        },
+        "managed": {
+          "lemma": "manage",
+          "he": "הצליחה"
+        },
+        "alone": {
+          "lemma": "alone",
+          "he": "לבד"
+        },
+        "slowly": {
+          "lemma": "slowly",
+          "he": "לאט"
+        },
+        "began": {
+          "lemma": "begin",
+          "he": "התחילה"
+        },
+        "look": {
+          "lemma": "look forward to",
+          "he": "לחכות בציפייה"
+        },
+        "forward": {
+          "lemma": "look forward to",
+          "he": "לחכות בציפייה"
+        },
+        "meetings": {
+          "lemma": "meeting",
+          "he": "פגישות"
+        },
+        "sometimes": {
+          "lemma": "sometimes",
+          "he": "לפעמים"
+        },
+        "even": {
+          "lemma": "even",
+          "he": "אפילו"
+        },
+        "ahead": {
+          "lemma": "ahead",
+          "he": "קדימה"
+        },
+        "also": {
+          "lemma": "also",
+          "he": "גם"
+        },
+        "discovered": {
+          "lemma": "discover",
+          "he": "גילתה"
+        },
+        "explaining": {
+          "lemma": "explain",
+          "he": "להסביר, הסבר"
+        },
+        "things": {
+          "lemma": "thing",
+          "he": "דברים"
+        },
+        "simply": {
+          "lemma": "simply",
+          "he": "בפשטות"
+        },
+        "helped": {
+          "lemma": "help",
+          "he": "עזרה"
+        },
+        "understand": {
+          "lemma": "understand",
+          "he": "להבין"
+        },
+        "own": {
+          "lemma": "own",
+          "he": "של עצמה"
+        },
+        "material": {
+          "lemma": "material",
+          "he": "חומר"
+        },
+        "better": {
+          "lemma": "good",
+          "he": "טוב יותר"
+        },
+        "sat": {
+          "lemma": "sit down",
+          "he": "התיישבה"
+        },
+        "down": {
+          "lemma": "sit down",
+          "he": "(התיישבה)"
+        },
+        "exam": {
+          "lemma": "exam",
+          "he": "בחינה"
+        },
+        "surprisingly": {
+          "lemma": "surprisingly",
+          "he": "באופן מפתיע"
+        },
+        "calm": {
+          "lemma": "calm",
+          "he": "רגוע"
+        },
+        "confident": {
+          "lemma": "confident",
+          "he": "בטוחה בעצמה"
+        },
+        "few": {
+          "lemma": "few",
+          "he": "כמה"
+        },
+        "days": {
+          "lemma": "day",
+          "he": "ימים"
+        },
+        "later": {
+          "lemma": "later",
+          "he": "אחר כך"
+        },
+        "envelope": {
+          "lemma": "envelope",
+          "he": "מעטפה"
+        },
+        "arrived": {
+          "lemma": "arrive",
+          "he": "הגיעה"
+        },
+        "shapiros'": {
+          "lemma": "Shapiros",
+          "he": "של משפחת שפירא"
+        },
+        "door": {
+          "lemma": "door",
+          "he": "דלת"
+        },
+        "inside": {
+          "lemma": "inside",
+          "he": "בתוך"
+        },
+        "card": {
+          "lemma": "card",
+          "he": "כרטיס"
+        },
+        "large": {
+          "lemma": "large",
+          "he": "גדול"
+        },
+        "careful": {
+          "lemma": "careful",
+          "he": "מוקפד"
+        },
+        "letters": {
+          "lemma": "letter",
+          "he": "אותיות"
+        },
+        "thank": {
+          "lemma": "thank",
+          "he": "תודה"
+        },
+        "teaching": {
+          "lemma": "teach",
+          "he": "שלימדת; כשלימדה"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכולה"
+        },
+        "realized": {
+          "lemma": "realize",
+          "he": "הבינה"
+        },
+        "patience": {
+          "lemma": "patience",
+          "he": "סבלנות"
+        },
+        "most": {
+          "lemma": "most",
+          "he": "הכי, ביותר"
+        },
+        "important": {
+          "lemma": "important",
+          "he": "חשוב"
+        },
+        "learned": {
+          "lemma": "learn",
+          "he": "למדה"
+        },
+        "one": {
+          "lemma": "one",
+          "he": "אחד"
+        },
+        "lessons": {
+          "lemma": "lesson",
+          "he": "שיעורים"
+        }
+      },
+      "questions": [
+        {
+          "after": 3,
+          "item": {
+            "id": "story.r2.rivka-tutor.q1",
+            "type": "choice",
+            "skill": "reading.vocabulary-in-context",
+            "level": "B2",
+            "difficulty": 0.5,
+            "prompt": "The word \"struggling\" in \"struggling with reading\" means...",
+            "options": [
+              {
+                "id": "a",
+                "text": "finding something very hard"
+              },
+              {
+                "id": "b",
+                "text": "enjoying something very much"
+              },
+              {
+                "id": "c",
+                "text": "refusing to do something"
+              },
+              {
+                "id": "d",
+                "text": "teaching something to others"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "struggling with פירושו מתקשה ב. ללאה היה קשה לקרוא.",
+              "en": "struggling with means finding it hard."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 6,
+          "item": {
+            "id": "story.r2.rivka-tutor.q2",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B2",
+            "difficulty": 0.5,
+            "prompt": "Why did Rivka feel frustrated after the first lesson?",
+            "options": [
+              {
+                "id": "a",
+                "text": "She gave her time, but Leah did not make any progress."
+              },
+              {
+                "id": "b",
+                "text": "Leah's parents did not thank her."
+              },
+              {
+                "id": "c",
+                "text": "She had failed her English exam."
+              },
+              {
+                "id": "d",
+                "text": "Grandma told her to stop tutoring."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "רבקה השקיעה זמן יקר, אבל לאה סירבה לקרוא. לכן היא הרגישה מתוסכלת.",
+              "en": "She was using precious time, but Leah refused to learn."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 8,
+          "item": {
+            "id": "story.r2.rivka-tutor.q3",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B2",
+            "difficulty": 0.5,
+            "prompt": "What did Grandma Chana mean?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Leah first needs confidence, and then she will be able to learn."
+              },
+              {
+                "id": "b",
+                "text": "Rivka should stop tutoring Leah."
+              },
+              {
+                "id": "c",
+                "text": "Leah needs a more experienced teacher."
+              },
+              {
+                "id": "d",
+                "text": "Rivka should teach Leah faster."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "לאה אמרה \"I'm just not smart\". סבתא מבינה שהבעיה היא חוסר ביטחון, לא חוסר יכולת.",
+              "en": "Leah did not believe in herself, so confidence had to come first."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 16,
+          "item": {
+            "id": "story.r2.rivka-tutor.q4",
+            "type": "choice",
+            "skill": "reading.purpose",
+            "level": "B2",
+            "difficulty": 0.5,
+            "prompt": "Why does the writer tell us that Rivka felt calm at her English exam?",
+            "options": [
+              {
+                "id": "a",
+                "text": "to show that helping Leah also helped Rivka"
+              },
+              {
+                "id": "b",
+                "text": "to show that the exam was very easy"
+              },
+              {
+                "id": "c",
+                "text": "to explain why Leah sent a card"
+              },
+              {
+                "id": "d",
+                "text": "to show that Rivka stopped tutoring before the exam"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "רבקה גילתה שההסבר ללאה עזר לה להבין את החומר. החסד עזר גם לה.",
+              "en": "Explaining to Leah helped Rivka understand her own material."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "סבלנות וחסד מלמדים גם את מי שנותן וגם את מי שמקבל.",
+      "tags": [
+        "chesed",
+        "school",
+        "patience",
+        "exams"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.r2.grandpa-kotel",
+      "title": {
+        "he": "סבא יוסף והכותל",
+        "en": "Grandpa Yosef and the Kotel"
+      },
+      "kind": "read",
+      "level": "B2",
+      "lines": [
+        {
+          "en": "Every Friday night after the meal, the grandchildren beg Grandpa Yosef to tell them stories from the past.",
+          "he": "בכל ליל שבת אחרי הסעודה, הנכדים מתחננים לסבא יוסף שיספר להם סיפורים מהעבר."
+        },
+        {
+          "en": "This week Ari asked, \"Grandpa, what was it like when you first came to Israel?\"",
+          "he": "השבוע ארי שאל: \"סבא, איך זה היה כשהגעת לארץ בפעם הראשונה?\""
+        },
+        {
+          "en": "Grandpa leaned back in his chair, and for a moment his eyes seemed to look far away.",
+          "he": "סבא נשען לאחור בכיסא, ולרגע נראה שהעיניים שלו מביטות למרחק."
+        },
+        {
+          "en": "\"I came here at nineteen, a few years after the Six-Day War, with one small suitcase,\" he began.",
+          "he": "\"עליתי לארץ בגיל תשע עשרה, כמה שנים אחרי מלחמת ששת הימים, עם מזוודה קטנה אחת\", הוא התחיל."
+        },
+        {
+          "en": "\"I didn't know anyone here, and I could hardly speak a word of Hebrew.\"",
+          "he": "\"לא הכרתי כאן אף אחד, וכמעט לא ידעתי לדבר מילה בעברית.\""
+        },
+        {
+          "en": "\"For the first few months, I shared a crowded room with three other young men and worked in construction.\"",
+          "he": "\"בחודשים הראשונים חלקתי חדר צפוף עם עוד שלושה בחורים צעירים ועבדתי בבניין.\""
+        },
+        {
+          "en": "\"The work was hard and the summer was hot, but every night I learned Hebrew from an old newspaper.\"",
+          "he": "\"העבודה הייתה קשה והקיץ היה חם, אבל כל לילה למדתי עברית מעיתון ישן.\""
+        },
+        {
+          "en": "\"Since I was a little boy in my parents' home, I had dreamed about one place: the Kotel.\"",
+          "he": "\"מאז שהייתי ילד קטן בבית של הוריי, חלמתי על מקום אחד: הכותל.\""
+        },
+        {
+          "en": "\"Finally, one Friday afternoon, I took a bus to Jerusalem and walked through the narrow streets of the Old City.\"",
+          "he": "\"לבסוף, ביום שישי אחד אחר הצהריים, נסעתי באוטובוס לירושלים והלכתי בסמטאות הצרות של העיר העתיקה.\""
+        },
+        {
+          "en": "\"When I suddenly saw those huge ancient stones in front of me, I couldn't move.\"",
+          "he": "\"כשפתאום ראיתי מולי את האבנים העתיקות והענקיות, לא יכולתי לזוז.\""
+        },
+        {
+          "en": "\"I put my hand on the cold stone and cried like a child, and I wasn't ashamed at all.\"",
+          "he": "\"שמתי את היד על האבן הקרה ובכיתי כמו ילד, ולא התביישתי בכלל.\""
+        },
+        {
+          "en": "\"I thought about my grandparents, who had prayed for Jerusalem every day but never had the chance to see it.\"",
+          "he": "\"חשבתי על סבא וסבתא שלי, שהתפללו על ירושלים כל יום אבל אף פעם לא זכו לראות אותה.\""
+        },
+        {
+          "en": "\"That evening I welcomed Shabbat at the Kotel, and for the first time I felt that I was truly home.\"",
+          "he": "\"באותו ערב קיבלתי את השבת בכותל, ובפעם הראשונה הרגשתי שאני באמת בבית.\""
+        },
+        {
+          "en": "Grandpa was quiet for a while, and nobody at the table said a word.",
+          "he": "סבא שתק לזמן מה, ואף אחד ליד השולחן לא אמר מילה."
+        },
+        {
+          "en": "Then he smiled at Ari and said, \"You were born here, so perhaps you take it for granted.\"",
+          "he": "ואז הוא חייך אל ארי ואמר: \"אתה נולדת כאן, אז אולי זה נראה לך מובן מאליו.\""
+        },
+        {
+          "en": "\"Promise me that you will never forget how precious this land is, and how many people dreamed of it.\"",
+          "he": "\"תבטיח לי שלעולם לא תשכח כמה הארץ הזאת יקרה, וכמה אנשים חלמו עליה.\""
+        },
+        {
+          "en": "Ari nodded slowly, and he decided to visit the Kotel with Grandpa the very next week.",
+          "he": "ארי הנהן לאט, והחליט לבקר בכותל עם סבא כבר בשבוע הבא."
+        }
+      ],
+      "glossary": {
+        "every": {
+          "lemma": "every",
+          "he": "כל"
+        },
+        "friday": {
+          "lemma": "Friday",
+          "he": "שישי"
+        },
+        "night": {
+          "lemma": "night",
+          "he": "לילה"
+        },
+        "after": {
+          "lemma": "after",
+          "he": "אחרי"
+        },
+        "meal": {
+          "lemma": "meal",
+          "he": "סעודה"
+        },
+        "grandchildren": {
+          "lemma": "grandchild",
+          "he": "נכדים"
+        },
+        "beg": {
+          "lemma": "beg",
+          "he": "מתחננים"
+        },
+        "grandpa": {
+          "lemma": "grandpa",
+          "he": "סבא"
+        },
+        "yosef": {
+          "lemma": "Yosef",
+          "he": "יוסף (שם)"
+        },
+        "tell": {
+          "lemma": "tell",
+          "he": "לספר"
+        },
+        "stories": {
+          "lemma": "story",
+          "he": "סיפורים"
+        },
+        "past": {
+          "lemma": "past",
+          "he": "העבר"
+        },
+        "week": {
+          "lemma": "week",
+          "he": "שבוע"
+        },
+        "ari": {
+          "lemma": "Ari",
+          "he": "ארי (שם)"
+        },
+        "asked": {
+          "lemma": "ask",
+          "he": "שאל"
+        },
+        "like": {
+          "lemma": "what is it like",
+          "he": "איך (זה היה)"
+        },
+        "first": {
+          "lemma": "first",
+          "he": "ראשון"
+        },
+        "came": {
+          "lemma": "come",
+          "he": "הגעת; עליתי (לארץ)"
+        },
+        "israel": {
+          "lemma": "Israel",
+          "he": "ישראל, הארץ"
+        },
+        "leaned": {
+          "lemma": "lean",
+          "he": "נשען"
+        },
+        "back": {
+          "lemma": "lean back",
+          "he": "לאחור"
+        },
+        "chair": {
+          "lemma": "chair",
+          "he": "כיסא"
+        },
+        "moment": {
+          "lemma": "moment",
+          "he": "רגע"
+        },
+        "eyes": {
+          "lemma": "eye",
+          "he": "עיניים"
+        },
+        "seemed": {
+          "lemma": "seem",
+          "he": "נראו"
+        },
+        "look": {
+          "lemma": "look",
+          "he": "להביט"
+        },
+        "far": {
+          "lemma": "far",
+          "he": "רחוק"
+        },
+        "away": {
+          "lemma": "away",
+          "he": "רחוק"
+        },
+        "nineteen": {
+          "lemma": "nineteen",
+          "he": "תשע עשרה"
+        },
+        "old": {
+          "lemma": "old",
+          "he": "ישן, עתיק"
+        },
+        "one": {
+          "lemma": "one",
+          "he": "אחד"
+        },
+        "small": {
+          "lemma": "small",
+          "he": "קטן"
+        },
+        "suitcase": {
+          "lemma": "suitcase",
+          "he": "מזוודה"
+        },
+        "began": {
+          "lemma": "begin",
+          "he": "התחיל"
+        },
+        "didn't": {
+          "lemma": "do not",
+          "he": "לא"
+        },
+        "know": {
+          "lemma": "know",
+          "he": "הכרתי"
+        },
+        "anyone": {
+          "lemma": "anyone",
+          "he": "אף אחד"
+        },
+        "could": {
+          "lemma": "can",
+          "he": "יכולתי"
+        },
+        "hardly": {
+          "lemma": "hardly",
+          "he": "כמעט לא"
+        },
+        "speak": {
+          "lemma": "speak",
+          "he": "לדבר"
+        },
+        "word": {
+          "lemma": "word",
+          "he": "מילה"
+        },
+        "hebrew": {
+          "lemma": "Hebrew",
+          "he": "עברית"
+        },
+        "few": {
+          "lemma": "few",
+          "he": "כמה"
+        },
+        "months": {
+          "lemma": "month",
+          "he": "חודשים"
+        },
+        "shared": {
+          "lemma": "share",
+          "he": "חלקתי"
+        },
+        "crowded": {
+          "lemma": "crowded",
+          "he": "צפוף"
+        },
+        "room": {
+          "lemma": "room",
+          "he": "חדר"
+        },
+        "three": {
+          "lemma": "three",
+          "he": "שלושה"
+        },
+        "other": {
+          "lemma": "other",
+          "he": "אחר"
+        },
+        "young": {
+          "lemma": "young",
+          "he": "צעיר"
+        },
+        "men": {
+          "lemma": "man",
+          "he": "בחורים, גברים"
+        },
+        "worked": {
+          "lemma": "work",
+          "he": "עבדתי"
+        },
+        "construction": {
+          "lemma": "construction",
+          "he": "בנייה"
+        },
+        "work": {
+          "lemma": "work",
+          "he": "עבודה"
+        },
+        "hard": {
+          "lemma": "hard",
+          "he": "קשה"
+        },
+        "summer": {
+          "lemma": "summer",
+          "he": "קיץ"
+        },
+        "hot": {
+          "lemma": "hot",
+          "he": "חם"
+        },
+        "learned": {
+          "lemma": "learn",
+          "he": "למדתי"
+        },
+        "newspaper": {
+          "lemma": "newspaper",
+          "he": "עיתון"
+        },
+        "since": {
+          "lemma": "since",
+          "he": "מאז"
+        },
+        "little": {
+          "lemma": "little",
+          "he": "קטן"
+        },
+        "boy": {
+          "lemma": "boy",
+          "he": "ילד"
+        },
+        "parents'": {
+          "lemma": "parents",
+          "he": "של ההורים"
+        },
+        "home": {
+          "lemma": "home",
+          "he": "בית"
+        },
+        "had": {
+          "lemma": "have",
+          "he": "(עבר מוקדם)"
+        },
+        "dreamed": {
+          "lemma": "dream",
+          "he": "חלמתי, חלמו"
+        },
+        "about": {
+          "lemma": "about",
+          "he": "על"
+        },
+        "place": {
+          "lemma": "place",
+          "he": "מקום"
+        },
+        "kotel": {
+          "lemma": "Kotel",
+          "he": "הכותל המערבי"
+        },
+        "finally": {
+          "lemma": "finally",
+          "he": "לבסוף"
+        },
+        "afternoon": {
+          "lemma": "afternoon",
+          "he": "אחר הצהריים"
+        },
+        "took": {
+          "lemma": "take",
+          "he": "נסעתי (לקחתי)"
+        },
+        "bus": {
+          "lemma": "bus",
+          "he": "אוטובוס"
+        },
+        "jerusalem": {
+          "lemma": "Jerusalem",
+          "he": "ירושלים"
+        },
+        "walked": {
+          "lemma": "walk",
+          "he": "הלכתי"
+        },
+        "through": {
+          "lemma": "through",
+          "he": "דרך"
+        },
+        "narrow": {
+          "lemma": "narrow",
+          "he": "צר"
+        },
+        "streets": {
+          "lemma": "street",
+          "he": "רחובות, סמטאות"
+        },
+        "city": {
+          "lemma": "city",
+          "he": "עיר"
+        },
+        "suddenly": {
+          "lemma": "suddenly",
+          "he": "פתאום"
+        },
+        "saw": {
+          "lemma": "see",
+          "he": "ראיתי"
+        },
+        "huge": {
+          "lemma": "huge",
+          "he": "ענק"
+        },
+        "ancient": {
+          "lemma": "ancient",
+          "he": "עתיק"
+        },
+        "stones": {
+          "lemma": "stone",
+          "he": "אבנים"
+        },
+        "front": {
+          "lemma": "in front of",
+          "he": "מול"
+        },
+        "couldn't": {
+          "lemma": "cannot",
+          "he": "לא יכולתי"
+        },
+        "move": {
+          "lemma": "move",
+          "he": "לזוז"
+        },
+        "put": {
+          "lemma": "put",
+          "he": "שמתי"
+        },
+        "hand": {
+          "lemma": "hand",
+          "he": "יד"
+        },
+        "cold": {
+          "lemma": "cold",
+          "he": "קר"
+        },
+        "stone": {
+          "lemma": "stone",
+          "he": "אבן"
+        },
+        "cried": {
+          "lemma": "cry",
+          "he": "בכיתי"
+        },
+        "child": {
+          "lemma": "child",
+          "he": "ילד"
+        },
+        "wasn't": {
+          "lemma": "was not",
+          "he": "לא הייתי"
+        },
+        "ashamed": {
+          "lemma": "ashamed",
+          "he": "מתבייש"
+        },
+        "all": {
+          "lemma": "at all",
+          "he": "בכלל"
+        },
+        "thought": {
+          "lemma": "think",
+          "he": "חשבתי"
+        },
+        "grandparents": {
+          "lemma": "grandparent",
+          "he": "סבא וסבתא"
+        },
+        "prayed": {
+          "lemma": "pray",
+          "he": "התפללו"
+        },
+        "day": {
+          "lemma": "day",
+          "he": "יום"
+        },
+        "never": {
+          "lemma": "never",
+          "he": "אף פעם"
+        },
+        "chance": {
+          "lemma": "chance",
+          "he": "הזדמנות"
+        },
+        "see": {
+          "lemma": "see",
+          "he": "לראות"
+        },
+        "evening": {
+          "lemma": "evening",
+          "he": "ערב"
+        },
+        "welcomed": {
+          "lemma": "welcome",
+          "he": "קיבלתי (את השבת)"
+        },
+        "shabbat": {
+          "lemma": "Shabbat",
+          "he": "שבת"
+        },
+        "time": {
+          "lemma": "time",
+          "he": "פעם"
+        },
+        "felt": {
+          "lemma": "feel",
+          "he": "הרגשתי"
+        },
+        "truly": {
+          "lemma": "truly",
+          "he": "באמת"
+        },
+        "quiet": {
+          "lemma": "quiet",
+          "he": "שקט"
+        },
+        "while": {
+          "lemma": "while",
+          "he": "זמן מה"
+        },
+        "nobody": {
+          "lemma": "nobody",
+          "he": "אף אחד"
+        },
+        "table": {
+          "lemma": "table",
+          "he": "שולחן"
+        },
+        "said": {
+          "lemma": "say",
+          "he": "אמר"
+        },
+        "then": {
+          "lemma": "then",
+          "he": "ואז"
+        },
+        "smiled": {
+          "lemma": "smile",
+          "he": "חייך"
+        },
+        "born": {
+          "lemma": "be born",
+          "he": "נולדת"
+        },
+        "perhaps": {
+          "lemma": "perhaps",
+          "he": "אולי"
+        },
+        "take": {
+          "lemma": "take for granted",
+          "he": "לקחת כמובן מאליו"
+        },
+        "granted": {
+          "lemma": "take for granted",
+          "he": "מובן מאליו"
+        },
+        "promise": {
+          "lemma": "promise",
+          "he": "להבטיח"
+        },
+        "will": {
+          "lemma": "will",
+          "he": "(עתיד)"
+        },
+        "forget": {
+          "lemma": "forget",
+          "he": "לשכוח"
+        },
+        "precious": {
+          "lemma": "precious",
+          "he": "יקר, חשוב מאוד"
+        },
+        "land": {
+          "lemma": "land",
+          "he": "ארץ"
+        },
+        "many": {
+          "lemma": "many",
+          "he": "הרבה, רבים"
+        },
+        "people": {
+          "lemma": "person",
+          "he": "אנשים"
+        },
+        "nodded": {
+          "lemma": "nod",
+          "he": "הנהן"
+        },
+        "slowly": {
+          "lemma": "slowly",
+          "he": "לאט"
+        },
+        "decided": {
+          "lemma": "decide",
+          "he": "החליט"
+        },
+        "visit": {
+          "lemma": "visit",
+          "he": "לבקר"
+        },
+        "very": {
+          "lemma": "the very next",
+          "he": "ממש, כבר"
+        },
+        "next": {
+          "lemma": "next",
+          "he": "הבא"
+        },
+        "six-day": {
+          "lemma": "Six-Day War",
+          "he": "ששת הימים"
+        },
+        "war": {
+          "lemma": "war",
+          "he": "מלחמה"
+        },
+        "years": {
+          "lemma": "year",
+          "he": "שנים"
+        }
+      },
+      "questions": [
+        {
+          "after": 6,
+          "item": {
+            "id": "story.r2.grandpa-kotel.q1",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "B2",
+            "difficulty": 0.5,
+            "prompt": "How did Grandpa Yosef learn Hebrew in his first months in Israel?",
+            "options": [
+              {
+                "id": "a",
+                "text": "He read an old newspaper every night."
+              },
+              {
+                "id": "b",
+                "text": "He studied with a private teacher."
+              },
+              {
+                "id": "c",
+                "text": "His parents taught him at home."
+              },
+              {
+                "id": "d",
+                "text": "He learned it from the radio at work."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "every night I learned Hebrew from an old newspaper. סבא למד מעיתון ישן.",
+              "en": "He learned from an old newspaper every night."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 11,
+          "item": {
+            "id": "story.r2.grandpa-kotel.q2",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B2",
+            "difficulty": 0.5,
+            "prompt": "Why was the visit to the Kotel so emotional for Grandpa?",
+            "options": [
+              {
+                "id": "a",
+                "text": "He had dreamed of it for years, and his grandparents never got to see it."
+              },
+              {
+                "id": "b",
+                "text": "He was tired after a long day of construction work."
+              },
+              {
+                "id": "c",
+                "text": "He was afraid of getting lost in the Old City."
+              },
+              {
+                "id": "d",
+                "text": "He did not have enough money for the bus home."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "סבא חלם על הכותל מאז שהיה ילד, וחשב על סבו וסבתו שלא זכו להגיע.",
+              "en": "It was his childhood dream, and his grandparents never saw Jerusalem."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 14,
+          "item": {
+            "id": "story.r2.grandpa-kotel.q3",
+            "type": "choice",
+            "skill": "reading.vocabulary-in-context",
+            "level": "B2",
+            "difficulty": 0.5,
+            "prompt": "In \"perhaps you take it for granted,\" Grandpa means that Ari might...",
+            "options": [
+              {
+                "id": "a",
+                "text": "not fully appreciate something because he has always had it"
+              },
+              {
+                "id": "b",
+                "text": "be very thankful for living in Israel"
+              },
+              {
+                "id": "c",
+                "text": "want to move to another country"
+              },
+              {
+                "id": "d",
+                "text": "forget the way to the Kotel"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "take for granted פירושו לקחת כמובן מאליו. מי שנולד כאן לא תמיד מעריך את זה.",
+              "en": "take for granted means not appreciating something you always have."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        },
+        {
+          "after": 16,
+          "item": {
+            "id": "story.r2.grandpa-kotel.q4",
+            "type": "choice",
+            "skill": "reading.main-idea",
+            "level": "B2",
+            "difficulty": 0.5,
+            "prompt": "What is the main message Grandpa wants to give Ari?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Never forget how precious the Land of Israel is."
+              },
+              {
+                "id": "b",
+                "text": "Construction work is very hard."
+              },
+              {
+                "id": "c",
+                "text": "Learning Hebrew from newspapers is the best way."
+              },
+              {
+                "id": "d",
+                "text": "Young people should travel abroad."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "סבא מבקש: never forget how precious this land is.",
+              "en": "Grandpa asks Ari never to forget how precious the land is."
+            },
+            "tags": [
+              "bagrut"
+            ],
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "ארץ ישראל היא מתנה יקרה, ואסור לקחת אותה כמובנת מאליה.",
+      "tags": [
+        "eretz-yisrael",
+        "jerusalem",
+        "family",
+        "shabbat"
+      ],
+      "source": "original"
+    }
+  ]
+}

@@ -231,7 +231,7 @@ music, sports, fashion, technology, games, movies, school, travel, food, animals
 
 ## New content types (stories, translation, spot the mistake, chunks, word families)
 
-`content/packs/zz-sample.json` has one valid example of each new shape.
+`content/examples/new-types.json` has one valid example of each new shape (not loaded by the app; copy it into `content/packs/` to validate it).
 Validate a pack with `PACK=<pack-id> npx vitest run tools/validate-pack.test.ts`.
 
 ### Stories (`"stories": [...]` in a pack)

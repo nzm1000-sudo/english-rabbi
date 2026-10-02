@@ -1,0 +1,4043 @@
+{
+  "packId": "word-families-1",
+  "schemaVersion": 1,
+  "title": "Word Families 1",
+  "items": [
+    {
+      "id": "fam.happy.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "family:happy",
+      "prompt": "Ari smiled ___ when he lit the Chanukah candles.",
+      "audioText": "Ari smiled happily when he lit the Chanukah candles.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "happily"
+        },
+        {
+          "id": "b",
+          "text": "happy",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "happiness",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "unhappy",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה לפני החסר היא פועל: smiled. איזו מילה מתארת פועל?",
+          "en": "The word before the gap is a verb: smiled. What kind of word describes a verb?"
+        },
+        {
+          "he": "תואר פועל באנגלית מסתיים לרוב ב־ly-.",
+          "en": "Adverbs often end in -ly."
+        }
+      ],
+      "explanation": {
+        "he": "happily הוא תואר פועל (‎-ly). הוא מתאר איך Ari חייך. happy הוא שם תואר, happiness הוא שם עצם. Chanukah = חנוכה.",
+        "en": "happily is an adverb (-ly). It describes how Ari smiled. Chanukah is the Festival of Lights."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.happy.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "family:happy",
+      "prompt": "Shabbat with the whole family brings us great ___. (happy)",
+      "audioText": "Shabbat with the whole family brings us great happiness.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "happiness"
+      ],
+      "knownErrors": [
+        {
+          "answer": "happyness",
+          "feedback": {
+            "he": "כשמוסיפים ness- למילה שמסתיימת ב־y, ה־y הופכת ל־i.",
+            "en": "When you add -ness after y, the y changes to i."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "אחרי great צריך כאן שם עצם.",
+          "en": "After great we need a noun here."
+        },
+        {
+          "he": "הסיומת ness- יוצרת שם עצם.",
+          "en": "The suffix -ness makes a noun."
+        }
+      ],
+      "explanation": {
+        "he": "happiness = אושר. ness- הופכת שם תואר לשם עצם. כדאי לשים לב לאיות: y הופכת ל־i. Shabbat = שבת.",
+        "en": "happiness is a noun: happy + -ness (y changes to i). Shabbat is the day of rest."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.happy.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "family:happy",
+      "prompt": "לא שמח, עצוב",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "unhappy"
+        },
+        {
+          "id": "b",
+          "text": "happiness",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "happily",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "happy",
+          "misconception": "word-formation.negative-prefix"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים שם תואר עם תחילית של שלילה.",
+          "en": "Look for an adjective with a negative prefix."
+        }
+      ],
+      "explanation": {
+        "he": "un- היא תחילית של שלילה: unhappy = לא שמח. happy = שמח, happiness = אושר, happily = בשמחה.",
+        "en": "un- means not: unhappy = not happy."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix",
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.care.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:care",
+      "prompt": "Tamar carried the hot soup ___ to the table.",
+      "audioText": "Tamar carried the hot soup carefully to the table.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "carefully"
+        },
+        {
+          "id": "b",
+          "text": "careful",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "careless",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "care",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה מתארת איך תמר נשאה את המרק. זה פועל.",
+          "en": "The word tells how Tamar carried the soup."
+        },
+        {
+          "he": "צריך תואר פועל עם ly-.",
+          "en": "You need an adverb with -ly."
+        }
+      ],
+      "explanation": {
+        "he": "carefully = בזהירות. care + ful (מלא ב) + ly (תואר פועל). careful הוא שם תואר ולא מתאר פועל.",
+        "en": "carefully is an adverb: care + -ful + -ly. It describes the verb carried."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.care.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:care",
+      "prompt": "Please be ___ with the candles. They are very hot. (care)",
+      "audioText": "Please be careful with the candles. They are very hot.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "careful"
+      ],
+      "knownErrors": [
+        {
+          "answer": "carefull",
+          "feedback": {
+            "he": "הסיומת ful- נכתבת עם l אחת.",
+            "en": "The suffix -ful has one l."
+          }
+        },
+        {
+          "answer": "careless",
+          "feedback": {
+            "he": "careless פירושו חסר זהירות. הנרות חמים, ולכן צריך להיזהר.",
+            "en": "careless means not careful. The candles are hot, so we need the opposite."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "אחרי be צריך שם תואר.",
+          "en": "After be we need an adjective."
+        },
+        {
+          "he": "ful- פירושו מלא ב.",
+          "en": "-ful means full of."
+        }
+      ],
+      "explanation": {
+        "he": "careful = זהיר, מלא זהירות. ful- הופכת שם עצם לשם תואר. ful- נכתבת עם l אחת.",
+        "en": "careful = full of care. The suffix -ful has only one l."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.care.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:care",
+      "prompt": "רשלני, חסר זהירות",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "careless"
+        },
+        {
+          "id": "b",
+          "text": "careful"
+        },
+        {
+          "id": "c",
+          "text": "carefully",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "care",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איזו סיומת פירושה בלי?",
+          "en": "Which suffix means without?"
+        }
+      ],
+      "explanation": {
+        "he": "less- פירושו בלי: careless = בלי זהירות. ful- פירושו מלא ב: careful = זהיר.",
+        "en": "-less means without: careless. -ful means full of: careful."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.help.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "family:help",
+      "prompt": "Moshe is very ___. He always helps his mother set the table for Shabbat.",
+      "audioText": "Moshe is very helpful. He always helps his mother set the table for Shabbat.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "helpful"
+        },
+        {
+          "id": "b",
+          "text": "help",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "helpless"
+        },
+        {
+          "id": "d",
+          "text": "helpfully",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי very בא שם תואר.",
+          "en": "After very comes an adjective."
+        },
+        {
+          "he": "משה עוזר הרבה, ולכן הוא מלא ב...",
+          "en": "Moshe helps a lot, so he is full of..."
+        }
+      ],
+      "explanation": {
+        "he": "helpful = מועיל, עוזר. ful- = מלא ב. helpless = חסר אונים, וזה לא מתאים למשה. help הוא פועל או שם עצם.",
+        "en": "helpful = full of help. helpless means unable to help yourself."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.help.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:help",
+      "prompt": "The baby bird fell from its nest and was ___. Ari gently put it back. (help)",
+      "audioText": "The baby bird fell from its nest and was helpless. Ari gently put it back.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "helpless"
+      ],
+      "knownErrors": [
+        {
+          "answer": "helpful",
+          "feedback": {
+            "he": "helpful פירושו עוזר. הציפור הקטנה לא יכלה לעזור לעצמה.",
+            "en": "helpful means giving help. The bird could not help itself."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "הציפור לא יכלה לעשות כלום לבד.",
+          "en": "The bird could not do anything alone."
+        },
+        {
+          "he": "איזו סיומת פירושה בלי?",
+          "en": "Which suffix means without?"
+        }
+      ],
+      "explanation": {
+        "he": "helpless = חסר אונים, בלי יכולת לעזור לעצמו. less- = בלי.",
+        "en": "helpless = without help, unable to help yourself. -less means without."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.help.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "family:help",
+      "prompt": "מה פירוש הסיומת less- (כמו במילה helpless)?",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "בלי, חסר"
+        },
+        {
+          "id": "b",
+          "text": "מלא ב"
+        },
+        {
+          "id": "c",
+          "text": "שוב, עוד פעם"
+        },
+        {
+          "id": "d",
+          "text": "קצת"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כדאי לחשוב על careless ו־hopeless.",
+          "en": "Think of careless and hopeless."
+        }
+      ],
+      "explanation": {
+        "he": "less- פירושו בלי: helpless = חסר אונים, careless = בלי זהירות. ההפך שלה הוא ful- (מלא ב).",
+        "en": "-less means without. Its opposite is -ful (full of)."
+      },
+      "targetsMisconceptions": [],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.kind.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "family:kind",
+      "prompt": "Rivka visits Mrs. Klein every week out of ___.",
+      "audioText": "Rivka visits Mrs. Klein every week out of kindness.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "kindness"
+        },
+        {
+          "id": "b",
+          "text": "kind",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "kindly",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "unkind",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי out of בא שם עצם.",
+          "en": "After out of comes a noun."
+        },
+        {
+          "he": "ness- יוצרת שם עצם.",
+          "en": "-ness makes a noun."
+        }
+      ],
+      "explanation": {
+        "he": "out of kindness = מתוך טוב לב. kindness הוא שם עצם (kind + ness). kind ו־unkind הם שמות תואר.",
+        "en": "out of kindness: kindness is a noun, kind + -ness."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.kind.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "family:kind",
+      "prompt": "Thank you for your ___. (kind)",
+      "audioText": "Thank you for your kindness.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "kindness"
+      ],
+      "knownErrors": [],
+      "hints": [
+        {
+          "he": "אחרי your בא שם עצם.",
+          "en": "After your comes a noun."
+        },
+        {
+          "he": "ness- הופכת שם תואר לשם עצם.",
+          "en": "-ness turns an adjective into a noun."
+        }
+      ],
+      "explanation": {
+        "he": "kindness = טוב לב, חסד. ness- = שם עצם. אחרי your צריך שם עצם.",
+        "en": "kindness is the noun of kind. After your we need a noun."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.kind.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "family:kind",
+      "prompt": "לא נחמד, לא אדיב",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "unkind"
+        },
+        {
+          "id": "b",
+          "text": "kindness",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "kindly",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "kind",
+          "misconception": "word-formation.negative-prefix"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים מילה עם תחילית של שלילה.",
+          "en": "Look for a word with a negative prefix."
+        }
+      ],
+      "explanation": {
+        "he": "unkind = לא נחמד. un- = לא. kindly = באדיבות, kindness = טוב לב.",
+        "en": "un- means not: unkind = not kind."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix",
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.honest.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:honest",
+      "prompt": "Abba always says that ___ is more important than money.",
+      "audioText": "Abba always says that honesty is more important than money.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "honesty"
+        },
+        {
+          "id": "b",
+          "text": "honest",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "honestly",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "dishonest",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "החסר הוא הנושא של המשפט. צריך שם עצם.",
+          "en": "The gap is the subject of the sentence. You need a noun."
+        },
+        {
+          "he": "y- יכולה ליצור שם עצם משם תואר.",
+          "en": "-y can make a noun from an adjective."
+        }
+      ],
+      "explanation": {
+        "he": "honesty = יושר. זה שם עצם והוא הנושא של המשפט. honest = ישר, honestly = בכנות.",
+        "en": "honesty is a noun and the subject of the sentence."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.honest.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:honest",
+      "prompt": "It is ___ to copy a friend's answers on a test. (honest)",
+      "audioText": "It is dishonest to copy a friend's answers on a test.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "dishonest"
+      ],
+      "knownErrors": [
+        {
+          "answer": "unhonest",
+          "feedback": {
+            "he": "השלילה של honest היא עם dis-, לא עם un-.",
+            "en": "The opposite of honest takes dis-, not un-."
+          },
+          "misconception": "word-formation.negative-prefix"
+        }
+      ],
+      "hints": [
+        {
+          "he": "להעתיק תשובות במבחן זה לא ישר.",
+          "en": "Copying answers on a test is not honest."
+        },
+        {
+          "he": "השלילה כאן היא לא un-.",
+          "en": "The negative prefix here is not un-."
+        }
+      ],
+      "explanation": {
+        "he": "dishonest = לא ישר. dis- היא תחילית של שלילה. לא אומרים unhonest.",
+        "en": "dishonest = not honest. Use dis-, not un-."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix"
+      ],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.honest.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:honest",
+      "prompt": "בכנות, באמת",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "honestly"
+        },
+        {
+          "id": "b",
+          "text": "honesty",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "honest",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "dishonest",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים תואר פועל.",
+          "en": "Look for an adverb."
+        },
+        {
+          "he": "ly- = תואר פועל.",
+          "en": "-ly makes an adverb."
+        }
+      ],
+      "explanation": {
+        "he": "honestly = בכנות. ly- הופכת שם תואר לתואר פועל. honesty = יושר (שם עצם).",
+        "en": "honestly is the adverb: honest + -ly."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.polite.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:polite",
+      "prompt": "Ari asked Rabbi Gold his question ___.",
+      "audioText": "Ari asked Rabbi Gold his question politely.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "politely"
+        },
+        {
+          "id": "b",
+          "text": "polite",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "politeness",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "impolite",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איך Ari שאל? המילה מתארת פועל.",
+          "en": "How did Ari ask? The word describes a verb."
+        },
+        {
+          "he": "צריך ly-.",
+          "en": "You need -ly."
+        }
+      ],
+      "explanation": {
+        "he": "politely = בנימוס. ly- = תואר פועל, והוא מתאר את asked. polite הוא שם תואר.",
+        "en": "politely is an adverb. It describes how Ari asked."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.polite.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "family:polite",
+      "prompt": "It is ___ to interrupt your parents when they are speaking. (polite)",
+      "audioText": "It is impolite to interrupt your parents when they are speaking.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "impolite"
+      ],
+      "knownErrors": [
+        {
+          "answer": "unpolite",
+          "feedback": {
+            "he": "לפני p משתמשים ב־im-, לא ב־un-.",
+            "en": "Before p we use im-, not un-."
+          },
+          "misconception": "word-formation.negative-prefix"
+        }
+      ],
+      "hints": [
+        {
+          "he": "להפריע להורים זה לא מנומס.",
+          "en": "Interrupting your parents is not polite."
+        },
+        {
+          "he": "לפני p באה תחילית מיוחדת.",
+          "en": "Before p there is a special prefix."
+        }
+      ],
+      "explanation": {
+        "he": "impolite = לא מנומס. im- היא שלילה, ובאה לפני p (impolite, impossible, impatient).",
+        "en": "impolite = not polite. im- comes before p."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix"
+      ],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.polite.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "family:polite",
+      "prompt": "מה פירוש התחילית im- במילה impolite?",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "לא"
+        },
+        {
+          "id": "b",
+          "text": "מאוד"
+        },
+        {
+          "id": "c",
+          "text": "שוב"
+        },
+        {
+          "id": "d",
+          "text": "לפני"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "impossible, impatient. מה משותף להן?",
+          "en": "impossible, impatient. What do they share?"
+        }
+      ],
+      "explanation": {
+        "he": "im- = לא, בדיוק כמו un-. משתמשים בה לפני p ו־m: impolite = לא מנומס.",
+        "en": "im- means not. It comes before p and m."
+      },
+      "targetsMisconceptions": [],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.success.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:success",
+      "prompt": "Tamar worked hard, and the school play was a great ___.",
+      "audioText": "Tamar worked hard, and the school play was a great success.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "success"
+        },
+        {
+          "id": "b",
+          "text": "succeed",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "successful",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "successfully",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי a great בא שם עצם.",
+          "en": "After a great comes a noun."
+        }
+      ],
+      "explanation": {
+        "he": "success = הצלחה (שם עצם). succeed = להצליח (פועל), successful = מצליח (שם תואר).",
+        "en": "success is the noun. After a great we need a noun."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.success.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:success",
+      "prompt": "If you practice every day, you will ___. (success)",
+      "audioText": "If you practice every day, you will succeed.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "succeed"
+      ],
+      "knownErrors": [
+        {
+          "answer": "success",
+          "feedback": {
+            "he": "אחרי will בא פועל, ו־success הוא שם עצם.",
+            "en": "After will comes a verb; success is a noun."
+          },
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "hints": [
+        {
+          "he": "אחרי will בא פועל.",
+          "en": "After will comes a verb."
+        },
+        {
+          "he": "הפועל נכתב עם cc ו־ee.",
+          "en": "The verb has cc and ee."
+        }
+      ],
+      "explanation": {
+        "he": "succeed = להצליח. אחרי will בא פועל בצורת הבסיס. success הוא שם עצם.",
+        "en": "succeed is the verb. After will we need a verb."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.success.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:success",
+      "prompt": "מצליח (שם תואר)",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "successful"
+        },
+        {
+          "id": "b",
+          "text": "success",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "succeed",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "successfully",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "ful- יוצרת שם תואר.",
+          "en": "-ful makes an adjective."
+        }
+      ],
+      "explanation": {
+        "he": "successful = מצליח. success + ful. כדאי לשים לב: ful- עם l אחת.",
+        "en": "successful is the adjective: success + -ful."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.decide.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.3,
+      "unit": "family:decide",
+      "prompt": "Ari made a ___ to learn ten new English words every day.",
+      "audioText": "Ari made a decision to learn ten new English words every day.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "decision"
+        },
+        {
+          "id": "b",
+          "text": "decide",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "decided",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "decisive",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי made a בא שם עצם.",
+          "en": "After made a comes a noun."
+        },
+        {
+          "he": "sion- יוצרת שם עצם.",
+          "en": "-sion makes a noun."
+        }
+      ],
+      "explanation": {
+        "he": "make a decision = לקבל החלטה. decision הוא שם עצם. decide הוא פועל, decisive הוא שם תואר.",
+        "en": "make a decision: decision is the noun."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.decide.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B2",
+      "difficulty": 0.5,
+      "unit": "family:decide",
+      "prompt": "Ima is a very ___ person. She knows what she wants and chooses quickly. (decide)",
+      "audioText": "Ima is a very decisive person. She knows what she wants and chooses quickly.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "decisive"
+      ],
+      "knownErrors": [],
+      "hints": [
+        {
+          "he": "אחרי very בא שם תואר.",
+          "en": "After very comes an adjective."
+        },
+        {
+          "he": "הסיומת היא ive-.",
+          "en": "The suffix is -ive."
+        }
+      ],
+      "explanation": {
+        "he": "decisive = החלטי. ive- יוצרת שם תואר. אחרי a very ולפני person צריך שם תואר.",
+        "en": "decisive is the adjective: someone who decides quickly."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.decide.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "family:decide",
+      "prompt": "החלטה",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "decision"
+        },
+        {
+          "id": "b",
+          "text": "decide",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "decisive",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "decided",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים שם עצם.",
+          "en": "Look for a noun."
+        }
+      ],
+      "explanation": {
+        "he": "decision = החלטה (שם עצם). decide = להחליט, decisive = החלטי.",
+        "en": "decision is the noun."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.believe.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:believe",
+      "prompt": "Grandpa Yosef has a strong ___ in the power of prayer.",
+      "audioText": "Grandpa Yosef has a strong belief in the power of prayer.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "belief"
+        },
+        {
+          "id": "b",
+          "text": "believe",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "believable",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "unbelievable",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי a strong בא שם עצם.",
+          "en": "After a strong comes a noun."
+        },
+        {
+          "he": "שם העצם קצר יותר מהפועל.",
+          "en": "The noun is shorter than the verb."
+        }
+      ],
+      "explanation": {
+        "he": "belief = אמונה (שם עצם). believe = להאמין (פועל). בשם העצם ה־v הופכת ל־f.",
+        "en": "belief is the noun. believe is the verb."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.believe.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:believe",
+      "prompt": "The sunrise over the Dead Sea was ___. We had never seen anything so beautiful. (believe)",
+      "audioText": "The sunrise over the Dead Sea was unbelievable. We had never seen anything so beautiful.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "unbelievable"
+      ],
+      "knownErrors": [
+        {
+          "answer": "believable",
+          "feedback": {
+            "he": "צריך כאן משמעות של משהו מדהים, שקשה להאמין בו.",
+            "en": "We need the meaning amazing, hard to believe."
+          },
+          "misconception": "word-formation.negative-prefix"
+        }
+      ],
+      "hints": [
+        {
+          "he": "קשה להאמין כמה זה היה יפה.",
+          "en": "It was so beautiful that it was hard to believe."
+        },
+        {
+          "he": "un + believe + able.",
+          "en": "un + believe + able."
+        }
+      ],
+      "explanation": {
+        "he": "unbelievable = לא ייאמן. un- = לא, able- = אפשר. כלומר: אי אפשר להאמין.",
+        "en": "unbelievable: un- (not) + believe + -able (can be)."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix"
+      ],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.believe.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:believe",
+      "prompt": "אמונה",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "belief"
+        },
+        {
+          "id": "b",
+          "text": "believe",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "believer",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "unbelievable",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים שם עצם, לא אדם.",
+          "en": "Look for a noun, not a person."
+        }
+      ],
+      "explanation": {
+        "he": "belief = אמונה. believer = מאמין (אדם). believe = להאמין.",
+        "en": "belief is the noun. A believer is a person."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.agree.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "family:agree",
+      "prompt": "Tamar and Shira sometimes ___ about which game to play, but they stay good friends.",
+      "audioText": "Tamar and Shira sometimes disagree about which game to play, but they stay good friends.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "disagree"
+        },
+        {
+          "id": "b",
+          "text": "agree",
+          "misconception": "word-formation.negative-prefix"
+        },
+        {
+          "id": "c",
+          "text": "agreement",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "disagreement",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה but מראה ניגוד.",
+          "en": "The word but shows a contrast."
+        },
+        {
+          "he": "צריך פועל עם תחילית של שלילה.",
+          "en": "You need a verb with a negative prefix."
+        }
+      ],
+      "explanation": {
+        "he": "disagree = לא להסכים. dis- = שלילה. but מראה שיש ניגוד: הן לא מסכימות, אבל נשארות חברות.",
+        "en": "disagree = not agree. But shows the contrast."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix",
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.agree.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:agree",
+      "prompt": "After a short talk, the brothers came to an ___. (agree)",
+      "audioText": "After a short talk, the brothers came to an agreement.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "agreement"
+      ],
+      "knownErrors": [],
+      "hints": [
+        {
+          "he": "אחרי an בא שם עצם.",
+          "en": "After an comes a noun."
+        },
+        {
+          "he": "ment- יוצרת שם עצם מפועל.",
+          "en": "-ment makes a noun from a verb."
+        }
+      ],
+      "explanation": {
+        "he": "agreement = הסכם, הסכמה. ment- הופכת פועל לשם עצם. come to an agreement = להגיע להסכמה.",
+        "en": "agreement is a noun: agree + -ment."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.agree.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:agree",
+      "prompt": "מה פירוש התחילית dis- במילה disagree?",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "לא, ההפך"
+        },
+        {
+          "id": "b",
+          "text": "ביחד"
+        },
+        {
+          "id": "c",
+          "text": "שוב"
+        },
+        {
+          "id": "d",
+          "text": "מאוד"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "dishonest, dislike. מה משותף להן?",
+          "en": "dishonest, dislike. What do they share?"
+        }
+      ],
+      "explanation": {
+        "he": "dis- = לא, ההפך: disagree = לא להסכים, dishonest = לא ישר.",
+        "en": "dis- means not or the opposite."
+      },
+      "targetsMisconceptions": [],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.possible.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:possible",
+      "prompt": "Ari tried to lift the heavy table alone, but it was ___. He needed help.",
+      "audioText": "Ari tried to lift the heavy table alone, but it was impossible. He needed help.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "impossible"
+        },
+        {
+          "id": "b",
+          "text": "possible",
+          "misconception": "word-formation.negative-prefix"
+        },
+        {
+          "id": "c",
+          "text": "possibility",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "possibly",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הוא היה צריך עזרה. אז אפשר או אי אפשר?",
+          "en": "He needed help. So could he or not?"
+        },
+        {
+          "he": "לפני p באה תחילית im-.",
+          "en": "Before p comes im-."
+        }
+      ],
+      "explanation": {
+        "he": "impossible = בלתי אפשרי. im- = שלילה לפני p. אחרי was בא שם תואר, ולכן לא possibility ולא possibly.",
+        "en": "impossible = not possible. im- before p."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix",
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.possible.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:possible",
+      "prompt": "There is a ___ of rain during Sukkot this year. (possible)",
+      "audioText": "There is a possibility of rain during Sukkot this year.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "possibility"
+      ],
+      "knownErrors": [],
+      "hints": [
+        {
+          "he": "אחרי a בא שם עצם.",
+          "en": "After a comes a noun."
+        },
+        {
+          "he": "ity- יוצרת שם עצם.",
+          "en": "-ity makes a noun."
+        }
+      ],
+      "explanation": {
+        "he": "possibility = אפשרות. ity- הופכת שם תואר לשם עצם. Sukkot = חג הסוכות.",
+        "en": "possibility is a noun: possible + -ity. Sukkot is the Festival of Booths."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.possible.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:possible",
+      "prompt": "אולי, ייתכן (תואר פועל)",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "possibly"
+        },
+        {
+          "id": "b",
+          "text": "possible",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "possibility",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "impossible",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "ly- = תואר פועל.",
+          "en": "-ly makes an adverb."
+        }
+      ],
+      "explanation": {
+        "he": "possibly = אולי, ייתכן. possible + ly. possibility = אפשרות.",
+        "en": "possibly is the adverb."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.comfort.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:comfort",
+      "prompt": "Grandpa loves his old soft chair because it is very ___.",
+      "audioText": "Grandpa loves his old soft chair because it is very comfortable.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "comfortable"
+        },
+        {
+          "id": "b",
+          "text": "uncomfortable",
+          "misconception": "word-formation.negative-prefix"
+        },
+        {
+          "id": "c",
+          "text": "comfort",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "comfortably",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "סבא אוהב את הכיסא. אז הוא נוח או לא נוח?",
+          "en": "Grandpa loves the chair. Is it comfortable or not?"
+        },
+        {
+          "he": "אחרי very בא שם תואר.",
+          "en": "After very comes an adjective."
+        }
+      ],
+      "explanation": {
+        "he": "comfortable = נוח. able- יוצרת שם תואר. uncomfortable = לא נוח, וזה לא מתאים לכיסא שסבא אוהב.",
+        "en": "comfortable is the adjective. Grandpa loves it, so not uncomfortable."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix",
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.comfort.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:comfort",
+      "prompt": "Baby Eli slept ___ in his warm bed. (comfort)",
+      "audioText": "Baby Eli slept comfortably in his warm bed.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "comfortably"
+      ],
+      "knownErrors": [
+        {
+          "answer": "comfortable",
+          "feedback": {
+            "he": "המילה מתארת את הפועל slept, ולכן צריך תואר פועל.",
+            "en": "It describes the verb slept, so we need an adverb."
+          },
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "hints": [
+        {
+          "he": "איך הוא ישן? צריך תואר פועל.",
+          "en": "How did he sleep? You need an adverb."
+        },
+        {
+          "he": "comfortable מאבדת את ה־e ומקבלת y.",
+          "en": "comfortable loses the e and gets y."
+        }
+      ],
+      "explanation": {
+        "he": "comfortably = בנוחות. במילים שמסתיימות ב־able, ה־ly מתחברת כך: comfortably.",
+        "en": "comfortably: -able becomes -ably."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.comfort.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.3,
+      "unit": "family:comfort",
+      "prompt": "לא נוח",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "uncomfortable"
+        },
+        {
+          "id": "b",
+          "text": "comfortable",
+          "misconception": "word-formation.negative-prefix"
+        },
+        {
+          "id": "c",
+          "text": "comfort",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "comfortably",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים תחילית של שלילה.",
+          "en": "Look for a negative prefix."
+        }
+      ],
+      "explanation": {
+        "he": "uncomfortable = לא נוח. un- = לא.",
+        "en": "un- means not: uncomfortable."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix",
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.danger.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "family:danger",
+      "prompt": "Playing near a busy road is very ___.",
+      "audioText": "Playing near a busy road is very dangerous.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "dangerous"
+        },
+        {
+          "id": "b",
+          "text": "danger",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "dangerously",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי very בא שם תואר.",
+          "en": "After very comes an adjective."
+        },
+        {
+          "he": "ous- יוצרת שם תואר.",
+          "en": "-ous makes an adjective."
+        }
+      ],
+      "explanation": {
+        "he": "dangerous = מסוכן. danger = סכנה (שם עצם). ous- הופכת שם עצם לשם תואר.",
+        "en": "dangerous is the adjective: danger + -ous."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.danger.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:danger",
+      "prompt": "The glass was standing ___ close to the edge of the table. (danger)",
+      "audioText": "The glass was standing dangerously close to the edge of the table.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "dangerously"
+      ],
+      "knownErrors": [
+        {
+          "answer": "dangerous",
+          "feedback": {
+            "he": "המילה מתארת את close, ולכן צריך תואר פועל עם ly-.",
+            "en": "It describes close, so we need an adverb with -ly."
+          },
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "hints": [
+        {
+          "he": "המילה מתארת את close.",
+          "en": "The word describes close."
+        },
+        {
+          "he": "danger + ous + ly.",
+          "en": "danger + ous + ly."
+        }
+      ],
+      "explanation": {
+        "he": "dangerously = באופן מסוכן. ly- = תואר פועל. dangerously close = קרוב בצורה מסוכנת.",
+        "en": "dangerously is the adverb: danger + -ous + -ly."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.danger.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "family:danger",
+      "prompt": "מה הסיומת ous- עושה במילה dangerous?",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "הופכת שם עצם לשם תואר"
+        },
+        {
+          "id": "b",
+          "text": "הופכת שם תואר לפועל"
+        },
+        {
+          "id": "c",
+          "text": "יוצרת רבים"
+        },
+        {
+          "id": "d",
+          "text": "יוצרת זמן עבר"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "danger = סכנה. dangerous = ?",
+          "en": "danger is a noun. dangerous is...?"
+        }
+      ],
+      "explanation": {
+        "he": "ous- יוצרת שם תואר: danger (סכנה) הופך ל־dangerous (מסוכן).",
+        "en": "-ous turns a noun into an adjective."
+      },
+      "targetsMisconceptions": [],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.friend.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:friend",
+      "prompt": "Tamar and Shira have a strong ___. They have been friends since first grade.",
+      "audioText": "Tamar and Shira have a strong friendship. They have been friends since first grade.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "friendship"
+        },
+        {
+          "id": "b",
+          "text": "friend",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "friendly",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "unfriendly",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי a strong בא שם עצם.",
+          "en": "After a strong comes a noun."
+        },
+        {
+          "he": "ship- יוצרת שם עצם של קשר.",
+          "en": "-ship makes a noun for a relationship."
+        }
+      ],
+      "explanation": {
+        "he": "friendship = חברות. ship- יוצרת שם עצם של קשר או מצב. friend הוא חבר (אדם), ו־a strong friend לא מתאים לשתי בנות.",
+        "en": "friendship is the relationship between friends."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.friend.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:friend",
+      "prompt": "Our new neighbors are very ___. They invited us for Kiddush on Shabbat. (friend)",
+      "audioText": "Our new neighbors are very friendly. They invited us for Kiddush on Shabbat.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "friendly"
+      ],
+      "knownErrors": [
+        {
+          "answer": "unfriendly",
+          "feedback": {
+            "he": "הם הזמינו אותנו, אז הם נחמדים.",
+            "en": "They invited us, so they are nice."
+          },
+          "misconception": "word-formation.negative-prefix"
+        }
+      ],
+      "hints": [
+        {
+          "he": "אחרי very בא שם תואר.",
+          "en": "After very comes an adjective."
+        },
+        {
+          "he": "כאן ly- יוצרת שם תואר, לא תואר פועל.",
+          "en": "Here -ly makes an adjective, not an adverb."
+        }
+      ],
+      "explanation": {
+        "he": "friendly = ידידותי. זה שם תואר למרות הסיומת ly-. Kiddush = הברכה על היין.",
+        "en": "friendly is an adjective, even with -ly. Kiddush is the blessing over wine."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix"
+      ],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.friend.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "family:friend",
+      "prompt": "מה הסיומת ship- יוצרת במילה friendship?",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "שם עצם של קשר או מצב"
+        },
+        {
+          "id": "b",
+          "text": "שם תואר"
+        },
+        {
+          "id": "c",
+          "text": "תואר פועל"
+        },
+        {
+          "id": "d",
+          "text": "פועל"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "friendship = חברות. איזה חלק דיבר זה?",
+          "en": "friendship = חברות. What part of speech is it?"
+        }
+      ],
+      "explanation": {
+        "he": "ship- יוצרת שם עצם של קשר או מצב: friendship = חברות.",
+        "en": "-ship makes a noun for a relationship or state."
+      },
+      "targetsMisconceptions": [],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.child.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:child",
+      "prompt": "Grandma Chana spent her ___ in a small village near Haifa.",
+      "audioText": "Grandma Chana spent her childhood in a small village near Haifa.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "childhood"
+        },
+        {
+          "id": "b",
+          "text": "child",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "childish",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "children",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה מבלים במקום מסוים? תקופה.",
+          "en": "What do you spend in a place? A time of life."
+        },
+        {
+          "he": "hood- יוצרת שם עצם של תקופה.",
+          "en": "-hood makes a noun for a period of life."
+        }
+      ],
+      "explanation": {
+        "he": "childhood = ילדות. hood- יוצרת שם עצם של תקופה או מצב. spend your childhood = לבלות את הילדות.",
+        "en": "childhood is the time when you are a child."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.child.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "family:child",
+      "prompt": "Fighting over the last cookie is a bit ___, Ari. You are eleven, not three! (child)",
+      "audioText": "Fighting over the last cookie is a bit childish, Ari. You are eleven, not three!",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "childish"
+      ],
+      "knownErrors": [],
+      "hints": [
+        {
+          "he": "ההתנהגות מתאימה לילד קטן. צריך שם תואר.",
+          "en": "The behavior fits a small child. You need an adjective."
+        },
+        {
+          "he": "הסיומת היא ish-.",
+          "en": "The suffix is -ish."
+        }
+      ],
+      "explanation": {
+        "he": "childish = ילדותי. ish- יוצרת שם תואר: מתנהג כמו ילד קטן.",
+        "en": "childish is an adjective: acting like a small child."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.child.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.3,
+      "unit": "family:child",
+      "prompt": "ילדות",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "childhood"
+        },
+        {
+          "id": "b",
+          "text": "childish",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "children",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "child",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים תקופה בחיים.",
+          "en": "Look for a time of life."
+        }
+      ],
+      "explanation": {
+        "he": "childhood = ילדות. childish = ילדותי, children = ילדים.",
+        "en": "childhood is the time of life."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.educate.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:educate",
+      "prompt": "Our parents believe that a good ___ is a gift for life.",
+      "audioText": "Our parents believe that a good education is a gift for life.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "education"
+        },
+        {
+          "id": "b",
+          "text": "educate",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "educated",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "educational",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי a good בא שם עצם.",
+          "en": "After a good comes a noun."
+        },
+        {
+          "he": "tion- יוצרת שם עצם.",
+          "en": "-tion makes a noun."
+        }
+      ],
+      "explanation": {
+        "he": "education = חינוך. tion- הופכת פועל לשם עצם. educate = לחנך.",
+        "en": "education is the noun: educate + -ion."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.educate.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:educate",
+      "prompt": "On Chanukah we played an ___ game about the history of the holiday. (educate)",
+      "audioText": "On Chanukah we played an educational game about the history of the holiday.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "educational"
+      ],
+      "knownErrors": [
+        {
+          "answer": "education",
+          "feedback": {
+            "he": "לפני game צריך שם תואר.",
+            "en": "Before game we need an adjective."
+          },
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "hints": [
+        {
+          "he": "המילה מתארת את game. צריך שם תואר.",
+          "en": "The word describes game. You need an adjective."
+        },
+        {
+          "he": "education + al.",
+          "en": "education + al."
+        }
+      ],
+      "explanation": {
+        "he": "educational = חינוכי, מלמד. al- יוצרת שם תואר משם עצם.",
+        "en": "educational is an adjective: education + -al."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.educate.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:educate",
+      "prompt": "משכיל, מחונך",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "educated"
+        },
+        {
+          "id": "b",
+          "text": "education",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "educational",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "educate",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים שם תואר שמתאר אדם.",
+          "en": "Look for an adjective for a person."
+        }
+      ],
+      "explanation": {
+        "he": "educated = משכיל. educational = חינוכי (משחק, ספר), education = חינוך.",
+        "en": "educated describes a person. educational describes a game or a book."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.patient.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:patient",
+      "prompt": "Abba is a ___ teacher. He explains things again and again.",
+      "audioText": "Abba is a patient teacher. He explains things again and again.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "patient"
+        },
+        {
+          "id": "b",
+          "text": "patience",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "patiently",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "impatient",
+          "misconception": "word-formation.negative-prefix"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הוא מסביר שוב ושוב. יש לו סבלנות או לא?",
+          "en": "He explains again and again. Does he have patience?"
+        },
+        {
+          "he": "לפני teacher צריך שם תואר.",
+          "en": "Before teacher we need an adjective."
+        }
+      ],
+      "explanation": {
+        "he": "patient = סבלני (שם תואר). impatient = חסר סבלנות. patience = סבלנות (שם עצם).",
+        "en": "patient is the adjective. He explains again and again, so he is not impatient."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix",
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.patient.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:patient",
+      "prompt": "Learning a new language takes a lot of ___. (patient)",
+      "audioText": "Learning a new language takes a lot of patience.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "patience"
+      ],
+      "knownErrors": [
+        {
+          "answer": "patients",
+          "feedback": {
+            "he": "patients הם חולים. צריך סבלנות: patience.",
+            "en": "patients are sick people. We need patience."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "אחרי a lot of בא שם עצם.",
+          "en": "After a lot of comes a noun."
+        },
+        {
+          "he": "ent- הופכת ל־ence-.",
+          "en": "-ent becomes -ence."
+        }
+      ],
+      "explanation": {
+        "he": "patience = סבלנות. ent- הופכת ל־ence- בשם העצם.",
+        "en": "patience is the noun: -ent becomes -ence."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.patient.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.3,
+      "unit": "family:patient",
+      "prompt": "חסר סבלנות",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "impatient"
+        },
+        {
+          "id": "b",
+          "text": "patient",
+          "misconception": "word-formation.negative-prefix"
+        },
+        {
+          "id": "c",
+          "text": "patience",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "patiently",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים תחילית של שלילה לפני p.",
+          "en": "Look for a negative prefix before p."
+        }
+      ],
+      "explanation": {
+        "he": "impatient = חסר סבלנות. im- באה לפני p.",
+        "en": "im- means not: impatient."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix",
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.responsible.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:responsible",
+      "prompt": "Rivka is very ___. Ima can always trust her with baby Eli.",
+      "audioText": "Rivka is very responsible. Ima can always trust her with baby Eli.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "responsible"
+        },
+        {
+          "id": "b",
+          "text": "responsibility",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "responsibly",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "irresponsible",
+          "misconception": "word-formation.negative-prefix"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אמא סומכת עליה. אחרי very בא שם תואר.",
+          "en": "Ima trusts her. After very comes an adjective."
+        }
+      ],
+      "explanation": {
+        "he": "responsible = אחראי. irresponsible = לא אחראי, ולא מתאים כי אמא סומכת עליה.",
+        "en": "responsible is the adjective. Ima trusts her, so not irresponsible."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix",
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.responsible.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:responsible",
+      "prompt": "Taking care of a baby is a big ___. (responsible)",
+      "audioText": "Taking care of a baby is a big responsibility.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "responsibility"
+      ],
+      "knownErrors": [],
+      "hints": [
+        {
+          "he": "אחרי a big בא שם עצם.",
+          "en": "After a big comes a noun."
+        },
+        {
+          "he": "ible- הופכת ל־ibility-.",
+          "en": "-ible becomes -ibility."
+        }
+      ],
+      "explanation": {
+        "he": "responsibility = אחריות. ity- יוצרת שם עצם: responsible הופך ל־responsibility.",
+        "en": "responsibility is the noun: -ible becomes -ibility."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.responsible.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B2",
+      "difficulty": 0.4,
+      "unit": "family:responsible",
+      "prompt": "באחריות (תואר פועל)",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "responsibly"
+        },
+        {
+          "id": "b",
+          "text": "responsible",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "responsibility",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "irresponsible",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "ly- = תואר פועל.",
+          "en": "-ly makes an adverb."
+        }
+      ],
+      "explanation": {
+        "he": "responsibly = באחריות. ible- הופכת ל־ibly-.",
+        "en": "responsibly is the adverb: -ible becomes -ibly."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.important.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:important",
+      "prompt": "Rabbi Gold spoke about the ___ of respecting our parents.",
+      "audioText": "Rabbi Gold spoke about the importance of respecting our parents.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "importance"
+        },
+        {
+          "id": "b",
+          "text": "important",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "importantly",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "unimportant",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי the בא שם עצם.",
+          "en": "After the comes a noun."
+        },
+        {
+          "he": "ant- הופכת ל־ance-.",
+          "en": "-ant becomes -ance."
+        }
+      ],
+      "explanation": {
+        "he": "importance = חשיבות. ant- הופכת ל־ance- בשם העצם. the importance of = החשיבות של.",
+        "en": "importance is the noun: -ant becomes -ance."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.important.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:important",
+      "prompt": "Let's not waste time arguing about ___ things like who sits where. (important)",
+      "audioText": "Let's not waste time arguing about unimportant things like who sits where.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "unimportant"
+      ],
+      "knownErrors": [
+        {
+          "answer": "important",
+          "feedback": {
+            "he": "מי יושב איפה זה דבר לא חשוב. לכן צריך מילה של שלילה.",
+            "en": "Who sits where is not important, so we need the negative word."
+          },
+          "misconception": "word-formation.negative-prefix"
+        }
+      ],
+      "hints": [
+        {
+          "he": "מי יושב איפה. זה דבר חשוב?",
+          "en": "Who sits where. Is that important?"
+        },
+        {
+          "he": "un + important.",
+          "en": "un + important."
+        }
+      ],
+      "explanation": {
+        "he": "unimportant = לא חשוב. un- = שלילה.",
+        "en": "unimportant = not important."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix"
+      ],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.important.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:important",
+      "prompt": "חשיבות",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "importance"
+        },
+        {
+          "id": "b",
+          "text": "important",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "importantly",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "unimportant",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים שם עצם.",
+          "en": "Look for a noun."
+        }
+      ],
+      "explanation": {
+        "he": "importance = חשיבות (שם עצם). important = חשוב.",
+        "en": "importance is the noun."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.celebrate.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:celebrate",
+      "prompt": "Every year our family ___ Chanukah with Grandma and Grandpa.",
+      "audioText": "Every year our family celebrates Chanukah with Grandma and Grandpa.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "celebrates"
+        },
+        {
+          "id": "b",
+          "text": "celebration",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "celebratory",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "חסר פועל במשפט.",
+          "en": "The sentence needs a verb."
+        },
+        {
+          "he": "our family = it, ולכן s בסוף הפועל.",
+          "en": "our family = it, so add -s."
+        }
+      ],
+      "explanation": {
+        "he": "celebrates = חוגגת. זה הפועל של המשפט. celebration = חגיגה (שם עצם).",
+        "en": "celebrates is the verb. celebration is a noun."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.celebrate.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:celebrate",
+      "prompt": "The whole street joined the Purim ___. (celebrate)",
+      "audioText": "The whole street joined the Purim celebration.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "celebration",
+        "celebrations"
+      ],
+      "knownErrors": [
+        {
+          "answer": "celebrate",
+          "feedback": {
+            "he": "אחרי the Purim צריך שם עצם.",
+            "en": "After the Purim we need a noun."
+          },
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "hints": [
+        {
+          "he": "אחרי the Purim בא שם עצם.",
+          "en": "After the Purim comes a noun."
+        },
+        {
+          "he": "ion- יוצרת שם עצם.",
+          "en": "-ion makes a noun."
+        }
+      ],
+      "explanation": {
+        "he": "celebration = חגיגה. ion- הופכת פועל לשם עצם, וה־e נופלת. Purim = חג פורים. אפשר גם ברבים: celebrations.",
+        "en": "celebration is the noun: celebrate + -ion. Purim is a joyful holiday. The plural celebrations is also correct here."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.celebrate.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:celebrate",
+      "prompt": "חגיגה",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "celebration"
+        },
+        {
+          "id": "b",
+          "text": "celebrate",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "celebrated",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "celebrating",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים שם עצם.",
+          "en": "Look for a noun."
+        }
+      ],
+      "explanation": {
+        "he": "celebration = חגיגה. celebrate = לחגוג.",
+        "en": "celebration is the noun."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.forgive.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:forgive",
+      "prompt": "Before Yom Kippur, people ask their friends and family for ___.",
+      "audioText": "Before Yom Kippur, people ask their friends and family for forgiveness.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "forgiveness"
+        },
+        {
+          "id": "b",
+          "text": "forgive",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "forgiving",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "forgivable",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי ask for בא שם עצם.",
+          "en": "After ask for comes a noun."
+        },
+        {
+          "he": "ness- יוצרת שם עצם.",
+          "en": "-ness makes a noun."
+        }
+      ],
+      "explanation": {
+        "he": "forgiveness = מחילה, סליחה. ness- יוצרת שם עצם. Yom Kippur = יום כיפור.",
+        "en": "forgiveness is the noun. Yom Kippur is the Day of Atonement."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.forgive.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B2",
+      "difficulty": 0.5,
+      "unit": "family:forgive",
+      "prompt": "Grandma Chana is a very ___ person. She never stays angry for long. (forgive)",
+      "audioText": "Grandma Chana is a very forgiving person. She never stays angry for long.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "forgiving"
+      ],
+      "knownErrors": [],
+      "hints": [
+        {
+          "he": "לפני person צריך שם תואר.",
+          "en": "Before person we need an adjective."
+        },
+        {
+          "he": "הסיומת היא ing-.",
+          "en": "The suffix is -ing."
+        }
+      ],
+      "explanation": {
+        "he": "forgiving = סלחן. כאן ing- יוצרת שם תואר שמתאר אדם.",
+        "en": "forgiving is an adjective: someone who forgives easily."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.forgive.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:forgive",
+      "prompt": "מחילה, סליחה",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "forgiveness"
+        },
+        {
+          "id": "b",
+          "text": "forgive",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "forgiving",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "forgivable",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים שם עצם עם ness-.",
+          "en": "Look for a noun with -ness."
+        }
+      ],
+      "explanation": {
+        "he": "forgiveness = מחילה. forgive = לסלוח, forgiving = סלחן.",
+        "en": "forgiveness is the noun."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.grateful.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:grateful",
+      "prompt": "Before we eat, we say a blessing because we are ___ for the food.",
+      "audioText": "Before we eat, we say a blessing because we are grateful for the food.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "grateful"
+        },
+        {
+          "id": "b",
+          "text": "gratitude",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "gratefully",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "ungrateful",
+          "misconception": "word-formation.negative-prefix"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרי we are בא שם תואר.",
+          "en": "After we are comes an adjective."
+        },
+        {
+          "he": "מברכים כי מכירים תודה.",
+          "en": "We bless because we are thankful."
+        }
+      ],
+      "explanation": {
+        "he": "grateful = אסיר תודה. ful- יוצרת שם תואר. gratitude = הכרת תודה (שם עצם).",
+        "en": "grateful is the adjective. gratitude is the noun."
+      },
+      "targetsMisconceptions": [
+        "word-formation.negative-prefix",
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.grateful.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B2",
+      "difficulty": 0.5,
+      "unit": "family:grateful",
+      "prompt": "Saying thank you is a simple way to show ___. (grateful)",
+      "audioText": "Saying thank you is a simple way to show gratitude.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "gratitude",
+        "gratefulness"
+      ],
+      "knownErrors": [
+        {
+          "answer": "grateful",
+          "feedback": {
+            "he": "אחרי show צריך שם עצם.",
+            "en": "After show we need a noun."
+          },
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "hints": [
+        {
+          "he": "אחרי show בא שם עצם.",
+          "en": "After show comes a noun."
+        },
+        {
+          "he": "שם העצם מסתיים ב־tude.",
+          "en": "The noun ends in -tude."
+        }
+      ],
+      "explanation": {
+        "he": "gratitude = הכרת תודה. זה שם העצם הרגיל של grateful. גם gratefulness נכונה, אבל פחות נפוצה.",
+        "en": "gratitude is the usual noun of grateful. gratefulness is also correct but less common."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.grateful.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:grateful",
+      "prompt": "הכרת תודה",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "gratitude"
+        },
+        {
+          "id": "b",
+          "text": "grateful",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "gratefully",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "ungrateful",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מחפשים שם עצם.",
+          "en": "Look for a noun."
+        }
+      ],
+      "explanation": {
+        "he": "gratitude = הכרת תודה (שם עצם). grateful = אסיר תודה (שם תואר).",
+        "en": "gratitude is the noun."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.peace.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "family:peace",
+      "prompt": "Shabbat afternoon at our home is quiet and ___.",
+      "audioText": "Shabbat afternoon at our home is quiet and peaceful.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "peaceful"
+        },
+        {
+          "id": "b",
+          "text": "peace",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "peacefully",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "quiet הוא שם תואר, ואחרי and בא עוד שם תואר.",
+          "en": "quiet is an adjective, and after and comes another adjective."
+        }
+      ],
+      "explanation": {
+        "he": "peaceful = שליו, רגוע. peace + ful. peace = שלום, שלווה (שם עצם).",
+        "en": "peaceful is the adjective: peace + -ful."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.peace.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:peace",
+      "prompt": "Baby Eli is sleeping ___ in his crib. (peace)",
+      "audioText": "Baby Eli is sleeping peacefully in his crib.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "peacefully"
+      ],
+      "knownErrors": [
+        {
+          "answer": "peacefuly",
+          "feedback": {
+            "he": "peaceful + ly = peacefully, עם שתי l.",
+            "en": "peaceful + ly = peacefully, with two l's."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "איך הוא ישן? צריך תואר פועל.",
+          "en": "How is he sleeping? You need an adverb."
+        },
+        {
+          "he": "peace + ful + ly.",
+          "en": "peace + ful + ly."
+        }
+      ],
+      "explanation": {
+        "he": "peacefully = בשלווה. ful + ly נותן שתי l: peacefully.",
+        "en": "peacefully: peace + -ful + -ly (two l's)."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.peace.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:peace",
+      "prompt": "מה פירוש הסיומת ful- (כמו במילה peaceful)?",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "מלא ב"
+        },
+        {
+          "id": "b",
+          "text": "בלי"
+        },
+        {
+          "id": "c",
+          "text": "לא"
+        },
+        {
+          "id": "d",
+          "text": "קטן"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "careful, helpful. מה משותף להן?",
+          "en": "careful, helpful. What do they share?"
+        }
+      ],
+      "explanation": {
+        "he": "ful- = מלא ב. היא יוצרת שם תואר: peaceful = מלא שלווה. ההפך שלה הוא less-.",
+        "en": "-ful means full of. Its opposite is -less."
+      },
+      "targetsMisconceptions": [],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.use.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "family:use",
+      "prompt": "This dictionary is very ___. It helps me a lot with my English homework.",
+      "audioText": "This dictionary is very useful. It helps me a lot with my English homework.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "useful"
+        },
+        {
+          "id": "b",
+          "text": "useless"
+        },
+        {
+          "id": "c",
+          "text": "use",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "usefully",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילון עוזר הרבה. אחרי very בא שם תואר.",
+          "en": "The dictionary helps a lot. After very comes an adjective."
+        }
+      ],
+      "explanation": {
+        "he": "useful = שימושי, מועיל. ful- = מלא ב. useless = חסר תועלת, וזה לא מתאים למילון שעוזר.",
+        "en": "useful = full of use. It helps, so it is not useless."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.use.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:use",
+      "prompt": "This umbrella is ___. It has a big hole in it. (use)",
+      "audioText": "This umbrella is useless. It has a big hole in it.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "useless"
+      ],
+      "knownErrors": [
+        {
+          "answer": "useful",
+          "feedback": {
+            "he": "מטריה עם חור לא עוזרת. צריך את ההפך.",
+            "en": "An umbrella with a hole does not help. We need the opposite."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "מטריה עם חור עוזרת?",
+          "en": "Does an umbrella with a hole help?"
+        },
+        {
+          "he": "less- = בלי.",
+          "en": "-less means without."
+        }
+      ],
+      "explanation": {
+        "he": "useless = חסר תועלת. less- = בלי.",
+        "en": "useless = without use."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.use.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "family:use",
+      "prompt": "שימושי, מועיל",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "useful"
+        },
+        {
+          "id": "b",
+          "text": "useless"
+        },
+        {
+          "id": "c",
+          "text": "use",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "usefully",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "ful- = מלא ב.",
+          "en": "-ful means full of."
+        }
+      ],
+      "explanation": {
+        "he": "useful = שימושי. useless = חסר תועלת.",
+        "en": "useful = full of use."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "fam.hope.choice",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "family:hope",
+      "prompt": "The doctor said that, ___, Grandpa will be home before Shabbat.",
+      "audioText": "The doctor said that, hopefully, Grandpa will be home before Shabbat.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה מאותה משפחה",
+        "en": "Choose the right word from the family"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "hopefully"
+        },
+        {
+          "id": "b",
+          "text": "hopeful",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "c",
+          "text": "hope",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "hopeless",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה מתארת את כל המשפט, כמו \"בתקווה\".",
+          "en": "The word describes the whole sentence."
+        },
+        {
+          "he": "צריך תואר פועל עם ly-.",
+          "en": "You need an adverb with -ly."
+        }
+      ],
+      "explanation": {
+        "he": "hopefully = בתקווה, יש לקוות. ly- = תואר פועל.",
+        "en": "hopefully is an adverb. It means we hope that..."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "fam.hope.typed",
+      "type": "typed",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "family:hope",
+      "prompt": "After a long talk with Rabbi Gold, Moshe felt ___ about the future again. (hope)",
+      "audioText": "After a long talk with Rabbi Gold, Moshe felt hopeful about the future again.",
+      "instruction": {
+        "he": "להשלים בצורה הנכונה של המילה שבסוגריים",
+        "en": "Complete with the correct form of the word in brackets"
+      },
+      "answers": [
+        "hopeful"
+      ],
+      "knownErrors": [
+        {
+          "answer": "hopeless",
+          "feedback": {
+            "he": "השיחה עזרה לו, אז הוא מלא תקווה, לא חסר תקווה.",
+            "en": "The talk helped him, so he is full of hope."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "אחרי felt בא שם תואר.",
+          "en": "After felt comes an adjective."
+        },
+        {
+          "he": "השיחה עזרה. מלא תקווה או בלי?",
+          "en": "The talk helped. Full of hope or without it?"
+        }
+      ],
+      "explanation": {
+        "he": "hopeful = מלא תקווה. ful- = מלא ב. אחרי felt בא שם תואר.",
+        "en": "hopeful = full of hope."
+      },
+      "targetsMisconceptions": [],
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.3
+        }
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "fam.hope.hebrew",
+      "type": "choice",
+      "skill": "vocabulary.word-formation",
+      "level": "B1",
+      "difficulty": 0.3,
+      "unit": "family:hope",
+      "prompt": "מיואש, חסר תקווה",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "לבחור את המילה באנגלית",
+        "en": "Choose the English word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "hopeless"
+        },
+        {
+          "id": "b",
+          "text": "hopeful"
+        },
+        {
+          "id": "c",
+          "text": "hopefully",
+          "misconception": "word-formation.part-of-speech"
+        },
+        {
+          "id": "d",
+          "text": "hope",
+          "misconception": "word-formation.part-of-speech"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "less- = בלי.",
+          "en": "-less means without."
+        }
+      ],
+      "explanation": {
+        "he": "hopeless = חסר תקווה. less- = בלי. hopeful = מלא תקווה.",
+        "en": "hopeless = without hope."
+      },
+      "targetsMisconceptions": [
+        "word-formation.part-of-speech"
+      ],
+      "tags": [
+        "family"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    }
+  ],
+  "passages": [],
+  "lessons": []
+}

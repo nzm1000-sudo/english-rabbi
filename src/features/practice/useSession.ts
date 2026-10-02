@@ -4,6 +4,7 @@ import { pickNext, predictSuccess, type Candidate } from '@/domain/learning/sele
 import { localDay, type ItemOutcome } from '@/domain/learning/events';
 import type { Evidence } from '@/domain/learning/evidence';
 import type { LearnerState } from '@/data/store';
+import type { SavedWordRow } from '@/data/schema';
 import type { Student } from '@/domain/student/student';
 import type { ContentItem } from '@/domain/content/schema';
 import { MODES, type PoolContext, type PracticeMode } from './modes';
@@ -35,6 +36,7 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
   const [total, setTotal] = useState(def.length);
   const [deadline, setDeadline] = useState<number | null>(null);
   const stateRef = useRef<LearnerState | null>(null);
+  const wordsRef = useRef<SavedWordRow[] | undefined>(undefined);
   const recentRef = useRef<string[]>([]);
   const fixedRef = useRef<ContentItem[] | null>(null);
   const resultsRef = useRef<SessionResult[]>([]);
@@ -46,7 +48,7 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
   const ctx = useCallback(
     (): PoolContext => {
       const now = Date.now();
-      return { registry: content, state: stateRef.current!, student, now, day: localDay(now), params };
+      return { registry: content, state: stateRef.current!, student, now, day: localDay(now), params, ...(wordsRef.current ? { savedWords: wordsRef.current } : {}) };
     },
     // params is created by the caller per render; its content is stable per session.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -149,6 +151,7 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
         return;
       }
       stateRef.current = st;
+      if (mode === 'mywords') wordsRef.current = await store.savedWords(student.id);
       startedRef.current = Date.now();
       if (def.fixed) {
         fixedRef.current = def.fixed(ctx());

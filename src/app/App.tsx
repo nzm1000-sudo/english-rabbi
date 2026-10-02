@@ -12,6 +12,10 @@ import { ProgressScreen } from '@/features/progress/ProgressScreen';
 import { FamilySetup } from '@/features/students/FamilySetup';
 import { MatchGame } from '@/features/games/MatchGame';
 import { PathScreen } from '@/features/path/PathScreen';
+import { StoriesScreen } from '@/features/stories/StoriesScreen';
+import { StoryScreen } from '@/features/stories/StoryScreen';
+import { MyWordsScreen } from '@/features/words/MyWordsScreen';
+import { ShadowScreen } from '@/features/speaking/ShadowScreen';
 import { useStudent } from './hooks';
 import { SpeechPrefsProvider } from './speechPrefs';
 import type { ReactNode } from 'react';
@@ -33,6 +37,10 @@ export function App() {
         <Route path="/s/:sid/progress" element={<ProgressScreen />} />
         <Route path="/s/:sid/match" element={<WithStudentSpeech><MatchGame /></WithStudentSpeech>} />
         <Route path="/s/:sid/path" element={<PathScreen />} />
+        <Route path="/s/:sid/stories" element={<StoriesScreen />} />
+        <Route path="/s/:sid/stories/:storyId" element={<WithStudentSpeech><StoryScreen /></WithStudentSpeech>} />
+        <Route path="/s/:sid/words" element={<WithStudentSpeech><MyWordsScreen /></WithStudentSpeech>} />
+        <Route path="/s/:sid/shadow" element={<WithStudentSpeech><ShadowScreen /></WithStudentSpeech>} />
         <Route path="/parent" element={<ParentDashboard />} />
         <Route path="/parent/voices" element={<VoiceLab />} />
         <Route path="*" element={<Navigate to="/" replace />} />

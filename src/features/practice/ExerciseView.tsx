@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useReducer, useRef, useState, type FormEvent, type ReactNode } from 'react';
-import type { ChoiceItem, ContentItem, OrderItem, Passage, TypedItem } from '@/domain/content/schema';
-import { checkChoice, checkOrder, checkTyped, orderTokens, type CheckResult } from '@/domain/learning/answerCheck';
+import type { ChoiceItem, ContentItem, FixItem, OrderItem, Passage, TypedItem } from '@/domain/content/schema';
+import { checkChoice, checkFix, checkOrder, checkTyped, fixTokens, orderTokens, type CheckResult } from '@/domain/learning/answerCheck';
 import { flowReducer, initialFlow, isFinished, toOutcome, type FlowPolicy, type FlowState } from '@/domain/learning/exerciseFlow';
 import { chooseText, type SupportLanguage } from '@/domain/learning/languageSupport';
 import type { ItemOutcome } from '@/domain/learning/events';
@@ -103,10 +103,14 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
         </div>
       )}
 
-      {item.type !== 'order' && <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} />}
+      {(item.type === 'order' ? item.promptLanguage === 'he' : item.type !== 'fix') && (
+        <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} />
+      )}
 
       {item.type === 'order' ? (
         <OrderInput item={item} seed={seed} flow={flow} onSubmit={submit} />
+      ) : item.type === 'fix' ? (
+        <FixInput item={item} seed={seed} flow={flow} onSubmit={submit} />
       ) : item.type === 'choice' ? (
         <ChoiceInput
           item={item}
@@ -169,6 +173,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
 }
 
 function Prompt({ item, finished, canSpeak }: { item: Props['item']; finished: boolean; canSpeak: boolean }) {
+  if (item.type === 'fix') return null;
   const isHe = 'promptLanguage' in item && item.promptLanguage === 'he';
   const isWord = !!item.word && (item.prompt === item.word.lemma || item.prompt === item.word.he);
   const fill = finished ? modelAnswer(item) : undefined;
@@ -190,6 +195,7 @@ function Prompt({ item, finished, canSpeak }: { item: Props['item']; finished: b
 function modelAnswer(item: Props['item']): string | undefined {
   if (item.type === 'typed') return item.answers[0];
   if (item.type === 'order') return item.answer;
+  if (item.type === 'fix') return item.corrected;
   return item.options.find((o) => o.id === item.correctOptionId)?.text;
 }
 
@@ -241,6 +247,76 @@ function OrderInput({ item, seed, flow, onSubmit }: { item: OrderItem; seed: str
           </button>
         ))}
       </div>
+    </form>
+  );
+}
+
+/**
+ * Spot the mistake: tap the wrong word, then choose its fix. A wrong word
+ * counts as an attempt at once; the right word opens the fixes.
+ */
+function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string; flow: FlowState; onSubmit: (answer: string, r: CheckResult) => void }) {
+  const tokens = useMemo(() => fixTokens(item), [item]);
+  const fixes = useMemo(() => seededShuffle([item.correction, ...item.distractors], `${seed}:${item.id}`), [item, seed]);
+  const [picked, setPicked] = useState<number | null>(null);
+  const [choice, setChoice] = useState<string | null>(null);
+  const finished = isFinished(flow);
+  const missed = new Set(flow.attempts.filter((a) => !a.correct).map((a) => a.answer));
+
+  const tap = (i: number) => {
+    if (finished) return;
+    if (i !== item.wrongIndex) {
+      onSubmit(`${i}:`, checkFix(item, i, null));
+      return;
+    }
+    setPicked(i);
+    setChoice(null);
+  };
+  const submit = (e: FormEvent) => {
+    e.preventDefault();
+    if (finished || picked === null || choice === null) return;
+    onSubmit(`${picked}:${choice}`, checkFix(item, picked, choice));
+    setChoice(null);
+  };
+
+  return (
+    <form id={`answer-${item.id}`} onSubmit={submit} className="stack" style={{ gap: 'var(--s-4)' }}>
+      <div className="fix-line prompt-card" dir="ltr" lang="en" aria-label="המשפט">
+        {tokens.map((t, i) => (
+          <button
+            key={i}
+            type="button"
+            className="fix-word"
+            aria-pressed={picked === i}
+            data-state={finished && i === item.wrongIndex ? 'wrong-word' : missed.has(`${i}:`) ? 'missed' : undefined}
+            disabled={finished || missed.has(`${i}:`)}
+            onClick={() => tap(i)}
+          >
+            {t}
+          </button>
+        ))}
+      </div>
+      {picked !== null && !finished && (
+        <div className="stack" style={{ gap: 'var(--s-2)' }}>
+          <span className="small muted">במה להחליף את המילה?</span>
+          <div className="options" role="group" aria-label="תיקונים">
+            {fixes.map((f) => (
+              <button
+                key={f || '∅'}
+                type="button"
+                className="option"
+                dir={f ? 'ltr' : undefined}
+                aria-pressed={choice === f}
+                data-state={missed.has(`${picked}:${f}`) ? 'wrong' : undefined}
+                disabled={missed.has(`${picked}:${f}`)}
+                onClick={() => setChoice(f)}
+              >
+                {f ? <En>{f}</En> : <He>למחוק את המילה</He>}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </form>
   );
 }
@@ -412,7 +488,8 @@ function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['
   const praise = PRAISE[[...item.id].reduce((a, ch) => a + ch.charCodeAt(0), 0) % PRAISE.length]!;
   const header = solved ? (clean ? praise : 'נכון! יפה שהמשכת לנסות') : flow.phase === 'skipped' ? 'דילגנו. נחזור לזה בהמשך' : 'לא נורא, ככה לומדים';
   const model = modelAnswer(item);
-  const sentence = item.prompt.includes('___') || listen || item.type === 'order' ? audioText : undefined;
+  const sentence =
+    item.prompt.includes('___') || listen || item.type === 'order' || item.type === 'fix' || item.tags.includes('translate') ? audioText : undefined;
   const example = item.word?.example;
 
   return (
@@ -427,6 +504,7 @@ function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['
             התשובה הנכונה: <En>{model}</En>
           </div>
         )}
+        {item.type === 'fix' && item.meaning && <He className="small">{item.meaning}</He>}
         {!flow.explanationShown && <BiText text={chooseText(item.explanation, support)} className="small" />}
         {sentence && (
           <div className="row">

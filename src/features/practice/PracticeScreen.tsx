@@ -83,7 +83,7 @@ function Session({
           <Timer deadline={s.deadline} onEnd={s.timeUp} />
         ) : (
           <span className="small muted" style={{ minWidth: 44, textAlign: 'center' }}>
-            {def.english ? <En>{def.english}</En> : title}
+            {title}
           </span>
         )}
       </header>
@@ -282,6 +282,8 @@ function Summary({
               <div key={i.id} className="list-item" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: 2 }}>
                 {i.type === 'order' ? (
                   <En className="small">{i.answer}</En>
+                ) : i.type === 'fix' ? (
+                  <En className="small">{i.corrected}</En>
                 ) : 'promptLanguage' in i && i.promptLanguage === 'he' ? (
                   <He className="small">{i.prompt}</He>
                 ) : (

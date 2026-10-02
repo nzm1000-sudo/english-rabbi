@@ -1,0 +1,3879 @@
+{
+  "packId": "fix-1",
+  "schemaVersion": 1,
+  "title": "Spot the mistake 1",
+  "items": [
+    {
+      "id": "fix.a1.sing-every-week",
+      "type": "fix",
+      "skill": "grammar.present-simple",
+      "level": "A1",
+      "difficulty": 0.3,
+      "sentence": "We are sing songs at the Shabbat table every week.",
+      "wrongIndex": 1,
+      "correction": "",
+      "distractors": [
+        "is",
+        "am",
+        "be"
+      ],
+      "corrected": "We sing songs at the Shabbat table every week.",
+      "audioText": "We sing songs at the Shabbat table every week.",
+      "meaning": "אנחנו שרים שירים ליד שולחן השבת כל שבוע.",
+      "targetsMisconceptions": [
+        "present-simple.be-plus-verb"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "sing הוא כבר הפועל. האם צריך לפניו עוד מילה?",
+          "en": "sing is already the verb. Does it need another word before it?"
+        }
+      ],
+      "explanation": {
+        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. We sing songs, בלי are.",
+        "en": "Do not put am / is / are before a normal verb in the Present Simple. We sing, not we are sing."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.want-challah",
+      "type": "fix",
+      "skill": "grammar.present-simple",
+      "level": "A1",
+      "difficulty": 0.3,
+      "sentence": "I am want some more challah, please.",
+      "wrongIndex": 1,
+      "correction": "",
+      "distractors": [
+        "is",
+        "are",
+        "be"
+      ],
+      "corrected": "I want some more challah, please.",
+      "audioText": "I want some more challah, please.",
+      "meaning": "אני רוצה עוד קצת חלה, בבקשה.",
+      "targetsMisconceptions": [
+        "present-simple.be-plus-verb"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "want הוא פועל. האם צריך לפניו am?",
+          "en": "want is a verb. Does it need am?"
+        }
+      ],
+      "explanation": {
+        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. בעברית \"אני רוצה\", ובאנגלית I want. challah היא חלה.",
+        "en": "Do not put am / is / are before a normal verb in the Present Simple. I want, not I am want."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.like-grandmas-challah",
+      "type": "fix",
+      "skill": "grammar.present-simple",
+      "level": "A1",
+      "difficulty": 0.35,
+      "sentence": "I am like Grandma's challah very much.",
+      "wrongIndex": 1,
+      "correction": "",
+      "distractors": [
+        "is",
+        "are",
+        "be"
+      ],
+      "corrected": "I like Grandma's challah very much.",
+      "audioText": "I like Grandma's challah very much.",
+      "meaning": "אני אוהב מאוד את החלה של סבתא.",
+      "targetsMisconceptions": [
+        "present-simple.be-plus-verb"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "like הוא הפועל במשפט. מה מיותר לפניו?",
+          "en": "like is the verb. What extra word comes before it?"
+        }
+      ],
+      "explanation": {
+        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. I like, בלי am.",
+        "en": "Do not put am / is / are before a normal verb in the Present Simple. I like, not I am like."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.ari-go-shul",
+      "type": "fix",
+      "skill": "grammar.present-simple.third-person",
+      "level": "A1",
+      "difficulty": 0.3,
+      "sentence": "Ari go to shul every morning, and Eli sleeps.",
+      "wrongIndex": 1,
+      "correction": "goes",
+      "distractors": [
+        "going",
+        "gone",
+        "to go"
+      ],
+      "corrected": "Ari goes to shul every morning, and Eli sleeps.",
+      "audioText": "Ari goes to shul every morning, and Eli sleeps.",
+      "meaning": "ארי הולך לבית הכנסת כל בוקר, ואלי ישן.",
+      "targetsMisconceptions": [
+        "present-simple.missing-s"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "מי הולך? ארי, אדם אחד. מה חסר בפועל?",
+          "en": "Who goes? Ari, one person. What is missing in the verb?"
+        }
+      ],
+      "explanation": {
+        "he": "בהווה פשוט, כשהנושא הוא אדם אחד (he / she), מוסיפים s לפועל. בעברית הפועל משתנה לפי הגוף, ובאנגלית מסמנים את זה ב־s. Ari הוא he, ולכן goes. ב־go מוסיפים es. shul הוא בית כנסת.",
+        "en": "In the Present Simple, add -s to the verb after one person (he / she / it). Ari = he, so goes."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.ima-light",
+      "type": "fix",
+      "skill": "grammar.present-simple.third-person",
+      "level": "A1",
+      "difficulty": 0.3,
+      "sentence": "Ima light the candles, and we look at the flames.",
+      "wrongIndex": 1,
+      "correction": "lights",
+      "distractors": [
+        "lighting",
+        "to light",
+        "lightes"
+      ],
+      "corrected": "Ima lights the candles, and we look at the flames.",
+      "audioText": "Ima lights the candles, and we look at the flames.",
+      "meaning": "אמא מדליקה את הנרות, ואנחנו מסתכלים על הלהבות.",
+      "targetsMisconceptions": [
+        "present-simple.missing-s"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "Ima היא she. מה צריך להוסיף לפועל?",
+          "en": "Ima is she. What does the verb need?"
+        }
+      ],
+      "explanation": {
+        "he": "בהווה פשוט, כשהנושא הוא אדם אחד (he / she), מוסיפים s לפועל. בעברית הפועל משתנה לפי הגוף, ובאנגלית מסמנים את זה ב־s. Ima היא she, ולכן lights.",
+        "en": "In the Present Simple, add -s to the verb after one person (he / she / it). Ima = she, so lights."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.grandma-bake",
+      "type": "fix",
+      "skill": "grammar.present-simple.third-person",
+      "level": "A1",
+      "difficulty": 0.35,
+      "sentence": "Grandma Chana bake a cake every week, and it smells great.",
+      "wrongIndex": 2,
+      "correction": "bakes",
+      "distractors": [
+        "baking",
+        "baked",
+        "to bake"
+      ],
+      "corrected": "Grandma Chana bakes a cake every week, and it smells great.",
+      "audioText": "Grandma Chana bakes a cake every week, and it smells great.",
+      "meaning": "סבתא חנה אופה עוגה כל שבוע, והיא מריחה נהדר.",
+      "targetsMisconceptions": [
+        "present-simple.missing-s"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "Grandma Chana היא אדם אחד. איך נראה הפועל בהווה?",
+          "en": "Grandma Chana is one person. What does the verb look like in the present?"
+        }
+      ],
+      "explanation": {
+        "he": "בהווה פשוט, כשהנושא הוא אדם אחד (he / she), מוסיפים s לפועל. בעברית הפועל משתנה לפי הגוף, ובאנגלית מסמנים את זה ב־s. Grandma Chana היא she, ולכן bakes.",
+        "en": "In the Present Simple, add -s to the verb after one person (he / she / it). Grandma Chana = she, so bakes."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.mrs-klein-live",
+      "type": "fix",
+      "skill": "grammar.present-simple.third-person",
+      "level": "A1",
+      "difficulty": 0.35,
+      "sentence": "Mrs. Klein live alone, so we visit her.",
+      "wrongIndex": 2,
+      "correction": "lives",
+      "distractors": [
+        "living",
+        "to live",
+        "life"
+      ],
+      "corrected": "Mrs. Klein lives alone, so we visit her.",
+      "audioText": "Mrs. Klein lives alone, so we visit her.",
+      "meaning": "גברת קליין גרה לבד, ולכן אנחנו מבקרים אותה.",
+      "targetsMisconceptions": [
+        "present-simple.missing-s"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "מי גרה לבד? אישה אחת. מה חסר בפועל?",
+          "en": "Who lives alone? One woman. What is missing in the verb?"
+        }
+      ],
+      "explanation": {
+        "he": "בהווה פשוט, כשהנושא הוא אדם אחד (he / she), מוסיפים s לפועל. בעברית הפועל משתנה לפי הגוף, ובאנגלית מסמנים את זה ב־s. Mrs. Klein היא she, ולכן lives.",
+        "en": "In the Present Simple, add -s to the verb after one person (he / she / it). Mrs. Klein = she, so lives."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.where-do-rivka",
+      "type": "fix",
+      "skill": "grammar.present-simple.questions-negatives",
+      "level": "A1",
+      "difficulty": 0.35,
+      "sentence": "Where do Rivka keep her siddur?",
+      "wrongIndex": 1,
+      "correction": "does",
+      "distractors": [
+        "are",
+        "is",
+        "doing"
+      ],
+      "corrected": "Where does Rivka keep her siddur?",
+      "audioText": "Where does Rivka keep her siddur?",
+      "meaning": "איפה רבקה שומרת את הסידור שלה?",
+      "targetsMisconceptions": [
+        "present-simple.do-does"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את פועל העזר",
+          "en": "Check the helping verb."
+        },
+        {
+          "he": "Rivka היא אדם אחד. איזה פועל עזר מתאים לה?",
+          "en": "Rivka is one person. Which helping verb fits her?"
+        }
+      ],
+      "explanation": {
+        "he": "עם אדם אחד (he / she / it) משתמשים ב־does / doesn't. עם כמה אנשים, I, you, we, they משתמשים ב־do / don't. Rivka היא she, ולכן does. siddur הוא סידור.",
+        "en": "Use does / doesn't with he, she, it. Use do / don't with I, you, we, they. Rivka = she, so does."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.ari-do-not-school",
+      "type": "fix",
+      "skill": "grammar.present-simple.questions-negatives",
+      "level": "A1",
+      "difficulty": 0.35,
+      "sentence": "Ari do not have school tomorrow.",
+      "wrongIndex": 1,
+      "correction": "does",
+      "distractors": [
+        "did",
+        "is",
+        "are"
+      ],
+      "corrected": "Ari does not have school tomorrow.",
+      "audioText": "Ari does not have school tomorrow.",
+      "meaning": "לארי אין בית ספר מחר.",
+      "targetsMisconceptions": [
+        "present-simple.do-does"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את פועל העזר",
+          "en": "Check the helping verb."
+        },
+        {
+          "he": "Ari הוא he. האם מתאים do או צורה אחרת?",
+          "en": "Ari is he. Is do right, or another form?"
+        }
+      ],
+      "explanation": {
+        "he": "עם אדם אחד (he / she / it) משתמשים ב־does / doesn't. עם כמה אנשים, I, you, we, they משתמשים ב־do / don't. Ari הוא he, ולכן does not. אחרי does הפועל נשאר have.",
+        "en": "Use does / doesn't with he, she, it. Use do / don't with I, you, we, they. Ari = he, so does not have."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.much-grandchildren",
+      "type": "fix",
+      "skill": "grammar.quantifiers",
+      "level": "A1",
+      "difficulty": 0.3,
+      "sentence": "Grandma Chana has much grandchildren.",
+      "wrongIndex": 3,
+      "correction": "many",
+      "distractors": [
+        "lot",
+        "any",
+        "little"
+      ],
+      "corrected": "Grandma Chana has many grandchildren.",
+      "audioText": "Grandma Chana has many grandchildren.",
+      "meaning": "לסבתא חנה יש הרבה נכדים.",
+      "targetsMisconceptions": [
+        "quantifiers.much-many"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת הכמות",
+          "en": "Check the word for amount."
+        },
+        {
+          "he": "אפשר לספור נכדים?",
+          "en": "Can we count grandchildren?"
+        }
+      ],
+      "explanation": {
+        "he": "many בא עם דברים שאפשר לספור (candles, children). much בא עם דברים שלא סופרים (time, water). בעברית יש רק \"הרבה\" או \"כמה\". נכדים אפשר לספור, ולכן many grandchildren.",
+        "en": "many + things we can count. much + things we cannot count. We can count grandchildren, so many."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.how-much-candles",
+      "type": "fix",
+      "skill": "grammar.quantifiers",
+      "level": "A1",
+      "difficulty": 0.35,
+      "sentence": "How much candles do we need for Chanukah tonight?",
+      "wrongIndex": 1,
+      "correction": "many",
+      "distractors": [
+        "lot",
+        "more",
+        "long"
+      ],
+      "corrected": "How many candles do we need for Chanukah tonight?",
+      "audioText": "How many candles do we need for Chanukah tonight?",
+      "meaning": "כמה נרות אנחנו צריכים לחנוכה הלילה?",
+      "targetsMisconceptions": [
+        "quantifiers.much-many"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת הכמות",
+          "en": "Check the word for amount."
+        },
+        {
+          "he": "candles הוא ברבים. אפשר לספור אותם?",
+          "en": "candles is plural. Can we count them?"
+        }
+      ],
+      "explanation": {
+        "he": "many בא עם דברים שאפשר לספור (candles, children). much בא עם דברים שלא סופרים (time, water). בעברית יש רק \"הרבה\" או \"כמה\". נרות סופרים, ולכן How many candles. Chanukah היא חנוכה.",
+        "en": "many + things we can count. much + things we cannot count. We count candles, so how many."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.a-orange",
+      "type": "fix",
+      "skill": "grammar.articles",
+      "level": "A1",
+      "difficulty": 0.3,
+      "sentence": "Ari has a orange for breakfast.",
+      "wrongIndex": 2,
+      "correction": "an",
+      "distractors": [
+        "any",
+        "many",
+        "much"
+      ],
+      "corrected": "Ari has an orange for breakfast.",
+      "audioText": "Ari has an orange for breakfast.",
+      "meaning": "לארי יש תפוז לארוחת בוקר.",
+      "targetsMisconceptions": [
+        "articles.a-an"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילה הקטנה לפני שם העצם",
+          "en": "Check the small word before the noun."
+        },
+        {
+          "he": "באיזה צליל מתחילה המילה orange?",
+          "en": "What sound does orange start with?"
+        }
+      ],
+      "explanation": {
+        "he": "לפני צליל של תנועה (a, e, i, o, u) אומרים an. לפני צליל של עיצור אומרים a. קובע הצליל של המילה הבאה. orange מתחילה בצליל o, תנועה, ולכן an orange.",
+        "en": "an before a vowel sound, a before a consonant sound. orange starts with a vowel sound, so an."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.an-story",
+      "type": "fix",
+      "skill": "grammar.articles",
+      "level": "A1",
+      "difficulty": 0.3,
+      "sentence": "Rabbi Gold tells us an story every Friday.",
+      "wrongIndex": 4,
+      "correction": "a",
+      "distractors": [
+        "any",
+        "many",
+        "much"
+      ],
+      "corrected": "Rabbi Gold tells us a story every Friday.",
+      "audioText": "Rabbi Gold tells us a story every Friday.",
+      "meaning": "הרב גולד מספר לנו סיפור בכל יום שישי.",
+      "targetsMisconceptions": [
+        "articles.a-an"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילה הקטנה לפני שם העצם",
+          "en": "Check the small word before the noun."
+        },
+        {
+          "he": "באיזה צליל מתחילה המילה story?",
+          "en": "What sound does story start with?"
+        }
+      ],
+      "explanation": {
+        "he": "לפני צליל של תנועה (a, e, i, o, u) אומרים an. לפני צליל של עיצור אומרים a. קובע הצליל של המילה הבאה. story מתחילה בצליל s, עיצור, ולכן a story.",
+        "en": "an before a vowel sound, a before a consonant sound. story starts with a consonant sound, so a."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.a-apple",
+      "type": "fix",
+      "skill": "grammar.articles",
+      "level": "A1",
+      "difficulty": 0.3,
+      "sentence": "Moshe gives Ari a apple at school.",
+      "wrongIndex": 3,
+      "correction": "an",
+      "distractors": [
+        "any",
+        "much",
+        "few"
+      ],
+      "corrected": "Moshe gives Ari an apple at school.",
+      "audioText": "Moshe gives Ari an apple at school.",
+      "meaning": "משה נותן לארי תפוח בבית הספר.",
+      "targetsMisconceptions": [
+        "articles.a-an"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילה הקטנה לפני שם העצם",
+          "en": "Check the small word before the noun."
+        },
+        {
+          "he": "apple מתחילה באות a. מה זה אומר על המילה שלפניה?",
+          "en": "apple starts with a. What does that mean for the word before it?"
+        }
+      ],
+      "explanation": {
+        "he": "לפני צליל של תנועה (a, e, i, o, u) אומרים an. לפני צליל של עיצור אומרים a. קובע הצליל של המילה הבאה. apple מתחילה בתנועה, ולכן an apple.",
+        "en": "an before a vowel sound, a before a consonant sound. apple starts with a vowel sound, so an."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.in-night",
+      "type": "fix",
+      "skill": "grammar.prepositions",
+      "level": "A1",
+      "difficulty": 0.35,
+      "sentence": "We light the Chanukah candles in night.",
+      "wrongIndex": 5,
+      "correction": "at",
+      "distractors": [
+        "on",
+        "to",
+        "for"
+      ],
+      "corrected": "We light the Chanukah candles at night.",
+      "audioText": "We light the Chanukah candles at night.",
+      "meaning": "אנחנו מדליקים את נרות חנוכה בלילה.",
+      "targetsMisconceptions": [
+        "prepositions.time"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת היחס של הזמן",
+          "en": "Check the time preposition."
+        },
+        {
+          "he": "איזו מילת יחס באה עם night?",
+          "en": "Which preposition goes with night?"
+        }
+      ],
+      "explanation": {
+        "he": "at לשעה ול־night. on ליום ולתאריך. in לחודש, לשנה ולעונה. בעברית יש רק \"ב\", ולכן קל להתבלבל. אומרים at night. בעברית \"בלילה\", באנגלית at.",
+        "en": "at + clock time and night, on + day and date, in + month, year and season. We say at night."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.in-thursday",
+      "type": "fix",
+      "skill": "grammar.prepositions",
+      "level": "A1",
+      "difficulty": 0.35,
+      "sentence": "Ima bakes challah in Thursday.",
+      "wrongIndex": 3,
+      "correction": "on",
+      "distractors": [
+        "at",
+        "to",
+        "into"
+      ],
+      "corrected": "Ima bakes challah on Thursday.",
+      "audioText": "Ima bakes challah on Thursday.",
+      "meaning": "אמא אופה חלה ביום חמישי.",
+      "targetsMisconceptions": [
+        "prepositions.time"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת היחס של הזמן",
+          "en": "Check the time preposition."
+        },
+        {
+          "he": "Thursday הוא יום בשבוע. איזו מילת יחס באה עם ימים?",
+          "en": "Thursday is a day. Which preposition goes with days?"
+        }
+      ],
+      "explanation": {
+        "he": "at לשעה ול־night. on ליום ולתאריך. in לחודש, לשנה ולעונה. בעברית יש רק \"ב\", ולכן קל להתבלבל. עם ימים אומרים on: on Thursday.",
+        "en": "at + clock time and night, on + day and date, in + month, year and season. We use on with days."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.candles-in-table",
+      "type": "fix",
+      "skill": "grammar.prepositions",
+      "level": "A1",
+      "difficulty": 0.35,
+      "sentence": "Ima puts the candles in the table.",
+      "wrongIndex": 4,
+      "correction": "on",
+      "distractors": [
+        "at",
+        "to",
+        "into"
+      ],
+      "corrected": "Ima puts the candles on the table.",
+      "audioText": "Ima puts the candles on the table.",
+      "meaning": "אמא שמה את הנרות על השולחן.",
+      "targetsMisconceptions": [
+        "prepositions.place"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת היחס של המקום",
+          "en": "Check the place preposition."
+        },
+        {
+          "he": "הנרות בתוך השולחן או על השולחן?",
+          "en": "Are the candles inside the table or on it?"
+        }
+      ],
+      "explanation": {
+        "he": "in זה בתוך. on זה על משטח. at זה בנקודה או במקום מסוים. בעברית \"ב\" ו\"על\" לא תמיד מתאימים לאנגלית. הנרות על השולחן, על משטח, ולכן on the table.",
+        "en": "in = inside, on = on a surface, at = at a point or place. The candles are on top of the table, so on."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.there-is-two",
+      "type": "fix",
+      "skill": "grammar.there-is",
+      "level": "A1",
+      "difficulty": 0.3,
+      "sentence": "There is two candles on the table.",
+      "wrongIndex": 1,
+      "correction": "are",
+      "distractors": [
+        "be",
+        "has",
+        "am"
+      ],
+      "corrected": "There are two candles on the table.",
+      "audioText": "There are two candles on the table.",
+      "meaning": "יש שני נרות על השולחן.",
+      "targetsMisconceptions": [
+        "there-is.agreement"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את is / are",
+          "en": "Check is / are."
+        },
+        {
+          "he": "כמה נרות יש? אחד או יותר?",
+          "en": "How many candles? One or more?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי there בוחרים is או are לפי שם העצם שבא אחריו. יחיד או משהו שלא סופרים: there is. רבים: there are. בעברית \"יש\" לא משתנה. two candles זה רבים, ולכן there are.",
+        "en": "there is + singular or uncountable, there are + plural. two candles is plural, so there are."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.there-are-sukkah",
+      "type": "fix",
+      "skill": "grammar.there-is",
+      "level": "A1",
+      "difficulty": 0.35,
+      "sentence": "There are a big sukkah in our yard.",
+      "wrongIndex": 1,
+      "correction": "is",
+      "distractors": [
+        "be",
+        "have",
+        "am"
+      ],
+      "corrected": "There is a big sukkah in our yard.",
+      "audioText": "There is a big sukkah in our yard.",
+      "meaning": "יש סוכה גדולה בחצר שלנו.",
+      "targetsMisconceptions": [
+        "there-is.agreement"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את is / are",
+          "en": "Check is / are."
+        },
+        {
+          "he": "כמה סוכות יש? מה המילה a אומרת?",
+          "en": "How many sukkahs? What does a tell you?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי there בוחרים is או are לפי שם העצם שבא אחריו. יחיד או משהו שלא סופרים: there is. רבים: there are. בעברית \"יש\" לא משתנה. a big sukkah זה יחיד, ולכן there is. sukkah היא סוכה.",
+        "en": "there is + singular or uncountable, there are + plural. a sukkah is singular, so there is."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a1.learns-ari-songs",
+      "type": "fix",
+      "skill": "vocabulary.context",
+      "level": "A1",
+      "difficulty": 0.4,
+      "sentence": "Grandpa Yosef learns Ari songs for Shabbat.",
+      "wrongIndex": 2,
+      "correction": "teaches",
+      "distractors": [
+        "studies",
+        "learn",
+        "learning"
+      ],
+      "corrected": "Grandpa Yosef teaches Ari songs for Shabbat.",
+      "audioText": "Grandpa Yosef teaches Ari songs for Shabbat.",
+      "meaning": "סבא יוסף מלמד את ארי שירים לשבת.",
+      "targetsMisconceptions": [
+        "vocabulary.learn-teach"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "מי נותן את הידע? סבא או ארי?",
+          "en": "Who gives the knowledge, Grandpa or Ari?"
+        }
+      ],
+      "explanation": {
+        "he": "learn זה ללמוד בעצמי. teach זה ללמד מישהו אחר. בעברית \"לומד\" ו\"מלמד\" דומים, אבל באנגלית אלה שתי מילים שונות. סבא מלמד, ולכן teaches. ארי הוא זה שלומד: Ari learns.",
+        "en": "learn = get knowledge yourself, teach = give knowledge to someone. Grandpa teaches. Ari learns."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.rivka-tamar-want",
+      "type": "fix",
+      "skill": "grammar.present-simple",
+      "level": "A2",
+      "difficulty": 0.35,
+      "sentence": "Rivka and Tamar are want to help Mrs. Klein.",
+      "wrongIndex": 3,
+      "correction": "",
+      "distractors": [
+        "is",
+        "be",
+        "am"
+      ],
+      "corrected": "Rivka and Tamar want to help Mrs. Klein.",
+      "audioText": "Rivka and Tamar want to help Mrs. Klein.",
+      "meaning": "רבקה ותמר רוצות לעזור לגברת קליין.",
+      "targetsMisconceptions": [
+        "present-simple.be-plus-verb"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "want הוא פועל רגיל. האם צריך לפניו are?",
+          "en": "want is a normal verb. Does it need are?"
+        }
+      ],
+      "explanation": {
+        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. Rivka and Tamar want, בלי are.",
+        "en": "Do not put am / is / are before a normal verb in the Present Simple. Rivka and Tamar want, not are want."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.walk-every-shabbat",
+      "type": "fix",
+      "skill": "grammar.present-simple",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Every Shabbat we are walk to shul together.",
+      "wrongIndex": 3,
+      "correction": "",
+      "distractors": [
+        "is",
+        "be",
+        "am"
+      ],
+      "corrected": "Every Shabbat we walk to shul together.",
+      "audioText": "Every Shabbat we walk to shul together.",
+      "meaning": "בכל שבת אנחנו הולכים יחד לבית הכנסת.",
+      "targetsMisconceptions": [
+        "present-simple.be-plus-verb"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "Every Shabbat זה הרגל. איך מתארים הרגל בהווה פשוט?",
+          "en": "Every Shabbat is a habit. How do we show a habit in the Present Simple?"
+        }
+      ],
+      "explanation": {
+        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. הרגל כותבים בהווה פשוט: we walk. לא are walk.",
+        "en": "Do not put am / is / are before a normal verb in the Present Simple. A habit uses the Present Simple: we walk."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.eli-cry",
+      "type": "fix",
+      "skill": "grammar.present-simple.third-person",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Baby Eli cry when he is hungry.",
+      "wrongIndex": 2,
+      "correction": "cries",
+      "distractors": [
+        "crys",
+        "crying",
+        "to cry"
+      ],
+      "corrected": "Baby Eli cries when he is hungry.",
+      "audioText": "Baby Eli cries when he is hungry.",
+      "meaning": "התינוק אלי בוכה כשהוא רעב.",
+      "targetsMisconceptions": [
+        "present-simple.missing-s"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "Eli הוא he. מה קורה לפועל שנגמר ב־y?",
+          "en": "Eli is he. What happens to a verb that ends in y?"
+        }
+      ],
+      "explanation": {
+        "he": "בהווה פשוט, כשהנושא הוא אדם אחד (he / she), מוסיפים s לפועל. בעברית הפועל משתנה לפי הגוף, ובאנגלית מסמנים את זה ב־s. Eli הוא he, ולכן מוסיפים s. ב־cry ה־y הופכת ל־ies: cries.",
+        "en": "In the Present Simple, add -s to the verb after one person (he / she / it). Eli = he, so cries (y becomes ies)."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.does-tamar-shira",
+      "type": "fix",
+      "skill": "grammar.present-simple.questions-negatives",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Does Tamar and Shira learn together?",
+      "wrongIndex": 0,
+      "correction": "Do",
+      "distractors": [
+        "Is",
+        "Are",
+        "Has"
+      ],
+      "corrected": "Do Tamar and Shira learn together?",
+      "audioText": "Do Tamar and Shira learn together?",
+      "meaning": "האם תמר ושירה לומדות יחד?",
+      "targetsMisconceptions": [
+        "present-simple.do-does"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את פועל העזר",
+          "en": "Check the helping verb."
+        },
+        {
+          "he": "כמה בנות יש בשאלה?",
+          "en": "How many girls are in the question?"
+        }
+      ],
+      "explanation": {
+        "he": "עם אדם אחד (he / she / it) משתמשים ב־does / doesn't. עם כמה אנשים, I, you, we, they משתמשים ב־do / don't. Tamar and Shira הן they, ולכן Do.",
+        "en": "Use does / doesn't with he, she, it. Use do / don't with I, you, we, they. Tamar and Shira = they, so do."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.mrs-klein-dont",
+      "type": "fix",
+      "skill": "grammar.present-simple.questions-negatives",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Mrs. Klein don't have family in Jerusalem, so we visit her.",
+      "wrongIndex": 2,
+      "correction": "doesn't",
+      "distractors": [
+        "isn't",
+        "not",
+        "aren't"
+      ],
+      "corrected": "Mrs. Klein doesn't have family in Jerusalem, so we visit her.",
+      "audioText": "Mrs. Klein doesn't have family in Jerusalem, so we visit her.",
+      "meaning": "לגברת קליין אין משפחה בירושלים, ולכן אנחנו מבקרים אותה.",
+      "targetsMisconceptions": [
+        "present-simple.do-does"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את פועל העזר",
+          "en": "Check the helping verb."
+        },
+        {
+          "he": "Mrs. Klein היא she. איזו שלילה מתאימה לה?",
+          "en": "Mrs. Klein is she. Which negative fits her?"
+        }
+      ],
+      "explanation": {
+        "he": "עם אדם אחד (he / she / it) משתמשים ב־does / doesn't. עם כמה אנשים, I, you, we, they משתמשים ב־do / don't. Mrs. Klein היא she, ולכן doesn't have.",
+        "en": "Use does / doesn't with he, she, it. Use do / don't with I, you, we, they. Mrs. Klein = she, so doesn't."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.did-ari-went",
+      "type": "fix",
+      "skill": "grammar.past-simple.questions-negatives",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Did Ari went to shul yesterday?",
+      "wrongIndex": 2,
+      "correction": "go",
+      "distractors": [
+        "goes",
+        "going",
+        "gone"
+      ],
+      "corrected": "Did Ari go to shul yesterday?",
+      "audioText": "Did Ari go to shul yesterday?",
+      "meaning": "האם ארי הלך לבית הכנסת אתמול?",
+      "targetsMisconceptions": [
+        "past-simple.did-plus-past"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל אחרי did",
+          "en": "Check the verb after did."
+        },
+        {
+          "he": "יש כבר did בשאלה. באיזו צורה בא הפועל אחריו?",
+          "en": "The question already has did. What form comes after it?"
+        }
+      ],
+      "explanation": {
+        "he": "did כבר מראה שזה עבר. אחריו בא הפועל בצורה הבסיסית: did go, didn't eat. בעברית הפועל עצמו בעבר, ובאנגלית רק did. Did Ari go, ולא went.",
+        "en": "did already shows the past. After did, use the base verb. Did + go, not went."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.did-not-ate",
+      "type": "fix",
+      "skill": "grammar.past-simple.questions-negatives",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Ari did not ate breakfast this morning.",
+      "wrongIndex": 3,
+      "correction": "eat",
+      "distractors": [
+        "eats",
+        "eaten",
+        "eating"
+      ],
+      "corrected": "Ari did not eat breakfast this morning.",
+      "audioText": "Ari did not eat breakfast this morning.",
+      "meaning": "ארי לא אכל ארוחת בוקר הבוקר.",
+      "targetsMisconceptions": [
+        "past-simple.did-plus-past"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל אחרי did",
+          "en": "Check the verb after did."
+        },
+        {
+          "he": "did not כבר מראה עבר. מה צריך לקרות לפועל?",
+          "en": "did not already shows the past. What should happen to the verb?"
+        }
+      ],
+      "explanation": {
+        "he": "did כבר מראה שזה עבר. אחריו בא הפועל בצורה הבסיסית: did go, didn't eat. בעברית הפועל עצמו בעבר, ובאנגלית רק did. did not eat, ולא did not ate.",
+        "en": "did already shows the past. After did, use the base verb. did not + eat."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.did-rivka-took",
+      "type": "fix",
+      "skill": "grammar.past-simple.questions-negatives",
+      "level": "A2",
+      "difficulty": 0.45,
+      "sentence": "Did Rivka took Eli for a walk?",
+      "wrongIndex": 2,
+      "correction": "take",
+      "distractors": [
+        "takes",
+        "taken",
+        "taking"
+      ],
+      "corrected": "Did Rivka take Eli for a walk?",
+      "audioText": "Did Rivka take Eli for a walk?",
+      "meaning": "האם רבקה לקחה את אלי לטיול?",
+      "targetsMisconceptions": [
+        "past-simple.did-plus-past"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל אחרי did",
+          "en": "Check the verb after did."
+        },
+        {
+          "he": "did נמצא בתחילת השאלה. איזה פועל בא אחריו?",
+          "en": "did starts the question. Which verb form follows it?"
+        }
+      ],
+      "explanation": {
+        "he": "did כבר מראה שזה עבר. אחריו בא הפועל בצורה הבסיסית: did go, didn't eat. בעברית הפועל עצמו בעבר, ובאנגלית רק did. Did Rivka take, ולא took.",
+        "en": "did already shows the past. After did, use the base verb. Did + take, not took."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.buyed",
+      "type": "fix",
+      "skill": "grammar.past-simple.irregular",
+      "level": "A2",
+      "difficulty": 0.35,
+      "sentence": "Yesterday Abba buyed new candles for Chanukah.",
+      "wrongIndex": 2,
+      "correction": "bought",
+      "distractors": [
+        "buy",
+        "buys",
+        "boughted"
+      ],
+      "corrected": "Yesterday Abba bought new candles for Chanukah.",
+      "audioText": "Yesterday Abba bought new candles for Chanukah.",
+      "meaning": "אתמול אבא קנה נרות חדשים לחנוכה.",
+      "targetsMisconceptions": [
+        "past-simple.overregularization"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל בעבר",
+          "en": "Check the past verb."
+        },
+        {
+          "he": "buy הוא פועל חריג. מה העבר שלו?",
+          "en": "buy is irregular. What is its past form?"
+        }
+      ],
+      "explanation": {
+        "he": "זה פועל חריג. לא מוסיפים לו ed. את צורת העבר שלו לומדים בעל פה. buy, bought. לא buyed.",
+        "en": "This verb is irregular. Do not add -ed. buy, bought."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.goed",
+      "type": "fix",
+      "skill": "grammar.past-simple.irregular",
+      "level": "A2",
+      "difficulty": 0.35,
+      "sentence": "Last week Ari goed to the Kotel with Grandpa Yosef.",
+      "wrongIndex": 3,
+      "correction": "went",
+      "distractors": [
+        "go",
+        "gone",
+        "goes"
+      ],
+      "corrected": "Last week Ari went to the Kotel with Grandpa Yosef.",
+      "audioText": "Last week Ari went to the Kotel with Grandpa Yosef.",
+      "meaning": "בשבוע שעבר ארי הלך לכותל עם סבא יוסף.",
+      "targetsMisconceptions": [
+        "past-simple.overregularization"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל בעבר",
+          "en": "Check the past verb."
+        },
+        {
+          "he": "go הוא פועל חריג. מה העבר שלו?",
+          "en": "go is irregular. What is its past form?"
+        }
+      ],
+      "explanation": {
+        "he": "זה פועל חריג. לא מוסיפים לו ed. את צורת העבר שלו לומדים בעל פה. go, went. לא goed. Kotel הוא הכותל.",
+        "en": "This verb is irregular. Do not add -ed. go, went."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.maked",
+      "type": "fix",
+      "skill": "grammar.past-simple.irregular",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Last Friday Tamar maked a salad for Shabbat.",
+      "wrongIndex": 3,
+      "correction": "made",
+      "distractors": [
+        "make",
+        "maded",
+        "making"
+      ],
+      "corrected": "Last Friday Tamar made a salad for Shabbat.",
+      "audioText": "Last Friday Tamar made a salad for Shabbat.",
+      "meaning": "ביום שישי שעבר תמר הכינה סלט לשבת.",
+      "targetsMisconceptions": [
+        "past-simple.overregularization"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל בעבר",
+          "en": "Check the past verb."
+        },
+        {
+          "he": "make הוא פועל חריג. מה העבר שלו?",
+          "en": "make is irregular. What is its past form?"
+        }
+      ],
+      "explanation": {
+        "he": "זה פועל חריג. לא מוסיפים לו ed. את צורת העבר שלו לומדים בעל פה. make, made. לא maked.",
+        "en": "This verb is irregular. Do not add -ed. make, made."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.many-time",
+      "type": "fix",
+      "skill": "grammar.quantifiers",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "We don't have many time before Shabbat.",
+      "wrongIndex": 3,
+      "correction": "much",
+      "distractors": [
+        "lot",
+        "few",
+        "plenty"
+      ],
+      "corrected": "We don't have much time before Shabbat.",
+      "audioText": "We don't have much time before Shabbat.",
+      "meaning": "אין לנו הרבה זמן לפני שבת.",
+      "targetsMisconceptions": [
+        "quantifiers.much-many"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת הכמות",
+          "en": "Check the word for amount."
+        },
+        {
+          "he": "אפשר לספור time?",
+          "en": "Can we count time?"
+        }
+      ],
+      "explanation": {
+        "he": "many בא עם דברים שאפשר לספור (candles, children). much בא עם דברים שלא סופרים (time, water). בעברית יש רק \"הרבה\" או \"כמה\". זמן לא סופרים, ולכן much time.",
+        "en": "many + things we can count. much + things we cannot count. We cannot count time, so much."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.the-shabbat",
+      "type": "fix",
+      "skill": "grammar.articles",
+      "level": "A2",
+      "difficulty": 0.45,
+      "sentence": "Ari loves the Shabbat because his family is together.",
+      "wrongIndex": 2,
+      "correction": "",
+      "distractors": [
+        "a",
+        "an",
+        "these"
+      ],
+      "corrected": "Ari loves Shabbat because his family is together.",
+      "audioText": "Ari loves Shabbat because his family is together.",
+      "meaning": "ארי אוהב את השבת כי המשפחה שלו ביחד.",
+      "targetsMisconceptions": [
+        "articles.the-generic"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילים הקטנות לפני שמות העצם",
+          "en": "Check the small words before the nouns."
+        },
+        {
+          "he": "בעברית אומרים \"את השבת\". האם באנגלית צריך the לפני שם של יום קדוש?",
+          "en": "In Hebrew we say \"the Shabbat\". Does English need the before a holy day name?"
+        }
+      ],
+      "explanation": {
+        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו work במשמעות \"לעבודה\". Shabbat הוא שם, כמו שם של חג. אומרים Ari loves Shabbat, בלי the.",
+        "en": "Do not use the for a general idea, a holiday name, or go to work. Shabbat is a name, so no the."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.the-work",
+      "type": "fix",
+      "skill": "grammar.articles",
+      "level": "A2",
+      "difficulty": 0.45,
+      "sentence": "Abba goes to the work at eight o'clock.",
+      "wrongIndex": 3,
+      "correction": "",
+      "distractors": [
+        "a",
+        "an",
+        "one"
+      ],
+      "corrected": "Abba goes to work at eight o'clock.",
+      "audioText": "Abba goes to work at eight o'clock.",
+      "meaning": "אבא הולך לעבודה בשמונה.",
+      "targetsMisconceptions": [
+        "articles.the-generic"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילים הקטנות לפני שמות העצם",
+          "en": "Check the small words before the nouns."
+        },
+        {
+          "he": "בעברית \"לעבודה\". מה אומרים באנגלית?",
+          "en": "In Hebrew: \"to the work\". What do we say in English?"
+        }
+      ],
+      "explanation": {
+        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו work במשמעות \"לעבודה\". אומרים go to work, בלי the, כמו go to school.",
+        "en": "Do not use the for a general idea, a holiday name, or go to work. We say go to work, without the."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.born-in-march-3",
+      "type": "fix",
+      "skill": "grammar.prepositions",
+      "level": "A2",
+      "difficulty": 0.45,
+      "sentence": "Baby Eli was born in March 3.",
+      "wrongIndex": 4,
+      "correction": "on",
+      "distractors": [
+        "at",
+        "to",
+        "from"
+      ],
+      "corrected": "Baby Eli was born on March 3.",
+      "audioText": "Baby Eli was born on March 3.",
+      "meaning": "התינוק אלי נולד ב־3 במרץ.",
+      "targetsMisconceptions": [
+        "prepositions.time"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת היחס של הזמן",
+          "en": "Check the time preposition."
+        },
+        {
+          "he": "March 3 הוא תאריך. איזו מילת יחס באה עם תאריך?",
+          "en": "March 3 is a date. Which preposition goes with a date?"
+        }
+      ],
+      "explanation": {
+        "he": "at לשעה ול־night. on ליום ולתאריך. in לחודש, לשנה ולעונה. בעברית יש רק \"ב\", ולכן קל להתבלבל. עם תאריך אומרים on: on March 3. רק עם חודש בלבד אומרים in March.",
+        "en": "at + clock time and night, on + day and date, in + month, year and season. on + a date, in + a month alone."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.at-the-summer",
+      "type": "fix",
+      "skill": "grammar.prepositions",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Every year we visit Grandpa Yosef at the summer.",
+      "wrongIndex": 6,
+      "correction": "in",
+      "distractors": [
+        "on",
+        "to",
+        "by"
+      ],
+      "corrected": "Every year we visit Grandpa Yosef in the summer.",
+      "audioText": "Every year we visit Grandpa Yosef in the summer.",
+      "meaning": "כל שנה אנחנו מבקרים את סבא יוסף בקיץ.",
+      "targetsMisconceptions": [
+        "prepositions.time"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת היחס של הזמן",
+          "en": "Check the time preposition."
+        },
+        {
+          "he": "summer היא עונה. איזו מילת יחס באה עם עונות?",
+          "en": "summer is a season. Which preposition goes with seasons?"
+        }
+      ],
+      "explanation": {
+        "he": "at לשעה ול־night. on ליום ולתאריך. in לחודש, לשנה ולעונה. בעברית יש רק \"ב\", ולכן קל להתבלבל. עם עונה אומרים in: in the summer.",
+        "en": "at + clock time and night, on + day and date, in + month, year and season. in + a season."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.there-are-little-challah",
+      "type": "fix",
+      "skill": "grammar.there-is",
+      "level": "A2",
+      "difficulty": 0.45,
+      "sentence": "There are a little challah left.",
+      "wrongIndex": 1,
+      "correction": "is",
+      "distractors": [
+        "be",
+        "have",
+        "has"
+      ],
+      "corrected": "There is a little challah left.",
+      "audioText": "There is a little challah left.",
+      "meaning": "נשארה קצת חלה.",
+      "targetsMisconceptions": [
+        "there-is.agreement"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את is / are",
+          "en": "Check is / are."
+        },
+        {
+          "he": "challah כאן היא משהו שלא סופרים. יחיד או רבים?",
+          "en": "Here challah is something we do not count. Singular or plural?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי there בוחרים is או are לפי שם העצם שבא אחריו. יחיד או משהו שלא סופרים: there is. רבים: there are. בעברית \"יש\" לא משתנה. a little challah זה משהו שלא סופרים, ולכן there is.",
+        "en": "there is + singular or uncountable, there are + plural. Uncountable, so there is."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.makes-homework",
+      "type": "fix",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Ari makes his homework after dinner.",
+      "wrongIndex": 1,
+      "correction": "does",
+      "distractors": [
+        "takes",
+        "works",
+        "builds"
+      ],
+      "corrected": "Ari does his homework after dinner.",
+      "audioText": "Ari does his homework after dinner.",
+      "meaning": "ארי מכין את שיעורי הבית אחרי ארוחת הערב.",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "איזה פועל הולך עם homework?",
+          "en": "Which verb goes with homework?"
+        }
+      ],
+      "explanation": {
+        "he": "make ו־do שניהם \"לעשות\", אבל כל אחד הולך עם מילים קבועות: make a mistake, make an effort, do homework, do a favor. את הצירופים לומדים בעל פה. אומרים do homework. בעברית \"מכין שיעורים\", ובאנגלית does his homework.",
+        "en": "make and do go with fixed words: make a mistake, make an effort, do homework, do a favor. We say do homework."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.says-eli-story",
+      "type": "fix",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Ima says Eli a story every night.",
+      "wrongIndex": 1,
+      "correction": "tells",
+      "distractors": [
+        "speaks",
+        "talks",
+        "explains"
+      ],
+      "corrected": "Ima tells Eli a story every night.",
+      "audioText": "Ima tells Eli a story every night.",
+      "meaning": "אמא מספרת לאלי סיפור כל ערב.",
+      "targetsMisconceptions": [
+        "collocations.say-tell"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "יש כאן אדם ששומע (Eli). איזה פועל בא עם אדם?",
+          "en": "There is a listener here (Eli). Which verb takes a person?"
+        }
+      ],
+      "explanation": {
+        "he": "tell בא עם האדם ששומע: tell someone something. say בא בלי האדם, או עם to: say something (to someone). בעברית \"אמר ל\" מתאים לשניהם. מספרים סיפור: tell a story. וגם tell someone. לכן Ima tells Eli a story.",
+        "en": "tell + a person (tell Tamar), say + no person (say that...). We tell a story, and tell someone."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.borrow-me-siddur",
+      "type": "fix",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Shira, can you borrow me your siddur?",
+      "wrongIndex": 3,
+      "correction": "lend",
+      "distractors": [
+        "take",
+        "lent",
+        "borrowing"
+      ],
+      "corrected": "Shira, can you lend me your siddur?",
+      "audioText": "Shira, can you lend me your siddur?",
+      "meaning": "שירה, את יכולה להשאיל לי את הסידור שלך?",
+      "targetsMisconceptions": [
+        "vocabulary.borrow-lend"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "מי נותנת את הסידור? שירה. האם היא שואלת או משאילה?",
+          "en": "Who gives the siddur? Shira. Does she borrow or lend?"
+        }
+      ],
+      "explanation": {
+        "he": "borrow זה לשאול, לקחת משהו לזמן קצר. lend זה להשאיל, לתת משהו לזמן קצר. בעברית \"לשאול\" ו\"להשאיל\" דומים מאוד. שירה נותנת, ולכן lend me. אני זו ששואלת: I borrow.",
+        "en": "borrow = take for a short time, lend = give for a short time. Shira gives it, so lend."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.lend-umbrella",
+      "type": "fix",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.45,
+      "sentence": "Rivka, can I lend your umbrella? Mine is broken.",
+      "wrongIndex": 3,
+      "correction": "borrow",
+      "distractors": [
+        "lent",
+        "give",
+        "loan"
+      ],
+      "corrected": "Rivka, can I borrow your umbrella? Mine is broken.",
+      "audioText": "Rivka, can I borrow your umbrella? Mine is broken.",
+      "meaning": "רבקה, אפשר לשאול את המטרייה שלך? שלי שבורה.",
+      "targetsMisconceptions": [
+        "vocabulary.borrow-lend"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "מי לוקח את המטרייה? אני. מה הפועל ללקיחה לזמן קצר?",
+          "en": "Who takes the umbrella? I do. Which verb means take for a short time?"
+        }
+      ],
+      "explanation": {
+        "he": "borrow זה לשאול, לקחת משהו לזמן קצר. lend זה להשאיל, לתת משהו לזמן קצר. בעברית \"לשאול\" ו\"להשאיל\" דומים מאוד. אני לוקח לזמן קצר, ולכן borrow. רבקה היא שמשאילה: she lends.",
+        "en": "borrow = take for a short time, lend = give for a short time. I take it for a short time, so borrow."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.learns-us-torah",
+      "type": "fix",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Rabbi Gold learns us Torah every morning.",
+      "wrongIndex": 2,
+      "correction": "teaches",
+      "distractors": [
+        "studies",
+        "learn",
+        "shows"
+      ],
+      "corrected": "Rabbi Gold teaches us Torah every morning.",
+      "audioText": "Rabbi Gold teaches us Torah every morning.",
+      "meaning": "הרב גולד מלמד אותנו תורה כל בוקר.",
+      "targetsMisconceptions": [
+        "vocabulary.learn-teach"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "הרב נותן את הידע לתלמידים. איזה פועל מתאים?",
+          "en": "The Rabbi gives the knowledge. Which verb fits?"
+        }
+      ],
+      "explanation": {
+        "he": "learn זה ללמוד בעצמי. teach זה ללמד מישהו אחר. בעברית \"לומד\" ו\"מלמד\" דומים, אבל באנגלית אלה שתי מילים שונות. הרב מלמד, ולכן teaches us. אנחנו לומדים: we learn. Torah היא תורה.",
+        "en": "learn = get knowledge yourself, teach = give knowledge to someone. The Rabbi teaches. We learn."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.remembers-say-thanks",
+      "type": "fix",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.45,
+      "sentence": "Ima always remembers Ari and Tamar to say thank you.",
+      "wrongIndex": 2,
+      "correction": "reminds",
+      "distractors": [
+        "remember",
+        "reminder",
+        "remembered"
+      ],
+      "corrected": "Ima always reminds Ari and Tamar to say thank you.",
+      "audioText": "Ima always reminds Ari and Tamar to say thank you.",
+      "meaning": "אמא תמיד מזכירה לארי ולתמר להגיד תודה.",
+      "targetsMisconceptions": [
+        "vocabulary.remember-remind"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "אמא עוזרת לילדים לא לשכוח. היא זוכרת או מזכירה?",
+          "en": "Ima helps the children not to forget. Does she remember or remind?"
+        }
+      ],
+      "explanation": {
+        "he": "remember זה לזכור, בתוך הראש שלי. remind זה להזכיר למישהו אחר. remind someone to do, remind someone of something. להזכיר למישהו לעשות משהו: remind someone to. לכן Ima reminds Ari and Tamar.",
+        "en": "remember = keep in your mind, remind = make someone else remember. remind someone to do something."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.feels-boring",
+      "type": "fix",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Ari feels boring at home on rainy days.",
+      "wrongIndex": 2,
+      "correction": "bored",
+      "distractors": [
+        "bore",
+        "boredom",
+        "bores"
+      ],
+      "corrected": "Ari feels bored at home on rainy days.",
+      "audioText": "Ari feels bored at home on rainy days.",
+      "meaning": "ארי מרגיש משועמם בבית בימים גשומים.",
+      "targetsMisconceptions": [
+        "vocabulary.bored-boring"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את התואר",
+          "en": "Check the describing word."
+        },
+        {
+          "he": "מדובר באיך שארי מרגיש. איזו סיומת מתאימה לרגש של אדם?",
+          "en": "This is how Ari feels. Which ending fits a person's feeling?"
+        }
+      ],
+      "explanation": {
+        "he": "bored זה איך שאדם מרגיש: משועמם. boring זה מה שגורם לשעמום: משעמם. ed לאדם, ing לדבר. ארי מרגיש משועמם: bored.",
+        "en": "bored = how a person feels, boring = what makes people feel that way. Ari feels bored."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.more-better",
+      "type": "fix",
+      "skill": "grammar.comparatives",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Grandma's challah is more better than mine.",
+      "wrongIndex": 3,
+      "correction": "",
+      "distractors": [
+        "most",
+        "very",
+        "the"
+      ],
+      "corrected": "Grandma's challah is better than mine.",
+      "audioText": "Grandma's challah is better than mine.",
+      "meaning": "החלה של סבתא טובה יותר משלי.",
+      "targetsMisconceptions": [
+        "comparatives.double"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את ההשוואה",
+          "en": "Check the comparison."
+        },
+        {
+          "he": "better כבר אומר \"יותר טוב\". האם צריך עוד מילה?",
+          "en": "better already means \"more good\". Is another word needed?"
+        }
+      ],
+      "explanation": {
+        "he": "לא משתמשים גם ב־more וגם בצורה עם er או best/better. בוחרים רק אחת: bigger, better, the happiest. better היא כבר צורת ההשוואה של good. לא מוסיפים more.",
+        "en": "Do not use more or most together with -er / -est or better. better already compares. No more."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.more-bigger",
+      "type": "fix",
+      "skill": "grammar.comparatives",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Our sukkah is more bigger than last year's sukkah.",
+      "wrongIndex": 3,
+      "correction": "",
+      "distractors": [
+        "most",
+        "very",
+        "many"
+      ],
+      "corrected": "Our sukkah is bigger than last year's sukkah.",
+      "audioText": "Our sukkah is bigger than last year's sukkah.",
+      "meaning": "הסוכה שלנו גדולה יותר מהסוכה של שנה שעברה.",
+      "targetsMisconceptions": [
+        "comparatives.double"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את ההשוואה",
+          "en": "Check the comparison."
+        },
+        {
+          "he": "bigger כבר אומר \"יותר גדול\". מה מיותר?",
+          "en": "bigger already means \"more big\". What is extra?"
+        }
+      ],
+      "explanation": {
+        "he": "לא משתמשים גם ב־more וגם בצורה עם er או best/better. בוחרים רק אחת: bigger, better, the happiest. במילה קצרה מוסיפים er: bigger. לא more bigger.",
+        "en": "Do not use more or most together with -er / -est or better. Short word + -er. No more."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.cant-to-walk",
+      "type": "fix",
+      "skill": "grammar.modals",
+      "level": "A2",
+      "difficulty": 0.45,
+      "sentence": "Eli can't to walk yet.",
+      "wrongIndex": 2,
+      "correction": "",
+      "distractors": [
+        "for",
+        "too",
+        "at"
+      ],
+      "corrected": "Eli can't walk yet.",
+      "audioText": "Eli can't walk yet.",
+      "meaning": "אלי עוד לא יודע ללכת.",
+      "targetsMisconceptions": [
+        "modals.to-after-modal"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מה שבא אחרי can't / should",
+          "en": "Check what comes after the modal."
+        },
+        {
+          "he": "מה בא אחרי can't?",
+          "en": "What comes after can't?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי פועל מודאלי (can, could, should, must) בא פועל בסיסי בלי to. בעברית אומרים \"לא יכול ללכת\", אבל באנגלית can't walk. אחרי can't בא פועל בלי to: can't walk.",
+        "en": "After a modal (can, could, should, must), use the base verb without to. can't + base verb, no to."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.couldnt-to-sleep",
+      "type": "fix",
+      "skill": "grammar.modals",
+      "level": "A2",
+      "difficulty": 0.45,
+      "sentence": "Ari couldn't to sleep last night.",
+      "wrongIndex": 2,
+      "correction": "",
+      "distractors": [
+        "for",
+        "too",
+        "in"
+      ],
+      "corrected": "Ari couldn't sleep last night.",
+      "audioText": "Ari couldn't sleep last night.",
+      "meaning": "ארי לא הצליח לישון אתמול בלילה.",
+      "targetsMisconceptions": [
+        "modals.to-after-modal"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מה שבא אחרי can't / should",
+          "en": "Check what comes after the modal."
+        },
+        {
+          "he": "couldn't הוא פועל מודאלי. מה בא אחריו?",
+          "en": "couldn't is a modal. What comes after it?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי פועל מודאלי (can, could, should, must) בא פועל בסיסי בלי to. בעברית אומרים \"לא יכול ללכת\", אבל באנגלית can't walk. couldn't sleep, בלי to.",
+        "en": "After a modal (can, could, should, must), use the base verb without to. couldn't + base verb, no to."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.three-bedrooms",
+      "type": "fix",
+      "skill": "grammar.there-is",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "There is three bedrooms in our new apartment.",
+      "wrongIndex": 1,
+      "correction": "are",
+      "distractors": [
+        "be",
+        "has",
+        "am"
+      ],
+      "corrected": "There are three bedrooms in our new apartment.",
+      "audioText": "There are three bedrooms in our new apartment.",
+      "meaning": "יש שלושה חדרי שינה בדירה החדשה שלנו.",
+      "targetsMisconceptions": [
+        "there-is.agreement"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את is / are",
+          "en": "Check is / are."
+        },
+        {
+          "he": "three bedrooms זה יחיד או רבים?",
+          "en": "three bedrooms: singular or plural?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי there בוחרים is או are לפי שם העצם שבא אחריו. יחיד או משהו שלא סופרים: there is. רבים: there are. בעברית \"יש\" לא משתנה. three bedrooms זה רבים, ולכן there are.",
+        "en": "there is + singular or uncountable, there are + plural. Plural, so there are."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.a2.writed",
+      "type": "fix",
+      "skill": "grammar.past-simple.irregular",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "Last night Rivka writed a letter to Grandma Chana.",
+      "wrongIndex": 3,
+      "correction": "wrote",
+      "distractors": [
+        "write",
+        "written",
+        "writes"
+      ],
+      "corrected": "Last night Rivka wrote a letter to Grandma Chana.",
+      "audioText": "Last night Rivka wrote a letter to Grandma Chana.",
+      "meaning": "אתמול בלילה רבקה כתבה מכתב לסבתא חנה.",
+      "targetsMisconceptions": [
+        "past-simple.overregularization"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל בעבר",
+          "en": "Check the past verb."
+        },
+        {
+          "he": "write הוא פועל חריג. מה העבר שלו?",
+          "en": "write is irregular. What is its past form?"
+        }
+      ],
+      "explanation": {
+        "he": "זה פועל חריג. לא מוסיפים לו ed. את צורת העבר שלו לומדים בעל פה. write, wrote. לא writed.",
+        "en": "This verb is irregular. Do not add -ed. write, wrote."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.moved-ten-years-ago",
+      "type": "fix",
+      "skill": "grammar.present-perfect.vs-past-simple",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Grandpa Yosef has moved to Jerusalem ten years ago.",
+      "wrongIndex": 2,
+      "correction": "",
+      "distractors": [
+        "have",
+        "is",
+        "does"
+      ],
+      "corrected": "Grandpa Yosef moved to Jerusalem ten years ago.",
+      "audioText": "Grandpa Yosef moved to Jerusalem ten years ago.",
+      "meaning": "סבא יוסף עבר לירושלים לפני עשר שנים.",
+      "targetsMisconceptions": [
+        "present-perfect.with-past-time"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את זמן הפועל",
+          "en": "Check the tense."
+        },
+        {
+          "he": "ten years ago זה זמן שנגמר. איזה זמן דקדוקי מתאים?",
+          "en": "ten years ago is a finished time. Which tense fits?"
+        }
+      ],
+      "explanation": {
+        "he": "עם זמן שהסתיים בעבר (ago, yesterday, last week) משתמשים ב־Past Simple, בלי have / has. עם ago משתמשים ב־Past Simple: moved, בלי has.",
+        "en": "With a finished past time (ago, yesterday, last week) use the Past Simple, not have / has. With ago, use the Past Simple."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.baked-two-hours-ago",
+      "type": "fix",
+      "skill": "grammar.present-perfect.vs-past-simple",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Ima has baked the challah two hours ago.",
+      "wrongIndex": 1,
+      "correction": "",
+      "distractors": [
+        "have",
+        "is",
+        "does"
+      ],
+      "corrected": "Ima baked the challah two hours ago.",
+      "audioText": "Ima baked the challah two hours ago.",
+      "meaning": "אמא אפתה את החלה לפני שעתיים.",
+      "targetsMisconceptions": [
+        "present-perfect.with-past-time"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את זמן הפועל",
+          "en": "Check the tense."
+        },
+        {
+          "he": "two hours ago מראה זמן מוגדר בעבר. מה מיותר?",
+          "en": "two hours ago is a set time in the past. What is extra?"
+        }
+      ],
+      "explanation": {
+        "he": "עם זמן שהסתיים בעבר (ago, yesterday, last week) משתמשים ב־Past Simple, בלי have / has. two hours ago זה זמן שהסתיים, ולכן Ima baked.",
+        "en": "With a finished past time (ago, yesterday, last week) use the Past Simple, not have / has. A finished time, so baked."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.lost-kippah-ago",
+      "type": "fix",
+      "skill": "grammar.present-perfect.vs-past-simple",
+      "level": "B1",
+      "difficulty": 0.5,
+      "sentence": "Ari has lost his kippah an hour ago.",
+      "wrongIndex": 1,
+      "correction": "",
+      "distractors": [
+        "have",
+        "is",
+        "been"
+      ],
+      "corrected": "Ari lost his kippah an hour ago.",
+      "audioText": "Ari lost his kippah an hour ago.",
+      "meaning": "ארי איבד את הכיפה שלו לפני שעה.",
+      "targetsMisconceptions": [
+        "present-perfect.with-past-time"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את זמן הפועל",
+          "en": "Check the tense."
+        },
+        {
+          "he": "an hour ago אומר מתי זה קרה. האם has מתאים?",
+          "en": "an hour ago says when it happened. Does has fit?"
+        }
+      ],
+      "explanation": {
+        "he": "עם זמן שהסתיים בעבר (ago, yesterday, last week) משתמשים ב־Past Simple, בלי have / has. כשאומרים מתי זה קרה (ago), משתמשים ב־Past Simple: Ari lost. kippah היא כיפה.",
+        "en": "With a finished past time (ago, yesterday, last week) use the Past Simple, not have / has. When we say when, use the Past Simple."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.since-ten-years",
+      "type": "fix",
+      "skill": "grammar.present-perfect",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Abba has worked at the school since ten years.",
+      "wrongIndex": 6,
+      "correction": "for",
+      "distractors": [
+        "from",
+        "during",
+        "ago"
+      ],
+      "corrected": "Abba has worked at the school for ten years.",
+      "audioText": "Abba has worked at the school for ten years.",
+      "meaning": "אבא עובד בבית הספר כבר עשר שנים.",
+      "targetsMisconceptions": [
+        "present-perfect.for-since"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת הזמן",
+          "en": "Check the time word."
+        },
+        {
+          "he": "ten years זה נקודת התחלה או משך זמן?",
+          "en": "Is ten years a starting point or a length of time?"
+        }
+      ],
+      "explanation": {
+        "he": "since בא עם נקודת התחלה (2010, first grade, Pesach). for בא עם משך זמן (ten years, two weeks). בעברית שתיהן יכולות להיות \"כבר\" או \"מאז\". ten years זה משך זמן, ולכן for ten years.",
+        "en": "since + a starting point, for + a length of time. A length of time, so for."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.for-first-grade",
+      "type": "fix",
+      "skill": "grammar.present-perfect",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Tamar has known Shira for first grade.",
+      "wrongIndex": 4,
+      "correction": "since",
+      "distractors": [
+        "during",
+        "ago",
+        "in"
+      ],
+      "corrected": "Tamar has known Shira since first grade.",
+      "audioText": "Tamar has known Shira since first grade.",
+      "meaning": "תמר מכירה את שירה מכיתה א.",
+      "targetsMisconceptions": [
+        "present-perfect.for-since"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת הזמן",
+          "en": "Check the time word."
+        },
+        {
+          "he": "first grade זה משך זמן או נקודת התחלה?",
+          "en": "Is first grade a length of time or a starting point?"
+        }
+      ],
+      "explanation": {
+        "he": "since בא עם נקודת התחלה (2010, first grade, Pesach). for בא עם משך זמן (ten years, two weeks). בעברית שתיהן יכולות להיות \"כבר\" או \"מאז\". first grade זו נקודת התחלה, ולכן since first grade.",
+        "en": "since + a starting point, for + a length of time. A starting point, so since."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.if-will-finish",
+      "type": "fix",
+      "skill": "grammar.conditionals.first",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "If we will finish early, we will visit Mrs. Klein.",
+      "wrongIndex": 2,
+      "correction": "",
+      "distractors": [
+        "would",
+        "are",
+        "did"
+      ],
+      "corrected": "If we finish early, we will visit Mrs. Klein.",
+      "audioText": "If we finish early, we will visit Mrs. Klein.",
+      "meaning": "אם נסיים מוקדם, נבקר את גברת קליין.",
+      "targetsMisconceptions": [
+        "conditionals.will-in-if-clause"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את החלק עם if",
+          "en": "Check the if part."
+        },
+        {
+          "he": "יש שני will במשפט. איזה מהם לא במקום?",
+          "en": "There are two wills. Which one is in the wrong place?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי if לא שמים will, גם כשמדברים על העתיד. כותבים if + הווה פשוט, ואת will שמים רק בחלק השני. בעברית אומרים \"אם נסיים\", ובאנגלית if we finish. If we finish early, we will visit. will נשאר רק בחלק השני.",
+        "en": "No will after if. Use if + Present Simple, and will in the other part. No will after if."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.when-guests-will",
+      "type": "fix",
+      "skill": "grammar.future",
+      "level": "B1",
+      "difficulty": 0.5,
+      "sentence": "When the guests will arrive, Abba will make Kiddush.",
+      "wrongIndex": 3,
+      "correction": "",
+      "distractors": [
+        "would",
+        "are",
+        "did"
+      ],
+      "corrected": "When the guests arrive, Abba will make Kiddush.",
+      "audioText": "When the guests arrive, Abba will make Kiddush.",
+      "meaning": "כשהאורחים יגיעו, אבא יעשה קידוש.",
+      "targetsMisconceptions": [
+        "future.will-in-time-clause"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את החלק עם when",
+          "en": "Check the when part."
+        },
+        {
+          "he": "יש שני will. איזה מהם בא אחרי when?",
+          "en": "There are two wills. Which one comes after when?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי when, as soon as ו־until לא שמים will, גם כשמדברים על העתיד. בעברית אומרים \"כשהאורחים יגיעו\", ובאנגלית when the guests arrive. When the guests arrive, בלי will. Kiddush הוא קידוש.",
+        "en": "No will after when. Use the Present Simple there. No will after when."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.neighbor-which",
+      "type": "fix",
+      "skill": "grammar.relative-clauses",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Mrs. Klein is the neighbor which lives alone.",
+      "wrongIndex": 5,
+      "correction": "who",
+      "distractors": [
+        "what",
+        "where",
+        "whose"
+      ],
+      "corrected": "Mrs. Klein is the neighbor who lives alone.",
+      "audioText": "Mrs. Klein is the neighbor who lives alone.",
+      "meaning": "גברת קליין היא השכנה שגרה לבד.",
+      "targetsMisconceptions": [
+        "relative.which-for-people"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילה שמחברת",
+          "en": "Check the joining word."
+        },
+        {
+          "he": "neighbor הוא אדם או דבר?",
+          "en": "Is a neighbor a person or a thing?"
+        }
+      ],
+      "explanation": {
+        "he": "על אנשים אומרים who (או that). which רק לדברים ולבעלי חיים. בעברית \"ש\" מתאים לכולם, ובאנגלית לא. שכנה היא אדם, ולכן who.",
+        "en": "who for people, which for things. A neighbor is a person, so who."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.teacher-which",
+      "type": "fix",
+      "skill": "grammar.relative-clauses",
+      "level": "B1",
+      "difficulty": 0.5,
+      "sentence": "Rabbi Gold is a teacher which everyone loves.",
+      "wrongIndex": 5,
+      "correction": "who",
+      "distractors": [
+        "what",
+        "whose",
+        "when"
+      ],
+      "corrected": "Rabbi Gold is a teacher who everyone loves.",
+      "audioText": "Rabbi Gold is a teacher who everyone loves.",
+      "meaning": "הרב גולד הוא מורה שכולם אוהבים.",
+      "targetsMisconceptions": [
+        "relative.which-for-people"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילה שמחברת",
+          "en": "Check the joining word."
+        },
+        {
+          "he": "המילה מתייחסת ל־teacher. מה מתאים לאנשים?",
+          "en": "The word refers to teacher. What fits people?"
+        }
+      ],
+      "explanation": {
+        "he": "על אנשים אומרים who (או that). which רק לדברים ולבעלי חיים. בעברית \"ש\" מתאים לכולם, ובאנגלית לא. מורה הוא אדם, ולכן who (או that, או whom).",
+        "en": "who for people, which for things. A teacher is a person, so who."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.did-a-mistake",
+      "type": "fix",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Tamar did a mistake on her English test.",
+      "wrongIndex": 1,
+      "correction": "made",
+      "distractors": [
+        "took",
+        "gave",
+        "built"
+      ],
+      "corrected": "Tamar made a mistake on her English test.",
+      "audioText": "Tamar made a mistake on her English test.",
+      "meaning": "תמר עשתה טעות במבחן באנגלית.",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "איזה פועל הולך עם a mistake?",
+          "en": "Which verb goes with a mistake?"
+        }
+      ],
+      "explanation": {
+        "he": "make ו־do שניהם \"לעשות\", אבל כל אחד הולך עם מילים קבועות: make a mistake, make an effort, do homework, do a favor. את הצירופים לומדים בעל פה. אומרים make a mistake, ובעבר made a mistake.",
+        "en": "make and do go with fixed words: make a mistake, make an effort, do homework, do a favor. We say make a mistake."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.did-effort",
+      "type": "fix",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "sentence": "Ari did a big effort to wake up early for shul.",
+      "wrongIndex": 1,
+      "correction": "made",
+      "distractors": [
+        "took",
+        "had",
+        "got"
+      ],
+      "corrected": "Ari made a big effort to wake up early for shul.",
+      "audioText": "Ari made a big effort to wake up early for shul.",
+      "meaning": "ארי עשה מאמץ גדול לקום מוקדם לבית הכנסת.",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "איזה פועל הולך עם effort?",
+          "en": "Which verb goes with effort?"
+        }
+      ],
+      "explanation": {
+        "he": "make ו־do שניהם \"לעשות\", אבל כל אחד הולך עם מילים קבועות: make a mistake, make an effort, do homework, do a favor. את הצירופים לומדים בעל פה. אומרים make an effort, ובעבר made a big effort.",
+        "en": "make and do go with fixed words: make a mistake, make an effort, do homework, do a favor. We say make an effort."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.said-tamar",
+      "type": "fix",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Rivka said Tamar the good news.",
+      "wrongIndex": 1,
+      "correction": "told",
+      "distractors": [
+        "spoke",
+        "talked",
+        "explained"
+      ],
+      "corrected": "Rivka told Tamar the good news.",
+      "audioText": "Rivka told Tamar the good news.",
+      "meaning": "רבקה סיפרה לתמר את החדשות הטובות.",
+      "targetsMisconceptions": [
+        "collocations.say-tell"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "אחרי הפועל בא אדם (Tamar). איזה פועל מקבל אדם בלי to?",
+          "en": "A person (Tamar) comes after the verb. Which verb takes a person without to?"
+        }
+      ],
+      "explanation": {
+        "he": "tell בא עם האדם ששומע: tell someone something. say בא בלי האדם, או עם to: say something (to someone). בעברית \"אמר ל\" מתאים לשניהם. tell someone something: Rivka told Tamar the news.",
+        "en": "tell + a person (tell Tamar), say + no person (say that...). tell + person + news."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.borrowed-mrs-klein",
+      "type": "fix",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Ima borrowed Mrs. Klein some sugar yesterday.",
+      "wrongIndex": 1,
+      "correction": "lent",
+      "distractors": [
+        "borrows",
+        "lends",
+        "lended"
+      ],
+      "corrected": "Ima lent Mrs. Klein some sugar yesterday.",
+      "audioText": "Ima lent Mrs. Klein some sugar yesterday.",
+      "meaning": "אמא השאילה לגברת קליין קצת סוכר אתמול.",
+      "targetsMisconceptions": [
+        "vocabulary.borrow-lend"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "מי נתנה את הסוכר? אמא. אז היא שאלה או השאילה?",
+          "en": "Who gave the sugar? Ima. Did she borrow or lend?"
+        }
+      ],
+      "explanation": {
+        "he": "borrow זה לשאול, לקחת משהו לזמן קצר. lend זה להשאיל, לתת משהו לזמן קצר. בעברית \"לשאול\" ו\"להשאיל\" דומים מאוד. אמא נתנה, ולכן lent (העבר של lend). גברת קליין היא ששאלה: she borrowed.",
+        "en": "borrow = take for a short time, lend = give for a short time. Ima gave it, so lent."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.reminds-the-day",
+      "type": "fix",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Tamar reminds the day Eli was born.",
+      "wrongIndex": 1,
+      "correction": "remembers",
+      "distractors": [
+        "remind",
+        "reminded",
+        "memories"
+      ],
+      "corrected": "Tamar remembers the day Eli was born.",
+      "audioText": "Tamar remembers the day Eli was born.",
+      "meaning": "תמר זוכרת את היום שבו אלי נולד.",
+      "targetsMisconceptions": [
+        "vocabulary.remember-remind"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "אין כאן אדם אחר שתמר עוזרת לו. היא זוכרת או מזכירה?",
+          "en": "No one else is helped here. Does Tamar remember or remind?"
+        }
+      ],
+      "explanation": {
+        "he": "remember זה לזכור, בתוך הראש שלי. remind זה להזכיר למישהו אחר. remind someone to do, remind someone of something. הזיכרון נמצא בראש של תמר, ולכן remembers.",
+        "en": "remember = keep in your mind, remind = make someone else remember. It is in Tamar's own mind, so remembers."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.trip-bored",
+      "type": "fix",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "The trip to the Dead Sea was very bored for Ari.",
+      "wrongIndex": 8,
+      "correction": "boring",
+      "distractors": [
+        "bore",
+        "bores",
+        "boredom"
+      ],
+      "corrected": "The trip to the Dead Sea was very boring for Ari.",
+      "audioText": "The trip to the Dead Sea was very boring for Ari.",
+      "meaning": "הטיול לים המלח היה משעמם מאוד בשביל ארי.",
+      "targetsMisconceptions": [
+        "vocabulary.bored-boring"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את התואר",
+          "en": "Check the describing word."
+        },
+        {
+          "he": "המילה מתארת את הטיול, לא את ארי. איזו סיומת מתאימה?",
+          "en": "The word describes the trip, not Ari. Which ending fits?"
+        }
+      ],
+      "explanation": {
+        "he": "bored זה איך שאדם מרגיש: משועמם. boring זה מה שגורם לשעמום: משעמם. ed לאדם, ing לדבר. הטיול גורם לשעמום, ולכן boring. ארי מרגיש bored.",
+        "en": "bored = how a person feels, boring = what makes people feel that way. The trip is boring. Ari is bored."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.older-from",
+      "type": "fix",
+      "skill": "grammar.comparatives",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Rivka is older from Tamar.",
+      "wrongIndex": 3,
+      "correction": "than",
+      "distractors": [
+        "then",
+        "of",
+        "that"
+      ],
+      "corrected": "Rivka is older than Tamar.",
+      "audioText": "Rivka is older than Tamar.",
+      "meaning": "רבקה מבוגרת מתמר.",
+      "targetsMisconceptions": [
+        "comparatives.than-from"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את ההשוואה",
+          "en": "Check the comparison."
+        },
+        {
+          "he": "older היא השוואה. איזו מילה באה אחרי השוואה?",
+          "en": "older compares. Which word follows a comparison?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי מילת השוואה (older, bigger) אומרים than. בעברית אומרים \"מבוגרת מ\", אבל באנגלית לא משתמשים ב־from. older than. בעברית \"מ\", באנגלית than.",
+        "en": "After a comparative, use than, not from. older than, not from."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.most-happiest",
+      "type": "fix",
+      "skill": "grammar.comparatives",
+      "level": "B1",
+      "difficulty": 0.5,
+      "sentence": "Purim is the most happiest day of the year for Ari.",
+      "wrongIndex": 3,
+      "correction": "",
+      "distractors": [
+        "more",
+        "much",
+        "many"
+      ],
+      "corrected": "Purim is the happiest day of the year for Ari.",
+      "audioText": "Purim is the happiest day of the year for Ari.",
+      "meaning": "פורים הוא היום הכי שמח בשנה בשביל ארי.",
+      "targetsMisconceptions": [
+        "comparatives.double"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את ההשוואה",
+          "en": "Check the comparison."
+        },
+        {
+          "he": "happiest כבר אומר \"הכי שמח\". מה מיותר?",
+          "en": "happiest already means \"the most happy\". What is extra?"
+        }
+      ],
+      "explanation": {
+        "he": "לא משתמשים גם ב־more וגם בצורה עם er או best/better. בוחרים רק אחת: bigger, better, the happiest. happiest היא כבר הצורה של \"הכי\". לא מוסיפים most. Purim הוא פורים.",
+        "en": "Do not use more or most together with -er / -est or better. happiest already means most happy."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.its-walls",
+      "type": "fix",
+      "skill": "grammar.pronouns",
+      "level": "B1",
+      "difficulty": 0.5,
+      "sentence": "The sukkah is ready, and it's walls are covered with pictures.",
+      "wrongIndex": 5,
+      "correction": "its",
+      "distractors": [
+        "it",
+        "is",
+        "its'"
+      ],
+      "corrected": "The sukkah is ready, and its walls are covered with pictures.",
+      "audioText": "The sukkah is ready, and its walls are covered with pictures.",
+      "meaning": "הסוכה מוכנה, והקירות שלה מכוסים בציורים.",
+      "targetsMisconceptions": [
+        "pronouns.its-its"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילה עם הגרש",
+          "en": "Check the word with the apostrophe."
+        },
+        {
+          "he": "אפשר לומר כאן it is walls?",
+          "en": "Can we say it is walls here?"
+        }
+      ],
+      "explanation": {
+        "he": "it's עם גרש זה קיצור של it is. its בלי גרש זה \"שלו\" או \"שלה\" לדבר. אפשר לבדוק: אם אפשר לומר it is, כותבים it's. אי אפשר לומר it is walls. מדובר בקירות של הסוכה, ולכן its, בלי גרש.",
+        "en": "it's = it is. its = belonging to it. Not it is, but belonging to it: its."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.its-time",
+      "type": "fix",
+      "skill": "grammar.pronouns",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Its time to light the Chanukah candles.",
+      "wrongIndex": 0,
+      "correction": "It's",
+      "distractors": [
+        "Its'",
+        "It",
+        "Is"
+      ],
+      "corrected": "It's time to light the Chanukah candles.",
+      "audioText": "It's time to light the Chanukah candles.",
+      "meaning": "הגיע הזמן להדליק את נרות חנוכה.",
+      "targetsMisconceptions": [
+        "pronouns.its-its"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילה עם הגרש",
+          "en": "Check the word with the apostrophe."
+        },
+        {
+          "he": "אפשר לומר כאן It is time?",
+          "en": "Can we say It is time here?"
+        }
+      ],
+      "explanation": {
+        "he": "it's עם גרש זה קיצור של it is. its בלי גרש זה \"שלו\" או \"שלה\" לדבר. אפשר לבדוק: אם אפשר לומר it is, כותבים it's. It is time, ולכן It's עם גרש.",
+        "en": "it's = it is. its = belonging to it. It is time, so it's."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.there-coats",
+      "type": "fix",
+      "skill": "grammar.pronouns",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "The guests left there coats in Ari's room.",
+      "wrongIndex": 3,
+      "correction": "their",
+      "distractors": [
+        "they're",
+        "there's",
+        "they"
+      ],
+      "corrected": "The guests left their coats in Ari's room.",
+      "audioText": "The guests left their coats in Ari's room.",
+      "meaning": "האורחים השאירו את המעילים שלהם בחדר של ארי.",
+      "targetsMisconceptions": [
+        "pronouns.their-there"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק מילה שנשמעת אותו דבר",
+          "en": "Check a word that sounds the same."
+        },
+        {
+          "he": "של מי המעילים?",
+          "en": "Whose coats are they?"
+        }
+      ],
+      "explanation": {
+        "he": "their זה \"שלהם\". there זה \"שם\". they're זה they are. שלוש המילים נשמעות אותו דבר, ולכן צריך לבדוק את המשמעות. המעילים של האורחים, שלהם, ולכן their.",
+        "en": "their = belonging to them, there = in that place, they're = they are. The coats belong to them: their."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.walks-their",
+      "type": "fix",
+      "skill": "grammar.pronouns",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Tamar's school is near the park, and she walks their every day.",
+      "wrongIndex": 9,
+      "correction": "there",
+      "distractors": [
+        "they're",
+        "theirs",
+        "they"
+      ],
+      "corrected": "Tamar's school is near the park, and she walks there every day.",
+      "audioText": "Tamar's school is near the park, and she walks there every day.",
+      "meaning": "בית הספר של תמר ליד הפארק, והיא הולכת לשם כל יום.",
+      "targetsMisconceptions": [
+        "pronouns.their-there"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק מילה שנשמעת אותו דבר",
+          "en": "Check a word that sounds the same."
+        },
+        {
+          "he": "היא הולכת למקום. איזו מילה אומרת \"לשם\"?",
+          "en": "She walks to a place. Which word means \"to that place\"?"
+        }
+      ],
+      "explanation": {
+        "he": "their זה \"שלהם\". there זה \"שם\". they're זה they are. שלוש המילים נשמעות אותו דבר, ולכן צריך לבדוק את המשמעות. מקום, \"לשם\", כותבים there.",
+        "en": "their = belonging to them, there = in that place, they're = they are. A place: there."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.there-is-many-people",
+      "type": "fix",
+      "skill": "grammar.there-is",
+      "level": "B1",
+      "difficulty": 0.4,
+      "sentence": "There is many people in shul on Yom Kippur.",
+      "wrongIndex": 1,
+      "correction": "are",
+      "distractors": [
+        "be",
+        "has",
+        "have"
+      ],
+      "corrected": "There are many people in shul on Yom Kippur.",
+      "audioText": "There are many people in shul on Yom Kippur.",
+      "meaning": "יש הרבה אנשים בבית הכנסת ביום כיפור.",
+      "targetsMisconceptions": [
+        "there-is.agreement"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את is / are",
+          "en": "Check is / are."
+        },
+        {
+          "he": "people זה יחיד או רבים?",
+          "en": "Is people singular or plural?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי there בוחרים is או are לפי שם העצם שבא אחריו. יחיד או משהו שלא סופרים: there is. רבים: there are. בעברית \"יש\" לא משתנה. people זה רבים, ולכן there are. Yom Kippur הוא יום כיפור.",
+        "en": "there is + singular or uncountable, there are + plural. people is plural, so there are."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.thanked-for-carry",
+      "type": "fix",
+      "skill": "grammar.gerunds-infinitives",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Mrs. Klein thanked Tamar for carry her bags.",
+      "wrongIndex": 5,
+      "correction": "carrying",
+      "distractors": [
+        "carried",
+        "carries",
+        "to carry"
+      ],
+      "corrected": "Mrs. Klein thanked Tamar for carrying her bags.",
+      "audioText": "Mrs. Klein thanked Tamar for carrying her bags.",
+      "meaning": "גברת קליין הודתה לתמר על שסחבה את השקיות שלה.",
+      "targetsMisconceptions": [
+        "gerund-infinitive.after-preposition"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל אחרי מילת היחס",
+          "en": "Check the verb after the preposition."
+        },
+        {
+          "he": "איזו מילה באה לפני הפועל? מה בא אחרי מילת יחס?",
+          "en": "What word comes before the verb? What follows a preposition?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"ב לאפות\", ובאנגלית for carrying, at baking. thank someone for + ing: for carrying.",
+        "en": "After a preposition, use the verb + -ing. for + carrying."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.good-at-bake",
+      "type": "fix",
+      "skill": "grammar.gerunds-infinitives",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Rivka is good at bake challah.",
+      "wrongIndex": 4,
+      "correction": "baking",
+      "distractors": [
+        "bakes",
+        "baked",
+        "to bake"
+      ],
+      "corrected": "Rivka is good at baking challah.",
+      "audioText": "Rivka is good at baking challah.",
+      "meaning": "רבקה טובה באפיית חלה.",
+      "targetsMisconceptions": [
+        "gerund-infinitive.after-preposition"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל אחרי מילת היחס",
+          "en": "Check the verb after the preposition."
+        },
+        {
+          "he": "at היא מילת יחס. מה בא אחריה?",
+          "en": "at is a preposition. What follows it?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"ב לאפות\", ובאנגלית for carrying, at baking. good at + ing: good at baking.",
+        "en": "After a preposition, use the verb + -ing. good at + baking."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.forward-to-see",
+      "type": "fix",
+      "skill": "grammar.gerunds-infinitives",
+      "level": "B1",
+      "difficulty": 0.5,
+      "sentence": "Ari is looking forward to see Grandpa Yosef on Shabbat.",
+      "wrongIndex": 5,
+      "correction": "seeing",
+      "distractors": [
+        "saw",
+        "seen",
+        "sees"
+      ],
+      "corrected": "Ari is looking forward to seeing Grandpa Yosef on Shabbat.",
+      "audioText": "Ari is looking forward to seeing Grandpa Yosef on Shabbat.",
+      "meaning": "ארי מחכה בציפייה לראות את סבא יוסף בשבת.",
+      "targetsMisconceptions": [
+        "gerund-infinitive.after-preposition"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל אחרי מילת היחס",
+          "en": "Check the verb after the preposition."
+        },
+        {
+          "he": "ב־look forward to, המילה to היא מילת יחס. מה בא אחריה?",
+          "en": "In look forward to, to is a preposition. What follows it?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"ב לאפות\", ובאנגלית for carrying, at baking. look forward to + ing: looking forward to seeing.",
+        "en": "After a preposition, use the verb + -ing. look forward to + seeing."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.shouldnt-to-eat",
+      "type": "fix",
+      "skill": "grammar.modals",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Tamar shouldn't to eat so much sugar before bed.",
+      "wrongIndex": 2,
+      "correction": "",
+      "distractors": [
+        "for",
+        "too",
+        "be"
+      ],
+      "corrected": "Tamar shouldn't eat so much sugar before bed.",
+      "audioText": "Tamar shouldn't eat so much sugar before bed.",
+      "meaning": "תמר לא צריכה לאכול כל כך הרבה סוכר לפני השינה.",
+      "targetsMisconceptions": [
+        "modals.to-after-modal"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מה שבא אחרי can't / should",
+          "en": "Check what comes after the modal."
+        },
+        {
+          "he": "shouldn't הוא פועל מודאלי. מה בא אחריו?",
+          "en": "shouldn't is a modal. What comes after it?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי פועל מודאלי (can, could, should, must) בא פועל בסיסי בלי to. בעברית אומרים \"לא יכול ללכת\", אבל באנגלית can't walk. shouldn't eat, בלי to.",
+        "en": "After a modal (can, could, should, must), use the base verb without to. shouldn't + base verb."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.in-the-bus-stop",
+      "type": "fix",
+      "skill": "grammar.prepositions",
+      "level": "B1",
+      "difficulty": 0.45,
+      "sentence": "Abba waits for us in the bus stop.",
+      "wrongIndex": 4,
+      "correction": "at",
+      "distractors": [
+        "on",
+        "to",
+        "into"
+      ],
+      "corrected": "Abba waits for us at the bus stop.",
+      "audioText": "Abba waits for us at the bus stop.",
+      "meaning": "אבא מחכה לנו בתחנת האוטובוס.",
+      "targetsMisconceptions": [
+        "prepositions.place"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת היחס של המקום",
+          "en": "Check the place preposition."
+        },
+        {
+          "he": "תחנה היא נקודה שעומדים בה, לא מקום סגור. איזו מילת יחס מתאימה?",
+          "en": "A bus stop is a point, not a closed space. Which preposition fits?"
+        }
+      ],
+      "explanation": {
+        "he": "in זה בתוך. on זה על משטח. at זה בנקודה או במקום מסוים. בעברית \"ב\" ו\"על\" לא תמיד מתאימים לאנגלית. במקום מסוים, כמו תחנה, אומרים at: at the bus stop.",
+        "en": "in = inside, on = on a surface, at = at a point or place. at + a point or place."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b1.the-honesty",
+      "type": "fix",
+      "skill": "grammar.articles",
+      "level": "B1",
+      "difficulty": 0.5,
+      "sentence": "Grandpa Yosef says that the honesty is the most important thing.",
+      "wrongIndex": 4,
+      "correction": "",
+      "distractors": [
+        "a",
+        "an",
+        "one"
+      ],
+      "corrected": "Grandpa Yosef says that honesty is the most important thing.",
+      "audioText": "Grandpa Yosef says that honesty is the most important thing.",
+      "meaning": "סבא יוסף אומר שהיושר הוא הדבר הכי חשוב.",
+      "targetsMisconceptions": [
+        "articles.the-generic"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילים הקטנות לפני שמות העצם",
+          "en": "Check the small words before the nouns."
+        },
+        {
+          "he": "honesty הוא מושג כללי. האם צריך לפניו the?",
+          "en": "honesty is a general idea. Does it need the?"
+        }
+      ],
+      "explanation": {
+        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו work במשמעות \"לעבודה\". על מושג כללי (honesty, life, music) לא שמים the. the most נשאר, כי זו צורת \"הכי\".",
+        "en": "Do not use the for a general idea, a holiday name, or go to work. No the before a general idea."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.lives-alone-since",
+      "type": "fix",
+      "skill": "grammar.present-perfect",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "Mrs. Klein lives alone since 2015.",
+      "wrongIndex": 2,
+      "correction": "has lived",
+      "distractors": [
+        "lived",
+        "living",
+        "is living"
+      ],
+      "corrected": "Mrs. Klein has lived alone since 2015.",
+      "audioText": "Mrs. Klein has lived alone since 2015.",
+      "meaning": "גברת קליין גרה לבד מאז 2015.",
+      "targetsMisconceptions": [
+        "present-perfect.hebrew-present"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את זמן הפועל",
+          "en": "Check the tense."
+        },
+        {
+          "he": "since מראה שזה התחיל בעבר ונמשך עד היום. איזה זמן מתאים?",
+          "en": "since shows it started in the past and goes on until now. Which tense fits?"
+        }
+      ],
+      "explanation": {
+        "he": "משהו שהתחיל בעבר ונמשך עד עכשיו, עם since או for, דורש have / has + V3. בעברית אומרים \"גרה מאז\", בהווה, אבל באנגלית לא. עם since ו־for, כשמשהו נמשך עד עכשיו, משתמשים ב־Present Perfect: has lived.",
+        "en": "Something that started in the past and continues now, with since or for, needs have / has + V3. Use the Present Perfect with since: has lived."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.lived-for-2010",
+      "type": "fix",
+      "skill": "grammar.present-perfect",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "The Shapiro family has lived in Jerusalem for 2010.",
+      "wrongIndex": 7,
+      "correction": "since",
+      "distractors": [
+        "from",
+        "in",
+        "during"
+      ],
+      "corrected": "The Shapiro family has lived in Jerusalem since 2010.",
+      "audioText": "The Shapiro family has lived in Jerusalem since 2010.",
+      "meaning": "משפחת שפירא גרה בירושלים מאז 2010.",
+      "targetsMisconceptions": [
+        "present-perfect.for-since"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את מילת הזמן",
+          "en": "Check the time word."
+        },
+        {
+          "he": "2010 זה משך זמן או נקודת התחלה?",
+          "en": "Is 2010 a length of time or a starting point?"
+        }
+      ],
+      "explanation": {
+        "he": "since בא עם נקודת התחלה (2010, first grade, Pesach). for בא עם משך זמן (ten years, two weeks). בעברית שתיהן יכולות להיות \"כבר\" או \"מאז\". 2010 היא נקודת התחלה, ולכן since 2010.",
+        "en": "since + a starting point, for + a length of time. A starting point, so since."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.if-will-leave",
+      "type": "fix",
+      "skill": "grammar.conditionals.first",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "If we will leave now, we will get to shul on time.",
+      "wrongIndex": 2,
+      "correction": "",
+      "distractors": [
+        "would",
+        "are",
+        "shall"
+      ],
+      "corrected": "If we leave now, we will get to shul on time.",
+      "audioText": "If we leave now, we will get to shul on time.",
+      "meaning": "אם נצא עכשיו, נגיע לבית הכנסת בזמן.",
+      "targetsMisconceptions": [
+        "conditionals.will-in-if-clause"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את החלק עם if",
+          "en": "Check the if part."
+        },
+        {
+          "he": "במשפט יש תנאי ותוצאה. באיזה חלק will לא מתאים?",
+          "en": "There is a condition and a result. Where does will not fit?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי if לא שמים will, גם כשמדברים על העתיד. כותבים if + הווה פשוט, ואת will שמים רק בחלק השני. בעברית אומרים \"אם נסיים\", ובאנגלית if we finish. If we leave now, we will get there. will רק בתוצאה.",
+        "en": "No will after if. Use if + Present Simple, and will in the other part. No will after if."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.boy-which-sat",
+      "type": "fix",
+      "skill": "grammar.relative-clauses",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "The boy which sat next to Ari in shul was Moshe.",
+      "wrongIndex": 2,
+      "correction": "who",
+      "distractors": [
+        "what",
+        "whose",
+        "where"
+      ],
+      "corrected": "The boy who sat next to Ari in shul was Moshe.",
+      "audioText": "The boy who sat next to Ari in shul was Moshe.",
+      "meaning": "הילד שישב ליד ארי בבית הכנסת היה משה.",
+      "targetsMisconceptions": [
+        "relative.which-for-people"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילה שמחברת",
+          "en": "Check the joining word."
+        },
+        {
+          "he": "The boy הוא אדם. איזו מילה מחברת מתאימה לאנשים?",
+          "en": "The boy is a person. Which joining word fits people?"
+        }
+      ],
+      "explanation": {
+        "he": "על אנשים אומרים who (או that). which רק לדברים ולבעלי חיים. בעברית \"ש\" מתאים לכולם, ובאנגלית לא. ילד הוא אדם, ולכן who (או that).",
+        "en": "who for people, which for things. A boy is a person, so who."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.made-a-favor",
+      "type": "fix",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "Moshe made Ari a favor and carried his bag.",
+      "wrongIndex": 1,
+      "correction": "did",
+      "distractors": [
+        "took",
+        "gave",
+        "had"
+      ],
+      "corrected": "Moshe did Ari a favor and carried his bag.",
+      "audioText": "Moshe did Ari a favor and carried his bag.",
+      "meaning": "משה עשה לארי טובה וסחב את התיק שלו.",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "איזה פועל הולך עם a favor?",
+          "en": "Which verb goes with a favor?"
+        }
+      ],
+      "explanation": {
+        "he": "make ו־do שניהם \"לעשות\", אבל כל אחד הולך עם מילים קבועות: make a mistake, make an effort, do homework, do a favor. את הצירופים לומדים בעל פה. אומרים do someone a favor, ובעבר did Ari a favor.",
+        "en": "make and do go with fixed words: make a mistake, make an effort, do homework, do a favor. We say do someone a favor."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.the-medicine",
+      "type": "fix",
+      "skill": "grammar.articles",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "Rivka hopes to study the medicine at the Hebrew University.",
+      "wrongIndex": 4,
+      "correction": "",
+      "distractors": [
+        "a",
+        "an",
+        "these"
+      ],
+      "corrected": "Rivka hopes to study medicine at the Hebrew University.",
+      "audioText": "Rivka hopes to study medicine at the Hebrew University.",
+      "meaning": "רבקה מקווה ללמוד רפואה באוניברסיטה העברית.",
+      "targetsMisconceptions": [
+        "articles.the-generic"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילים הקטנות לפני שמות העצם",
+          "en": "Check the small words before the nouns."
+        },
+        {
+          "he": "medicine כאן הוא תחום לימוד כללי. האם צריך the?",
+          "en": "medicine here is a general field. Does it need the?"
+        }
+      ],
+      "explanation": {
+        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו work במשמעות \"לעבודה\". תחום לימוד (medicine, history) בא בלי the. the Hebrew University נשאר, כי זה שם של מוסד.",
+        "en": "Do not use the for a general idea, a holiday name, or go to work. No the before a field of study."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.instead-of-complain",
+      "type": "fix",
+      "skill": "grammar.gerunds-infinitives",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "Instead of complain, Ari helped Ima clean the kitchen.",
+      "wrongIndex": 2,
+      "correction": "complaining",
+      "distractors": [
+        "complained",
+        "complains",
+        "to complain"
+      ],
+      "corrected": "Instead of complaining, Ari helped Ima clean the kitchen.",
+      "audioText": "Instead of complaining, Ari helped Ima clean the kitchen.",
+      "meaning": "במקום להתלונן, ארי עזר לאמא לנקות את המטבח.",
+      "targetsMisconceptions": [
+        "gerund-infinitive.after-preposition"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל אחרי מילת היחס",
+          "en": "Check the verb after the preposition."
+        },
+        {
+          "he": "instead of נגמר במילת יחס. מה בא אחריה?",
+          "en": "instead of ends with a preposition. What follows it?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"ב לאפות\", ובאנגלית for carrying, at baking. instead of + ing: instead of complaining. בעברית \"במקום להתלונן\", אבל באנגלית לא בא to.",
+        "en": "After a preposition, use the verb + -ing. instead of + complaining."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.apologized-for-come",
+      "type": "fix",
+      "skill": "grammar.gerunds-infinitives",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "Tamar apologized for come late to class.",
+      "wrongIndex": 3,
+      "correction": "coming",
+      "distractors": [
+        "came",
+        "comes",
+        "to come"
+      ],
+      "corrected": "Tamar apologized for coming late to class.",
+      "audioText": "Tamar apologized for coming late to class.",
+      "meaning": "תמר התנצלה על שהגיעה מאוחר לשיעור.",
+      "targetsMisconceptions": [
+        "gerund-infinitive.after-preposition"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל אחרי מילת היחס",
+          "en": "Check the verb after the preposition."
+        },
+        {
+          "he": "for היא מילת יחס. איזו צורה של הפועל באה אחריה?",
+          "en": "for is a preposition. What verb form follows it?"
+        }
+      ],
+      "explanation": {
+        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"ב לאפות\", ובאנגלית for carrying, at baking. apologize for + ing: for coming.",
+        "en": "After a preposition, use the verb + -ing. apologize for + coming."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.remembers-me-of",
+      "type": "fix",
+      "skill": "vocabulary.context",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "This song remembers me of Grandpa's Kiddush.",
+      "wrongIndex": 2,
+      "correction": "reminds",
+      "distractors": [
+        "remember",
+        "memories",
+        "reminder"
+      ],
+      "corrected": "This song reminds me of Grandpa's Kiddush.",
+      "audioText": "This song reminds me of Grandpa's Kiddush.",
+      "meaning": "השיר הזה מזכיר לי את הקידוש של סבא.",
+      "targetsMisconceptions": [
+        "vocabulary.remember-remind"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "השיר גורם לי לזכור. זה remember או remind?",
+          "en": "The song makes me remember. Is that remember or remind?"
+        }
+      ],
+      "explanation": {
+        "he": "remember זה לזכור, בתוך הראש שלי. remind זה להזכיר למישהו אחר. remind someone to do, remind someone of something. X reminds me of Y: השיר מזכיר לי משהו.",
+        "en": "remember = keep in your mind, remind = make someone else remember. X reminds me of Y."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.told-that",
+      "type": "fix",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "Abba told that Shabbat starts at 4:30 this week.",
+      "wrongIndex": 1,
+      "correction": "said",
+      "distractors": [
+        "spoke",
+        "talked",
+        "asked"
+      ],
+      "corrected": "Abba said that Shabbat starts at 4:30 this week.",
+      "audioText": "Abba said that Shabbat starts at 4:30 this week.",
+      "meaning": "אבא אמר ששבת נכנסת השבוע ב־4:30.",
+      "targetsMisconceptions": [
+        "collocations.say-tell"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את הפועל",
+          "en": "Check the verb."
+        },
+        {
+          "he": "אחרי הפועל אין אדם, רק that. איזה פועל מתאים?",
+          "en": "No person comes after the verb, only that. Which verb fits?"
+        }
+      ],
+      "explanation": {
+        "he": "tell בא עם האדם ששומע: tell someone something. say בא בלי האדם, או עם to: say something (to someone). בעברית \"אמר ל\" מתאים לשניהם. בלי אדם אחרי הפועל אומרים said that. עם אדם: told us that.",
+        "en": "tell + a person (tell Tamar), say + no person (say that...). No person after it, so said."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.there-home",
+      "type": "fix",
+      "skill": "grammar.pronouns",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "The Shapiros always say that there home is open to guests.",
+      "wrongIndex": 5,
+      "correction": "their",
+      "distractors": [
+        "they're",
+        "theirs",
+        "there's"
+      ],
+      "corrected": "The Shapiros always say that their home is open to guests.",
+      "audioText": "The Shapiros always say that their home is open to guests.",
+      "meaning": "בני משפחת שפירא תמיד אומרים שהבית שלהם פתוח לאורחים.",
+      "targetsMisconceptions": [
+        "pronouns.their-there"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק מילה שנשמעת אותו דבר",
+          "en": "Check a word that sounds the same."
+        },
+        {
+          "he": "של מי הבית?",
+          "en": "Whose home is it?"
+        }
+      ],
+      "explanation": {
+        "he": "their זה \"שלהם\". there זה \"שם\". they're זה they are. שלוש המילים נשמעות אותו דבר, ולכן צריך לבדוק את המשמעות. הבית של משפחת שפירא, שלהם, ולכן their home.",
+        "en": "their = belonging to them, there = in that place, they're = they are. The home belongs to them: their."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "fix.b2.its-own",
+      "type": "fix",
+      "skill": "grammar.pronouns",
+      "level": "B2",
+      "difficulty": 0.55,
+      "sentence": "Every holiday has it's own special food.",
+      "wrongIndex": 3,
+      "correction": "its",
+      "distractors": [
+        "it",
+        "is",
+        "its'"
+      ],
+      "corrected": "Every holiday has its own special food.",
+      "audioText": "Every holiday has its own special food.",
+      "meaning": "לכל חג יש אוכל מיוחד משלו.",
+      "targetsMisconceptions": [
+        "pronouns.its-its"
+      ],
+      "instruction": {
+        "he": "למצוא את המילה השגויה ולתקן אותה",
+        "en": "Find the wrong word and fix it"
+      },
+      "hints": [
+        {
+          "he": "לבדוק את המילה עם הגרש",
+          "en": "Check the word with the apostrophe."
+        },
+        {
+          "he": "אפשר לומר כאן it is own?",
+          "en": "Can we say it is own here?"
+        }
+      ],
+      "explanation": {
+        "he": "it's עם גרש זה קיצור של it is. its בלי גרש זה \"שלו\" או \"שלה\" לדבר. אפשר לבדוק: אם אפשר לומר it is, כותבים it's. it is own לא הגיוני. זה האוכל של החג, ולכן its own.",
+        "en": "it's = it is. its = belonging to it. Not it is, so its."
+      },
+      "tags": [
+        "fix"
+      ],
+      "source": "original"
+    }
+  ],
+  "passages": [],
+  "lessons": []
+}

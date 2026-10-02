@@ -11,10 +11,13 @@ import { isDue } from '@/domain/learning/srs';
 import { levelCenter, type CefrLevel } from '@/domain/skills/cefr';
 import type { Student } from '@/domain/student/student';
 import { seededShuffle } from './shuffle';
+import type { SavedWordRow } from '@/data/schema';
+import { myWordsSession } from '@/features/words/wordItems';
 
 export type PracticeMode =
   | 'lesson' | 'placement' | 'vocabulary' | 'grammar' | 'reading' | 'listening' | 'review'
-  | 'skill' | 'mistakes' | 'riddles' | 'quiz' | 'lightning' | 'exam' | 'daily' | 'retry' | 'pretest' | 'sentences';
+  | 'skill' | 'mistakes' | 'riddles' | 'quiz' | 'lightning' | 'exam' | 'daily' | 'retry' | 'pretest' | 'sentences'
+  | 'translate' | 'fix' | 'chunks' | 'families' | 'mywords';
 
 export interface PoolContext {
   registry: ContentRegistry;
@@ -23,6 +26,8 @@ export interface PoolContext {
   now: number;
   day: string;
   params: Record<string, string>;
+  /** "My words", loaded only for the mywords mode. */
+  savedWords?: SavedWordRow[];
 }
 
 /**
@@ -154,6 +159,45 @@ export const MODES: Record<PracticeMode, ModeDef> = {
     ...teach,
     pool: (c) => c.registry.items.filter((i) => i.type === 'order'),
   },
+  translate: {
+    title: 'תרגום לאנגלית',
+    english: 'Translation',
+    length: 8,
+    ...teach,
+    game: 'translate',
+    pool: (c) => c.registry.items.filter((i) => i.tags.includes('translate')),
+  },
+  fix: {
+    title: 'מצא את הטעות',
+    english: 'Spot the mistake',
+    length: 8,
+    ...teach,
+    game: 'fix',
+    // The selector prefers items that target the learner's own repeated mistakes.
+    pool: (c) => c.registry.items.filter((i) => i.type === 'fix'),
+  },
+  chunks: {
+    title: 'צירופים קבועים',
+    english: 'Word partners',
+    length: 8,
+    ...teach,
+    pool: (c) => c.registry.items.filter((i) => i.tags.includes('chunk')),
+  },
+  families: {
+    title: 'משפחות מילים',
+    english: 'Word families',
+    length: 8,
+    ...teach,
+    pool: (c) => c.registry.items.filter((i) => i.tags.includes('family')),
+  },
+  mywords: {
+    title: 'המילים שלי',
+    english: 'My words',
+    length: 10,
+    ...teach,
+    pool: () => [],
+    fixed: (c) => myWordsSession(c.savedWords ?? [], c.state.units, c.now),
+  },
   daily: {
     title: 'האתגר היומי',
     length: 6,
@@ -191,7 +235,7 @@ export function buildExam(c: PoolContext): ContentItem[] {
   const reading = passage ? items.filter((i) => i.passageId === passage.id) : [];
   const pick = (domain: string, n: number) => {
     // Bagrut-style: choice and typed items only (no sentence building).
-    const all = items.filter((i) => domainOf(i.skill) === domain && !i.passageId && i.modality === 'read' && i.type !== 'order');
+    const all = items.filter((i) => domainOf(i.skill) === domain && !i.passageId && i.modality === 'read' && i.type !== 'order' && i.type !== 'fix');
     // Prefer items at the track level; widen the band if there are too few.
     for (const width of [0.8, 1.3, 2, 9]) {
       const xs = near(all, level, width);
