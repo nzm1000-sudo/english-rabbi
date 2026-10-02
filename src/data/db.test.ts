@@ -77,7 +77,7 @@ describe('progress persistence', () => {
     const s = await store.createStudent({ name: 'Test' });
     // Force the derived write to fail inside the transaction.
     const orig = db.dailyStats.put.bind(db.dailyStats);
-    db.dailyStats.put = (() => Promise.reject(new Error('disk full'))) as typeof db.dailyStats.put;
+    db.dailyStats.put = (() => Promise.reject(new Error('disk full'))) as unknown as typeof db.dailyStats.put;
     await expect(store.completeItem({ studentId: s.id, item: choiceItem(), outcome: outcome() })).rejects.toThrow('disk full');
     db.dailyStats.put = orig;
 

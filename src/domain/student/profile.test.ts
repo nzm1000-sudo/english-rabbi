@@ -17,6 +17,7 @@ describe('learner profile', () => {
     expect(p.domains.every((d) => d.label === 'not-assessed')).toBe(true);
     expect(p.recommendations[0]).toContain('אבחון');
     expect(p.activity.streakDays).toBe(0);
+    expect(p.supportLanguage).toBe('he');
   });
 
   it('reports a separate level per domain, not one global score', () => {

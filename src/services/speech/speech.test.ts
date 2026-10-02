@@ -132,7 +132,7 @@ describe('home server provider', () => {
     const fetchFn = vi.fn(async () => new Response(new Blob(['mp3'], { type: 'audio/mpeg' })));
     const db = new TutorDB(`tts-${Math.random()}`);
     const playback = new FakePlayback();
-    const p = new RemoteTtsProvider({ baseUrl: 'http://home.local:8880' }, playback, new DexieAudioCache(db), fetchFn as typeof fetch);
+    const p = new RemoteTtsProvider(() => ({ baseUrl: 'http://home.local:8880' }), playback, new DexieAudioCache(db), fetchFn as typeof fetch);
     const req = { text: 'Have you ever been to London?', accent: 'en-GB' as const, rate: 'slow' as const };
     await p.speak(req);
     await p.speak(req);
@@ -144,8 +144,8 @@ describe('home server provider', () => {
 
   it('is unavailable without a configured URL and after a failure', async () => {
     const db = new TutorDB(`tts-${Math.random()}`);
-    expect(await new RemoteTtsProvider({ baseUrl: '' }, new FakePlayback(), new DexieAudioCache(db)).canSpeak()).toBe(false);
-    const failing = new RemoteTtsProvider({ baseUrl: 'http://x' }, new FakePlayback(), new DexieAudioCache(db), (async () => new Response('', { status: 500 })) as typeof fetch);
+    expect(await new RemoteTtsProvider(() => ({ baseUrl: '' }), new FakePlayback(), new DexieAudioCache(db)).canSpeak()).toBe(false);
+    const failing = new RemoteTtsProvider(() => ({ baseUrl: 'http://x' }), new FakePlayback(), new DexieAudioCache(db), (async () => new Response('', { status: 500 })) as typeof fetch);
     await expect(failing.speak({ text: 'Hi', accent: 'en-US', rate: 'normal' })).rejects.toThrow();
     expect(await failing.canSpeak()).toBe(false);
   });

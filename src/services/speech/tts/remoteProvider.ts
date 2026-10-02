@@ -27,11 +27,20 @@ export class RemoteTtsProvider implements SpeechProvider {
   private healthy: boolean | null = null;
 
   constructor(
-    private readonly config: RemoteTtsConfig,
+    private readonly getConfig: () => RemoteTtsConfig,
     private readonly playback: AudioPlayback,
     private readonly cache: AudioCache,
     private readonly fetchFn: typeof fetch = (...a) => fetch(...a),
   ) {}
+
+  private get config(): RemoteTtsConfig {
+    return this.getConfig();
+  }
+
+  /** Call after the server URL changes. */
+  resetHealth(): void {
+    this.healthy = null;
+  }
 
   async canSpeak(): Promise<boolean> {
     if (!this.config.baseUrl) return false;

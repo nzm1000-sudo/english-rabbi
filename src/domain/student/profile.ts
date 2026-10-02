@@ -143,7 +143,8 @@ export function buildLearnerProfile(
     memory,
     activity,
     overallTheta,
-    supportLanguage: supportLanguage(overallTheta),
+    // No evidence yet: start in Hebrew. English grows with measured ability.
+    supportLanguage: assessed.length ? supportLanguage(overallTheta) : 'he',
     calibrated,
     recommendations: [],
   };

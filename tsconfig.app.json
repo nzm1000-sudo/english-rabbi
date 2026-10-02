@@ -20,8 +20,7 @@
     "exactOptionalPropertyTypes": false,
     "skipLibCheck": true,
     "types": ["vite/client", "vitest/globals", "@testing-library/jest-dom"],
-    "baseUrl": ".",
-    "paths": { "@/*": ["src/*"], "@content/*": ["content/*"] }
+    "paths": { "@/*": ["./src/*"], "@content/*": ["./content/*"] }
   },
   "include": ["src", "content", "tests"]
 }

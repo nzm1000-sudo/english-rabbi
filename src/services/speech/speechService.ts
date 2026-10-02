@@ -17,6 +17,8 @@ export interface SpeakOptions {
   voiceId?: string;
   /** Identifies the UI element, so only that button shows activity. */
   key?: string;
+  /** Force one provider (voice lab comparisons). */
+  provider?: string;
 }
 
 export interface SpeechEvents {
@@ -30,6 +32,10 @@ export class SpeechService {
   private active: SpeechProvider | null = null;
 
   constructor(private readonly providers: SpeechProvider[], private readonly events: SpeechEvents = {}) {}
+
+  getProviders(): readonly SpeechProvider[] {
+    return this.providers;
+  }
 
   getState = (): SpeechState => this.state;
 
@@ -98,14 +104,10 @@ export class SpeechService {
       signal,
     };
     let lastError: unknown = new Error('no speech provider available');
-    for (const p of this.providers) {
+    const providers = opts.provider ? this.providers.filter((p) => p.id === opts.provider) : this.providers;
+    for (const p of providers) {
       if (signal.aborted) throw new DOMException('stopped', 'AbortError');
-      let ok = false;
-      try {
-        ok = await p.canSpeak(req);
-      } catch {
-        ok = false;
-      }
+      const ok = await p.canSpeak(req).catch(() => false);
       if (!ok) continue;
       try {
         this.active = p;
