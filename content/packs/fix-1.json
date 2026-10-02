@@ -4,12 +4,12 @@
   "title": "Spot the mistake 1",
   "items": [
     {
-      "id": "fix.a1.sing-every-week",
+      "id": "fix.a1.know-shabbat-songs",
       "type": "fix",
       "skill": "grammar.present-simple",
       "level": "A1",
       "difficulty": 0.3,
-      "sentence": "We are sing songs at the Shabbat table every week.",
+      "sentence": "We are know all the Shabbat songs.",
       "wrongIndex": 1,
       "correction": "",
       "distractors": [
@@ -17,9 +17,9 @@
         "am",
         "be"
       ],
-      "corrected": "We sing songs at the Shabbat table every week.",
-      "audioText": "We sing songs at the Shabbat table every week.",
-      "meaning": "אנחנו שרים שירים ליד שולחן השבת כל שבוע.",
+      "corrected": "We know all the Shabbat songs.",
+      "audioText": "We know all the Shabbat songs.",
+      "meaning": "אנחנו יודעים את כל שירי השבת.",
       "targetsMisconceptions": [
         "present-simple.be-plus-verb"
       ],
@@ -33,13 +33,13 @@
           "en": "Check the verb."
         },
         {
-          "he": "sing הוא כבר הפועל. האם צריך לפניו עוד מילה?",
-          "en": "sing is already the verb. Does it need another word before it?"
+          "he": "know הוא כבר הפועל. האם צריך לפניו עוד מילה?",
+          "en": "know is already the verb. Does it need another word before it?"
         }
       ],
       "explanation": {
-        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. We sing songs, בלי are.",
-        "en": "Do not put am / is / are before a normal verb in the Present Simple. We sing, not we are sing."
+        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. We know, בלי are.",
+        "en": "Do not put am / is / are before a normal verb in the Present Simple. We know, not we are know."
       },
       "tags": [
         "fix"
@@ -402,7 +402,7 @@
       "distractors": [
         "lot",
         "any",
-        "little"
+        "plenty"
       ],
       "corrected": "Grandma Chana has many grandchildren.",
       "audioText": "Grandma Chana has many grandchildren.",
@@ -701,7 +701,7 @@
       "wrongIndex": 4,
       "correction": "on",
       "distractors": [
-        "at",
+        "of",
         "to",
         "into"
       ],
@@ -907,22 +907,22 @@
       "source": "original"
     },
     {
-      "id": "fix.a2.walk-every-shabbat",
+      "id": "fix.a2.need-bigger-table",
       "type": "fix",
       "skill": "grammar.present-simple",
       "level": "A2",
       "difficulty": 0.4,
-      "sentence": "Every Shabbat we are walk to shul together.",
-      "wrongIndex": 3,
+      "sentence": "We are need a bigger table for our Shabbat guests.",
+      "wrongIndex": 1,
       "correction": "",
       "distractors": [
         "is",
         "be",
         "am"
       ],
-      "corrected": "Every Shabbat we walk to shul together.",
-      "audioText": "Every Shabbat we walk to shul together.",
-      "meaning": "בכל שבת אנחנו הולכים יחד לבית הכנסת.",
+      "corrected": "We need a bigger table for our Shabbat guests.",
+      "audioText": "We need a bigger table for our Shabbat guests.",
+      "meaning": "אנחנו צריכים שולחן גדול יותר בשביל אורחי השבת שלנו.",
       "targetsMisconceptions": [
         "present-simple.be-plus-verb"
       ],
@@ -936,13 +936,13 @@
           "en": "Check the verb."
         },
         {
-          "he": "Every Shabbat זה הרגל. איך מתארים הרגל בהווה פשוט?",
-          "en": "Every Shabbat is a habit. How do we show a habit in the Present Simple?"
+          "he": "need הוא פועל רגיל. האם צריך לפניו are?",
+          "en": "need is a normal verb. Does it need are?"
         }
       ],
       "explanation": {
-        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. הרגל כותבים בהווה פשוט: we walk. לא are walk.",
-        "en": "Do not put am / is / are before a normal verb in the Present Simple. A habit uses the Present Simple: we walk."
+        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. We need, בלי are.",
+        "en": "Do not put am / is / are before a normal verb in the Present Simple. We need, not we are need."
       },
       "tags": [
         "fix"
@@ -1337,12 +1337,12 @@
       "source": "original"
     },
     {
-      "id": "fix.a2.many-time",
+      "id": "fix.a2.many-sugar",
       "type": "fix",
       "skill": "grammar.quantifiers",
       "level": "A2",
       "difficulty": 0.4,
-      "sentence": "We don't have many time before Shabbat.",
+      "sentence": "Ima doesn't put many sugar in her cakes.",
       "wrongIndex": 3,
       "correction": "much",
       "distractors": [
@@ -1350,9 +1350,9 @@
         "few",
         "plenty"
       ],
-      "corrected": "We don't have much time before Shabbat.",
-      "audioText": "We don't have much time before Shabbat.",
-      "meaning": "אין לנו הרבה זמן לפני שבת.",
+      "corrected": "Ima doesn't put much sugar in her cakes.",
+      "audioText": "Ima doesn't put much sugar in her cakes.",
+      "meaning": "אמא לא שמה הרבה סוכר בעוגות שלה.",
       "targetsMisconceptions": [
         "quantifiers.much-many"
       ],
@@ -1366,13 +1366,13 @@
           "en": "Check the word for amount."
         },
         {
-          "he": "אפשר לספור time?",
-          "en": "Can we count time?"
+          "he": "אפשר לספור sugar?",
+          "en": "Can we count sugar?"
         }
       ],
       "explanation": {
-        "he": "many בא עם דברים שאפשר לספור (candles, children). much בא עם דברים שלא סופרים (time, water). בעברית יש רק \"הרבה\" או \"כמה\". זמן לא סופרים, ולכן much time.",
-        "en": "many + things we can count. much + things we cannot count. We cannot count time, so much."
+        "he": "many בא עם דברים שאפשר לספור (candles, children). much בא עם דברים שלא סופרים (time, sugar). בעברית יש רק \"הרבה\" או \"כמה\". סוכר לא סופרים, ולכן much sugar.",
+        "en": "many + things we can count. much + things we cannot count. We cannot count sugar, so much."
       },
       "tags": [
         "fix"
@@ -1414,7 +1414,7 @@
         }
       ],
       "explanation": {
-        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו work במשמעות \"לעבודה\". Shabbat הוא שם, כמו שם של חג. אומרים Ari loves Shabbat, בלי the.",
+        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו school ו־work במשמעות \"לבית הספר\" ו\"לעבודה\". Shabbat הוא שם, כמו שם של חג. אומרים Ari loves Shabbat, בלי the.",
         "en": "Do not use the for a general idea, a holiday name, or go to work. Shabbat is a name, so no the."
       },
       "tags": [
@@ -1423,22 +1423,22 @@
       "source": "original"
     },
     {
-      "id": "fix.a2.the-work",
+      "id": "fix.a2.after-the-school",
       "type": "fix",
       "skill": "grammar.articles",
       "level": "A2",
       "difficulty": 0.45,
-      "sentence": "Abba goes to the work at eight o'clock.",
-      "wrongIndex": 3,
+      "sentence": "After the school, Ari plays with Moshe in the park.",
+      "wrongIndex": 1,
       "correction": "",
       "distractors": [
         "a",
         "an",
         "one"
       ],
-      "corrected": "Abba goes to work at eight o'clock.",
-      "audioText": "Abba goes to work at eight o'clock.",
-      "meaning": "אבא הולך לעבודה בשמונה.",
+      "corrected": "After school, Ari plays with Moshe in the park.",
+      "audioText": "After school, Ari plays with Moshe in the park.",
+      "meaning": "אחרי בית הספר, ארי משחק עם משה בפארק.",
       "targetsMisconceptions": [
         "articles.the-generic"
       ],
@@ -1452,13 +1452,13 @@
           "en": "Check the small words before the nouns."
         },
         {
-          "he": "בעברית \"לעבודה\". מה אומרים באנגלית?",
-          "en": "In Hebrew: \"to the work\". What do we say in English?"
+          "he": "בעברית \"אחרי בית הספר\". מה אומרים באנגלית?",
+          "en": "In Hebrew: \"after the school\". What do we say in English?"
         }
       ],
       "explanation": {
-        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו work במשמעות \"לעבודה\". אומרים go to work, בלי the, כמו go to school.",
-        "en": "Do not use the for a general idea, a holiday name, or go to work. We say go to work, without the."
+        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו school ו־work במשמעות \"לבית הספר\" ו\"לעבודה\". אומרים after school, בלי the, כמו go to school ו־go to work.",
+        "en": "Do not use the for a general idea, a holiday name, or school and work as places we go every day. We say after school, without the."
       },
       "tags": [
         "fix"
@@ -1520,7 +1520,7 @@
       "distractors": [
         "on",
         "to",
-        "by"
+        "of"
       ],
       "corrected": "Every year we visit Grandpa Yosef in the summer.",
       "audioText": "Every year we visit Grandpa Yosef in the summer.",
@@ -1715,7 +1715,7 @@
         }
       ],
       "explanation": {
-        "he": "borrow זה לשאול, לקחת משהו לזמן קצר. lend זה להשאיל, לתת משהו לזמן קצר. בעברית \"לשאול\" ו\"להשאיל\" דומים מאוד. שירה נותנת, ולכן lend me. אני זו ששואלת: I borrow.",
+        "he": "borrow זה לשאול, לקחת משהו לזמן קצר. lend זה להשאיל, לתת משהו לזמן קצר. בעברית \"לשאול\" ו\"להשאיל\" דומים מאוד. שירה נותנת, ולכן lend me. מי שמבקש הוא ששואל: I borrow.",
         "en": "borrow = take for a short time, lend = give for a short time. Shira gives it, so lend."
       },
       "tags": [
@@ -1758,7 +1758,7 @@
         }
       ],
       "explanation": {
-        "he": "borrow זה לשאול, לקחת משהו לזמן קצר. lend זה להשאיל, לתת משהו לזמן קצר. בעברית \"לשאול\" ו\"להשאיל\" דומים מאוד. אני לוקח לזמן קצר, ולכן borrow. רבקה היא שמשאילה: she lends.",
+        "he": "borrow זה לשאול, לקחת משהו לזמן קצר. lend זה להשאיל, לתת משהו לזמן קצר. בעברית \"לשאול\" ו\"להשאיל\" דומים מאוד. מי שמדבר רוצה לקחת לזמן קצר, ולכן borrow. רבקה היא שמשאילה: she lends.",
         "en": "borrow = take for a short time, lend = give for a short time. I take it for a short time, so borrow."
       },
       "tags": [
@@ -1778,7 +1778,7 @@
       "distractors": [
         "studies",
         "learn",
-        "shows"
+        "learning"
       ],
       "corrected": "Rabbi Gold teaches us Torah every morning.",
       "audioText": "Rabbi Gold teaches us Torah every morning.",
@@ -2025,12 +2025,12 @@
       "source": "original"
     },
     {
-      "id": "fix.a2.couldnt-to-sleep",
+      "id": "fix.a2.couldnt-to-stop",
       "type": "fix",
       "skill": "grammar.modals",
       "level": "A2",
       "difficulty": 0.45,
-      "sentence": "Ari couldn't to sleep last night.",
+      "sentence": "Ari couldn't to stop laughing at Moshe's joke.",
       "wrongIndex": 2,
       "correction": "",
       "distractors": [
@@ -2038,9 +2038,9 @@
         "too",
         "in"
       ],
-      "corrected": "Ari couldn't sleep last night.",
-      "audioText": "Ari couldn't sleep last night.",
-      "meaning": "ארי לא הצליח לישון אתמול בלילה.",
+      "corrected": "Ari couldn't stop laughing at Moshe's joke.",
+      "audioText": "Ari couldn't stop laughing at Moshe's joke.",
+      "meaning": "ארי לא הצליח להפסיק לצחוק מהבדיחה של משה.",
       "targetsMisconceptions": [
         "modals.to-after-modal"
       ],
@@ -2059,7 +2059,7 @@
         }
       ],
       "explanation": {
-        "he": "אחרי פועל מודאלי (can, could, should, must) בא פועל בסיסי בלי to. בעברית אומרים \"לא יכול ללכת\", אבל באנגלית can't walk. couldn't sleep, בלי to.",
+        "he": "אחרי פועל מודאלי (can, could, should, must) בא פועל בסיסי בלי to. בעברית אומרים \"לא יכול ללכת\", אבל באנגלית can't walk. couldn't stop, בלי to.",
         "en": "After a modal (can, could, should, must), use the base verb without to. couldn't + base verb, no to."
       },
       "tags": [
@@ -2842,22 +2842,22 @@
       "source": "original"
     },
     {
-      "id": "fix.b1.most-happiest",
+      "id": "fix.b1.most-biggest",
       "type": "fix",
       "skill": "grammar.comparatives",
       "level": "B1",
       "difficulty": 0.5,
-      "sentence": "Purim is the most happiest day of the year for Ari.",
-      "wrongIndex": 3,
+      "sentence": "Ari's Purim costume is the most biggest in his class.",
+      "wrongIndex": 4,
       "correction": "",
       "distractors": [
         "more",
         "much",
         "many"
       ],
-      "corrected": "Purim is the happiest day of the year for Ari.",
-      "audioText": "Purim is the happiest day of the year for Ari.",
-      "meaning": "פורים הוא היום הכי שמח בשנה בשביל ארי.",
+      "corrected": "Ari's Purim costume is the biggest in his class.",
+      "audioText": "Ari's Purim costume is the biggest in his class.",
+      "meaning": "התחפושת של ארי לפורים היא הכי גדולה בכיתה שלו.",
       "targetsMisconceptions": [
         "comparatives.double"
       ],
@@ -2871,13 +2871,13 @@
           "en": "Check the comparison."
         },
         {
-          "he": "happiest כבר אומר \"הכי שמח\". מה מיותר?",
-          "en": "happiest already means \"the most happy\". What is extra?"
+          "he": "biggest כבר אומר \"הכי גדול\". מה מיותר?",
+          "en": "biggest already means \"the most big\". What is extra?"
         }
       ],
       "explanation": {
-        "he": "לא משתמשים גם ב־more וגם בצורה עם er או best/better. בוחרים רק אחת: bigger, better, the happiest. happiest היא כבר הצורה של \"הכי\". לא מוסיפים most. Purim הוא פורים.",
-        "en": "Do not use more or most together with -er / -est or better. happiest already means most happy."
+        "he": "לא משתמשים גם ב־more וגם בצורה עם er או best/better. בוחרים רק אחת: bigger, better, the happiest. biggest היא כבר הצורה של \"הכי\". לא מוסיפים most. Purim הוא פורים.",
+        "en": "Do not use more or most together with -er / -est or better. biggest already means the most big."
       },
       "tags": [
         "fix"
@@ -3134,7 +3134,7 @@
         }
       ],
       "explanation": {
-        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"ב לאפות\", ובאנגלית for carrying, at baking. thank someone for + ing: for carrying.",
+        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"טובה באפייה\", ובאנגלית for carrying, at baking. thank someone for + ing: for carrying.",
         "en": "After a preposition, use the verb + -ing. for + carrying."
       },
       "tags": [
@@ -3177,7 +3177,7 @@
         }
       ],
       "explanation": {
-        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"ב לאפות\", ובאנגלית for carrying, at baking. good at + ing: good at baking.",
+        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"טובה באפייה\", ובאנגלית for carrying, at baking. good at + ing: good at baking.",
         "en": "After a preposition, use the verb + -ing. good at + baking."
       },
       "tags": [
@@ -3191,7 +3191,7 @@
       "skill": "grammar.gerunds-infinitives",
       "level": "B1",
       "difficulty": 0.5,
-      "sentence": "Ari is looking forward to see Grandpa Yosef on Shabbat.",
+      "sentence": "Ari always looks forward to see Grandpa Yosef on Shabbat.",
       "wrongIndex": 5,
       "correction": "seeing",
       "distractors": [
@@ -3199,9 +3199,9 @@
         "seen",
         "sees"
       ],
-      "corrected": "Ari is looking forward to seeing Grandpa Yosef on Shabbat.",
-      "audioText": "Ari is looking forward to seeing Grandpa Yosef on Shabbat.",
-      "meaning": "ארי מחכה בציפייה לראות את סבא יוסף בשבת.",
+      "corrected": "Ari always looks forward to seeing Grandpa Yosef on Shabbat.",
+      "audioText": "Ari always looks forward to seeing Grandpa Yosef on Shabbat.",
+      "meaning": "ארי תמיד מחכה בציפייה לראות את סבא יוסף בשבת.",
       "targetsMisconceptions": [
         "gerund-infinitive.after-preposition"
       ],
@@ -3220,7 +3220,7 @@
         }
       ],
       "explanation": {
-        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"ב לאפות\", ובאנגלית for carrying, at baking. look forward to + ing: looking forward to seeing.",
+        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"טובה באפייה\", ובאנגלית for carrying, at baking. look forward to + ing: looks forward to seeing.",
         "en": "After a preposition, use the verb + -ing. look forward to + seeing."
       },
       "tags": [
@@ -3349,7 +3349,7 @@
         }
       ],
       "explanation": {
-        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו work במשמעות \"לעבודה\". על מושג כללי (honesty, life, music) לא שמים the. the most נשאר, כי זו צורת \"הכי\".",
+        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו school ו־work במשמעות \"לבית הספר\" ו\"לעבודה\". על מושג כללי (honesty, life, music) לא שמים the. the most נשאר, כי זו צורת \"הכי\".",
         "en": "Do not use the for a general idea, a holiday name, or go to work. No the before a general idea."
       },
       "tags": [
@@ -3607,7 +3607,7 @@
         }
       ],
       "explanation": {
-        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו work במשמעות \"לעבודה\". תחום לימוד (medicine, history) בא בלי the. the Hebrew University נשאר, כי זה שם של מוסד.",
+        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו school ו־work במשמעות \"לבית הספר\" ו\"לעבודה\". תחום לימוד (medicine, history) בא בלי the. the Hebrew University נשאר, כי זה שם של מוסד.",
         "en": "Do not use the for a general idea, a holiday name, or go to work. No the before a field of study."
       },
       "tags": [
@@ -3650,7 +3650,7 @@
         }
       ],
       "explanation": {
-        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"ב לאפות\", ובאנגלית for carrying, at baking. instead of + ing: instead of complaining. בעברית \"במקום להתלונן\", אבל באנגלית לא בא to.",
+        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"טובה באפייה\", ובאנגלית for carrying, at baking. instead of + ing: instead of complaining. בעברית \"במקום להתלונן\", אבל באנגלית לא בא to.",
         "en": "After a preposition, use the verb + -ing. instead of + complaining."
       },
       "tags": [
@@ -3693,7 +3693,7 @@
         }
       ],
       "explanation": {
-        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"ב לאפות\", ובאנגלית for carrying, at baking. apologize for + ing: for coming.",
+        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"טובה באפייה\", ובאנגלית for carrying, at baking. apologize for + ing: for coming.",
         "en": "After a preposition, use the verb + -ing. apologize for + coming."
       },
       "tags": [
@@ -3745,12 +3745,12 @@
       "source": "original"
     },
     {
-      "id": "fix.b2.told-that",
+      "id": "fix.b2.told-sorry",
       "type": "fix",
       "skill": "vocabulary.collocations",
       "level": "B2",
       "difficulty": 0.55,
-      "sentence": "Abba told that Shabbat starts at 4:30 this week.",
+      "sentence": "Ari told sorry to Moshe after their argument.",
       "wrongIndex": 1,
       "correction": "said",
       "distractors": [
@@ -3758,9 +3758,9 @@
         "talked",
         "asked"
       ],
-      "corrected": "Abba said that Shabbat starts at 4:30 this week.",
-      "audioText": "Abba said that Shabbat starts at 4:30 this week.",
-      "meaning": "אבא אמר ששבת נכנסת השבוע ב־4:30.",
+      "corrected": "Ari said sorry to Moshe after their argument.",
+      "audioText": "Ari said sorry to Moshe after their argument.",
+      "meaning": "ארי אמר סליחה למשה אחרי הוויכוח ביניהם.",
       "targetsMisconceptions": [
         "collocations.say-tell"
       ],
@@ -3774,13 +3774,13 @@
           "en": "Check the verb."
         },
         {
-          "he": "אחרי הפועל אין אדם, רק that. איזה פועל מתאים?",
-          "en": "No person comes after the verb, only that. Which verb fits?"
+          "he": "אחרי הפועל בא sorry, ורק אחר כך to Moshe. איזה פועל מתאים?",
+          "en": "After the verb comes sorry, and then to Moshe. Which verb fits?"
         }
       ],
       "explanation": {
-        "he": "tell בא עם האדם ששומע: tell someone something. say בא בלי האדם, או עם to: say something (to someone). בעברית \"אמר ל\" מתאים לשניהם. בלי אדם אחרי הפועל אומרים said that. עם אדם: told us that.",
-        "en": "tell + a person (tell Tamar), say + no person (say that...). No person after it, so said."
+        "he": "tell בא עם האדם ששומע: tell someone something. say בא בלי האדם, או עם to: say something (to someone). בעברית \"אמר ל\" מתאים לשניהם. אומרים say sorry (to someone), ובעבר said sorry. tell צריך אדם מיד אחריו.",
+        "en": "tell + a person (tell Tamar), say + something (to someone). We say sorry, so said sorry."
       },
       "tags": [
         "fix"
