@@ -168,30 +168,6 @@
     }
   },
   {
-    "id": "vocabulary.learn-teach",
-    "skill": "vocabulary.context",
-    "note": {
-      "he": "מתבלבל/ת בין learn ל־teach",
-      "en": "Confuses learn and teach"
-    },
-    "tip": {
-      "he": "learn = ללמוד בעצמך. teach = ללמד מישהו אחר: She taught me.",
-      "en": "learn = get knowledge. teach = give knowledge to someone."
-    }
-  },
-  {
-    "id": "vocabulary.remember-remind",
-    "skill": "vocabulary.context",
-    "note": {
-      "he": "מתבלבל/ת בין remember ל־remind",
-      "en": "Confuses remember and remind"
-    },
-    "tip": {
-      "he": "remember = לזכור. remind someone = להזכיר למישהו: Remind me to call.",
-      "en": "remember = keep in mind. remind someone = make them remember."
-    }
-  },
-  {
     "id": "vocabulary.rob-steal",
     "skill": "vocabulary.context",
     "note": {

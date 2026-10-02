@@ -61,7 +61,9 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
   const misconceptions = new Map<string, MisconceptionT>();
   for (const m of raw.misconceptions) {
     const r = Misconception.safeParse(m);
-    if (r.success) misconceptions.set(r.data.id, r.data);
+    if (r.success && misconceptions.has(r.data.id)) {
+      issues.push({ packId: 'misconceptions', id: r.data.id, severity: 'error', reason: 'duplicate misconception id' });
+    } else if (r.success) misconceptions.set(r.data.id, r.data);
     else issues.push({ packId: 'misconceptions', id: idOf(m), severity: 'error', reason: r.error.message });
   }
 

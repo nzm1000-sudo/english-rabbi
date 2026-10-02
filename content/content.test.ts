@@ -82,6 +82,11 @@ describe('licensing gate', () => {
     expect(r.issues[0]!.severity).toBe('error');
   });
 
+  it('reports duplicate misconception ids', () => {
+    const r = buildRegistry({ sources, misconceptions: [...misconceptions, misconceptions[0]], packs: [] });
+    expect(r.issues.some((i) => i.reason === 'duplicate misconception id')).toBe(true);
+  });
+
   it('rejects unknown skills', () => {
     const r = buildRegistry({ sources, misconceptions, packs: [{ packId: 'p', schemaVersion: 1, title: 't', items: [{ ...item, skill: 'grammar.nope', source: 'original' }] }] });
     expect(r.items).toHaveLength(0);
