@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f8f4" />
+    <meta
+      name="description"
+      content="Your personal English study space for Israeli 3, 4 and 5-unit students."
+    />
+    <title>English Rabbi — Your English, your pace</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="English Rabbi home">
+          <span class="brand-mark" aria-hidden="true">er</span>
+          <span>english<span class="brand-light">rabbi</span></span>
+        </a>
+
+        <p class="nav-label">YOUR SPACE</p>
+        <nav class="main-nav">
+          <a class="nav-link active" href="#home"><span aria-hidden="true">⌂</span>Overview</a>
+          <a class="nav-link" href="#lessons"><span aria-hidden="true">▤</span>My lessons</a>
+          <a class="nav-link" href="#practice"><span aria-hidden="true">✳</span>Practice</a>
+          <a class="nav-link" href="#exam"><span aria-hidden="true">▣</span>Exam prep</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="coach-note">
+            <span class="coach-icon" aria-hidden="true">✦</span>
+            <p class="coach-title">Your AI study buddy</p>
+            <p>Small steps today make big progress tomorrow.</p>
+          </div>
+          <a class="profile-link" href="#home">
+            <span class="avatar">N</span>
+            <span><strong>Noa Levi</strong><small>Personal study space</small></span>
+            <span class="profile-more" aria-hidden="true">···</span>
+          </a>
+        </div>
+      </aside>
+
+      <main id="home" class="main-content">
+        <header class="topbar">
+          <span class="today-label"><span class="status-dot"></span> YOUR STUDY SPACE</span>
+          <button class="topbar-avatar" type="button" aria-label="Your profile">N</button>
+        </header>
+
+        <section class="welcome-section" aria-labelledby="welcome-heading">
+          <div>
+            <p class="eyebrow"><span id="today-date"></span> <span aria-hidden="true">✦</span></p>
+            <h1 id="welcome-heading">Hey Noa, <span>you’ve got this.</span></h1>
+            <p class="welcome-copy">A little English every day goes a long way. Ready for today?</p>
+          </div>
+          <div class="level-picker">
+            <label for="unit-select">I’m studying</label>
+            <select id="unit-select" aria-label="Choose your English study level">
+              <option value="3">3 units</option>
+              <option value="4" selected>4 units</option>
+              <option value="5">5 units</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="Your learning progress">
+          <article class="stat-card streak-card">
+            <div class="stat-icon peach" aria-hidden="true">♨</div>
+            <div><p class="stat-label">DAY STREAK</p><p class="stat-value"><span id="streak-count">5</span> <span class="stat-unit">days</span></p></div>
+            <span class="stat-aside">🔥</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon mint" aria-hidden="true">↗</div>
+            <div><p class="stat-label">THIS WEEK</p><p class="stat-value"><span id="weekly-count">3</span><span class="stat-unit">/ 5 sessions</span></p></div>
+            <div class="mini-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon lilac" aria-hidden="true">◎</div>
+            <div><p class="stat-label">PRACTICE SCORE</p><p class="stat-value"><span id="score-count">82</span><span class="stat-unit">%</span></p></div>
+            <span class="score-trend">↑ 6%</span>
+          </article>
+        </section>
+
+        <section class="today-layout" aria-label="Today's learning">
+          <article class="practice-card" id="practice">
+            <div class="card-heading">
+              <div>
+                <p class="eyebrow">YOUR DAILY 5-MINUTE WIN</p>
+                <h2>Quick practice</h2>
+              </div>
+              <span class="practice-tag"><span aria-hidden="true">✳</span> Adaptive</span>
+            </div>
+            <div class="question-meta"><span id="question-topic">GRAMMAR · VERB TENSES</span><span id="question-count">QUESTION 1 OF 3</span></div>
+            <p class="question-text" id="question-text">If I <span>_____</span> more time, I would learn another language.</p>
+            <div class="answer-list" id="answer-list" role="group" aria-label="Choose the missing word"></div>
+            <div class="feedback" id="feedback" role="status" aria-live="polite" hidden></div>
+            <button class="primary-button" id="check-answer" type="button" disabled>Check my answer <span aria-hidden="true">→</span></button>
+            <p class="adaptive-note"><span aria-hidden="true">✦</span> Questions adapt to your level and progress.</p>
+          </article>
+
+          <aside class="side-column">
+            <article class="goal-card">
+              <div class="goal-heading"><span class="goal-icon" aria-hidden="true">✦</span><span class="eyebrow">WEEKLY GOAL</span></div>
+              <h2>You’re on a roll!</h2>
+              <p>You’ve completed <strong id="goal-completed">3 of 5</strong> study sessions this week.</p>
+              <div class="goal-track" role="progressbar" aria-label="Weekly study sessions" aria-valuemin="0" aria-valuemax="5" aria-valuenow="3"><span id="goal-progress"></span></div>
+              <div class="goal-footer"><span>3 sessions</span><span>5 sessions</span></div>
+            </article>
+
+            <article class="tip-card">
+              <span class="tip-icon" aria-hidden="true">“</span>
+              <p class="eyebrow">A LITTLE REMINDER</p>
+              <blockquote>Progress isn’t always loud. Sometimes it’s just showing up again.</blockquote>
+              <span class="tip-spark" aria-hidden="true">✳</span>
+            </article>
+          </aside>
+        </section>
+
+        <section class="bottom-grid">
+          <article class="lessons-card" id="lessons">
+            <div class="section-heading">
+              <div><p class="eyebrow">MADE FOR YOUR LEVEL</p><h2>Pick up where you left off</h2></div>
+              <a class="text-link" href="#lessons">All lessons <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="lesson-row">
+              <span class="lesson-icon blue" aria-hidden="true">Aa</span>
+              <span class="lesson-info"><strong>Conditionals, made simple</strong><small>Grammar · 8 min</small></span>
+              <span class="lesson-progress"><span></span></span><span class="lesson-percent">60%</span>
+              <button class="icon-button lesson-start" type="button" data-message="Your conditionals lesson is ready. Keep going!">→<span class="sr-only">Continue conditionals lesson</span></button>
+            </div>
+            <div class="lesson-row">
+              <span class="lesson-icon yellow" aria-hidden="true">✎</span>
+              <span class="lesson-info"><strong>Writing a strong opinion</strong><small>Writing · 12 min</small></span>
+              <span class="lesson-progress empty"><span></span></span><span class="lesson-percent">New</span>
+              <button class="icon-button lesson-start" type="button" data-message="Your opinion-writing lesson is ready to start.">→<span class="sr-only">Start opinion-writing lesson</span></button>
+            </div>
+            <p class="lesson-message" id="lesson-message" role="status" aria-live="polite"></p>
+          </article>
+
+          <article class="exam-card" id="exam">
+            <div class="exam-art" aria-hidden="true"><span class="exam-sun"></span><span class="exam-book">✎</span><span class="exam-star">✳</span></div>
+            <p class="eyebrow">FEELING EXAM-READY?</p>
+            <h2>Your next exam,<br />one step at a time.</h2>
+            <p>Practice reading, writing and vocabulary at your pace.</p>
+            <button class="exam-button" id="exam-button" type="button">Explore exam prep <span aria-hidden="true">→</span></button>
+            <p class="exam-message" id="exam-message" role="status" aria-live="polite"></p>
+          </article>
+        </section>
+
+        <footer class="page-footer">Made for your pace. Built for your goals. <span>♥</span></footer>
+      </main>
+    </div>
+  </body>
+</html>
