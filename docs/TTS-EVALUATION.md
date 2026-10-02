@@ -45,4 +45,10 @@ Facts from research (sources in the lab report):
 A paid cloud voice (e.g. Azure Neural, ElevenLabs) is an option only, not
 connected.
 
-Open decision for the parent: final voices per accent (after listening).
+## Decision (2026-10-02, chosen by ear)
+
+- Main voice: Kokoro `af_heart` (American, female). Second dialogue voice: `am_michael` (American, male).
+- Slow mode: the same voice generated at speed 0.8.
+- British voices were not chosen. A student set to British English uses the best device voice.
+- Rendered: 94 texts (items, words, example sentences, passage sentences) × normal/slow = 188 MP3 files, 3.6 MB, precached for offline use.
+- `content/audioCoverage.test.ts` fails if new content has no audio. Fix: run `tools/tts-prerender`.

@@ -2,6 +2,7 @@ import { audioKey } from '../audioKey';
 import type { AudioPlayback } from '../playback/audioPlayer';
 import { abortError, type SpeakRequest, type SpeechProvider, type SpeechVoice } from '../types';
 import { NEURAL_VOICES } from '../voiceProfiles';
+import { splitSentences } from '../textPrep';
 
 /**
  * Plays neural-voice audio files generated ahead of time by
@@ -38,23 +39,34 @@ export class PrerenderedProvider implements SpeechProvider {
     return this.loading;
   }
 
-  private urlFor(req: SpeakRequest, m: PrerenderManifest): string | undefined {
+  /**
+   * Files for this request: one file for the whole text, or one per
+   * sentence for long texts (reading passages). Undefined if any is missing.
+   */
+  private urlsFor(req: SpeakRequest, m: PrerenderManifest): string[] | undefined {
     const voice = NEURAL_VOICES[req.accent][req.speaker ?? 'A'];
-    return m.entries[audioKey(voice, req.rate, req.text)];
+    const whole = m.entries[audioKey(voice, req.rate, req.text)];
+    if (whole) return [whole];
+    const parts = splitSentences(req.text);
+    if (parts.length < 2) return undefined;
+    const urls = parts.map((p) => m.entries[audioKey(voice, req.rate, p)]);
+    return urls.every(Boolean) ? (urls as string[]) : undefined;
   }
 
   async canSpeak(req: SpeakRequest): Promise<boolean> {
     const m = await this.load();
-    return !!m && !!this.urlFor(req, m);
+    return !!m && !!this.urlsFor(req, m);
   }
 
   async speak(req: SpeakRequest & { onStart?: () => void }): Promise<void> {
     const m = await this.load();
-    const url = m && this.urlFor(req, m);
-    if (!url) throw new Error('not pre-rendered');
-    if (req.signal?.aborted) throw abortError();
+    const urls = m && this.urlsFor(req, m);
+    if (!urls) throw new Error('not pre-rendered');
     req.onStart?.();
-    await this.playback.play(url, req.signal);
+    for (const url of urls) {
+      if (req.signal?.aborted) throw abortError();
+      await this.playback.play(url, req.signal);
+    }
   }
 
   stop(): void {

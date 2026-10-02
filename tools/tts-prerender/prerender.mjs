@@ -17,6 +17,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { audioKey } from '../../src/services/speech/audioKey.ts';
+import { splitSentences } from '../../src/services/speech/textPrep.ts';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '../..');
@@ -26,6 +27,10 @@ const limit = limitArg > 0 ? Number(process.argv[limitArg + 1]) : Infinity;
 
 // Keep in sync with src/services/speech/voiceProfiles.ts
 const VOICES = { 'en-US': { A: 'af_heart', B: 'am_michael' }, 'en-GB': { A: 'bf_emma', B: 'bm_george' } };
+// Accents to render. Chosen by ear on 2026-10-02: American only.
+// Add en-GB with: --accents en-US,en-GB
+const accArg = process.argv.indexOf('--accents');
+const ACCENTS = accArg > 0 ? process.argv[accArg + 1].split(',') : ['en-US'];
 const RATES = { normal: 1, slow: 0.8 };
 const TEST_SENTENCES = [
   'Hello, my name is Sarah.',
@@ -45,7 +50,8 @@ function collectTexts() {
       if (it.word?.lemma) texts.add(it.word.lemma);
       if (it.word?.example) texts.add(it.word.example);
     }
-    // Passages are long; they use the home server or the device voice for now.
+    // Passages are rendered per sentence; the app plays them in sequence.
+    for (const p of pack.passages ?? []) for (const s of splitSentences(p.text)) texts.add(s);
   }
   return [...texts];
 }
@@ -59,7 +65,7 @@ const manifest = fs.existsSync(manifestPath)
 const texts = collectTexts().slice(0, limit);
 const jobs = [];
 for (const text of texts) {
-  for (const accent of Object.keys(VOICES)) {
+  for (const accent of ACCENTS) {
     for (const [rate, speed] of Object.entries(RATES)) {
       const voice = VOICES[accent].A;
       const key = audioKey(voice, rate, text);

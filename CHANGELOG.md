@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+- Natural American voice (Kokoro af_heart) for all fixed content, normal and slow, offline.
+- Reading passages play sentence by sentence from pre-rendered audio.
+- Test that every speakable text has audio.
+
 ## 0.1.0 (Stage 1)
 - Project scaffold: Vite, React, TypeScript, PWA, Vitest.
 - Learning domain: CEFR scale, skill taxonomy, Israeli 3/4/5 mapping layer,

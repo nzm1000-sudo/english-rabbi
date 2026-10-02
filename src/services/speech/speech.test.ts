@@ -178,6 +178,17 @@ describe('pre-rendered provider', () => {
     expect(playback.played).toEqual(['audio/x.mp3']);
   });
 
+  it('plays a long text sentence by sentence when every sentence is pre-rendered', async () => {
+    const a = 'The ground was dry.';
+    const b = 'The students did not give up.';
+    const manifest = { version: 1, engine: 'kokoro', entries: { [audioKey('af_heart', 'normal', a)]: 'audio/a.mp3', [audioKey('af_heart', 'normal', b)]: 'audio/b.mp3' } };
+    const playback = new FakePlayback();
+    const p = new PrerenderedProvider(playback, 'm', (async () => new Response(JSON.stringify(manifest))) as typeof fetch);
+    await p.speak({ text: `${a} ${b}`, accent: 'en-US', rate: 'normal' });
+    expect(playback.played).toEqual(['audio/a.mp3', 'audio/b.mp3']);
+    expect(await p.canSpeak({ text: `${a} Something else.`, accent: 'en-US', rate: 'normal' })).toBe(false);
+  });
+
   it('degrades gracefully when there is no manifest', async () => {
     const p = new PrerenderedProvider(new FakePlayback(), 'audio/manifest.json', (async () => new Response('', { status: 404 })) as typeof fetch);
     expect(await p.canSpeak({ text: 'x', accent: 'en-US', rate: 'normal' })).toBe(false);

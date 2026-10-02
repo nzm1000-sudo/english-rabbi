@@ -119,6 +119,7 @@ function StudentFormInner({ student }: { student: Student | null }) {
               בריטי
             </button>
           </div>
+          {accent === 'en-GB' && <span className="xs muted">במבטא בריטי ההקראה היא בקול של המכשיר, פחות טבעי.</span>}
         </div>
 
         <div className="field">
