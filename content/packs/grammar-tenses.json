@@ -123,7 +123,7 @@
       "id": "gt.ps.habit-vs-now.drink",
       "type": "choice",
       "skill": "grammar.present-simple",
-      "level": "A2",
+      "level": "B1",
       "difficulty": 0.5,
       "prompt": "My dad ___ coffee every morning, but today he is drinking tea.",
       "instruction": {
@@ -173,7 +173,8 @@
         "food"
       ],
       "tags": [
-        "grammar"
+        "grammar",
+        "bagrut"
       ],
       "estimatedTimeSec": 15,
       "source": "original",
@@ -2120,7 +2121,7 @@
       "id": "gt.prog.stative.know",
       "type": "choice",
       "skill": "grammar.present-progressive",
-      "level": "A2",
+      "level": "B1",
       "difficulty": 0.6,
       "prompt": "I ___ the answer to this question.",
       "instruction": {
@@ -2162,7 +2163,8 @@
       ],
       "interests": [],
       "tags": [
-        "grammar"
+        "grammar",
+        "bagrut"
       ],
       "estimatedTimeSec": 15,
       "source": "original",
@@ -2759,7 +2761,7 @@
       "id": "gt.past.plan",
       "type": "typed",
       "skill": "grammar.past-simple",
-      "level": "A2",
+      "level": "B1",
       "difficulty": 0.6,
       "prompt": "They ___ a big party for her birthday. (plan)",
       "instruction": {
@@ -2794,7 +2796,8 @@
       ],
       "interests": [],
       "tags": [
-        "grammar"
+        "grammar",
+        "bagrut"
       ],
       "estimatedTimeSec": 20,
       "source": "original",
@@ -3249,7 +3252,7 @@
       "id": "gt.irr.drink",
       "type": "typed",
       "skill": "grammar.past-simple.irregular",
-      "level": "A2",
+      "level": "B1",
       "difficulty": 0.6,
       "prompt": "The kids ___ a lot of water after the game. (drink)",
       "instruction": {
@@ -3293,7 +3296,8 @@
         "sports"
       ],
       "tags": [
-        "grammar"
+        "grammar",
+        "bagrut"
       ],
       "estimatedTimeSec": 20,
       "source": "original",
@@ -4503,7 +4507,7 @@
       "id": "gt.pastprog.wait",
       "type": "typed",
       "skill": "grammar.past-progressive",
-      "level": "A2",
+      "level": "B1",
       "difficulty": 0.6,
       "prompt": "We were ___ for the bus when we saw Tom. (wait)",
       "instruction": {
@@ -4547,7 +4551,8 @@
         "travel"
       ],
       "tags": [
-        "grammar"
+        "grammar",
+        "bagrut"
       ],
       "estimatedTimeSec": 20,
       "source": "original",
@@ -5689,7 +5694,7 @@
       "id": "gt.fut.think-sunny",
       "type": "choice",
       "skill": "grammar.future",
-      "level": "A2",
+      "level": "B1",
       "difficulty": 0.5,
       "prompt": "I think it ___ be sunny tomorrow.",
       "instruction": {
@@ -5730,7 +5735,8 @@
         "science"
       ],
       "tags": [
-        "grammar"
+        "grammar",
+        "bagrut"
       ],
       "estimatedTimeSec": 15,
       "source": "original",
@@ -5789,7 +5795,7 @@
       "id": "gt.fut.fall",
       "type": "typed",
       "skill": "grammar.future",
-      "level": "A2",
+      "level": "B1",
       "difficulty": 0.6,
       "prompt": "Watch out! That glass is going to ___ off the table. (fall)",
       "instruction": {
@@ -5832,7 +5838,8 @@
       ],
       "interests": [],
       "tags": [
-        "grammar"
+        "grammar",
+        "bagrut"
       ],
       "estimatedTimeSec": 20,
       "source": "original",
@@ -6323,7 +6330,7 @@
       "id": "gt.perf.see",
       "type": "typed",
       "skill": "grammar.present-perfect",
-      "level": "A2",
+      "level": "B1",
       "difficulty": 0.5,
       "prompt": "I have ___ that movie three times. (see)",
       "instruction": {
@@ -6367,7 +6374,8 @@
         "movies"
       ],
       "tags": [
-        "grammar"
+        "grammar",
+        "bagrut"
       ],
       "estimatedTimeSec": 20,
       "source": "original",
