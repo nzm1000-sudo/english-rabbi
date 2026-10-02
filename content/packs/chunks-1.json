@@ -1,0 +1,3814 @@
+{
+  "packId": "chunks-1",
+  "schemaVersion": 1,
+  "title": "Chunks and collocations 1",
+  "items": [
+    {
+      "id": "chunk.make-a-decision.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:make a decision",
+      "type": "choice",
+      "prompt": "Abba and Ima need to ___ a decision about the summer trip.",
+      "audioText": "Abba and Ima need to make a decision about the summer trip.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "make"
+        },
+        {
+          "id": "b",
+          "text": "receive",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "do",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal",
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "בעברית אומרים 'לקבל החלטה'. באנגלית לא מתרגמים מילה במילה.",
+          "en": "Do not translate the Hebrew word by word."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־a mistake.",
+          "en": "It is the same verb as with a mistake."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'לקבל החלטה', באנגלית make a decision. receive הוא תרגום מילולי של 'לקבל', ולא אומרים כך באנגלית.",
+        "en": "In English we make a decision. We do not receive or do a decision."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.make-a-decision.he",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:make a decision",
+      "type": "choice",
+      "prompt": "לקבל החלטה",
+      "promptLanguage": "he",
+      "audioText": "make a decision",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "make a decision"
+        },
+        {
+          "id": "b",
+          "text": "receive a decision",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "do a decision",
+          "misconception": "collocations.make-do"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal",
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "לא לתרגם את 'לקבל' מילה במילה.",
+          "en": "Do not translate the verb word by word."
+        },
+        {
+          "he": "הפועל באנגלית הוא 'לעשות' במובן של ליצור משהו.",
+          "en": "The English verb means to create something."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'לקבל החלטה', באנגלית make a decision. החלטה היא משהו שיוצרים, ולכן make.",
+        "en": "We make a decision, as if we create it."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.take-a-photo.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "chunk:take a photo",
+      "type": "choice",
+      "prompt": "Grandma asked Rivka to ___ a photo of the family at the Kotel.",
+      "audioText": "Grandma asked Rivka to take a photo of the family at the Kotel.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "take"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.take-make"
+        },
+        {
+          "id": "c",
+          "text": "do",
+          "misconception": "collocations.hebrew-literal"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal",
+        "collocations.take-make"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'לעשות תמונה'. באנגלית הפועל שונה.",
+          "en": "In Hebrew we 'do' a picture. English uses another verb."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־care of.",
+          "en": "It is the same verb as in ___ care of."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'לצלם' או 'לעשות תמונה', באנגלית take a photo. לא אומרים make a photo או do a photo.",
+        "en": "In English we take a photo or take a picture."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.take-a-photo.typed",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:take a photo",
+      "type": "typed",
+      "prompt": "Ari, can you ___ a picture of me and Grandpa?",
+      "audioText": "Ari, can you take a picture of me and Grandpa?",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "take",
+        "snap"
+      ],
+      "knownErrors": [
+        {
+          "answer": "make",
+          "misconception": "collocations.take-make",
+          "feedback": {
+            "he": "באנגלית take a picture, לא make.",
+            "en": "We take a picture."
+          }
+        },
+        {
+          "answer": "do",
+          "misconception": "collocations.hebrew-literal",
+          "feedback": {
+            "he": "לא מתרגמים 'לעשות תמונה'. אומרים take a picture.",
+            "en": "Not do. We take a picture."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal",
+        "collocations.take-make"
+      ],
+      "hints": [
+        {
+          "he": "picture ו־photo באים עם אותו פועל.",
+          "en": "picture and photo use the same verb."
+        },
+        {
+          "he": "הפועל מתחיל באות t.",
+          "en": "The verb starts with t."
+        }
+      ],
+      "explanation": {
+        "he": "take a picture או take a photo. בעברית 'לעשות תמונה', אבל באנגלית 'לוקחים' תמונה.",
+        "en": "We take a picture, not make or do a picture."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.do-homework.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "chunk:do homework",
+      "type": "choice",
+      "prompt": "Ari always ___ his homework before dinner.",
+      "audioText": "Ari always does his homework before dinner.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "does"
+        },
+        {
+          "id": "b",
+          "text": "makes",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "takes"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'להכין שיעורים'. באנגלית לא make.",
+          "en": "In Hebrew we 'prepare' homework. In English it is not make."
+        },
+        {
+          "he": "עבודה ומשימות באות בדרך כלל עם do.",
+          "en": "Work and tasks usually go with do."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'להכין שיעורי בית', באנגלית do homework. עם עבודה ומשימות משתמשים ב־do.",
+        "en": "We do homework. Work and tasks go with do."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.do-homework.he",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:do homework",
+      "type": "choice",
+      "prompt": "להכין שיעורי בית",
+      "promptLanguage": "he",
+      "audioText": "do homework",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "do homework"
+        },
+        {
+          "id": "b",
+          "text": "make homework",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "do a homework"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "איזה פועל בא עם משימות ועבודה?",
+          "en": "Which verb goes with tasks and work?"
+        },
+        {
+          "he": "homework היא מילה שאין לה רבים, ולא אומרים לפניה a.",
+          "en": "homework is uncountable. No a before it."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'להכין שיעורים', באנגלית do homework. ובלי a, כי homework היא מילה שלא סופרים.",
+        "en": "We do homework, with no a."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.pay-attention.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:pay attention",
+      "type": "choice",
+      "prompt": "Please ___ attention when Rabbi Gold explains the verse.",
+      "audioText": "Please pay attention when Rabbi Gold explains the verse.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "pay"
+        },
+        {
+          "id": "b",
+          "text": "put",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "make"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'לשים לב'. באנגלית לא 'שמים' תשומת לב.",
+          "en": "In Hebrew we 'put' attention. Not in English."
+        },
+        {
+          "he": "זה אותו פועל כמו בתשלום כסף.",
+          "en": "It is the same verb as paying money."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'לשים לב', באנגלית pay attention. כאילו 'משלמים' תשומת לב. put attention הוא תרגום מילולי.",
+        "en": "In English we pay attention, not put attention."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.pay-attention.he",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.6,
+      "unit": "chunk:pay attention",
+      "type": "choice",
+      "prompt": "לשים לב",
+      "promptLanguage": "he",
+      "audioText": "pay attention",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "pay attention"
+        },
+        {
+          "id": "b",
+          "text": "put attention",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "put heart",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "d",
+          "text": "make attention"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "לא לתרגם 'לשים' מילה במילה.",
+          "en": "Do not translate the Hebrew verb word by word."
+        },
+        {
+          "he": "הפועל באנגלית קשור לכסף.",
+          "en": "The English verb is about money."
+        }
+      ],
+      "explanation": {
+        "he": "לשים לב = pay attention. באנגלית 'משלמים' תשומת לב. put heart הוא תרגום מילולי שלא קיים באנגלית.",
+        "en": "pay attention is the English chunk."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.make-a-mistake.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:make a mistake",
+      "type": "choice",
+      "prompt": "Anyone can ___ a mistake. The important thing is to learn from it.",
+      "audioText": "Anyone can make a mistake. The important thing is to learn from it.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "make"
+        },
+        {
+          "id": "b",
+          "text": "do",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "take"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'לעשות טעות'. באנגלית זה לא do.",
+          "en": "In Hebrew we 'do' a mistake. In English it is not do."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־a decision.",
+          "en": "It is the same verb as with a decision."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'לעשות טעות', באנגלית make a mistake. לא אומרים do a mistake.",
+        "en": "We make a mistake, not do a mistake."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.make-a-mistake.typed",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:make a mistake",
+      "type": "typed",
+      "prompt": "Tamar ___ a mistake on her English test, but she fixed it.",
+      "audioText": "Tamar made a mistake on her English test, but she fixed it.",
+      "instruction": {
+        "he": "להשלים את הפועל בעבר",
+        "en": "Complete with the past form"
+      },
+      "answers": [
+        "made"
+      ],
+      "knownErrors": [
+        {
+          "answer": "did",
+          "misconception": "collocations.make-do",
+          "feedback": {
+            "he": "באנגלית make a mistake, ולכן בעבר made.",
+            "en": "We make a mistake. Past: made."
+          }
+        },
+        {
+          "answer": "maked",
+          "misconception": "past-simple.overregularization",
+          "feedback": {
+            "he": "make הוא פועל חריג. בעבר made.",
+            "en": "make is irregular: made."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.make-do",
+        "past-simple.overregularization"
+      ],
+      "hints": [
+        {
+          "he": "הפועל הוא make. מה הצורה שלו בעבר?",
+          "en": "The verb is make. What is its past form?"
+        },
+        {
+          "he": "make הוא פועל חריג.",
+          "en": "make is irregular."
+        }
+      ],
+      "explanation": {
+        "he": "make a mistake, ובעבר made a mistake. בעברית 'עשתה טעות', אבל באנגלית לא did.",
+        "en": "make a mistake. Past: made a mistake."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.keep-a-promise.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "chunk:keep a promise",
+      "type": "choice",
+      "prompt": "Abba said he would take Ari to the Kotel on Sunday, and he ___ his promise.",
+      "audioText": "Abba said he would take Ari to the Kotel on Sunday, and he kept his promise.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "kept"
+        },
+        {
+          "id": "b",
+          "text": "saved",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "did"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'קיים את ההבטחה'. מה עושים באנגלית עם הבטחה?",
+          "en": "In Hebrew we fulfill a promise. What do we do in English?"
+        },
+        {
+          "he": "זה הפועל שמשמעותו 'להחזיק' או 'לשמור אצלך'.",
+          "en": "It means to hold on to something."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'לקיים הבטחה', באנגלית keep a promise. saved פירושו 'חסך' או 'הציל', ולא מתאים להבטחה.",
+        "en": "In English we keep a promise. save means to rescue or not spend."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.keep-a-promise.he",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "chunk:keep a promise",
+      "type": "choice",
+      "prompt": "לקיים הבטחה",
+      "promptLanguage": "he",
+      "audioText": "keep a promise",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "keep a promise"
+        },
+        {
+          "id": "b",
+          "text": "save a promise",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "do a promise"
+        },
+        {
+          "id": "d",
+          "text": "stand in a promise",
+          "misconception": "collocations.hebrew-literal"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "לא לתרגם 'לקיים' או 'לעמוד ב' מילה במילה.",
+          "en": "Do not translate the Hebrew word by word."
+        },
+        {
+          "he": "הפועל באנגלית פירושו 'להחזיק'.",
+          "en": "The English verb means to hold."
+        }
+      ],
+      "explanation": {
+        "he": "לקיים הבטחה = keep a promise. ההפך הוא break a promise, להפר הבטחה.",
+        "en": "keep a promise. The opposite is break a promise."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.give-advice.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "chunk:give advice",
+      "type": "choice",
+      "prompt": "Grandpa Yosef always ___ us good advice.",
+      "audioText": "Grandpa Yosef always gives us good advice.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "gives"
+        },
+        {
+          "id": "b",
+          "text": "says",
+          "misconception": "collocations.say-tell"
+        },
+        {
+          "id": "c",
+          "text": "makes"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.say-tell"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'לתת עצה'. כאן התרגום הישיר עובד.",
+          "en": "In Hebrew we 'give' advice. Here the direct translation works."
+        },
+        {
+          "he": "אחרי say לא בא ישר אדם (us).",
+          "en": "say is not followed directly by a person (us)."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'לתת עצה', וגם באנגלית give advice. says us לא נכון, כי אחרי say לא בא ישר אדם.",
+        "en": "We give advice. say cannot take a person right after it."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.give-advice.he",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "chunk:give advice",
+      "type": "choice",
+      "prompt": "לתת עצה",
+      "promptLanguage": "he",
+      "audioText": "give advice",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "give advice"
+        },
+        {
+          "id": "b",
+          "text": "give an advice"
+        },
+        {
+          "id": "c",
+          "text": "say an advice",
+          "misconception": "collocations.say-tell"
+        },
+        {
+          "id": "d",
+          "text": "make advice"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.say-tell"
+      ],
+      "hints": [
+        {
+          "he": "הפועל זהה לעברית.",
+          "en": "The verb is the same as in Hebrew."
+        },
+        {
+          "he": "advice היא מילה שלא סופרים. האם אפשר a לפניה?",
+          "en": "advice is uncountable. Can we put a before it?"
+        }
+      ],
+      "explanation": {
+        "he": "לתת עצה = give advice. advice היא מילה שלא סופרים, ולכן בלי an. כדי לספור אומרים a piece of advice.",
+        "en": "give advice, with no an. For one: a piece of advice."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.have-a-good-time.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "chunk:have a good time",
+      "type": "choice",
+      "prompt": "We ___ a wonderful time at Grandma's house on Sukkot.",
+      "audioText": "We had a wonderful time at Grandma's house on Sukkot.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "had"
+        },
+        {
+          "id": "b",
+          "text": "passed",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "made"
+        },
+        {
+          "id": "d",
+          "text": "did"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'בילינו' או 'העברנו זמן'. באנגלית 'היה לנו'.",
+          "en": "In Hebrew we 'passed' time. In English we 'had' it."
+        },
+        {
+          "he": "הפועל הוא have, בעבר.",
+          "en": "The verb is have, in the past."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'היה לנו כיף' או 'בילינו', באנגלית have a good time. passed הוא תרגום של 'העברנו', ולא מתאים כאן.",
+        "en": "We have a good time. Past: had a good time."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.have-a-good-time.typed",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:have a good time",
+      "type": "typed",
+      "prompt": "I hope you ___ a good time at the Purim party tonight!",
+      "audioText": "I hope you have a good time at the Purim party tonight!",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "have",
+        "will have"
+      ],
+      "knownErrors": [
+        {
+          "answer": "pass",
+          "misconception": "collocations.hebrew-literal",
+          "feedback": {
+            "he": "לא מתרגמים 'להעביר זמן'. אומרים have a good time.",
+            "en": "Not pass. We have a good time."
+          }
+        },
+        {
+          "answer": "make",
+          "feedback": {
+            "he": "לא make. אומרים have a good time.",
+            "en": "Not make. We have a good time."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "איך אומרים 'שיהיה לך'?",
+          "en": "How do we say 'that you will have'?"
+        },
+        {
+          "he": "הפועל מתחיל באות h.",
+          "en": "The verb starts with h."
+        }
+      ],
+      "explanation": {
+        "he": "have a good time = ליהנות, לבלות. I hope you have a good time! זו ברכה נפוצה לפני מסיבה או טיול.",
+        "en": "have a good time means to enjoy yourself."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.catch-a-bus.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:catch a bus",
+      "type": "choice",
+      "prompt": "Tamar ran to the bus stop and just ___ the bus before it left.",
+      "audioText": "Tamar ran to the bus stop and just caught the bus before it left.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "caught"
+        },
+        {
+          "id": "b",
+          "text": "arrived",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "succeeded",
+          "misconception": "collocations.hebrew-literal"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'הספיקה את האוטובוס' או 'תפסה את האוטובוס'.",
+          "en": "In Hebrew we 'manage' or 'grab' the bus."
+        },
+        {
+          "he": "כאן דווקא 'תפסה' הוא התרגום הנכון.",
+          "en": "Here 'grabbed' is the right idea."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'להספיק את האוטובוס', באנגלית catch the bus (תפסה, caught). ההפך הוא miss the bus. arrive צריך at, ו־succeed לא בא עם אוטובוס.",
+        "en": "We catch a bus. The opposite is miss a bus."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.catch-a-bus.he",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.6,
+      "unit": "chunk:catch a bus",
+      "type": "choice",
+      "prompt": "להספיק את האוטובוס",
+      "promptLanguage": "he",
+      "audioText": "catch the bus",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "catch the bus"
+        },
+        {
+          "id": "b",
+          "text": "succeed the bus",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "arrive the bus",
+          "misconception": "collocations.hebrew-literal"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "לא לתרגם 'להספיק' מילה במילה.",
+          "en": "Do not translate the Hebrew verb word by word."
+        },
+        {
+          "he": "הפועל באנגלית פירושו 'לתפוס'.",
+          "en": "The English verb means to grab."
+        }
+      ],
+      "explanation": {
+        "he": "להספיק את האוטובוס = catch the bus. לפספס את האוטובוס = miss the bus.",
+        "en": "catch the bus; the opposite is miss the bus."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.take-care-of.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:take care of",
+      "type": "choice",
+      "prompt": "Tamar ___ care of baby Eli while Ima goes to the store.",
+      "audioText": "Tamar takes care of baby Eli while Ima goes to the store.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "takes"
+        },
+        {
+          "id": "b",
+          "text": "makes",
+          "misconception": "collocations.take-make"
+        },
+        {
+          "id": "c",
+          "text": "gives"
+        },
+        {
+          "id": "d",
+          "text": "does"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.take-make"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'לטפל ב' או 'לשמור על'. באנגלית זה צירוף קבוע עם care.",
+          "en": "In Hebrew it is one verb. In English it is a chunk with care."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־a photo.",
+          "en": "It is the same verb as with a photo."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'לטפל ב' או 'לשמור על', באנגלית take care of. כדאי ללמוד את כל הצירוף: take care of someone.",
+        "en": "take care of someone means to look after them."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.take-care-of.typed",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:take care of",
+      "type": "typed",
+      "prompt": "Mrs. Klein lives alone, so the Shapiro family helps take care ___ her.",
+      "audioText": "Mrs. Klein lives alone, so the Shapiro family helps take care of her.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "of"
+      ],
+      "knownErrors": [
+        {
+          "answer": "on",
+          "misconception": "prepositions.dependent",
+          "feedback": {
+            "he": "בעברית 'לשמור על', אבל באנגלית take care of.",
+            "en": "Not on. We say take care of."
+          }
+        },
+        {
+          "answer": "about",
+          "misconception": "prepositions.dependent",
+          "feedback": {
+            "he": "לא about. אומרים take care of.",
+            "en": "Not about. We say take care of."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "prepositions.dependent"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'לשמור על'. באנגלית מילת היחס שונה.",
+          "en": "In Hebrew we use 'on'. English uses another preposition."
+        },
+        {
+          "he": "זו אותה מילת יחס כמו ב־afraid ___.",
+          "en": "It is the same preposition as in afraid ___."
+        }
+      ],
+      "explanation": {
+        "he": "take care of someone = לטפל במישהו, לדאוג לו. בעברית 'לשמור על', אבל באנגלית of ולא on.",
+        "en": "take care of someone, not take care on."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.on-time.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:on time",
+      "type": "choice",
+      "prompt": "Rabbi Gold starts class at eight, so please come ___ time.",
+      "audioText": "Rabbi Gold starts class at eight, so please come on time.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "on"
+        },
+        {
+          "id": "b",
+          "text": "at",
+          "misconception": "prepositions.time"
+        },
+        {
+          "id": "c",
+          "text": "by"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "prepositions.time"
+      ],
+      "hints": [
+        {
+          "he": "השיעור מתחיל בשעה מדויקת. צריך להגיע 'בזמן', לא באיחור.",
+          "en": "Class starts at an exact hour. Come at that hour, not late."
+        },
+        {
+          "he": "זו אותה מילת יחס כמו בימים: ___ Sunday.",
+          "en": "It is the same preposition as with days: ___ Sunday."
+        }
+      ],
+      "explanation": {
+        "he": "on time = בדיוק בזמן שנקבע, בלי איחור. in time = מספיק מוקדם כדי להספיק משהו.",
+        "en": "on time means at the planned time, not late."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.on-time.typed",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:on time",
+      "type": "typed",
+      "prompt": "The bus came exactly ___ time, at 7:30.",
+      "audioText": "The bus came exactly on time, at 7:30.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "on"
+      ],
+      "knownErrors": [
+        {
+          "answer": "in",
+          "misconception": "prepositions.time",
+          "feedback": {
+            "he": "in time פירושו 'מספיק מוקדם בשביל משהו'. כאן מדובר בשעה המדויקת, ולכן on time.",
+            "en": "in time means early enough. Here: on time."
+          }
+        },
+        {
+          "answer": "at",
+          "misconception": "prepositions.time",
+          "feedback": {
+            "he": "לא אומרים at time. אומרים on time.",
+            "en": "We say on time."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "prepositions.time"
+      ],
+      "hints": [
+        {
+          "he": "האוטובוס הגיע בדיוק בשעה שנקבעה.",
+          "en": "The bus came at the planned hour."
+        },
+        {
+          "he": "שתי אותיות.",
+          "en": "Two letters."
+        }
+      ],
+      "explanation": {
+        "he": "on time = בדיוק בזמן, לפי לוח הזמנים. The bus came on time.",
+        "en": "on time means at the planned time."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.in-time.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "chunk:in time",
+      "type": "choice",
+      "prompt": "We got to the Kotel just ___ time to see the sunrise.",
+      "audioText": "We got to the Kotel just in time to see the sunrise.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "in"
+        },
+        {
+          "id": "b",
+          "text": "on",
+          "misconception": "prepositions.time"
+        },
+        {
+          "id": "c",
+          "text": "at"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "prepositions.time"
+      ],
+      "hints": [
+        {
+          "he": "הגענו מספיק מוקדם כדי לראות משהו.",
+          "en": "We came early enough to see something."
+        },
+        {
+          "he": "אחרי הצירוף בא to או for.",
+          "en": "The chunk is followed by to or for."
+        }
+      ],
+      "explanation": {
+        "he": "in time (to / for) = מספיק מוקדם כדי להספיק משהו. just in time = ממש ברגע האחרון. on time = לפי השעה שנקבעה.",
+        "en": "in time = early enough for something. on time = at the planned time."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.in-time.typed",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "chunk:in time",
+      "type": "typed",
+      "prompt": "Ima finished cooking just ___ time for Shabbat.",
+      "audioText": "Ima finished cooking just in time for Shabbat.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "in"
+      ],
+      "knownErrors": [
+        {
+          "answer": "on",
+          "misconception": "prepositions.time",
+          "feedback": {
+            "he": "on time פירושו 'לפי השעה שנקבעה'. כאן היא הספיקה לפני שבת, ולכן in time for.",
+            "en": "Here she was early enough: in time for."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "prepositions.time"
+      ],
+      "hints": [
+        {
+          "he": "אמא הספיקה לסיים לפני שבת.",
+          "en": "Ima finished before Shabbat came."
+        },
+        {
+          "he": "אחרי הרווח בא for. זה הצירוף ___ time for.",
+          "en": "The chunk is ___ time for."
+        }
+      ],
+      "explanation": {
+        "he": "just in time for = ממש ברגע האחרון, אבל הספיקה. in time for Shabbat = לפני כניסת שבת.",
+        "en": "just in time for = early enough, at the last moment."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.look-forward-to.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "chunk:look forward to",
+      "type": "choice",
+      "prompt": "The children are looking forward ___ Pesach.",
+      "audioText": "The children are looking forward to Pesach.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "to"
+        },
+        {
+          "id": "b",
+          "text": "for",
+          "misconception": "prepositions.dependent"
+        },
+        {
+          "id": "c",
+          "text": "at"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "prepositions.dependent"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'מצפים ל'. כאן מילת היחס דווקא מתאימה לעברית.",
+          "en": "In Hebrew we 'look forward to'. Here the Hebrew preposition fits."
+        },
+        {
+          "he": "לא for. for בא עם wait.",
+          "en": "Not for. for goes with wait."
+        }
+      ],
+      "explanation": {
+        "he": "look forward to = לחכות בשמחה, לצפות ל. wait for = לחכות. לא מערבבים: looking forward to Pesach.",
+        "en": "look forward to something. wait for something."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.look-forward-to.typed",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "chunk:look forward to",
+      "type": "typed",
+      "prompt": "We are looking forward to ___ Grandpa and Grandma on Sunday. (see)",
+      "audioText": "We are looking forward to seeing Grandpa and Grandma on Sunday.",
+      "instruction": {
+        "he": "להשלים את הפועל בצורה הנכונה",
+        "en": "Complete with the correct form of the verb"
+      },
+      "answers": [
+        "seeing"
+      ],
+      "knownErrors": [
+        {
+          "answer": "see",
+          "misconception": "gerund-infinitive.after-preposition",
+          "feedback": {
+            "he": "כאן to היא מילת יחס, לא חלק מ־to see. אחריה בא פועל עם ing.",
+            "en": "Here to is a preposition. Use the -ing form."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "gerund-infinitive.after-preposition"
+      ],
+      "hints": [
+        {
+          "he": "ב־look forward to המילה to היא מילת יחס.",
+          "en": "In look forward to, to is a preposition."
+        },
+        {
+          "he": "אחרי מילת יחס בא פועל עם ing.",
+          "en": "After a preposition we use -ing."
+        }
+      ],
+      "explanation": {
+        "he": "look forward to + שם עצם או פועל עם ing. We are looking forward to seeing them. זו טעות נפוצה מאוד בבגרות.",
+        "en": "look forward to + noun or -ing: looking forward to seeing."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.good-at.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:be good at",
+      "type": "choice",
+      "prompt": "Tamar is very good ___ math.",
+      "audioText": "Tamar is very good at math.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "at"
+        },
+        {
+          "id": "b",
+          "text": "in",
+          "misconception": "prepositions.dependent"
+        },
+        {
+          "id": "c",
+          "text": "with"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "prepositions.dependent"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'טובה במתמטיקה'. באנגלית לא in.",
+          "en": "In Hebrew we say 'good in'. In English it is not in."
+        },
+        {
+          "he": "זו אותה מילת יחס כמו בשעות: ___ eight.",
+          "en": "It is the same preposition as with hours: ___ eight."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'טובה ב', באנגלית good at. גם bad at: חלשה ב.",
+        "en": "We say good at and bad at."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.good-at.typed",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:be good at",
+      "type": "typed",
+      "prompt": "Ari is good ___ reading from the Torah with the right tune.",
+      "audioText": "Ari is good at reading from the Torah with the right tune.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "at"
+      ],
+      "knownErrors": [
+        {
+          "answer": "in",
+          "misconception": "prepositions.dependent",
+          "feedback": {
+            "he": "בעברית 'טוב ב', אבל באנגלית good at.",
+            "en": "Not in. We say good at."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "prepositions.dependent"
+      ],
+      "hints": [
+        {
+          "he": "לא לתרגם את ה־ב מהעברית.",
+          "en": "Do not translate the Hebrew preposition."
+        },
+        {
+          "he": "שתי אותיות, מתחיל ב־a.",
+          "en": "Two letters, starts with a."
+        }
+      ],
+      "explanation": {
+        "he": "good at + שם עצם או פועל עם ing. Ari is good at reading. בעברית 'טוב ב', באנגלית at.",
+        "en": "good at + noun or -ing."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.depend-on.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "chunk:depend on",
+      "type": "choice",
+      "prompt": "Our trip to the north depends ___ the weather.",
+      "audioText": "Our trip to the north depends on the weather.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "on"
+        },
+        {
+          "id": "b",
+          "text": "in",
+          "misconception": "prepositions.dependent"
+        },
+        {
+          "id": "c",
+          "text": "from",
+          "misconception": "prepositions.dependent"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "prepositions.dependent"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'תלוי ב'. באנגלית לא in.",
+          "en": "In Hebrew we say 'depends in'. In English it is not in."
+        },
+        {
+          "he": "זו אותה מילת יחס כמו ב־rely ___.",
+          "en": "It is the same preposition as in rely ___."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'תלוי ב', באנגלית depend on. גם rely on, לסמוך על.",
+        "en": "We say depend on and rely on."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.depend-on.he",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "chunk:depend on",
+      "type": "choice",
+      "prompt": "זה תלוי בך.",
+      "promptLanguage": "he",
+      "audioText": "It depends on you.",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It depends on you."
+        },
+        {
+          "id": "b",
+          "text": "It depends in you.",
+          "misconception": "prepositions.dependent"
+        },
+        {
+          "id": "c",
+          "text": "It depends from you.",
+          "misconception": "prepositions.dependent"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "prepositions.dependent"
+      ],
+      "hints": [
+        {
+          "he": "ההבדל הוא רק במילת היחס.",
+          "en": "Only the preposition is different."
+        },
+        {
+          "he": "לא לתרגם את ה־ב מהעברית.",
+          "en": "Do not translate the Hebrew preposition."
+        }
+      ],
+      "explanation": {
+        "he": "תלוי ב = depends on. It depends on you. גם בתשובה קצרה: It depends. (זה תלוי.)",
+        "en": "It depends on you."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.in-my-opinion.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "chunk:in my opinion",
+      "type": "choice",
+      "prompt": "___ my opinion, the best part of Shabbat is the family meal.",
+      "audioText": "In my opinion, the best part of Shabbat is the family meal.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "In"
+        },
+        {
+          "id": "b",
+          "text": "To",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "By"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'לדעתי'. באנגלית לא מתרגמים את ה־ל.",
+          "en": "In Hebrew we say 'to my opinion'. Not in English."
+        },
+        {
+          "he": "זו מילת יחס של 'בתוך'.",
+          "en": "It is the preposition meaning 'inside'."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'לדעתי', באנגלית in my opinion. אפשר גם I think. To my opinion הוא תרגום מילולי.",
+        "en": "We say in my opinion, not to my opinion."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.in-my-opinion.typed",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "chunk:in my opinion",
+      "type": "typed",
+      "prompt": "___ my opinion, visiting Mrs. Klein is a beautiful mitzvah.",
+      "audioText": "In my opinion, visiting Mrs. Klein is a beautiful mitzvah.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "In"
+      ],
+      "knownErrors": [
+        {
+          "answer": "To",
+          "misconception": "collocations.hebrew-literal",
+          "feedback": {
+            "he": "לא מתרגמים 'לדעתי' מילה במילה. אומרים In my opinion.",
+            "en": "Not to. We say in my opinion."
+          }
+        },
+        {
+          "answer": "By",
+          "feedback": {
+            "he": "לא by. אומרים In my opinion.",
+            "en": "Not by. We say in my opinion."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "איך פותחים משפט של דעה בחיבור בבגרות?",
+          "en": "How do we open an opinion sentence in an essay?"
+        },
+        {
+          "he": "שתי אותיות.",
+          "en": "Two letters."
+        }
+      ],
+      "explanation": {
+        "he": "In my opinion = לדעתי. פתיחה טובה לפסקת דעה בבגרות.",
+        "en": "In my opinion is a good way to start an opinion paragraph."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.as-soon-as.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "chunk:as soon as",
+      "type": "choice",
+      "prompt": "Call us ___ you get to Grandma's house.",
+      "audioText": "Call us as soon as you get to Grandma's house.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "as soon as"
+        },
+        {
+          "id": "b",
+          "text": "in the minute that",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "so fast that"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'ברגע ש'. באנגלית יש צירוף קבוע.",
+          "en": "In Hebrew we say 'in the moment that'. English has a fixed chunk."
+        },
+        {
+          "he": "הצירוף מתחיל ונגמר באותה מילה.",
+          "en": "The chunk starts and ends with the same word."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'ברגע ש' או 'מיד כש', באנגלית as soon as. אחריו בא הווה, גם כשמדברים על העתיד: as soon as you get.",
+        "en": "as soon as = right when. Use the present after it: as soon as you get there."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.as-soon-as.typed",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "chunk:as soon as",
+      "type": "typed",
+      "prompt": "Abba makes Kiddush as soon ___ everyone is at the table.",
+      "audioText": "Abba makes Kiddush as soon as everyone is at the table.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "as"
+      ],
+      "knownErrors": [
+        {
+          "answer": "that",
+          "misconception": "collocations.hebrew-literal",
+          "feedback": {
+            "he": "בעברית 'ברגע ש', אבל באנגלית as soon as ולא that.",
+            "en": "Not that. The chunk is as soon as."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "הצירוף הוא as soon ___.",
+          "en": "The chunk is as soon ___."
+        },
+        {
+          "he": "המילה החסרה זהה למילה הראשונה בצירוף.",
+          "en": "The missing word is the same as the first word."
+        }
+      ],
+      "explanation": {
+        "he": "as soon as = מיד כש, ברגע ש. Abba makes Kiddush as soon as everyone is at the table.",
+        "en": "as soon as = right when."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.at-least.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "chunk:at least",
+      "type": "choice",
+      "prompt": "Ari tries to read ___ one page of a good book every day.",
+      "audioText": "Ari tries to read at least one page of a good book every day.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "at least"
+        },
+        {
+          "id": "b",
+          "text": "at less"
+        },
+        {
+          "id": "c",
+          "text": "in least"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית 'לפחות'. כדאי לבדוק את האיות.",
+          "en": "In Hebrew it is one word. Check the spelling."
+        },
+        {
+          "he": "least היא הצורה של 'הכי מעט'.",
+          "en": "least means the smallest amount."
+        }
+      ],
+      "explanation": {
+        "he": "לפחות = at least. least עם t בסוף, ולפניו at. less פירושו 'פחות', ולא מתאים כאן.",
+        "en": "at least means not less than. Spell it with t: least."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.at-least.he",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:at least",
+      "type": "choice",
+      "prompt": "לפחות",
+      "promptLanguage": "he",
+      "audioText": "at least",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "at least"
+        },
+        {
+          "id": "b",
+          "text": "at less"
+        },
+        {
+          "id": "c",
+          "text": "for less"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצירוף מתחיל במילת יחס של מקום ושעה.",
+          "en": "The chunk starts with the preposition used with hours."
+        },
+        {
+          "he": "המילה השנייה היא 'הכי מעט'.",
+          "en": "The second word means the smallest amount."
+        }
+      ],
+      "explanation": {
+        "he": "לפחות = at least. less = פחות. least = הכי מעט.",
+        "en": "at least: least, not less."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.by-the-way.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:by the way",
+      "type": "choice",
+      "prompt": "___ the way, Grandma called. She wants us to come for Shabbat.",
+      "audioText": "By the way, Grandma called. She wants us to come for Shabbat.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "By"
+        },
+        {
+          "id": "b",
+          "text": "Through",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "In"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'דרך אגב'. לא לתרגם 'דרך' מילה במילה.",
+          "en": "Do not translate the Hebrew word by word."
+        },
+        {
+          "he": "זו אותה מילת יחס כמו ב־___ bus.",
+          "en": "It is the same preposition as in ___ bus."
+        }
+      ],
+      "explanation": {
+        "he": "דרך אגב = by the way. משתמשים בו כשעוברים לנושא חדש. in the way = מפריע, חוסם.",
+        "en": "by the way introduces a new topic. in the way means blocking."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.by-the-way.he",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:by the way",
+      "type": "choice",
+      "prompt": "דרך אגב",
+      "promptLanguage": "he",
+      "audioText": "by the way",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "by the way"
+        },
+        {
+          "id": "b",
+          "text": "on the way"
+        },
+        {
+          "id": "c",
+          "text": "in the way"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כל שלוש האפשרויות קיימות באנגלית, אבל רק אחת היא 'דרך אגב'.",
+          "en": "All three exist, but only one means this."
+        },
+        {
+          "he": "on the way = בדרך. in the way = מפריע.",
+          "en": "on the way = while going. in the way = blocking."
+        }
+      ],
+      "explanation": {
+        "he": "דרך אגב = by the way. on the way = בדרך למקום. in the way = עומד בדרך, מפריע.",
+        "en": "by the way = a side note. on the way = while going. in the way = blocking."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.make-sure.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "chunk:make sure",
+      "type": "choice",
+      "prompt": "Before we leave, Ima ___ sure that the windows are closed.",
+      "audioText": "Before we leave, Ima makes sure that the windows are closed.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "makes"
+        },
+        {
+          "id": "b",
+          "text": "does",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "takes"
+        },
+        {
+          "id": "d",
+          "text": "gives"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'מוודאת'. באנגלית צירוף עם sure.",
+          "en": "In Hebrew it is one verb. In English it is a chunk with sure."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־a decision.",
+          "en": "It is the same verb as with a decision."
+        }
+      ],
+      "explanation": {
+        "he": "לוודא = make sure. לא אומרים do sure.",
+        "en": "make sure means to check that something is right."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.make-sure.typed",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "chunk:make sure",
+      "type": "typed",
+      "prompt": "Please ___ sure the door is locked before we go to shul.",
+      "audioText": "Please make sure the door is locked before we go to shul.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "make"
+      ],
+      "knownErrors": [
+        {
+          "answer": "do",
+          "misconception": "collocations.make-do",
+          "feedback": {
+            "he": "לא do. הצירוף הוא make sure.",
+            "en": "Not do. The chunk is make sure."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "הצירוף פירושו 'לוודא'.",
+          "en": "The chunk means to check."
+        },
+        {
+          "he": "הפועל מתחיל באות m.",
+          "en": "The verb starts with m."
+        }
+      ],
+      "explanation": {
+        "he": "make sure = לוודא. Please make sure the door is locked.",
+        "en": "make sure = check that something is done."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.take-part-in.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "chunk:take part in",
+      "type": "choice",
+      "prompt": "Rivka will ___ part in the Chanukah play at school.",
+      "audioText": "Rivka will take part in the Chanukah play at school.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "take"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.take-make"
+        },
+        {
+          "id": "c",
+          "text": "do"
+        },
+        {
+          "id": "d",
+          "text": "give"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.take-make"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'להשתתף'. באנגלית צירוף עם part.",
+          "en": "In Hebrew it is one verb. In English it is a chunk with part."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־a photo.",
+          "en": "It is the same verb as with a photo."
+        }
+      ],
+      "explanation": {
+        "he": "להשתתף ב = take part in. אפשר גם participate in.",
+        "en": "take part in = participate in."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.take-part-in.typed",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "chunk:take part in",
+      "type": "typed",
+      "prompt": "All the students took part ___ the chesed project.",
+      "audioText": "All the students took part in the chesed project.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "in"
+      ],
+      "knownErrors": [
+        {
+          "answer": "at",
+          "misconception": "prepositions.dependent",
+          "feedback": {
+            "he": "לא at. הצירוף הוא take part in.",
+            "en": "Not at. The chunk is take part in."
+          }
+        },
+        {
+          "answer": "on",
+          "misconception": "prepositions.dependent",
+          "feedback": {
+            "he": "לא on. הצירוף הוא take part in.",
+            "en": "Not on. The chunk is take part in."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "prepositions.dependent"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'השתתפו ב'.",
+          "en": "In Hebrew: took part 'in'."
+        },
+        {
+          "he": "כאן מילת היחס דומה לעברית.",
+          "en": "Here the preposition is like Hebrew."
+        }
+      ],
+      "explanation": {
+        "he": "take part in = להשתתף ב. כאן ה־ב בעברית מתאימה ל־in באנגלית.",
+        "en": "take part in something."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.set-the-table.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:set the table",
+      "type": "choice",
+      "prompt": "Ari, please help me ___ the table for the Shabbat meal.",
+      "audioText": "Ari, please help me set the table for the Shabbat meal.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "set"
+        },
+        {
+          "id": "b",
+          "text": "edit",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "make"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'לערוך שולחן'. באנגלית edit הוא עריכה של טקסט.",
+          "en": "In Hebrew we 'edit' a table. In English edit is for texts."
+        },
+        {
+          "he": "הפועל פירושו 'להניח', 'לסדר'.",
+          "en": "The verb means to put in place."
+        }
+      ],
+      "explanation": {
+        "he": "לערוך את השולחן = set the table. edit הוא לערוך טקסט או סרט. make the table = לבנות שולחן.",
+        "en": "We set the table. edit is for texts."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.set-the-table.typed",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:set the table",
+      "type": "typed",
+      "prompt": "Last Friday, Tamar ___ the table for eight guests.",
+      "audioText": "Last Friday, Tamar set the table for eight guests.",
+      "instruction": {
+        "he": "להשלים את הפועל בעבר",
+        "en": "Complete with the past form"
+      },
+      "answers": [
+        "set",
+        "laid"
+      ],
+      "knownErrors": [
+        {
+          "answer": "setted",
+          "misconception": "past-simple.overregularization",
+          "feedback": {
+            "he": "set הוא פועל חריג. בעבר הוא נשאר set.",
+            "en": "set is irregular. Past: set."
+          }
+        },
+        {
+          "answer": "edited",
+          "misconception": "collocations.hebrew-literal",
+          "feedback": {
+            "he": "לא מתרגמים 'ערכה' מילה במילה. אומרים set the table.",
+            "en": "Not edited. We set the table."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal",
+        "past-simple.overregularization"
+      ],
+      "hints": [
+        {
+          "he": "הצירוף הוא ___ the table.",
+          "en": "The chunk is ___ the table."
+        },
+        {
+          "he": "בעבר הפועל לא משתנה.",
+          "en": "In the past the verb does not change."
+        }
+      ],
+      "explanation": {
+        "he": "set the table, ובעבר גם set: set, set, set. Last Friday, Tamar set the table. באנגלית בריטית אומרים גם lay the table (laid).",
+        "en": "set the table. Past: set."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.say-a-blessing.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "chunk:say a blessing",
+      "type": "choice",
+      "prompt": "Before we eat bread, we ___ a blessing.",
+      "audioText": "Before we eat bread, we say a blessing.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "say"
+        },
+        {
+          "id": "b",
+          "text": "tell",
+          "misconception": "collocations.say-tell"
+        },
+        {
+          "id": "c",
+          "text": "speak"
+        },
+        {
+          "id": "d",
+          "text": "talk"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.say-tell"
+      ],
+      "hints": [
+        {
+          "he": "אומרים מילים מסוימות. tell בא בדרך כלל עם אדם או סיפור.",
+          "en": "We say certain words. tell goes with a person or a story."
+        },
+        {
+          "he": "הפועל פירושו 'לומר'.",
+          "en": "The verb means to say words."
+        }
+      ],
+      "explanation": {
+        "he": "לברך = say a blessing. say בא עם מילים: say a blessing, say thank you. tell בא עם אדם או סיפור: tell Abba, tell a story.",
+        "en": "say + words, tell + a person or a story."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.say-a-blessing.he",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:say a blessing",
+      "type": "choice",
+      "prompt": "לברך על האוכל",
+      "promptLanguage": "he",
+      "audioText": "say a blessing over the food",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "say a blessing over the food"
+        },
+        {
+          "id": "b",
+          "text": "tell a blessing over the food",
+          "misconception": "collocations.say-tell"
+        },
+        {
+          "id": "c",
+          "text": "talk a blessing over the food"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.say-tell"
+      ],
+      "hints": [
+        {
+          "he": "ברכה היא מילים שאומרים.",
+          "en": "A blessing is words we say."
+        },
+        {
+          "he": "talk לא בא עם מושא ישיר.",
+          "en": "talk does not take a direct object."
+        }
+      ],
+      "explanation": {
+        "he": "לברך = say a blessing. tell בא עם אדם או סיפור, ו־talk לא בא ישר עם מילים.",
+        "en": "We say a blessing."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.wish-someone-well.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.5,
+      "unit": "chunk:wish someone well",
+      "type": "choice",
+      "prompt": "All the neighbors came to ___ Mrs. Klein well before her operation.",
+      "audioText": "All the neighbors came to wish Mrs. Klein well before her operation.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "wish"
+        },
+        {
+          "id": "b",
+          "text": "want"
+        },
+        {
+          "id": "c",
+          "text": "hope"
+        },
+        {
+          "id": "d",
+          "text": "say"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בעברית 'לאחל לה בריאות' או 'לאחל לה הצלחה'.",
+          "en": "In Hebrew we 'wish her' good things."
+        },
+        {
+          "he": "hope לא בא ישר עם אדם.",
+          "en": "hope does not take a person right after it."
+        }
+      ],
+      "explanation": {
+        "he": "לאחל למישהו טוב = wish someone well. wish בא עם אדם: wish her luck. hope בא בלי אדם: I hope she gets well.",
+        "en": "wish + person: wish her well. hope + sentence: I hope she is well."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.wish-someone-well.typed",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.6,
+      "unit": "chunk:wish someone well",
+      "type": "typed",
+      "prompt": "Last week, before Rivka's big exam, Ima ___ her good luck.",
+      "audioText": "Last week, before Rivka's big exam, Ima wished her good luck.",
+      "instruction": {
+        "he": "להשלים את הפועל בעבר",
+        "en": "Complete with the past form"
+      },
+      "answers": [
+        "wished"
+      ],
+      "knownErrors": [
+        {
+          "answer": "wanted",
+          "feedback": {
+            "he": "want פירושו 'לרצות'. 'איחלה' באנגלית wished.",
+            "en": "want means to desire. Here: wished."
+          }
+        },
+        {
+          "answer": "hoped",
+          "feedback": {
+            "he": "hope לא בא ישר עם אדם. אומרים wished her good luck.",
+            "en": "hope cannot take a person. Use wished."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "איך אומרים 'איחלה לה הצלחה'?",
+          "en": "How do we say she gave good wishes?"
+        },
+        {
+          "he": "הפועל wish בעבר.",
+          "en": "The verb wish in the past."
+        }
+      ],
+      "explanation": {
+        "he": "wish someone good luck = לאחל למישהו הצלחה. בעבר: wished. wish בא ישר עם אדם, בלי to.",
+        "en": "wish someone good luck. Past: wished."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.make-an-effort.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.4,
+      "unit": "chunk:make an effort",
+      "type": "choice",
+      "prompt": "Ari ___ a real effort to be kind to the new boy in his class.",
+      "audioText": "Ari made a real effort to be kind to the new boy in his class.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "made"
+        },
+        {
+          "id": "b",
+          "text": "did",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "took"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'השקיע מאמץ' או 'עשה מאמץ'. באנגלית לא do.",
+          "en": "In Hebrew we 'do' an effort. In English it is not do."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־a mistake.",
+          "en": "It is the same verb as with a mistake."
+        }
+      ],
+      "explanation": {
+        "he": "להתאמץ, לעשות מאמץ = make an effort. בעבר made an effort. לא אומרים do an effort.",
+        "en": "We make an effort. Past: made an effort."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.make-an-effort.he",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.5,
+      "unit": "chunk:make an effort",
+      "type": "choice",
+      "prompt": "להתאמץ (לעשות מאמץ)",
+      "promptLanguage": "he",
+      "audioText": "make an effort",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "make an effort"
+        },
+        {
+          "id": "b",
+          "text": "do an effort",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "take an effort"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "לא לתרגם 'לעשות' כ־do.",
+          "en": "Do not translate the Hebrew verb as do."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־make a decision.",
+          "en": "The same verb as in ___ a decision."
+        }
+      ],
+      "explanation": {
+        "he": "להתאמץ = make an effort. כמו make a mistake ו־make a decision.",
+        "en": "make an effort, like make a decision."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.do-a-favor.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "chunk:do a favor",
+      "type": "choice",
+      "prompt": "Could you ___ me a favor and carry Grandma's bags?",
+      "audioText": "Could you do me a favor and carry Grandma's bags?",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "do"
+        },
+        {
+          "id": "b",
+          "text": "make",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "give"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'לעשות טובה'. כאן 'לעשות' באמת מתאים ל־do.",
+          "en": "In Hebrew we 'do' a favor. Here do is right."
+        },
+        {
+          "he": "עם favor משתמשים ב־do, לא ב־make.",
+          "en": "favor goes with do, not make."
+        }
+      ],
+      "explanation": {
+        "he": "לעשות טובה = do someone a favor. Could you do me a favor? זו דרך מנומסת לבקש עזרה.",
+        "en": "do someone a favor. A polite way to ask for help."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.do-a-favor.typed",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "chunk:do a favor",
+      "type": "typed",
+      "prompt": "Moshe ___ Ari a big favor: he lent him his siddur.",
+      "audioText": "Moshe did Ari a big favor: he lent him his siddur.",
+      "instruction": {
+        "he": "להשלים את הפועל בעבר",
+        "en": "Complete with the past form"
+      },
+      "answers": [
+        "did"
+      ],
+      "knownErrors": [
+        {
+          "answer": "made",
+          "misconception": "collocations.make-do",
+          "feedback": {
+            "he": "עם favor משתמשים ב־do. בעבר did.",
+            "en": "favor goes with do. Past: did."
+          }
+        },
+        {
+          "answer": "doed",
+          "misconception": "past-simple.overregularization",
+          "feedback": {
+            "he": "do הוא פועל חריג. בעבר did.",
+            "en": "do is irregular: did."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.make-do",
+        "past-simple.overregularization"
+      ],
+      "hints": [
+        {
+          "he": "הצירוף הוא do someone a favor.",
+          "en": "The chunk is do someone a favor."
+        },
+        {
+          "he": "מה הצורה של do בעבר?",
+          "en": "What is the past of do?"
+        }
+      ],
+      "explanation": {
+        "he": "do someone a favor, ובעבר did someone a favor.",
+        "en": "do a favor. Past: did a favor."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.make-progress.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.5,
+      "unit": "chunk:make progress",
+      "type": "choice",
+      "prompt": "Tamar has ___ great progress in English this year.",
+      "audioText": "Tamar has made great progress in English this year.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "made"
+        },
+        {
+          "id": "b",
+          "text": "done",
+          "misconception": "collocations.make-do"
+        },
+        {
+          "id": "c",
+          "text": "given"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'התקדמה' או 'עשתה התקדמות'. באנגלית לא do.",
+          "en": "In Hebrew we 'do' progress. In English it is not do."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־a mistake.",
+          "en": "It is the same verb as with a mistake."
+        }
+      ],
+      "explanation": {
+        "he": "להתקדם = make progress. progress היא מילה שלא סופרים, ולכן בלי a.",
+        "en": "make progress, with no a."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.make-progress.typed",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.6,
+      "unit": "chunk:make progress",
+      "type": "typed",
+      "prompt": "Ari is ___ good progress with his Torah reading.",
+      "audioText": "Ari is making good progress with his Torah reading.",
+      "instruction": {
+        "he": "להשלים את הפועל בצורה הנכונה",
+        "en": "Complete with the correct form of the verb"
+      },
+      "answers": [
+        "making",
+        "showing"
+      ],
+      "knownErrors": [
+        {
+          "answer": "doing",
+          "misconception": "collocations.make-do",
+          "feedback": {
+            "he": "עם progress משתמשים ב־make, לא ב־do.",
+            "en": "progress goes with make."
+          }
+        },
+        {
+          "answer": "make",
+          "feedback": {
+            "he": "אחרי is צריך צורת ing: making.",
+            "en": "After is we need -ing: making."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.make-do"
+      ],
+      "hints": [
+        {
+          "he": "אחרי is בא פועל עם ing.",
+          "en": "After is we use -ing."
+        },
+        {
+          "he": "הפועל הוא make.",
+          "en": "The verb is make."
+        }
+      ],
+      "explanation": {
+        "he": "make progress, ובהווה מתמשך is making progress.",
+        "en": "make progress. Present progressive: is making progress."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.take-into-account.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.6,
+      "unit": "chunk:take into account",
+      "type": "choice",
+      "prompt": "When we plan the trip, we must ___ into account that Grandpa walks slowly.",
+      "audioText": "When we plan the trip, we must take into account that Grandpa walks slowly.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "take"
+        },
+        {
+          "id": "b",
+          "text": "bring",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "put"
+        },
+        {
+          "id": "d",
+          "text": "make"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'להביא בחשבון'. באנגלית לא bring.",
+          "en": "In Hebrew we 'bring' into account. In English it is not bring."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־part in.",
+          "en": "It is the same verb as in ___ part in."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'להביא בחשבון', באנגלית take into account. bring into account הוא תרגום מילולי.",
+        "en": "We take something into account, not bring it."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.take-into-account.he",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.7,
+      "unit": "chunk:take into account",
+      "type": "choice",
+      "prompt": "להביא בחשבון",
+      "promptLanguage": "he",
+      "audioText": "take into account",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "take into account"
+        },
+        {
+          "id": "b",
+          "text": "bring into account",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "bring in the account",
+          "misconception": "collocations.hebrew-literal"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "לא לתרגם 'להביא' מילה במילה.",
+          "en": "Do not translate the Hebrew verb word by word."
+        },
+        {
+          "he": "הפועל באנגלית פירושו 'לקחת'.",
+          "en": "The English verb means to take."
+        }
+      ],
+      "explanation": {
+        "he": "להביא בחשבון = take into account. ביטוי חשוב לחיבורים בבגרות.",
+        "en": "take into account is useful in essays."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.spend-time.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:spend time",
+      "type": "choice",
+      "prompt": "Rivka loves to ___ time with her grandparents.",
+      "audioText": "Rivka loves to spend time with her grandparents.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "spend"
+        },
+        {
+          "id": "b",
+          "text": "pass",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "do"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'לבלות' או 'להעביר זמן'. באנגלית לא pass.",
+          "en": "In Hebrew we 'pass' time. In English it is not pass."
+        },
+        {
+          "he": "זה אותו פועל כמו בהוצאת כסף.",
+          "en": "It is the same verb as with spending money."
+        }
+      ],
+      "explanation": {
+        "he": "לבלות זמן עם מישהו = spend time with someone. כמו spend money, להוציא כסף.",
+        "en": "spend time, like spend money."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.spend-time.typed",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:spend time",
+      "type": "typed",
+      "prompt": "Yesterday Ari ___ a lot of time learning with Grandpa.",
+      "audioText": "Yesterday Ari spent a lot of time learning with Grandpa.",
+      "instruction": {
+        "he": "להשלים את הפועל בעבר",
+        "en": "Complete with the past form"
+      },
+      "answers": [
+        "spent"
+      ],
+      "knownErrors": [
+        {
+          "answer": "passed",
+          "misconception": "collocations.hebrew-literal",
+          "feedback": {
+            "he": "לא מתרגמים 'העביר' מילה במילה. אומרים spent.",
+            "en": "Not passed. We say spent."
+          }
+        },
+        {
+          "answer": "spended",
+          "misconception": "past-simple.overregularization",
+          "feedback": {
+            "he": "spend הוא פועל חריג. בעבר spent.",
+            "en": "spend is irregular: spent."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal",
+        "past-simple.overregularization"
+      ],
+      "hints": [
+        {
+          "he": "הפועל הוא spend.",
+          "en": "The verb is spend."
+        },
+        {
+          "he": "spend הוא פועל חריג.",
+          "en": "spend is irregular."
+        }
+      ],
+      "explanation": {
+        "he": "spend time, ובעבר spent. Ari spent a lot of time learning.",
+        "en": "spend time. Past: spent."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.ask-a-question.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "chunk:ask a question",
+      "type": "choice",
+      "prompt": "If you don't understand, you can ___ Rabbi Gold a question.",
+      "audioText": "If you don't understand, you can ask Rabbi Gold a question.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "ask"
+        },
+        {
+          "id": "b",
+          "text": "make"
+        },
+        {
+          "id": "c",
+          "text": "say",
+          "misconception": "collocations.say-tell"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.say-tell"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'לשאול שאלה'. כאן התרגום הישיר עובד.",
+          "en": "In Hebrew we 'ask' a question. Here the direct translation works."
+        },
+        {
+          "he": "אחרי say לא בא ישר אדם.",
+          "en": "say is not followed directly by a person."
+        }
+      ],
+      "explanation": {
+        "he": "לשאול שאלה = ask a question. ask someone a question = לשאול מישהו שאלה.",
+        "en": "ask someone a question."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.ask-a-question.he",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:ask a question",
+      "type": "choice",
+      "prompt": "לשאול שאלה",
+      "promptLanguage": "he",
+      "audioText": "ask a question",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "ask a question"
+        },
+        {
+          "id": "b",
+          "text": "make a question"
+        },
+        {
+          "id": "c",
+          "text": "say a question",
+          "misconception": "collocations.say-tell"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.say-tell"
+      ],
+      "hints": [
+        {
+          "he": "הפועל זהה לעברית.",
+          "en": "The verb is the same as in Hebrew."
+        },
+        {
+          "he": "'לשאול' באנגלית הוא ask.",
+          "en": "The Hebrew verb is ask."
+        }
+      ],
+      "explanation": {
+        "he": "לשאול שאלה = ask a question. make a question היא טעות נפוצה.",
+        "en": "ask a question, not make a question."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.afraid-of.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:be afraid of",
+      "type": "choice",
+      "prompt": "Baby Eli is afraid ___ the dark.",
+      "audioText": "Baby Eli is afraid of the dark.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "of"
+        },
+        {
+          "id": "b",
+          "text": "from",
+          "misconception": "prepositions.dependent"
+        },
+        {
+          "id": "c",
+          "text": "at"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "prepositions.dependent"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'מפחד מ'. באנגלית לא from.",
+          "en": "In Hebrew we say 'afraid from'. In English it is not from."
+        },
+        {
+          "he": "זו אותה מילת יחס כמו ב־take care ___.",
+          "en": "It is the same preposition as in take care ___."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'מפחד מ', באנגלית afraid of. גם scared of.",
+        "en": "We say afraid of and scared of."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.afraid-of.typed",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:be afraid of",
+      "type": "typed",
+      "prompt": "Ari is not afraid ___ big dogs anymore.",
+      "audioText": "Ari is not afraid of big dogs anymore.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "of"
+      ],
+      "knownErrors": [
+        {
+          "answer": "from",
+          "misconception": "prepositions.dependent",
+          "feedback": {
+            "he": "בעברית 'מפחד מ', אבל באנגלית afraid of.",
+            "en": "Not from. We say afraid of."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "prepositions.dependent"
+      ],
+      "hints": [
+        {
+          "he": "לא לתרגם את ה־מ מהעברית.",
+          "en": "Do not translate the Hebrew preposition."
+        },
+        {
+          "he": "שתי אותיות.",
+          "en": "Two letters."
+        }
+      ],
+      "explanation": {
+        "he": "afraid of = מפחד מ. Ari is not afraid of dogs.",
+        "en": "afraid of, not afraid from."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.thank-for.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "chunk:thank someone for",
+      "type": "choice",
+      "prompt": "Thank you ___ the beautiful challah, Grandma!",
+      "audioText": "Thank you for the beautiful challah, Grandma!",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "for"
+        },
+        {
+          "id": "b",
+          "text": "on",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "about"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'תודה על'. באנגלית לא on.",
+          "en": "In Hebrew we say 'thanks on'. In English it is not on."
+        },
+        {
+          "he": "זו מילת היחס של 'בשביל'.",
+          "en": "It is the preposition that means 'for the sake of'."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'תודה על', באנגלית thank you for. Thank you for the challah.",
+        "en": "thank you for something, not on."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.thank-for.typed",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:thank someone for",
+      "type": "typed",
+      "prompt": "Tamar thanked Mrs. Klein ___ the cookies.",
+      "audioText": "Tamar thanked Mrs. Klein for the cookies.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "for"
+      ],
+      "knownErrors": [
+        {
+          "answer": "on",
+          "misconception": "collocations.hebrew-literal",
+          "feedback": {
+            "he": "בעברית 'הודתה על', אבל באנגלית thank for.",
+            "en": "Not on. We say thank for."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "לא לתרגם את 'על' מהעברית.",
+          "en": "Do not translate the Hebrew preposition."
+        },
+        {
+          "he": "שלוש אותיות.",
+          "en": "Three letters."
+        }
+      ],
+      "explanation": {
+        "he": "thank someone for something = להודות למישהו על משהו.",
+        "en": "thank someone for something."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.arrive-at.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "chunk:arrive at",
+      "type": "choice",
+      "prompt": "We arrived ___ the Kotel early in the morning.",
+      "audioText": "We arrived at the Kotel early in the morning.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "at"
+        },
+        {
+          "id": "b",
+          "text": "to",
+          "misconception": "prepositions.dependent"
+        },
+        {
+          "id": "c",
+          "text": "on"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "prepositions.dependent"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'הגענו ל'. באנגלית אחרי arrive לא בא to.",
+          "en": "In Hebrew we 'arrive to'. In English arrive never takes to."
+        },
+        {
+          "he": "עם מקום מסוים כמו בניין או אתר משתמשים ב־at.",
+          "en": "With a specific place, use at."
+        }
+      ],
+      "explanation": {
+        "he": "בעברית 'הגיע ל', באנגלית arrive at למקום מסוים, ו־arrive in לעיר או לארץ. אף פעם לא arrive to.",
+        "en": "arrive at a place, arrive in a city. Never arrive to."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.arrive-at.typed",
+      "skill": "vocabulary.collocations",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "chunk:arrive at",
+      "type": "typed",
+      "prompt": "The family arrived ___ shul just before the prayers began.",
+      "audioText": "The family arrived at shul just before the prayers began.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "at"
+      ],
+      "knownErrors": [
+        {
+          "answer": "to",
+          "misconception": "prepositions.dependent",
+          "feedback": {
+            "he": "לא אומרים arrive to. למקום מסוים: arrive at.",
+            "en": "Never arrive to. Use arrive at."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "prepositions.dependent"
+      ],
+      "hints": [
+        {
+          "he": "בית כנסת הוא מקום מסוים, לא עיר.",
+          "en": "A synagogue is a specific place, not a city."
+        },
+        {
+          "he": "שתי אותיות.",
+          "en": "Two letters."
+        }
+      ],
+      "explanation": {
+        "he": "arrive at + מקום מסוים: arrived at shul. arrive in + עיר: arrived in Jerusalem.",
+        "en": "arrive at a building, arrive in a city."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "chunk.pay-a-visit.gap",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.5,
+      "unit": "chunk:pay a visit",
+      "type": "choice",
+      "prompt": "On Sunday, Rivka and Tamar ___ a visit to Mrs. Klein.",
+      "audioText": "On Sunday, Rivka and Tamar paid a visit to Mrs. Klein.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "paid"
+        },
+        {
+          "id": "b",
+          "text": "did",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "gave"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'ערכו ביקור' או 'עשו ביקור'. באנגלית לא do.",
+          "en": "In Hebrew we 'do' a visit. In English it is not do."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־attention.",
+          "en": "It is the same verb as in ___ attention."
+        }
+      ],
+      "explanation": {
+        "he": "לערוך ביקור = pay a visit. כמו pay attention. אפשר גם פשוט visited Mrs. Klein.",
+        "en": "pay a visit, like pay attention."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.pay-a-visit.he",
+      "skill": "vocabulary.collocations",
+      "level": "B2",
+      "difficulty": 0.6,
+      "unit": "chunk:pay a visit",
+      "type": "choice",
+      "prompt": "לערוך ביקור",
+      "promptLanguage": "he",
+      "audioText": "pay a visit",
+      "instruction": {
+        "he": "לבחור את התרגום הנכון לאנגלית",
+        "en": "Choose the correct English"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "pay a visit"
+        },
+        {
+          "id": "b",
+          "text": "do a visit",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "give a visit"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "לא לתרגם 'לערוך' או 'לעשות' מילה במילה.",
+          "en": "Do not translate the Hebrew verb word by word."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־pay attention.",
+          "en": "The same verb as in ___ attention."
+        }
+      ],
+      "explanation": {
+        "he": "לערוך ביקור = pay a visit. כמו pay attention: הפועל pay לא תמיד קשור לכסף.",
+        "en": "pay a visit. pay is not always about money."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.keep-shabbat.gap",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "chunk:keep Shabbat",
+      "type": "choice",
+      "prompt": "The Shapiro family ___ Shabbat every week.",
+      "audioText": "The Shapiro family keeps Shabbat every week.",
+      "instruction": {
+        "he": "לבחור את המילה המתאימה",
+        "en": "Choose the right word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "keeps"
+        },
+        {
+          "id": "b",
+          "text": "saves",
+          "misconception": "collocations.hebrew-literal"
+        },
+        {
+          "id": "c",
+          "text": "watches"
+        }
+      ],
+      "correctOptionId": "a",
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal"
+      ],
+      "hints": [
+        {
+          "he": "בעברית 'שומרת שבת'. 'לשמור' יש לו כמה תרגומים.",
+          "en": "In Hebrew we 'guard' Shabbat. The Hebrew verb has several translations."
+        },
+        {
+          "he": "זה אותו פועל כמו ב־a promise.",
+          "en": "It is the same verb as with a promise."
+        }
+      ],
+      "explanation": {
+        "he": "לשמור שבת = keep Shabbat. אפשר גם observe Shabbat. save פירושו לחסוך או להציל, ו־watch פירושו לצפות.",
+        "en": "keep Shabbat or observe Shabbat. save and watch mean other things."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original"
+    },
+    {
+      "id": "chunk.keep-shabbat.typed",
+      "skill": "vocabulary.collocations",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "chunk:keep Shabbat",
+      "type": "typed",
+      "prompt": "Grandpa Yosef has ___ Shabbat all his life.",
+      "audioText": "Grandpa Yosef has kept Shabbat all his life.",
+      "instruction": {
+        "he": "להשלים את הפועל בצורה הנכונה",
+        "en": "Complete with the correct form of the verb"
+      },
+      "answers": [
+        "kept",
+        "observed"
+      ],
+      "knownErrors": [
+        {
+          "answer": "saved",
+          "misconception": "collocations.hebrew-literal",
+          "feedback": {
+            "he": "save פירושו לחסוך או להציל. לשמור שבת = keep Shabbat.",
+            "en": "save means to rescue. We keep Shabbat."
+          }
+        },
+        {
+          "answer": "keeped",
+          "misconception": "past-simple.overregularization",
+          "feedback": {
+            "he": "keep הוא פועל חריג. V3 שלו kept.",
+            "en": "keep is irregular: kept."
+          }
+        }
+      ],
+      "targetsMisconceptions": [
+        "collocations.hebrew-literal",
+        "past-simple.overregularization"
+      ],
+      "hints": [
+        {
+          "he": "אחרי has בא V3.",
+          "en": "After has we use the past participle."
+        },
+        {
+          "he": "keep הוא פועל חריג.",
+          "en": "keep is irregular."
+        }
+      ],
+      "explanation": {
+        "he": "keep Shabbat, וב־Present Perfect: has kept. keep, kept, kept. אפשר גם has observed.",
+        "en": "keep, kept, kept: has kept Shabbat."
+      },
+      "tags": [
+        "chunk",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    }
+  ],
+  "passages": [],
+  "lessons": []
+}

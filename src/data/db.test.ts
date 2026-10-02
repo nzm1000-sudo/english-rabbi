@@ -25,8 +25,8 @@ const wrongMuchMany = outcome({
 describe('student separation', () => {
   it("one student's practice never changes another student's data", async () => {
     const { store } = fresh();
-    const noa = await store.createStudent({ name: 'נועה' });
-    const yael = await store.createStudent({ name: 'יעל' });
+    const noa = await store.createStudent({ name: 'דנה' });
+    const yael = await store.createStudent({ name: 'רון' });
 
     for (let i = 0; i < 5; i++) {
       await store.completeItem({ studentId: noa.id, item: choiceItem(), outcome: wrongMuchMany });
@@ -44,7 +44,7 @@ describe('student separation', () => {
 
   it('archiving hides a student but keeps the history', async () => {
     const { store } = fresh();
-    const s = await store.createStudent({ name: 'הדר' });
+    const s = await store.createStudent({ name: 'שירה' });
     await store.completeItem({ studentId: s.id, item: choiceItem(), outcome: outcome() });
     await store.archiveStudent(s.id);
     expect(await store.listStudents()).toHaveLength(0);
@@ -163,14 +163,38 @@ describe('database migrations', () => {
 
     const latest = new TutorDB(name);
     await latest.open();
-    expect(latest.verno).toBe(2);
+    expect(latest.verno).toBe(3);
     const s = await latest.students.get('s1');
     expect(s!.preferences).toEqual({ ...DEFAULT_PREFERENCES, accent: 'en-GB' });
     expect(s!.interests).toEqual([]);
     expect(await latest.events.count()).toBe(1);
     expect((await latest.skillStates.get(['s1', 'grammar']))!.mu).toBe(0.3);
     expect(latest.tables.map((t) => t.name)).toContain('ttsCache');
+    expect(latest.tables.map((t) => t.name)).toContain('savedWords');
     latest.close();
     await Dexie.delete(name);
+  });
+});
+
+describe('my words', () => {
+  it('saves once, keeps students apart, and removes', async () => {
+    const { store } = fresh();
+    const a = await store.createStudent({ name: 'א' });
+    const b = await store.createStudent({ name: 'ב' });
+    await store.saveWord(a.id, { lemma: 'bread', he: 'לחם', example: 'We eat bread.' });
+    await store.saveWord(a.id, { lemma: 'bread', he: 'לחם', example: 'Other.' });
+    expect(await store.savedWords(a.id)).toHaveLength(1);
+    expect((await store.savedWords(a.id))[0]!.example).toBe('We eat bread.');
+    expect(await store.savedWords(b.id)).toHaveLength(0);
+    await store.removeWord(a.id, 'bread');
+    expect(await store.savedWords(a.id)).toHaveLength(0);
+  });
+
+  it('keeps the best result per story', async () => {
+    const { store } = fresh();
+    const s = await store.createStudent({ name: 'א' });
+    await store.log(s.id, 'story.completed', { storyId: 'x', correct: 1, total: 3 });
+    await store.log(s.id, 'story.completed', { storyId: 'x', correct: 3, total: 3 });
+    expect((await store.storyResults(s.id)).get('x')).toEqual({ correct: 3, total: 3 });
   });
 });

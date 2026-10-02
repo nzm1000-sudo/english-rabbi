@@ -1,0 +1,2526 @@
+{
+  "packId": "stories-dialogue-1",
+  "schemaVersion": 1,
+  "title": "Dialogue Stories 1",
+  "items": [],
+  "passages": [],
+  "lessons": [],
+  "stories": [
+    {
+      "id": "story.d1.shopping",
+      "title": {
+        "he": "קניות לשבת",
+        "en": "Shopping for Shabbat"
+      },
+      "kind": "dialogue",
+      "level": "A1",
+      "cast": {
+        "A": "Ima",
+        "B": "Ari"
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "en": "Ima, what do we need for Shabbat?",
+          "he": "אמא, מה אנחנו צריכים לשבת?"
+        },
+        {
+          "speaker": "A",
+          "en": "We need two challahs and grape juice.",
+          "he": "אנחנו צריכים שתי חלות ומיץ ענבים."
+        },
+        {
+          "speaker": "B",
+          "en": "Can I carry the juice?",
+          "he": "אני יכול לסחוב את המיץ?"
+        },
+        {
+          "speaker": "A",
+          "en": "Yes, but be careful. It is heavy.",
+          "he": "כן, אבל תיזהר. הוא כבד."
+        },
+        {
+          "speaker": "B",
+          "en": "Look, Ima! Fresh tomatoes for the salad.",
+          "he": "תראי, אמא! עגבניות טריות לסלט."
+        },
+        {
+          "speaker": "A",
+          "en": "Good idea. Take four, please.",
+          "he": "רעיון טוב. קח ארבע, בבקשה."
+        },
+        {
+          "speaker": "B",
+          "en": "Can we buy flowers for the table?",
+          "he": "אפשר לקנות פרחים לשולחן?"
+        },
+        {
+          "speaker": "A",
+          "en": "Yes. Flowers make Shabbat beautiful.",
+          "he": "כן. פרחים עושים את השבת יפה."
+        },
+        {
+          "speaker": "B",
+          "en": "Thank you, Ima. I love Shabbat!",
+          "he": "תודה, אמא. אני אוהב שבת!"
+        },
+        {
+          "speaker": "A",
+          "en": "Me too. Now let's pay and go home.",
+          "he": "גם אני. עכשיו בוא נשלם ונלך הביתה."
+        }
+      ],
+      "glossary": {
+        "ima": {
+          "lemma": "Ima",
+          "he": "אמא"
+        },
+        "need": {
+          "lemma": "need",
+          "he": "צריכים"
+        },
+        "shabbat": {
+          "lemma": "Shabbat",
+          "he": "שבת"
+        },
+        "two": {
+          "lemma": "two",
+          "he": "שתי"
+        },
+        "challahs": {
+          "lemma": "challah",
+          "he": "חלות (לחם לשבת)"
+        },
+        "grape": {
+          "lemma": "grape",
+          "he": "ענבים"
+        },
+        "juice": {
+          "lemma": "juice",
+          "he": "מיץ"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכול; (can we) אפשר"
+        },
+        "carry": {
+          "lemma": "carry",
+          "he": "לסחוב"
+        },
+        "careful": {
+          "lemma": "careful",
+          "he": "(be careful) להיזהר, תיזהר"
+        },
+        "heavy": {
+          "lemma": "heavy",
+          "he": "כבד"
+        },
+        "look": {
+          "lemma": "look",
+          "he": "תראי"
+        },
+        "fresh": {
+          "lemma": "fresh",
+          "he": "טרי"
+        },
+        "tomatoes": {
+          "lemma": "tomato",
+          "he": "עגבניות"
+        },
+        "salad": {
+          "lemma": "salad",
+          "he": "סלט"
+        },
+        "good": {
+          "lemma": "good",
+          "he": "טוב"
+        },
+        "idea": {
+          "lemma": "idea",
+          "he": "רעיון"
+        },
+        "take": {
+          "lemma": "take",
+          "he": "קח"
+        },
+        "four": {
+          "lemma": "four",
+          "he": "ארבע"
+        },
+        "please": {
+          "lemma": "please",
+          "he": "בבקשה"
+        },
+        "buy": {
+          "lemma": "buy",
+          "he": "לקנות"
+        },
+        "flowers": {
+          "lemma": "flower",
+          "he": "פרחים"
+        },
+        "table": {
+          "lemma": "table",
+          "he": "שולחן"
+        },
+        "make": {
+          "lemma": "make",
+          "he": "עושים"
+        },
+        "beautiful": {
+          "lemma": "beautiful",
+          "he": "יפה"
+        },
+        "thank": {
+          "lemma": "thank",
+          "he": "תודה"
+        },
+        "love": {
+          "lemma": "love",
+          "he": "אוהב"
+        },
+        "too": {
+          "lemma": "too",
+          "he": "גם"
+        },
+        "now": {
+          "lemma": "now",
+          "he": "עכשיו"
+        },
+        "let's": {
+          "lemma": "let's",
+          "he": "בוא נ..."
+        },
+        "pay": {
+          "lemma": "pay",
+          "he": "לשלם"
+        },
+        "go": {
+          "lemma": "go",
+          "he": "ללכת"
+        },
+        "home": {
+          "lemma": "home",
+          "he": "הביתה"
+        }
+      },
+      "questions": [
+        {
+          "after": 1,
+          "item": {
+            "id": "story.d1.shopping.q1",
+            "type": "choice",
+            "skill": "listening.sentences",
+            "level": "A1",
+            "difficulty": 0.3,
+            "prompt": "What do they need for Shabbat?",
+            "options": [
+              {
+                "id": "a",
+                "text": "two challahs and grape juice"
+              },
+              {
+                "id": "b",
+                "text": "two cakes and milk"
+              },
+              {
+                "id": "c",
+                "text": "bread and apple juice"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "אמא אומרת: We need two challahs and grape juice.",
+              "en": "Ima says they need two challahs and grape juice."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 3,
+          "item": {
+            "id": "story.d1.shopping.q2",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "A1",
+            "difficulty": 0.3,
+            "prompt": "Why does Ari need to be careful?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The juice is heavy."
+              },
+              {
+                "id": "b",
+                "text": "The juice is cold."
+              },
+              {
+                "id": "c",
+                "text": "The bag is open."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "אמא אומרת: It is heavy. המיץ כבד.",
+              "en": "Ima says the juice is heavy."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 7,
+          "item": {
+            "id": "story.d1.shopping.q3",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "A1",
+            "difficulty": 0.3,
+            "prompt": "What does Ari want to buy for the table?",
+            "options": [
+              {
+                "id": "a",
+                "text": "flowers"
+              },
+              {
+                "id": "b",
+                "text": "candles"
+              },
+              {
+                "id": "c",
+                "text": "a new cup"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי שואל: Can we buy flowers for the table?",
+              "en": "Ari asks to buy flowers for the table."
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "גם קניות קטנות לשבת הן חלק מכבוד השבת.",
+      "tags": [
+        "shabbat",
+        "family"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.d1.table",
+      "title": {
+        "he": "עורכים שולחן שבת",
+        "en": "Setting the Shabbat Table"
+      },
+      "kind": "dialogue",
+      "level": "A1",
+      "cast": {
+        "A": "Tamar",
+        "B": "Abba"
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "en": "Tamar, can you help me with the table?",
+          "he": "תמר, את יכולה לעזור לי עם השולחן?"
+        },
+        {
+          "speaker": "A",
+          "en": "Sure, Abba. Where is the white tablecloth?",
+          "he": "בטח, אבא. איפה המפה הלבנה?"
+        },
+        {
+          "speaker": "B",
+          "en": "It is in the big drawer.",
+          "he": "היא במגירה הגדולה."
+        },
+        {
+          "speaker": "A",
+          "en": "I am putting out the plates. How many?",
+          "he": "אני מניחה את הצלחות. כמה?"
+        },
+        {
+          "speaker": "B",
+          "en": "Eight plates. Grandpa and Grandma are coming.",
+          "he": "שמונה צלחות. סבא וסבתא באים."
+        },
+        {
+          "speaker": "A",
+          "en": "Where do I put the Kiddush cup?",
+          "he": "איפה לשים את גביע הקידוש?"
+        },
+        {
+          "speaker": "B",
+          "en": "Next to my plate, please.",
+          "he": "ליד הצלחת שלי, בבקשה."
+        },
+        {
+          "speaker": "A",
+          "en": "And the challah cover?",
+          "he": "ומה עם כיסוי החלה?"
+        },
+        {
+          "speaker": "B",
+          "en": "It goes on the two challahs.",
+          "he": "שמים אותו על שתי החלות."
+        },
+        {
+          "speaker": "A",
+          "en": "The table looks so beautiful, Abba!",
+          "he": "השולחן נראה כל כך יפה, אבא!"
+        }
+      ],
+      "glossary": {
+        "tamar": {
+          "lemma": "Tamar",
+          "he": "תמר (שם)"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכולה"
+        },
+        "help": {
+          "lemma": "help",
+          "he": "לעזור"
+        },
+        "table": {
+          "lemma": "table",
+          "he": "שולחן"
+        },
+        "sure": {
+          "lemma": "sure",
+          "he": "בטח"
+        },
+        "abba": {
+          "lemma": "Abba",
+          "he": "אבא"
+        },
+        "white": {
+          "lemma": "white",
+          "he": "לבנה"
+        },
+        "tablecloth": {
+          "lemma": "tablecloth",
+          "he": "מפת שולחן"
+        },
+        "big": {
+          "lemma": "big",
+          "he": "גדול"
+        },
+        "drawer": {
+          "lemma": "drawer",
+          "he": "מגירה"
+        },
+        "putting": {
+          "lemma": "put",
+          "he": "מניחה"
+        },
+        "out": {
+          "lemma": "out",
+          "he": "(put out = להניח, לסדר)"
+        },
+        "plates": {
+          "lemma": "plate",
+          "he": "צלחות"
+        },
+        "many": {
+          "lemma": "many",
+          "he": "הרבה (how many = כמה)"
+        },
+        "eight": {
+          "lemma": "eight",
+          "he": "שמונה"
+        },
+        "grandpa": {
+          "lemma": "grandpa",
+          "he": "סבא"
+        },
+        "grandma": {
+          "lemma": "grandma",
+          "he": "סבתא"
+        },
+        "coming": {
+          "lemma": "come",
+          "he": "באים"
+        },
+        "put": {
+          "lemma": "put",
+          "he": "לשים"
+        },
+        "kiddush": {
+          "lemma": "Kiddush",
+          "he": "קידוש (ברכה על היין בשבת)"
+        },
+        "cup": {
+          "lemma": "cup",
+          "he": "גביע, כוס"
+        },
+        "next": {
+          "lemma": "next",
+          "he": "ליד (next to)"
+        },
+        "plate": {
+          "lemma": "plate",
+          "he": "צלחת"
+        },
+        "please": {
+          "lemma": "please",
+          "he": "בבקשה"
+        },
+        "challah": {
+          "lemma": "challah",
+          "he": "חלה (לחם לשבת)"
+        },
+        "cover": {
+          "lemma": "cover",
+          "he": "כיסוי"
+        },
+        "goes": {
+          "lemma": "go",
+          "he": "(it goes on) שמים אותו על"
+        },
+        "two": {
+          "lemma": "two",
+          "he": "שתי"
+        },
+        "challahs": {
+          "lemma": "challah",
+          "he": "חלות"
+        },
+        "looks": {
+          "lemma": "look",
+          "he": "נראה"
+        },
+        "so": {
+          "lemma": "so",
+          "he": "כל כך"
+        },
+        "beautiful": {
+          "lemma": "beautiful",
+          "he": "יפה"
+        }
+      },
+      "questions": [
+        {
+          "after": 2,
+          "item": {
+            "id": "story.d1.table.q1",
+            "type": "choice",
+            "skill": "listening.sentences",
+            "level": "A1",
+            "difficulty": 0.3,
+            "prompt": "Where is the tablecloth?",
+            "options": [
+              {
+                "id": "a",
+                "text": "in the big drawer"
+              },
+              {
+                "id": "b",
+                "text": "on a chair"
+              },
+              {
+                "id": "c",
+                "text": "in the kitchen sink"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "אבא אומר: It is in the big drawer. המפה במגירה הגדולה.",
+              "en": "Abba says it is in the big drawer."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 4,
+          "item": {
+            "id": "story.d1.table.q2",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "A1",
+            "difficulty": 0.3,
+            "prompt": "How many plates do they need?",
+            "options": [
+              {
+                "id": "a",
+                "text": "eight"
+              },
+              {
+                "id": "b",
+                "text": "six"
+              },
+              {
+                "id": "c",
+                "text": "ten"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "אבא אומר: Eight plates. כי סבא וסבתא באים.",
+              "en": "Abba says eight plates."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 6,
+          "item": {
+            "id": "story.d1.table.q3",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "A1",
+            "difficulty": 0.3,
+            "prompt": "Where does the Kiddush cup go?",
+            "options": [
+              {
+                "id": "a",
+                "text": "next to Abba's plate"
+              },
+              {
+                "id": "b",
+                "text": "next to Tamar's plate"
+              },
+              {
+                "id": "c",
+                "text": "on the challah"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "אבא אומר: Next to my plate. כלומר ליד הצלחת של אבא.",
+              "en": "Abba says next to his plate."
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "כשעוזרים יחד, שולחן השבת נעשה יפה יותר.",
+      "tags": [
+        "shabbat",
+        "family"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.d1.fruits",
+      "title": {
+        "he": "הפירות של סבתא",
+        "en": "Grandma's Fruits"
+      },
+      "kind": "dialogue",
+      "level": "A1",
+      "cast": {
+        "A": "Grandma Chana",
+        "B": "Ari"
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "Ari, today is Tu BiShvat.",
+          "he": "ארי, היום ט\"ו בשבט."
+        },
+        {
+          "speaker": "B",
+          "en": "The new year for trees!",
+          "he": "ראש השנה לאילנות!"
+        },
+        {
+          "speaker": "A",
+          "en": "Yes. Look at all these fruits.",
+          "he": "כן. תסתכל על כל הפירות האלה."
+        },
+        {
+          "speaker": "B",
+          "en": "I see dates, figs and grapes.",
+          "he": "אני רואה תמרים, תאנים וענבים."
+        },
+        {
+          "speaker": "A",
+          "en": "They all grow in the Land of Israel.",
+          "he": "כולם גדלים בארץ ישראל."
+        },
+        {
+          "speaker": "B",
+          "en": "Which fruit do you like best, Grandma?",
+          "he": "איזה פרי את הכי אוהבת, סבתא?"
+        },
+        {
+          "speaker": "A",
+          "en": "I love figs. They are so sweet.",
+          "he": "אני אוהבת תאנים. הן כל כך מתוקות."
+        },
+        {
+          "speaker": "B",
+          "en": "Can I make the blessing, Grandma?",
+          "he": "אני יכול לברך, סבתא?"
+        },
+        {
+          "speaker": "A",
+          "en": "Of course. Say it slowly and clearly.",
+          "he": "בטח. תגיד אותה לאט ובבירור."
+        },
+        {
+          "speaker": "B",
+          "en": "Mmm! You are right. Figs are sweet!",
+          "he": "ממ! את צודקת. תאנים מתוקות!"
+        }
+      ],
+      "glossary": {
+        "ari": {
+          "lemma": "Ari",
+          "he": "ארי (שם)"
+        },
+        "today": {
+          "lemma": "today",
+          "he": "היום"
+        },
+        "tu": {
+          "lemma": "Tu BiShvat",
+          "he": "ט\"ו (ט\"ו בשבט)"
+        },
+        "bishvat": {
+          "lemma": "Tu BiShvat",
+          "he": "בשבט (ט\"ו בשבט, ראש השנה לאילנות)"
+        },
+        "new": {
+          "lemma": "new",
+          "he": "חדש"
+        },
+        "year": {
+          "lemma": "year",
+          "he": "שנה (new year = ראש השנה)"
+        },
+        "trees": {
+          "lemma": "tree",
+          "he": "עצים, אילנות"
+        },
+        "look": {
+          "lemma": "look",
+          "he": "תסתכל"
+        },
+        "all": {
+          "lemma": "all",
+          "he": "כל, כולם"
+        },
+        "fruits": {
+          "lemma": "fruit",
+          "he": "פירות"
+        },
+        "see": {
+          "lemma": "see",
+          "he": "רואה"
+        },
+        "dates": {
+          "lemma": "date",
+          "he": "תמרים"
+        },
+        "figs": {
+          "lemma": "fig",
+          "he": "תאנים"
+        },
+        "grapes": {
+          "lemma": "grape",
+          "he": "ענבים"
+        },
+        "grow": {
+          "lemma": "grow",
+          "he": "גדלים"
+        },
+        "land": {
+          "lemma": "land",
+          "he": "ארץ"
+        },
+        "israel": {
+          "lemma": "Israel",
+          "he": "ישראל"
+        },
+        "which": {
+          "lemma": "which",
+          "he": "איזה"
+        },
+        "fruit": {
+          "lemma": "fruit",
+          "he": "פרי"
+        },
+        "like": {
+          "lemma": "like",
+          "he": "אוהבת"
+        },
+        "best": {
+          "lemma": "best",
+          "he": "הכי (like best = הכי אוהבת)"
+        },
+        "grandma": {
+          "lemma": "grandma",
+          "he": "סבתא"
+        },
+        "love": {
+          "lemma": "love",
+          "he": "אוהבת"
+        },
+        "sweet": {
+          "lemma": "sweet",
+          "he": "מתוקות"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכול"
+        },
+        "make": {
+          "lemma": "make",
+          "he": "לעשות (make a blessing = לברך)"
+        },
+        "blessing": {
+          "lemma": "blessing",
+          "he": "ברכה"
+        },
+        "course": {
+          "lemma": "course",
+          "he": "(of course) בטח, כמובן"
+        },
+        "say": {
+          "lemma": "say",
+          "he": "תגיד"
+        },
+        "slowly": {
+          "lemma": "slowly",
+          "he": "לאט"
+        },
+        "clearly": {
+          "lemma": "clearly",
+          "he": "בבירור"
+        },
+        "mmm": {
+          "lemma": "mmm",
+          "he": "ממ (קול של טעם טוב)"
+        },
+        "right": {
+          "lemma": "right",
+          "he": "(you are right) צודקת"
+        }
+      },
+      "questions": [
+        {
+          "after": 3,
+          "item": {
+            "id": "story.d1.fruits.q1",
+            "type": "choice",
+            "skill": "listening.sentences",
+            "level": "A1",
+            "difficulty": 0.3,
+            "prompt": "What fruits does Ari see?",
+            "options": [
+              {
+                "id": "a",
+                "text": "dates, figs and grapes"
+              },
+              {
+                "id": "b",
+                "text": "apples, pears and grapes"
+              },
+              {
+                "id": "c",
+                "text": "bananas, figs and oranges"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי אומר: I see dates, figs and grapes.",
+              "en": "Ari sees dates, figs and grapes."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 6,
+          "item": {
+            "id": "story.d1.fruits.q2",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "A1",
+            "difficulty": 0.3,
+            "prompt": "Which fruit does Grandma love?",
+            "options": [
+              {
+                "id": "a",
+                "text": "figs"
+              },
+              {
+                "id": "b",
+                "text": "dates"
+              },
+              {
+                "id": "c",
+                "text": "grapes"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "סבתא אומרת: I love figs. היא אוהבת תאנים.",
+              "en": "Grandma says she loves figs."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 7,
+          "item": {
+            "id": "story.d1.fruits.q3",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "A1",
+            "difficulty": 0.3,
+            "prompt": "What does Ari want to do?",
+            "options": [
+              {
+                "id": "a",
+                "text": "make the blessing"
+              },
+              {
+                "id": "b",
+                "text": "wash the fruit"
+              },
+              {
+                "id": "c",
+                "text": "plant a tree"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי שואל: Can I make the blessing? הוא רוצה לברך.",
+              "en": "Ari asks to make the blessing."
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "מברכים על הפירות ושמחים בפירות של ארץ ישראל.",
+      "tags": [
+        "holidays",
+        "tu-bishvat",
+        "family"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.d1.guest",
+      "title": {
+        "he": "אורחת חדשה לשבת",
+        "en": "A New Guest for Shabbat"
+      },
+      "kind": "dialogue",
+      "level": "A2",
+      "cast": {
+        "A": "Rivka",
+        "B": "Abba"
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "Abba, there is a new girl in my class.",
+          "he": "אבא, יש בת חדשה בכיתה שלי."
+        },
+        {
+          "speaker": "B",
+          "en": "Really? Where is she from?",
+          "he": "באמת? מאיפה היא?"
+        },
+        {
+          "speaker": "A",
+          "en": "She came from France with her family last month.",
+          "he": "היא הגיעה מצרפת עם המשפחה שלה בחודש שעבר."
+        },
+        {
+          "speaker": "B",
+          "en": "How is she doing here?",
+          "he": "איך היא מסתדרת פה?"
+        },
+        {
+          "speaker": "A",
+          "en": "She is a little lonely. She doesn't know many people yet.",
+          "he": "היא קצת בודדה. היא עוד לא מכירה הרבה אנשים."
+        },
+        {
+          "speaker": "B",
+          "en": "Then let's invite her family for Shabbat lunch.",
+          "he": "אז בואי נזמין את המשפחה שלה לארוחת צהריים בשבת."
+        },
+        {
+          "speaker": "A",
+          "en": "Really? Is it okay with Ima?",
+          "he": "באמת? זה בסדר מבחינת אמא?"
+        },
+        {
+          "speaker": "B",
+          "en": "I'm sure it is. Ima loves guests.",
+          "he": "אני בטוח שכן. אמא אוהבת אורחים."
+        },
+        {
+          "speaker": "A",
+          "en": "Her name is Esther. She speaks a little Hebrew.",
+          "he": "קוראים לה אסתר. היא מדברת קצת עברית."
+        },
+        {
+          "speaker": "B",
+          "en": "Good. We can speak slowly and help her.",
+          "he": "טוב. אנחנו יכולים לדבר לאט ולעזור לה."
+        },
+        {
+          "speaker": "A",
+          "en": "I'll call her tonight and ask.",
+          "he": "אני אתקשר אליה הערב ואשאל."
+        },
+        {
+          "speaker": "B",
+          "en": "Wonderful. Our door is always open, Rivka.",
+          "he": "נהדר. הדלת שלנו תמיד פתוחה, רבקה."
+        }
+      ],
+      "glossary": {
+        "abba": {
+          "lemma": "Abba",
+          "he": "אבא"
+        },
+        "new": {
+          "lemma": "new",
+          "he": "חדשה"
+        },
+        "girl": {
+          "lemma": "girl",
+          "he": "ילדה, בת"
+        },
+        "class": {
+          "lemma": "class",
+          "he": "כיתה"
+        },
+        "really": {
+          "lemma": "really",
+          "he": "באמת"
+        },
+        "came": {
+          "lemma": "come",
+          "he": "הגיעה"
+        },
+        "france": {
+          "lemma": "France",
+          "he": "צרפת"
+        },
+        "family": {
+          "lemma": "family",
+          "he": "משפחה"
+        },
+        "last": {
+          "lemma": "last",
+          "he": "שעבר (last month = בחודש שעבר)"
+        },
+        "month": {
+          "lemma": "month",
+          "he": "חודש"
+        },
+        "doing": {
+          "lemma": "do",
+          "he": "מסתדרת (how is she doing = איך היא מסתדרת)"
+        },
+        "little": {
+          "lemma": "little",
+          "he": "קצת (a little)"
+        },
+        "lonely": {
+          "lemma": "lonely",
+          "he": "בודד"
+        },
+        "doesn't": {
+          "lemma": "does not",
+          "he": "לא (פועל עזר בשלילה)"
+        },
+        "know": {
+          "lemma": "know",
+          "he": "מכירה"
+        },
+        "many": {
+          "lemma": "many",
+          "he": "הרבה"
+        },
+        "people": {
+          "lemma": "people",
+          "he": "אנשים"
+        },
+        "yet": {
+          "lemma": "yet",
+          "he": "עדיין, עוד"
+        },
+        "then": {
+          "lemma": "then",
+          "he": "אז"
+        },
+        "let's": {
+          "lemma": "let's",
+          "he": "בואי נ..."
+        },
+        "invite": {
+          "lemma": "invite",
+          "he": "להזמין"
+        },
+        "shabbat": {
+          "lemma": "Shabbat",
+          "he": "שבת"
+        },
+        "lunch": {
+          "lemma": "lunch",
+          "he": "ארוחת צהריים"
+        },
+        "ima": {
+          "lemma": "Ima",
+          "he": "אמא"
+        },
+        "i'm": {
+          "lemma": "I am",
+          "he": "אני"
+        },
+        "sure": {
+          "lemma": "sure",
+          "he": "בטוח"
+        },
+        "loves": {
+          "lemma": "love",
+          "he": "אוהבת"
+        },
+        "guests": {
+          "lemma": "guest",
+          "he": "אורחים"
+        },
+        "name": {
+          "lemma": "name",
+          "he": "שם"
+        },
+        "esther": {
+          "lemma": "Esther",
+          "he": "אסתר (שם)"
+        },
+        "speaks": {
+          "lemma": "speak",
+          "he": "מדברת"
+        },
+        "hebrew": {
+          "lemma": "Hebrew",
+          "he": "עברית"
+        },
+        "good": {
+          "lemma": "good",
+          "he": "טוב"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכולים"
+        },
+        "speak": {
+          "lemma": "speak",
+          "he": "לדבר"
+        },
+        "slowly": {
+          "lemma": "slowly",
+          "he": "לאט"
+        },
+        "help": {
+          "lemma": "help",
+          "he": "לעזור"
+        },
+        "i'll": {
+          "lemma": "I will",
+          "he": "אני (בעתיד)"
+        },
+        "call": {
+          "lemma": "call",
+          "he": "להתקשר"
+        },
+        "tonight": {
+          "lemma": "tonight",
+          "he": "הערב"
+        },
+        "ask": {
+          "lemma": "ask",
+          "he": "לשאול"
+        },
+        "wonderful": {
+          "lemma": "wonderful",
+          "he": "נהדר"
+        },
+        "door": {
+          "lemma": "door",
+          "he": "דלת"
+        },
+        "always": {
+          "lemma": "always",
+          "he": "תמיד"
+        },
+        "open": {
+          "lemma": "open",
+          "he": "פתוח"
+        },
+        "rivka": {
+          "lemma": "Rivka",
+          "he": "רבקה (שם)"
+        }
+      },
+      "questions": [
+        {
+          "after": 2,
+          "item": {
+            "id": "story.d1.guest.q1",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "Where is the new girl from?",
+            "options": [
+              {
+                "id": "a",
+                "text": "France"
+              },
+              {
+                "id": "b",
+                "text": "America"
+              },
+              {
+                "id": "c",
+                "text": "England"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "רבקה אומרת: She came from France. היא הגיעה מצרפת.",
+              "en": "Rivka says she came from France."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 4,
+          "item": {
+            "id": "story.d1.guest.q2",
+            "type": "choice",
+            "skill": "listening.sentences",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "How does the new girl feel?",
+            "options": [
+              {
+                "id": "a",
+                "text": "a little lonely"
+              },
+              {
+                "id": "b",
+                "text": "very tired"
+              },
+              {
+                "id": "c",
+                "text": "angry"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "רבקה אומרת: She is a little lonely. היא קצת בודדה.",
+              "en": "Rivka says she is a little lonely."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 10,
+          "item": {
+            "id": "story.d1.guest.q3",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "When will Rivka call Esther?",
+            "options": [
+              {
+                "id": "a",
+                "text": "tonight"
+              },
+              {
+                "id": "b",
+                "text": "tomorrow morning"
+              },
+              {
+                "id": "c",
+                "text": "on Shabbat"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "רבקה אומרת: I'll call her tonight. היא תתקשר הערב.",
+              "en": "Rivka will call her tonight."
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "הכנסת אורחים מתחילה בלב פתוח ובדלת פתוחה.",
+      "tags": [
+        "shabbat",
+        "chesed",
+        "family"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.d1.purim",
+      "title": {
+        "he": "משלוחי מנות",
+        "en": "Purim Food Gifts"
+      },
+      "kind": "dialogue",
+      "level": "A2",
+      "cast": {
+        "A": "Tamar",
+        "B": "Ari"
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "Ari, Purim is next week. Let's plan our food gifts.",
+          "he": "ארי, פורים בשבוע הבא. בוא נתכנן את משלוחי המנות שלנו."
+        },
+        {
+          "speaker": "B",
+          "en": "Great! Who are we giving them to?",
+          "he": "מעולה! למי אנחנו נותנים אותם?"
+        },
+        {
+          "speaker": "A",
+          "en": "One for Shira and one for Moshe.",
+          "he": "אחד לשירה ואחד למשה."
+        },
+        {
+          "speaker": "B",
+          "en": "And one for Mrs. Klein. She lives alone.",
+          "he": "ואחד לגברת קליין. היא גרה לבד."
+        },
+        {
+          "speaker": "A",
+          "en": "That's a beautiful idea. She will be so happy.",
+          "he": "זה רעיון יפה. היא מאוד תשמח."
+        },
+        {
+          "speaker": "B",
+          "en": "What do we put in the baskets?",
+          "he": "מה שמים בסלסלות?"
+        },
+        {
+          "speaker": "A",
+          "en": "Two kinds of food in each one.",
+          "he": "שני סוגים של אוכל בכל אחת."
+        },
+        {
+          "speaker": "B",
+          "en": "Cookies and an apple? I love Ima's cookies.",
+          "he": "עוגיות ותפוח? אני אוהב את העוגיות של אמא."
+        },
+        {
+          "speaker": "A",
+          "en": "Good. Let's also add a small bottle of juice.",
+          "he": "טוב. בוא נוסיף גם בקבוק מיץ קטן."
+        },
+        {
+          "speaker": "B",
+          "en": "Can I draw a card for Mrs. Klein?",
+          "he": "אני יכול לצייר כרטיס לגברת קליין?"
+        },
+        {
+          "speaker": "A",
+          "en": "Yes! Write \"Happy Purim\" in big letters.",
+          "he": "כן! תכתוב \"פורים שמח\" באותיות גדולות."
+        },
+        {
+          "speaker": "B",
+          "en": "Because her eyes are weak, right?",
+          "he": "כי העיניים שלה חלשות, נכון?"
+        },
+        {
+          "speaker": "A",
+          "en": "Right. You think of everything, Ari.",
+          "he": "נכון. אתה חושב על הכול, ארי."
+        }
+      ],
+      "glossary": {
+        "ari": {
+          "lemma": "Ari",
+          "he": "ארי (שם)"
+        },
+        "purim": {
+          "lemma": "Purim",
+          "he": "פורים"
+        },
+        "next": {
+          "lemma": "next",
+          "he": "הבא"
+        },
+        "week": {
+          "lemma": "week",
+          "he": "שבוע"
+        },
+        "let's": {
+          "lemma": "let's",
+          "he": "בוא נ..."
+        },
+        "plan": {
+          "lemma": "plan",
+          "he": "לתכנן"
+        },
+        "food": {
+          "lemma": "food",
+          "he": "אוכל"
+        },
+        "gifts": {
+          "lemma": "gift",
+          "he": "מתנות (food gifts = משלוחי מנות)"
+        },
+        "great": {
+          "lemma": "great",
+          "he": "מעולה"
+        },
+        "giving": {
+          "lemma": "give",
+          "he": "נותנים"
+        },
+        "one": {
+          "lemma": "one",
+          "he": "אחד"
+        },
+        "shira": {
+          "lemma": "Shira",
+          "he": "שירה (שם)"
+        },
+        "moshe": {
+          "lemma": "Moshe",
+          "he": "משה (שם)"
+        },
+        "klein": {
+          "lemma": "Klein",
+          "he": "קליין (שם משפחה)"
+        },
+        "lives": {
+          "lemma": "live",
+          "he": "גרה"
+        },
+        "alone": {
+          "lemma": "alone",
+          "he": "לבד"
+        },
+        "that's": {
+          "lemma": "that is",
+          "he": "זה"
+        },
+        "beautiful": {
+          "lemma": "beautiful",
+          "he": "יפה"
+        },
+        "idea": {
+          "lemma": "idea",
+          "he": "רעיון"
+        },
+        "will": {
+          "lemma": "will",
+          "he": "(עתיד) תהיה"
+        },
+        "so": {
+          "lemma": "so",
+          "he": "כל כך"
+        },
+        "happy": {
+          "lemma": "happy",
+          "he": "שמח (Happy Purim = פורים שמח)"
+        },
+        "put": {
+          "lemma": "put",
+          "he": "שמים"
+        },
+        "baskets": {
+          "lemma": "basket",
+          "he": "סלסלות"
+        },
+        "two": {
+          "lemma": "two",
+          "he": "שניים"
+        },
+        "kinds": {
+          "lemma": "kind",
+          "he": "סוגים"
+        },
+        "each": {
+          "lemma": "each",
+          "he": "כל אחד"
+        },
+        "cookies": {
+          "lemma": "cookie",
+          "he": "עוגיות"
+        },
+        "apple": {
+          "lemma": "apple",
+          "he": "תפוח"
+        },
+        "love": {
+          "lemma": "love",
+          "he": "אוהב"
+        },
+        "ima": {
+          "lemma": "Ima",
+          "he": "אמא"
+        },
+        "good": {
+          "lemma": "good",
+          "he": "טוב"
+        },
+        "also": {
+          "lemma": "also",
+          "he": "גם"
+        },
+        "add": {
+          "lemma": "add",
+          "he": "להוסיף"
+        },
+        "small": {
+          "lemma": "small",
+          "he": "קטן"
+        },
+        "bottle": {
+          "lemma": "bottle",
+          "he": "בקבוק"
+        },
+        "juice": {
+          "lemma": "juice",
+          "he": "מיץ"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכול"
+        },
+        "draw": {
+          "lemma": "draw",
+          "he": "לצייר"
+        },
+        "card": {
+          "lemma": "card",
+          "he": "כרטיס"
+        },
+        "write": {
+          "lemma": "write",
+          "he": "תכתוב"
+        },
+        "big": {
+          "lemma": "big",
+          "he": "גדול"
+        },
+        "letters": {
+          "lemma": "letter",
+          "he": "אותיות"
+        },
+        "because": {
+          "lemma": "because",
+          "he": "כי"
+        },
+        "eyes": {
+          "lemma": "eye",
+          "he": "עיניים"
+        },
+        "weak": {
+          "lemma": "weak",
+          "he": "חלש"
+        },
+        "right": {
+          "lemma": "right",
+          "he": "נכון"
+        },
+        "think": {
+          "lemma": "think",
+          "he": "חושב"
+        },
+        "everything": {
+          "lemma": "everything",
+          "he": "הכול"
+        }
+      },
+      "questions": [
+        {
+          "after": 3,
+          "item": {
+            "id": "story.d1.purim.q1",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "Who does Ari want to add to the list?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Mrs. Klein"
+              },
+              {
+                "id": "b",
+                "text": "Grandpa Yosef"
+              },
+              {
+                "id": "c",
+                "text": "Rabbi Gold"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי אומר: And one for Mrs. Klein. הוא רוצה משלוח גם לגברת קליין.",
+              "en": "Ari adds a gift for Mrs. Klein."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 8,
+          "item": {
+            "id": "story.d1.purim.q2",
+            "type": "choice",
+            "skill": "listening.sentences",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "What do they put in the baskets?",
+            "options": [
+              {
+                "id": "a",
+                "text": "cookies, an apple and juice"
+              },
+              {
+                "id": "b",
+                "text": "cake, candy and milk"
+              },
+              {
+                "id": "c",
+                "text": "bread, cheese and juice"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "עוגיות (cookies), תפוח (an apple) ובקבוק מיץ (a small bottle of juice).",
+              "en": "Cookies, an apple and a small bottle of juice."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 11,
+          "item": {
+            "id": "story.d1.purim.q3",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "Why will Ari write in big letters?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Mrs. Klein's eyes are weak."
+              },
+              {
+                "id": "b",
+                "text": "Mrs. Klein likes big cards."
+              },
+              {
+                "id": "c",
+                "text": "Moshe asked him to."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי אומר: Because her eyes are weak. העיניים שלה חלשות.",
+              "en": "Her eyes are weak, so big letters help."
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "משלוח מנות קטן יכול לשמח מאוד מישהו שגר לבד.",
+      "tags": [
+        "purim",
+        "holidays",
+        "chesed",
+        "family"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.d1.siddur",
+      "title": {
+        "he": "הסידור של ארי",
+        "en": "Ari's Siddur"
+      },
+      "kind": "dialogue",
+      "level": "A2",
+      "cast": {
+        "A": "Ima",
+        "B": "Ari"
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "en": "Ima! I can't find my siddur anywhere!",
+          "he": "אמא! אני לא מוצא את הסידור שלי בשום מקום!"
+        },
+        {
+          "speaker": "A",
+          "en": "Calm down, Ari. When did you last use it?",
+          "he": "תירגע, ארי. מתי השתמשת בו בפעם האחרונה?"
+        },
+        {
+          "speaker": "B",
+          "en": "At shul on Shabbat morning, I think.",
+          "he": "בבית הכנסת בשבת בבוקר, אני חושב."
+        },
+        {
+          "speaker": "A",
+          "en": "Did you bring it home after the prayers?",
+          "he": "הבאת אותו הביתה אחרי התפילה?"
+        },
+        {
+          "speaker": "B",
+          "en": "I don't remember. Maybe I left it on my seat.",
+          "he": "אני לא זוכר. אולי השארתי אותו על המקום שלי."
+        },
+        {
+          "speaker": "A",
+          "en": "School starts in twenty minutes. We can stop at shul.",
+          "he": "בית הספר מתחיל בעוד עשרים דקות. אפשר לעצור בבית הכנסת."
+        },
+        {
+          "speaker": "B",
+          "en": "Thank you, Ima. Grandpa gave me that siddur.",
+          "he": "תודה, אמא. סבא נתן לי את הסידור הזה."
+        },
+        {
+          "speaker": "A",
+          "en": "I know. Your name is inside.",
+          "he": "אני יודעת. השם שלך כתוב בפנים."
+        },
+        {
+          "speaker": "B",
+          "en": "Look! It's on the shelf near the door.",
+          "he": "תראי! הוא על המדף ליד הדלת."
+        },
+        {
+          "speaker": "A",
+          "en": "Someone found it and put it there.",
+          "he": "מישהו מצא אותו ושם אותו שם."
+        },
+        {
+          "speaker": "B",
+          "en": "I'm so happy. I'll be more careful next time.",
+          "he": "אני כל כך שמח. בפעם הבאה אהיה יותר זהיר."
+        },
+        {
+          "speaker": "A",
+          "en": "Good. And now, quickly to school!",
+          "he": "יופי. ועכשיו, מהר לבית הספר!"
+        }
+      ],
+      "glossary": {
+        "ima": {
+          "lemma": "Ima",
+          "he": "אמא"
+        },
+        "can't": {
+          "lemma": "cannot",
+          "he": "לא יכול"
+        },
+        "find": {
+          "lemma": "find",
+          "he": "למצוא"
+        },
+        "siddur": {
+          "lemma": "siddur",
+          "he": "סידור (ספר תפילה)"
+        },
+        "anywhere": {
+          "lemma": "anywhere",
+          "he": "בשום מקום"
+        },
+        "calm": {
+          "lemma": "calm",
+          "he": "רגוע (calm down = להירגע)"
+        },
+        "down": {
+          "lemma": "down",
+          "he": "(calm down = להירגע)"
+        },
+        "ari": {
+          "lemma": "Ari",
+          "he": "ארי (שם)"
+        },
+        "last": {
+          "lemma": "last",
+          "he": "בפעם האחרונה"
+        },
+        "use": {
+          "lemma": "use",
+          "he": "להשתמש"
+        },
+        "shul": {
+          "lemma": "shul",
+          "he": "בית כנסת"
+        },
+        "shabbat": {
+          "lemma": "Shabbat",
+          "he": "שבת"
+        },
+        "morning": {
+          "lemma": "morning",
+          "he": "בוקר"
+        },
+        "think": {
+          "lemma": "think",
+          "he": "חושב"
+        },
+        "bring": {
+          "lemma": "bring",
+          "he": "להביא"
+        },
+        "home": {
+          "lemma": "home",
+          "he": "הביתה"
+        },
+        "after": {
+          "lemma": "after",
+          "he": "אחרי"
+        },
+        "prayers": {
+          "lemma": "prayer",
+          "he": "תפילה (כאן: התפילה)"
+        },
+        "don't": {
+          "lemma": "do not",
+          "he": "לא (פועל עזר בשלילה)"
+        },
+        "remember": {
+          "lemma": "remember",
+          "he": "זוכר"
+        },
+        "maybe": {
+          "lemma": "maybe",
+          "he": "אולי"
+        },
+        "left": {
+          "lemma": "leave",
+          "he": "השארתי"
+        },
+        "seat": {
+          "lemma": "seat",
+          "he": "מקום ישיבה"
+        },
+        "school": {
+          "lemma": "school",
+          "he": "בית ספר"
+        },
+        "starts": {
+          "lemma": "start",
+          "he": "מתחיל"
+        },
+        "twenty": {
+          "lemma": "twenty",
+          "he": "עשרים"
+        },
+        "minutes": {
+          "lemma": "minute",
+          "he": "דקות"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכולים"
+        },
+        "stop": {
+          "lemma": "stop",
+          "he": "לעצור"
+        },
+        "thank": {
+          "lemma": "thank",
+          "he": "תודה"
+        },
+        "grandpa": {
+          "lemma": "grandpa",
+          "he": "סבא"
+        },
+        "gave": {
+          "lemma": "give",
+          "he": "נתן"
+        },
+        "know": {
+          "lemma": "know",
+          "he": "יודעת"
+        },
+        "name": {
+          "lemma": "name",
+          "he": "שם"
+        },
+        "inside": {
+          "lemma": "inside",
+          "he": "בפנים"
+        },
+        "look": {
+          "lemma": "look",
+          "he": "תראי"
+        },
+        "it's": {
+          "lemma": "it is",
+          "he": "הוא (נמצא)"
+        },
+        "shelf": {
+          "lemma": "shelf",
+          "he": "מדף"
+        },
+        "near": {
+          "lemma": "near",
+          "he": "ליד"
+        },
+        "door": {
+          "lemma": "door",
+          "he": "דלת"
+        },
+        "someone": {
+          "lemma": "someone",
+          "he": "מישהו"
+        },
+        "found": {
+          "lemma": "find",
+          "he": "מצא"
+        },
+        "put": {
+          "lemma": "put",
+          "he": "שם"
+        },
+        "i'm": {
+          "lemma": "I am",
+          "he": "אני"
+        },
+        "so": {
+          "lemma": "so",
+          "he": "כל כך"
+        },
+        "happy": {
+          "lemma": "happy",
+          "he": "שמח"
+        },
+        "i'll": {
+          "lemma": "I will",
+          "he": "אני (בעתיד)"
+        },
+        "more": {
+          "lemma": "more",
+          "he": "יותר"
+        },
+        "careful": {
+          "lemma": "careful",
+          "he": "זהיר"
+        },
+        "next": {
+          "lemma": "next",
+          "he": "הבאה"
+        },
+        "time": {
+          "lemma": "time",
+          "he": "פעם"
+        },
+        "good": {
+          "lemma": "good",
+          "he": "יופי, טוב"
+        },
+        "now": {
+          "lemma": "now",
+          "he": "עכשיו"
+        },
+        "quickly": {
+          "lemma": "quickly",
+          "he": "מהר"
+        }
+      },
+      "questions": [
+        {
+          "after": 2,
+          "item": {
+            "id": "story.d1.siddur.q1",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "Where did Ari last use his siddur?",
+            "options": [
+              {
+                "id": "a",
+                "text": "at shul"
+              },
+              {
+                "id": "b",
+                "text": "at school"
+              },
+              {
+                "id": "c",
+                "text": "at Grandpa's house"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי אומר: At shul on Shabbat morning. בבית הכנסת.",
+              "en": "Ari last used it at shul."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 6,
+          "item": {
+            "id": "story.d1.siddur.q2",
+            "type": "choice",
+            "skill": "listening.sentences",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "Who gave Ari the siddur?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Grandpa"
+              },
+              {
+                "id": "b",
+                "text": "Abba"
+              },
+              {
+                "id": "c",
+                "text": "Rabbi Gold"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי אומר: Grandpa gave me that siddur. סבא נתן לו אותו.",
+              "en": "Grandpa gave it to him."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 8,
+          "item": {
+            "id": "story.d1.siddur.q3",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "Where do they find the siddur?",
+            "options": [
+              {
+                "id": "a",
+                "text": "on a shelf near the door"
+              },
+              {
+                "id": "b",
+                "text": "on Ari's seat"
+              },
+              {
+                "id": "c",
+                "text": "under a table"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי אומר: It's on the shelf near the door. הסידור על המדף ליד הדלת.",
+              "en": "It is on the shelf near the door."
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "שומרים היטב על חפצים יקרים, ומי שמוצא אבדה מחזיר אותה.",
+      "tags": [
+        "shul",
+        "family",
+        "honesty"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.d1.newclass",
+      "title": {
+        "he": "יום ראשון בכיתה חדשה",
+        "en": "First Day in a New Class"
+      },
+      "kind": "dialogue",
+      "level": "A2",
+      "cast": {
+        "A": "Tamar",
+        "B": "Rabbi Gold"
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "en": "Good morning. You must be Tamar. Welcome to our class!",
+          "he": "בוקר טוב. את בטח תמר. ברוכה הבאה לכיתה שלנו!"
+        },
+        {
+          "speaker": "A",
+          "en": "Good morning, Rabbi Gold. Thank you.",
+          "he": "בוקר טוב, הרב גולד. תודה."
+        },
+        {
+          "speaker": "B",
+          "en": "How do you feel on your first day?",
+          "he": "איך את מרגישה ביום הראשון?"
+        },
+        {
+          "speaker": "A",
+          "en": "A little nervous. I don't know anyone here.",
+          "he": "קצת לחוצה. אני לא מכירה אף אחת כאן."
+        },
+        {
+          "speaker": "B",
+          "en": "That's normal. Everyone feels that way at first.",
+          "he": "זה נורמלי. כולם מרגישים ככה בהתחלה."
+        },
+        {
+          "speaker": "A",
+          "en": "Where should I sit?",
+          "he": "איפה כדאי לי לשבת?"
+        },
+        {
+          "speaker": "B",
+          "en": "Sit next to Shira, near the window. She's very kind.",
+          "he": "תשבי ליד שירה, ליד החלון. היא מאוד נחמדה."
+        },
+        {
+          "speaker": "A",
+          "en": "What are we learning today?",
+          "he": "מה אנחנו לומדים היום?"
+        },
+        {
+          "speaker": "B",
+          "en": "We're starting the story of Ruth. Do you know it?",
+          "he": "אנחנו מתחילים את הסיפור של רות. את מכירה אותו?"
+        },
+        {
+          "speaker": "A",
+          "en": "Yes! My grandpa told me about Ruth.",
+          "he": "כן! סבא שלי סיפר לי על רות."
+        },
+        {
+          "speaker": "B",
+          "en": "Wonderful. Then you can help the class today.",
+          "he": "נהדר. אז את יכולה לעזור לכיתה היום."
+        },
+        {
+          "speaker": "A",
+          "en": "Really? I'm feeling better already.",
+          "he": "באמת? אני כבר מרגישה יותר טוב."
+        },
+        {
+          "speaker": "B",
+          "en": "Ruth was new too, and she found a home.",
+          "he": "גם רות הייתה חדשה, והיא מצאה בית."
+        }
+      ],
+      "glossary": {
+        "good": {
+          "lemma": "good",
+          "he": "טוב"
+        },
+        "morning": {
+          "lemma": "morning",
+          "he": "בוקר"
+        },
+        "must": {
+          "lemma": "must",
+          "he": "בטח (כאן: כנראה)"
+        },
+        "tamar": {
+          "lemma": "Tamar",
+          "he": "תמר (שם)"
+        },
+        "welcome": {
+          "lemma": "welcome",
+          "he": "ברוכה הבאה"
+        },
+        "class": {
+          "lemma": "class",
+          "he": "כיתה"
+        },
+        "rabbi": {
+          "lemma": "Rabbi",
+          "he": "הרב"
+        },
+        "gold": {
+          "lemma": "Gold",
+          "he": "גולד (שם משפחה)"
+        },
+        "thank": {
+          "lemma": "thank",
+          "he": "תודה"
+        },
+        "feel": {
+          "lemma": "feel",
+          "he": "מרגישה"
+        },
+        "first": {
+          "lemma": "first",
+          "he": "ראשון"
+        },
+        "day": {
+          "lemma": "day",
+          "he": "יום"
+        },
+        "little": {
+          "lemma": "little",
+          "he": "קצת (a little)"
+        },
+        "nervous": {
+          "lemma": "nervous",
+          "he": "לחוץ, מתוח"
+        },
+        "don't": {
+          "lemma": "do not",
+          "he": "לא (פועל עזר בשלילה)"
+        },
+        "know": {
+          "lemma": "know",
+          "he": "מכירה"
+        },
+        "anyone": {
+          "lemma": "anyone",
+          "he": "אף אחד"
+        },
+        "that's": {
+          "lemma": "that is",
+          "he": "זה"
+        },
+        "normal": {
+          "lemma": "normal",
+          "he": "נורמלי, רגיל"
+        },
+        "everyone": {
+          "lemma": "everyone",
+          "he": "כולם"
+        },
+        "feels": {
+          "lemma": "feel",
+          "he": "מרגישים"
+        },
+        "way": {
+          "lemma": "way",
+          "he": "ככה (that way)"
+        },
+        "should": {
+          "lemma": "should",
+          "he": "כדאי"
+        },
+        "sit": {
+          "lemma": "sit",
+          "he": "לשבת"
+        },
+        "next": {
+          "lemma": "next",
+          "he": "ליד (next to)"
+        },
+        "shira": {
+          "lemma": "Shira",
+          "he": "שירה (שם)"
+        },
+        "near": {
+          "lemma": "near",
+          "he": "ליד"
+        },
+        "window": {
+          "lemma": "window",
+          "he": "חלון"
+        },
+        "she's": {
+          "lemma": "she is",
+          "he": "היא"
+        },
+        "very": {
+          "lemma": "very",
+          "he": "מאוד"
+        },
+        "kind": {
+          "lemma": "kind",
+          "he": "נחמדה"
+        },
+        "learning": {
+          "lemma": "learn",
+          "he": "לומדים"
+        },
+        "today": {
+          "lemma": "today",
+          "he": "היום"
+        },
+        "we're": {
+          "lemma": "we are",
+          "he": "אנחנו"
+        },
+        "starting": {
+          "lemma": "start",
+          "he": "מתחילים"
+        },
+        "story": {
+          "lemma": "story",
+          "he": "סיפור"
+        },
+        "ruth": {
+          "lemma": "Ruth",
+          "he": "רות"
+        },
+        "grandpa": {
+          "lemma": "grandpa",
+          "he": "סבא"
+        },
+        "told": {
+          "lemma": "tell",
+          "he": "סיפר"
+        },
+        "about": {
+          "lemma": "about",
+          "he": "על"
+        },
+        "wonderful": {
+          "lemma": "wonderful",
+          "he": "נהדר"
+        },
+        "then": {
+          "lemma": "then",
+          "he": "אז"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכולה"
+        },
+        "help": {
+          "lemma": "help",
+          "he": "לעזור"
+        },
+        "really": {
+          "lemma": "really",
+          "he": "באמת"
+        },
+        "i'm": {
+          "lemma": "I am",
+          "he": "אני"
+        },
+        "feeling": {
+          "lemma": "feel",
+          "he": "מרגישה"
+        },
+        "better": {
+          "lemma": "better",
+          "he": "יותר טוב"
+        },
+        "already": {
+          "lemma": "already",
+          "he": "כבר"
+        },
+        "new": {
+          "lemma": "new",
+          "he": "חדשה"
+        },
+        "too": {
+          "lemma": "too",
+          "he": "גם"
+        },
+        "found": {
+          "lemma": "find",
+          "he": "מצאה"
+        },
+        "home": {
+          "lemma": "home",
+          "he": "בית"
+        }
+      },
+      "questions": [
+        {
+          "after": 3,
+          "item": {
+            "id": "story.d1.newclass.q1",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "How does Tamar feel on her first day?",
+            "options": [
+              {
+                "id": "a",
+                "text": "a little nervous"
+              },
+              {
+                "id": "b",
+                "text": "very happy"
+              },
+              {
+                "id": "c",
+                "text": "tired and hungry"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "תמר אומרת: A little nervous. היא קצת לחוצה.",
+              "en": "Tamar says she is a little nervous."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 6,
+          "item": {
+            "id": "story.d1.newclass.q2",
+            "type": "choice",
+            "skill": "listening.sentences",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "Where will Tamar sit?",
+            "options": [
+              {
+                "id": "a",
+                "text": "next to Shira"
+              },
+              {
+                "id": "b",
+                "text": "next to the door"
+              },
+              {
+                "id": "c",
+                "text": "next to Rabbi Gold"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "הרב גולד אומר: Sit next to Shira. היא תשב ליד שירה.",
+              "en": "Rabbi Gold says to sit next to Shira."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 8,
+          "item": {
+            "id": "story.d1.newclass.q3",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "A2",
+            "difficulty": 0.5,
+            "prompt": "What is the class learning today?",
+            "options": [
+              {
+                "id": "a",
+                "text": "the story of Ruth"
+              },
+              {
+                "id": "b",
+                "text": "the story of Esther"
+              },
+              {
+                "id": "c",
+                "text": "the story of Noah"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "הרב גולד אומר: We're starting the story of Ruth. לומדים את הסיפור של רות.",
+              "en": "They are starting the story of Ruth."
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "קבלת פנים חמה עוזרת למי שחדש להרגיש בבית.",
+      "tags": [
+        "school",
+        "torah",
+        "chesed"
+      ],
+      "source": "original"
+    }
+  ]
+}

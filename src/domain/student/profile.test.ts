@@ -9,7 +9,7 @@ const T0 = new Date('2026-09-01T10:00:00').getTime();
 const info = () => ({ note: { he: 'מתבלבל/ת בין much ל־many', en: 'n' }, tip: { he: 't', en: 't' } });
 
 describe('learner profile', () => {
-  const student = createStudent({ name: 'נועה', goal: { track: 'units-4' } }, 's1', T0);
+  const student = createStudent({ name: 'דנה', goal: { track: 'units-4' } }, 's1', T0);
 
   it('an untouched student is not assessed and gets a placement recommendation', () => {
     const p = buildLearnerProfile(student, { skills: new Map(), units: new Map(), patterns: new Map() }, [], info, T0, localDay(T0));

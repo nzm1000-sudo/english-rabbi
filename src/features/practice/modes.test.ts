@@ -6,7 +6,7 @@ import { recordMistake } from '@/domain/learning/memory';
 import { domainOf } from '@/domain/skills/taxonomy';
 
 const NOW = new Date('2026-10-02T10:00:00').getTime();
-const student = createStudent({ name: 'נועה', goal: { track: 'units-4' } }, 's1', NOW);
+const student = createStudent({ name: 'דנה', goal: { track: 'units-4' } }, 's1', NOW);
 const empty = () => ({ skills: new Map(), units: new Map(), patterns: new Map() });
 const ctx = (over: Partial<PoolContext> = {}): PoolContext => ({
   registry: contentRegistry,

@@ -96,3 +96,25 @@ export const XIcon = ({ size = 22 }: P) => (
 export const TurtleIcon = ({ size = 24 }: P) => (
   <svg {...ico(size)}><path d="M4 15c0-4 3.6-7 8-7s8 3 8 7z" /><path d="M8.5 9.2 10 15M15.5 9.2 14 15M4 15h16" /><path d="M20 13.5c1.4 0 2-.9 2-2" /><path d="M6.5 15v2.5M17.5 15v2.5" /></svg>
 );
+
+export const BookIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><path d="M5 4.5h9a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3z" /><path d="M5 17a3 3 0 0 1 3-3h9" /><path d="M9 8h4" /></svg>
+);
+export const MicIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M9 21h6" /></svg>
+);
+export const BookmarkIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><path d="M6.5 4h11v16l-5.5-4-5.5 4z" /></svg>
+);
+export const SearchIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><circle cx="11" cy="11" r="6" /><path d="m20 20-4.5-4.5" /></svg>
+);
+export const TranslateIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><path d="M4 6h9M8.5 4v2M6 6c.8 3 2.8 5.3 5.5 6.5M11 6c-.8 3-2.8 5.5-5.5 7" /><path d="m13 20 4-9 4 9M14.5 17h5" /></svg>
+);
+export const LinkIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1" /><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" /></svg>
+);
+export const TreeIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><circle cx="12" cy="5.5" r="2.5" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="12" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" /><path d="M12 8v8M12 12H5.5v4M12 12h6.5v4" /></svg>
+);

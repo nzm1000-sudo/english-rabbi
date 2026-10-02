@@ -1,0 +1,86 @@
+[
+  {
+    "id": "translate.missing-be",
+    "skill": "grammar.present-simple",
+    "note": {
+      "he": "משמיט/ה את is / am / are במשפט שמני, כמו בעברית",
+      "en": "Leaves out is / am / are in a sentence with no other verb, as in Hebrew"
+    },
+    "tip": {
+      "he": "בעברית אומרים \"הבית גדול\" בלי פועל. באנגלית חייבים פועל: The house is big.",
+      "en": "Every English sentence needs a verb: The house is big."
+    }
+  },
+  {
+    "id": "translate.missing-dummy-subject",
+    "skill": "grammar.there-is",
+    "note": {
+      "he": "מתחיל/ה משפט בלי it או there, כמו \"קר היום\" בעברית",
+      "en": "Starts a sentence without it or there, as in Hebrew"
+    },
+    "tip": {
+      "he": "באנגלית לכל משפט יש נושא. למזג אוויר ולזמן: It is cold. לקיום של משהו: There is / There was.",
+      "en": "English needs a subject: It is cold. There was a lot of food."
+    }
+  },
+  {
+    "id": "translate.not-without-auxiliary",
+    "skill": "grammar.present-simple.questions-negatives",
+    "note": {
+      "he": "שם not ישר לפני הפועל בלי do / does / did",
+      "en": "Puts not straight before the verb without do / does / did"
+    },
+    "tip": {
+      "he": "בעברית \"לא\" לבד מספיק. באנגלית צריך פועל עזר: don't, doesn't, didn't.",
+      "en": "Use a helper verb: don't, doesn't, didn't + base verb."
+    }
+  },
+  {
+    "id": "translate.age-with-have",
+    "skill": "grammar.present-simple",
+    "note": {
+      "he": "אומר/ת גיל עם have, כמו \"יש לו 13 שנים\"",
+      "en": "Says age with have (has 13 years)"
+    },
+    "tip": {
+      "he": "באנגלית גיל אומרים עם be: She is thirteen.",
+      "en": "Age uses be: She is thirteen (years old)."
+    }
+  },
+  {
+    "id": "translate.present-for-past",
+    "skill": "grammar.past-simple",
+    "note": {
+      "he": "משאיר/ה את הפועל בהווה כשהמשפט בעבר",
+      "en": "Keeps the verb in the present when the sentence is about the past"
+    },
+    "tip": {
+      "he": "מילים כמו yesterday ו־last week אומרות עבר. הפועל צריך להיות בעבר.",
+      "en": "yesterday, last week: use the past form."
+    }
+  },
+  {
+    "id": "translate.adjective-order",
+    "skill": "grammar.word-order",
+    "note": {
+      "he": "מסדר/ת כמה תארים בסדר לא נכון (red beautiful)",
+      "en": "Puts several adjectives in the wrong order (red beautiful)"
+    },
+    "tip": {
+      "he": "קודם דעה (beautiful), אחר כך גודל, גיל, ובסוף צבע: a beautiful big new red car.",
+      "en": "Opinion, size, age, color: a beautiful big new red car."
+    }
+  },
+  {
+    "id": "translate.pronoun-copula",
+    "skill": "grammar.pronouns",
+    "note": {
+      "he": "מתרגם/ת את \"הוא\" שבמשפט שמני כמילה נוספת (Eli he is)",
+      "en": "Translates the Hebrew linking הוא as an extra he (Eli he is)"
+    },
+    "tip": {
+      "he": "במשפט \"אלי הוא תינוק\" המילה \"הוא\" מקשרת. באנגלית is עושה את העבודה: Eli is a baby.",
+      "en": "In English, is does the linking: Eli is a baby."
+    }
+  }
+]

@@ -228,3 +228,29 @@ music, sports, fashion, technology, games, movies, school, travel, food, animals
 
 ## Tags
 `bagrut` (exam-style), `riddle`, `idiom`, `phrasal`, `minimal-pairs`, `dictation`, `connector`.
+
+## New content types (stories, translation, spot the mistake, chunks, word families)
+
+`content/examples/new-types.json` has one valid example of each new shape (not loaded by the app; copy it into `content/packs/` to validate it).
+Validate a pack with `PACK=<pack-id> npx vitest run tools/validate-pack.test.ts`.
+
+### Stories (`"stories": [...]` in a pack)
+- `kind: "read"`: narration lines without `speaker`. `kind: "dialogue"`: every line has `speaker` `"A"` (female voice) or `"B"` (male voice), and `cast` names them.
+- Every line has `en` and a natural Hebrew translation `he`.
+- `glossary`: one entry for **every** word in the lines, except the words in `STORY_STOPWORDS` (schema.ts). Key: the word lowercase as written, without punctuation (`"puts"`, `"didn't"`, `"grandma's"` or just `"grandma"`). Value: `lemma` (dictionary form) and `he` (the meaning **in this sentence**). No unused entries.
+- `questions`: 2 to 4 `choice` items, each shown after line `after` (0-based). Ids `<story-id>.q1`...
+- Graded: A1 lines up to 8 words, A2 up to 12, B1 up to 16, B2 up to 22. Mostly words a learner at that level knows.
+- Religious, warm, family content (Shabbat, holidays, mitzvot, chesed, Torah learning). Never invent halachic rulings.
+
+### Translation (tag `"translate"`)
+- `typed` or `order` with `promptLanguage: "he"` and a Hebrew `prompt`.
+- `typed.answers`: **every** natural English translation a teacher would accept. Case, end punctuation, commas and contractions (I'm / I am) are ignored by the checker, so list only real wording variants (Mom / My mom / Mother, on Friday / every Friday...).
+- `audioText`: the first accepted answer.
+
+### Spot the mistake (`type: "fix"`)
+- `sentence` has exactly one wrong word, a typical mistake of Hebrew speakers. `wrongIndex`: its position (0-based, split on spaces). `correction`: the right word ("" to delete it). `corrected`: the fixed sentence. `audioText` equals `corrected`.
+- `distractors`: 2-3 replacements that are wrong in this sentence.
+- No other single-word change may produce a sentence a teacher would accept. With agreement mistakes use a name or noun subject ("Dan go"), not a pronoun ("He go" can also become "They go").
+
+### Chunks (tag `"chunk"`) and word families (tag `"family"`)
+- Regular `choice` / `typed` items. Chunks: skill `vocabulary.collocations`, unit `chunk:<chunk>`. Families: skill `vocabulary.word-formation`, unit `family:<base word>`.

@@ -1,0 +1,107 @@
+{
+  "packId": "zz-sample",
+  "schemaVersion": 1,
+  "title": "Sample",
+  "items": [
+    {
+      "id": "fix.sample.am-agree",
+      "type": "fix",
+      "skill": "grammar.present-simple",
+      "level": "A2",
+      "difficulty": 0.4,
+      "sentence": "I am agree with you.",
+      "wrongIndex": 1,
+      "correction": "",
+      "distractors": ["is", "do"],
+      "corrected": "I agree with you.",
+      "audioText": "I agree with you.",
+      "meaning": "אני מסכים איתך.",
+      "targetsMisconceptions": ["present-simple.be-plus-verb"],
+      "instruction": { "he": "למצוא את המילה השגויה ולתקן אותה", "en": "Find the wrong word and fix it" },
+      "hints": [{ "he": "agree הוא פועל. האם צריך לפניו עוד פועל?", "en": "agree is a verb. Does it need another verb before it?" }],
+      "explanation": { "he": "בעברית אומרים \"אני מסכים\" בלי פועל עזר, וגם באנגלית: I agree. לא מוסיפים am לפני פועל רגיל.", "en": "agree is already a verb. Do not add am." },
+      "tags": ["fix"],
+      "source": "original"
+    },
+    {
+      "id": "tr.sample.shabbat-candles",
+      "type": "typed",
+      "skill": "writing.translation",
+      "level": "A1",
+      "difficulty": 0.3,
+      "prompt": "אמא מדליקה נרות בכל יום שישי.",
+      "promptLanguage": "he",
+      "answers": ["Mom lights candles every Friday.", "Mother lights candles every Friday.", "Mom lights candles on every Friday.", "My mom lights candles every Friday."],
+      "audioText": "Mom lights candles every Friday.",
+      "knownErrors": [{ "answer": "Mom light candles every Friday.", "misconception": "present-simple.missing-s", "feedback": { "he": "Mom היא she, ולכן lights עם s.", "en": "Mom is she, so: lights." } }],
+      "instruction": { "he": "לתרגם לאנגלית", "en": "Translate into English" },
+      "hints": [{ "he": "להדליק = light. מי מדליקה? היא.", "en": "light = להדליק. Who? She." }],
+      "explanation": { "he": "Mom lights candles every Friday. בגוף שלישי יחיד מוסיפים s לפועל.", "en": "Third person singular: lights." },
+      "tags": ["translate"],
+      "source": "original"
+    }
+  ],
+  "stories": [
+    {
+      "id": "story.sample.challah",
+      "title": { "he": "החלה של סבתא", "en": "Grandma's Challah" },
+      "kind": "read",
+      "level": "A1",
+      "lines": [
+        { "en": "It is Friday morning.", "he": "זה בוקר יום שישי." },
+        { "en": "Tamar and Grandma make challah.", "he": "תמר וסבתא מכינות חלה." },
+        { "en": "Tamar puts the bread in the oven.", "he": "תמר שמה את הלחם בתנור." },
+        { "en": "The house smells good.", "he": "הבית מריח טוב." }
+      ],
+      "glossary": {
+        "friday": { "lemma": "Friday", "he": "יום שישי" },
+        "morning": { "lemma": "morning", "he": "בוקר" },
+        "tamar": { "lemma": "Tamar", "he": "תמר (שם)" },
+        "grandma": { "lemma": "grandma", "he": "סבתא" },
+        "make": { "lemma": "make", "he": "מכינים" },
+        "challah": { "lemma": "challah", "he": "חלה" },
+        "puts": { "lemma": "put", "he": "שמה" },
+        "bread": { "lemma": "bread", "he": "לחם" },
+        "oven": { "lemma": "oven", "he": "תנור" },
+        "house": { "lemma": "house", "he": "בית" },
+        "smells": { "lemma": "smell", "he": "מריח" },
+        "good": { "lemma": "good", "he": "טוב" }
+      },
+      "questions": [
+        {
+          "after": 1,
+          "item": {
+            "id": "story.sample.challah.q1",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "A1",
+            "prompt": "What do Tamar and Grandma make?",
+            "options": [{ "id": "a", "text": "challah" }, { "id": "b", "text": "soup" }, { "id": "c", "text": "a cake" }],
+            "correctOptionId": "a",
+            "instruction": { "he": "לבחור את התשובה הנכונה", "en": "Choose the correct answer" },
+            "explanation": { "he": "בשורה השנייה: Tamar and Grandma make challah.", "en": "Line 2 says they make challah." },
+            "source": "original"
+          }
+        },
+        {
+          "after": 3,
+          "item": {
+            "id": "story.sample.challah.q2",
+            "type": "choice",
+            "skill": "reading.details",
+            "level": "A1",
+            "prompt": "Where does Tamar put the bread?",
+            "options": [{ "id": "a", "text": "in the oven" }, { "id": "b", "text": "on the table" }, { "id": "c", "text": "in the bag" }],
+            "correctOptionId": "a",
+            "instruction": { "he": "לבחור את התשובה הנכונה", "en": "Choose the correct answer" },
+            "explanation": { "he": "Tamar puts the bread in the oven. היא שמה את הלחם בתנור.", "en": "She puts it in the oven." },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "הכנה לשבת היא זמן משפחתי משמח.",
+      "tags": ["shabbat"],
+      "source": "original"
+    }
+  ]
+}

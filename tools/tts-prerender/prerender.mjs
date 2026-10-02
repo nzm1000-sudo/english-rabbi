@@ -41,20 +41,27 @@ const TEST_SENTENCES = [
   "I would've called you if I'd known you were home.",
 ];
 
+/** Texts to render, with the dialogue speaker ("A" or "B") that says them. */
 function collectTexts() {
-  const texts = new Set(TEST_SENTENCES);
+  const texts = new Map(TEST_SENTENCES.map((t) => [`A|${t}`, { text: t, speaker: 'A' }]));
+  const add = (text, speaker = 'A') => texts.set(`${speaker}|${text}`, { text, speaker });
   const packDir = path.join(root, 'content/packs');
   for (const f of fs.readdirSync(packDir).filter((f) => f.endsWith('.json'))) {
     const pack = JSON.parse(fs.readFileSync(path.join(packDir, f), 'utf8'));
     for (const it of pack.items ?? []) {
-      if (it.audioText) texts.add(it.audioText);
-      if (it.word?.lemma) texts.add(it.word.lemma);
-      if (it.word?.example) texts.add(it.word.example);
+      if (it.audioText) add(it.audioText);
+      if (it.word?.lemma) add(it.word.lemma);
+      if (it.word?.example) add(it.word.example);
     }
     // Passages are rendered per sentence; the app plays them in sequence.
-    for (const p of pack.passages ?? []) for (const s of splitSentences(p.text)) texts.add(s);
+    for (const p of pack.passages ?? []) for (const s of splitSentences(p.text)) add(s);
+    // Story lines in the speaker's voice; glossary words for "my words".
+    for (const st of pack.stories ?? []) {
+      for (const l of st.lines ?? []) add(l.en, l.speaker ?? 'A');
+      for (const g of Object.values(st.glossary ?? {})) add(g.lemma);
+    }
   }
-  return [...texts];
+  return [...texts.values()];
 }
 
 const manifestPath = path.join(outDir, 'manifest.json');
@@ -68,7 +75,7 @@ const texts = collectTexts().slice(0, limit);
 // --prune: delete audio for texts that no longer exist in the content.
 if (process.argv.includes('--prune')) {
   const keep = new Set();
-  for (const text of collectTexts()) for (const accent of ACCENTS) for (const rate of Object.keys(RATES)) keep.add(audioKey(VOICES[accent].A, rate, text));
+  for (const { text, speaker } of collectTexts()) for (const accent of ACCENTS) for (const rate of Object.keys(RATES)) keep.add(audioKey(VOICES[accent][speaker], rate, text));
   let removed = 0;
   for (const [key, url] of Object.entries(manifest.entries)) {
     if (keep.has(key)) continue;
@@ -80,10 +87,10 @@ if (process.argv.includes('--prune')) {
   console.log(`pruned ${removed} files`);
 }
 const jobs = [];
-for (const text of texts) {
+for (const { text, speaker } of texts) {
   for (const accent of ACCENTS) {
     for (const [rate, speed] of Object.entries(RATES)) {
-      const voice = VOICES[accent].A;
+      const voice = VOICES[accent][speaker];
       const key = audioKey(voice, rate, text);
       if (!manifest.entries[key]) jobs.push({ text, voice, rate, speed, key });
     }

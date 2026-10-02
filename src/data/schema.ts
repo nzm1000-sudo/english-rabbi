@@ -54,6 +54,18 @@ export interface TtsCacheRow {
   bytes: number;
 }
 
+/** A word the learner saved from a story ("my words"). */
+export interface SavedWordRow {
+  studentId: string;
+  /** Dictionary form as written in the glossary; the key. */
+  lemma: string;
+  he: string;
+  /** The sentence it was found in. */
+  example?: string;
+  storyId?: string;
+  addedAt: number;
+}
+
 export type VersionDef = {
   version: number;
   stores: Record<string, string | null>;
@@ -90,6 +102,13 @@ export const VERSIONS: VersionDef[] = [
         });
     },
   },
+  {
+    // v3: "my words" saved from stories.
+    version: 3,
+    stores: {
+      savedWords: '[studentId+lemma], studentId',
+    },
+  },
 ];
 
 export class TutorDB extends Dexie {
@@ -102,6 +121,7 @@ export class TutorDB extends Dexie {
   sessions!: Table<SessionRow, string>;
   meta!: Table<MetaRow, string>;
   ttsCache!: Table<TtsCacheRow, string>;
+  savedWords!: Table<SavedWordRow, [string, string]>;
 
   constructor(name = 'smart-english-tutor', upTo = VERSIONS.length) {
     super(name);

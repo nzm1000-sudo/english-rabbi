@@ -13,7 +13,7 @@ import {
 import type { MistakePattern } from '@/domain/learning/memory';
 import { snapshotItem } from '@/domain/learning/selector';
 import type { ContentItem } from '@/domain/content/schema';
-import { TutorDB, LATEST_VERSION, type SessionRow } from './schema';
+import { TutorDB, LATEST_VERSION, type SavedWordRow, type SessionRow } from './schema';
 
 export interface LearnerState {
   skills: Map<string, SkillState>;
@@ -161,6 +161,43 @@ export class LearningStore {
         return result;
       },
     );
+  }
+
+  // My words -----------------------------------------------------------------
+
+  /** Saves a word from a story. Saving it again keeps the first example. */
+  async saveWord(studentId: string, w: Omit<SavedWordRow, 'studentId' | 'addedAt'>): Promise<void> {
+    const now = this.clock();
+    const lemma = w.lemma.trim();
+    await this.db.transaction('rw', this.db.savedWords, this.db.events, async () => {
+      if (await this.db.savedWords.get([studentId, lemma])) return;
+      await this.db.savedWords.put({ ...w, lemma, studentId, addedAt: now });
+      await this.db.events.add(this.event(studentId, 'word.saved', { lemma, ...(w.storyId ? { storyId: w.storyId } : {}) }, now));
+    });
+  }
+
+  async removeWord(studentId: string, lemma: string): Promise<void> {
+    const now = this.clock();
+    await this.db.transaction('rw', this.db.savedWords, this.db.events, async () => {
+      await this.db.savedWords.delete([studentId, lemma]);
+      await this.db.events.add(this.event(studentId, 'word.removed', { lemma }, now));
+    });
+  }
+
+  async savedWords(studentId: string): Promise<SavedWordRow[]> {
+    const rows = await this.db.savedWords.where('studentId').equals(studentId).toArray();
+    return rows.sort((a, b) => b.addedAt - a.addedAt);
+  }
+
+  /** Story id -> best result, from story.completed events. */
+  async storyResults(studentId: string): Promise<Map<string, { correct: number; total: number }>> {
+    const evs = await this.db.events.where('[studentId+type]').equals([studentId, 'story.completed']).toArray();
+    const out = new Map<string, { correct: number; total: number }>();
+    for (const e of evs as LearningEvent<'story.completed'>[]) {
+      const prev = out.get(e.payload.storyId);
+      if (!prev || e.payload.correct > prev.correct) out.set(e.payload.storyId, { correct: e.payload.correct, total: e.payload.total });
+    }
+    return out;
   }
 
   // Reads --------------------------------------------------------------------

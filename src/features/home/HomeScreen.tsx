@@ -7,7 +7,14 @@ import { Ring } from '@/ui/Ring';
 import { DomainIcon } from '@/ui/DomainIcon';
 import {
   BoltIcon,
+  BookIcon,
+  BookmarkIcon,
   ChatIcon,
+  LinkIcon,
+  MicIcon,
+  SearchIcon,
+  TranslateIcon,
+  TreeIcon,
   ChevronIcon,
   ExamIcon,
   FlameIcon,
@@ -159,6 +166,40 @@ export function HomeScreen() {
           {PRACTICE.map((x) => (
             <SkillTile key={x.domain} to={`${base}/practice/${x.domain}`} d={p.domains.find((d) => d.domain === x.domain)!} title={x.title} en={x.en} />
           ))}
+        </div>
+      </section>
+
+      <section className="stack">
+        <div className="section-head">
+          <h2>קוראים ומדברים</h2>
+        </div>
+        <Link to={`${base}/stories`} className="row-card">
+          <span className="tile-icon" style={{ background: 'var(--t-reading-weak)', color: 'var(--t-reading-fg)' }}>
+            <BookIcon />
+          </span>
+          <span className="grow">
+            <strong>סיפורים</strong>
+            <span className="xs muted" style={{ display: 'block' }}>
+              סיפורים ושיחות על משפחת שפירו, בכל הרמות
+            </span>
+          </span>
+          <ChevronIcon />
+        </Link>
+        <div className="grid-2">
+          <GameTile to={`${base}/words`} tone="vocabulary" icon={<BookmarkIcon />} title="המילים שלי" sub="מילים ששמרתי מהסיפורים" />
+          <GameTile to={`${base}/shadow`} tone="speaking" icon={<MicIcon />} title="חזרה בקול" sub="להקשיב, להגיד, להשוות" />
+        </div>
+      </section>
+
+      <section className="stack">
+        <div className="section-head">
+          <h2>כותבים ומתקנים</h2>
+        </div>
+        <div className="grid-2">
+          <GameTile to={`${base}/practice/translate`} tone="writing" icon={<TranslateIcon />} title="תרגום" sub="מעברית לאנגלית" />
+          <GameTile to={`${base}/practice/fix`} tone="grammar" icon={<SearchIcon />} title="מצא את הטעות" sub="משפט עם טעות אחת" />
+          <GameTile to={`${base}/practice/chunks`} tone="listening" icon={<LinkIcon />} title="צירופים קבועים" sub="make a decision" />
+          <GameTile to={`${base}/practice/families`} tone="reading" icon={<TreeIcon />} title="משפחות מילים" sub="happy, happiness" />
         </div>
       </section>
 

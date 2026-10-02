@@ -1,0 +1,3430 @@
+{
+  "packId": "stories-dialogue-2",
+  "schemaVersion": 1,
+  "title": "Dialogue stories 2",
+  "items": [],
+  "stories": [
+    {
+      "id": "story.d2.yom-kippur-sorry",
+      "title": {
+        "he": "סליחה לפני יום כיפור",
+        "en": "Sorry Before Yom Kippur"
+      },
+      "kind": "dialogue",
+      "level": "B1",
+      "cast": {
+        "A": "Tamar",
+        "B": "Ari"
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "Ari, do you have a minute? I need to talk to you about something.",
+          "he": "ארי, יש לך דקה? אני צריכה לדבר איתך על משהו."
+        },
+        {
+          "speaker": "B",
+          "en": "Sure, Tamar. What's up? You look kind of serious.",
+          "he": "בטח, תמר. מה קורה? את נראית קצת רצינית."
+        },
+        {
+          "speaker": "A",
+          "en": "Yesterday at dinner, I laughed at your science project in front of everyone.",
+          "he": "אתמול בארוחת הערב צחקתי על פרויקט המדעים שלך מול כולם."
+        },
+        {
+          "speaker": "B",
+          "en": "Yeah, I remember. I worked on that volcano for two weeks.",
+          "he": "כן, אני זוכר. עבדתי על הר הגעש הזה שבועיים."
+        },
+        {
+          "speaker": "A",
+          "en": "I know. I said it looked like a burnt cake. That was really mean.",
+          "he": "אני יודעת. אמרתי שהוא נראה כמו עוגה שרופה. זה היה ממש רע מצדי."
+        },
+        {
+          "speaker": "B",
+          "en": "Everyone laughed at it. I felt pretty embarrassed, to be honest.",
+          "he": "כולם צחקו על זה. האמת, הרגשתי די נבוך."
+        },
+        {
+          "speaker": "A",
+          "en": "I'm really sorry, Ari. Yom Kippur starts tomorrow night, and I didn't want to wait.",
+          "he": "אני ממש מצטערת, ארי. יום כיפור מתחיל מחר בערב, ולא רציתי לחכות."
+        },
+        {
+          "speaker": "B",
+          "en": "Is that the only reason you're saying sorry? Because of Yom Kippur?",
+          "he": "זו הסיבה היחידה שאת מבקשת סליחה? בגלל יום כיפור?"
+        },
+        {
+          "speaker": "A",
+          "en": "No. I've felt bad since last night. Yom Kippur just helped me stop putting it off.",
+          "he": "לא. אני מרגישה רע מאז אתמול בערב. יום כיפור רק עזר לי להפסיק לדחות את זה."
+        },
+        {
+          "speaker": "B",
+          "en": "Okay. Thanks for coming to me first. That's not easy to do.",
+          "he": "בסדר. תודה שבאת אליי ראשונה. זה לא קל לעשות."
+        },
+        {
+          "speaker": "A",
+          "en": "Can I make it up to you? I could help you fix the volcano.",
+          "he": "אפשר לפצות אותך? אני יכולה לעזור לך לתקן את הר הגעש."
+        },
+        {
+          "speaker": "B",
+          "en": "Really? The top keeps falling off. I could use some help with that.",
+          "he": "באמת? החלק העליון כל הזמן נופל. עזרה בזה ממש תועיל לי."
+        },
+        {
+          "speaker": "A",
+          "en": "Deal. And next time I'll think before I open my mouth.",
+          "he": "סגרנו. ובפעם הבאה אחשוב לפני שאפתח את הפה."
+        },
+        {
+          "speaker": "B",
+          "en": "I forgive you, Tamar. Let's go find the glue before Ima needs the table.",
+          "he": "אני סולח לך, תמר. בואי נלך למצוא את הדבק לפני שאמא תצטרך את השולחן."
+        }
+      ],
+      "glossary": {
+        "ari": {
+          "lemma": "Ari",
+          "he": "ארי (שם)"
+        },
+        "have": {
+          "lemma": "have",
+          "he": "יש (לך)"
+        },
+        "minute": {
+          "lemma": "minute",
+          "he": "דקה"
+        },
+        "need": {
+          "lemma": "need",
+          "he": "צריכה"
+        },
+        "talk": {
+          "lemma": "talk",
+          "he": "לדבר"
+        },
+        "about": {
+          "lemma": "about",
+          "he": "על"
+        },
+        "something": {
+          "lemma": "something",
+          "he": "משהו"
+        },
+        "sure": {
+          "lemma": "sure",
+          "he": "בטח"
+        },
+        "tamar": {
+          "lemma": "Tamar",
+          "he": "תמר (שם)"
+        },
+        "what's": {
+          "lemma": "what is",
+          "he": "מה (קורה)"
+        },
+        "up": {
+          "lemma": "up",
+          "he": "(what's up) מה קורה"
+        },
+        "look": {
+          "lemma": "look",
+          "he": "נראית"
+        },
+        "kind": {
+          "lemma": "kind of",
+          "he": "(kind of) קצת, די"
+        },
+        "serious": {
+          "lemma": "serious",
+          "he": "רצינית"
+        },
+        "yesterday": {
+          "lemma": "yesterday",
+          "he": "אתמול"
+        },
+        "dinner": {
+          "lemma": "dinner",
+          "he": "ארוחת ערב"
+        },
+        "laughed": {
+          "lemma": "laugh",
+          "he": "צחקתי, צחקו"
+        },
+        "science": {
+          "lemma": "science",
+          "he": "מדעים"
+        },
+        "project": {
+          "lemma": "project",
+          "he": "פרויקט"
+        },
+        "front": {
+          "lemma": "front",
+          "he": "(in front of) מול"
+        },
+        "everyone": {
+          "lemma": "everyone",
+          "he": "כולם"
+        },
+        "yeah": {
+          "lemma": "yeah",
+          "he": "כן (בדיבור)"
+        },
+        "remember": {
+          "lemma": "remember",
+          "he": "זוכר"
+        },
+        "worked": {
+          "lemma": "work",
+          "he": "עבדתי"
+        },
+        "volcano": {
+          "lemma": "volcano",
+          "he": "הר געש"
+        },
+        "two": {
+          "lemma": "two",
+          "he": "שתיים, שניים"
+        },
+        "weeks": {
+          "lemma": "week",
+          "he": "שבועות"
+        },
+        "know": {
+          "lemma": "know",
+          "he": "יודעת"
+        },
+        "said": {
+          "lemma": "say",
+          "he": "אמרתי"
+        },
+        "looked": {
+          "lemma": "look",
+          "he": "נראה"
+        },
+        "like": {
+          "lemma": "like",
+          "he": "כמו"
+        },
+        "burnt": {
+          "lemma": "burnt",
+          "he": "שרופה"
+        },
+        "cake": {
+          "lemma": "cake",
+          "he": "עוגה"
+        },
+        "really": {
+          "lemma": "really",
+          "he": "ממש, באמת"
+        },
+        "mean": {
+          "lemma": "mean",
+          "he": "מרושע, רע"
+        },
+        "felt": {
+          "lemma": "feel",
+          "he": "הרגשתי"
+        },
+        "pretty": {
+          "lemma": "pretty",
+          "he": "די"
+        },
+        "embarrassed": {
+          "lemma": "embarrassed",
+          "he": "נבוך"
+        },
+        "honest": {
+          "lemma": "honest",
+          "he": "(to be honest) האמת, בכנות"
+        },
+        "i'm": {
+          "lemma": "I am",
+          "he": "אני"
+        },
+        "sorry": {
+          "lemma": "sorry",
+          "he": "מצטערת; (saying sorry) מבקשת סליחה"
+        },
+        "yom": {
+          "lemma": "Yom Kippur",
+          "he": "(Yom Kippur) יום כיפור, יום הסליחה והתשובה"
+        },
+        "kippur": {
+          "lemma": "Yom Kippur",
+          "he": "(Yom Kippur) יום כיפור"
+        },
+        "starts": {
+          "lemma": "start",
+          "he": "מתחיל"
+        },
+        "tomorrow": {
+          "lemma": "tomorrow",
+          "he": "מחר"
+        },
+        "night": {
+          "lemma": "night",
+          "he": "ערב, לילה"
+        },
+        "didn't": {
+          "lemma": "did not",
+          "he": "לא (בעבר)"
+        },
+        "want": {
+          "lemma": "want",
+          "he": "רציתי"
+        },
+        "wait": {
+          "lemma": "wait",
+          "he": "לחכות"
+        },
+        "only": {
+          "lemma": "only",
+          "he": "היחידה"
+        },
+        "reason": {
+          "lemma": "reason",
+          "he": "סיבה"
+        },
+        "you're": {
+          "lemma": "you are",
+          "he": "את"
+        },
+        "saying": {
+          "lemma": "say",
+          "he": "אומרת"
+        },
+        "because": {
+          "lemma": "because",
+          "he": "בגלל"
+        },
+        "i've": {
+          "lemma": "I have",
+          "he": "אני (מאז ועד עכשיו)"
+        },
+        "bad": {
+          "lemma": "bad",
+          "he": "רע"
+        },
+        "since": {
+          "lemma": "since",
+          "he": "מאז"
+        },
+        "last": {
+          "lemma": "last",
+          "he": "(last night) אתמול בערב"
+        },
+        "just": {
+          "lemma": "just",
+          "he": "רק"
+        },
+        "helped": {
+          "lemma": "help",
+          "he": "עזר"
+        },
+        "stop": {
+          "lemma": "stop",
+          "he": "להפסיק"
+        },
+        "putting": {
+          "lemma": "put off",
+          "he": "(putting it off) לדחות את זה"
+        },
+        "off": {
+          "lemma": "put off",
+          "he": "(put off) לדחות; (fall off) ליפול"
+        },
+        "thanks": {
+          "lemma": "thanks",
+          "he": "תודה"
+        },
+        "coming": {
+          "lemma": "come",
+          "he": "שבאת"
+        },
+        "first": {
+          "lemma": "first",
+          "he": "ראשונה"
+        },
+        "that's": {
+          "lemma": "that is",
+          "he": "זה"
+        },
+        "easy": {
+          "lemma": "easy",
+          "he": "קל"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "אפשר, יכולה"
+        },
+        "make": {
+          "lemma": "make up to",
+          "he": "(make it up to you) לפצות אותך"
+        },
+        "could": {
+          "lemma": "could",
+          "he": "יכולה; (could use) הייתי שמח ל"
+        },
+        "help": {
+          "lemma": "help",
+          "he": "לעזור; עזרה"
+        },
+        "fix": {
+          "lemma": "fix",
+          "he": "לתקן"
+        },
+        "top": {
+          "lemma": "top",
+          "he": "החלק העליון"
+        },
+        "keeps": {
+          "lemma": "keep",
+          "he": "ממשיך (כל הזמן)"
+        },
+        "falling": {
+          "lemma": "fall off",
+          "he": "נופל"
+        },
+        "use": {
+          "lemma": "use",
+          "he": "(could use) הייתי שמח לקבל"
+        },
+        "some": {
+          "lemma": "some",
+          "he": "קצת"
+        },
+        "deal": {
+          "lemma": "deal",
+          "he": "סגרנו, עסקה"
+        },
+        "next": {
+          "lemma": "next",
+          "he": "הבאה"
+        },
+        "time": {
+          "lemma": "time",
+          "he": "פעם"
+        },
+        "i'll": {
+          "lemma": "I will",
+          "he": "אני (אעשה)"
+        },
+        "think": {
+          "lemma": "think",
+          "he": "אחשוב"
+        },
+        "before": {
+          "lemma": "before",
+          "he": "לפני"
+        },
+        "open": {
+          "lemma": "open",
+          "he": "אפתח"
+        },
+        "mouth": {
+          "lemma": "mouth",
+          "he": "פה"
+        },
+        "forgive": {
+          "lemma": "forgive",
+          "he": "סולח"
+        },
+        "let's": {
+          "lemma": "let us",
+          "he": "בואי נ..."
+        },
+        "go": {
+          "lemma": "go",
+          "he": "נלך"
+        },
+        "find": {
+          "lemma": "find",
+          "he": "למצוא"
+        },
+        "glue": {
+          "lemma": "glue",
+          "he": "דבק"
+        },
+        "ima": {
+          "lemma": "Ima",
+          "he": "אמא"
+        },
+        "needs": {
+          "lemma": "need",
+          "he": "צריכה"
+        },
+        "table": {
+          "lemma": "table",
+          "he": "שולחן"
+        }
+      },
+      "questions": [
+        {
+          "after": 5,
+          "item": {
+            "id": "story.d2.yom-kippur-sorry.q1",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "B1",
+            "prompt": "Why does Tamar want to talk to Ari?",
+            "options": [
+              {
+                "id": "a",
+                "text": "She made fun of his project, and it hurt him."
+              },
+              {
+                "id": "b",
+                "text": "She broke his science project."
+              },
+              {
+                "id": "c",
+                "text": "She needs help with her homework."
+              },
+              {
+                "id": "d",
+                "text": "She forgot to come to his dinner."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "תמר צחקה על הר הגעש של ארי מול כולם ואמרה שהוא נראה כמו עוגה שרופה. ארי הרגיש נבוך.",
+              "en": "She laughed at his volcano in front of everyone, and he felt embarrassed."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 8,
+          "item": {
+            "id": "story.d2.yom-kippur-sorry.q2",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B1",
+            "prompt": "Why does Tamar apologize today?",
+            "options": [
+              {
+                "id": "a",
+                "text": "She already felt bad, and Yom Kippur pushed her to act."
+              },
+              {
+                "id": "b",
+                "text": "Ima told her to say sorry."
+              },
+              {
+                "id": "c",
+                "text": "Ari asked her to apologize."
+              },
+              {
+                "id": "d",
+                "text": "She only wants to finish before the holiday."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "תמר אומרת: I've felt bad since last night. יום כיפור רק עזר לה להפסיק לדחות.",
+              "en": "She felt bad since last night; Yom Kippur just helped her stop putting it off."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 11,
+          "item": {
+            "id": "story.d2.yom-kippur-sorry.q3",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B1",
+            "prompt": "What does Tamar mean by \"Can I make it up to you?\"",
+            "options": [
+              {
+                "id": "a",
+                "text": "She wants to do something good for Ari to fix the hurt."
+              },
+              {
+                "id": "b",
+                "text": "She wants to build a new volcano for herself."
+              },
+              {
+                "id": "c",
+                "text": "She wants Ari to forgive her right away."
+              },
+              {
+                "id": "d",
+                "text": "She wants to make Ari laugh at her."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "make it up to someone פירושו לפצות מישהו. מיד אחר כך היא מציעה לעזור לתקן את הר הגעש.",
+              "en": "To make it up to someone means to do something good to repair the harm. She offers to help fix the volcano."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 13,
+          "item": {
+            "id": "story.d2.yom-kippur-sorry.q4",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "B1",
+            "prompt": "How does Ari feel at the end of the conversation?",
+            "options": [
+              {
+                "id": "a",
+                "text": "He is grateful and ready to forgive."
+              },
+              {
+                "id": "b",
+                "text": "He is still angry and wants to be alone."
+              },
+              {
+                "id": "c",
+                "text": "He thinks Tamar is not serious."
+              },
+              {
+                "id": "d",
+                "text": "He is worried that Ima will be angry."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי מודה לתמר שבאה ראשונה ואומר: I forgive you. הוא גם מזמין אותה לעבוד איתו.",
+              "en": "He thanks her and says \"I forgive you, Tamar.\""
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "אמיץ לבקש סליחה בכנות, וטוב לא לדחות את זה.",
+      "tags": [
+        "yom-kippur",
+        "family"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.d2.tzedakah-money",
+      "title": {
+        "he": "הכסף הראשון שלי לצדקה",
+        "en": "My First Tzedakah Money"
+      },
+      "kind": "dialogue",
+      "level": "B1",
+      "cast": {
+        "A": "Rivka",
+        "B": "Abba"
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "Abba, I got paid today for my math tutoring. Two hundred shekels!",
+          "he": "אבא, היום קיבלתי תשלום על השיעורים הפרטיים שלי במתמטיקה. מאתיים שקל!"
+        },
+        {
+          "speaker": "B",
+          "en": "Well done, Rivka! You worked hard for that. Have you thought about tzedakah?",
+          "he": "כל הכבוד, רבקה! עבדת קשה בשביל זה. חשבת על צדקה?"
+        },
+        {
+          "speaker": "A",
+          "en": "Yes, I want to give a tenth. That's twenty shekels, right?",
+          "he": "כן, אני רוצה לתת עשירית. זה עשרים שקל, נכון?"
+        },
+        {
+          "speaker": "B",
+          "en": "Exactly. The question is where it should go. Any ideas?",
+          "he": "בדיוק. השאלה היא לאן הכסף צריך ללכת. יש לך רעיונות?"
+        },
+        {
+          "speaker": "A",
+          "en": "I thought about the tzedakah box at school. It's easy, and I pass it every day.",
+          "he": "חשבתי על קופת הצדקה בבית הספר. זה קל, ואני עוברת לידה כל יום."
+        },
+        {
+          "speaker": "B",
+          "en": "That's a good option. But you could also give it to someone you know.",
+          "he": "זו אפשרות טובה. אבל את יכולה לתת את זה גם למישהו שאת מכירה."
+        },
+        {
+          "speaker": "A",
+          "en": "You mean like the food drive at school for families before the holidays?",
+          "he": "אתה מתכוון למשהו כמו איסוף המזון בבית הספר למשפחות לפני החגים?"
+        },
+        {
+          "speaker": "B",
+          "en": "Yes. Or Mrs. Klein. Her heater broke, and she can't afford a new one.",
+          "he": "כן. או גברת קליין. תנור החימום שלה התקלקל, ואין לה כסף לקנות חדש."
+        },
+        {
+          "speaker": "A",
+          "en": "Twenty shekels won't buy a heater, though. It's not enough.",
+          "he": "אבל עשרים שקל לא יקנו תנור חימום. זה לא מספיק."
+        },
+        {
+          "speaker": "B",
+          "en": "True, but the neighbors are chipping in together. Every shekel adds up.",
+          "he": "נכון, אבל השכנים משתתפים ביחד. כל שקל מצטבר."
+        },
+        {
+          "speaker": "A",
+          "en": "I like that. I can see exactly where my money goes.",
+          "he": "זה מוצא חן בעיניי. אני יכולה לראות בדיוק לאן הכסף שלי הולך."
+        },
+        {
+          "speaker": "B",
+          "en": "And it's a quiet way to help. She doesn't need to know who gave.",
+          "he": "וזו דרך שקטה לעזור. היא לא צריכה לדעת מי נתן."
+        },
+        {
+          "speaker": "A",
+          "en": "Then let's split it. Ten for the heater and ten for the school food drive.",
+          "he": "אז בוא נחלק את זה. עשרה לתנור החימום ועשרה לאיסוף המזון בבית הספר."
+        },
+        {
+          "speaker": "B",
+          "en": "Sounds like a plan. I'm proud of you for thinking it through so carefully.",
+          "he": "נשמעת לי תוכנית טובה. אני גאה בך שחשבת על זה כל כך ביסודיות."
+        }
+      ],
+      "glossary": {
+        "abba": {
+          "lemma": "Abba",
+          "he": "אבא"
+        },
+        "got": {
+          "lemma": "get",
+          "he": "קיבלתי"
+        },
+        "paid": {
+          "lemma": "pay",
+          "he": "תשלום (got paid: קיבלתי שכר)"
+        },
+        "today": {
+          "lemma": "today",
+          "he": "היום"
+        },
+        "math": {
+          "lemma": "math",
+          "he": "מתמטיקה"
+        },
+        "tutoring": {
+          "lemma": "tutoring",
+          "he": "שיעורים פרטיים"
+        },
+        "two": {
+          "lemma": "two",
+          "he": "שתיים, שניים"
+        },
+        "hundred": {
+          "lemma": "hundred",
+          "he": "מאה (two hundred: מאתיים)"
+        },
+        "shekels": {
+          "lemma": "shekel",
+          "he": "שקלים"
+        },
+        "well": {
+          "lemma": "well done",
+          "he": "(well done) כל הכבוד"
+        },
+        "done": {
+          "lemma": "well done",
+          "he": "(well done) כל הכבוד"
+        },
+        "rivka": {
+          "lemma": "Rivka",
+          "he": "רבקה (שם)"
+        },
+        "worked": {
+          "lemma": "work",
+          "he": "עבדת"
+        },
+        "hard": {
+          "lemma": "hard",
+          "he": "קשה"
+        },
+        "have": {
+          "lemma": "have",
+          "he": "(have you thought) חשבת"
+        },
+        "thought": {
+          "lemma": "think",
+          "he": "חשבת, חשבתי"
+        },
+        "about": {
+          "lemma": "about",
+          "he": "על"
+        },
+        "tzedakah": {
+          "lemma": "tzedakah",
+          "he": "צדקה, כסף לעזרה לנזקקים"
+        },
+        "want": {
+          "lemma": "want",
+          "he": "רוצה"
+        },
+        "give": {
+          "lemma": "give",
+          "he": "לתת"
+        },
+        "tenth": {
+          "lemma": "tenth",
+          "he": "עשירית"
+        },
+        "that's": {
+          "lemma": "that is",
+          "he": "זה, זו"
+        },
+        "twenty": {
+          "lemma": "twenty",
+          "he": "עשרים"
+        },
+        "right": {
+          "lemma": "right",
+          "he": "נכון"
+        },
+        "exactly": {
+          "lemma": "exactly",
+          "he": "בדיוק"
+        },
+        "question": {
+          "lemma": "question",
+          "he": "שאלה"
+        },
+        "should": {
+          "lemma": "should",
+          "he": "צריך"
+        },
+        "go": {
+          "lemma": "go",
+          "he": "ללכת"
+        },
+        "any": {
+          "lemma": "any",
+          "he": "(any ideas?) יש רעיונות?"
+        },
+        "ideas": {
+          "lemma": "idea",
+          "he": "רעיונות"
+        },
+        "box": {
+          "lemma": "box",
+          "he": "קופה"
+        },
+        "it's": {
+          "lemma": "it is",
+          "he": "זה"
+        },
+        "easy": {
+          "lemma": "easy",
+          "he": "קל"
+        },
+        "pass": {
+          "lemma": "pass",
+          "he": "עוברת ליד"
+        },
+        "every": {
+          "lemma": "every",
+          "he": "כל"
+        },
+        "good": {
+          "lemma": "good",
+          "he": "טובה"
+        },
+        "option": {
+          "lemma": "option",
+          "he": "אפשרות"
+        },
+        "could": {
+          "lemma": "could",
+          "he": "יכולה"
+        },
+        "also": {
+          "lemma": "also",
+          "he": "גם"
+        },
+        "someone": {
+          "lemma": "someone",
+          "he": "מישהו"
+        },
+        "know": {
+          "lemma": "know",
+          "he": "מכירה; לדעת"
+        },
+        "mean": {
+          "lemma": "mean",
+          "he": "מתכוון"
+        },
+        "like": {
+          "lemma": "like",
+          "he": "כמו"
+        },
+        "food": {
+          "lemma": "food",
+          "he": "מזון"
+        },
+        "drive": {
+          "lemma": "drive",
+          "he": "מבצע איסוף (food drive: איסוף מזון)"
+        },
+        "school": {
+          "lemma": "school",
+          "he": "בית ספר"
+        },
+        "families": {
+          "lemma": "family",
+          "he": "משפחות"
+        },
+        "before": {
+          "lemma": "before",
+          "he": "לפני"
+        },
+        "holidays": {
+          "lemma": "holiday",
+          "he": "חגים"
+        },
+        "klein": {
+          "lemma": "Klein",
+          "he": "קליין (שם משפחה)"
+        },
+        "heater": {
+          "lemma": "heater",
+          "he": "תנור חימום"
+        },
+        "broke": {
+          "lemma": "break",
+          "he": "התקלקל"
+        },
+        "can't": {
+          "lemma": "cannot",
+          "he": "לא יכולה"
+        },
+        "afford": {
+          "lemma": "afford",
+          "he": "לעמוד במחיר של"
+        },
+        "new": {
+          "lemma": "new",
+          "he": "חדש"
+        },
+        "one": {
+          "lemma": "one",
+          "he": "(a new one) חדש"
+        },
+        "won't": {
+          "lemma": "will not",
+          "he": "לא (יקנו)"
+        },
+        "buy": {
+          "lemma": "buy",
+          "he": "לקנות"
+        },
+        "though": {
+          "lemma": "though",
+          "he": "אבל, בכל זאת"
+        },
+        "enough": {
+          "lemma": "enough",
+          "he": "מספיק"
+        },
+        "true": {
+          "lemma": "true",
+          "he": "נכון"
+        },
+        "neighbors": {
+          "lemma": "neighbor",
+          "he": "שכנים"
+        },
+        "chipping": {
+          "lemma": "chip in",
+          "he": "(chipping in) משתתפים בתשלום"
+        },
+        "together": {
+          "lemma": "together",
+          "he": "ביחד"
+        },
+        "shekel": {
+          "lemma": "shekel",
+          "he": "שקל"
+        },
+        "adds": {
+          "lemma": "add up",
+          "he": "(adds up) מצטרף, מצטבר"
+        },
+        "up": {
+          "lemma": "add up",
+          "he": "(adds up) מצטבר"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכולה"
+        },
+        "see": {
+          "lemma": "see",
+          "he": "לראות"
+        },
+        "money": {
+          "lemma": "money",
+          "he": "כסף"
+        },
+        "goes": {
+          "lemma": "go",
+          "he": "הולך"
+        },
+        "quiet": {
+          "lemma": "quiet",
+          "he": "שקטה"
+        },
+        "way": {
+          "lemma": "way",
+          "he": "דרך"
+        },
+        "help": {
+          "lemma": "help",
+          "he": "לעזור"
+        },
+        "doesn't": {
+          "lemma": "does not",
+          "he": "לא"
+        },
+        "need": {
+          "lemma": "need",
+          "he": "צריכה"
+        },
+        "gave": {
+          "lemma": "give",
+          "he": "נתן"
+        },
+        "then": {
+          "lemma": "then",
+          "he": "אז"
+        },
+        "let's": {
+          "lemma": "let us",
+          "he": "בוא נ..."
+        },
+        "split": {
+          "lemma": "split",
+          "he": "נחלק"
+        },
+        "ten": {
+          "lemma": "ten",
+          "he": "עשרה"
+        },
+        "sounds": {
+          "lemma": "sound",
+          "he": "(sounds like) נשמעת"
+        },
+        "plan": {
+          "lemma": "plan",
+          "he": "תוכנית"
+        },
+        "i'm": {
+          "lemma": "I am",
+          "he": "אני"
+        },
+        "proud": {
+          "lemma": "proud",
+          "he": "גאה"
+        },
+        "thinking": {
+          "lemma": "think through",
+          "he": "(thinking it through) לחשוב על זה עד הסוף"
+        },
+        "through": {
+          "lemma": "think through",
+          "he": "(think it through) לחשוב היטב"
+        },
+        "carefully": {
+          "lemma": "carefully",
+          "he": "בזהירות, ביסודיות"
+        },
+        "day": {
+          "lemma": "day",
+          "he": "יום"
+        }
+      },
+      "questions": [
+        {
+          "after": 1,
+          "item": {
+            "id": "story.d2.tzedakah-money.q1",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "B1",
+            "prompt": "How did Rivka earn the money?",
+            "options": [
+              {
+                "id": "a",
+                "text": "by tutoring math"
+              },
+              {
+                "id": "b",
+                "text": "by babysitting"
+              },
+              {
+                "id": "c",
+                "text": "by selling cakes"
+              },
+              {
+                "id": "d",
+                "text": "by working in a shop"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "רבקה אומרת: I got paid today for my math tutoring. היא נתנה שיעורים פרטיים במתמטיקה.",
+              "en": "She got paid for her math tutoring."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 8,
+          "item": {
+            "id": "story.d2.tzedakah-money.q2",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "B1",
+            "prompt": "Why is Rivka unsure about giving to Mrs. Klein at first?",
+            "options": [
+              {
+                "id": "a",
+                "text": "She thinks twenty shekels is too little for a heater."
+              },
+              {
+                "id": "b",
+                "text": "She does not know Mrs. Klein."
+              },
+              {
+                "id": "c",
+                "text": "She wants to keep the money for herself."
+              },
+              {
+                "id": "d",
+                "text": "Abba does not like the idea."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "רבקה אומרת: Twenty shekels won't buy a heater. היא חושבת שזה לא מספיק.",
+              "en": "She says twenty shekels won't buy a heater. It's not enough."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 10,
+          "item": {
+            "id": "story.d2.tzedakah-money.q3",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B1",
+            "prompt": "Why does Rivka like the idea of the heater?",
+            "options": [
+              {
+                "id": "a",
+                "text": "She can see exactly how her money helps."
+              },
+              {
+                "id": "b",
+                "text": "Mrs. Klein will thank her in front of everyone."
+              },
+              {
+                "id": "c",
+                "text": "It is easier than the box at school."
+              },
+              {
+                "id": "d",
+                "text": "Abba will add more money for her."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "רבקה אומרת: I can see exactly where my money goes. חשוב לה לדעת לאן הכסף הולך.",
+              "en": "She can see exactly where her money goes."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 13,
+          "item": {
+            "id": "story.d2.tzedakah-money.q4",
+            "type": "choice",
+            "skill": "reading.main-idea",
+            "level": "B1",
+            "prompt": "How does Abba feel about Rivka's decision?",
+            "options": [
+              {
+                "id": "a",
+                "text": "proud"
+              },
+              {
+                "id": "b",
+                "text": "disappointed"
+              },
+              {
+                "id": "c",
+                "text": "worried"
+              },
+              {
+                "id": "d",
+                "text": "surprised and angry"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "אבא אומר: I'm proud of you. הוא גאה בה שחשבה היטב.",
+              "en": "He says, \"I'm proud of you.\""
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "צדקה שניתנת במחשבה ובצנעה עוזרת באמת.",
+      "tags": [
+        "tzedakah",
+        "chesed"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.d2.new-year-goals",
+      "title": {
+        "he": "החלטות לראש השנה",
+        "en": "Goals for Rosh Hashanah"
+      },
+      "kind": "dialogue",
+      "level": "B1",
+      "cast": {
+        "A": "Ima",
+        "B": "Ari"
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "Ari, Rosh Hashanah is next week. Have you thought about what you want to work on?",
+          "he": "ארי, ראש השנה בשבוע הבא. חשבת על מה אתה רוצה לעבוד?"
+        },
+        {
+          "speaker": "B",
+          "en": "Kind of. I want to be a better person. Is that a good one?",
+          "he": "בערך. אני רוצה להיות אדם טוב יותר. זו החלטה טובה?"
+        },
+        {
+          "speaker": "A",
+          "en": "It's a great start, but it's a bit big. What would that look like?",
+          "he": "זו התחלה מצוינת, אבל היא קצת גדולה. איך זה ייראה בפועל?"
+        },
+        {
+          "speaker": "B",
+          "en": "Hmm. Maybe I could stop fighting with Tamar over the computer.",
+          "he": "הממ. אולי אני יכול להפסיק לריב עם תמר על המחשב."
+        },
+        {
+          "speaker": "A",
+          "en": "That's more specific. How could you actually make that happen?",
+          "he": "זה יותר מדויק. איך אתה יכול לגרום לזה לקרות באמת?"
+        },
+        {
+          "speaker": "B",
+          "en": "We could make a schedule. She gets it first, and I get it after dinner.",
+          "he": "אנחנו יכולים לעשות לוח זמנים. היא מקבלת אותו קודם, ואני מקבל אותו אחרי ארוחת הערב."
+        },
+        {
+          "speaker": "A",
+          "en": "I love that. What about something with your learning?",
+          "he": "אני אוהבת את זה. ומה לגבי משהו בלימוד שלך?"
+        },
+        {
+          "speaker": "B",
+          "en": "Rabbi Gold says I rush through my blessings before I eat.",
+          "he": "הרב גולד אומר שאני ממהר מדי כשאני מברך לפני האוכל."
+        },
+        {
+          "speaker": "A",
+          "en": "So maybe you could slow down and think about what the words mean.",
+          "he": "אז אולי תוכל להאט ולחשוב על מה שהמילים אומרות."
+        },
+        {
+          "speaker": "B",
+          "en": "Okay. But what if I forget after a few days? I always give up.",
+          "he": "בסדר. אבל מה אם אשכח אחרי כמה ימים? אני תמיד מוותר."
+        },
+        {
+          "speaker": "A",
+          "en": "Everyone slips sometimes. The important thing is to pick yourself up and try again.",
+          "he": "כל אחד מועד לפעמים. הדבר החשוב הוא לקום ולנסות שוב."
+        },
+        {
+          "speaker": "B",
+          "en": "Could you remind me? But nicely, not in front of everyone.",
+          "he": "תוכלי להזכיר לי? אבל בעדינות, לא מול כולם."
+        },
+        {
+          "speaker": "A",
+          "en": "It's a deal. And what about me? Do you have one for me?",
+          "he": "סגרנו. ומה איתי? יש לך החלטה בשבילי?"
+        },
+        {
+          "speaker": "B",
+          "en": "Yes! Maybe you could put your phone away during dinner.",
+          "he": "כן! אולי תוכלי להניח את הטלפון בצד בזמן ארוחת הערב."
+        },
+        {
+          "speaker": "A",
+          "en": "Ouch! You got me there. Okay, we'll work on it together.",
+          "he": "אאוץ'! תפסת אותי. בסדר, נעבוד על זה ביחד."
+        }
+      ],
+      "glossary": {
+        "ari": {
+          "lemma": "Ari",
+          "he": "ארי (שם)"
+        },
+        "rosh": {
+          "lemma": "Rosh Hashanah",
+          "he": "(Rosh Hashanah) ראש השנה"
+        },
+        "hashanah": {
+          "lemma": "Rosh Hashanah",
+          "he": "(Rosh Hashanah) ראש השנה"
+        },
+        "next": {
+          "lemma": "next",
+          "he": "הבא"
+        },
+        "week": {
+          "lemma": "week",
+          "he": "שבוע"
+        },
+        "have": {
+          "lemma": "have",
+          "he": "(have you thought) חשבת; יש (לך)"
+        },
+        "thought": {
+          "lemma": "think",
+          "he": "חשבת"
+        },
+        "about": {
+          "lemma": "about",
+          "he": "על"
+        },
+        "want": {
+          "lemma": "want",
+          "he": "רוצה"
+        },
+        "work": {
+          "lemma": "work",
+          "he": "לעבוד"
+        },
+        "kind": {
+          "lemma": "kind of",
+          "he": "(kind of) בערך"
+        },
+        "better": {
+          "lemma": "better",
+          "he": "טוב יותר"
+        },
+        "person": {
+          "lemma": "person",
+          "he": "אדם"
+        },
+        "good": {
+          "lemma": "good",
+          "he": "טובה"
+        },
+        "one": {
+          "lemma": "one",
+          "he": "אחת (החלטה)"
+        },
+        "it's": {
+          "lemma": "it is",
+          "he": "זה, זו"
+        },
+        "great": {
+          "lemma": "great",
+          "he": "מצוינת"
+        },
+        "start": {
+          "lemma": "start",
+          "he": "התחלה"
+        },
+        "bit": {
+          "lemma": "bit",
+          "he": "(a bit) קצת"
+        },
+        "big": {
+          "lemma": "big",
+          "he": "גדולה"
+        },
+        "would": {
+          "lemma": "would",
+          "he": "היה (ייראה)"
+        },
+        "look": {
+          "lemma": "look",
+          "he": "ייראה"
+        },
+        "like": {
+          "lemma": "like",
+          "he": "(look like) ייראה"
+        },
+        "hmm": {
+          "lemma": "hmm",
+          "he": "הממ"
+        },
+        "maybe": {
+          "lemma": "maybe",
+          "he": "אולי"
+        },
+        "could": {
+          "lemma": "could",
+          "he": "יכול; תוכל, תוכלי"
+        },
+        "stop": {
+          "lemma": "stop",
+          "he": "להפסיק"
+        },
+        "fighting": {
+          "lemma": "fight",
+          "he": "לריב"
+        },
+        "tamar": {
+          "lemma": "Tamar",
+          "he": "תמר (שם)"
+        },
+        "over": {
+          "lemma": "over",
+          "he": "על"
+        },
+        "computer": {
+          "lemma": "computer",
+          "he": "מחשב"
+        },
+        "that's": {
+          "lemma": "that is",
+          "he": "זה"
+        },
+        "more": {
+          "lemma": "more",
+          "he": "יותר"
+        },
+        "specific": {
+          "lemma": "specific",
+          "he": "מדויק, ספציפי"
+        },
+        "actually": {
+          "lemma": "actually",
+          "he": "באמת, בפועל"
+        },
+        "make": {
+          "lemma": "make",
+          "he": "לגרום; לעשות"
+        },
+        "happen": {
+          "lemma": "happen",
+          "he": "לקרות"
+        },
+        "schedule": {
+          "lemma": "schedule",
+          "he": "לוח זמנים"
+        },
+        "gets": {
+          "lemma": "get",
+          "he": "מקבלת"
+        },
+        "first": {
+          "lemma": "first",
+          "he": "קודם"
+        },
+        "get": {
+          "lemma": "get",
+          "he": "מקבל"
+        },
+        "after": {
+          "lemma": "after",
+          "he": "אחרי"
+        },
+        "dinner": {
+          "lemma": "dinner",
+          "he": "ארוחת ערב"
+        },
+        "love": {
+          "lemma": "love",
+          "he": "אוהבת"
+        },
+        "something": {
+          "lemma": "something",
+          "he": "משהו"
+        },
+        "learning": {
+          "lemma": "learning",
+          "he": "לימוד"
+        },
+        "rabbi": {
+          "lemma": "Rabbi",
+          "he": "הרב"
+        },
+        "gold": {
+          "lemma": "Gold",
+          "he": "גולד (שם משפחה)"
+        },
+        "says": {
+          "lemma": "say",
+          "he": "אומר"
+        },
+        "rush": {
+          "lemma": "rush",
+          "he": "ממהר"
+        },
+        "through": {
+          "lemma": "rush through",
+          "he": "(rush through) עושה מהר מדי"
+        },
+        "blessings": {
+          "lemma": "blessing",
+          "he": "ברכות"
+        },
+        "before": {
+          "lemma": "before",
+          "he": "לפני"
+        },
+        "eat": {
+          "lemma": "eat",
+          "he": "אוכל"
+        },
+        "slow": {
+          "lemma": "slow down",
+          "he": "(slow down) להאט"
+        },
+        "down": {
+          "lemma": "slow down",
+          "he": "(slow down) להאט"
+        },
+        "think": {
+          "lemma": "think",
+          "he": "לחשוב"
+        },
+        "words": {
+          "lemma": "word",
+          "he": "מילים"
+        },
+        "mean": {
+          "lemma": "mean",
+          "he": "אומרות, פירושן"
+        },
+        "forget": {
+          "lemma": "forget",
+          "he": "אשכח"
+        },
+        "few": {
+          "lemma": "few",
+          "he": "(a few) כמה"
+        },
+        "days": {
+          "lemma": "day",
+          "he": "ימים"
+        },
+        "always": {
+          "lemma": "always",
+          "he": "תמיד"
+        },
+        "give": {
+          "lemma": "give up",
+          "he": "(give up) מוותר"
+        },
+        "up": {
+          "lemma": "give up; pick up",
+          "he": "(give up) לוותר; (pick yourself up) לקום"
+        },
+        "everyone": {
+          "lemma": "everyone",
+          "he": "כל אחד, כולם"
+        },
+        "slips": {
+          "lemma": "slip",
+          "he": "מועד, טועה"
+        },
+        "sometimes": {
+          "lemma": "sometimes",
+          "he": "לפעמים"
+        },
+        "important": {
+          "lemma": "important",
+          "he": "חשוב"
+        },
+        "thing": {
+          "lemma": "thing",
+          "he": "דבר"
+        },
+        "pick": {
+          "lemma": "pick up",
+          "he": "(pick yourself up) לקום אחרי נפילה"
+        },
+        "yourself": {
+          "lemma": "yourself",
+          "he": "את עצמך"
+        },
+        "try": {
+          "lemma": "try",
+          "he": "לנסות"
+        },
+        "again": {
+          "lemma": "again",
+          "he": "שוב"
+        },
+        "remind": {
+          "lemma": "remind",
+          "he": "להזכיר"
+        },
+        "nicely": {
+          "lemma": "nicely",
+          "he": "בעדינות, יפה"
+        },
+        "front": {
+          "lemma": "front",
+          "he": "(in front of) מול"
+        },
+        "deal": {
+          "lemma": "deal",
+          "he": "(it's a deal) סגרנו"
+        },
+        "put": {
+          "lemma": "put away",
+          "he": "(put away) להניח בצד"
+        },
+        "phone": {
+          "lemma": "phone",
+          "he": "טלפון"
+        },
+        "away": {
+          "lemma": "put away",
+          "he": "(put away) בצד"
+        },
+        "during": {
+          "lemma": "during",
+          "he": "בזמן"
+        },
+        "ouch": {
+          "lemma": "ouch",
+          "he": "אאוץ'"
+        },
+        "got": {
+          "lemma": "get",
+          "he": "(you got me) תפסת אותי"
+        },
+        "we'll": {
+          "lemma": "we will",
+          "he": "אנחנו (נעשה)"
+        },
+        "together": {
+          "lemma": "together",
+          "he": "ביחד"
+        }
+      },
+      "questions": [
+        {
+          "after": 2,
+          "item": {
+            "id": "story.d2.new-year-goals.q1",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B1",
+            "prompt": "Why does Ima say that Ari's first idea is \"a bit big\"?",
+            "options": [
+              {
+                "id": "a",
+                "text": "It is too general to act on."
+              },
+              {
+                "id": "b",
+                "text": "It is too hard for a boy his age."
+              },
+              {
+                "id": "c",
+                "text": "She thinks Ari does not need to change."
+              },
+              {
+                "id": "d",
+                "text": "She thinks Ari is joking."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "\"להיות אדם טוב יותר\" זה רעיון כללי מדי. אמא שואלת איך זה ייראה בפועל, כלומר היא רוצה צעד מעשי.",
+              "en": "\"A better person\" is too general. Ima asks what it would look like in practice."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 5,
+          "item": {
+            "id": "story.d2.new-year-goals.q2",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "B1",
+            "prompt": "What is Ari's plan about Tamar?",
+            "options": [
+              {
+                "id": "a",
+                "text": "to share the computer using a schedule"
+              },
+              {
+                "id": "b",
+                "text": "to buy a second computer"
+              },
+              {
+                "id": "c",
+                "text": "to stop using the computer"
+              },
+              {
+                "id": "d",
+                "text": "to let Tamar use it all evening"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי אומר: We could make a schedule. תמר מקבלת את המחשב קודם, והוא אחרי ארוחת הערב.",
+              "en": "They will make a schedule: she gets it first, he gets it after dinner."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 9,
+          "item": {
+            "id": "story.d2.new-year-goals.q3",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "B1",
+            "prompt": "What is Ari worried about?",
+            "options": [
+              {
+                "id": "a",
+                "text": "that he will give up after a few days"
+              },
+              {
+                "id": "b",
+                "text": "that Rabbi Gold will be angry"
+              },
+              {
+                "id": "c",
+                "text": "that Tamar will not agree"
+              },
+              {
+                "id": "d",
+                "text": "that he will be late for shul"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "ארי אומר: What if I forget after a few days? I always give up.",
+              "en": "He is afraid he will forget and give up."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 14,
+          "item": {
+            "id": "story.d2.new-year-goals.q4",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B1",
+            "prompt": "How does Ima react to Ari's idea for her?",
+            "options": [
+              {
+                "id": "a",
+                "text": "She admits he is right, with a smile."
+              },
+              {
+                "id": "b",
+                "text": "She gets angry at him."
+              },
+              {
+                "id": "c",
+                "text": "She says she does not need to change."
+              },
+              {
+                "id": "d",
+                "text": "She ignores his idea."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "אמא אומרת: You got me there. היא מודה שהוא צודק, בהומור, ומציעה לעבוד על זה ביחד.",
+              "en": "\"You got me there\" means \"you're right.\" She agrees with humor."
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "החלטה טובה היא קטנה ומעשית, וכשנופלים קמים ומנסים שוב.",
+      "tags": [
+        "rosh-hashanah",
+        "family"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.d2.grandpa-aliyah",
+      "title": {
+        "he": "סבא מספר על העלייה",
+        "en": "Grandpa's Journey Home"
+      },
+      "kind": "dialogue",
+      "level": "B2",
+      "cast": {
+        "A": "Rivka",
+        "B": "Grandpa Yosef"
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "Thanks for doing this, Grandpa. For my project, I need to ask you about moving to Israel. Ready?",
+          "he": "תודה שאתה עושה את זה, סבא. בשביל הפרויקט שלי אני צריכה לשאול אותך על העלייה לארץ. מוכן?"
+        },
+        {
+          "speaker": "B",
+          "en": "Ready as I'll ever be. Ask away, but don't expect me to remember every date.",
+          "he": "מוכן ככל שאפשר. תשאלי מה שאת רוצה, אבל אל תצפי שאזכור כל תאריך."
+        },
+        {
+          "speaker": "A",
+          "en": "Let's start with the big question. Why did you decide to leave America?",
+          "he": "בוא נתחיל בשאלה הגדולה. למה החלטת לעזוב את אמריקה?"
+        },
+        {
+          "speaker": "B",
+          "en": "Every Pesach we said, \"Next year in Jerusalem.\" One year I realized I really meant it.",
+          "he": "בכל פסח אמרנו \"לשנה הבאה בירושלים\". שנה אחת הבנתי שאני באמת מתכוון לזה."
+        },
+        {
+          "speaker": "A",
+          "en": "Was it hard to convince Grandma? She told me she was nervous at first.",
+          "he": "היה קשה לשכנע את סבתא? היא סיפרה לי שבהתחלה היא הייתה לחוצה."
+        },
+        {
+          "speaker": "B",
+          "en": "Nervous is putting it mildly! She worried about her parents and the language, but she turned out braver than me.",
+          "he": "לחוצה זה בלשון המעטה! היא דאגה להורים שלה ולשפה, אבל בסוף התברר שהיא אמיצה ממני."
+        },
+        {
+          "speaker": "A",
+          "en": "What was the hardest part when you first arrived?",
+          "he": "מה היה החלק הכי קשה כשהגעתם בהתחלה?"
+        },
+        {
+          "speaker": "B",
+          "en": "Without a doubt, Hebrew. I'd studied it from books, but people spoke so fast that I couldn't keep up.",
+          "he": "בלי ספק, העברית. למדתי אותה מספרים, אבל אנשים דיברו כל כך מהר שלא הצלחתי לעמוד בקצב."
+        },
+        {
+          "speaker": "A",
+          "en": "I can relate to that, but the other way around. English speakers talk way too fast for me.",
+          "he": "אני מבינה את זה היטב, אבל הפוך. דוברי אנגלית מדברים מהר מדי בשבילי."
+        },
+        {
+          "speaker": "B",
+          "en": "Ha! Then we're even. I used to nod and smile, hoping nobody would ask me a question.",
+          "he": "הא! אז אנחנו תיקו. הייתי מהנהן ומחייך ומקווה שאף אחד לא ישאל אותי שאלה."
+        },
+        {
+          "speaker": "A",
+          "en": "Did you ever regret it, even for a moment? Be honest. It's for a grade.",
+          "he": "הצטערת על זה פעם, אפילו לרגע? תהיה כן. זה בשביל ציון."
+        },
+        {
+          "speaker": "B",
+          "en": "There were tough days, I won't deny it. Money was tight, and we missed our families terribly.",
+          "he": "היו ימים קשים, אני לא אכחיש. היה חסר כסף, והתגעגענו מאוד למשפחות שלנו."
+        },
+        {
+          "speaker": "A",
+          "en": "So what kept you going?",
+          "he": "אז מה נתן לך כוח להמשיך?"
+        },
+        {
+          "speaker": "B",
+          "en": "Walking to the Kotel on Friday afternoons. Standing there, I knew we had made the right choice.",
+          "he": "ההליכה לכותל בימי שישי אחר הצהריים. כשעמדתי שם, ידעתי שבחרנו נכון."
+        },
+        {
+          "speaker": "A",
+          "en": "That gives me goosebumps. Is there anything you'd tell kids my age who live here?",
+          "he": "זה עושה לי צמרמורת. יש משהו שהיית אומר לילדים בגיל שלי שגרים כאן?"
+        },
+        {
+          "speaker": "B",
+          "en": "Don't take it for granted. What you see every day was a dream for generations before you.",
+          "he": "אל תתייחסו לזה כמובן מאליו. מה שאתם רואים כל יום היה חלום של דורות לפניכם."
+        },
+        {
+          "speaker": "A",
+          "en": "I think that's going to be the best line in my whole project. Thank you, Grandpa.",
+          "he": "אני חושבת שזה יהיה המשפט הכי טוב בכל הפרויקט שלי. תודה, סבא."
+        }
+      ],
+      "glossary": {
+        "thanks": {
+          "lemma": "thanks",
+          "he": "תודה"
+        },
+        "doing": {
+          "lemma": "do",
+          "he": "עושה"
+        },
+        "grandpa": {
+          "lemma": "grandpa",
+          "he": "סבא"
+        },
+        "project": {
+          "lemma": "project",
+          "he": "פרויקט"
+        },
+        "need": {
+          "lemma": "need",
+          "he": "צריכה"
+        },
+        "ask": {
+          "lemma": "ask",
+          "he": "לשאול; (ask away) תשאלי בחופשיות"
+        },
+        "about": {
+          "lemma": "about",
+          "he": "על"
+        },
+        "moving": {
+          "lemma": "move",
+          "he": "מעבר (לגור)"
+        },
+        "israel": {
+          "lemma": "Israel",
+          "he": "ישראל, הארץ"
+        },
+        "ready": {
+          "lemma": "ready",
+          "he": "מוכן"
+        },
+        "i'll": {
+          "lemma": "I will",
+          "he": "אני (אהיה)"
+        },
+        "ever": {
+          "lemma": "ever",
+          "he": "(as ready as I'll ever be) מוכן ככל שאפשר"
+        },
+        "away": {
+          "lemma": "ask away",
+          "he": "(ask away) תשאלי בלי חשש"
+        },
+        "don't": {
+          "lemma": "do not",
+          "he": "אל"
+        },
+        "expect": {
+          "lemma": "expect",
+          "he": "תצפי"
+        },
+        "remember": {
+          "lemma": "remember",
+          "he": "אזכור"
+        },
+        "every": {
+          "lemma": "every",
+          "he": "כל"
+        },
+        "date": {
+          "lemma": "date",
+          "he": "תאריך"
+        },
+        "let's": {
+          "lemma": "let us",
+          "he": "בוא נ..."
+        },
+        "start": {
+          "lemma": "start",
+          "he": "נתחיל"
+        },
+        "big": {
+          "lemma": "big",
+          "he": "גדולה"
+        },
+        "question": {
+          "lemma": "question",
+          "he": "שאלה"
+        },
+        "decide": {
+          "lemma": "decide",
+          "he": "להחליט"
+        },
+        "leave": {
+          "lemma": "leave",
+          "he": "לעזוב"
+        },
+        "america": {
+          "lemma": "America",
+          "he": "אמריקה"
+        },
+        "pesach": {
+          "lemma": "Pesach",
+          "he": "פסח"
+        },
+        "said": {
+          "lemma": "say",
+          "he": "אמרנו"
+        },
+        "next": {
+          "lemma": "next",
+          "he": "הבאה"
+        },
+        "year": {
+          "lemma": "year",
+          "he": "שנה"
+        },
+        "jerusalem": {
+          "lemma": "Jerusalem",
+          "he": "ירושלים"
+        },
+        "one": {
+          "lemma": "one",
+          "he": "אחת"
+        },
+        "realized": {
+          "lemma": "realize",
+          "he": "הבנתי"
+        },
+        "really": {
+          "lemma": "really",
+          "he": "באמת"
+        },
+        "meant": {
+          "lemma": "mean",
+          "he": "התכוונתי"
+        },
+        "hard": {
+          "lemma": "hard",
+          "he": "קשה"
+        },
+        "convince": {
+          "lemma": "convince",
+          "he": "לשכנע"
+        },
+        "grandma": {
+          "lemma": "grandma",
+          "he": "סבתא"
+        },
+        "told": {
+          "lemma": "tell",
+          "he": "סיפרה"
+        },
+        "nervous": {
+          "lemma": "nervous",
+          "he": "לחוצה, מתוחה"
+        },
+        "first": {
+          "lemma": "first",
+          "he": "(at first) בהתחלה; (first arrived) הגעתם לראשונה"
+        },
+        "putting": {
+          "lemma": "put",
+          "he": "(putting it mildly) בלשון המעטה"
+        },
+        "mildly": {
+          "lemma": "mildly",
+          "he": "בעדינות (putting it mildly: בלשון המעטה)"
+        },
+        "worried": {
+          "lemma": "worry",
+          "he": "דאגה"
+        },
+        "parents": {
+          "lemma": "parent",
+          "he": "הורים"
+        },
+        "language": {
+          "lemma": "language",
+          "he": "שפה"
+        },
+        "turned": {
+          "lemma": "turn out",
+          "he": "(turned out) בסוף התברר ש"
+        },
+        "out": {
+          "lemma": "turn out",
+          "he": "(turned out) התברר ש"
+        },
+        "braver": {
+          "lemma": "brave",
+          "he": "אמיצה יותר"
+        },
+        "than": {
+          "lemma": "than",
+          "he": "מ... (בהשוואה)"
+        },
+        "hardest": {
+          "lemma": "hard",
+          "he": "הכי קשה"
+        },
+        "part": {
+          "lemma": "part",
+          "he": "חלק"
+        },
+        "arrived": {
+          "lemma": "arrive",
+          "he": "הגעתם"
+        },
+        "without": {
+          "lemma": "without",
+          "he": "בלי"
+        },
+        "doubt": {
+          "lemma": "doubt",
+          "he": "ספק"
+        },
+        "hebrew": {
+          "lemma": "Hebrew",
+          "he": "עברית"
+        },
+        "i'd": {
+          "lemma": "I had",
+          "he": "(I'd studied) למדתי (קודם)"
+        },
+        "studied": {
+          "lemma": "study",
+          "he": "למדתי"
+        },
+        "books": {
+          "lemma": "book",
+          "he": "ספרים"
+        },
+        "people": {
+          "lemma": "people",
+          "he": "אנשים"
+        },
+        "spoke": {
+          "lemma": "speak",
+          "he": "דיברו"
+        },
+        "fast": {
+          "lemma": "fast",
+          "he": "מהר"
+        },
+        "couldn't": {
+          "lemma": "could not",
+          "he": "לא הצלחתי"
+        },
+        "keep": {
+          "lemma": "keep up",
+          "he": "(keep up) לעמוד בקצב"
+        },
+        "up": {
+          "lemma": "keep up",
+          "he": "(keep up) לעמוד בקצב"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכולה"
+        },
+        "relate": {
+          "lemma": "relate to",
+          "he": "(relate to) להזדהות עם"
+        },
+        "other": {
+          "lemma": "other",
+          "he": "(the other way around) הפוך"
+        },
+        "way": {
+          "lemma": "way",
+          "he": "(the other way around) הפוך; (way too) הרבה יותר מדי"
+        },
+        "around": {
+          "lemma": "the other way around",
+          "he": "(the other way around) הפוך"
+        },
+        "english": {
+          "lemma": "English",
+          "he": "אנגלית"
+        },
+        "speakers": {
+          "lemma": "speaker",
+          "he": "דוברים"
+        },
+        "talk": {
+          "lemma": "talk",
+          "he": "מדברים"
+        },
+        "too": {
+          "lemma": "too",
+          "he": "מדי"
+        },
+        "ha": {
+          "lemma": "ha",
+          "he": "הא"
+        },
+        "then": {
+          "lemma": "then",
+          "he": "אז"
+        },
+        "we're": {
+          "lemma": "we are",
+          "he": "אנחנו"
+        },
+        "even": {
+          "lemma": "even",
+          "he": "תיקו, שווים"
+        },
+        "used": {
+          "lemma": "used to",
+          "he": "(used to) הייתי (בעבר, בהרגל)"
+        },
+        "nod": {
+          "lemma": "nod",
+          "he": "להנהן"
+        },
+        "smile": {
+          "lemma": "smile",
+          "he": "לחייך"
+        },
+        "hoping": {
+          "lemma": "hope",
+          "he": "מקווה"
+        },
+        "nobody": {
+          "lemma": "nobody",
+          "he": "אף אחד"
+        },
+        "would": {
+          "lemma": "would",
+          "he": "(would ask) ישאל"
+        },
+        "regret": {
+          "lemma": "regret",
+          "he": "הצטערת על"
+        },
+        "moment": {
+          "lemma": "moment",
+          "he": "רגע"
+        },
+        "honest": {
+          "lemma": "honest",
+          "he": "כן, ישר"
+        },
+        "it's": {
+          "lemma": "it is",
+          "he": "זה"
+        },
+        "grade": {
+          "lemma": "grade",
+          "he": "ציון"
+        },
+        "tough": {
+          "lemma": "tough",
+          "he": "קשים"
+        },
+        "days": {
+          "lemma": "day",
+          "he": "ימים"
+        },
+        "won't": {
+          "lemma": "will not",
+          "he": "לא (אכחיש)"
+        },
+        "deny": {
+          "lemma": "deny",
+          "he": "להכחיש"
+        },
+        "money": {
+          "lemma": "money",
+          "he": "כסף"
+        },
+        "tight": {
+          "lemma": "tight",
+          "he": "דחוק (money was tight: היה חסר כסף)"
+        },
+        "missed": {
+          "lemma": "miss",
+          "he": "התגעגענו"
+        },
+        "families": {
+          "lemma": "family",
+          "he": "משפחות"
+        },
+        "terribly": {
+          "lemma": "terribly",
+          "he": "מאוד, נורא"
+        },
+        "kept": {
+          "lemma": "keep going",
+          "he": "(kept you going) נתן לך כוח להמשיך"
+        },
+        "going": {
+          "lemma": "keep going",
+          "he": "(keep going) להמשיך"
+        },
+        "walking": {
+          "lemma": "walk",
+          "he": "ההליכה"
+        },
+        "kotel": {
+          "lemma": "Kotel",
+          "he": "הכותל המערבי"
+        },
+        "friday": {
+          "lemma": "Friday",
+          "he": "יום שישי"
+        },
+        "afternoons": {
+          "lemma": "afternoon",
+          "he": "אחר הצהריים"
+        },
+        "standing": {
+          "lemma": "stand",
+          "he": "כשעמדתי"
+        },
+        "knew": {
+          "lemma": "know",
+          "he": "ידעתי"
+        },
+        "had": {
+          "lemma": "have",
+          "he": "(had made) עשינו (קודם)"
+        },
+        "made": {
+          "lemma": "make",
+          "he": "עשינו (made the right choice: בחרנו נכון)"
+        },
+        "right": {
+          "lemma": "right",
+          "he": "נכונה"
+        },
+        "choice": {
+          "lemma": "choice",
+          "he": "בחירה"
+        },
+        "gives": {
+          "lemma": "give",
+          "he": "נותן, עושה"
+        },
+        "goosebumps": {
+          "lemma": "goosebumps",
+          "he": "צמרמורת"
+        },
+        "anything": {
+          "lemma": "anything",
+          "he": "משהו"
+        },
+        "you'd": {
+          "lemma": "you would",
+          "he": "היית (אומר)"
+        },
+        "tell": {
+          "lemma": "tell",
+          "he": "אומר, מספר"
+        },
+        "kids": {
+          "lemma": "kid",
+          "he": "ילדים"
+        },
+        "age": {
+          "lemma": "age",
+          "he": "גיל"
+        },
+        "live": {
+          "lemma": "live",
+          "he": "גרים"
+        },
+        "take": {
+          "lemma": "take for granted",
+          "he": "(take it for granted) להתייחס לזה כמובן מאליו"
+        },
+        "granted": {
+          "lemma": "take for granted",
+          "he": "(for granted) כמובן מאליו"
+        },
+        "see": {
+          "lemma": "see",
+          "he": "רואים"
+        },
+        "day": {
+          "lemma": "day",
+          "he": "יום"
+        },
+        "dream": {
+          "lemma": "dream",
+          "he": "חלום"
+        },
+        "generations": {
+          "lemma": "generation",
+          "he": "דורות"
+        },
+        "before": {
+          "lemma": "before",
+          "he": "לפני"
+        },
+        "think": {
+          "lemma": "think",
+          "he": "חושבת"
+        },
+        "that's": {
+          "lemma": "that is",
+          "he": "זה"
+        },
+        "best": {
+          "lemma": "good",
+          "he": "הכי טוב"
+        },
+        "line": {
+          "lemma": "line",
+          "he": "משפט, שורה"
+        },
+        "whole": {
+          "lemma": "whole",
+          "he": "כל, שלם"
+        },
+        "thank": {
+          "lemma": "thank",
+          "he": "תודה"
+        }
+      },
+      "questions": [
+        {
+          "after": 3,
+          "item": {
+            "id": "story.d2.grandpa-aliyah.q1",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "B2",
+            "prompt": "What made Grandpa decide to move to Israel?",
+            "options": [
+              {
+                "id": "a",
+                "text": "An old dream that he finally took seriously"
+              },
+              {
+                "id": "b",
+                "text": "A job offer in Jerusalem"
+              },
+              {
+                "id": "c",
+                "text": "Grandma's wish to move"
+              },
+              {
+                "id": "d",
+                "text": "His parents' advice"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "סבא אומר שבכל פסח אמרו \"לשנה הבאה בירושלים\", ושנה אחת הוא הבין שהוא באמת מתכוון לזה.",
+              "en": "Every Pesach they said \"Next year in Jerusalem,\" and one year he realized he really meant it."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 7,
+          "item": {
+            "id": "story.d2.grandpa-aliyah.q2",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "B2",
+            "prompt": "What was the hardest part for Grandpa when he first arrived?",
+            "options": [
+              {
+                "id": "a",
+                "text": "understanding Hebrew when people spoke fast"
+              },
+              {
+                "id": "b",
+                "text": "finding a job"
+              },
+              {
+                "id": "c",
+                "text": "getting used to the hot weather"
+              },
+              {
+                "id": "d",
+                "text": "finding a shul near his home"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "סבא אומר: Without a doubt, Hebrew. אנשים דיברו מהר מדי והוא לא עמד בקצב.",
+              "en": "People spoke Hebrew so fast that he couldn't keep up."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 9,
+          "item": {
+            "id": "story.d2.grandpa-aliyah.q3",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B2",
+            "prompt": "Why does Rivka say \"the other way around\"?",
+            "options": [
+              {
+                "id": "a",
+                "text": "She has the same problem, but with English instead of Hebrew."
+              },
+              {
+                "id": "b",
+                "text": "She speaks Hebrew faster than Grandpa."
+              },
+              {
+                "id": "c",
+                "text": "She thinks Grandpa's Hebrew is better than hers."
+              },
+              {
+                "id": "d",
+                "text": "She does not understand Grandpa's story."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "לסבא היה קשה עם עברית מהירה, ולרבקה קשה עם אנגלית מהירה. זו אותה בעיה, רק הפוך.",
+              "en": "Grandpa struggled with fast Hebrew; Rivka struggles with fast English. Same problem, opposite language."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 15,
+          "item": {
+            "id": "story.d2.grandpa-aliyah.q4",
+            "type": "choice",
+            "skill": "reading.main-idea",
+            "level": "B2",
+            "prompt": "What is Grandpa's attitude toward his decision?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Even with the hard times, he is sure it was right."
+              },
+              {
+                "id": "b",
+                "text": "He regrets it because money was tight."
+              },
+              {
+                "id": "c",
+                "text": "He does not remember why he moved."
+              },
+              {
+                "id": "d",
+                "text": "He thinks it was easy from the very first day."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "סבא מודה שהיו ימים קשים, אבל אומר: I knew we had made the right choice.",
+              "en": "He admits there were tough days, but he knew they made the right choice."
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "מה שנראה לנו רגיל בארץ ישראל היה חלום של דורות.",
+      "tags": [
+        "eretz-yisrael",
+        "family"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "story.d2.screen-free-evening",
+      "title": {
+        "he": "ערב משפחתי בלי מסכים",
+        "en": "A Screen-Free Evening"
+      },
+      "kind": "dialogue",
+      "level": "B2",
+      "cast": {
+        "A": "Ima",
+        "B": "Abba"
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "David, I've been thinking. What if we had one screen-free evening every week, say on Tuesdays?",
+          "he": "דוד, חשבתי על משהו. מה אם יהיה לנו ערב אחד בשבוע בלי מסכים, נגיד בימי שלישי?"
+        },
+        {
+          "speaker": "B",
+          "en": "In principle, I'm all for it. But the kids have homework, and Rivka uses the computer for exam practice.",
+          "he": "עקרונית, אני בעד. אבל לילדים יש שיעורי בית, ורבקה משתמשת במחשב כדי להתאמן לבחינות."
+        },
+        {
+          "speaker": "A",
+          "en": "That's a fair point. We could start after seven, once homework is done.",
+          "he": "זו נקודה הוגנת. אפשר להתחיל אחרי שבע, כשהשיעורים כבר גמורים."
+        },
+        {
+          "speaker": "B",
+          "en": "Fine, but what would we actually do? If it's boring, they'll just count the minutes.",
+          "he": "בסדר, אבל מה בעצם נעשה? אם זה יהיה משעמם, הם פשוט יספרו את הדקות."
+        },
+        {
+          "speaker": "A",
+          "en": "Board games, baking, maybe learning a little Torah together. The point is to really talk to each other.",
+          "he": "משחקי קופסה, אפייה, אולי ללמוד קצת תורה ביחד. העיקר הוא באמת לדבר אחד עם השני."
+        },
+        {
+          "speaker": "B",
+          "en": "I see the advantages. On the other hand, Ari might feel it's a punishment, not a family evening.",
+          "he": "אני רואה את היתרונות. מצד שני, ארי עלול להרגיש שזה עונש ולא ערב משפחתי."
+        },
+        {
+          "speaker": "A",
+          "en": "That's why I'd like to add a chesed visit. Mrs. Klein would love some company.",
+          "he": "בגלל זה הייתי רוצה להוסיף ביקור של חסד. גברת קליין תשמח לקצת חברה."
+        },
+        {
+          "speaker": "B",
+          "en": "Now that's a good idea. It gives the evening a purpose, so it doesn't feel like we're just taking something away.",
+          "he": "זה כבר רעיון טוב. זה נותן לערב מטרה, כך שזה לא מרגיש שאנחנו רק לוקחים משהו."
+        },
+        {
+          "speaker": "A",
+          "en": "Exactly. The kids could bring her a cake and help her with small jobs around the house.",
+          "he": "בדיוק. הילדים יכולים להביא לה עוגה ולעזור לה בעבודות קטנות בבית."
+        },
+        {
+          "speaker": "B",
+          "en": "I'm a little worried about one thing, though. Visiting every single week might be too much for her.",
+          "he": "אבל דבר אחד קצת מדאיג אותי. ביקור כל שבוע אולי יהיה יותר מדי בשבילה."
+        },
+        {
+          "speaker": "A",
+          "en": "You're right. Let's ask her first and maybe visit every other week instead.",
+          "he": "אתה צודק. בוא נשאל אותה קודם, ואולי נבקר במקום זה פעם בשבועיים."
+        },
+        {
+          "speaker": "B",
+          "en": "And on the other weeks we stay home. Tamar has been asking to learn chess anyway.",
+          "he": "ובשבועות האחרים נישאר בבית. תמר בכל מקרה מבקשת כבר זמן מה ללמוד שחמט."
+        },
+        {
+          "speaker": "A",
+          "en": "Another thing to consider: if we want the kids off screens, we have to set an example ourselves.",
+          "he": "עוד דבר שצריך לשקול: אם אנחנו רוצים שהילדים יתרחקו מהמסכים, אנחנו צריכים לתת דוגמה בעצמנו."
+        },
+        {
+          "speaker": "B",
+          "en": "Ouch. I suppose that means my news updates can wait until the kids are in bed.",
+          "he": "אאוץ'. אני מניח שזה אומר שעדכוני החדשות שלי יכולים לחכות עד שהילדים במיטה."
+        },
+        {
+          "speaker": "A",
+          "en": "It does. All in all, I think the benefits outweigh the problems. Shall we try it for a month?",
+          "he": "נכון. בסך הכול, אני חושבת שהיתרונות גדולים מהבעיות. ננסה את זה חודש?"
+        },
+        {
+          "speaker": "B",
+          "en": "Agreed. Let's announce it at dinner, but let the kids help plan the first evening, so they feel part of it.",
+          "he": "מסכים. בוא נודיע על זה בארוחת הערב, אבל ניתן לילדים לעזור לתכנן את הערב הראשון, כדי שירגישו חלק מזה."
+        }
+      ],
+      "glossary": {
+        "david": {
+          "lemma": "David",
+          "he": "דוד (שם)"
+        },
+        "i've": {
+          "lemma": "I have",
+          "he": "(I've been thinking) חשבתי"
+        },
+        "thinking": {
+          "lemma": "think",
+          "he": "חושבת"
+        },
+        "had": {
+          "lemma": "have",
+          "he": "(what if we had) מה אם יהיה לנו"
+        },
+        "one": {
+          "lemma": "one",
+          "he": "אחד"
+        },
+        "screen-free": {
+          "lemma": "screen-free",
+          "he": "בלי מסכים"
+        },
+        "evening": {
+          "lemma": "evening",
+          "he": "ערב"
+        },
+        "every": {
+          "lemma": "every",
+          "he": "כל"
+        },
+        "week": {
+          "lemma": "week",
+          "he": "שבוע"
+        },
+        "say": {
+          "lemma": "say",
+          "he": "נגיד"
+        },
+        "tuesdays": {
+          "lemma": "Tuesday",
+          "he": "ימי שלישי"
+        },
+        "principle": {
+          "lemma": "principle",
+          "he": "(in principle) עקרונית"
+        },
+        "i'm": {
+          "lemma": "I am",
+          "he": "אני"
+        },
+        "all": {
+          "lemma": "all; all in all",
+          "he": "(all for it) בעד לגמרי; (all in all) בסך הכול"
+        },
+        "kids": {
+          "lemma": "kid",
+          "he": "ילדים"
+        },
+        "have": {
+          "lemma": "have",
+          "he": "יש (להם); (have to) צריכים"
+        },
+        "homework": {
+          "lemma": "homework",
+          "he": "שיעורי בית"
+        },
+        "rivka": {
+          "lemma": "Rivka",
+          "he": "רבקה (שם)"
+        },
+        "uses": {
+          "lemma": "use",
+          "he": "משתמשת"
+        },
+        "computer": {
+          "lemma": "computer",
+          "he": "מחשב"
+        },
+        "exam": {
+          "lemma": "exam",
+          "he": "בחינה"
+        },
+        "practice": {
+          "lemma": "practice",
+          "he": "תרגול"
+        },
+        "that's": {
+          "lemma": "that is",
+          "he": "זה, זו"
+        },
+        "fair": {
+          "lemma": "fair",
+          "he": "הוגנת"
+        },
+        "point": {
+          "lemma": "point",
+          "he": "נקודה; (the point is) העיקר הוא"
+        },
+        "could": {
+          "lemma": "could",
+          "he": "יכולים"
+        },
+        "start": {
+          "lemma": "start",
+          "he": "להתחיל"
+        },
+        "after": {
+          "lemma": "after",
+          "he": "אחרי"
+        },
+        "seven": {
+          "lemma": "seven",
+          "he": "שבע"
+        },
+        "once": {
+          "lemma": "once",
+          "he": "כש..., ברגע ש"
+        },
+        "done": {
+          "lemma": "done",
+          "he": "גמור"
+        },
+        "fine": {
+          "lemma": "fine",
+          "he": "בסדר"
+        },
+        "would": {
+          "lemma": "would",
+          "he": "(what would we do) מה נעשה"
+        },
+        "actually": {
+          "lemma": "actually",
+          "he": "בעצם"
+        },
+        "it's": {
+          "lemma": "it is",
+          "he": "זה"
+        },
+        "boring": {
+          "lemma": "boring",
+          "he": "משעמם"
+        },
+        "they'll": {
+          "lemma": "they will",
+          "he": "הם (יעשו)"
+        },
+        "just": {
+          "lemma": "just",
+          "he": "פשוט; רק"
+        },
+        "count": {
+          "lemma": "count",
+          "he": "יספרו"
+        },
+        "minutes": {
+          "lemma": "minute",
+          "he": "דקות"
+        },
+        "board": {
+          "lemma": "board game",
+          "he": "(board games) משחקי קופסה"
+        },
+        "games": {
+          "lemma": "game",
+          "he": "משחקים"
+        },
+        "baking": {
+          "lemma": "bake",
+          "he": "אפייה"
+        },
+        "maybe": {
+          "lemma": "maybe",
+          "he": "אולי"
+        },
+        "learning": {
+          "lemma": "learn",
+          "he": "ללמוד"
+        },
+        "little": {
+          "lemma": "little",
+          "he": "(a little) קצת"
+        },
+        "torah": {
+          "lemma": "Torah",
+          "he": "תורה"
+        },
+        "together": {
+          "lemma": "together",
+          "he": "ביחד"
+        },
+        "really": {
+          "lemma": "really",
+          "he": "באמת"
+        },
+        "talk": {
+          "lemma": "talk",
+          "he": "לדבר"
+        },
+        "each": {
+          "lemma": "each other",
+          "he": "(each other) אחד עם השני"
+        },
+        "other": {
+          "lemma": "other",
+          "he": "(each other) אחד את השני; (on the other hand) מצד שני; אחרים"
+        },
+        "see": {
+          "lemma": "see",
+          "he": "רואה"
+        },
+        "advantages": {
+          "lemma": "advantage",
+          "he": "יתרונות"
+        },
+        "hand": {
+          "lemma": "hand",
+          "he": "(on the other hand) מצד שני"
+        },
+        "ari": {
+          "lemma": "Ari",
+          "he": "ארי (שם)"
+        },
+        "might": {
+          "lemma": "might",
+          "he": "עלול, אולי"
+        },
+        "feel": {
+          "lemma": "feel",
+          "he": "להרגיש, מרגיש"
+        },
+        "punishment": {
+          "lemma": "punishment",
+          "he": "עונש"
+        },
+        "family": {
+          "lemma": "family",
+          "he": "משפחתי"
+        },
+        "i'd": {
+          "lemma": "I would",
+          "he": "(I'd like) הייתי רוצה"
+        },
+        "like": {
+          "lemma": "like",
+          "he": "(I'd like) הייתי רוצה; (feel like) מרגיש ש"
+        },
+        "add": {
+          "lemma": "add",
+          "he": "להוסיף"
+        },
+        "chesed": {
+          "lemma": "chesed",
+          "he": "חסד, עזרה לאחרים"
+        },
+        "visit": {
+          "lemma": "visit",
+          "he": "ביקור; לבקר"
+        },
+        "klein": {
+          "lemma": "Klein",
+          "he": "קליין (שם משפחה)"
+        },
+        "love": {
+          "lemma": "love",
+          "he": "(would love) תשמח מאוד"
+        },
+        "some": {
+          "lemma": "some",
+          "he": "קצת"
+        },
+        "company": {
+          "lemma": "company",
+          "he": "חברה (אנשים לידה)"
+        },
+        "now": {
+          "lemma": "now",
+          "he": "(now that's) זה כבר"
+        },
+        "good": {
+          "lemma": "good",
+          "he": "טוב"
+        },
+        "idea": {
+          "lemma": "idea",
+          "he": "רעיון"
+        },
+        "gives": {
+          "lemma": "give",
+          "he": "נותן"
+        },
+        "purpose": {
+          "lemma": "purpose",
+          "he": "מטרה"
+        },
+        "doesn't": {
+          "lemma": "does not",
+          "he": "לא"
+        },
+        "we're": {
+          "lemma": "we are",
+          "he": "אנחנו"
+        },
+        "taking": {
+          "lemma": "take away",
+          "he": "(taking away) לוקחים"
+        },
+        "something": {
+          "lemma": "something",
+          "he": "משהו"
+        },
+        "away": {
+          "lemma": "take away",
+          "he": "(take away) לקחת"
+        },
+        "exactly": {
+          "lemma": "exactly",
+          "he": "בדיוק"
+        },
+        "bring": {
+          "lemma": "bring",
+          "he": "להביא"
+        },
+        "cake": {
+          "lemma": "cake",
+          "he": "עוגה"
+        },
+        "help": {
+          "lemma": "help",
+          "he": "לעזור"
+        },
+        "small": {
+          "lemma": "small",
+          "he": "קטנות"
+        },
+        "jobs": {
+          "lemma": "job",
+          "he": "עבודות, מטלות"
+        },
+        "around": {
+          "lemma": "around",
+          "he": "ברחבי (around the house: בבית)"
+        },
+        "house": {
+          "lemma": "house",
+          "he": "בית"
+        },
+        "worried": {
+          "lemma": "worried",
+          "he": "מודאג"
+        },
+        "about": {
+          "lemma": "about",
+          "he": "לגבי"
+        },
+        "thing": {
+          "lemma": "thing",
+          "he": "דבר"
+        },
+        "though": {
+          "lemma": "though",
+          "he": "אבל, עם זאת"
+        },
+        "visiting": {
+          "lemma": "visit",
+          "he": "לבקר"
+        },
+        "single": {
+          "lemma": "single",
+          "he": "(every single) כל... ממש"
+        },
+        "too": {
+          "lemma": "too",
+          "he": "(too much) יותר מדי"
+        },
+        "much": {
+          "lemma": "much",
+          "he": "הרבה (too much: יותר מדי)"
+        },
+        "you're": {
+          "lemma": "you are",
+          "he": "אתה"
+        },
+        "right": {
+          "lemma": "right",
+          "he": "צודק"
+        },
+        "let's": {
+          "lemma": "let us",
+          "he": "בוא נ..."
+        },
+        "ask": {
+          "lemma": "ask",
+          "he": "נשאל"
+        },
+        "first": {
+          "lemma": "first",
+          "he": "קודם; ראשון"
+        },
+        "instead": {
+          "lemma": "instead",
+          "he": "במקום זה"
+        },
+        "weeks": {
+          "lemma": "week",
+          "he": "שבועות"
+        },
+        "stay": {
+          "lemma": "stay",
+          "he": "נישאר"
+        },
+        "home": {
+          "lemma": "home",
+          "he": "בבית"
+        },
+        "tamar": {
+          "lemma": "Tamar",
+          "he": "תמר (שם)"
+        },
+        "has": {
+          "lemma": "have",
+          "he": "(has been asking) מבקשת כבר זמן מה"
+        },
+        "asking": {
+          "lemma": "ask",
+          "he": "מבקשת"
+        },
+        "learn": {
+          "lemma": "learn",
+          "he": "ללמוד"
+        },
+        "chess": {
+          "lemma": "chess",
+          "he": "שחמט"
+        },
+        "anyway": {
+          "lemma": "anyway",
+          "he": "בכל מקרה"
+        },
+        "another": {
+          "lemma": "another",
+          "he": "עוד"
+        },
+        "consider": {
+          "lemma": "consider",
+          "he": "לשקול"
+        },
+        "want": {
+          "lemma": "want",
+          "he": "רוצים"
+        },
+        "off": {
+          "lemma": "off",
+          "he": "רחוק מ (off screens: בלי מסכים)"
+        },
+        "screens": {
+          "lemma": "screen",
+          "he": "מסכים"
+        },
+        "set": {
+          "lemma": "set an example",
+          "he": "(set an example) לתת דוגמה"
+        },
+        "example": {
+          "lemma": "example",
+          "he": "דוגמה"
+        },
+        "ourselves": {
+          "lemma": "ourselves",
+          "he": "בעצמנו"
+        },
+        "ouch": {
+          "lemma": "ouch",
+          "he": "אאוץ'"
+        },
+        "suppose": {
+          "lemma": "suppose",
+          "he": "מניח"
+        },
+        "means": {
+          "lemma": "mean",
+          "he": "אומר, פירושו"
+        },
+        "news": {
+          "lemma": "news",
+          "he": "חדשות"
+        },
+        "updates": {
+          "lemma": "update",
+          "he": "עדכונים"
+        },
+        "can": {
+          "lemma": "can",
+          "he": "יכולים"
+        },
+        "wait": {
+          "lemma": "wait",
+          "he": "לחכות"
+        },
+        "until": {
+          "lemma": "until",
+          "he": "עד ש"
+        },
+        "bed": {
+          "lemma": "bed",
+          "he": "מיטה"
+        },
+        "think": {
+          "lemma": "think",
+          "he": "חושבת"
+        },
+        "benefits": {
+          "lemma": "benefit",
+          "he": "יתרונות, תועלת"
+        },
+        "outweigh": {
+          "lemma": "outweigh",
+          "he": "גוברים על, גדולים מ"
+        },
+        "problems": {
+          "lemma": "problem",
+          "he": "בעיות"
+        },
+        "shall": {
+          "lemma": "shall",
+          "he": "(shall we) האם ננסה"
+        },
+        "try": {
+          "lemma": "try",
+          "he": "לנסות"
+        },
+        "month": {
+          "lemma": "month",
+          "he": "חודש"
+        },
+        "agreed": {
+          "lemma": "agree",
+          "he": "מסכים"
+        },
+        "announce": {
+          "lemma": "announce",
+          "he": "להודיע"
+        },
+        "dinner": {
+          "lemma": "dinner",
+          "he": "ארוחת ערב"
+        },
+        "let": {
+          "lemma": "let",
+          "he": "לתת, לאפשר"
+        },
+        "plan": {
+          "lemma": "plan",
+          "he": "לתכנן"
+        },
+        "part": {
+          "lemma": "part",
+          "he": "חלק"
+        }
+      },
+      "questions": [
+        {
+          "after": 1,
+          "item": {
+            "id": "story.d2.screen-free-evening.q1",
+            "type": "choice",
+            "skill": "listening.dialogues",
+            "level": "B2",
+            "prompt": "What problem does Abba raise first?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The kids need the computer for schoolwork."
+              },
+              {
+                "id": "b",
+                "text": "He does not like board games."
+              },
+              {
+                "id": "c",
+                "text": "Tuesday is a busy day at his work."
+              },
+              {
+                "id": "d",
+                "text": "Mrs. Klein lives too far away."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "אבא אומר שלילדים יש שיעורי בית ושרבקה משתמשת במחשב כדי להתאמן לבחינות.",
+              "en": "The kids have homework, and Rivka uses the computer for exam practice."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 7,
+          "item": {
+            "id": "story.d2.screen-free-evening.q2",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B2",
+            "prompt": "Why does Abba like the idea of a chesed visit?",
+            "options": [
+              {
+                "id": "a",
+                "text": "It makes the evening about giving, not only about losing screens."
+              },
+              {
+                "id": "b",
+                "text": "It means the kids will be out of the house."
+              },
+              {
+                "id": "c",
+                "text": "Mrs. Klein asked the family to visit her."
+              },
+              {
+                "id": "d",
+                "text": "It will make the evening shorter."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "אבא אומר שהביקור נותן לערב מטרה, כך שזה לא מרגיש שרק לוקחים משהו מהילדים.",
+              "en": "It gives the evening a purpose, so it doesn't feel like something is just taken away."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 13,
+          "item": {
+            "id": "story.d2.screen-free-evening.q3",
+            "type": "choice",
+            "skill": "reading.inference",
+            "level": "B2",
+            "prompt": "How does Abba react when Ima says that parents must set an example?",
+            "options": [
+              {
+                "id": "a",
+                "text": "He accepts it, even though it is a little hard for him."
+              },
+              {
+                "id": "b",
+                "text": "He refuses to change his habits."
+              },
+              {
+                "id": "c",
+                "text": "He gets angry at Ima."
+              },
+              {
+                "id": "d",
+                "text": "He says the rule is only for the kids."
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "אבא אומר Ouch, כלומר זה קצת קשה לו, אבל מסכים שהחדשות שלו יחכו עד שהילדים יישנו.",
+              "en": "He says \"Ouch,\" but agrees his news updates can wait."
+            },
+            "source": "original"
+          }
+        },
+        {
+          "after": 15,
+          "item": {
+            "id": "story.d2.screen-free-evening.q4",
+            "type": "choice",
+            "skill": "reading.main-idea",
+            "level": "B2",
+            "prompt": "What do Ima and Abba finally decide?",
+            "options": [
+              {
+                "id": "a",
+                "text": "to try the plan for a month and let the kids help plan it"
+              },
+              {
+                "id": "b",
+                "text": "to drop the idea because of homework"
+              },
+              {
+                "id": "c",
+                "text": "to have a screen-free evening every day"
+              },
+              {
+                "id": "d",
+                "text": "to let only the kids decide everything"
+              }
+            ],
+            "correctOptionId": "a",
+            "instruction": {
+              "he": "לבחור את התשובה הנכונה",
+              "en": "Choose the correct answer"
+            },
+            "explanation": {
+              "he": "אמא מציעה לנסות חודש, ואבא מסכים ומוסיף שהילדים יעזרו לתכנן את הערב הראשון.",
+              "en": "They agree to try it for a month and let the kids help plan the first evening."
+            },
+            "source": "original"
+          }
+        }
+      ],
+      "moral": "ערב משפחתי עם חסד נותן משמעות, וההורים נותנים דוגמה אישית.",
+      "tags": [
+        "chesed",
+        "family",
+        "bagrut"
+      ],
+      "source": "original"
+    }
+  ]
+}
