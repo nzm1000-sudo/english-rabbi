@@ -1597,7 +1597,7 @@
         },
         {
           "id": "d",
-          "text": "is playing"
+          "text": "were playing"
         }
       ],
       "correctOptionId": "a",
@@ -1667,8 +1667,8 @@
           "en": "right now = at this moment."
         },
         {
-          "he": "צריך גם is וגם ing.",
-          "en": "You need both is and -ing."
+          "he": "the baby = it. צריך פועל עזר וגם סיומת.",
+          "en": "the baby = it. You need a helping verb and an ending."
         }
       ],
       "explanation": {
@@ -2094,8 +2094,8 @@
           "en": "now = at this moment."
         },
         {
-          "he": "צריך am וגם ing.",
-          "en": "You need am and -ing."
+          "he": "צריך פועל עזר שמתאים ל־I, וגם סיומת.",
+          "en": "You need a helping verb for I, and an ending."
         }
       ],
       "explanation": {
@@ -2354,7 +2354,7 @@
         },
         {
           "id": "c",
-          "text": "tried"
+          "text": "are trying"
         },
         {
           "id": "d",
@@ -2411,7 +2411,7 @@
         },
         {
           "id": "c",
-          "text": "teach"
+          "text": "are teaching"
         },
         {
           "id": "d",
@@ -2470,7 +2470,7 @@
         },
         {
           "id": "d",
-          "text": "thinks"
+          "text": "are thinking"
         }
       ],
       "correctOptionId": "a",
@@ -2578,7 +2578,7 @@
         },
         {
           "id": "d",
-          "text": "have"
+          "text": "are having"
         }
       ],
       "correctOptionId": "a",
@@ -3713,7 +3713,7 @@
       "skill": "grammar.past-simple.irregular",
       "level": "B1",
       "difficulty": 0.6,
-      "prompt": "I ___ about the problem all night.",
+      "prompt": "Last night I ___ about the problem for hours.",
       "instruction": {
         "he": "לבחור את התשובה הנכונה",
         "en": "Choose the correct answer"
@@ -3740,8 +3740,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "think חריג ומסתיים ב־ought.",
-          "en": "think is irregular and ends in -ought."
+          "he": "last night = עבר. think חריג ומסתיים ב־ought.",
+          "en": "last night = past. think is irregular and ends in -ought."
         }
       ],
       "explanation": {
@@ -3758,7 +3758,7 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "I thought about the problem all night."
+      "audioText": "Last night I thought about the problem for hours."
     },
     {
       "id": "gt.pastq.did-see",
@@ -4401,7 +4401,7 @@
       "skill": "grammar.past-progressive",
       "level": "A2",
       "difficulty": 0.5,
-      "prompt": "They ___ football when it started to rain.",
+      "prompt": "They ___ football when it started to rain, so they stopped the game.",
       "instruction": {
         "he": "לבחור את התשובה הנכונה",
         "en": "Choose the correct answer"
@@ -4422,7 +4422,7 @@
         },
         {
           "id": "d",
-          "text": "are playing"
+          "text": "have been playing"
         }
       ],
       "correctOptionId": "a",
@@ -4447,7 +4447,7 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "They were playing football when it started to rain."
+      "audioText": "They were playing football when it started to rain, so they stopped the game."
     },
     {
       "id": "gt.pastprog.ride",
@@ -4719,7 +4719,7 @@
       "skill": "grammar.past-progressive",
       "level": "B1",
       "difficulty": 0.5,
-      "prompt": "I ___ to my teacher when my phone rang.",
+      "prompt": "I ___ to my teacher when my phone rang, so I had to stop.",
       "instruction": {
         "he": "לבחור את התשובה הנכונה",
         "en": "Choose the correct answer"
@@ -4766,7 +4766,7 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "I was talking to my teacher when my phone rang."
+      "audioText": "I was talking to my teacher when my phone rang, so I had to stop."
     },
     {
       "id": "gt.pastprog.what-doing",
@@ -5077,7 +5077,7 @@
         }
       ],
       "explanation": {
-        "he": "used to + פועל בסיס = נהגתי / פעם הייתי. במשפט חיובי כותבים used עם d.",
+        "he": "used to + פועל בסיס = משהו שהיה נכון פעם, והיום כבר לא. במשפט חיובי כותבים used עם d.",
         "en": "used to + base verb = something true in the past, not now. In positive sentences write used with d."
       },
       "targetsMisconceptions": [
@@ -5555,7 +5555,7 @@
         },
         {
           "id": "d",
-          "text": "rains"
+          "text": "are going to"
         }
       ],
       "correctOptionId": "a",
@@ -5565,8 +5565,8 @@
           "en": "We can see a sign now (clouds) of what will happen."
         },
         {
-          "he": "צריך גם is וגם to.",
-          "en": "You need both is and to."
+          "he": "לפני going to צריך פועל עזר שמתאים ל־it.",
+          "en": "going to needs a helping verb that fits it."
         }
       ],
       "explanation": {
@@ -5663,7 +5663,8 @@
         },
         {
           "id": "d",
-          "text": "are go to"
+          "text": "will going to",
+          "misconception": "future.going-to-form"
         }
       ],
       "correctOptionId": "a",
@@ -5959,7 +5960,7 @@
       "skill": "grammar.future",
       "level": "B1",
       "difficulty": 0.5,
-      "prompt": "We ___ my grandparents tomorrow evening. We already bought the train tickets.",
+      "prompt": "We ___ my grandparents tomorrow evening. We bought the train tickets yesterday.",
       "instruction": {
         "he": "לבחור את התשובה הנכונה",
         "en": "Choose the correct answer"
@@ -5979,13 +5980,13 @@
         },
         {
           "id": "d",
-          "text": "visiting"
+          "text": "were visiting"
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "כבר קנו כרטיסים: זה סידור קבוע ביומן.",
+          "he": "הכרטיסים כבר נקנו: זה סידור שנקבע מראש.",
           "en": "The tickets are bought: it is a fixed arrangement."
         }
       ],
@@ -6003,7 +6004,7 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "We are visiting my grandparents tomorrow evening. We already bought the train tickets."
+      "audioText": "We are visiting my grandparents tomorrow evening. We bought the train tickets yesterday."
     },
     {
       "id": "gt.fut.timetable.start",
@@ -6240,7 +6241,7 @@
         },
         {
           "id": "b",
-          "text": "have"
+          "text": "have had"
         },
         {
           "id": "c",
@@ -6248,7 +6249,7 @@
         },
         {
           "id": "d",
-          "text": "having"
+          "text": "will having"
         }
       ],
       "correctOptionId": "a",
@@ -6296,7 +6297,7 @@
         },
         {
           "id": "c",
-          "text": "opened"
+          "text": "have opened"
         },
         {
           "id": "d",
@@ -6890,7 +6891,7 @@
         },
         {
           "id": "c",
-          "text": "ever"
+          "text": "never"
         },
         {
           "id": "d",
@@ -6947,7 +6948,7 @@
         },
         {
           "id": "d",
-          "text": "since"
+          "text": "still"
         }
       ],
       "correctOptionId": "a",
@@ -7056,7 +7057,7 @@
         },
         {
           "id": "d",
-          "text": "since"
+          "text": "still"
         }
       ],
       "correctOptionId": "a",
@@ -7471,7 +7472,7 @@
       "skill": "grammar.present-perfect.vs-past-simple",
       "level": "B1",
       "difficulty": 0.6,
-      "prompt": "Shakespeare ___ many famous plays.",
+      "prompt": "Shakespeare ___ many famous plays before he died in 1616.",
       "instruction": {
         "he": "לבחור את התשובה הנכונה",
         "en": "Choose the correct answer"
@@ -7518,7 +7519,7 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "Shakespeare wrote many famous plays."
+      "audioText": "Shakespeare wrote many famous plays before he died in 1616."
     },
     {
       "id": "gt.vs.when-start",
@@ -7601,7 +7602,7 @@
         },
         {
           "id": "d",
-          "text": "having"
+          "text": "am having"
         }
       ],
       "correctOptionId": "a",
@@ -9073,8 +9074,8 @@
         },
         {
           "id": "d",
-          "text": "spoken",
-          "misconception": "passive.form"
+          "text": "is speaking",
+          "misconception": "passive.active-form"
         }
       ],
       "correctOptionId": "a",
@@ -9131,8 +9132,8 @@
         },
         {
           "id": "d",
-          "text": "written",
-          "misconception": "passive.form"
+          "text": "is writing",
+          "misconception": "passive.active-form"
         }
       ],
       "correctOptionId": "a",
@@ -9403,7 +9404,7 @@
         },
         {
           "id": "b",
-          "text": "stole",
+          "text": "has stolen",
           "misconception": "passive.active-form"
         },
         {
@@ -9751,7 +9752,8 @@
         },
         {
           "id": "c",
-          "text": "didn't wash"
+          "text": "hasn't been washing",
+          "misconception": "passive.active-form"
         },
         {
           "id": "d",
@@ -9866,7 +9868,8 @@
         },
         {
           "id": "d",
-          "text": "is downloaded"
+          "text": "has been downloading",
+          "misconception": "passive.active-form"
         }
       ],
       "correctOptionId": "a",
@@ -10083,8 +10086,8 @@
         },
         {
           "id": "c",
-          "text": "was built",
-          "misconception": "passive.tense"
+          "text": "is being build",
+          "misconception": "passive.form"
         },
         {
           "id": "d",
@@ -10283,7 +10286,7 @@
           "kind": "mistake",
           "wrong": "She cooking now.",
           "right": "She is cooking now.",
-          "he": "בעברית אין \"היא היא מבשלת\". באנגלית חובה is."
+          "he": "בעברית אומרים \"היא מבשלת\" בלי פועל עזר. באנגלית חובה is."
         },
         {
           "kind": "tip",
@@ -10352,7 +10355,7 @@
               "study → studied"
             ],
             [
-              "עיצור + תנועה קצרה + עיצור: מכפילים",
+              "מילה קצרה שמסתיימת בעיצור + תנועה קצרה + עיצור: מכפילים",
               "stop → stopped"
             ]
           ]
@@ -10391,7 +10394,7 @@
         },
         {
           "kind": "tip",
-          "he": "פעם אחת עבר בכל משפט: או did, או הפועל בעבר. לא שניהם."
+          "he": "סימן העבר מופיע פעם אחת: או ב־did, או בפועל עצמו. לא בשניהם."
         }
       ],
       "source": "original"
@@ -10465,7 +10468,7 @@
         },
         {
           "kind": "tip",
-          "he": "while + ארוך, when + קצר. While I was walking... / ...when I saw a cat."
+          "he": "לרוב: while לפני הפעולה הארוכה, when לפני הפעולה הקצרה. While I was walking... / ...when I saw a cat."
         }
       ],
       "source": "original"
@@ -10523,7 +10526,7 @@
             ],
             [
               "be used to + V-ing",
-              "להיות רגיל/ה ל",
+              "להיות רגילים ל",
               "I am used to swimming in cold water."
             ]
           ]
@@ -10559,7 +10562,7 @@
       "blocks": [
         {
           "kind": "text",
-          "he": "בעברית יש צורת עתיד אחת: \"אבקר\". באנגלית יש כמה דרכים, והבחירה תלויה בשאלה: מתי החלטתי, ומה אני יודע/ת עכשיו."
+          "he": "בעברית יש צורת עתיד אחת: \"אבקר\". באנגלית יש כמה דרכים, והבחירה תלויה בשאלה: מתי התקבלה ההחלטה, ומה כבר ידוע עכשיו."
         },
         {
           "kind": "table",
@@ -10576,12 +10579,12 @@
             ],
             [
               "be going to + V",
-              "תוכנית שכבר החלטתי עליה, או סימן שרואים עכשיו",
+              "תוכנית שכבר הוחלטה, או סימן שרואים עכשיו",
               "Look at the clouds! It's going to rain."
             ],
             [
               "am / is / are + V-ing",
-              "סידור קבוע עם אחרים (כרטיסים, פגישה)",
+              "סידור שנקבע מראש עם אחרים (כרטיסים, פגישה)",
               "I'm meeting Dana at 6 tomorrow."
             ],
             [
@@ -10601,7 +10604,7 @@
           "items": [
             {
               "en": "I think it will be sunny tomorrow.",
-              "he": "אני חושב/ת שמחר יהיה שמשי.",
+              "he": "לדעתי מחר יהיה שמשי.",
               "note": "תחזית"
             },
             {
@@ -10630,7 +10633,7 @@
         },
         {
           "kind": "tip",
-          "he": "ראיתי סימן או כבר תכננתי? going to. החלטתי עכשיו? will. יש תאריך ושעה ביומן? ing."
+          "he": "יש סימן עכשיו, או תוכנית מוכנה? going to. החלטה של הרגע? will. סידור עם תאריך ושעה ביומן? ing."
         }
       ],
       "source": "original"
@@ -10674,7 +10677,7 @@
             ],
             [
               "yet",
-              "עדיין / כבר (שלילה ושאלה, בסוף)",
+              "עדיין לא (בשלילה) / כבר (בשאלה), בסוף המשפט",
               "I haven't finished yet."
             ],
             [
