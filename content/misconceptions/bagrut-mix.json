@@ -1,0 +1,230 @@
+[
+  {
+    "id": "connectors.despite-clause",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "משתמש/ת ב־despite או in spite of לפני משפט שלם",
+      "en": "Uses despite / in spite of before a full clause"
+    },
+    "tip": {
+      "he": "despite ו־in spite of באים לפני שם עצם או ing. לפני משפט עם פועל משתמשים ב־although.",
+      "en": "despite / in spite of + noun or -ing. Before a clause, use although."
+    }
+  },
+  {
+    "id": "connectors.cause-result",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "מתבלבל/ת בין סיבה (because) לתוצאה (so)",
+      "en": "Confuses cause (because) and result (so)"
+    },
+    "tip": {
+      "he": "because מציג את הסיבה. so מציג את התוצאה. כדאי לשאול: מה קרה קודם?",
+      "en": "because introduces the reason; so introduces the result."
+    }
+  },
+  {
+    "id": "connectors.although-however",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "מתבלבל/ת בין although ל־however",
+      "en": "Confuses although and however"
+    },
+    "tip": {
+      "he": "although מחבר שני חלקים בתוך משפט אחד. However פותח משפט חדש ובא אחריו פסיק.",
+      "en": "although joins two clauses in one sentence. However starts a new sentence."
+    }
+  },
+  {
+    "id": "connectors.unless-if",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "משתמש/ת ב־if במקום unless",
+      "en": "Uses if where unless is needed"
+    },
+    "tip": {
+      "he": "unless = if not. כדאי להחליף ב־if not ולבדוק אם המשפט הגיוני.",
+      "en": "unless = if not. Try replacing it with if not."
+    }
+  },
+  {
+    "id": "connectors.addition-contrast",
+    "skill": "grammar.connectors",
+    "note": {
+      "he": "מתבלבל/ת בין מילות הוספה (moreover) לניגוד (however)",
+      "en": "Confuses addition words (moreover) with contrast words (however)"
+    },
+    "tip": {
+      "he": "אם שני המשפטים באותו כיוון (שניהם טובים או שניהם רעים), זו הוספה. אם הכיוון מתהפך, זה ניגוד.",
+      "en": "Same direction = addition. Opposite direction = contrast."
+    }
+  },
+  {
+    "id": "collocations.make-do",
+    "skill": "vocabulary.collocations",
+    "note": {
+      "he": "מתבלבל/ת בין make ל־do",
+      "en": "Confuses make and do"
+    },
+    "tip": {
+      "he": "make ליצירה (a mistake, money, a decision). do למשימות (homework, the dishes, your best).",
+      "en": "make = create (a mistake, money). do = tasks (homework, the dishes)."
+    }
+  },
+  {
+    "id": "collocations.take-make",
+    "skill": "vocabulary.collocations",
+    "note": {
+      "he": "משתמש/ת ב־make במקום take",
+      "en": "Uses make instead of take"
+    },
+    "tip": {
+      "he": "באנגלית 'לוקחים': take a photo, take a break, take a shower, take care of.",
+      "en": "Use take: take a photo, take a break, take a shower."
+    }
+  },
+  {
+    "id": "collocations.hebrew-literal",
+    "skill": "vocabulary.collocations",
+    "note": {
+      "he": "מתרגם/ת צירוף מילה במילה מעברית",
+      "en": "Translates a phrase word by word from Hebrew"
+    },
+    "tip": {
+      "he": "צירופים לא מתרגמים מילה במילה: heavy rain, pay attention, turn on the light, a high price, keep a secret.",
+      "en": "Collocations don't translate word by word: heavy rain, pay attention, turn on the light."
+    }
+  },
+  {
+    "id": "collocations.say-tell",
+    "skill": "vocabulary.collocations",
+    "note": {
+      "he": "מתבלבל/ת בין say ל־tell",
+      "en": "Confuses say and tell"
+    },
+    "tip": {
+      "he": "tell + אדם (tell me), וגם tell the truth, tell a joke. say + מילים (say sorry, say hello).",
+      "en": "tell + person, tell the truth / a joke. say + words: say sorry."
+    }
+  },
+  {
+    "id": "collocations.raise-rise",
+    "skill": "vocabulary.collocations",
+    "note": {
+      "he": "מתבלבל/ת בין raise ל־rise",
+      "en": "Confuses raise and rise"
+    },
+    "tip": {
+      "he": "raise צריך מושא (raise your hand). rise קורה לבד (prices rise, the sun rises).",
+      "en": "raise + object. rise has no object."
+    }
+  },
+  {
+    "id": "collocations.high-tall",
+    "skill": "vocabulary.collocations",
+    "note": {
+      "he": "מתבלבל/ת בין high ל־tall",
+      "en": "Confuses high and tall"
+    },
+    "tip": {
+      "he": "tall לאנשים, עצים ובניינים צרים. high למחירים, טמפרטורות ודברים רחוקים מהקרקע.",
+      "en": "tall for people and trees. high for prices, temperatures and things far above the ground."
+    }
+  },
+  {
+    "id": "reading.hidden-negative",
+    "skill": "reading.inference",
+    "note": {
+      "he": "מפספס/ת את המשמעות של מילים כמו hardly, few, barely",
+      "en": "Misreads words like hardly, few and barely"
+    },
+    "tip": {
+      "he": "hardly, barely, few, little, rarely פירושם 'כמעט לא'. זה לא 'בכלל לא' וגם לא 'הרבה'.",
+      "en": "hardly, barely, few, little, rarely mean 'almost not', not 'not at all'."
+    }
+  },
+  {
+    "id": "reading.unreal-past",
+    "skill": "reading.inference",
+    "note": {
+      "he": "חושב/ת שמשהו קרה כשהמשפט מתאר עבר דמיוני",
+      "en": "Thinks an unreal past (wish, should have, had I known) really happened"
+    },
+    "tip": {
+      "he": "should have, I wish I had, Had I known מתארים משהו שלא קרה באמת. כדאי לשאול: מה קרה בפועל?",
+      "en": "should have, I wish I had, Had I known describe what did NOT happen."
+    }
+  },
+  {
+    "id": "vocabulary.sound-alike-spelling",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "מתבלבל/ת בין מילים שנשמעות או נכתבות דומה",
+      "en": "Confuses words that look or sound alike"
+    },
+    "tip": {
+      "he": "lose (פועל) / loose (תואר), affect (פועל) / effect (שם), quiet / quite, than / then, its / it's, advice (שם) / advise (פועל). כדאי לבדוק איזה חלק דיבר צריך.",
+      "en": "Check the part of speech: lose/loose, affect/effect, advice/advise, its/it's."
+    }
+  },
+  {
+    "id": "vocabulary.learn-teach",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "מתבלבל/ת בין learn ל־teach",
+      "en": "Confuses learn and teach"
+    },
+    "tip": {
+      "he": "learn = ללמוד בעצמך. teach = ללמד מישהו אחר: She taught me.",
+      "en": "learn = get knowledge. teach = give knowledge to someone."
+    }
+  },
+  {
+    "id": "vocabulary.remember-remind",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "מתבלבל/ת בין remember ל־remind",
+      "en": "Confuses remember and remind"
+    },
+    "tip": {
+      "he": "remember = לזכור. remind someone = להזכיר למישהו: Remind me to call.",
+      "en": "remember = keep in mind. remind someone = make them remember."
+    }
+  },
+  {
+    "id": "vocabulary.rob-steal",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "מתבלבל/ת בין rob ל־steal",
+      "en": "Confuses rob and steal"
+    },
+    "tip": {
+      "he": "steal + חפץ (steal a bike). rob + אדם או מקום (rob a bank).",
+      "en": "steal + thing. rob + person or place."
+    }
+  },
+  {
+    "id": "vocabulary.hear-listen",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "מתבלבל/ת בין hear ל־listen",
+      "en": "Confuses hear and listen"
+    },
+    "tip": {
+      "he": "hear = הקול מגיע אליך. listen to = להקשיב בכוונה.",
+      "en": "hear = sound reaches you. listen to = pay attention on purpose."
+    }
+  },
+  {
+    "id": "vocabulary.see-watch-look",
+    "skill": "vocabulary.context",
+    "note": {
+      "he": "מתבלבל/ת בין see, watch ו־look",
+      "en": "Confuses see, watch and look"
+    },
+    "tip": {
+      "he": "see = לראות (בלי מאמץ). look at = להסתכל. watch = לצפות במשהו שזז (watch TV).",
+      "en": "see = notice. look at = direct your eyes. watch = follow something moving."
+    }
+  }
+]

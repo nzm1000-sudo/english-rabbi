@@ -1,0 +1,26 @@
+[
+  {
+    "id": "word-formation.negative-prefix",
+    "skill": "vocabulary.word-formation",
+    "note": {
+      "he": "משתמש/ת בתחילית שלילה לא נכונה (unpossible, unhonest)",
+      "en": "Uses the wrong negative prefix (unpossible, unhonest)"
+    },
+    "tip": {
+      "he": "לא כל מילה מקבלת un-. לפני p משתמשים ב־im-, לפני r ב־ir-, לפני l ב־il-. חלק מהמילים מקבלות dis- (dishonest, disagree).",
+      "en": "Not every word takes un-. im- before p, ir- before r, il- before l, and some words take dis-."
+    }
+  },
+  {
+    "id": "word-formation.part-of-speech",
+    "skill": "vocabulary.word-formation",
+    "note": {
+      "he": "בוחר/ת צורה לא נכונה מאותה משפחה (פועל במקום שם עצם, שם תואר במקום תואר פועל)",
+      "en": "Uses the wrong form of the word family (a verb instead of a noun, an adjective instead of an adverb)"
+    },
+    "tip": {
+      "he": "כדאי לבדוק מה בא לפני החסר: אחרי a או the בא שם עצם, אחרי very או is בא שם תואר, ופועל מתואר בתואר פועל עם ly-.",
+      "en": "Check the word before the gap: a/the + noun, very/is + adjective, verb + adverb."
+    }
+  }
+]

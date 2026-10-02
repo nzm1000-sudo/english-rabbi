@@ -1,0 +1,7405 @@
+{
+  "packId": "listening-fun",
+  "schemaVersion": 1,
+  "title": "Listening, riddles, phrasal verbs and idioms",
+  "items": [
+    {
+      "id": "lf.minimal.ship",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "ship",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "ship"
+        },
+        {
+          "id": "b",
+          "text": "sheep",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "shop"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע המילה קצר או ארוך?",
+          "en": "Is the middle sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "ship (ספינה) נשמעת עם i קצרה. sheep (כבשה) עם ee ארוכה.",
+        "en": "ship has a short i. sheep has a long ee."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:ship-sheep",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.leave",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "leave",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "leave"
+        },
+        {
+          "id": "b",
+          "text": "live",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "love"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע המילה קצר או ארוך?",
+          "en": "Is the middle sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "leave (לעזוב) נשמעת עם ee ארוכה. live (לגור) עם i קצרה.",
+        "en": "leave has a long ee. live has a short i."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:live-leave",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.full",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "full",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "full"
+        },
+        {
+          "id": "b",
+          "text": "fool",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "fall"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל u קצר או ארוך?",
+          "en": "Is the u sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "full (מלא) נשמעת עם u קצרה. fool (טיפש) עם oo ארוכה. בעברית אין הבדל באורך, ולכן צריך להקשיב היטב.",
+        "en": "full has a short u. fool has a long oo."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:full-fool",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.work",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "work",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "work"
+        },
+        {
+          "id": "b",
+          "text": "walk",
+          "misconception": "listening.vowel-quality"
+        },
+        {
+          "id": "c",
+          "text": "week"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "יש במילה צליל r?",
+          "en": "Do you hear an r sound?"
+        }
+      ],
+      "explanation": {
+        "he": "work (עבודה) נשמעת עם צליל er ו־r. ב־walk (ללכת) ה־l שקטה והתנועה פתוחה, כמו aw.",
+        "en": "work has an er sound with r. walk sounds like wawk, the l is silent."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:walk-work",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.bed",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "bed",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "bed"
+        },
+        {
+          "id": "b",
+          "text": "bad",
+          "misconception": "listening.vowel-quality"
+        },
+        {
+          "id": "c",
+          "text": "bid"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הפה נפתח הרבה או מעט?",
+          "en": "Does the mouth open a lot or a little?"
+        }
+      ],
+      "explanation": {
+        "he": "bed (מיטה) נשמעת עם e כמו בעברית. ב־bad (רע) הפה נפתח יותר, צליל בין a ל־e.",
+        "en": "bed has a short e. bad has a wider a sound."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:bad-bed",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.cut",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "cut",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "cut"
+        },
+        {
+          "id": "b",
+          "text": "cat",
+          "misconception": "listening.vowel-quality"
+        },
+        {
+          "id": "c",
+          "text": "cot"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע קרוב יותר ל־a או ל־e?",
+          "en": "Is the middle sound closer to uh or to a?"
+        }
+      ],
+      "explanation": {
+        "he": "cut (לחתוך) נשמעת עם צליל קצר כמו \"אַ\" עמום. ב־cat (חתול) הפה נפתח לרוחב.",
+        "en": "cut has a short uh sound. cat has a wide a sound."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:cat-cut",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.heart",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "heart",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "heart"
+        },
+        {
+          "id": "b",
+          "text": "hat",
+          "misconception": "listening.vowel-quality"
+        },
+        {
+          "id": "c",
+          "text": "hot"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "התנועה ארוכה? יש r בסוף?",
+          "en": "Is the vowel long? Is there an r?"
+        }
+      ],
+      "explanation": {
+        "he": "heart (לב) נשמעת עם a ארוכה ו־r. hat (כובע) קצרה ובלי r.",
+        "en": "heart has a long ar sound. hat is short."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:hat-heart",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.think",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "think",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "think"
+        },
+        {
+          "id": "b",
+          "text": "sink",
+          "misconception": "listening.th-sound"
+        },
+        {
+          "id": "c",
+          "text": "thank"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הלשון בין השיניים או מאחוריהן?",
+          "en": "Is the tongue between the teeth or behind them?"
+        }
+      ],
+      "explanation": {
+        "he": "think (לחשוב) מתחילה ב־th: הלשון יוצאת קצת בין השיניים. sink (כיור) מתחילה ב־s. בעברית אין צליל th, ולכן קל להתבלבל.",
+        "en": "think starts with th, the tongue is between the teeth. sink starts with s."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:think-sink",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.three",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "three",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "three"
+        },
+        {
+          "id": "b",
+          "text": "tree",
+          "misconception": "listening.th-sound"
+        },
+        {
+          "id": "c",
+          "text": "free"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל הראשון רך או חד?",
+          "en": "Is the first sound soft or hard?"
+        }
+      ],
+      "explanation": {
+        "he": "three (שלוש) מתחילה ב־th רכה. tree (עץ) מתחילה ב־t חדה.",
+        "en": "three starts with a soft th. tree starts with a hard t."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:three-tree",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.mouth",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "mouth",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "mouth"
+        },
+        {
+          "id": "b",
+          "text": "mouse",
+          "misconception": "listening.th-sound"
+        },
+        {
+          "id": "c",
+          "text": "month"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב לצליל האחרון.",
+          "en": "Listen to the last sound."
+        }
+      ],
+      "explanation": {
+        "he": "mouth (פה) מסתיימת ב־th. mouse (עכבר) מסתיימת ב־s.",
+        "en": "mouth ends in th. mouse ends in s."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:mouth-mouse",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.thin",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "thin",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "thin"
+        },
+        {
+          "id": "b",
+          "text": "tin",
+          "misconception": "listening.th-sound"
+        },
+        {
+          "id": "c",
+          "text": "fin"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל הראשון רך או חד?",
+          "en": "Is the first sound soft or hard?"
+        }
+      ],
+      "explanation": {
+        "he": "thin (רזה, דק) מתחילה ב־th. tin (פח) מתחילה ב־t.",
+        "en": "thin starts with th. tin starts with t."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:thin-tin",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.west",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "west",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "west"
+        },
+        {
+          "id": "b",
+          "text": "vest",
+          "misconception": "listening.w-v"
+        },
+        {
+          "id": "c",
+          "text": "best"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "השפתיים נוגעות בשיניים או נעשות עגולות?",
+          "en": "Do the lips touch the teeth or become round?"
+        }
+      ],
+      "explanation": {
+        "he": "west (מערב) מתחילה ב־w: השפתיים עגולות, כמו \"וּ\". ב־vest (גופייה) השיניים נוגעות בשפה התחתונה.",
+        "en": "west starts with w, round lips. vest starts with v, teeth on the lip."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:vest-west",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.wine",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "wine",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "wine"
+        },
+        {
+          "id": "b",
+          "text": "vine",
+          "misconception": "listening.w-v"
+        },
+        {
+          "id": "c",
+          "text": "line"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "השפתיים עגולות בהתחלה?",
+          "en": "Are the lips round at the start?"
+        }
+      ],
+      "explanation": {
+        "he": "wine (יין) מתחילה ב־w עם שפתיים עגולות. vine (גפן) מתחילה ב־v.",
+        "en": "wine starts with w. vine starts with v."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:wine-vine",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.wet",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "wet",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "wet"
+        },
+        {
+          "id": "b",
+          "text": "vet",
+          "misconception": "listening.w-v"
+        },
+        {
+          "id": "c",
+          "text": "net"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "השפתיים עגולות בהתחלה?",
+          "en": "Are the lips round at the start?"
+        }
+      ],
+      "explanation": {
+        "he": "wet (רטוב) מתחילה ב־w עם שפתיים עגולות. vet (וטרינר) מתחילה ב־v.",
+        "en": "wet starts with w. vet starts with v."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:vet-wet",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.eyes",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "eyes",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "eyes"
+        },
+        {
+          "id": "b",
+          "text": "ice",
+          "misconception": "listening.final-sound"
+        },
+        {
+          "id": "c",
+          "text": "rice"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל בסוף מזמזם כמו z או שורק כמו s?",
+          "en": "Does the end buzz like z or hiss like s?"
+        }
+      ],
+      "explanation": {
+        "he": "eyes (עיניים) מסתיימת בצליל z. ice (קרח) מסתיימת בצליל s. ההבדל רק בסוף המילה.",
+        "en": "eyes ends with a z sound. ice ends with an s sound."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:eyes-ice",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.wash",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "wash",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "wash"
+        },
+        {
+          "id": "b",
+          "text": "watch",
+          "misconception": "listening.final-sound"
+        },
+        {
+          "id": "c",
+          "text": "wish"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל האחרון sh או ch?",
+          "en": "Is the last sound sh or ch?"
+        }
+      ],
+      "explanation": {
+        "he": "wash (לשטוף) מסתיימת ב־sh, כמו ש. watch (לצפות, שעון) מסתיימת ב־ch, כמו צ'.",
+        "en": "wash ends in sh. watch ends in ch."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:wash-watch",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.seat",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "seat",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "seat"
+        },
+        {
+          "id": "b",
+          "text": "sit",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "set"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע קצר או ארוך?",
+          "en": "Is the middle sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "seat (מושב) נשמעת עם ee ארוכה. sit (לשבת) עם i קצרה.",
+        "en": "seat has a long ee. sit has a short i."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:sit-seat",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.pool",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "pool",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "pool"
+        },
+        {
+          "id": "b",
+          "text": "pull",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "pole"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל u קצר או ארוך?",
+          "en": "Is the u sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "pool (בריכה) נשמעת עם oo ארוכה. pull (למשוך) עם u קצרה.",
+        "en": "pool has a long oo. pull has a short u."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:pull-pool",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.cup",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "cup",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "cup"
+        },
+        {
+          "id": "b",
+          "text": "cap",
+          "misconception": "listening.vowel-quality"
+        },
+        {
+          "id": "c",
+          "text": "cop"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע עמום או פתוח?",
+          "en": "Is the middle sound dull or open?"
+        }
+      ],
+      "explanation": {
+        "he": "cup (כוס) נשמעת עם צליל עמום, uh. cap (כובע מצחייה) עם a פתוחה.",
+        "en": "cup has a short uh sound. cap has an open a."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:cap-cup",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.minimal.heat",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "heat",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "heat"
+        },
+        {
+          "id": "b",
+          "text": "hit",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "hat"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע קצר או ארוך?",
+          "en": "Is the middle sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "heat (חום) נשמעת עם ee ארוכה. hit (להכות) עם i קצרה.",
+        "en": "heat has a long ee. hit has a short i."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:hit-heat",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.drove",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "How did the speaker get to school today?",
+      "audioText": "I usually walk to school, but today my dad drove me because it was raining.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "By car"
+        },
+        {
+          "id": "b",
+          "text": "On foot"
+        },
+        {
+          "id": "c",
+          "text": "By bus"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למה שקרה today.",
+          "en": "Listen for what happened today."
+        }
+      ],
+      "explanation": {
+        "he": "usually walk זה מה שקורה בדרך כלל. אבל today my dad drove me: היום אבא הסיע ברכב.",
+        "en": "usually = most days. Today my dad drove me, so by car."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.museum",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "When does the ticket office open?",
+      "audioText": "The museum opens at nine, but the ticket office opens half an hour later.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "At half past nine"
+        },
+        {
+          "id": "b",
+          "text": "At nine"
+        },
+        {
+          "id": "c",
+          "text": "At half past eight"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "half an hour later = חצי שעה אחר כך.",
+          "en": "half an hour later = 30 minutes after."
+        }
+      ],
+      "explanation": {
+        "he": "המוזיאון נפתח בתשע. הקופה נפתחת חצי שעה אחר כך, כלומר ב־9:30.",
+        "en": "Nine plus half an hour is half past nine."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.bread",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "What does the speaker need?",
+      "audioText": "Could you buy some bread on your way home? We have plenty of milk.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bread"
+        },
+        {
+          "id": "b",
+          "text": "Milk"
+        },
+        {
+          "id": "c",
+          "text": "Bread and milk"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "plenty of = הרבה.",
+          "en": "plenty of = a lot of."
+        }
+      ],
+      "explanation": {
+        "he": "We have plenty of milk אומר שיש מספיק חלב. צריך רק לחם.",
+        "en": "There is plenty of milk, so only bread is needed."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.oldest",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Who is the oldest?",
+      "audioText": "My sister is older than me, but my brother is the oldest in the family.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The speaker's brother"
+        },
+        {
+          "id": "b",
+          "text": "The speaker's sister"
+        },
+        {
+          "id": "c",
+          "text": "The speaker"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למילה oldest.",
+          "en": "Listen for the word oldest."
+        }
+      ],
+      "explanation": {
+        "he": "the oldest = הכי מבוגר. הוא האח.",
+        "en": "the oldest = older than everyone. That is the brother."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.sandwich",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "Why isn't the speaker hungry?",
+      "audioText": "I'm not hungry now. I had a big sandwich an hour ago.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "They ate not long ago."
+        },
+        {
+          "id": "b",
+          "text": "They don't like sandwiches."
+        },
+        {
+          "id": "c",
+          "text": "They feel sick."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "an hour ago = לפני שעה.",
+          "en": "an hour ago = sixty minutes before now."
+        }
+      ],
+      "explanation": {
+        "he": "הדובר/ת אכל/ה כריך גדול לפני שעה, ולכן לא רעב/ה.",
+        "en": "They had a big sandwich an hour ago."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.film",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "When did the film start?",
+      "audioText": "The film was supposed to start at eight, but it started twenty minutes late.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "At twenty past eight"
+        },
+        {
+          "id": "b",
+          "text": "At eight o'clock"
+        },
+        {
+          "id": "c",
+          "text": "At twenty to eight"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "was supposed to = היה אמור. מה קרה בפועל?",
+          "en": "was supposed to = the plan. What really happened?"
+        }
+      ],
+      "explanation": {
+        "he": "הסרט היה אמור להתחיל בשמונה, אבל התחיל באיחור של 20 דקות: 8:20.",
+        "en": "Eight plus twenty minutes late is 8:20."
+      },
+      "interests": [
+        "movies"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.saturday",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "When can the speaker meet?",
+      "audioText": "I can't come to the party on Friday, but I'm free on Saturday.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "On Saturday"
+        },
+        {
+          "id": "b",
+          "text": "On Friday"
+        },
+        {
+          "id": "c",
+          "text": "On Friday and Saturday"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "can't = לא יכול/ה. free = פנוי/ה.",
+          "en": "can't = not able. free = not busy."
+        }
+      ],
+      "explanation": {
+        "he": "I can't come on Friday, but I'm free on Saturday. אפשר להיפגש רק בשבת.",
+        "en": "They can't come on Friday but are free on Saturday."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.lights",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "What should students do when they leave?",
+      "audioText": "Please turn off the lights when you leave the classroom.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Turn off the lights"
+        },
+        {
+          "id": "b",
+          "text": "Turn on the lights"
+        },
+        {
+          "id": "c",
+          "text": "Close the window"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "turn off = לכבות.",
+          "en": "turn off = stop something working."
+        }
+      ],
+      "explanation": {
+        "he": "turn off the lights = לכבות את האורות. turn on = להדליק.",
+        "en": "turn off = make the lights stop. turn on = the opposite."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.cinema",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Where did they go?",
+      "audioText": "We wanted to go to the beach, but it was too windy, so we went to the cinema instead.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To the cinema"
+        },
+        {
+          "id": "b",
+          "text": "To the beach"
+        },
+        {
+          "id": "c",
+          "text": "They stayed at home."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "instead = במקום.",
+          "en": "instead = in place of the first plan."
+        }
+      ],
+      "explanation": {
+        "he": "הם רצו ללכת לים, אבל הייתה רוח חזקה. instead: הם הלכו לקולנוע במקום.",
+        "en": "They wanted the beach, but went to the cinema instead."
+      },
+      "interests": [
+        "movies"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.phone",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.2,
+      "modality": "listen",
+      "prompt": "Where is the phone?",
+      "audioText": "My phone is in my bag, not in my pocket.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "In the bag"
+        },
+        {
+          "id": "b",
+          "text": "In the pocket"
+        },
+        {
+          "id": "c",
+          "text": "On the table"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למה שבא לפני not.",
+          "en": "Listen to what comes before not."
+        }
+      ],
+      "explanation": {
+        "he": "in my bag = בתיק. not in my pocket = לא בכיס.",
+        "en": "It is in the bag, not in the pocket."
+      },
+      "interests": [
+        "technology"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.pets",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "How many pets does Tom have?",
+      "audioText": "Tom has two cats and a dog, and his sister has a rabbit.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Three"
+        },
+        {
+          "id": "b",
+          "text": "Two"
+        },
+        {
+          "id": "c",
+          "text": "Four"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הארנב שייך לאחות.",
+          "en": "The rabbit belongs to his sister."
+        }
+      ],
+      "explanation": {
+        "he": "לטום יש שני חתולים וכלב: שלוש חיות. הארנב של אחותו.",
+        "en": "Two cats and a dog make three. The rabbit is his sister's."
+      },
+      "interests": [
+        "animals"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.shop",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "Why won't they go on Sunday?",
+      "audioText": "The shop is closed on Sundays, so let's go on Monday.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The shop is closed."
+        },
+        {
+          "id": "b",
+          "text": "They are busy."
+        },
+        {
+          "id": "c",
+          "text": "The shop is too far."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למה שבא לפני so.",
+          "en": "Listen to what comes before so."
+        }
+      ],
+      "explanation": {
+        "he": "so = ולכן. הסיבה באה לפניו: החנות סגורה בימי ראשון.",
+        "en": "so gives the result. The reason: the shop is closed on Sundays."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.keys",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Where does the speaker think the keys are?",
+      "audioText": "I've lost my keys again! I think I left them at Noa's house.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "At Noa's house"
+        },
+        {
+          "id": "b",
+          "text": "At home"
+        },
+        {
+          "id": "c",
+          "text": "In the car"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "left them = השארתי אותם.",
+          "en": "left them = didn't take them with me."
+        }
+      ],
+      "explanation": {
+        "he": "I left them at Noa's house = השארתי אותם אצל נועה.",
+        "en": "They think they left them at Noa's house."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.rather",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What does the speaker prefer to do tonight?",
+      "audioText": "I'd rather stay at home tonight. I'm really tired after the trip.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Stay at home"
+        },
+        {
+          "id": "b",
+          "text": "Go out with friends"
+        },
+        {
+          "id": "c",
+          "text": "Go on a trip"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "I'd rather = I would rather = הייתי מעדיף/ה.",
+          "en": "I'd rather = I would prefer."
+        }
+      ],
+      "explanation": {
+        "he": "I'd rather stay at home = אני מעדיף/ה להישאר בבית. ה־'d הוא קיצור של would.",
+        "en": "I'd rather = I would prefer. They want to stay home."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.picnic",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "When will they have a picnic?",
+      "audioText": "If it doesn't rain tomorrow, we're gonna have a picnic in the park.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tomorrow, if the weather is dry"
+        },
+        {
+          "id": "b",
+          "text": "Tomorrow, only if it rains"
+        },
+        {
+          "id": "c",
+          "text": "Today in the park"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "gonna = going to. להקשיב לחלק עם if.",
+          "en": "gonna = going to. Listen to the if part."
+        }
+      ],
+      "explanation": {
+        "he": "If it doesn't rain tomorrow = אם לא ירד גשם מחר. gonna היא דרך מהירה להגיד going to.",
+        "en": "If it doesn't rain tomorrow, they're going to have a picnic."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.meeting",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "Why will the meeting happen again?",
+      "audioText": "Hardly anyone came to the meeting, so we decided to hold it again next week.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Very few people came."
+        },
+        {
+          "id": "b",
+          "text": "Everybody came."
+        },
+        {
+          "id": "c",
+          "text": "The room was too small."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "hardly anyone = כמעט אף אחד.",
+          "en": "hardly anyone = almost nobody."
+        }
+      ],
+      "explanation": {
+        "he": "hardly anyone came = כמעט אף אחד לא הגיע. לכן יעשו את הפגישה שוב.",
+        "en": "Hardly anyone = almost nobody came, so they will meet again."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.guitar",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Does the speaker play the guitar now?",
+      "audioText": "I used to play the guitar, but I haven't touched it for years.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "No, they stopped long ago."
+        },
+        {
+          "id": "b",
+          "text": "Yes, every day."
+        },
+        {
+          "id": "c",
+          "text": "Yes, they are learning now."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "used to = פעם, בעבר, וכבר לא.",
+          "en": "used to = in the past, not now."
+        }
+      ],
+      "explanation": {
+        "he": "used to play = פעם ניגנתי. haven't touched it for years = לא נגעתי בה שנים.",
+        "en": "used to = in the past only. They haven't played for years."
+      },
+      "interests": [
+        "music"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.train",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What was the problem?",
+      "audioText": "The train was so crowded that I had to stand the whole way.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "There were no free seats."
+        },
+        {
+          "id": "b",
+          "text": "The train was late."
+        },
+        {
+          "id": "c",
+          "text": "The train was cancelled."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "crowded = מלא אנשים.",
+          "en": "crowded = full of people."
+        }
+      ],
+      "explanation": {
+        "he": "so crowded that I had to stand = כל כך צפוף שהייתי צריך/ה לעמוד. לא היו מקומות פנויים.",
+        "en": "It was so crowded that they had to stand: no free seats."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.plenty",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What does the speaker mean?",
+      "audioText": "You don't need to bring anything. We've already got plenty of food.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "There is enough food already."
+        },
+        {
+          "id": "b",
+          "text": "The guest should bring some food."
+        },
+        {
+          "id": "c",
+          "text": "There is no food in the house."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "plenty of = הרבה, יותר ממספיק.",
+          "en": "plenty of = more than enough."
+        }
+      ],
+      "explanation": {
+        "he": "You don't need to bring anything = לא צריך להביא כלום, כי כבר יש הרבה אוכל.",
+        "en": "No need to bring anything: there is plenty of food."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.wish",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "How does the speaker feel?",
+      "audioText": "I wish I had studied more for the test. I only got a sixty.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Disappointed with themselves"
+        },
+        {
+          "id": "b",
+          "text": "Proud of the grade"
+        },
+        {
+          "id": "c",
+          "text": "Happy with the result"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "I wish I had... = הלוואי ש... (על העבר).",
+          "en": "I wish I had... = regret about the past."
+        }
+      ],
+      "explanation": {
+        "he": "I wish I had studied more = הלוואי שהייתי לומד/ת יותר. זו חרטה. only got a sixty מראה אכזבה.",
+        "en": "I wish I had studied shows regret. They are disappointed."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.unless",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "What will happen if you don't hurry?",
+      "audioText": "Unless you hurry, you'll miss the last bus.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "You'll miss the bus."
+        },
+        {
+          "id": "b",
+          "text": "You'll catch the bus."
+        },
+        {
+          "id": "c",
+          "text": "The bus will wait for you."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "unless = אלא אם כן, אם לא.",
+          "en": "unless = if not."
+        }
+      ],
+      "explanation": {
+        "he": "unless you hurry = אם לא ממהרים. במקרה כזה מפספסים את האוטובוס האחרון.",
+        "en": "unless = if not. If you don't hurry, you'll miss the bus."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.library",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "What is true about the new library?",
+      "audioText": "The new library isn't as big as the old one, but it's much brighter.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It's smaller but brighter."
+        },
+        {
+          "id": "b",
+          "text": "It's bigger and brighter."
+        },
+        {
+          "id": "c",
+          "text": "It's smaller and darker."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "not as big as = לא גדול כמו.",
+          "en": "not as big as = smaller than."
+        }
+      ],
+      "explanation": {
+        "he": "isn't as big as the old one = קטנה יותר מהישנה. much brighter = הרבה יותר מוארת.",
+        "en": "Not as big = smaller. Much brighter = more light."
+      },
+      "interests": [
+        "books"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.road",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Why did they take a longer way?",
+      "audioText": "Since the road was closed, we had to take a much longer way home.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The road was closed."
+        },
+        {
+          "id": "b",
+          "text": "They wanted to see the view."
+        },
+        {
+          "id": "c",
+          "text": "They got lost."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כאן since אומר because.",
+          "en": "Here since means because."
+        }
+      ],
+      "explanation": {
+        "he": "since יכול לבוא במשמעות because. הכביש היה סגור, ולכן נסעו בדרך ארוכה יותר.",
+        "en": "Here since = because. The road was closed."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.present",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "What does the speaker's mom enjoy?",
+      "audioText": "I'm looking for a present for my mom. She's really into gardening.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Gardening"
+        },
+        {
+          "id": "b",
+          "text": "Shopping"
+        },
+        {
+          "id": "c",
+          "text": "Cooking"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "be into something = לאהוב משהו מאוד.",
+          "en": "be into something = like it a lot."
+        }
+      ],
+      "explanation": {
+        "he": "She's into gardening = היא מאוד אוהבת גינון.",
+        "en": "be into = really like. Mom likes gardening."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.station",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "What happened?",
+      "audioText": "By the time we got to the station, the train had already left.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "They missed the train."
+        },
+        {
+          "id": "b",
+          "text": "They caught the train."
+        },
+        {
+          "id": "c",
+          "text": "They arrived before the train."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "had already left = כבר יצאה לפני כן.",
+          "en": "had already left = left before they arrived."
+        }
+      ],
+      "explanation": {
+        "he": "כשהגענו לתחנה, הרכבת כבר יצאה. כלומר פספסנו אותה.",
+        "en": "The train left before they arrived, so they missed it."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.window",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What does the speaker want?",
+      "audioText": "Would you mind opening the window? It's really hot in here.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The window open"
+        },
+        {
+          "id": "b",
+          "text": "The window closed"
+        },
+        {
+          "id": "c",
+          "text": "The heater on"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "Would you mind...? = אכפת לך...? בקשה מנומסת.",
+          "en": "Would you mind...? = a polite request."
+        }
+      ],
+      "explanation": {
+        "he": "Would you mind opening the window = אפשר לפתוח את החלון? חם מאוד בחדר.",
+        "en": "It is a polite request to open the window because it's hot."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.battery",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "Did the speaker call?",
+      "audioText": "I'd have called you, but my phone's battery was dead.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "No, because the phone had no battery."
+        },
+        {
+          "id": "b",
+          "text": "Yes, they called twice."
+        },
+        {
+          "id": "c",
+          "text": "No, because they forgot."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "I'd have called = I would have called: הייתי מתקשר/ת, אבל...",
+          "en": "I'd have called = I would have called, but..."
+        }
+      ],
+      "explanation": {
+        "he": "I'd have called you = הייתי מתקשר/ת אליך. but = אבל זה לא קרה, כי הסוללה נגמרה.",
+        "en": "I would have called = it didn't happen, because the battery was dead."
+      },
+      "interests": [
+        "technology"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.tickets",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "How much did they pay in total?",
+      "audioText": "The concert tickets cost forty shekels each, and we bought three.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "120 shekels"
+        },
+        {
+          "id": "b",
+          "text": "40 shekels"
+        },
+        {
+          "id": "c",
+          "text": "42 shekels"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "forty = 40. each = כל אחד.",
+          "en": "forty = 40. each = for one ticket."
+        }
+      ],
+      "explanation": {
+        "he": "כרטיס עולה 40 שקלים, וקנו שלושה: 40 כפול 3 = 120. כדאי לשים לב להבדל בין forty (40) ל־fourteen (14).",
+        "en": "Forty each times three is 120."
+      },
+      "interests": [
+        "music"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.football",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Why doesn't the speaker watch football?",
+      "audioText": "It's not that I don't like football. I just don't have time to watch it.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "They don't have time."
+        },
+        {
+          "id": "b",
+          "text": "They don't like football."
+        },
+        {
+          "id": "c",
+          "text": "Their TV is broken."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "It's not that... = זה לא ש...",
+          "en": "It's not that... = that is not the reason."
+        }
+      ],
+      "explanation": {
+        "he": "It's not that I don't like football = זה לא שאני לא אוהב/ת כדורגל. הסיבה האמיתית: אין זמן.",
+        "en": "The real reason is no time, not dislike."
+      },
+      "interests": [
+        "sports"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.sentence.umbrella",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "What will the weather be like this afternoon?",
+      "audioText": "Make sure you take an umbrella. They say it's going to pour this afternoon.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Very rainy"
+        },
+        {
+          "id": "b",
+          "text": "Sunny"
+        },
+        {
+          "id": "c",
+          "text": "Windy but dry"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "pour = לשפוך. מה צריך מטרייה?",
+          "en": "pour = come down a lot. Why an umbrella?"
+        }
+      ],
+      "explanation": {
+        "he": "it's going to pour = יירד גשם חזק מאוד. לכן צריך מטרייה.",
+        "en": "pour = rain very hard. Take an umbrella."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.game",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "Why isn't Maya going to the game?",
+      "audioText": "Dan: Are you coming to the game tonight? Maya: I can't, I have to finish my project.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She has work to finish."
+        },
+        {
+          "id": "b",
+          "text": "She doesn't like the team."
+        },
+        {
+          "id": "c",
+          "text": "She is sick."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למה שמאיה אומרת אחרי I can't.",
+          "en": "Listen to what Maya says after I can't."
+        }
+      ],
+      "explanation": {
+        "he": "מאיה אומרת I have to finish my project: היא צריכה לסיים פרויקט.",
+        "en": "Maya has to finish her project."
+      },
+      "interests": [
+        "sports"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.soup",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What does Lior think about the soup?",
+      "audioText": "Lior: This soup is a bit salty, isn't it? Mom: Is it? I'll add some water next time.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It has too much salt."
+        },
+        {
+          "id": "b",
+          "text": "It is too cold."
+        },
+        {
+          "id": "c",
+          "text": "It is perfect."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "salty בא מ־salt.",
+          "en": "salty comes from salt."
+        }
+      ],
+      "explanation": {
+        "he": "salty = מלוח. ליאור חושב שיש במרק יותר מדי מלח. לכן אמא תוסיף מים בפעם הבאה.",
+        "en": "salty = too much salt."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.bike",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Whose bike will Amit use?",
+      "audioText": "Noa: Do you want to borrow my bike? Amit: Thanks, but my brother is lending me his.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "His brother's"
+        },
+        {
+          "id": "b",
+          "text": "Noa's"
+        },
+        {
+          "id": "c",
+          "text": "His own"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "his = שלו. של מי?",
+          "en": "his = belonging to him. Who is he?"
+        }
+      ],
+      "explanation": {
+        "he": "עמית אומר my brother is lending me his: אחיו משאיל לו את האופניים שלו. לכן הוא לא צריך את של נועה.",
+        "en": "Amit's brother is lending him his bike."
+      },
+      "interests": [
+        "sports"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.homework",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "What is Yoni's problem?",
+      "audioText": "Teacher: Where's your homework, Yoni? Yoni: I did it, honestly, but I left it on the kitchen table.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He left his homework at home."
+        },
+        {
+          "id": "b",
+          "text": "He didn't do his homework."
+        },
+        {
+          "id": "c",
+          "text": "He lost his homework on the bus."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "I did it = עשיתי. אז מה הבעיה?",
+          "en": "I did it = it's done. So what is the problem?"
+        }
+      ],
+      "explanation": {
+        "he": "יוני עשה את שיעורי הבית, אבל השאיר אותם על שולחן המטבח בבית.",
+        "en": "He did it but left it on the kitchen table."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.pizza",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What was bad about the pizza place?",
+      "audioText": "Shira: How was the new pizza place? Ben: The pizza was great, but we waited almost an hour for it.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The slow service"
+        },
+        {
+          "id": "b",
+          "text": "The taste of the pizza"
+        },
+        {
+          "id": "c",
+          "text": "The high prices"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למה שבא אחרי but.",
+          "en": "Listen to what comes after but."
+        }
+      ],
+      "explanation": {
+        "he": "הפיצה הייתה מעולה, אבל חיכו כמעט שעה. הבעיה היא השירות האיטי.",
+        "en": "The pizza was great, but they waited almost an hour."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.jacket",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "What is Eden hinting?",
+      "audioText": "Gal: Should I wear my jacket? Eden: Well, the forecast said it would warm up, but you know how wrong they can be.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Taking the jacket is a good idea."
+        },
+        {
+          "id": "b",
+          "text": "It will definitely be warm."
+        },
+        {
+          "id": "c",
+          "text": "Gal should stay at home."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "Eden לא סומכת על התחזית.",
+          "en": "Eden doesn't trust the forecast."
+        }
+      ],
+      "explanation": {
+        "he": "עדן אומרת שהתחזיות טועות הרבה. כלומר, בלי להגיד ישירות: כדאי לקחת מעיל.",
+        "en": "Eden suggests the forecast may be wrong, so the jacket is a good idea."
+      },
+      "interests": [],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.song",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "What does Tamar mean?",
+      "audioText": "Ron: I've been practicing this song for weeks. Tamar: And it shows! You hardly made any mistakes.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ron played very well."
+        },
+        {
+          "id": "b",
+          "text": "Ron needs to practice more."
+        },
+        {
+          "id": "c",
+          "text": "Ron made a lot of mistakes."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "it shows = רואים את זה. hardly any = כמעט אין.",
+          "en": "it shows = we can see it. hardly any = almost none."
+        }
+      ],
+      "explanation": {
+        "he": "And it shows = ורואים את זה. hardly made any mistakes = כמעט לא טעית. זו מחמאה.",
+        "en": "It shows = the practice is clear. Almost no mistakes: a compliment."
+      },
+      "interests": [
+        "music"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.shirt",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "What can the customer do?",
+      "audioText": "Customer: Excuse me, do you have this shirt in a larger size? Assistant: Sorry, that's the last one, but we're getting more on Thursday.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Come back on Thursday"
+        },
+        {
+          "id": "b",
+          "text": "Buy a larger size today"
+        },
+        {
+          "id": "c",
+          "text": "Get the shirt for free"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "that's the last one = זה האחרון.",
+          "en": "that's the last one = there are no more now."
+        }
+      ],
+      "explanation": {
+        "he": "אין עכשיו מידה גדולה יותר, אבל ביום חמישי יגיעו עוד חולצות.",
+        "en": "There are no larger sizes now, but more are coming on Thursday."
+      },
+      "interests": [
+        "fashion"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.trip",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "How does Omer feel?",
+      "audioText": "Maya: Did you hear that the trip was cancelled? Omer: You're kidding! I've been looking forward to it all month.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Disappointed"
+        },
+        {
+          "id": "b",
+          "text": "Relieved"
+        },
+        {
+          "id": "c",
+          "text": "Bored"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "looking forward to = מחכה בקוצר רוח.",
+          "en": "looking forward to = waiting happily for."
+        }
+      ],
+      "explanation": {
+        "he": "עומר חיכה לטיול כל החודש, ועכשיו הוא בוטל. You're kidding מראה הפתעה ואכזבה.",
+        "en": "He was looking forward to the trip, so he is disappointed."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.sofa",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "What does Tom do?",
+      "audioText": "Adi: Can you help me move the sofa on Sunday? Tom: Sunday's tricky. How about Monday evening?",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He suggests a different day."
+        },
+        {
+          "id": "b",
+          "text": "He agrees to help on Sunday."
+        },
+        {
+          "id": "c",
+          "text": "He refuses to help at all."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "How about...? = מה דעתך על...?",
+          "en": "How about...? = an offer of another option."
+        }
+      ],
+      "explanation": {
+        "he": "Sunday's tricky = יום ראשון קשה לי. How about Monday evening = הצעה ליום אחר.",
+        "en": "Sunday is difficult, so he suggests Monday."
+      },
+      "interests": [],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.essay",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "What can we understand about Eli?",
+      "audioText": "Dana: You look exhausted. Eli: I was up till three finishing my essay. Dana: Again? Maybe start earlier next time.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He has done this before."
+        },
+        {
+          "id": "b",
+          "text": "He finished his essay early."
+        },
+        {
+          "id": "c",
+          "text": "He slept well last night."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה דנה אומרת במילה Again?",
+          "en": "What does Dana's word Again? tell us?"
+        }
+      ],
+      "explanation": {
+        "he": "Again? = שוב? דנה מופתעת כי זה כבר קרה בעבר. אלי נוטה לסיים עבודות ברגע האחרון.",
+        "en": "Again? shows it has happened before."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.doctor",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which time will the patient probably choose?",
+      "audioText": "Receptionist: The doctor can see you at four or at six. Patient: Four is a bit early. I finish school at half past four.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Six o'clock"
+        },
+        {
+          "id": "b",
+          "text": "Four o'clock"
+        },
+        {
+          "id": "c",
+          "text": "Half past four"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מתי המטופל/ת מסיים/ת בית ספר?",
+          "en": "When does the patient finish school?"
+        }
+      ],
+      "explanation": {
+        "he": "ארבע מוקדם מדי, כי הלימודים נגמרים ב־4:30. לכן כנראה יבחרו בשש.",
+        "en": "Four is too early, so six is the likely choice."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.drama",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Why does Yael want to join the drama club?",
+      "audioText": "Yael: I'm thinking of joining the drama club. Noam: You? You hate standing in front of people! Yael: That's exactly why. I want to get over it.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To stop being afraid of performing"
+        },
+        {
+          "id": "b",
+          "text": "Because Noam is in it"
+        },
+        {
+          "id": "c",
+          "text": "Because she loves being on stage"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "get over = להתגבר על.",
+          "en": "get over = stop being affected by."
+        }
+      ],
+      "explanation": {
+        "he": "יעל שונאת לעמוד מול אנשים, ודווקא בגלל זה רוצה להצטרף: כדי להתגבר על הפחד.",
+        "en": "She hates it, and wants to get over it."
+      },
+      "interests": [
+        "movies"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.book",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "What does Rotem think of the book?",
+      "audioText": "Itay: Did you finish the book I lent you? Rotem: I'm halfway through. To be honest, it's a bit slow.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It isn't very exciting."
+        },
+        {
+          "id": "b",
+          "text": "It's the best book she's read."
+        },
+        {
+          "id": "c",
+          "text": "It's too short."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "slow בספר = משעמם, הולך לאט.",
+          "en": "A slow book = not much happens."
+        }
+      ],
+      "explanation": {
+        "he": "To be honest, it's a bit slow = האמת, הוא קצת איטי. כלומר לא מרתק במיוחד.",
+        "en": "A bit slow = not very exciting."
+      },
+      "interests": [
+        "books"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dialogue.bill",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "What does Lia want?",
+      "audioText": "Waiter: Would you like anything else? Lia: No, thanks. Just the bill, please.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To pay"
+        },
+        {
+          "id": "b",
+          "text": "A dessert"
+        },
+        {
+          "id": "c",
+          "text": "Another drink"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "the bill = החשבון.",
+          "en": "the bill = the paper that says how much to pay."
+        }
+      ],
+      "explanation": {
+        "he": "Just the bill, please = רק את החשבון, בבקשה. ליה רוצה לשלם.",
+        "en": "She asks for the bill, so she wants to pay."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.because",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "A1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "because",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "because"
+      ],
+      "knownErrors": [
+        {
+          "answer": "becouse",
+          "feedback": {
+            "he": "הצליל au נכתב כאן au: because.",
+            "en": "The sound is spelled au: because."
+          }
+        },
+        {
+          "answer": "becuase",
+          "feedback": {
+            "he": "סדר האותיות: c-a-u-s-e.",
+            "en": "The order is c-a-u-s-e."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "מתחילה ב־be.",
+          "en": "It starts with be."
+        },
+        {
+          "he": "be + cause",
+          "en": "be + cause"
+        }
+      ],
+      "explanation": {
+        "he": "because = כי, בגלל ש. אפשר לזכור: be + cause (סיבה).",
+        "en": "because = be + cause."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:because",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.friend",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "A1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "friend",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "friend"
+      ],
+      "knownErrors": [
+        {
+          "answer": "freind",
+          "misconception": "spelling.ie-ei",
+          "feedback": {
+            "he": "ב־friend ה־i באה לפני ה־e.",
+            "en": "In friend, i comes before e."
+          }
+        },
+        {
+          "answer": "frend",
+          "feedback": {
+            "he": "יש i שקטה: fr-i-end.",
+            "en": "There is a silent i: fri-end."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "6 אותיות.",
+          "en": "6 letters."
+        },
+        {
+          "he": "בסוף המילה יש end.",
+          "en": "The word ends with end."
+        }
+      ],
+      "explanation": {
+        "he": "friend = חבר/ה. טריק: a friend is there to the end. המילה נגמרת ב־end.",
+        "en": "friend ends with end: a friend to the end."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:friend",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.necessary",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "B1",
+      "difficulty": 0.8,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "necessary",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "necessary"
+      ],
+      "knownErrors": [
+        {
+          "answer": "neccessary",
+          "misconception": "spelling.double-letters",
+          "feedback": {
+            "he": "יש רק c אחת ושתי s.",
+            "en": "One c, two s."
+          }
+        },
+        {
+          "answer": "necesary",
+          "misconception": "spelling.double-letters",
+          "feedback": {
+            "he": "צריך שתי s באמצע.",
+            "en": "You need two s in the middle."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "c אחת, s כפולה.",
+          "en": "one c, double s."
+        },
+        {
+          "he": "ne-ce-ss-ary",
+          "en": "ne-ce-ss-ary"
+        }
+      ],
+      "explanation": {
+        "he": "necessary = הכרחי. טריק: one Collar, two Sleeves: c אחת ושתי s.",
+        "en": "necessary: one c (collar), two s (sleeves)."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:necessary",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.which",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "A1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Type the question word you hear.",
+      "audioText": "which",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "which"
+      ],
+      "knownErrors": [
+        {
+          "answer": "wich",
+          "misconception": "spelling.silent-letters",
+          "feedback": {
+            "he": "יש h שקטה אחרי ה־w.",
+            "en": "There is a silent h after w."
+          }
+        },
+        {
+          "answer": "witch",
+          "feedback": {
+            "he": "witch = מכשפה. מילת השאלה היא which.",
+            "en": "witch is a person who does magic. The question word is which."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "מתחילה ב־wh, כמו what.",
+          "en": "It starts with wh, like what."
+        },
+        {
+          "he": "5 אותיות.",
+          "en": "5 letters."
+        }
+      ],
+      "explanation": {
+        "he": "which = איזה. כמו רוב מילות השאלה, מתחילה ב־wh. witch נשמעת אותו דבר אבל פירושה מכשפה.",
+        "en": "which = question word, starts with wh. witch sounds the same."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:which",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.believe",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "believe",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "believe"
+      ],
+      "knownErrors": [
+        {
+          "answer": "beleive",
+          "misconception": "spelling.ie-ei",
+          "feedback": {
+            "he": "כאן i לפני e: bel-ie-ve.",
+            "en": "Here i comes before e: bel-ie-ve."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "יש lie באמצע.",
+          "en": "There is lie in the middle."
+        }
+      ],
+      "explanation": {
+        "he": "believe = להאמין. טריק: never believe a lie. יש lie באמצע המילה.",
+        "en": "Never believe a lie: lie is inside believe."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:believe",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.different",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "different",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "different"
+      ],
+      "knownErrors": [
+        {
+          "answer": "diffrent",
+          "feedback": {
+            "he": "יש e שבקושי שומעים: diff-e-rent.",
+            "en": "There is an e you hardly hear: diff-e-rent."
+          }
+        },
+        {
+          "answer": "diferent",
+          "misconception": "spelling.double-letters",
+          "feedback": {
+            "he": "צריך שתי f.",
+            "en": "You need two f."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "f כפולה.",
+          "en": "double f."
+        },
+        {
+          "he": "diff + er + ent",
+          "en": "diff + er + ent"
+        }
+      ],
+      "explanation": {
+        "he": "different = שונה. שתי f, ואחריהן e שכמעט לא שומעים.",
+        "en": "different: double f, and a quiet e."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:different",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.business",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "B1",
+      "difficulty": 0.8,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "business",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "business"
+      ],
+      "knownErrors": [
+        {
+          "answer": "buisness",
+          "feedback": {
+            "he": "האות u באה ראשונה: b-u-s-i.",
+            "en": "u comes first: b-u-s-i."
+          }
+        },
+        {
+          "answer": "bussiness",
+          "misconception": "spelling.double-letters",
+          "feedback": {
+            "he": "s אחת בהתחלה ושתיים בסוף.",
+            "en": "One s at the start, two at the end."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "מתחילה ב־bus.",
+          "en": "It starts with bus."
+        },
+        {
+          "he": "bus + i + ness",
+          "en": "bus + i + ness"
+        }
+      ],
+      "explanation": {
+        "he": "business = עסק. טריק: bus + i + ness. ה־i באמצע כמעט לא נשמעת.",
+        "en": "business = bus + i + ness."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:business",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.receive",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "B1",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "receive",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "receive"
+      ],
+      "knownErrors": [
+        {
+          "answer": "recieve",
+          "misconception": "spelling.ie-ei",
+          "feedback": {
+            "he": "אחרי c כותבים ei: rec-ei-ve.",
+            "en": "After c we write ei: rec-ei-ve."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "i before e, except after c.",
+          "en": "i before e, except after c."
+        }
+      ],
+      "explanation": {
+        "he": "receive = לקבל. הכלל: i before e, except after c. אחרי c כותבים ei.",
+        "en": "i before e, except after c: receive."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:receive",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.separate",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "B1",
+      "difficulty": 0.8,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "separate",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "separate"
+      ],
+      "knownErrors": [
+        {
+          "answer": "seperate",
+          "feedback": {
+            "he": "יש a באמצע: sep-a-rate.",
+            "en": "There is an a in the middle: sep-a-rate."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "יש בה a rat.",
+          "en": "There is a rat in it."
+        }
+      ],
+      "explanation": {
+        "he": "separate = נפרד, להפריד. טריק: there is a rat in separate.",
+        "en": "There is a rat in separate."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:separate",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.wednesday",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "A1",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "Wednesday",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "Wednesday",
+        "wednesday"
+      ],
+      "knownErrors": [
+        {
+          "answer": "Wensday",
+          "misconception": "spelling.silent-letters",
+          "feedback": {
+            "he": "יש d שקטה: Wed-nes-day.",
+            "en": "There is a silent d: Wed-nes-day."
+          }
+        },
+        {
+          "answer": "wensday",
+          "misconception": "spelling.silent-letters",
+          "feedback": {
+            "he": "יש d שקטה: Wed-nes-day.",
+            "en": "There is a silent d: Wed-nes-day."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "יום בשבוע.",
+          "en": "A day of the week."
+        },
+        {
+          "he": "Wed + nes + day",
+          "en": "Wed + nes + day"
+        }
+      ],
+      "explanation": {
+        "he": "Wednesday = יום רביעי. כותבים Wed-nes-day, אבל אומרים wenz-day. ה־d הראשונה שקטה.",
+        "en": "Wednesday is said wenz-day. The first d is silent."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:wednesday",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.library",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "library",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "library"
+      ],
+      "knownErrors": [
+        {
+          "answer": "libary",
+          "feedback": {
+            "he": "יש r גם אחרי ה־b: lib-r-ary.",
+            "en": "There is an r after b too: lib-r-ary."
+          }
+        },
+        {
+          "answer": "liberry",
+          "feedback": {
+            "he": "המילה נגמרת ב־ary.",
+            "en": "The word ends with ary."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "שתי r.",
+          "en": "two r."
+        },
+        {
+          "he": "lib + rary",
+          "en": "lib + rary"
+        }
+      ],
+      "explanation": {
+        "he": "library = ספרייה. יש בה שתי r: lib-r-a-r-y.",
+        "en": "library has two r: lib-r-a-r-y."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:library",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.address",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "A2",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "address",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "address"
+      ],
+      "knownErrors": [
+        {
+          "answer": "adress",
+          "misconception": "spelling.double-letters",
+          "feedback": {
+            "he": "צריך שתי d.",
+            "en": "You need two d."
+          }
+        },
+        {
+          "answer": "addres",
+          "misconception": "spelling.double-letters",
+          "feedback": {
+            "he": "צריך שתי s בסוף.",
+            "en": "You need two s at the end."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "שתי אותיות כפולות.",
+          "en": "two double letters."
+        },
+        {
+          "he": "a-dd-re-ss",
+          "en": "a-dd-re-ss"
+        }
+      ],
+      "explanation": {
+        "he": "address = כתובת. יש שתי אותיות כפולות: dd ו־ss.",
+        "en": "address has double d and double s."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:address",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.definitely",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "B1",
+      "difficulty": 0.8,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "definitely",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "definitely"
+      ],
+      "knownErrors": [
+        {
+          "answer": "definately",
+          "feedback": {
+            "he": "אין a: def-i-nite-ly.",
+            "en": "There is no a: def-i-nite-ly."
+          }
+        },
+        {
+          "answer": "definitly",
+          "feedback": {
+            "he": "צריך e לפני ly: definite + ly.",
+            "en": "Keep the e: definite + ly."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "יש בה finite.",
+          "en": "finite is inside it."
+        },
+        {
+          "he": "definite + ly",
+          "en": "definite + ly"
+        }
+      ],
+      "explanation": {
+        "he": "definitely = בהחלט. בונים אותה מ־definite (מוגדר) + ly. אין a במילה.",
+        "en": "definitely = definite + ly. No a."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:definitely",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.knowledge",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "B1",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "knowledge",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "knowledge"
+      ],
+      "knownErrors": [
+        {
+          "answer": "nowledge",
+          "misconception": "spelling.silent-letters",
+          "feedback": {
+            "he": "יש k שקטה בהתחלה, כמו know.",
+            "en": "There is a silent k, like in know."
+          }
+        },
+        {
+          "answer": "knowlege",
+          "feedback": {
+            "he": "יש d לפני ge: know-ledge.",
+            "en": "There is a d before ge: know-ledge."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "מתחילה כמו know.",
+          "en": "It starts like know."
+        },
+        {
+          "he": "know + ledge",
+          "en": "know + ledge"
+        }
+      ],
+      "explanation": {
+        "he": "knowledge = ידע. know + ledge. ה־k בהתחלה שקטה.",
+        "en": "knowledge = know + ledge. The k is silent."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:knowledge",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.dictation.interesting",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "interesting",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "interesting"
+      ],
+      "knownErrors": [
+        {
+          "answer": "intresting",
+          "feedback": {
+            "he": "יש e שבקושי שומעים: int-e-rest-ing.",
+            "en": "There is a quiet e: int-e-rest-ing."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "יש בה rest.",
+          "en": "rest is inside it."
+        },
+        {
+          "he": "inter + est + ing",
+          "en": "inter + est + ing"
+        }
+      ],
+      "explanation": {
+        "he": "interesting = מעניין. אומרים לפעמים intresting, אבל כותבים inter-est-ing.",
+        "en": "We often say intresting, but write inter-est-ing."
+      },
+      "tags": [
+        "dictation"
+      ],
+      "unit": "spell:interesting",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.piano",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "What has keys but can't open locks?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A piano"
+        },
+        {
+          "id": "b",
+          "text": "A door"
+        },
+        {
+          "id": "c",
+          "text": "A car"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "keys יכולים להיות גם קלידים.",
+          "en": "keys can also be the parts you press to play music."
+        }
+      ],
+      "explanation": {
+        "he": "key = מפתח, וגם קליד. לפסנתר יש keys (קלידים), אבל הם לא פותחים מנעולים.",
+        "en": "A piano has keys you press, but they can't open locks."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.clock",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "What has hands but can't clap?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A clock"
+        },
+        {
+          "id": "b",
+          "text": "A monkey"
+        },
+        {
+          "id": "c",
+          "text": "A glove"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "hands הם גם המחוגים.",
+          "en": "hands can also point to the time."
+        }
+      ],
+      "explanation": {
+        "he": "hands = ידיים, וגם מחוגים של שעון. לשעון יש מחוגים, אבל הוא לא יכול למחוא כפיים.",
+        "en": "A clock has hands that show the time, but it can't clap."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.bottle",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "What has a neck but no head?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A bottle"
+        },
+        {
+          "id": "b",
+          "text": "A giraffe"
+        },
+        {
+          "id": "c",
+          "text": "A snake"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "neck = צוואר. איזה חפץ יש לו צוואר?",
+          "en": "Which object has a neck?"
+        }
+      ],
+      "explanation": {
+        "he": "לבקבוק יש neck (צוואר הבקבוק), אבל אין לו ראש. לג'ירפה יש גם צוואר וגם ראש.",
+        "en": "A bottle has a neck, but no head. A giraffe has both."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.towel",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "What gets wetter the more it dries?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A towel"
+        },
+        {
+          "id": "b",
+          "text": "A river"
+        },
+        {
+          "id": "c",
+          "text": "A cloud"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה מייבש אותנו אחרי מקלחת?",
+          "en": "What dries you after a shower?"
+        }
+      ],
+      "explanation": {
+        "he": "מגבת מייבשת אותנו, וככל שהיא מייבשת יותר, היא נעשית רטובה יותר. הטריק: dries כאן = מייבשת משהו אחר.",
+        "en": "A towel dries you and gets wetter. Here dries means dries something else."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.comb",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "What has many teeth but can't bite?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A comb"
+        },
+        {
+          "id": "b",
+          "text": "A shark"
+        },
+        {
+          "id": "c",
+          "text": "A mirror"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "משתמשים בזה לשיער.",
+          "en": "You use it on your hair."
+        }
+      ],
+      "explanation": {
+        "he": "comb = מסרק. יש לו teeth (שיניים), אבל הוא לא נושך. לכריש יש שיניים והוא נושך.",
+        "en": "A comb has teeth but can't bite. A shark can bite."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.cold",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "What can you catch but not throw?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A cold"
+        },
+        {
+          "id": "b",
+          "text": "A ball"
+        },
+        {
+          "id": "c",
+          "text": "A fish"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "catch a cold = להצטנן.",
+          "en": "catch a cold = become ill with a cold."
+        }
+      ],
+      "explanation": {
+        "he": "catch = לתפוס, וגם \"לחטוף\" מחלה. catch a cold = להצטנן. כדור ודג אפשר גם לזרוק.",
+        "en": "You catch a cold, but you can't throw it. A ball and a fish can be thrown."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.age",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "What goes up but never comes down?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Your age"
+        },
+        {
+          "id": "b",
+          "text": "A ball"
+        },
+        {
+          "id": "c",
+          "text": "A plane"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "זה קורה לכולנו כל שנה.",
+          "en": "It happens to all of us every year."
+        }
+      ],
+      "explanation": {
+        "he": "הגיל שלנו רק עולה ואף פעם לא יורד. כדור ומטוס עולים וגם יורדים.",
+        "en": "Your age only goes up. A ball and a plane come down."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.needle",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "What has one eye but can't see?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A needle"
+        },
+        {
+          "id": "b",
+          "text": "A pirate"
+        },
+        {
+          "id": "c",
+          "text": "A camera"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "eye הוא גם החור שמכניסים בו חוט.",
+          "en": "eye can be the hole for a thread."
+        }
+      ],
+      "explanation": {
+        "he": "eye of a needle = חור המחט, שמכניסים בו חוט. למחט יש eye אחת והיא לא רואה.",
+        "en": "The eye of a needle is the hole for the thread."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.table",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "What has four legs but can't walk?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A table"
+        },
+        {
+          "id": "b",
+          "text": "A dog"
+        },
+        {
+          "id": "c",
+          "text": "A horse"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "זה רהיט.",
+          "en": "It is a piece of furniture."
+        }
+      ],
+      "explanation": {
+        "he": "לשולחן יש legs (רגליים), אבל הוא לא הולך. כלב וסוס הולכים.",
+        "en": "A table has legs but can't walk."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.footsteps",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "The more you take, the more you leave behind. What are they?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Footsteps"
+        },
+        {
+          "id": "b",
+          "text": "Photos"
+        },
+        {
+          "id": "c",
+          "text": "Breaths"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "take a step = לעשות צעד.",
+          "en": "take a step = walk one step."
+        }
+      ],
+      "explanation": {
+        "he": "take a step = לעשות צעד. כל צעד משאיר עקבה מאחור. footsteps = עקבות, צעדים.",
+        "en": "Every step you take leaves a footstep behind."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.sponge",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "What is full of holes but still holds water?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A sponge"
+        },
+        {
+          "id": "b",
+          "text": "A cup"
+        },
+        {
+          "id": "c",
+          "text": "A bucket"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "משתמשים בזה לשטוף כלים.",
+          "en": "You use it to wash dishes."
+        }
+      ],
+      "explanation": {
+        "he": "ספוג מלא חורים, ועדיין סופג ומחזיק מים. לכוס ולדלי אין חורים.",
+        "en": "A sponge is full of holes and holds water."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.stamp",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.7,
+      "prompt": "What can travel around the world while staying in a corner?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A stamp"
+        },
+        {
+          "id": "b",
+          "text": "A plane"
+        },
+        {
+          "id": "c",
+          "text": "A suitcase"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מדביקים את זה בפינה של מכתב.",
+          "en": "You stick it in the corner of a letter."
+        }
+      ],
+      "explanation": {
+        "he": "בול נשאר בפינה של המעטפה, אבל המכתב נוסע איתו לכל העולם.",
+        "en": "A stamp stays in the corner of an envelope and travels everywhere."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.book",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "What has words but never speaks?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A book"
+        },
+        {
+          "id": "b",
+          "text": "A parrot"
+        },
+        {
+          "id": "c",
+          "text": "A radio"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "קוראים את זה.",
+          "en": "You read it."
+        }
+      ],
+      "explanation": {
+        "he": "בספר יש מילים, אבל הוא לא מדבר. תוכי ורדיו משמיעים מילים.",
+        "en": "A book has words but makes no sound."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.river",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "What runs but never walks, and has a mouth but never talks?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A river"
+        },
+        {
+          "id": "b",
+          "text": "A clock"
+        },
+        {
+          "id": "c",
+          "text": "A dog"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "mouth הוא גם המקום שבו נהר פוגש את הים.",
+          "en": "A mouth can be where water meets the sea."
+        }
+      ],
+      "explanation": {
+        "he": "נהר זורם (runs) ויש לו mouth (שפך). אבל הוא לא הולך ולא מדבר.",
+        "en": "A river runs, and it has a mouth where it meets the sea."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.coin",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "What has a head and a tail but no body?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A coin"
+        },
+        {
+          "id": "b",
+          "text": "A cat"
+        },
+        {
+          "id": "c",
+          "text": "A fish"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "heads or tails? מטילים את זה באוויר.",
+          "en": "Heads or tails? You flip it."
+        }
+      ],
+      "explanation": {
+        "he": "heads or tails = עץ או פלי. לכל מטבע יש head ו־tail, אבל אין לו גוף.",
+        "en": "A coin has heads and tails, but no body."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.name",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "What belongs to you, but other people use it more than you do?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Your name"
+        },
+        {
+          "id": "b",
+          "text": "Your phone"
+        },
+        {
+          "id": "c",
+          "text": "Your bed"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אחרים קוראים לך בעזרתו.",
+          "en": "Others call you with it."
+        }
+      ],
+      "explanation": {
+        "he": "השם שלנו שייך לנו, אבל אחרים אומרים אותו הרבה יותר מאיתנו.",
+        "en": "Other people say your name more than you do."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.months",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.6,
+      "prompt": "Some months have 31 days. How many months have 28 days?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "All twelve"
+        },
+        {
+          "id": "b",
+          "text": "Only one"
+        },
+        {
+          "id": "c",
+          "text": "None of them"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "בכל חודש יש לפחות 28 ימים?",
+          "en": "Does every month have at least 28 days?"
+        }
+      ],
+      "explanation": {
+        "he": "הטריק: בכל החודשים יש 28 ימים, וגם יותר. כולם, לא רק פברואר.",
+        "en": "Every month has at least 28 days, so all twelve."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.wrong",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Which word is always spelled wrong in the dictionary?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Wrong"
+        },
+        {
+          "id": "b",
+          "text": "Dictionary"
+        },
+        {
+          "id": "c",
+          "text": "Spelling"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את השאלה מילה במילה.",
+          "en": "Read the question word by word."
+        }
+      ],
+      "explanation": {
+        "he": "המילה wrong תמיד מאויתת w-r-o-n-g. כלומר, היא תמיד כתובה \"wrong\".",
+        "en": "The word wrong is always spelled w-r-o-n-g."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.envelope",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B1",
+      "difficulty": 0.7,
+      "prompt": "What starts with E, ends with E and has only one letter in it?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "An envelope"
+        },
+        {
+          "id": "b",
+          "text": "An eye"
+        },
+        {
+          "id": "c",
+          "text": "An engine"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "letter = אות, וגם מכתב.",
+          "en": "letter = a, b, c... or a message on paper."
+        }
+      ],
+      "explanation": {
+        "he": "letter = אות, וגם מכתב. envelope (מעטפה) מתחילה ונגמרת ב־e, ויש בה מכתב אחד.",
+        "en": "An envelope starts and ends with e, and has one letter (message) inside."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.library",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Which building has the most stories?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A library"
+        },
+        {
+          "id": "b",
+          "text": "A hospital"
+        },
+        {
+          "id": "c",
+          "text": "A school"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "story = סיפור, וגם קומה.",
+          "en": "story = a tale, or a floor of a building."
+        }
+      ],
+      "explanation": {
+        "he": "story = סיפור, וגם קומה בבניין. בספרייה יש הכי הרבה סיפורים.",
+        "en": "A library has the most stories (tales)."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.promise",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "What can you break without touching it?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A promise"
+        },
+        {
+          "id": "b",
+          "text": "A glass"
+        },
+        {
+          "id": "c",
+          "text": "An egg"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "break a promise = לא לקיים.",
+          "en": "break a promise = not do what you said."
+        }
+      ],
+      "explanation": {
+        "he": "break a promise = להפר הבטחה. לא צריך לגעת בה כדי לשבור אותה. כוס וביצה צריך לגעת.",
+        "en": "You break a promise without touching anything."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.future",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "What is always in front of you but can't be seen?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The future"
+        },
+        {
+          "id": "b",
+          "text": "Your nose"
+        },
+        {
+          "id": "c",
+          "text": "The road"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "זה זמן, לא חפץ.",
+          "en": "It is time, not a thing."
+        }
+      ],
+      "explanation": {
+        "he": "העתיד תמיד \"לפנינו\", אבל אי אפשר לראות אותו. את האף ואת הכביש אפשר לראות.",
+        "en": "The future is ahead of you, but you can't see it."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.candle",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "I'm tall when I'm young, and I'm short when I'm old. What am I?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A candle"
+        },
+        {
+          "id": "b",
+          "text": "A tree"
+        },
+        {
+          "id": "c",
+          "text": "A person"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "זה נשרף ומתקצר.",
+          "en": "It burns and gets shorter."
+        }
+      ],
+      "explanation": {
+        "he": "נר חדש ארוך, וככל שהוא דולק הוא נעשה קצר יותר. עץ ואדם גדלים, לא מתקצרים.",
+        "en": "A candle gets shorter as it burns."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.glove",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "What has a thumb and four fingers but isn't alive?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A glove"
+        },
+        {
+          "id": "b",
+          "text": "A hand"
+        },
+        {
+          "id": "c",
+          "text": "A sock"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לובשים את זה בחורף.",
+          "en": "You wear it in winter."
+        }
+      ],
+      "explanation": {
+        "he": "לכפפה יש מקום לאגודל ולארבע אצבעות, אבל היא לא חיה. יד היא חלק מגוף חי.",
+        "en": "A glove has a thumb and fingers but isn't alive."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.letter-m",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B2",
+      "difficulty": 0.8,
+      "prompt": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The letter M"
+        },
+        {
+          "id": "b",
+          "text": "A second"
+        },
+        {
+          "id": "c",
+          "text": "A birthday"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק את האותיות של המילים.",
+          "en": "Look at the letters in the words."
+        }
+      ],
+      "explanation": {
+        "he": "ב־minute יש m אחת, ב־moment שתיים, וב־a thousand years אין m בכלל.",
+        "en": "minute has one m, moment has two, a thousand years has none."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.egg",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "What has to be broken before you can use it?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "An egg"
+        },
+        {
+          "id": "b",
+          "text": "A window"
+        },
+        {
+          "id": "c",
+          "text": "A key"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "משתמשים בזה כדי להכין חביתה.",
+          "en": "You use it to make an omelet."
+        }
+      ],
+      "explanation": {
+        "he": "ביצה צריך לשבור לפני שמשתמשים בה. חלון ומפתח לא צריך לשבור.",
+        "en": "You must break an egg to use it."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.asleep",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Which question can you never answer \"yes\" to?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "\"Are you asleep?\""
+        },
+        {
+          "id": "b",
+          "text": "\"Are you hungry?\""
+        },
+        {
+          "id": "c",
+          "text": "\"Are you tired?\""
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מי ישן לא עונה.",
+          "en": "A sleeping person doesn't answer."
+        }
+      ],
+      "explanation": {
+        "he": "asleep = ישן/ה. מי שישן באמת לא יכול לענות \"yes\". אם עונים, סימן שלא ישנים.",
+        "en": "If you are asleep, you can't say yes."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.ton",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B2",
+      "difficulty": 0.8,
+      "prompt": "Forward I am heavy, but backward I am not. What am I?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The word \"ton\""
+        },
+        {
+          "id": "b",
+          "text": "A rock"
+        },
+        {
+          "id": "c",
+          "text": "A truck"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא מילה מהסוף להתחלה.",
+          "en": "Read a word backwards."
+        }
+      ],
+      "explanation": {
+        "he": "ton = טון, משקל כבד. מהסוף להתחלה זה not = לא. כלומר backward I am \"not\".",
+        "en": "ton is heavy. Backwards it is not."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.hole",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "What gets bigger the more you take away from it?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A hole"
+        },
+        {
+          "id": "b",
+          "text": "A pizza"
+        },
+        {
+          "id": "c",
+          "text": "A pile of sand"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "חופרים אותו באדמה.",
+          "en": "You dig it in the ground."
+        }
+      ],
+      "explanation": {
+        "he": "hole = בור, חור. כל מה שמוציאים ממנו הופך אותו לגדול יותר. פיצה וערימת חול רק קטנות.",
+        "en": "The more you dig out of a hole, the bigger it gets."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.riddle.mushroom",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B1",
+      "difficulty": 0.7,
+      "prompt": "What kind of room has no doors or windows?",
+      "instruction": {
+        "he": "לפתור את החידה",
+        "en": "Solve the riddle"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A mushroom"
+        },
+        {
+          "id": "b",
+          "text": "A bedroom"
+        },
+        {
+          "id": "c",
+          "text": "A classroom"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מילה שנגמרת ב־room אבל היא לא חדר.",
+          "en": "A word ending in room that isn't a room."
+        }
+      ],
+      "explanation": {
+        "he": "mushroom = פטרייה. המילה נגמרת ב־room, אבל זה בכלל לא חדר.",
+        "en": "A mushroom ends in room, but it is not a room."
+      },
+      "tags": [
+        "riddle"
+      ],
+      "estimatedTimeSec": 30,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.give-up",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "Don't ___ now! You're almost at the top of the mountain.",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "give up"
+        },
+        {
+          "id": "b",
+          "text": "give away",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "give back",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה אומרים למישהו שרוצה להפסיק לנסות?",
+          "en": "What do we say to someone who wants to stop trying?"
+        }
+      ],
+      "explanation": {
+        "he": "give up = לוותר, להפסיק לנסות. give away = לתת במתנה. give back = להחזיר.",
+        "en": "give up = stop trying. give away = give for free. give back = return."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:give-up",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "Don't give up now! You're almost at the top of the mountain."
+    },
+    {
+      "id": "lf.pv.look-after",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.3,
+      "prompt": "Can you ___ my dog while I'm on holiday?",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "look after"
+        },
+        {
+          "id": "b",
+          "text": "look for",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "look up",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מישהו צריך לדאוג לכלב.",
+          "en": "Someone needs to take care of the dog."
+        }
+      ],
+      "explanation": {
+        "he": "look after = לשמור על, לטפל ב. look for = לחפש. look up = לחפש מידע.",
+        "en": "look after = take care of. look for = search."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:look-after",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "Can you look after my dog while I'm on holiday?"
+    },
+    {
+      "id": "lf.pv.find-out",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.3,
+      "prompt": "\"I want to find out what time the shop closes.\" What does \"find out\" mean here?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "discover information"
+        },
+        {
+          "id": "b",
+          "text": "lose something"
+        },
+        {
+          "id": "c",
+          "text": "go outside",
+          "misconception": "phrasal.literal-meaning"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה רוצים לדעת?",
+          "en": "What do you want to know?"
+        }
+      ],
+      "explanation": {
+        "he": "find out = לגלות, לברר מידע. לא קשור ל־out = בחוץ.",
+        "en": "find out = learn a fact you didn't know."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:find-out",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.turn-down",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "She ___ the job offer because the salary was too low.",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "turned down"
+        },
+        {
+          "id": "b",
+          "text": "turned up",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "turned on",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המשכורת נמוכה. היא קיבלה את ההצעה?",
+          "en": "The salary was low. Did she accept?"
+        }
+      ],
+      "explanation": {
+        "he": "turn down an offer = לסרב להצעה. turn up = להגיע, להגביר. turn on = להדליק.",
+        "en": "turn down = say no to. turn up = arrive. turn on = switch on."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:turn-down",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "She turned down the job offer because the salary was too low."
+    },
+    {
+      "id": "lf.pv.put-off",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"We had to put off the trip until next month.\" What does \"put off\" mean?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "delay"
+        },
+        {
+          "id": "b",
+          "text": "cancel forever"
+        },
+        {
+          "id": "c",
+          "text": "plan carefully"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "until next month = עד החודש הבא.",
+          "en": "until next month = it will happen later."
+        }
+      ],
+      "explanation": {
+        "he": "put off = לדחות למועד אחר. הטיול עדיין יקרה, רק בחודש הבא, ולכן לא ביטול.",
+        "en": "put off = move to a later time. It's not cancelled."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:put-off",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.run-out-of",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "We've ___ milk. Can you buy some on your way home?",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "run out of"
+        },
+        {
+          "id": "b",
+          "text": "run into",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "run away from",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למה צריך לקנות חלב?",
+          "en": "Why do they need to buy milk?"
+        }
+      ],
+      "explanation": {
+        "he": "run out of = שנגמר משהו. נגמר החלב, ולכן צריך לקנות. run into = לפגוש במקרה.",
+        "en": "run out of = have none left."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:run-out-of",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "We've run out of milk. Can you buy some on your way home?"
+    },
+    {
+      "id": "lf.pv.come-up-with",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"She came up with a great idea for the project.\" What does \"came up with\" mean?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "thought of"
+        },
+        {
+          "id": "b",
+          "text": "disagreed with"
+        },
+        {
+          "id": "c",
+          "text": "climbed up with",
+          "misconception": "phrasal.literal-meaning"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מאיפה מגיע רעיון?",
+          "en": "Where does an idea come from?"
+        }
+      ],
+      "explanation": {
+        "he": "come up with = להמציא, לחשוב על רעיון. לא קשור לטיפוס למעלה.",
+        "en": "come up with = think of an idea or plan."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:come-up-with",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.get-along-with",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "I ___ my classmates. We never argue.",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "get along with"
+        },
+        {
+          "id": "b",
+          "text": "get over",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "get away with",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "We never argue = אף פעם לא רבים.",
+          "en": "We never argue = no fights."
+        }
+      ],
+      "explanation": {
+        "he": "get along with = להסתדר עם. get over = להתגבר על. get away with = לצאת בלי עונש.",
+        "en": "get along with = have a good relationship with."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:get-along-with",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "I get along with my classmates. We never argue."
+    },
+    {
+      "id": "lf.pv.look-forward-to",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "I'm really ___ the summer holidays.",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "looking forward to"
+        },
+        {
+          "id": "b",
+          "text": "looking after",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "looking into",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איך מרגישים לפני החופש?",
+          "en": "How do you feel before the holidays?"
+        }
+      ],
+      "explanation": {
+        "he": "look forward to = לחכות בקוצר רוח, לצפות בשמחה למשהו. אחרי to בא שם עצם או ing.",
+        "en": "look forward to = wait happily for. After it: a noun or -ing."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:look-forward-to",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "I'm really looking forward to the summer holidays."
+    },
+    {
+      "id": "lf.pv.take-off",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.3,
+      "prompt": "\"Our plane took off at six in the morning.\" What does \"took off\" mean?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "left the ground"
+        },
+        {
+          "id": "b",
+          "text": "landed"
+        },
+        {
+          "id": "c",
+          "text": "was delayed"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה מטוס עושה בתחילת טיסה?",
+          "en": "What does a plane do at the start of a flight?"
+        }
+      ],
+      "explanation": {
+        "he": "take off (מטוס) = להמריא. land = לנחות. take off גם אומר להוריד בגד.",
+        "en": "take off (plane) = leave the ground. The opposite is land."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:take-off",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.set-up",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "\"Two friends set up a small business selling cakes.\" What does \"set up\" mean?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "started"
+        },
+        {
+          "id": "b",
+          "text": "closed"
+        },
+        {
+          "id": "c",
+          "text": "sold"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "עסק חדש.",
+          "en": "A new business."
+        }
+      ],
+      "explanation": {
+        "he": "set up a business = להקים עסק.",
+        "en": "set up = start or create something."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:set-up",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.carry-on",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Sorry for interrupting. Please ___ with your story.",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "carry on"
+        },
+        {
+          "id": "b",
+          "text": "carry out",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "carry away",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הדובר/ת הפריע/ה. מה הסיפור צריך לעשות עכשיו?",
+          "en": "Someone interrupted. What should the story do now?"
+        }
+      ],
+      "explanation": {
+        "he": "carry on = להמשיך. carry out = לבצע (משימה, ניסוי).",
+        "en": "carry on = continue. carry out = do a task."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:carry-on",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "Sorry for interrupting. Please carry on with your story."
+    },
+    {
+      "id": "lf.pv.break-down",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "Our car ___ on the way to Eilat, so we called for help.",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "broke down"
+        },
+        {
+          "id": "b",
+          "text": "broke up",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "broke out",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למה היו צריכים עזרה?",
+          "en": "Why did they need help?"
+        }
+      ],
+      "explanation": {
+        "he": "break down = להתקלקל (רכב, מכונה). break up = להיפרד. break out = לפרוץ (מלחמה, שריפה).",
+        "en": "break down = stop working. break up = end a relationship."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:break-down",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "Our car broke down on the way to Eilat, so we called for help."
+    },
+    {
+      "id": "lf.pv.bring-up",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"She was brought up by her grandparents.\" What does \"brought up\" mean?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "raised"
+        },
+        {
+          "id": "b",
+          "text": "carried upstairs",
+          "misconception": "phrasal.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "visited often"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מי גידל אותה?",
+          "en": "Who took care of her as a child?"
+        }
+      ],
+      "explanation": {
+        "he": "bring up a child = לגדל ילד. לא קשור להעלות למעלה.",
+        "en": "bring up = raise a child."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:bring-up",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.figure-out",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "I can't ___ how this new app works.",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "figure out"
+        },
+        {
+          "id": "b",
+          "text": "give out",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "put out",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להבין משהו אחרי מחשבה.",
+          "en": "understand something after thinking."
+        }
+      ],
+      "explanation": {
+        "he": "figure out = להבין, לפענח. give out = לחלק. put out = לכבות.",
+        "en": "figure out = understand after thinking."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:figure-out",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "I can't figure out how this new app works."
+    },
+    {
+      "id": "lf.pv.show-up",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"Only five people showed up to the meeting.\" What does \"showed up\" mean?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "came"
+        },
+        {
+          "id": "b",
+          "text": "complained"
+        },
+        {
+          "id": "c",
+          "text": "showed photos",
+          "misconception": "phrasal.literal-meaning"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כמה אנשים היו בפגישה?",
+          "en": "How many people were at the meeting?"
+        }
+      ],
+      "explanation": {
+        "he": "show up = להגיע, להופיע. רק חמישה אנשים הגיעו.",
+        "en": "show up = arrive, come."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:show-up",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.pick-up",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "Can you ___ my little brother from school today?",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "pick up"
+        },
+        {
+          "id": "b",
+          "text": "pick out",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "pick off",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לאסוף מישהו ברכב.",
+          "en": "collect someone by car."
+        }
+      ],
+      "explanation": {
+        "he": "pick up = לאסוף (מישהו או משהו). pick out = לבחור.",
+        "en": "pick up = collect. pick out = choose."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:pick-up",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "Can you pick up my little brother from school today?"
+    },
+    {
+      "id": "lf.pv.look-up",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"If you don't know a word, look it up in the dictionary.\" What does \"look up\" mean?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "search for information"
+        },
+        {
+          "id": "b",
+          "text": "look at the sky",
+          "misconception": "phrasal.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "learn by heart"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה עושים עם מילון?",
+          "en": "What do you do with a dictionary?"
+        }
+      ],
+      "explanation": {
+        "he": "look up a word = לחפש מילה במילון או ברשת.",
+        "en": "look up = search for information."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:look-up",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.get-over",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"It took her two weeks to get over the flu.\" What does \"get over\" mean?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "recover from"
+        },
+        {
+          "id": "b",
+          "text": "catch"
+        },
+        {
+          "id": "c",
+          "text": "jump over",
+          "misconception": "phrasal.literal-meaning"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "שבועיים אחרי שחלתה, מה קרה?",
+          "en": "Two weeks after getting sick, what happened?"
+        }
+      ],
+      "explanation": {
+        "he": "get over an illness = להחלים ממחלה. get over גם = להתגבר על משהו.",
+        "en": "get over = recover from."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:get-over",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.cut-down-on",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "The doctor told him to ___ sugar.",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "cut down on"
+        },
+        {
+          "id": "b",
+          "text": "cut up",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "cut in",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "רופא ממליץ לאכול פחות.",
+          "en": "A doctor says eat less."
+        }
+      ],
+      "explanation": {
+        "he": "cut down on = להפחית. cut up = לחתוך לחתיכות. cut in = להתפרץ לשיחה.",
+        "en": "cut down on = have less of."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:cut-down-on",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "The doctor told him to cut down on sugar."
+    },
+    {
+      "id": "lf.pv.make-up",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"He made up a story about a dragon to explain why he was late.\" What does \"made up\" mean?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "invented"
+        },
+        {
+          "id": "b",
+          "text": "remembered"
+        },
+        {
+          "id": "c",
+          "text": "read"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "דרקון אמיתי? כנראה שלא.",
+          "en": "A real dragon? Probably not."
+        }
+      ],
+      "explanation": {
+        "he": "make up a story = להמציא סיפור. הוא לא אמר את האמת.",
+        "en": "make up = invent, often something not true."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:make-up",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.call-off",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "The match was ___ because of the storm.",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "called off"
+        },
+        {
+          "id": "b",
+          "text": "called up",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "called back",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "סערה. המשחק התקיים?",
+          "en": "A storm. Did the match happen?"
+        }
+      ],
+      "explanation": {
+        "he": "call off = לבטל. call back = להתקשר בחזרה. call up = להתקשר, לגייס.",
+        "en": "call off = cancel."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:call-off",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "The match was called off because of the storm."
+    },
+    {
+      "id": "lf.pv.hand-in",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "Students must ___ their essays to the teacher by Friday.",
+      "instruction": {
+        "he": "לבחור את הצירוף המתאים",
+        "en": "Choose the correct phrasal verb"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "hand in"
+        },
+        {
+          "id": "b",
+          "text": "hand out",
+          "misconception": "phrasal.wrong-particle"
+        },
+        {
+          "id": "c",
+          "text": "hand down",
+          "misconception": "phrasal.wrong-particle"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "התלמידים נותנים למורה.",
+          "en": "Students give to the teacher."
+        }
+      ],
+      "explanation": {
+        "he": "hand in = להגיש (עבודה). hand out = לחלק. המורה עושה hand out, התלמידים עושים hand in.",
+        "en": "hand in = give work to a teacher. hand out = give to many people."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:hand-in",
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "Students must hand in their essays to the teacher by Friday."
+    },
+    {
+      "id": "lf.pv.look-into",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"The police are looking into the robbery.\" What does \"looking into\" mean?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "investigating"
+        },
+        {
+          "id": "b",
+          "text": "looking inside",
+          "misconception": "phrasal.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "reporting on TV"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה המשטרה עושה אחרי שוד?",
+          "en": "What do the police do after a robbery?"
+        }
+      ],
+      "explanation": {
+        "he": "look into = לחקור, לבדוק לעומק.",
+        "en": "look into = investigate."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:look-into",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.pv.work-out",
+      "type": "choice",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"I work out at the gym three times a week.\" What does \"work out\" mean here?",
+      "instruction": {
+        "he": "לבחור את הפירוש הנכון",
+        "en": "Choose the correct meaning"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "exercise"
+        },
+        {
+          "id": "b",
+          "text": "have a job"
+        },
+        {
+          "id": "c",
+          "text": "relax"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה עושים בחדר כושר?",
+          "en": "What do you do at the gym?"
+        }
+      ],
+      "explanation": {
+        "he": "work out = להתאמן. ל־work out יש גם משמעות של לפתור בעיה, אבל at the gym מראה שמדובר באימון.",
+        "en": "work out at the gym = exercise."
+      },
+      "tags": [
+        "phrasal"
+      ],
+      "unit": "pv:work-out",
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.piece-of-cake",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B1",
+      "difficulty": 0.3,
+      "prompt": "\"Don't worry about the test. It's a piece of cake.\" What does this mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It's very easy."
+        },
+        {
+          "id": "b",
+          "text": "It's very sweet.",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "It's very long."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "Don't worry = אין סיבה לדאגה.",
+          "en": "Don't worry = no problem."
+        }
+      ],
+      "explanation": {
+        "he": "a piece of cake = קל מאוד, בעברית \"קלי קלות\" או \"קטן עליי\".",
+        "en": "a piece of cake = very easy."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:piece-of-cake",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.break-the-ice",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"At the start of the party, Dan told a joke to break the ice.\" Why did Dan tell a joke?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To help people relax and start talking"
+        },
+        {
+          "id": "b",
+          "text": "To make the room colder",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "To end the party"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "תחילת מסיבה, אנשים לא מכירים.",
+          "en": "The start of a party, people don't know each other."
+        }
+      ],
+      "explanation": {
+        "he": "break the ice = לשבור את הקרח. בדיוק כמו בעברית: להפיג מבוכה בתחילת מפגש.",
+        "en": "break the ice = make people feel relaxed. Hebrew has the same idiom."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:break-the-ice",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.under-the-weather",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"I'm a bit under the weather today, so I'll stay home.\" How does the speaker feel?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Slightly sick"
+        },
+        {
+          "id": "b",
+          "text": "Cold because of the rain",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "Very excited"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למה להישאר בבית?",
+          "en": "Why stay at home?"
+        }
+      ],
+      "explanation": {
+        "he": "under the weather = לא מרגיש/ה טוב, \"לא בקו הבריאות\".",
+        "en": "under the weather = a little ill."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:under-the-weather",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.arm-and-a-leg",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"I love this phone, but it costs an arm and a leg.\" What does this mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It's very expensive."
+        },
+        {
+          "id": "b",
+          "text": "It can hurt you.",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "It's very cheap."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "but = אבל. יש בעיה.",
+          "en": "but = there's a problem."
+        }
+      ],
+      "explanation": {
+        "he": "cost an arm and a leg = עולה הון תועפות, יקר מאוד.",
+        "en": "costs an arm and a leg = very expensive."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:arm-and-a-leg",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.hit-the-books",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"The exam is on Monday, so this weekend I have to hit the books.\" What will the speaker do?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Study hard"
+        },
+        {
+          "id": "b",
+          "text": "Throw books",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "Buy new books"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה עושים לפני מבחן?",
+          "en": "What do you do before an exam?"
+        }
+      ],
+      "explanation": {
+        "he": "hit the books = ללמוד הרבה, \"לשבת על הספרים\".",
+        "en": "hit the books = study hard."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:hit-the-books",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.blue-moon",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"We only eat out once in a blue moon.\" How often do they eat out?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Very rarely"
+        },
+        {
+          "id": "b",
+          "text": "Every month"
+        },
+        {
+          "id": "c",
+          "text": "Only at night",
+          "misconception": "idioms.literal-meaning"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "once = פעם אחת. blue moon לא קורה הרבה.",
+          "en": "once = one time. A blue moon is rare."
+        }
+      ],
+      "explanation": {
+        "he": "once in a blue moon = לעיתים רחוקות מאוד. בעברית: \"אחת ליובל\".",
+        "en": "once in a blue moon = very rarely."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:blue-moon",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.spill-the-beans",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"It was a surprise party, but my little brother spilled the beans.\" What did the brother do?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He told the secret."
+        },
+        {
+          "id": "b",
+          "text": "He dropped the food.",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "He forgot the party."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מסיבת הפתעה. מה יכול להרוס אותה?",
+          "en": "A surprise party. What could ruin it?"
+        }
+      ],
+      "explanation": {
+        "he": "spill the beans = לגלות סוד, \"לפלוט\".",
+        "en": "spill the beans = tell a secret."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:spill-the-beans",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.ball-in-your-court",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"I've said sorry three times. Now the ball is in your court.\" What does the speaker mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It's your turn to act."
+        },
+        {
+          "id": "b",
+          "text": "Let's play tennis.",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "The game is over."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה תורו של מי?",
+          "en": "Whose turn is it?"
+        }
+      ],
+      "explanation": {
+        "he": "the ball is in your court = הכדור אצלך, עכשיו תורך להחליט או לפעול.",
+        "en": "The ball is in your court = now it's your decision."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:ball-in-your-court",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.cloud-nine",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"When she got the scholarship, she was on cloud nine.\" How did she feel?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Extremely happy"
+        },
+        {
+          "id": "b",
+          "text": "Very confused",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "A little tired"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מלגה זו בשורה טובה.",
+          "en": "A scholarship is good news."
+        }
+      ],
+      "explanation": {
+        "he": "on cloud nine = מאושר/ת מאוד. בעברית: \"ברקיע השביעי\".",
+        "en": "on cloud nine = extremely happy."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:cloud-nine",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.pigs-fly",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"My brother will clean his room when pigs fly.\" What does the speaker think?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He will never clean it."
+        },
+        {
+          "id": "b",
+          "text": "He will clean it soon."
+        },
+        {
+          "id": "c",
+          "text": "He will clean it with animals.",
+          "misconception": "idioms.literal-meaning"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "חזירים עפים?",
+          "en": "Can pigs fly?"
+        }
+      ],
+      "explanation": {
+        "he": "when pigs fly = אף פעם. בעברית: \"כשיצמחו לי שערות על כף היד\".",
+        "en": "when pigs fly = never."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:pigs-fly",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.blessing-in-disguise",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.8,
+      "prompt": "\"Missing the bus was a blessing in disguise: I met my best friend while waiting for the next one.\" What does this mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Something bad that led to something good"
+        },
+        {
+          "id": "b",
+          "text": "Something good that became bad"
+        },
+        {
+          "id": "c",
+          "text": "A present wrapped in paper",
+          "misconception": "idioms.literal-meaning"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה קרה בסוף?",
+          "en": "What happened in the end?"
+        }
+      ],
+      "explanation": {
+        "he": "a blessing in disguise = ברכה בתחפושת, \"גם זו לטובה\". משהו רע שהוביל לטוב.",
+        "en": "a blessing in disguise = a bad thing that turns out good."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:blessing-in-disguise",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.call-it-a-day",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"We've been working for ten hours. Let's call it a day.\" What does the speaker suggest?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To stop working for today"
+        },
+        {
+          "id": "b",
+          "text": "To phone someone",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "To work through the night"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "עשר שעות עבודה. מה רוצים לעשות?",
+          "en": "Ten hours of work. What do they want?"
+        }
+      ],
+      "explanation": {
+        "he": "call it a day = לסיים להיום.",
+        "en": "call it a day = stop for today."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:call-it-a-day",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.cold-feet",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"He wanted to sing at the show, but he got cold feet.\" What happened?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He became too nervous to do it."
+        },
+        {
+          "id": "b",
+          "text": "His feet were cold.",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "He sang very well."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "but = משהו השתנה.",
+          "en": "but = something changed."
+        }
+      ],
+      "explanation": {
+        "he": "get cold feet = להילחץ ולהתחרט ברגע האחרון.",
+        "en": "get cold feet = become too nervous to do something."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:cold-feet",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.hot-water",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"If Mom sees this mess, we'll be in hot water.\" What does the speaker mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "We'll be in trouble."
+        },
+        {
+          "id": "b",
+          "text": "We'll need a bath.",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "We'll be happy."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "אמא רואה בלגן.",
+          "en": "Mom sees a mess."
+        }
+      ],
+      "explanation": {
+        "he": "be in hot water = להיות בצרות.",
+        "en": "in hot water = in trouble."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:hot-water",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.keep-an-eye",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"Can you keep an eye on my bag while I buy a drink?\" What is the speaker asking?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To watch the bag"
+        },
+        {
+          "id": "b",
+          "text": "To open the bag"
+        },
+        {
+          "id": "c",
+          "text": "To put something in the bag",
+          "misconception": "idioms.literal-meaning"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למה צריך עזרה עם התיק?",
+          "en": "Why does the bag need help?"
+        }
+      ],
+      "explanation": {
+        "he": "keep an eye on = לשמור על, להשגיח. בעברית: \"לפקוח עין\".",
+        "en": "keep an eye on = watch carefully."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:keep-an-eye",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.pull-leg",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"Did you really meet the president, or are you pulling my leg?\" What does the speaker think?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The other person may be joking."
+        },
+        {
+          "id": "b",
+          "text": "The other person hurt them.",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "The other person is famous."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "really? = באמת?",
+          "en": "really? = is it true?"
+        }
+      ],
+      "explanation": {
+        "he": "pull someone's leg = לעבוד על מישהו בצחוק, \"לסובב\".",
+        "en": "pull someone's leg = joke, tell something untrue for fun."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:pull-leg",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.eye-to-eye",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "\"My sister and I don't see eye to eye about music.\" What does this mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "They disagree."
+        },
+        {
+          "id": "b",
+          "text": "They agree."
+        },
+        {
+          "id": "c",
+          "text": "They can't see each other.",
+          "misconception": "idioms.literal-meaning"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "don't = לא.",
+          "en": "don't = not."
+        }
+      ],
+      "explanation": {
+        "he": "see eye to eye = להסכים, לראות עין בעין. כמו בעברית. don't = הן לא מסכימות.",
+        "en": "see eye to eye = agree. They don't agree."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:eye-to-eye",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.sit-on-the-fence",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"You can't sit on the fence forever. Which team do you support?\" What does \"sit on the fence\" mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Not choose a side"
+        },
+        {
+          "id": "b",
+          "text": "Sit outside",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "Support both teams loudly"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "Which team? = איזו קבוצה?",
+          "en": "Which team? = choose one."
+        }
+      ],
+      "explanation": {
+        "he": "sit on the fence = לשבת על הגדר, לא לבחור צד. כמו בעברית.",
+        "en": "sit on the fence = not decide between two sides."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:sit-on-the-fence",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.last-straw",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"He was late every day, and when he lost the keys, that was the last straw.\" What does this mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The final problem that made someone lose patience"
+        },
+        {
+          "id": "b",
+          "text": "The last drink",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "The first mistake"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הרבה בעיות, ואז עוד אחת.",
+          "en": "Many problems, and then one more."
+        }
+      ],
+      "explanation": {
+        "he": "the last straw = הקש ששבר את גב הגמל. הבעיה האחרונה שאחריה כבר אין סבלנות.",
+        "en": "the last straw = the last problem after many, too much."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:last-straw",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.by-heart",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "\"I know all the words of this song by heart.\" What does this mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I can say them without looking."
+        },
+        {
+          "id": "b",
+          "text": "I love them very much.",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "I wrote them myself."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לדעת שיר בלי דף.",
+          "en": "know a song without paper."
+        }
+      ],
+      "explanation": {
+        "he": "know by heart = לדעת בעל פה.",
+        "en": "by heart = from memory."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:by-heart",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.nail-on-the-head",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "\"You hit the nail on the head: the real problem is that we don't have enough time.\" What does this mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "You said exactly the right thing."
+        },
+        {
+          "id": "b",
+          "text": "You fixed something with a hammer.",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "You made a big mistake."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "the real problem = הבעיה האמיתית.",
+          "en": "the real problem = the true reason."
+        }
+      ],
+      "explanation": {
+        "he": "hit the nail on the head = לקלוע בדיוק, \"בול\".",
+        "en": "hit the nail on the head = be exactly right."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:nail-on-the-head",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.two-birds",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "\"I walk to work, so I kill two birds with one stone: I exercise and save money.\" What does this mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Doing two things with one action"
+        },
+        {
+          "id": "b",
+          "text": "Hunting birds",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "Wasting time"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כמה דברים טובים יוצאים מההליכה?",
+          "en": "How many good things come from walking?"
+        }
+      ],
+      "explanation": {
+        "he": "kill two birds with one stone = לתפוס שתי ציפורים במכה אחת. בדיוק כמו בעברית.",
+        "en": "kill two birds with one stone = do two things with one action."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:two-birds",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.actions-louder",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"He always says he'll help, but actions speak louder than words.\" What does the speaker mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "What you do matters more than what you say."
+        },
+        {
+          "id": "b",
+          "text": "Talking loudly is important."
+        },
+        {
+          "id": "c",
+          "text": "Actions make a lot of noise.",
+          "misconception": "idioms.literal-meaning"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "he says... but = הוא אומר, אבל...",
+          "en": "He says... but..."
+        }
+      ],
+      "explanation": {
+        "he": "actions speak louder than words = מעשים חשובים יותר ממילים. בעברית: \"לא המדרש עיקר אלא המעשה\".",
+        "en": "What you do shows more than what you say."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:actions-louder",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.break-a-leg",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "\"Before the show, her friends told her, 'Break a leg!'\" What did they mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Good luck!"
+        },
+        {
+          "id": "b",
+          "text": "Be careful, you might fall!",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "Go home!"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה אומרים לשחקן לפני הופעה?",
+          "en": "What do we say to an actor before a show?"
+        }
+      ],
+      "explanation": {
+        "he": "break a leg = בהצלחה. אומרים את זה בעיקר לפני הופעה.",
+        "en": "break a leg = good luck, before a performance."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:break-a-leg",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    },
+    {
+      "id": "lf.idiom.out-of-the-blue",
+      "type": "choice",
+      "skill": "vocabulary.idioms",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "\"I hadn't heard from Ori for years, and then he called me out of the blue.\" What does this mean?",
+      "instruction": {
+        "he": "לבחור מה הביטוי אומר כאן",
+        "en": "Choose what the expression means here"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Suddenly, without warning"
+        },
+        {
+          "id": "b",
+          "text": "From the sky",
+          "misconception": "idioms.literal-meaning"
+        },
+        {
+          "id": "c",
+          "text": "Every day"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "hadn't heard for years = שנים לא שמעתי.",
+          "en": "No contact for years."
+        }
+      ],
+      "explanation": {
+        "he": "out of the blue = פתאום, משום מקום. בעברית: \"כרעם ביום בהיר\".",
+        "en": "out of the blue = suddenly, unexpectedly."
+      },
+      "tags": [
+        "idiom"
+      ],
+      "unit": "idiom:out-of-the-blue",
+      "estimatedTimeSec": 25,
+      "source": "original"
+    }
+  ],
+  "passages": [],
+  "lessons": [
+    {
+      "id": "lesson.phrasal-verbs",
+      "skill": "vocabulary.phrasal-verbs",
+      "level": "B1",
+      "title": {
+        "he": "פעלים עם מילית",
+        "en": "Phrasal Verbs"
+      },
+      "goal": "להבין מה זה phrasal verb ולזהות את המשמעות שלו מתוך ההקשר.",
+      "blocks": [
+        {
+          "kind": "text",
+          "he": "phrasal verb הוא פועל ועוד מילית קטנה (up, off, out, on...). יחד הם יוצרים משמעות חדשה, שלפעמים לא קשורה בכלל למילים עצמן. בעברית יש מעט צירופים כאלה, ובאנגלית יש מאות."
+        },
+        {
+          "kind": "rule",
+          "he": "המבנה",
+          "pattern": "verb + particle (+ preposition)"
+        },
+        {
+          "kind": "examples",
+          "items": [
+            {
+              "en": "I gave up chocolate for a month.",
+              "he": "ויתרתי על שוקולד לחודש.",
+              "note": "give up = לוותר"
+            },
+            {
+              "en": "Can you look after my cat?",
+              "he": "אפשר לשמור על החתול שלי?",
+              "note": "look after = לשמור על"
+            },
+            {
+              "en": "We ran out of time.",
+              "he": "נגמר לנו הזמן.",
+              "note": "run out of = שנגמר משהו"
+            },
+            {
+              "en": "She came up with a brilliant idea.",
+              "he": "היא המציאה רעיון מבריק.",
+              "note": "come up with = להמציא"
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "head": [
+            "פועל",
+            "עם מילית",
+            "משמעות"
+          ],
+          "rows": [
+            [
+              "look",
+              "look after / look for / look up",
+              "לשמור על / לחפש / לחפש מידע"
+            ],
+            [
+              "turn",
+              "turn on / turn off / turn down",
+              "להדליק / לכבות / לסרב, להנמיך"
+            ],
+            [
+              "break",
+              "break down / break up",
+              "להתקלקל / להיפרד"
+            ],
+            [
+              "call",
+              "call off / call back",
+              "לבטל / להתקשר בחזרה"
+            ]
+          ]
+        },
+        {
+          "kind": "mistake",
+          "wrong": "Please pick up me at five.",
+          "right": "Please pick me up at five.",
+          "he": "כשהמושא הוא כינוי גוף (me, it, him), הוא בא בין הפועל למילית."
+        },
+        {
+          "kind": "tip",
+          "he": "לא לתרגם מילה במילה. bring up a child זה לגדל ילד, לא להעלות אותו למעלה. כדאי ללמוד כל צירוף עם משפט דוגמה שלם."
+        }
+      ],
+      "source": "original"
+    },
+    {
+      "id": "lesson.listening-tips",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "title": {
+        "he": "איך להקשיב טוב יותר",
+        "en": "Listening Tips"
+      },
+      "goal": "להבין משפטים מדוברים בעזרת מילים מודגשות וקיצורים נפוצים.",
+      "blocks": [
+        {
+          "kind": "text",
+          "he": "דוברי אנגלית לא אומרים כל מילה באותה עוצמה. המילים החשובות (שמות עצם, פעלים, מספרים, not) מודגשות וברורות. המילים הקטנות (a, the, to, of) נאמרות מהר ובשקט. לכן לא צריך לשמוע כל מילה כדי להבין."
+        },
+        {
+          "kind": "examples",
+          "items": [
+            {
+              "en": "I WANT to BUY a NEW PHONE.",
+              "he": "המילים המודגשות לבדן כבר מספרות את הסיפור.",
+              "note": "want, buy, new, phone"
+            },
+            {
+              "en": "She DIDN'T come to the PARTY.",
+              "he": "היא לא באה למסיבה.",
+              "note": "didn't תמיד חשוב"
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "head": [
+            "שומעים",
+            "המשמעות",
+            "דוגמה"
+          ],
+          "rows": [
+            [
+              "gonna",
+              "going to",
+              "I'm gonna call you."
+            ],
+            [
+              "wanna",
+              "want to",
+              "Do you wanna come?"
+            ],
+            [
+              "gotta",
+              "have got to",
+              "I gotta go."
+            ],
+            [
+              "I'd",
+              "I would / I had",
+              "I'd like some tea."
+            ],
+            [
+              "you'll",
+              "you will",
+              "You'll love it."
+            ]
+          ]
+        },
+        {
+          "kind": "rule",
+          "he": "I'd + פועל בסיסי = I would. I'd + V3 = I had.",
+          "pattern": "I'd like = I would like / I'd finished = I had finished"
+        },
+        {
+          "kind": "mistake",
+          "wrong": "Do you wanna to come?",
+          "right": "Do you wanna come?",
+          "he": "wanna כבר כולל את to, ולכן לא מוסיפים to אחריו."
+        },
+        {
+          "kind": "tip",
+          "he": "can ו־can't נשמעות דומות. ב־can't התנועה ארוכה ומודגשת, וב־can היא קצרה וחלשה. כדאי לשים לב להדגשה."
+        },
+        {
+          "kind": "tip",
+          "he": "לפני ההאזנה כדאי לקרוא את השאלה ולחשוב איזה מידע מחפשים: זמן? מקום? סיבה? ככה יודעים לאן להקשיב."
+        },
+        {
+          "kind": "tip",
+          "he": "מילים כמו but, so, because, unless מסמנות את החלק החשוב. מה שבא אחרי but הוא בדרך כלל העיקר."
+        }
+      ],
+      "source": "original"
+    }
+  ]
+}

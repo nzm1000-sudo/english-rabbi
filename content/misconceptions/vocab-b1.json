@@ -1,0 +1,8 @@
+[
+  {
+    "id": "vocabulary.invent-discover",
+    "skill": "vocabulary.context",
+    "note": { "he": "מתבלבל/ת בין invent (להמציא) ל־discover (לגלות)", "en": "Confuses invent and discover" },
+    "tip": { "he": "invent = ליצור משהו חדש שלא היה קיים (מטוס, טלפון). discover = למצוא משהו שכבר היה קיים (כוכב, יבשת).", "en": "invent = make something new. discover = find something that already existed." }
+  }
+]

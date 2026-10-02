@@ -1,0 +1,122 @@
+[
+  {
+    "id": "listening.vowel-quality",
+    "skill": "listening.words",
+    "note": {
+      "he": "מתבלבל/ת בין תנועות קצרות דומות (bad / bed, cat / cut, walk / work)",
+      "en": "Confuses similar short vowels (bad / bed, cat / cut, walk / work)"
+    },
+    "tip": {
+      "he": "באנגלית יש יותר תנועות מבעברית. כדאי להקשיב לזוגות מילים ולשים לב כמה הפה נפתח.",
+      "en": "English has more vowels than Hebrew. Listen to word pairs and notice how wide the mouth opens."
+    }
+  },
+  {
+    "id": "listening.th-sound",
+    "skill": "listening.words",
+    "note": {
+      "he": "לא שומע/ת את ההבדל בין th לבין s או t (think / sink, three / tree)",
+      "en": "Does not hear th vs s or t (think / sink, three / tree)"
+    },
+    "tip": {
+      "he": "בעברית אין צליל th. אומרים אותו כשהלשון יוצאת מעט בין השיניים. כדאי לנסות להגיד think ו־sink מול מראה.",
+      "en": "Hebrew has no th. Say it with the tongue a little between the teeth. Try think and sink in front of a mirror."
+    }
+  },
+  {
+    "id": "listening.w-v",
+    "skill": "listening.words",
+    "note": {
+      "he": "מתבלבל/ת בין w ל־v (west / vest)",
+      "en": "Confuses w and v (west / vest)"
+    },
+    "tip": {
+      "he": "ב־w השפתיים עגולות, כמו \"וּ\" קצרה. ב־v השיניים העליונות נוגעות בשפה התחתונה.",
+      "en": "For w the lips are round. For v the top teeth touch the bottom lip."
+    }
+  },
+  {
+    "id": "listening.final-sound",
+    "skill": "listening.words",
+    "note": {
+      "he": "לא שומע/ת את הצליל בסוף המילה (eyes / ice, wash / watch)",
+      "en": "Misses the final sound of a word (eyes / ice, wash / watch)"
+    },
+    "tip": {
+      "he": "הרבה פעמים ההבדל בין שתי מילים נמצא רק בסוף. כדאי להקשיב עד הסוף ולא לנחש מההתחלה.",
+      "en": "Often the only difference is at the end. Listen to the whole word."
+    }
+  },
+  {
+    "id": "spelling.ie-ei",
+    "skill": "writing.spelling",
+    "note": {
+      "he": "מתבלבל/ת בין ie ל־ei (freind, recieve)",
+      "en": "Mixes up ie and ei (freind, recieve)"
+    },
+    "tip": {
+      "he": "הכלל: i before e, except after c. לכן friend, believe, אבל receive.",
+      "en": "Rule: i before e, except after c: friend, believe, but receive."
+    }
+  },
+  {
+    "id": "spelling.double-letters",
+    "skill": "writing.spelling",
+    "note": {
+      "he": "שוכח/ת או מוסיף/ה אותיות כפולות (adress, neccessary)",
+      "en": "Drops or adds double letters (adress, neccessary)"
+    },
+    "tip": {
+      "he": "כדאי ללמוד טריק לכל מילה: necessary = one collar, two sleeves. address = dd ו־ss.",
+      "en": "Learn a trick per word: necessary = one collar, two sleeves."
+    }
+  },
+  {
+    "id": "spelling.silent-letters",
+    "skill": "writing.spelling",
+    "note": {
+      "he": "משמיט/ה אותיות שקטות (wich, Wensday, nowledge)",
+      "en": "Leaves out silent letters (wich, Wensday, nowledge)"
+    },
+    "tip": {
+      "he": "יש אותיות שכותבים ולא שומעים: h ב־which, d ב־Wednesday, k ב־know. כדאי לומר את המילה בשקט כמו שהיא כתובה: Wed-nes-day.",
+      "en": "Some letters are written but not heard. Say the word as it is spelled: Wed-nes-day."
+    }
+  },
+  {
+    "id": "phrasal.wrong-particle",
+    "skill": "vocabulary.phrasal-verbs",
+    "note": {
+      "he": "בוחר/ת את המילית הלא נכונה בפועל עם מילית (look for במקום look after)",
+      "en": "Chooses the wrong particle in a phrasal verb (look for instead of look after)"
+    },
+    "tip": {
+      "he": "המילית משנה את כל המשמעות. כדאי ללמוד כל צירוף כמילה אחת, עם משפט דוגמה.",
+      "en": "The particle changes the meaning. Learn each phrasal verb as one word, with an example."
+    }
+  },
+  {
+    "id": "phrasal.literal-meaning",
+    "skill": "vocabulary.phrasal-verbs",
+    "note": {
+      "he": "מתרגם/ת פועל עם מילית מילה במילה (bring up = להעלות למעלה)",
+      "en": "Translates a phrasal verb word by word (bring up = carry upstairs)"
+    },
+    "tip": {
+      "he": "לרוב המשמעות של phrasal verb שונה מהמילים שלו. כדאי לבדוק מה ההקשר אומר.",
+      "en": "A phrasal verb often means something new. Use the context."
+    }
+  },
+  {
+    "id": "idioms.literal-meaning",
+    "skill": "vocabulary.idioms",
+    "note": {
+      "he": "מבין/ה ביטוי מילולית (a piece of cake = חתיכת עוגה)",
+      "en": "Understands an idiom literally (a piece of cake = cake)"
+    },
+    "tip": {
+      "he": "כשמשפט נשמע מוזר בהקשר, כנראה זה ביטוי. כדאי לשאול מה הוא אומר על המצב.",
+      "en": "If it sounds strange in context, it's probably an idiom. Ask what it says about the situation."
+    }
+  }
+]
