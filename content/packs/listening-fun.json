@@ -2925,8 +2925,8 @@
           "en": "It starts with be."
         },
         {
-          "he": "be + cause",
-          "en": "be + cause"
+          "he": "אחרי be באה מילה שפירושה סיבה.",
+          "en": "After be comes a word that means reason."
         }
       ],
       "explanation": {
@@ -3046,8 +3046,8 @@
           "en": "one c, double s."
         },
         {
-          "he": "ne-ce-ss-ary",
-          "en": "ne-ce-ss-ary"
+          "he": "הסוף נכתב ary.",
+          "en": "The ending is spelled ary."
         }
       ],
       "explanation": {
@@ -3215,8 +3215,8 @@
           "en": "double f."
         },
         {
-          "he": "diff + er + ent",
-          "en": "diff + er + ent"
+          "he": "אחרי ה־ff יש e שכמעט לא שומעים.",
+          "en": "After the ff there is an e you can hardly hear."
         }
       ],
       "explanation": {
@@ -3275,8 +3275,8 @@
           "en": "It starts with bus."
         },
         {
-          "he": "bus + i + ness",
-          "en": "bus + i + ness"
+          "he": "אחרי bus יש i שקטה.",
+          "en": "After bus there is a quiet i."
         }
       ],
       "explanation": {
@@ -3434,8 +3434,8 @@
           "en": "A day of the week."
         },
         {
-          "he": "Wed + nes + day",
-          "en": "Wed + nes + day"
+          "he": "יש בה d שלא שומעים, קרוב להתחלה.",
+          "en": "There is a d you don't hear near the start."
         }
       ],
       "explanation": {
@@ -3493,8 +3493,8 @@
           "en": "two r."
         },
         {
-          "he": "lib + rary",
-          "en": "lib + rary"
+          "he": "יש r מיד אחרי ה־b.",
+          "en": "There is an r right after the b."
         }
       ],
       "explanation": {
@@ -3554,8 +3554,8 @@
           "en": "two double letters."
         },
         {
-          "he": "a-dd-re-ss",
-          "en": "a-dd-re-ss"
+          "he": "האותיות הכפולות הן d ו־s.",
+          "en": "The double letters are d and s."
         }
       ],
       "explanation": {
@@ -3613,8 +3613,8 @@
           "en": "finite is inside it."
         },
         {
-          "he": "definite + ly",
-          "en": "definite + ly"
+          "he": "אין בה את האות a.",
+          "en": "There is no letter a in it."
         }
       ],
       "explanation": {
@@ -3673,8 +3673,8 @@
           "en": "It starts like know."
         },
         {
-          "he": "know + ledge",
-          "en": "know + ledge"
+          "he": "יש d לפני ה־g, כמו ב־edge.",
+          "en": "There is a d before the g, like in edge."
         }
       ],
       "explanation": {
@@ -3725,8 +3725,8 @@
           "en": "rest is inside it."
         },
         {
-          "he": "inter + est + ing",
-          "en": "inter + est + ing"
+          "he": "יש e אחרי ה־t הראשונה, גם אם לא שומעים אותה.",
+          "en": "There is an e after the first t, even if you don't hear it."
         }
       ],
       "explanation": {
@@ -4056,7 +4056,7 @@
         },
         {
           "id": "c",
-          "text": "A camera"
+          "text": "A cat"
         }
       ],
       "correctOptionId": "a",
@@ -4514,7 +4514,7 @@
         },
         {
           "id": "b",
-          "text": "An eye"
+          "text": "An egg"
         },
         {
           "id": "c",
@@ -4640,7 +4640,7 @@
         },
         {
           "id": "b",
-          "text": "Your nose"
+          "text": "Your hands"
         },
         {
           "id": "c",
@@ -4655,7 +4655,7 @@
         }
       ],
       "explanation": {
-        "he": "העתיד תמיד \"לפנינו\", אבל אי אפשר לראות אותו. את האף ואת הכביש אפשר לראות.",
+        "he": "העתיד תמיד \"לפנינו\", אבל אי אפשר לראות אותו. את הידיים ואת הכביש אפשר לראות.",
         "en": "The future is ahead of you, but you can't see it."
       },
       "tags": [

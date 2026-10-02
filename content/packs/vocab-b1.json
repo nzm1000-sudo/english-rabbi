@@ -3629,7 +3629,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "pollution"
+        "pollution",
+        "contamination"
       ],
       "hints": [
         {
@@ -4881,7 +4882,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "relationship"
+        "relationship",
+        "connection"
       ],
       "hints": [
         {
@@ -5468,7 +5470,7 @@
         },
         {
           "id": "d",
-          "text": "תחרות"
+          "text": "החלטה"
         }
       ],
       "correctOptionId": "a",
@@ -6260,8 +6262,8 @@
         "example": "Israel has a warm climate."
       },
       "difficulty": 0.55,
-      "prompt": "Penguins live in a very cold ___.",
-      "audioText": "Penguins live in a very cold climate.",
+      "prompt": "Polar bears live in a very cold ___.",
+      "audioText": "Polar bears live in a very cold climate.",
       "instruction": {
         "he": "איזו מילה מתאימה למשפט?",
         "en": "Which word fits the sentence?"
@@ -6287,8 +6289,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה מתאר את הקור הקבוע באזור שבו חיים פינגווינים?",
-          "en": "What describes the usual cold in the place where penguins live?"
+          "he": "מה מתאר את הקור הקבוע באזור שבו חיים דובי קוטב?",
+          "en": "What describes the usual cold in the place where polar bears live?"
         }
       ],
       "explanation": {
@@ -8096,7 +8098,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "ancient"
+        "ancient",
+        "antique"
       ],
       "hints": [
         {
@@ -8266,7 +8269,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "lonely"
+        "lonely",
+        "lonesome"
       ],
       "hints": [
         {
