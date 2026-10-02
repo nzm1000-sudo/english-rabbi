@@ -277,8 +277,8 @@
         }
       ],
       "explanation": {
-        "he": "יש כאן ניגוד מפתיע, ואחרי המילה בא משפט שלם (the test was hard). לכן Although. despite בא רק עם שם עצם.",
-        "en": "The result is surprising and a full clause follows, so Although. Despite needs a noun."
+        "he": "יש כאן ניגוד מפתיע, ואחרי המילה בא משפט שלם (the test was hard). לכן Although. despite בא רק עם שם עצם או עם ing, לא עם משפט שלם.",
+        "en": "The result is surprising and a full clause follows, so Although. Despite needs a noun or an -ing form, not a clause."
       },
       "interests": [
         "school"
@@ -518,7 +518,7 @@
         },
         {
           "id": "c",
-          "text": "Moreover"
+          "text": "Otherwise"
         },
         {
           "id": "d",
@@ -573,7 +573,7 @@
         },
         {
           "id": "d",
-          "text": "Moreover"
+          "text": "Otherwise"
         }
       ],
       "correctOptionId": "a",
@@ -2246,8 +2246,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'מצלמים'. באנגלית משתמשים בפועל שאינו make או do.",
-          "en": "In Hebrew we 'photograph'. English uses a verb that is not make or do."
+          "he": "באנגלית אותו פועל הולך עם a photo, a picture ו־a selfie. איזה מהם?",
+          "en": "English uses one verb with a photo, a picture and a selfie. Which one?"
         }
       ],
       "explanation": {
@@ -2389,8 +2389,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'שמים לב'. באנגלית הפועל קשור לכסף.",
-          "en": "In Hebrew we 'put' attention. In English the verb is about money."
+          "he": "בעברית \"שמים לב\". באנגלית התרגום המילולי put לא מתאים.",
+          "en": "In Hebrew we 'put' attention. In English the literal put doesn't work."
         }
       ],
       "explanation": {
@@ -2486,8 +2486,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'עושים מסיבה'. באנגלית 'יש' מסיבה.",
-          "en": "In Hebrew we 'make' a party. In English we 'have' one."
+          "he": "בעברית \"עושים מסיבה\". באנגלית התרגום המילולי לא מתאים.",
+          "en": "In Hebrew we 'make' a party. The literal translation doesn't work in English."
         }
       ],
       "explanation": {
@@ -2582,8 +2582,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'עושים הפסקה'. באנגלית לא make ולא do.",
-          "en": "In Hebrew we 'make' a break. In English it's not make or do."
+          "he": "בעברית \"עושים הפסקה\". באנגלית משתמשים באותו פועל כמו ב־a shower.",
+          "en": "In Hebrew we 'make' a break. English uses the same verb as with a shower."
         }
       ],
       "explanation": {
@@ -2822,8 +2822,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'עשה תאונה'. באנגלית התאונה 'קרתה לו', כמו שיש לו משהו.",
-          "en": "In Hebrew he 'did' an accident. In English the accident happened to him."
+          "he": "בעברית \"עשה תאונה\". באנגלית התרגום המילולי לא מתאים.",
+          "en": "In Hebrew he 'did' an accident. The literal translation doesn't work in English."
         }
       ],
       "explanation": {
@@ -2916,8 +2916,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "זה ביטוי קבוע עם 'לעשות'.",
-          "en": "It's a fixed phrase with a 'doing' verb."
+          "he": "זה ביטוי קבוע. חושבים על הפועל שהולך עם homework ועם the dishes.",
+          "en": "It is a fixed phrase. Think of the verb used with homework and the dishes."
         }
       ],
       "explanation": {
@@ -3044,8 +3044,7 @@
         },
         {
           "id": "b",
-          "text": "expensive",
-          "misconception": "collocations.hebrew-literal"
+          "text": "long"
         },
         {
           "id": "c",
@@ -3056,13 +3055,13 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית אומרים 'מחיר יקר'. באנגלית המחיר עצמו לא יקר.",
-          "en": "In Hebrew a price can be 'expensive'. In English the price itself isn't expensive."
+          "he": "מחיר הוא מספר. איזו מילה מתאימה למספר גדול?",
+          "en": "A price is a number. Which word fits a big number?"
         }
       ],
       "explanation": {
-        "he": "אומרים a high price. המוצר expensive, אבל המחיר high.",
-        "en": "We say a high price. A thing is expensive; its price is high."
+        "he": "אומרים a high price. בעברית אומרים \"מחיר יקר\", אבל באנגלית המוצר expensive והמחיר high. tall ו־long לא מתארים מחיר.",
+        "en": "We say a high price. A thing is expensive; its price is high. tall and long do not describe prices."
       },
       "interests": [
         "music"
@@ -3104,8 +3103,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'פותחים את האור'. באנגלית 'מסובבים' אותו.",
-          "en": "In Hebrew we 'open' the light. In English?"
+          "he": "בעברית \"פותחים את האור\". באנגלית התרגום המילולי לא מתאים.",
+          "en": "In Hebrew we 'open' the light. The literal word doesn't work in English."
         }
       ],
       "explanation": {
@@ -3205,8 +3204,8 @@
         }
       ],
       "explanation": {
-        "he": "על אנשים אומרים tall. high מתאים לדברים רחוקים מהקרקע, כמו מחיר או טמפרטורה. long לא מתאר אנשים.",
-        "en": "For people we say tall. high is for prices, temperatures and things far above the ground."
+        "he": "על אנשים אומרים tall. high מתאים למחיר, לטמפרטורה ולדברים שנמצאים גבוה מעל הקרקע. long לא מתאר גובה של אנשים.",
+        "en": "For people we say tall. high is for prices, temperatures and things far above the ground. long does not describe people's height."
       },
       "interests": [],
       "tags": [
@@ -3387,8 +3386,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'מספרים בדיחה'.",
-          "en": "In Hebrew you 'tell' a joke too."
+          "he": "זה צירוף קבוע, כמו ___ a story.",
+          "en": "It is a fixed phrase, like ___ a story."
         }
       ],
       "explanation": {
@@ -3624,8 +3623,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'עשינו כיף'. באנגלית לא משתמשים כאן ב־make או ב־do.",
-          "en": "In Hebrew we 'did' fun. In English we don't use make or do here."
+          "he": "בעברית \"עשינו כיף\". באנגלית התרגום המילולי לא מתאים.",
+          "en": "In Hebrew we 'did' fun. The literal translation doesn't work in English."
         }
       ],
       "explanation": {
@@ -3672,8 +3671,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית ובאנגלית משתמשים באותו פועל לתרופות.",
-          "en": "Hebrew and English use the same verb for medicine."
+          "he": "חושבים על הפועל שהולך עם medicine. לא אוכלים תרופות באנגלית.",
+          "en": "Think of the verb used with medicine. You don't eat medicine in English."
         }
       ],
       "explanation": {
@@ -3720,8 +3719,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "התלמידים 'לוקחים' מבחן. המורה נותן/ת אותו.",
-          "en": "Students take a test. The teacher gives it."
+          "he": "כאן התלמידים הם אלה שנבחנים, לא המורה.",
+          "en": "Here the students are the ones being tested, not the teacher."
         }
       ],
       "explanation": {
@@ -3769,7 +3768,7 @@
       "hints": [
         {
           "he": "מאמץ הוא משהו שיוצרים.",
-          "en": "An effort is something you make."
+          "en": "An effort is something you create."
         }
       ],
       "explanation": {
@@ -4103,8 +4102,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "hardly anyone פירושו 'כמעט אף אחד'.",
-          "en": "hardly anyone means 'almost nobody'."
+          "he": "האם hardly קשור ל־hard? חושבים כמה אנשים באו.",
+          "en": "Is hardly about \"hard\"? Think about how many people came."
         }
       ],
       "explanation": {
@@ -4200,8 +4199,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "It wasn't until X פירושו 'רק אחרי X'.",
-          "en": "It wasn't until X means 'only after X'."
+          "he": "It wasn't until X אומר מתי משהו התחיל. מה קרה קודם?",
+          "en": "It wasn't until X tells us when something started. What came first?"
         }
       ],
       "explanation": {
@@ -4252,8 +4251,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "anything but פירושו 'הכול חוץ מ'.",
-          "en": "anything but means 'not at all'."
+          "he": "anything but פירושו המילולי \"הכול חוץ מ\".",
+          "en": "Literally, anything but means \"everything except\"."
         }
       ],
       "explanation": {
@@ -4403,8 +4402,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "used to + פועל מתאר הרגל או מצב בעבר שכבר לא קיים.",
-          "en": "used to + verb is a past habit or state that has ended."
+          "he": "used to + פועל ו־be used to + ing הם שני מבנים שונים. איזה מהם יש כאן?",
+          "en": "used to + verb and be used to + -ing are different. Which one is here?"
         }
       ],
       "explanation": {
@@ -4551,8 +4550,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "too + שם תואר + to פירושו שמשהו לא אפשרי.",
-          "en": "too + adjective + to means something isn't possible."
+          "he": "too + שם תואר + to: האם הפעולה הצליחה?",
+          "en": "too + adjective + to: did the action succeed?"
         }
       ],
       "explanation": {
@@ -4599,8 +4598,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "not old enough = חסר לה גיל.",
-          "en": "not old enough = she lacks age."
+          "he": "enough = מספיק. מה אין לה מספיק?",
+          "en": "enough = sufficient. What doesn't she have enough of?"
         }
       ],
       "explanation": {
@@ -5044,8 +5043,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "It's no use + ing = אין טעם.",
-          "en": "It's no use + -ing = there's no point."
+          "he": "It's no use לא מדבר על \"שימוש\" בטלפון.",
+          "en": "It's no use is not about using the phone."
         }
       ],
       "explanation": {
@@ -5195,8 +5194,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "can't wait הוא ביטוי של התרגשות.",
-          "en": "can't wait is an expression of excitement."
+          "he": "can't wait לא מדבר על היכולת לחכות. זה ביטוי של רגש. איזה?",
+          "en": "can't wait isn't about being able to wait. It shows a feeling. Which one?"
         }
       ],
       "explanation": {
@@ -5245,8 +5244,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "worth + ing = שווה לעשות.",
-          "en": "worth + -ing = good to do."
+          "he": "worth כאן לא מדבר על מחיר.",
+          "en": "worth here is not about price."
         }
       ],
       "explanation": {
@@ -5396,8 +5395,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "barely = בקושי. הוא עבר?",
-          "en": "barely = only just. Did he pass?"
+          "he": "barely = בקושי. הוא עבר או לא?",
+          "en": "barely = with difficulty. Did he pass or not?"
         }
       ],
       "explanation": {
@@ -6157,7 +6156,7 @@
         },
         {
           "id": "c",
-          "text": "study"
+          "text": "explain"
         }
       ],
       "correctOptionId": "a",

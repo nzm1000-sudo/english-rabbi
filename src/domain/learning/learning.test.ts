@@ -23,6 +23,25 @@ describe('answer checking', () => {
     expect(checkTyped(item, "Don't know!").correct).toBe(true);
   });
 
+  it('rejects uncontracted question tags but accepts the contracted form', () => {
+    const tag = typedItem({ answers: ["can't he"] }) as TypedItem;
+    expect(checkTyped(tag, "can't he").correct).toBe(true);
+    expect(checkTyped(tag, 'cannot he').correct).toBe(false);
+    expect(checkTyped(typedItem({ answers: ["don't you"] }) as TypedItem, 'do not you').correct).toBe(false);
+    // Ordinary negatives still normalize both ways.
+    expect(checkTyped(typedItem({ answers: ["doesn't"] }) as TypedItem, 'does not').correct).toBe(true);
+  });
+
+  it('accepts "to" before verbs and articles before nouns in word recall', () => {
+    const verb = typedItem({ answers: ['assume'], word: { lemma: 'assume', pos: 'verb', he: 'להניח' } }) as TypedItem;
+    expect(checkTyped(verb, 'to assume').correct).toBe(true);
+    const noun = typedItem({ answers: ['kitchen'], word: { lemma: 'kitchen', pos: 'noun', he: 'מטבח' } }) as TypedItem;
+    expect(checkTyped(noun, 'a kitchen').correct).toBe(true);
+    expect(checkTyped(noun, 'the kitchen').correct).toBe(true);
+    const adverb = typedItem({ answers: ['already'], word: { lemma: 'already', pos: 'adverb', he: 'כבר' } }) as TypedItem;
+    expect(checkTyped(adverb, 'to already').correct).toBe(false);
+  });
+
   it('maps a known wrong answer to a misconception', () => {
     const r = checkTyped(typedItem() as TypedItem, 'goed');
     expect(r.correct).toBe(false);

@@ -3309,7 +3309,7 @@
       "skill": "grammar.past-simple.irregular",
       "level": "B1",
       "difficulty": 0.4,
-      "prompt": "I ___ my finger while I was cutting tomatoes. (cut)",
+      "prompt": "I ___ my finger while I was chopping tomatoes. (cut)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -3349,7 +3349,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "I cut my finger while I was cutting tomatoes."
+      "audioText": "I cut my finger while I was chopping tomatoes."
     },
     {
       "id": "gt.irr.fly",
@@ -5221,8 +5221,7 @@
         },
         {
           "id": "b",
-          "text": "used to",
-          "misconception": "used-to.form"
+          "text": "use"
         },
         {
           "id": "c",
@@ -5241,12 +5240,10 @@
         }
       ],
       "explanation": {
-        "he": "אחרי didn't בא פועל בסיס, ולכן didn't use to, בלי d.",
-        "en": "After didn't use the base verb, so didn't use to, without d."
+        "he": "אחרי didn't בא פועל בסיס, ולכן didn't use to, בלי d. אי אפשר לוותר על to.",
+        "en": "After didn't use the base verb, so didn't use to, without d. Do not leave out to."
       },
-      "targetsMisconceptions": [
-        "used-to.form"
-      ],
+      "targetsMisconceptions": [],
       "interests": [
         "travel"
       ],
@@ -6070,7 +6067,8 @@
         "en": "Complete with the correct form of the verb"
       },
       "answers": [
-        "finish"
+        "finish",
+        "have finished"
       ],
       "knownErrors": [
         {
@@ -6096,8 +6094,8 @@
         }
       ],
       "explanation": {
-        "he": "When I finish..., I'll go out. אחרי when: הווה פשוט. בחלק השני: will.",
-        "en": "When I finish..., I'll go out. Present Simple after when, will in the other part."
+        "he": "When I finish..., I'll go out. אחרי when: הווה פשוט (אפשר גם have finished). בחלק השני: will.",
+        "en": "When I finish..., I'll go out. Present Simple after when (have finished is also possible), will in the other part."
       },
       "targetsMisconceptions": [
         "future.will-in-time-clause"
@@ -6125,7 +6123,8 @@
         "en": "Complete with the correct form of the verb"
       },
       "answers": [
-        "stops"
+        "stops",
+        "has stopped"
       ],
       "knownErrors": [
         {
@@ -6151,8 +6150,8 @@
         }
       ],
       "explanation": {
-        "he": "until + Present Simple: until the rain stops.",
-        "en": "until + Present Simple: until the rain stops."
+        "he": "until + Present Simple: until the rain stops. אפשר גם until the rain has stopped.",
+        "en": "until + Present Simple: until the rain stops. until the rain has stopped is also possible."
       },
       "targetsMisconceptions": [
         "future.will-in-time-clause"
@@ -6842,7 +6841,7 @@
         },
         {
           "id": "d",
-          "text": "since"
+          "text": "ago"
         }
       ],
       "correctOptionId": "a",
@@ -7265,8 +7264,8 @@
         },
         {
           "id": "b",
-          "text": "have gone",
-          "misconception": "present-perfect.been-gone"
+          "text": "have went",
+          "misconception": "present-perfect.past-participle"
         },
         {
           "id": "c",
@@ -7280,16 +7279,16 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "הדובר חזר הביתה ומספר על ביקורים.",
-          "en": "The speaker is back home and talks about visits."
+          "he": "have + צורה שלישית. be → was / were → ?",
+          "en": "have + third form. be → was / were → ?"
         }
       ],
       "explanation": {
-        "he": "have been to = ביקרתי וחזרתי. have gone to אומר שהוא עדיין שם.",
-        "en": "have been to = visited and came back. have gone to means still there."
+        "he": "have been to = ביקרתי וחזרתי. been היא הצורה השלישית של be. went היא צורת עבר ולא באה אחרי have.",
+        "en": "have been to = visited and came back. been is the third form of be. went is the past form, so it cannot follow have."
       },
       "targetsMisconceptions": [
-        "present-perfect.been-gone"
+        "present-perfect.past-participle"
       ],
       "interests": [
         "travel"
@@ -7691,7 +7690,7 @@
       "skill": "grammar.present-perfect.vs-past-simple",
       "level": "B2",
       "difficulty": 0.5,
-      "prompt": "She ___ in Haifa for five years, and she still loves it there.",
+      "prompt": "She ___ in Haifa for five years now, and she loves it there.",
       "instruction": {
         "he": "לבחור את התשובה הנכונה",
         "en": "Choose the correct answer"
@@ -7719,8 +7718,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "still: היא עדיין גרה שם.",
-          "en": "still: she still lives there."
+          "he": "for five years now: היא עדיין גרה שם.",
+          "en": "for five years now: she still lives there."
         }
       ],
       "explanation": {
@@ -7740,7 +7739,7 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "She has lived in Haifa for five years, and she still loves it there."
+      "audioText": "She has lived in Haifa for five years now, and she loves it there."
     },
     {
       "id": "gt.vs.met-ago",
@@ -7870,8 +7869,8 @@
         },
         {
           "id": "b",
-          "text": "did you watch",
-          "misconception": "present-perfect.past-for-unfinished"
+          "text": "did you watched",
+          "misconception": "past-simple.did-plus-past"
         },
         {
           "id": "c",
@@ -7894,7 +7893,7 @@
         "en": "so far = until now, so use the Present Perfect: How many films have you watched?"
       },
       "targetsMisconceptions": [
-        "present-perfect.past-for-unfinished"
+        "past-simple.did-plus-past"
       ],
       "interests": [
         "movies"
@@ -9028,8 +9027,8 @@
         }
       ],
       "explanation": {
-        "he": "had + צורה שלישית לפעולה הראשונה: After she had finished... she went.",
-        "en": "had + past participle for the first action: After she had finished... she went."
+        "he": "had + צורה שלישית לפעולה הראשונה: After she had finished... she went. אחרי after אפשר גם finished, כי after כבר מראה את הסדר.",
+        "en": "had + past participle for the first action: After she had finished... she went. After after, finished is also fine, because after already shows the order."
       },
       "targetsMisconceptions": [
         "past-perfect.present-perfect-in-past",
@@ -10726,7 +10725,7 @@
         },
         {
           "kind": "tip",
-          "he": "has been to = היה וחזר. has gone to = נסע ועדיין שם."
+          "he": "has been to = היה וחזר. has gone to = נסע ועדיין שם. באנגלית אמריקאית שומעים לפעמים has gone to גם במשמעות ביקור."
         }
       ],
       "source": "original"

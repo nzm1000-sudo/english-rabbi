@@ -35,11 +35,19 @@ export function normalizeAnswer(s: string): string {
   return t.replace(/\s+/g, ' ');
 }
 
+/** In word recall, "to assume" equals "assume" and "a kitchen" equals "kitchen". */
+function stripWordFrame(item: TypedItem, answer: string): string {
+  const pos = item.word?.pos ?? '';
+  if (/verb/.test(pos) && !/adverb/.test(pos)) return answer.replace(/^to\s+/, '');
+  if (/noun/.test(pos)) return answer.replace(/^(a|an|the)\s+/, '');
+  return answer;
+}
+
 export function checkTyped(item: TypedItem, input: string): CheckResult {
-  const given = normalizeAnswer(input);
+  const given = item.word ? stripWordFrame(item, normalizeAnswer(input)) : normalizeAnswer(input);
   if (!given) return { correct: false, nearMiss: false };
   const accepted = item.answers.map(normalizeAnswer);
-  if (accepted.includes(given)) return { correct: true, nearMiss: false };
+  if (accepted.includes(given) && !uncontractedTag(input, item.answers)) return { correct: true, nearMiss: false };
 
   const known = item.knownErrors.find((e) => normalizeAnswer(e.answer) === given);
   if (known) {
@@ -56,6 +64,18 @@ export function checkTyped(item: TypedItem, input: string): CheckResult {
     return limit > 0 && levenshtein(a, given) <= limit;
   });
   return { correct: false, nearMiss: near };
+}
+
+/**
+ * "cannot he?" / "do not you?" are wrong, though they normalize to the same
+ * text as "can't he?". Reject "not" + subject pronoun unless an accepted
+ * answer is written exactly that way.
+ */
+const NOT_PRONOUN = /\bnot\s+(i|you|he|she|it|we|they|there)\b/i;
+function uncontractedTag(input: string, answers: string[]): boolean {
+  const raw = input.toLowerCase().replace(/[\u2018\u2019]/g, "'");
+  if (!NOT_PRONOUN.test(raw) && !/\bcannot\s+(i|you|he|she|it|we|they|there)\b/i.test(raw)) return false;
+  return !answers.some((a) => a.toLowerCase().replace(/\s+/g, ' ').trim() === raw.replace(/\s+/g, ' ').trim().replace(/[.!?]+$/, ''));
 }
 
 export function checkChoice(item: ChoiceItem, optionId: string): CheckResult {
