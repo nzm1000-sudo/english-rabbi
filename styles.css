@@ -164,7 +164,7 @@ h2 { margin-bottom: 0; font-size: 17px; font-weight: 700; letter-spacing: -.45px
 }
 @media (max-width: 760px) {
   .sidebar { width: 61px; align-items: center; padding: 19px 8px 12px; }
-  .brand { margin: 0 0 39px; }.brand > span:last-child, .nav-label, .nav-link:not(.active) { display: none; }
+  .brand { margin: 0 0 39px; }.brand > span:last-child, .nav-label { display: none; }
   .main-nav { width: 100%; }.nav-link { justify-content: center; width: 44px; padding: 0; font-size: 0; }
   .nav-link span { font-size: 20px; }.nav-link.active { display: flex; }
   .sidebar-bottom { width: 100%; }.coach-note, .profile-link > span:not(.avatar) { display: none; }
