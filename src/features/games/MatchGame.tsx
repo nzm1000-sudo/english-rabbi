@@ -165,10 +165,10 @@ function MatchRound({ again }: { again: () => void }) {
         <section className="stack" style={{ gap: 'var(--s-4)' }}>
           {firstTry >= words.length * 0.6 && <Confetti />}
           <div className="result-hero">
-            <span className="tile-icon" style={{ background: 'rgb(255 255 255 / 0.2)', color: '#fff', width: 56, height: 56, borderRadius: 18 }}>
+            <span className="tile-icon result-icon">
               <TrophyIcon size={30} />
             </span>
-            <h2 className="title" style={{ color: '#fff' }}>כל הזוגות הותאמו</h2>
+            <h2 className="title">כל הזוגות הותאמו</h2>
             <span className="big">
               {firstTry}/{words.length}
             </span>

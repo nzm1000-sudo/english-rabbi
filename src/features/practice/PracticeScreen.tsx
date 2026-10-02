@@ -233,10 +233,10 @@ function Summary({
     <section className="stack" style={{ gap: 'var(--s-4)', marginTop: 'var(--s-2)' }}>
       {celebrate && <Confetti />}
       <div className="result-hero">
-        <span className="tile-icon" style={{ background: 'rgb(255 255 255 / 0.2)', color: '#fff', width: 56, height: 56, borderRadius: 18 }}>
+        <span className="tile-icon result-icon">
           <TrophyIcon size={30} />
         </span>
-        <h2 className="title" style={{ color: '#fff' }}>{headline}</h2>
+        <h2 className="title">{headline}</h2>
         {big ? <span className="big">{big}{mode === 'lightning' ? '' : '%'}</span> : <span className="big">{pct}%</span>}
         <span style={{ opacity: 0.92 }}>{subtitle}</span>
       </div>
