@@ -994,7 +994,9 @@
         "en": "Fill in the gap (one or two words)"
       },
       "answers": [
-        "would have passed"
+        "would have passed",
+        "could have passed",
+        "might have passed"
       ],
       "knownErrors": [
         {
@@ -1163,7 +1165,9 @@
         "en": "Fill in the gap (one or two words)"
       },
       "answers": [
-        "would have won"
+        "would have won",
+        "could have won",
+        "might have won"
       ],
       "knownErrors": [
         {
@@ -1706,7 +1710,8 @@
       "answers": [
         "mustn't",
         "can't",
-        "cannot"
+        "cannot",
+        "may not"
       ],
       "knownErrors": [
         {
@@ -2267,8 +2272,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "הוא כבר קנה מתנה. זה היה מיותר.",
-          "en": "He already bought a present. It was not necessary."
+          "he": "המתנה כבר נקנתה. זה היה מיותר.",
+          "en": "The present was already bought. It was not necessary."
         },
         {
           "he": "עשית משהו שלא היה צורך בו. איזה מודל פירושו \"לא צריך\"?",
@@ -3756,7 +3761,7 @@
         }
       ],
       "explanation": {
-        "he": "look forward to + ing. ה־to הזה הוא מילת יחס, ולכן seeing. אותו דבר: used to (= רגיל ל־) + ing.",
+        "he": "look forward to + ing. ה־to הזה הוא מילת יחס, ולכן seeing. אותו דבר: be used to (= רגיל ל־) + ing.",
         "en": "look forward to + -ing. This to is a preposition, so seeing."
       },
       "interests": [
@@ -5940,8 +5945,8 @@
           "en": "Musical instruments and sports behave differently."
         },
         {
-          "he": "ספורט בלי the.",
-          "en": "Sports take no the."
+          "he": "לבדוק כל חלק לחוד: קודם כלי הנגינה, אחר כך הספורט.",
+          "en": "Check each part on its own: first the instrument, then the sport."
         }
       ],
       "explanation": {
@@ -5992,8 +5997,8 @@
           "en": "rich is an adjective. Here it means a group of people."
         },
         {
-          "he": "the + adjective = כל האנשים ש...",
-          "en": "the + adjective = all people who are ..."
+          "he": "בעברית אומרים 'העשירים', עם ה' הידיעה.",
+          "en": "Hebrew says 'העשירים', with ה."
         }
       ],
       "explanation": {
@@ -6587,7 +6592,8 @@
         "en": "Fill in the missing word"
       },
       "answers": [
-        "on"
+        "on",
+        "upon"
       ],
       "knownErrors": [
         {
@@ -8037,7 +8043,7 @@
         },
         {
           "id": "d",
-          "text": "the more difficult"
+          "text": "more difficult"
         }
       ],
       "correctOptionId": "a",
@@ -10544,8 +10550,8 @@
           "en": "A noun follows the gap: the rain."
         },
         {
-          "he": "despite = למרות, בלי of.",
-          "en": "despite = in spite of, without of."
+          "he": "לבדוק אם המילה צריכה of אחריה.",
+          "en": "Check whether the word needs of after it."
         }
       ],
       "explanation": {

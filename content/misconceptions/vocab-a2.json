@@ -39,11 +39,11 @@
     "id": "vocabulary.hour-clock-watch",
     "skill": "vocabulary.context",
     "note": {
-      "he": "משתמש/ת ב־clock או watch במקום hour (כי בעברית כולם שעה)",
+      "he": "משתמש/ת ב־clock או watch במקום hour (כי שעה ושעון דומים בעברית)",
       "en": "Uses clock or watch instead of hour"
     },
     "tip": {
-      "he": "בעברית שעה זה גם זמן וגם מכשיר. באנגלית: hour = 60 דקות, clock = שעון קיר, watch = שעון יד.",
+      "he": "שעה ושעון נשמעים דומה בעברית. באנגלית: hour = 60 דקות, clock = שעון קיר, watch = שעון יד.",
       "en": "hour = 60 minutes, clock = a clock on the wall, watch = a clock on your wrist."
     }
   },

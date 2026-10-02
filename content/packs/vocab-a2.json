@@ -3335,8 +3335,8 @@
         }
       ],
       "explanation": {
-        "he": "hour פירושה שעה. דוגמה: The movie is two hours long. בעברית שעה זה גם זמן וגם שעון. באנגלית hour זה רק זמן.",
-        "en": "hour means שעה. Example: The movie is two hours long. In Hebrew שעה is also a clock. In English, hour is only time."
+        "he": "hour פירושה שעה. דוגמה: The movie is two hours long. hour זה משך של 60 דקות. כששואלים מה השעה אומרים What time is it?, ושעון (המכשיר) זה clock או watch.",
+        "en": "hour means שעה. Example: The movie is two hours long. An hour is 60 minutes. To ask the time, say What time is it? A clock or a watch is the thing that shows the time."
       },
       "tags": [
         "vocabulary",
@@ -3382,8 +3382,8 @@
         }
       ],
       "explanation": {
-        "he": "שעה (60 דקות) באנגלית: hour. דוגמה: The movie is two hours long. בעברית שעה זה גם זמן וגם שעון. באנגלית hour זה רק זמן.",
-        "en": "The word is hour. Example: The movie is two hours long. In Hebrew שעה is also a clock. In English, hour is only time."
+        "he": "שעה (60 דקות) באנגלית: hour. דוגמה: The movie is two hours long. hour זה משך של 60 דקות. כששואלים מה השעה אומרים What time is it?, ושעון (המכשיר) זה clock או watch.",
+        "en": "The word is hour. Example: The movie is two hours long. An hour is 60 minutes. To ask the time, say What time is it? A clock or a watch is the thing that shows the time."
       },
       "tags": [
         "vocabulary",
@@ -5156,7 +5156,7 @@
         }
       ],
       "explanation": {
-        "he": "כסף (מזומן, לא המתכת) באנגלית: money. דוגמה: I don't have enough money for a new bike.",
+        "he": "כסף (שמשלמים בו) באנגלית: money. דוגמה: I don't have enough money for a new bike.",
         "en": "The word is money. Example: I don't have enough money for a new bike."
       },
       "tags": [

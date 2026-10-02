@@ -593,7 +593,8 @@
         "decline",
         "decrease",
         "fall",
-        "drop"
+        "drop",
+        "go down"
       ],
       "hints": [
         {
@@ -765,7 +766,8 @@
       "answers": [
         "essential",
         "necessary",
-        "vital"
+        "vital",
+        "indispensable"
       ],
       "hints": [
         {
@@ -933,7 +935,9 @@
       "answers": [
         "obvious",
         "clear",
-        "evident"
+        "evident",
+        "apparent",
+        "self-evident"
       ],
       "hints": [
         {
@@ -1100,7 +1104,8 @@
       },
       "answers": [
         "sufficient",
-        "adequate"
+        "adequate",
+        "enough"
       ],
       "hints": [
         {
@@ -1436,7 +1441,8 @@
       },
       "answers": [
         "emerge",
-        "appear"
+        "appear",
+        "come out"
       ],
       "hints": [
         {
@@ -1779,7 +1785,10 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "maintain"
+        "maintain",
+        "keep",
+        "keep up",
+        "preserve"
       ],
       "hints": [
         {
@@ -2117,7 +2126,8 @@
       "answers": [
         "obtain",
         "get",
-        "gain"
+        "gain",
+        "acquire"
       ],
       "hints": [
         {
@@ -2232,7 +2242,8 @@
       "answers": [
         "reveal",
         "disclose",
-        "expose"
+        "expose",
+        "uncover"
       ],
       "hints": [
         {
@@ -2407,7 +2418,9 @@
         "reduce",
         "decrease",
         "lower",
-        "cut"
+        "cut",
+        "lessen",
+        "cut down"
       ],
       "hints": [
         {
@@ -2920,7 +2933,9 @@
       },
       "answers": [
         "claim",
-        "argue"
+        "argue",
+        "assert",
+        "maintain"
       ],
       "hints": [
         {
@@ -3032,7 +3047,11 @@
       },
       "answers": [
         "rely",
-        "depend"
+        "depend",
+        "rely on",
+        "depend on",
+        "count on",
+        "trust"
       ],
       "hints": [
         {
@@ -3310,7 +3329,7 @@
       "options": [
         {
           "id": "a",
-          "text": "נפוץ, רווח"
+          "text": "נפוץ"
         },
         {
           "id": "b",
@@ -3322,7 +3341,7 @@
         },
         {
           "id": "d",
-          "text": "מפוזר על השולחן"
+          "text": "זמני"
         }
       ],
       "correctOptionId": "a",
@@ -3368,7 +3387,8 @@
       },
       "answers": [
         "widespread",
-        "common"
+        "common",
+        "prevalent"
       ],
       "hints": [
         {
@@ -3481,7 +3501,8 @@
       "answers": [
         "crucial",
         "critical",
-        "vital"
+        "vital",
+        "decisive"
       ],
       "hints": [
         {
@@ -4380,7 +4401,8 @@
       "answers": [
         "perspective",
         "point of view",
-        "viewpoint"
+        "viewpoint",
+        "standpoint"
       ],
       "hints": [
         {
@@ -4718,7 +4740,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "tendency"
+        "tendency",
+        "inclination"
       ],
       "hints": [
         {
@@ -5395,7 +5418,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "exploit"
+        "exploit",
+        "take advantage of"
       ],
       "hints": [
         {
@@ -6012,7 +6036,8 @@
       "answers": [
         "imply",
         "suggest",
-        "hint"
+        "hint",
+        "insinuate"
       ],
       "hints": [
         {
@@ -6629,7 +6654,8 @@
         },
         {
           "id": "d",
-          "text": "creator"
+          "text": "creatively",
+          "misconception": "word-formation.part-of-speech"
         }
       ],
       "correctOptionId": "a",
@@ -6640,8 +6666,8 @@
         }
       ],
       "explanation": {
-        "he": "creation = יצירה, הקמה (הפעולה). creator = יוצר (אדם), ואדם לא 'לוקח שנתיים'. tion- יוצרת שם עצם.",
-        "en": "creation is the action; creator is a person."
+        "he": "creation = יצירה, הקמה (הפעולה). the ___ of מחייב שם עצם. creative הוא שם תואר ו־creatively תואר פועל. tion- יוצרת שם עצם.",
+        "en": "the ___ of needs a noun: creation (the action). creative is an adjective, creatively an adverb."
       },
       "interests": [],
       "tags": [
@@ -6682,7 +6708,8 @@
         },
         {
           "id": "d",
-          "text": "developer"
+          "text": "developmental",
+          "misconception": "word-formation.part-of-speech"
         }
       ],
       "correctOptionId": "a",
@@ -8220,7 +8247,8 @@
         "en": "Complete with the correct form of the word in brackets"
       },
       "answers": [
-        "payment"
+        "payment",
+        "payments"
       ],
       "hints": [
         {
