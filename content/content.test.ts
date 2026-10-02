@@ -94,7 +94,7 @@ describe('licensing gate', () => {
 });
 
 describe('sentence builder items', () => {
-  const bag = (s: string) => s.split(/\s+/).map((w) => w.replace(/^[^A-Za-z0-9']+|[^A-Za-z0-9']+$/g, '').toLowerCase()).filter(Boolean).sort().join(' ');
+  const bag = (s: string) => s.split(/\s+/).map((w) => w.replace(/^[^\p{L}\p{N}']+|[^\p{L}\p{N}']+$/gu, '').toLowerCase()).filter(Boolean).sort().join(' ');
   const end = (s: string) => (/[?!]$/.test(s.trim()) ? s.trim().slice(-1) : '.');
   const order = reg.items.filter((i) => i.type === 'order');
 

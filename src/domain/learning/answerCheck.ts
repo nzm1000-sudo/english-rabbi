@@ -108,7 +108,7 @@ export function levenshtein(a: string, b: string): number {
 
 /** Strips punctuation from a tile; tiles are shown and compared without it. */
 export function bareToken(t: string): string {
-  return t.replace(/^[^A-Za-z0-9']+|[^A-Za-z0-9']+$/g, '');
+  return t.replace(/^[^\p{L}\p{N}']+|[^\p{L}\p{N}']+$/gu, '');
 }
 
 /** Word tiles of an order item, in sentence order, without punctuation. */

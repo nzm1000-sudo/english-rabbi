@@ -260,6 +260,9 @@ describe('build the sentence', () => {
     });
     if (item.type !== 'order') throw new Error();
     expect(orderTokens(item)).toEqual(['Yesterday', 'I', 'went', 'to', 'the', 'park']);
+    const { bareToken } = await import('./answerCheck');
+    expect(bareToken('café,')).toBe('café');
+    expect(bareToken('"Hello')).toBe('Hello');
     expect(checkOrder(item, ['I', 'went', 'to', 'the', 'park', 'yesterday']).correct).toBe(true);
     expect(checkOrder(item, ['Yesterday', 'I', 'went', 'to', 'the', 'park']).correct).toBe(true);
     expect(checkOrder(item, ['I', 'went', 'yesterday', 'to', 'the', 'park']).correct).toBe(false);
