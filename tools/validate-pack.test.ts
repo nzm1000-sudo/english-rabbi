@@ -50,6 +50,9 @@ describe.runIf(!!packId)(`pack ${packId}`, () => {
       }
       if (i.modality === 'listen' && !('audioText' in i && i.audioText)) problems.push(`${i.id}: listen item needs audioText`);
       if (masculine.test(heTexts(i as unknown as Record<string, unknown>))) problems.push(`${i.id}: gendered Hebrew imperative, use an infinitive`);
+      // Addressing the learner with slash forms ("את/ה", "תעבור/י"): use an impersonal form instead.
+      // Slash forms about a third person ("הכותב/ת") are fine.
+      if (/(^|[^א-ת])ת[א-ת]+\/י(?![א-ת])/.test(heTexts(i as unknown as Record<string, unknown>))) problems.push(`${i.id}: gendered slash form in teaching text`);
       if (/[—–]/.test(heTexts(i as unknown as Record<string, unknown>))) problems.push(`${i.id}: long dash in Hebrew text`);
     }
     for (const l of reg.lessons.values()) {
