@@ -45,7 +45,7 @@
         }
       ],
       "explanation": {
-        "he": "הרגל קבוע = Present Simple. עם I הפועל בצורת הבסיס: I go. בעברית אומרים \"אני הולך\", אבל באנגלית לא מוסיפים am לפני פועל רגיל.",
+        "he": "הרגל קבוע = Present Simple. עם I הפועל בצורת הבסיס: I go. לא מוסיפים am לפני פועל רגיל.",
         "en": "A habit uses the Present Simple. With I, use the base verb: I go. Do not add am before a normal verb."
       },
       "targetsMisconceptions": [
@@ -425,7 +425,7 @@
       "skill": "grammar.present-simple.third-person",
       "level": "A1",
       "difficulty": 0.3,
-      "prompt": "My sister ___ English very well. (speak)",
+      "prompt": "My sister ___ English very well, so she often helps me with my homework. (speak)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -462,7 +462,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "My sister speaks English very well."
+      "audioText": "My sister speaks English very well, so she often helps me with my homework."
     },
     {
       "id": "gt.ps3.brush",
@@ -522,7 +522,7 @@
       "skill": "grammar.present-simple.third-person",
       "level": "A1",
       "difficulty": 0.6,
-      "prompt": "She ___ math at university. (study)",
+      "prompt": "She ___ math for two hours every day. (study)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -568,7 +568,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "She studies math at university."
+      "audioText": "She studies math for two hours every day."
     },
     {
       "id": "gt.ps3.sleep",
@@ -576,7 +576,7 @@
       "skill": "grammar.present-simple.third-person",
       "level": "A1",
       "difficulty": 0.4,
-      "prompt": "Our cat ___ all day long. (sleep)",
+      "prompt": "Every day, our cat ___ for hours on the sofa. (sleep)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -615,7 +615,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "Our cat sleeps all day long."
+      "audioText": "Every day, our cat sleeps for hours on the sofa."
     },
     {
       "id": "gt.ps3.go",
@@ -677,7 +677,7 @@
       "skill": "grammar.present-simple.third-person",
       "level": "A2",
       "difficulty": 0.6,
-      "prompt": "He ___ a lot of homework on weekends. (do)",
+      "prompt": "Every weekend, he ___ a lot of homework, so he never goes out. (do)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -723,7 +723,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "He does a lot of homework on weekends."
+      "audioText": "Every weekend, he does a lot of homework, so he never goes out."
     },
     {
       "id": "gt.ps3.have",
@@ -731,7 +731,7 @@
       "skill": "grammar.present-simple.third-person",
       "level": "A1",
       "difficulty": 0.6,
-      "prompt": "She ___ two brothers. (have)",
+      "prompt": "She ___ two brothers. They are both older than her. (have)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -775,7 +775,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "She has two brothers."
+      "audioText": "She has two brothers. They are both older than her."
     },
     {
       "id": "gt.ps3.try",
@@ -783,7 +783,7 @@
       "skill": "grammar.present-simple.third-person",
       "level": "A2",
       "difficulty": 0.6,
-      "prompt": "Dana ___ her best in every game. (try)",
+      "prompt": "Dana always ___ her best in every game, and her coach is proud of her. (try)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -829,7 +829,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "Dana tries her best in every game."
+      "audioText": "Dana always tries her best in every game, and her coach is proud of her."
     },
     {
       "id": "gt.ps3.close",
@@ -837,7 +837,7 @@
       "skill": "grammar.present-simple.third-person",
       "level": "A2",
       "difficulty": 0.4,
-      "prompt": "The shop ___ at nine o'clock. (close)",
+      "prompt": "The shop ___ at nine o'clock every evening. (close)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -874,7 +874,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "The shop closes at nine o'clock."
+      "audioText": "The shop closes at nine o'clock every evening."
     },
     {
       "id": "gt.ps3.live",
@@ -1085,7 +1085,7 @@
         }
       ],
       "explanation": {
-        "he": "שאלה בהווה פשוט: Do / Does + נושא + פועל בסיס. עם you משתמשים ב־Do. בעברית שואלים \"אתה אוהב?\" בלי מילת שאלה, ולכן קל לשכוח את Do.",
+        "he": "שאלה בהווה פשוט: Do / Does + נושא + פועל בסיס. עם you משתמשים ב־Do. בעברית שואלים רק בעזרת הטון, ולכן קל לשכוח את Do.",
         "en": "A Present Simple question: Do / Does + subject + base verb. With you, use Do."
       },
       "targetsMisconceptions": [
@@ -1409,7 +1409,7 @@
         }
       ],
       "explanation": {
-        "he": "בעברית שואלים \"איפה אתה גר?\" בלי פועל עזר. באנגלית צריך do: Where do you live?",
+        "he": "בעברית שואלים בלי פועל עזר. באנגלית צריך do: Where do you live?",
         "en": "In Hebrew there is no helping verb. In English you need do: Where do you live?"
       },
       "targetsMisconceptions": [
@@ -1477,7 +1477,7 @@
       "skill": "grammar.present-simple.questions-negatives",
       "level": "A2",
       "difficulty": 0.5,
-      "prompt": "What time ___ the movie start? (do)",
+      "prompt": "What time ___ the movie start tonight? (do)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -1516,7 +1516,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "What time does the movie start?"
+      "audioText": "What time does the movie start tonight?"
     },
     {
       "id": "gt.psq.doesnt-have-to",
@@ -2664,7 +2664,7 @@
       "skill": "grammar.past-simple",
       "level": "A2",
       "difficulty": 0.5,
-      "prompt": "The car ___ at the red light. (stop)",
+      "prompt": "The car ___ suddenly at the red light, and we all jumped. (stop)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -2708,7 +2708,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "The car stopped at the red light."
+      "audioText": "The car stopped suddenly at the red light, and we all jumped."
     },
     {
       "id": "gt.past.study",
@@ -2716,7 +2716,7 @@
       "skill": "grammar.past-simple",
       "level": "A2",
       "difficulty": 0.5,
-      "prompt": "I ___ for the test all night. (study)",
+      "prompt": "Last night I ___ for the test until midnight. (study)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -2755,7 +2755,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "I studied for the test all night."
+      "audioText": "Last night I studied for the test until midnight."
     },
     {
       "id": "gt.past.plan",
@@ -2763,7 +2763,7 @@
       "skill": "grammar.past-simple",
       "level": "B1",
       "difficulty": 0.6,
-      "prompt": "They ___ a big party for her birthday. (plan)",
+      "prompt": "Last year they ___ a big party for her birthday. (plan)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -2801,7 +2801,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "They planned a big party for her birthday."
+      "audioText": "Last year they planned a big party for her birthday."
     },
     {
       "id": "gt.past.try",
@@ -3108,7 +3108,7 @@
       "skill": "grammar.past-simple.irregular",
       "level": "A2",
       "difficulty": 0.5,
-      "prompt": "She ___ a new jacket at the mall. (buy)",
+      "prompt": "Yesterday she ___ a new jacket at the mall. (buy)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -3154,7 +3154,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "She bought a new jacket at the mall."
+      "audioText": "Yesterday she bought a new jacket at the mall."
     },
     {
       "id": "gt.irr.leave",
@@ -3207,7 +3207,7 @@
       "skill": "grammar.past-simple.irregular",
       "level": "A2",
       "difficulty": 0.5,
-      "prompt": "My mom ___ a delicious cake for my birthday. (make)",
+      "prompt": "Last week my mom ___ a delicious cake for my birthday. (make)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -3246,7 +3246,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "My mom made a delicious cake for my birthday."
+      "audioText": "Last week my mom made a delicious cake for my birthday."
     },
     {
       "id": "gt.irr.drink",
@@ -3254,7 +3254,7 @@
       "skill": "grammar.past-simple.irregular",
       "level": "B1",
       "difficulty": 0.6,
-      "prompt": "The kids ___ a lot of water after the game. (drink)",
+      "prompt": "The kids ___ a lot of water after yesterday's game. (drink)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -3301,7 +3301,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "The kids drank a lot of water after the game."
+      "audioText": "The kids drank a lot of water after yesterday's game."
     },
     {
       "id": "gt.irr.cut",
@@ -3357,7 +3357,7 @@
       "skill": "grammar.past-simple.irregular",
       "level": "B1",
       "difficulty": 0.5,
-      "prompt": "The plane ___ over our house at midnight. (fly)",
+      "prompt": "Last night a plane ___ over our house at midnight. (fly)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -3405,7 +3405,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "The plane flew over our house at midnight."
+      "audioText": "Last night a plane flew over our house at midnight."
     },
     {
       "id": "gt.irr.throw",
@@ -3413,7 +3413,7 @@
       "skill": "grammar.past-simple.irregular",
       "level": "B1",
       "difficulty": 0.5,
-      "prompt": "She ___ the ball through the window by accident. (throw)",
+      "prompt": "Yesterday she ___ the ball through the window by accident. (throw)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -3453,7 +3453,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "She threw the ball through the window by accident."
+      "audioText": "Yesterday she threw the ball through the window by accident."
     },
     {
       "id": "gt.irr.meet",
@@ -3461,7 +3461,7 @@
       "skill": "grammar.past-simple.irregular",
       "level": "B1",
       "difficulty": 0.5,
-      "prompt": "We ___ our old friends at the wedding. (meet)",
+      "prompt": "Last week we ___ our old friends at the wedding. (meet)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -3499,7 +3499,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "We met our old friends at the wedding."
+      "audioText": "Last week we met our old friends at the wedding."
     },
     {
       "id": "gt.irr.tell",
@@ -3507,7 +3507,7 @@
       "skill": "grammar.past-simple.irregular",
       "level": "B1",
       "difficulty": 0.6,
-      "prompt": "He ___ the truth to the teacher. (tell)",
+      "prompt": "Yesterday he finally ___ the truth to the teacher. (tell)",
       "instruction": {
         "he": "להשלים את הפועל בצורה הנכונה",
         "en": "Complete with the correct form of the verb"
@@ -3547,7 +3547,7 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "He told the truth to the teacher."
+      "audioText": "Yesterday he finally told the truth to the teacher."
     },
     {
       "id": "gt.irr.feel",
@@ -4636,7 +4636,7 @@
         },
         {
           "id": "c",
-          "text": "for"
+          "text": "at"
         }
       ],
       "correctOptionId": "a",
@@ -4685,7 +4685,7 @@
         },
         {
           "id": "c",
-          "text": "For"
+          "text": "At"
         }
       ],
       "correctOptionId": "a",
@@ -6728,7 +6728,7 @@
         },
         {
           "id": "c",
-          "text": "from"
+          "text": "in"
         },
         {
           "id": "d",
@@ -7121,7 +7121,7 @@
         }
       ],
       "explanation": {
-        "he": "בעברית שואלים \"כמה זמן אתה גר פה?\" בהווה. באנגלית: How long have you lived here?",
+        "he": "בעברית שואלים בהווה: \"כמה זמן גרים פה?\". באנגלית: How long have you lived here?",
         "en": "Hebrew uses the present. English: How long have you lived here?"
       },
       "targetsMisconceptions": [
@@ -8112,7 +8112,7 @@
         }
       ],
       "explanation": {
-        "he": "How long have you been waiting? = כמה זמן אתה מחכה? בעברית בהווה, באנגלית have been + ing.",
+        "he": "How long have you been waiting? בעברית שואלים בהווה (\"כמה זמן מחכים?\"). באנגלית have been + ing.",
         "en": "How long have you been waiting? Hebrew uses the present; English uses have been + -ing."
       },
       "targetsMisconceptions": [
@@ -10194,7 +10194,7 @@
           "kind": "mistake",
           "wrong": "I am go to school every day.",
           "right": "I go to school every day.",
-          "he": "בעברית \"אני הולך\" נשמע כמו I am go. באנגלית לא מכניסים am לפני פועל רגיל."
+          "he": "בעברית \"אני הולך/ת\" נשמע כמו I am go. באנגלית לא מכניסים am לפני פועל רגיל."
         },
         {
           "kind": "mistake",
@@ -10221,7 +10221,7 @@
       "blocks": [
         {
           "kind": "text",
-          "he": "בעברית יש רק הווה אחד: \"אני אוכל\". באנגלית יש שניים. Present Progressive מתאר פעולה שקורית עכשיו, ברגע הדיבור, או מצב זמני. מילים כמו now, right now, at the moment, Look!, Listen! מרמזות עליו."
+          "he": "בעברית יש רק הווה אחד: \"אני אוכל/ת\". באנגלית יש שניים. Present Progressive מתאר פעולה שקורית עכשיו, ברגע הדיבור, או מצב זמני. מילים כמו now, right now, at the moment, Look!, Listen! מרמזות עליו."
         },
         {
           "kind": "rule",
@@ -10647,7 +10647,7 @@
       "blocks": [
         {
           "kind": "text",
-          "he": "Present Perfect מחבר עבר להווה. משתמשים בו לניסיון חיים (בלי זמן מדויק), לפעולה שהסתיימה וחשובה עכשיו, ולמצב שהתחיל בעבר ונמשך עד היום. בעברית אומרים \"אני גר פה חמש שנים\" בהווה, ובאנגלית I have lived here for five years."
+          "he": "Present Perfect מחבר עבר להווה. משתמשים בו לניסיון חיים (בלי זמן מדויק), לפעולה שהסתיימה וחשובה עכשיו, ולמצב שהתחיל בעבר ונמשך עד היום. בעברית אומרים \"אני גר/ה פה חמש שנים\" בהווה, ובאנגלית I have lived here for five years."
         },
         {
           "kind": "rule",
