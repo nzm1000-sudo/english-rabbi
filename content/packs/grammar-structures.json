@@ -39,8 +39,8 @@
           "en": "The if part is a real future possibility. What happens in the other part?"
         },
         {
-          "he": "בחלק של התוצאה משתמשים ב־will ואחריו פועל בסיס.",
-          "en": "The result part uses will + base verb."
+          "he": "אחרי if יש הווה פשוט. איזה זמן מתאים לתוצאה בעתיד?",
+          "en": "The if part is in the Present Simple. Which tense fits a future result?"
         }
       ],
       "explanation": {
@@ -421,8 +421,8 @@
           "en": "Do I really have a million shekels? Probably not. It is a dream."
         },
         {
-          "he": "בחלק של if בתנאי שני משתמשים בעבר פשוט.",
-          "en": "In the second conditional, the if part uses the Past Simple."
+          "he": "החלק השני הוא would buy. איזה זמן בא אחרי if?",
+          "en": "The other part is would buy. Which tense comes after if?"
         }
       ],
       "explanation": {
@@ -459,8 +459,8 @@
         {
           "answer": "am",
           "feedback": {
-            "he": "זה לא מצב אמיתי. אני לא אתה. צריך צורת עבר.",
-            "en": "This is not real. I am not you. Use a past form."
+            "he": "זה לא מצב אמיתי. צריך צורת עבר.",
+            "en": "This is not real. Use a past form."
           }
         },
         {
@@ -474,8 +474,8 @@
       ],
       "hints": [
         {
-          "he": "אני באמת אתה? מצב דמיוני דורש עבר.",
-          "en": "Am I really you? An imaginary situation needs a past form."
+          "he": "זה מצב אמיתי או דמיוני? מצב דמיוני דורש צורת עבר.",
+          "en": "Is this real or imaginary? An imaginary situation needs a past form."
         }
       ],
       "explanation": {
@@ -529,8 +529,8 @@
           "en": "lived comes after if. Which conditional is this?"
         },
         {
-          "he": "If + עבר פשוט הולך עם would + פועל בסיס.",
-          "en": "If + Past Simple goes with would + base verb."
+          "he": "lived בצורת עבר, אבל לא מדבר על העבר. זה מצב דמיוני עכשיו.",
+          "en": "lived is a past form, but it is not about the past. It is imaginary now."
         }
       ],
       "explanation": {
@@ -582,8 +582,8 @@
           "en": "found comes after if. Is it real or imaginary?"
         },
         {
-          "he": "בשאלה בתנאי שני would בא לפני הנושא.",
-          "en": "In a second conditional question, would comes before the subject."
+          "he": "בשאלה פועל העזר בא לפני הנושא. איזה פועל עזר מתאים למצב דמיוני?",
+          "en": "In a question, the auxiliary comes before the subject. Which auxiliary fits an imaginary situation?"
         }
       ],
       "explanation": {
@@ -800,8 +800,8 @@
           "en": "The first sentence is a clue: I don't have a car."
         },
         {
-          "he": "מצב לא אמיתי בהווה: עבר פשוט אחרי if.",
-          "en": "Not real now: Past Simple after if."
+          "he": "would drive הוא רמז. איזה זמן בא אחרי if?",
+          "en": "would drive is a clue. Which tense comes after if?"
         }
       ],
       "explanation": {
@@ -894,7 +894,7 @@
         },
         {
           "id": "c",
-          "text": "will catch"
+          "text": "will have caught"
         },
         {
           "id": "d",
@@ -908,8 +908,8 @@
           "en": "had left is about a finished past."
         },
         {
-          "he": "התוצאה בעבר: would have + V3.",
-          "en": "The past result: would have + V3."
+          "he": "would catch מדבר על עכשיו או על העתיד. כאן צריך תוצאה בעבר.",
+          "en": "would catch is about now or the future. Here you need a past result."
         }
       ],
       "explanation": {
@@ -965,8 +965,8 @@
           "en": "would have helped is a clue: a past that did not happen."
         },
         {
-          "he": "אחרי if בתנאי שלישי: had + V3.",
-          "en": "After if in the third conditional: had + V3."
+          "he": "would לא בא אחרי if. צריך זמן שהוא צעד אחד לפני העבר.",
+          "en": "would does not go after if. You need a tense one step before the past."
         }
       ],
       "explanation": {
@@ -1298,8 +1298,8 @@
           "en": "last night: this is a regret about the past."
         },
         {
-          "he": "חרטה על העבר: had + V3.",
-          "en": "Regret about the past: had + V3."
+          "he": "על העבר זזים עוד צעד אחורה מהעבר הפשוט.",
+          "en": "For the past, move one more step back from the Past Simple."
         }
       ],
       "explanation": {
@@ -1460,8 +1460,8 @@
           "en": "This is a complaint about what other people do."
         },
         {
-          "he": "כשרוצים שמישהו אחר ישנה התנהגות: wish + would.",
-          "en": "To want someone else to change: wish + would."
+          "he": "אחרי wish לא בא הווה ולא will. מה רוצים שהשכנים יפסיקו לעשות?",
+          "en": "No present and no will after wish. What do you want the neighbours to stop doing?"
         }
       ],
       "explanation": {
@@ -1769,7 +1769,7 @@
         },
         {
           "id": "c",
-          "text": "have to"
+          "text": "doesn't have to"
         },
         {
           "id": "d",
@@ -2033,11 +2033,11 @@
         },
         {
           "id": "c",
-          "text": "don't able to"
+          "text": "won't be can"
         },
         {
           "id": "d",
-          "text": "not can"
+          "text": "won't able to"
         }
       ],
       "correctOptionId": "a",
@@ -2271,8 +2271,8 @@
           "en": "He already bought a present. It was not necessary."
         },
         {
-          "he": "עשית משהו שלא היה צורך בו: needn't + have + V3.",
-          "en": "You did something that was not needed: needn't + have + V3."
+          "he": "עשית משהו שלא היה צורך בו. איזה מודל פירושו \"לא צריך\"?",
+          "en": "You did something that was not needed. Which modal means \"not necessary\"?"
         }
       ],
       "explanation": {
@@ -2373,12 +2373,12 @@
           "en": "She worked all day. What is the logical conclusion?"
         },
         {
-          "he": "כשאנחנו כמעט בטוחים שמשהו נכון: must.",
-          "en": "When we are almost sure something is true: must."
+          "he": "זו מסקנה חיובית, לא איסור.",
+          "en": "It is a positive conclusion, not a rule."
         }
       ],
       "explanation": {
-        "he": "must להסקה = 'בטח'. She must be exhausted: אני כמעט בטוח/ה שהיא עייפה מאוד.",
+        "he": "must להסקה = \"בטח\". She must be exhausted: כמעט בטוח שהיא עייפה מאוד.",
         "en": "must for deduction = almost sure it is true."
       },
       "interests": [
@@ -2429,8 +2429,8 @@
           "en": "Tom is in London. Is it possible he is at the door?"
         },
         {
-          "he": "כשבטוחים שמשהו לא נכון: can't.",
-          "en": "When we are sure something is not true: can't."
+          "he": "mustn't פירושו \"אסור\", ולא \"בטוח שלא\".",
+          "en": "mustn't means not allowed, not sure it is not true."
         }
       ],
       "explanation": {
@@ -2536,8 +2536,8 @@
           "en": "I'm not sure where the keys are. It is a possibility."
         },
         {
-          "he": "אפשרות בעבר: might / may / could + have + V3.",
-          "en": "Past possibility: might / may / could + have + V3."
+          "he": "אפשרות בעבר: מודל של \"אולי\" + have + V3.",
+          "en": "Past possibility: a \"maybe\" modal + have + V3."
         }
       ],
       "explanation": {
@@ -2592,8 +2592,8 @@
           "en": "last night: a deduction about the past."
         },
         {
-          "he": "must + have + V3.",
-          "en": "must + have + V3."
+          "he": "הסקה על העבר: מודל + have + V3.",
+          "en": "Past deduction: modal + have + V3."
         }
       ],
       "explanation": {
@@ -2702,8 +2702,8 @@
           "en": "We are sure he did not see. It is in the past."
         },
         {
-          "he": "can't + have + V3.",
-          "en": "can't + have + V3."
+          "he": "אחרי מודל לא בא פועל בעבר. איך בונים הסקה על העבר?",
+          "en": "No past verb after a modal. How do we build a past deduction?"
         }
       ],
       "explanation": {
@@ -2812,8 +2812,8 @@
           "en": "We are talking about a person."
         },
         {
-          "he": "לאנשים: who.",
-          "en": "For people: who."
+          "he": "which מתאים רק לדברים.",
+          "en": "which is only for things."
         }
       ],
       "explanation": {
@@ -2866,8 +2866,8 @@
           "en": "phone is a thing."
         },
         {
-          "he": "לדברים: which או that.",
-          "en": "For things: which or that."
+          "he": "who לאנשים, where למקומות. מה נשאר לדברים?",
+          "en": "who is for people, where is for places. What is left for things?"
         }
       ],
       "explanation": {
@@ -2922,8 +2922,8 @@
           "en": "café is a place, and we met is a full clause."
         },
         {
-          "he": "למקום עם משפט שלם אחריו: where.",
-          "en": "For a place followed by a full clause: where."
+          "he": "which צריך מילת יחס כדי לדבר על מקום.",
+          "en": "which needs a preposition to talk about a place."
         }
       ],
       "explanation": {
@@ -3252,8 +3252,8 @@
           "en": "Whose projects?"
         },
         {
-          "he": "שייכות: whose + שם עצם.",
-          "en": "Possession: whose + noun."
+          "he": "who's = who is. זה לא מתאים כאן.",
+          "en": "who's = who is. It does not fit here."
         }
       ],
       "explanation": {
@@ -3529,8 +3529,8 @@
           "en": "enjoy is a special verb."
         },
         {
-          "he": "אחרי enjoy בא פועל עם ing.",
-          "en": "After enjoy, use -ing."
+          "he": "enjoy שייך לקבוצה של finish, mind ו־avoid.",
+          "en": "enjoy is in the same group as finish, mind and avoid."
         }
       ],
       "explanation": {
@@ -3580,12 +3580,12 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "decide הולך עם to.",
-          "en": "decide goes with to."
+          "he": "decide מתאר החלטה על פעולה בעתיד.",
+          "en": "decide is about a choice to do something later."
         },
         {
-          "he": "decide, want, hope, plan + to + פועל.",
-          "en": "decide, want, hope, plan + to + verb."
+          "he": "decide שייך לקבוצה של want, hope ו־plan.",
+          "en": "decide is in the same group as want, hope and plan."
         }
       ],
       "explanation": {
@@ -3691,8 +3691,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "promise הולך עם to.",
-          "en": "promise goes with to."
+          "he": "promise שייך לקבוצה של decide ו־want.",
+          "en": "promise is in the same group as decide and want."
         },
         {
           "he": "איפה שמים not? לפני to.",
@@ -3803,8 +3803,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "mind הולך עם ing.",
-          "en": "mind goes with -ing."
+          "he": "mind שייך לקבוצה של enjoy ו־avoid.",
+          "en": "mind is in the same group as enjoy and avoid."
         },
         {
           "he": "Would you mind ...? היא בקשה מנומסת.",
@@ -3968,8 +3968,8 @@
           "en": "This is something to do in the future."
         },
         {
-          "he": "remember + to = לא לשכוח לעשות.",
-          "en": "remember + to = don't forget to do."
+          "he": "remember + to ו־remember + ing שונים במשמעות. מה מתאים לפעולה שעוד לא נעשתה?",
+          "en": "remember + to and remember + -ing mean different things. Which fits an action not done yet?"
         }
       ],
       "explanation": {
@@ -4024,8 +4024,8 @@
           "en": "It is a memory of something that already happened."
         },
         {
-          "he": "forget + ing = לשכוח חוויה מהעבר.",
-          "en": "forget + -ing = forget a past experience."
+          "he": "forget + to ו־forget + ing שונים במשמעות. מה מתאים לזיכרון?",
+          "en": "forget + to and forget + -ing mean different things. Which fits a memory?"
         }
       ],
       "explanation": {
@@ -4076,8 +4076,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "avoid הולך עם ing.",
-          "en": "avoid goes with -ing."
+          "he": "avoid = להימנע. זה פועל מיוחד.",
+          "en": "avoid is a special verb."
         },
         {
           "he": "כמו enjoy ו־mind.",
@@ -4243,8 +4243,8 @@
           "en": "let and make are special."
         },
         {
-          "he": "let + אדם + פועל בסיס.",
-          "en": "let + person + base verb."
+          "he": "let ו־make לא מתנהגים כמו want: אין אחריהם to.",
+          "en": "let and make do not behave like want: no to after them."
         }
       ],
       "explanation": {
@@ -4445,7 +4445,7 @@
         {
           "id": "b",
           "text": "said",
-          "misconception": "reported.say-tell"
+          "misconception": "collocations.say-tell"
         },
         {
           "id": "c",
@@ -4499,7 +4499,7 @@
         {
           "id": "b",
           "text": "told",
-          "misconception": "reported.say-tell"
+          "misconception": "collocations.say-tell"
         },
         {
           "id": "c",
@@ -4542,7 +4542,7 @@
       "skill": "grammar.reported-speech",
       "level": "B1",
       "difficulty": 0.45,
-      "prompt": "\"We are playing football,\" they said. → They said they ___ playing football.",
+      "prompt": "\"We are playing football,\" they said yesterday. → They said they ___ playing football.",
       "instruction": {
         "he": "להשלים את המילה החסרה",
         "en": "Fill in the missing word"
@@ -4625,8 +4625,8 @@
           "en": "It is no longer a question, but a normal sentence."
         },
         {
-          "he": "סדר רגיל: נושא + פועל, בלי do/did.",
-          "en": "Normal order: subject + verb, no do/did."
+          "he": "בשאלה מדווחת אין do או did.",
+          "en": "A reported question has no do or did."
         }
       ],
       "explanation": {
@@ -4759,13 +4759,14 @@
       "skill": "grammar.reported-speech",
       "level": "B2",
       "difficulty": 0.6,
-      "prompt": "\"I have lost my keys,\" said Ben. → Ben said he ___ his keys.",
+      "prompt": "\"I have lost my keys,\" Ben said last week. → Ben said he ___ his keys.",
       "instruction": {
         "he": "להשלים את החסר (מילה אחת או שתיים)",
         "en": "Fill in the gap (one or two words)"
       },
       "answers": [
-        "had lost"
+        "had lost",
+        "lost"
       ],
       "knownErrors": [
         {
@@ -4774,13 +4775,6 @@
           "feedback": {
             "he": "בדיבור עקיף has lost זז אחורה ל־had lost.",
             "en": "In reported speech, has lost moves back to had lost."
-          }
-        },
-        {
-          "answer": "lost",
-          "feedback": {
-            "he": "כמעט. צריך עוד צעד אחורה: had + V3.",
-            "en": "Almost. Move one more step back: had + V3."
           }
         }
       ],
@@ -4839,8 +4833,8 @@
           "en": "It is an instruction (command)."
         },
         {
-          "he": "tell + אדם + (not) to + פועל.",
-          "en": "tell + person + (not) to + verb."
+          "he": "בדיווח של ציווי לא משתמשים ב־don't.",
+          "en": "Do not use don't when reporting a command."
         }
       ],
       "explanation": {
@@ -5284,8 +5278,8 @@
           "en": "nobody is a negative word."
         },
         {
-          "he": "אחרי nobody ה־tag חיובי, והנושא בו הוא they.",
-          "en": "After nobody, the tag is positive, with they."
+          "he": "ב־tag משתמשים בכינוי גוף, לא במילה nobody.",
+          "en": "The tag uses a pronoun, not the word nobody."
         }
       ],
       "explanation": {
@@ -5440,8 +5434,8 @@
           "en": "We are talking about life in general."
         },
         {
-          "he": "שמות עצם כלליים ומופשטים לא מקבלים the.",
-          "en": "General, abstract nouns don't take the."
+          "he": "life כאן הוא רעיון כללי, לא חיים של מישהו מסוים.",
+          "en": "life here is a general idea, not one person's life."
         }
       ],
       "explanation": {
@@ -5601,8 +5595,8 @@
           "en": "We already mentioned this dog."
         },
         {
-          "he": "פעם שנייה: the.",
-          "en": "Second time: the."
+          "he": "כשכבר יודעים על איזה כלב מדובר, איזו מילה מתאימה?",
+          "en": "When we know which dog it is, which word fits?"
         }
       ],
       "explanation": {
@@ -5651,8 +5645,8 @@
           "en": "Earth has only one moon."
         },
         {
-          "he": "לדבר יחיד מסוגו: the.",
-          "en": "For something unique: the."
+          "he": "כולם יודעים על איזה ירח מדובר.",
+          "en": "Everyone knows which moon we mean."
         }
       ],
       "explanation": {
@@ -5755,8 +5749,8 @@
           "en": "Music in general, not specific music."
         },
         {
-          "he": "כללי = בלי the.",
-          "en": "General = no the."
+          "he": "בעברית \"את המוזיקה\", אבל באנגלית שמות עצם כלליים מתנהגים אחרת.",
+          "en": "Hebrew adds \"the\" here, but English treats general nouns differently."
         }
       ],
       "explanation": {
@@ -6150,8 +6144,8 @@
           "en": "May is a month."
         },
         {
-          "he": "חודשים, שנים ועונות: in.",
-          "en": "Months, years and seasons: in."
+          "he": "May הוא פרק זמן ארוך: לא יום ולא שעה.",
+          "en": "May is a long period: not a day and not a clock time."
         }
       ],
       "explanation": {
@@ -6200,8 +6194,8 @@
           "en": "8 o'clock is a time on the clock."
         },
         {
-          "he": "לשעות: at.",
-          "en": "For clock times: at."
+          "he": "on לימים, in לחודשים. ומה לשעה?",
+          "en": "on is for days, in is for months. What about a clock time?"
         }
       ],
       "explanation": {
@@ -6251,8 +6245,8 @@
           "en": "Monday is a day."
         },
         {
-          "he": "ימים ותאריכים: on.",
-          "en": "Days and dates: on."
+          "he": "at לשעות, in לחודשים. ומה ליום?",
+          "en": "at is for clock times, in is for months. What about a day?"
         }
       ],
       "explanation": {
@@ -6348,12 +6342,12 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "המפתחות נמצאים על המשטח של השולחן.",
-          "en": "The keys are on the surface of the table."
+          "he": "איפה בדיוק נמצאים המפתחות?",
+          "en": "Where exactly are the keys?"
         },
         {
-          "he": "על משטח: on.",
-          "en": "On a surface: on."
+          "he": "הם נוגעים במשטח של השולחן.",
+          "en": "They touch the top of the table."
         }
       ],
       "explanation": {
@@ -6402,8 +6396,8 @@
           "en": "Ashdod is a city."
         },
         {
-          "he": "ערים ומדינות: in.",
-          "en": "Cities and countries: in."
+          "he": "היא גרה בתוך העיר.",
+          "en": "She lives inside the city."
         }
       ],
       "explanation": {
@@ -6454,8 +6448,8 @@
           "en": "A bus stop is a specific point."
         },
         {
-          "he": "לנקודת מפגש: at.",
-          "en": "For a meeting point: at."
+          "he": "לא בתוך התחנה ולא עליה, אלא בנקודה.",
+          "en": "Not inside it and not on top of it: at a point."
         }
       ],
       "explanation": {
@@ -6547,7 +6541,7 @@
         },
         {
           "id": "b",
-          "text": "in",
+          "text": "of",
           "misconception": "prepositions.dependent"
         },
         {
@@ -6562,8 +6556,8 @@
           "en": "In Hebrew 'good in'. In English?"
         },
         {
-          "he": "good + at.",
-          "en": "good + at."
+          "he": "זה לא in כמו בעברית.",
+          "en": "It is not in, as in Hebrew."
         }
       ],
       "explanation": {
@@ -6667,8 +6661,8 @@
           "en": "In Hebrew 'afraid from'."
         },
         {
-          "he": "afraid + of.",
-          "en": "afraid + of."
+          "he": "זה לא from, למרות \"מ\" בעברית.",
+          "en": "It is not from, even though Hebrew uses מ."
         }
       ],
       "explanation": {
@@ -6871,8 +6865,8 @@
           "en": "To apologize for something."
         },
         {
-          "he": "apologize + for.",
-          "en": "apologize + for."
+          "he": "אותה מילת יחס כמו ב־thank you ___ your help.",
+          "en": "The same preposition as in thank you ___ your help."
         }
       ],
       "explanation": {
@@ -6921,8 +6915,8 @@
           "en": "In Hebrew 'responsible on'."
         },
         {
-          "he": "responsible + for.",
-          "en": "responsible + for."
+          "he": "אותה מילת יחס כמו ב־apologize ___ something.",
+          "en": "The same preposition as in apologize ___ something."
         }
       ],
       "explanation": {
@@ -6977,8 +6971,8 @@
           "en": "listen needs a preposition before what you hear."
         },
         {
-          "he": "listen + to.",
-          "en": "listen + to."
+          "he": "בעברית \"מקשיבים ל...\".",
+          "en": "Hebrew says \"listen ל...\"."
         }
       ],
       "explanation": {
@@ -7030,8 +7024,8 @@
           "en": "Parts of the day."
         },
         {
-          "he": "in the morning, in the afternoon, but at night.",
-          "en": "in the morning, in the afternoon, but at night."
+          "he": "בוקר הוא פרק זמן, לא נקודה.",
+          "en": "The morning is a period of time, not a point."
         }
       ],
       "explanation": {
@@ -7079,8 +7073,8 @@
           "en": "To wait for, in English?"
         },
         {
-          "he": "wait + for.",
-          "en": "wait + for."
+          "he": "זה לא to, למרות \"ל\" בעברית.",
+          "en": "It is not to, even though Hebrew uses ל."
         }
       ],
       "explanation": {
@@ -7135,8 +7129,8 @@
           "en": "brothers: you can count them."
         },
         {
-          "he": "many לדברים שסופרים.",
-          "en": "many for countable things."
+          "he": "much בא עם דברים שלא סופרים.",
+          "en": "much goes with uncountable nouns."
         }
       ],
       "explanation": {
@@ -7244,8 +7238,8 @@
           "en": "The sentence is positive."
         },
         {
-          "he": "some במשפט חיובי, any בשלילה ובשאלה.",
-          "en": "some in positive sentences, any in negatives and questions."
+          "he": "any בא בעיקר בשלילה ובשאלות.",
+          "en": "any is mostly for negatives and questions."
         }
       ],
       "explanation": {
@@ -7408,8 +7402,8 @@
           "en": "sugar is uncountable."
         },
         {
-          "he": "very little = כמעט אין.",
-          "en": "very little = almost none."
+          "he": "few ו־a few באים עם דברים שסופרים.",
+          "en": "few and a few go with countable nouns."
         }
       ],
       "explanation": {
@@ -7620,8 +7614,8 @@
           "en": "people are countable."
         },
         {
-          "he": "very few = כמעט אין (לנספרים).",
-          "en": "very few = almost none (countable)."
+          "he": "less משמש להשוואה עם than.",
+          "en": "less is used for comparisons with than."
         }
       ],
       "explanation": {
@@ -7774,8 +7768,8 @@
           "en": "tall is a short word."
         },
         {
-          "he": "מילה קצרה + er.",
-          "en": "Short word + -er."
+          "he": "למילה קצרה לא מוסיפים more.",
+          "en": "Do not add more to a short word."
         }
       ],
       "explanation": {
@@ -7884,8 +7878,8 @@
           "en": "In Hebrew 'hotter from'. In English?"
         },
         {
-          "he": "השוואה: than.",
-          "en": "Comparison: than."
+          "he": "זה לא from, למרות \"מ\" בעברית.",
+          "en": "It is not from, even though Hebrew uses מ."
         }
       ],
       "explanation": {
@@ -8053,8 +8047,8 @@
           "en": "difficult is a long word."
         },
         {
-          "he": "סופרלטיב של מילה ארוכה: the most.",
-          "en": "Superlative of a long word: the most."
+          "he": "למילה ארוכה לא מוסיפים est. ומה בא לפני סופרלטיב?",
+          "en": "A long word does not take -est. And what comes before a superlative?"
         }
       ],
       "explanation": {
@@ -8336,8 +8330,8 @@
           "en": "How do you make a comparative stronger: very or much?"
         },
         {
-          "he": "much / a lot / far + השוואה.",
-          "en": "much / a lot / far + comparative."
+          "he": "very לא בא לפני השוואה.",
+          "en": "very does not go before a comparative."
         }
       ],
       "explanation": {
@@ -8489,8 +8483,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "צריך כאן it is.",
-          "en": "You need it is here."
+          "he": "יש כאן שייכות?",
+          "en": "Is this about possession?"
         },
         {
           "he": "קיצור של it is כותבים עם גרש.",
@@ -8549,7 +8543,7 @@
           "en": "The friends' bags: possession."
         },
         {
-          "he": "שלושה מילים שנשמעות אותו דבר.",
+          "he": "שלוש מילים נשמעות אותו דבר.",
           "en": "Three words sound the same."
         }
       ],
@@ -8710,8 +8704,8 @@
           "en": "He taught the same person: himself."
         },
         {
-          "he": "he → him + self.",
-          "en": "he → him + self."
+          "he": "hisself לא קיים.",
+          "en": "hisself does not exist."
         }
       ],
       "explanation": {
@@ -8980,8 +8974,8 @@
           "en": "many people: plural."
         },
         {
-          "he": "רבים: there are.",
-          "en": "Plural: there are."
+          "he": "\"יש\" באנגלית לא נאמר עם have.",
+          "en": "English does not use have for \"יש\" here."
         }
       ],
       "explanation": {
@@ -9367,7 +9361,7 @@
       "skill": "grammar.plurals",
       "level": "B1",
       "difficulty": 0.45,
-      "prompt": "Can you send me the ___ about the course?",
+      "prompt": "Can you send me ___ about the course?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה",
         "en": "Choose the correct answer"
@@ -9416,7 +9410,7 @@
       ],
       "estimatedTimeSec": 18,
       "source": "original",
-      "audioText": "Can you send me the information about the course?"
+      "audioText": "Can you send me information about the course?"
     },
     {
       "id": "gs.plural.furniture",
@@ -10061,7 +10055,7 @@
         {
           "id": "b",
           "text": "Where you live?",
-          "misconception": "word-order.question"
+          "misconception": "present-simple.question-without-do"
         },
         {
           "id": "c",
@@ -10075,8 +10069,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'איפה אתה גר?' בלי מילת עזר.",
-          "en": "Hebrew has no helper word in questions."
+          "he": "בעברית שואלים \"איפה הוא גר?\" בלי מילת עזר.",
+          "en": "Hebrew questions have no helper word."
         },
         {
           "he": "מילת שאלה + do + נושא + פועל.",
@@ -10220,7 +10214,7 @@
         {
           "id": "b",
           "text": "Can you tell me what time is it?",
-          "misconception": "word-order.question"
+          "misconception": "reported.question-order"
         },
         {
           "id": "c",
@@ -10477,11 +10471,12 @@
         {
           "id": "c",
           "text": "Despite",
-          "misconception": "connectors.despite-although"
+          "misconception": "connectors.despite-clause"
         },
         {
           "id": "d",
-          "text": "However"
+          "text": "However",
+          "misconception": "connectors.although-however"
         }
       ],
       "correctOptionId": "a",
@@ -10651,7 +10646,7 @@
         {
           "id": "c",
           "text": "Despite he was tired, he finished his homework.",
-          "misconception": "connectors.despite-although"
+          "misconception": "connectors.despite-clause"
         },
         {
           "id": "d",
@@ -10769,8 +10764,8 @@
           "en": "Why did I go? To buy."
         },
         {
-          "he": "מטרה + פועל: to.",
-          "en": "Purpose + verb: to."
+          "he": "לא for, למרות \"בשביל\" בעברית.",
+          "en": "Not for, even though Hebrew says בשביל."
         }
       ],
       "explanation": {
@@ -10806,7 +10801,8 @@
         },
         {
           "id": "b",
-          "text": "if"
+          "text": "if",
+          "misconception": "connectors.unless-if"
         },
         {
           "id": "c",
@@ -10820,12 +10816,12 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בלי ללמוד, אין הצלחה במבחן. איזו מילה פירושה 'אלא אם'?",
-          "en": "You won't pass, except if you study."
+          "he": "בלי ללמוד, אין הצלחה במבחן.",
+          "en": "Without studying, there is no success."
         },
         {
-          "he": "unless = if not.",
-          "en": "unless = if not."
+          "he": "if לא מתאים: מי שלומד דווקא עובר.",
+          "en": "if does not fit: people who study do pass."
         }
       ],
       "explanation": {
@@ -10916,7 +10912,8 @@
         },
         {
           "id": "b",
-          "text": "Although"
+          "text": "Although",
+          "misconception": "connectors.although-however"
         },
         {
           "id": "c",
@@ -11310,7 +11307,7 @@
         {
           "id": "b",
           "text": "am agree",
-          "misconception": "verbs.be-plus-verb"
+          "misconception": "present-simple.be-plus-verb"
         },
         {
           "id": "c",
@@ -11365,7 +11362,7 @@
         {
           "id": "b",
           "text": "My cousin is live in Netanya.",
-          "misconception": "verbs.be-plus-verb"
+          "misconception": "present-simple.be-plus-verb"
         },
         {
           "id": "c",
@@ -11786,7 +11783,7 @@
           "kind": "mistake",
           "wrong": "If you will study, you will pass.",
           "right": "If you study, you will pass.",
-          "he": "בעברית 'אם תלמד' בעתיד, אבל באנגלית אחרי if לא שמים will."
+          "he": "בעברית התנאי בא בזמן עתיד, אבל באנגלית אחרי if לא שמים will."
         },
         {
           "kind": "mistake",
@@ -11978,7 +11975,7 @@
         },
         {
           "kind": "tip",
-          "he": "ל־must ול־can אין עתיד ועבר משלהם. בעבר: had to, could. בעתיד: will have to, will be able to."
+          "he": "ל־must אין עבר ועתיד, ול־can אין עתיד. בעבר: had to, could. בעתיד: will have to, will be able to."
         }
       ],
       "source": "original"
@@ -12384,8 +12381,8 @@
               "he": "קר היום, נכון?"
             },
             {
-              "en": "You don't like fish, do you?",
-              "he": "את/ה לא אוהב/ת דגים, נכון?"
+              "en": "They don't like fish, do they?",
+              "he": "הם לא אוהבים דגים, נכון?"
             }
           ]
         },
@@ -12790,7 +12787,7 @@
       "blocks": [
         {
           "kind": "text",
-          "he": "בכל מילת קישור שואלים שתי שאלות: מה המשמעות? ומה בא אחריה, משפט שלם או שם עצם?"
+          "he": "בכל מילת קישור שואלים שתי שאלות: מה המשמעות? ומה בא אחריה, משפט שלם או שם עצם? למטרה עם פועל: to / in order to + V1."
         },
         {
           "kind": "table",
@@ -12822,7 +12819,7 @@
             [
               "מטרה",
               "so that",
-              "to / in order to + V1",
+              "for + שם עצם",
               ""
             ],
             [
@@ -12922,8 +12919,8 @@
               "note": "אחרי be"
             },
             {
-              "en": "Do you know where she lives?",
-              "he": "את/ה יודע/ת איפה היא גרה?",
+              "en": "We don't know where she lives.",
+              "he": "אנחנו לא יודעים איפה היא גרה.",
               "note": "שאלה עקיפה: סדר רגיל"
             }
           ]

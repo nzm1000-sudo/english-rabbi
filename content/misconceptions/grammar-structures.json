@@ -3,7 +3,7 @@
     "id": "conditionals.would-in-if-clause",
     "skill": "grammar.conditionals.second",
     "note": {
-      "he": "שם would אחרי if (If I would have...)",
+      "he": "שם/ה would אחרי if (If I would have...)",
       "en": "Puts would after if (If I would have...)"
     },
     "tip": {
@@ -27,7 +27,7 @@
     "id": "wish.tense-backshift",
     "skill": "grammar.wish",
     "note": {
-      "he": "לא מזיז את הזמן אחורה אחרי wish (I wish I have)",
+      "he": "לא מזיז/ה את הזמן אחורה אחרי wish (I wish I have)",
       "en": "Does not move the tense back after wish (I wish I have)"
     },
     "tip": {
@@ -39,7 +39,7 @@
     "id": "modals.to-after-modal",
     "skill": "grammar.modals",
     "note": {
-      "he": "שם to אחרי מודל (must to, can to, should to)",
+      "he": "שם/ה to אחרי מודל (must to, can to, should to)",
       "en": "Puts to after a modal (must to, can to, should to)"
     },
     "tip": {
@@ -63,7 +63,7 @@
     "id": "modals.double-modal",
     "skill": "grammar.modals",
     "note": {
-      "he": "שם שני מודלים ביחד (will can, must can)",
+      "he": "שם/ה שני מודלים ביחד (will can, must can)",
       "en": "Puts two modals together (will can, must can)"
     },
     "tip": {
@@ -171,7 +171,7 @@
     "id": "gerund-infinitive.let-make-to",
     "skill": "grammar.gerunds-infinitives",
     "note": {
-      "he": "שם to אחרי let או make",
+      "he": "שם/ה to אחרי let או make",
       "en": "Puts to after let or make"
     },
     "tip": {
@@ -183,7 +183,7 @@
     "id": "reported.no-backshift",
     "skill": "grammar.reported-speech",
     "note": {
-      "he": "לא מזיז את הזמן אחורה בדיבור עקיף",
+      "he": "לא מזיז/ה את הזמן אחורה בדיבור עקיף",
       "en": "Does not move the tense back in reported speech"
     },
     "tip": {
@@ -195,31 +195,19 @@
     "id": "reported.question-order",
     "skill": "grammar.reported-speech",
     "note": {
-      "he": "שומר/ת על סדר של שאלה בשאלה מדווחת",
-      "en": "Keeps question word order in a reported question"
+      "he": "שומר/ת על סדר של שאלה בשאלה מדווחת או עקיפה",
+      "en": "Keeps question word order in a reported or indirect question"
     },
     "tip": {
-      "he": "בשאלה מדווחת: נושא + פועל, בלי do/did: She asked where I lived.",
-      "en": "Reported question: subject + verb, no do/did."
-    }
-  },
-  {
-    "id": "reported.say-tell",
-    "skill": "grammar.reported-speech",
-    "note": {
-      "he": "מתבלבל/ת בין say ל־tell",
-      "en": "Confuses say and tell"
-    },
-    "tip": {
-      "he": "tell + אדם (told me). say בלי אדם (said that), או said to me.",
-      "en": "tell + person (told me). say without a person (said that)."
+      "he": "בשאלה מדווחת או עקיפה: נושא + פועל, בלי do/did: She asked where I lived. Can you tell me what time it is?",
+      "en": "In reported and indirect questions: subject + verb, no do/did: She asked where I lived. Can you tell me what time it is?"
     }
   },
   {
     "id": "question-tags.polarity",
     "skill": "grammar.question-tags",
     "note": {
-      "he": "לא הופך חיובי/שלילי ב־question tag",
+      "he": "לא הופך/ת חיובי ושלילי ב־question tag",
       "en": "Does not reverse positive/negative in the question tag"
     },
     "tip": {
@@ -243,7 +231,7 @@
     "id": "articles.the-generic",
     "skill": "grammar.articles",
     "note": {
-      "he": "שם the לפני דבר כללי (the life, the music)",
+      "he": "שם/ה the לפני דבר כללי (the life, the music)",
       "en": "Uses the for general meaning (the life, the music)"
     },
     "tip": {
@@ -255,7 +243,7 @@
     "id": "articles.a-uncountable",
     "skill": "grammar.articles",
     "note": {
-      "he": "שם a / an לפני שם עצם שלא נספר (an information, an advice)",
+      "he": "שם/ה a / an לפני שם עצם שלא נספר (an information, an advice)",
       "en": "Uses a / an with uncountable nouns (an information, an advice)"
     },
     "tip": {
@@ -267,7 +255,7 @@
     "id": "articles.the-proper-names",
     "skill": "grammar.articles",
     "note": {
-      "he": "שם the לפני שמות של מדינות וערים (the Israel)",
+      "he": "שם/ה the לפני שמות של מדינות וערים (the Israel)",
       "en": "Puts the before country and city names (the Israel)"
     },
     "tip": {
@@ -387,7 +375,7 @@
     "id": "there-is.agreement",
     "skill": "grammar.there-is",
     "note": {
-      "he": "לא מתאים is / are לשם העצם אחרי there",
+      "he": "לא מתאים/ה is / are לשם העצם אחרי there",
       "en": "Does not match is / are to the noun after there"
     },
     "tip": {
@@ -459,24 +447,12 @@
     "id": "word-order.frequency-adverb",
     "skill": "grammar.word-order",
     "note": {
-      "he": "שם תואר תדירות במקום הלא נכון (I go always)",
+      "he": "שם/ה תואר תדירות במקום הלא נכון (I go always)",
       "en": "Puts frequency adverbs in the wrong place (I go always)"
     },
     "tip": {
       "he": "always, usually, never: לפני הפועל הראשי, אבל אחרי be (She is always late).",
       "en": "Frequency adverbs: before the main verb, after be."
-    }
-  },
-  {
-    "id": "word-order.question",
-    "skill": "grammar.word-order",
-    "note": {
-      "he": "בונה שאלה בלי פועל עזר או בסדר הלא נכון (Where you live?)",
-      "en": "Builds questions without an auxiliary or in the wrong order (Where you live?)"
-    },
-    "tip": {
-      "he": "שאלה: מילת שאלה + פועל עזר + נושא + פועל. בשאלה עקיפה: סדר רגיל.",
-      "en": "Question: question word + auxiliary + subject + verb. Indirect question: normal order."
     }
   },
   {
@@ -507,12 +483,12 @@
     "id": "connectors.despite-although",
     "skill": "grammar.connectors",
     "note": {
-      "he": "מתבלבל/ת בין despite (+ שם עצם) ל־although (+ משפט)",
-      "en": "Confuses despite (+ noun) and although (+ clause)"
+      "he": "שם/ה although לפני שם עצם או ing (although the rain)",
+      "en": "Uses although before a noun or -ing (although the rain)"
     },
     "tip": {
-      "he": "although + משפט שלם. despite / in spite of + שם עצם או ing.",
-      "en": "although + clause. despite / in spite of + noun or -ing."
+      "he": "although + משפט שלם. לפני שם עצם או ing: despite / in spite of.",
+      "en": "although + full clause. Before a noun or -ing: despite / in spite of."
     }
   },
   {
@@ -561,18 +537,6 @@
     "tip": {
       "he": "unless = if not. לכן אחריו פועל חיובי: unless you hurry.",
       "en": "unless = if not, so the verb after it is positive."
-    }
-  },
-  {
-    "id": "verbs.be-plus-verb",
-    "skill": "grammar.present-simple",
-    "note": {
-      "he": "שם am / is / are לפני פועל רגיל (I am agree)",
-      "en": "Puts am / is / are before a normal verb (I am agree)"
-    },
-    "tip": {
-      "he": "agree, live, like הם פעלים. בהווה פשוט אין לפניהם am/is/are: I agree, she lives.",
-      "en": "agree, live, like are verbs. In the Present Simple, no am/is/are before them."
     }
   }
 ]
