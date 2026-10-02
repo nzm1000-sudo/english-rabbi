@@ -947,7 +947,7 @@
         }
       ],
       "explanation": {
-        "he": "unless = if not. לא תעבור/י אם לא תגיש/י את כל העבודות. עם if המשפט אומר שמי שמגיש לא עובר, וזה לא הגיוני.",
+        "he": "unless = if not. אי אפשר לעבור את הקורס בלי להגיש את כל העבודות. עם if המשפט אומר שמי שמגיש לא עובר, וזה לא הגיוני.",
         "en": "unless = if not: you won't pass if you don't hand in the projects."
       },
       "interests": [
@@ -1103,7 +1103,7 @@
         }
       ],
       "explanation": {
-        "he": "Otherwise פירושו 'אחרת': אם לא תלבש/י מעיל, תצטנן/י.",
+        "he": "Otherwise פירושו 'אחרת': בלי מעיל אפשר להצטנן.",
         "en": "Otherwise means 'if not': if you don't wear a coat, you'll catch a cold."
       },
       "interests": [],
@@ -1347,8 +1347,7 @@
         },
         {
           "id": "d",
-          "text": "Although",
-          "misconception": "connectors.despite-clause"
+          "text": "Although"
         }
       ],
       "correctOptionId": "a",
@@ -2247,8 +2246,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'מצלמים'. באנגלית 'לוקחים' תמונה.",
-          "en": "In Hebrew we 'photograph'. In English we 'take' a photo."
+          "he": "בעברית 'מצלמים'. באנגלית משתמשים בפועל שאינו make או do.",
+          "en": "In Hebrew we 'photograph'. English uses a verb that is not make or do."
         }
       ],
       "explanation": {
@@ -2295,8 +2294,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "את ההצטננות 'תופסים' כמו כדור.",
-          "en": "You 'catch' a cold like a ball."
+          "he": "זה צירוף קבוע. חושבים על מחלה שעוברת מאדם לאדם, כמו כדור.",
+          "en": "It is a fixed phrase. Think of an illness passed from person to person, like a ball."
         }
       ],
       "explanation": {
@@ -2341,8 +2340,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'גשם חזק'. באנגלית הגשם 'כבד'.",
-          "en": "In Hebrew the rain is 'strong'. In English it's 'heavy'."
+          "he": "בעברית 'גשם חזק'. באנגלית התרגום המילולי לא עובד.",
+          "en": "In Hebrew the rain is 'strong'. In English the literal word doesn't work."
         }
       ],
       "explanation": {
@@ -2390,8 +2389,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "באנגלית 'משלמים' תשומת לב.",
-          "en": "In English you 'pay' attention."
+          "he": "בעברית 'שמים לב'. באנגלית הפועל קשור לכסף.",
+          "en": "In Hebrew we 'put' attention. In English the verb is about money."
         }
       ],
       "explanation": {
@@ -2583,8 +2582,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'עושים הפסקה'. באנגלית 'לוקחים'.",
-          "en": "In Hebrew we 'make' a break. In English we 'take' one."
+          "he": "בעברית 'עושים הפסקה'. באנגלית לא make ולא do.",
+          "en": "In Hebrew we 'make' a break. In English it's not make or do."
         }
       ],
       "explanation": {
@@ -2768,7 +2767,7 @@
         },
         {
           "id": "c",
-          "text": "buys"
+          "text": "goes"
         }
       ],
       "correctOptionId": "a",
@@ -2779,8 +2778,8 @@
         }
       ],
       "explanation": {
-        "he": "אומרים do the shopping. בעברית 'עושים קניות', ובאנגלית כאן באמת do.",
-        "en": "We say do the shopping, with do."
+        "he": "אומרים do the shopping. בעברית 'עושים קניות', ובאנגלית כאן באמת do. goes מתאים רק בלי the: goes shopping.",
+        "en": "We say do the shopping. goes works only without the: goes shopping."
       },
       "interests": [
         "food"
@@ -2823,8 +2822,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'עשה תאונה'. באנגלית 'הייתה לו' תאונה.",
-          "en": "In Hebrew he 'did' an accident. In English he 'had' one."
+          "he": "בעברית 'עשה תאונה'. באנגלית התאונה 'קרתה לו', כמו שיש לו משהו.",
+          "en": "In Hebrew he 'did' an accident. In English the accident happened to him."
         }
       ],
       "explanation": {
@@ -3057,8 +3056,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'מחיר יקר'. באנגלית המחיר 'גבוה'.",
-          "en": "In Hebrew a price is 'expensive'. In English it's 'high'."
+          "he": "בעברית אומרים 'מחיר יקר'. באנגלית המחיר עצמו לא יקר.",
+          "en": "In Hebrew a price can be 'expensive'. In English the price itself isn't expensive."
         }
       ],
       "explanation": {
@@ -3248,8 +3247,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "טמפרטורה היא מספר. מספרים 'גבוהים' או 'ארוכים'?",
-          "en": "Temperature is a number. Is a number tall or high?"
+          "he": "טמפרטורה היא מספר. איזו מילה מתאימה למספר גדול?",
+          "en": "Temperature is a number. Which word fits a big number?"
         }
       ],
       "explanation": {
@@ -3625,8 +3624,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'עשינו כיף'. באנגלית 'היה לנו' כיף.",
-          "en": "In Hebrew we 'did' fun. In English we 'had' fun."
+          "he": "בעברית 'עשינו כיף'. באנגלית לא משתמשים כאן ב־make או ב־do.",
+          "en": "In Hebrew we 'did' fun. In English we don't use make or do here."
         }
       ],
       "explanation": {
@@ -3673,8 +3672,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'לוקחים תרופה'. גם באנגלית.",
-          "en": "In Hebrew you 'take' medicine. In English too."
+          "he": "בעברית ובאנגלית משתמשים באותו פועל לתרופות.",
+          "en": "Hebrew and English use the same verb for medicine."
         }
       ],
       "explanation": {
@@ -3817,7 +3816,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "בעברית 'לעשות טובה'. כאן 'לעשות' הוא do.",
+          "he": "בעברית 'לעשות טובה'. איזה פועל באנגלית מתאים כאן?",
           "en": "In Hebrew you 'do' a favor. Which English verb?"
         }
       ],
@@ -4055,8 +4054,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "את הסיכון 'לוקחים'.",
-          "en": "You 'take' a risk."
+          "he": "באנגלית משתמשים כאן באותו פועל כמו ב־a break וב־a photo.",
+          "en": "English uses the same verb as with a break and a photo."
         }
       ],
       "explanation": {
@@ -4386,7 +4385,7 @@
       "options": [
         {
           "id": "a",
-          "text": "We lived near the sea in the past, but we don't now."
+          "text": "We lived near the sea before, but not now."
         },
         {
           "id": "b",
@@ -4394,7 +4393,7 @@
         },
         {
           "id": "c",
-          "text": "We still live near the sea."
+          "text": "We still live near the sea today."
         },
         {
           "id": "d",
@@ -5228,7 +5227,7 @@
       "options": [
         {
           "id": "a",
-          "text": "This book is good enough to read."
+          "text": "It's a good idea to read this book."
         },
         {
           "id": "b",
@@ -5530,7 +5529,7 @@
         },
         {
           "id": "b",
-          "text": "She has seen her cousin a lot recently."
+          "text": "She has seen her cousin a lot in recent months."
         },
         {
           "id": "c",

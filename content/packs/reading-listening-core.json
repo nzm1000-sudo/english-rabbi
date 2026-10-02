@@ -253,7 +253,7 @@
       "unit": "minimal:ship-sheep"
     },
     {
-      "id": "listen.minimal.live",
+      "id": "listen.minimal.fill",
       "type": "choice",
       "skill": "listening.words",
       "level": "A1",
@@ -266,22 +266,22 @@
       "options": [
         {
           "id": "a",
-          "text": "live"
+          "text": "fill"
         },
         {
           "id": "b",
-          "text": "leave",
+          "text": "feel",
           "misconception": "listening.vowel-length"
         },
         {
           "id": "c",
-          "text": "love"
+          "text": "fall"
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "live (לגור) עם i קצרה. leave (לעזוב) עם ee ארוכה.",
-        "en": "live has a short i. leave has a long ee."
+        "he": "fill (למלא) עם i קצרה. feel (להרגיש) עם ee ארוכה.",
+        "en": "fill has a short i. feel has a long ee."
       },
       "hints": [
         {
@@ -291,12 +291,12 @@
       ],
       "source": "original",
       "estimatedTimeSec": 10,
-      "audioText": "live",
+      "audioText": "fill",
       "modality": "listen",
       "tags": [
         "minimal-pairs"
       ],
-      "unit": "minimal:live-leave"
+      "unit": "minimal:fill-feel"
     },
     {
       "id": "listen.sentence.bus",

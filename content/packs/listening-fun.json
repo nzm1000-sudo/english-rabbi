@@ -264,8 +264,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "הצליל באמצע קרוב יותר ל־a או ל־e?",
-          "en": "Is the middle sound closer to uh or to a?"
+          "he": "הצליל באמצע עמום, או שהפה נפתח לרוחב?",
+          "en": "Is the middle sound a dull uh, or a wide a?"
         }
       ],
       "explanation": {
@@ -2067,7 +2067,7 @@
       "options": [
         {
           "id": "a",
-          "text": "No, because the phone had no battery."
+          "text": "No, the battery was dead."
         },
         {
           "id": "b",
@@ -2075,7 +2075,7 @@
         },
         {
           "id": "c",
-          "text": "No, because they forgot."
+          "text": "No, they forgot to call."
         }
       ],
       "correctOptionId": "a",
@@ -2119,7 +2119,7 @@
         },
         {
           "id": "c",
-          "text": "42 shekels"
+          "text": "43 shekels"
         }
       ],
       "correctOptionId": "a",
@@ -2213,7 +2213,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "pour = לשפוך. מה צריך מטרייה?",
+          "he": "pour = לשפוך. למה צריך מטרייה?",
           "en": "pour = come down a lot. Why an umbrella?"
         }
       ],
@@ -2465,11 +2465,11 @@
         },
         {
           "id": "b",
-          "text": "It will definitely be warm."
+          "text": "It will definitely be warm today."
         },
         {
           "id": "c",
-          "text": "Gal should stay at home."
+          "text": "Gal should just stay at home."
         }
       ],
       "correctOptionId": "a",
@@ -5523,8 +5523,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "הדובר/ת הפריע/ה. מה הסיפור צריך לעשות עכשיו?",
-          "en": "Someone interrupted. What should the story do now?"
+          "he": "מישהו הפריע באמצע הסיפור. מה מבקשים מהמספר/ת לעשות?",
+          "en": "Someone interrupted the story. What do we ask the storyteller to do?"
         }
       ],
       "explanation": {
@@ -6179,16 +6179,16 @@
       "options": [
         {
           "id": "a",
-          "text": "To help people relax and start talking"
+          "text": "To help people relax and talk"
         },
         {
           "id": "b",
-          "text": "To make the room colder",
+          "text": "To make the room feel colder",
           "misconception": "idioms.literal-meaning"
         },
         {
           "id": "c",
-          "text": "To end the party"
+          "text": "To show the party was over"
         }
       ],
       "correctOptionId": "a",
@@ -6458,7 +6458,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה תורו של מי?",
+          "he": "של מי התור עכשיו?",
           "en": "Whose turn is it?"
         }
       ],
@@ -6491,8 +6491,7 @@
         },
         {
           "id": "b",
-          "text": "Very confused",
-          "misconception": "idioms.literal-meaning"
+          "text": "Very confused"
         },
         {
           "id": "c",
@@ -6583,7 +6582,7 @@
         },
         {
           "id": "c",
-          "text": "A present wrapped in paper",
+          "text": "A nice present wrapped in paper",
           "misconception": "idioms.literal-meaning"
         }
       ],
@@ -6667,12 +6666,12 @@
         },
         {
           "id": "b",
-          "text": "His feet were cold.",
+          "text": "His feet felt cold on stage.",
           "misconception": "idioms.literal-meaning"
         },
         {
           "id": "c",
-          "text": "He sang very well."
+          "text": "He sang better than ever."
         }
       ],
       "correctOptionId": "a",
@@ -6859,7 +6858,7 @@
         }
       ],
       "explanation": {
-        "he": "see eye to eye = להסכים, לראות עין בעין. כמו בעברית. don't = הן לא מסכימות.",
+        "he": "see eye to eye = להסכים, לראות עין בעין. כמו בעברית. כאן יש don't, כלומר אין הסכמה.",
         "en": "see eye to eye = agree. They don't agree."
       },
       "tags": [
@@ -6927,16 +6926,16 @@
       "options": [
         {
           "id": "a",
-          "text": "The final problem that made someone lose patience"
+          "text": "One problem too many"
         },
         {
           "id": "b",
-          "text": "The last drink",
+          "text": "The last drink in the glass",
           "misconception": "idioms.literal-meaning"
         },
         {
           "id": "c",
-          "text": "The first mistake"
+          "text": "The very first mistake"
         }
       ],
       "correctOptionId": "a",
@@ -6948,7 +6947,7 @@
       ],
       "explanation": {
         "he": "the last straw = הקש ששבר את גב הגמל. הבעיה האחרונה שאחריה כבר אין סבלנות.",
-        "en": "the last straw = the last problem after many, too much."
+        "en": "the last straw = one more problem after many, and now it is too much."
       },
       "tags": [
         "idiom"
@@ -6980,7 +6979,7 @@
         },
         {
           "id": "c",
-          "text": "I wrote them myself."
+          "text": "I wrote all of them myself."
         }
       ],
       "correctOptionId": "a",
@@ -7063,12 +7062,12 @@
         },
         {
           "id": "b",
-          "text": "Hunting birds",
+          "text": "Hunting birds on the way",
           "misconception": "idioms.literal-meaning"
         },
         {
           "id": "c",
-          "text": "Wasting time"
+          "text": "Wasting time on a long walk"
         }
       ],
       "correctOptionId": "a",
@@ -7103,15 +7102,15 @@
       "options": [
         {
           "id": "a",
-          "text": "What you do matters more than what you say."
+          "text": "What you do matters more than words."
         },
         {
           "id": "b",
-          "text": "Talking loudly is important."
+          "text": "Talking loudly is very important."
         },
         {
           "id": "c",
-          "text": "Actions make a lot of noise.",
+          "text": "Actions make more noise than words.",
           "misconception": "idioms.literal-meaning"
         }
       ],
@@ -7195,12 +7194,12 @@
         },
         {
           "id": "b",
-          "text": "From the sky",
+          "text": "From somewhere in the sky",
           "misconception": "idioms.literal-meaning"
         },
         {
           "id": "c",
-          "text": "Every day"
+          "text": "Every day, as usual"
         }
       ],
       "correctOptionId": "a",
