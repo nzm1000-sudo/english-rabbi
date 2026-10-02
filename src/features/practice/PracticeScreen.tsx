@@ -13,6 +13,8 @@ import { ExerciseView } from './ExerciseView';
 import { isPracticeMode, MODES, type PracticeMode } from './modes';
 import { lightningScore, useSession, type SessionResult } from './useSession';
 import { useGameHistory } from './useGameHistory';
+import { Confetti } from '@/ui/Confetti';
+import { StarIcon, TrophyIcon } from '@/ui/icons';
 
 export function PracticeScreen() {
   const { sid, mode } = useParams();
@@ -191,44 +193,51 @@ function Summary({
     }
   }
 
+  const celebrate = mode === 'lightning' ? correct >= 5 : pct >= 60;
+  const subtitle = sub ?? (pct >= 80 ? 'עבודה מצוינת' : pct >= 50 ? 'התקדמות יפה' : 'כל טעות היא שיעור. נחזור לזה.');
+
   return (
-    <section className="stack" style={{ gap: 'var(--s-5)', marginTop: 'var(--s-4)' }}>
-      <h2 className="title">{headline}</h2>
-      {big && (
-        <div className="panel stack" style={{ alignItems: 'center', gap: 2 }}>
-          <span style={{ fontSize: 48, fontWeight: 700, lineHeight: 1.1 }}>{big}</span>
-          {sub && <span className="muted">{sub}</span>}
+    <section className="stack" style={{ gap: 'var(--s-4)', marginTop: 'var(--s-2)' }}>
+      {celebrate && <Confetti />}
+      <div className="result-hero">
+        <span className="tile-icon" style={{ background: 'rgb(255 255 255 / 0.2)', color: '#fff', width: 56, height: 56, borderRadius: 18 }}>
+          <TrophyIcon size={30} />
+        </span>
+        <h2 className="title" style={{ color: '#fff' }}>{headline}</h2>
+        {big ? <span className="big">{big}{mode === 'lightning' ? '' : '%'}</span> : <span className="big">{pct}%</span>}
+        <span style={{ opacity: 0.92 }}>{subtitle}</span>
+      </div>
+      <div className="stat-grid">
+        <div className="stat">
+          <b>{correct}/{results.length}</b>
+          <span>נכונות</span>
         </div>
-      )}
+        <div className="stat">
+          <b className="row" style={{ gap: 4 }}>
+            <StarIcon size={18} />+{xp}
+          </b>
+          <span>נקודות</span>
+        </div>
+        <div className="stat">
+          <b>{clean}</b>
+          <span>בניסיון ראשון</span>
+        </div>
+      </div>
       {mode === 'exam' && byDomain.size > 0 && (
         <div className="list">
           {[...byDomain.entries()].map(([d, v]) => (
             <div key={d} className="list-item">
               <span className="grow">{domainNameHe(d as never)}</span>
-              <span>
+              <span style={{ fontWeight: 700 }}>
                 {v.c}/{v.t}
               </span>
             </div>
           ))}
         </div>
       )}
-      {!big && (
-        <div className="panel stack">
-          <div className="spread">
-            <span>נכון בניסיון הראשון</span>
-            <strong>
-              {clean} / {results.length}
-            </strong>
-          </div>
-          <div className="spread">
-            <span>נקודות</span>
-            <strong>+{xp}</strong>
-          </div>
-        </div>
-      )}
       {tip && (
         <div className="panel stack">
-          <span className="section-label">נקודה אחת לזכור</span>
+          <strong>נקודה אחת לזכור</strong>
           <p><He>{tip.tip.he}</He></p>
         </div>
       )}

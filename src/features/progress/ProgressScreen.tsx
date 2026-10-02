@@ -5,7 +5,7 @@ import { En } from '@/ui/En';
 import { RANKS, achievements, rankOf } from '@/domain/learning/progression';
 import { useGameHistory } from '@/features/practice/useGameHistory';
 import { domainNameHe } from '@/domain/student/profile';
-import { CheckIcon } from '@/ui/icons';
+import { CheckIcon, StarIcon } from '@/ui/icons';
 
 /** Child-facing progress: rank, what is needed for the next one, achievements, levels. */
 export function ProgressScreen() {
@@ -21,27 +21,27 @@ export function ProgressScreen() {
     <main className="screen">
       <TopBar back={`/s/${student.id}`} title="ההתקדמות שלי" />
 
-      <section className="panel stack">
+      <section className="result-hero" style={{ alignItems: 'stretch', textAlign: 'start' }}>
         <div className="rank">
-          <span className="rank-badge">{r.current.level}</span>
+          <span className="rank-badge" style={{ background: '#fff', color: '#4128c9' }}>{r.current.level}</span>
           <div className="grow">
-            <div style={{ fontWeight: 650 }}>
-              {r.current.he} <En className="small muted">{r.current.name}</En>
+            <div style={{ fontWeight: 800, fontSize: 'var(--t-xl)' }}>
+              {r.current.he} <En className="small">{r.current.name}</En>
             </div>
-            <div className="xs muted">
+            <div className="small" style={{ opacity: 0.9 }}>
               דרגה {r.current.level} מתוך {RANKS.length}
             </div>
           </div>
         </div>
         {r.next && (
           <>
-            <div className="progress" role="progressbar" aria-valuenow={Math.round(r.progress * 100)} aria-valuemin={0} aria-valuemax={100}>
+            <div className="progress" style={{ background: 'rgb(255 255 255 / 0.25)' }} role="progressbar" aria-valuenow={Math.round(r.progress * 100)} aria-valuemin={0} aria-valuemax={100}>
               <span style={{ width: `${Math.round(r.progress * 100)}%` }} />
             </div>
             <div className="small">
               לדרגה הבאה ({r.next.he}): {r.missing.join(' · ')}
             </div>
-            <p className="xs muted">דרגה עולה רק כשיש גם נקודות, גם מילים שנזכרות לאורך זמן, וגם מיומנויות בשליטה. אי אפשר לעלות רק מכמות.</p>
+            <p className="xs" style={{ opacity: 0.85 }}>דרגה עולה רק כשיש גם נקודות, גם מילים שנזכרות לאורך זמן, וגם מיומנויות בשליטה. אי אפשר לעלות רק מכמות.</p>
           </>
         )}
       </section>
@@ -67,12 +67,10 @@ export function ProgressScreen() {
         </span>
         <div className="grid-2">
           {ach.map((a) => (
-            <div key={a.id} className="tile" aria-disabled={!a.earned}>
-              <strong className="row" style={{ gap: 4 }}>
-                {a.earned && <CheckIcon size={16} />}
-                {a.title}
-              </strong>
-              <span className="xs muted">{a.description}</span>
+            <div key={a.id} className={`tile ${a.earned ? 'tile-solid tone-games' : ''}`} aria-disabled={!a.earned} style={{ minHeight: 104 }}>
+              <span className="tile-icon">{a.earned ? <CheckIcon size={20} /> : <StarIcon size={20} />}</span>
+              <strong>{a.title}</strong>
+              <span className="tile-sub">{a.description}</span>
             </div>
           ))}
         </div>

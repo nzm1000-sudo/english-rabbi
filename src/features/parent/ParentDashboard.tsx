@@ -7,6 +7,7 @@ import type { Student } from '@/domain/student/student';
 import { Avatar } from '@/ui/Avatar';
 import { En } from '@/ui/En';
 import { He } from '@/ui/He';
+import { DomainIcon } from '@/ui/DomainIcon';
 import { TopBar } from '@/ui/TopBar';
 import { ChevronIcon } from '@/ui/icons';
 import type { ParentLabel } from '@/domain/learning/mastery';
@@ -147,7 +148,10 @@ function DomainRow({ d }: { d: DomainSummary }) {
   const label = d.label === 'not-assessed' && d.attempts > 0 ? { he: 'הערכה ראשונית', cls: 'badge-neutral' } : LABEL[d.label];
   const dots = Math.round(d.confidence * 5);
   return (
-    <div className="skill-row">
+    <div className={`skill-row tone-${d.domain}`}>
+      <span className="tile-icon">
+        <DomainIcon domain={d.domain} size={20} />
+      </span>
       <span>
         {domainNameHe(d.domain)} <En className="xs muted">{d.domain[0]!.toUpperCase() + d.domain.slice(1)}</En>
       </span>

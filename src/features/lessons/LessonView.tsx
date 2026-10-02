@@ -34,7 +34,7 @@ function Block({ b }: { b: LessonBlock }) {
       );
     case 'rule':
       return (
-        <div className="panel stack" style={{ gap: 4, background: 'var(--accent-weak)', borderColor: 'transparent' }}>
+        <div className="rule-box">
           <span className="small"><He>{b.he}</He></span>
           <En as="p" className="" >
             <strong style={{ fontSize: 'var(--t-lg)' }}>{b.pattern}</strong>

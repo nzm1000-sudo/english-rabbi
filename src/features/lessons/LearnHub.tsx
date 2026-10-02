@@ -8,6 +8,7 @@ import { DOMAINS, domainOf } from '@/domain/skills/taxonomy';
 import { domainNameHe } from '@/domain/student/profile';
 import { compareLevels } from '@/domain/skills/cefr';
 import { LessonView } from './LessonView';
+import { DomainIcon } from '@/ui/DomainIcon';
 
 /** Library of lessons, grouped by domain, easiest first. */
 export function LearnHub() {
@@ -22,13 +23,18 @@ export function LearnHub() {
   return (
     <main className="screen">
       <TopBar back={`/s/${student.id}`} title="שיעורים" />
-      <p className="small muted">הסבר קצר, דוגמאות עם הקראה, טעויות נפוצות, ואז תרגול על הנושא.</p>
+      <p className="subtitle">הסבר קצר, דוגמאות עם הקראה, טעויות נפוצות, ואז תרגול על הנושא.</p>
       {DOMAINS.map((d) => {
         const ls = lessons.filter((l) => domainOf(l.skill) === d);
         if (!ls.length) return null;
         return (
-          <section key={d} className="stack">
-            <span className="section-label">{domainNameHe(d)}</span>
+          <section key={d} className={`stack tone-${d}`}>
+            <div className="row" style={{ gap: 10 }}>
+              <span className="tile-icon" style={{ width: 36, height: 36, borderRadius: 11 }}>
+                <DomainIcon domain={d} size={20} />
+              </span>
+              <h2 style={{ fontSize: 'var(--t-lg)', fontWeight: 750 }}>{domainNameHe(d)}</h2>
+            </div>
             <nav className="list">
               {ls.map((l) => (
                 <Link key={l.id} to={`/s/${student.id}/learn/${l.id}`} className="list-item" style={{ color: 'inherit', textDecoration: 'none' }}>
@@ -36,7 +42,7 @@ export function LearnHub() {
                     {l.title.he}
                     {[...weak].some((w) => w.startsWith(l.skill)) && <span className="badge badge-warn" style={{ marginInlineStart: 8 }}>כדאי לחזק</span>}
                   </span>
-                  <span className="xs muted" dir="ltr">{l.level}</span>
+                  <span className="tile-level" style={{ position: 'static' }} dir="ltr">{l.level}</span>
                   <ChevronIcon />
                 </Link>
               ))}

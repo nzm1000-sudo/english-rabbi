@@ -10,6 +10,8 @@ import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
 import { seededShuffle } from './shuffle';
 import { useServices } from '@/app/services';
+import { domainOf } from '@/domain/skills/taxonomy';
+import { CheckIcon, XIcon } from '@/ui/icons';
 import { Sheet } from '@/ui/Sheet';
 import { LessonView } from '@/features/lessons/LessonView';
 
@@ -67,8 +69,9 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
 
   return (
     <div className="exercise">
-      <div className="stack" style={{ gap: 2 }}>
-        <BiText text={instruction} className="section-label" />
+      <div className={`ex-instruction tone-${domainOf(item.skill)}`}>
+        <span className="dot" style={{ background: 'var(--c-fg)' }} />
+        <BiText text={instruction} />
       </div>
 
       {passage && (
@@ -84,7 +87,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
       )}
 
       {listen && (
-        <div className="center" style={{ minHeight: 120 }}>
+        <div className="center" style={{ minHeight: 140 }}>
           <SpeakButton text={audioText} large label="השמעה" onPlayed={() => dispatch({ type: 'replay' })} />
         </div>
       )}
@@ -106,9 +109,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
 
       {policy === 'teach' && <Help item={item} flow={flow} last={last} support={support} />}
 
-      {finished && feedback === 'full' && <AfterAnswer item={item} flow={flow} support={support} listen={listen} audioText={audioText} />}
-
-      {lesson && feedback === 'full' && (finished || flow.explanationShown) && (
+      {lesson && feedback === 'full' && flow.explanationShown && !finished && (
         <button className="btn btn-ghost btn-sm" style={{ alignSelf: 'flex-start' }} onClick={() => setLessonOpen(true)}>
           לשיעור המלא: {lesson.title.he}
         </button>
@@ -117,14 +118,21 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
         {lesson && <LessonView lesson={lesson} />}
       </Sheet>
 
-      <div className="actions">
-        {finished ? (
-          feedback === 'full' ? (
-            <button className="btn btn-primary" onClick={() => onDone(toOutcome(flow))} autoFocus>
-              המשך
+      {finished && feedback === 'full' ? (
+        <div className={`banner ${flow.phase === 'solved' ? 'banner-good' : 'banner-bad'}`} role="status" aria-live="polite">
+          <AfterAnswer item={item} flow={flow} support={support} listen={listen} audioText={audioText} />
+          {lesson && (
+            <button className="btn btn-ghost btn-sm" style={{ alignSelf: 'flex-start' }} onClick={() => setLessonOpen(true)}>
+              לשיעור המלא: {lesson.title.he}
             </button>
-          ) : null
-        ) : (
+          )}
+          <button className={`btn btn-block ${flow.phase === 'solved' ? 'btn-good' : 'btn-bad'}`} onClick={() => onDone(toOutcome(flow))} autoFocus>
+            המשך
+          </button>
+        </div>
+      ) : (
+      <div className="actions">
+        {finished ? null : (
           <>
             {!(feedback === 'brief' && item.type === 'choice') && (
               <button className="btn btn-primary" form={`answer-${item.id}`} type="submit">
@@ -142,6 +150,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
           </>
         )}
       </div>
+      )}
     </div>
   );
 }
@@ -152,7 +161,7 @@ function Prompt({ item, finished, canSpeak }: { item: Props['item']; finished: b
   const fill = finished ? (item.type === 'typed' ? item.answers[0] : item.options.find((o) => o.id === item.correctOptionId)?.text) : undefined;
   const content = renderCloze(item.prompt, fill);
   return (
-    <div className="row" style={{ alignItems: 'flex-start' }}>
+    <div className="row prompt-card" style={{ alignItems: 'center' }}>
       {isHe ? (
         <p className={`grow ${isWord ? 'prompt-word' : 'prompt'}`}>{content}</p>
       ) : (
@@ -172,9 +181,9 @@ function renderCloze(prompt: string, fill?: string): ReactNode {
     <>
       {before}
       {fill ? (
-        <strong style={{ color: 'var(--good)' }}>{fill}</strong>
+        <strong style={{ color: 'var(--good-ink)' }}>{fill}</strong>
       ) : (
-        <span aria-label="מילה חסרה" style={{ display: 'inline-block', minWidth: '3.5em', borderBottom: '2px solid var(--muted)', margin: '0 2px', verticalAlign: 'baseline' }}>
+        <span aria-label="מילה חסרה" style={{ display: 'inline-block', minWidth: '3.5em', borderBottom: '3px solid var(--primary-fg)', margin: '0 3px', verticalAlign: 'baseline' }}>
           &nbsp;
         </span>
       )}
@@ -213,7 +222,7 @@ function ChoiceInput({
 
   return (
     <form id={`answer-${item.id}`} className="options" onSubmit={submit} role="group" aria-label="תשובות">
-      {options.map((o) => {
+      {options.map((o, idx) => {
         const state = finished && o.id === item.correctOptionId ? 'correct' : wrong.has(o.id) ? 'wrong' : undefined;
         const text = isEnglish ? <En>{o.text}</En> : <span>{o.text}</span>;
         return (
@@ -221,6 +230,7 @@ function ChoiceInput({
             key={o.id}
             type="button"
             className="option"
+            dir={isEnglish ? 'ltr' : undefined}
             aria-pressed={selected === o.id}
             data-state={state}
             disabled={finished || wrong.has(o.id)}
@@ -233,6 +243,9 @@ function ChoiceInput({
               setSelected(o.id);
             }}
           >
+            <span className="key" aria-hidden="true">
+              {'ABCDEF'[idx]}
+            </span>
             {text}
           </button>
         );
@@ -303,7 +316,7 @@ function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowSt
     if (h) {
       blocks.push(
         <div key={`h${i}`} className="feedback feedback-hint" role="status">
-          <span className="xs muted">רמז {i + 1}</span>
+          <span className="feedback-tag">רמז {i + 1}</span>
           <BiText text={chooseText(h, support)} />
         </div>,
       );
@@ -312,7 +325,7 @@ function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowSt
   if (flow.explanationShown) {
     blocks.push(
       <div key="ex" className="feedback feedback-info" role="status">
-        <span className="xs muted">הסבר</span>
+        <span className="feedback-tag" style={{ color: 'var(--primary-fg)' }}>הסבר</span>
         <BiText text={chooseText(item.explanation, support)} />
       </div>,
     );
@@ -320,45 +333,54 @@ function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowSt
   return blocks.length ? <div className="stack" aria-live="polite">{blocks}</div> : null;
 }
 
+const PRAISE = ['מצוין!', 'נכון!', 'יפה מאוד!', 'בדיוק!', 'כל הכבוד!'];
+
 function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['item']; flow: FlowState; support: SupportLanguage; listen: boolean; audioText: string }) {
-  const clean = flow.phase === 'solved' && flow.attempts.length === 1 && flow.hintsShown === 0 && !flow.explanationShown;
-  const header = flow.phase === 'solved' ? (clean ? 'נכון.' : 'נכון. יפה שהמשכת לנסות.') : flow.phase === 'skipped' ? 'דילגנו. נחזור לזה בהמשך.' : 'זו התשובה הנכונה. נחזור לזה בקרוב.';
+  const solved = flow.phase === 'solved';
+  const clean = solved && flow.attempts.length === 1 && flow.hintsShown === 0 && !flow.explanationShown;
+  const praise = PRAISE[[...item.id].reduce((a, ch) => a + ch.charCodeAt(0), 0) % PRAISE.length]!;
+  const header = solved ? (clean ? praise : 'נכון! יפה שהמשכת לנסות') : flow.phase === 'skipped' ? 'דילגנו. נחזור לזה בהמשך' : 'לא נורא, ככה לומדים';
   const model = item.type === 'typed' ? item.answers[0] : item.options.find((o) => o.id === item.correctOptionId)?.text;
   const sentence = item.prompt.includes('___') || listen ? audioText : undefined;
   const example = item.word?.example;
 
   return (
-    <div className={`feedback ${flow.phase === 'solved' ? 'feedback-good' : 'feedback-info'}`} role="status" aria-live="polite">
-      <strong>{header}</strong>
-      {flow.phase !== 'solved' && model && (
-        <div>
-          התשובה: <En>{model}</En>
-        </div>
-      )}
-      {!flow.explanationShown && <BiText text={chooseText(item.explanation, support)} />}
-      {sentence && (
-        <div className="row" style={{ marginTop: 'var(--s-2)' }}>
-          <En className="grow">{sentence}</En>
-          <SpeakButton text={sentence} />
-        </div>
-      )}
-      {item.word && (
-        <div className="stack" style={{ gap: 'var(--s-1)', marginTop: 'var(--s-2)' }}>
-          <div className="row">
-            <En className="grow">
-              <strong>{item.word.lemma}</strong>
-            </En>
-            <SpeakButton text={item.word.lemma} />
+    <>
+      <div className="banner-head">
+        <span className="banner-icon">{solved ? <CheckIcon size={22} /> : <XIcon size={20} />}</span>
+        <span>{header}</span>
+      </div>
+      <div className="banner-body">
+        {!solved && model && (
+          <div style={{ fontWeight: 650 }}>
+            התשובה הנכונה: <En>{model}</En>
           </div>
-          {example && example !== sentence && (
+        )}
+        {!flow.explanationShown && <BiText text={chooseText(item.explanation, support)} className="small" />}
+        {sentence && (
+          <div className="row">
+            <En className="grow">{sentence}</En>
+            <SpeakButton text={sentence} />
+          </div>
+        )}
+        {item.word && (
+          <>
             <div className="row">
-              <En className="grow small">{example}</En>
-              <SpeakButton text={example} />
+              <En className="grow">
+                <strong>{item.word.lemma}</strong>
+              </En>
+              <SpeakButton text={item.word.lemma} />
             </div>
-          )}
-        </div>
-      )}
-    </div>
+            {example && example !== sentence && (
+              <div className="row">
+                <En className="grow small">{example}</En>
+                <SpeakButton text={example} />
+              </div>
+            )}
+          </>
+        )}
+      </div>
+    </>
   );
 }
 
