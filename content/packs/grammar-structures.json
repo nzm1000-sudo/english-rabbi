@@ -1869,7 +1869,7 @@
         },
         {
           "id": "b",
-          "text": "Do"
+          "text": "Does"
         },
         {
           "id": "c",
@@ -5328,10 +5328,6 @@
           "id": "c",
           "text": "(no article)",
           "misconception": "articles.missing-a"
-        },
-        {
-          "id": "d",
-          "text": "the"
         }
       ],
       "correctOptionId": "a",
@@ -11400,6 +11396,314 @@
       "estimatedTimeSec": 25,
       "source": "original",
       "audioText": "My cousin lives in Netanya."
+    },
+    {
+      "id": "gs.comp.biggest",
+      "type": "typed",
+      "skill": "grammar.comparatives",
+      "level": "B1",
+      "difficulty": 0.45,
+      "prompt": "Russia is the ___ country in the world. (big)",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "biggest"
+      ],
+      "knownErrors": [
+        {
+          "answer": "bigest",
+          "feedback": {
+            "he": "מילה קצרה שמסתיימת בתנועה + עיצור מכפילה את העיצור: biggest.",
+            "en": "A short word ending in vowel + consonant doubles the consonant: biggest."
+          }
+        },
+        {
+          "answer": "most big",
+          "feedback": {
+            "he": "big היא מילה קצרה, ולכן est ולא most.",
+            "en": "big is short, so -est, not most."
+          }
+        },
+        {
+          "answer": "bigger",
+          "feedback": {
+            "he": "the ... in the world: צריך סופרלטיב, לא השוואה.",
+            "en": "the ... in the world needs a superlative."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "the ... in the world: הכי.",
+          "en": "the ... in the world: the most of all."
+        }
+      ],
+      "explanation": {
+        "he": "big → bigger → the biggest. מכפילים את ה־g.",
+        "en": "big → bigger → the biggest. Double the g."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "grammar",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 25,
+      "source": "original",
+      "audioText": "Russia is the biggest country in the world."
+    },
+    {
+      "id": "gs.quant.many-students",
+      "type": "typed",
+      "skill": "grammar.quantifiers",
+      "level": "A2",
+      "difficulty": 0.35,
+      "prompt": "There aren't ___ students in the library today. (much / many)",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "many"
+      ],
+      "knownErrors": [
+        {
+          "answer": "much",
+          "misconception": "quantifiers.much-many",
+          "feedback": {
+            "he": "students נספרים, ולכן many.",
+            "en": "students are countable, so many."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "אפשר לספור students?",
+          "en": "Can you count students?"
+        }
+      ],
+      "explanation": {
+        "he": "many עם רבים נספרים: There aren't many students.",
+        "en": "many with countable plurals."
+      },
+      "interests": [
+        "school",
+        "books"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 25,
+      "source": "original",
+      "audioText": "There aren't many students in the library today."
+    },
+    {
+      "id": "gs.ger.finished-cleaning",
+      "type": "typed",
+      "skill": "grammar.gerunds-infinitives",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Have you finished ___ your room? (clean)",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "cleaning"
+      ],
+      "knownErrors": [
+        {
+          "answer": "to clean",
+          "misconception": "gerund-infinitive.choice",
+          "feedback": {
+            "he": "finish הולך עם ing.",
+            "en": "finish goes with -ing."
+          }
+        },
+        {
+          "answer": "clean",
+          "feedback": {
+            "he": "אחרי finish צריך ing.",
+            "en": "After finish, use -ing."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "finish דומה ל־enjoy.",
+          "en": "finish is like enjoy."
+        }
+      ],
+      "explanation": {
+        "he": "finish + ing: Have you finished cleaning?",
+        "en": "finish + -ing."
+      },
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 25,
+      "source": "original",
+      "audioText": "Have you finished cleaning your room?"
+    },
+    {
+      "id": "gs.prep.listening-to",
+      "type": "typed",
+      "skill": "grammar.prepositions",
+      "level": "A2",
+      "difficulty": 0.35,
+      "prompt": "I love listening ___ podcasts.",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "to"
+      ],
+      "knownErrors": [
+        {
+          "answer": "at",
+          "misconception": "prepositions.dependent",
+          "feedback": {
+            "he": "listen הולך עם to.",
+            "en": "listen goes with to."
+          }
+        },
+        {
+          "answer": "for",
+          "misconception": "prepositions.dependent",
+          "feedback": {
+            "he": "listen הולך עם to.",
+            "en": "listen goes with to."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "להקשיב ל... = listen ___",
+          "en": "להקשיב ל... = listen ___"
+        }
+      ],
+      "explanation": {
+        "he": "listen to + מה ששומעים: listening to podcasts.",
+        "en": "listen to + what you hear."
+      },
+      "interests": [
+        "technology"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 25,
+      "source": "original",
+      "audioText": "I love listening to podcasts."
+    },
+    {
+      "id": "gs.tag.isnt-it",
+      "type": "typed",
+      "skill": "grammar.question-tags",
+      "level": "B1",
+      "difficulty": 0.35,
+      "prompt": "It's a beautiful day, ___ it?",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "isn't"
+      ],
+      "knownErrors": [
+        {
+          "answer": "is",
+          "misconception": "question-tags.polarity",
+          "feedback": {
+            "he": "המשפט חיובי, אז ה־tag שלילי.",
+            "en": "The sentence is positive, so the tag is negative."
+          }
+        },
+        {
+          "answer": "doesn't",
+          "misconception": "question-tags.auxiliary",
+          "feedback": {
+            "he": "הפועל במשפט הוא is.",
+            "en": "The verb in the sentence is is."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "It's = It is. משפט חיובי.",
+          "en": "It's = It is. A positive sentence."
+        }
+      ],
+      "explanation": {
+        "he": "It is ..., isn't it? פועל העזר is, ובשלילה isn't.",
+        "en": "It is ..., isn't it?"
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "grammar",
+        "bagrut"
+      ],
+      "estimatedTimeSec": 25,
+      "source": "original",
+      "audioText": "It's a beautiful day, isn't it?"
+    },
+    {
+      "id": "gs.adv.beautifully",
+      "type": "typed",
+      "skill": "grammar.adverbs",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "She sings ___. (beautiful)",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "beautifully"
+      ],
+      "knownErrors": [
+        {
+          "answer": "beautiful",
+          "misconception": "adverbs.adjective-for-adverb",
+          "feedback": {
+            "he": "מתארים איך היא שרה (פועל). צריך ly.",
+            "en": "We describe how she sings (a verb). Add -ly."
+          }
+        },
+        {
+          "answer": "beautifuly",
+          "feedback": {
+            "he": "beautiful + ly = beautifully, עם שתי l.",
+            "en": "beautiful + ly = beautifully, with double l."
+          }
+        }
+      ],
+      "hints": [
+        {
+          "he": "sings איך?",
+          "en": "sings how?"
+        }
+      ],
+      "explanation": {
+        "he": "תואר פועל מתאר פועל: sings beautifully.",
+        "en": "An adverb describes a verb: sings beautifully."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 25,
+      "source": "original",
+      "audioText": "She sings beautifully."
     }
   ],
   "passages": [],
