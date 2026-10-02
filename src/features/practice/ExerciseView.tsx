@@ -39,7 +39,9 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   );
   const [last, setLast] = useState<CheckResult | null>(null);
   const [lessonOpen, setLessonOpen] = useState(false);
-  const { content } = useServices();
+  const { content, speech } = useServices();
+  // Moving to the next item or leaving the session stops this item's audio.
+  useEffect(() => () => speech.stop(), [speech]);
   const lesson = content.lessonsForSkill(item.skill)[0];
   const finished = isFinished(flow);
 
@@ -94,7 +96,10 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
 
       {listen && (
         <div className="center" style={{ minHeight: 140 }}>
-          <SpeakButton text={audioText} large label="השמעה" onPlayed={() => dispatch({ type: 'replay' })} />
+          <div className="row" style={{ gap: 'var(--s-4)' }}>
+            <SpeakButton text={audioText} large label="השמעה" onPlayed={() => dispatch({ type: 'replay' })} />
+            <SpeakButton text={audioText} slow label="השמעה איטית מאוד" onPlayed={() => dispatch({ type: 'replay' })} />
+          </div>
         </div>
       )}
 

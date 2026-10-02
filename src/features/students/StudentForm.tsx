@@ -125,6 +125,9 @@ function StudentFormInner({ student }: { student: Student | null }) {
         <div className="field">
           <span className="label">מהירות הקראה</span>
           <div className="segmented" role="group" aria-label="מהירות">
+            <button type="button" aria-pressed={rate === 'slower'} onClick={() => setRate('slower')}>
+              איטי מאוד
+            </button>
             <button type="button" aria-pressed={rate === 'slow'} onClick={() => setRate('slow')}>
               איטי
             </button>

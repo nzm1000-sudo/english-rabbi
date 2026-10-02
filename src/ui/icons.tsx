@@ -92,3 +92,7 @@ export const ChatIcon = ({ size = 24 }: P) => (
 export const XIcon = ({ size = 22 }: P) => (
   <svg {...ico(size)}><path d="M6 6l12 12M18 6 6 18" /></svg>
 );
+
+export const TurtleIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><path d="M4 15c0-4 3.6-7 8-7s8 3 8 7z" /><path d="M8.5 9.2 10 15M15.5 9.2 14 15M4 15h16" /><path d="M20 13.5c1.4 0 2-.9 2-2" /><path d="M6.5 15v2.5M17.5 15v2.5" /></svg>
+);

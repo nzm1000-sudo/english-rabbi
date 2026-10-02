@@ -8,7 +8,7 @@ import { accentOf, inferQuality, rankVoices } from './voiceRanking';
  * exposes only the pre-installed voices, not downloaded Enhanced/Premium ones.
  * Used as the universal fallback.
  */
-const RATE: Record<SpeakRequest['rate'], number> = { slow: 0.8, normal: 1, fast: 1.15 };
+const RATE: Record<SpeakRequest['rate'], number> = { slower: 0.65, slow: 0.8, normal: 1, fast: 1.15 };
 
 export class WebSpeechProvider implements SpeechProvider {
   readonly id = 'web-speech';

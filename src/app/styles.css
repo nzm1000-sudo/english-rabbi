@@ -622,3 +622,5 @@ a.row-card:active, button.row-card:active { transform: translateY(3px); border-b
 .order-end { font-family: var(--font-en); font-size: 22px; font-weight: 700; color: var(--muted); margin-inline-start: auto; }
 
 .switch-link { font-size: var(--t-xs); font-weight: 600; color: var(--primary-fg); text-decoration: none; }
+
+.speak-slow { width: 64px; height: 64px; border-radius: 20px; color: var(--primary-fg); }

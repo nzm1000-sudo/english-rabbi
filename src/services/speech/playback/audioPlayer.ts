@@ -5,7 +5,8 @@ import { abortError } from '../types';
  * one cleanly. Independent of how the audio was produced.
  */
 export interface AudioPlayback {
-  play(src: Blob | string, signal?: AbortSignal): Promise<void>;
+  /** rate < 1 slows playback; pitch is preserved. */
+  play(src: Blob | string, signal?: AbortSignal, rate?: number): Promise<void>;
   stop(): void;
 }
 
@@ -14,12 +15,17 @@ export class HtmlAudioPlayback implements AudioPlayback {
   private objectUrl: string | null = null;
   private rejectCurrent: ((e: unknown) => void) | null = null;
 
-  play(src: Blob | string, signal?: AbortSignal): Promise<void> {
+  play(src: Blob | string, signal?: AbortSignal, rate = 1): Promise<void> {
     this.stop();
     const url = typeof src === 'string' ? src : (this.objectUrl = URL.createObjectURL(src));
     const el = (this.el ??= new Audio());
     el.preload = 'auto';
     el.src = url;
+    // Keep the natural pitch when slowing down.
+    (el as HTMLAudioElement & { webkitPreservesPitch?: boolean }).webkitPreservesPitch = true;
+    el.preservesPitch = true;
+    el.defaultPlaybackRate = rate;
+    el.playbackRate = rate;
     return new Promise<void>((resolve, reject) => {
       this.rejectCurrent = reject;
       const done = () => {
