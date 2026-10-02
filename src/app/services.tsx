@@ -10,6 +10,7 @@ import { PrerenderedProvider } from '@/services/speech/tts/prerenderedProvider';
 import { RemoteTtsProvider } from '@/services/speech/tts/remoteProvider';
 import { WebSpeechProvider } from '@/services/speech/tts/webSpeechProvider';
 import { Settings } from './settings';
+import { setSoundEnabled } from '@/services/sound';
 
 /**
  * Composition root. The only place that wires concrete implementations.
@@ -29,7 +30,10 @@ export function createAppServices(): AppServices {
   const settings = new Settings(db);
   const playback = new HtmlAudioPlayback();
   const remote = new RemoteTtsProvider(() => ({ baseUrl: settings.get('homeServerUrl') ?? '' }), playback, new DexieAudioCache(db));
-  settings.subscribe(() => remote.resetHealth());
+  settings.subscribe(() => {
+    remote.resetHealth();
+    setSoundEnabled(!settings.get('soundOff'));
+  });
   // Priority: neural audio first, device voice last so speech always works offline.
   const speech = new SpeechService([new PrerenderedProvider(playback), remote, new WebSpeechProvider()]);
   return { db, store, content: contentRegistry, speech, settings };

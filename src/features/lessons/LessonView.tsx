@@ -9,7 +9,7 @@ export function LessonView({ lesson }: { lesson: Lesson }) {
     <article className="stack" style={{ gap: 'var(--s-4)' }}>
       <header className="stack" style={{ gap: 4 }}>
         <h2 className="title" style={{ fontSize: 'var(--t-xl)' }}>
-          {lesson.title.he}
+          <He>{lesson.title.he}</He>
         </h2>
         <En as="p" className="muted small">
           {lesson.title.en}

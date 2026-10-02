@@ -8,6 +8,8 @@ import { VoiceLab } from '@/features/voice-lab/VoiceLab';
 import { LearnHub, LessonScreen } from '@/features/lessons/LearnHub';
 import { ProgressScreen } from '@/features/progress/ProgressScreen';
 import { FamilySetup } from '@/features/students/FamilySetup';
+import { MatchGame } from '@/features/games/MatchGame';
+import { PathScreen } from '@/features/path/PathScreen';
 import { useStudent } from './hooks';
 import { SpeechPrefsProvider } from './speechPrefs';
 import type { ReactNode } from 'react';
@@ -26,6 +28,8 @@ export function App() {
         <Route path="/s/:sid/learn" element={<WithStudentSpeech><LearnHub /></WithStudentSpeech>} />
         <Route path="/s/:sid/learn/:lessonId" element={<WithStudentSpeech><LessonScreen /></WithStudentSpeech>} />
         <Route path="/s/:sid/progress" element={<ProgressScreen />} />
+        <Route path="/s/:sid/match" element={<WithStudentSpeech><MatchGame /></WithStudentSpeech>} />
+        <Route path="/s/:sid/path" element={<PathScreen />} />
         <Route path="/parent" element={<ParentDashboard />} />
         <Route path="/parent/voices" element={<VoiceLab />} />
         <Route path="*" element={<Navigate to="/" replace />} />

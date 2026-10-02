@@ -116,11 +116,26 @@ export const OpenWritingItem = z.object({
   rubric: z.array(Bilingual).default([]),
 });
 
-export const ContentItem = z.union([ChoiceItem, TypedItem, OpenWritingItem]);
+/**
+ * Build the sentence: the learner orders word tiles. `answer` is the target
+ * sentence; tiles are its words plus optional distractor words.
+ * Generated from cloze items (content/generate.ts), not hand-authored.
+ */
+export const OrderItem = z.object({
+  ...base,
+  type: z.literal('order'),
+  prompt: z.string().min(1),
+  answer: z.string().min(1),
+  audioText: EnglishText.optional(),
+  distractors: z.array(z.object({ text: z.string().min(1), misconception: z.string().optional() })).default([]),
+});
+
+export const ContentItem = z.union([ChoiceItem, TypedItem, OpenWritingItem, OrderItem]);
 export type ContentItem = z.infer<typeof ContentItem>;
 export type ChoiceItem = z.infer<typeof ChoiceItem>;
 export type TypedItem = z.infer<typeof TypedItem>;
 export type OpenWritingItem = z.infer<typeof OpenWritingItem>;
+export type OrderItem = z.infer<typeof OrderItem>;
 
 export const Passage = z.object({
   id: z.string().min(1),

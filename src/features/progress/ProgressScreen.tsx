@@ -25,7 +25,7 @@ export function ProgressScreen() {
         <div className="rank">
           <span className="rank-badge" style={{ background: '#fff', color: '#4128c9' }}>{r.current.level}</span>
           <div className="grow">
-            <div style={{ fontWeight: 800, fontSize: 'var(--t-xl)' }}>
+            <div style={{ fontWeight: 700, fontSize: 'var(--t-xl)' }}>
               {r.current.he} <En className="small">{r.current.name}</En>
             </div>
             <div className="small" style={{ opacity: 0.9 }}>

@@ -262,5 +262,17 @@
       "he": "בעברית אין הבדל בין i קצרה לארוכה. כדאי להקשיב שוב ולשים לב לאורך הצליל.",
       "en": "Hebrew has no short/long i contrast. Listen again for the length of the sound."
     }
+  },
+  {
+    "id": "word-order.sentence",
+    "skill": "grammar.word-order",
+    "note": {
+      "he": "בונה משפט עם המילים הנכונות בסדר שגוי",
+      "en": "Uses the right words in the wrong order"
+    },
+    "tip": {
+      "he": "באנגלית הסדר הבסיסי הוא: נושא, פועל, משלים, ואחר כך מקום וזמן.",
+      "en": "Basic English order: subject, verb, object, then place and time."
+    }
   }
 ]

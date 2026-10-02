@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useReducer, useRef, useState, type FormEvent, type ReactNode } from 'react';
-import type { ChoiceItem, ContentItem, Passage, TypedItem } from '@/domain/content/schema';
-import { checkChoice, checkTyped, type CheckResult } from '@/domain/learning/answerCheck';
+import type { ChoiceItem, ContentItem, OrderItem, Passage, TypedItem } from '@/domain/content/schema';
+import { checkChoice, checkOrder, checkTyped, orderTokens, type CheckResult } from '@/domain/learning/answerCheck';
 import { flowReducer, initialFlow, isFinished, toOutcome, type FlowPolicy, type FlowState } from '@/domain/learning/exerciseFlow';
 import { chooseText, type SupportLanguage } from '@/domain/learning/languageSupport';
 import type { ItemOutcome } from '@/domain/learning/events';
@@ -14,6 +14,7 @@ import { domainOf } from '@/domain/skills/taxonomy';
 import { CheckIcon, XIcon } from '@/ui/icons';
 import { Sheet } from '@/ui/Sheet';
 import { LessonView } from '@/features/lessons/LessonView';
+import { sounds } from '@/services/sound';
 
 type Props = {
   item: Exclude<ContentItem, { type: 'open-writing' }>;
@@ -41,6 +42,11 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   const { content } = useServices();
   const lesson = content.lessonsForSkill(item.skill)[0];
   const finished = isFinished(flow);
+
+  useEffect(() => {
+    if (flow.phase === 'solved') sounds.correct();
+    else if (flow.phase === 'revealed') sounds.wrong();
+  }, [flow.phase]);
 
   // Quick modes move on by themselves.
   useEffect(() => {
@@ -92,9 +98,11 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
         </div>
       )}
 
-      <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} />
+      {item.type !== 'order' && <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} />}
 
-      {item.type === 'choice' ? (
+      {item.type === 'order' ? (
+        <OrderInput item={item} seed={seed} flow={flow} onSubmit={submit} />
+      ) : item.type === 'choice' ? (
         <ChoiceInput
           item={item}
           seed={seed}
@@ -111,7 +119,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
 
       {lesson && feedback === 'full' && flow.explanationShown && !finished && (
         <button className="btn btn-ghost btn-sm" style={{ alignSelf: 'flex-start' }} onClick={() => setLessonOpen(true)}>
-          לשיעור המלא: {lesson.title.he}
+          <He>{`לשיעור המלא: ${lesson.title.he}`}</He>
         </button>
       )}
       <Sheet open={lessonOpen} onClose={() => setLessonOpen(false)} label={lesson?.title.he ?? 'שיעור'}>
@@ -123,7 +131,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
           <AfterAnswer item={item} flow={flow} support={support} listen={listen} audioText={audioText} />
           {lesson && (
             <button className="btn btn-ghost btn-sm" style={{ alignSelf: 'flex-start' }} onClick={() => setLessonOpen(true)}>
-              לשיעור המלא: {lesson.title.he}
+              <He>{`לשיעור המלא: ${lesson.title.he}`}</He>
             </button>
           )}
           <button className={`btn btn-block ${flow.phase === 'solved' ? 'btn-good' : 'btn-bad'}`} onClick={() => onDone(toOutcome(flow))} autoFocus>
@@ -156,14 +164,14 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
 }
 
 function Prompt({ item, finished, canSpeak }: { item: Props['item']; finished: boolean; canSpeak: boolean }) {
-  const isHe = item.promptLanguage === 'he';
+  const isHe = 'promptLanguage' in item && item.promptLanguage === 'he';
   const isWord = !!item.word && (item.prompt === item.word.lemma || item.prompt === item.word.he);
-  const fill = finished ? (item.type === 'typed' ? item.answers[0] : item.options.find((o) => o.id === item.correctOptionId)?.text) : undefined;
+  const fill = finished ? modelAnswer(item) : undefined;
   const content = renderCloze(item.prompt, fill);
   return (
     <div className="row prompt-card" style={{ alignItems: 'center' }}>
       {isHe ? (
-        <p className={`grow ${isWord ? 'prompt-word' : 'prompt'}`}>{content}</p>
+        <p className={`grow ${isWord ? 'prompt-word' : 'prompt'}`}>{typeof content === 'string' ? <He>{content}</He> : content}</p>
       ) : (
         <En as="p" className={`grow ${isWord ? 'prompt-word' : 'prompt'}`}>
           {content}
@@ -171,6 +179,59 @@ function Prompt({ item, finished, canSpeak }: { item: Props['item']; finished: b
       )}
       {canSpeak && <SpeakButton text={item.prompt} />}
     </div>
+  );
+}
+
+function modelAnswer(item: Props['item']): string | undefined {
+  if (item.type === 'typed') return item.answers[0];
+  if (item.type === 'order') return item.answer;
+  return item.options.find((o) => o.id === item.correctOptionId)?.text;
+}
+
+/** Build the sentence: tap tiles from the bank into the answer line; tap again to remove. */
+function OrderInput({ item, seed, flow, onSubmit }: { item: OrderItem; seed: string; flow: FlowState; onSubmit: (answer: string, r: CheckResult) => void }) {
+  const tiles = useMemo(() => {
+    const words = [...orderTokens(item), ...item.distractors.map((d) => d.text)].map((text, i) => ({ id: i, text }));
+    let shuffled = seededShuffle(words, `${seed}:${item.id}`);
+    // Never start in the correct order.
+    if (shuffled.slice(0, orderTokens(item).length).map((w) => w.text).join(' ') === item.answer) shuffled = [...shuffled.slice(1), shuffled[0]!];
+    return shuffled;
+  }, [item, seed]);
+  const [placed, setPlaced] = useState<number[]>([]);
+  const finished = isFinished(flow);
+
+  const submit = (e: FormEvent) => {
+    e.preventDefault();
+    if (finished || !placed.length) return;
+    const words = placed.map((id) => tiles.find((t) => t.id === id)!.text);
+    onSubmit(words.join(' '), checkOrder(item, words));
+  };
+
+  return (
+    <form id={`answer-${item.id}`} onSubmit={submit} className="stack" style={{ gap: 'var(--s-4)' }}>
+      <div className="order-line prompt-card" dir="ltr" lang="en" aria-label="המשפט שלך">
+        {placed.length === 0 && <span className="muted small">Tap the words below</span>}
+        {placed.map((id) => (
+          <button key={id} type="button" className="word-tile placed" disabled={finished} onClick={() => setPlaced((p) => p.filter((x) => x !== id))}>
+            {tiles.find((t) => t.id === id)!.text}
+          </button>
+        ))}
+      </div>
+      <div className="order-bank" dir="ltr" lang="en">
+        {tiles.map((t) => (
+          <button
+            key={t.id}
+            type="button"
+            className="word-tile"
+            disabled={finished || placed.includes(t.id)}
+            data-used={placed.includes(t.id)}
+            onClick={() => setPlaced((p) => [...p, t.id])}
+          >
+            {t.text}
+          </button>
+        ))}
+      </div>
+    </form>
   );
 }
 
@@ -224,7 +285,7 @@ function ChoiceInput({
     <form id={`answer-${item.id}`} className="options" onSubmit={submit} role="group" aria-label="תשובות">
       {options.map((o, idx) => {
         const state = finished && o.id === item.correctOptionId ? 'correct' : wrong.has(o.id) ? 'wrong' : undefined;
-        const text = isEnglish ? <En>{o.text}</En> : <span>{o.text}</span>;
+        const text = isEnglish ? <En>{o.text}</En> : <He>{o.text}</He>;
         return (
           <button
             key={o.id}
@@ -340,8 +401,8 @@ function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['
   const clean = solved && flow.attempts.length === 1 && flow.hintsShown === 0 && !flow.explanationShown;
   const praise = PRAISE[[...item.id].reduce((a, ch) => a + ch.charCodeAt(0), 0) % PRAISE.length]!;
   const header = solved ? (clean ? praise : 'נכון! יפה שהמשכת לנסות') : flow.phase === 'skipped' ? 'דילגנו. נחזור לזה בהמשך' : 'לא נורא, ככה לומדים';
-  const model = item.type === 'typed' ? item.answers[0] : item.options.find((o) => o.id === item.correctOptionId)?.text;
-  const sentence = item.prompt.includes('___') || listen ? audioText : undefined;
+  const model = modelAnswer(item);
+  const sentence = item.prompt.includes('___') || listen || item.type === 'order' ? audioText : undefined;
   const example = item.word?.example;
 
   return (

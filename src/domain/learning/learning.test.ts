@@ -215,3 +215,19 @@ describe('language support', () => {
     expect(supportLanguage(1.2)).toBe('en');
   });
 });
+
+describe('build the sentence', () => {
+  it('accepts the right order, flags traps and wrong order', async () => {
+    const { checkOrder } = await import('./answerCheck');
+    const { ContentItem } = await import('../content/schema');
+    const item = ContentItem.parse({
+      id: 'o', type: 'order', skill: 'grammar.word-order', level: 'A2', prompt: 'Build the sentence',
+      answer: 'Where did she go?', distractors: [{ text: 'went', misconception: 'past-simple.did-plus-past' }],
+      instruction: { he: 'א', en: 'a' }, explanation: { he: 'א', en: 'a' }, source: 'original',
+    });
+    if (item.type !== 'order') throw new Error();
+    expect(checkOrder(item, ['Where', 'did', 'she', 'go?']).correct).toBe(true);
+    expect(checkOrder(item, ['Where', 'did', 'she', 'went']).misconception).toBe('past-simple.did-plus-past');
+    expect(checkOrder(item, ['Where', 'she', 'did', 'go?']).misconception).toBe('word-order.sentence');
+  });
+});

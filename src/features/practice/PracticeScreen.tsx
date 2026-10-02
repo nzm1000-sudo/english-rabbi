@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useServices } from '@/app/services';
 import { useProfile, useStudent } from '@/app/hooks';
@@ -14,6 +14,7 @@ import { isPracticeMode, MODES, type PracticeMode } from './modes';
 import { lightningScore, useSession, type SessionResult } from './useSession';
 import { useGameHistory } from './useGameHistory';
 import { Confetti } from '@/ui/Confetti';
+import { sounds } from '@/services/sound';
 import { StarIcon, TrophyIcon } from '@/ui/icons';
 
 export function PracticeScreen() {
@@ -60,6 +61,7 @@ function Session({
   const home = `/s/${student.id}`;
   const done = s.status === 'done';
   const progress = s.deadline ? null : Math.round(((done ? s.total : Math.max(0, s.index - 1)) / s.total) * 100);
+  const combo = useCombo(s.results.map((r) => r.correct));
   const title = mode === 'skill' && params.skill ? (content.lessonsForSkill(params.skill)[0]?.title.he ?? def.title) : def.title;
 
   return (
@@ -74,7 +76,7 @@ function Session({
           </div>
         ) : (
           <span className="grow" style={{ fontWeight: 600 }}>
-            {title} · {s.results.filter((r) => r.correct).length} נכונות
+            <He>{`${title} · ${s.results.filter((r) => r.correct).length} נכונות`}</He>
           </span>
         )}
         {s.deadline && !done ? (
@@ -110,7 +112,13 @@ function Session({
         />
       )}
 
-      {done && <Summary mode={mode} student={student} results={s.results} onHome={() => nav(home)} onAgain={onAgain} />}
+      {combo && (
+        <div className="combo-toast" role="status" key={combo}>
+          {combo} ברצף!
+        </div>
+      )}
+
+      {done && <Summary mode={mode} params={params} student={student} results={s.results} onHome={() => nav(home)} onAgain={onAgain} />}
     </main>
   );
 }
@@ -119,6 +127,25 @@ function emptyText(mode: PracticeMode): string {
   if (mode === 'review') return 'אין פריטים לחזרה כרגע. כל הכבוד.';
   if (mode === 'mistakes') return 'אין כרגע טעויות חוזרות לתרגל. מצוין.';
   return 'אין כרגע תרגילים חדשים כאן.';
+}
+
+/** Shows a short "N in a row" toast at 3, 5 and 10 correct answers. Rewards accuracy, not speed. */
+function useCombo(correct: boolean[]): number | null {
+  const [shown, setShown] = useState<number | null>(null);
+  const last = useRef(0);
+  useEffect(() => {
+    if (correct.length === last.current) return;
+    last.current = correct.length;
+    let run = 0;
+    for (let i = correct.length - 1; i >= 0 && correct[i]; i--) run++;
+    if (run === 3 || run === 5 || run === 10) {
+      setShown(run);
+      sounds.combo();
+      const t = setTimeout(() => setShown(null), 1600);
+      return () => clearTimeout(t);
+    }
+  }, [correct]);
+  return shown;
 }
 
 function Timer({ deadline, onEnd }: { deadline: number; onEnd: () => void }) {
@@ -140,19 +167,25 @@ function Timer({ deadline, onEnd }: { deadline: number; onEnd: () => void }) {
 
 function Summary({
   mode,
+  params,
   student,
   results,
   onHome,
   onAgain,
 }: {
   mode: PracticeMode;
+  params: Record<string, string>;
   student: Student;
   results: SessionResult[];
   onHome: () => void;
   onAgain: () => void;
 }) {
   const { content } = useServices();
+  const nav = useNavigate();
   const history = useGameHistory(student.id);
+  useEffect(() => {
+    sounds.finish();
+  }, []);
   const correct = results.filter((r) => r.correct).length;
   const clean = results.filter((r) => r.evidence.flags.includes('clean') || r.evidence.flags.includes('fast')).length;
   const xp = results.reduce((s, r) => s + r.evidence.xp, 0);
@@ -241,13 +274,15 @@ function Summary({
           <p><He>{tip.tip.he}</He></p>
         </div>
       )}
-      {(mode === 'exam' || mode === 'quiz') && wrong.length > 0 && (
+      {wrong.length > 0 && (
         <div className="stack">
           <span className="section-label">כדאי לעבור שוב</span>
           <div className="list">
             {wrong.slice(0, 8).map((i) => (
               <div key={i.id} className="list-item" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: 2 }}>
-                {'promptLanguage' in i && i.promptLanguage === 'he' ? (
+                {i.type === 'order' ? (
+                  <En className="small">{i.answer}</En>
+                ) : 'promptLanguage' in i && i.promptLanguage === 'he' ? (
                   <He className="small">{i.prompt}</He>
                 ) : (
                   <En className="small">{'prompt' in i ? i.prompt : ''}</En>
@@ -264,8 +299,21 @@ function Summary({
         </div>
       )}
       <div className="stack">
-        {mode !== 'daily' && (
-          <button className="btn btn-primary btn-block" onClick={onAgain}>
+        {mode === 'pretest' && params.lesson && (
+          <button className="btn btn-primary btn-block" onClick={() => nav(`/s/${student.id}/learn/${params.lesson}`, { replace: true })}>
+            עכשיו לשיעור
+          </button>
+        )}
+        {wrong.length > 0 && mode !== 'pretest' && mode !== 'retry' && (
+          <button
+            className="btn btn-primary btn-block"
+            onClick={() => nav(`/s/${student.id}/practice/retry?ids=${wrong.map((i) => i.id).join(',')}`)}
+          >
+            לתרגל שוב את הטעויות ({wrong.length})
+          </button>
+        )}
+        {mode !== 'daily' && mode !== 'pretest' && (
+          <button className={`btn btn-block ${wrong.length ? '' : 'btn-primary'}`} onClick={onAgain}>
             {mode === 'lightning' ? 'עוד סבב' : mode === 'exam' ? 'מבחן נוסף' : 'עוד סבב'}
           </button>
         )}

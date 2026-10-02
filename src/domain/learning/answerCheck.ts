@@ -1,4 +1,4 @@
-import type { ChoiceItem, TypedItem } from '../content/schema';
+import type { ChoiceItem, OrderItem, TypedItem } from '../content/schema';
 
 export interface CheckResult {
   correct: boolean;
@@ -84,4 +84,23 @@ export function levenshtein(a: string, b: string): number {
     prev = cur;
   }
   return prev[b.length]!;
+}
+
+/** Word tiles of an order item, in sentence order (punctuation stays attached). */
+export function orderTokens(item: Pick<OrderItem, 'answer'>): string[] {
+  return item.answer.trim().split(/\s+/);
+}
+
+export function checkOrder(item: OrderItem, tokens: string[]): CheckResult {
+  const given = normalizeAnswer(tokens.join(' '));
+  if (given === normalizeAnswer(item.answer)) return { correct: true, nearMiss: false };
+  const used = new Set(tokens.map((t) => t.toLowerCase()));
+  const trap = item.distractors.find((d) => used.has(d.text.toLowerCase()));
+  // Right words, wrong order counts as close.
+  const sameWords = [...tokens].sort().join(' ') === [...orderTokens(item)].sort().join(' ');
+  return {
+    correct: false,
+    nearMiss: false,
+    ...(trap?.misconception ? { misconception: trap.misconception } : !trap && sameWords ? { misconception: 'word-order.sentence' } : {}),
+  };
 }

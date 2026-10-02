@@ -1,3 +1,4 @@
+import { He } from '@/ui/He';
 import { Link, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useServices } from '@/app/services';
@@ -33,13 +34,13 @@ export function LearnHub() {
               <span className="tile-icon" style={{ width: 36, height: 36, borderRadius: 11 }}>
                 <DomainIcon domain={d} size={20} />
               </span>
-              <h2 style={{ fontSize: 'var(--t-lg)', fontWeight: 750 }}>{domainNameHe(d)}</h2>
+              <h2 style={{ fontSize: 'var(--t-lg)', fontWeight: 650 }}>{domainNameHe(d)}</h2>
             </div>
             <nav className="list">
               {ls.map((l) => (
                 <Link key={l.id} to={`/s/${student.id}/learn/${l.id}`} className="list-item" style={{ color: 'inherit', textDecoration: 'none' }}>
                   <span className="grow">
-                    {l.title.he}
+                    <He>{l.title.he}</He>
                     {[...weak].some((w) => w.startsWith(l.skill)) && <span className="badge badge-warn" style={{ marginInlineStart: 8 }}>כדאי לחזק</span>}
                   </span>
                   <span className="tile-level" style={{ position: 'static' }} dir="ltr">{l.level}</span>
@@ -68,6 +69,23 @@ export function LessonScreen() {
   return (
     <main className="screen">
       <TopBar back={`/s/${student.id}/learn`} />
+      {practiceCount >= 3 && (
+        <Link
+          to={`/s/${student.id}/practice/pretest?skill=${encodeURIComponent(lesson.skill)}&lesson=${lesson.id}`}
+          className="row-card"
+          replace
+        >
+          <span className="tile-icon" style={{ background: 'var(--warn-weak)', color: 'var(--warn-ink)' }}>
+            ?
+          </span>
+          <span className="grow">
+            <strong>לנחש לפני ההסבר</strong>
+            <span className="xs muted" style={{ display: 'block' }}>
+              3 שאלות בלי לחץ. ניחוש לפני הלמידה עוזר לזכור יותר.
+            </span>
+          </span>
+        </Link>
+      )}
       <LessonView lesson={lesson} />
       {practiceCount > 0 && (
         <div className="actions">

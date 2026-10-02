@@ -92,3 +92,16 @@ describe('licensing gate', () => {
     expect(r.items).toHaveLength(0);
   });
 });
+
+describe('generated exercises', () => {
+  it('creates sentence-builder items from cloze items, all valid', () => {
+    const gen = reg.items.filter((i) => i.type === 'order');
+    expect(gen.length).toBeGreaterThan(150);
+    for (const g of gen) {
+      if (g.type !== 'order') continue;
+      const words = g.answer.split(/\s+/).length;
+      expect(words).toBeGreaterThanOrEqual(4);
+      expect(g.audioText).toBe(g.answer);
+    }
+  });
+});

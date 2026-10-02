@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
 import { useServices } from '@/app/services';
 import { useProfile, useStudents } from '@/app/hooks';
@@ -100,13 +100,13 @@ function StudentReport({ student }: { student: Student }) {
             {p.weakSkills.length > 0 && (
               <div>
                 <div className="small muted">מתקשה ב</div>
-                <div>{p.weakSkills.map((s) => s.name.he).join(' · ')}</div>
+                <He>{p.weakSkills.map((s) => s.name.he).join(' · ')}</He>
               </div>
             )}
             {p.strongSkills.length > 0 && (
               <div>
                 <div className="small muted">שולט/ת ב</div>
-                <div>{p.strongSkills.map((s) => s.name.he).join(' · ')}</div>
+                <He>{p.strongSkills.map((s) => s.name.he).join(' · ')}</He>
               </div>
             )}
           </div>
@@ -209,6 +209,7 @@ function Words({ p }: { p: LearnerProfile }) {
 
 function DeviceSection() {
   const { store, settings, speech } = useServices();
+  useSyncExternalStore(settings.subscribe, settings.snapshot);
   const [dl, setDl] = useState<{ done: number; total: number } | null>(null);
 
   const downloadAudio = async () => {
@@ -251,6 +252,10 @@ function DeviceSection() {
           <span className="grow">מעבדת קולות</span>
           <ChevronIcon />
         </Link>
+        <button className="list-item" onClick={() => settings.set({ soundOff: !settings.get('soundOff') })}>
+          <span className="grow">צלילי משוב</span>
+          <span className={`badge ${settings.get('soundOff') ? 'badge-neutral' : 'badge-good'}`}>{settings.get('soundOff') ? 'כבוי' : 'פעיל'}</span>
+        </button>
         <button className="list-item" onClick={downloadAudio} disabled={!!dl}>
           <span className="grow">{dl ? `מוריד הקראות… ${dl.done}/${dl.total}` : 'הורדת כל ההקראות לשימוש בלי אינטרנט'}</span>
         </button>

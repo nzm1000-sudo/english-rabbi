@@ -8,6 +8,8 @@ export interface SettingsShape {
   homeServerUrl?: string;
   deviceVoiceUS?: string;
   deviceVoiceGB?: string;
+  /** UI sounds on (default) or off. */
+  soundOff?: boolean;
 }
 
 export class Settings {

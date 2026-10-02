@@ -58,10 +58,24 @@ describe('learner profile', () => {
   it('counts the learning streak in days', () => {
     const daily = [0, 1, 2, 4].map((ago) => ({ day: localDay(T0 - ago * DAY), activeMs: 300_000, itemsCompleted: 5, cleanFirstTry: 3, xp: 40 }));
     const p = buildLearnerProfile(student, { skills: new Map(), units: new Map(), patterns: new Map() }, daily, info, T0, localDay(T0));
-    expect(p.activity.streakDays).toBe(3);
+    expect(p.activity.streakDays).toBe(4);
+    expect(p.activity.frozenDays).toBe(1);
     expect(p.activity.activeDaysLast7).toBe(4);
     expect(p.activity.minutesLast7).toBe(20);
     expect(p.activity.week).toHaveLength(7);
+  });
+
+  it('a single missed day is covered by a streak freeze, two are not', () => {
+    const mk = (agos: number[]) => agos.map((ago) => ({ day: localDay(T0 - ago * DAY), activeMs: 60_000, itemsCompleted: 1, cleanFirstTry: 1, xp: 10 }));
+    const empty = { skills: new Map(), units: new Map(), patterns: new Map() };
+    const one = buildLearnerProfile(student, empty, mk([0, 1, 3, 4]), info, T0, localDay(T0));
+    expect(one.activity.streakDays).toBe(4);
+    expect(one.activity.frozenDays).toBe(1);
+    const two = buildLearnerProfile(student, empty, mk([0, 1, 4, 5]), info, T0, localDay(T0));
+    expect(two.activity.streakDays).toBe(2);
+    // Only one freeze per 7 days.
+    const close = buildLearnerProfile(student, empty, mk([0, 2, 4, 5]), info, T0, localDay(T0));
+    expect(close.activity.streakDays).toBe(2);
   });
 
   it('keeps a streak alive during the current day before practice', () => {

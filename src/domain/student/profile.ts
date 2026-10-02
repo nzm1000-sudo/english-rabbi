@@ -48,7 +48,12 @@ export interface MemoryNote {
 }
 
 export interface Activity {
+  /** Active days in the current streak. */
   streakDays: number;
+  /** Missed days inside the streak that a freeze covered. */
+  frozenDays: number;
+  /** True if a freeze is still available this week. */
+  freezeAvailable: boolean;
   activeDaysLast7: number;
   activeDaysLast30: number;
   minutesToday: number;
@@ -198,17 +203,16 @@ function summarizeActivity(daily: DailyStat[], today: string): Activity {
   const days = (n: number) => Array.from({ length: n }, (_, i) => shiftDay(today, -i));
   const active = (d: string) => (byDay.get(d)?.itemsCompleted ?? 0) > 0;
 
-  let streak = 0;
   // A streak survives until the end of today even if today has no practice yet.
-  let cursor = active(today) ? today : shiftDay(today, -1);
-  while (active(cursor)) {
-    streak++;
-    cursor = shiftDay(cursor, -1);
-  }
+  // Streak freeze: one missed day per 7 days does not break it (habit research:
+  // slack keeps streaks alive without punishing a single bad day).
+  const { streak, frozen, lastFreezeAgo } = walkStreak(active, active(today) ? today : shiftDay(today, -1));
   const minutes = (d: string) => Math.round((byDay.get(d)?.activeMs ?? 0) / 60_000);
   const last = [...daily].reverse().find((d) => d.itemsCompleted > 0);
   return {
     streakDays: streak,
+    frozenDays: frozen,
+    freezeAvailable: lastFreezeAgo === null || lastFreezeAgo >= 7,
     activeDaysLast7: days(7).filter(active).length,
     activeDaysLast30: days(30).filter(active).length,
     minutesToday: minutes(today),
@@ -221,6 +225,29 @@ function summarizeActivity(daily: DailyStat[], today: string): Activity {
       .reverse()
       .map((d) => ({ day: d, minutes: minutes(d), items: byDay.get(d)?.itemsCompleted ?? 0 })),
   };
+}
+
+export function walkStreak(active: (day: string) => boolean, start: string): { streak: number; frozen: number; lastFreezeAgo: number | null } {
+  let streak = 0;
+  let frozen = 0;
+  let cursor = start;
+  let distance = 0;
+  let lastFreeze: number | null = null;
+  for (;;) {
+    if (active(cursor)) {
+      streak++;
+    } else {
+      // A single missed day, with practice before it, and no freeze in the last 7 days.
+      const before = shiftDay(cursor, -1);
+      const canFreeze = streak > 0 && active(before) && (lastFreeze === null || distance - lastFreeze >= 7);
+      if (!canFreeze) break;
+      frozen++;
+      lastFreeze = distance;
+    }
+    cursor = shiftDay(cursor, -1);
+    distance++;
+  }
+  return { streak, frozen, lastFreezeAgo: lastFreeze };
 }
 
 function recommend(p: LearnerProfile): string[] {

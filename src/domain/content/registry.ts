@@ -181,6 +181,7 @@ function checkReferences(
     ...item.targetsMisconceptions,
     ...(item.type === 'choice' ? item.options.flatMap((o) => (o.misconception ? [o.misconception] : [])) : []),
     ...(item.type === 'typed' ? item.knownErrors.flatMap((e) => (e.misconception ? [e.misconception] : [])) : []),
+    ...(item.type === 'order' ? item.distractors.flatMap((d) => (d.misconception ? [d.misconception] : [])) : []),
   ];
   for (const m of mids) {
     if (!ctx.misconceptions.has(m)) return { severity: 'error', reason: `unknown misconception "${m}"` };

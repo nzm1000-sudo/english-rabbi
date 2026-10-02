@@ -19,6 +19,8 @@ import {
   StarIcon,
   TargetIcon,
   TrophyIcon,
+  GrammarIcon,
+  VocabIcon,
 } from '@/ui/icons';
 import type { DomainSummary, LearnerProfile } from '@/domain/student/profile';
 import type { Domain } from '@/domain/skills/taxonomy';
@@ -60,7 +62,7 @@ export function HomeScreen() {
       <header className="spread">
         <Link to="/" className="row" style={{ color: 'inherit', textDecoration: 'none', gap: 10 }} aria-label="החלפת תלמיד">
           <Avatar name={student.name} hue={student.hue} />
-          <div style={{ fontSize: 'var(--t-lg)', fontWeight: 800 }}>שלום, {student.name}</div>
+          <div style={{ fontSize: 'var(--t-lg)', fontWeight: 700 }}>שלום, {student.name}</div>
         </Link>
         <div className="row" style={{ gap: 6 }}>
           <span className="chip-stat" aria-label={`${p.activity.streakDays} ימים ברצף`}>
@@ -94,6 +96,20 @@ export function HomeScreen() {
             <small>מתוך {goal} דק׳</small>
           </span>
         </Ring>
+      </Link>
+
+      <Link to={`${base}/path`} className="row-card">
+        <span className="tile-icon" style={{ background: 'var(--primary-weak)', color: 'var(--primary-fg)' }}>
+          <TargetIcon />
+        </span>
+        <span className="grow">
+          <strong>המסלול שלי</strong>
+          <span className="xs muted" style={{ display: 'block' }}>
+            {rank.current.he} · דרגה {rank.current.level}
+            {p.activity.frozenDays > 0 ? ' · מגן הרצף שמר על הרצף' : ''}
+          </span>
+        </span>
+        <ChevronIcon />
       </Link>
 
       {p.calibrated &&
@@ -152,6 +168,8 @@ export function HomeScreen() {
           <GameTile to={`${base}/practice/riddles`} tone="listening" icon={<RiddleIcon />} title="חידות" sub="חשיבה באנגלית" />
           <GameTile to={`${base}/practice/mistakes`} tone="writing" icon={<GymIcon />} title="חדר כושר" sub="לטעויות שחוזרות" />
           <GameTile to={`${base}/learn`} tone="grammar" icon={<LessonIcon />} title="שיעורים" sub="הסברים ודוגמאות" />
+          <GameTile to={`${base}/practice/sentences`} tone="speaking" icon={<GrammarIcon />} title="בונים משפטים" sub="לסדר מילים למשפט" />
+          <GameTile to={`${base}/match`} tone="primary" icon={<VocabIcon />} title="התאמת זוגות" sub="מילים ופירושים" />
         </div>
       </section>
 
@@ -175,7 +193,7 @@ export function HomeScreen() {
               <span className="tile-icon" style={{ background: 'var(--warn-weak)', color: 'var(--warn-ink)' }}>
                 <RepeatIcon />
               </span>
-              <span className="grow">{weak.name.he}</span>
+              <He className="grow">{weak.name.he}</He>
               <ChevronIcon />
             </Link>
           ) : null}

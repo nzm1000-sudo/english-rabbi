@@ -14,7 +14,7 @@ import { seededShuffle } from './shuffle';
 
 export type PracticeMode =
   | 'lesson' | 'placement' | 'vocabulary' | 'grammar' | 'reading' | 'listening' | 'review'
-  | 'skill' | 'mistakes' | 'riddles' | 'quiz' | 'lightning' | 'exam' | 'daily';
+  | 'skill' | 'mistakes' | 'riddles' | 'quiz' | 'lightning' | 'exam' | 'daily' | 'retry' | 'pretest' | 'sentences';
 
 export interface PoolContext {
   registry: ContentRegistry;
@@ -128,6 +128,31 @@ export const MODES: Record<PracticeMode, ModeDef> = {
     game: 'exam',
     pool: () => [],
     fixed: (c) => buildExam(c),
+  },
+  retry: {
+    title: 'תרגול חוזר',
+    length: 10,
+    ...teach,
+    pool: () => [],
+    // Retrieval again, right after the feedback: the items missed in the last round.
+    fixed: (c) => (c.params.ids ?? '').split(',').flatMap((id) => c.registry.getItem(id) ?? []).filter(auto),
+  },
+  pretest: {
+    title: 'לנחש לפני ההסבר',
+    length: 3,
+    selection: 'practice',
+    policy: 'test',
+    feedback: 'full',
+    // Pretesting: guessing before the lesson improves learning when feedback follows.
+    targetSuccess: 0.5,
+    pool: (c) => c.registry.items.filter((i) => auto(i) && !i.passageId && !!c.params.skill && lineage(i.skill).includes(c.params.skill)),
+  },
+  sentences: {
+    title: 'בונים משפטים',
+    english: 'Sentence builder',
+    length: 8,
+    ...teach,
+    pool: (c) => c.registry.items.filter((i) => i.type === 'order'),
   },
   daily: {
     title: 'האתגר היומי',

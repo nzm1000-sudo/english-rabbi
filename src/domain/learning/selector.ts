@@ -181,6 +181,7 @@ export function itemMisconceptions(item: ContentItem): string[] {
   const ids = [...item.targetsMisconceptions];
   if (item.type === 'choice') for (const o of item.options) if (o.misconception) ids.push(o.misconception);
   if (item.type === 'typed') for (const e of item.knownErrors) if (e.misconception) ids.push(e.misconception);
+  if (item.type === 'order') for (const d of item.distractors) if (d.misconception) ids.push(d.misconception);
   return [...new Set(ids)];
 }
 

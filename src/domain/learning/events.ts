@@ -10,7 +10,7 @@
  * on the content pack still containing the item in the same form.
  */
 
-export type InteractionKind = 'choice' | 'typed' | 'open-writing';
+export type InteractionKind = 'choice' | 'typed' | 'open-writing' | 'order';
 
 export interface AttemptRecord {
   /** Option id for choice items, typed text for typed items. */
@@ -85,7 +85,7 @@ export interface EventMap {
 
 /** Result of a quiz, lightning round, exam or daily challenge. */
 export interface GameResult {
-  game: 'quiz' | 'lightning' | 'exam' | 'daily' | 'riddles' | 'mistakes';
+  game: 'quiz' | 'lightning' | 'exam' | 'daily' | 'riddles' | 'mistakes' | 'match';
   day: string;
   correct: number;
   total: number;
