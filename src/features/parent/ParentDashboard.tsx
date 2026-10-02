@@ -10,6 +10,7 @@ import { TopBar } from '@/ui/TopBar';
 import { ChevronIcon } from '@/ui/icons';
 import type { ParentLabel } from '@/domain/learning/mastery';
 import { localDay } from '@/domain/learning/events';
+import type { PrerenderedProvider } from '@/services/speech/tts/prerenderedProvider';
 
 const LABEL: Record<ParentLabel, { he: string; cls: string }> = {
   strong: { he: 'חזק', cls: 'badge-good' },
@@ -202,7 +203,17 @@ function Words({ p }: { p: LearnerProfile }) {
 }
 
 function DeviceSection() {
-  const { store, settings } = useServices();
+  const { store, settings, speech } = useServices();
+  const [dl, setDl] = useState<{ done: number; total: number } | null>(null);
+
+  const downloadAudio = async () => {
+    const p = speech.getProviders().find((x) => x.id === 'prerendered') as PrerenderedProvider | undefined;
+    if (!p) return;
+    setDl({ done: 0, total: 1 });
+    const r = await p.downloadAll((done, total) => setDl({ done, total }));
+    setDl(null);
+    setMsg(r.failed ? `הורדו ${r.done - r.failed} קבצים. ${r.failed} נכשלו, כדאי לנסות שוב.` : `כל ${r.done} קובצי ההקראה זמינים עכשיו גם בלי אינטרנט.`);
+  };
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState<string | null>(null);
   const [url, setUrl] = useState(settings.get('homeServerUrl') ?? '');
@@ -235,6 +246,9 @@ function DeviceSection() {
           <span className="grow">מעבדת קולות</span>
           <ChevronIcon />
         </Link>
+        <button className="list-item" onClick={downloadAudio} disabled={!!dl}>
+          <span className="grow">{dl ? `מוריד הקראות… ${dl.done}/${dl.total}` : 'הורדת כל ההקראות לשימוש בלי אינטרנט'}</span>
+        </button>
         <button className="list-item" onClick={exportBackup}>
           <span className="grow">גיבוי לקובץ</span>
         </button>

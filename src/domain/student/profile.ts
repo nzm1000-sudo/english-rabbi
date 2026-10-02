@@ -66,6 +66,10 @@ export interface LearnerProfile {
   domains: DomainSummary[];
   weakSkills: SkillSummary[];
   strongSkills: SkillSummary[];
+  /** Sub-skills at "mastered". */
+  masteredCount: number;
+  /** Mistake patterns that repeated and were then repaired. */
+  repairedPatterns: number;
   words: { learned: string[]; struggling: string[]; due: number; recognizedNotProduced: string[] };
   memory: MemoryNote[];
   activity: Activity;
@@ -101,7 +105,9 @@ export function buildLearnerProfile(
     });
   }
   const weakSkills = skillSummaries.filter((s) => s.attempts >= 2 && s.mastery < 0.6).sort((a, b) => a.mastery - b.mastery).slice(0, 4);
-  const strongSkills = skillSummaries.filter((s) => s.status === 'mastered').sort((a, b) => b.mastery - a.mastery).slice(0, 4);
+  const mastered = skillSummaries.filter((s) => s.status === 'mastered');
+  const strongSkills = [...mastered].sort((a, b) => b.mastery - a.mastery).slice(0, 4);
+  const repairedPatterns = [...state.patterns.values()].filter((p) => p.count >= 2 && p.repairStreak >= 3).length;
 
   const learned: string[] = [];
   const struggling: string[] = [];
@@ -139,6 +145,8 @@ export function buildLearnerProfile(
     domains,
     weakSkills,
     strongSkills,
+    masteredCount: mastered.length,
+    repairedPatterns,
     words: { learned, struggling, due, recognizedNotProduced },
     memory,
     activity,

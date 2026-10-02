@@ -5,6 +5,8 @@ import { HomeScreen } from '@/features/home/HomeScreen';
 import { PracticeScreen } from '@/features/practice/PracticeScreen';
 import { ParentDashboard } from '@/features/parent/ParentDashboard';
 import { VoiceLab } from '@/features/voice-lab/VoiceLab';
+import { LearnHub, LessonScreen } from '@/features/lessons/LearnHub';
+import { ProgressScreen } from '@/features/progress/ProgressScreen';
 import { useStudent } from './hooks';
 import { SpeechPrefsProvider } from './speechPrefs';
 import type { ReactNode } from 'react';
@@ -19,6 +21,9 @@ export function App() {
         <Route path="/s/:sid" element={<WithStudentSpeech><HomeScreen /></WithStudentSpeech>} />
         <Route path="/s/:sid/settings" element={<StudentForm />} />
         <Route path="/s/:sid/practice/:mode" element={<WithStudentSpeech><PracticeScreen /></WithStudentSpeech>} />
+        <Route path="/s/:sid/learn" element={<WithStudentSpeech><LearnHub /></WithStudentSpeech>} />
+        <Route path="/s/:sid/learn/:lessonId" element={<WithStudentSpeech><LessonScreen /></WithStudentSpeech>} />
+        <Route path="/s/:sid/progress" element={<ProgressScreen />} />
         <Route path="/parent" element={<ParentDashboard />} />
         <Route path="/parent/voices" element={<VoiceLab />} />
         <Route path="*" element={<Navigate to="/" replace />} />

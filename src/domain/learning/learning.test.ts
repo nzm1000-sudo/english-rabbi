@@ -79,6 +79,17 @@ describe('exercise flow (hint ladder)', () => {
     expect(s.phase).toBe('retry');
   });
 
+  it('test policy: one attempt, no hints, wrong reveals the answer', () => {
+    let s = initialFlow(0);
+    s = flowReducer(s, { type: 'hint' }, 2, 'test');
+    expect(s.hintsShown).toBe(0);
+    s = flowReducer(s, wrong(3), 2, 'test');
+    expect(s.phase).toBe('revealed');
+    expect(toOutcome(s)).toMatchObject({ revealed: true, hintsUsed: 0 });
+    const ok = flowReducer(initialFlow(0), { type: 'submit', attempt: { answer: 'a', correct: true, atMs: 2 } }, 2, 'test');
+    expect(ok.phase).toBe('solved');
+  });
+
   it('replays are counted but ignored after the item ends', () => {
     let s = initialFlow(0);
     s = flowReducer(s, { type: 'replay' }, 2);

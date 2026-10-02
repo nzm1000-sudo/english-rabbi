@@ -10,6 +10,12 @@ import type { AttemptRecord, ItemOutcome } from './events';
  */
 export type Phase = 'answering' | 'retry' | 'solved' | 'revealed' | 'skipped';
 
+/**
+ * teach: the hint ladder (default practice).
+ * test:  one attempt, no hints; the answer and explanation follow (quizzes, exams).
+ */
+export type FlowPolicy = 'teach' | 'test';
+
 export interface FlowState {
   phase: Phase;
   attempts: AttemptRecord[];
@@ -49,8 +55,17 @@ export function isFinished(s: FlowState): boolean {
   return s.phase === 'solved' || s.phase === 'revealed' || s.phase === 'skipped';
 }
 
-export function flowReducer(s: FlowState, a: FlowAction, hintCount: number): FlowState {
+export function flowReducer(s: FlowState, a: FlowAction, hintCount: number, policy: FlowPolicy = 'teach'): FlowState {
   if (isFinished(s) && a.type !== 'replay') return s;
+  if (policy === 'test') {
+    if (a.type === 'hint') return s;
+    if (a.type === 'submit') {
+      const attempts = [...s.attempts, a.attempt];
+      return a.attempt.correct
+        ? { ...s, attempts, phase: 'solved', endedAt: a.attempt.atMs }
+        : { ...s, attempts, phase: 'revealed', endedAt: a.attempt.atMs, lastHelp: 'reveal' };
+    }
+  }
   switch (a.type) {
     case 'change-selection':
       return { ...s, answerChanges: s.answerChanges + 1 };

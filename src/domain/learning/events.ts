@@ -79,6 +79,21 @@ export interface EventMap {
   'item.skipped': { itemId: string };
   'item.completed': ItemCompletedPayload;
   'audio.played': { text: string; replay: boolean; provider: string };
+  'game.finished': GameResult;
+  'lesson.viewed': { lessonId: string; skill: string };
+}
+
+/** Result of a quiz, lightning round, exam or daily challenge. */
+export interface GameResult {
+  game: 'quiz' | 'lightning' | 'exam' | 'daily' | 'riddles' | 'mistakes';
+  day: string;
+  correct: number;
+  total: number;
+  /** Game-specific score: points for lightning, percent for exam. */
+  score: number;
+  durationMs: number;
+  /** Exam: estimated CEFR level and track. */
+  meta?: Record<string, string | number>;
 }
 
 export type EventType = keyof EventMap;

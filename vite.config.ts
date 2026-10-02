@@ -32,8 +32,21 @@ export default defineConfig({
         icons: [{ src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,json,woff2,mp3}'],
+        // Audio is not precached (thousands of files). It is cached on first
+        // use, or all at once from the parent screen ("download audio").
+        globPatterns: ['**/*.{js,css,html,svg,json,woff2}'],
         navigateFallback: 'index.html',
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.includes('/audio/') && url.pathname.endsWith('.mp3'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'audio-v1',
+              cacheableResponse: { statuses: [200] },
+              expiration: { maxEntries: 10000 },
+            },
+          },
+        ],
       },
     }),
   ],
@@ -41,6 +54,6 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./tests/setup.ts'],
-    include: ['src/**/*.test.{ts,tsx}', 'content/**/*.test.ts', 'tests/**/*.test.{ts,tsx}'],
+    include: ['src/**/*.test.{ts,tsx}', 'content/**/*.test.ts', 'tests/**/*.test.{ts,tsx}', 'tools/**/*.test.ts'],
   },
 });

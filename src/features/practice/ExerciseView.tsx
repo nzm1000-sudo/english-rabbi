@@ -1,19 +1,25 @@
-import { useMemo, useReducer, useRef, useState, type FormEvent, type ReactNode } from 'react';
+import { useEffect, useMemo, useReducer, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import type { ChoiceItem, ContentItem, Passage, TypedItem } from '@/domain/content/schema';
 import { checkChoice, checkTyped, type CheckResult } from '@/domain/learning/answerCheck';
-import { flowReducer, initialFlow, isFinished, toOutcome, type FlowState } from '@/domain/learning/exerciseFlow';
+import { flowReducer, initialFlow, isFinished, toOutcome, type FlowPolicy, type FlowState } from '@/domain/learning/exerciseFlow';
 import { chooseText, type SupportLanguage } from '@/domain/learning/languageSupport';
 import type { ItemOutcome } from '@/domain/learning/events';
 import type { Bilingual } from '@/domain/content/schema';
 import { En } from '@/ui/En';
 import { SpeakButton } from '@/ui/SpeakButton';
 import { seededShuffle } from './shuffle';
+import { useServices } from '@/app/services';
+import { Sheet } from '@/ui/Sheet';
+import { LessonView } from '@/features/lessons/LessonView';
 
 type Props = {
   item: Exclude<ContentItem, { type: 'open-writing' }>;
   passage?: Passage | undefined;
   support: SupportLanguage;
   seed: string;
+  policy?: FlowPolicy;
+  /** full: explanation + Continue. brief: flash and auto-advance. none: advance at once. */
+  feedback?: 'full' | 'brief' | 'none';
   onDone: (outcome: ItemOutcome) => void;
 };
 
@@ -21,10 +27,24 @@ type Props = {
  * One exercise. Implements "teach, don't solve": wrong answers unlock a hint,
  * a second hint, an explanation, and only then the answer.
  */
-export function ExerciseView({ item, passage, support, seed, onDone }: Props) {
-  const [flow, dispatch] = useReducer((s: FlowState, a: Parameters<typeof flowReducer>[1]) => flowReducer(s, a, item.hints.length), Date.now(), initialFlow);
+export function ExerciseView({ item, passage, support, seed, policy = 'teach', feedback = 'full', onDone }: Props) {
+  const [flow, dispatch] = useReducer(
+    (s: FlowState, a: Parameters<typeof flowReducer>[1]) => flowReducer(s, a, item.hints.length, policy),
+    Date.now(),
+    initialFlow,
+  );
   const [last, setLast] = useState<CheckResult | null>(null);
+  const [lessonOpen, setLessonOpen] = useState(false);
+  const { content } = useServices();
+  const lesson = content.lessonsForSkill(item.skill)[0];
   const finished = isFinished(flow);
+
+  // Quick modes move on by themselves.
+  useEffect(() => {
+    if (!finished || feedback === 'full') return;
+    const t = setTimeout(() => onDone(toOutcome(flow)), feedback === 'brief' ? 650 : 0);
+    return () => clearTimeout(t);
+  }, [finished, feedback, flow, onDone]);
   const listen = item.modality === 'listen';
   const audioText = ('audioText' in item && item.audioText) || item.prompt;
   const canSpeakPrompt = listen || (!!item.word && item.prompt === item.word.lemma);
@@ -71,32 +91,50 @@ export function ExerciseView({ item, passage, support, seed, onDone }: Props) {
       <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} />
 
       {item.type === 'choice' ? (
-        <ChoiceInput item={item} seed={seed} flow={flow} onChange={() => dispatch({ type: 'change-selection' })} onSubmit={submit} />
+        <ChoiceInput
+          item={item}
+          seed={seed}
+          flow={flow}
+          instant={feedback === 'brief'}
+          onChange={() => dispatch({ type: 'change-selection' })}
+          onSubmit={submit}
+        />
       ) : (
         <TypedInput item={item} flow={flow} onSubmit={submit} />
       )}
 
-      <Help item={item} flow={flow} last={last} support={support} />
+      {policy === 'teach' && <Help item={item} flow={flow} last={last} support={support} />}
 
-      {finished && <AfterAnswer item={item} flow={flow} support={support} listen={listen} audioText={audioText} />}
+      {finished && feedback === 'full' && <AfterAnswer item={item} flow={flow} support={support} listen={listen} audioText={audioText} />}
+
+      {lesson && feedback === 'full' && (finished || flow.explanationShown) && (
+        <button className="btn btn-ghost btn-sm" style={{ alignSelf: 'flex-start' }} onClick={() => setLessonOpen(true)}>
+          לשיעור המלא: {lesson.title.he}
+        </button>
+      )}
+      <Sheet open={lessonOpen} onClose={() => setLessonOpen(false)} label={lesson?.title.he ?? 'שיעור'}>
+        {lesson && <LessonView lesson={lesson} />}
+      </Sheet>
 
       <div className="actions">
         {finished ? (
-          <button className="btn btn-primary" onClick={() => onDone(toOutcome(flow))} autoFocus>
-            המשך
-          </button>
+          feedback === 'full' ? (
+            <button className="btn btn-primary" onClick={() => onDone(toOutcome(flow))} autoFocus>
+              המשך
+            </button>
+          ) : null
         ) : (
           <>
-            <button
-              className="btn btn-primary"
-              form={`answer-${item.id}`}
-              type="submit"
-            >
-              בדיקה
-            </button>
-            <button className="btn" type="button" onClick={() => dispatch({ type: 'hint' })} disabled={flow.explanationShown}>
-              רמז
-            </button>
+            {!(feedback === 'brief' && item.type === 'choice') && (
+              <button className="btn btn-primary" form={`answer-${item.id}`} type="submit">
+                {feedback === 'none' ? 'הבא' : 'בדיקה'}
+              </button>
+            )}
+            {policy === 'teach' && (
+              <button className="btn" type="button" onClick={() => dispatch({ type: 'hint' })} disabled={flow.explanationShown}>
+                רמז
+              </button>
+            )}
             <button className="btn btn-ghost" type="button" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
               דילוג
             </button>
@@ -148,12 +186,14 @@ function ChoiceInput({
   item,
   seed,
   flow,
+  instant,
   onChange,
   onSubmit,
 }: {
   item: ChoiceItem;
   seed: string;
   flow: FlowState;
+  instant: boolean;
   onChange: () => void;
   onSubmit: (answer: string, r: CheckResult) => void;
 }) {
@@ -184,6 +224,10 @@ function ChoiceInput({
             data-state={state}
             disabled={finished || wrong.has(o.id)}
             onClick={() => {
+              if (instant) {
+                if (!finished) onSubmit(o.id, checkChoice(item, o.id));
+                return;
+              }
               if (selected && selected !== o.id) onChange();
               setSelected(o.id);
             }}

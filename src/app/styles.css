@@ -246,3 +246,34 @@ h1, h2, h3, p { margin: 0; }
 .empty { text-align: center; padding: var(--s-6) var(--s-4); color: var(--muted); }
 .center { display: grid; place-items: center; min-height: 40vh; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Tables in lessons */
+.table { width: 100%; border-collapse: collapse; font-size: var(--t-sm); background: var(--surface); border-radius: var(--r-md); overflow: hidden; }
+.table th, .table td { padding: var(--s-2) var(--s-3); border-bottom: 1px solid var(--line); text-align: start; vertical-align: top; }
+.table th { background: var(--surface-2); font-weight: 600; }
+
+/* Sheet */
+.sheet-backdrop { position: fixed; inset: 0; background: rgb(0 0 0 / 0.35); display: flex; align-items: flex-end; justify-content: center; z-index: 20; }
+.sheet {
+  width: 100%; max-width: 560px; max-height: 88dvh; overflow-y: auto;
+  background: var(--bg); border-radius: var(--r-lg) var(--r-lg) 0 0;
+  padding: var(--s-3) var(--s-4) calc(var(--safe-bottom) + var(--s-6));
+  overscroll-behavior: contain;
+}
+
+/* Timer and games */
+.timer { font-variant-numeric: tabular-nums; font-weight: 650; min-width: 44px; text-align: center; }
+.timer[data-low='true'] { color: var(--bad); }
+.flash-good { animation: flashGood 500ms ease; }
+@keyframes flashGood { 0% { background: var(--good-weak); } 100% { background: transparent; } }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-2); }
+.tile {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  min-height: 84px; padding: var(--s-3); border-radius: var(--r-md);
+  background: var(--surface); border: 1px solid var(--line); text-align: start; color: inherit; text-decoration: none;
+}
+.tile:active { background: var(--surface-2); }
+.tile strong { font-weight: 600; }
+.tile[aria-disabled='true'] { opacity: 0.5; }
+.rank { display: flex; align-items: center; gap: var(--s-3); }
+.rank-badge { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: var(--accent-weak); color: var(--accent); font-weight: 700; }

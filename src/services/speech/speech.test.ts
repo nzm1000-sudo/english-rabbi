@@ -169,13 +169,19 @@ describe('audio cache', () => {
 describe('pre-rendered provider', () => {
   it('plays only texts that exist in the manifest', async () => {
     const manifest = { version: 1, engine: 'kokoro', entries: { [audioKey('af_heart', 'normal', 'beautiful')]: 'audio/x.mp3' } };
-    const fetchFn = (async () => new Response(JSON.stringify(manifest))) as typeof fetch;
+    const fetched: string[] = [];
+    const fetchFn = (async (u: string) => {
+      fetched.push(u);
+      return u.endsWith('.json') ? new Response(JSON.stringify(manifest)) : new Response(new Blob([u]));
+    }) as unknown as typeof fetch;
     const playback = new FakePlayback();
     const p = new PrerenderedProvider(playback, 'audio/manifest.json', fetchFn);
     expect(await p.canSpeak({ text: 'beautiful', accent: 'en-US', rate: 'normal' })).toBe(true);
     expect(await p.canSpeak({ text: 'beautiful', accent: 'en-GB', rate: 'normal' })).toBe(false);
     await p.speak({ text: 'beautiful', accent: 'en-US', rate: 'normal' });
-    expect(playback.played).toEqual(['audio/x.mp3']);
+    expect(fetched).toContain('audio/x.mp3');
+    expect(playback.played).toHaveLength(1);
+    expect(await (playback.played[0] as Blob).text()).toBe('audio/x.mp3');
   });
 
   it('plays a long text sentence by sentence when every sentence is pre-rendered', async () => {
@@ -183,10 +189,21 @@ describe('pre-rendered provider', () => {
     const b = 'The students did not give up.';
     const manifest = { version: 1, engine: 'kokoro', entries: { [audioKey('af_heart', 'normal', a)]: 'audio/a.mp3', [audioKey('af_heart', 'normal', b)]: 'audio/b.mp3' } };
     const playback = new FakePlayback();
-    const p = new PrerenderedProvider(playback, 'm', (async () => new Response(JSON.stringify(manifest))) as typeof fetch);
+    const fetchFn = (async (u: string) => (u === 'm' ? new Response(JSON.stringify(manifest)) : new Response(new Blob([u])))) as unknown as typeof fetch;
+    const p = new PrerenderedProvider(playback, 'm', fetchFn);
     await p.speak({ text: `${a} ${b}`, accent: 'en-US', rate: 'normal' });
-    expect(playback.played).toEqual(['audio/a.mp3', 'audio/b.mp3']);
+    expect(await Promise.all(playback.played.map((x) => (x as Blob).text()))).toEqual(['audio/a.mp3', 'audio/b.mp3']);
     expect(await p.canSpeak({ text: `${a} Something else.`, accent: 'en-US', rate: 'normal' })).toBe(false);
+  });
+
+  it('downloads every file for offline use', async () => {
+    const manifest = { version: 1, engine: 'k', entries: { a: 'audio/1.mp3', b: 'audio/2.mp3', c: 'audio/2.mp3' } };
+    const fetchFn = (async (u: string) => (u === 'm' ? new Response(JSON.stringify(manifest)) : u.endsWith('2.mp3') ? new Response('', { status: 404 }) : new Response('x'))) as unknown as typeof fetch;
+    const p = new PrerenderedProvider(new FakePlayback(), 'm', fetchFn);
+    const progress: number[] = [];
+    const r = await p.downloadAll((d) => progress.push(d));
+    expect(r).toEqual({ done: 2, failed: 1 });
+    expect(progress).toEqual([1, 2]);
   });
 
   it('degrades gracefully when there is no manifest', async () => {

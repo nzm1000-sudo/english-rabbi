@@ -62,11 +62,47 @@ export class PrerenderedProvider implements SpeechProvider {
     const m = await this.load();
     const urls = m && this.urlsFor(req, m);
     if (!urls) throw new Error('not pre-rendered');
-    req.onStart?.();
-    for (const url of urls) {
+    // Fetch whole files (not Range requests) so the service worker can cache
+    // them; play from memory. First file is fetched before reporting "playing".
+    let next = this.fetchAudio(urls[0]!, req.signal);
+    for (let i = 0; i < urls.length; i++) {
+      const blob = await next;
       if (req.signal?.aborted) throw abortError();
-      await this.playback.play(url, req.signal);
+      if (i + 1 < urls.length) next = this.fetchAudio(urls[i + 1]!, req.signal);
+      if (i === 0) req.onStart?.();
+      await this.playback.play(blob, req.signal);
     }
+  }
+
+  private async fetchAudio(url: string, signal?: AbortSignal): Promise<Blob> {
+    const res = await this.fetchFn(url, signal ? { signal } : undefined);
+    if (!res.ok) throw new Error(`audio ${res.status}`);
+    return res.blob();
+  }
+
+  /** Downloads every file into the offline cache. Reports progress. */
+  async downloadAll(onProgress: (done: number, total: number) => void, concurrency = 6): Promise<{ done: number; failed: number }> {
+    const m = await this.load();
+    if (!m) return { done: 0, failed: 0 };
+    const urls = [...new Set(Object.values(m.entries))];
+    let done = 0;
+    let failed = 0;
+    let i = 0;
+    const worker = async () => {
+      while (i < urls.length) {
+        const url = urls[i++]!;
+        try {
+          const r = await this.fetchFn(url);
+          if (!r.ok) failed++;
+          else await r.arrayBuffer();
+        } catch {
+          failed++;
+        }
+        onProgress(++done, urls.length);
+      }
+    };
+    await Promise.all(Array.from({ length: concurrency }, worker));
+    return { done, failed };
   }
 
   stop(): void {

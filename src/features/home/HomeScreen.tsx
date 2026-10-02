@@ -4,12 +4,16 @@ import { Avatar } from '@/ui/Avatar';
 import { En } from '@/ui/En';
 import { ChevronIcon, GearIcon } from '@/ui/icons';
 import type { LearnerProfile } from '@/domain/student/profile';
+import { rankOf } from '@/domain/learning/progression';
+import { useGameHistory } from '@/features/practice/useGameHistory';
+import { localDay } from '@/domain/learning/events';
 
 /** Home: one main action, today's progress, a short list of practice options. */
 export function HomeScreen() {
   const { sid } = useParams();
   const student = useStudent(sid);
   const profile = useProfile(student);
+  const games = useGameHistory(student?.id);
   const nav = useNavigate();
 
   if (student === null) return <main className="screen empty">התלמיד לא נמצא</main>;
@@ -20,6 +24,10 @@ export function HomeScreen() {
   const todayPct = Math.min(100, Math.round((p.activity.minutesToday / goal) * 100));
   const focus = p.memory[0];
   const weak = p.weakSkills[0];
+  const rank = rankOf(p);
+  const today = localDay(Date.now());
+  const dailyDone = !!games?.some((g) => g.game === 'daily' && g.day === today);
+  const base = `/s/${student.id}`;
 
   return (
     <main className="screen">
@@ -31,9 +39,14 @@ export function HomeScreen() {
             {p.activity.streakDays > 0 && <div className="small muted">{p.activity.streakDays} ימים ברצף</div>}
           </div>
         </Link>
-        <Link to={`/s/${student.id}/settings`} className="icon-btn" aria-label="הגדרות">
-          <GearIcon />
-        </Link>
+        <div className="row" style={{ gap: 4 }}>
+          <Link to={`${base}/progress`} className="rank-badge" aria-label={`דרגה ${rank.current.level}: ${rank.current.he}`} style={{ textDecoration: 'none' }}>
+            {rank.current.level}
+          </Link>
+          <Link to={`${base}/settings`} className="icon-btn" aria-label="הגדרות">
+            <GearIcon />
+          </Link>
+        </div>
       </header>
 
       {p.calibrated ? (
@@ -66,6 +79,25 @@ export function HomeScreen() {
         </div>
       </section>
 
+      {p.calibrated &&
+        (dailyDone ? (
+          <div className="list list-item">
+            <span className="grow">
+              <strong>האתגר היומי</strong>
+              <span className="small muted" style={{ display: 'block' }}>הושלם היום. מחר יש אתגר חדש.</span>
+            </span>
+            <span className="badge badge-good">בוצע</span>
+          </div>
+        ) : (
+          <Link to={`${base}/practice/daily`} className="list list-item" style={{ color: 'inherit', textDecoration: 'none' }}>
+            <span className="grow">
+              <strong>האתגר היומי</strong>
+              <span className="small muted" style={{ display: 'block' }}>6 שאלות מגוונות, חידה אחת בפנים</span>
+            </span>
+            <ChevronIcon />
+          </Link>
+        ))}
+
       <section className="stack">
         <span className="section-label">תרגול קצר</span>
         <nav className="list">
@@ -75,6 +107,18 @@ export function HomeScreen() {
           <PracticeLink to={`/s/${student.id}/practice/listening`} title="הבנת הנשמע" en="Listening" />
           <PracticeLink title="שיחה" en="Conversation" meta="בקרוב" disabled />
         </nav>
+      </section>
+
+      <section className="stack">
+        <span className="section-label">משחקים ואתגרים</span>
+        <div className="grid-2">
+          <Tile to={`${base}/practice/quiz`} title="חידון" sub="10 שאלות, בלי רמזים" />
+          <Tile to={`${base}/practice/lightning`} title="סבב בזק" sub="60 שניות, כמה שיותר" />
+          <Tile to={`${base}/practice/exam`} title="מבחן" sub="בסגנון בגרות" />
+          <Tile to={`${base}/practice/riddles`} title="חידות" sub="באנגלית" />
+          <Tile to={`${base}/practice/mistakes`} title="חדר כושר לטעויות" sub="מה שעוד לא יושב" />
+          <Tile to={`${base}/learn`} title="שיעורים" sub="הסברים ודוגמאות" />
+        </div>
       </section>
 
       {(p.words.due > 0 || focus || weak) && (
@@ -100,6 +144,15 @@ export function HomeScreen() {
 
       <WeekStrip profile={p} goal={goal} />
     </main>
+  );
+}
+
+function Tile({ to, title, sub }: { to: string; title: string; sub: string }) {
+  return (
+    <Link to={to} className="tile">
+      <strong>{title}</strong>
+      <span className="xs muted">{sub}</span>
+    </Link>
   );
 }
 
