@@ -210,7 +210,7 @@ function OrderInput({ item, seed, flow, onSubmit }: { item: OrderItem; seed: str
   return (
     <form id={`answer-${item.id}`} onSubmit={submit} className="stack" style={{ gap: 'var(--s-4)' }}>
       <div className="order-line prompt-card" dir="ltr" lang="en" aria-label="המשפט שלך">
-        {placed.length === 0 && <span className="muted small">Tap the words below</span>}
+        {placed.length === 0 && <span className="muted small" dir="rtl" lang="he">להקיש על המילים למטה</span>}
         {placed.map((id) => (
           <button key={id} type="button" className="word-tile placed" disabled={finished} onClick={() => setPlaced((p) => p.filter((x) => x !== id))}>
             {tiles.find((t) => t.id === id)!.text}
@@ -348,7 +348,7 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
         spellCheck={false}
         enterKeyHint="done"
         inputMode="text"
-        placeholder="Type here"
+        placeholder="לכתוב כאן באנגלית"
         style={{ fontFamily: 'var(--font-en)' }}
       />
     </form>
