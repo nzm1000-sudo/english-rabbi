@@ -129,14 +129,12 @@ export function HomeScreen() {
               <PracticeLink to={`/s/${student.id}/practice/review`} title={`${p.words.due} פריטים לחזרה היום`} meta="חזרה" />
             )}
             {focus ? (
-              <div className="list-item" style={{ alignItems: 'flex-start', flexDirection: 'column', gap: 4 }}>
+              <Link to={`${base}/practice/mistakes`} className="list-item" style={{ alignItems: 'flex-start', flexDirection: 'column', gap: 4, color: 'inherit', textDecoration: 'none' }}>
                 <span style={{ fontWeight: 550 }}>{focus.note.he}</span>
                 <span className="small muted">{focus.tip.he}</span>
-              </div>
+              </Link>
             ) : weak ? (
-              <div className="list-item">
-                <span className="grow">{weak.name.he}</span>
-              </div>
+              <PracticeLink to={`${base}/practice/skill?skill=${encodeURIComponent(weak.skillId)}`} title={weak.name.he} meta="תרגול ממוקד" />
             ) : null}
           </div>
         </section>
