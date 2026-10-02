@@ -30,7 +30,7 @@
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "כתוב בשורה הראשונה: behind their school.",
+        "he": "במשפט הראשון נאמר: behind their school.",
         "en": "The first sentence says: behind their school."
       },
       "hints": [
@@ -69,7 +69,7 @@
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "בקטע כתוב: nobody believed it would work. כלומר אף אחד לא האמין.",
+        "he": "בקטע נאמר: nobody believed it would work. כלומר אף אחד לא האמין.",
         "en": "The text says: nobody believed it would work."
       },
       "hints": [
@@ -140,11 +140,11 @@
         },
         {
           "id": "b",
-          "text": "Tomatoes need a lot of water to grow."
+          "text": "Tomatoes need a lot of water and sun to grow."
         },
         {
           "id": "c",
-          "text": "The school cafeteria makes good salads."
+          "text": "The school cafeteria makes good salads with fresh herbs."
         }
       ],
       "correctOptionId": "a",
@@ -180,16 +180,16 @@
         },
         {
           "id": "b",
-          "text": "Because herbs are cheaper than vegetables."
+          "text": "Because herbs are cheaper than vegetables to buy."
         },
         {
           "id": "c",
-          "text": "Because their teacher told them to."
+          "text": "Because their teacher told them which plants to grow."
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "זה לא כתוב במפורש. מסיקים זאת מכך שהקרקע הייתה יבשה ושהם אספו מי גשם.",
+        "he": "זה לא נאמר במפורש. מסיקים זאת מכך שהקרקע הייתה יבשה ושהם אספו מי גשם.",
         "en": "It is not written directly. We infer it from the dry ground and the rainwater."
       },
       "hints": [
@@ -397,15 +397,15 @@
       "options": [
         {
           "id": "a",
-          "text": "If you visited London at any time in your life"
+          "text": "If you have visited London at any time in your life"
         },
         {
           "id": "b",
-          "text": "If you are going to London next week"
+          "text": "If you are planning a trip to London next week"
         },
         {
           "id": "c",
-          "text": "If you live in London now"
+          "text": "If you live in London at the moment"
         }
       ],
       "correctOptionId": "a",
@@ -516,7 +516,7 @@
         "school",
         "science"
       ],
-      "text": "Last year, the students in Maya's class started a garden behind their school. At first, nobody believed it would work. The ground was dry, and there was very little shade. The students did not give up. They collected rainwater in old buckets and planted herbs that do not need much water. Every morning before class, two students checked the plants. By the spring, the garden was full of mint, basil and small tomatoes. Now the school cafeteria uses the herbs in its salads, and younger students visit the garden to learn about plants. Maya says the best part was not the vegetables. \"We learned that a small group can change a place,\" she said."
+      "text": "Last year, the students in Maya's class started a garden behind their school. At first, nobody believed it would work. The ground was dry, and there was very little shade. The students did not give up. They collected rainwater in old buckets and planted herbs that do not need much water. Every morning before class, two students checked the plants. They also made small signs with the name of each plant. By the spring, the garden was full of mint, basil and small tomatoes. Now the school cafeteria uses the herbs in its salads, and younger students visit the garden to learn about plants. Maya says the best part was not the vegetables. \"We learned that a small group can change a place,\" she said."
     }
   ]
 }

@@ -80,7 +80,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "happy"
+        "happy",
+        "glad"
       ],
       "hints": [
         {
@@ -407,7 +408,9 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "beautiful"
+        "beautiful",
+        "pretty",
+        "lovely"
       ],
       "hints": [
         {
@@ -462,20 +465,20 @@
       "options": [
         {
           "id": "a",
-          "text": "לשאול (לקחת בהשאלה)"
+          "text": "לקחת בהשאלה"
         },
         {
           "id": "b",
-          "text": "להשאיל (לתת בהשאלה)",
+          "text": "לתת בהשאלה",
           "misconception": "vocabulary.borrow-lend"
         },
         {
           "id": "c",
-          "text": "לקנות"
+          "text": "לקבל במתנה"
         },
         {
           "id": "d",
-          "text": "למכור"
+          "text": "להחזיר משהו"
         }
       ],
       "correctOptionId": "a",
@@ -961,7 +964,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "enough"
+        "enough",
+        "sufficient"
       ],
       "hints": [
         {
@@ -1068,7 +1072,9 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "although"
+        "although",
+        "though",
+        "even though"
       ],
       "hints": [
         {
@@ -1125,15 +1131,15 @@
         },
         {
           "id": "b",
-          "text": "לוותר"
+          "text": "לוותר (על מטרה)"
         },
         {
           "id": "c",
-          "text": "לחפש"
+          "text": "לקבוע (מטרה)"
         },
         {
           "id": "d",
-          "text": "לתכנן"
+          "text": "לחפש (דרך)"
         }
       ],
       "correctOptionId": "a",
@@ -1177,7 +1183,10 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "achieve"
+        "achieve",
+        "reach",
+        "accomplish",
+        "attain"
       ],
       "hints": [
         {
@@ -1288,7 +1297,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "improve"
+        "improve",
+        "enhance"
       ],
       "hints": [
         {
@@ -1400,7 +1410,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "environment"
+        "environment",
+        "surroundings"
       ],
       "hints": [
         {
@@ -1512,7 +1523,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "opinion"
+        "opinion",
+        "view"
       ],
       "hints": [
         {
@@ -1621,7 +1633,9 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "reliable"
+        "reliable",
+        "trustworthy",
+        "dependable"
       ],
       "hints": [
         {
@@ -1678,15 +1692,15 @@
         },
         {
           "id": "b",
-          "text": "סיבה"
+          "text": "סיבה, גורם"
         },
         {
           "id": "c",
-          "text": "הזדמנות"
+          "text": "הזדמנות, סיכוי"
         },
         {
           "id": "d",
-          "text": "ויכוח"
+          "text": "ויכוח, מריבה"
         }
       ],
       "correctOptionId": "a",
@@ -1728,7 +1742,9 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "consequence"
+        "consequence",
+        "result",
+        "outcome"
       ],
       "hints": [
         {
@@ -1837,7 +1853,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "significant"
+        "significant",
+        "meaningful"
       ],
       "hints": [
         {
@@ -1946,7 +1963,10 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "nevertheless"
+        "nevertheless",
+        "nonetheless",
+        "even so",
+        "still"
       ],
       "hints": [
         {

@@ -195,11 +195,11 @@
         },
         {
           "id": "c",
-          "text": "מדרגות"
+          "text": "מדרגות, סולם"
         },
         {
           "id": "d",
-          "text": "מעלית"
+          "text": "קיר, חומה"
         }
       ],
       "correctOptionId": "a",
@@ -516,11 +516,11 @@
         },
         {
           "id": "c",
-          "text": "לגהץ"
+          "text": "לגהץ, לסדר"
         },
         {
           "id": "d",
-          "text": "לקפל"
+          "text": "לקפל, לתלות"
         }
       ],
       "correctOptionId": "a",
@@ -837,7 +837,7 @@
       "options": [
         {
           "id": "a",
-          "text": "בעל (בן זוג נשוי)"
+          "text": "בעל"
         },
         {
           "id": "b",
@@ -2551,15 +2551,15 @@
         },
         {
           "id": "b",
-          "text": "קשה"
+          "text": "קשה (לא קל)"
         },
         {
           "id": "c",
-          "text": "ארוך"
+          "text": "ארוך (לא קצר)"
         },
         {
           "id": "d",
-          "text": "חשוב"
+          "text": "חשוב (לא שולי)"
         }
       ],
       "correctOptionId": "a",
@@ -2603,7 +2603,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "easy"
+        "easy",
+        "simple"
       ],
       "hints": [
         {
@@ -2886,15 +2887,15 @@
         },
         {
           "id": "b",
-          "text": "מוקדם"
+          "text": "מוקדם, לפני הזמן"
         },
         {
           "id": "c",
-          "text": "עסוק"
+          "text": "עסוק, טרוד"
         },
         {
           "id": "d",
-          "text": "מוכן"
+          "text": "מוכן, ערוך"
         }
       ],
       "correctOptionId": "a",
@@ -3201,7 +3202,7 @@
       "options": [
         {
           "id": "a",
-          "text": "אף פעם (לא)"
+          "text": "אף פעם"
         },
         {
           "id": "b",
@@ -4100,15 +4101,15 @@
         },
         {
           "id": "b",
-          "text": "לרפא"
+          "text": "לרפא, להבריא"
         },
         {
           "id": "c",
-          "text": "לעזור"
+          "text": "לעזור, לתמוך"
         },
         {
           "id": "d",
-          "text": "לנוח"
+          "text": "לנוח, לישון"
         }
       ],
       "correctOptionId": "a",
@@ -4759,15 +4760,15 @@
         },
         {
           "id": "b",
-          "text": "זול"
+          "text": "זול (במחיר)"
         },
         {
           "id": "c",
-          "text": "ישן"
+          "text": "ישן (לא חדש)"
         },
         {
           "id": "d",
-          "text": "גדול"
+          "text": "גדול (בגודל)"
         }
       ],
       "correctOptionId": "a",
@@ -4811,7 +4812,10 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "expensive"
+        "expensive",
+        "costly",
+        "pricey",
+        "dear"
       ],
       "hints": [
         {
@@ -4838,15 +4842,7 @@
           "weight": 0.4
         }
       ],
-      "knownErrors": [
-        {
-          "answer": "dear",
-          "feedback": {
-            "he": "dear זה יקר ללב (Dear Dana). יקר במחיר: expensive.",
-            "en": "dear is for people you love. For price, use expensive."
-          }
-        }
-      ]
+      "knownErrors": []
     },
     {
       "id": "va2.expensive.context",
@@ -5140,7 +5136,7 @@
       },
       "interests": [],
       "source": "original",
-      "prompt": "כסף (מזומן, לא המתכת)",
+      "prompt": "כסף (שמשלמים בו)",
       "promptLanguage": "he",
       "instruction": {
         "he": "איך אומרים באנגלית?",
@@ -5329,7 +5325,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "אחרי הרווח יש for. איזה פועל בא עם for כשמדברים על כסף?",
+          "he": "אחרי המקום הריק יש for. איזה פועל בא עם for כשמדברים על כסף?",
           "en": "Which verb goes with for when talking about money?"
         }
       ],
@@ -6050,15 +6046,15 @@
         },
         {
           "id": "b",
-          "text": "מפה"
+          "text": "מפה, מסלול"
         },
         {
           "id": "c",
-          "text": "מזוודה"
+          "text": "מזוודה, תיק"
         },
         {
           "id": "d",
-          "text": "תחנה"
+          "text": "תחנה, רציף"
         }
       ],
       "correctOptionId": "a",
@@ -6404,15 +6400,15 @@
         },
         {
           "id": "b",
-          "text": "אמיץ"
+          "text": "אמיץ, נועז"
         },
         {
           "id": "c",
-          "text": "רגוע"
+          "text": "רגוע, שליו"
         },
         {
           "id": "d",
-          "text": "נרגש"
+          "text": "נרגש, נלהב"
         }
       ],
       "correctOptionId": "a",
@@ -6526,7 +6522,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "אחרי הרווח בא of. מה אנשים מרגישים כלפי נחשים?",
+          "he": "אחרי המקום הריק בא of. מה אנשים מרגישים כלפי נחשים?",
           "en": "The word of comes next. How do people feel about snakes?"
         }
       ],
@@ -7244,7 +7240,7 @@
       "options": [
         {
           "id": "a",
-          "text": "להשאיל (לתת בהשאלה)"
+          "text": "לתת בהשאלה"
         },
         {
           "id": "b",
@@ -7253,11 +7249,11 @@
         },
         {
           "id": "c",
-          "text": "להחזיר"
+          "text": "להחזיר משהו"
         },
         {
           "id": "d",
-          "text": "למכור"
+          "text": "לתת במתנה"
         }
       ],
       "correctOptionId": "a",
@@ -7810,7 +7806,8 @@
         "en": "How do you say it in English?"
       },
       "answers": [
-        "dangerous"
+        "dangerous",
+        "unsafe"
       ],
       "hints": [
         {
@@ -8186,15 +8183,15 @@
         },
         {
           "id": "b",
-          "text": "לאט"
+          "text": "לאט, באיטיות"
         },
         {
           "id": "c",
-          "text": "בשקט"
+          "text": "בשקט, בלי רעש"
         },
         {
           "id": "d",
-          "text": "בזהירות"
+          "text": "בזהירות, בעדינות"
         }
       ],
       "correctOptionId": "a",
@@ -8452,7 +8449,7 @@
       "options": [
         {
           "id": "a",
-          "text": "ביחד, יחד"
+          "text": "ביחד"
         },
         {
           "id": "b",

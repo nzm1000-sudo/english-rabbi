@@ -17,7 +17,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Through the garden gate, which was left open"
+          "text": "Through the garden gate"
         },
         {
           "id": "b",
@@ -25,7 +25,7 @@
         },
         {
           "id": "c",
-          "text": "He ran away from the park"
+          "text": "Through an open window"
         }
       ],
       "correctOptionId": "a",
@@ -63,15 +63,15 @@
       "options": [
         {
           "id": "a",
-          "text": "lost, not in his usual place"
+          "text": "lost"
         },
         {
           "id": "b",
-          "text": "hungry"
+          "text": "hurt"
         },
         {
           "id": "c",
-          "text": "sick"
+          "text": "hungry"
         }
       ],
       "correctOptionId": "a",
@@ -83,7 +83,7 @@
       ],
       "explanation": {
         "he": "missing פירושו נעדר, לא נמצא במקום. ההקשר עוזר: Biscuit ran out, ואחר כך הכינו posters כדי למצוא אותו.",
-        "en": "missing means lost, not where it should be. The context helps: Biscuit ran out, and they made posters to find him."
+        "en": "missing means lost, not where he should be. The context helps: Biscuit ran out, and they made posters to find him."
       },
       "interests": [
         "animals"
@@ -527,11 +527,11 @@
         },
         {
           "id": "b",
-          "text": "How to repair a bike for free"
+          "text": "How people in a small town can get free bike repairs"
         },
         {
           "id": "c",
-          "text": "Why buses are bad for small towns"
+          "text": "Why the shop owners in Green Hill are worried about cars"
         }
       ],
       "correctOptionId": "a",
@@ -722,8 +722,8 @@
         }
       ],
       "explanation": {
-        "he": "בקטע נאמר: Noa does not want to be a famous chef. \"I want to be a doctor.\" הבישול הוא תחביב (hobby).",
-        "en": "The text says she does not want to be a famous chef. She wants to be a doctor. Cooking is her hobby."
+        "he": "בקטע נאמר: Noa does not want to be a chef. \"I want to be a doctor.\" הבישול הוא תחביב (hobby).",
+        "en": "The text says: Noa does not want to be a chef. She wants to be a doctor. Cooking is her hobby."
       },
       "interests": [
         "food"
@@ -1079,7 +1079,7 @@
         },
         {
           "id": "b",
-          "text": "Angry about the rain"
+          "text": "Angry about the cold and the rain"
         },
         {
           "id": "c",
@@ -1262,15 +1262,15 @@
       "options": [
         {
           "id": "a",
-          "text": "To admit that the rule may not be the only reason for the better grades"
+          "text": "To admit that the rule may not be the only reason for better grades"
         },
         {
           "id": "b",
-          "text": "To advise readers to find a private teacher"
+          "text": "To advise other students to find a private teacher too"
         },
         {
           "id": "c",
-          "text": "To complain that maths is too difficult"
+          "text": "To complain that the maths lessons at school are too hard"
         }
       ],
       "correctOptionId": "a",
@@ -1368,7 +1368,7 @@
         },
         {
           "id": "c",
-          "text": "Phones are wonderful tools."
+          "text": "Phones are wonderful tools, but we do not need them every minute."
         },
         {
           "id": "d",
@@ -1462,15 +1462,15 @@
       "options": [
         {
           "id": "a",
-          "text": "when coral loses its colour because the water is too warm"
+          "text": "when warm water makes coral lose its colour"
         },
         {
           "id": "b",
-          "text": "a way of cleaning old coral"
+          "text": "when divers clean broken coral before moving it"
         },
         {
           "id": "c",
-          "text": "when fish leave a reef"
+          "text": "when fish leave a reef because it is damaged"
         }
       ],
       "correctOptionId": "a",
@@ -1524,8 +1524,8 @@
         }
       ],
       "explanation": {
-        "he": "בקטע נאמר: they cover less than one percent of the sea floor. פחות מאחוז אחד זה חלק קטן מאוד. רבע (a quarter) מתייחס לדגים, לא לשטח.",
-        "en": "Reefs cover less than one percent of the sea floor. A quarter refers to the fish, not the area."
+        "he": "בקטע נאמר: they cover less than one percent of the sea floor. פחות מאחוז אחד זה חלק קטן מאוד. רבע (a quarter) מתייחס לסוגי החיים בים, לא לשטח.",
+        "en": "Reefs cover less than one percent of the sea floor. A quarter refers to kinds of sea life, not the area."
       },
       "interests": [
         "science",
@@ -1744,15 +1744,15 @@
       "options": [
         {
           "id": "a",
-          "text": "He hoped Daniel's life in Israel was more unusual and exciting."
+          "text": "He expected Daniel's life in Israel to be more exciting."
         },
         {
           "id": "b",
-          "text": "He wanted Daniel to take a different bus."
+          "text": "He wanted Daniel to take a different bus to school."
         },
         {
           "id": "c",
-          "text": "Daniel did not answer his question."
+          "text": "Daniel did not answer his question about Israel."
         }
       ],
       "correctOptionId": "a",
@@ -2083,7 +2083,7 @@
         },
         {
           "id": "d",
-          "text": "She won the national championship."
+          "text": "She won a national championship."
         }
       ],
       "correctOptionId": "a",
@@ -2209,15 +2209,15 @@
       "options": [
         {
           "id": "a",
-          "text": "She was also too old and too slow at the start, but she still succeeded."
+          "text": "She was old and slow when she began, too."
         },
         {
           "id": "b",
-          "text": "She was both a coach and a runner."
+          "text": "She was a coach and a runner at the same time."
         },
         {
           "id": "c",
-          "text": "She was both a bank clerk and a runner."
+          "text": "She was a bank clerk and a runner at the same time."
         }
       ],
       "correctOptionId": "a",
@@ -2784,15 +2784,15 @@
       "options": [
         {
           "id": "a",
-          "text": "The tradition still matters to the town, even though it no longer has a practical use."
+          "text": "The tradition still matters to the town, though it is no longer practical."
         },
         {
           "id": "b",
-          "text": "The bell is useless and the town should stop ringing it."
+          "text": "The bell is now useless, so the town should stop ringing it."
         },
         {
           "id": "c",
-          "text": "Many fishermen still depend on the bell to come home safely."
+          "text": "Many fishermen still need the bell to find their way home."
         }
       ],
       "correctOptionId": "a",
@@ -2835,19 +2835,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Teenagers sleep late mainly for biological reasons, so schools may need to start later."
+          "text": "Teenagers sleep late for biological reasons, so schools may need to start later."
         },
         {
           "id": "b",
-          "text": "Teenagers are lazy and should go to bed earlier."
+          "text": "Teenagers are simply lazy, so parents should make them go to bed earlier."
         },
         {
           "id": "c",
-          "text": "Melatonin is a dangerous hormone for young people."
+          "text": "Melatonin is a dangerous hormone that harms the sleep of young people."
         },
         {
           "id": "d",
-          "text": "School sports teams should train early in the morning."
+          "text": "School sports teams should train early in the morning instead of in the evening."
         }
       ],
       "correctOptionId": "a",
@@ -2886,15 +2886,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Teenagers always feel as tired as people who have just flown to a different time zone."
+          "text": "Teenagers always feel like travellers who have just changed time zones."
         },
         {
           "id": "b",
-          "text": "Teenagers travel abroad more often than adults."
+          "text": "Teenagers travel to other countries more often than adults do."
         },
         {
           "id": "c",
-          "text": "Teenagers sleep too much during the day."
+          "text": "Teenagers sleep too much during the day and feel bored."
         }
       ],
       "correctOptionId": "a",
@@ -3031,11 +3031,11 @@
         },
         {
           "id": "b",
-          "text": "The teachers changed the students' marks."
+          "text": "The teachers may have changed the students' marks to look better."
         },
         {
           "id": "c",
-          "text": "The trial lasted too long to be useful."
+          "text": "The trial lasted too long for the results to be useful."
         }
       ],
       "correctOptionId": "a",
@@ -3121,19 +3121,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Music algorithms narrow our taste, so we should sometimes look for music on our own."
+          "text": "Algorithms narrow our taste, so we should sometimes look for music ourselves."
         },
         {
           "id": "b",
-          "text": "Streaming apps should be deleted because they are dangerous."
+          "text": "Streaming apps are dangerous, so people should delete them completely."
         },
         {
           "id": "c",
-          "text": "Music was better in the days of CDs and mixtapes."
+          "text": "Music was better in the days of CDs, mixtapes and small cafés."
         },
         {
           "id": "d",
-          "text": "Music algorithms usually choose the wrong songs."
+          "text": "Music algorithms usually choose songs that people do not really like."
         }
       ],
       "correctOptionId": "a",
@@ -3223,15 +3223,15 @@
       "options": [
         {
           "id": "a",
-          "text": "To show how our taste becomes narrower when we always get more of the same"
+          "text": "To show how our taste narrows when we only get more of the same"
         },
         {
           "id": "b",
-          "text": "To suggest that people should listen to music while walking"
+          "text": "To suggest that people should listen to music while they walk"
         },
         {
           "id": "c",
-          "text": "To compare music apps to maps that show the way"
+          "text": "To compare music apps to maps that show us the way"
         }
       ],
       "correctOptionId": "a",
@@ -3565,7 +3565,7 @@
       "options": [
         {
           "id": "a",
-          "text": "appeared with a light that kept shaking"
+          "text": "appeared with an unsteady, flashing light"
         },
         {
           "id": "b",
@@ -3585,7 +3585,7 @@
       ],
       "explanation": {
         "he": "flicker פירושו להבהב, אור שרועד. המילה finally מראה שהתמונות סוף סוף הופיעו, לא נעלמו.",
-        "en": "flicker means to shine with an unsteady light. finally shows the images appeared, not disappeared."
+        "en": "flicker means to shine with an unsteady, flashing light. finally shows the images appeared, not disappeared."
       },
       "interests": [
         "movies"
@@ -3719,7 +3719,7 @@
       "id": "passage.noas-kitchen",
       "title": "Noa's Kitchen",
       "level": "A2",
-      "text": "Noa Peretz is fifteen years old, and she already has her own cooking show on the internet.\n\nIt all started when she was eleven. Her grandmother broke her arm and could not cook, so Noa helped her in the kitchen every afternoon. Her grandmother explained each step, and Noa wrote everything in a notebook.\n\nA year later, Noa's older brother filmed her making her grandmother's lentil soup. He put the video online, and thousands of people watched it. Today, Noa makes a new video every Friday. She cooks simple dishes that teenagers can make at home with cheap ingredients.\n\nNoa does not want to be a famous chef. \"I want to be a doctor,\" she says. \"Cooking is my hobby, and it helps me relax after school.\" Her grandmother is still her biggest fan. She watches every video twice.",
+      "text": "Noa Peretz is fifteen years old, and she already has her own cooking show on the internet.\n\nIt all started when she was eleven. Her grandmother broke her arm and could not cook, so Noa helped her in the kitchen every afternoon. Her grandmother explained each step, and Noa wrote everything in a notebook.\n\nA year later, Noa's older brother filmed her making her grandmother's lentil soup. He put the video online, and thousands of people watched it. Today, Noa makes a new video every Friday. She cooks simple dishes that teenagers can make at home with cheap ingredients.\n\nNoa does not want to be a chef. \"I want to be a doctor,\" she says. \"Cooking is my hobby, and it helps me relax after school.\" Her grandmother is still her biggest fan. She watches every video twice.",
       "interests": [
         "food"
       ],
@@ -3750,7 +3750,7 @@
       "id": "passage.gardeners-under-the-sea",
       "title": "Gardeners Under the Sea",
       "level": "B1",
-      "text": "Off the coast of a small fishing village called Port Amari, a group of volunteer divers spends every Saturday working in an unusual garden. The garden is ten metres under the sea, and instead of flowers, they grow coral.\n\nCoral reefs look like colourful rocks, but they are actually made of millions of tiny animals. Reefs are home to about a quarter of all ocean fish, even though they cover less than one percent of the sea floor. Sadly, many reefs around the world are dying. When the water becomes too warm, the coral loses its colour and often dies. Scientists call this \"bleaching\".\n\nThe Port Amari project began in 2019, after a storm destroyed much of the local reef. The divers collect small broken pieces of living coral and tie them to metal frames that look like underwater tables. When the pieces have grown large enough, the divers move them back onto the reef.\n\nThe work is slow. A piece of coral the size of a finger may need twelve months to grow as big as a hand. Not every piece survives, either: in the first year, almost half of them died. Since then, the divers have learned which kinds of coral grow best in their bay.\n\nToday, fish are slowly returning to the reef, and so are the tourists who come to watch them. \"We cannot save every reef,\" says the project leader, Dalia Moss, \"but we can give ours a second chance.\"",
+      "text": "Off the coast of a small fishing village called Port Amari, a group of volunteer divers spends every Saturday working in an unusual garden. The garden is ten metres under the sea, and instead of flowers, they grow coral.\n\nCoral reefs look like colourful rocks, but they are actually made of millions of tiny animals. Reefs are home to about a quarter of all kinds of sea life, even though they cover less than one percent of the sea floor. Sadly, many reefs around the world are dying. When the water becomes too warm, the coral loses its colour and often dies. Scientists call this \"bleaching\".\n\nThe Port Amari project began in 2019, after a storm destroyed much of the local reef. The divers collect small broken pieces of living coral and tie them to metal frames that look like underwater tables. When the pieces have grown large enough, the divers move them back onto the reef.\n\nThe work is slow. A piece of coral the size of a finger may need twelve months to grow as big as a hand. Not every piece survives, either: in the first year, almost half of them died. Since then, the divers have learned which kinds of coral grow best in their bay.\n\nToday, fish are slowly returning to the reef, and so are the tourists who come to watch them. \"We cannot save every reef,\" says the project leader, Dalia Moss, \"but we can give ours a second chance.\"",
       "interests": [
         "science",
         "animals"
@@ -3772,7 +3772,7 @@
       "id": "passage.runner-who-started-late",
       "title": "The Runner Who Started Late",
       "level": "B1",
-      "text": "Most professional athletes begin training as children. Lena Varga did not run her first race until she was thirty-one.\n\nLena grew up in a small town in Hungary, where she later worked as a bank clerk. She describes her younger self as \"the girl who always had a note to get out of sports lessons\". Everything changed in 2009, when her doctor told her that she needed to lower her blood pressure. He suggested walking for thirty minutes a day. Lena began walking to work instead of taking the tram, and after a few months, she started to jog part of the way.\n\nIn 2011, a colleague persuaded her to enter a ten-kilometre charity run. She finished in the top twenty, ahead of many runners who had trained for years. A local coach who saw the race offered to train her for free. Within three years, Lena had moved up to the marathon, and in 2015 she won the national championship at the age of thirty-five.\n\nLena never reached the Olympics. A knee injury in 2016 ended her professional career. However, she says she has no regrets. Today she runs a club for adults who have never done any sport before. \"People tell me they are too old or too slow,\" she says. \"I tell them that I was both.\"",
+      "text": "Most professional athletes begin training as children. Lena Varga did not run her first race until she was thirty-one.\n\nLena grew up in a small town, where she later worked as a bank clerk. She describes her younger self as \"the girl who always had a note to get out of sports lessons\". Everything changed in 2009, when her doctor told her that she needed to lower her blood pressure. He suggested walking for thirty minutes a day. Lena began walking to work instead of taking the tram, and after a few months, she started to jog part of the way.\n\nIn 2011, a colleague persuaded her to enter a ten-kilometre charity run. She finished in the top twenty, ahead of many runners who had trained for years. A local coach who saw the race offered to train her for free. Within three years, Lena had moved up to the marathon, and in 2015 she won her country's marathon championship at the age of thirty-five.\n\nLena never reached the Olympics. A knee injury in 2016 ended her professional career. However, she says she has no regrets. Today she runs a club for adults who have never done any sport before. \"People tell me they are too old or too slow,\" she says. \"I tell them that I was both.\"",
       "interests": [
         "sports"
       ],
