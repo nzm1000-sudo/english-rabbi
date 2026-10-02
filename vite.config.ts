@@ -1,0 +1,46 @@
+/// <reference types="vitest/config" />
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { VitePWA } from 'vite-plugin-pwa';
+import { fileURLToPath, URL } from 'node:url';
+
+export default defineConfig({
+  // Relative base so the build works from any static host or sub-path (e.g. a home server folder).
+  base: './',
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@content': fileURLToPath(new URL('./content', import.meta.url)),
+    },
+  },
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: 'prompt',
+      includeAssets: ['icon.svg'],
+      manifest: {
+        name: 'Smart English Tutor',
+        short_name: 'English',
+        description: 'מורה אישי לאנגלית',
+        lang: 'he',
+        dir: 'rtl',
+        display: 'standalone',
+        orientation: 'portrait',
+        background_color: '#f7f7f5',
+        theme_color: '#f7f7f5',
+        start_url: './',
+        icons: [{ src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }],
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,svg,json,woff2}'],
+        navigateFallback: 'index.html',
+      },
+    }),
+  ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./tests/setup.ts'],
+    include: ['src/**/*.test.{ts,tsx}', 'content/**/*.test.ts', 'tests/**/*.test.{ts,tsx}'],
+  },
+});
