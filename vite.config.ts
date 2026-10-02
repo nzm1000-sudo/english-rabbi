@@ -35,6 +35,8 @@ export default defineConfig({
         // Audio is not precached (thousands of files). It is cached on first
         // use, or all at once from the parent screen ("download audio").
         globPatterns: ['**/*.{js,css,html,svg,json,woff2}'],
+        // The app bundle includes all content (~2.5 MB, ~0.5 MB compressed); it must be precached for offline use.
+        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         navigateFallback: 'index.html',
         runtimeCaching: [
           {

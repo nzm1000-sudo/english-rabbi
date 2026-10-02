@@ -190,7 +190,8 @@ export function buildExam(c: PoolContext): ContentItem[] {
   const passage = seededShuffle(passages.length ? passages : fallback, seed)[0];
   const reading = passage ? items.filter((i) => i.passageId === passage.id) : [];
   const pick = (domain: string, n: number) => {
-    const all = items.filter((i) => domainOf(i.skill) === domain && !i.passageId && i.modality === 'read');
+    // Bagrut-style: choice and typed items only (no sentence building).
+    const all = items.filter((i) => domainOf(i.skill) === domain && !i.passageId && i.modality === 'read' && i.type !== 'order');
     // Prefer items at the track level; widen the band if there are too few.
     for (const width of [0.8, 1.3, 2, 9]) {
       const xs = near(all, level, width);

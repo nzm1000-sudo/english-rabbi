@@ -12,7 +12,12 @@ const root = path.resolve(__dirname, '..');
 const packId = process.env.PACK;
 const readJson = (p: string) => JSON.parse(fs.readFileSync(p, 'utf8'));
 
+if (!packId) {
+  it.skip('set PACK=<pack-id> to validate one pack', () => {});
+}
+
 describe.runIf(!!packId)(`pack ${packId}`, () => {
+  if (!packId) return;
   const packPath = path.join(root, 'content/packs', `${packId}.json`);
   const pack = readJson(packPath);
   const misDir = path.join(root, 'content/misconceptions');
