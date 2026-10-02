@@ -60,10 +60,15 @@ export function HomeScreen() {
   return (
     <main className="screen">
       <header className="spread">
-        <Link to="/" className="row" style={{ color: 'inherit', textDecoration: 'none', gap: 10 }} aria-label="החלפת תלמיד">
+        <div className="row" style={{ gap: 10 }}>
           <Avatar name={student.name} hue={student.hue} />
-          <div style={{ fontSize: 'var(--t-lg)', fontWeight: 700 }}>שלום, {student.name}</div>
-        </Link>
+          <div>
+            <div style={{ fontSize: 'var(--t-lg)', fontWeight: 700 }}>שלום, {student.name}</div>
+            <Link to="/" className="switch-link">
+              לא {student.name}? החלפה
+            </Link>
+          </div>
+        </div>
         <div className="row" style={{ gap: 6 }}>
           <span className="chip-stat" aria-label={`${p.activity.streakDays} ימים ברצף`}>
             <FlameIcon size={18} />
