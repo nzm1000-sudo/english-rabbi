@@ -194,7 +194,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Life is beautiful, I think."
+      ],
       "distractors": []
     },
     {
@@ -334,56 +336,6 @@
       },
       "interests": [
         "science"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gs.art.by-bus",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.articles",
-          "weight": 0.5
-        }
-      ],
-      "level": "B1",
-      "difficulty": 0.55,
-      "unit": "order:gs.art.by-bus",
-      "prompt": "Build the sentence",
-      "answer": "We usually go to school by bus.",
-      "audioText": "We usually go to school by bus.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־We",
-          "en": "It starts with \"We\""
-        },
-        {
-          "he": "החצי הראשון: We usually go to",
-          "en": "The first half: We usually go to"
-        }
-      ],
-      "explanation": {
-        "he": "by bus, by car, by train: בלי a ובלי the.",
-        "en": "by bus, by car, by train: no article."
-      },
-      "interests": [
-        "travel",
-        "school"
       ],
       "tags": [
         "generated",
@@ -589,53 +541,6 @@
       "distractors": []
     },
     {
-      "id": "sb.gs.art.the-rich",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.articles",
-          "weight": 0.5
-        }
-      ],
-      "level": "B2",
-      "difficulty": 0.7,
-      "unit": "order:gs.art.the-rich",
-      "prompt": "Build the sentence",
-      "answer": "In my opinion, the rich should pay more taxes.",
-      "audioText": "In my opinion, the rich should pay more taxes.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־In",
-          "en": "It starts with \"In\""
-        },
-        {
-          "he": "החצי הראשון: In my opinion, the rich",
-          "en": "The first half: In my opinion, the rich"
-        }
-      ],
-      "explanation": {
-        "he": "the + שם תואר מתאר קבוצה: the rich (העשירים), the poor, the young. בלי the זה לא נכון.",
-        "en": "the + adjective = a group: the rich, the poor, the young."
-      },
-      "interests": [],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
       "id": "sb.gs.art.everest",
       "type": "order",
       "skill": "grammar.word-order",
@@ -682,7 +587,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "The highest mountain in the world is Mount Everest."
+      ],
       "distractors": []
     },
     {
@@ -778,7 +685,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "At 8 o'clock the lesson starts."
+      ],
       "distractors": []
     },
     {
@@ -827,7 +736,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "On Monday we have a test."
+      ],
       "distractors": []
     },
     {
@@ -874,7 +785,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "In 2010 I was born."
+      ],
       "distractors": []
     },
     {
@@ -1264,7 +1177,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "At six we arrived at the airport."
+      ],
       "distractors": []
     },
     {
@@ -1501,7 +1416,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "In the morning we met."
+      ],
       "distractors": []
     },
     {
@@ -1695,7 +1612,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "In the fridge there are some apples. Do you want one?"
+      ],
       "distractors": []
     },
     {
@@ -1842,7 +1761,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "In her room she has a lot of books."
+      ],
       "distractors": []
     },
     {
@@ -1892,7 +1813,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "In my class every student has a phone."
+      ],
       "distractors": []
     },
     {
@@ -1939,7 +1862,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "You have less money than I."
+      ],
       "distractors": []
     },
     {
@@ -2135,7 +2060,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "In summer Eilat is hotter than Tel Aviv."
+      ],
       "distractors": []
     },
     {
@@ -2280,7 +2207,10 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "For me, math is the most difficult subject.",
+        "Math is, for me, the most difficult subject."
+      ],
       "distractors": []
     },
     {
@@ -2329,7 +2259,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Yours is heavier than my bag."
+      ],
       "distractors": []
     },
     {
@@ -2378,7 +2310,10 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Today the weather is worse than yesterday.",
+        "The weather is worse today than yesterday."
+      ],
       "distractors": []
     },
     {
@@ -2425,7 +2360,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Her mother is as tall as she."
+      ],
       "distractors": []
     },
     {
@@ -2522,7 +2459,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Yoni is the funniest of all my friends."
+      ],
       "distractors": []
     },
     {
@@ -2620,7 +2559,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Today it's going to rain."
+      ],
       "distractors": []
     },
     {
@@ -2669,7 +2610,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "In the classroom my friends left their bags."
+      ],
       "distractors": []
     },
     {
@@ -2718,7 +2661,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "While I was playing football, I hurt myself."
+      ],
       "distractors": []
     },
     {
@@ -2865,7 +2810,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Is this pen mine or yours?"
+      ],
       "distractors": []
     },
     {
@@ -3012,56 +2959,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gs.there.many-people",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.there-is",
-          "weight": 0.5
-        }
+      "alternatives": [
+        "Under the table there is a cat."
       ],
-      "level": "A1",
-      "difficulty": 0.4,
-      "unit": "order:gs.there.many-people",
-      "prompt": "Build the sentence",
-      "answer": "There are many people at the beach today.",
-      "audioText": "There are many people at the beach today.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־There",
-          "en": "It starts with \"There\""
-        },
-        {
-          "he": "החצי הראשון: There are many people",
-          "en": "The first half: There are many people"
-        }
-      ],
-      "explanation": {
-        "he": "עם רבים: There are many people.",
-        "en": "With plural nouns: There are."
-      },
-      "interests": [
-        "travel"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
       "distractors": []
     },
     {
@@ -3157,7 +3057,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "On the floor there is some water."
+      ],
       "distractors": []
     },
     {
@@ -3206,7 +3108,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "In the garden three children are playing."
+      ],
       "distractors": []
     },
     {
@@ -3255,7 +3159,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Two mice, one mouse."
+      ],
       "distractors": []
     },
     {
@@ -3302,7 +3208,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Before bed I brushed my teeth."
+      ],
       "distractors": []
     },
     {
@@ -3349,7 +3257,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Two women, one woman."
+      ],
       "distractors": []
     },
     {
@@ -3445,7 +3355,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "For the living room we bought new furniture."
+      ],
       "distractors": []
     },
     {
@@ -3543,7 +3455,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Put the forks and knives on the table."
+      ],
       "distractors": []
     },
     {
@@ -3688,7 +3602,10 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "In the garden the children played quietly.",
+        "The children played in the garden quietly."
+      ],
       "distractors": []
     },
     {
@@ -3735,7 +3652,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Today you look sad. Did something happen?"
+      ],
       "distractors": []
     },
     {
@@ -3978,7 +3897,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "We went to the beach although it was raining."
+      ],
       "distractors": []
     },
     {
@@ -4027,7 +3948,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Despite the rain, we went to the beach."
+      ],
       "distractors": []
     },
     {
@@ -4076,7 +3999,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Because of the storm, the game was cancelled."
+      ],
       "distractors": []
     },
     {
@@ -4125,7 +4050,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "In order to get a good grade, I study hard."
+      ],
       "distractors": []
     },
     {
@@ -4174,7 +4101,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "To buy some milk, I went to the shop."
+      ],
       "distractors": []
     },
     {
@@ -4223,7 +4152,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Unless you study, you won't pass the test."
+      ],
       "distractors": []
     },
     {
@@ -4272,7 +4203,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "The tickets were expensive. We bought them, however."
+      ],
       "distractors": []
     },
     {
@@ -4321,7 +4254,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "He didn't study at all. He therefore failed the exam."
+      ],
       "distractors": []
     },
     {
@@ -4368,7 +4303,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Despite having no experience, she got the job."
+      ],
       "distractors": []
     },
     {
@@ -4417,7 +4354,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "The trip was great despite the bad weather."
+      ],
       "distractors": []
     },
     {
@@ -4466,7 +4405,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "My brother prefers art, but I like science."
+      ],
       "distractors": []
     },
     {
@@ -4564,7 +4505,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Homework is important. I agree with you."
+      ],
       "distractors": []
     },
     {
@@ -4613,57 +4556,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gs.quant.many-students",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.quantifiers",
-          "weight": 0.5
-        }
+      "alternatives": [
+        "The biggest country in the world is Russia."
       ],
-      "level": "A2",
-      "difficulty": 0.44999999999999996,
-      "unit": "order:gs.quant.many-students",
-      "prompt": "Build the sentence",
-      "answer": "There aren't many students in the library today.",
-      "audioText": "There aren't many students in the library today.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־There",
-          "en": "It starts with \"There\""
-        },
-        {
-          "he": "החצי הראשון: There aren't many students",
-          "en": "The first half: There aren't many students"
-        }
-      ],
-      "explanation": {
-        "he": "many עם רבים נספרים: There aren't many students.",
-        "en": "many with countable plurals."
-      },
-      "interests": [
-        "school",
-        "books"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
       "distractors": []
     },
     {
@@ -4812,55 +4707,6 @@
       "distractors": []
     },
     {
-      "id": "sb.gt.ps.routine.go",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.present-simple",
-          "weight": 0.5
-        }
-      ],
-      "level": "A1",
-      "difficulty": 0.4,
-      "unit": "order:gt.ps.routine.go",
-      "prompt": "Build the sentence",
-      "answer": "I go to school by bus every morning.",
-      "audioText": "I go to school by bus every morning.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־I",
-          "en": "It starts with \"I\""
-        },
-        {
-          "he": "החצי הראשון: I go to school",
-          "en": "The first half: I go to school"
-        }
-      ],
-      "explanation": {
-        "he": "הרגל קבוע = Present Simple. עם I הפועל בצורת הבסיס: I go. לא מוסיפים am לפני פועל רגיל.",
-        "en": "A habit uses the Present Simple. With I, use the base verb: I go. Do not add am before a normal verb."
-      },
-      "interests": [
-        "school"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
       "id": "sb.gt.ps.routine.play",
       "type": "order",
       "skill": "grammar.word-order",
@@ -4906,7 +4752,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "On Tuesdays we play basketball."
+      ],
       "distractors": []
     },
     {
@@ -4948,55 +4796,6 @@
       },
       "interests": [
         "science"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.ps.usually.do",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.present-simple",
-          "weight": 0.5
-        }
-      ],
-      "level": "A2",
-      "difficulty": 0.6,
-      "unit": "order:gt.ps.usually.do",
-      "prompt": "Build the sentence",
-      "answer": "I usually do my homework after lunch.",
-      "audioText": "I usually do my homework after lunch.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־I",
-          "en": "It starts with \"I\""
-        },
-        {
-          "he": "החצי הראשון: I usually do my",
-          "en": "The first half: I usually do my"
-        }
-      ],
-      "explanation": {
-        "he": "usually, always, often מראות הרגל ובאות עם Present Simple: I usually do my homework.",
-        "en": "usually, always and often show a habit and go with the Present Simple: I usually do my homework."
-      },
-      "interests": [
-        "school"
       ],
       "tags": [
         "generated",
@@ -5051,7 +4850,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Tom is a cashier. He works in a bank."
+      ],
       "distractors": []
     },
     {
@@ -5098,7 +4899,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Twice a day he brushes his teeth."
+      ],
       "distractors": []
     },
     {
@@ -5147,56 +4950,10 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.ps3.sleep",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.present-simple.third-person",
-          "weight": 0.5
-        }
+      "alternatives": [
+        "Every day she studies math for two hours.",
+        "She studies math every day for two hours."
       ],
-      "level": "A1",
-      "difficulty": 0.5,
-      "unit": "order:gt.ps3.sleep",
-      "prompt": "Build the sentence",
-      "answer": "Every day, our cat sleeps for hours on the sofa.",
-      "audioText": "Every day, our cat sleeps for hours on the sofa.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־Every",
-          "en": "It starts with \"Every\""
-        },
-        {
-          "he": "החצי הראשון: Every day, our cat sleeps",
-          "en": "The first half: Every day, our cat sleeps"
-        }
-      ],
-      "explanation": {
-        "he": "it בהווה פשוט: מוסיפים s. The cat sleeps.",
-        "en": "With it in the Present Simple, add -s: The cat sleeps."
-      },
-      "interests": [
-        "animals"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
       "distractors": []
     },
     {
@@ -5245,7 +5002,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Every Friday my grandmother goes to the market."
+      ],
       "distractors": []
     },
     {
@@ -5292,7 +5051,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "She has two brothers. They both are older than her."
+      ],
       "distractors": []
     },
     {
@@ -5339,7 +5100,10 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Every evening the shop closes at nine o'clock.",
+        "The shop closes every evening at nine o'clock."
+      ],
       "distractors": []
     },
     {
@@ -5437,7 +5201,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "My brother takes the dog for a walk every morning."
+      ],
       "distractors": []
     },
     {
@@ -5486,7 +5252,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Every ten minutes the bus goes past our school."
+      ],
       "distractors": []
     },
     {
@@ -5633,7 +5401,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "She is a vegetarian. She doesn't eat meat."
+      ],
       "distractors": []
     },
     {
@@ -5731,7 +5501,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "In the morning my parents don't watch TV."
+      ],
       "distractors": []
     },
     {
@@ -5972,7 +5744,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Shh! Right now the baby is sleeping."
+      ],
       "distractors": []
     },
     {
@@ -6115,7 +5889,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "At the moment we are waiting for a bus."
+      ],
       "distractors": []
     },
     {
@@ -6162,7 +5938,10 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Now she is writing a letter to her friend.",
+        "She is now writing a letter to her friend."
+      ],
       "distractors": []
     },
     {
@@ -6211,7 +5990,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Right now they are swimming in the sea."
+      ],
       "distractors": []
     },
     {
@@ -6258,7 +6039,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Because there are no chairs, he is sitting on the floor."
+      ],
       "distractors": []
     },
     {
@@ -6299,55 +6082,6 @@
         "en": "Present Progressive question: What + are + you + -ing. do goes only with a base verb."
       },
       "interests": [],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.prog.listen-music",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.present-progressive",
-          "weight": 0.5
-        }
-      ],
-      "level": "A2",
-      "difficulty": 0.6,
-      "unit": "order:gt.prog.listen-music",
-      "prompt": "Build the sentence",
-      "answer": "I am listening to music now, so I can't hear you.",
-      "audioText": "I am listening to music now, so I can't hear you.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־I",
-          "en": "It starts with \"I\""
-        },
-        {
-          "he": "החצי הראשון: I am listening to music now,",
-          "en": "The first half: I am listening to music now,"
-        }
-      ],
-      "explanation": {
-        "he": "פעולה שקורית עכשיו: I am listening.",
-        "en": "An action happening now: I am listening."
-      },
-      "interests": [
-        "music"
-      ],
       "tags": [
         "generated",
         "sentence-builder"
@@ -6452,53 +6186,6 @@
       "distractors": []
     },
     {
-      "id": "sb.gt.prog.stative.understand",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.present-progressive",
-          "weight": 0.5
-        }
-      ],
-      "level": "B1",
-      "difficulty": 0.6,
-      "unit": "order:gt.prog.stative.understand",
-      "prompt": "Build the sentence",
-      "answer": "I understand what you mean now. Thanks for explaining.",
-      "audioText": "I understand what you mean now. Thanks for explaining.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־I",
-          "en": "It starts with \"I\""
-        },
-        {
-          "he": "החצי הראשון: I understand what you mean",
-          "en": "The first half: I understand what you mean"
-        }
-      ],
-      "explanation": {
-        "he": "understand הוא פועל מצב. גם עם now אומרים I understand.",
-        "en": "understand is a state verb. Even with now, say I understand."
-      },
-      "interests": [],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
       "id": "sb.gt.prog.try-concentrate",
       "type": "order",
       "skill": "grammar.word-order",
@@ -6544,7 +6231,11 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Please be quiet. I am trying to concentrate.",
+        "I am trying to concentrate. Be quiet, please.",
+        "I am trying to concentrate. Please be quiet."
+      ],
       "distractors": []
     },
     {
@@ -6583,198 +6274,6 @@
       "explanation": {
         "he": "think that = דעה, וזה מצב. לכן Present Simple: I think that...",
         "en": "think that = an opinion, which is a state. Use the Present Simple: I think that..."
-      },
-      "interests": [],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.prog.have-time",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.present-progressive",
-          "weight": 0.5
-        }
-      ],
-      "level": "B2",
-      "difficulty": 0.6,
-      "unit": "order:gt.prog.have-time",
-      "prompt": "Build the sentence",
-      "answer": "She is having a great time at the party right now.",
-      "audioText": "She is having a great time at the party right now.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־She",
-          "en": "It starts with \"She\""
-        },
-        {
-          "he": "החצי הראשון: She is having a great time",
-          "en": "The first half: She is having a great time"
-        }
-      ],
-      "explanation": {
-        "he": "have במשמעות בעלות לא בא ב־ing. אבל have a good time, have lunch הם פעולות, ולכן is having.",
-        "en": "have meaning own takes no -ing. But have a good time and have lunch are actions, so is having."
-      },
-      "interests": [],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.past.play",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.past-simple",
-          "weight": 0.5
-        }
-      ],
-      "level": "A1",
-      "difficulty": 0.5,
-      "unit": "order:gt.past.play",
-      "prompt": "Build the sentence",
-      "answer": "Yesterday we played football in the park.",
-      "audioText": "Yesterday we played football in the park.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־Yesterday",
-          "en": "It starts with \"Yesterday\""
-        },
-        {
-          "he": "החצי הראשון: Yesterday we played football",
-          "en": "The first half: Yesterday we played football"
-        }
-      ],
-      "explanation": {
-        "he": "פועל רגיל בעבר: מוסיפים ed. play → played, כי לפני ה־y יש תנועה.",
-        "en": "Regular verb in the past: add -ed. play → played, because a vowel comes before y."
-      },
-      "interests": [
-        "sports"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.past.study",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.past-simple",
-          "weight": 0.5
-        }
-      ],
-      "level": "A2",
-      "difficulty": 0.6,
-      "unit": "order:gt.past.study",
-      "prompt": "Build the sentence",
-      "answer": "Last night I studied for the test until midnight.",
-      "audioText": "Last night I studied for the test until midnight.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־Last",
-          "en": "It starts with \"Last\""
-        },
-        {
-          "he": "החצי הראשון: Last night I studied for",
-          "en": "The first half: Last night I studied for"
-        }
-      ],
-      "explanation": {
-        "he": "עיצור + y: מורידים y ומוסיפים ied. study → studied.",
-        "en": "Consonant + y: drop y, add -ied. study → studied."
-      },
-      "interests": [
-        "school"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.past.plan",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.past-simple",
-          "weight": 0.5
-        }
-      ],
-      "level": "B1",
-      "difficulty": 0.7,
-      "unit": "order:gt.past.plan",
-      "prompt": "Build the sentence",
-      "answer": "Last year they planned a big party for her birthday.",
-      "audioText": "Last year they planned a big party for her birthday.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־Last",
-          "en": "It starts with \"Last\""
-        },
-        {
-          "he": "החצי הראשון: Last year they planned a",
-          "en": "The first half: Last year they planned a"
-        }
-      ],
-      "explanation": {
-        "he": "plan → planned: מכפילים את העיצור האחרון. planed היא מילה אחרת (הקציע).",
-        "en": "plan → planned: double the last consonant. planed is a different word."
       },
       "interests": [],
       "tags": [
@@ -6877,7 +6376,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "When I was a child, we lived in a small village."
+      ],
       "distractors": []
     },
     {
@@ -6926,7 +6427,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "My family moved to Haifa last summer."
+      ],
       "distractors": []
     },
     {
@@ -6973,7 +6476,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "I visited my grandparents two days ago."
+      ],
       "distractors": []
     },
     {
@@ -7022,7 +6527,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Last Saturday we went to the beach."
+      ],
       "distractors": []
     },
     {
@@ -7069,56 +6576,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.irr.buy",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.past-simple.irregular",
-          "weight": 0.5
-        }
+      "alternatives": [
+        "Last night I heard a strange noise."
       ],
-      "level": "A2",
-      "difficulty": 0.6,
-      "unit": "order:gt.irr.buy",
-      "prompt": "Build the sentence",
-      "answer": "Yesterday she bought a new jacket at the mall.",
-      "audioText": "Yesterday she bought a new jacket at the mall.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־Yesterday",
-          "en": "It starts with \"Yesterday\""
-        },
-        {
-          "he": "החצי הראשון: Yesterday she bought a new",
-          "en": "The first half: Yesterday she bought a new"
-        }
-      ],
-      "explanation": {
-        "he": "buy → bought. לא לבלבל עם bring → brought.",
-        "en": "buy → bought. Do not mix it up with bring → brought."
-      },
-      "interests": [
-        "fashion"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
       "distractors": []
     },
     {
@@ -7165,56 +6625,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.irr.make",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.past-simple.irregular",
-          "weight": 0.5
-        }
+      "alternatives": [
+        "Yesterday he left his keys on the bus."
       ],
-      "level": "A2",
-      "difficulty": 0.6,
-      "unit": "order:gt.irr.make",
-      "prompt": "Build the sentence",
-      "answer": "Last week my mom made a delicious cake for my birthday.",
-      "audioText": "Last week my mom made a delicious cake for my birthday.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־Last",
-          "en": "It starts with \"Last\""
-        },
-        {
-          "he": "החצי הראשון: Last week my mom made a",
-          "en": "The first half: Last week my mom made a"
-        }
-      ],
-      "explanation": {
-        "he": "make → made → made.",
-        "en": "make → made → made."
-      },
-      "interests": [
-        "food"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
       "distractors": []
     },
     {
@@ -7263,7 +6676,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "After yesterday's game, the kids drank a lot of water."
+      ],
       "distractors": []
     },
     {
@@ -7312,201 +6727,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.irr.fly",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.past-simple.irregular",
-          "weight": 0.5
-        }
+      "alternatives": [
+        "While I was cutting tomatoes, I cut my finger."
       ],
-      "level": "B1",
-      "difficulty": 0.6,
-      "unit": "order:gt.irr.fly",
-      "prompt": "Build the sentence",
-      "answer": "Last night a plane flew over our house at midnight.",
-      "audioText": "Last night a plane flew over our house at midnight.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־Last",
-          "en": "It starts with \"Last\""
-        },
-        {
-          "he": "החצי הראשון: Last night a plane flew",
-          "en": "The first half: Last night a plane flew"
-        }
-      ],
-      "explanation": {
-        "he": "fly → flew → flown.",
-        "en": "fly → flew → flown."
-      },
-      "interests": [
-        "travel"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.irr.throw",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.past-simple.irregular",
-          "weight": 0.5
-        }
-      ],
-      "level": "B1",
-      "difficulty": 0.6,
-      "unit": "order:gt.irr.throw",
-      "prompt": "Build the sentence",
-      "answer": "Yesterday she threw the ball through the window by accident.",
-      "audioText": "Yesterday she threw the ball through the window by accident.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־Yesterday",
-          "en": "It starts with \"Yesterday\""
-        },
-        {
-          "he": "החצי הראשון: Yesterday she threw the ball",
-          "en": "The first half: Yesterday she threw the ball"
-        }
-      ],
-      "explanation": {
-        "he": "throw → threw → thrown.",
-        "en": "throw → threw → thrown."
-      },
-      "interests": [
-        "sports"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.irr.meet",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.past-simple.irregular",
-          "weight": 0.5
-        }
-      ],
-      "level": "B1",
-      "difficulty": 0.6,
-      "unit": "order:gt.irr.meet",
-      "prompt": "Build the sentence",
-      "answer": "Last week we met our old friends at the wedding.",
-      "audioText": "Last week we met our old friends at the wedding.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־Last",
-          "en": "It starts with \"Last\""
-        },
-        {
-          "he": "החצי הראשון: Last week we met our",
-          "en": "The first half: Last week we met our"
-        }
-      ],
-      "explanation": {
-        "he": "meet → met → met.",
-        "en": "meet → met → met."
-      },
-      "interests": [],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.irr.tell",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.past-simple.irregular",
-          "weight": 0.5
-        }
-      ],
-      "level": "B1",
-      "difficulty": 0.7,
-      "unit": "order:gt.irr.tell",
-      "prompt": "Build the sentence",
-      "answer": "Yesterday he finally told the truth to the teacher.",
-      "audioText": "Yesterday he finally told the truth to the teacher.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־Yesterday",
-          "en": "It starts with \"Yesterday\""
-        },
-        {
-          "he": "החצי הראשון: Yesterday he finally told the",
-          "en": "The first half: Yesterday he finally told the"
-        }
-      ],
-      "explanation": {
-        "he": "tell → told → told.",
-        "en": "tell → told → told."
-      },
-      "interests": [
-        "school"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
       "distractors": []
     },
     {
@@ -7553,7 +6776,11 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Yesterday I felt terrible, so I stayed in bed.",
+        "I felt terrible, so I stayed in bed yesterday.",
+        "I felt terrible, so yesterday I stayed in bed."
+      ],
       "distractors": []
     },
     {
@@ -7600,7 +6827,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Dan told me a funny story yesterday."
+      ],
       "distractors": []
     },
     {
@@ -7647,54 +6876,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.irr.think",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.past-simple.irregular",
-          "weight": 0.5
-        }
+      "alternatives": [
+        "The phone rang three times last night, but nobody answered."
       ],
-      "level": "B1",
-      "difficulty": 0.7,
-      "unit": "order:gt.irr.think",
-      "prompt": "Build the sentence",
-      "answer": "Last night I thought about the problem for hours.",
-      "audioText": "Last night I thought about the problem for hours.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־Last",
-          "en": "It starts with \"Last\""
-        },
-        {
-          "he": "החצי הראשון: Last night I thought about",
-          "en": "The first half: Last night I thought about"
-        }
-      ],
-      "explanation": {
-        "he": "think → thought. taught זה העבר של teach (לימד).",
-        "en": "think → thought. taught is the past of teach."
-      },
-      "interests": [],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
       "distractors": []
     },
     {
@@ -7736,55 +6920,6 @@
       },
       "interests": [
         "sports"
-      ],
-      "tags": [
-        "generated",
-        "sentence-builder"
-      ],
-      "estimatedTimeSec": 25,
-      "source": "original",
-      "alternatives": [],
-      "distractors": []
-    },
-    {
-      "id": "sb.gt.pastq.didnt-go",
-      "type": "order",
-      "skill": "grammar.word-order",
-      "alsoSkills": [
-        {
-          "id": "grammar.past-simple.questions-negatives",
-          "weight": 0.5
-        }
-      ],
-      "level": "A2",
-      "difficulty": 0.5,
-      "unit": "order:gt.pastq.didnt-go",
-      "prompt": "Build the sentence",
-      "answer": "We didn't go to school yesterday because it was a holiday.",
-      "audioText": "We didn't go to school yesterday because it was a holiday.",
-      "targetsMisconceptions": [
-        "word-order.sentence"
-      ],
-      "instruction": {
-        "he": "לבנות את המשפט מהמילים",
-        "en": "Build the sentence from the words"
-      },
-      "hints": [
-        {
-          "he": "המשפט מתחיל ב־We",
-          "en": "It starts with \"We\""
-        },
-        {
-          "he": "החצי הראשון: We didn't go to school yesterday",
-          "en": "The first half: We didn't go to school yesterday"
-        }
-      ],
-      "explanation": {
-        "he": "שלילה בעבר עם פועל רגיל: didn't + פועל בסיס. weren't בא עם שם תואר או ing, לא עם go.",
-        "en": "Past negative with a normal verb: didn't + base verb. weren't goes with adjectives or -ing, not with go."
-      },
-      "interests": [
-        "school"
       ],
       "tags": [
         "generated",
@@ -7841,7 +6976,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "Where did you go last summer on your vacation?"
+      ],
       "distractors": []
     },
     {
@@ -8180,7 +7317,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "We were sitting on the beach this time yesterday."
+      ],
       "distractors": []
     },
     {
@@ -8229,7 +7368,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "When the lights went out, I was watching TV."
+      ],
       "distractors": []
     },
     {
@@ -8278,7 +7419,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "When she fell, she was riding her bike."
+      ],
       "distractors": []
     },
     {
@@ -8327,7 +7470,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "When we saw Tom, we were waiting for the bus."
+      ],
       "distractors": []
     },
     {
@@ -8374,7 +7519,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "While I was taking a shower, the phone rang."
+      ],
       "distractors": []
     },
     {
@@ -8423,7 +7570,9 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "It started to snow while we were having lunch."
+      ],
       "distractors": []
     },
     {
@@ -8472,7 +7621,11 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "alternatives": [],
+      "alternatives": [
+        "The guests were dancing and laughing when I arrived.",
+        "When I arrived, the guests were laughing and dancing.",
+        "The guests were laughing and dancing when I arrived."
+      ],
       "distractors": []
     }
   ],
