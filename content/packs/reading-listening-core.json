@@ -1,0 +1,522 @@
+{
+  "packId": "reading-listening-core",
+  "schemaVersion": 1,
+  "title": "Reading and listening starters",
+  "items": [
+    {
+      "id": "read.garden.where",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "Where did the students start the garden?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Behind their school"
+        },
+        {
+          "id": "b",
+          "text": "In a public park"
+        },
+        {
+          "id": "c",
+          "text": "On the school roof"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "כתוב בשורה הראשונה: behind their school.",
+        "en": "The first sentence says: behind their school."
+      },
+      "hints": [
+        {
+          "he": "התשובה נמצאת במשפט הראשון.",
+          "en": "The answer is in the first sentence."
+        }
+      ],
+      "source": "original",
+      "estimatedTimeSec": 25,
+      "passageId": "passage.school-garden",
+      "interests": [
+        "school"
+      ]
+    },
+    {
+      "id": "read.garden.tf-believed",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "True or false: At first, everyone was sure the garden would succeed.",
+      "instruction": {
+        "he": "נכון או לא נכון?",
+        "en": "True or false?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "בקטע כתוב: nobody believed it would work. כלומר אף אחד לא האמין.",
+        "en": "The text says: nobody believed it would work."
+      },
+      "hints": [
+        {
+          "he": "לחפש את המילה believed בקטע.",
+          "en": "Look for the word believed in the text."
+        }
+      ],
+      "source": "original",
+      "estimatedTimeSec": 25,
+      "passageId": "passage.school-garden"
+    },
+    {
+      "id": "read.garden.give-up",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "In the text, \"did not give up\" means the students...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "kept trying"
+        },
+        {
+          "id": "b",
+          "text": "gave a present"
+        },
+        {
+          "id": "c",
+          "text": "woke up early"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "give up = לוותר. did not give up = לא ויתרו, המשיכו לנסות.",
+        "en": "give up = stop trying. did not give up = kept trying."
+      },
+      "hints": [
+        {
+          "he": "מה התלמידים עשו אחרי שהקרקע הייתה יבשה?",
+          "en": "What did the students do after they saw the dry ground?"
+        }
+      ],
+      "source": "original",
+      "estimatedTimeSec": 25,
+      "passageId": "passage.school-garden"
+    },
+    {
+      "id": "read.garden.main-idea",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "What is the main idea of the text?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Students turned a difficult place into a successful garden."
+        },
+        {
+          "id": "b",
+          "text": "Tomatoes need a lot of water to grow."
+        },
+        {
+          "id": "c",
+          "text": "The school cafeteria makes good salads."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "הרעיון המרכזי מתאר את כל הקטע, לא פרט אחד ממנו.",
+        "en": "The main idea covers the whole text, not one detail."
+      },
+      "hints": [
+        {
+          "he": "איזו תשובה מתארת את כל הסיפור ולא רק חלק ממנו?",
+          "en": "Which answer describes the whole story?"
+        }
+      ],
+      "source": "original",
+      "estimatedTimeSec": 30,
+      "passageId": "passage.school-garden"
+    },
+    {
+      "id": "read.garden.inference",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Why did the students choose herbs that do not need much water?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Because the ground was dry and water was limited."
+        },
+        {
+          "id": "b",
+          "text": "Because herbs are cheaper than vegetables."
+        },
+        {
+          "id": "c",
+          "text": "Because their teacher told them to."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "זה לא כתוב במפורש. מסיקים זאת מכך שהקרקע הייתה יבשה ושהם אספו מי גשם.",
+        "en": "It is not written directly. We infer it from the dry ground and the rainwater."
+      },
+      "hints": [
+        {
+          "he": "מה הקטע אומר על הקרקע?",
+          "en": "What does the text say about the ground?"
+        },
+        {
+          "he": "למה צריך לאסוף מי גשם?",
+          "en": "Why would you collect rainwater?"
+        }
+      ],
+      "source": "original",
+      "estimatedTimeSec": 35,
+      "passageId": "passage.school-garden"
+    },
+    {
+      "id": "listen.minimal.sheep",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.5,
+      "prompt": "Which word did you hear?",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "sheep"
+        },
+        {
+          "id": "b",
+          "text": "ship",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "shop"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "sheep (כבשה) נשמעת עם i ארוכה. ship (ספינה) עם i קצרה.",
+        "en": "sheep has a long ee sound. ship has a short i."
+      },
+      "hints": [
+        {
+          "he": "להקשיב שוב לאורך הצליל באמצע המילה.",
+          "en": "Listen again to the length of the middle sound."
+        }
+      ],
+      "source": "original",
+      "estimatedTimeSec": 10,
+      "audioText": "sheep",
+      "modality": "listen",
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:ship-sheep"
+    },
+    {
+      "id": "listen.minimal.live",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.6,
+      "prompt": "Which word did you hear?",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "live"
+        },
+        {
+          "id": "b",
+          "text": "leave",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "love"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "live (לגור) עם i קצרה. leave (לעזוב) עם ee ארוכה.",
+        "en": "live has a short i. leave has a long ee."
+      },
+      "hints": [
+        {
+          "he": "הצליל קצר או ארוך?",
+          "en": "Is the sound short or long?"
+        }
+      ],
+      "source": "original",
+      "estimatedTimeSec": 10,
+      "audioText": "live",
+      "modality": "listen",
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:live-leave"
+    },
+    {
+      "id": "listen.sentence.bus",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Why did Sarah miss the bus?",
+      "instruction": {
+        "he": "להקשיב ולענות",
+        "en": "Listen and answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She woke up late."
+        },
+        {
+          "id": "b",
+          "text": "The bus came early."
+        },
+        {
+          "id": "c",
+          "text": "She was sick."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "שמענו: because she woke up late.",
+        "en": "We heard: because she woke up late."
+      },
+      "hints": [
+        {
+          "he": "להקשיב למה שבא אחרי because.",
+          "en": "Listen for what comes after because."
+        }
+      ],
+      "source": "original",
+      "estimatedTimeSec": 15,
+      "audioText": "Sarah missed the bus because she woke up late.",
+      "modality": "listen"
+    },
+    {
+      "id": "listen.sentence.order",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "What does the speaker want?",
+      "instruction": {
+        "he": "להקשיב ולענות",
+        "en": "Listen and answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A glass of water"
+        },
+        {
+          "id": "b",
+          "text": "A cup of coffee"
+        },
+        {
+          "id": "c",
+          "text": "The menu"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "שמענו: I'd like to order a glass of water. I'd like = הייתי רוצה.",
+        "en": "We heard: I'd like to order a glass of water."
+      },
+      "hints": [
+        {
+          "he": "להקשיב לסוף המשפט.",
+          "en": "Listen to the end of the sentence."
+        }
+      ],
+      "source": "original",
+      "estimatedTimeSec": 15,
+      "audioText": "I'd like to order a glass of water, please.",
+      "modality": "listen",
+      "interests": [
+        "food"
+      ]
+    },
+    {
+      "id": "listen.sentence.london",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "What is the speaker asking about?",
+      "instruction": {
+        "he": "להקשיב ולענות",
+        "en": "Listen and answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "If you visited London at any time in your life"
+        },
+        {
+          "id": "b",
+          "text": "If you are going to London next week"
+        },
+        {
+          "id": "c",
+          "text": "If you live in London now"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "Have you ever been... שואל אם זה קרה אי פעם בחיים.",
+        "en": "Have you ever been... asks about any time in your life."
+      },
+      "hints": [
+        {
+          "he": "ever = אי פעם.",
+          "en": "ever = at any time."
+        }
+      ],
+      "source": "original",
+      "estimatedTimeSec": 15,
+      "audioText": "Have you ever been to London?",
+      "modality": "listen",
+      "interests": [
+        "travel"
+      ]
+    },
+    {
+      "id": "listen.dictation.beautiful",
+      "type": "typed",
+      "skill": "writing.spelling",
+      "level": "A1",
+      "difficulty": 0.7,
+      "alsoSkills": [
+        {
+          "id": "listening.words",
+          "weight": 0.6
+        }
+      ],
+      "modality": "listen",
+      "prompt": "Type the word you hear.",
+      "audioText": "beautiful",
+      "instruction": {
+        "he": "להקשיב ולכתוב את המילה",
+        "en": "Listen and type the word"
+      },
+      "answers": [
+        "beautiful"
+      ],
+      "knownErrors": [],
+      "hints": [
+        {
+          "he": "המילה מתחילה ב־b ויש בה 9 אותיות.",
+          "en": "It starts with b and has 9 letters."
+        },
+        {
+          "he": "bea... ful",
+          "en": "bea... ful"
+        }
+      ],
+      "explanation": {
+        "he": "beautiful = יפה. כדאי לזכור את הצירוף eau באמצע.",
+        "en": "beautiful: remember the eau in the middle."
+      },
+      "source": "original",
+      "estimatedTimeSec": 20,
+      "unit": "spell:beautiful",
+      "tags": [
+        "dictation"
+      ]
+    },
+    {
+      "id": "write.sentence.favorite-food",
+      "type": "open-writing",
+      "skill": "writing.sentence",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "Write one sentence about your favorite food. Use the word \"because\".",
+      "minWords": 5,
+      "maxWords": 30,
+      "instruction": {
+        "he": "לכתוב משפט אחד",
+        "en": "Write one sentence"
+      },
+      "rubric": [
+        {
+          "he": "יש במשפט because",
+          "en": "The sentence uses because"
+        },
+        {
+          "he": "המשפט שלם ומובן",
+          "en": "The sentence is complete and clear"
+        }
+      ],
+      "explanation": {
+        "he": "דוגמה: I love pizza because it is cheesy.",
+        "en": "Example: I love pizza because it is cheesy."
+      },
+      "hints": [],
+      "interests": [
+        "food"
+      ],
+      "source": "original",
+      "estimatedTimeSec": 90
+    }
+  ],
+  "passages": [
+    {
+      "id": "passage.school-garden",
+      "title": "The School Garden",
+      "level": "A2",
+      "source": "original",
+      "interests": [
+        "school",
+        "science"
+      ],
+      "text": "Last year, the students in Maya's class started a garden behind their school. At first, nobody believed it would work. The ground was dry, and there was very little shade. The students did not give up. They collected rainwater in old buckets and planted herbs that do not need much water. Every morning before class, two students checked the plants. By the spring, the garden was full of mint, basil and small tomatoes. Now the school cafeteria uses the herbs in its salads, and younger students visit the garden to learn about plants. Maya says the best part was not the vegetables. \"We learned that a small group can change a place,\" she said."
+    }
+  ]
+}

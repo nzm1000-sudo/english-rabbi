@@ -1,0 +1,1642 @@
+{
+  "packId": "grammar-core",
+  "schemaVersion": 1,
+  "title": "Core grammar A1-B2",
+  "items": [
+    {
+      "id": "gr.ps.third-person.walk",
+      "type": "typed",
+      "skill": "grammar.present-simple.third-person",
+      "level": "A1",
+      "difficulty": 0.3,
+      "prompt": "She ___ to school every day. (walk)",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "walks"
+      ],
+      "knownErrors": [
+        {
+          "answer": "walk",
+          "misconception": "present-simple.missing-s",
+          "feedback": {
+            "he": "כמעט. עם she מוסיפים s.",
+            "en": "Almost. With she, add -s."
+          }
+        }
+      ],
+      "explanation": {
+        "he": "she בהווה פשוט: מוסיפים s. She walks.",
+        "en": "With she in the Present Simple, add -s: She walks."
+      },
+      "hints": [
+        {
+          "he": "מי עושה את הפעולה? she. מה מוסיפים לפועל?",
+          "en": "Who does it? she. What do we add to the verb?"
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "She walks to school every day."
+    },
+    {
+      "id": "gr.ps.third-person.watch",
+      "type": "typed",
+      "skill": "grammar.present-simple.third-person",
+      "level": "A1",
+      "difficulty": 0.6,
+      "prompt": "My brother ___ TV after dinner. (watch)",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "watches"
+      ],
+      "knownErrors": [
+        {
+          "answer": "watch",
+          "misconception": "present-simple.missing-s",
+          "feedback": {
+            "he": "my brother זה he, ולכן צריך es.",
+            "en": "my brother is he, so add -es."
+          }
+        },
+        {
+          "answer": "watchs",
+          "feedback": {
+            "he": "כמעט. אחרי ch מוסיפים es.",
+            "en": "Almost. After ch, add -es."
+          }
+        }
+      ],
+      "explanation": {
+        "he": "פועל שמסתיים ב־ch מקבל es: watches.",
+        "en": "Verbs ending in -ch take -es: watches."
+      },
+      "hints": [
+        {
+          "he": "my brother = he. מוסיפים s או es?",
+          "en": "my brother = he. Add -s or -es?"
+        }
+      ],
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "My brother watches TV after dinner."
+    },
+    {
+      "id": "gr.ps.negative.does",
+      "type": "choice",
+      "skill": "grammar.present-simple.questions-negatives",
+      "level": "A1",
+      "difficulty": 0.5,
+      "prompt": "He ___ like coffee.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "doesn't"
+        },
+        {
+          "id": "b",
+          "text": "don't",
+          "misconception": "present-simple.do-does"
+        },
+        {
+          "id": "c",
+          "text": "isn't"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "he בשלילה בהווה פשוט: doesn't + פועל בסיס.",
+        "en": "With he, the negative is doesn't + base verb."
+      },
+      "hints": [
+        {
+          "he": "he, she, it הולכים עם does.",
+          "en": "he, she, it go with does."
+        }
+      ],
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "He doesn't like coffee."
+    },
+    {
+      "id": "gr.ps.question.do",
+      "type": "choice",
+      "skill": "grammar.present-simple.questions-negatives",
+      "level": "A1",
+      "difficulty": 0.4,
+      "prompt": "___ you play the guitar?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Do"
+        },
+        {
+          "id": "b",
+          "text": "Does",
+          "misconception": "present-simple.do-does"
+        },
+        {
+          "id": "c",
+          "text": "Are"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "you בשאלה בהווה פשוט: Do you...?",
+        "en": "Questions with you use Do: Do you play...?"
+      },
+      "hints": [
+        {
+          "he": "עם you משתמשים ב־do.",
+          "en": "With you, use do."
+        }
+      ],
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "Do you play the guitar?"
+    },
+    {
+      "id": "gr.pp.now.rain",
+      "type": "choice",
+      "skill": "grammar.present-progressive",
+      "level": "A1",
+      "difficulty": 0.4,
+      "prompt": "Look outside! It ___.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "is raining"
+        },
+        {
+          "id": "b",
+          "text": "rains"
+        },
+        {
+          "id": "c",
+          "text": "rain"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "Look! מראה שזה קורה עכשיו. לכן is + ing.",
+        "en": "Look! shows it is happening now, so: is raining."
+      },
+      "hints": [
+        {
+          "he": "זה קורה עכשיו או תמיד?",
+          "en": "Is it happening now or always?"
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "Look outside! It is raining."
+    },
+    {
+      "id": "gr.past.irregular.go",
+      "type": "typed",
+      "skill": "grammar.past-simple.irregular",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "Yesterday I ___ to the park. (go)",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "went"
+      ],
+      "knownErrors": [
+        {
+          "answer": "goed",
+          "misconception": "past-simple.overregularization",
+          "feedback": {
+            "he": "go הוא פועל חריג, ולכן לא goed.",
+            "en": "go is irregular, so not goed."
+          }
+        },
+        {
+          "answer": "go",
+          "feedback": {
+            "he": "yesterday מבקש עבר.",
+            "en": "yesterday needs the past."
+          }
+        }
+      ],
+      "explanation": {
+        "he": "go הוא פועל חריג. העבר שלו: went.",
+        "en": "go is irregular. Its past form is went."
+      },
+      "hints": [
+        {
+          "he": "yesterday = אתמול. צריך עבר.",
+          "en": "yesterday means past."
+        },
+        {
+          "he": "זה פועל חריג. לא מוסיפים ed.",
+          "en": "It is irregular. Do not add -ed."
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "Yesterday I went to the park."
+    },
+    {
+      "id": "gr.past.irregular.buy",
+      "type": "typed",
+      "skill": "grammar.past-simple.irregular",
+      "level": "A2",
+      "difficulty": 0.6,
+      "prompt": "Last week my mom ___ me new shoes. (buy)",
+      "instruction": {
+        "he": "להשלים את המילה החסרה",
+        "en": "Fill in the missing word"
+      },
+      "answers": [
+        "bought"
+      ],
+      "knownErrors": [
+        {
+          "answer": "buyed",
+          "misconception": "past-simple.overregularization",
+          "feedback": {
+            "he": "buy הוא חריג: bought.",
+            "en": "buy is irregular: bought."
+          }
+        },
+        {
+          "answer": "brought",
+          "feedback": {
+            "he": "brought זה העבר של bring. העבר של buy הוא bought.",
+            "en": "brought is the past of bring. buy → bought."
+          }
+        }
+      ],
+      "explanation": {
+        "he": "buy → bought.",
+        "en": "buy → bought."
+      },
+      "hints": [
+        {
+          "he": "last week = שבוע שעבר. צריך עבר.",
+          "en": "last week means past."
+        },
+        {
+          "he": "זה פועל חריג שמתחיל ב־b ונגמר ב־ght.",
+          "en": "It's irregular. It starts with b and ends with -ght."
+        }
+      ],
+      "interests": [
+        "fashion"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "audioText": "Last week my mom bought me new shoes."
+    },
+    {
+      "id": "gr.past.irregular.see",
+      "type": "choice",
+      "skill": "grammar.past-simple.irregular",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "We ___ a great movie last night.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "saw"
+        },
+        {
+          "id": "b",
+          "text": "seed",
+          "misconception": "past-simple.overregularization"
+        },
+        {
+          "id": "c",
+          "text": "seen"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "see → saw. seen היא הצורה השלישית ובאה אחרי have.",
+        "en": "see → saw. seen is the third form, used after have."
+      },
+      "hints": [
+        {
+          "he": "last night = עבר פשוט.",
+          "en": "last night: Past Simple."
+        }
+      ],
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "We saw a great movie last night."
+    },
+    {
+      "id": "gr.past.question.did",
+      "type": "choice",
+      "skill": "grammar.past-simple.questions-negatives",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "___ you finish your homework yesterday?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Did"
+        },
+        {
+          "id": "b",
+          "text": "Do"
+        },
+        {
+          "id": "c",
+          "text": "Were"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "שאלה בעבר פשוט: Did + פועל בסיס.",
+        "en": "Past Simple questions: Did + base verb."
+      },
+      "hints": [
+        {
+          "he": "yesterday = עבר. איזו מילת עזר מתאימה לעבר?",
+          "en": "yesterday is past. Which helper verb is past?"
+        }
+      ],
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "Did you finish your homework yesterday?"
+    },
+    {
+      "id": "gr.past.question.base",
+      "type": "choice",
+      "skill": "grammar.past-simple.questions-negatives",
+      "level": "A2",
+      "difficulty": 0.6,
+      "prompt": "Where did she ___ on vacation?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "go"
+        },
+        {
+          "id": "b",
+          "text": "went",
+          "misconception": "past-simple.did-plus-past"
+        },
+        {
+          "id": "c",
+          "text": "goes"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "אחרי did בא הפועל בצורת בסיס: did she go.",
+        "en": "After did, use the base verb: did she go."
+      },
+      "hints": [
+        {
+          "he": "did כבר מראה שזה עבר.",
+          "en": "did already shows the past."
+        }
+      ],
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "Where did she go on vacation?"
+    },
+    {
+      "id": "gr.past.negative.base",
+      "type": "choice",
+      "skill": "grammar.past-simple.questions-negatives",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "I didn't ___ your message.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "see"
+        },
+        {
+          "id": "b",
+          "text": "saw",
+          "misconception": "past-simple.did-plus-past"
+        },
+        {
+          "id": "c",
+          "text": "seen"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "didn't + פועל בסיס: didn't see.",
+        "en": "didn't + base verb: didn't see."
+      },
+      "hints": [
+        {
+          "he": "מה בא אחרי didn't?",
+          "en": "What comes after didn't?"
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "I didn't see your message."
+    },
+    {
+      "id": "gr.pastprog.interrupted",
+      "type": "choice",
+      "skill": "grammar.past-progressive",
+      "level": "A2",
+      "difficulty": 0.6,
+      "prompt": "I ___ TV when the phone rang.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "was watching"
+        },
+        {
+          "id": "b",
+          "text": "watched",
+          "misconception": "past-progressive.interrupted"
+        },
+        {
+          "id": "c",
+          "text": "am watching"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "פעולה ארוכה שנקטעה על ידי פעולה קצרה: was + ing.",
+        "en": "A long action interrupted by a short one: was + -ing."
+      },
+      "hints": [
+        {
+          "he": "מה נמשך זמן רב יותר: הצפייה או הצלצול?",
+          "en": "Which lasted longer: watching or the ring?"
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "I was watching TV when the phone rang."
+    },
+    {
+      "id": "gr.future.offer",
+      "type": "choice",
+      "skill": "grammar.future",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Don't worry. I ___ help you with your project.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "will"
+        },
+        {
+          "id": "b",
+          "text": "would"
+        },
+        {
+          "id": "c",
+          "text": "was"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "הבטחה או הצעה ספונטנית לעתיד: will.",
+        "en": "A promise or offer about the future: will."
+      },
+      "hints": [
+        {
+          "he": "זה קורה בעתיד.",
+          "en": "This is about the future."
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "Don't worry. I will help you with your project."
+    },
+    {
+      "id": "gr.perf.been",
+      "type": "choice",
+      "skill": "grammar.present-perfect",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "Have you ever ___ to London?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "been"
+        },
+        {
+          "id": "b",
+          "text": "went",
+          "misconception": "present-perfect.past-participle"
+        },
+        {
+          "id": "c",
+          "text": "go"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "have + צורה שלישית. go/be בהקשר של ביקור: have been to.",
+        "en": "have + past participle. For visits we say: have been to."
+      },
+      "hints": [
+        {
+          "he": "אחרי have באה הצורה השלישית.",
+          "en": "After have, use the third form."
+        }
+      ],
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "Have you ever been to London?"
+    },
+    {
+      "id": "gr.perf.since",
+      "type": "choice",
+      "skill": "grammar.present-perfect",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "She has lived in Haifa ___ 2015.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "since"
+        },
+        {
+          "id": "b",
+          "text": "for",
+          "misconception": "present-perfect.for-since"
+        },
+        {
+          "id": "c",
+          "text": "from"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "2015 היא נקודת התחלה, לכן since.",
+        "en": "2015 is a starting point, so since."
+      },
+      "hints": [
+        {
+          "he": "2015 זה משך זמן או נקודת התחלה?",
+          "en": "Is 2015 a length of time or a starting point?"
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "She has lived in Haifa since 2015."
+    },
+    {
+      "id": "gr.perf.duration",
+      "type": "choice",
+      "skill": "grammar.present-perfect",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "We ___ each other for five years.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "have known"
+        },
+        {
+          "id": "b",
+          "text": "know",
+          "misconception": "present-perfect.hebrew-present"
+        },
+        {
+          "id": "c",
+          "text": "knew"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "משהו שהתחיל בעבר ונמשך עד עכשיו: have + צורה שלישית. בעברית אומרים \"מכירים\", אבל באנגלית have known.",
+        "en": "Something that started in the past and continues now: have known."
+      },
+      "hints": [
+        {
+          "he": "החברות התחילה בעבר ועדיין נמשכת.",
+          "en": "The friendship started in the past and continues."
+        },
+        {
+          "he": "for five years עד היום מבקש Present Perfect.",
+          "en": "for five years until now needs the Present Perfect."
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "We have known each other for five years."
+    },
+    {
+      "id": "gr.perf.vs-past.yesterday",
+      "type": "choice",
+      "skill": "grammar.present-perfect.vs-past-simple",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "I ___ my keys yesterday.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "lost"
+        },
+        {
+          "id": "b",
+          "text": "have lost",
+          "misconception": "present-perfect.with-past-time"
+        },
+        {
+          "id": "c",
+          "text": "have lose"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "yesterday הוא זמן עבר מוגדר, לכן Past Simple.",
+        "en": "yesterday is a finished time, so Past Simple."
+      },
+      "hints": [
+        {
+          "he": "איזו מילת זמן יש במשפט?",
+          "en": "Which time word is in the sentence?"
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "I lost my keys yesterday."
+    },
+    {
+      "id": "gr.cond1.if-present",
+      "type": "choice",
+      "skill": "grammar.conditionals.first",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "If it ___ tomorrow, we will stay home.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "rains"
+        },
+        {
+          "id": "b",
+          "text": "will rain",
+          "misconception": "conditionals.will-in-if-clause"
+        },
+        {
+          "id": "c",
+          "text": "rained"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "בחלק של if משתמשים בהווה, גם כשמדברים על העתיד.",
+        "en": "After if, use the present, even about the future."
+      },
+      "hints": [
+        {
+          "he": "מה בא אחרי if בתנאי מסוג ראשון?",
+          "en": "What follows if in the first conditional?"
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "If it rains tomorrow, we will stay home."
+    },
+    {
+      "id": "gr.cond2.were",
+      "type": "choice",
+      "skill": "grammar.conditionals.second",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "If I ___ rich, I would travel around the world.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "were"
+        },
+        {
+          "id": "b",
+          "text": "am"
+        },
+        {
+          "id": "c",
+          "text": "will be"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "תנאי דמיוני בהווה: If + עבר, would + פועל.",
+        "en": "Imaginary present: If + past, would + verb."
+      },
+      "hints": [
+        {
+          "he": "זה מצב דמיוני. איזה זמן בא אחרי if?",
+          "en": "It's imaginary. Which tense follows if?"
+        }
+      ],
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "If I were rich, I would travel around the world."
+    },
+    {
+      "id": "gr.cond3.would-have",
+      "type": "choice",
+      "skill": "grammar.conditionals.third",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "If I had known you were home, I ___ you.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "would have called"
+        },
+        {
+          "id": "b",
+          "text": "will call"
+        },
+        {
+          "id": "c",
+          "text": "would call"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "תנאי על העבר שלא קרה: If + had + צורה שלישית, would have + צורה שלישית.",
+        "en": "Unreal past: If + had + participle, would have + participle."
+      },
+      "hints": [
+        {
+          "he": "המשפט מדבר על העבר. זה קרה או לא קרה?",
+          "en": "Is this about the past? Did it happen?"
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "If I had known you were home, I would have called you."
+    },
+    {
+      "id": "gr.passive.past",
+      "type": "choice",
+      "skill": "grammar.passive",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "This book ___ by a famous writer.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "was written"
+        },
+        {
+          "id": "b",
+          "text": "wrote",
+          "misconception": "passive.form"
+        },
+        {
+          "id": "c",
+          "text": "was wrote",
+          "misconception": "passive.form"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "סביל = be + צורה שלישית: was written.",
+        "en": "Passive = be + past participle: was written."
+      },
+      "hints": [
+        {
+          "he": "הספר לא כתב. מישהו כתב אותו.",
+          "en": "The book didn't write. Someone wrote it."
+        }
+      ],
+      "interests": [
+        "books"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "This book was written by a famous writer."
+    },
+    {
+      "id": "gr.modals.must",
+      "type": "choice",
+      "skill": "grammar.modals",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "You ___ wear a helmet when you ride a bike. It's the law.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "must"
+        },
+        {
+          "id": "b",
+          "text": "might"
+        },
+        {
+          "id": "c",
+          "text": "can"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "חובה או חוק: must.",
+        "en": "An obligation or a law: must."
+      },
+      "hints": [
+        {
+          "he": "It's the law מראה חובה.",
+          "en": "It's the law shows an obligation."
+        }
+      ],
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "You must wear a helmet when you ride a bike. It's the law."
+    },
+    {
+      "id": "gr.relative.who",
+      "type": "choice",
+      "skill": "grammar.relative-clauses",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "The girl ___ lives next door is my best friend.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "who"
+        },
+        {
+          "id": "b",
+          "text": "which",
+          "misconception": "relative.which-for-people"
+        },
+        {
+          "id": "c",
+          "text": "what"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "who לאנשים. which לדברים.",
+        "en": "who for people, which for things."
+      },
+      "hints": [
+        {
+          "he": "מדובר באדם או בדבר?",
+          "en": "Is it a person or a thing?"
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "The girl who lives next door is my best friend."
+    },
+    {
+      "id": "gr.gerund.enjoy",
+      "type": "choice",
+      "skill": "grammar.gerunds-infinitives",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "I really enjoy ___ books before bed.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "reading"
+        },
+        {
+          "id": "b",
+          "text": "to read",
+          "misconception": "gerund-infinitive.choice"
+        },
+        {
+          "id": "c",
+          "text": "read"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "אחרי enjoy בא פועל עם ing.",
+        "en": "enjoy is followed by -ing."
+      },
+      "hints": [
+        {
+          "he": "enjoy הולך עם ing.",
+          "en": "enjoy goes with -ing."
+        }
+      ],
+      "interests": [
+        "books"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "I really enjoy reading books before bed."
+    },
+    {
+      "id": "gr.infinitive.decide",
+      "type": "choice",
+      "skill": "grammar.gerunds-infinitives",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "She decided ___ a new phone.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "to buy"
+        },
+        {
+          "id": "b",
+          "text": "buying",
+          "misconception": "gerund-infinitive.choice"
+        },
+        {
+          "id": "c",
+          "text": "buy"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "אחרי decide בא to + פועל.",
+        "en": "decide is followed by to + verb."
+      },
+      "hints": [
+        {
+          "he": "decide הולך עם to.",
+          "en": "decide goes with to."
+        }
+      ],
+      "interests": [
+        "technology"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "She decided to buy a new phone."
+    },
+    {
+      "id": "gr.articles.job",
+      "type": "choice",
+      "skill": "grammar.articles",
+      "level": "A1",
+      "difficulty": 0.4,
+      "prompt": "My aunt is ___ engineer.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "an"
+        },
+        {
+          "id": "b",
+          "text": "a",
+          "misconception": "articles.a-an"
+        },
+        {
+          "id": "c",
+          "text": "(nothing)",
+          "misconception": "articles.missing-a"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "מקצוע באנגלית בא עם a או an. engineer מתחילה בצליל תנועה, לכן an.",
+        "en": "Jobs take a / an. engineer starts with a vowel sound, so an."
+      },
+      "hints": [
+        {
+          "he": "בעברית אין מילה כזאת, אבל באנגלית צריך אותה לפני מקצוע.",
+          "en": "Hebrew has no a, but English needs it before a job."
+        },
+        {
+          "he": "איך מתחילה המילה engineer?",
+          "en": "How does engineer begin?"
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "My aunt is an engineer."
+    },
+    {
+      "id": "gr.articles.teacher",
+      "type": "choice",
+      "skill": "grammar.articles",
+      "level": "A1",
+      "difficulty": 0.3,
+      "prompt": "He is ___ teacher.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "a"
+        },
+        {
+          "id": "b",
+          "text": "(nothing)",
+          "misconception": "articles.missing-a"
+        },
+        {
+          "id": "c",
+          "text": "an"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "לפני מקצוע ביחיד צריך a: He is a teacher.",
+        "en": "A single job needs a: He is a teacher."
+      },
+      "hints": [
+        {
+          "he": "בעברית: הוא מורה. באנגלית צריך עוד מילה קטנה.",
+          "en": "In Hebrew there's no extra word. English needs one."
+        }
+      ],
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "He is a teacher."
+    },
+    {
+      "id": "gr.prep.in-month",
+      "type": "choice",
+      "skill": "grammar.prepositions",
+      "level": "A1",
+      "difficulty": 0.4,
+      "prompt": "My birthday is ___ May.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "in"
+        },
+        {
+          "id": "b",
+          "text": "on",
+          "misconception": "prepositions.time"
+        },
+        {
+          "id": "c",
+          "text": "at",
+          "misconception": "prepositions.time"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "in לחודשים ושנים: in May.",
+        "en": "in for months and years: in May."
+      },
+      "hints": [
+        {
+          "he": "May זה חודש.",
+          "en": "May is a month."
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "My birthday is in May."
+    },
+    {
+      "id": "gr.prep.on-day",
+      "type": "choice",
+      "skill": "grammar.prepositions",
+      "level": "A1",
+      "difficulty": 0.5,
+      "prompt": "See you ___ Sunday!",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "on"
+        },
+        {
+          "id": "b",
+          "text": "in",
+          "misconception": "prepositions.time"
+        },
+        {
+          "id": "c",
+          "text": "at",
+          "misconception": "prepositions.time"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "on לימים: on Sunday.",
+        "en": "on for days: on Sunday."
+      },
+      "hints": [
+        {
+          "he": "Sunday זה יום.",
+          "en": "Sunday is a day."
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "See you on Sunday!"
+    },
+    {
+      "id": "gr.quant.much-water",
+      "type": "choice",
+      "skill": "grammar.quantifiers",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "How ___ water do you drink every day?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "much"
+        },
+        {
+          "id": "b",
+          "text": "many",
+          "misconception": "quantifiers.much-many"
+        },
+        {
+          "id": "c",
+          "text": "lot"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "water זה דבר שלא סופרים, לכן much.",
+        "en": "water is uncountable, so much."
+      },
+      "hints": [
+        {
+          "he": "אפשר לספור מים? אחד, שניים, שלושה?",
+          "en": "Can you count water? One, two, three?"
+        }
+      ],
+      "interests": [
+        "food",
+        "sports"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "How much water do you drink every day?"
+    },
+    {
+      "id": "gr.quant.many-people",
+      "type": "choice",
+      "skill": "grammar.quantifiers",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "There weren't ___ people at the concert.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "many"
+        },
+        {
+          "id": "b",
+          "text": "much",
+          "misconception": "quantifiers.much-many"
+        },
+        {
+          "id": "c",
+          "text": "lot"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "people אפשר לספור, לכן many.",
+        "en": "people are countable, so many."
+      },
+      "hints": [
+        {
+          "he": "אפשר לספור אנשים?",
+          "en": "Can you count people?"
+        }
+      ],
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "There weren't many people at the concert."
+    },
+    {
+      "id": "gr.comp.easier",
+      "type": "choice",
+      "skill": "grammar.comparatives",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "This test is ___ than the last one.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "easier"
+        },
+        {
+          "id": "b",
+          "text": "more easier",
+          "misconception": "comparatives.double"
+        },
+        {
+          "id": "c",
+          "text": "more easy"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "easy היא מילה קצרה: easier. לא מוסיפים more.",
+        "en": "easy is short: easier. No more."
+      },
+      "hints": [
+        {
+          "he": "מילה קצרה מקבלת er.",
+          "en": "Short words take -er."
+        }
+      ],
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "This test is easier than the last one."
+    },
+    {
+      "id": "gr.order.adjective",
+      "type": "choice",
+      "skill": "grammar.word-order",
+      "level": "A1",
+      "difficulty": 0.3,
+      "prompt": "Which sentence is correct?",
+      "instruction": {
+        "he": "איזה משפט נכון?",
+        "en": "Which sentence is correct?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She is a good student."
+        },
+        {
+          "id": "b",
+          "text": "She is a student good.",
+          "misconception": "word-order.adjective-after-noun"
+        },
+        {
+          "id": "c",
+          "text": "She a good student is."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "באנגלית התואר בא לפני שם העצם: a good student.",
+        "en": "In English the adjective comes before the noun."
+      },
+      "hints": [
+        {
+          "he": "בעברית: תלמידה טובה. באנגלית הסדר הפוך.",
+          "en": "Hebrew puts the adjective after. English puts it before."
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "She is a good student."
+    },
+    {
+      "id": "gr.order.adverb",
+      "type": "choice",
+      "skill": "grammar.word-order",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "Which sentence is correct?",
+      "instruction": {
+        "he": "איזה משפט נכון?",
+        "en": "Which sentence is correct?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I really like this song."
+        },
+        {
+          "id": "b",
+          "text": "I like really this song."
+        },
+        {
+          "id": "c",
+          "text": "Really I like this song very."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "really בא לפני הפועל: I really like.",
+        "en": "really goes before the verb: I really like."
+      },
+      "hints": [
+        {
+          "he": "איפה עומדת המילה really ביחס לפועל like?",
+          "en": "Where does really go relative to like?"
+        }
+      ],
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "I really like this song."
+    },
+    {
+      "id": "gr.conn.although",
+      "type": "choice",
+      "skill": "grammar.connectors",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "___ it was raining, we decided to go outside.",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה",
+        "en": "Choose the correct answer"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Although"
+        },
+        {
+          "id": "b",
+          "text": "Because",
+          "misconception": "connectors.contrast-cause"
+        },
+        {
+          "id": "c",
+          "text": "So"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": {
+        "he": "יש ניגוד: ירד גשם, ובכל זאת יצאנו. Although = למרות ש.",
+        "en": "There is a contrast: it rained, yet we went out. Although."
+      },
+      "hints": [
+        {
+          "he": "הגשם הוא סיבה לצאת, או דווקא ניגוד?",
+          "en": "Is the rain a reason to go out, or a contrast?"
+        }
+      ],
+      "interests": [],
+      "tags": [
+        "grammar"
+      ],
+      "estimatedTimeSec": 15,
+      "source": "original",
+      "audioText": "Although it was raining, we decided to go outside."
+    }
+  ],
+  "passages": []
+}

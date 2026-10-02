@@ -1,0 +1,2303 @@
+{
+  "packId": "vocab-core",
+  "schemaVersion": 1,
+  "title": "Core vocabulary A1-B2",
+  "items": [
+    {
+      "id": "vocab.happy.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "A1",
+      "difficulty": 0.2,
+      "unit": "word:happy",
+      "word": {
+        "lemma": "happy",
+        "pos": "adjective",
+        "he": "שמח",
+        "example": "I am happy to see you."
+      },
+      "prompt": "happy",
+      "audioText": "happy",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "שמח"
+        },
+        {
+          "id": "b",
+          "text": "עצוב"
+        },
+        {
+          "id": "c",
+          "text": "עייף"
+        },
+        {
+          "id": "d",
+          "text": "רעב"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: I am happy to see you.",
+          "en": "Look at it in a sentence: I am happy to see you."
+        }
+      ],
+      "explanation": {
+        "he": "happy פירושה שמח. דוגמה: I am happy to see you.",
+        "en": "happy means שמח. Example: I am happy to see you."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "adjective"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.happy.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "A1",
+      "difficulty": 0.35,
+      "unit": "word:happy",
+      "word": {
+        "lemma": "happy",
+        "pos": "adjective",
+        "he": "שמח",
+        "example": "I am happy to see you."
+      },
+      "prompt": "שמח",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "happy"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות h",
+          "en": "It starts with h"
+        },
+        {
+          "he": "יש בה 5 אותיות",
+          "en": "It has 5 letters"
+        }
+      ],
+      "explanation": {
+        "he": "שמח באנגלית: happy. דוגמה: I am happy to see you.",
+        "en": "The word is happy. Example: I am happy to see you."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "adjective"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.kitchen.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "A1",
+      "difficulty": 0.4,
+      "unit": "word:kitchen",
+      "word": {
+        "lemma": "kitchen",
+        "pos": "noun",
+        "he": "מטבח",
+        "example": "We eat breakfast in the kitchen."
+      },
+      "prompt": "kitchen",
+      "audioText": "kitchen",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "מטבח"
+        },
+        {
+          "id": "b",
+          "text": "סלון"
+        },
+        {
+          "id": "c",
+          "text": "חדר שינה"
+        },
+        {
+          "id": "d",
+          "text": "מרפסת"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: We eat breakfast in the kitchen.",
+          "en": "Look at it in a sentence: We eat breakfast in the kitchen."
+        }
+      ],
+      "explanation": {
+        "he": "kitchen פירושה מטבח. דוגמה: We eat breakfast in the kitchen.",
+        "en": "kitchen means מטבח. Example: We eat breakfast in the kitchen."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "vocabulary",
+        "noun"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.kitchen.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "A1",
+      "difficulty": 0.55,
+      "unit": "word:kitchen",
+      "word": {
+        "lemma": "kitchen",
+        "pos": "noun",
+        "he": "מטבח",
+        "example": "We eat breakfast in the kitchen."
+      },
+      "prompt": "מטבח",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "kitchen"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות k",
+          "en": "It starts with k"
+        },
+        {
+          "he": "יש בה 7 אותיות",
+          "en": "It has 7 letters"
+        }
+      ],
+      "explanation": {
+        "he": "מטבח באנגלית: kitchen. דוגמה: We eat breakfast in the kitchen.",
+        "en": "The word is kitchen. Example: We eat breakfast in the kitchen."
+      },
+      "interests": [
+        "food"
+      ],
+      "tags": [
+        "vocabulary",
+        "noun"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.tomorrow.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "A1",
+      "difficulty": 0.3,
+      "unit": "word:tomorrow",
+      "word": {
+        "lemma": "tomorrow",
+        "pos": "adverb",
+        "he": "מחר",
+        "example": "See you tomorrow!"
+      },
+      "prompt": "tomorrow",
+      "audioText": "tomorrow",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "מחר"
+        },
+        {
+          "id": "b",
+          "text": "אתמול"
+        },
+        {
+          "id": "c",
+          "text": "היום"
+        },
+        {
+          "id": "d",
+          "text": "בשבוע הבא"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: See you tomorrow!",
+          "en": "Look at it in a sentence: See you tomorrow!"
+        }
+      ],
+      "explanation": {
+        "he": "tomorrow פירושה מחר. דוגמה: See you tomorrow!",
+        "en": "tomorrow means מחר. Example: See you tomorrow!"
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "adverb"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.tomorrow.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "A1",
+      "difficulty": 0.44999999999999996,
+      "unit": "word:tomorrow",
+      "word": {
+        "lemma": "tomorrow",
+        "pos": "adverb",
+        "he": "מחר",
+        "example": "See you tomorrow!"
+      },
+      "prompt": "מחר",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "tomorrow"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות t",
+          "en": "It starts with t"
+        },
+        {
+          "he": "יש בה 8 אותיות",
+          "en": "It has 8 letters"
+        }
+      ],
+      "explanation": {
+        "he": "מחר באנגלית: tomorrow. דוגמה: See you tomorrow!",
+        "en": "The word is tomorrow. Example: See you tomorrow!"
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "adverb"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.beautiful.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "A1",
+      "difficulty": 0.6,
+      "unit": "word:beautiful",
+      "word": {
+        "lemma": "beautiful",
+        "pos": "adjective",
+        "he": "יפה",
+        "example": "She has a beautiful voice."
+      },
+      "prompt": "beautiful",
+      "audioText": "beautiful",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "יפה"
+        },
+        {
+          "id": "b",
+          "text": "מכוער"
+        },
+        {
+          "id": "c",
+          "text": "חזק"
+        },
+        {
+          "id": "d",
+          "text": "שקט"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: She has a beautiful voice.",
+          "en": "Look at it in a sentence: She has a beautiful voice."
+        }
+      ],
+      "explanation": {
+        "he": "beautiful פירושה יפה. דוגמה: She has a beautiful voice.",
+        "en": "beautiful means יפה. Example: She has a beautiful voice."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "vocabulary",
+        "adjective"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.beautiful.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "A1",
+      "difficulty": 0.75,
+      "unit": "word:beautiful",
+      "word": {
+        "lemma": "beautiful",
+        "pos": "adjective",
+        "he": "יפה",
+        "example": "She has a beautiful voice."
+      },
+      "prompt": "יפה",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "beautiful"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות b",
+          "en": "It starts with b"
+        },
+        {
+          "he": "יש בה 9 אותיות",
+          "en": "It has 9 letters"
+        }
+      ],
+      "explanation": {
+        "he": "יפה באנגלית: beautiful. דוגמה: She has a beautiful voice.",
+        "en": "The word is beautiful. Example: She has a beautiful voice."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "vocabulary",
+        "adjective"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.borrow.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "word:borrow",
+      "word": {
+        "lemma": "borrow",
+        "pos": "verb",
+        "he": "לשאול (לקחת בהשאלה)",
+        "example": "Can I borrow your pen?"
+      },
+      "prompt": "borrow",
+      "audioText": "borrow",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "לשאול (לקחת בהשאלה)"
+        },
+        {
+          "id": "b",
+          "text": "להשאיל (לתת בהשאלה)",
+          "misconception": "vocabulary.borrow-lend"
+        },
+        {
+          "id": "c",
+          "text": "לקנות"
+        },
+        {
+          "id": "d",
+          "text": "למכור"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: Can I borrow your pen?",
+          "en": "Look at it in a sentence: Can I borrow your pen?"
+        }
+      ],
+      "explanation": {
+        "he": "borrow פירושה לשאול (לקחת בהשאלה). דוגמה: Can I borrow your pen?",
+        "en": "borrow means לשאול (לקחת בהשאלה). Example: Can I borrow your pen?"
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "vocabulary",
+        "verb"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.borrow.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "A2",
+      "difficulty": 0.65,
+      "unit": "word:borrow",
+      "word": {
+        "lemma": "borrow",
+        "pos": "verb",
+        "he": "לשאול (לקחת בהשאלה)",
+        "example": "Can I borrow your pen?"
+      },
+      "prompt": "לשאול (לקחת בהשאלה)",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "borrow"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות b",
+          "en": "It starts with b"
+        },
+        {
+          "he": "יש בה 6 אותיות",
+          "en": "It has 6 letters"
+        }
+      ],
+      "explanation": {
+        "he": "לשאול (לקחת בהשאלה) באנגלית: borrow. דוגמה: Can I borrow your pen?",
+        "en": "The word is borrow. Example: Can I borrow your pen?"
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "vocabulary",
+        "verb"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.already.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "word:already",
+      "word": {
+        "lemma": "already",
+        "pos": "adverb",
+        "he": "כבר",
+        "example": "I have already finished my homework."
+      },
+      "prompt": "already",
+      "audioText": "already",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "כבר"
+        },
+        {
+          "id": "b",
+          "text": "עדיין"
+        },
+        {
+          "id": "c",
+          "text": "אף פעם"
+        },
+        {
+          "id": "d",
+          "text": "אולי"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: I have already finished my homework.",
+          "en": "Look at it in a sentence: I have already finished my homework."
+        }
+      ],
+      "explanation": {
+        "he": "already פירושה כבר. דוגמה: I have already finished my homework.",
+        "en": "already means כבר. Example: I have already finished my homework."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "vocabulary",
+        "adverb"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.already.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "A2",
+      "difficulty": 0.55,
+      "unit": "word:already",
+      "word": {
+        "lemma": "already",
+        "pos": "adverb",
+        "he": "כבר",
+        "example": "I have already finished my homework."
+      },
+      "prompt": "כבר",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "already"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות a",
+          "en": "It starts with a"
+        },
+        {
+          "he": "יש בה 7 אותיות",
+          "en": "It has 7 letters"
+        }
+      ],
+      "explanation": {
+        "he": "כבר באנגלית: already. דוגמה: I have already finished my homework.",
+        "en": "The word is already. Example: I have already finished my homework."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "vocabulary",
+        "adverb"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.decide.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "A2",
+      "difficulty": 0.4,
+      "unit": "word:decide",
+      "word": {
+        "lemma": "decide",
+        "pos": "verb",
+        "he": "להחליט",
+        "example": "We decided to go to the beach."
+      },
+      "prompt": "decide",
+      "audioText": "decide",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "להחליט"
+        },
+        {
+          "id": "b",
+          "text": "להסכים"
+        },
+        {
+          "id": "c",
+          "text": "לנסות"
+        },
+        {
+          "id": "d",
+          "text": "לשכוח"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: We decided to go to the beach.",
+          "en": "Look at it in a sentence: We decided to go to the beach."
+        }
+      ],
+      "explanation": {
+        "he": "decide פירושה להחליט. דוגמה: We decided to go to the beach.",
+        "en": "decide means להחליט. Example: We decided to go to the beach."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "vocabulary",
+        "verb"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.decide.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "A2",
+      "difficulty": 0.55,
+      "unit": "word:decide",
+      "word": {
+        "lemma": "decide",
+        "pos": "verb",
+        "he": "להחליט",
+        "example": "We decided to go to the beach."
+      },
+      "prompt": "להחליט",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "decide"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות d",
+          "en": "It starts with d"
+        },
+        {
+          "he": "יש בה 6 אותיות",
+          "en": "It has 6 letters"
+        }
+      ],
+      "explanation": {
+        "he": "להחליט באנגלית: decide. דוגמה: We decided to go to the beach.",
+        "en": "The word is decide. Example: We decided to go to the beach."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "vocabulary",
+        "verb"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.weather.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "A2",
+      "difficulty": 0.3,
+      "unit": "word:weather",
+      "word": {
+        "lemma": "weather",
+        "pos": "noun",
+        "he": "מזג אוויר",
+        "example": "The weather is nice today."
+      },
+      "prompt": "weather",
+      "audioText": "weather",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "מזג אוויר"
+        },
+        {
+          "id": "b",
+          "text": "שעה"
+        },
+        {
+          "id": "c",
+          "text": "עונה"
+        },
+        {
+          "id": "d",
+          "text": "רוח"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: The weather is nice today.",
+          "en": "Look at it in a sentence: The weather is nice today."
+        }
+      ],
+      "explanation": {
+        "he": "weather פירושה מזג אוויר. דוגמה: The weather is nice today.",
+        "en": "weather means מזג אוויר. Example: The weather is nice today."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "vocabulary",
+        "noun"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.weather.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "A2",
+      "difficulty": 0.44999999999999996,
+      "unit": "word:weather",
+      "word": {
+        "lemma": "weather",
+        "pos": "noun",
+        "he": "מזג אוויר",
+        "example": "The weather is nice today."
+      },
+      "prompt": "מזג אוויר",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "weather"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות w",
+          "en": "It starts with w"
+        },
+        {
+          "he": "יש בה 7 אותיות",
+          "en": "It has 7 letters"
+        }
+      ],
+      "explanation": {
+        "he": "מזג אוויר באנגלית: weather. דוגמה: The weather is nice today.",
+        "en": "The word is weather. Example: The weather is nice today."
+      },
+      "interests": [
+        "travel"
+      ],
+      "tags": [
+        "vocabulary",
+        "noun"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.enough.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "word:enough",
+      "word": {
+        "lemma": "enough",
+        "pos": "determiner",
+        "he": "מספיק",
+        "example": "Do we have enough chairs?"
+      },
+      "prompt": "enough",
+      "audioText": "enough",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "מספיק"
+        },
+        {
+          "id": "b",
+          "text": "יותר מדי"
+        },
+        {
+          "id": "c",
+          "text": "כמעט"
+        },
+        {
+          "id": "d",
+          "text": "הרבה"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: Do we have enough chairs?",
+          "en": "Look at it in a sentence: Do we have enough chairs?"
+        }
+      ],
+      "explanation": {
+        "he": "enough פירושה מספיק. דוגמה: Do we have enough chairs?",
+        "en": "enough means מספיק. Example: Do we have enough chairs?"
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "determiner"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.enough.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "A2",
+      "difficulty": 0.65,
+      "unit": "word:enough",
+      "word": {
+        "lemma": "enough",
+        "pos": "determiner",
+        "he": "מספיק",
+        "example": "Do we have enough chairs?"
+      },
+      "prompt": "מספיק",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "enough"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות e",
+          "en": "It starts with e"
+        },
+        {
+          "he": "יש בה 6 אותיות",
+          "en": "It has 6 letters"
+        }
+      ],
+      "explanation": {
+        "he": "מספיק באנגלית: enough. דוגמה: Do we have enough chairs?",
+        "en": "The word is enough. Example: Do we have enough chairs?"
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "determiner"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.although.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "word:although",
+      "word": {
+        "lemma": "although",
+        "pos": "conjunction",
+        "he": "למרות ש",
+        "example": "Although it was raining, we went outside."
+      },
+      "prompt": "although",
+      "audioText": "although",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "למרות ש"
+        },
+        {
+          "id": "b",
+          "text": "בגלל ש"
+        },
+        {
+          "id": "c",
+          "text": "כדי ש"
+        },
+        {
+          "id": "d",
+          "text": "אחרי ש"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: Although it was raining, we went outside.",
+          "en": "Look at it in a sentence: Although it was raining, we went outside."
+        }
+      ],
+      "explanation": {
+        "he": "although פירושה למרות ש. דוגמה: Although it was raining, we went outside.",
+        "en": "although means למרות ש. Example: Although it was raining, we went outside."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "conjunction"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.although.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "B1",
+      "difficulty": 0.65,
+      "unit": "word:although",
+      "word": {
+        "lemma": "although",
+        "pos": "conjunction",
+        "he": "למרות ש",
+        "example": "Although it was raining, we went outside."
+      },
+      "prompt": "למרות ש",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "although"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות a",
+          "en": "It starts with a"
+        },
+        {
+          "he": "יש בה 8 אותיות",
+          "en": "It has 8 letters"
+        }
+      ],
+      "explanation": {
+        "he": "למרות ש באנגלית: although. דוגמה: Although it was raining, we went outside.",
+        "en": "The word is although. Example: Although it was raining, we went outside."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "conjunction"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.achieve.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "word:achieve",
+      "word": {
+        "lemma": "achieve",
+        "pos": "verb",
+        "he": "להשיג (מטרה)",
+        "example": "She worked hard to achieve her goal."
+      },
+      "prompt": "achieve",
+      "audioText": "achieve",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "להשיג (מטרה)"
+        },
+        {
+          "id": "b",
+          "text": "לוותר"
+        },
+        {
+          "id": "c",
+          "text": "לחפש"
+        },
+        {
+          "id": "d",
+          "text": "לתכנן"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: She worked hard to achieve her goal.",
+          "en": "Look at it in a sentence: She worked hard to achieve her goal."
+        }
+      ],
+      "explanation": {
+        "he": "achieve פירושה להשיג (מטרה). דוגמה: She worked hard to achieve her goal.",
+        "en": "achieve means להשיג (מטרה). Example: She worked hard to achieve her goal."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "vocabulary",
+        "verb"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.achieve.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "B1",
+      "difficulty": 0.75,
+      "unit": "word:achieve",
+      "word": {
+        "lemma": "achieve",
+        "pos": "verb",
+        "he": "להשיג (מטרה)",
+        "example": "She worked hard to achieve her goal."
+      },
+      "prompt": "להשיג (מטרה)",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "achieve"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות a",
+          "en": "It starts with a"
+        },
+        {
+          "he": "יש בה 7 אותיות",
+          "en": "It has 7 letters"
+        }
+      ],
+      "explanation": {
+        "he": "להשיג (מטרה) באנגלית: achieve. דוגמה: She worked hard to achieve her goal.",
+        "en": "The word is achieve. Example: She worked hard to achieve her goal."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "vocabulary",
+        "verb"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.improve.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "word:improve",
+      "word": {
+        "lemma": "improve",
+        "pos": "verb",
+        "he": "לשפר",
+        "example": "I want to improve my English."
+      },
+      "prompt": "improve",
+      "audioText": "improve",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "לשפר"
+        },
+        {
+          "id": "b",
+          "text": "להחמיר"
+        },
+        {
+          "id": "c",
+          "text": "לבדוק"
+        },
+        {
+          "id": "d",
+          "text": "ללמד"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: I want to improve my English.",
+          "en": "Look at it in a sentence: I want to improve my English."
+        }
+      ],
+      "explanation": {
+        "he": "improve פירושה לשפר. דוגמה: I want to improve my English.",
+        "en": "improve means לשפר. Example: I want to improve my English."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "vocabulary",
+        "verb"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.improve.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "B1",
+      "difficulty": 0.55,
+      "unit": "word:improve",
+      "word": {
+        "lemma": "improve",
+        "pos": "verb",
+        "he": "לשפר",
+        "example": "I want to improve my English."
+      },
+      "prompt": "לשפר",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "improve"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות i",
+          "en": "It starts with i"
+        },
+        {
+          "he": "יש בה 7 אותיות",
+          "en": "It has 7 letters"
+        }
+      ],
+      "explanation": {
+        "he": "לשפר באנגלית: improve. דוגמה: I want to improve my English.",
+        "en": "The word is improve. Example: I want to improve my English."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "vocabulary",
+        "verb"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.environment.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "word:environment",
+      "word": {
+        "lemma": "environment",
+        "pos": "noun",
+        "he": "סביבה",
+        "example": "We must protect the environment."
+      },
+      "prompt": "environment",
+      "audioText": "environment",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "סביבה"
+        },
+        {
+          "id": "b",
+          "text": "ממשלה"
+        },
+        {
+          "id": "c",
+          "text": "ציוד"
+        },
+        {
+          "id": "d",
+          "text": "הישג"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: We must protect the environment.",
+          "en": "Look at it in a sentence: We must protect the environment."
+        }
+      ],
+      "explanation": {
+        "he": "environment פירושה סביבה. דוגמה: We must protect the environment.",
+        "en": "environment means סביבה. Example: We must protect the environment."
+      },
+      "interests": [
+        "science",
+        "animals"
+      ],
+      "tags": [
+        "vocabulary",
+        "noun"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.environment.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "B1",
+      "difficulty": 0.65,
+      "unit": "word:environment",
+      "word": {
+        "lemma": "environment",
+        "pos": "noun",
+        "he": "סביבה",
+        "example": "We must protect the environment."
+      },
+      "prompt": "סביבה",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "environment"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות e",
+          "en": "It starts with e"
+        },
+        {
+          "he": "יש בה 11 אותיות",
+          "en": "It has 11 letters"
+        }
+      ],
+      "explanation": {
+        "he": "סביבה באנגלית: environment. דוגמה: We must protect the environment.",
+        "en": "The word is environment. Example: We must protect the environment."
+      },
+      "interests": [
+        "science",
+        "animals"
+      ],
+      "tags": [
+        "vocabulary",
+        "noun"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.opinion.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B1",
+      "difficulty": 0.4,
+      "unit": "word:opinion",
+      "word": {
+        "lemma": "opinion",
+        "pos": "noun",
+        "he": "דעה",
+        "example": "In my opinion, this movie is great."
+      },
+      "prompt": "opinion",
+      "audioText": "opinion",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "דעה"
+        },
+        {
+          "id": "b",
+          "text": "עובדה"
+        },
+        {
+          "id": "c",
+          "text": "שאלה"
+        },
+        {
+          "id": "d",
+          "text": "החלטה"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: In my opinion, this movie is great.",
+          "en": "Look at it in a sentence: In my opinion, this movie is great."
+        }
+      ],
+      "explanation": {
+        "he": "opinion פירושה דעה. דוגמה: In my opinion, this movie is great.",
+        "en": "opinion means דעה. Example: In my opinion, this movie is great."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "vocabulary",
+        "noun"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.opinion.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "B1",
+      "difficulty": 0.55,
+      "unit": "word:opinion",
+      "word": {
+        "lemma": "opinion",
+        "pos": "noun",
+        "he": "דעה",
+        "example": "In my opinion, this movie is great."
+      },
+      "prompt": "דעה",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "opinion"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות o",
+          "en": "It starts with o"
+        },
+        {
+          "he": "יש בה 7 אותיות",
+          "en": "It has 7 letters"
+        }
+      ],
+      "explanation": {
+        "he": "דעה באנגלית: opinion. דוגמה: In my opinion, this movie is great.",
+        "en": "The word is opinion. Example: In my opinion, this movie is great."
+      },
+      "interests": [
+        "movies"
+      ],
+      "tags": [
+        "vocabulary",
+        "noun"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.reliable.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B2",
+      "difficulty": 0.5,
+      "unit": "word:reliable",
+      "word": {
+        "lemma": "reliable",
+        "pos": "adjective",
+        "he": "אמין",
+        "example": "He is a reliable friend."
+      },
+      "prompt": "reliable",
+      "audioText": "reliable",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "אמין"
+        },
+        {
+          "id": "b",
+          "text": "מסוכן"
+        },
+        {
+          "id": "c",
+          "text": "מפורסם"
+        },
+        {
+          "id": "d",
+          "text": "עקשן"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: He is a reliable friend.",
+          "en": "Look at it in a sentence: He is a reliable friend."
+        }
+      ],
+      "explanation": {
+        "he": "reliable פירושה אמין. דוגמה: He is a reliable friend.",
+        "en": "reliable means אמין. Example: He is a reliable friend."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "adjective"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.reliable.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "B2",
+      "difficulty": 0.65,
+      "unit": "word:reliable",
+      "word": {
+        "lemma": "reliable",
+        "pos": "adjective",
+        "he": "אמין",
+        "example": "He is a reliable friend."
+      },
+      "prompt": "אמין",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "reliable"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות r",
+          "en": "It starts with r"
+        },
+        {
+          "he": "יש בה 8 אותיות",
+          "en": "It has 8 letters"
+        }
+      ],
+      "explanation": {
+        "he": "אמין באנגלית: reliable. דוגמה: He is a reliable friend.",
+        "en": "The word is reliable. Example: He is a reliable friend."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "adjective"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.consequence.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B2",
+      "difficulty": 0.6,
+      "unit": "word:consequence",
+      "word": {
+        "lemma": "consequence",
+        "pos": "noun",
+        "he": "תוצאה, השלכה",
+        "example": "Every choice has consequences."
+      },
+      "prompt": "consequence",
+      "audioText": "consequence",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "תוצאה, השלכה"
+        },
+        {
+          "id": "b",
+          "text": "סיבה"
+        },
+        {
+          "id": "c",
+          "text": "הזדמנות"
+        },
+        {
+          "id": "d",
+          "text": "ויכוח"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: Every choice has consequences.",
+          "en": "Look at it in a sentence: Every choice has consequences."
+        }
+      ],
+      "explanation": {
+        "he": "consequence פירושה תוצאה, השלכה. דוגמה: Every choice has consequences.",
+        "en": "consequence means תוצאה, השלכה. Example: Every choice has consequences."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "noun"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.consequence.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "B2",
+      "difficulty": 0.75,
+      "unit": "word:consequence",
+      "word": {
+        "lemma": "consequence",
+        "pos": "noun",
+        "he": "תוצאה, השלכה",
+        "example": "Every choice has consequences."
+      },
+      "prompt": "תוצאה, השלכה",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "consequence"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות c",
+          "en": "It starts with c"
+        },
+        {
+          "he": "יש בה 11 אותיות",
+          "en": "It has 11 letters"
+        }
+      ],
+      "explanation": {
+        "he": "תוצאה, השלכה באנגלית: consequence. דוגמה: Every choice has consequences.",
+        "en": "The word is consequence. Example: Every choice has consequences."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "noun"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.significant.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B2",
+      "difficulty": 0.5,
+      "unit": "word:significant",
+      "word": {
+        "lemma": "significant",
+        "pos": "adjective",
+        "he": "משמעותי",
+        "example": "There was a significant change in the weather."
+      },
+      "prompt": "significant",
+      "audioText": "significant",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "משמעותי"
+        },
+        {
+          "id": "b",
+          "text": "זעיר"
+        },
+        {
+          "id": "c",
+          "text": "מוזר"
+        },
+        {
+          "id": "d",
+          "text": "מקרי"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: There was a significant change in the weather.",
+          "en": "Look at it in a sentence: There was a significant change in the weather."
+        }
+      ],
+      "explanation": {
+        "he": "significant פירושה משמעותי. דוגמה: There was a significant change in the weather.",
+        "en": "significant means משמעותי. Example: There was a significant change in the weather."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "vocabulary",
+        "adjective"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.significant.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "B2",
+      "difficulty": 0.65,
+      "unit": "word:significant",
+      "word": {
+        "lemma": "significant",
+        "pos": "adjective",
+        "he": "משמעותי",
+        "example": "There was a significant change in the weather."
+      },
+      "prompt": "משמעותי",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "significant"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות s",
+          "en": "It starts with s"
+        },
+        {
+          "he": "יש בה 11 אותיות",
+          "en": "It has 11 letters"
+        }
+      ],
+      "explanation": {
+        "he": "משמעותי באנגלית: significant. דוגמה: There was a significant change in the weather.",
+        "en": "The word is significant. Example: There was a significant change in the weather."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "vocabulary",
+        "adjective"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.nevertheless.meaning",
+      "type": "choice",
+      "skill": "vocabulary.meaning",
+      "level": "B2",
+      "difficulty": 0.7,
+      "unit": "word:nevertheless",
+      "word": {
+        "lemma": "nevertheless",
+        "pos": "adverb",
+        "he": "ובכל זאת",
+        "example": "It was difficult. Nevertheless, we finished it."
+      },
+      "prompt": "nevertheless",
+      "audioText": "nevertheless",
+      "promptLanguage": "en",
+      "instruction": {
+        "he": "מה פירוש המילה?",
+        "en": "What does this word mean?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "ובכל זאת"
+        },
+        {
+          "id": "b",
+          "text": "לכן"
+        },
+        {
+          "id": "c",
+          "text": "בנוסף"
+        },
+        {
+          "id": "d",
+          "text": "למשל"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה במשפט: It was difficult. Nevertheless, we finished it.",
+          "en": "Look at it in a sentence: It was difficult. Nevertheless, we finished it."
+        }
+      ],
+      "explanation": {
+        "he": "nevertheless פירושה ובכל זאת. דוגמה: It was difficult. Nevertheless, we finished it.",
+        "en": "nevertheless means ובכל זאת. Example: It was difficult. Nevertheless, we finished it."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "adverb"
+      ],
+      "estimatedTimeSec": 12,
+      "source": "original"
+    },
+    {
+      "id": "vocab.nevertheless.recall",
+      "type": "typed",
+      "skill": "vocabulary.recall",
+      "level": "B2",
+      "difficulty": 0.85,
+      "unit": "word:nevertheless",
+      "word": {
+        "lemma": "nevertheless",
+        "pos": "adverb",
+        "he": "ובכל זאת",
+        "example": "It was difficult. Nevertheless, we finished it."
+      },
+      "prompt": "ובכל זאת",
+      "promptLanguage": "he",
+      "instruction": {
+        "he": "איך אומרים באנגלית?",
+        "en": "How do you say it in English?"
+      },
+      "answers": [
+        "nevertheless"
+      ],
+      "hints": [
+        {
+          "he": "המילה מתחילה באות n",
+          "en": "It starts with n"
+        },
+        {
+          "he": "יש בה 12 אותיות",
+          "en": "It has 12 letters"
+        }
+      ],
+      "explanation": {
+        "he": "ובכל זאת באנגלית: nevertheless. דוגמה: It was difficult. Nevertheless, we finished it.",
+        "en": "The word is nevertheless. Example: It was difficult. Nevertheless, we finished it."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "adverb"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original",
+      "alsoSkills": [
+        {
+          "id": "writing.spelling",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vocab.borrow.context",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.6,
+      "unit": "word:borrow",
+      "word": {
+        "lemma": "borrow",
+        "pos": "verb",
+        "he": "לשאול (לקחת בהשאלה)",
+        "example": "Can I borrow your pen?"
+      },
+      "prompt": "Can I ___ your pencil? I forgot mine.",
+      "audioText": "Can I borrow your pencil? I forgot mine.",
+      "instruction": {
+        "he": "איזו מילה מתאימה למשפט?",
+        "en": "Which word fits the sentence?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "borrow"
+        },
+        {
+          "id": "b",
+          "text": "lend",
+          "misconception": "vocabulary.borrow-lend"
+        },
+        {
+          "id": "c",
+          "text": "give"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כדאי לקרוא את כל המשפט ולחשוב מה קורה בו.",
+          "en": "Read the whole sentence and think about what is happening."
+        }
+      ],
+      "explanation": {
+        "he": "כאן מישהו מבקש לקחת משהו לזמן קצר. borrow = לקחת בהשאלה. lend = לתת בהשאלה.",
+        "en": "The speaker wants to take something for a short time. borrow = take, lend = give."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "vocabulary",
+        "context"
+      ],
+      "estimatedTimeSec": 18,
+      "source": "original"
+    },
+    {
+      "id": "vocab.already.context",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "word:already",
+      "word": {
+        "lemma": "already",
+        "pos": "adverb",
+        "he": "כבר",
+        "example": "I have already finished my homework."
+      },
+      "prompt": "Don't tell me the ending! I have ___ seen the movie.",
+      "audioText": "Don't tell me the ending! I have already seen the movie.",
+      "instruction": {
+        "he": "איזו מילה מתאימה למשפט?",
+        "en": "Which word fits the sentence?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "already"
+        },
+        {
+          "id": "b",
+          "text": "yet"
+        },
+        {
+          "id": "c",
+          "text": "ever"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כדאי לקרוא את כל המשפט ולחשוב מה קורה בו.",
+          "en": "Read the whole sentence and think about what is happening."
+        }
+      ],
+      "explanation": {
+        "he": "already = כבר. yet בא בדרך כלל בסוף משפט שלילה או שאלה.",
+        "en": "already means something happened earlier than expected. yet usually goes at the end of negatives and questions."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "vocabulary",
+        "context"
+      ],
+      "estimatedTimeSec": 18,
+      "source": "original"
+    },
+    {
+      "id": "vocab.enough.context",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "unit": "word:enough",
+      "word": {
+        "lemma": "enough",
+        "pos": "determiner",
+        "he": "מספיק",
+        "example": "Do we have enough chairs?"
+      },
+      "prompt": "The bag is too small. There isn't ___ space for my shoes.",
+      "audioText": "The bag is too small. There isn't enough space for my shoes.",
+      "instruction": {
+        "he": "איזו מילה מתאימה למשפט?",
+        "en": "Which word fits the sentence?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "enough"
+        },
+        {
+          "id": "b",
+          "text": "too"
+        },
+        {
+          "id": "c",
+          "text": "very"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כדאי לקרוא את כל המשפט ולחשוב מה קורה בו.",
+          "en": "Read the whole sentence and think about what is happening."
+        }
+      ],
+      "explanation": {
+        "he": "enough = מספיק. isn't enough space = אין מספיק מקום.",
+        "en": "enough means as much as needed: There isn't enough space."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "context"
+      ],
+      "estimatedTimeSec": 18,
+      "source": "original"
+    },
+    {
+      "id": "vocab.improve.context",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "word:improve",
+      "word": {
+        "lemma": "improve",
+        "pos": "verb",
+        "he": "לשפר",
+        "example": "I want to improve my English."
+      },
+      "prompt": "If you read every day, your English will ___.",
+      "audioText": "If you read every day, your English will improve.",
+      "instruction": {
+        "he": "איזו מילה מתאימה למשפט?",
+        "en": "Which word fits the sentence?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "improve"
+        },
+        {
+          "id": "b",
+          "text": "increase"
+        },
+        {
+          "id": "c",
+          "text": "repair"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כדאי לקרוא את כל המשפט ולחשוב מה קורה בו.",
+          "en": "Read the whole sentence and think about what is happening."
+        }
+      ],
+      "explanation": {
+        "he": "improve = להשתפר. increase מתאר גידול בכמות. repair = לתקן משהו שבור.",
+        "en": "improve = get better. increase = grow in amount. repair = fix something broken."
+      },
+      "interests": [
+        "school"
+      ],
+      "tags": [
+        "vocabulary",
+        "context"
+      ],
+      "estimatedTimeSec": 18,
+      "source": "original"
+    },
+    {
+      "id": "vocab.achieve.context",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.6,
+      "unit": "word:achieve",
+      "word": {
+        "lemma": "achieve",
+        "pos": "verb",
+        "he": "להשיג (מטרה)",
+        "example": "She worked hard to achieve her goal."
+      },
+      "prompt": "After years of training, she finally ___ her dream of running a marathon.",
+      "audioText": "After years of training, she finally achieved her dream of running a marathon.",
+      "instruction": {
+        "he": "איזו מילה מתאימה למשפט?",
+        "en": "Which word fits the sentence?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "achieved"
+        },
+        {
+          "id": "b",
+          "text": "won"
+        },
+        {
+          "id": "c",
+          "text": "succeeded"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כדאי לקרוא את כל המשפט ולחשוב מה קורה בו.",
+          "en": "Read the whole sentence and think about what is happening."
+        }
+      ],
+      "explanation": {
+        "he": "achieve a dream = להגשים חלום. succeed בא עם in: succeeded in.",
+        "en": "achieve a dream is a natural collocation. succeed needs in: succeeded in running."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "vocabulary",
+        "context"
+      ],
+      "estimatedTimeSec": 18,
+      "source": "original"
+    },
+    {
+      "id": "vocab.although.context",
+      "type": "choice",
+      "skill": "vocabulary.context",
+      "level": "B1",
+      "difficulty": 0.5,
+      "unit": "word:although",
+      "word": {
+        "lemma": "although",
+        "pos": "conjunction",
+        "he": "למרות ש",
+        "example": "Although it was raining, we went outside."
+      },
+      "prompt": "___ he was tired, he finished his homework.",
+      "audioText": "Although he was tired, he finished his homework.",
+      "instruction": {
+        "he": "איזו מילה מתאימה למשפט?",
+        "en": "Which word fits the sentence?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Although"
+        },
+        {
+          "id": "b",
+          "text": "Because",
+          "misconception": "connectors.contrast-cause"
+        },
+        {
+          "id": "c",
+          "text": "So"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כדאי לקרוא את כל המשפט ולחשוב מה קורה בו.",
+          "en": "Read the whole sentence and think about what is happening."
+        }
+      ],
+      "explanation": {
+        "he": "יש כאן ניגוד: הוא היה עייף, ובכל זאת סיים. לכן Although.",
+        "en": "There is a contrast: he was tired but still finished. So: Although."
+      },
+      "interests": [],
+      "tags": [
+        "vocabulary",
+        "context"
+      ],
+      "estimatedTimeSec": 18,
+      "source": "original"
+    }
+  ],
+  "passages": []
+}
