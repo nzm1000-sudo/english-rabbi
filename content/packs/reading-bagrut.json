@@ -975,7 +975,7 @@
       "skill": "reading.true-false",
       "level": "A2",
       "difficulty": 0.7,
-      "prompt": "True or false: The Blue Hawks won the final game of the season.",
+      "prompt": "True or false: The Blue Hawks beat the other team in the last game of the season.",
       "instruction": {
         "he": "נכון או לא נכון?",
         "en": "True or false?"
