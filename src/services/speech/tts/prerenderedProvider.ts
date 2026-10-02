@@ -18,6 +18,8 @@ export interface PrerenderManifest {
   entries: Record<string, string>;
 }
 
+const SLOWER_PLAYBACK = 0.8;
+
 export class PrerenderedProvider implements SpeechProvider {
   readonly id = 'prerendered';
   readonly label = 'קול טבעי מוקלט מראש';
@@ -45,11 +47,13 @@ export class PrerenderedProvider implements SpeechProvider {
    */
   private urlsFor(req: SpeakRequest, m: PrerenderManifest): string[] | undefined {
     const voice = NEURAL_VOICES[req.accent][req.speaker ?? 'A'];
-    const whole = m.entries[audioKey(voice, req.rate, req.text)];
+    // "Slower" plays the engine-made slow recording a little slower again.
+    const rate = req.rate === 'slower' ? 'slow' : req.rate;
+    const whole = m.entries[audioKey(voice, rate, req.text)];
     if (whole) return [whole];
     const parts = splitSentences(req.text);
     if (parts.length < 2) return undefined;
-    const urls = parts.map((p) => m.entries[audioKey(voice, req.rate, p)]);
+    const urls = parts.map((p) => m.entries[audioKey(voice, rate, p)]);
     return urls.every(Boolean) ? (urls as string[]) : undefined;
   }
 
@@ -70,7 +74,7 @@ export class PrerenderedProvider implements SpeechProvider {
       if (req.signal?.aborted) throw abortError();
       if (i + 1 < urls.length) next = this.fetchAudio(urls[i + 1]!, req.signal);
       if (i === 0) req.onStart?.();
-      await this.playback.play(blob, req.signal);
+      await this.playback.play(blob, req.signal, req.rate === 'slower' ? SLOWER_PLAYBACK : 1);
     }
   }
 

@@ -13,6 +13,10 @@ async function boot() {
 
   const services = createAppServices();
   await services.settings.load();
+  // Leaving the app (home button, lock, switching apps) stops speech.
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') services.speech.stop();
+  });
   // Ask the browser not to evict our data under storage pressure.
   // On iPhone, installing to the Home Screen also exempts data from Safari's 7-day cleanup.
   void navigator.storage?.persist?.();

@@ -20,7 +20,7 @@ export const INTEREST_LABELS: Record<Interest, string> = {
 };
 
 export type Accent = 'en-US' | 'en-GB';
-export type SpeechRate = 'slow' | 'normal' | 'fast';
+export type SpeechRate = 'slower' | 'slow' | 'normal' | 'fast';
 
 export interface LearningGoal {
   /** 'general' when the child is not on a bagrut track yet. */

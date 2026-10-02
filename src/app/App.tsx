@@ -1,4 +1,6 @@
-import { HashRouter, Navigate, Route, Routes, useParams } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes, useLocation, useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useServices } from './services';
 import { StudentPicker } from '@/features/students/StudentPicker';
 import { StudentForm } from '@/features/students/StudentForm';
 import { HomeScreen } from '@/features/home/HomeScreen';
@@ -18,6 +20,7 @@ import type { ReactNode } from 'react';
 export function App() {
   return (
     <HashRouter>
+      <StopSpeechOnNavigate />
       <Routes>
         <Route path="/" element={<StudentPicker />} />
         <Route path="/new" element={<StudentForm />} />
@@ -36,6 +39,16 @@ export function App() {
       </Routes>
     </HashRouter>
   );
+}
+
+/** Any screen change stops speech, so nothing keeps talking after leaving. */
+function StopSpeechOnNavigate() {
+  const { pathname, search } = useLocation();
+  const { speech } = useServices();
+  useEffect(() => {
+    speech.stop();
+  }, [pathname, search, speech]);
+  return null;
 }
 
 /** Applies the student's accent and speed to every speaker button below. */

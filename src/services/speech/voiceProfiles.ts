@@ -12,4 +12,4 @@ export const NEURAL_VOICES: Record<Accent, Record<Speaker, string>> = {
 };
 
 /** Speaking-rate multipliers. Slow is generated slower by the engine, not stretched. */
-export const RATE_FACTOR = { slow: 0.8, normal: 1, fast: 1.15 } as const;
+export const RATE_FACTOR = { slower: 0.65, slow: 0.8, normal: 1, fast: 1.15 } as const;

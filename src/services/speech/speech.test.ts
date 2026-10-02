@@ -121,8 +121,10 @@ describe('speech service', () => {
 
 class FakePlayback implements AudioPlayback {
   played: (Blob | string)[] = [];
-  async play(src: Blob | string) {
+  rates: number[] = [];
+  async play(src: Blob | string, _signal?: AbortSignal, rate = 1) {
     this.played.push(src);
+    this.rates.push(rate);
   }
   stop() {}
 }
@@ -194,6 +196,16 @@ describe('pre-rendered provider', () => {
     await p.speak({ text: `${a} ${b}`, accent: 'en-US', rate: 'normal' });
     expect(await Promise.all(playback.played.map((x) => (x as Blob).text()))).toEqual(['audio/a.mp3', 'audio/b.mp3']);
     expect(await p.canSpeak({ text: `${a} Something else.`, accent: 'en-US', rate: 'normal' })).toBe(false);
+  });
+
+  it('very slow plays the slow recording a little slower, pitch kept by the player', async () => {
+    const manifest = { version: 1, engine: 'k', entries: { [audioKey('af_heart', 'slow', 'beautiful')]: 'audio/slow.mp3' } };
+    const fetchFn = (async (u: string) => (u === 'm' ? new Response(JSON.stringify(manifest)) : new Response(new Blob([u])))) as unknown as typeof fetch;
+    const playback = new FakePlayback();
+    const p = new PrerenderedProvider(playback, 'm', fetchFn);
+    await p.speak({ text: 'beautiful', accent: 'en-US', rate: 'slower' });
+    expect(await (playback.played[0] as Blob).text()).toBe('audio/slow.mp3');
+    expect(playback.rates).toEqual([0.8]);
   });
 
   it('downloads every file for offline use', async () => {
