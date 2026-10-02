@@ -1,6 +1,5 @@
 import { buildRegistry, type ContentRegistry } from '@/domain/content/registry';
 import sources from './sources.json';
-import { generateOrderItems } from './generate';
 
 /**
  * Content entry point. Every JSON file in ./packs is loaded and validated.
@@ -13,7 +12,7 @@ const misconceptionModules = import.meta.glob('./misconceptions/*.json', { eager
 const authored = Object.values(packModules);
 
 export const contentRegistry: ContentRegistry = buildRegistry({
-  packs: [...authored, { packId: 'generated', schemaVersion: 1, title: 'Generated exercises', items: generateOrderItems(authored) }],
+  packs: authored,
   sources: sources as unknown[],
   misconceptions: Object.values(misconceptionModules).flat() as unknown[],
 });

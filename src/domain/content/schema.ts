@@ -126,6 +126,8 @@ export const OrderItem = z.object({
   type: z.literal('order'),
   prompt: z.string().min(1),
   answer: z.string().min(1),
+  /** Other correct word orders (e.g. a time phrase at the start or the end). */
+  alternatives: z.array(z.string().min(1)).default([]),
   audioText: EnglishText.optional(),
   distractors: z.array(z.object({ text: z.string().min(1), misconception: z.string().optional() })).default([]),
 });

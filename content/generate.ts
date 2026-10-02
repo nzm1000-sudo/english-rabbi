@@ -1,6 +1,9 @@
 /**
- * Generated exercises. Built at load time from authored items, so they need
- * no extra writing and no extra audio (they reuse each item's audioText).
+ * Draft generator for sentence-builder items. NOT used at runtime: its output
+ * was written to content/packs/sentence-builder.json and every item there is
+ * reviewed by hand (other correct orders listed in `alternatives`, ambiguous
+ * sentences removed). Automatic orders can be wrong when English allows
+ * several word orders, so never serve generated items without review.
  *
  * Build the sentence: every cloze item with a full model sentence of 4-11
  * words becomes an ordering task. A wrong option from the source item is

@@ -86,18 +86,27 @@ export function levenshtein(a: string, b: string): number {
   return prev[b.length]!;
 }
 
-/** Word tiles of an order item, in sentence order (punctuation stays attached). */
+/** Strips punctuation from a tile; tiles are shown and compared without it. */
+export function bareToken(t: string): string {
+  return t.replace(/^[^A-Za-z0-9']+|[^A-Za-z0-9']+$/g, '');
+}
+
+/** Word tiles of an order item, in sentence order, without punctuation. */
 export function orderTokens(item: Pick<OrderItem, 'answer'>): string[] {
-  return item.answer.trim().split(/\s+/);
+  return item.answer.trim().split(/\s+/).map(bareToken).filter(Boolean);
+}
+
+function sequenceKey(words: string[]): string {
+  return words.map((w) => bareToken(w).toLowerCase()).filter(Boolean).join(' ');
 }
 
 export function checkOrder(item: OrderItem, tokens: string[]): CheckResult {
-  const given = normalizeAnswer(tokens.join(' '));
-  if (given === normalizeAnswer(item.answer)) return { correct: true, nearMiss: false };
-  const used = new Set(tokens.map((t) => t.toLowerCase()));
+  const given = sequenceKey(tokens);
+  const accepted = [item.answer, ...item.alternatives].map((a) => sequenceKey(a.split(/\s+/)));
+  if (accepted.includes(given)) return { correct: true, nearMiss: false };
+  const used = new Set(tokens.map((t) => bareToken(t).toLowerCase()));
   const trap = item.distractors.find((d) => used.has(d.text.toLowerCase()));
-  // Right words, wrong order counts as close.
-  const sameWords = [...tokens].sort().join(' ') === [...orderTokens(item)].sort().join(' ');
+  const sameWords = [...given.split(' ')].sort().join(' ') === [...accepted[0]!.split(' ')].sort().join(' ');
   return {
     correct: false,
     nearMiss: false,

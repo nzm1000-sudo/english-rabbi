@@ -194,11 +194,12 @@ function OrderInput({ item, seed, flow, onSubmit }: { item: OrderItem; seed: str
     const words = [...orderTokens(item), ...item.distractors.map((d) => d.text)].map((text, i) => ({ id: i, text }));
     let shuffled = seededShuffle(words, `${seed}:${item.id}`);
     // Never start in the correct order.
-    if (shuffled.slice(0, orderTokens(item).length).map((w) => w.text).join(' ') === item.answer) shuffled = [...shuffled.slice(1), shuffled[0]!];
+    if (shuffled.slice(0, orderTokens(item).length).map((w) => w.text).join(' ') === orderTokens(item).join(' ')) shuffled = [...shuffled.slice(1), shuffled[0]!];
     return shuffled;
   }, [item, seed]);
   const [placed, setPlaced] = useState<number[]>([]);
   const finished = isFinished(flow);
+  const endMark = /[?!]$/.test(item.answer.trim()) ? item.answer.trim().slice(-1) : '.';
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
@@ -216,6 +217,10 @@ function OrderInput({ item, seed, flow, onSubmit }: { item: OrderItem; seed: str
             {tiles.find((t) => t.id === id)!.text}
           </button>
         ))}
+        {/* The end mark is fixed, so a statement cannot be rebuilt as a question. */}
+        <span className="order-end" aria-label={endMark === '?' ? 'שאלה' : 'משפט'}>
+          {endMark}
+        </span>
       </div>
       <div className="order-bank" dir="ltr" lang="en">
         {tiles.map((t) => (

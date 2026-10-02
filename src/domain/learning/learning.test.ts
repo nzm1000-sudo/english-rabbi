@@ -226,8 +226,23 @@ describe('build the sentence', () => {
       instruction: { he: 'א', en: 'a' }, explanation: { he: 'א', en: 'a' }, source: 'original',
     });
     if (item.type !== 'order') throw new Error();
-    expect(checkOrder(item, ['Where', 'did', 'she', 'go?']).correct).toBe(true);
+    expect(checkOrder(item, ['Where', 'did', 'she', 'go']).correct).toBe(true);
     expect(checkOrder(item, ['Where', 'did', 'she', 'went']).misconception).toBe('past-simple.did-plus-past');
-    expect(checkOrder(item, ['Where', 'she', 'did', 'go?']).misconception).toBe('word-order.sentence');
+    expect(checkOrder(item, ['Where', 'she', 'did', 'go']).misconception).toBe('word-order.sentence');
+  });
+
+  it('accepts every listed correct order', async () => {
+    const { checkOrder, orderTokens } = await import('./answerCheck');
+    const { ContentItem } = await import('../content/schema');
+    const item = ContentItem.parse({
+      id: 'o2', type: 'order', skill: 'grammar.word-order', level: 'A2', prompt: 'p',
+      answer: 'Yesterday I went to the park.', alternatives: ['I went to the park yesterday.'],
+      instruction: { he: 'א', en: 'a' }, explanation: { he: 'א', en: 'a' }, source: 'original',
+    });
+    if (item.type !== 'order') throw new Error();
+    expect(orderTokens(item)).toEqual(['Yesterday', 'I', 'went', 'to', 'the', 'park']);
+    expect(checkOrder(item, ['I', 'went', 'to', 'the', 'park', 'yesterday']).correct).toBe(true);
+    expect(checkOrder(item, ['Yesterday', 'I', 'went', 'to', 'the', 'park']).correct).toBe(true);
+    expect(checkOrder(item, ['I', 'went', 'yesterday', 'to', 'the', 'park']).correct).toBe(false);
   });
 });

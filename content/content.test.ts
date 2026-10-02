@@ -93,15 +93,25 @@ describe('licensing gate', () => {
   });
 });
 
-describe('generated exercises', () => {
-  it('creates sentence-builder items from cloze items, all valid', () => {
-    const gen = reg.items.filter((i) => i.type === 'order');
-    expect(gen.length).toBeGreaterThan(150);
-    for (const g of gen) {
-      if (g.type !== 'order') continue;
-      const words = g.answer.split(/\s+/).length;
-      expect(words).toBeGreaterThanOrEqual(4);
-      expect(g.audioText).toBe(g.answer);
+describe('sentence builder items', () => {
+  const bag = (s: string) => s.split(/\s+/).map((w) => w.replace(/^[^A-Za-z0-9']+|[^A-Za-z0-9']+$/g, '').toLowerCase()).filter(Boolean).sort().join(' ');
+  const end = (s: string) => (/[?!]$/.test(s.trim()) ? s.trim().slice(-1) : '.');
+  const order = reg.items.filter((i) => i.type === 'order');
+
+  it('exist and have no trap tiles', () => {
+    expect(order.length).toBeGreaterThan(100);
+    for (const i of order) if (i.type === 'order') expect(i.distractors, i.id).toEqual([]);
+  });
+
+  it('every alternative uses exactly the same words and end mark as the answer', () => {
+    for (const i of order) {
+      if (i.type !== 'order') continue;
+      for (const a of i.alternatives) {
+        expect(bag(a), `${i.id}: ${a}`).toBe(bag(i.answer));
+        expect(end(a), `${i.id}: ${a}`).toBe(end(i.answer));
+        expect(bag(a) === bag(i.answer) && a !== i.answer, i.id).toBe(true);
+      }
+      expect(i.audioText, i.id).toBe(i.answer);
     }
   });
 });
