@@ -1,5 +1,6 @@
 import type { Lesson, LessonBlock } from '@/domain/content/schema';
 import { En } from '@/ui/En';
+import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
 
 /** Renders a lesson: Hebrew explanation, English examples with audio, tables, typical mistakes. */
@@ -13,7 +14,7 @@ export function LessonView({ lesson }: { lesson: Lesson }) {
         <En as="p" className="muted small">
           {lesson.title.en}
         </En>
-        <p className="muted">{lesson.goal}</p>
+        <p className="muted"><He>{lesson.goal}</He></p>
       </header>
       {lesson.blocks.map((b, i) => (
         <Block key={i} b={b} />
@@ -27,14 +28,14 @@ function Block({ b }: { b: LessonBlock }) {
     case 'text':
       return (
         <div className="stack" style={{ gap: 4 }}>
-          <p>{b.he}</p>
+          <p><He>{b.he}</He></p>
           {b.en && <En as="p" className="small muted">{b.en}</En>}
         </div>
       );
     case 'rule':
       return (
         <div className="panel stack" style={{ gap: 4, background: 'var(--accent-weak)', borderColor: 'transparent' }}>
-          <span className="small">{b.he}</span>
+          <span className="small"><He>{b.he}</He></span>
           <En as="p" className="" >
             <strong style={{ fontSize: 'var(--t-lg)' }}>{b.pattern}</strong>
           </En>
@@ -47,8 +48,8 @@ function Block({ b }: { b: LessonBlock }) {
             <div key={i} className="list-item" style={{ alignItems: 'flex-start' }}>
               <div className="grow stack" style={{ gap: 2 }}>
                 <En>{e.en}</En>
-                {e.he && <span className="small muted">{e.he}</span>}
-                {e.note && <span className="xs muted">{e.note}</span>}
+                {e.he && <He className="small muted">{e.he}</He>}
+                {e.note && <He className="xs muted">{e.note}</He>}
               </div>
               <SpeakButton text={e.en} />
             </div>
@@ -67,14 +68,14 @@ function Block({ b }: { b: LessonBlock }) {
             <En className="grow">{b.right}</En>
             <SpeakButton text={b.right} />
           </div>
-          <p className="small muted">{b.he}</p>
+          <p className="small muted"><He>{b.he}</He></p>
         </div>
       );
     case 'tip':
       return (
         <div className="feedback feedback-hint">
           <span className="xs muted">טיפ</span>
-          <span>{b.he}</span>
+          <He>{b.he}</He>
         </div>
       );
     case 'table':
@@ -82,11 +83,11 @@ function Block({ b }: { b: LessonBlock }) {
         <div style={{ overflowX: 'auto' }}>
           <table className="table">
             <thead>
-              <tr>{b.head.map((h, i) => <th key={i}>{h}</th>)}</tr>
+              <tr>{b.head.map((h, i) => <th key={i}><He>{h}</He></th>)}</tr>
             </thead>
             <tbody>
               {b.rows.map((r, i) => (
-                <tr key={i}>{r.map((c, j) => <td key={j} dir="auto">{c}</td>)}</tr>
+                <tr key={i}>{r.map((c, j) => <td key={j}><He>{c}</He></td>)}</tr>
               ))}
             </tbody>
           </table>

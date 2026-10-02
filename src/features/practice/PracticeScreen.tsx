@@ -4,6 +4,7 @@ import { useServices } from '@/app/services';
 import { useProfile, useStudent } from '@/app/hooks';
 import { CloseIcon } from '@/ui/icons';
 import { En } from '@/ui/En';
+import { He } from '@/ui/He';
 import type { Student } from '@/domain/student/student';
 import type { SupportLanguage } from '@/domain/learning/languageSupport';
 import { domainNameHe } from '@/domain/student/profile';
@@ -228,7 +229,7 @@ function Summary({
       {tip && (
         <div className="panel stack">
           <span className="section-label">נקודה אחת לזכור</span>
-          <p>{tip.tip.he}</p>
+          <p><He>{tip.tip.he}</He></p>
         </div>
       )}
       {(mode === 'exam' || mode === 'quiz') && wrong.length > 0 && (
@@ -238,11 +239,11 @@ function Summary({
             {wrong.slice(0, 8).map((i) => (
               <div key={i.id} className="list-item" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: 2 }}>
                 {'promptLanguage' in i && i.promptLanguage === 'he' ? (
-                  <span className="small">{i.prompt}</span>
+                  <He className="small">{i.prompt}</He>
                 ) : (
                   <En className="small">{'prompt' in i ? i.prompt : ''}</En>
                 )}
-                <span className="small muted">{i.explanation.he}</span>
+                <He className="small muted">{i.explanation.he}</He>
                 {content.lessonsForSkill(i.skill)[0] && (
                   <Link className="xs" to={`/s/${student.id}/learn/${content.lessonsForSkill(i.skill)[0]!.id}`}>
                     לשיעור

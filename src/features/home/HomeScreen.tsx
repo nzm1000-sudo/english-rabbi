@@ -2,6 +2,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useProfile, useStudent } from '@/app/hooks';
 import { Avatar } from '@/ui/Avatar';
 import { En } from '@/ui/En';
+import { He } from '@/ui/He';
 import { ChevronIcon, GearIcon } from '@/ui/icons';
 import type { LearnerProfile } from '@/domain/student/profile';
 import { rankOf } from '@/domain/learning/progression';
@@ -130,8 +131,8 @@ export function HomeScreen() {
             )}
             {focus ? (
               <Link to={`${base}/practice/mistakes`} className="list-item" style={{ alignItems: 'flex-start', flexDirection: 'column', gap: 4, color: 'inherit', textDecoration: 'none' }}>
-                <span style={{ fontWeight: 550 }}>{focus.note.he}</span>
-                <span className="small muted">{focus.tip.he}</span>
+                <He className="" >{focus.note.he}</He>
+                <He className="small muted">{focus.tip.he}</He>
               </Link>
             ) : weak ? (
               <PracticeLink to={`${base}/practice/skill?skill=${encodeURIComponent(weak.skillId)}`} title={weak.name.he} meta="תרגול ממוקד" />

@@ -138,7 +138,10 @@ export function buildLearnerProfile(
   const activity = summarizeActivity(daily, today);
   const assessed = domains.filter((d) => d.attempts > 0);
   const overallTheta = assessed.length ? assessed.reduce((s, d) => s + d.theta, 0) / assessed.length : -0.5;
-  const calibrated = ['vocabulary', 'grammar'].every((d) => (state.skills.get(d)?.attempts ?? 0) >= 4);
+  // Enough evidence for a first picture: a finished placement (~14 answers
+  // spread over all domains) or steady practice in the two core domains.
+  const totalAttempts = domains.reduce((s, d) => s + d.attempts, 0);
+  const calibrated = totalAttempts >= 10 || ['vocabulary', 'grammar'].every((d) => (state.skills.get(d)?.attempts ?? 0) >= 4);
 
   const profile: LearnerProfile = {
     student,

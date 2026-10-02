@@ -6,6 +6,7 @@ import { domainNameHe, type DomainSummary, type LearnerProfile } from '@/domain/
 import type { Student } from '@/domain/student/student';
 import { Avatar } from '@/ui/Avatar';
 import { En } from '@/ui/En';
+import { He } from '@/ui/He';
 import { TopBar } from '@/ui/TopBar';
 import { ChevronIcon } from '@/ui/icons';
 import type { ParentLabel } from '@/domain/learning/mastery';
@@ -117,7 +118,7 @@ function StudentReport({ student }: { student: Student }) {
           <div className="list">
             {p.memory.map((m) => (
               <div key={m.misconceptionId} className="list-item" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: 2 }}>
-                <span>{m.note.he}</span>
+                <He>{m.note.he}</He>
                 <span className="xs muted">{m.count} פעמים · לאחרונה {formatDay(localDay(m.lastSeenAt))}</span>
               </div>
             ))}
@@ -132,7 +133,7 @@ function StudentReport({ student }: { student: Student }) {
           <span className="section-label">המלצה לשבוע הקרוב</span>
           <ul className="panel stack" style={{ margin: 0, paddingInlineStart: 'var(--s-6)' }}>
             {p.recommendations.map((r) => (
-              <li key={r}>{r}</li>
+              <li key={r}><He>{r}</He></li>
             ))}
           </ul>
         </section>

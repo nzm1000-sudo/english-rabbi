@@ -38,6 +38,15 @@ describe('learner profile', () => {
     expect(grammar.target).toBe('B1');
   });
 
+  it('is calibrated after a placement spread over domains', () => {
+    const domains = ['vocabulary.meaning', 'grammar.articles', 'reading.details', 'listening.words', 'writing.spelling'];
+    const events = Array.from({ length: 10 }, (_, i) =>
+      completedEvent('s1', choiceItem({ id: `p${i}`, skill: domains[i % domains.length] }), outcome(), T0 + i * 1000),
+    );
+    const st = replay(events);
+    expect(buildLearnerProfile(student, st, [], info, T0 + 20_000, localDay(T0)).calibrated).toBe(true);
+  });
+
   it('turns repeated mistakes into memory notes', () => {
     const wrong = outcome({ attempts: [{ answer: 'b', correct: false, misconception: 'quantifiers.much-many', atMs: 1 }, { answer: 'a', correct: true, atMs: 2 }], hintsUsed: 1 });
     const st = replay([completedEvent('s1', choiceItem(), wrong, T0), completedEvent('s1', choiceItem(), wrong, T0 + 1000)]);

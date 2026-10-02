@@ -6,6 +6,7 @@ import { chooseText, type SupportLanguage } from '@/domain/learning/languageSupp
 import type { ItemOutcome } from '@/domain/learning/events';
 import type { Bilingual } from '@/domain/content/schema';
 import { En } from '@/ui/En';
+import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
 import { seededShuffle } from './shuffle';
 import { useServices } from '@/app/services';
@@ -362,11 +363,13 @@ function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['
 }
 
 function BiText({ text, className = '' }: { text: ReturnType<typeof chooseText>; className?: string }) {
-  const main = text.primaryLang === 'en' ? <En>{text.primary}</En> : <span>{text.primary}</span>;
+  const main = text.primaryLang === 'en' ? <En>{text.primary}</En> : <He>{text.primary}</He>;
   return (
     <div className={className}>
       <div>{main}</div>
-      {text.secondary && <div className="secondary small muted">{text.secondary}</div>}
+      {text.secondary && (
+        <div className="secondary small muted">{text.secondaryLang === 'he' ? <He>{text.secondary}</He> : <En>{text.secondary}</En>}</div>
+      )}
     </div>
   );
 }

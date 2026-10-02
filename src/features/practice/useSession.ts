@@ -105,9 +105,10 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
         const lastId = recentRef.current[recentRef.current.length - 1];
         const last = lastId ? content.getItem(lastId) : undefined;
         if (last?.passageId) {
-          const run = recentRef.current.slice(-PASSAGE_RUN).filter((id) => content.getItem(id)?.passageId === last.passageId).length;
+          const limit = def.selection === 'placement' ? 2 : PASSAGE_RUN;
+          const run = recentRef.current.slice(-limit).filter((id) => content.getItem(id)?.passageId === last.passageId).length;
           const same = pool.filter((i) => i.passageId === last.passageId && !recentRef.current.includes(i.id));
-          if (run < PASSAGE_RUN && same.length) pool = same;
+          if (run < limit && same.length) pool = same;
         }
         cand = pickNext(
           {
