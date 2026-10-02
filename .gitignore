@@ -11,3 +11,4 @@ coverage/
 # Local tool caches, not part of the project
 .ctx/
 .vite/
+.tmp.wav
