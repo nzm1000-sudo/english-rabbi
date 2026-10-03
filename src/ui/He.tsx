@@ -111,7 +111,8 @@ export function layoutBidi(text: string, inline = false): BidiPart[] {
     }
   }
   // Hebrew fragments next to an English line lose their edge spaces;
-  // fragments that are only punctuation or spaces are dropped.
+  // fragments that are only punctuation or spaces are dropped, except the
+  // space between two inline English runs ("something. I'm").
   return parts
     .map((p, i) => {
       if (p.kind !== 'he') return p;
@@ -122,7 +123,7 @@ export function layoutBidi(text: string, inline = false): BidiPart[] {
       if (nextLine) t = t.replace(/\s+$/, '');
       return { ...p, text: t };
     })
-    .filter((p) => p.kind !== 'he' || /[^\s.,;:]/.test(p.text));
+    .filter((p, i) => p.kind !== 'he' || /[^\s.,;:]/.test(p.text) || (/^\s+$/.test(p.text) && parts[i - 1]?.kind === 'en' && parts[i + 1]?.kind === 'en'));
 }
 
 /** Short English runs (a word or a pattern) never break across lines. */

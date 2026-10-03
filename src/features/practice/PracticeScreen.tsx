@@ -369,7 +369,7 @@ function Summary({
                 ) : (
                   <En as="div" className="wrong-en">{'prompt' in i ? i.prompt : ''}</En>
                 )}
-                <He className="small muted">{i.explanation.he}</He>
+                <He className="small muted wrong-why">{i.explanation.he}</He>
                 {content.lessonsForSkill(i.skill)[0] && (
                   <Link className="text-link" to={`/s/${student.id}/learn/${content.lessonsForSkill(i.skill)[0]!.id}`}>
                     לשיעור
