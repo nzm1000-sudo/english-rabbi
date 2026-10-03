@@ -1,12 +1,21 @@
 import type { RecognitionResult, SpeechRecognizer } from './types';
 
 /**
- * Speech-to-text on the phone itself with Whisper tiny.en (MIT licence),
+ * Speech-to-text on the phone itself with Whisper base.en (MIT licence),
  * run by transformers.js in WebAssembly. The model and runtime are served
  * from this site (public/models, public/ort), so the child's voice never
- * leaves the device. About 70 MB the first time, then cached for offline use.
+ * leaves the device. About 105 MB the first time, then cached for offline use.
  */
 type Asr = (audio: Float32Array) => Promise<{ text: string } | { text: string }[]>;
+
+/** Whisper base.en: about twice the size of tiny, clearly better with young and accented voices. */
+function modelId(): string {
+  try {
+    return localStorage.getItem('asrModel') ?? 'whisper-base.en';
+  } catch {
+    return 'whisper-base.en';
+  }
+}
 
 let loading: Promise<Asr> | null = null;
 let ready = false;
@@ -23,7 +32,7 @@ export async function isRecognizerCached(): Promise<boolean> {
     const keys = await caches.keys();
     for (const k of keys) {
       const c = await caches.open(k);
-      if (await c.match(new URL('models/whisper-tiny.en/onnx/decoder_model_merged_quantized.onnx', document.baseURI).href)) return true;
+      if (await c.match(new URL(`models/${modelId()}/onnx/decoder_model_merged_quantized.onnx`, document.baseURI).href)) return true;
     }
   } catch {
     /* no Cache API */
@@ -59,7 +68,7 @@ export function loadRecognizer(onProgress?: LoadProgress): Promise<Asr> {
       onProgress?.(l, t);
     };
     // Built by hand: the generic pipeline() cannot list local files without the Hub.
-    const id = 'whisper-tiny.en';
+    const id = modelId();
     const [processor, tokenizer, model] = await Promise.all([
       AutoProcessor.from_pretrained(id, { progress_callback }),
       AutoTokenizer.from_pretrained(id, { progress_callback }),
@@ -73,6 +82,27 @@ export function loadRecognizer(onProgress?: LoadProgress): Promise<Asr> {
     loading = null;
   });
   return loading;
+}
+
+/**
+ * Phone microphones (with echo cancellation on) often record quietly, and a
+ * quiet input makes Whisper drop words. Remove any DC offset and bring the
+ * loudest point to 90%.
+ */
+export function normalize(x: Float32Array): Float32Array {
+  if (!x.length) return x;
+  let mean = 0;
+  for (const v of x) mean += v;
+  mean /= x.length;
+  let peak = 0;
+  for (let i = 0; i < x.length; i++) {
+    x[i] = x[i]! - mean;
+    peak = Math.max(peak, Math.abs(x[i]!));
+  }
+  if (peak < 1e-4) return x;
+  const gain = Math.min(20, 0.9 / peak);
+  for (let i = 0; i < x.length; i++) x[i] = x[i]! * gain;
+  return x;
 }
 
 /** Decodes a recording to 16 kHz mono samples, as Whisper expects. */
@@ -100,9 +130,13 @@ export class WhisperRecognizer implements SpeechRecognizer {
   readonly runsOnDevice = true;
 
   async recognize(audio: Blob): Promise<RecognitionResult> {
+    return this.recognizeSamples(await toSamples(audio));
+  }
+
+  /** 16 kHz mono samples (from PcmRecorder). */
+  async recognizeSamples(samples: Float32Array): Promise<RecognitionResult> {
     const asr = await loadRecognizer();
-    const samples = await toSamples(audio);
-    const r = await asr(samples);
+    const r = await asr(normalize(new Float32Array(samples)));
     const text = Array.isArray(r) ? r.map((x) => x.text).join(' ') : r.text;
     return { transcript: text.trim(), confidence: 1 };
   }
