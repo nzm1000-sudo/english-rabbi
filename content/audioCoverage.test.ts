@@ -84,7 +84,7 @@ describe('pre-rendered audio', () => {
 
 import heManifestJson from '../public/audio/he/manifest.json';
 import { stickers } from './kids';
-import { HEBREW_VOICE } from '@/services/speech/hebrewVoice';
+import { HEBREW_FALLBACK_VOICE, HEBREW_VOICE } from '@/services/speech/hebrewVoice';
 import { KIDS_PHRASES, newStickerPhrase } from '@/features/kids/hebrewPhrases';
 import { TOPIC_INFO } from '@/features/kids/topics';
 
@@ -98,7 +98,8 @@ describe('Hebrew phrases for children', () => {
       ...kidBooks.map((b) => b.title.he),
       ...Object.values(TOPIC_INFO).map((t) => t.he),
     ];
-    const missing = texts.filter((t) => !he[audioKey(HEBREW_VOICE, 'normal', t)]);
+    // The Gemini voice, or the older Microsoft one until it is re-rendered.
+    const missing = texts.filter((t) => !he[audioKey(HEBREW_VOICE, 'normal', t)] && !he[audioKey(HEBREW_FALLBACK_VOICE, 'normal', t)]);
     expect(missing).toEqual([]);
     for (const url of Object.values(he)) expect(heFiles.has(url)).toBe(true);
   });

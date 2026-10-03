@@ -9,8 +9,11 @@ import { isAbort } from './types';
  * voice. Nothing is sent anywhere.
  */
 
-// Keep in sync with VOICE in tools/tts-prerender/hebrew.mjs
-export const HEBREW_VOICE = 'he-IL-AvriNeural';
+// Keep in sync with tools/tts-prerender/hebrew.mjs. Gemini recordings: a
+// female voice for the game guide, a male one for names (the tool picks).
+export const HEBREW_VOICE = 'gemini-he-1';
+// The older Microsoft recordings, played when a Gemini one is missing.
+export const HEBREW_FALLBACK_VOICE = 'he-IL-AvriNeural';
 const MANIFEST_URL = 'audio/he/manifest.json';
 
 let playback: AudioPlayback | null = null;
@@ -37,7 +40,8 @@ function entries(): Promise<Record<string, string>> {
 export async function speakHebrew(text: string): Promise<void> {
   stopHebrew();
   const ctrl = (current = new AbortController());
-  const url = playback ? (await entries())[audioKey(HEBREW_VOICE, 'normal', text)] : undefined;
+  const all = playback ? await entries() : {};
+  const url = all[audioKey(HEBREW_VOICE, 'normal', text)] ?? all[audioKey(HEBREW_FALLBACK_VOICE, 'normal', text)];
   if (ctrl.signal.aborted) return;
   if (url && playback) {
     try {

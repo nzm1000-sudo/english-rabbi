@@ -6,7 +6,8 @@
  */
 export const PRAISE = ['כל הכבוד!', 'יופי!', 'מעולה!', 'נכון מאוד!', 'איזה יופי!'];
 
-export const KIDS_PHRASES = [
+/** Said during a game or a reward: the female guide voice. */
+export const GUIDE_PHRASES = [
   ...PRAISE,
   'איפה',
   'נסו שוב',
@@ -15,12 +16,12 @@ export const KIDS_PHRASES = [
   'איפה המילה',
   'איזו אות?',
   'בונים מילה',
-  'מילים קסומות',
-  'קוראים ומתאימים',
-  'זוגות',
-  'ספרונים',
-  'המדבקות שלי',
   'כל הכבוד! אספתם את כל המדבקות',
 ];
+
+/** Names of places in the kids area: the male voice, like topic, book and sticker names. */
+export const MENU_PHRASES = ['מילים קסומות', 'קוראים ומתאימים', 'זוגות', 'ספרונים', 'המדבקות שלי'];
+
+export const KIDS_PHRASES = [...GUIDE_PHRASES, ...MENU_PHRASES];
 
 export const newStickerPhrase = (name: string) => `מדבקה חדשה! ${name}`;
