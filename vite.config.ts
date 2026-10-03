@@ -16,7 +16,9 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'prompt',
+      // New versions install and take over by themselves (there is no update prompt).
+      registerType: 'autoUpdate',
+      injectRegister: false,
       includeAssets: ['icon.svg'],
       manifest: {
         name: 'Smart English Tutor',
@@ -38,6 +40,9 @@ export default defineConfig({
         // The app bundle includes all content (~2.5 MB, ~0.5 MB compressed); it must be precached for offline use.
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         navigateFallback: 'index.html',
+        skipWaiting: true,
+        clientsClaim: true,
+        cleanupOutdatedCaches: true,
         runtimeCaching: [
           {
             urlPattern: ({ url }) => url.pathname.includes('/audio/') && url.pathname.endsWith('.mp3'),

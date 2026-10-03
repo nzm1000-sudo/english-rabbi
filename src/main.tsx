@@ -1,3 +1,4 @@
+import { registerSW } from 'virtual:pwa-register';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './app/App';
@@ -13,6 +14,17 @@ async function boot() {
 
   const services = createAppServices();
   await services.settings.load();
+  // Updates: a home-screen app is rarely closed, so look for a new version
+  // every time it comes back to the front. A new version reloads the page.
+  registerSW({
+    immediate: true,
+    onRegisteredSW: (_url, reg) => {
+      if (!reg) return;
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') void reg.update();
+      });
+    },
+  });
   // Leaving the app (home button, lock, switching apps) stops speech.
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'hidden') services.speech.stop();

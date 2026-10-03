@@ -12,6 +12,7 @@ import { TopBar } from '@/ui/TopBar';
 import { ChevronIcon } from '@/ui/icons';
 import type { ParentLabel } from '@/domain/learning/mastery';
 import { localDay } from '@/domain/learning/events';
+import { ThemePicker } from '@/ui/ThemePicker';
 import type { PrerenderedProvider } from '@/services/speech/tts/prerenderedProvider';
 
 const LABEL: Record<ParentLabel, { he: string; cls: string }> = {
@@ -247,6 +248,7 @@ function DeviceSection() {
   return (
     <section className="stack" style={{ marginTop: 'var(--s-5)' }}>
       <span className="section-label">מכשיר ונתונים</span>
+      <ThemePicker />
       <div className="list">
         <Link to="/parent/voices" className="list-item" style={{ color: 'inherit', textDecoration: 'none' }}>
           <span className="grow">מעבדת קולות</span>

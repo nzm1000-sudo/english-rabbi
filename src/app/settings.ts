@@ -10,6 +10,23 @@ export interface SettingsShape {
   deviceVoiceGB?: string;
   /** UI sounds on (default) or off. */
   soundOff?: boolean;
+  /** Colors: follow the phone (default), or always light / dark. */
+  theme?: 'auto' | 'light' | 'dark';
+}
+
+const THEME_KEY = 'theme';
+
+/** Applies the theme to the page and mirrors it for the next start (no flash). */
+export function applyTheme(theme: SettingsShape['theme']): void {
+  const t = theme && theme !== 'auto' ? theme : undefined;
+  if (t) document.documentElement.dataset.theme = t;
+  else delete document.documentElement.dataset.theme;
+  try {
+    if (t) localStorage.setItem(THEME_KEY, t);
+    else localStorage.removeItem(THEME_KEY);
+  } catch {
+    /* storage may be blocked; the setting still applies for this visit */
+  }
 }
 
 export class Settings {

@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useServices } from '@/app/services';
 import { useStudent } from '@/app/hooks';
 import { TopBar } from '@/ui/TopBar';
+import { ThemePicker } from '@/ui/ThemePicker';
 import {
   INTERESTS,
   INTEREST_LABELS,
@@ -147,6 +148,8 @@ function StudentFormInner({ student }: { student: Student | null }) {
             ))}
           </div>
         </div>
+
+        <ThemePicker />
 
         <button className="btn btn-primary btn-block" disabled={saving}>
           {student ? 'שמירה' : 'יצירה'}
