@@ -83,3 +83,15 @@ describe('bidi punctuation', () => {
     expect(layoutBidi('There is / There are', true).map((p) => p.kind)).toEqual(['en']);
   });
 });
+
+describe('bidi sentences', () => {
+  it('splits two English sentences inside Hebrew into two runs', () => {
+    expect(splitBidi('אומרים have fun. make fun of פירושו ללעוג')).toEqual([
+      { latin: false, text: 'אומרים ' },
+      { latin: true, text: 'have fun.' },
+      { latin: false, text: ' ' },
+      { latin: true, text: 'make fun of' },
+      { latin: false, text: ' פירושו ללעוג' },
+    ]);
+  });
+});

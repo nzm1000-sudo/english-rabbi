@@ -420,3 +420,5 @@
 .path-label .wt { white-space: normal; }
 .shadow-text { text-align: left; }
 .order-line > .muted:first-child { flex: 1; text-align: center; }
+@media (max-width: 399px) { .resume-note .resume-icon { display: none; } }
+.resume-note strong { white-space: nowrap; }

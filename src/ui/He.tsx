@@ -67,7 +67,16 @@ export function splitBidi(text: string): { latin: boolean; text: string }[] {
   for (const m of text.matchAll(LATIN_RUN)) {
     const i = m.index ?? 0;
     if (i > last) push(false, text.slice(last, i));
-    for (const piece of balance(m[0])) push(piece.latin, piece.text);
+    for (const piece of balance(m[0])) {
+      if (!piece.latin) {
+        push(false, piece.text);
+        continue;
+      }
+      // "have fun. make fun of": two English sentences are two runs, so in a
+      // Hebrew line the first one is read first.
+      const parts = piece.text.split(/(?<=[.!?])(\s+)(?=["(]?[A-Za-z])/);
+      parts.forEach((t, k) => push(k % 2 === 0, t));
+    }
     last = i + m[0].length;
   }
   if (last < text.length) push(false, text.slice(last));
