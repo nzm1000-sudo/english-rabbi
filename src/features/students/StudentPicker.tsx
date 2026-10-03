@@ -24,7 +24,9 @@ export function StudentPicker() {
           {students.map((s) => (
             <Link key={s.id} to={`/s/${s.id}`} className="student-card">
               <Avatar name={s.name} hue={s.hue} size={72} />
-              <strong>{s.name}</strong>
+              <strong>
+                <bdi>{s.name}</bdi>
+              </strong>
             </Link>
           ))}
         </nav>
