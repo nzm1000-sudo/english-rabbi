@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useServices } from '@/app/services';
 import { stickers, type StickerInfo } from '@content/kids';
@@ -10,25 +10,61 @@ import { AlbumIcon, HomeIcon, ReplayIcon, StarIcon } from './KidIcons';
 import { OwlSays } from './KidsChrome';
 import { stickerSrc } from './pics';
 
-/** End of a round: a new sticker for the album, every time. */
-export function Reward({ student, score, onAgain }: { student: Student; score: { correct: number; total: number }; onAgain: () => void }) {
+/**
+ * A sticker is earned by real effort: in games at least half the answers
+ * right on the first try; a book gives its sticker once (the first time it is
+ * read through, page by page). Otherwise the child is praised and invited to
+ * try again for a sticker.
+ */
+export function earnsSticker(score: { correct: number; total: number }): boolean {
+  return score.total > 0 && score.correct * 2 >= score.total;
+}
+
+type Outcome = { kind: 'sticker'; sticker: StickerInfo } | { kind: 'all' } | { kind: 'none' };
+
+/** End of a round: praise, and a new sticker when it was earned. */
+export function Reward({
+  student,
+  score,
+  onAgain,
+  source,
+  earned: earnedProp,
+}: {
+  student: Student;
+  score: { correct: number; total: number };
+  onAgain: () => void;
+  /** What the sticker is for, e.g. "book:kb.young.bus" (books give one sticker each). */
+  source: string;
+  /** Overrides the score rule (books decide by reading, not by answers). */
+  earned?: boolean;
+}) {
   const { store } = useServices();
-  const [sticker, setSticker] = useState<StickerInfo | null | undefined>(undefined);
+  const [outcome, setOutcome] = useState<Outcome | undefined>(undefined);
+  const deserves = earnedProp ?? earnsSticker(score);
+  // The award runs once, even when the effect runs twice (StrictMode).
+  const job = useRef<Promise<Outcome> | null>(null);
 
   useEffect(() => {
     let live = true;
-    void (async () => {
-      const earned = await store.stickersEarned(student.id);
-      const next = stickers.find((s) => !earned.includes(s.id)) ?? null;
-      if (next) await store.log(student.id, 'sticker.earned', { stickerId: next.id });
-      if (!live) return;
-      setSticker(next);
-      void speakHebrew(next ? newStickerPhrase(next.he) : 'כל הכבוד! אספתם את כל המדבקות');
+    job.current ??= (async (): Promise<Outcome> => {
+      if (!deserves) return { kind: 'none' };
+      if (source.startsWith('book:') && (await store.stickerEarnedFrom(student.id, source))) return { kind: 'none' };
+      const have = await store.stickersEarned(student.id);
+      const next = stickers.find((s) => !have.includes(s.id));
+      if (!next) return { kind: 'all' };
+      await store.log(student.id, 'sticker.earned', { stickerId: next.id, source });
+      return { kind: 'sticker', sticker: next };
     })();
+    void job.current.then((out) => {
+      if (!live) return;
+      setOutcome(out);
+      void speakHebrew(out.kind === 'sticker' ? newStickerPhrase(out.sticker.he) : out.kind === 'all' ? 'כל הכבוד! אספתם את כל המדבקות' : 'כל הכבוד!');
+    });
     return () => {
       live = false;
     };
-  }, [store, student.id]);
+  }, [store, student.id, source, deserves]);
+  const sticker = outcome?.kind === 'sticker' ? outcome.sticker : outcome ? null : undefined;
 
   const base = `/s/${student.id}`;
   // Stars are generous: at least half of them always light up.
@@ -37,7 +73,15 @@ export function Reward({ student, score, onAgain }: { student: Student; score: {
   return (
     <main className="screen kids-screen k-reward" data-mood="kids">
       <Confetti pieces={40} />
-      <OwlSays title="כל הכבוד!" line={sticker === null ? 'אספתם את כל המדבקות!' : 'מדבקה חדשה לאלבום'} size={88} />
+      <OwlSays title="כל הכבוד!" line={
+          outcome?.kind === 'all'
+            ? 'אספתם את כל המדבקות!'
+            : outcome?.kind === 'none'
+              ? source.startsWith('book:') && deserves
+                ? 'את המדבקה של הספרון כבר קיבלתם'
+                : 'עוד קצת תרגול, ומקבלים מדבקה'
+              : 'מדבקה חדשה לאלבום'
+        } size={88} />
       <div className="k-stars" role="img" aria-label={`${score.correct} מתוך ${score.total}`}>
         {Array.from({ length: stars }, (_, i) => (
           <span key={i} className="k-star-slot" style={{ animationDelay: `${120 + i * 90}ms` }}>

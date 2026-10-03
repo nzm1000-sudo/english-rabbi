@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useStudent } from '@/app/hooks';
 import { useServices } from '@/app/services';
@@ -12,6 +12,8 @@ import { KidsIconLink, KidsMessage, KidsTopBar, type Tint } from './KidsChrome';
 import { bookPagePic, scenePics } from './pics';
 import { Reward } from './Reward';
 
+/** How long a page must stay open to count as read (about one listen). */
+const PAGE_READ_MS = 3000;
 const TINTS: Tint[] = ['peach', 'sky', 'mint', 'butter', 'lilac', 'rose'];
 
 /** The pictures on a book cover: the cover scene, or the first page that has pictures. */
@@ -100,6 +102,14 @@ function BookReader() {
     if (!p) return;
     void speech.speak(p.en, { ...prefs, key: `book-${p.en}` });
   }, [p, speech, prefs]);
+  // A page counts as read after the child stayed on it long enough to hear it.
+  // Paging straight through to the end does not earn the book's sticker.
+  const heard = useRef<Set<number>>(new Set());
+  useEffect(() => {
+    if (!p) return;
+    const t = setTimeout(() => heard.current.add(page), PAGE_READ_MS);
+    return () => clearTimeout(t);
+  }, [p, page]);
   useEffect(
     () => () => {
       speech.stop();
@@ -123,7 +133,21 @@ function BookReader() {
       </main>
     );
   }
-  if (done) return <Reward student={student} score={{ correct: book.pages.length, total: book.pages.length }} onAgain={() => { setDone(false); setPage(0); }} />;
+  if (done) {
+    return (
+      <Reward
+        student={student}
+        score={{ correct: book.pages.length, total: book.pages.length }}
+        source={`book:${book.id}`}
+        earned={heard.current.size >= book.pages.length}
+        onAgain={() => {
+          heard.current = new Set();
+          setDone(false);
+          setPage(0);
+        }}
+      />
+    );
+  }
   const young = book.stage === 'young';
   const last = page === book.pages.length - 1;
   const full = bookPagePic(book.id, page);
