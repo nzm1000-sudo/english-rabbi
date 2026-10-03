@@ -13,6 +13,7 @@ import { CEFR_LEVELS, thetaToLevel, type CefrLevel } from '@/domain/skills/cefr'
 import { masteryProbability, masteryStatus, type MasteryStatus } from '@/domain/learning/mastery';
 import type { SkillState } from '@/domain/learning/projection';
 import { useLiveQuery } from 'dexie-react-hooks';
+import { nextStep } from './nextStep';
 
 const LEVEL_NAME: Record<string, string> = { A1: 'צעדים ראשונים', A2: 'בסיס יציב', B1: 'עצמאות', B2: 'שליטה', C1: 'מתקדמים' };
 const STATUS_HE: Record<MasteryStatus, string> = { unseen: 'עוד לא התחלנו', learning: 'בתהליך', developing: 'כמעט שם', mastered: 'בשליטה' };
@@ -29,7 +30,10 @@ export function PathScreen() {
   const skills = useLiveQuery(async () => (sid ? (await store.loadLearnerState(sid)).skills : undefined), [sid, store]);
   if (!student || !profile || !skills) return <main className="screen" />;
 
-  const here = thetaToLevel(profile.overallTheta);
+  // No answers yet: the level is unknown (the default ability sits on the B1
+  // edge), so the path starts from the beginning instead of claiming B1.
+  const known = profile.domains.some((d) => d.attempts > 0);
+  const here: CefrLevel = known ? thetaToLevel(profile.overallTheta) : 'A1';
   const levels = CEFR_LEVELS.filter((l) => l !== 'PreA1' && l !== 'C2');
   const nodes = (level: CefrLevel) =>
     SKILLS.filter((s) => s.level === level && s.id.includes('.') && s.assessable !== false && content.items.some((i) => i.skill === s.id || i.skill.startsWith(`${s.id}.`)));
@@ -39,7 +43,7 @@ export function PathScreen() {
   };
   const all = levels.flatMap(nodes);
   const mastered = all.filter((s) => statusOf(s) === 'mastered').length;
-  const next = nodes(here).find((s) => statusOf(s) !== 'mastered')?.id;
+  const next = nextStep(levels, here, nodes, (s) => statusOf(s) === 'mastered')?.id;
 
   return (
     <main className="screen">
@@ -49,10 +53,16 @@ export function PathScreen() {
         <Stack gap={0} className="grow">
           <span className="eyebrow">הרמה שלי עכשיו</span>
           <span className="path-summary-level">
-            <span className="num" lang="en">
-              {here}
-            </span>{' '}
-            {LEVEL_NAME[here] ?? ''}
+            {known ? (
+              <>
+                <span className="num" lang="en">
+                  {here}
+                </span>{' '}
+                {LEVEL_NAME[here] ?? ''}
+              </>
+            ) : (
+              'עוד לא ידועה'
+            )}
           </span>
           <span className="small muted">
             <span className="num">{mastered}</span> מתוך <span className="num">{all.length}</span> מיומנויות בשליטה
@@ -72,7 +82,7 @@ export function PathScreen() {
             </span>
             <span className="grow t-strong">{LEVEL_NAME[level]}</span>
             {level === here ? (
-              <span className="badge badge-accent">הרמה שלי</span>
+              <span className="badge badge-accent">{known ? 'הרמה שלי' : 'מתחילים כאן'}</span>
             ) : complete ? (
               <span className="badge badge-good">
                 <CheckIcon size={14} /> הושלם
