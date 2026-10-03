@@ -15,9 +15,11 @@ import { lightningScore, useSession, type SessionResult } from './useSession';
 import { useGameHistory } from './useGameHistory';
 import { Confetti } from '@/ui/Confetti';
 import { sounds } from '@/services/sound';
-import { StarIcon, TrophyIcon } from '@/ui/icons';
+import { BoltIcon, CheckIcon, RepeatIcon, StarIcon, TrophyIcon } from '@/ui/icons';
+import { Art } from '@/ui/Art';
+import { Button } from '@/ui/Button';
 import { TopBar } from '@/ui/TopBar';
-import { Row, Stack } from '@/ui/layout';
+import { Stack } from '@/ui/layout';
 
 export function PracticeScreen() {
   const { sid, mode } = useParams();
@@ -79,11 +81,11 @@ function Session({
         }
         center={
           progress !== null ? (
-            <Stack gap={1} className="grow">
+            <Stack gap={1} className="grow session-head">
+              <He inline className="session-title">{title}</He>
               <div className="progress" role="progressbar" aria-label={title} aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}>
                 <span style={{ width: `${progress}%` }} />
               </div>
-              <He className="xs muted txt-center">{title}</He>
             </Stack>
           ) : (
             <He className="t-strong txt-center">{`${title} · ${s.results.filter((r) => r.correct).length} נכונות`}</He>
@@ -93,7 +95,7 @@ function Session({
           s.deadline && !done ? (
             <Timer deadline={s.deadline} onEnd={s.timeUp} />
           ) : (
-            <span className="small muted wt" dir="ltr">
+            <span className="session-count" dir="ltr">
               {counter}
             </span>
           )
@@ -104,28 +106,40 @@ function Session({
 
       {s.resumed && s.status === 'active' && !resumeHidden && (
         <div className="resume-note" role="status">
-          <span className="grow">ממשיכים מאיפה שעצרת: שאלה {s.index} מתוך {s.total}</span>
-          <button
-            className="link-btn small"
+          <span className="resume-icon" aria-hidden="true">
+            <RepeatIcon size={18} />
+          </span>
+          <span className="grow stack gap-0">
+            <strong>ממשיכים מאיפה שעצרת</strong>
+            <span className="small muted">
+              שאלה {s.index} מתוך {s.total}
+            </span>
+          </span>
+          <Button
+            variant="tertiary"
+            size="sm"
             onClick={() => {
               s.discardSaved();
               onAgain();
             }}
           >
-            להתחיל מחדש
-          </button>
-          <button className="icon-btn sm" aria-label="סגירה" onClick={() => setResumeHidden(true)}>
-            <CloseIcon size={16} />
+            מההתחלה
+          </Button>
+          <button className="icon-btn" aria-label="סגירה" onClick={() => setResumeHidden(true)}>
+            <CloseIcon size={18} />
           </button>
         </div>
       )}
 
       {s.status === 'empty' && (
-        <div className="center stack txt-center">
-          <p>{emptyText(mode)}</p>
-          <button className="btn btn-primary" onClick={() => nav(home)}>
+        <div className="empty-state">
+          <span className="empty-icon" aria-hidden="true">
+            <CheckIcon size={28} />
+          </span>
+          <p className="t-h3">{emptyText(mode)}</p>
+          <Button variant="primary" size="lg" onClick={() => nav(home)}>
             חזרה למסך הבית
-          </button>
+          </Button>
         </div>
       )}
 
@@ -263,26 +277,31 @@ function Summary({
     <Stack as="section" gap={4}>
       {celebrate && <Confetti />}
       <div className="result-hero">
-        <span className="tile-icon result-icon">
-          <TrophyIcon size={30} />
+        <span className="hero-glow" aria-hidden="true" />
+        <Art name="progress" size={88} tone="hero" fallback={<TrophyIcon />} />
+        <h2 className="result-title">{headline}</h2>
+        <span className="big num" dir="ltr">
+          {big ?? pct}
+          {mode === 'lightning' ? '' : <small>%</small>}
         </span>
-        <h2 className="title">{headline}</h2>
-        {big ? <span className="big">{big}{mode === 'lightning' ? '' : '%'}</span> : <span className="big">{pct}%</span>}
-        <span>{subtitle}</span>
+        <span className="result-sub">{subtitle}</span>
       </div>
       <div className="stat-grid">
         <div className="stat">
-          <b>{correct}/{results.length}</b>
+          <CheckIcon size={22} />
+          <b className="num" dir="ltr">
+            {correct}/{results.length}
+          </b>
           <span>נכונות</span>
         </div>
         <div className="stat">
-          <Row as="span" gap={1} className="t-h2">
-            <StarIcon size={18} />+{xp}
-          </Row>
+          <StarIcon size={22} />
+          <b className="num" dir="ltr">+{xp}</b>
           <span>נקודות</span>
         </div>
         <div className="stat">
-          <b>{clean}</b>
+          <BoltIcon size={22} />
+          <b className="num">{clean}</b>
           <span>בניסיון ראשון</span>
         </div>
       </div>
@@ -311,17 +330,17 @@ function Summary({
             {wrong.slice(0, 8).map((i) => (
               <Stack key={i.id} gap={1} align="start" className="list-item">
                 {i.type === 'order' ? (
-                  <En className="small">{i.answer}</En>
+                  <En as="div" className="wrong-en">{i.answer}</En>
                 ) : i.type === 'fix' ? (
-                  <En className="small">{i.corrected}</En>
+                  <En as="div" className="wrong-en">{i.corrected}</En>
                 ) : 'promptLanguage' in i && i.promptLanguage === 'he' ? (
-                  <He className="small">{i.prompt}</He>
+                  <He className="t-strong">{i.prompt}</He>
                 ) : (
-                  <En className="small">{'prompt' in i ? i.prompt : ''}</En>
+                  <En as="div" className="wrong-en">{'prompt' in i ? i.prompt : ''}</En>
                 )}
                 <He className="small muted">{i.explanation.he}</He>
                 {content.lessonsForSkill(i.skill)[0] && (
-                  <Link className="xs" to={`/s/${student.id}/learn/${content.lessonsForSkill(i.skill)[0]!.id}`}>
+                  <Link className="text-link" to={`/s/${student.id}/learn/${content.lessonsForSkill(i.skill)[0]!.id}`}>
                     לשיעור
                   </Link>
                 )}
@@ -330,29 +349,26 @@ function Summary({
           </div>
         </div>
       )}
-      <div className="stack">
+      <Stack gap={2}>
         {mode === 'pretest' && params.lesson && (
-          <button className="btn btn-primary btn-block" onClick={() => nav(`/s/${student.id}/learn/${params.lesson}`, { replace: true })}>
+          <Button variant="primary" size="lg" block onClick={() => nav(`/s/${student.id}/learn/${params.lesson}`, { replace: true })}>
             עכשיו לשיעור
-          </button>
+          </Button>
         )}
         {wrong.length > 0 && mode !== 'pretest' && mode !== 'retry' && (
-          <button
-            className="btn btn-primary btn-block"
-            onClick={() => nav(`/s/${student.id}/practice/retry?ids=${wrong.map((i) => i.id).join(',')}`)}
-          >
+          <Button variant="primary" size="lg" block onClick={() => nav(`/s/${student.id}/practice/retry?ids=${wrong.map((i) => i.id).join(',')}`)}>
             לתרגל שוב את הטעויות ({wrong.length})
-          </button>
+          </Button>
         )}
         {mode !== 'daily' && mode !== 'pretest' && (
-          <button className={`btn btn-block ${wrong.length ? '' : 'btn-primary'}`} onClick={onAgain}>
-            {mode === 'lightning' ? 'עוד סבב' : mode === 'exam' ? 'מבחן נוסף' : 'עוד סבב'}
-          </button>
+          <Button variant={wrong.length ? 'secondary' : 'primary'} size="lg" block onClick={onAgain}>
+            {mode === 'exam' ? 'מבחן נוסף' : 'עוד סבב'}
+          </Button>
         )}
-        <button className={`btn btn-block ${mode === 'daily' ? 'btn-primary' : ''}`} onClick={onHome}>
+        <Button variant={mode === 'daily' ? 'primary' : 'tertiary'} size="lg" block onClick={onHome}>
           חזרה למסך הבית
-        </button>
-      </div>
+        </Button>
+      </Stack>
     </Stack>
   );
 }

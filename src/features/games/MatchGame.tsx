@@ -5,6 +5,10 @@ import { useProfile, useStudent } from '@/app/hooks';
 import { useSpeechPrefs } from '@/app/speechPrefs';
 import { CloseIcon, TrophyIcon } from '@/ui/icons';
 import { Confetti } from '@/ui/Confetti';
+import { TopBar } from '@/ui/TopBar';
+import { Art } from '@/ui/Art';
+import { Button } from '@/ui/Button';
+import { Stack } from '@/ui/layout';
 import { sounds } from '@/services/sound';
 import { localDay, type ItemOutcome } from '@/domain/learning/events';
 import { seededShuffle } from '@/features/practice/shuffle';
@@ -126,17 +130,26 @@ function MatchRound({ again }: { again: () => void }) {
   const home = `/s/${student.id}`;
   return (
     <main className="screen tight">
-      <header className="row">
-        <button className="icon-btn" onClick={() => nav(home)} aria-label="יציאה">
-          <CloseIcon />
-        </button>
-        <div className="grow progress">
-          <span style={{ width: `${Math.round((done.size / words.length) * 100)}%` }} />
-        </div>
-        <span className="small muted">
-          {Math.min(round + 1, ROUNDS)}/{Math.min(ROUNDS, Math.ceil(words.length / PAIRS_PER_ROUND))}
-        </span>
-      </header>
+      <TopBar
+        start={
+          <button className="icon-btn" onClick={() => nav(home)} aria-label="יציאה">
+            <CloseIcon />
+          </button>
+        }
+        center={
+          <Stack gap={1} className="grow session-head">
+            <span className="session-title">התאמת זוגות</span>
+            <div className="progress" role="progressbar" aria-label="התאמת זוגות" aria-valuenow={Math.round((done.size / words.length) * 100)} aria-valuemin={0} aria-valuemax={100}>
+              <span style={{ width: `${Math.round((done.size / words.length) * 100)}%` }} />
+            </div>
+          </Stack>
+        }
+        end={
+          <span className="session-count" dir="ltr" aria-label="סבב">
+            {Math.min(round + 1, ROUNDS)}/{Math.min(ROUNDS, Math.ceil(words.length / PAIRS_PER_ROUND))}
+          </span>
+        }
+      />
 
       {!finished ? (
         <>
@@ -165,21 +178,20 @@ function MatchRound({ again }: { again: () => void }) {
         <section className="stack">
           {firstTry >= words.length * 0.6 && <Confetti />}
           <div className="result-hero">
-            <span className="tile-icon result-icon">
-              <TrophyIcon size={30} />
-            </span>
-            <h2 className="title">כל הזוגות הותאמו</h2>
-            <span className="big">
+            <span className="hero-glow" aria-hidden="true" />
+            <Art name="games" size={88} tone="hero" fallback={<TrophyIcon />} />
+            <h2 className="result-title">כל הזוגות הותאמו</h2>
+            <span className="big num" dir="ltr">
               {firstTry}/{words.length}
             </span>
-            <span>בניסיון הראשון</span>
+            <span className="result-sub">בניסיון הראשון</span>
           </div>
-          <button className="btn btn-primary btn-block" onClick={again}>
+          <Button variant="primary" size="lg" block onClick={again}>
             עוד משחק
-          </button>
-          <button className="btn btn-block" onClick={() => nav(home)}>
+          </Button>
+          <Button variant="tertiary" size="lg" block onClick={() => nav(home)}>
             חזרה למסך הבית
-          </button>
+          </Button>
         </section>
       )}
     </main>
