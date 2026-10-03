@@ -251,6 +251,7 @@ function DeviceSection() {
   const downloadAudio = async () => {
     const p = speech.getProviders().find((x) => x.id === 'prerendered') as PrerenderedProvider | undefined;
     if (!p) return;
+    if (!navigator.onLine) return setMsg('ההורדה לא הצליחה. צריך חיבור לאינטרנט.');
     setDl({ done: 0, total: 1 });
     const r = await p.downloadAll((done, total) => setDl({ done, total }));
     setDl(null);
