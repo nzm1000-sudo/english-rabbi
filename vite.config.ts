@@ -37,6 +37,9 @@ export default defineConfig({
         // Audio is not precached (thousands of files). It is cached on first
         // use, or all at once from the parent screen ("download audio").
         globPatterns: ['**/*.{js,css,html,svg,json,woff2}'],
+        // The reading-check model is large and optional. transformers.js keeps it
+        // in its own cache on first use; the service worker leaves it alone.
+        globIgnores: ['models/**', 'ort/**', '**/*.wasm'],
         // The app bundle includes all content (~2.5 MB, ~0.5 MB compressed); it must be precached for offline use.
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         navigateFallback: 'index.html',

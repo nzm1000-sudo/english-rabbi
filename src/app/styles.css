@@ -808,3 +808,10 @@ a.row-card:active, button.row-card:active { transform: translateY(3px); border-b
 .why-not summary { cursor: pointer; font-weight: 600; font-size: var(--t-sm); }
 .why-not-item { display: flex; gap: 6px; font-size: var(--t-sm); }
 .why-not-item[data-chosen='true'] { font-weight: 600; }
+.read-check { display: flex; flex-direction: column; gap: var(--s-2); align-items: flex-start; }
+.read-result { margin: 0; font-family: var(--font-en); font-size: var(--t-md); line-height: 1.9; }
+.rc-word { font: inherit; border: 0; background: none; padding: 1px 3px; border-radius: 4px; cursor: pointer; color: inherit; }
+.rc-word[data-status='ok'] { background: var(--good-weak); color: var(--good-ink); }
+.rc-word[data-status='close'] { background: var(--warn-weak); color: var(--warn-ink); }
+.rc-word[data-status='wrong'] { background: var(--bad-weak); color: var(--bad-ink); }
+.rc-word[data-status='missed'] { color: var(--muted); text-decoration: line-through; }

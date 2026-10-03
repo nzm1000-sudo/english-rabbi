@@ -16,6 +16,7 @@ import { TopBar } from '@/ui/TopBar';
 import { BookmarkIcon, CheckIcon, CloseIcon } from '@/ui/icons';
 import { Confetti } from '@/ui/Confetti';
 import { AudioPlayer } from '@/ui/AudioPlayer';
+import { ReadCheck } from '@/ui/ReadCheck';
 import { resume } from '@/app/resume';
 
 /**
@@ -47,6 +48,7 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
   const [gloss, setGloss] = useState<Gloss | null>(null);
   const [translated, setTranslated] = useState<Set<number>>(new Set());
   const [playingLine, setPlayingLine] = useState<number | null>(null);
+  const [checking, setChecking] = useState<number | null>(null);
   const [sessionId, setSessionId] = useState('');
   const endRef = useRef<HTMLDivElement>(null);
   const loggedRef = useRef(false);
@@ -149,6 +151,13 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
               </p>
               <SpeakButton text={line.en} {...(line.speaker ? { speaker: line.speaker } : {})} />
             </div>
+            {checking === i ? (
+              <ReadCheck text={line.en} />
+            ) : (
+              <button className="link-btn xs" onClick={() => setChecking(i)}>
+                להקריא ולבדוק
+              </button>
+            )}
             {translated.has(i) ? (
               <He className="story-he small">{line.he}</He>
             ) : (
