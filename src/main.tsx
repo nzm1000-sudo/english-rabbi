@@ -13,7 +13,14 @@ async function boot() {
   installSharedDeviceGuard();
 
   const services = createAppServices();
-  await services.settings.load();
+  try {
+    await services.settings.load();
+  } catch (e) {
+    // No IndexedDB (private browsing, storage blocked or full): say so instead of a blank page.
+    console.error(e);
+    createRoot(document.getElementById('root')!).render(<StorageError />);
+    return;
+  }
   // Updates: a home-screen app is rarely closed, so look for a new version
   // every time it comes back to the front. A new version reloads the page.
   registerSW({
@@ -39,6 +46,18 @@ async function boot() {
         <App />
       </ServicesProvider>
     </StrictMode>,
+  );
+}
+
+function StorageError() {
+  return (
+    <main className="screen empty-state">
+      <p className="t-h3">אי אפשר לשמור נתונים במכשיר הזה</p>
+      <p className="small muted">אם האפליקציה פתוחה בגלישה פרטית, צריך לפתוח אותה בדפדפן הרגיל. אחר כך לנסות שוב.</p>
+      <button type="button" className="btn btn-primary btn-md" onClick={() => window.location.reload()}>
+        לנסות שוב
+      </button>
+    </main>
   );
 }
 
