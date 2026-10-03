@@ -136,7 +136,7 @@ function Round({ student, stage, game, topic, onAgain }: { student: Student; sta
     [store, student.id, game],
   );
 
-  if (score) return <Reward student={student} score={score} onAgain={onAgain} />;
+  if (score) return <Reward student={student} score={score} onAgain={onAgain} source={`game:${game}`} />;
   if (!known) return <main className="screen kids-screen" data-mood="kids" />;
 
   const back = `/s/${student.id}`;

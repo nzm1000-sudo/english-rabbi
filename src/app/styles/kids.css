@@ -370,7 +370,8 @@
 .k-float { position: absolute; display: block; }
 .k-float img { position: relative; z-index: 1; display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 22%; filter: var(--k-pic-shadow); }
 .k-float::after { content: ''; position: absolute; left: 50%; bottom: -2%; width: 62%; height: 10%; transform: translateX(-50%); background: var(--k-contact); }
-.k-float.char img { transform: scale(1.3); transform-origin: 50% 92%; }
+/* Characters are tall and narrow: a little larger beside an object, never past the stage top. */
+.k-scene.n2 .k-float.char img { transform: scale(1.1); transform-origin: 50% 92%; }
 .k-scene.n1 .k-float { width: min(82%, 100% * 3 / 4); left: 50%; top: 50%; transform: translate(-50%, -50%); }
 .k-scene.n2 .k-float { width: 60%; }
 .k-scene.n2 .p0 { right: 0; bottom: 10%; z-index: 1; }

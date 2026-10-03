@@ -195,6 +195,12 @@ export class LearningStore {
     return [...new Set(evs.sort((a, b) => a.at - b.at).map((e) => e.payload.stickerId))];
   }
 
+  /** Whether a sticker was already earned from this source (e.g. one book). */
+  async stickerEarnedFrom(studentId: string, source: string): Promise<boolean> {
+    const evs = (await this.db.events.where('[studentId+type]').equals([studentId, 'sticker.earned']).toArray()) as LearningEvent<'sticker.earned'>[];
+    return evs.some((e) => e.payload.source === source);
+  }
+
   /** Minutes spent today in sessions whose mode starts with a prefix (e.g. "kids"). */
   async minutesToday(studentId: string, modePrefix: string, now = this.clock()): Promise<number> {
     const d = new Date(now);
