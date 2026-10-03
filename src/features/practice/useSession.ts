@@ -63,6 +63,8 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
   const startedRef = useRef(0);
   const endedRef = useRef(false);
   const busyRef = useRef(false);
+  /** The presented question already answered; a stale second tap must not record it again. */
+  const answeredRef = useRef<Candidate | null>(null);
   const deadlineRef = useRef<number | null>(null);
 
   const ctx = useCallback(
@@ -232,8 +234,12 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
 
   const complete = useCallback(
     async (outcome: ItemOutcome) => {
-      if (!current || busyRef.current) return;
+      // A fast second tap can reach this with the previous question still in
+      // its closure (before the next one renders): ignore it, or the same
+      // answer is saved twice and the next question is skipped.
+      if (!current || busyRef.current || answeredRef.current === current) return;
       busyRef.current = true;
+      answeredRef.current = current;
       try {
         const r = await store.completeItem({ studentId: student.id, sessionId, item: current.item, outcome, predicted: current.predicted });
         const st = stateRef.current!;
@@ -245,6 +251,10 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
         resultsRef.current = [...resultsRef.current, res];
         setResults(resultsRef.current);
         next(sessionId);
+      } catch (e) {
+        // Not saved: the same question may be answered again.
+        answeredRef.current = null;
+        throw e;
       } finally {
         busyRef.current = false;
       }
