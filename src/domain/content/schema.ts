@@ -41,7 +41,7 @@ const base = {
   explanation: Bilingual,
   /** Ordered hint ladder. Shown one by one before the explanation. */
   hints: z.array(Hint).max(3).default([]),
-  /** Memory anchor card shown with the explanation (content/anchors). Defaults to the skill's anchor. */
+  /** Memory anchor card shown with the explanation (content/anchors). Defaults to the skill's anchor; "none" for no card. */
   anchor: z.string().optional(),
   /** Misconceptions this item can detect or repair. */
   targetsMisconceptions: z.array(z.string()).default([]),

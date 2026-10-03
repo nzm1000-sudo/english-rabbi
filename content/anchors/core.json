@@ -765,5 +765,32 @@
     ],
     "hebrewTrap": "בעברית 'עצות', 'רהיטים' ו'שיעורי בית' הם ברבים, ולכן מוסיפים s גם באנגלית: advices, furnitures, homeworks.",
     "source": "original"
+  },
+  {
+    "id": "prepositions-place",
+    "emoji": "📦",
+    "title": "in, on, at: קופסה, שולחן, נקודה",
+    "skills": [
+      "grammar.prepositions"
+    ],
+    "image": "דמיינו קופסת חלות על השולחן בפינת האוכל. החלה in הקופסה (בתוך). הקופסה on השולחן (על משטח). אבא מחכה at הדלת (בנקודה אחת).",
+    "rule": "in = בתוך משהו סגור או שטח גדול (in the box, in Jerusalem). on = על משטח (on the table, on the wall). at = נקודה או כתובת מוכרת (at the door, at the bus stop, at school).",
+    "pattern": "in = בתוך · on = על · at = בנקודה",
+    "examples": [
+      {
+        "en": "The challah is in the box.",
+        "he": "החלה בתוך הקופסה."
+      },
+      {
+        "en": "The candles are on the table.",
+        "he": "הנרות על השולחן."
+      },
+      {
+        "en": "Grandpa is waiting at the bus stop.",
+        "he": "סבא מחכה בתחנת האוטובוס."
+      }
+    ],
+    "hebrewTrap": "בעברית אומרים \"ב\" כמעט לכל מקום: בשולחן, בתחנה, בבית. באנגלית צריך לבחור: בתוך (in), על (on) או בנקודה (at).",
+    "source": "original"
   }
 ]

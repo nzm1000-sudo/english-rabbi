@@ -162,7 +162,7 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
         continue;
       }
       const item = r.data;
-      const problem = item.anchor && raw.anchors && !anchors.has(item.anchor) ? { severity: 'error' as const, reason: `unknown anchor "${item.anchor}"` } : checkReferences(item, { sources, misconceptions, passages, seen });
+      const problem = item.anchor && item.anchor !== 'none' && raw.anchors && !anchors.has(item.anchor) ? { severity: 'error' as const, reason: `unknown anchor "${item.anchor}"` } : checkReferences(item, { sources, misconceptions, passages, seen });
       if (problem) {
         issues.push({ packId: pack.packId, id: item.id, severity: problem.severity, reason: problem.reason });
         if (problem.severity === 'quarantined') quarantined.push(item);
@@ -188,7 +188,8 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
     stories,
     anchors,
     anchorFor: (item) => {
-      if (item.anchor) return anchors.get(item.anchor);
+      // "none": the author decided no anchor fits; do not fall back to the skill's.
+      if (item.anchor) return item.anchor === 'none' ? undefined : anchors.get(item.anchor);
       for (const id of lineage(item.skill)) {
         const a = anchorBySkill.get(id);
         if (a) return a;
