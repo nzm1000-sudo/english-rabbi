@@ -1,7 +1,7 @@
 import { useState, type FormEvent, type ReactNode } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useServices } from '@/app/services';
-import { useStudent } from '@/app/hooks';
+import { useStudent, useStudents } from '@/app/hooks';
 import { TopBar } from '@/ui/TopBar';
 import { ThemePicker } from '@/ui/ThemePicker';
 import { Button } from '@/ui/Button';
@@ -12,6 +12,7 @@ import { stageOf, type AgeStage } from '@/domain/student/student';
 import {
   INTERESTS,
   INTEREST_LABELS,
+  validateStudentAge,
   validateStudentName,
   type Accent,
   type Interest,
@@ -39,6 +40,7 @@ export function StudentForm() {
 function StudentFormInner({ student }: { student: Student | null }) {
   const { store } = useServices();
   const nav = useNavigate();
+  const others = useStudents()?.filter((s) => s.id !== student?.id);
   const [name, setName] = useState(student?.name ?? '');
   const [track, setTrack] = useState<LearningGoal['track']>(student?.goal.track ?? 'general');
   const [interests, setInterests] = useState<Interest[]>(student?.interests ?? []);
@@ -52,28 +54,41 @@ function StudentFormInner({ student }: { student: Student | null }) {
   const birthYear = age && ageNum >= 2 && ageNum < 120 ? new Date().getFullYear() - Math.round(ageNum) : undefined;
   const effective = stage === 'auto' ? stageOf({ ...(birthYear ? { birthYear } : {}) }) : stage;
   const [error, setError] = useState<string | null>(null);
+  const [ageError, setAgeError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
 
   const toggle = (i: Interest) => setInterests((xs) => (xs.includes(i) ? xs.filter((x) => x !== i) : [...xs, i]));
 
   const submit = async (e: FormEvent) => {
     e.preventDefault();
-    const err = validateStudentName(name);
-    if (err) return setError(err);
+    const err =
+      validateStudentName(name) ??
+      (others?.some((o) => o.name.trim().toLowerCase() === name.trim().toLowerCase()) ? 'כבר יש תלמיד בשם הזה' : null);
+    const ageErr = validateStudentAge(age);
+    setError(err);
+    setAgeError(ageErr);
+    if (err || ageErr) return;
     setSaving(true);
     const preferences = { ...(student?.preferences ?? {}), accent, speechRate: rate, dailyGoalMinutes: goal };
     const extra = {
-      ...(birthYear ? { birthYear } : {}),
+      // An emptied age field removes the age (stage then falls back to "regular").
+      birthYear,
       stage: stage === 'auto' ? undefined : stage,
       kidsDailyLimit: kidsLimit || undefined,
     };
-    if (student) {
-      await store.updateStudent(student.id, { name: name.trim(), goal: { ...student.goal, track }, interests, preferences, ...extra });
-      nav(`/s/${student.id}`);
-    } else {
-      const s = await store.createStudent({ name, goal: { track }, interests, preferences, ...(birthYear ? { birthYear } : {}) });
-      if (extra.stage || extra.kidsDailyLimit) await store.updateStudent(s.id, extra);
-      nav(`/s/${s.id}`);
+    try {
+      if (student) {
+        await store.updateStudent(student.id, { name: name.trim(), goal: { ...student.goal, track }, interests, preferences, ...extra });
+        nav(`/s/${student.id}`);
+      } else {
+        const s = await store.createStudent({ name, goal: { track }, interests, preferences, ...(birthYear ? { birthYear } : {}) });
+        if (extra.stage || extra.kidsDailyLimit) await store.updateStudent(s.id, extra);
+        nav(`/s/${s.id}`);
+      }
+    } catch {
+      // Storage full or blocked: say so instead of spinning forever.
+      setSaving(false);
+      setError('השמירה נכשלה. כדאי לנסות שוב.');
     }
   };
 
@@ -102,6 +117,7 @@ function StudentFormInner({ student }: { student: Student | null }) {
                   setError(null);
                 }}
                 autoComplete="off"
+                maxLength={60}
                 enterKeyHint="next"
                 aria-invalid={!!error}
                 aria-describedby={error ? 'name-err' : undefined}
@@ -109,12 +125,29 @@ function StudentFormInner({ student }: { student: Student | null }) {
             </div>
             <div className="field">
               <label htmlFor="age">גיל</label>
-              <input id="age" className="input" inputMode="numeric" value={age} onChange={(e) => setAge(e.target.value.replace(/\D/g, '').slice(0, 3))} placeholder="למשל 15" />
+              <input
+                id="age"
+                className="input"
+                inputMode="numeric"
+                value={age}
+                onChange={(e) => {
+                  setAge(e.target.value.replace(/\D/g, '').slice(0, 3));
+                  setAgeError(null);
+                }}
+                placeholder="למשל 15"
+                aria-invalid={!!ageError}
+                aria-describedby={ageError ? 'age-err' : undefined}
+              />
             </div>
           </div>
           {error && (
-            <span className="small error-text" id="name-err">
+            <span className="small error-text" id="name-err" role="alert">
               {error}
+            </span>
+          )}
+          {ageError && (
+            <span className="small error-text" id="age-err" role="alert">
+              {ageError}
             </span>
           )}
         </Group>

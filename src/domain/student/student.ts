@@ -94,6 +94,14 @@ export function validateStudentName(name: string): string | null {
   return null;
 }
 
+/** Age as typed in the form (digits only). Empty means "not given". */
+export function validateStudentAge(age: string): string | null {
+  if (!age.trim()) return null;
+  const n = Number(age);
+  if (!Number.isFinite(n) || n < 2 || n >= 120) return 'הגיל צריך להיות בין 2 ל־119';
+  return null;
+}
+
 export function createStudent(input: NewStudentInput, id: string, now: number): Student {
   const err = validateStudentName(input.name);
   if (err) throw new Error(err);
