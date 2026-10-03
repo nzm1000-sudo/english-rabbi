@@ -75,6 +75,11 @@ function collectTexts() {
       for (const q of st.questions ?? []) addQuestion(q.item);
     }
   }
+  // Example sentences on the memory anchor cards.
+  const anchorDir = path.join(root, 'content/anchors');
+  for (const f of fs.readdirSync(anchorDir).filter((f) => f.endsWith('.json'))) {
+    for (const a of JSON.parse(fs.readFileSync(path.join(anchorDir, f), 'utf8'))) for (const e of a.examples ?? []) add(e.en, 'A', ['normal']);
+  }
   return [...texts.values()];
 }
 
