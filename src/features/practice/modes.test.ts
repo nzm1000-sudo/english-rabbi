@@ -1,4 +1,4 @@
-import { buildDaily, buildExam, MODES, type PoolContext } from './modes';
+import { buildDaily, buildExam, MODES, pretestItems, type PoolContext } from './modes';
 import { lightningScore } from './useSession';
 import { contentRegistry } from '@content/index';
 import { createStudent } from '@/domain/student/student';
@@ -64,4 +64,12 @@ describe('game modes', () => {
     expect(lightningScore([{ correct: true }, { correct: true }, { correct: true }])).toBe(10 + 12 + 14);
     expect(lightningScore([{ correct: true }, { correct: false }, { correct: true }])).toBe(20);
   });
+});
+
+/** Regression: reading lessons offered "לנחש לפני ההסבר", but the pretest leaves passage questions out, so it was empty. */
+it('the lesson pretest card counts what the pretest can ask', () => {
+  expect(pretestItems(contentRegistry, 'reading.main-idea')).toHaveLength(0);
+  expect(MODES.pretest.pool(ctx({ params: { skill: 'reading.main-idea' } }))).toHaveLength(0);
+  const grammar = [...contentRegistry.lessons.values()].find((l) => l.skill.startsWith('grammar.'))!;
+  expect(MODES.pretest.pool(ctx({ params: { skill: grammar.skill } }))).toEqual(pretestItems(contentRegistry, grammar.skill));
 });

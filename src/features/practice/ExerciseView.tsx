@@ -8,7 +8,7 @@ import type { Bilingual } from '@/domain/content/schema';
 import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
-import { TapText } from '@/ui/Gloss';
+import { GlossScope, TapText } from '@/ui/Gloss';
 import { questionSpeech, splitSentences } from '@/services/speech/textPrep';
 import { AudioPlayer } from '@/ui/AudioPlayer';
 import { seededShuffle } from './shuffle';
@@ -32,14 +32,18 @@ type Props = {
   policy?: FlowPolicy;
   /** full: explanation + Continue. brief: flash and auto-advance. none: advance at once. */
   feedback?: 'full' | 'brief' | 'none';
+  /** Called once, the moment the item is answered (before any feedback), to save the answer. */
+  onAnswer?: (outcome: ItemOutcome) => unknown;
   onDone: (outcome: ItemOutcome) => void;
+  /** False in timed rounds: a tapped word shows its meaning but is not kept in "my words". */
+  saveWords?: boolean;
 };
 
 /**
  * One exercise. Implements "teach, don't solve": wrong answers unlock a hint,
  * a second hint, an explanation, and only then the answer.
  */
-export function ExerciseView({ item, passage, support, seed, policy = 'teach', feedback = 'full', onDone }: Props) {
+export function ExerciseView({ item, passage, support, seed, policy = 'teach', feedback = 'full', onAnswer, onDone, saveWords = true }: Props) {
   const [flow, dispatch] = useReducer(
     (s: FlowState, a: Parameters<typeof flowReducer>[1]) => flowReducer(s, a, item.hints.length, policy),
     Date.now(),
@@ -61,6 +65,18 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
     if (flow.phase === 'solved') sounds.correct();
     else if (flow.phase === 'revealed') sounds.wrong();
   }, [flow.phase]);
+
+  // The answer is saved when given, not on "המשך": leaving on the feedback
+  // must not lose it (and a test answer must not be tried again).
+  const answerRef = useRef(onAnswer);
+  answerRef.current = onAnswer;
+  useEffect(() => {
+    if (!finished) return;
+    // A failed save is retried by "המשך", which reports the error.
+    void Promise.resolve(answerRef.current?.(toOutcome(flow))).catch(() => {});
+    // Once per answer: later flow changes (replays) do not save again.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [finished]);
 
   // Quick modes move on by themselves.
   useEffect(() => {
@@ -104,120 +120,122 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   };
 
   return (
-    <div className="exercise">
-      <div className={`ex-instruction tone-${domainOf(item.skill)}`}>
-        <span className="dot" />
-        <BiText text={instruction} />
-      </div>
-
-      {passage && <PassagePanel passage={passage} locked={glossLocked || (item.skill === 'reading.vocabulary-in-context' && !finished)} />}
-
-      {listen && (
-        <div className="listen-stage">
-          <SpeakButton text={audioText} size="hero" label="השמעה" onPlayed={() => dispatch({ type: 'replay' })} />
-          <SpeakButton text={audioText} slow label="השמעה איטית מאוד" onPlayed={() => dispatch({ type: 'replay' })} />
+    <GlossScope save={saveWords}>
+      <div className="exercise">
+        <div className={`ex-instruction tone-${domainOf(item.skill)}`}>
+          <span className="dot" />
+          <BiText text={instruction} />
         </div>
-      )}
 
-      {(item.type === 'order' ? item.promptLanguage === 'he' : item.type !== 'fix') && (
-        <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} glossLocked={glossLocked} />
-      )}
+        {passage && <PassagePanel passage={passage} locked={glossLocked || (item.skill === 'reading.vocabulary-in-context' && !finished)} />}
 
-      {item.type === 'order' ? (
-        <OrderInput item={item} seed={seed} flow={flow} onSubmit={submit} />
-      ) : item.type === 'fix' ? (
-        <FixInput item={item} seed={seed} flow={flow} onSubmit={submit} />
-      ) : item.type === 'choice' ? (
-        <ChoiceInput
-          item={item}
-          seed={seed}
-          flow={flow}
-          instant={feedback === 'brief'}
-          onChange={() => dispatch({ type: 'change-selection' })}
-          onSubmit={submit}
-        />
-      ) : (
-        <TypedInput item={item} flow={flow} onSubmit={submit} />
-      )}
+        {listen && (
+          <div className="listen-stage">
+            <SpeakButton text={audioText} size="hero" label="השמעה" onPlayed={() => dispatch({ type: 'replay' })} />
+            <SpeakButton text={audioText} slow label="השמעה איטית מאוד" onPlayed={() => dispatch({ type: 'replay' })} />
+          </div>
+        )}
 
-      {policy === 'teach' && <Help item={item} flow={flow} last={last} support={support} />}
+        {(item.type === 'order' ? item.promptLanguage === 'he' : item.type !== 'fix') && (
+          <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} glossLocked={glossLocked} />
+        )}
 
-      {lesson && feedback === 'full' && flow.explanationShown && !finished && (
-        <LessonLink title={lesson.title.he} onOpen={() => setLessonOpen(true)} />
-      )}
-
-      {!finished && skipInline && (
-        <Button variant="tertiary" className="self-center" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
-          לדלג על השאלה
-        </Button>
-      )}
-
-      <Sheet open={lessonOpen} onClose={() => setLessonOpen(false)} label={lesson?.title.he ?? 'שיעור'}>
-        {lesson && <LessonView lesson={lesson} />}
-      </Sheet>
-
-      {finished && feedback === 'full' ? (
-        <>
-          <FeedbackStrip
+        {item.type === 'order' ? (
+          <OrderInput item={item} seed={seed} flow={flow} onSubmit={submit} />
+        ) : item.type === 'fix' ? (
+          <FixInput item={item} seed={seed} flow={flow} onSubmit={submit} />
+        ) : item.type === 'choice' ? (
+          <ChoiceInput
             item={item}
+            seed={seed}
             flow={flow}
-            support={support}
-            onWhy={() => setWhyOpen(true)}
-            onContinue={onContinue}
+            instant={feedback === 'brief'}
+            onChange={() => dispatch({ type: 'change-selection' })}
+            onSubmit={submit}
           />
-          <Sheet
-            open={whyOpen}
-            onClose={() => setWhyOpen(false)}
-            label="הסבר"
-            title="הסבר"
-            footer={
-              <Button variant="primary" size="lg" block onClick={onContinue}>
-                המשך
-              </Button>
-            }
-          >
-            <Explanation
+        ) : (
+          <TypedInput item={item} flow={flow} onSubmit={submit} />
+        )}
+
+        {policy === 'teach' && <Help item={item} flow={flow} last={last} support={support} />}
+
+        {lesson && feedback === 'full' && flow.explanationShown && !finished && (
+          <LessonLink title={lesson.title.he} onOpen={() => setLessonOpen(true)} />
+        )}
+
+        {!finished && skipInline && (
+          <Button variant="tertiary" className="self-center" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
+            לדלג על השאלה
+          </Button>
+        )}
+
+        <Sheet open={lessonOpen} onClose={() => setLessonOpen(false)} label={lesson?.title.he ?? 'שיעור'}>
+          {lesson && <LessonView lesson={lesson} />}
+        </Sheet>
+
+        {finished && feedback === 'full' ? (
+          <>
+            <FeedbackStrip
               item={item}
               flow={flow}
               support={support}
-              listen={listen}
-              audioText={audioText}
-              onLesson={
-                lesson
-                  ? () => {
-                      setWhyOpen(false);
-                      setLessonOpen(true);
-                    }
-                  : undefined
-              }
-              lessonTitle={lesson?.title.he}
+              onWhy={() => setWhyOpen(true)}
+              onContinue={onContinue}
             />
-          </Sheet>
-        </>
-      ) : (
-        !finished && (
-          <div className="actions">
-            <div className={`btn-row${hasHint && hasCheck ? ' lead' : ''}`}>
-              {hasHint && (
-                <Button size="lg" onClick={() => dispatch({ type: 'hint' })} disabled={flow.explanationShown}>
-                  רמז
+            <Sheet
+              open={whyOpen}
+              onClose={() => setWhyOpen(false)}
+              label="הסבר"
+              title="הסבר"
+              footer={
+                <Button variant="primary" size="lg" block onClick={onContinue}>
+                  המשך
                 </Button>
-              )}
-              {hasCheck && (
-                <Button variant="primary" size="lg" form={`answer-${item.id}`} type="submit">
-                  {feedback === 'none' ? 'הבא' : 'בדיקה'}
-                </Button>
-              )}
-              {!skipInline && (
-                <Button size="lg" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
-                  דילוג
-                </Button>
-              )}
+              }
+            >
+              <Explanation
+                item={item}
+                flow={flow}
+                support={support}
+                listen={listen}
+                audioText={audioText}
+                onLesson={
+                  lesson
+                    ? () => {
+                        setWhyOpen(false);
+                        setLessonOpen(true);
+                      }
+                    : undefined
+                }
+                lessonTitle={lesson?.title.he}
+              />
+            </Sheet>
+          </>
+        ) : (
+          !finished && (
+            <div className="actions">
+              <div className={`btn-row${hasHint && hasCheck ? ' lead' : ''}`}>
+                {hasHint && (
+                  <Button size="lg" onClick={() => dispatch({ type: 'hint' })} disabled={flow.explanationShown}>
+                    רמז
+                  </Button>
+                )}
+                {hasCheck && (
+                  <Button variant="primary" size="lg" form={`answer-${item.id}`} type="submit">
+                    {feedback === 'none' ? 'הבא' : 'בדיקה'}
+                  </Button>
+                )}
+                {!skipInline && (
+                  <Button size="lg" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
+                    דילוג
+                  </Button>
+                )}
+              </div>
             </div>
-          </div>
-        )
-      )}
-    </div>
+          )
+        )}
+      </div>
+    </GlossScope>
   );
 }
 
@@ -298,12 +316,14 @@ function OrderInput({ item, seed, flow, onSubmit }: { item: OrderItem; seed: str
     return shuffled;
   }, [item, seed]);
   const [placed, setPlaced] = useState<number[]>([]);
+  const [empty, setEmpty] = useState(false);
   const finished = isFinished(flow);
   const endMark = /[?!]$/.test(item.answer.trim()) ? item.answer.trim().slice(-1) : '.';
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    if (finished || !placed.length) return;
+    if (finished) return;
+    if (!placed.length) return setEmpty(true);
     const words = placed.map((id) => tiles.find((t) => t.id === id)!.text);
     onSubmit(words.join(' '), checkOrder(item, words));
   };
@@ -330,12 +350,16 @@ function OrderInput({ item, seed, flow, onSubmit }: { item: OrderItem; seed: str
             className="word-tile"
             disabled={finished || placed.includes(t.id)}
             data-used={placed.includes(t.id)}
-            onClick={() => setPlaced((p) => [...p, t.id])}
+            onClick={() => {
+              setPlaced((p) => [...p, t.id]);
+              setEmpty(false);
+            }}
           >
             {t.text}
           </button>
         ))}
       </div>
+      {empty && <EmptyAnswer>קודם להקיש על המילים ולבנות מהן משפט.</EmptyAnswer>}
     </form>
   );
 }
@@ -349,11 +373,13 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
   const fixes = useMemo(() => seededShuffle([item.correction, ...item.distractors], `${seed}:${item.id}`), [item, seed]);
   const [picked, setPicked] = useState<number | null>(null);
   const [choice, setChoice] = useState<string | null>(null);
+  const [empty, setEmpty] = useState(false);
   const finished = isFinished(flow);
   const missed = new Set(flow.attempts.filter((a) => !a.correct).map((a) => a.answer));
 
   const tap = (i: number) => {
     if (finished) return;
+    setEmpty(false);
     if (i !== item.wrongIndex) {
       onSubmit(`${i}:`, checkFix(item, i, null));
       return;
@@ -363,7 +389,8 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
   };
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    if (finished || picked === null || choice === null) return;
+    if (finished) return;
+    if (picked === null || choice === null) return setEmpty(true);
     onSubmit(`${picked}:${choice}`, checkFix(item, picked, choice));
     setChoice(null);
   };
@@ -397,7 +424,10 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
                 selected={choice === f}
                 state={missed.has(`${picked}:${f}`) ? 'wrong' : undefined}
                 disabled={missed.has(`${picked}:${f}`)}
-                onPick={() => setChoice(f)}
+                onPick={() => {
+                  setChoice(f);
+                  setEmpty(false);
+                }}
               >
                 {f ? <En>{f}</En> : <He>למחוק את המילה</He>}
               </OptionRow>
@@ -405,7 +435,17 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
           </div>
         </div>
       )}
+      {empty && <EmptyAnswer>{picked === null ? 'קודם להקיש על המילה השגויה במשפט.' : 'קודם לבחור במה להחליף את המילה.'}</EmptyAnswer>}
     </form>
+  );
+}
+
+/** A gentle note when "בדיקה" or "הבא" is pressed before answering. Not an attempt. */
+function EmptyAnswer({ children }: { children: string }) {
+  return (
+    <div className="feedback feedback-hint" role="status">
+      {children}
+    </div>
   );
 }
 
@@ -445,6 +485,7 @@ function ChoiceInput({
 }) {
   const options = useMemo(() => seededShuffle(item.options, `${seed}:${item.id}`), [item, seed]);
   const [selected, setSelected] = useState<string | null>(null);
+  const [empty, setEmpty] = useState(false);
   const finished = isFinished(flow);
   const wrong = new Set(flow.attempts.filter((a) => !a.correct).map((a) => a.answer));
   const isEnglish = item.promptLanguage === 'en' && !(item.word && item.prompt === item.word.lemma);
@@ -452,7 +493,8 @@ function ChoiceInput({
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    if (!selected || finished) return;
+    if (finished) return;
+    if (!selected) return setEmpty(true);
     onSubmit(selected, checkChoice(item, selected));
     setSelected(null);
   };
@@ -482,12 +524,14 @@ function ChoiceInput({
               }
               if (selected && selected !== o.id) onChange();
               setSelected(o.id);
+              setEmpty(false);
             }}
           >
             {text}
           </OptionRow>
         );
       })}
+      {empty && <EmptyAnswer>קודם לבחור תשובה.</EmptyAnswer>}
     </form>
   );
 }
@@ -551,10 +595,12 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
   const finished = isFinished(flow);
 
   const [hebrew, setHebrew] = useState(false);
+  const [empty, setEmpty] = useState(false);
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    if (finished || !value.trim()) return;
+    if (finished) return;
+    if (!value.trim()) return setEmpty(true);
     // The shared phone's keyboard is often left in Hebrew: that is not an attempt.
     if (isHebrewOnly(value)) {
       setHebrew(true);
@@ -580,6 +626,7 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
         onChange={(e) => {
           setValue(e.target.value);
           setHebrew(false);
+          setEmpty(false);
         }}
         disabled={finished}
         autoComplete="off"
@@ -595,6 +642,7 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
           המקלדת בעברית. צריך לעבור לאנגלית ולכתוב שוב.
         </div>
       )}
+      {empty && <EmptyAnswer>קודם לכתוב תשובה באנגלית.</EmptyAnswer>}
     </form>
   );
 }

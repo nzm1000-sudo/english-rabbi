@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useServices } from '@/app/services';
@@ -17,9 +17,13 @@ export interface GlossEntry {
   senses: Sense[];
   sentence?: string;
   storyId?: string;
+  /** False: show the meaning but do not keep the word (timed rounds). */
+  save?: boolean;
+  /** The GlossScope it was opened in; closing that scope closes the popup. */
+  scope?: symbol;
 }
 
-const Ctx = createContext<{ open: (g: GlossEntry) => void } | null>(null);
+const Ctx = createContext<{ open: (g: GlossEntry) => void; closeScope: (scope: symbol) => void } | null>(null);
 
 /**
  * Shows the meaning of a tapped English word at the bottom of the screen,
@@ -43,15 +47,17 @@ export function GlossProvider({ children }: { children: ReactNode }) {
       if (!first) return;
       void speech.speak(first.lemma, { ...prefs, key: `gloss-${first.lemma}` });
       // Very common words ("the", "is") are shown but not saved.
-      if (sid && !STORY_STOPWORDS.has(first.lemma.toLowerCase())) void store.saveWord(sid, { lemma: first.lemma, he: g.senses.map((s) => s.he).join(', '), ...(g.sentence ? { example: g.sentence } : {}), ...(g.storyId ? { storyId: g.storyId } : {}) });
+      if (sid && g.save !== false && !STORY_STOPWORDS.has(first.lemma.toLowerCase())) void store.saveWord(sid, { lemma: first.lemma, he: g.senses.map((s) => s.he).join(', '), ...(g.sentence ? { example: g.sentence } : {}), ...(g.storyId ? { storyId: g.storyId } : {}) });
     },
     [pathname, prefs, sid, speech, store],
   );
 
+  const closeScope = useCallback((scope: symbol) => setGloss((o) => (o?.entry.scope === scope ? null : o)), []);
+
   const lemma = gloss?.senses[0]?.lemma;
 
   return (
-    <Ctx.Provider value={useMemo(() => ({ open }), [open])}>
+    <Ctx.Provider value={useMemo(() => ({ open, closeScope }), [open, closeScope])}>
       {children}
       {gloss && lemma && (
         <div className="gloss-pop" role="dialog" aria-label="פירוש המילה">
@@ -70,7 +76,7 @@ export function GlossProvider({ children }: { children: ReactNode }) {
             </He>
           ))}
           {wordKey(gloss.word) !== lemma.toLowerCase() && <En className="xs muted">{gloss.word}</En>}
-          {sid && (
+          {sid && (gloss.save !== false || savedSet.has(lemma)) && (
             <div className="spread">
               <span className="xs muted row gap-1">
                 <BookmarkIcon size={16} />
@@ -99,6 +105,26 @@ export function useGloss() {
   return useContext(Ctx);
 }
 
+const ScopeCtx = createContext<{ scope?: symbol; save: boolean }>({ save: true });
+
+/**
+ * A part of the screen (one exercise) whose meaning popup closes with it, so
+ * the next question starts without the last one's popup. With save={false}
+ * tapped words are shown but not kept in "my words".
+ */
+export function GlossScope({ save = true, children }: { save?: boolean; children: ReactNode }) {
+  const g = useGloss();
+  const ref = useRef(g);
+  useEffect(() => {
+    ref.current = g;
+  }, [g]);
+  const [scope] = useState(() => Symbol('gloss-scope'));
+  // Only on unmount: the provider's functions change identity with the route and settings.
+  useEffect(() => () => ref.current?.closeScope(scope), [scope]);
+  const value = useMemo(() => ({ scope, save }), [scope, save]);
+  return <ScopeCtx.Provider value={value}>{children}</ScopeCtx.Provider>;
+}
+
 /**
  * English text whose words can be tapped for a translation. With `locked`
  * (e.g. before answering a vocabulary question) it renders as plain text, so
@@ -106,6 +132,7 @@ export function useGloss() {
  */
 export function TapText({ text, locked = false, sentence }: { text: string; locked?: boolean; sentence?: string }) {
   const g = useGloss();
+  const { scope, save } = useContext(ScopeCtx);
   const [dict, setDict] = useState<Record<string, Sense[]> | null>(null);
   useEffect(() => {
     if (locked || !g) return;
@@ -134,7 +161,7 @@ export function TapText({ text, locked = false, sentence }: { text: string; lock
               onClick={(e) => {
                 e.stopPropagation();
                 e.preventDefault();
-                g.open({ word: core, senses, sentence: sentence ?? text });
+                g.open({ word: core, senses, sentence: sentence ?? text, save, ...(scope ? { scope } : {}) });
               }}
             >
               {core}

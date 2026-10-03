@@ -45,6 +45,8 @@ function MatchRound({ again }: { again: () => void }) {
   const sessionId = useRef('');
   const [finished, setFinished] = useState(false);
   const [firstTry, setFirstTry] = useState(0);
+  /** The pause before the next round or the result; cancelled when the screen is left. */
+  const advance = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   useEffect(() => {
     if (!student || !profile || words) return;
@@ -56,9 +58,11 @@ function MatchRound({ again }: { again: () => void }) {
     })();
   }, [student, profile, words, store, content.items]);
 
-  // Leaving mid-game closes the session (a finished one stays finished).
+  // Leaving mid-game closes the session (a finished one stays finished) and
+  // cancels a pending finish, so a game left is never logged as finished.
   useEffect(
     () => () => {
+      clearTimeout(advance.current);
       if (sessionId.current) void store.endSession(sessionId.current, 'left');
     },
     [store],
@@ -114,7 +118,7 @@ function MatchRound({ again }: { again: () => void }) {
       setSel(null);
       void record(w);
       if (roundWords.every((x) => next.has(x.lemma))) {
-        setTimeout(() => {
+        advance.current = setTimeout(() => {
           if (round + 1 < ROUNDS && words.length > (round + 1) * PAIRS_PER_ROUND) setRound((r) => r + 1);
           else void finishGame();
         }, 450);

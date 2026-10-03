@@ -14,6 +14,7 @@ import { domainNameHe } from '@/domain/student/profile';
 import { compareLevels } from '@/domain/skills/cefr';
 import { LessonView } from './LessonView';
 import { DomainIcon } from '@/ui/DomainIcon';
+import { pretestItems } from '@/features/practice/modes';
 
 /** Library of lessons, grouped by domain, easiest first. */
 export function LearnHub() {
@@ -72,10 +73,12 @@ export function LessonScreen() {
   if (!student) return <main className="screen" />;
   if (!lesson) return <main className="screen empty">השיעור לא נמצא</main>;
   const practiceCount = content.items.filter((i) => i.skill === lesson.skill || i.skill.startsWith(`${lesson.skill}.`)).length;
+  // Reading lessons ask about passages, which the pretest leaves out: no card when it would be empty.
+  const pretestCount = pretestItems(content, lesson.skill).length;
   return (
     <main className="screen">
       <TopBar back={`/s/${student.id}/learn`} />
-      {practiceCount >= 3 && (
+      {pretestCount >= 3 && (
         <Link
           to={`/s/${student.id}/practice/pretest?skill=${encodeURIComponent(lesson.skill)}&lesson=${lesson.id}`}
           className="row-card"

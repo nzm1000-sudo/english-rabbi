@@ -95,3 +95,16 @@ describe('bidi sentences', () => {
     ]);
   });
 });
+
+/** Regression: the space between two inline English sentences was dropped ("something.I'm"). */
+describe('bidi sentence spacing', () => {
+  it('keeps the space between two inline English runs', async () => {
+    const { layoutBidi } = await import('./He');
+    const parts = layoutBidi('אומרים have fun. make fun of פירושו ללעוג');
+    expect(parts.map((p) => p.text).join('')).toBe('אומרים have fun. make fun of פירושו ללעוג');
+  });
+  it('keeps it in inline mode too', async () => {
+    const { layoutBidi } = await import('./He');
+    expect(layoutBidi("I forgot something. I'm sorry.", true).map((p) => p.text).join('')).toBe("I forgot something. I'm sorry.");
+  });
+});

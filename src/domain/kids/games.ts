@@ -137,3 +137,19 @@ export function memoryCards(words: readonly KidWord[], seed: string, pairs = 6):
     rng,
   );
 }
+
+/**
+ * Memory game score, by how well the child remembered (not just finishing,
+ * which every child does sooner or later).
+ *
+ * Rule for ages 3 to 6: the first look at every picture is a guess, so one
+ * mismatch per pair is free. After that, every two more mismatches cost one
+ * pair. With 6 pairs a sticker (half: 3 pairs) is earned up to 12
+ * mismatches. In simulation, a child who remembers only a third of the cards
+ * seen needs about 7 (and rarely more than 11); tapping at random needs
+ * about 27, so it scores nothing.
+ */
+export function memoryScore(pairs: number, mismatches: number): { correct: number; total: number } {
+  const extra = Math.max(0, mismatches - pairs);
+  return { correct: Math.max(0, pairs - Math.ceil(extra / 2)), total: pairs };
+}

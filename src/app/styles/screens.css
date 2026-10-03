@@ -298,6 +298,8 @@
 }
 /* Above a sticky button bar, so "Continue" and "Check" stay reachable while it is open. */
 .screen:has(.actions, .story-next) ~ .gloss-pop { bottom: calc(var(--safe-bottom) + 96px); }
+/* After answering, the feedback strip fills the bottom: show the meaning at the top instead. */
+.screen:has(.fb-strip) ~ .gloss-pop { top: calc(env(safe-area-inset-top, 0px) + 72px); bottom: auto; }
 .gloss-word { font-size: var(--fs-h3); line-height: var(--lh-h3); font-weight: var(--fw-bold); }
 .gloss-he { font-size: var(--fs-body); }
 

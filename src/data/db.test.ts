@@ -218,3 +218,53 @@ describe('my words', () => {
     expect((await store.storyResults(s.id)).get('x')).toEqual({ correct: 3, total: 3 });
   });
 });
+
+/**
+ * Regression: an open session (the app killed mid-round) counted every minute
+ * until midnight toward the kids daily limit, and a session that started
+ * before midnight was ignored entirely.
+ */
+describe('minutesToday', () => {
+  const MIN = 60_000;
+  const noon = new Date(2026, 9, 3, 12, 0).getTime();
+  const midnight = new Date(2026, 9, 3).getTime();
+  async function setup() {
+    const { db, store } = fresh();
+    const s = await store.createStudent({ name: 'דנה' });
+    const add = (id: string, startedAt: number, endedAt?: number, mode = 'kids.play') =>
+      db.sessions.add({ id, studentId: s.id, mode, startedAt, completed: 0, ...(endedAt !== undefined ? { endedAt } : {}) });
+    return { db, store, s, add };
+  }
+
+  it('counts ended sessions of the mode', async () => {
+    const { store, s, add } = await setup();
+    await add('a', noon - 60 * MIN, noon - 50 * MIN);
+    await add('b', noon - 30 * MIN, noon - 25 * MIN);
+    await add('c', noon - 20 * MIN, noon - 10 * MIN, 'quiz');
+    expect(await store.minutesToday(s.id, 'kids', noon)).toBe(15);
+  });
+
+  it('caps an open session past its last activity', async () => {
+    const { db, store, s, add } = await setup();
+    await add('open', noon - 3 * 60 * MIN);
+    expect(await store.minutesToday(s.id, 'kids', noon)).toBe(20);
+    // Activity an hour in moves the cap along.
+    await db.events.add({ id: 'e1', studentId: s.id, at: noon - 2 * 60 * MIN, type: 'kids.round', payload: { game: 'memory', correct: 1, total: 1 }, sessionId: 'open' } as never);
+    expect(await store.minutesToday(s.id, 'kids', noon)).toBe(80);
+  });
+
+  it('counts a session still in use up to now', async () => {
+    const { store, s, add } = await setup();
+    await add('now', noon - 5 * MIN);
+    expect(await store.minutesToday(s.id, 'kids', noon)).toBe(5);
+  });
+
+  it('counts only the part after midnight of a session started before it', async () => {
+    const { store, s, add } = await setup();
+    await add('late', midnight - 30 * MIN, midnight + 15 * MIN);
+    await add('orphan', midnight - 10 * MIN);
+    await add('yesterday', midnight - 90 * MIN, midnight - 60 * MIN);
+    // 15 after midnight, plus the orphan's 10 minutes after midnight (cap 20 from its start).
+    expect(await store.minutesToday(s.id, 'kids', noon)).toBe(25);
+  });
+});

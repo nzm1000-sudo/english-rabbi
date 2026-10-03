@@ -34,6 +34,7 @@ import { Row, Stack } from '@/ui/layout';
 import type { ArtName } from '@/ui/art';
 import { MORE_COUNT } from './moreModes';
 import { RowLink } from '@/ui/RowLink';
+import { heCount } from '@/domain/text/heCount';
 
 const PRACTICE: { domain: Domain; title: string; en: string }[] = [
   { domain: 'vocabulary', title: 'אוצר מילים', en: 'Vocabulary' },
@@ -79,7 +80,7 @@ export function HomeScreen() {
           <span className="eyebrow">{greeting()}</span>
           <h1 className="home-name">{student.name}</h1>
         </div>
-        <Link to={`${base}/progress`} className="stat-pill" aria-label={`${p.activity.streakDays} ימים ברצף, ${p.activity.xpTotal} נקודות`}>
+        <Link to={`${base}/progress`} className="stat-pill" aria-label={`${heCount(p.activity.streakDays, 'יום אחד', 'ימים')} ברצף, ${heCount(p.activity.xpTotal, 'נקודה אחת', 'נקודות')}`}>
           <span className="stat-pill-item">
             <FlameIcon size={18} />
             <b>{p.activity.streakDays}</b>
@@ -148,7 +149,7 @@ export function HomeScreen() {
                 <RowLink to={`${base}/practice/daily`} art="target" tone="games" icon={<TargetIcon />} title="האתגר היומי" sub="6 שאלות, חידה אחת בפנים" />
               ))}
             {p.words.due > 0 && (
-              <RowLink to={`${base}/practice/review`} art="words" tone="vocabulary" icon={<RepeatIcon />} title="חזרה על מילים" sub={`${p.words.due} מילים מחכות לחזרה היום`} />
+              <RowLink to={`${base}/practice/review`} art="words" tone="vocabulary" icon={<RepeatIcon />} title="חזרה על מילים" sub={p.words.due === 1 ? 'מילה אחת מחכה לחזרה היום' : `${p.words.due} מילים מחכות לחזרה היום`} />
             )}
             {focus ? (
               <RowLink to={`${base}/practice/mistakes`} art="streak" tone="speaking" icon={<RepeatIcon />} title="כדאי לחזק" subNode={<He className="small muted clamp-2">{focus.note.he}</He>} />

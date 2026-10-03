@@ -21,6 +21,7 @@ import { Art } from '@/ui/Art';
 import { Button } from '@/ui/Button';
 import { TopBar } from '@/ui/TopBar';
 import { Stack } from '@/ui/layout';
+import { heCount } from '@/domain/text/heCount';
 
 export function PracticeScreen() {
   const { sid, mode } = useParams();
@@ -29,8 +30,8 @@ export function PracticeScreen() {
   const profile = useProfile(student);
   const [round, setRound] = useState(0);
   const params = useMemo(() => Object.fromEntries(search.entries()), [search]);
-  if (!isPracticeMode(mode)) return <main className="screen empty">מצב תרגול לא מוכר</main>;
-  if (student === null) return <main className="screen empty">התלמיד לא נמצא</main>;
+  if (!isPracticeMode(mode)) return <NotFound text="מצב תרגול לא מוכר" home={sid ? `/s/${sid}` : '/'} />;
+  if (student === null) return <NotFound text="התלמיד לא נמצא" home="/" />;
   if (!student || !profile) return <main className="screen" />;
   return (
     <Session
@@ -41,6 +42,18 @@ export function PracticeScreen() {
       support={profile.supportLanguage}
       onAgain={() => setRound((r) => r + 1)}
     />
+  );
+}
+
+/** A broken link (e.g. an old bookmark): say so and offer the way home. */
+function NotFound({ text, home }: { text: string; home: string }) {
+  return (
+    <main className="screen empty stack gap-3 items-center">
+      <p>{text}</p>
+      <Link className="text-link" to={home}>
+        חזרה למסך הבית
+      </Link>
+    </main>
   );
 }
 
@@ -92,7 +105,7 @@ function Session({
           ) : empty ? (
             <He className="t-strong txt-center">{title}</He>
           ) : (
-            <He className="t-strong txt-center">{`${title} · ${s.results.filter((r) => r.correct).length} נכונות`}</He>
+            <He className="t-strong txt-center">{`${title} · ${heCount(s.results.filter((r) => r.correct).length, 'נכונה אחת', 'נכונות')}`}</He>
           )
         }
         end={
@@ -163,7 +176,10 @@ function Session({
           seed={s.sessionId}
           policy={def.policy}
           feedback={def.feedback}
+          onAnswer={s.record}
           onDone={s.complete}
+          // Timed rounds: a tapped word shows its meaning but is not saved.
+          saveWords={!def.timeLimitSec && mode !== 'exam'}
         />
       )}
 
@@ -225,7 +241,7 @@ function Timer({ deadline, onEnd }: { deadline: number; onEnd: () => void }) {
     if (left === 0) onEnd();
   }, [left, onEnd]);
   return (
-    <span className="timer" data-low={left <= 10} aria-live="off" aria-label={`נותרו ${left} שניות`}>
+    <span className="timer" data-low={left <= 10} aria-live="off" aria-label={left === 1 ? 'נותרה שנייה אחת' : `נותרו ${left} שניות`}>
       {left}
     </span>
   );
@@ -281,7 +297,7 @@ function Summary({
     // All questions answered before the clock ran out.
     headline = results.length >= total ? 'כל השאלות נענו' : 'הזמן נגמר';
     big = `${score}`;
-    sub = score > prevBest && prevBest > 0 ? 'שיא אישי חדש' : prevBest ? `השיא שלך: ${prevBest}` : `${correct} תשובות נכונות`;
+    sub = score > prevBest && prevBest > 0 ? 'שיא אישי חדש' : prevBest ? `השיא שלך: ${prevBest}` : correct === 1 ? 'תשובה נכונה אחת' : `${correct} תשובות נכונות`;
   } else if (mode === 'quiz' || mode === 'exam' || mode === 'daily' || mode === 'riddles') {
     headline = mode === 'exam' ? 'תוצאת המבחן' : mode === 'daily' ? 'האתגר היומי הושלם' : 'סיום';
     big = `${pct}`;
@@ -368,7 +384,7 @@ function Summary({
                 ) : (
                   <En as="div" className="wrong-en">{'prompt' in i ? i.prompt : ''}</En>
                 )}
-                <He className="small muted">{i.explanation.he}</He>
+                <He className="small muted wrong-why">{i.explanation.he}</He>
                 {content.lessonsForSkill(i.skill)[0] && (
                   <Link className="text-link" to={`/s/${student.id}/learn/${content.lessonsForSkill(i.skill)[0]!.id}`}>
                     לשיעור

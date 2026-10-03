@@ -12,6 +12,7 @@ import {
   firstLetterQuestions,
   listenQuestions,
   memoryCards,
+  memoryScore,
   shuffle,
   seeded,
   sightQuestions,
@@ -507,6 +508,7 @@ function MemoryGame({ words, seed, sayEn, onFinish, back }: Common & { words: Ki
   const [open, setOpen] = useState<string[]>([]);
   const [found, setFound] = useState<Set<string>>(new Set());
   const [turns, setTurns] = useState(0);
+  const misses = useRef(0);
   const { run, alive } = useSpeechSteps();
   if (cards.length < 4) return <EmptyGame back={back} />;
   const flip = (key: string, w: KidWord) => {
@@ -525,10 +527,16 @@ function MemoryGame({ words, seed, sayEn, onFinish, back }: Common & { words: Ki
           setOpen([]);
           if (f.size * 2 === cards.length)
             void run(() => speakHebrew('כל הכבוד!')).then(() => {
-              if (alive()) onFinish(cards.length / 2, cards.length / 2);
+              if (!alive()) return;
+              // Scored by memory (mismatches), see memoryScore.
+              const score = memoryScore(cards.length / 2, misses.current);
+              onFinish(score.correct, score.total);
             });
         }, 600);
-      } else setTimeout(() => setOpen([]), 1100);
+      } else {
+        misses.current++;
+        setTimeout(() => setOpen([]), 1100);
+      }
     }
   };
   return (
