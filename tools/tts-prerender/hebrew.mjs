@@ -28,7 +28,7 @@ const VOICE = 'he-IL-AvriNeural';
 const RATE = '-8%';
 const GEMINI_KEY = 'gemini-he-1';
 // Chosen by ear on 2026-10-03 from samples of this model.
-const GEMINI = { model: 'gemini-3.1-flash-tts-preview', checkModel: 'gemini-3.8-flash', batch: 12 };
+const GEMINI = { model: 'gemini-3.1-flash-tts-preview', checkModels: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.5-flash', 'gemini-flash-latest'], batch: 12 };
 const GUIDE_VOICE = 'Achernar';
 const NAME_VOICE = 'Algieba';
 

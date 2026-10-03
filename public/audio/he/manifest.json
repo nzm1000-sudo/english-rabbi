@@ -1,6 +1,6 @@
 {
  "version": 1,
- "engine": "edge-tts he-IL-AvriNeural -8%",
+ "engine": "gemini-3.1-flash-tts-preview Achernar (guide) / Algieba (names); fallback edge-tts he-IL-AvriNeural -8%",
  "entries": {
   "005f167811f86205": "audio/he/005f167811f86205.mp3",
   "02355f1e0e4cbc8d": "audio/he/02355f1e0e4cbc8d.mp3",

@@ -1,6 +1,6 @@
 """Renders Hebrew phrases with Gemini TTS, several phrases per request.
 
-Called by hebrew.mjs with {model, checkModel, batch, jobs: [{text, voice, out}]}
+Called by hebrew.mjs with {model, checkModels, batch, jobs: [{text, voice, out}]}
 on stdin. The free tier allows only a few TTS requests a day, so each request
 reads a batch of lines with long pauses between them; the audio is cut at
 the longest pauses and every piece is checked by transcription before it is
@@ -32,11 +32,11 @@ class DailyQuota(Exception):
     pass
 
 
-def call(model, body):
+def call(model, body, tries=5):
     headers = {'Content-Type': 'application/json'}
     if os.environ.get('GEMINI_API_KEY'):
         headers['x-goog-api-key'] = os.environ['GEMINI_API_KEY']
-    for attempt in range(5):
+    for attempt in range(tries):
         req = urllib.request.Request(f'{API}/{model}:generateContent', data=json.dumps(body).encode(), headers=headers)
         try:
             return json.load(urllib.request.urlopen(req, timeout=300))
@@ -44,7 +44,7 @@ def call(model, body):
             msg = e.read().decode(errors='replace')
             if e.code == 429 and 'PerDay' in msg:
                 raise DailyQuota(model) from None
-            if e.code not in (429, 500, 503) or attempt == 4:
+            if e.code not in (429, 500, 503) or attempt == tries - 1:
                 raise RuntimeError(f'{model} {e.code}: {msg[:300]}') from None
             wait = 30 * (attempt + 1)
             m = re.search(r'"retryDelay": "(\d+)s"', msg)
@@ -110,7 +110,7 @@ def norm(s):
     return ' '.join(s.split())
 
 
-def check(model, wavs, lines):
+def check(models, wavs, lines):
     """Transcribes every piece in one request. Returns which pieces say their line."""
     parts = []
     for i, w in enumerate(wavs):
@@ -119,7 +119,15 @@ def check(model, wavs, lines):
     parts.append({'text': f'Transcribe each of the {len(wavs)} Hebrew clips exactly as spoken, without niqqud. '
                           'Answer only with a JSON array of strings, one per clip, in order.'})
     body = {'contents': [{'parts': parts}], 'generationConfig': {'responseMimeType': 'application/json', 'temperature': 0}}
-    text = call(model, body)['candidates'][0]['content']['parts'][0]['text']
+    # Busy or out of quota: the next model checks just as well.
+    for m in models:
+        try:
+            text = call(m, body, tries=2)['candidates'][0]['content']['parts'][0]['text']
+            break
+        except (DailyQuota, RuntimeError) as e:
+            print(f'  check with {m} failed ({str(e)[:60]}), trying the next model', file=sys.stderr, flush=True)
+    else:
+        raise RuntimeError('no model could check the audio; the audio is cached, run again later')
     heard = json.loads(text)
     if not isinstance(heard, list) or len(heard) != len(lines):
         return [False] * len(lines), [str(heard)] * len(lines)
@@ -151,7 +159,12 @@ def main():
                     failed += len(batch)
                     continue
                 wavs = [wav(pcm[a:b]) for a, b in cut]
-                ok, heard = check(cfg['checkModel'], wavs, lines)
+                try:
+                    ok, heard = check(cfg['checkModels'], wavs, lines)
+                except RuntimeError as e:
+                    print(f'  {e}', flush=True)
+                    failed += len(batch)
+                    continue
                 for j, w, good, h in zip(batch, wavs, ok, heard):
                     if not good:
                         print(f'  rejected "{j["text"]}" (heard "{h}")', flush=True)
