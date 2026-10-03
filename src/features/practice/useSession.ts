@@ -262,10 +262,13 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
     [current, next, sessionId, store, student.id],
   );
 
+  /** An item of this session, also one generated for it (my words), by id. */
+  const itemFor = useCallback((id: string) => fixedRef.current?.find((i) => i.id === id) ?? content.getItem(id), [content]);
+
   /** Drops the saved place; the caller starts a fresh round. */
   const discardSaved = useCallback(() => resume.clearSession(student.id, mode), [student.id, mode]);
 
-  return { status, current, results, sessionId, total, index: recentRef.current.length, deadline, complete, timeUp, def, resumed, discardSaved };
+  return { status, current, results, sessionId, total, index: recentRef.current.length, deadline, complete, timeUp, def, resumed, discardSaved, itemFor };
 }
 
 /** Lightning: 10 per correct answer, +2 per answer in the current streak, capped. */

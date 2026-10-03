@@ -6,6 +6,7 @@ import { CloseIcon } from '@/ui/icons';
 import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import type { Student } from '@/domain/student/student';
+import type { ContentItem } from '@/domain/content/schema';
 import type { SupportLanguage } from '@/domain/learning/languageSupport';
 import { domainNameHe } from '@/domain/student/profile';
 import { domainOf } from '@/domain/skills/taxonomy';
@@ -65,10 +66,11 @@ function Session({
   const def = MODES[mode];
   const home = `/s/${student.id}`;
   const done = s.status === 'done';
-  const progress = s.deadline ? null : Math.round(((done ? s.total : Math.max(0, s.index - 1)) / s.total) * 100);
+  const empty = s.status === 'empty';
+  const progress = s.deadline || empty ? null : Math.round(((done ? s.total : Math.max(0, s.index - 1)) / s.total) * 100);
   const combo = useCombo(s.results.map((r) => r.correct));
   const title = mode === 'skill' && params.skill ? (content.lessonsForSkill(params.skill)[0]?.title.he ?? def.title) : def.title;
-  const counter = s.status === 'loading' ? '' : `${done ? s.total : Math.min(s.index, s.total)}/${s.total}`;
+  const counter = s.status === 'loading' || empty ? '' : `${done ? s.total : Math.min(s.index, s.total)}/${s.total}`;
 
   return (
     <main className="screen tight">
@@ -87,6 +89,8 @@ function Session({
                 <span style={{ width: `${progress}%` }} />
               </div>
             </Stack>
+          ) : empty ? (
+            <He className="t-strong txt-center">{title}</He>
           ) : (
             <He className="t-strong txt-center">{`${title} · ${s.results.filter((r) => r.correct).length} נכונות`}</He>
           )
@@ -137,9 +141,16 @@ function Session({
             <CheckIcon size={28} />
           </span>
           <p className="t-h3">{emptyText(mode)}</p>
-          <Button variant="primary" size="lg" onClick={() => nav(home)}>
-            חזרה למסך הבית
-          </Button>
+          {mode === 'pretest' && params.lesson ? (
+            // Nothing to guess for this topic: the lesson itself is the way on.
+            <Button variant="primary" size="lg" onClick={() => nav(`/s/${student.id}/learn/${params.lesson}`, { replace: true })}>
+              לשיעור
+            </Button>
+          ) : (
+            <Button variant="primary" size="lg" onClick={() => nav(home)}>
+              חזרה למסך הבית
+            </Button>
+          )}
         </div>
       )}
 
@@ -162,7 +173,18 @@ function Session({
         </div>
       )}
 
-      {done && <Summary mode={mode} params={params} student={student} results={s.results} onHome={() => nav(home)} onAgain={onAgain} />}
+      {done && (
+        <Summary
+          mode={mode}
+          params={params}
+          student={student}
+          results={s.results}
+          total={s.total}
+          itemFor={s.itemFor}
+          onHome={() => nav(home)}
+          onAgain={onAgain}
+        />
+      )}
     </main>
   );
 }
@@ -214,6 +236,8 @@ function Summary({
   params,
   student,
   results,
+  total,
+  itemFor,
   onHome,
   onAgain,
 }: {
@@ -221,6 +245,8 @@ function Summary({
   params: Record<string, string>;
   student: Student;
   results: SessionResult[];
+  total: number;
+  itemFor: (id: string) => ContentItem | undefined;
   onHome: () => void;
   onAgain: () => void;
 }) {
@@ -238,7 +264,10 @@ function Summary({
   for (const r of results) for (const m of r.misconceptions) counts.set(m, (counts.get(m) ?? 0) + 1);
   const top = [...counts.entries()].sort((a, b) => b[1] - a[1])[0];
   const tip = top ? content.misconceptions.get(top[0]) : undefined;
-  const wrong = results.filter((r) => !r.correct).map((r) => content.getItem(r.itemId)).filter((i) => !!i);
+  // itemFor also finds items made for this session (my words), which are not in the registry.
+  const wrong = results.filter((r) => !r.correct).map((r) => itemFor(r.itemId)).filter((i) => !!i);
+  // Retry looks items up in the registry, so only those can be practiced again.
+  const retryIds = wrong.filter((i) => content.getItem(i.id)).map((i) => i.id);
 
   let headline = 'סיימנו סבב';
   let big: string | null = null;
@@ -249,7 +278,8 @@ function Summary({
     // The current round may or may not be saved yet.
     const prior = all.length && all[all.length - 1]!.score === score && all[all.length - 1]!.correct === correct ? all.slice(0, -1) : all;
     const prevBest = Math.max(0, ...prior.map((g) => g.score));
-    headline = 'הזמן נגמר';
+    // All questions answered before the clock ran out.
+    headline = results.length >= total ? 'כל השאלות נענו' : 'הזמן נגמר';
     big = `${score}`;
     sub = score > prevBest && prevBest > 0 ? 'שיא אישי חדש' : prevBest ? `השיא שלך: ${prevBest}` : `${correct} תשובות נכונות`;
   } else if (mode === 'quiz' || mode === 'exam' || mode === 'daily' || mode === 'riddles') {
@@ -262,7 +292,7 @@ function Summary({
   const byDomain = new Map<string, { c: number; t: number }>();
   if (mode === 'exam') {
     for (const r of results) {
-      const it = content.getItem(r.itemId);
+      const it = itemFor(r.itemId);
       if (!it) continue;
       const d = domainOf(it.skill);
       const cur = byDomain.get(d) ?? { c: 0, t: 0 };
@@ -355,13 +385,13 @@ function Summary({
             עכשיו לשיעור
           </Button>
         )}
-        {wrong.length > 0 && mode !== 'pretest' && mode !== 'retry' && (
-          <Button variant="primary" size="lg" block onClick={() => nav(`/s/${student.id}/practice/retry?ids=${wrong.map((i) => i.id).join(',')}`)}>
-            לתרגל שוב את הטעויות ({wrong.length})
+        {retryIds.length > 0 && mode !== 'pretest' && mode !== 'retry' && (
+          <Button variant="primary" size="lg" block onClick={() => nav(`/s/${student.id}/practice/retry?ids=${retryIds.join(',')}`)}>
+            לתרגל שוב את הטעויות ({retryIds.length})
           </Button>
         )}
         {mode !== 'daily' && mode !== 'pretest' && (
-          <Button variant={wrong.length ? 'secondary' : 'primary'} size="lg" block onClick={onAgain}>
+          <Button variant={retryIds.length ? 'secondary' : 'primary'} size="lg" block onClick={onAgain}>
             {mode === 'exam' ? 'מבחן נוסף' : 'עוד סבב'}
           </Button>
         )}
