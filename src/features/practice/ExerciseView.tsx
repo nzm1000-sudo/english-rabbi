@@ -17,6 +17,7 @@ import { domainOf } from '@/domain/skills/taxonomy';
 import { CheckIcon, XIcon } from '@/ui/icons';
 import { Sheet } from '@/ui/Sheet';
 import { LessonView } from '@/features/lessons/LessonView';
+import { AnchorCard } from '@/ui/AnchorCard';
 import { sounds } from '@/services/sound';
 
 type Props = {
@@ -484,7 +485,9 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
 }
 
 function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowState; last: CheckResult | null; support: SupportLanguage }) {
+  const { content } = useServices();
   if (isFinished(flow)) return null;
+  const anchor = content.anchorFor(item);
   const blocks: ReactNode[] = [];
   if (flow.lastHelp === 'spelling' && last?.nearMiss) {
     blocks.push(
@@ -518,13 +521,38 @@ function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowSt
         <BiText text={chooseText(item.explanation, support)} />
       </div>,
     );
+    if (anchor) blocks.push(<AnchorCard key="anchor" anchor={anchor} />);
   }
   return blocks.length ? <div className="stack" aria-live="polite">{blocks}</div> : null;
 }
 
 const PRAISE = ['מצוין!', 'נכון!', 'יפה מאוד!', 'בדיוק!', 'כל הכבוד!'];
 
+/** "Why not the others": the reason each wrong option does not fit, chosen ones first. */
+function WhyNot({ item, chosen, support, open }: { item: ChoiceItem; chosen: Set<string>; support: SupportLanguage; open: boolean }) {
+  const wrong = item.options.filter((o) => o.id !== item.correctOptionId && o.feedback);
+  if (!wrong.length) return null;
+  wrong.sort((a, b) => Number(chosen.has(b.id)) - Number(chosen.has(a.id)));
+  const isEnglish = item.promptLanguage === 'en';
+  return (
+    <details className="why-not" open={open}>
+      <summary>למה לא האפשרויות האחרות?</summary>
+      {wrong.map((o) => (
+        <div key={o.id} className="why-not-item" data-chosen={chosen.has(o.id)}>
+          <span aria-hidden="true">✖️</span>
+          <span className="grow">
+            <strong>{isEnglish ? <En>{o.text}</En> : <He>{o.text}</He>}</strong>
+            <BiText text={chooseText(o.feedback!, support)} />
+          </span>
+        </div>
+      ))}
+    </details>
+  );
+}
+
 function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['item']; flow: FlowState; support: SupportLanguage; listen: boolean; audioText: string }) {
+  const { content } = useServices();
+  const anchor = content.anchorFor(item);
   const solved = flow.phase === 'solved';
   const clean = solved && flow.attempts.length === 1 && flow.hintsShown === 0 && !flow.explanationShown;
   const praise = PRAISE[[...item.id].reduce((a, ch) => a + ch.charCodeAt(0), 0) % PRAISE.length]!;
@@ -548,6 +576,8 @@ function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['
         )}
         {item.type === 'fix' && item.meaning && <He className="small">{item.meaning}</He>}
         {!flow.explanationShown && <BiText text={chooseText(item.explanation, support)} className="small" />}
+        {item.type === 'choice' && <WhyNot item={item} chosen={new Set(flow.attempts.map((a) => a.answer))} support={support} open={!solved || !clean} />}
+        {anchor && !clean && <AnchorCard anchor={anchor} />}
         {sentence && (
           <div className="row">
             <En className="grow">{sentence}</En>
@@ -578,7 +608,7 @@ function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['
 function BiText({ text, className = '' }: { text: ReturnType<typeof chooseText>; className?: string }) {
   const main = text.primaryLang === 'en' ? <En>{text.primary}</En> : <He>{text.primary}</He>;
   return (
-    <div className={className}>
+    <div className={`bi-text ${className}`}>
       <div>{main}</div>
       {text.secondary && (
         <div className="secondary small muted">{text.secondaryLang === 'he' ? <He>{text.secondary}</He> : <En>{text.secondary}</En>}</div>

@@ -795,3 +795,16 @@ a.row-card:active, button.row-card:active { transform: translateY(3px); border-b
 .sent[data-on='true'] { background: color-mix(in srgb, var(--primary) 18%, transparent); }
 .story-line[data-on='true'] { border-color: var(--primary); box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary) 25%, transparent); }
 .resume-note { display: flex; align-items: center; gap: var(--s-2); padding: var(--s-2) var(--s-3); border-radius: var(--r-md); background: var(--primary-weak); color: var(--ink); font-size: var(--t-sm); }
+
+/* Explanations: anchors and "why not" */
+.bi-text { white-space: pre-line; }
+.anchor-card { display: flex; flex-direction: column; gap: var(--s-2); padding: var(--s-3); border-radius: var(--r-md); background: var(--surface); border: 1.5px solid var(--line); border-inline-start: 4px solid var(--primary); }
+.anchor-head { display: flex; align-items: center; gap: var(--s-2); }
+.anchor-emoji { font-size: 28px; line-height: 1; }
+.anchor-image { font-size: var(--t-md); }
+.anchor-pattern { font-family: var(--font-en); font-weight: 650; text-align: center; padding: 6px 10px; border-radius: var(--r-sm); background: var(--primary-weak); color: var(--primary-fg); }
+.anchor-trap { color: var(--muted); }
+.why-not { display: flex; flex-direction: column; gap: 6px; }
+.why-not summary { cursor: pointer; font-weight: 600; font-size: var(--t-sm); }
+.why-not-item { display: flex; gap: 6px; font-size: var(--t-sm); }
+.why-not-item[data-chosen='true'] { font-weight: 600; }

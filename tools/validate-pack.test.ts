@@ -29,7 +29,9 @@ describe.runIf(!!packId)(`pack ${packId}`, () => {
       return [];
     }
   });
-  const reg = buildRegistry({ packs: [pack], sources: readJson(path.join(root, 'content/sources.json')), misconceptions });
+  const anchorDir = path.join(root, 'content/anchors');
+  const anchors = fs.readdirSync(anchorDir).filter((f) => f.endsWith('.json')).flatMap((f) => readJson(path.join(anchorDir, f)));
+  const reg = buildRegistry({ anchors, packs: [pack], sources: readJson(path.join(root, 'content/sources.json')), misconceptions });
 
   it('has no schema or reference errors', () => {
     expect(reg.issues).toEqual([]);

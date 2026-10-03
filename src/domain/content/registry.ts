@@ -7,6 +7,7 @@ import {
   Passage,
   Source,
   Story,
+  Anchor,
   STORY_STOPWORDS,
   glossFor,
   storyWords,
@@ -17,6 +18,7 @@ import {
   type Passage as PassageT,
   type Source as SourceT,
   type Story as StoryT,
+  type Anchor as AnchorT,
 } from './schema';
 
 export interface LoadIssue {
@@ -34,6 +36,9 @@ export interface ContentRegistry {
   lessons: ReadonlyMap<string, LessonT>;
   /** Graded stories, in pack order. Their questions are not in `items`. */
   stories: ReadonlyMap<string, StoryT>;
+  anchors: ReadonlyMap<string, AnchorT>;
+  /** The item's own anchor, else the anchor of its skill or nearest parent skill. */
+  anchorFor(item: Pick<Item, 'anchor' | 'skill'>): AnchorT | undefined;
   /** Lessons for a skill, or for its nearest ancestor that has one. */
   lessonsForSkill(skill: SkillId): LessonT[];
   /** Items that are valid but blocked from students (licensing). */
@@ -46,6 +51,7 @@ export interface ContentRegistry {
 }
 
 export interface RawContent {
+  anchors?: unknown[];
   packs: unknown[];
   sources: unknown[];
   misconceptions: unknown[];
@@ -72,6 +78,15 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
       issues.push({ packId: 'misconceptions', id: r.data.id, severity: 'error', reason: 'duplicate misconception id' });
     } else if (r.success) misconceptions.set(r.data.id, r.data);
     else issues.push({ packId: 'misconceptions', id: idOf(m), severity: 'error', reason: r.error.message });
+  }
+
+  const anchors = new Map<string, AnchorT>();
+  for (const a of raw.anchors ?? []) {
+    const r = Anchor.safeParse(a);
+    if (!r.success) issues.push({ packId: 'anchors', id: idOf(a), severity: 'error', reason: r.error.message });
+    else if (anchors.has(r.data.id)) issues.push({ packId: 'anchors', id: r.data.id, severity: 'error', reason: 'duplicate anchor id' });
+    else if (r.data.skills.some((s) => !isKnownSkill(s))) issues.push({ packId: 'anchors', id: r.data.id, severity: 'error', reason: 'unknown skill' });
+    else anchors.set(r.data.id, r.data);
   }
 
   const passages = new Map<string, PassageT>();
@@ -147,7 +162,7 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
         continue;
       }
       const item = r.data;
-      const problem = checkReferences(item, { sources, misconceptions, passages, seen });
+      const problem = item.anchor && raw.anchors && !anchors.has(item.anchor) ? { severity: 'error' as const, reason: `unknown anchor "${item.anchor}"` } : checkReferences(item, { sources, misconceptions, passages, seen });
       if (problem) {
         issues.push({ packId: pack.packId, id: item.id, severity: problem.severity, reason: problem.reason });
         if (problem.severity === 'quarantined') quarantined.push(item);
@@ -164,11 +179,22 @@ export function buildRegistry(raw: RawContent): ContentRegistry {
   const byUnitIdx = groupBy(items, (i) => unitOf(i));
 
   const lessonsBySkill = groupBy([...lessons.values()], (l) => l.skill);
+  const anchorBySkill = new Map<string, AnchorT>();
+  for (const a of anchors.values()) for (const s of a.skills) if (!anchorBySkill.has(s)) anchorBySkill.set(s, a);
   return {
     items,
     passages,
     lessons,
     stories,
+    anchors,
+    anchorFor: (item) => {
+      if (item.anchor) return anchors.get(item.anchor);
+      for (const id of lineage(item.skill)) {
+        const a = anchorBySkill.get(id);
+        if (a) return a;
+      }
+      return undefined;
+    },
     lessonsForSkill: (skill) => {
       for (const id of lineage(skill)) {
         const ls = lessonsBySkill.get(id);

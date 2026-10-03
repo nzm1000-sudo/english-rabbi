@@ -1,0 +1,377 @@
+[
+  {
+    "id": "be-hats",
+    "emoji": "🎩",
+    "title": "שלושה כובעים: am, is, are",
+    "skills": [
+      "grammar.present-simple",
+      "grammar.pronouns"
+    ],
+    "image": "I חובש רק את am. אחד (he, she, it) חובש is. כל השאר (you, we, they) חובשים are.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "present-simple",
+    "emoji": "📅",
+    "title": "הלוח על המקרר",
+    "skills": [
+      "grammar.present-simple"
+    ],
+    "image": "מה שקורה תמיד, כל יום, כל שבת: הווה פשוט. כמו לוח הזמנים שתלוי על המקרר.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "third-person-s",
+    "emoji": "🐍",
+    "title": "ה־s של he, she, it",
+    "skills": [
+      "grammar.present-simple.third-person"
+    ],
+    "image": "כשמדברים על אחד (he, she, it, אמא, ארי) בהווה פשוט, נדבק לפועל s.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "do-does",
+    "emoji": "🧰",
+    "title": "does לוקח את ה־s",
+    "skills": [
+      "grammar.present-simple.questions-negatives"
+    ],
+    "image": "בשאלה ובשלילה באה מילת עזר. does לוקחת את ה־s, והפועל נשאר נקי.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "present-progressive",
+    "emoji": "🎥",
+    "title": "מצלמה בשידור חי",
+    "skills": [
+      "grammar.present-progressive"
+    ],
+    "image": "מה שקורה ממש עכשיו, מול העיניים: am/is/are + ing.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "stative-verbs",
+    "emoji": "🧠",
+    "title": "מחשבות ורגשות לא מצלמים",
+    "skills": [
+      "grammar.present-progressive"
+    ],
+    "image": "know, like, want, need, believe הם מצב, לא פעולה. אין להם ing.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "past-simple",
+    "emoji": "📸",
+    "title": "תמונה מאלבום",
+    "skills": [
+      "grammar.past-simple",
+      "grammar.past-simple.irregular"
+    ],
+    "image": "משהו שקרה ונגמר בזמן ידוע (yesterday, last week, ago): עבר פשוט.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "did",
+    "emoji": "🔙",
+    "title": "did כבר בעבר",
+    "skills": [
+      "grammar.past-simple.questions-negatives"
+    ],
+    "image": "בשאלה ובשלילה did מחזיקה את העבר, והפועל חוזר לצורת הבסיס.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "present-perfect",
+    "emoji": "🌉",
+    "title": "גשר מהעבר להיום",
+    "skills": [
+      "grammar.present-perfect",
+      "grammar.present-perfect.vs-past-simple",
+      "grammar.present-perfect-progressive"
+    ],
+    "image": "have/has + צורה שלישית: משהו מהעבר שעדיין נוגע להיום, בלי זמן מדויק.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "for-since",
+    "emoji": "⏳",
+    "title": "שעון חול ודגל",
+    "skills": [
+      "grammar.present-perfect"
+    ],
+    "image": "for = כמה זמן (שעון חול). since = מאיזו נקודה זה התחיל (דגל).",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "there-is",
+    "emoji": "👉",
+    "title": "אצבע שמצביעה: יש",
+    "skills": [
+      "grammar.there-is"
+    ],
+    "image": "\"יש\" באנגלית הוא there is (לאחד) או there are (להרבה).",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "articles",
+    "emoji": "☝️",
+    "title": "a = אחד, the = זה שמכירים",
+    "skills": [
+      "grammar.articles"
+    ],
+    "image": "a/an = אחד מתוך הרבה, לא משנה איזה. the = האחד שכבר מכירים, אצבע שמצביעה.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "future",
+    "emoji": "🔮",
+    "title": "will מול going to",
+    "skills": [
+      "grammar.future"
+    ],
+    "image": "going to = תוכנית שכבר ביומן. will = החלטה של הרגע או ניחוש.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "conditionals",
+    "emoji": "🚦",
+    "title": "if בלי will",
+    "skills": [
+      "grammar.conditionals",
+      "grammar.conditionals.first",
+      "grammar.conditionals.second",
+      "grammar.conditionals.third",
+      "grammar.wish"
+    ],
+    "image": "אחרי if לא שמים will. ככל שהתנאי דמיוני יותר, הזמן זז אחורה.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "comparatives",
+    "emoji": "📏",
+    "title": "er או more, לא שניהם",
+    "skills": [
+      "grammar.comparatives"
+    ],
+    "image": "מילה קצרה + er than. מילה ארוכה: more + than. אף פעם לא more + er.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "prepositions-time",
+    "emoji": "🔺",
+    "title": "פירמידת at, on, in",
+    "skills": [
+      "grammar.prepositions"
+    ],
+    "image": "at = נקודה (שעה). on = יום. in = משהו גדול (חודש, שנה, עונה).",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "connectors",
+    "emoji": "🧭",
+    "title": "מילות קישור הן שלטי דרך",
+    "skills": [
+      "grammar.connectors"
+    ],
+    "image": "and מוסיף, but מסובב, because מצביע אחורה לסיבה, so מצביע קדימה לתוצאה.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "passive",
+    "emoji": "📦",
+    "title": "החפץ עולה לבמה",
+    "skills": [
+      "grammar.passive"
+    ],
+    "image": "כשחשוב מה נעשה ולא מי עשה: be + צורה שלישית.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "modals",
+    "emoji": "🔧",
+    "title": "אחרי מודאלי: פועל נקי",
+    "skills": [
+      "grammar.modals",
+      "grammar.modals.deduction"
+    ],
+    "image": "can, must, should, will: אחריהם פועל בלי to ובלי s.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "gerund-infinitive",
+    "emoji": "🧩",
+    "title": "אחרי מילת יחס: ing",
+    "skills": [
+      "grammar.gerunds-infinitives"
+    ],
+    "image": "אחרי מילת יחס (for, at, of, about) הפועל מקבל ing.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "relative-clauses",
+    "emoji": "🔗",
+    "title": "who לאנשים, which לדברים",
+    "skills": [
+      "grammar.relative-clauses"
+    ],
+    "image": "who מתחבר לאנשים, which לחפצים ובעלי חיים, that לשניהם.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "quantifiers",
+    "emoji": "💧",
+    "title": "much למים, many לתפוחים",
+    "skills": [
+      "grammar.quantifiers"
+    ],
+    "image": "many = דברים שסופרים (תפוחים). much = דברים שלא סופרים (מים, זמן).",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "past-progressive",
+    "emoji": "🎬",
+    "title": "סרט שנקטע",
+    "skills": [
+      "grammar.past-progressive"
+    ],
+    "image": "was/were + ing: פעולה ארוכה בעבר. when + עבר פשוט: מה שקטע אותה.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "word-order",
+    "emoji": "🚂",
+    "title": "רכבת המשפט",
+    "skills": [
+      "grammar.word-order",
+      "grammar.adverbs"
+    ],
+    "image": "באנגלית הסדר קבוע: מי, עושה, מה, איפה, מתי.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "reported-speech",
+    "emoji": "🗣️",
+    "title": "דיבור עקיף זז אחורה",
+    "skills": [
+      "grammar.reported-speech",
+      "grammar.question-tags"
+    ],
+    "image": "כשמספרים מה מישהו אמר, הזמן בדרך כלל זז צעד אחד אחורה.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "used-to",
+    "emoji": "🕰️",
+    "title": "פעם, וכבר לא",
+    "skills": [
+      "grammar.used-to"
+    ],
+    "image": "used to + פועל: הרגל שהיה פעם ונגמר.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "past-perfect",
+    "emoji": "⏪",
+    "title": "העבר של העבר",
+    "skills": [
+      "grammar.past-perfect"
+    ],
+    "image": "had + צורה שלישית: מה שקרה קודם, לפני משהו אחר בעבר.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  },
+  {
+    "id": "plurals",
+    "emoji": "👥",
+    "title": "רבים: s, ויש חריגים",
+    "skills": [
+      "grammar.plurals"
+    ],
+    "image": "רוב המילים מקבלות s ברבים. יש חריגים: child, children. ויש מילים בלי רבים: information.",
+    "rule": "",
+    "examples": [],
+    "hebrewTrap": "",
+    "source": "original"
+  }
+]

@@ -41,6 +41,8 @@ const base = {
   explanation: Bilingual,
   /** Ordered hint ladder. Shown one by one before the explanation. */
   hints: z.array(Hint).max(3).default([]),
+  /** Memory anchor card shown with the explanation (content/anchors). Defaults to the skill's anchor. */
+  anchor: z.string().optional(),
   /** Misconceptions this item can detect or repair. */
   targetsMisconceptions: z.array(z.string()).default([]),
   tags: z.array(z.string()).default([]),
@@ -347,3 +349,26 @@ export function storyWords(text: string): string[] {
 export function glossFor(story: Pick<Story, 'glossary'>, word: string) {
   return story.glossary[word] ?? (word.endsWith("'s") ? story.glossary[word.slice(0, -2)] : undefined);
 }
+
+/**
+ * Memory anchor: one fixed mental image per core rule ("the fridge schedule"
+ * for present simple). The same card comes back with every related mistake
+ * until the rule sticks.
+ */
+export const Anchor = z.object({
+  id: z.string().regex(/^[a-z0-9][a-z0-9.-]*$/),
+  emoji: z.string().min(1),
+  title: z.string().min(1),
+  skills: z.array(z.string()).min(1),
+  /** The picture to remember, one or two Hebrew sentences. */
+  image: z.string().min(1),
+  /** The rule in plain Hebrew. */
+  rule: z.string().default(''),
+  /** Fixed pattern shown in color, e.g. "he / she / it + verb + s". */
+  pattern: z.string().optional(),
+  examples: z.array(z.object({ en: z.string().min(1), he: z.string().min(1) })).default([]),
+  /** Why Hebrew speakers get it wrong. */
+  hebrewTrap: z.string().default(''),
+  source: SourceRef,
+});
+export type Anchor = z.infer<typeof Anchor>;
