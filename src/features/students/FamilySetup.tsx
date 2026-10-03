@@ -12,8 +12,10 @@ export function FamilySetup() {
   const { store } = useServices();
   const nav = useNavigate();
   const [busy, setBusy] = useState(false);
-  const existing = new Set(students?.map((s) => s.name) ?? []);
-  const toCreate = members.filter((m) => !existing.has(m.name));
+  const key = (name: string) => name.trim().toLowerCase();
+  const existingNames = new Set(students?.map((s) => key(s.name)) ?? []);
+  const exists = (name: string) => existingNames.has(key(name));
+  const toCreate = members.filter((m) => !exists(m.name));
 
   const create = async () => {
     setBusy(true);
@@ -38,7 +40,7 @@ export function FamilySetup() {
               <div key={m.name} className="list-item">
                 <span className="grow">{m.name}</span>
                 {m.age && <span className="small muted">בן/בת {m.age}</span>}
-                {existing.has(m.name) && <span className="badge badge-neutral">קיים</span>}
+                {exists(m.name) && <span className="badge badge-neutral">קיים</span>}
               </div>
             ))}
           </div>

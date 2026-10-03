@@ -12,6 +12,10 @@ describe('family setup link', () => {
     expect(decodeFamily('[{"n":""},{"n":"ok","a":999}]')).toEqual([{ name: 'ok' }]);
   });
 
+  it('drops a repeated name', () => {
+    expect(decodeFamily('[{"n":"Dana","a":9},{"n":" dana "},{"n":"Ori"}]')).toEqual([{ name: 'Dana', age: 9 }, { name: 'Ori' }]);
+  });
+
   it('derives birth year', () => {
     expect(birthYearFromAge(12, new Date('2026-10-02'))).toBe(2014);
   });
