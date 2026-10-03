@@ -1,0 +1,240 @@
+/* ==========================================================================
+   Design tokens: the single source of truth for color, type, space, radius,
+   elevation and motion. One system, two moods (adults by default, kids under
+   [data-mood='kids']), each with a light and a dark value.
+
+   Light/dark: every color token is written once as light-dark(LIGHT, DARK).
+   The page follows the phone (color-scheme: light dark) unless
+   applyTheme() (src/app/settings.ts) sets <html data-theme="light|dark">.
+   The build lowers light-dark() for older Safari (see vite.config.ts).
+   Never write a separate dark block; add the dark value next to the light one.
+   ========================================================================== */
+
+:root {
+  color-scheme: light dark;
+
+  /* Surfaces: warm porcelain by day, deep navy night with glowing accents. */
+  --bg: light-dark(#f6f4fb, #0a0e1f);
+  --surface-1: light-dark(#ffffff, #141a33);
+  --surface-2: light-dark(#f0edf8, #1b2243);
+  --surface-3: light-dark(#e3def0, #262f58);
+  /* Decorative edges (cards, dividers). Not for controls. */
+  --border: light-dark(#e6e1f2, #252d55);
+  /* Control edges (inputs, options, segmented, chips): >= 3:1 on bg and surfaces. */
+  --border-strong: light-dark(#8a83a6, #6e78a8);
+  /* Top-edge highlight on raised cards (an inner light line). */
+  --highlight: light-dark(rgb(255 255 255 / 0.9), rgb(255 255 255 / 0.07));
+
+  /* Text */
+  --ink: light-dark(#17122e, #f3f1ff);
+  --ink-2: light-dark(#3a3456, #d2d0ec);
+  --muted: light-dark(#5a5478, #a9a8cc);
+
+  /* Accent: deep indigo-violet. Fill carries --on-accent text at >= 4.5:1. */
+  --accent: light-dark(#4f46e5, #6366f1);
+  --accent-strong: light-dark(#3730a3, #4338ca);
+  --accent-weak: light-dark(#eeecff, #222a5c);
+  /* Accent as text or icon on surfaces. */
+  --accent-fg: light-dark(#4f46e5, #a5b4fc);
+  --on-accent: #ffffff;
+  --focus: light-dark(#4f46e5, #a5b4fc);
+  /* Brand gradients. Every stop carries white text at >= 4.5:1; amber is
+     only a glow in a corner, never under text. */
+  --grad-brand: linear-gradient(135deg, #4338ca 0%, #6d28d9 45%, #a21caf 78%, #be185d 100%);
+  --grad-accent: linear-gradient(135deg, #4f46e5 0%, #6d28d9 100%);
+  --glow-amber: radial-gradient(closest-side, rgb(251 191 36 / 0.55), rgb(251 191 36 / 0));
+  --glow-pink: radial-gradient(closest-side, rgb(244 114 182 / 0.45), rgb(244 114 182 / 0));
+  --hero-from: light-dark(#eeecff, #222a5c);
+  --hero-to: light-dark(#fbeaf5, #3a1d4f);
+  /* Page backdrop: a soft mesh of the brand colors. */
+  --mesh: radial-gradient(60% 40% at 100% 0%, light-dark(rgb(124 58 237 / 0.13), rgb(124 58 237 / 0.32)), transparent 70%),
+          radial-gradient(50% 35% at 0% 8%, light-dark(rgb(236 72 153 / 0.10), rgb(190 24 93 / 0.22)), transparent 70%),
+          radial-gradient(45% 30% at 85% 55%, light-dark(rgb(245 158 11 / 0.08), rgb(79 70 229 / 0.16)), transparent 70%);
+
+  /* Skill gradients: full-color cards with white text (>= 4.5:1 at every stop). */
+  --g-vocabulary: linear-gradient(150deg, #2563eb 0%, #0369a1 100%);
+  --g-grammar: linear-gradient(150deg, #047857 0%, #0f766e 100%);
+  --g-reading: linear-gradient(150deg, #c2410c 0%, #be123c 100%);
+  --g-listening: linear-gradient(150deg, #9333ea 0%, #6d28d9 100%);
+  --g-writing: linear-gradient(150deg, #db2777 0%, #9d174d 100%);
+  --g-speaking: linear-gradient(150deg, #b45309 0%, #a16207 100%);
+  --g-games: linear-gradient(150deg, #7c3aed 0%, #4338ca 100%);
+  --g-primary: var(--grad-accent);
+
+  /* Feedback: fill / strong edge / weak tint / ink on tint / text on fill */
+  --success: light-dark(#15803d, #22c55e);
+  --success-strong: light-dark(#166534, #15803d);
+  --success-weak: light-dark(#ecfdf3, #0f2a1c);
+  --success-ink: light-dark(#166534, #86efac);
+  --on-success: light-dark(#ffffff, #052e16);
+  --danger: light-dark(#b91c1c, #f87171);
+  --danger-strong: light-dark(#991b1b, #dc2626);
+  --danger-weak: light-dark(#fef2f2, #2e1414);
+  --danger-ink: light-dark(#991b1b, #fca5a5);
+  --on-danger: light-dark(#ffffff, #1f0a0a);
+  --warning: light-dark(#b45309, #fbbf24);
+  --warning-weak: light-dark(#fffbeb, #2b2110);
+  --warning-ink: light-dark(#92400e, #fcd34d);
+
+  /* Skill accents: fg (icon/text) on weak (chip). Both modes >= 4.5:1.
+     Used for 40px icon chips and thin progress, never as large fills. */
+  --t-vocabulary-fg: light-dark(#0369a1, #7dd3fc); --t-vocabulary-weak: light-dark(#e0f2fe, #0c2a3d);
+  --t-grammar-fg: light-dark(#047857, #6ee7b7);    --t-grammar-weak: light-dark(#d1fae5, #0b2e24);
+  --t-reading-fg: light-dark(#c2410c, #fdba74);    --t-reading-weak: light-dark(#ffedd5, #3a1e0e);
+  --t-listening-fg: light-dark(#7e22ce, #d8b4fe);  --t-listening-weak: light-dark(#f3e8ff, #2a1640);
+  --t-writing-fg: light-dark(#be185d, #f9a8d4);    --t-writing-weak: light-dark(#fce7f3, #3a1229);
+  --t-speaking-fg: light-dark(#a16207, #fde047);   --t-speaking-weak: light-dark(#fef9c3, #33290a);
+  --t-games-fg: light-dark(#5b21b6, #c4b5fd);      --t-games-weak: light-dark(#ede9fe, #241a45);
+  --t-primary-fg: var(--accent-fg);                --t-primary-weak: var(--accent-weak);
+
+  /* Kids palette ("warm playful", cream base for the 3D illustrations).
+     Defined globally so kids components can use it anywhere; the
+     [data-mood='kids'] block below also maps the generic tokens onto it. */
+  --k-bg: light-dark(#fff8ee, #1f1a16);
+  --k-surface: light-dark(#ffffff, #2a231d);
+  --k-surface-2: light-dark(#ffefd9, #352c24);
+  --k-ink: light-dark(#3b2a1a, #fff4e6);
+  --k-muted: light-dark(#7a5c3e, #d9c2a6);
+  --k-edge: light-dark(#ebd3b0, #140f0b);
+  --k-primary: light-dark(#c2410c, #f97316);
+  --k-on-primary: light-dark(#ffffff, #1f1a16);
+  --k-sun: #f59e0b;
+  --k-sun-edge: #b45309;
+  --k-right: light-dark(#16a34a, #22c55e);
+  --k-right-weak: light-dark(#dcfce7, #12301e);
+  --k-try: #f59e0b;
+  /* Topic tile tints; labels stay --k-ink. In dark they fade into --k-surface. */
+  --k-sky: light-dark(#e3f2fd, color-mix(in oklab, #e3f2fd 14%, #2a231d));
+  --k-mint: light-dark(#e3f7ec, color-mix(in oklab, #e3f7ec 14%, #2a231d));
+  --k-peach: light-dark(#ffe8d6, color-mix(in oklab, #ffe8d6 14%, #2a231d));
+  --k-butter: light-dark(#fff3c4, color-mix(in oklab, #fff3c4 14%, #2a231d));
+  --k-lilac: light-dark(#efe6fb, color-mix(in oklab, #efe6fb 14%, #2a231d));
+  --k-rose: light-dark(#fde4ec, color-mix(in oklab, #fde4ec 14%, #2a231d));
+
+  /* Typography ----------------------------------------------------------- */
+  /* Heebo covers Hebrew (and Hebrew-side punctuation); Nunito covers Latin
+     letters and digits. Both are variable fonts bundled for offline use. */
+  --font-ui: 'Heebo', 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Arial Hebrew', Arial, sans-serif;
+  --font-en: 'Nunito', 'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+
+  /* Scale (1.2, whole px, line heights on a 4px grid). Weights: 400, 500, 700, 800. */
+  --fs-display: 40px; --lh-display: 48px;
+  --fs-h1: 28px;      --lh-h1: 36px;
+  /* Adult headlines with character: screen titles and the home greeting. */
+  --fs-title: 32px;   --lh-title: 40px;
+  --fs-hero: 36px;    --lh-hero: 44px;
+  --fs-h2: 22px;      --lh-h2: 28px;
+  --fs-h3: 18px;      --lh-h3: 24px;
+  --fs-body-lg: 18px; --lh-body-lg: 28px;
+  --fs-body: 16px;    --lh-body: 24px;
+  --fs-caption: 14px; --lh-caption: 20px;
+  --fs-micro: 12px;   --lh-micro: 16px;
+  /* Oversized display steps (scores, kids words, picture glyphs). */
+  --fs-display-lg: 56px;
+  --fs-display-xl: 64px;
+  --fs-jumbo: 96px;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  /* Spacing (8px grid; 4 is for hairline gaps only) ---------------------- */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 40px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --gutter: var(--space-3);
+  --content-max: 560px;
+
+  /* Sizing */
+  --hit: 48px;          /* minimum touch target (adults) */
+  --hit-kids: 64px;     /* minimum touch target (kids) */
+  --control-h: 48px;    /* inputs, segmented, chips */
+  --control-h-lg: 56px; /* primary buttons, options */
+  --stroke: 1.5px;      /* border width for cards and controls */
+  --stroke-strong: 2px; /* selected / state borders */
+
+  /* Radius --------------------------------------------------------------- */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+
+  /* Elevation (dark mode lifts with lighter surfaces, not heavier shadows) */
+  --e0: none;
+  /* Layered soft shadows, tinted with the brand violet in light mode. */
+  --e1: 0 1px 2px light-dark(rgb(40 24 90 / 0.06), rgb(0 0 0 / 0.35)), 0 4px 12px light-dark(rgb(40 24 90 / 0.05), rgb(0 0 0 / 0.25));
+  --e2: 0 2px 4px light-dark(rgb(40 24 90 / 0.06), rgb(0 0 0 / 0.35)), 0 12px 28px light-dark(rgb(40 24 90 / 0.10), rgb(0 0 0 / 0.45));
+  --e3: 0 24px 56px light-dark(rgb(40 24 90 / 0.20), rgb(0 0 0 / 0.65));
+  /* Colored lift under gradient cards and the primary button. */
+  --glow: 0 10px 24px -8px light-dark(rgb(79 70 229 / 0.55), rgb(99 102 241 / 0.6));
+  /* Tactile edge for primary actions (adults) and every kids tappable. */
+  --press-edge: 3px;
+  --press-edge-kids: 6px;
+  --scrim: rgb(15 23 42 / 0.5);
+
+  /* Motion --------------------------------------------------------------- */
+  --dur-1: 120ms; /* press, state color */
+  --dur-2: 200ms; /* small enter/exit */
+  --dur-3: 320ms; /* sheets, banners */
+  --dur-4: 600ms; /* celebration */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1); /* kids only */
+  --motion: 1;
+
+  /* Device */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* Legacy names still used inline by the kids screens (src/features/kids).
+     Remove once the kids redesign stops using them. */
+  --s-3: var(--space-3);
+  --t-lg: var(--fs-h3);
+}
+
+:root[data-theme='light'] { color-scheme: light; }
+:root[data-theme='dark'] { color-scheme: dark; }
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion: 0; }
+}
+
+@media (min-width: 414px) {
+  :root { --gutter: 20px; }
+}
+
+/* Kids mood: put data-mood="kids" on the kids <main>. Components that use the
+   generic tokens (surfaces, ink, accent, type) turn warm and chunky by
+   themselves; kids-only parts can use the --k-* tokens directly. */
+[data-mood='kids'] {
+  --bg: var(--k-bg);
+  --surface-1: var(--k-surface);
+  --surface-2: var(--k-surface-2);
+  --surface-3: var(--k-edge);
+  --border: var(--k-edge);
+  --ink: var(--k-ink);
+  --ink-2: var(--k-ink);
+  --muted: var(--k-muted);
+  --accent: var(--k-primary);
+  --accent-strong: light-dark(#9a3412, #c2410c);
+  --accent-weak: var(--k-surface-2);
+  --accent-fg: light-dark(#c2410c, #fdba74);
+  --on-accent: var(--k-on-primary);
+  --success: var(--k-right);
+  --success-weak: var(--k-right-weak);
+  --fs-body: 20px;    --lh-body: 28px;
+  --fs-h3: 24px;      --lh-h3: 32px;
+  --fs-display: 56px; --lh-display: 64px;
+  --fs-caption: 18px; --lh-caption: 24px; /* no kid-facing text below 18px */
+  --hit: var(--hit-kids);
+  --press-edge: var(--press-edge-kids);
+  background: var(--bg);
+  color: var(--ink);
+}

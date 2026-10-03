@@ -14,7 +14,8 @@ import { AudioPlayer } from '@/ui/AudioPlayer';
 import { seededShuffle } from './shuffle';
 import { useServices } from '@/app/services';
 import { domainOf } from '@/domain/skills/taxonomy';
-import { CheckIcon, XIcon } from '@/ui/icons';
+import { CheckIcon, InfoIcon, LessonIcon, XIcon } from '@/ui/icons';
+import { Button } from '@/ui/Button';
 import { Sheet } from '@/ui/Sheet';
 import { LessonView } from '@/features/lessons/LessonView';
 import { AnchorCard } from '@/ui/AnchorCard';
@@ -43,6 +44,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   );
   const [last, setLast] = useState<CheckResult | null>(null);
   const [lessonOpen, setLessonOpen] = useState(false);
+  const [whyOpen, setWhyOpen] = useState(false);
   const { content, speech } = useServices();
   // Moving to the next item or leaving the session stops this item's audio.
   useEffect(() => () => speech.stop(), [speech]);
@@ -67,6 +69,11 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   const audioText = ('audioText' in item && item.audioText) || item.prompt;
   const canSpeakPrompt = listen || (!!item.word && item.prompt === item.word.lemma);
   const instruction = chooseText(item.instruction, support);
+  // Action bar: never three styles in one bar. Skip moves out of the bar
+  // (a quiet text button under the answers) whenever there is a main action.
+  const hasCheck = !(feedback === 'brief' && item.type === 'choice');
+  const hasHint = policy === 'teach';
+  const skipInline = hasCheck || hasHint;
 
   const submit = (answer: string, result: CheckResult) => {
     setLast(result);
@@ -85,18 +92,16 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   return (
     <div className="exercise">
       <div className={`ex-instruction tone-${domainOf(item.skill)}`}>
-        <span className="dot" style={{ background: 'var(--c-fg)' }} />
+        <span className="dot" />
         <BiText text={instruction} />
       </div>
 
       {passage && <PassagePanel passage={passage} locked={glossLocked || (item.skill === 'reading.vocabulary-in-context' && !finished)} />}
 
       {listen && (
-        <div className="center" style={{ minHeight: 140 }}>
-          <div className="row" style={{ gap: 'var(--s-4)' }}>
-            <SpeakButton text={audioText} large label="השמעה" onPlayed={() => dispatch({ type: 'replay' })} />
-            <SpeakButton text={audioText} slow label="השמעה איטית מאוד" onPlayed={() => dispatch({ type: 'replay' })} />
-          </div>
+        <div className="listen-stage">
+          <SpeakButton text={audioText} size="hero" label="השמעה" onPlayed={() => dispatch({ type: 'replay' })} />
+          <SpeakButton text={audioText} slow label="השמעה איטית מאוד" onPlayed={() => dispatch({ type: 'replay' })} />
         </div>
       )}
 
@@ -124,48 +129,96 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
       {policy === 'teach' && <Help item={item} flow={flow} last={last} support={support} />}
 
       {lesson && feedback === 'full' && flow.explanationShown && !finished && (
-        <button className="btn btn-ghost btn-sm" style={{ alignSelf: 'flex-start' }} onClick={() => setLessonOpen(true)}>
-          <He>{`לשיעור המלא: ${lesson.title.he}`}</He>
-        </button>
+        <LessonLink title={lesson.title.he} onOpen={() => setLessonOpen(true)} />
       )}
+
+      {!finished && skipInline && (
+        <Button variant="tertiary" className="self-center" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
+          לדלג על השאלה
+        </Button>
+      )}
+
       <Sheet open={lessonOpen} onClose={() => setLessonOpen(false)} label={lesson?.title.he ?? 'שיעור'}>
         {lesson && <LessonView lesson={lesson} />}
       </Sheet>
 
       {finished && feedback === 'full' ? (
-        <div className={`banner ${flow.phase === 'solved' ? 'banner-good' : 'banner-bad'}`} role="status" aria-live="polite">
-          <AfterAnswer item={item} flow={flow} support={support} listen={listen} audioText={audioText} />
-          {lesson && (
-            <button className="btn btn-ghost btn-sm" style={{ alignSelf: 'flex-start' }} onClick={() => setLessonOpen(true)}>
-              <He>{`לשיעור המלא: ${lesson.title.he}`}</He>
-            </button>
-          )}
-          <button className={`btn btn-block ${flow.phase === 'solved' ? 'btn-good' : 'btn-bad'}`} onClick={() => onDone(toOutcome(flow))} autoFocus>
-            המשך
-          </button>
-        </div>
+        <>
+          <FeedbackStrip
+            item={item}
+            flow={flow}
+            support={support}
+            onWhy={() => setWhyOpen(true)}
+            onContinue={() => onDone(toOutcome(flow))}
+          />
+          <Sheet
+            open={whyOpen}
+            onClose={() => setWhyOpen(false)}
+            label="הסבר"
+            title="הסבר"
+            footer={
+              <Button variant="primary" size="lg" block onClick={() => onDone(toOutcome(flow))}>
+                המשך
+              </Button>
+            }
+          >
+            <Explanation
+              item={item}
+              flow={flow}
+              support={support}
+              listen={listen}
+              audioText={audioText}
+              onLesson={
+                lesson
+                  ? () => {
+                      setWhyOpen(false);
+                      setLessonOpen(true);
+                    }
+                  : undefined
+              }
+              lessonTitle={lesson?.title.he}
+            />
+          </Sheet>
+        </>
       ) : (
-      <div className="actions">
-        {finished ? null : (
-          <>
-            {!(feedback === 'brief' && item.type === 'choice') && (
-              <button className="btn btn-primary" form={`answer-${item.id}`} type="submit">
-                {feedback === 'none' ? 'הבא' : 'בדיקה'}
-              </button>
-            )}
-            {policy === 'teach' && (
-              <button className="btn" type="button" onClick={() => dispatch({ type: 'hint' })} disabled={flow.explanationShown}>
-                רמז
-              </button>
-            )}
-            <button className="btn btn-ghost" type="button" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
-              דילוג
-            </button>
-          </>
-        )}
-      </div>
+        !finished && (
+          <div className="actions">
+            <div className={`btn-row${hasHint && hasCheck ? ' lead' : ''}`}>
+              {hasHint && (
+                <Button size="lg" onClick={() => dispatch({ type: 'hint' })} disabled={flow.explanationShown}>
+                  רמז
+                </Button>
+              )}
+              {hasCheck && (
+                <Button variant="primary" size="lg" form={`answer-${item.id}`} type="submit">
+                  {feedback === 'none' ? 'הבא' : 'בדיקה'}
+                </Button>
+              )}
+              {!skipInline && (
+                <Button size="lg" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
+                  דילוג
+                </Button>
+              )}
+            </div>
+          </div>
+        )
       )}
     </div>
+  );
+}
+
+/** "לשיעור המלא": the lesson title stays one Hebrew line, English kept inline. */
+function LessonLink({ title, onOpen }: { title: string; onOpen: () => void }) {
+  return (
+    <button type="button" className="lesson-link" onClick={onOpen}>
+      <span className="tile-icon sm tone-primary">
+        <LessonIcon size={18} />
+      </span>
+      <span className="grow stack gap-0">
+        <span className="t-micro muted">לשיעור המלא</span>
+        <He inline className="t-strong">{title}</He>
+      </span>
+    </button>
   );
 }
 
@@ -197,8 +250,11 @@ function Prompt({ item, finished, canSpeak, glossLocked }: { item: Props['item']
   const isWord = !!item.word && (item.prompt === item.word.lemma || item.prompt === item.word.he);
   const fill = finished ? modelAnswer(item) : undefined;
   const content = renderCloze(item.prompt, fill, isHe ? undefined : { locked: glossLocked });
+  const speakText = canSpeak ? item.prompt : finished && fill && item.prompt.includes('___') ? item.prompt.replace('___', fill) : questionSpeech(item.prompt);
+  const speak = (canSpeak || !isHe) && <SpeakButton text={speakText} label={canSpeak ? 'השמעה' : 'הקראת השאלה'} />;
+  // English prompts read left to right with the speaker at the line's end.
   return (
-    <div className="row prompt-card" style={{ alignItems: 'center' }}>
+    <div className={`prompt-card prompt-row${isWord ? ' is-word' : ''}`} dir={isHe ? 'rtl' : 'ltr'}>
       {isHe ? (
         <p className={`grow ${isWord ? 'prompt-word' : 'prompt'}`}>{typeof content === 'string' ? <He>{content}</He> : content}</p>
       ) : (
@@ -206,11 +262,7 @@ function Prompt({ item, finished, canSpeak, glossLocked }: { item: Props['item']
           {content}
         </En>
       )}
-      {canSpeak ? (
-        <SpeakButton text={item.prompt} />
-      ) : (
-        !isHe && <SpeakButton text={finished && fill && item.prompt.includes('___') ? item.prompt.replace('___', fill) : questionSpeech(item.prompt)} label="הקראת השאלה" />
-      )}
+      {speak}
     </div>
   );
 }
@@ -243,7 +295,7 @@ function OrderInput({ item, seed, flow, onSubmit }: { item: OrderItem; seed: str
   };
 
   return (
-    <form id={`answer-${item.id}`} onSubmit={submit} className="stack" style={{ gap: 'var(--s-4)' }}>
+    <form id={`answer-${item.id}`} onSubmit={submit} className="stack gap-4">
       <div className="order-line prompt-card" dir="ltr" lang="en" aria-label="המשפט שלך">
         {placed.length === 0 && <span className="muted small" dir="rtl" lang="he">להקיש על המילים למטה</span>}
         {placed.map((id) => (
@@ -303,7 +355,7 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
   };
 
   return (
-    <form id={`answer-${item.id}`} onSubmit={submit} className="stack" style={{ gap: 'var(--s-4)' }}>
+    <form id={`answer-${item.id}`} onSubmit={submit} className="stack gap-4">
       <div className="fix-line prompt-card" dir="ltr" lang="en" aria-label="המשפט">
         {tokens.map((t, i) => (
           <button
@@ -320,22 +372,21 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
         ))}
       </div>
       {picked !== null && !finished && (
-        <div className="stack" style={{ gap: 'var(--s-2)' }}>
+        <div className="stack gap-2">
           <span className="small muted">במה להחליף את המילה?</span>
           <div className="options" role="group" aria-label="תיקונים">
-            {fixes.map((f) => (
-              <button
+            {fixes.map((f, idx) => (
+              <OptionRow
                 key={f || '∅'}
-                type="button"
-                className="option"
-                dir={f ? 'ltr' : undefined}
-                aria-pressed={choice === f}
-                data-state={missed.has(`${picked}:${f}`) ? 'wrong' : undefined}
+                index={idx}
+                dir={f ? 'ltr' : 'rtl'}
+                selected={choice === f}
+                state={missed.has(`${picked}:${f}`) ? 'wrong' : undefined}
                 disabled={missed.has(`${picked}:${f}`)}
-                onClick={() => setChoice(f)}
+                onPick={() => setChoice(f)}
               >
                 {f ? <En>{f}</En> : <He>למחוק את המילה</He>}
-              </button>
+              </OptionRow>
             ))}
           </div>
         </div>
@@ -352,9 +403,9 @@ function renderCloze(prompt: string, fill?: string, tap?: { locked: boolean }): 
     <>
       {t(before)}
       {fill ? (
-        <strong style={{ color: 'var(--good-ink)' }}>{fill}</strong>
+        <strong className="fill">{fill}</strong>
       ) : (
-        <span aria-label="מילה חסרה" style={{ display: 'inline-block', minWidth: '3.5em', borderBottom: '3px solid var(--primary-fg)', margin: '0 3px', verticalAlign: 'baseline' }}>
+        <span aria-label="מילה חסרה" className="blank">
           &nbsp;
         </span>
       )}
@@ -395,34 +446,22 @@ function ChoiceInput({
   return (
     <form id={`answer-${item.id}`} className="options" onSubmit={submit} role="group" aria-label="תשובות">
       {options.map((o, idx) => {
-        const state = finished && o.id === item.correctOptionId ? 'correct' : wrong.has(o.id) ? 'wrong' : undefined;
+        const state = finished && o.id === item.correctOptionId ? 'correct' : wrong.has(o.id) ? 'wrong' : finished ? 'dim' : undefined;
         // After answering, English options can be tapped word by word.
         const text = isEnglish ? <En>{finished ? <TapText text={o.text} /> : o.text}</En> : <He>{o.text}</He>;
         // Hearing the options of a listening item would give the answer away.
-        const speak = isEnglish && !(listen && !finished) && <SpeakButton text={o.text} label="הקראת התשובה" />;
-        if (finished) {
-          return (
-            <div key={o.id} className="option-row">
-              <div className="option" dir={isEnglish ? 'ltr' : undefined} data-state={state} aria-disabled="true">
-                <span className="key" aria-hidden="true">
-                  {'ABCDEF'[idx]}
-                </span>
-                {text}
-              </div>
-              {speak}
-            </div>
-          );
-        }
+        const speak = isEnglish && !(listen && !finished) && <SpeakButton text={o.text} size="inline" label="הקראת התשובה" />;
         return (
-          <div key={o.id} className="option-row">
-          <button
-            type="button"
-            className="option"
-            dir={isEnglish ? 'ltr' : undefined}
-            aria-pressed={selected === o.id}
-            data-state={state}
+          <OptionRow
+            key={o.id}
+            index={idx}
+            dir={isEnglish ? 'ltr' : 'rtl'}
+            selected={selected === o.id}
+            state={state}
             disabled={finished || wrong.has(o.id)}
-            onClick={() => {
+            static={finished}
+            end={speak}
+            onPick={() => {
               if (instant) {
                 if (!finished) onSubmit(o.id, checkChoice(item, o.id));
                 return;
@@ -431,16 +470,64 @@ function ChoiceInput({
               setSelected(o.id);
             }}
           >
-            <span className="key" aria-hidden="true">
-              {'ABCDEF'[idx]}
-            </span>
             {text}
-          </button>
-          {speak}
-          </div>
+          </OptionRow>
         );
       })}
     </form>
+  );
+}
+
+/**
+ * One answer row: [key chip | text | inline speaker]. In English rows the key
+ * sits on the left and the speaker on the right; Hebrew rows mirror that.
+ * The speaker is its own button inside the row, so the row has one layout.
+ * States: selected (accent), correct (check replaces the key), wrong (X
+ * replaces the key). No strike-through and no red text.
+ */
+function OptionRow({
+  index,
+  dir,
+  selected,
+  state,
+  disabled,
+  static: isStatic = false,
+  end,
+  onPick,
+  children,
+}: {
+  index: number;
+  dir: 'ltr' | 'rtl';
+  selected: boolean;
+  state: 'correct' | 'wrong' | 'dim' | undefined;
+  disabled: boolean;
+  static?: boolean;
+  end?: ReactNode;
+  onPick: () => void;
+  children: ReactNode;
+}) {
+  const key = state === 'correct' ? <CheckIcon size={16} /> : state === 'wrong' ? <XIcon size={14} /> : 'ABCDEF'[index];
+  const srState = state === 'correct' ? 'התשובה הנכונה' : state === 'wrong' ? 'לא נכון' : undefined;
+  const inner = (
+    <>
+      <span className="key" aria-hidden="true">
+        {key}
+      </span>
+      <span className="option-text">{children}</span>
+      {srState && <span className="sr-only">{srState}</span>}
+    </>
+  );
+  return (
+    <div className="option" dir={dir} data-state={state} data-selected={selected || undefined}>
+      {isStatic ? (
+        <div className="option-hit">{inner}</div>
+      ) : (
+        <button type="button" className="option-hit" aria-pressed={selected} disabled={disabled} onClick={onPick}>
+          {inner}
+        </button>
+      )}
+      {end && <span className="option-end">{end}</span>}
+    </div>
   );
 }
 
@@ -465,7 +552,7 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
       <input
         ref={ref}
         id={`in-${item.id}`}
-        className="input"
+        className="input en"
         dir="ltr"
         lang="en"
         value={value}
@@ -478,7 +565,6 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
         enterKeyHint="done"
         inputMode="text"
         placeholder="לכתוב כאן באנגלית"
-        style={{ fontFamily: 'var(--font-en)' }}
       />
     </form>
   );
@@ -508,7 +594,10 @@ function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowSt
     if (h) {
       blocks.push(
         <div key={`h${i}`} className="feedback feedback-hint" role="status">
-          <span className="feedback-tag">רמז {i + 1}</span>
+          <span className="feedback-tag">
+            <LessonIcon size={16} />
+            רמז {i + 1}
+          </span>
           <BiText text={chooseText(h, support)} />
         </div>,
       );
@@ -517,13 +606,16 @@ function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowSt
   if (flow.explanationShown) {
     blocks.push(
       <div key="ex" className="feedback feedback-info" role="status">
-        <span className="feedback-tag" style={{ color: 'var(--primary-fg)' }}>הסבר</span>
+        <span className="feedback-tag accent">
+          <InfoIcon size={16} />
+          הסבר
+        </span>
         <BiText text={chooseText(item.explanation, support)} />
       </div>,
     );
     if (anchor) blocks.push(<AnchorCard key="anchor" anchor={anchor} />);
   }
-  return blocks.length ? <div className="stack" aria-live="polite">{blocks}</div> : null;
+  return blocks.length ? <div className="stack gap-2" aria-live="polite">{blocks}</div> : null;
 }
 
 const PRAISE = ['מצוין!', 'נכון!', 'יפה מאוד!', 'בדיוק!', 'כל הכבוד!'];
@@ -539,9 +631,11 @@ function WhyNot({ item, chosen, support, open }: { item: ChoiceItem; chosen: Set
       <summary>למה לא האפשרויות האחרות?</summary>
       {wrong.map((o) => (
         <div key={o.id} className="why-not-item" data-chosen={chosen.has(o.id)}>
-          <span aria-hidden="true">✖️</span>
+          <span className="why-not-x" aria-hidden="true">
+            <XIcon size={12} />
+          </span>
           <span className="grow">
-            <strong>{isEnglish ? <En>{o.text}</En> : <He>{o.text}</He>}</strong>
+            <strong className="block">{isEnglish ? <En>{o.text}</En> : <He>{o.text}</He>}</strong>
             <BiText text={chooseText(o.feedback!, support)} />
           </span>
         </div>
@@ -550,13 +644,74 @@ function WhyNot({ item, chosen, support, open }: { item: ChoiceItem; chosen: Set
   );
 }
 
-function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['item']; flow: FlowState; support: SupportLanguage; listen: boolean; audioText: string }) {
+function headerFor(item: Props['item'], flow: FlowState): string {
+  const solved = flow.phase === 'solved';
+  const clean = solved && flow.attempts.length === 1 && flow.hintsShown === 0 && !flow.explanationShown;
+  const praise = PRAISE[[...item.id].reduce((a, ch) => a + ch.charCodeAt(0), 0) % PRAISE.length]!;
+  return solved ? (clean ? praise : 'נכון! יפה שהמשכת לנסות') : flow.phase === 'skipped' ? 'דילגנו. נחזור לזה בהמשך' : 'לא נורא, ככה לומדים';
+}
+
+/**
+ * After answering: a compact strip at the bottom that never covers the
+ * answers. Correct is green; a miss is amber (red stays on the chosen
+ * option only). "למה?" opens the full explanation in a sheet.
+ */
+function FeedbackStrip({ item, flow, support, onWhy, onContinue }: { item: Props['item']; flow: FlowState; support: SupportLanguage; onWhy: () => void; onContinue: () => void }) {
+  const solved = flow.phase === 'solved';
+  const skipped = flow.phase === 'skipped';
+  const model = modelAnswer(item);
+  const tone = solved ? 'good' : skipped ? 'neutral' : 'warn';
+  const preview = chooseText(item.explanation, support);
+  return (
+    <div className="fb-strip" data-tone={tone} role="status" aria-live="polite">
+      <div className="fb-head">
+        <span className="fb-icon">{solved ? <CheckIcon size={20} /> : skipped ? <InfoIcon size={20} /> : <XIcon size={18} />}</span>
+        <div className="grow stack gap-0">
+          <strong className="fb-title">{headerFor(item, flow)}</strong>
+          {!solved && model && (
+            <span className="fb-answer">
+              התשובה: <En className="t-strong">{model}</En>
+            </span>
+          )}
+        </div>
+      </div>
+      {!solved && (
+        <p className="fb-preview">{preview.primaryLang === 'en' ? <En>{preview.primary}</En> : <He>{preview.primary}</He>}</p>
+      )}
+      <div className="btn-row lead">
+        <Button size="lg" onClick={onWhy}>
+          {solved ? 'הסבר' : 'למה?'}
+        </Button>
+        <Button variant="primary" size="lg" onClick={onContinue} autoFocus>
+          המשך
+        </Button>
+      </div>
+    </div>
+  );
+}
+
+/** The explanation sheet: the answer, the rule, why not the others, the anchor, the word, the lesson. */
+function Explanation({
+  item,
+  flow,
+  support,
+  listen,
+  audioText,
+  onLesson,
+  lessonTitle,
+}: {
+  item: Props['item'];
+  flow: FlowState;
+  support: SupportLanguage;
+  listen: boolean;
+  audioText: string;
+  onLesson: (() => void) | undefined;
+  lessonTitle: string | undefined;
+}) {
   const { content } = useServices();
   const anchor = content.anchorFor(item);
   const solved = flow.phase === 'solved';
   const clean = solved && flow.attempts.length === 1 && flow.hintsShown === 0 && !flow.explanationShown;
-  const praise = PRAISE[[...item.id].reduce((a, ch) => a + ch.charCodeAt(0), 0) % PRAISE.length]!;
-  const header = solved ? (clean ? praise : 'נכון! יפה שהמשכת לנסות') : flow.phase === 'skipped' ? 'דילגנו. נחזור לזה בהמשך' : 'לא נורא, ככה לומדים';
   const model = modelAnswer(item);
   const sentence =
     item.prompt.includes('___') || listen || item.type === 'order' || item.type === 'fix' || item.tags.includes('translate') ? audioText : undefined;
@@ -564,55 +719,58 @@ function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['
 
   return (
     <>
-      <div className="banner-head">
-        <span className="banner-icon">{solved ? <CheckIcon size={22} /> : <XIcon size={20} />}</span>
-        <span>{header}</span>
-      </div>
-      <div className="banner-body">
-        {!solved && model && (
-          <div style={{ fontWeight: 650 }}>
-            התשובה הנכונה: <En>{model}</En>
+      {(sentence || model) && (
+        <section className="ex-section">
+          <span className="section-label">התשובה</span>
+          <div className="say-row" dir="ltr">
+            <En className="grow t-body-lg">{sentence ?? model}</En>
+            <SpeakButton text={sentence ?? model!} size="inline" />
           </div>
-        )}
-        {item.type === 'fix' && item.meaning && <He className="small">{item.meaning}</He>}
-        {!flow.explanationShown && <BiText text={chooseText(item.explanation, support)} className="small" />}
-        {item.type === 'choice' && <WhyNot item={item} chosen={new Set(flow.attempts.map((a) => a.answer))} support={support} open={!solved || !clean} />}
-        {anchor && !clean && <AnchorCard anchor={anchor} />}
-        {sentence && (
-          <div className="row">
-            <En className="grow">{sentence}</En>
-            <SpeakButton text={sentence} />
+          {item.type === 'fix' && item.meaning && <He className="muted">{item.meaning}</He>}
+        </section>
+      )}
+      <section className="ex-section">
+        <span className="section-label">הכלל</span>
+        <BiText text={chooseText(item.explanation, support)} />
+      </section>
+      {item.type === 'choice' && <WhyNot item={item} chosen={new Set(flow.attempts.map((a) => a.answer))} support={support} open={!solved || !clean} />}
+      {anchor && <AnchorCard anchor={anchor} />}
+      {item.word && (
+        <section className="ex-section">
+          <span className="section-label">המילה</span>
+          <div className="say-row" dir="ltr">
+            <En className="grow t-h3">{item.word.lemma}</En>
+            <SpeakButton text={item.word.lemma} size="inline" />
           </div>
-        )}
-        {item.word && (
-          <>
-            <div className="row">
-              <En className="grow">
-                <strong>{item.word.lemma}</strong>
-              </En>
-              <SpeakButton text={item.word.lemma} />
+          {example && example !== sentence && (
+            <div className="say-row" dir="ltr">
+              <En className="grow muted">{example}</En>
+              <SpeakButton text={example} size="inline" />
             </div>
-            {example && example !== sentence && (
-              <div className="row">
-                <En className="grow small">{example}</En>
-                <SpeakButton text={example} />
-              </div>
-            )}
-          </>
-        )}
-      </div>
+          )}
+        </section>
+      )}
+      {onLesson && lessonTitle && <LessonLink title={lessonTitle} onOpen={onLesson} />}
     </>
   );
 }
 
+/** Hebrew or English help text. English stands on its own LTR line, aligned left. */
 function BiText({ text, className = '' }: { text: ReturnType<typeof chooseText>; className?: string }) {
-  const main = text.primaryLang === 'en' ? <En>{text.primary}</En> : <He>{text.primary}</He>;
+  const main = text.primaryLang === 'en' ? <En as="div">{text.primary}</En> : <div><He>{text.primary}</He></div>;
   return (
     <div className={`bi-text ${className}`}>
-      <div>{main}</div>
-      {text.secondary && (
-        <div className="secondary small muted">{text.secondaryLang === 'he' ? <He>{text.secondary}</He> : <En>{text.secondary}</En>}</div>
-      )}
+      {main}
+      {text.secondary &&
+        (text.secondaryLang === 'he' ? (
+          <div className="secondary small muted">
+            <He>{text.secondary}</He>
+          </div>
+        ) : (
+          <En as="div" className="secondary small muted">
+            {text.secondary}
+          </En>
+        ))}
     </div>
   );
 }

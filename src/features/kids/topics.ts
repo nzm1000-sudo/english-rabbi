@@ -1,18 +1,22 @@
 import type { KidTopic } from '@/domain/kids/schema';
 
-export const TOPIC_INFO: Record<KidTopic, { he: string; emoji: string; hue: number }> = {
-  colors: { he: 'צבעים', emoji: '🎨', hue: 330 },
-  numbers: { he: 'מספרים', emoji: '🔢', hue: 210 },
-  animals: { he: 'בעלי חיים', emoji: '🦁', hue: 35 },
-  food: { he: 'אוכל', emoji: '🍎', hue: 0 },
-  body: { he: 'הגוף שלי', emoji: '👋', hue: 20 },
-  family: { he: 'משפחה', emoji: '👨‍👩‍👧', hue: 280 },
-  home: { he: 'בבית', emoji: '🏠', hue: 25 },
-  clothes: { he: 'בגדים', emoji: '👕', hue: 200 },
-  nature: { he: 'טבע', emoji: '🌳', hue: 120 },
-  shabbat: { he: 'שבת', emoji: '🕯️', hue: 45 },
-  holidays: { he: 'חגים', emoji: '🕎', hue: 220 },
-  toys: { he: 'צעצועים', emoji: '🧸', hue: 15 },
-  actions: { he: 'עושים', emoji: '🏃', hue: 160 },
-  feelings: { he: 'רגשות', emoji: '😊', hue: 50 },
+/**
+ * Topic names (spoken and shown) and an emoji used only when
+ * the topic has no 3D picture (see TOPIC_PICTURES in domain/kids/pictures).
+ */
+export const TOPIC_INFO: Record<KidTopic, { he: string; emoji: string }> = {
+  colors: { he: 'צבעים', emoji: '🎨' },
+  numbers: { he: 'מספרים', emoji: '🔢' },
+  animals: { he: 'בעלי חיים', emoji: '🦁' },
+  food: { he: 'אוכל', emoji: '🍎' },
+  body: { he: 'הגוף שלי', emoji: '👋' },
+  family: { he: 'משפחה', emoji: '👨‍👩‍👧' },
+  home: { he: 'בבית', emoji: '🏠' },
+  clothes: { he: 'בגדים', emoji: '👕' },
+  nature: { he: 'טבע', emoji: '🌳' },
+  shabbat: { he: 'שבת', emoji: '🕯️' },
+  holidays: { he: 'חגים', emoji: '🕎' },
+  toys: { he: 'צעצועים', emoji: '🧸' },
+  actions: { he: 'עושים', emoji: '🏃' },
+  feelings: { he: 'רגשות', emoji: '😊' },
 };

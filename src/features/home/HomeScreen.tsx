@@ -1,44 +1,39 @@
+import { useState, type CSSProperties } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useProfile, useStudent } from '@/app/hooks';
 import { Avatar } from '@/ui/Avatar';
 import { En } from '@/ui/En';
 import { He } from '@/ui/He';
+import { Art } from '@/ui/Art';
 import { Ring } from '@/ui/Ring';
+import { Sheet } from '@/ui/Sheet';
 import { DomainIcon } from '@/ui/DomainIcon';
+import { ButtonLink } from '@/ui/Button';
 import {
-  BoltIcon,
   BookIcon,
-  BookmarkIcon,
-  ChatIcon,
-  LinkIcon,
-  MicIcon,
-  SearchIcon,
-  TranslateIcon,
-  TreeIcon,
-  ChevronIcon,
-  ExamIcon,
   FlameIcon,
   GearIcon,
-  GymIcon,
+  GridIcon,
   LessonIcon,
   RepeatIcon,
-  RiddleIcon,
   StarIcon,
   TargetIcon,
   TrophyIcon,
-  GrammarIcon,
-  VocabIcon,
+  PlayIcon,
 } from '@/ui/icons';
-import type { DomainSummary, LearnerProfile } from '@/domain/student/profile';
+import type { DomainSummary } from '@/domain/student/profile';
 import type { Domain } from '@/domain/skills/taxonomy';
 import { rankOf } from '@/domain/learning/progression';
 import { useGameHistory } from '@/features/practice/useGameHistory';
 import { localDay } from '@/domain/learning/events';
 import { levelCenter } from '@/domain/skills/cefr';
-import type { ReactNode } from 'react';
 import { resume } from '@/app/resume';
 import { stageOf } from '@/domain/student/student';
 import { KidsHome } from '@/features/kids/KidsHome';
+import { Row, Stack } from '@/ui/layout';
+import type { ArtName } from '@/ui/art';
+import { MORE_COUNT } from './moreModes';
+import { RowLink } from '@/ui/RowLink';
 
 const PRACTICE: { domain: Domain; title: string; en: string }[] = [
   { domain: 'vocabulary', title: 'אוצר מילים', en: 'Vocabulary' },
@@ -47,12 +42,16 @@ const PRACTICE: { domain: Domain; title: string; en: string }[] = [
   { domain: 'listening', title: 'הבנת הנשמע', en: 'Listening' },
 ];
 
-/** Home: one main action, today's goal, skill tiles, games. Symmetric 2-column grids. */
+/**
+ * Home, at most a screen and a half: the lesson of the day, what to pick up
+ * today, four skills, and one door to everything else.
+ */
 export function HomeScreen() {
   const { sid } = useParams();
   const student = useStudent(sid);
   const profile = useProfile(student);
   const games = useGameHistory(student?.id);
+  const [profileOpen, setProfileOpen] = useState(false);
 
   if (student === null) return <main className="screen empty">התלמיד לא נמצא</main>;
   if (student && stageOf(student) !== 'regular') return <KidsHome student={student} stage={stageOf(student) === 'little' ? 'little' : 'young'} />;
@@ -68,219 +67,149 @@ export function HomeScreen() {
   const dailyDone = !!games?.some((g) => g.game === 'daily' && g.day === today);
   const base = `/s/${student.id}`;
   const saved = resume.latestSession(student.id);
+  const lessonTo = `${base}/practice/${p.calibrated ? 'lesson' : 'placement'}`;
 
   return (
-    <main className="screen">
-      <header className="spread">
-        <div className="row" style={{ gap: 10 }}>
-          <Avatar name={student.name} hue={student.hue} />
-          <div>
-            <div style={{ fontSize: 'var(--t-lg)', fontWeight: 700 }}>שלום, {student.name}</div>
-            <Link to="/" className="switch-link">
-              לא {student.name}? החלפה
-            </Link>
-          </div>
+    <main className="screen home">
+      <header className="home-head">
+        <button type="button" className="avatar-btn" onClick={() => setProfileOpen(true)} aria-label={`הפרופיל של ${student.name}`}>
+          <Avatar name={student.name} hue={student.hue} size={48} />
+        </button>
+        <div className="grow home-greet">
+          <span className="eyebrow">{greeting()}</span>
+          <h1 className="home-name">{student.name}</h1>
         </div>
-        <div className="row" style={{ gap: 6 }}>
-          <span className="chip-stat" aria-label={`${p.activity.streakDays} ימים ברצף`}>
+        <Link to={`${base}/progress`} className="stat-pill" aria-label={`${p.activity.streakDays} ימים ברצף, ${p.activity.xpTotal} נקודות`}>
+          <span className="stat-pill-item">
             <FlameIcon size={18} />
-            {p.activity.streakDays}
+            <b>{p.activity.streakDays}</b>
           </span>
-          <Link to={`${base}/progress`} className="chip-stat" aria-label={`${p.activity.xpTotal} נקודות, דרגה ${rank.current.level}`}>
+          <span className="stat-pill-sep" aria-hidden="true" />
+          <span className="stat-pill-item">
             <StarIcon size={18} />
-            {p.activity.xpTotal}
-          </Link>
-          <Link to={`${base}/settings`} className="icon-btn" aria-label="הגדרות" style={{ width: 38, height: 38 }}>
-            <GearIcon size={20} />
-          </Link>
-        </div>
+            <b>{p.activity.xpTotal}</b>
+          </span>
+        </Link>
       </header>
 
-      <Link to={`${base}/practice/${p.calibrated ? 'lesson' : 'placement'}`} className="hero">
-        <div className="grow stack" style={{ gap: 4, position: 'relative' }}>
-          <span className="title">{p.calibrated ? 'השיעור של היום' : 'בואו נכיר'}</span>
-          <span className="hero-sub">
-            {p.calibrated ? 'תרגול שנבנה בדיוק בשבילך' : 'אבחון קצר, כ־5 דקות. מתחילים בינוני ומתאימים את הקושי.'}
-          </span>
-          <span className="hero-cta">
-            {p.calibrated ? 'להתחיל' : 'להתחיל אבחון'}
-            <ChevronIcon size={16} />
+      <section className="hero" aria-labelledby="hero-title">
+        <span className="hero-glow" aria-hidden="true" />
+        <div className="hero-top">
+          <Stack gap={1} className="grow">
+            <span className="hero-eyebrow">{p.calibrated ? 'השיעור של היום' : 'מתחילים כאן'}</span>
+            <h2 className="hero-title" id="hero-title">
+              {p.calibrated ? 'תרגול שנבנה בדיוק בשבילך' : 'בואו נכיר'}
+            </h2>
+            <p className="hero-sub">{p.calibrated ? 'כמה דקות של מילים, דקדוק והבנה, ברמה שלך.' : 'אבחון קצר, כ־5 דקות. מתחילים בינוני ומתאימים את הקושי.'}</p>
+          </Stack>
+          <Art name="hero-study" size={124} tone="hero" className="hero-art" fallback={<LessonIcon />} />
+        </div>
+        <div className="hero-goal">
+          <Ring value={todayPct} size={44} stroke={5} className="ring-on-dark">
+            <span className="num ring-pct" dir="ltr">
+              {Math.round(todayPct * 100)}%
+            </span>
+          </Ring>
+          <span className="grow">
+            <b className="num">{p.activity.minutesToday}</b> מתוך <b className="num">{goal}</b> דקות היום
           </span>
         </div>
-        <Ring value={todayPct} size={84} stroke={8}>
-          <span>
-            {p.activity.minutesToday}
-            <small>מתוך {goal} דק׳</small>
-          </span>
-        </Ring>
-      </Link>
-
-      {saved && (
-        <Link to={`${base}/practice/${saved.mode}${Object.keys(saved.params).length ? `?${new URLSearchParams(saved.params).toString()}` : ''}`} className="row-card resume-card">
-          <span className="tile-icon" style={{ background: 'var(--primary-weak)', color: 'var(--primary-fg)' }}>
-            <RepeatIcon />
-          </span>
-          <span className="grow">
-            <strong>להמשיך מאיפה שעצרת</strong>
-            <span className="xs muted" style={{ display: 'block' }}>
-              {saved.title} · {saved.results.length} מתוך {saved.total}
-            </span>
-          </span>
-          <ChevronIcon />
+        <Link to={lessonTo} className="hero-cta">
+          <PlayIcon size={18} />
+          {p.calibrated ? 'להתחיל את השיעור' : 'להתחיל אבחון'}
         </Link>
+      </section>
+
+      {(saved || p.calibrated || p.words.due > 0 || focus || weak) && (
+        <section className="stack gap-2" aria-label="היום">
+          <h2 className="section-title">היום</h2>
+          <div className="list">
+            {saved && (
+              <RowLink
+                to={`${base}/practice/${saved.mode}${Object.keys(saved.params).length ? `?${new URLSearchParams(saved.params).toString()}` : ''}`}
+                art="continue"
+                tone="primary"
+                icon={<RepeatIcon />}
+                title="להמשיך מאיפה שעצרת"
+                sub={`${saved.title} · ${saved.results.length} מתוך ${saved.total}`}
+              />
+            )}
+            {p.calibrated &&
+              (dailyDone ? (
+                <div className="list-item" aria-label="האתגר היומי הושלם">
+                  <Art name="target" size={44} tone="grammar" fallback={<TargetIcon />} />
+                  <span className="grow stack gap-0">
+                    <strong>האתגר היומי הושלם</strong>
+                    <span className="small muted">מחר מחכה אתגר חדש</span>
+                  </span>
+                  <span className="badge badge-good">בוצע</span>
+                </div>
+              ) : (
+                <RowLink to={`${base}/practice/daily`} art="target" tone="games" icon={<TargetIcon />} title="האתגר היומי" sub="6 שאלות, חידה אחת בפנים" />
+              ))}
+            {p.words.due > 0 && (
+              <RowLink to={`${base}/practice/review`} art="words" tone="vocabulary" icon={<RepeatIcon />} title="חזרה על מילים" sub={`${p.words.due} מילים מחכות לחזרה היום`} />
+            )}
+            {focus ? (
+              <RowLink to={`${base}/practice/mistakes`} art="streak" tone="speaking" icon={<RepeatIcon />} title="כדאי לחזק" subNode={<He className="small muted clamp-2">{focus.note.he}</He>} />
+            ) : weak ? (
+              <RowLink
+                to={`${base}/practice/skill?skill=${encodeURIComponent(weak.skillId)}`}
+                art="streak"
+                tone="speaking"
+                icon={<RepeatIcon />}
+                title="כדאי לחזק"
+                subNode={<He inline className="small muted">{weak.name.he}</He>}
+              />
+            ) : null}
+          </div>
+        </section>
       )}
 
-      <Link to={`${base}/path`} className="row-card">
-        <span className="tile-icon" style={{ background: 'var(--primary-weak)', color: 'var(--primary-fg)' }}>
-          <TargetIcon />
-        </span>
-        <span className="grow">
-          <strong>המסלול שלי</strong>
-          <span className="xs muted" style={{ display: 'block' }}>
-            {rank.current.he} · דרגה {rank.current.level}
-            {p.activity.frozenDays > 0 ? ' · מגן הרצף שמר על הרצף' : ''}
-          </span>
-        </span>
-        <ChevronIcon />
-      </Link>
-
-      {p.calibrated &&
-        (dailyDone ? (
-          <div className="row-card tone-games" aria-label="האתגר היומי הושלם">
-            <span className="tile-icon" style={{ background: 'var(--good-weak)', color: 'var(--good-ink)' }}>
-              <TargetIcon />
-            </span>
-            <span className="grow">
-              <strong>האתגר היומי הושלם</strong>
-              <span className="xs muted" style={{ display: 'block' }}>
-                מחר מחכה אתגר חדש
-              </span>
-            </span>
-            <span className="badge badge-good">בוצע</span>
-          </div>
-        ) : (
-          <Link to={`${base}/practice/daily`} className="row-card tone-games">
-            <span className="tile-icon" style={{ background: 'var(--t-games-weak)', color: 'var(--t-games-fg)' }}>
-              <TargetIcon />
-            </span>
-            <span className="grow">
-              <strong>האתגר היומי</strong>
-              <span className="xs muted" style={{ display: 'block' }}>
-                6 שאלות, חידה אחת בפנים
-              </span>
-            </span>
-            <ChevronIcon />
-          </Link>
-        ))}
-
-      <section className="stack">
-        <div className="section-head">
-          <h2>תרגול</h2>
-          {p.words.due > 0 && (
-            <Link to={`${base}/practice/review`} className="badge badge-accent" style={{ textDecoration: 'none' }}>
-              {p.words.due} לחזרה היום
-            </Link>
-          )}
-        </div>
-        <div className="grid-2">
+      <section className="stack gap-2" aria-labelledby="skills-title">
+        <h2 className="section-title" id="skills-title">
+          תרגול לפי מיומנות
+        </h2>
+        <div className="grid-2 skill-grid">
           {PRACTICE.map((x) => (
             <SkillTile key={x.domain} to={`${base}/practice/${x.domain}`} d={p.domains.find((d) => d.domain === x.domain)!} title={x.title} en={x.en} />
           ))}
         </div>
       </section>
 
-      <section className="stack">
-        <div className="section-head">
-          <h2>קוראים ומדברים</h2>
-        </div>
-        <Link to={`${base}/stories`} className="row-card">
-          <span className="tile-icon" style={{ background: 'var(--t-reading-weak)', color: 'var(--t-reading-fg)' }}>
-            <BookIcon />
-          </span>
-          <span className="grow">
-            <strong>סיפורים</strong>
-            <span className="xs muted" style={{ display: 'block' }}>
-              סיפורים ושיחות על משפחת שפירו, בכל הרמות
-            </span>
-          </span>
-          <ChevronIcon />
-        </Link>
-        <div className="grid-2">
-          <GameTile to={`${base}/words`} tone="vocabulary" icon={<BookmarkIcon />} title="המילים שלי" sub="מילים ששמרתי מהסיפורים" />
-          <GameTile to={`${base}/shadow`} tone="speaking" icon={<MicIcon />} title="חזרה בקול" sub="להקשיב, להגיד, להשוות" />
+      <section className="stack gap-2" aria-labelledby="explore-title">
+        <h2 className="section-title" id="explore-title">
+          עוד בשבילך
+        </h2>
+        <div className="list">
+          <RowLink to={`${base}/path`} art="path" tone="primary" icon={<TargetIcon />} title="המסלול שלי" sub={`${rank.current.he} · דרגה ${rank.current.level}${p.activity.frozenDays > 0 ? ' · מגן הרצף שמר על הרצף' : ''}`} />
+          <RowLink to={`${base}/stories`} art="stories" tone="reading" icon={<BookIcon />} title="סיפורים" sub="סיפורים ושיחות על משפחת שפירו, בכל הרמות" />
+          <RowLink to={`${base}/more`} art="games" tone="games" icon={<GridIcon />} title="עוד תרגולים" sub={`${MORE_COUNT} דרכים לתרגל: משחקים, מבחן, תרגום ועוד`} />
         </div>
       </section>
 
-      <section className="stack">
-        <div className="section-head">
-          <h2>כותבים ומתקנים</h2>
-        </div>
-        <div className="grid-2">
-          <GameTile to={`${base}/practice/translate`} tone="writing" icon={<TranslateIcon />} title="תרגום" sub="מעברית לאנגלית" />
-          <GameTile to={`${base}/practice/fix`} tone="grammar" icon={<SearchIcon />} title="מצא את הטעות" sub="משפט עם טעות אחת" />
-          <GameTile to={`${base}/practice/chunks`} tone="listening" icon={<LinkIcon />} title="צירופים קבועים" sub="make a decision" />
-          <GameTile to={`${base}/practice/families`} tone="reading" icon={<TreeIcon />} title="משפחות מילים" sub="happy, happiness" />
-        </div>
-      </section>
-
-      <section className="stack">
-        <div className="section-head">
-          <h2>משחקים ואתגרים</h2>
-        </div>
-        <div className="grid-2">
-          <GameTile to={`${base}/practice/quiz`} tone="games" icon={<TrophyIcon />} title="חידון" sub="10 שאלות, בלי רמזים" />
-          <GameTile to={`${base}/practice/lightning`} tone="reading" icon={<BoltIcon />} title="סבב בזק" sub="60 שניות, כמה שיותר" />
-          <GameTile to={`${base}/practice/exam`} tone="vocabulary" icon={<ExamIcon />} title="מבחן" sub="בסגנון בגרות" />
-          <GameTile to={`${base}/practice/riddles`} tone="listening" icon={<RiddleIcon />} title="חידות" sub="חשיבה באנגלית" />
-          <GameTile to={`${base}/practice/mistakes`} tone="writing" icon={<GymIcon />} title="חדר כושר" sub="לטעויות שחוזרות" />
-          <GameTile to={`${base}/learn`} tone="grammar" icon={<LessonIcon />} title="שיעורים" sub="הסברים ודוגמאות" />
-          <GameTile to={`${base}/practice/sentences`} tone="speaking" icon={<GrammarIcon />} title="בונים משפטים" sub="לסדר מילים למשפט" />
-          <GameTile to={`${base}/match`} tone="primary" icon={<VocabIcon />} title="התאמת זוגות" sub="מילים ופירושים" />
-        </div>
-      </section>
-
-      {(focus || weak) && (
-        <section className="stack">
-          <div className="section-head">
-            <h2>כדאי לחזק</h2>
-          </div>
-          {focus ? (
-            <Link to={`${base}/practice/mistakes`} className="row-card" style={{ alignItems: 'flex-start' }}>
-              <span className="tile-icon" style={{ background: 'var(--warn-weak)', color: 'var(--warn-ink)' }}>
-                <RepeatIcon />
-              </span>
-              <span className="grow stack" style={{ gap: 2 }}>
-                <He className="">{focus.note.he}</He>
-                <He className="small muted">{focus.tip.he}</He>
-              </span>
-            </Link>
-          ) : weak ? (
-            <Link to={`${base}/practice/skill?skill=${encodeURIComponent(weak.skillId)}`} className="row-card">
-              <span className="tile-icon" style={{ background: 'var(--warn-weak)', color: 'var(--warn-ink)' }}>
-                <RepeatIcon />
-              </span>
-              <He className="grow">{weak.name.he}</He>
-              <ChevronIcon />
-            </Link>
-          ) : null}
-        </section>
-      )}
-
-      <div className="row-card" aria-disabled="true" style={{ opacity: 0.6 }}>
-        <span className="tile-icon tone-speaking" style={{ background: 'var(--t-speaking-weak)', color: 'var(--t-speaking-fg)' }}>
-          <ChatIcon />
-        </span>
-        <span className="grow">
-          <strong>שיחה עם המורה</strong> <En className="xs muted">Conversation</En>
-          <span className="xs muted" style={{ display: 'block' }}>
-            בקרוב
+      <Sheet open={profileOpen} onClose={() => setProfileOpen(false)} label="פרופיל" title={student.name}>
+        <Stack gap={3} align="center" className="txt-center">
+          <Avatar name={student.name} hue={student.hue} size={80} />
+          <span className="muted">
+            {rank.current.he} · דרגה {rank.current.level}
           </span>
-        </span>
-      </div>
-
-      <WeekStrip profile={p} goal={goal} today={today} />
+        </Stack>
+        <div className="list">
+          <RowLink to={`${base}/progress`} art="progress" tone="speaking" icon={<TrophyIcon />} title="ההתקדמות שלי" sub="דרגה, הישגים והשבוע שלי" />
+          <RowLink to={`${base}/settings`} art="settings" tone="primary" icon={<GearIcon />} title="הגדרות" sub="מסלול, מבטא, מהירות ומראה" />
+        </div>
+        <ButtonLink to="/" size="lg" block>
+          החלפת תלמיד
+        </ButtonLink>
+      </Sheet>
     </main>
   );
+}
+
+function greeting(): string {
+  const h = new Date().getHours();
+  return h < 5 ? 'לילה טוב' : h < 12 ? 'בוקר טוב' : h < 17 ? 'צהריים טובים' : h < 21 ? 'ערב טוב' : 'לילה טוב';
 }
 
 /** Tile progress = position from A1 toward the student's target level. */
@@ -292,62 +221,27 @@ function domainProgress(d: DomainSummary): number {
 }
 
 function SkillTile({ to, d, title, en }: { to: string; d: DomainSummary; title: string; en: string }) {
+  const pct = Math.round(domainProgress(d) * 100);
   return (
-    <Link to={to} className={`tile tone-${d.domain}`}>
-      <span className="tile-icon">
-        <DomainIcon domain={d.domain} />
+    <Link to={to} className={`skill-tile g-${d.domain}`} style={{ '--pct': `${pct}%` } as CSSProperties}>
+      <span className="skill-tile-sheen" aria-hidden="true" />
+      <Row justify="between" align="start" className="skill-tile-top">
+        <Art name={d.domain as ArtName} size={76} tone={`${d.domain} on-color`} fallback={<DomainIcon domain={d.domain} />} />
+        {d.level ? (
+          <span className="glass-chip" lang="en">
+            {d.level}
+          </span>
+        ) : (
+          <span className="glass-chip">חדש</span>
+        )}
+      </Row>
+      <span className="skill-tile-text">
+        <strong>{title}</strong>
+        <En className="skill-tile-en">{en}</En>
       </span>
-      {d.level && (
-        <span className="tile-level" lang="en">
-          {d.level}
-        </span>
-      )}
-      <span>
-        <strong style={{ display: 'block' }}>{title}</strong>
-        <En className="tile-sub">{en}</En>
-      </span>
-      <span className="tile-bar" aria-hidden="true">
-        <span style={{ width: `${Math.round(domainProgress(d) * 100)}%` }} />
+      <span className="skill-tile-bar" aria-hidden="true">
+        <span />
       </span>
     </Link>
-  );
-}
-
-function GameTile({ to, tone, icon, title, sub }: { to: string; tone: string; icon: ReactNode; title: string; sub: string }) {
-  return (
-    <Link to={to} className={`tile tile-solid tone-${tone}`}>
-      <span className="tile-icon">{icon}</span>
-      <span style={{ position: 'relative' }}>
-        <strong style={{ display: 'block' }}>{title}</strong>
-        <span className="tile-sub">{sub}</span>
-      </span>
-    </Link>
-  );
-}
-
-const DAY_LETTERS = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ש'];
-
-function WeekStrip({ profile, goal, today }: { profile: LearnerProfile; goal: number; today: string }) {
-  return (
-    <section className="panel stack" aria-label="השבוע">
-      <div className="spread">
-        <strong>השבוע</strong>
-        <span className="small muted">{profile.activity.minutesLast7} דקות</span>
-      </div>
-      <div className="week">
-        {profile.activity.week.map((d) => {
-          const pct = Math.min(100, (d.minutes / goal) * 100);
-          const letter = DAY_LETTERS[new Date(`${d.day}T12:00:00`).getDay()];
-          return (
-            <div className={`week-day${d.day === today ? ' today' : ''}`} key={d.day} title={`${d.minutes} דקות`}>
-              <div className="week-bar">
-                <span style={{ height: `${d.items ? Math.max(10, pct) : 0}%` }} />
-              </div>
-              {letter}
-            </div>
-          );
-        })}
-      </div>
-    </section>
   );
 }

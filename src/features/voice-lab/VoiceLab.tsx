@@ -104,7 +104,7 @@ function VoiceRow({ voice, chosen, onChoose, accent, rate }: { voice: SpeechVoic
     void speech.speak(TEST_SENTENCES[i]!, { accent, rate, voiceId: voice.id, provider: 'web-speech', key });
   };
   return (
-    <div className="list-item" style={{ flexDirection: 'column', alignItems: 'stretch', gap: 'var(--s-2)' }}>
+    <div className="list-item stack items-stretch gap-2">
       <div className="row">
         <button className="speak" onClick={play} aria-label={playing ? 'עצירה' : `השמעה בקול ${voice.name}`} data-state={playing ? state.status : 'idle'}>
           {playing ? <StopIcon size={18} /> : <SpeakerIcon />}
@@ -121,7 +121,7 @@ function VoiceRow({ voice, chosen, onChoose, accent, rate }: { voice: SpeechVoic
       </div>
       <div className="chips">
         {TEST_SENTENCES.map((_, n) => (
-          <button key={n} className="chip" style={{ minHeight: 32 }} aria-pressed={i === n} onClick={() => setI(n)} aria-label={`משפט ${n + 1}`}>
+          <button key={n} className="chip dot-chip" aria-pressed={i === n} onClick={() => setI(n)} aria-label={`משפט ${n + 1}`}>
             {n + 1}
           </button>
         ))}

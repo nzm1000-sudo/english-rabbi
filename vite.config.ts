@@ -13,6 +13,18 @@ export default defineConfig({
       '@content': fileURLToPath(new URL('./content', import.meta.url)),
     },
   },
+  css: {
+    // Lightning CSS lowers newer syntax (light-dark() in the design tokens) for
+    // the oldest Safari we support, so one token set serves light and dark.
+    transformer: 'lightningcss',
+    lightningcss: {
+      // Versions are encoded as major << 16 | minor << 8.
+      targets: { safari: (15 << 16) | (4 << 8), ios_saf: (15 << 16) | (4 << 8), chrome: 100 << 16, firefox: 100 << 16 },
+    },
+  },
+  build: {
+    cssMinify: 'lightningcss',
+  },
   plugins: [
     react(),
     VitePWA({
@@ -28,8 +40,8 @@ export default defineConfig({
         dir: 'rtl',
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#f7f6ff',
-        theme_color: '#5b3df5',
+        background_color: '#f8fafc',
+        theme_color: '#f8fafc',
         start_url: './',
         icons: [{ src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }],
       },
@@ -54,6 +66,16 @@ export default defineConfig({
               cacheName: 'audio-v1',
               cacheableResponse: { statuses: [200] },
               expiration: { maxEntries: 10000 },
+            },
+          },
+          {
+            // 3D illustrations: cached on first view, then work offline.
+            urlPattern: ({ url }) => url.pathname.includes('/pics/') && url.pathname.endsWith('.webp'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'pics-v1',
+              cacheableResponse: { statuses: [200] },
+              expiration: { maxEntries: 2000 },
             },
           },
         ],

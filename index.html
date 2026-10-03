@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
-    <meta name="theme-color" content="#f7f6ff" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#14112b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1220" media="(prefers-color-scheme: dark)" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -15,7 +15,13 @@
     <script>
       try {
         var t = localStorage.getItem('theme');
-        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+        if (t === 'light' || t === 'dark') {
+          document.documentElement.dataset.theme = t;
+          // Status bar follows the chosen theme (values match --bg in tokens.css).
+          document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+            m.setAttribute('content', t === 'dark' ? '#0e1220' : '#f8fafc');
+          });
+        }
       } catch (e) {}
     </script>
   </head>

@@ -48,3 +48,50 @@ describe('bidi layout heuristics', () => {
     expect(layoutBidi('מילים כמו every day, usually, always, often הן סימן').map((p) => p.kind)).toEqual(['he', 'en', 'he']);
   });
 });
+
+describe('bidi punctuation', () => {
+  it('keeps balanced parentheses inside the English run', () => {
+    expect(splitBidi('כמתים (much / many / few)')).toEqual([
+      { latin: false, text: 'כמתים ' },
+      { latin: true, text: '(much / many / few)' },
+    ]);
+  });
+
+  it('leaves an unmatched parenthesis with the Hebrew around it', () => {
+    expect(splitBidi('lose (o אחת) = לאבד')).toEqual([
+      { latin: true, text: 'lose' },
+      { latin: false, text: ' (' },
+      { latin: true, text: 'o' },
+      { latin: false, text: ' אחת) = לאבד' },
+    ]);
+  });
+
+  it('moves "=" to the end of an English line', async () => {
+    const { layoutBidi } = await import('./He');
+    const parts = layoutBidi('Can I ask you a question? = אפשר לשאול שאלה?');
+    expect(parts[0]).toEqual({ kind: 'en-line', text: 'Can I ask you a question? =' });
+    expect(parts[1]!.text.startsWith('אפשר')).toBe(true);
+  });
+
+  it('glues "=" to short inline English so it never starts a line', async () => {
+    const { layoutBidi } = await import('./He');
+    expect(layoutBidi('ask a question = לשאול שאלה')[1]!.text.startsWith(' =')).toBe(true);
+  });
+
+  it('inline mode never splits English onto its own line', async () => {
+    const { layoutBidi } = await import('./He');
+    expect(layoutBidi('There is / There are', true).map((p) => p.kind)).toEqual(['en']);
+  });
+});
+
+describe('bidi sentences', () => {
+  it('splits two English sentences inside Hebrew into two runs', () => {
+    expect(splitBidi('אומרים have fun. make fun of פירושו ללעוג')).toEqual([
+      { latin: false, text: 'אומרים ' },
+      { latin: true, text: 'have fun.' },
+      { latin: false, text: ' ' },
+      { latin: true, text: 'make fun of' },
+      { latin: false, text: ' פירושו ללעוג' },
+    ]);
+  });
+});

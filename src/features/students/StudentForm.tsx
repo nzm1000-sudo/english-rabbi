@@ -1,9 +1,13 @@
-import { useState, type FormEvent } from 'react';
+import { useState, type FormEvent, type ReactNode } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useServices } from '@/app/services';
 import { useStudent } from '@/app/hooks';
 import { TopBar } from '@/ui/TopBar';
 import { ThemePicker } from '@/ui/ThemePicker';
+import { Button } from '@/ui/Button';
+import { ConfirmSheet } from '@/ui/Sheet';
+import { Stack } from '@/ui/layout';
+import { CheckIcon } from '@/ui/icons';
 import { stageOf, type AgeStage } from '@/domain/student/student';
 import {
   INTERESTS,
@@ -73,9 +77,10 @@ function StudentFormInner({ student }: { student: Student | null }) {
     }
   };
 
+  const [confirmArchive, setConfirmArchive] = useState(false);
   const archive = async () => {
     if (!student) return;
-    if (!confirm(`להסתיר את ${student.name}? ההיסטוריה נשמרת ואפשר לשחזר ממצב הורה.`)) return;
+    setConfirmArchive(false);
     await store.archiveStudent(student.id);
     nav('/');
   };
@@ -83,139 +88,173 @@ function StudentFormInner({ student }: { student: Student | null }) {
   return (
     <main className="screen">
       <TopBar back={student ? `/s/${student.id}` : '/'} title={student ? 'הגדרות' : 'תלמיד חדש'} />
-      <form className="stack" style={{ gap: 'var(--s-5)' }} onSubmit={submit} noValidate>
-        <div className="field">
-          <label htmlFor="name">שם</label>
-          <input
-            id="name"
-            className="input"
-            value={name}
-            onChange={(e) => {
-              setName(e.target.value);
-              setError(null);
-            }}
-            autoComplete="off"
-            enterKeyHint="next"
-            aria-invalid={!!error}
-          />
-          {error && <span className="small" style={{ color: 'var(--bad)' }}>{error}</span>}
-        </div>
+      <form className="stack gap-5" onSubmit={submit} noValidate>
+        <Group title="פרופיל">
+          <div className="form-grid">
+            <div className="field">
+              <label htmlFor="name">שם</label>
+              <input
+                id="name"
+                className="input"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                  setError(null);
+                }}
+                autoComplete="off"
+                enterKeyHint="next"
+                aria-invalid={!!error}
+                aria-describedby={error ? 'name-err' : undefined}
+              />
+            </div>
+            <div className="field">
+              <label htmlFor="age">גיל</label>
+              <input id="age" className="input" inputMode="numeric" value={age} onChange={(e) => setAge(e.target.value.replace(/\D/g, '').slice(0, 3))} placeholder="למשל 15" />
+            </div>
+          </div>
+          {error && (
+            <span className="small error-text" id="name-err">
+              {error}
+            </span>
+          )}
+        </Group>
 
-        <div className="field">
-          <label htmlFor="age">גיל</label>
-          <input id="age" className="input" inputMode="numeric" value={age} onChange={(e) => setAge(e.target.value.replace(/\D/g, '').slice(0, 3))} placeholder="למשל 5" style={{ maxWidth: 120 }} />
-        </div>
-
-        <div className="field">
-          <span className="label">איזו אפליקציה לראות</span>
-          <div className="segmented" role="group" aria-label="שלב גיל" style={{ gridAutoFlow: 'row', gridTemplateColumns: '1fr 1fr' }}>
-            {(
-              [
-                ['auto', 'לפי הגיל'],
-                ['little', 'קטנים (3 עד 6)'],
-                ['young', 'מתחילים לקרוא (6 עד 12)'],
-                ['regular', 'רגילה'],
-              ] as const
-            ).map(([id, label]) => (
-              <button type="button" key={id} aria-pressed={stage === id} onClick={() => setStage(id)}>
-                {label}
+        <Group title="איזו אפליקציה לראות" hint="אפשר לשנות בכל רגע.">
+          <div className="radio-list" role="radiogroup" aria-label="שלב גיל">
+            {STAGES.map((o) => (
+              <button type="button" role="radio" key={o.id} aria-checked={stage === o.id} className="radio-row" onClick={() => setStage(o.id)}>
+                <span className="radio-dot" aria-hidden="true" />
+                <span className="grow stack gap-0">
+                  <strong>{o.title}</strong>
+                  <span className="small muted">{o.id === 'auto' ? `${o.desc} ${STAGE_NOW[effective]}` : o.desc}</span>
+                </span>
               </button>
             ))}
           </div>
-          <span className="xs muted">
-            {effective === 'little'
-              ? 'קטנים: בלי קריאה. שומעים מילה ולוחצים על התמונה.'
-              : effective === 'young'
-                ? 'מתחילים לקרוא: אותיות, צלילים, מילים קצרות וספרונים.'
-                : 'האפליקציה המלאה: אוצר מילים, דקדוק, סיפורים ובגרות.'}
-          </span>
-        </div>
+          {effective === 'little' && (
+            <div className="field">
+              <span className="label">זמן משחק ביום</span>
+              <div className="segmented" role="group" aria-label="זמן משחק ביום">
+                {[0, 10, 15, 20, 30].map((m) => (
+                  <button type="button" key={m} aria-pressed={kidsLimit === m} onClick={() => setKidsLimit(m)}>
+                    {m ? `${m} דק׳` : 'ללא'}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </Group>
 
-        {effective === 'little' && (
+        <Group title="לימוד">
           <div className="field">
-            <span className="label">זמן משחק ביום</span>
-            <div className="segmented" role="group" aria-label="זמן משחק ביום">
-              {[0, 10, 15, 20, 30].map((m) => (
-                <button type="button" key={m} aria-pressed={kidsLimit === m} onClick={() => setKidsLimit(m)}>
-                  {m ? `${m} דק׳` : 'ללא הגבלה'}
+            <span className="label">מסלול</span>
+            <div className="segmented" role="group" aria-label="מסלול">
+              {TRACKS.map((t) => (
+                <button type="button" key={t.id} aria-pressed={track === t.id} onClick={() => setTrack(t.id)}>
+                  {t.label}
                 </button>
               ))}
             </div>
           </div>
-        )}
+          <div className="field">
+            <span className="label">יעד יומי</span>
+            <div className="segmented" role="group" aria-label="יעד יומי">
+              {[5, 10, 15, 20].map((m) => (
+                <button type="button" key={m} aria-pressed={goal === m} onClick={() => setGoal(m)}>
+                  {m} דק׳
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="field">
+            <span className="label">תחומי עניין</span>
+            <div className="chip-grid">
+              {INTERESTS.map((i) => (
+                <button type="button" key={i} className="chip" aria-pressed={interests.includes(i)} onClick={() => toggle(i)}>
+                  {interests.includes(i) && <CheckIcon size={16} />}
+                  {INTEREST_LABELS[i]}
+                </button>
+              ))}
+            </div>
+          </div>
+        </Group>
 
-        <div className="field">
-          <span className="label">מסלול</span>
-          <div className="segmented" role="group" aria-label="מסלול">
-            {TRACKS.map((t) => (
-              <button type="button" key={t.id} aria-pressed={track === t.id} onClick={() => setTrack(t.id)}>
-                {t.label}
+        <Group title="קול">
+          <div className="field">
+            <span className="label">מבטא</span>
+            <div className="segmented" role="group" aria-label="מבטא">
+              <button type="button" aria-pressed={accent === 'en-US'} onClick={() => setAccent('en-US')}>
+                אמריקאי
               </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="field">
-          <span className="label">תחומי עניין</span>
-          <div className="chips">
-            {INTERESTS.map((i) => (
-              <button type="button" key={i} className="chip" aria-pressed={interests.includes(i)} onClick={() => toggle(i)}>
-                {INTEREST_LABELS[i]}
+              <button type="button" aria-pressed={accent === 'en-GB'} onClick={() => setAccent('en-GB')}>
+                בריטי
               </button>
-            ))}
+            </div>
+            {accent === 'en-GB' && <span className="small muted">במבטא בריטי ההקראה היא בקול של המכשיר, פחות טבעי.</span>}
           </div>
-        </div>
-
-        <div className="field">
-          <span className="label">מבטא</span>
-          <div className="segmented" role="group" aria-label="מבטא">
-            <button type="button" aria-pressed={accent === 'en-US'} onClick={() => setAccent('en-US')}>
-              אמריקאי
-            </button>
-            <button type="button" aria-pressed={accent === 'en-GB'} onClick={() => setAccent('en-GB')}>
-              בריטי
-            </button>
-          </div>
-          {accent === 'en-GB' && <span className="xs muted">במבטא בריטי ההקראה היא בקול של המכשיר, פחות טבעי.</span>}
-        </div>
-
-        <div className="field">
-          <span className="label">מהירות הקראה</span>
-          <div className="segmented" role="group" aria-label="מהירות">
-            <button type="button" aria-pressed={rate === 'slower'} onClick={() => setRate('slower')}>
-              איטי מאוד
-            </button>
-            <button type="button" aria-pressed={rate === 'slow'} onClick={() => setRate('slow')}>
-              איטי
-            </button>
-            <button type="button" aria-pressed={rate === 'normal'} onClick={() => setRate('normal')}>
-              רגיל
-            </button>
-          </div>
-        </div>
-
-        <div className="field">
-          <span className="label">יעד יומי</span>
-          <div className="segmented" role="group" aria-label="יעד יומי">
-            {[5, 10, 15, 20].map((m) => (
-              <button type="button" key={m} aria-pressed={goal === m} onClick={() => setGoal(m)}>
-                {m} דק׳
+          <div className="field">
+            <span className="label">מהירות הקראה</span>
+            <div className="segmented" role="group" aria-label="מהירות">
+              <button type="button" aria-pressed={rate === 'slower'} onClick={() => setRate('slower')}>
+                איטי מאוד
               </button>
-            ))}
+              <button type="button" aria-pressed={rate === 'slow'} onClick={() => setRate('slow')}>
+                איטי
+              </button>
+              <button type="button" aria-pressed={rate === 'normal'} onClick={() => setRate('normal')}>
+                רגיל
+              </button>
+            </div>
           </div>
-        </div>
+        </Group>
 
-        <ThemePicker />
+        <Group title="מראה" hint="חל על כל המכשיר.">
+          <ThemePicker bare />
+        </Group>
 
-        <button className="btn btn-primary btn-block" disabled={saving}>
-          {student ? 'שמירה' : 'יצירה'}
-        </button>
-        {student && (
-          <button type="button" className="btn btn-ghost btn-block" onClick={archive}>
-            הסתרת תלמיד
-          </button>
-        )}
+        <Stack gap={2}>
+          <Button type="submit" variant="primary" size="lg" block loading={saving}>
+            {student ? 'שמירה' : 'יצירה'}
+          </Button>
+          {student && (
+            <Button variant="tertiary" size="lg" block className="danger-text" onClick={() => setConfirmArchive(true)}>
+              הסתרת תלמיד
+            </Button>
+          )}
+        </Stack>
       </form>
+      {student && (
+        <ConfirmSheet
+          open={confirmArchive}
+          title={`להסתיר את ${student.name}?`}
+          body="ההיסטוריה נשמרת, ואפשר לשחזר בכל רגע ממצב הורה."
+          confirmLabel="הסתרה"
+          danger
+          onConfirm={() => void archive()}
+          onCancel={() => setConfirmArchive(false)}
+        />
+      )}
     </main>
+  );
+}
+
+const STAGES: { id: AgeStage | 'auto'; title: string; desc: string }[] = [
+  { id: 'auto', title: 'לפי הגיל', desc: 'בוחרים לבד לפי הגיל.' },
+  { id: 'little', title: 'קטנים', desc: 'גילאי 3 עד 6. בלי קריאה: שומעים מילה ולוחצים על התמונה.' },
+  { id: 'young', title: 'מתחילים לקרוא', desc: 'גילאי 6 עד 12. אותיות, צלילים, מילים קצרות וספרונים.' },
+  { id: 'regular', title: 'רגילה', desc: 'האפליקציה המלאה: אוצר מילים, דקדוק, סיפורים ובגרות.' },
+];
+const STAGE_NOW: Record<AgeStage, string> = { little: 'עכשיו: קטנים.', young: 'עכשיו: מתחילים לקרוא.', regular: 'עכשיו: רגילה.' };
+
+/** A titled card that groups related settings. */
+function Group({ title, hint, children }: { title: string; hint?: string; children: ReactNode }) {
+  return (
+    <section className="stack gap-2">
+      <div className="section-intro">
+        <h2 className="section-title">{title}</h2>
+        {hint && <p className="small muted">{hint}</p>}
+      </div>
+      <div className="settings-card stack gap-4">{children}</div>
+    </section>
   );
 }

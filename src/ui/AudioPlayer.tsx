@@ -4,6 +4,7 @@ import { useSpeechPrefs } from '@/app/speechPrefs';
 import type { Speaker, SpeechRate } from '@/services/speech/types';
 import { canonicalSpeechText } from '@/services/speech/textPrep';
 import { SpeakButton } from './SpeakButton';
+import { Back5Icon, NextIcon, PauseIcon, PlayIcon, PrevIcon } from './icons';
 
 export interface PlayerSegment {
   text: string;
@@ -16,16 +17,17 @@ export interface AudioPlayerHandle {
 
 type Clip = { url: string; segment: number; duration: number; rate: number };
 
-const SPEEDS: { rate: SpeechRate; label: string }[] = [
-  { rate: 'normal', label: 'רגיל' },
-  { rate: 'slow', label: 'איטי' },
-  { rate: 'slower', label: 'איטי מאוד' },
+/** The speed chip cycles through these. Factors match RATE_FACTOR (voiceProfiles). */
+const SPEEDS: { rate: SpeechRate; label: string; he: string }[] = [
+  { rate: 'normal', label: '1×', he: 'רגיל' },
+  { rate: 'slow', label: '0.8×', he: 'איטי' },
+  { rate: 'slower', label: '0.65×', he: 'איטי מאוד' },
 ];
 
 /**
  * Seekable player for a text made of recorded sentences: pause and resume
  * where it stopped, drag to any point, 5 seconds back, previous and next
- * sentence, speed. Reports the sentence being read so the text can follow.
+ * sentence, speed (a chip that cycles). Reports the sentence being read so the text can follow.
  * Falls back to a plain speaker button when the text was not recorded.
  */
 export function AudioPlayer({
@@ -194,57 +196,53 @@ export function AudioPlayer({
   const currentSeg = list[index.current]?.segment ?? 0;
   const fmt = (t: number) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
 
+  const speed = SPEEDS.find((x) => x.rate === rate) ?? SPEEDS[0]!;
+  const nextSpeed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length]!;
+  const pct = total ? (Math.min(pos, total) / total) * 100 : 0;
+
+  // Media controls read left to right in every language: back on the left.
   return (
-    <div className="player" dir="ltr" aria-label="נגן הקראה">
-      <input
-        className="player-bar"
-        type="range"
-        min={0}
-        max={total || 1}
-        step={0.1}
-        value={Math.min(pos, total || 1)}
-        disabled={!list.length}
-        onChange={(e) => seek(Number(e.target.value))}
-        aria-label="מיקום בהקראה"
-        style={{ '--p': `${total ? (pos / total) * 100 : 0}%` } as CSSProperties}
-      />
-      <div className="player-row">
+    <div className="player" dir="ltr" role="group" aria-label="נגן הקראה">
+      <div className="player-track">
         <span className="player-time">{fmt(pos)}</span>
-        <div className="player-buttons">
-          <button type="button" className="player-btn" aria-label="המשפט הקודם" disabled={!list.length} onClick={() => playFrom(Math.max(0, currentSeg - (pos - (starts[segmentStart(currentSeg)] ?? 0) > 1.5 ? 0 : 1)))}>
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 5v14M18 5 9 12l9 7z" fill="currentColor" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /></svg>
-          </button>
-          <button type="button" className="player-btn" aria-label="5 שניות אחורה" disabled={!list.length} onClick={() => seek(pos - 5)}>
-            <span className="player-5">5</span>
-            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.7M4 4v4h4" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" /></svg>
-          </button>
-          <button type="button" className="player-btn player-main" aria-label={playing ? 'עצירה' : 'ניגון'} disabled={!list.length} onClick={toggle}>
-            {playing ? (
-              <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor" /></svg>
-            ) : (
-              <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor" /></svg>
-            )}
-          </button>
-          <button type="button" className="player-btn" aria-label="המשפט הבא" disabled={!list.length || currentSeg >= segments.length - 1} onClick={() => playFrom(currentSeg + 1)}>
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M18 5v14M6 5l9 7-9 7z" fill="currentColor" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /></svg>
-          </button>
-        </div>
-        <span className="player-time">{list.length ? fmt(total) : '...'}</span>
+        <input
+          className="player-bar"
+          type="range"
+          min={0}
+          max={total || 1}
+          step={0.1}
+          value={Math.min(pos, total || 1)}
+          disabled={!list.length}
+          onChange={(e) => seek(Number(e.target.value))}
+          aria-label="מיקום בהקראה"
+          style={{ '--p': `${pct}%` } as CSSProperties}
+        />
+        <span className="player-time end">{list.length ? fmt(total) : '–:––'}</span>
       </div>
-      <div className="segmented player-speed" role="group" aria-label="מהירות" dir="rtl">
-        {SPEEDS.map((s) => (
-          <button
-            key={s.rate}
-            type="button"
-            aria-pressed={rate === s.rate}
-            onClick={() => {
-              pause();
-              setRate(s.rate);
-            }}
-          >
-            {s.label}
-          </button>
-        ))}
+      <div className="player-row">
+        <button type="button" className="player-btn" aria-label="5 שניות אחורה" disabled={!list.length} onClick={() => seek(pos - 5)}>
+          <Back5Icon size={24} />
+        </button>
+        <button type="button" className="player-btn" aria-label="המשפט הקודם" disabled={!list.length} onClick={() => playFrom(Math.max(0, currentSeg - (pos - (starts[segmentStart(currentSeg)] ?? 0) > 1.5 ? 0 : 1)))}>
+          <PrevIcon />
+        </button>
+        <button type="button" className="player-btn player-main" aria-label={playing ? 'השהיה' : 'ניגון'} disabled={!list.length} onClick={toggle}>
+          {playing ? <PauseIcon size={24} /> : <PlayIcon size={24} />}
+        </button>
+        <button type="button" className="player-btn" aria-label="המשפט הבא" disabled={!list.length || currentSeg >= segments.length - 1} onClick={() => playFrom(currentSeg + 1)}>
+          <NextIcon />
+        </button>
+        <button
+          type="button"
+          className="player-speed"
+          aria-label={`מהירות: ${speed.he}. להקיש למהירות ${nextSpeed.he}`}
+          onClick={() => {
+            pause();
+            setRate(nextSpeed.rate);
+          }}
+        >
+          {speed.label}
+        </button>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './app/App';
 import { createAppServices, ServicesProvider } from './app/services';
-import './app/styles.css';
+import './app/styles/index.css';
 import { installSharedDeviceGuard, startHash } from './app/sharedDevice';
 
 async function boot() {

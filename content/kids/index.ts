@@ -14,3 +14,5 @@ export const kidWords = (files['./words.json'] ?? []) as KidWord[];
 export const phonics = (files['./phonics.json'] ?? { letters: [], families: [], sightWords: [] }) as Phonics;
 export const kidBooks = (files['./books.json'] ?? []) as KidBook[];
 export const stickers = (files['./stickers.json'] ?? []) as StickerInfo[];
+/** Ids of the 3D illustrations in public/pics. */
+export const picIds = (files['./pics.json'] ?? []) as string[];

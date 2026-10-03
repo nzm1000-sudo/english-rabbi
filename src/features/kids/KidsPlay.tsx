@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { useStudent } from '@/app/hooks';
 import { useServices } from '@/app/services';
@@ -21,6 +21,8 @@ import { stageOf, type Student } from '@/domain/student/student';
 import { speakHebrew, stopHebrew } from '@/services/speech/hebrewVoice';
 import { sounds } from '@/services/sound';
 import { PRAISE } from './hebrewPhrases';
+import { CardBack, KidsIconLink, KidsMessage, KidsTopBar, ProgressRing } from './KidsChrome';
+import { CheckIcon, HomeIcon, SparkleBurst, SpeakerIcon, TurtleIcon } from './KidIcons';
 import { Picture } from './Picture';
 import { Reward } from './Reward';
 import { TOPIC_INFO } from './topics';
@@ -36,7 +38,7 @@ export function KidsPlay() {
   const topicParam = search.get('topic');
   const topic = topicParam && (KID_TOPICS as readonly string[]).includes(topicParam) ? (topicParam as KidTopic) : undefined;
   const [round, setRound] = useState(0);
-  if (!student) return <main className="screen" />;
+  if (!student) return <main className="screen kids-screen" data-mood="kids" />;
   const s = stageOf(student);
   const stage: KidStage = s === 'little' ? 'little' : 'young';
   return <Round key={`${game}:${topic}:${round}`} student={student} stage={stage} game={game} topic={topic} onAgain={() => setRound((r) => r + 1)} />;
@@ -135,7 +137,7 @@ function Round({ student, stage, game, topic, onAgain }: { student: Student; sta
   );
 
   if (score) return <Reward student={student} score={score} onAgain={onAgain} />;
-  if (!known) return <main className="screen kids-screen" />;
+  if (!known) return <main className="screen kids-screen" data-mood="kids" />;
 
   const back = `/s/${student.id}`;
   const common = { sayEn, onFinish: finish, back };
@@ -152,21 +154,34 @@ type Common = {
   back: string;
 };
 
-function KidsTop({ back, progress, total, title }: { back: string; progress: number; total: number; title?: string }) {
+type CardState = 'right' | 'try' | 'hint' | undefined;
+
+function GameTop({ back, progress, total, title }: { back: string; progress: number; total: number; title: string }) {
+  return <KidsTopBar start={<KidsIconLink to={back} label="הביתה" />} title={title} end={<ProgressRing value={progress} total={total} />} />;
+}
+
+/** A tappable answer card. Right: grows, green ring, sparkles. Try again: amber ring and a wobble, never a red X. */
+function AnswerCard({ state, onClick, label, className = '', children, dir }: { state: CardState; onClick: () => void; label?: string; className?: string; children: ReactNode; dir?: 'ltr' }) {
   return (
-    <header className="kids-top">
-      <Link to={back} className="kids-home-btn" aria-label="הביתה">
-        🏠
-      </Link>
-      {title && <span className="kids-title">{title}</span>}
-      <div className="kids-stars" aria-label={`${progress} מתוך ${total}`}>
-        {Array.from({ length: total }, (_, i) => (
-          <span key={i} data-on={i < progress}>
-            ★
+    <button className={`k-card ${className}`} data-state={state} onClick={onClick} aria-label={label} dir={dir}>
+      <span className="k-card-face">{children}</span>
+      {state === 'right' && (
+        <>
+          <SparkleBurst />
+          <span className="k-check" aria-hidden="true">
+            <CheckIcon size={24} />
           </span>
-        ))}
-      </div>
-    </header>
+        </>
+      )}
+    </button>
+  );
+}
+
+function SlowButton({ onClick }: { onClick: () => void }) {
+  return (
+    <button className="k-round-btn" onClick={onClick} aria-label="לשמוע לאט">
+      <TurtleIcon />
+    </button>
   );
 }
 
@@ -240,48 +255,48 @@ function PictureGame({
   };
 
   const hintOn = wrong.size >= 2;
+  const title = topic ? TOPIC_INFO[topic].he : read ? 'קוראים ומתאימים' : 'שומעים ולוחצים';
   return (
-    <main className="screen kids-screen">
-      <KidsTop back={back} progress={i} total={questions.length} title={topic ? `${TOPIC_INFO[topic].emoji} ${TOPIC_INFO[topic].he}` : undefined} />
-      <div className="kids-ask">
+    <main className="screen kids-screen k-game" data-mood="kids">
+      <GameTop back={back} progress={i + (solved ? 1 : 0)} total={questions.length} title={title} />
+      <section className="k-prompt">
         {read ? (
-          <div className="kids-word" dir="ltr" lang="en">
-            {q.target.en}
-          </div>
+          <>
+            <div className="k-word" dir="ltr" lang="en">
+              {q.target.en}
+            </div>
+            <div className="k-prompt-row">
+              <button className="k-round-btn" onClick={() => void sayEn(q.say)} aria-label="לשמוע את המילה">
+                <SpeakerIcon size={30} />
+              </button>
+              <SlowButton onClick={() => void sayEn(q.say, true)} />
+            </div>
+          </>
         ) : (
-          <button className="kids-replay" onClick={() => void sayEn(q.say)} aria-label="לשמוע שוב">
-            🔊
-          </button>
-        )}
-        <div className="row" style={{ gap: 'var(--s-3)', justifyContent: 'center' }}>
-          {read && (
-            <button className="kids-mini" onClick={() => void sayEn(q.say)} aria-label="לשמוע את המילה">
-              🔊
+          <>
+            <button className="k-speak" onClick={() => void sayEn(q.say)} aria-label="לשמוע שוב">
+              <SpeakerIcon size={56} />
             </button>
-          )}
-          <button className="kids-mini" onClick={() => void sayEn(q.say, true)} aria-label="לשמוע לאט">
-            🐢
-          </button>
+            <SlowButton onClick={() => void sayEn(q.say, true)} />
+          </>
+        )}
+        <div className="k-caption" dir="ltr" lang="en" aria-live="polite">
+          {solved && !read ? q.target.en : ''}
         </div>
-      </div>
-      <div className={`kids-options n${q.options.length}`}>
+      </section>
+      <section className={`k-answers n${q.options.length}`}>
         {q.options.map((o) => (
-          <button
+          <AnswerCard
             key={o.id}
-            className="kids-card"
-            data-state={solved && o.id === q.target.id ? 'right' : wrong.has(o.id) ? 'wrong' : hintOn && o.id === q.target.id ? 'hint' : undefined}
+            state={solved && o.id === q.target.id ? 'right' : wrong.has(o.id) ? 'try' : hintOn && !solved && o.id === q.target.id ? 'hint' : undefined}
             onClick={() => tap(o)}
-            aria-label={o.he}
+            label={o.he}
+            className="pic"
           >
-            <Picture picture={o.picture} size={stage === 'little' ? 84 : 72} />
-          </button>
+            <Picture picture={o.picture} word={o.en} fill />
+          </AnswerCard>
         ))}
-      </div>
-      {solved && (
-        <div className="kids-caption" dir="ltr" lang="en">
-          {q.target.en}
-        </div>
-      )}
+      </section>
     </main>
   );
 }
@@ -322,23 +337,32 @@ function LettersGame({ seed, sayEn, onFinish, back }: Common & { seed: string })
     }
   };
   return (
-    <main className="screen kids-screen">
-      <KidsTop back={back} progress={i} total={questions.length} title="🔤 איזו אות?" />
-      <button className="kids-ask kids-picture-big" onClick={() => void sayEn(q.word)} aria-label="לשמוע שוב">
-        <span className="kid-emoji" style={{ fontSize: 110 }}>
-          {q.emoji}
-        </span>
-        <span className="kids-word" dir="ltr" lang="en">
-          {done ? q.word : `_${q.word.slice(1)}`}
-        </span>
-      </button>
-      <div className="kids-options n3">
+    <main className="screen kids-screen k-game" data-mood="kids">
+      <GameTop back={back} progress={i + (done ? 1 : 0)} total={questions.length} title="איזו אות?" />
+      <section className="k-prompt">
+        <button className="k-hero-pic" onClick={() => void sayEn(q.word)} aria-label="לשמוע שוב">
+          <span className="k-card-face">
+            <Picture picture={{ emoji: q.emoji }} word={q.word} fill />
+          </span>
+        </button>
+        <div className="k-word" dir="ltr" lang="en">
+          {done ? (
+            q.word
+          ) : (
+            <>
+              <span className="k-gap" aria-hidden="true" />
+              {q.word.slice(1)}
+            </>
+          )}
+        </div>
+      </section>
+      <section className="k-answers n3 row">
         {q.options.map((c) => (
-          <button key={c} className="kids-card kids-letter" data-state={done && c === q.answer ? 'right' : wrong.has(c) ? 'wrong' : undefined} onClick={() => tap(c)} dir="ltr">
+          <AnswerCard key={c} state={done && c === q.answer ? 'right' : wrong.has(c) ? 'try' : undefined} onClick={() => tap(c)} className="letter" dir="ltr">
             {c}
-          </button>
+          </AnswerCard>
         ))}
-      </div>
+      </section>
     </main>
   );
 }
@@ -386,28 +410,33 @@ function BuildGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
     }
   };
   return (
-    <main className="screen kids-screen">
-      <KidsTop back={back} progress={i} total={questions.length} title="🧩 בונים מילה" />
-      <button className="kids-ask kids-picture-big" onClick={() => void sayEn(q.word)} aria-label="לשמוע שוב">
-        <span className="kid-emoji" style={{ fontSize: 100 }}>
-          {q.emoji ?? '🔊'}
-        </span>
-        <span className="small muted">{q.he}</span>
-      </button>
-      <div className={`kids-slots${shake ? ' shake' : ''}`} dir="ltr">
-        {q.word.split('').map((_, k) => (
-          <span key={k} className="kids-slot" data-full={k < placed.length}>
-            {k < placed.length ? q.tiles[placed[k]!] : ''}
+    <main className="screen kids-screen k-game" data-mood="kids">
+      <GameTop back={back} progress={i + (done ? 1 : 0)} total={questions.length} title="בונים מילה" />
+      <section className="k-prompt">
+        <button className="k-hero-pic" onClick={() => void sayEn(q.word)} aria-label="לשמוע שוב" data-state={done ? 'right' : undefined}>
+          <span className="k-card-face">
+            <Picture picture={{ emoji: q.emoji ?? '🔤' }} word={q.word} fill />
           </span>
-        ))}
-      </div>
-      <div className="kids-tiles" dir="ltr">
-        {q.tiles.map((t, idx) => (
-          <button key={idx} className="kids-tile-letter" disabled={placed.includes(idx)} onClick={() => tap(idx)}>
-            {t}
-          </button>
-        ))}
-      </div>
+          {done && <SparkleBurst />}
+        </button>
+        <span className="k-gloss">{q.he}</span>
+      </section>
+      <section className="k-build">
+        <div className={`k-slots${shake ? ' try' : ''}`} dir="ltr">
+          {q.word.split('').map((_, k) => (
+            <span key={k} className="k-slot" data-full={k < placed.length}>
+              {k < placed.length ? q.tiles[placed[k]!] : ''}
+            </span>
+          ))}
+        </div>
+        <div className="k-letter-tiles" dir="ltr">
+          {q.tiles.map((t, idx) => (
+            <button key={idx} className="k-letter-tile" disabled={placed.includes(idx)} onClick={() => tap(idx)}>
+              {t}
+            </button>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }
@@ -448,28 +477,30 @@ function SightGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
     }
   };
   return (
-    <main className="screen kids-screen">
-      <KidsTop back={back} progress={i} total={questions.length} title="✨ מילים קסומות" />
-      <div className="kids-ask">
-        <button className="kids-replay" onClick={() => void sayEn(q.word)} aria-label="לשמוע שוב">
-          🔊
+    <main className="screen kids-screen k-game" data-mood="kids">
+      <GameTop back={back} progress={i + (done ? 1 : 0)} total={questions.length} title="מילים קסומות" />
+      <section className="k-prompt">
+        <button className="k-speak" onClick={() => void sayEn(q.word)} aria-label="לשמוע שוב">
+          <SpeakerIcon size={56} />
         </button>
-        {done && (
-          <div className="stack txt-center" style={{ gap: 2 }}>
-            <span className="kids-sentence" dir="ltr" lang="en">
-              {q.sentence.en}
-            </span>
-            <span className="small muted">{q.sentence.he}</span>
-          </div>
-        )}
-      </div>
-      <div className="kids-options n3 kids-words">
+        <div className="k-sentence-box" aria-live="polite">
+          {done && (
+            <>
+              <span className="k-sentence" dir="ltr" lang="en">
+                {q.sentence.en}
+              </span>
+              <span className="k-gloss">{q.sentence.he}</span>
+            </>
+          )}
+        </div>
+      </section>
+      <section className="k-answers stack">
         {q.options.map((w) => (
-          <button key={w} className="kids-card kids-letter" data-state={done && w === q.word ? 'right' : wrong.has(w) ? 'wrong' : undefined} onClick={() => tap(w)} dir="ltr">
+          <AnswerCard key={w} state={done && w === q.word ? 'right' : wrong.has(w) ? 'try' : undefined} onClick={() => tap(w)} className="word" dir="ltr">
             {w}
-          </button>
+          </AnswerCard>
         ))}
-      </div>
+      </section>
     </main>
   );
 }
@@ -502,33 +533,44 @@ function MemoryGame({ words, seed, sayEn, onFinish, back }: Common & { words: Ki
     }
   };
   return (
-    <main className="screen kids-screen">
-      <KidsTop back={back} progress={found.size} total={cards.length / 2} title="🎴 זוגות" />
-      <div className="kids-memory">
+    <main className="screen kids-screen k-game" data-mood="kids">
+      <GameTop back={back} progress={found.size} total={cards.length / 2} title="זוגות" />
+      <section className="k-memory">
         {cards.map((c) => {
           const up = open.includes(c.key) || found.has(c.word.id);
           return (
-            <button key={c.key} className="kids-mem" data-up={up} data-found={found.has(c.word.id)} onClick={() => flip(c.key, c.word)} aria-label={up ? c.word.he : 'קלף סגור'}>
-              {up ? <Picture picture={c.word.picture} size={52} /> : <span className="kids-mem-back">⭐</span>}
+            <button key={c.key} className="k-mem" data-up={up} data-found={found.has(c.word.id)} onClick={() => flip(c.key, c.word)} aria-label={up ? c.word.he : 'קלף סגור'}>
+              <span className="k-mem-inner">
+                <span className="k-mem-face back">
+                  <CardBack />
+                </span>
+                <span className="k-mem-face front">
+                  <Picture picture={c.word.picture} word={c.word.en} fill />
+                </span>
+              </span>
             </button>
           );
         })}
-      </div>
-      <p className="xs muted txt-center">{`ניסיונות: ${turns}`}</p>
+      </section>
+      <p className="k-foot">{`ניסיונות: ${turns}`}</p>
     </main>
   );
 }
 
 function EmptyGame({ back }: { back: string }) {
   return (
-    <main className="screen kids-screen">
-      <div className="kids-done">
-        <span className="kids-big-emoji">🧸</span>
-        <strong>המשחק הזה עוד בהכנה</strong>
-        <Link className="btn btn-primary" to={back}>
-          הביתה
-        </Link>
-      </div>
+    <main className="screen kids-screen" data-mood="kids">
+      <KidsTopBar start={<KidsIconLink to={back} label="הביתה" />} />
+      <KidsMessage
+        title="המשחק הזה עוד בהכנה"
+        line="בינתיים יש עוד הרבה משחקים בבית."
+        action={
+          <Link className="k-btn primary" to={back}>
+            <HomeIcon size={28} />
+            הביתה
+          </Link>
+        }
+      />
     </main>
   );
 }

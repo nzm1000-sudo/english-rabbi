@@ -15,12 +15,19 @@ export interface SettingsShape {
 }
 
 const THEME_KEY = 'theme';
+/** Page background per theme (--bg in src/app/styles/tokens.css), for the phone's status bar. */
+const THEME_COLOR = { light: '#f8fafc', dark: '#0e1220' } as const;
 
 /** Applies the theme to the page and mirrors it for the next start (no flash). */
 export function applyTheme(theme: SettingsShape['theme']): void {
   const t = theme && theme !== 'auto' ? theme : undefined;
   if (t) document.documentElement.dataset.theme = t;
   else delete document.documentElement.dataset.theme;
+  // index.html has one theme-color per color scheme; a fixed theme overrides both.
+  document.querySelectorAll('meta[name="theme-color"]').forEach((m) => {
+    const scheme = m.getAttribute('media')?.includes('dark') ? 'dark' : 'light';
+    m.setAttribute('content', THEME_COLOR[t ?? scheme]);
+  });
   try {
     if (t) localStorage.setItem(THEME_KEY, t);
     else localStorage.removeItem(THEME_KEY);

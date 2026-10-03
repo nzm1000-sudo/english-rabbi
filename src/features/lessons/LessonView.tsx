@@ -2,24 +2,27 @@ import type { Lesson, LessonBlock } from '@/domain/content/schema';
 import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
+import { Stack } from '@/ui/layout';
 
 /** Renders a lesson: Hebrew explanation, English examples with audio, tables, typical mistakes. */
 export function LessonView({ lesson }: { lesson: Lesson }) {
   return (
-    <article className="stack" style={{ gap: 'var(--s-4)' }}>
-      <header className="stack" style={{ gap: 4 }}>
-        <h2 className="title" style={{ fontSize: 'var(--t-xl)' }}>
-          <He>{lesson.title.he}</He>
-        </h2>
-        <En as="p" className="muted small">
+    <Stack as="article" gap={4}>
+      <Stack as="header" gap={1}>
+        <span className="eyebrow" lang="en" dir="ltr">
           {lesson.title.en}
-        </En>
-        <p className="muted"><He>{lesson.goal}</He></p>
-      </header>
+        </span>
+        <h2 className="lesson-title">
+          <He inline>{lesson.title.he}</He>
+        </h2>
+        <p className="lesson-goal">
+          <He>{lesson.goal}</He>
+        </p>
+      </Stack>
       {lesson.blocks.map((b, i) => (
         <Block key={i} b={b} />
       ))}
-    </article>
+    </Stack>
   );
 }
 
@@ -27,17 +30,17 @@ function Block({ b }: { b: LessonBlock }) {
   switch (b.kind) {
     case 'text':
       return (
-        <div className="stack" style={{ gap: 4 }}>
+        <Stack gap={1} className="lesson-text">
           <p><He>{b.he}</He></p>
           {b.en && <En as="p" className="small muted">{b.en}</En>}
-        </div>
+        </Stack>
       );
     case 'rule':
       return (
         <div className="rule-box">
-          <span className="small"><He>{b.he}</He></span>
+          <span className="rule-label"><He>{b.he}</He></span>
           <En as="p" className="" >
-            <strong style={{ fontSize: 'var(--t-lg)' }}>{b.pattern}</strong>
+            <strong className="t-h3">{b.pattern}</strong>
           </En>
         </div>
       );
@@ -45,20 +48,20 @@ function Block({ b }: { b: LessonBlock }) {
       return (
         <div className="list">
           {b.items.map((e, i) => (
-            <div key={i} className="list-item" style={{ alignItems: 'flex-start' }}>
-              <div className="grow stack" style={{ gap: 2 }}>
+            <div key={i} className="list-item items-start">
+              <div className="grow stack gap-1">
                 <En>{e.en}</En>
                 {e.he && <He className="small muted">{e.he}</He>}
                 {e.note && <He className="xs muted">{e.note}</He>}
               </div>
-              <SpeakButton text={e.en} />
+              <SpeakButton text={e.en} size="inline" />
             </div>
           ))}
         </div>
       );
     case 'mistake':
       return (
-        <div className="panel stack" style={{ gap: 6 }}>
+        <div className="panel stack gap-2">
           <div className="row small">
             <span className="badge badge-bad">לא</span>
             <En className="grow" ><s>{b.wrong}</s></En>
@@ -66,7 +69,7 @@ function Block({ b }: { b: LessonBlock }) {
           <div className="row small">
             <span className="badge badge-good">כן</span>
             <En className="grow">{b.right}</En>
-            <SpeakButton text={b.right} />
+            <SpeakButton text={b.right} size="inline" />
           </div>
           <p className="small muted"><He>{b.he}</He></p>
         </div>
@@ -78,20 +81,42 @@ function Block({ b }: { b: LessonBlock }) {
           <He>{b.he}</He>
         </div>
       );
-    case 'table':
+    case 'table': {
+      // An English table reads left to right: first column on the left.
+      const ltr = !b.head.some(hasHebrew);
       return (
-        <div style={{ overflowX: 'auto' }}>
-          <table className="table">
+        <div className="table-scroll">
+          <table className="table" dir={ltr ? 'ltr' : 'rtl'} lang={ltr ? 'en' : undefined}>
             <thead>
-              <tr>{b.head.map((h, i) => <th key={i}><He>{h}</He></th>)}</tr>
+              <tr>
+                {b.head.map((h, i) => (
+                  <th key={i}>
+                    <Cell text={h} />
+                  </th>
+                ))}
+              </tr>
             </thead>
             <tbody>
               {b.rows.map((r, i) => (
-                <tr key={i}>{r.map((c, j) => <td key={j}><He>{c}</He></td>)}</tr>
+                <tr key={i}>
+                  {r.map((c, j) => (
+                    <td key={j}>
+                      <Cell text={c} />
+                    </td>
+                  ))}
+                </tr>
               ))}
             </tbody>
           </table>
         </div>
       );
+    }
   }
+}
+
+const hasHebrew = (t: string) => /[\u0590-\u05FF]/.test(t);
+
+/** A table cell: English stays English (LTR), Hebrew goes through the bidi helper. */
+function Cell({ text }: { text: string }) {
+  return hasHebrew(text) ? <He>{text}</He> : <En>{text}</En>;
 }

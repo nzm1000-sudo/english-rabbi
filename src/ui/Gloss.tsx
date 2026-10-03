@@ -55,7 +55,7 @@ export function GlossProvider({ children }: { children: ReactNode }) {
       {gloss && lemma && (
         <div className="gloss-pop" role="dialog" aria-label="פירוש המילה">
           <div className="spread">
-            <div className="row" style={{ gap: 'var(--s-2)' }}>
+            <div className="row gap-2">
               <En className="gloss-word">{lemma}</En>
               <SpeakButton text={lemma} />
             </div>
@@ -71,7 +71,7 @@ export function GlossProvider({ children }: { children: ReactNode }) {
           {wordKey(gloss.word) !== lemma.toLowerCase() && <En className="xs muted">{gloss.word}</En>}
           {sid && (
             <div className="spread">
-              <span className="xs muted row" style={{ gap: 4 }}>
+              <span className="xs muted row gap-1">
                 <BookmarkIcon size={16} />
                 {savedSet.has(lemma) ? 'נשמרה ב״המילים שלי״' : STORY_STOPWORDS.has(lemma.toLowerCase()) ? 'מילה נפוצה מאוד' : 'שומרים...'}
               </span>

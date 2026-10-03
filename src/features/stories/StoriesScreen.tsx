@@ -10,6 +10,7 @@ import type { LearnerProfile } from '@/domain/student/profile';
 import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import { TopBar } from '@/ui/TopBar';
+import { Art } from '@/ui/Art';
 import { BookIcon, ChatIcon, CheckIcon, ChevronIcon } from '@/ui/icons';
 
 const LEVEL_HE: Partial<Record<CefrLevel, string>> = { A1: 'קל מאוד', A2: 'קל', B1: 'בינוני', B2: 'מתקדם', C1: 'מתקדם מאוד' };
@@ -42,7 +43,7 @@ export function StoriesScreen() {
   return (
     <main className="screen">
       <TopBar back={base} title="סיפורים" />
-      <div className="segmented" role="tablist">
+      <div className="segmented" role="tablist" aria-label="סוג">
         <button role="tab" aria-selected={kind === 'read'} onClick={() => setKind('read')}>
           <BookIcon size={18} /> סיפורי קריאה
         </button>
@@ -50,17 +51,21 @@ export function StoriesScreen() {
           <ChatIcon size={18} /> שיחות להאזנה
         </button>
       </div>
-      <p className="small muted">
-        {kind === 'read'
-          ? 'סיפורים קצרים על משפחת שפירו. קוראים שורה אחרי שורה ומקישים על מילה כדי לראות מה היא אומרת.'
-          : 'שיחות בשני קולות. מקשיבים, עונים על שאלות, ואפשר לראות תרגום.'}
-      </p>
+      <section className="stories-intro">
+        <Art name="stories" size={72} tone="reading" fallback={kind === 'read' ? <BookIcon /> : <ChatIcon />} />
+        <p className="small muted grow">
+          {kind === 'read'
+            ? 'סיפורים קצרים על משפחת שפירו. קוראים שורה אחרי שורה ומקישים על מילה כדי לראות מה היא אומרת.'
+            : 'שיחות בשני קולות. מקשיבים, עונים על שאלות, ואפשר לראות תרגום.'}
+        </p>
+      </section>
       {levels.map((level) => (
-        <section className="stack" key={level}>
-          <div className="section-head">
-            <h2>
-              <span lang="en">{level}</span> · {LEVEL_HE[level]}
-            </h2>
+        <section className="stack gap-2" key={level} aria-label={`${level} ${LEVEL_HE[level] ?? ''}`}>
+          <div className="level-head">
+            <span className="path-level-code" lang="en">
+              {level}
+            </span>
+            <h2 className="section-title grow">{LEVEL_HE[level]}</h2>
             {level === fit && <span className="badge badge-good">מתאים לך</span>}
           </div>
           <div className="list">
@@ -70,19 +75,23 @@ export function StoriesScreen() {
                 const r = results?.get(s.id);
                 return (
                   <Link key={s.id} to={`${base}/stories/${s.id}`} className="list-item story-item">
-                    <span className="tile-icon" data-done={!!r}>
+                    <span className={`tile-icon ${r ? 'tone-good' : kind === 'read' ? 'tone-reading' : 'tone-listening'}`} aria-hidden="true">
                       {r ? <CheckIcon /> : kind === 'read' ? <BookIcon /> : <ChatIcon />}
                     </span>
-                    <span className="grow stack" style={{ gap: 2 }}>
-                      <He>{s.title.he}</He>
-                      <En className="xs muted">{s.title.en}</En>
+                    <span className="grow stack gap-0">
+                      <He inline className="t-strong">{s.title.he}</He>
+                      <En as="div" className="story-en small muted">
+                        {s.title.en}
+                      </En>
                     </span>
                     {r && (
-                      <span className="xs muted">
+                      <span className="level-chip" aria-label={`${r.correct} מתוך ${r.total}`}>
                         {r.correct}/{r.total}
                       </span>
                     )}
-                    <ChevronIcon />
+                    <span className="chev">
+                      <ChevronIcon />
+                    </span>
                   </Link>
                 );
               })}

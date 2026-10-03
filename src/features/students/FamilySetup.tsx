@@ -25,7 +25,7 @@ export function FamilySetup() {
 
   return (
     <main className="screen">
-      <div className="stack" style={{ marginTop: 'var(--s-6)' }}>
+      <div className="stack page-intro">
         <h1 className="title">הגדרת המשפחה</h1>
         <p className="subtitle">הפרופילים נשמרים רק במכשיר הזה.</p>
       </div>

@@ -131,7 +131,7 @@ export function ReadCheck({ text, onDone }: { text: string; onDone?: (o: ReadChe
   return (
     <div className="read-check">
       {phase === 'ask' && (
-        <div className="panel stack" style={{ gap: 'var(--s-2)' }}>
+        <div className="panel stack gap-2">
           <He className="small">כדי שהאפליקציה תבדוק את ההקראה, צריך להוריד פעם אחת בודק (כ־100 מגה, עדיף ב־Wi-Fi). הוא עובד בתוך הטלפון, והקול לא נשלח לשום מקום.</He>
           <button className="btn btn-primary btn-block" onClick={() => void download()}>
             להוריד ולהתחיל
