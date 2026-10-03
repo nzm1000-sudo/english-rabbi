@@ -1081,7 +1081,7 @@
       "skill": "grammar.present-simple.third-person",
       "level": "A1",
       "difficulty": 0.4,
-      "prompt": "Noa ___ in Tel Aviv.",
+      "prompt": "Dina ___ in Tel Aviv.",
       "instruction": {
         "he": "לבחור את התשובה הנכונה",
         "en": "Choose the correct answer"
@@ -1096,8 +1096,8 @@
           "text": "live",
           "misconception": "present-simple.missing-s",
           "feedback": {
-            "he": "live בלי s מתאים ל־I, you, we, they. Noa היא she, ולכן lives 🐍.",
-            "en": "live is for I/you/we/they. Noa = she, so lives."
+            "he": "live בלי s מתאים ל־I, you, we, they. Dina היא she, ולכן lives 🐍.",
+            "en": "live is for I/you/we/they. Dina = she, so lives."
           }
         },
         {
@@ -1113,8 +1113,8 @@
           "text": "is live",
           "misconception": "present-simple.be-plus-verb",
           "feedback": {
-            "he": "is הוא כובע 🎩 לפני תיאור או ing, לא לפני פועל רגיל. Noa lives.",
-            "en": "is does not go before a normal verb. Noa lives."
+            "he": "is הוא כובע 🎩 לפני תיאור או ing, לא לפני פועל רגיל. Dina lives.",
+            "en": "is does not go before a normal verb. Dina lives."
           }
         }
       ],
@@ -1125,13 +1125,13 @@
           "en": "Who is the subject? One person or many?"
         },
         {
-          "he": "Noa = she 🐍. כמה פעלים צריך כאן?",
-          "en": "Noa = she 🐍. How many verbs do you need?"
+          "he": "Dina = she 🐍. כמה פעלים צריך כאן?",
+          "en": "Dina = she 🐍. How many verbs do you need?"
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: Noa, כלומר she. המקום שבו גרים הוא עובדה קבועה.\n🐍 she בהווה פשוט: lives עם s.\nבעברית \"נועה גרה\", ולא מוסיפים is לפני פועל רגיל.",
-        "en": "Noa = she, and where she lives is a fact, so lives. No is."
+        "he": "🔎 הרמז: Dina, כלומר she. המקום שבו גרים הוא עובדה קבועה.\n🐍 she בהווה פשוט: lives עם s.\nבעברית \"דינה גרה\", ולא מוסיפים is לפני פועל רגיל.",
+        "en": "Dina = she, and where she lives is a fact, so lives. No is."
       },
       "targetsMisconceptions": [
         "present-simple.missing-s",
@@ -1145,7 +1145,7 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "Noa lives in Tel Aviv.",
+      "audioText": "Dina lives in Tel Aviv.",
       "anchor": "third-person-s"
     },
     {

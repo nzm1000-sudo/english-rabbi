@@ -38,7 +38,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: know, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: We + know.\n🎩 am, is, are באים רק לפני תיאור או ing. בעברית אין פועל עזר, ולכן מתבלבלים ומוסיפים אותו. כאן מוחקים: We know.",
+        "he": "🔎 הרמז: know, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: We + know.\n🎩 am, is, are באים לפני תיאור (happy), מקום או ing, ולא לפני פועל רגיל כמו know. כאן מוחקים: We know.",
         "en": "Do not put am/is/are before a normal verb in present simple: We know."
       },
       "tags": [
@@ -82,7 +82,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: want, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: I + want.\n🎩 am, is, are באים רק לפני תיאור או ing. בעברית אין פועל עזר, ולכן מתבלבלים ומוסיפים אותו. כאן מוחקים: I want.",
+        "he": "🔎 הרמז: want, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: I + want.\n🎩 am, is, are באים לפני תיאור (happy), מקום או ing, ולא לפני פועל רגיל כמו want. כאן מוחקים: I want.",
         "en": "Do not put am/is/are before a normal verb in present simple: I want."
       },
       "tags": [
@@ -126,7 +126,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: like, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: I + like.\n🎩 am, is, are באים רק לפני תיאור או ing. בעברית אין פועל עזר, ולכן מתבלבלים ומוסיפים אותו. כאן מוחקים: I like.",
+        "he": "🔎 הרמז: like, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: I + like.\n🎩 am, is, are באים לפני תיאור (happy), מקום או ing, ולא לפני פועל רגיל כמו like. כאן מוחקים: I like.",
         "en": "Do not put am/is/are before a normal verb in present simple: I like."
       },
       "tags": [
@@ -170,7 +170,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: Ari, אדם אחד (he או she).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\ngo בלי s מתאים ל־I, you, we, they. לכן goes. אחרי o מוסיפים es. every morning = 📅 הרגל.",
+        "he": "🔎 הרמז: Ari, אדם אחד (he).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\ngo בלי s מתאים ל־I, you, we, they. לכן goes. אחרי o מוסיפים es. every morning = 📅 הרגל.",
         "en": "Ari is one person, so the verb takes s: goes."
       },
       "tags": [
@@ -214,7 +214,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: Ima, אדם אחד (he או she).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\nlight בלי s מתאים ל־I, you, we, they. לכן lights. כמו שבהמשך כתוב we look בלי s, כי we הם הרבה.",
+        "he": "🔎 הרמז: Ima, אדם אחד (she).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\nlight בלי s מתאים ל־I, you, we, they. לכן lights. כמו שבהמשך מופיע we look בלי s, כי we הם הרבה.",
         "en": "Ima is one person, so the verb takes s: lights."
       },
       "tags": [
@@ -258,7 +258,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: Grandma Chana, אדם אחד (he או she).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\nbake בלי s מתאים ל־I, you, we, they. לכן bakes. every week = 📅 הרגל.",
+        "he": "🔎 הרמז: Grandma Chana, אדם אחד (she).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\nbake בלי s מתאים ל־I, you, we, they. לכן bakes. every week = 📅 הרגל.",
         "en": "Grandma Chana is one person, so the verb takes s: bakes."
       },
       "tags": [
@@ -302,7 +302,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: Mrs. Klein, אדם אחד (he או she).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\nlive בלי s מתאים ל־I, you, we, they. לכן lives.",
+        "he": "🔎 הרמז: Mrs. Klein, אדם אחד (she).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\nlive בלי s מתאים ל־I, you, we, they. לכן lives.",
         "en": "Mrs. Klein is one person, so the verb takes s: lives."
       },
       "tags": [
@@ -918,7 +918,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: want, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: Rivka and Tamar + want.\n🎩 am, is, are באים רק לפני תיאור או ing. בעברית אין פועל עזר, ולכן מתבלבלים ומוסיפים אותו. כאן מוחקים: Rivka and Tamar want.",
+        "he": "🔎 הרמז: want, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: Rivka and Tamar + want.\n🎩 am, is, are באים לפני תיאור (happy), מקום או ing, ולא לפני פועל רגיל כמו want. כאן מוחקים: Rivka and Tamar want.",
         "en": "Do not put am/is/are before a normal verb in present simple: Rivka and Tamar want."
       },
       "tags": [
@@ -962,7 +962,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: need, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: We + need.\n🎩 am, is, are באים רק לפני תיאור או ing. בעברית אין פועל עזר, ולכן מתבלבלים ומוסיפים אותו. כאן מוחקים: We need.",
+        "he": "🔎 הרמז: need, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: We + need.\n🎩 am, is, are באים לפני תיאור (happy), מקום או ing, ולא לפני פועל רגיל כמו need. כאן מוחקים: We need.",
         "en": "Do not put am/is/are before a normal verb in present simple: We need."
       },
       "tags": [
@@ -1410,50 +1410,6 @@
       ],
       "source": "original",
       "anchor": "quantifiers"
-    },
-    {
-      "id": "fix.a2.the-shabbat",
-      "type": "fix",
-      "skill": "grammar.articles",
-      "level": "A2",
-      "difficulty": 0.45,
-      "sentence": "Ari loves the Shabbat because his family is together.",
-      "wrongIndex": 2,
-      "correction": "",
-      "distractors": [
-        "a",
-        "an",
-        "these"
-      ],
-      "corrected": "Ari loves Shabbat because his family is together.",
-      "audioText": "Ari loves Shabbat because his family is together.",
-      "meaning": "ארי אוהב את השבת כי המשפחה שלו ביחד.",
-      "targetsMisconceptions": [
-        "articles.the-generic"
-      ],
-      "instruction": {
-        "he": "למצוא את המילה השגויה ולתקן אותה",
-        "en": "Find the wrong word and fix it"
-      },
-      "hints": [
-        {
-          "he": "לבדוק את המילה שלפני Shabbat.",
-          "en": "Check the word before Shabbat."
-        },
-        {
-          "he": "☝️ שמים the לפני שם של יום?",
-          "en": "Do we put the before the name of a day?"
-        }
-      ],
-      "explanation": {
-        "he": "🔎 הרמז: Shabbat, שם של יום.\n☝️ the בא לפני משהו מסוים שמכירים. לפני שמות של ימים וחגים בדרך כלל לא שמים the.\nבעברית אומרים \"את השבת\", ולכן קל להוסיף the. באנגלית: loves Shabbat.",
-        "en": "Names of days and holidays usually take no the: loves Shabbat."
-      },
-      "tags": [
-        "fix"
-      ],
-      "source": "original",
-      "anchor": "articles"
     },
     {
       "id": "fix.a2.after-the-school",

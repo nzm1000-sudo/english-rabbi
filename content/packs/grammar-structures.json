@@ -47,7 +47,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה כתוב אחרי if, ומתי זה יכול לקרות?",
+          "he": "מה יש אחרי if, ומתי זה יכול לקרות?",
           "en": "Look at the if part. When can it happen?"
         },
         {
@@ -124,7 +124,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: המילה If בתחילת הגאפ, והחלק השני כבר עם will pass.\n🚦 אחרי if לא שמים will. בעברית אומרים 'אם אלמד' בעתיד, ובאנגלית משתמשים בהווה פשוט.\nלכן If you study: you הוא רבים מבחינת הפועל, אז study בלי s.",
+        "he": "🔎 הרמז: If ממש לפני הרווח, והחלק השני כבר עם will pass.\n🚦 אחרי if לא שמים will. בעברית אומרים 'אם אלמד' בעתיד, ובאנגלית משתמשים בהווה פשוט.\nלכן If you study: עם you הפועל בא בלי s.",
         "en": "After if we use the present simple, not will, even when we mean the future: If you study."
       },
       "interests": [
@@ -180,7 +180,7 @@
       ],
       "hints": [
         {
-          "he": "מי עושה את הפעולה, ומה כתוב בחלק השני של המשפט?",
+          "he": "מי עושה את הפעולה, ומה יש בחלק השני של המשפט?",
           "en": "Who does the action? What is in the other part?"
         },
         {
@@ -519,7 +519,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה כתוב בחלק השני של המשפט?",
+          "he": "מה יש בחלק השני של המשפט?",
           "en": "What is in the second part of the sentence?"
         },
         {
@@ -659,7 +659,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "באיזה זמן כתוב lived, ובאמת סבתא גרה קרוב?",
+          "he": "באיזה זמן מופיע lived, והאם סבתא באמת גרה קרוב?",
           "en": "lived is past, but is it about the past or now?"
         },
         {
@@ -725,7 +725,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "באיזה זמן כתוב found, והאם זה קורה עכשיו באמת?",
+          "he": "באיזה זמן מופיע found, והאם זה קורה עכשיו באמת?",
           "en": "found is past. Is this real or imaginary?"
         },
         {
@@ -794,7 +794,7 @@
       ],
       "hints": [
         {
-          "he": "מה כתוב בחלק השני, will או would?",
+          "he": "מה יש בחלק השני, will או would?",
           "en": "Does the other part have will or would?"
         },
         {
@@ -1072,7 +1072,7 @@
       ],
       "hints": [
         {
-          "he": "מה כתוב בחלק השני, will או would?",
+          "he": "מה יש בחלק השני, will או would?",
           "en": "Does the other part have will or would?"
         },
         {
@@ -1133,7 +1133,7 @@
           "id": "d",
           "text": "had caught",
           "feedback": {
-            "he": "had caught נשאר בחלק של if. החלק השני של התוצאה צריך would have caught.",
+            "he": "had caught שייך לחלק של if. בתוצאה צריך would have caught.",
             "en": "had caught belongs in the if part. The result needs would have caught."
           }
         }
@@ -1211,7 +1211,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה כתוב בחלק השני של המשפט?",
+          "he": "מה יש בחלק השני של המשפט?",
           "en": "What is in the other part of the sentence?"
         },
         {
@@ -1421,7 +1421,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "האם זה כבר קרה? מה כתוב בחלק השני?",
+          "he": "האם זה כבר קרה? מה יש בחלק השני?",
           "en": "Did it already happen? What is in the other part?"
         },
         {
@@ -1572,8 +1572,8 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: I wish, משאלה על משהו שלא נכון עכשיו.\n🚦 כמו בתנאי דמיוני, אחרי wish הזמן זז אחורה: הווה הופך לעבר.\nI wish I were taller (גם was נשמע בדיבור, אבל were היא הצורה הנכונה במבחן).",
-        "en": "After wish, a present situation moves back to the past: I wish I were taller."
+        "he": "🔎 הרמז: I wish, משאלה על משהו שלא נכון עכשיו.\n🚦 כמו בתנאי דמיוני, אחרי wish הזמן זז אחורה: הווה הופך לעבר.\nI wish I were taller (בדיבור אומרים גם was, אבל במבחן עדיף were).",
+        "en": "After wish, a present situation moves back to the past: I wish I were taller (was is also heard in speech)."
       },
       "interests": [],
       "tags": [
@@ -3100,8 +3100,8 @@
           "answer": "mustn't",
           "misconception": "modals.deduction-mustnt",
           "feedback": {
-            "he": "mustn't = אסור. למסקנה 'בטוח שלא' משתמשים ב־can't.",
-            "en": "mustn't = forbidden. For 'impossible' use can't."
+            "he": "mustn't מבטא בדרך כלל איסור (אסור). למסקנה 'בטוח שלא' משתמשים ב־can't.",
+            "en": "mustn't usually means forbidden. For 'impossible' use can't."
           }
         },
         {
@@ -3335,7 +3335,7 @@
       ],
       "hints": [
         {
-          "he": "מה כתוב בסוגריים?",
+          "he": "מה יש בסוגריים?",
           "en": "What is in the brackets?"
         },
         {
@@ -3374,15 +3374,6 @@
         {
           "id": "a",
           "text": "He can't have seen us. It was too dark."
-        },
-        {
-          "id": "b",
-          "text": "He mustn't have seen us. It was too dark.",
-          "misconception": "modals.deduction-mustnt",
-          "feedback": {
-            "he": "mustn't = אסור. ל'בטוח שלא' משתמשים ב־can't have.",
-            "en": "mustn't = forbidden. Use can't have."
-          }
         },
         {
           "id": "c",
@@ -4832,7 +4823,7 @@
           "id": "b",
           "text": "Eat",
           "feedback": {
-            "he": "Eat בתחילת המשפט נשמע כמו פקודה ('תאכל!'). כנושא צריך Eating.",
+            "he": "Eat בתחילת המשפט נשמע כמו פקודה (Eat your vegetables!). כנושא צריך Eating.",
             "en": "Eat at the start sounds like an order. As a subject: Eating."
           }
         },
@@ -5438,12 +5429,12 @@
       "anchor": "gerund-infinitive"
     },
     {
-      "id": "gs.rep.noa-hungry",
+      "id": "gs.rep.dina-hungry",
       "type": "choice",
       "skill": "grammar.reported-speech",
       "level": "B1",
       "difficulty": 0.4,
-      "prompt": "\"I am hungry,\" Noa said yesterday. → Noa said that she ___ hungry.",
+      "prompt": "\"I am hungry,\" Dina said yesterday. → Dina said that she ___ hungry.",
       "instruction": {
         "he": "לבחור את התשובה הנכונה",
         "en": "Choose the correct answer"
@@ -5491,7 +5482,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: Noa said yesterday, מספרים מה היא אמרה בעבר.\n🗣️ בדיבור עקיף הזמן זז צעד אחורה: am הופך ל־was.\n🎩 she היא אחת, לכן was (לא were).",
+        "he": "🔎 הרמז: Dina said yesterday, מספרים מה היא אמרה בעבר.\n🗣️ בדיבור עקיף הזמן זז צעד אחורה: am הופך ל־was.\n🎩 she היא אחת, לכן was (לא were).",
         "en": "Reported speech moves back one step: am becomes was. She = one person, so was."
       },
       "interests": [
@@ -5503,7 +5494,7 @@
       ],
       "estimatedTimeSec": 18,
       "source": "original",
-      "audioText": "Noa said that she was hungry.",
+      "audioText": "Dina said that she was hungry.",
       "anchor": "reported-speech"
     },
     {
@@ -5543,7 +5534,7 @@
           "id": "d",
           "text": "calls",
           "feedback": {
-            "he": "calls זה הווה, ולא מתאים לבטחה על the next day. צריך would call.",
+            "he": "calls זה הווה, ולא מתאים להבטחה על the next day. צריך would call.",
             "en": "calls is present. Use would call."
           }
         }
@@ -6100,7 +6091,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "האם המורה שאלה, סיפרה או נתנה פקודה?",
+          "he": "האם זו שאלה, סיפור או פקודה?",
           "en": "Was it a question, a statement or an order?"
         },
         {
@@ -7229,7 +7220,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: music, מוזיקה באופן כללי.\n☝️ the מצביע על משהו מסוים. דבר כללי שלא סופרים בא בלי מילה.\nלכן I love music. בעברית 'אוהב את המוזיקה' אפשר, ובאנגלית בלי the.",
+        "he": "🔎 הרמז: music, מוזיקה באופן כללי.\n☝️ the מצביע על משהו מסוים. דבר כללי שלא סופרים בא בלי מילה.\nלכן I love music. בעברית אפשר לומר 'את המוזיקה', ובאנגלית בלי the.",
         "en": "music in general takes no article: I love music."
       },
       "interests": [
@@ -10301,7 +10292,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה כבר יש בתוך cheaper? וכמה מילים מנסות לחזק אותו?",
+          "he": "מה כבר יש בתוך cheaper? ואיזו מילה יכולה לחזק אותו?",
           "en": "What does cheaper already have? Which word makes it stronger?"
         },
         {
@@ -11269,7 +11260,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: water, מים, דבר שלא סופרים.\n👉 לדבר שלא סופרים אומרים There is, גם עם some.\nsome water נשמע כמו הרבה, אבל מים הם 'אחד' בדקדוק.",
+        "he": "🔎 הרמז: water, מים, דבר שלא סופרים.\n👉 לדבר שלא סופרים אומרים There is, גם עם some.\nגם עם some, מים נחשבים בדקדוק כמו יחיד: There is some water.",
         "en": "Uncountable nouns take is: There is some water."
       },
       "interests": [],
@@ -14182,7 +14173,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: finished.\nאחרי finish הפועל מקבל ing: finish cleaning, finish eating.\nבעברית 'סיימת לנקות' מושך ל־to, אבל finish תמיד עם ing.",
+        "he": "🔎 הרמז: finished.\n🧩 אחרי finish הפועל מקבל ing: finish cleaning, finish eating.\nבעברית 'סיימת לנקות' מושך ל־to, אבל finish תמיד עם ing.",
         "en": "finish is always followed by -ing: finished cleaning."
       },
       "interests": [],
@@ -14192,7 +14183,7 @@
       "estimatedTimeSec": 25,
       "source": "original",
       "audioText": "Have you finished cleaning your room?",
-      "anchor": "none"
+      "anchor": "gerund-infinitive"
     },
     {
       "id": "gs.prep.listening-to",

@@ -1990,8 +1990,8 @@
           "id": "c",
           "text": "Really I like this song very.",
           "feedback": {
-            "he": "very לא יכול לעמוד בסוף אחרי song, וגם Really בהתחלה וגם very זה כפול. הסדר: I really like this song.",
-            "en": "very cannot go at the end here. Correct: I really like this song."
+            "he": "very לבד לא מתאר פועל, ולכן אי אפשר לסיים ב־very (אומרים very much). וגם Really וגם very זה כפול. הסדר הנכון: I really like this song.",
+            "en": "very alone cannot end the sentence (we say very much), and Really + very is double. Correct: I really like this song."
           }
         }
       ],

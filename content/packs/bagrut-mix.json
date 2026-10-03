@@ -265,7 +265,7 @@
           "id": "b",
           "text": "so",
           "feedback": {
-            "he": "so = לכן. מיהור לא גורם לפספס את האוטובוס, ההפך.",
+            "he": "so = לכן. למהר לא גורם לפספס את האוטובוס, להפך.",
             "en": "so = therefore. Hurrying does not make you miss the bus."
           }
         },
@@ -308,8 +308,8 @@
       "skill": "grammar.connectors",
       "level": "A2",
       "difficulty": 0.5,
-      "prompt": "___ the test was hard, Noa got a good grade.",
-      "audioText": "Although the test was hard, Noa got a good grade.",
+      "prompt": "___ the test was hard, Dina got a good grade.",
+      "audioText": "Although the test was hard, Dina got a good grade.",
       "instruction": {
         "he": "לבחור את מילת הקישור המתאימה",
         "en": "Choose the linking word that fits"
@@ -1108,7 +1108,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: loves מול can't watch, שני אנשים הפוכים.\n🧭 whereas = \"ואילו\". משווה בין שני צדדים שונים.\nאחותי אוהבת, ואילו הדובר בכלל לא מסוגל לצפות: whereas.",
+        "he": "🔎 הרמז: loves מול can't watch, שני אנשים הפוכים.\n🧭 whereas = \"ואילו\". משווה בין שני צדדים שונים.\nהאחות אוהבת, ואילו הדובר בכלל לא מסוגל לצפות: whereas.",
         "en": "Two people with opposite feelings: whereas (= while)."
       },
       "interests": [
@@ -1212,7 +1212,7 @@
           "text": "if",
           "misconception": "connectors.unless-if",
           "feedback": {
-            "he": "if יוצר \"לא תעבור אם תגיש\", וזה הפוך מההיגיון. צריך \"אלא אם\": unless.",
+            "he": "if יוצר \"לא עוברים אם מגישים\", וזה הפוך מההיגיון. צריך \"אלא אם\": unless.",
             "en": "if gives the opposite meaning. Use unless."
           }
         },
@@ -1486,7 +1486,7 @@
           "text": "Therefore",
           "misconception": "connectors.cause-result",
           "feedback": {
-            "he": "Therefore = לכן. יציאה עכשיו לא גורמת לאיחור, ההפך.",
+            "he": "Therefore = לכן. יציאה עכשיו לא גורמת לאיחור, להפך.",
             "en": "Leaving now does not cause lateness."
           }
         },
@@ -1881,8 +1881,8 @@
       "skill": "grammar.connectors",
       "level": "A2",
       "difficulty": 0.4,
-      "prompt": "Noa was tired ___ she had worked all night.",
-      "audioText": "Noa was tired because she had worked all night.",
+      "prompt": "Dina was tired ___ she had worked all night.",
+      "audioText": "Dina was tired because she had worked all night.",
       "instruction": {
         "he": "לבחור את מילת הקישור המתאימה",
         "en": "Choose the linking word that fits"
@@ -1913,8 +1913,8 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "למה נועה הייתה עייפה?",
-          "en": "Why was Noa tired?"
+          "he": "למה דינה הייתה עייפה?",
+          "en": "Why was Dina tired?"
         },
         {
           "he": "🧭 איזה שלט מצביע אחורה לסיבה?",
@@ -2478,7 +2478,7 @@
           "text": "because",
           "misconception": "connectors.cause-result",
           "feedback": {
-            "he": "because מצביע לסיבה. מצב הרוח לא גרם ליום האחרון, ההפך.",
+            "he": "because מצביע לסיבה. מצב הרוח לא גרם ליום האחרון, להפך.",
             "en": "because gives a reason. The mood did not cause the last day."
           }
         },

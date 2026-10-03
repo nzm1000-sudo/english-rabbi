@@ -1097,7 +1097,7 @@
         "lemma": "cousin",
         "pos": "noun",
         "he": "בן דוד, בת דודה",
-        "example": "My cousin Noa is my uncle's daughter."
+        "example": "My cousin Dina is my uncle's daughter."
       },
       "interests": [],
       "source": "original",
@@ -1129,13 +1129,13 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "המילה במשפט: My cousin Noa is my uncle's daughter.",
-          "en": "Look at it in a sentence: My cousin Noa is my uncle's daughter."
+          "he": "המילה במשפט: My cousin Dina is my uncle's daughter.",
+          "en": "Look at it in a sentence: My cousin Dina is my uncle's daughter."
         }
       ],
       "explanation": {
-        "he": "cousin פירושה בן דוד, בת דודה. דוגמה: My cousin Noa is my uncle's daughter. באנגלית יש מילה אחת לבן דוד ולבת דודה: cousin.",
-        "en": "cousin means בן דוד, בת דודה. Example: My cousin Noa is my uncle's daughter. English has one word for a male or female cousin."
+        "he": "cousin פירושה בן דוד, בת דודה. דוגמה: My cousin Dina is my uncle's daughter. באנגלית יש מילה אחת לבן דוד ולבת דודה: cousin.",
+        "en": "cousin means בן דוד, בת דודה. Example: My cousin Dina is my uncle's daughter. English has one word for a male or female cousin."
       },
       "tags": [
         "vocabulary",
@@ -1154,7 +1154,7 @@
         "lemma": "cousin",
         "pos": "noun",
         "he": "בן דוד, בת דודה",
-        "example": "My cousin Noa is my uncle's daughter."
+        "example": "My cousin Dina is my uncle's daughter."
       },
       "interests": [],
       "source": "original",
@@ -1178,8 +1178,8 @@
         }
       ],
       "explanation": {
-        "he": "בן דוד / בת דודה באנגלית: cousin. דוגמה: My cousin Noa is my uncle's daughter. באנגלית יש מילה אחת לבן דוד ולבת דודה: cousin.",
-        "en": "The word is cousin. Example: My cousin Noa is my uncle's daughter. English has one word for a male or female cousin."
+        "he": "בן דוד / בת דודה באנגלית: cousin. דוגמה: My cousin Dina is my uncle's daughter. באנגלית יש מילה אחת לבן דוד ולבת דודה: cousin.",
+        "en": "The word is cousin. Example: My cousin Dina is my uncle's daughter. English has one word for a male or female cousin."
       },
       "tags": [
         "vocabulary",
@@ -1204,7 +1204,7 @@
         "lemma": "cousin",
         "pos": "noun",
         "he": "בן דוד, בת דודה",
-        "example": "My cousin Noa is my uncle's daughter."
+        "example": "My cousin Dina is my uncle's daughter."
       },
       "interests": [],
       "source": "original",

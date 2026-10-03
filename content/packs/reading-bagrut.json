@@ -556,12 +556,12 @@
       "source": "original"
     },
     {
-      "id": "rd.noa.why-start",
+      "id": "rd.dina.why-start",
       "type": "choice",
       "skill": "reading.details",
       "level": "A2",
       "difficulty": 0.2,
-      "prompt": "Why did Noa start cooking?",
+      "prompt": "Why did Dina start cooking?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -588,8 +588,8 @@
         }
       ],
       "explanation": {
-        "he": "בקטע נאמר: Her grandmother broke her arm and could not cook, so Noa helped her. המילה so מראה את הסיבה והתוצאה.",
-        "en": "The text says: Her grandmother broke her arm and could not cook, so Noa helped her."
+        "he": "בקטע נאמר: Her grandmother broke her arm and could not cook, so Dina helped her. המילה so מראה את הסיבה והתוצאה.",
+        "en": "The text says: Her grandmother broke her arm and could not cook, so Dina helped her."
       },
       "interests": [
         "food"
@@ -602,7 +602,7 @@
       "source": "original"
     },
     {
-      "id": "rd.noa.first",
+      "id": "rd.dina.first",
       "type": "choice",
       "skill": "reading.sequence",
       "level": "A2",
@@ -615,15 +615,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Noa wrote her grandmother's recipes in a notebook."
+          "text": "Dina wrote her grandmother's recipes in a notebook."
         },
         {
           "id": "b",
-          "text": "Noa's brother filmed her."
+          "text": "Dina's brother filmed her."
         },
         {
           "id": "c",
-          "text": "Thousands of people watched Noa's video."
+          "text": "Thousands of people watched Dina's video."
         }
       ],
       "correctOptionId": "a",
@@ -634,8 +634,8 @@
         }
       ],
       "explanation": {
-        "he": "קודם, בגיל אחת עשרה, Noa wrote everything in a notebook. רק A year later אחיה צילם אותה, ואז אנשים צפו בסרטון.",
-        "en": "First, at eleven, Noa wrote everything in a notebook. A year later her brother filmed her, and then people watched."
+        "he": "קודם, בגיל אחת עשרה, Dina wrote everything in a notebook. רק A year later אחיה צילם אותה, ואז אנשים צפו בסרטון.",
+        "en": "First, at eleven, Dina wrote everything in a notebook. A year later her brother filmed her, and then people watched."
       },
       "interests": [
         "food"
@@ -648,7 +648,7 @@
       "source": "original"
     },
     {
-      "id": "rd.noa.ingredients",
+      "id": "rd.dina.ingredients",
       "type": "choice",
       "skill": "reading.vocabulary-in-context",
       "level": "A2",
@@ -680,8 +680,8 @@
         }
       ],
       "explanation": {
-        "he": "ingredients הם המצרכים, מה שמכניסים לתוך המנה. Noa מבשלת מנות פשוטות ממצרכים זולים.",
-        "en": "Ingredients are the foods that go into a dish. Noa cooks simple dishes with cheap ones."
+        "he": "ingredients הם המצרכים, מה שמכניסים לתוך המנה. Dina מבשלת מנות פשוטות ממצרכים זולים.",
+        "en": "Ingredients are the foods that go into a dish. Dina cooks simple dishes with cheap ones."
       },
       "interests": [
         "food"
@@ -694,12 +694,12 @@
       "source": "original"
     },
     {
-      "id": "rd.noa.tf-chef",
+      "id": "rd.dina.tf-chef",
       "type": "choice",
       "skill": "reading.true-false",
       "level": "A2",
       "difficulty": 0.4,
-      "prompt": "True or false: Noa wants to work as a chef in the future.",
+      "prompt": "True or false: Dina wants to work as a chef in the future.",
       "instruction": {
         "he": "נכון או לא נכון?",
         "en": "True or false?"
@@ -717,13 +717,13 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לחפש מה Noa אומרת על העתיד שלה.",
-          "en": "Find what Noa says about her future."
+          "he": "לחפש מה Dina אומרת על העתיד שלה.",
+          "en": "Find what Dina says about her future."
         }
       ],
       "explanation": {
-        "he": "בקטע נאמר: Noa does not want to be a chef. \"I want to be a doctor.\" הבישול הוא תחביב (hobby).",
-        "en": "The text says: Noa does not want to be a chef. She wants to be a doctor. Cooking is her hobby."
+        "he": "בקטע נאמר: Dina does not want to be a chef. \"I want to be a doctor.\" הבישול הוא תחביב (hobby).",
+        "en": "The text says: Dina does not want to be a chef. She wants to be a doctor. Cooking is her hobby."
       },
       "interests": [
         "food"
@@ -736,7 +736,7 @@
       "source": "original"
     },
     {
-      "id": "rd.noa.she-grandma",
+      "id": "rd.dina.she-grandma",
       "type": "choice",
       "skill": "reading.reference",
       "level": "A2",
@@ -749,11 +749,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Noa's grandmother"
+          "text": "Dina's grandmother"
         },
         {
           "id": "b",
-          "text": "Noa"
+          "text": "Dina"
         },
         {
           "id": "c",
@@ -768,7 +768,7 @@
         }
       ],
       "explanation": {
-        "he": "המשפט הקודם: Her grandmother is still her biggest fan. היא זו שצופה בכל סרטון פעמיים. Noa לא צופה בסרטונים של עצמה כמו מעריצה.",
+        "he": "המשפט הקודם: Her grandmother is still her biggest fan. היא זו שצופה בכל סרטון פעמיים. Dina לא צופה בסרטונים של עצמה כמו מעריצה.",
         "en": "The sentence before: Her grandmother is still her biggest fan. She is the one who watches every video twice."
       },
       "interests": [
@@ -782,12 +782,12 @@
       "source": "original"
     },
     {
-      "id": "rd.noa.proud",
+      "id": "rd.dina.proud",
       "type": "choice",
       "skill": "reading.inference",
       "level": "A2",
       "difficulty": 0.6,
-      "prompt": "What can we understand about Noa's grandmother?",
+      "prompt": "What can we understand about Dina's grandmother?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -795,7 +795,7 @@
       "options": [
         {
           "id": "a",
-          "text": "She is proud of Noa's videos."
+          "text": "She is proud of Dina's videos."
         },
         {
           "id": "b",
@@ -819,7 +819,7 @@
       ],
       "explanation": {
         "he": "הסבתא היא her biggest fan והיא watches every video twice. מכאן אפשר להסיק שהיא גאה בנכדה. אין בקטע מידע שהיא לא אוהבת אינטרנט או שהיא עדיין לא מבשלת.",
-        "en": "She is Noa's biggest fan and watches every video twice, so she is proud. Nothing says she dislikes the internet or still cannot cook."
+        "en": "She is Dina's biggest fan and watches every video twice, so she is proud. Nothing says she dislikes the internet or still cannot cook."
       },
       "interests": [
         "food"
@@ -3411,7 +3411,7 @@
       "skill": "reading.inference",
       "level": "B2",
       "difficulty": 0.6,
-      "prompt": "Why did Yael's grandfather probably stop talking about films after the Rex closed?",
+      "prompt": "Why did Michal's grandfather probably stop talking about films after the Rex closed?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -3437,12 +3437,12 @@
           "en": "How many years did he work at the Rex?"
         },
         {
-          "he": "ומה הוא השאיר ל־Yael בחדר ההקרנה?",
-          "en": "And what did he leave for Yael in the projection room?"
+          "he": "ומה הוא השאיר ל־Michal בחדר ההקרנה?",
+          "en": "And what did he leave for Michal in the projection room?"
         }
       ],
       "explanation": {
-        "he": "הוא עבד שם forty years, והקולנוע היה חלק גדול מחייו. כשנסגר, he stopped talking about films altogether. אפשר להסיק שזה כאב לו. הסרטים שהשאיר for Yael מראים שהוא לא שכח דבר.",
+        "he": "הוא עבד שם forty years, והקולנוע היה חלק גדול מחייו. כשנסגר, he stopped talking about films altogether. אפשר להסיק שזה כאב לו. הסרטים שהשאיר for Michal מראים שהוא לא שכח דבר.",
         "en": "He worked there forty years. When it closed he stopped talking about films, which suggests sadness. The films he left show he did not forget."
       },
       "interests": [
@@ -3515,11 +3515,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Yael as a child"
+          "text": "Michal as a child"
         },
         {
           "id": "b",
-          "text": "Yael's mother as a teenager"
+          "text": "Michal's mother as a teenager"
         },
         {
           "id": "c",
@@ -3529,17 +3529,17 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "איפה Yael בילתה בימי שישי כשהייתה ילדה?",
-          "en": "Where did Yael spend Friday afternoons as a child?"
+          "he": "איפה Michal בילתה בימי שישי כשהייתה ילדה?",
+          "en": "Where did Michal spend Friday afternoons as a child?"
         },
         {
-          "he": "לשים לב למה שכתוב על הפחיות: for Yael.",
-          "en": "Notice what is written on the cans: for Yael."
+          "he": "לשים לב למה שכתוב על הפחיות: for Michal.",
+          "en": "Notice what is written on the cans: for Michal."
         }
       ],
       "explanation": {
-        "he": "Yael spent Friday afternoons in the cinema as a child, והסרטים הושארו for Yael. הילדה שיושבת שוב ושוב בקולנוע ריק היא כנראה Yael. האמא מוזכרת בנפרד as a teenager.",
-        "en": "Yael spent Fridays at the cinema as a child, and the films were for Yael. The mother is mentioned separately, as a teenager."
+        "he": "Michal spent Friday afternoons in the cinema as a child, והסרטים הושארו for Michal. הילדה שיושבת שוב ושוב בקולנוע ריק היא כנראה Michal. האמא מוזכרת בנפרד as a teenager.",
+        "en": "Michal spent Fridays at the cinema as a child, and the films were for Michal. The mother is mentioned separately, as a teenager."
       },
       "interests": [
         "movies"
@@ -3611,15 +3611,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Yael found a key in her grandfather's garage."
+          "text": "Michal found a key in her grandfather's garage."
         },
         {
           "id": "b",
-          "text": "Yael found six film cans in the projection room."
+          "text": "Michal found six film cans in the projection room."
         },
         {
           "id": "c",
-          "text": "A retired engineer helped Yael."
+          "text": "A retired engineer helped Michal."
         },
         {
           "id": "d",
@@ -3629,12 +3629,12 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה Yael הייתה צריכה כדי להיכנס לקולנוע?",
-          "en": "What did Yael need to get into the cinema?"
+          "he": "מה Michal הייתה צריכה כדי להיכנס לקולנוע?",
+          "en": "What did Michal need to get into the cinema?"
         }
       ],
       "explanation": {
-        "he": "קודם Yael מצאה את המפתח (found the key), אחר כך נכנסה ומצאה את הפחיות, אחר כך המהנדס עזר לה במשך שלושה חודשים, ו־Last month הקולנוע נפתח לערב אחד.",
+        "he": "קודם Michal מצאה את המפתח (found the key), אחר כך נכנסה ומצאה את הפחיות, אחר כך המהנדס עזר לה במשך שלושה חודשים, ו־Last month הקולנוע נפתח לערב אחד.",
         "en": "First she found the key, then the cans, then the engineer helped her, and last month the Rex opened for one night."
       },
       "interests": [
@@ -3717,9 +3717,9 @@
     },
     {
       "id": "passage.noas-kitchen",
-      "title": "Noa's Kitchen",
+      "title": "Dina's Kitchen",
       "level": "A2",
-      "text": "Noa Peretz is fifteen years old, and she already has her own cooking show on the internet.\n\nIt all started when she was eleven. Her grandmother broke her arm and could not cook, so Noa helped her in the kitchen every afternoon. Her grandmother explained each step, and Noa wrote everything in a notebook.\n\nA year later, Noa's older brother filmed her making her grandmother's lentil soup. He put the video online, and thousands of people watched it. Today, Noa makes a new video every Friday. She cooks simple dishes that teenagers can make at home with cheap ingredients.\n\nNoa does not want to be a chef. \"I want to be a doctor,\" she says. \"Cooking is my hobby, and it helps me relax after school.\" Her grandmother is still her biggest fan. She watches every video twice.",
+      "text": "Dina Peretz is fifteen years old, and she already has her own cooking show on the internet.\n\nIt all started when she was eleven. Her grandmother broke her arm and could not cook, so Dina helped her in the kitchen every afternoon. Her grandmother explained each step, and Dina wrote everything in a notebook.\n\nA year later, Dina's older brother filmed her making her grandmother's lentil soup. He put the video online, and thousands of people watched it. Today, Dina makes a new video every Friday. She cooks simple dishes that teenagers can make at home with cheap ingredients.\n\nDina does not want to be a chef. \"I want to be a doctor,\" she says. \"Cooking is my hobby, and it helps me relax after school.\" Her grandmother is still her biggest fan. She watches every video twice.",
       "interests": [
         "food"
       ],
@@ -3826,7 +3826,7 @@
       "id": "passage.the-projector",
       "title": "The Projector",
       "level": "B2",
-      "text": "The Rex Cinema had been closed for eleven years when Yael found the key. It was in a biscuit tin in her grandfather's garage, tied to a paper label in his small, careful handwriting: Rex, side door.\n\nHer grandfather had been the cinema's projectionist for forty years. As a child, Yael had spent Friday afternoons in his tiny room at the back of the hall, watching dust dance in the beam of light while he changed the heavy reels. When the Rex closed, unable to compete with the multiplex in the new shopping centre, he stopped talking about films altogether. He died the following spring.\n\nThe side door opened more easily than she expected. Inside, the seats were covered in grey sheets, and the air smelled of damp carpet. But the projection room was exactly as she remembered it. The old machine stood under a plastic cover, and beside it, on a shelf, were six metal film cans, each labelled with a date and the words \"for Yael\".\n\nIt took her three months, and the help of a retired engineer she found online, to make the projector work again. When the first images finally flickered across the torn screen, she understood. The cans did not contain feature films. They contained hours of home movies: her mother as a teenager, her grandparents dancing at a wedding, and, again and again, a small girl in a red coat sitting in the front row of an empty cinema, laughing at cartoons.\n\nLast month, the Rex opened its doors for one night. Three hundred people from the town came, many of whom had had their first date in those seats. Yael did not show a new blockbuster. She showed her grandfather's films, and for two hours nobody looked at a phone.",
+      "text": "The Rex Cinema had been closed for eleven years when Michal found the key. It was in a biscuit tin in her grandfather's garage, tied to a paper label in his small, careful handwriting: Rex, side door.\n\nHer grandfather had been the cinema's projectionist for forty years. As a child, Michal had spent Friday afternoons in his tiny room at the back of the hall, watching dust dance in the beam of light while he changed the heavy reels. When the Rex closed, unable to compete with the multiplex in the new shopping centre, he stopped talking about films altogether. He died the following spring.\n\nThe side door opened more easily than she expected. Inside, the seats were covered in grey sheets, and the air smelled of damp carpet. But the projection room was exactly as she remembered it. The old machine stood under a plastic cover, and beside it, on a shelf, were six metal film cans, each labelled with a date and the words \"for Michal\".\n\nIt took her three months, and the help of a retired engineer she found online, to make the projector work again. When the first images finally flickered across the torn screen, she understood. The cans did not contain feature films. They contained hours of home movies: her mother as a teenager, her grandparents dancing at a wedding, and, again and again, a small girl in a red coat sitting in the front row of an empty cinema, laughing at cartoons.\n\nLast month, the Rex opened its doors for one night. Three hundred people from the town came, many of whom had had their first date in those seats. Michal did not show a new blockbuster. She showed her grandfather's films, and for two hours nobody looked at a phone.",
       "interests": [
         "movies"
       ],
