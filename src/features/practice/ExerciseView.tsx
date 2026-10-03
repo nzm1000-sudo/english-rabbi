@@ -550,9 +550,16 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
   const ref = useRef<HTMLInputElement>(null);
   const finished = isFinished(flow);
 
+  const [hebrew, setHebrew] = useState(false);
+
   const submit = (e: FormEvent) => {
     e.preventDefault();
     if (finished || !value.trim()) return;
+    // The shared phone's keyboard is often left in Hebrew: that is not an attempt.
+    if (isHebrewOnly(value)) {
+      setHebrew(true);
+      return;
+    }
     onSubmit(value, checkTyped(item, value));
     // Keep the keyboard open and the text selected for a quick retry.
     requestAnimationFrame(() => ref.current?.select());
@@ -570,7 +577,10 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
         dir="ltr"
         lang="en"
         value={value}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={(e) => {
+          setValue(e.target.value);
+          setHebrew(false);
+        }}
         disabled={finished}
         autoComplete="off"
         autoCorrect="off"
@@ -580,8 +590,18 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
         inputMode="text"
         placeholder="לכתוב כאן באנגלית"
       />
+      {hebrew && (
+        <div className="feedback feedback-hint" role="status">
+          המקלדת בעברית. צריך לעבור לאנגלית ולכתוב שוב.
+        </div>
+      )}
     </form>
   );
+}
+
+/** Hebrew letters and no English ones: typed with the Hebrew keyboard. */
+export function isHebrewOnly(s: string): boolean {
+  return /[\u05D0-\u05EA]/.test(s) && !/[A-Za-z]/.test(s);
 }
 
 function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowState; last: CheckResult | null; support: SupportLanguage }) {
