@@ -24,7 +24,7 @@ for (const f of fs.readdirSync(src).filter((f) => f.endsWith('.png'))) {
   if (!/^[a-z0-9-]+$/.test(id)) continue;
   const dest = path.join(out, `${id}.webp`);
   if (fs.existsSync(dest) && fs.statSync(dest).mtimeMs >= fs.statSync(path.join(src, f)).mtimeMs) continue;
-  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', path.join(src, f), '-vf', 'scale=480:480:flags=lanczos', '-c:v', 'libwebp', '-quality', '82', '-alpha_quality', '90', dest]);
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', path.join(src, f), '-vf', 'scale=480:480:flags=lanczos', '-c:v', 'libwebp', '-quality', '82', dest]);
   added++;
 }
 const ids = fs.readdirSync(out).filter((f) => f.endsWith('.webp')).map((f) => f.slice(0, -5)).sort();
