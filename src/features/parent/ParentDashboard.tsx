@@ -10,7 +10,9 @@ import { He } from '@/ui/He';
 import { DomainIcon } from '@/ui/DomainIcon';
 import { TopBar } from '@/ui/TopBar';
 import { Stack } from '@/ui/layout';
-import { ChevronIcon } from '@/ui/icons';
+import { ChevronIcon, ShieldIcon } from '@/ui/icons';
+import { Art } from '@/ui/Art';
+import { Button } from '@/ui/Button';
 import type { ParentLabel } from '@/domain/learning/mastery';
 import { localDay } from '@/domain/learning/events';
 import { ThemePicker } from '@/ui/ThemePicker';
@@ -34,16 +36,27 @@ export function ParentDashboard() {
     <main className="screen">
       <TopBar back="/" title="מצב הורה" />
       {students && students.length > 0 && (
-        <div className="chips" role="tablist" aria-label="תלמידים">
+        <div className="kid-tabs" role="tablist" aria-label="תלמידים">
           {students.map((s) => (
-            <button key={s.id} role="tab" className="chip" aria-pressed={active?.id === s.id} aria-selected={active?.id === s.id} onClick={() => setSelected(s.id)}>
-              {s.name}
-              {s.archived ? ' (מוסתר)' : ''}
+            <button key={s.id} role="tab" className="kid-tab" aria-selected={active?.id === s.id} onClick={() => setSelected(s.id)}>
+              <Avatar name={s.name} hue={s.hue} size={28} />
+              <span>
+                {s.name}
+                {s.archived ? ' (מוסתר)' : ''}
+              </span>
             </button>
           ))}
         </div>
       )}
-      {active ? <StudentReport key={active.id} student={active} /> : <p className="muted">עוד אין תלמידים.</p>}
+      {active ? (
+        <StudentReport key={active.id} student={active} />
+      ) : (
+        <div className="panel empty-state">
+          <Art name="parent" size={96} tone="writing" fallback={<ShieldIcon />} />
+          <p className="t-h3">עוד אין תלמידים</p>
+          <p className="small muted">מוסיפים תלמיד במסך הפתיחה, וכאן יופיע הדוח שלו.</p>
+        </div>
+      )}
       <DeviceSection />
     </main>
   );
@@ -58,46 +71,54 @@ function StudentReport({ student }: { student: Student }) {
 
   return (
     <Stack gap={5}>
-      <div className="row">
-        <Avatar name={student.name} hue={student.hue} />
+      <div className="report-head">
+        <Avatar name={student.name} hue={student.hue} size={56} />
         <div className="grow">
-          <div className="t-h3">{student.name}</div>
+          <div className="t-h2">{student.name}</div>
           <div className="small muted">
             {a.lastActiveDay ? `פעילות אחרונה: ${formatDay(a.lastActiveDay)}` : 'עדיין אין תרגול'}
           </div>
         </div>
         {student.archived && (
-          <button className="btn btn-sm" onClick={() => store.updateStudent(student.id, { archived: false })}>
+          <Button size="sm" onClick={() => store.updateStudent(student.id, { archived: false })}>
             שחזור
-          </button>
+          </Button>
         )}
       </div>
 
-      <section className="stack">
-        <span className="section-label">פעילות</span>
-        <div className="panel stat-panel">
-          <Stat value={a.minutesLast7} label="דקות השבוע" />
-          <Stat value={`${a.activeDaysLast7}/7`} label="ימים השבוע" />
-          <Stat value={a.activeDaysLast30} label="ימים ב־30 יום" />
-          <Stat value={a.streakDays} label="ימים ברצף" />
-          <Stat value={a.itemsTotal} label="תרגילים" />
-          <Stat value={a.minutesTotal} label="דקות בסך הכל" />
+      {a.itemsTotal === 0 ? (
+        <div className="panel empty-state compact">
+          <Art name="parent" size={88} tone="writing" fallback={<ShieldIcon />} />
+          <p className="t-strong">עוד אין פעילות להציג</p>
+          <p className="small muted">אחרי האבחון הקצר יופיעו כאן הרמה בכל תחום, הטעויות שחוזרות והמלצה לשבוע.</p>
         </div>
-      </section>
+      ) : (
+        <section className="stack gap-2">
+          <h2 className="section-title">פעילות</h2>
+          <div className="grid-3 gap-2">
+            <Stat value={a.minutesLast7} label="דקות השבוע" />
+            <Stat value={`${a.activeDaysLast7}/7`} label="ימים השבוע" />
+            <Stat value={a.streakDays} label="ימים ברצף" />
+            <Stat value={a.activeDaysLast30} label="ימים ב־30 יום" />
+            <Stat value={a.itemsTotal} label="תרגילים" />
+            <Stat value={a.minutesTotal} label="דקות בסך הכל" />
+          </div>
+        </section>
+      )}
 
-      <section className="stack">
-        <span className="section-label">מפת מיומנויות</span>
+      <section className="stack gap-2">
+        <h2 className="section-title">מפת מיומנויות</h2>
         <div className="list">
           {p.domains.map((d) => (
             <DomainRow key={d.domain} d={d} />
           ))}
         </div>
-        <p className="xs muted">הרמה משוערת לפי סולם CEFR. ריבועי הביטחון מראים כמה המערכת בטוחה בהערכה.</p>
+        <p className="small muted">הרמה משוערת לפי סולם CEFR. מד הביטחון מראה כמה המערכת בטוחה בהערכה.</p>
       </section>
 
       {(p.weakSkills.length > 0 || p.strongSkills.length > 0) && (
-        <section className="stack">
-          <span className="section-label">פירוט</span>
+        <section className="stack gap-2">
+          <h2 className="section-title">פירוט</h2>
           <div className="panel stack">
             {p.weakSkills.length > 0 && (
               <div>
@@ -116,8 +137,8 @@ function StudentReport({ student }: { student: Student }) {
       )}
 
       {p.memory.length > 0 && (
-        <section className="stack">
-          <span className="section-label">טעויות חוזרות</span>
+        <section className="stack gap-2">
+          <h2 className="section-title">טעויות חוזרות</h2>
           <div className="list">
             {p.memory.map((m) => (
               <Stack key={m.misconceptionId} gap={1} align="start" className="list-item">
@@ -132,8 +153,8 @@ function StudentReport({ student }: { student: Student }) {
       <Words p={p} />
 
       {p.recommendations.length > 0 && (
-        <section className="stack">
-          <span className="section-label">המלצה לשבוע הקרוב</span>
+        <section className="stack gap-2">
+          <h2 className="section-title">המלצה לשבוע הקרוב</h2>
           <ul className="panel stack plain-list">
             {p.recommendations.map((r) => (
               <li key={r}><He>{r}</He></li>
@@ -151,27 +172,36 @@ function DomainRow({ d }: { d: DomainSummary }) {
   const dots = Math.round(d.confidence * 5);
   return (
     <div className={`skill-row tone-${d.domain}`}>
-      <span className="tile-icon">
-        <DomainIcon domain={d.domain} size={20} />
-      </span>
-      <span>
-        {domainNameHe(d.domain)} <En className="xs muted">{d.domain[0]!.toUpperCase() + d.domain.slice(1)}</En>
+      <Art name={d.domain as never} size={44} tone={d.domain} fallback={<DomainIcon domain={d.domain} />} />
+      <span className="skill-row-title">
+        <strong>{domainNameHe(d.domain)}</strong>
+        <En className="small muted">{d.domain[0]!.toUpperCase() + d.domain.slice(1)}</En>
       </span>
       <span className={`badge ${label.cls}`}>{label.he}</span>
-      <div className="meta">
-        <span>רמה: {d.level ? <En>{d.level}</En> : '—'}</span>
-        <span>
-          יעד: <En>{d.target}</En>
+      <div className="skill-facts">
+        <span className="fact">
+          <span className="fact-k">רמה</span>
+          <span className="fact-v num" lang="en">{d.level ?? '–'}</span>
         </span>
-        <span className="conf" aria-label={`ביטחון ${dots} מתוך 5`}>
-          {Array.from({ length: 5 }, (_, i) => (
-            <i key={i} className={i < dots ? 'on' : ''} />
-          ))}
+        <span className="fact">
+          <span className="fact-k">יעד</span>
+          <span className="fact-v num" lang="en">{d.target}</span>
         </span>
-        <span>{d.attempts} תשובות</span>
-        {d.trend === 'improving' && <span className="trend-up">מגמת שיפור</span>}
-        {d.trend === 'declining' && <span className="trend-down">ירידה</span>}
+        <span className="fact">
+          <span className="fact-k">תשובות</span>
+          <span className="fact-v num">{d.attempts}</span>
+        </span>
+        <span className="fact fact-wide">
+          <span className="fact-k">ביטחון</span>
+          <span className="conf" role="meter" aria-valuemin={0} aria-valuemax={5} aria-valuenow={dots} aria-label={`ביטחון ${dots} מתוך 5`}>
+            {Array.from({ length: 5 }, (_, i) => (
+              <i key={i} className={i < dots ? 'on' : ''} />
+            ))}
+          </span>
+        </span>
       </div>
+      {d.trend === 'improving' && <span className="trend trend-up">מגמת שיפור</span>}
+      {d.trend === 'declining' && <span className="trend trend-down">ירידה</span>}
     </div>
   );
 }
@@ -180,8 +210,8 @@ function Words({ p }: { p: LearnerProfile }) {
   const { learned, struggling, recognizedNotProduced, due } = p.words;
   if (!learned.length && !struggling.length && !due) return null;
   return (
-    <section className="stack">
-      <span className="section-label">אוצר מילים</span>
+    <section className="stack gap-2">
+      <h2 className="section-title">אוצר מילים</h2>
       <div className="panel stack">
         <div className="spread small">
           <span className="muted">נלמדו</span>
@@ -247,49 +277,85 @@ function DeviceSection() {
   };
 
   return (
-    <section className="stack device-section">
-      <span className="section-label">מכשיר ונתונים</span>
-      <ThemePicker />
+    <section className="stack gap-4 device-section" aria-labelledby="device-title">
+      <div className="section-intro">
+        <h2 className="section-title" id="device-title">
+          מכשיר ונתונים
+        </h2>
+        <p className="small muted">כל הנתונים נשמרים במכשיר בלבד. מומלץ לגבות פעם בשבוע.</p>
+      </div>
+      <div className="settings-card">
+        <ThemePicker />
+      </div>
       <div className="list">
         <Link to="/parent/voices" className="list-item">
-          <span className="grow">מעבדת קולות</span>
-          <ChevronIcon />
+          <span className="grow stack gap-0">
+            <strong>מעבדת קולות</strong>
+            <span className="small muted">להשוות קולות ולבחור את הטבעי ביותר</span>
+          </span>
+          <span className="chev">
+            <ChevronIcon />
+          </span>
         </Link>
-        <button className="list-item" onClick={() => settings.set({ soundOff: !settings.get('soundOff') })}>
-          <span className="grow">צלילי משוב</span>
-          <span className={`badge ${settings.get('soundOff') ? 'badge-neutral' : 'badge-good'}`}>{settings.get('soundOff') ? 'כבוי' : 'פעיל'}</span>
+        <button className="list-item" onClick={() => settings.set({ soundOff: !settings.get('soundOff') })} aria-pressed={!settings.get('soundOff')}>
+          <span className="grow stack gap-0">
+            <strong>צלילי משוב</strong>
+            <span className="small muted">צליל קצר לתשובה נכונה ולא נכונה</span>
+          </span>
+          <span className="switch" data-on={!settings.get('soundOff')} aria-hidden="true">
+            <span />
+          </span>
+          <span className="sr-only">{settings.get('soundOff') ? 'כבוי' : 'פעיל'}</span>
         </button>
         <button className="list-item" onClick={downloadAudio} disabled={!!dl}>
-          <span className="grow">{dl ? `מוריד הקראות… ${dl.done}/${dl.total}` : 'הורדת כל ההקראות לשימוש בלי אינטרנט'}</span>
+          <span className="grow stack gap-0">
+            <strong>{dl ? 'מוריד הקראות…' : 'הקראות בלי אינטרנט'}</strong>
+            <span className="small muted">{dl ? `${dl.done} מתוך ${dl.total}` : 'להוריד את כל ההקראות למכשיר'}</span>
+          </span>
         </button>
         <button className="list-item" onClick={exportBackup}>
-          <span className="grow">גיבוי לקובץ</span>
+          <span className="grow stack gap-0">
+            <strong>גיבוי לקובץ</strong>
+            <span className="small muted">קובץ אחד עם כל התלמידים וההיסטוריה</span>
+          </span>
         </button>
         <button className="list-item" onClick={() => fileRef.current?.click()}>
-          <span className="grow">שחזור מגיבוי</span>
+          <span className="grow stack gap-0">
+            <strong>שחזור מגיבוי</strong>
+            <span className="small muted">לבחור קובץ גיבוי מהמכשיר</span>
+          </span>
         </button>
       </div>
       <input ref={fileRef} type="file" accept="application/json" hidden onChange={(e) => e.target.files?.[0] && importBackup(e.target.files[0])} />
-      <div className="field">
+      <div className="settings-card field">
         <label htmlFor="srv">כתובת שרת ביתי להקראה (לא חובה)</label>
-        <div className="row">
-          <input id="srv" className="input grow" dir="ltr" placeholder="http://192.168.1.20:8880" value={url} onChange={(e) => setUrl(e.target.value)} inputMode="url" autoCapitalize="off" autoCorrect="off" />
-          <button className="btn" onClick={async () => { await settings.set({ homeServerUrl: url.trim() }); setMsg('נשמר.'); }}>
+        <div className="input-row">
+          <input id="srv" className="input" dir="ltr" placeholder="http://192.168.1.20:8880" value={url} onChange={(e) => setUrl(e.target.value)} inputMode="url" autoCapitalize="off" autoCorrect="off" />
+          <Button
+            size="lg"
+            onClick={async () => {
+              await settings.set({ homeServerUrl: url.trim() });
+              setMsg('נשמר.');
+            }}
+          >
             שמירה
-          </button>
+          </Button>
         </div>
       </div>
-      {msg && <p className="small" role="status">{msg}</p>}
-      <p className="xs muted">כל הנתונים נשמרים במכשיר בלבד. מומלץ לגבות פעם בשבוע.</p>
+      {msg && (
+        <p className="small" role="status">
+          {msg}
+        </p>
+      )}
     </section>
   );
 }
 
 function Stat({ value, label }: { value: number | string; label: string }) {
   return (
-    <div>
-      <div className="stat-value">{value}</div>
-      <div className="xs muted">{label}</div>
+    <div className="stat">
+      <b className="num">{value}</b>
+      <span>{label}</span>
     </div>
   );
 }

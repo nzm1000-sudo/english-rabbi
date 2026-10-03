@@ -1,19 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useStudents } from '@/app/hooks';
 import { Avatar } from '@/ui/Avatar';
-import { PlusIcon } from '@/ui/icons';
+import { LockIcon, PlusIcon } from '@/ui/icons';
+import { HoldButton } from '@/features/kids/ParentGate';
 
-/** Who is learning now? A symmetric grid of large cards. */
+/** Who is learning now? A symmetric grid of large cards; the parent area needs a long press. */
 export function StudentPicker() {
   const students = useStudents();
+  const nav = useNavigate();
 
   return (
-    <main className="screen">
-      <div className="stack gap-2 items-center txt-center page-intro">
-        <span className="rank-badge lg" aria-hidden="true" lang="en">
+    <main className="screen picker">
+      <div className="picker-intro">
+        <span className="brand-mark" aria-hidden="true" lang="en">
           En
         </span>
-        <h1 className="title">מי לומד עכשיו?</h1>
+        <h1 className="page-title">מי לומד עכשיו?</h1>
         <p className="subtitle">כל אחד עם מסלול משלו</p>
       </div>
 
@@ -25,19 +27,23 @@ export function StudentPicker() {
               <strong>{s.name}</strong>
             </Link>
           ))}
-          <Link to="/new" className="student-card add">
-            <span className="avatar">
-              <PlusIcon size={28} />
-            </span>
-            <strong>הוספה</strong>
-          </Link>
         </nav>
       )}
+      <Link to="/new" className="add-row">
+        <span className="add-icon" aria-hidden="true">
+          <PlusIcon size={20} />
+        </span>
+        הוספת תלמיד
+      </Link>
 
-      <div className="mt-auto txt-center">
-        <Link to="/parent" className="btn btn-ghost btn-sm">
-          מצב הורה
-        </Link>
+      <div className="mt-auto parent-gate">
+        <HoldButton wide label="מצב הורה: להחזיק לחוץ כדי להיכנס" onDone={() => nav('/parent')}>
+          <span className="gate-inner">
+            <LockIcon size={18} />
+            מצב הורה
+          </span>
+        </HoldButton>
+        <span className="small muted">להחזיק לחוץ כדי להיכנס</span>
       </div>
     </main>
   );

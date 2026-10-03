@@ -4,6 +4,7 @@ import { useServices } from './services';
 import { StudentPicker } from '@/features/students/StudentPicker';
 import { StudentForm } from '@/features/students/StudentForm';
 import { HomeScreen } from '@/features/home/HomeScreen';
+import { MorePractice } from '@/features/home/MorePractice';
 import { PracticeScreen } from '@/features/practice/PracticeScreen';
 import { ParentDashboard } from '@/features/parent/ParentDashboard';
 import { VoiceLab } from '@/features/voice-lab/VoiceLab';
@@ -35,6 +36,7 @@ export function App() {
         <Route path="/setup" element={<FamilySetup />} />
         <Route path="/s/:sid" element={<WithStudentSpeech><HomeScreen /></WithStudentSpeech>} />
         <Route path="/s/:sid/settings" element={<StudentForm />} />
+        <Route path="/s/:sid/more" element={<MorePractice />} />
         <Route path="/s/:sid/practice/:mode" element={<WithStudentSpeech><PracticeScreen /></WithStudentSpeech>} />
         <Route path="/s/:sid/learn" element={<WithStudentSpeech><LearnHub /></WithStudentSpeech>} />
         <Route path="/s/:sid/learn/:lessonId" element={<WithStudentSpeech><LessonScreen /></WithStudentSpeech>} />

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useProfile, useStudent } from '@/app/hooks';
 import { useServices } from '@/app/services';
@@ -13,7 +13,8 @@ import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
 import { TopBar } from '@/ui/TopBar';
-import { BookmarkIcon, CheckIcon, CloseIcon } from '@/ui/icons';
+import { BookmarkIcon, CheckIcon, CloseIcon, MicIcon, TranslateIcon } from '@/ui/icons';
+import { Button, ButtonLink } from '@/ui/Button';
 import { Confetti } from '@/ui/Confetti';
 import { AudioPlayer } from '@/ui/AudioPlayer';
 import { ReadCheck } from '@/ui/ReadCheck';
@@ -145,25 +146,29 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
             {line.speaker && story.cast && (
               <En className="story-name">{story.cast[line.speaker]}</En>
             )}
-            <div className="row items-start gap-2">
-              <p className="grow story-text" dir="ltr" lang="en">
+            <div className="story-line-main" dir="ltr">
+              <p className="grow story-text" lang="en">
                 <LineWords text={line.en} story={story} savedSet={savedSet} onTap={(w) => tapWord(w, line.en)} />
               </p>
-              <SpeakButton text={line.en} {...(line.speaker ? { speaker: line.speaker } : {})} />
+              <SpeakButton text={line.en} size="inline" {...(line.speaker ? { speaker: line.speaker } : {})} />
             </div>
-            {checking === i ? (
-              <ReadCheck text={line.en} />
-            ) : (
-              <button className="link-btn xs" onClick={() => setChecking(i)}>
-                להקריא ולבדוק
-              </button>
-            )}
-            {translated.has(i) ? (
-              <He className="story-he small">{line.he}</He>
-            ) : (
-              <button className="link-btn xs" onClick={() => setTranslated((t) => new Set(t).add(i))}>
-                תרגום
-              </button>
+            {translated.has(i) && <He className="story-he">{line.he}</He>}
+            {checking === i && <ReadCheck text={line.en} />}
+            {(checking !== i || !translated.has(i)) && (
+              <div className="line-actions">
+                {checking !== i && (
+                  <button className="mini-btn" onClick={() => setChecking(i)}>
+                    <MicIcon size={16} />
+                    להקריא ולבדוק
+                  </button>
+                )}
+                {!translated.has(i) && (
+                  <button className="mini-btn" onClick={() => setTranslated((t) => new Set(t).add(i))}>
+                    <TranslateIcon size={16} />
+                    תרגום
+                  </button>
+                )}
+              </div>
             )}
             {story.questions
               .filter((q) => q.after === i && answered.has(q.item.id))
@@ -193,19 +198,19 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
             {correct} מתוך {story.questions.length} תשובות נכונות · {storyWordsSaved} מילים נשמרו
           </div>
           {nextStory && (
-            <button className="btn btn-primary btn-block" onClick={() => nav(`${base}/stories/${nextStory.id}`)}>
+            <Button variant="primary" size="lg" block onClick={() => nav(`${base}/stories/${nextStory.id}`)}>
               לסיפור הבא
-            </button>
+            </Button>
           )}
-          <Link className="btn btn-block" to={`${base}/words`}>
+          <ButtonLink to={`${base}/words`} size="lg" block>
             המילים שלי
-          </Link>
+          </ButtonLink>
         </div>
       ) : (
         <div className="actions story-next">
-          <button className="btn btn-primary btn-block" onClick={() => setShown((n) => n + 1)} autoFocus>
+          <Button variant="primary" size="lg" block onClick={() => setShown((n) => n + 1)} autoFocus>
             המשך
-          </button>
+          </Button>
         </div>
       )}
       <div ref={endRef} />
@@ -215,7 +220,7 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
           <div className="spread">
             <div className="row gap-2">
               <En className="gloss-word">{gloss.lemma}</En>
-              <SpeakButton text={gloss.lemma} />
+              <SpeakButton text={gloss.lemma} size="inline" />
             </div>
             <button className="icon-btn" onClick={() => setGloss(null)} aria-label="סגירה">
               <CloseIcon />

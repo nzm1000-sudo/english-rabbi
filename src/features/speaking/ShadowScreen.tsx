@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useProfile, useStudent } from '@/app/hooks';
 import { useServices } from '@/app/services';
 import { CEFR_LEVELS } from '@/domain/skills/cefr';
@@ -11,6 +11,9 @@ import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
 import { TopBar } from '@/ui/TopBar';
 import { ReadCheck, type ReadCheckOutcome } from '@/ui/ReadCheck';
+import { Art } from '@/ui/Art';
+import { Button, ButtonLink } from '@/ui/Button';
+import { MicIcon } from '@/ui/icons';
 
 const ROUND = 8;
 
@@ -51,14 +54,15 @@ export function ShadowScreen() {
     return (
       <main className="screen">
         <TopBar back={base} title="חזרה בקול" />
-        <div className="panel stack txt-center">
+        <div className="panel empty-state">
+          <Art name="speaking" size={104} tone="speaking" fallback={<MicIcon />} />
           <strong className="t-h3">{scores.length ? 'כל הכבוד על התרגול!' : 'אין עדיין משפטים לתרגול'}</strong>
           {scores.length > 0 && (
             <He className="muted">{avg >= 0.9 ? 'נשמע מצוין. מחר אפשר לנסות משפטים ארוכים יותר.' : 'כל חזרה משפרת את ההגייה. מחר עוד סבב.'}</He>
           )}
-          <Link className="btn btn-primary btn-block" to={base}>
+          <ButtonLink to={base} variant="primary" size="lg" block>
             למסך הבית
-          </Link>
+          </ButtonLink>
         </div>
       </main>
     );
@@ -76,10 +80,10 @@ export function ShadowScreen() {
 
   return (
     <main className="screen">
-      <TopBar back={base} title="חזרה בקול" end={<span className="small muted">{index + 1}/{sentences.length}</span>} />
+      <TopBar back={base} title="חזרה בקול" end={<span className="session-count" dir="ltr">{index + 1}/{sentences.length}</span>} />
 
       <div className="prompt-card shadow-card">
-        <En as="p" className="prompt">
+        <En as="p" className="prompt shadow-text">
           {current.text}
         </En>
       </div>
@@ -103,9 +107,9 @@ export function ShadowScreen() {
         </div>
       </section>
 
-      <button className={`btn btn-block ${outcome ? 'btn-primary' : 'btn-ghost'}`} onClick={next}>
+      <Button variant={outcome ? 'primary' : 'tertiary'} size="lg" block onClick={next}>
         {outcome ? 'למשפט הבא' : 'לדלג על המשפט'}
-      </button>
+      </Button>
     </main>
   );
 }

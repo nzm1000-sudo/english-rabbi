@@ -9,13 +9,15 @@ export function LessonView({ lesson }: { lesson: Lesson }) {
   return (
     <Stack as="article" gap={4}>
       <Stack as="header" gap={1}>
-        <h2 className="title lesson-title">
-          <He>{lesson.title.he}</He>
-        </h2>
-        <En as="p" className="muted small">
+        <span className="eyebrow" lang="en" dir="ltr">
           {lesson.title.en}
-        </En>
-        <p className="muted"><He>{lesson.goal}</He></p>
+        </span>
+        <h2 className="lesson-title">
+          <He inline>{lesson.title.he}</He>
+        </h2>
+        <p className="lesson-goal">
+          <He>{lesson.goal}</He>
+        </p>
       </Stack>
       {lesson.blocks.map((b, i) => (
         <Block key={i} b={b} />
@@ -28,7 +30,7 @@ function Block({ b }: { b: LessonBlock }) {
   switch (b.kind) {
     case 'text':
       return (
-        <Stack gap={1}>
+        <Stack gap={1} className="lesson-text">
           <p><He>{b.he}</He></p>
           {b.en && <En as="p" className="small muted">{b.en}</En>}
         </Stack>
@@ -36,7 +38,7 @@ function Block({ b }: { b: LessonBlock }) {
     case 'rule':
       return (
         <div className="rule-box">
-          <span className="small"><He>{b.he}</He></span>
+          <span className="rule-label"><He>{b.he}</He></span>
           <En as="p" className="" >
             <strong className="t-h3">{b.pattern}</strong>
           </En>
@@ -52,7 +54,7 @@ function Block({ b }: { b: LessonBlock }) {
                 {e.he && <He className="small muted">{e.he}</He>}
                 {e.note && <He className="xs muted">{e.note}</He>}
               </div>
-              <SpeakButton text={e.en} />
+              <SpeakButton text={e.en} size="inline" />
             </div>
           ))}
         </div>
@@ -67,7 +69,7 @@ function Block({ b }: { b: LessonBlock }) {
           <div className="row small">
             <span className="badge badge-good">כן</span>
             <En className="grow">{b.right}</En>
-            <SpeakButton text={b.right} />
+            <SpeakButton text={b.right} size="inline" />
           </div>
           <p className="small muted"><He>{b.he}</He></p>
         </div>
@@ -79,20 +81,42 @@ function Block({ b }: { b: LessonBlock }) {
           <He>{b.he}</He>
         </div>
       );
-    case 'table':
+    case 'table': {
+      // An English table reads left to right: first column on the left.
+      const ltr = !b.head.some(hasHebrew);
       return (
         <div className="table-scroll">
-          <table className="table">
+          <table className="table" dir={ltr ? 'ltr' : 'rtl'} lang={ltr ? 'en' : undefined}>
             <thead>
-              <tr>{b.head.map((h, i) => <th key={i}><He>{h}</He></th>)}</tr>
+              <tr>
+                {b.head.map((h, i) => (
+                  <th key={i}>
+                    <Cell text={h} />
+                  </th>
+                ))}
+              </tr>
             </thead>
             <tbody>
               {b.rows.map((r, i) => (
-                <tr key={i}>{r.map((c, j) => <td key={j}><He>{c}</He></td>)}</tr>
+                <tr key={i}>
+                  {r.map((c, j) => (
+                    <td key={j}>
+                      <Cell text={c} />
+                    </td>
+                  ))}
+                </tr>
               ))}
             </tbody>
           </table>
         </div>
       );
+    }
   }
+}
+
+const hasHebrew = (t: string) => /[\u0590-\u05FF]/.test(t);
+
+/** A table cell: English stays English (LTR), Hebrew goes through the bidi helper. */
+function Cell({ text }: { text: string }) {
+  return hasHebrew(text) ? <He>{text}</He> : <En>{text}</En>;
 }

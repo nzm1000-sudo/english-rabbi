@@ -5,7 +5,10 @@ import { useServices } from '@/app/services';
 import { useProfile, useStudent } from '@/app/hooks';
 import { TopBar } from '@/ui/TopBar';
 import { Row } from '@/ui/layout';
-import { ChevronIcon } from '@/ui/icons';
+import { ChevronIcon, RiddleIcon } from '@/ui/icons';
+import { Art } from '@/ui/Art';
+import { ButtonLink } from '@/ui/Button';
+import type { CSSProperties } from 'react';
 import { DOMAINS, domainOf } from '@/domain/skills/taxonomy';
 import { domainNameHe } from '@/domain/student/profile';
 import { compareLevels } from '@/domain/skills/cefr';
@@ -32,20 +35,22 @@ export function LearnHub() {
         return (
           <section key={d} className={`stack tone-${d}`}>
             <Row gap={2}>
-              <span className="tile-icon">
-                <DomainIcon domain={d} size={20} />
-              </span>
-              <h2 className="t-h3">{domainNameHe(d)}</h2>
+              <Art name={d as never} size={40} tone={d} fallback={<DomainIcon domain={d} />} />
+              <h2 className="section-title">{domainNameHe(d)}</h2>
             </Row>
             <nav className="list">
               {ls.map((l) => (
                 <Link key={l.id} to={`/s/${student.id}/learn/${l.id}`} className="list-item">
                   <Row as="span" gap={2} wrap className="grow">
-                    <He>{l.title.he}</He>
+                    <He inline className="t-strong">{l.title.he}</He>
                     {[...weak].some((w) => w.startsWith(l.skill)) && <span className="badge badge-warn">כדאי לחזק</span>}
                   </Row>
-                  <span className="tile-level" dir="ltr">{l.level}</span>
-                  <ChevronIcon />
+                  <span className="level-chip" lang="en">
+                    {l.level}
+                  </span>
+                  <span className="chev">
+                    <ChevronIcon />
+                  </span>
                 </Link>
               ))}
             </nav>
@@ -76,8 +81,8 @@ export function LessonScreen() {
           className="row-card"
           replace
         >
-          <span className="tile-icon tone-warn">
-            ?
+          <span className="art art-orb orb-speaking" style={{ '--art': '44px' } as CSSProperties} aria-hidden="true">
+            <RiddleIcon />
           </span>
           <span className="grow">
             <strong>לנחש לפני ההסבר</strong>
@@ -90,9 +95,9 @@ export function LessonScreen() {
       <LessonView lesson={lesson} />
       {practiceCount > 0 && (
         <div className="actions">
-          <Link to={`/s/${student.id}/practice/skill?skill=${encodeURIComponent(lesson.skill)}`} className="btn btn-primary">
+          <ButtonLink to={`/s/${student.id}/practice/skill?skill=${encodeURIComponent(lesson.skill)}`} variant="primary" size="lg" block>
             תרגול על הנושא
-          </Link>
+          </ButtonLink>
         </div>
       )}
     </main>
