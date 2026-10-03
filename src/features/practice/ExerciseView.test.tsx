@@ -1,7 +1,7 @@
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import { ServicesProvider, type AppServices } from '@/app/services';
 import { contentRegistry } from '@content/index';
-import type { ChoiceItem, TypedItem } from '@/domain/content/schema';
+import type { ChoiceItem, OrderItem, TypedItem } from '@/domain/content/schema';
 import { CONTINUE_DELAY_MS, ExerciseView, isHebrewOnly } from './ExerciseView';
 
 /**
@@ -66,4 +66,33 @@ it('isHebrewOnly', () => {
   expect(isHebrewOnly('hello')).toBe(false);
   expect(isHebrewOnly('take את')).toBe(false);
   expect(isHebrewOnly('123')).toBe(false);
+});
+
+/** Regression: "הבא" (exam) with no answer chosen and "בדיקה" with no tiles placed did nothing at all. */
+it('gives a gentle note when checking before answering', () => {
+  const idle = { speaking: false };
+  const speech = { stop: vi.fn(), speak: vi.fn(), subscribe: () => () => {}, getState: () => idle };
+  const services = { content: contentRegistry, speech } as unknown as AppServices;
+  const choice = contentRegistry.items.find((i): i is ChoiceItem => i.type === 'choice' && i.modality === 'read' && !i.passageId)!;
+  const onAnswer = vi.fn();
+  const { unmount } = render(
+    <ServicesProvider services={services}>
+      <ExerciseView item={choice} support="he" seed="s" policy="test" feedback="none" onAnswer={onAnswer} onDone={vi.fn()} />
+    </ServicesProvider>,
+  );
+  fireEvent.click(screen.getByRole('button', { name: 'הבא' }));
+  expect(screen.getByText('קודם לבחור תשובה.')).toBeInTheDocument();
+  expect(onAnswer).not.toHaveBeenCalled();
+  unmount();
+
+  const order = contentRegistry.items.find((i): i is OrderItem => i.type === 'order' && i.modality === 'read' && !i.passageId)!;
+  render(
+    <ServicesProvider services={services}>
+      <ExerciseView item={order} support="he" seed="s" onAnswer={onAnswer} onDone={vi.fn()} />
+    </ServicesProvider>,
+  );
+  fireEvent.click(screen.getByRole('button', { name: 'בדיקה' }));
+  expect(screen.getByText('קודם להקיש על המילים ולבנות מהן משפט.')).toBeInTheDocument();
+  expect(screen.queryByText('רמז 1')).not.toBeInTheDocument();
+  expect(onAnswer).not.toHaveBeenCalled();
 });

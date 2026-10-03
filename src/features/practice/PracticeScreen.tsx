@@ -29,8 +29,8 @@ export function PracticeScreen() {
   const profile = useProfile(student);
   const [round, setRound] = useState(0);
   const params = useMemo(() => Object.fromEntries(search.entries()), [search]);
-  if (!isPracticeMode(mode)) return <main className="screen empty">מצב תרגול לא מוכר</main>;
-  if (student === null) return <main className="screen empty">התלמיד לא נמצא</main>;
+  if (!isPracticeMode(mode)) return <NotFound text="מצב תרגול לא מוכר" home={sid ? `/s/${sid}` : '/'} />;
+  if (student === null) return <NotFound text="התלמיד לא נמצא" home="/" />;
   if (!student || !profile) return <main className="screen" />;
   return (
     <Session
@@ -41,6 +41,18 @@ export function PracticeScreen() {
       support={profile.supportLanguage}
       onAgain={() => setRound((r) => r + 1)}
     />
+  );
+}
+
+/** A broken link (e.g. an old bookmark): say so and offer the way home. */
+function NotFound({ text, home }: { text: string; home: string }) {
+  return (
+    <main className="screen empty stack gap-3">
+      <p>{text}</p>
+      <Link className="text-link" to={home}>
+        חזרה למסך הבית
+      </Link>
+    </main>
   );
 }
 

@@ -312,12 +312,14 @@ function OrderInput({ item, seed, flow, onSubmit }: { item: OrderItem; seed: str
     return shuffled;
   }, [item, seed]);
   const [placed, setPlaced] = useState<number[]>([]);
+  const [empty, setEmpty] = useState(false);
   const finished = isFinished(flow);
   const endMark = /[?!]$/.test(item.answer.trim()) ? item.answer.trim().slice(-1) : '.';
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    if (finished || !placed.length) return;
+    if (finished) return;
+    if (!placed.length) return setEmpty(true);
     const words = placed.map((id) => tiles.find((t) => t.id === id)!.text);
     onSubmit(words.join(' '), checkOrder(item, words));
   };
@@ -344,12 +346,16 @@ function OrderInput({ item, seed, flow, onSubmit }: { item: OrderItem; seed: str
             className="word-tile"
             disabled={finished || placed.includes(t.id)}
             data-used={placed.includes(t.id)}
-            onClick={() => setPlaced((p) => [...p, t.id])}
+            onClick={() => {
+              setPlaced((p) => [...p, t.id]);
+              setEmpty(false);
+            }}
           >
             {t.text}
           </button>
         ))}
       </div>
+      {empty && <EmptyAnswer>קודם להקיש על המילים ולבנות מהן משפט.</EmptyAnswer>}
     </form>
   );
 }
@@ -363,11 +369,13 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
   const fixes = useMemo(() => seededShuffle([item.correction, ...item.distractors], `${seed}:${item.id}`), [item, seed]);
   const [picked, setPicked] = useState<number | null>(null);
   const [choice, setChoice] = useState<string | null>(null);
+  const [empty, setEmpty] = useState(false);
   const finished = isFinished(flow);
   const missed = new Set(flow.attempts.filter((a) => !a.correct).map((a) => a.answer));
 
   const tap = (i: number) => {
     if (finished) return;
+    setEmpty(false);
     if (i !== item.wrongIndex) {
       onSubmit(`${i}:`, checkFix(item, i, null));
       return;
@@ -377,7 +385,8 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
   };
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    if (finished || picked === null || choice === null) return;
+    if (finished) return;
+    if (picked === null || choice === null) return setEmpty(true);
     onSubmit(`${picked}:${choice}`, checkFix(item, picked, choice));
     setChoice(null);
   };
@@ -411,7 +420,10 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
                 selected={choice === f}
                 state={missed.has(`${picked}:${f}`) ? 'wrong' : undefined}
                 disabled={missed.has(`${picked}:${f}`)}
-                onPick={() => setChoice(f)}
+                onPick={() => {
+                  setChoice(f);
+                  setEmpty(false);
+                }}
               >
                 {f ? <En>{f}</En> : <He>למחוק את המילה</He>}
               </OptionRow>
@@ -419,7 +431,17 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
           </div>
         </div>
       )}
+      {empty && <EmptyAnswer>{picked === null ? 'קודם להקיש על המילה השגויה במשפט.' : 'קודם לבחור במה להחליף את המילה.'}</EmptyAnswer>}
     </form>
+  );
+}
+
+/** A gentle note when "בדיקה" or "הבא" is pressed before answering. Not an attempt. */
+function EmptyAnswer({ children }: { children: string }) {
+  return (
+    <div className="feedback feedback-hint" role="status">
+      {children}
+    </div>
   );
 }
 
@@ -459,6 +481,7 @@ function ChoiceInput({
 }) {
   const options = useMemo(() => seededShuffle(item.options, `${seed}:${item.id}`), [item, seed]);
   const [selected, setSelected] = useState<string | null>(null);
+  const [empty, setEmpty] = useState(false);
   const finished = isFinished(flow);
   const wrong = new Set(flow.attempts.filter((a) => !a.correct).map((a) => a.answer));
   const isEnglish = item.promptLanguage === 'en' && !(item.word && item.prompt === item.word.lemma);
@@ -466,7 +489,8 @@ function ChoiceInput({
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    if (!selected || finished) return;
+    if (finished) return;
+    if (!selected) return setEmpty(true);
     onSubmit(selected, checkChoice(item, selected));
     setSelected(null);
   };
@@ -496,12 +520,14 @@ function ChoiceInput({
               }
               if (selected && selected !== o.id) onChange();
               setSelected(o.id);
+              setEmpty(false);
             }}
           >
             {text}
           </OptionRow>
         );
       })}
+      {empty && <EmptyAnswer>קודם לבחור תשובה.</EmptyAnswer>}
     </form>
   );
 }
@@ -565,10 +591,12 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
   const finished = isFinished(flow);
 
   const [hebrew, setHebrew] = useState(false);
+  const [empty, setEmpty] = useState(false);
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    if (finished || !value.trim()) return;
+    if (finished) return;
+    if (!value.trim()) return setEmpty(true);
     // The shared phone's keyboard is often left in Hebrew: that is not an attempt.
     if (isHebrewOnly(value)) {
       setHebrew(true);
@@ -594,6 +622,7 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
         onChange={(e) => {
           setValue(e.target.value);
           setHebrew(false);
+          setEmpty(false);
         }}
         disabled={finished}
         autoComplete="off"
@@ -609,6 +638,7 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
           המקלדת בעברית. צריך לעבור לאנגלית ולכתוב שוב.
         </div>
       )}
+      {empty && <EmptyAnswer>קודם לכתוב תשובה באנגלית.</EmptyAnswer>}
     </form>
   );
 }
