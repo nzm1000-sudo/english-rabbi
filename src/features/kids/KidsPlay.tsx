@@ -273,7 +273,7 @@ function PictureGame({
             onClick={() => tap(o)}
             aria-label={o.he}
           >
-            <Picture picture={o.picture} size={stage === 'little' ? 84 : 72} />
+            <Picture picture={o.picture} word={o.en} size={stage === 'little' ? 84 : 72} />
           </button>
         ))}
       </div>
@@ -325,9 +325,7 @@ function LettersGame({ seed, sayEn, onFinish, back }: Common & { seed: string })
     <main className="screen kids-screen">
       <KidsTop back={back} progress={i} total={questions.length} title="🔤 איזו אות?" />
       <button className="kids-ask kids-picture-big" onClick={() => void sayEn(q.word)} aria-label="לשמוע שוב">
-        <span className="kid-emoji" style={{ fontSize: 110 }}>
-          {q.emoji}
-        </span>
+        <Picture picture={{ emoji: q.emoji }} word={q.word} size={150} />
         <span className="kids-word" dir="ltr" lang="en">
           {done ? q.word : `_${q.word.slice(1)}`}
         </span>
@@ -389,9 +387,7 @@ function BuildGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
     <main className="screen kids-screen">
       <KidsTop back={back} progress={i} total={questions.length} title="🧩 בונים מילה" />
       <button className="kids-ask kids-picture-big" onClick={() => void sayEn(q.word)} aria-label="לשמוע שוב">
-        <span className="kid-emoji" style={{ fontSize: 100 }}>
-          {q.emoji ?? '🔊'}
-        </span>
+        <Picture picture={{ emoji: q.emoji ?? '🔊' }} word={q.word} size={140} />
         <span className="small muted">{q.he}</span>
       </button>
       <div className={`kids-slots${shake ? ' shake' : ''}`} dir="ltr">
@@ -509,7 +505,7 @@ function MemoryGame({ words, seed, sayEn, onFinish, back }: Common & { words: Ki
           const up = open.includes(c.key) || found.has(c.word.id);
           return (
             <button key={c.key} className="kids-mem" data-up={up} data-found={found.has(c.word.id)} onClick={() => flip(c.key, c.word)} aria-label={up ? c.word.he : 'קלף סגור'}>
-              {up ? <Picture picture={c.word.picture} size={52} /> : <span className="kids-mem-back">⭐</span>}
+              {up ? <Picture picture={c.word.picture} word={c.word.en} size={52} /> : <span className="kids-mem-back">⭐</span>}
             </button>
           );
         })}

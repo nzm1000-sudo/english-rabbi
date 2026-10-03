@@ -933,3 +933,7 @@ a.row-card:active, button.row-card:active { transform: translateY(3px); border-b
 .kids-card .kid-emoji { font-size: min(var(--kid-size, 84px), 19vw) !important; }
 .kids-card .kid-swatch { width: min(84px, 19vw) !important; height: min(84px, 19vw) !important; }
 html, body { overflow-x: hidden; }
+
+/* 3D illustrations (public/pics) */
+.kid-pic { display: block; width: var(--kid-size, 84px); height: var(--kid-size, 84px); max-width: 100%; object-fit: cover; border-radius: 22%; user-select: none; -webkit-user-drag: none; }
+.kids-card .kid-pic { width: min(var(--kid-size, 84px), 24vw); height: min(var(--kid-size, 84px), 24vw); }

@@ -56,6 +56,16 @@ export default defineConfig({
               expiration: { maxEntries: 10000 },
             },
           },
+          {
+            // 3D illustrations: cached on first view, then work offline.
+            urlPattern: ({ url }) => url.pathname.includes('/pics/') && url.pathname.endsWith('.webp'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'pics-v1',
+              cacheableResponse: { statuses: [200] },
+              expiration: { maxEntries: 2000 },
+            },
+          },
         ],
       },
     }),

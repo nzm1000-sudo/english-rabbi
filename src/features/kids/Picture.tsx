@@ -1,7 +1,16 @@
+import type { CSSProperties } from 'react';
 import type { Picture as P } from '@/domain/kids/schema';
+import { wordPic } from './pics';
 
-/** A picture card face: emoji, a color swatch, or dots for counting. */
-export function Picture({ picture, size = 72 }: { picture: P; size?: number }) {
+/**
+ * A picture card face: a 3D illustration when there is one for the word,
+ * otherwise the emoji; a color swatch; or dots for counting.
+ */
+export function Picture({ picture, word, size = 72 }: { picture: P; word?: string; size?: number }) {
+  const src = picture.emoji ? wordPic(word) : undefined;
+  if (src) {
+    return <img className="kid-pic" src={src} alt="" width={size} height={size} draggable={false} style={{ '--kid-size': `${size}px` } as CSSProperties} />;
+  }
   if (picture.color) {
     return <span className="kid-swatch" style={{ background: picture.color, width: size, height: size }} aria-hidden="true" />;
   }
