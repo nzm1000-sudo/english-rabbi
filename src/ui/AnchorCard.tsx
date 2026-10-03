@@ -2,6 +2,7 @@ import type { Anchor } from '@/domain/content/schema';
 import { En } from './En';
 import { He } from './He';
 import { SpeakButton } from './SpeakButton';
+import { LessonIcon } from './icons';
 
 /**
  * Memory anchor: the same picture comes back with every mistake of this kind,
@@ -14,9 +15,12 @@ export function AnchorCard({ anchor, compact = false }: { anchor: Anchor; compac
         <span className="anchor-emoji" aria-hidden="true">
           {anchor.emoji}
         </span>
-        <strong>
-          <He>{anchor.title}</He>
-        </strong>
+        <span className="stack gap-0">
+          <span className="eyebrow">תמונה לזכור</span>
+          <strong>
+            <He inline>{anchor.title}</He>
+          </strong>
+        </span>
       </div>
       <He className="anchor-image">{anchor.image}</He>
       {anchor.pattern && (
@@ -28,18 +32,21 @@ export function AnchorCard({ anchor, compact = false }: { anchor: Anchor; compac
       {!compact && anchor.examples.length > 0 && (
         <div className="stack gap-1">
           {anchor.examples.map((e, i) => (
-            <div key={i} className="row gap-2">
-              <SpeakButton text={e.en} />
+            <div key={i} className="anchor-example">
               <span className="grow stack gap-0">
-                <En className="small">{e.en}</En>
-                <He className="xs muted">{e.he}</He>
+                <En as="div">{e.en}</En>
+                <He className="small muted">{e.he}</He>
               </span>
+              <SpeakButton text={e.en} size="inline" />
             </div>
           ))}
         </div>
       )}
       {!compact && anchor.hebrewTrap && (
-        <He className="small anchor-trap">{`💡 ${anchor.hebrewTrap}`}</He>
+        <div className="anchor-trap">
+          <LessonIcon size={18} />
+          <He className="small">{anchor.hebrewTrap}</He>
+        </div>
       )}
     </div>
   );

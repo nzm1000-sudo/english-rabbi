@@ -118,3 +118,51 @@ export const LinkIcon = ({ size = 24 }: P) => (
 export const TreeIcon = ({ size = 24 }: P) => (
   <svg {...ico(size)}><circle cx="12" cy="5.5" r="2.5" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="12" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" /><path d="M12 8v8M12 12H5.5v4M12 12h6.5v4" /></svg>
 );
+
+/* Player, status and achievement icons. */
+export const PlayIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.2v13.6a1 1 0 0 0 1.5.86l11-6.8a1 1 0 0 0 0-1.72l-11-6.8A1 1 0 0 0 8 5.2z" fill="currentColor" /></svg>
+);
+export const PauseIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4.2" height="14" rx="1.2" fill="currentColor" /><rect x="13.8" y="5" width="4.2" height="14" rx="1.2" fill="currentColor" /></svg>
+);
+/** Previous sentence (drawn left-to-right: the player is LTR, like all media controls). */
+export const PrevIcon = ({ size = 22 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="2.4" height="14" rx="1.2" fill="currentColor" /><path d="M18.5 6.1v11.8a.9.9 0 0 1-1.4.75L9.3 12.75a.9.9 0 0 1 0-1.5l7.8-5.9a.9.9 0 0 1 1.4.75z" fill="currentColor" /></svg>
+);
+export const NextIcon = ({ size = 22 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true"><rect x="16.6" y="5" width="2.4" height="14" rx="1.2" fill="currentColor" /><path d="M5.5 6.1v11.8a.9.9 0 0 0 1.4.75l7.8-5.9a.9.9 0 0 0 0-1.5L6.9 5.35a.9.9 0 0 0-1.4.75z" fill="currentColor" /></svg>
+);
+/** Five seconds back: the "5" is part of the drawing, not a text overlay. */
+export const Back5Icon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M4.6 9.2A8 8 0 1 1 4 12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+    <path d="M3.6 4.8v4.6h4.6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M14.4 8.6h-3.5l-.45 3.2c.45-.35 1.05-.55 1.7-.55 1.45 0 2.45.95 2.45 2.3 0 1.4-1.05 2.4-2.6 2.4-1.05 0-1.9-.45-2.3-1.15" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+export const LockIcon = ({ size = 18 }: P) => (
+  <svg {...ico(size)}><rect x="5" y="10.5" width="14" height="10" rx="2.5" /><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" /></svg>
+);
+export const FlagIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><path d="M5 21V4M5 4.5c2.5-1.5 5-1.5 7 0s4.5 1.5 7 0v9c-2.5 1.5-5 1.5-7 0s-4.5-1.5-7 0" /></svg>
+);
+export const CalendarIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><rect x="3.5" y="5" width="17" height="15.5" rx="2.5" /><path d="M3.5 10h17M8 3v4M16 3v4M8 14h2M14 14h2M8 17h2" /></svg>
+);
+export const StackIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><path d="m12 3 9 5-9 5-9-5z" /><path d="m3 12.5 9 5 9-5" /><path d="m3 16.5 9 5 9-5" /></svg>
+);
+export const MedalIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><circle cx="12" cy="15" r="5.5" /><path d="M8.5 10.5 6 3h4l2 5 2-5h4l-2.5 7.5" /><path d="m12 12.6.8 1.6 1.7.2-1.2 1.2.3 1.7-1.6-.8-1.6.8.3-1.7-1.2-1.2 1.7-.2z" /></svg>
+);
+export const GridIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><rect x="3.5" y="3.5" width="7" height="7" rx="2" /><rect x="13.5" y="3.5" width="7" height="7" rx="2" /><rect x="3.5" y="13.5" width="7" height="7" rx="2" /><rect x="13.5" y="13.5" width="7" height="7" rx="2" /></svg>
+);
+export const ShieldIcon = ({ size = 24 }: P) => (
+  <svg {...ico(size)}><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6z" /><path d="m9 12 2.2 2.2L15.5 10" /></svg>
+);
+export const InfoIcon = ({ size = 20 }: P) => (
+  <svg {...ico(size)}><circle cx="12" cy="12" r="9" /><path d="M12 11v5.5M12 7.6h.01" /></svg>
+);
+export const BulbIcon = LessonIcon;
