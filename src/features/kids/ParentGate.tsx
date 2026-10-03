@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react';
 
+const HOLD_MS = 1500;
+
 /**
  * A button a small child will not press by accident: it must be held for
- * 1.5 seconds. Used to leave the little children's area.
+ * 1.5 seconds. A ring around it fills while it is held, so a parent can see
+ * what is happening. Used to leave the children's area and to add time.
  */
 export function HoldButton({ onDone, label, children, wide = false }: { onDone: () => void; label: string; children: ReactNode; wide?: boolean }) {
   const [p, setP] = useState(0);
@@ -15,7 +18,7 @@ export function HoldButton({ onDone, label, children, wide = false }: { onDone: 
     setP(0);
   };
   const tick = () => {
-    const v = Math.min(1, (performance.now() - start.current) / 1500);
+    const v = Math.min(1, (performance.now() - start.current) / HOLD_MS);
     setP(v);
     if (v >= 1) {
       stop();
@@ -24,12 +27,15 @@ export function HoldButton({ onDone, label, children, wide = false }: { onDone: 
   };
   useEffect(() => () => stop(), []);
 
+  const r = 29;
+  const c = 2 * Math.PI * r;
   return (
     <button
       type="button"
       className={`hold-btn${wide ? ' wide' : ''}`}
       aria-label={label}
       title="להחזיק לחוץ"
+      data-holding={p > 0}
       onPointerDown={(e) => {
         e.preventDefault();
         start.current = performance.now();
@@ -39,9 +45,15 @@ export function HoldButton({ onDone, label, children, wide = false }: { onDone: 
       onPointerLeave={stop}
       onPointerCancel={stop}
       onContextMenu={(e) => e.preventDefault()}
-      style={{ '--hold': `${Math.round(p * 360)}deg` } as CSSProperties}
+      style={{ '--hold-p': p } as CSSProperties}
     >
-      {children}
+      {!wide && (
+        <svg className="hold-ring" viewBox="0 0 64 64" aria-hidden="true">
+          <circle className="hold-track" cx="32" cy="32" r={r} />
+          <circle className="hold-value" cx="32" cy="32" r={r} strokeDasharray={c} strokeDashoffset={c * (1 - p)} />
+        </svg>
+      )}
+      <span className="hold-face">{children}</span>
     </button>
   );
 }
