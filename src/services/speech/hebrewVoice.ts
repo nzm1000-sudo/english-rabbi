@@ -1,9 +1,69 @@
+import { audioKey } from './audioKey';
+import type { AudioPlayback } from './playback/audioPlayer';
+import { isAbort } from './types';
+
 /**
- * Short spoken Hebrew instructions for children who cannot read yet
- * ("איפה?", "כל הכבוד!"), with the phone's own Hebrew voice (on iPhone,
- * Carmit). Nothing is downloaded or sent anywhere. If the phone has no
- * Hebrew voice, it stays silent and the picture and English word still work.
+ * Short spoken Hebrew for children who cannot read yet ("איפה?", "כל הכבוד!").
+ * Plays a natural Hebrew recording made ahead of time (tools/tts-prerender/
+ * hebrew.mjs). A phrase that was not recorded uses the phone's own Hebrew
+ * voice. Nothing is sent anywhere.
  */
+
+// Keep in sync with VOICE in tools/tts-prerender/hebrew.mjs
+export const HEBREW_VOICE = 'he-IL-AvriNeural';
+const MANIFEST_URL = 'audio/he/manifest.json';
+
+let playback: AudioPlayback | null = null;
+let manifest: Promise<Record<string, string>> | null = null;
+let current: AbortController | null = null;
+
+/** Uses the app's audio element, so it plays on iPhone after the first tap. */
+export function setHebrewPlayback(p: AudioPlayback): void {
+  playback = p;
+}
+
+function entries(): Promise<Record<string, string>> {
+  manifest ??= fetch(MANIFEST_URL)
+    .then((r) => (r.ok ? (r.json() as Promise<{ entries: Record<string, string> }>) : { entries: {} }))
+    .then((m) => m.entries ?? {})
+    .catch(() => {
+      manifest = null;
+      return {};
+    });
+  return manifest;
+}
+
+/** Speaks Hebrew and resolves when done. Never rejects. */
+export async function speakHebrew(text: string): Promise<void> {
+  stopHebrew();
+  const ctrl = (current = new AbortController());
+  const url = playback ? (await entries())[audioKey(HEBREW_VOICE, 'normal', text)] : undefined;
+  if (ctrl.signal.aborted) return;
+  if (url && playback) {
+    try {
+      const res = await fetch(url, { signal: ctrl.signal });
+      if (!res.ok) throw new Error(`audio ${res.status}`);
+      const blob = await res.blob();
+      if (ctrl.signal.aborted) return;
+      await playback.play(blob, ctrl.signal);
+      return;
+    } catch (e) {
+      // Stopped, or another sound took over: stay quiet.
+      if (ctrl.signal.aborted || isAbort(e)) return;
+      // A broken file: fall back to the phone's voice below.
+    }
+  }
+  return deviceVoice(text);
+}
+
+export function stopHebrew(): void {
+  if (current) {
+    current.abort();
+    current = null;
+  }
+  if (typeof speechSynthesis !== 'undefined') speechSynthesis.cancel();
+}
+
 let cached: SpeechSynthesisVoice | null | undefined;
 
 function hebrewVoice(): SpeechSynthesisVoice | null {
@@ -20,8 +80,7 @@ if (typeof speechSynthesis !== 'undefined') {
   });
 }
 
-/** Speaks Hebrew and resolves when done (or at once when there is no voice). */
-export function speakHebrew(text: string): Promise<void> {
+function deviceVoice(text: string): Promise<void> {
   return new Promise((resolve) => {
     if (typeof speechSynthesis === 'undefined') return resolve();
     const u = new SpeechSynthesisUtterance(text);
@@ -36,8 +95,4 @@ export function speakHebrew(text: string): Promise<void> {
     // Safety net: some browsers never fire onend.
     setTimeout(resolve, 600 + text.length * 120);
   });
-}
-
-export function stopHebrew(): void {
-  if (typeof speechSynthesis !== 'undefined') speechSynthesis.cancel();
 }

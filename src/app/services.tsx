@@ -6,6 +6,7 @@ import { contentRegistry } from '@content/index';
 import type { ContentRegistry } from '@/domain/content/registry';
 import { SpeechService } from '@/services/speech/speechService';
 import { HtmlAudioPlayback } from '@/services/speech/playback/audioPlayer';
+import { setHebrewPlayback } from '@/services/speech/hebrewVoice';
 import { PrerenderedProvider } from '@/services/speech/tts/prerenderedProvider';
 import { RemoteTtsProvider } from '@/services/speech/tts/remoteProvider';
 import { WebSpeechProvider } from '@/services/speech/tts/webSpeechProvider';
@@ -39,6 +40,7 @@ export function createAppServices(): AppServices {
   });
   // Priority: neural audio first, device voice last so speech always works offline.
   const recorded = new PrerenderedProvider(playback);
+  setHebrewPlayback(playback);
   const speech = new SpeechService([recorded, remote, new WebSpeechProvider()]);
   return { db, store, content: contentRegistry, speech, settings, recorded };
 }
