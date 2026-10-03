@@ -111,6 +111,19 @@ describe('speech service', () => {
     expect(s.getState().status).toBe('idle');
   });
 
+  it('tells other players to pause on every stop and before every new sound', async () => {
+    const s = new SpeechService([new FakeProvider('p', 'ok')]);
+    const paused = vi.fn();
+    const off = s.onStop(paused);
+    s.stop();
+    expect(paused).toHaveBeenCalledTimes(1);
+    await s.speak('Hello', opts);
+    expect(paused).toHaveBeenCalledTimes(2);
+    off();
+    s.stop();
+    expect(paused).toHaveBeenCalledTimes(2);
+  });
+
   it('dialogue lines use speaker A and B', async () => {
     const p = new FakeProvider('p', 'ok');
     const s = new SpeechService([p]);
