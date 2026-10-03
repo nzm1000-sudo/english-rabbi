@@ -6,8 +6,11 @@ Current: pre-recorded phrases with Microsoft "Avri" (edge-tts), built by
 not human enough and wants a better female and male voice.
 
 Plan:
-1. Read the API keys from environment variables `GEMINI_API_KEY` (Google AI
-   Studio key) and, if present, `ELEVENLABS_API_KEY`. Never print them.
+1. The Google AI Studio key is stored as an environment API credential for
+   `generativelanguage.googleapis.com` (header `x-goog-api-key`): call the
+   Gemini API without a key and the session proxy adds it. If calls fail with
+   401/403, read the `environment.secrets` documentation page and ask the owner.
+   Never ask for the key in chat and never print it.
 2. Render the same 5 sample phrases ("כל הכבוד!", "איפה המילה?", "בונים את
    המילה", "מדבקה חדשה! כלבלב", "נסו שוב") with 2 female + 2 male Gemini TTS
    voices (gemini-2.5-flash-preview-tts or newer, style prompt: warm, gentle,
