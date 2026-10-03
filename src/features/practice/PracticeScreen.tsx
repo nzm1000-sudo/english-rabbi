@@ -177,6 +177,8 @@ function Session({
           feedback={def.feedback}
           onAnswer={s.record}
           onDone={s.complete}
+          // Timed rounds: a tapped word shows its meaning but is not saved.
+          saveWords={!def.timeLimitSec && mode !== 'exam'}
         />
       )}
 

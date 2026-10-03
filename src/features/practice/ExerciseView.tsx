@@ -8,7 +8,7 @@ import type { Bilingual } from '@/domain/content/schema';
 import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
-import { TapText } from '@/ui/Gloss';
+import { GlossScope, TapText } from '@/ui/Gloss';
 import { questionSpeech, splitSentences } from '@/services/speech/textPrep';
 import { AudioPlayer } from '@/ui/AudioPlayer';
 import { seededShuffle } from './shuffle';
@@ -35,13 +35,15 @@ type Props = {
   /** Called once, the moment the item is answered (before any feedback), to save the answer. */
   onAnswer?: (outcome: ItemOutcome) => unknown;
   onDone: (outcome: ItemOutcome) => void;
+  /** False in timed rounds: a tapped word shows its meaning but is not kept in "my words". */
+  saveWords?: boolean;
 };
 
 /**
  * One exercise. Implements "teach, don't solve": wrong answers unlock a hint,
  * a second hint, an explanation, and only then the answer.
  */
-export function ExerciseView({ item, passage, support, seed, policy = 'teach', feedback = 'full', onAnswer, onDone }: Props) {
+export function ExerciseView({ item, passage, support, seed, policy = 'teach', feedback = 'full', onAnswer, onDone, saveWords = true }: Props) {
   const [flow, dispatch] = useReducer(
     (s: FlowState, a: Parameters<typeof flowReducer>[1]) => flowReducer(s, a, item.hints.length, policy),
     Date.now(),
@@ -118,120 +120,122 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   };
 
   return (
-    <div className="exercise">
-      <div className={`ex-instruction tone-${domainOf(item.skill)}`}>
-        <span className="dot" />
-        <BiText text={instruction} />
-      </div>
-
-      {passage && <PassagePanel passage={passage} locked={glossLocked || (item.skill === 'reading.vocabulary-in-context' && !finished)} />}
-
-      {listen && (
-        <div className="listen-stage">
-          <SpeakButton text={audioText} size="hero" label="השמעה" onPlayed={() => dispatch({ type: 'replay' })} />
-          <SpeakButton text={audioText} slow label="השמעה איטית מאוד" onPlayed={() => dispatch({ type: 'replay' })} />
+    <GlossScope save={saveWords}>
+      <div className="exercise">
+        <div className={`ex-instruction tone-${domainOf(item.skill)}`}>
+          <span className="dot" />
+          <BiText text={instruction} />
         </div>
-      )}
 
-      {(item.type === 'order' ? item.promptLanguage === 'he' : item.type !== 'fix') && (
-        <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} glossLocked={glossLocked} />
-      )}
+        {passage && <PassagePanel passage={passage} locked={glossLocked || (item.skill === 'reading.vocabulary-in-context' && !finished)} />}
 
-      {item.type === 'order' ? (
-        <OrderInput item={item} seed={seed} flow={flow} onSubmit={submit} />
-      ) : item.type === 'fix' ? (
-        <FixInput item={item} seed={seed} flow={flow} onSubmit={submit} />
-      ) : item.type === 'choice' ? (
-        <ChoiceInput
-          item={item}
-          seed={seed}
-          flow={flow}
-          instant={feedback === 'brief'}
-          onChange={() => dispatch({ type: 'change-selection' })}
-          onSubmit={submit}
-        />
-      ) : (
-        <TypedInput item={item} flow={flow} onSubmit={submit} />
-      )}
+        {listen && (
+          <div className="listen-stage">
+            <SpeakButton text={audioText} size="hero" label="השמעה" onPlayed={() => dispatch({ type: 'replay' })} />
+            <SpeakButton text={audioText} slow label="השמעה איטית מאוד" onPlayed={() => dispatch({ type: 'replay' })} />
+          </div>
+        )}
 
-      {policy === 'teach' && <Help item={item} flow={flow} last={last} support={support} />}
+        {(item.type === 'order' ? item.promptLanguage === 'he' : item.type !== 'fix') && (
+          <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} glossLocked={glossLocked} />
+        )}
 
-      {lesson && feedback === 'full' && flow.explanationShown && !finished && (
-        <LessonLink title={lesson.title.he} onOpen={() => setLessonOpen(true)} />
-      )}
-
-      {!finished && skipInline && (
-        <Button variant="tertiary" className="self-center" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
-          לדלג על השאלה
-        </Button>
-      )}
-
-      <Sheet open={lessonOpen} onClose={() => setLessonOpen(false)} label={lesson?.title.he ?? 'שיעור'}>
-        {lesson && <LessonView lesson={lesson} />}
-      </Sheet>
-
-      {finished && feedback === 'full' ? (
-        <>
-          <FeedbackStrip
+        {item.type === 'order' ? (
+          <OrderInput item={item} seed={seed} flow={flow} onSubmit={submit} />
+        ) : item.type === 'fix' ? (
+          <FixInput item={item} seed={seed} flow={flow} onSubmit={submit} />
+        ) : item.type === 'choice' ? (
+          <ChoiceInput
             item={item}
+            seed={seed}
             flow={flow}
-            support={support}
-            onWhy={() => setWhyOpen(true)}
-            onContinue={onContinue}
+            instant={feedback === 'brief'}
+            onChange={() => dispatch({ type: 'change-selection' })}
+            onSubmit={submit}
           />
-          <Sheet
-            open={whyOpen}
-            onClose={() => setWhyOpen(false)}
-            label="הסבר"
-            title="הסבר"
-            footer={
-              <Button variant="primary" size="lg" block onClick={onContinue}>
-                המשך
-              </Button>
-            }
-          >
-            <Explanation
+        ) : (
+          <TypedInput item={item} flow={flow} onSubmit={submit} />
+        )}
+
+        {policy === 'teach' && <Help item={item} flow={flow} last={last} support={support} />}
+
+        {lesson && feedback === 'full' && flow.explanationShown && !finished && (
+          <LessonLink title={lesson.title.he} onOpen={() => setLessonOpen(true)} />
+        )}
+
+        {!finished && skipInline && (
+          <Button variant="tertiary" className="self-center" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
+            לדלג על השאלה
+          </Button>
+        )}
+
+        <Sheet open={lessonOpen} onClose={() => setLessonOpen(false)} label={lesson?.title.he ?? 'שיעור'}>
+          {lesson && <LessonView lesson={lesson} />}
+        </Sheet>
+
+        {finished && feedback === 'full' ? (
+          <>
+            <FeedbackStrip
               item={item}
               flow={flow}
               support={support}
-              listen={listen}
-              audioText={audioText}
-              onLesson={
-                lesson
-                  ? () => {
-                      setWhyOpen(false);
-                      setLessonOpen(true);
-                    }
-                  : undefined
-              }
-              lessonTitle={lesson?.title.he}
+              onWhy={() => setWhyOpen(true)}
+              onContinue={onContinue}
             />
-          </Sheet>
-        </>
-      ) : (
-        !finished && (
-          <div className="actions">
-            <div className={`btn-row${hasHint && hasCheck ? ' lead' : ''}`}>
-              {hasHint && (
-                <Button size="lg" onClick={() => dispatch({ type: 'hint' })} disabled={flow.explanationShown}>
-                  רמז
+            <Sheet
+              open={whyOpen}
+              onClose={() => setWhyOpen(false)}
+              label="הסבר"
+              title="הסבר"
+              footer={
+                <Button variant="primary" size="lg" block onClick={onContinue}>
+                  המשך
                 </Button>
-              )}
-              {hasCheck && (
-                <Button variant="primary" size="lg" form={`answer-${item.id}`} type="submit">
-                  {feedback === 'none' ? 'הבא' : 'בדיקה'}
-                </Button>
-              )}
-              {!skipInline && (
-                <Button size="lg" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
-                  דילוג
-                </Button>
-              )}
+              }
+            >
+              <Explanation
+                item={item}
+                flow={flow}
+                support={support}
+                listen={listen}
+                audioText={audioText}
+                onLesson={
+                  lesson
+                    ? () => {
+                        setWhyOpen(false);
+                        setLessonOpen(true);
+                      }
+                    : undefined
+                }
+                lessonTitle={lesson?.title.he}
+              />
+            </Sheet>
+          </>
+        ) : (
+          !finished && (
+            <div className="actions">
+              <div className={`btn-row${hasHint && hasCheck ? ' lead' : ''}`}>
+                {hasHint && (
+                  <Button size="lg" onClick={() => dispatch({ type: 'hint' })} disabled={flow.explanationShown}>
+                    רמז
+                  </Button>
+                )}
+                {hasCheck && (
+                  <Button variant="primary" size="lg" form={`answer-${item.id}`} type="submit">
+                    {feedback === 'none' ? 'הבא' : 'בדיקה'}
+                  </Button>
+                )}
+                {!skipInline && (
+                  <Button size="lg" onClick={() => dispatch({ type: 'skip', at: Date.now() })}>
+                    דילוג
+                  </Button>
+                )}
+              </div>
             </div>
-          </div>
-        )
-      )}
-    </div>
+          )
+        )}
+      </div>
+    </GlossScope>
   );
 }
 
