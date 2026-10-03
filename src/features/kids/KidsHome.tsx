@@ -106,7 +106,7 @@ export function KidsHome({ student, stage }: { student: Student; stage: KidStage
       <section className="stack">
         <h2 className="kids-h">עוד משחקים 🎈</h2>
         <div className="kids-grid">
-          <KidTile to={`${base}/play?game=memory`} emoji="🃏" he="זוגות" hue={190} onTap={say} />
+          <KidTile to={`${base}/play?game=memory`} emoji="🎴" he="זוגות" hue={190} onTap={say} />
           {kidBooks.some((b) => b.stage === stage) && <KidTile to={`${base}/books`} emoji="📚" he="ספרונים" hue={25} onTap={say} />}
           <KidTile to={`${base}/album`} emoji="⭐" he={`המדבקות שלי${earned ? ` (${earned.length}/${stickers.length})` : ''}`} hue={45} onTap={() => say('המדבקות שלי')} />
         </div>

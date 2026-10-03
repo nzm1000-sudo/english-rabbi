@@ -503,7 +503,7 @@ function MemoryGame({ words, seed, sayEn, onFinish, back }: Common & { words: Ki
   };
   return (
     <main className="screen kids-screen">
-      <KidsTop back={back} progress={found.size} total={cards.length / 2} title="🃏 זוגות" />
+      <KidsTop back={back} progress={found.size} total={cards.length / 2} title="🎴 זוגות" />
       <div className="kids-memory">
         {cards.map((c) => {
           const up = open.includes(c.key) || found.has(c.word.id);
