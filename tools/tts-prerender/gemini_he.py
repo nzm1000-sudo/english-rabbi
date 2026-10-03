@@ -1,6 +1,6 @@
 """Renders Hebrew phrases with Gemini TTS, several phrases per request.
 
-Called by hebrew.mjs with {model, checkModels, batch, jobs: [{text, voice, out}]}
+Called by hebrew.mjs with {model, checkModels, batch, jobs: [{text, voice, style, out}]}
 on stdin. The free tier allows only a few TTS requests a day, so each request
 reads a batch of lines with long pauses between them; the audio is cut at
 the longest pauses and every piece is checked by transcription before it is
@@ -25,7 +25,7 @@ import urllib.request
 
 API = 'https://generativelanguage.googleapis.com/v1beta/models'
 RATE = 24000
-STYLE = 'Say warmly and gently, in natural Israeli Hebrew, to a small child. Pause for two seconds between lines:\n'
+PAUSES = ' Pause for two seconds between lines'
 
 
 class DailyQuota(Exception):
@@ -58,16 +58,17 @@ def call(model, body, tries=5):
 CACHE = os.path.join(tempfile.gettempdir(), 'gemini-he-cache')
 
 
-def speak(model, voice, lines):
+def speak(model, voice, style, lines):
     """Raw audio for these lines, kept on disk so a failed check costs no new TTS request."""
     os.makedirs(CACHE, exist_ok=True)
-    name = hashlib.sha1(json.dumps([model, voice, STYLE, lines]).encode()).hexdigest()
+    prompt = style + (PAUSES + ':\n' if len(lines) > 1 else ': ') + '\n'.join(lines)
+    name = hashlib.sha1(json.dumps([model, voice, prompt]).encode()).hexdigest()
     path = os.path.join(CACHE, name + '.pcm')
     if os.path.exists(path):
         with open(path, 'rb') as f:
             return f.read()
     body = {
-        'contents': [{'parts': [{'text': STYLE + '\n'.join(lines)}]}],
+        'contents': [{'parts': [{'text': prompt}]}],
         'generationConfig': {
             'responseModalities': ['AUDIO'],
             'speechConfig': {'voiceConfig': {'prebuiltVoiceConfig': {'voiceName': voice}}},
@@ -107,6 +108,7 @@ def pieces(pcm, n):
 def norm(s):
     s = re.sub(r'[֑-ׇ]', '', s)  # niqqud and cantillation
     s = re.sub(r'[^א-תA-Za-z0-9 ]', ' ', s)
+    s = re.sub(r'[וי]', '', s)  # full and defective spelling (לחמנייה / לחמניה) sound the same
     return ' '.join(s.split())
 
 
@@ -144,16 +146,16 @@ def main():
     cfg = json.load(sys.stdin)
     by_voice = {}
     for j in cfg['jobs']:
-        by_voice.setdefault(j['voice'], []).append(j)
+        by_voice.setdefault((j['voice'], j['style']), []).append(j)
     done = failed = 0
     try:
-        for voice, jobs in by_voice.items():
+        for (voice, style), jobs in by_voice.items():
             for i in range(0, len(jobs), cfg['batch']):
                 batch = jobs[i : i + cfg['batch']]
                 lines = [j['text'] for j in batch]
-                print(f'{voice}: {len(batch)} lines', flush=True)
+                print(f'{voice}: {" / ".join(lines)}', flush=True)
                 try:
-                    pcm = speak(cfg['model'], voice, lines)
+                    pcm = speak(cfg['model'], voice, style, lines)
                 except RuntimeError as e:
                     print(f'  {str(e)[:120]}; will retry next run', flush=True)
                     failed += len(batch)

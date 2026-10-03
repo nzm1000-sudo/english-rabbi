@@ -18,7 +18,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { audioKey } from '../../src/services/speech/audioKey.ts';
-import { GUIDE_PHRASES, MENU_PHRASES, newStickerPhrase } from '../../src/features/kids/hebrewPhrases.ts';
+import { GUIDE_PHRASES, MENU_PHRASES, PRAISE, newStickerPhrase } from '../../src/features/kids/hebrewPhrases.ts';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '../..');
@@ -28,26 +28,34 @@ const VOICE = 'he-IL-AvriNeural';
 const RATE = '-8%';
 const GEMINI_KEY = 'gemini-he-1';
 // Chosen by ear on 2026-10-03 from samples of this model.
-const GEMINI = { model: 'gemini-3.1-flash-tts-preview', checkModels: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.5-flash', 'gemini-flash-latest'], batch: 12 };
+// batch: phrases per request. 1 on a paid key; about 12 on the free tier (cut at the pauses).
+const GEMINI = { model: 'gemini-3.1-flash-tts-preview', checkModels: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.5-flash', 'gemini-flash-latest'], batch: Number(process.env.GEMINI_BATCH ?? 1) };
 const GUIDE_VOICE = 'Achernar';
 const NAME_VOICE = 'Algieba';
+const HE = 'in natural, native Israeli Hebrew with clear diction';
+const STYLES = {
+  praise: `Say with real joy and warm excitement, ${HE}, like a loving kindergarten teacher proud of a small child`,
+  guide: `Say warmly, gently and encouragingly, ${HE}, like a kind kindergarten teacher inviting a small child to play`,
+  name: `Say warmly and clearly with a friendly smile, ${HE}, naming it for a small child`,
+};
 
-/** Every phrase with its Gemini voice: the guide talks during games, names are said by the male voice. */
+/** Every phrase with its Gemini voice and style: the female guide talks during games, names are said by the male voice. */
 function collectPhrases() {
-  const voices = new Map();
-  const add = (t, v) => voices.has(t) || voices.set(t, v);
+  const out = new Map();
+  const add = (t, voice, style) => out.has(t) || out.set(t, { voice, style: STYLES[style] });
   const kid = (f) => JSON.parse(fs.readFileSync(path.join(root, 'content/kids', f), 'utf8'));
-  for (const t of GUIDE_PHRASES) add(t, GUIDE_VOICE);
-  for (const t of MENU_PHRASES) add(t, NAME_VOICE);
+  const praise = new Set([...PRAISE, 'כל הכבוד! אספתם את כל המדבקות']);
+  for (const t of GUIDE_PHRASES) add(t, GUIDE_VOICE, praise.has(t) ? 'praise' : 'guide');
+  for (const t of MENU_PHRASES) add(t, NAME_VOICE, 'name');
   for (const s of kid('stickers.json')) {
-    add(newStickerPhrase(s.he), GUIDE_VOICE);
-    add(s.he, NAME_VOICE);
+    add(newStickerPhrase(s.he), GUIDE_VOICE, 'praise');
+    add(s.he, NAME_VOICE, 'name');
   }
-  for (const b of kid('books.json')) add(b.title.he, NAME_VOICE);
+  for (const b of kid('books.json')) add(b.title.he, NAME_VOICE, 'name');
   // Topic names (TOPIC_INFO in src/features/kids/topics.ts).
   const topics = fs.readFileSync(path.join(root, 'src/features/kids/topics.ts'), 'utf8');
-  for (const m of topics.matchAll(/he: '([^']+)'/g)) add(m[1], NAME_VOICE);
-  return voices;
+  for (const m of topics.matchAll(/he: '([^']+)'/g)) add(m[1], NAME_VOICE, 'name');
+  return out;
 }
 
 /** The voice adds up to 3 seconds of silence at the end; cut it so games flow. */
@@ -88,7 +96,7 @@ if (jobs.length) {
   if (r.status !== 0) console.error('some phrases failed; run again to retry');
 }
 
-const gJobs = texts.filter((t) => !manifest.entries[geminiKeyOf(t)]).map((t) => ({ text: t, voice: phrases.get(t), out: path.join(outDir, `${geminiKeyOf(t)}.mp3`) }));
+const gJobs = texts.filter((t) => !manifest.entries[geminiKeyOf(t)]).map((t) => ({ text: t, ...phrases.get(t), out: path.join(outDir, `${geminiKeyOf(t)}.mp3`) }));
 console.log(`Gemini: ${gJobs.length} to render`);
 if (gJobs.length) {
   const r = spawnSync('python3', [path.join(here, 'gemini_he.py')], { input: JSON.stringify({ ...GEMINI, jobs: gJobs }), stdio: ['pipe', 'inherit', 'inherit'] });
