@@ -20,6 +20,11 @@ export interface PrerenderManifest {
 
 const SLOWER_PLAYBACK = 0.8;
 
+export interface Playable {
+  urls: string[];
+  playbackRate: number;
+}
+
 export class PrerenderedProvider implements SpeechProvider {
   readonly id = 'prerendered';
   readonly label = 'קול טבעי מוקלט מראש';
@@ -45,16 +50,32 @@ export class PrerenderedProvider implements SpeechProvider {
    * Files for this request: one file for the whole text, or one per
    * sentence for long texts (reading passages). Undefined if any is missing.
    */
-  private urlsFor(req: SpeakRequest, m: PrerenderManifest): string[] | undefined {
+  private urlsFor(req: SpeakRequest, m: PrerenderManifest): Playable | undefined {
     const voice = NEURAL_VOICES[req.accent][req.speaker ?? 'A'];
+    const find = (rate: string): string[] | undefined => {
+      const whole = m.entries[audioKey(voice, rate, req.text)];
+      if (whole) return [whole];
+      const parts = splitSentences(req.text);
+      if (parts.length < 2) return undefined;
+      const urls = parts.map((p) => m.entries[audioKey(voice, rate, p)]);
+      return urls.every(Boolean) ? (urls as string[]) : undefined;
+    };
     // "Slower" plays the engine-made slow recording a little slower again.
     const rate = req.rate === 'slower' ? 'slow' : req.rate;
-    const whole = m.entries[audioKey(voice, rate, req.text)];
-    if (whole) return [whole];
-    const parts = splitSentences(req.text);
-    if (parts.length < 2) return undefined;
-    const urls = parts.map((p) => m.entries[audioKey(voice, rate, p)]);
-    return urls.every(Boolean) ? (urls as string[]) : undefined;
+    const exact = find(rate);
+    if (exact) return { urls: exact, playbackRate: req.rate === 'slower' ? SLOWER_PLAYBACK : 1 };
+    // Questions and answers are recorded at normal speed only; slow them down on playback.
+    if (rate === 'slow') {
+      const normal = find('normal');
+      if (normal) return { urls: normal, playbackRate: req.rate === 'slower' ? 0.7 : 0.85 };
+    }
+    return undefined;
+  }
+
+  /** Files and playback speed for a text, for the audio player. Undefined if not recorded. */
+  async clipsFor(req: Omit<SpeakRequest, 'signal'>): Promise<Playable | undefined> {
+    const m = await this.load();
+    return (m && this.urlsFor(req, m)) || undefined;
   }
 
   async canSpeak(req: SpeakRequest): Promise<boolean> {
@@ -64,8 +85,9 @@ export class PrerenderedProvider implements SpeechProvider {
 
   async speak(req: SpeakRequest & { onStart?: () => void }): Promise<void> {
     const m = await this.load();
-    const urls = m && this.urlsFor(req, m);
-    if (!urls) throw new Error('not pre-rendered');
+    const found = m && this.urlsFor(req, m);
+    if (!found) throw new Error('not pre-rendered');
+    const { urls, playbackRate } = found;
     // Fetch whole files (not Range requests) so the service worker can cache
     // them; play from memory. First file is fetched before reporting "playing".
     let next = this.fetchAudio(urls[0]!, req.signal);
@@ -74,7 +96,7 @@ export class PrerenderedProvider implements SpeechProvider {
       if (req.signal?.aborted) throw abortError();
       if (i + 1 < urls.length) next = this.fetchAudio(urls[i + 1]!, req.signal);
       if (i === 0) req.onStart?.();
-      await this.playback.play(blob, req.signal, req.rate === 'slower' ? SLOWER_PLAYBACK : 1);
+      await this.playback.play(blob, req.signal, playbackRate);
     }
   }
 

@@ -1,0 +1,823 @@
+[
+  {
+    "id": "be-hats",
+    "emoji": "🎩",
+    "title": "שלושה כובעים: am, is, are",
+    "skills": [
+      "grammar.present-simple",
+      "grammar.pronouns"
+    ],
+    "image": "על המתלה בכניסה תלויים שלושה כובעים. I חובש תמיד רק את am, כל אחד לבד (he, she, it, אבא, רבקה) חובש is, וכל השאר (you, we, they) חובשים יחד את are.",
+    "rule": "הפועל to be (להיות) משנה צורה לפי מי שמדברים עליו. אחרי I באה am, אחרי he, she, it או שם של אחד באה is, ואחרי you, we, they או רבים באה are.",
+    "pattern": "I am · he / she / it is · you / we / they are",
+    "examples": [
+      {
+        "en": "Ima is in the kitchen.",
+        "he": "אמא במטבח."
+      },
+      {
+        "en": "The boys are at shul.",
+        "he": "הבנים בבית הכנסת."
+      },
+      {
+        "en": "I am ready, Abba!",
+        "he": "אני מוכן, אבא!"
+      }
+    ],
+    "hebrewTrap": "בעברית אין 'להיות' בהווה: אומרים 'אמא במטבח' בלי שום פועל. לכן משמיטים בטעות את הכובע ואומרים Ima in the kitchen.",
+    "source": "original"
+  },
+  {
+    "id": "present-simple",
+    "emoji": "📅",
+    "title": "הלוח על המקרר",
+    "skills": [
+      "grammar.present-simple"
+    ],
+    "image": "על המקרר של משפחת שפירא תלוי לוח קבוע: כל בוקר תפילה, כל יום שישי חלה, כל שבת בית כנסת. מה שכתוב בלוח הזה קורה שוב ושוב, וזה הווה פשוט.",
+    "rule": "הווה פשוט מתאר הרגל, דבר שחוזר על עצמו או עובדה קבועה. משתמשים בפועל בצורת הבסיס, ואחרי he, she, it מוסיפים s. מילים כמו every day, always, usually, on Fridays הן סימן היכר.",
+    "pattern": "I / you / we / they + פועל · he / she / it + פועל + s",
+    "examples": [
+      {
+        "en": "We light candles every Friday.",
+        "he": "אנחנו מדליקים נרות כל יום שישי."
+      },
+      {
+        "en": "Abba goes to shul every morning.",
+        "he": "אבא הולך לבית הכנסת כל בוקר."
+      },
+      {
+        "en": "Tamar always helps Grandma Chana.",
+        "he": "תמר תמיד עוזרת לסבתא חנה."
+      }
+    ],
+    "hebrewTrap": "בעברית 'אני אוכל' יכול להיות גם הרגל וגם משהו שקורה עכשיו. באנגלית אלה שני זמנים שונים, ולכן אומרים בטעות I am eat breakfast every day במקום I eat breakfast every day.",
+    "source": "original"
+  },
+  {
+    "id": "third-person-s",
+    "emoji": "🐍",
+    "title": "ה־s של he, she, it",
+    "skills": [
+      "grammar.present-simple.third-person"
+    ],
+    "image": "נחש קטן בצורת s זוחל ונדבק לסוף הפועל בכל פעם שמדברים על אחד: אבא, אמא, ארי, החתול. אמא אופה? Ima bakes, והנחש מסתתר בסוף המילה.",
+    "rule": "בהווה פשוט, כשהנושא הוא he, she, it או שם של אחד, מוסיפים s לפועל. אחרי s, sh, ch, x, o מוסיפים es (watches, goes), ו־y אחרי עיצור הופך ל־ies (studies). have הופך ל־has.",
+    "pattern": "he / she / it + פועל + s",
+    "examples": [
+      {
+        "en": "Eli sleeps after lunch.",
+        "he": "אלי ישן אחרי ארוחת הצהריים."
+      },
+      {
+        "en": "Ima bakes challah every Friday.",
+        "he": "אמא אופה חלה כל יום שישי."
+      },
+      {
+        "en": "Grandpa Yosef reads the newspaper every morning.",
+        "he": "סבא יוסף קורא את העיתון כל בוקר."
+      }
+    ],
+    "hebrewTrap": "בעברית בהווה 'אני הולך' ו'הוא הולך' נשמעים אותו דבר. באנגלית ההבדל הוא רק s קטנה בסוף, ולכן קל לשכוח אותה: she go במקום she goes.",
+    "source": "original"
+  },
+  {
+    "id": "do-does",
+    "emoji": "🧰",
+    "title": "does לוקח את ה־s",
+    "skills": [
+      "grammar.present-simple.questions-negatives"
+    ],
+    "image": "does נכנס למשפט כמו אח גדול ולוקח מהפועל את תיק ה־s. מעכשיו ה־s אצלו, והפועל הולך נקי בלי כלום: Does Rivka like soup?",
+    "rule": "בשאלה ובשלילה בהווה פשוט משתמשים בפועל עזר: do או does. עם he, she, it באה does, וה־s עוברת אליה. הפועל העיקרי חוזר לצורת הבסיס, בלי s.",
+    "pattern": "Do / Does + נושא + פועל? · נושא + don't / doesn't + פועל",
+    "examples": [
+      {
+        "en": "Does Ari like gefilte fish?",
+        "he": "ארי אוהב גפילטע פיש?"
+      },
+      {
+        "en": "Grandpa doesn't drive on Shabbat.",
+        "he": "סבא לא נוהג בשבת."
+      },
+      {
+        "en": "Do you want more kugel?",
+        "he": "אתם רוצים עוד קוגל?"
+      }
+    ],
+    "hebrewTrap": "בעברית שאלה היא רק שינוי בטון ('ארי אוהב דג?'), ושלילה היא רק 'לא'. לכן אומרים בטעות Ari like fish? או Ari not like fish, או משאירים s כפולה: Does he likes.",
+    "source": "original"
+  },
+  {
+    "id": "present-progressive",
+    "emoji": "🎥",
+    "title": "מצלמה בשידור חי",
+    "skills": [
+      "grammar.present-progressive"
+    ],
+    "image": "אבא מחזיק את הטלפון ומשדר לסבא וסבתא בשידור חי: אלי עושה את הצעדים הראשונים שלו ממש עכשיו! מה שרואים על המסך ברגע זה, באמצע הפעולה, הוא am / is / are + ing.",
+    "rule": "הווה מתמשך מתאר פעולה שקורית עכשיו, ברגע הדיבור, או בתקופה הזאת. צריך שני חלקים: am, is או are, ואחריו פועל עם ing. מילים כמו now, right now, Look! הן סימן היכר.",
+    "pattern": "am / is / are + פועל + ing",
+    "examples": [
+      {
+        "en": "Look, Eli is walking!",
+        "he": "תראו, אלי הולך!"
+      },
+      {
+        "en": "Ima is lighting the candles now.",
+        "he": "אמא מדליקה עכשיו את הנרות."
+      },
+      {
+        "en": "We are waiting for Abba.",
+        "he": "אנחנו מחכים לאבא."
+      }
+    ],
+    "hebrewTrap": "בעברית אומרים 'היא הולכת' בלי פועל עזר, ולכן שוכחים את is (she going) או מוסיפים is לפועל בלי ing (she is go). צריך את שני החלקים יחד: she is going.",
+    "source": "original"
+  },
+  {
+    "id": "stative-verbs",
+    "emoji": "🧠",
+    "title": "מחשבות ורגשות לא מצלמים",
+    "skills": [
+      "grammar.present-progressive"
+    ],
+    "image": "אפשר לצלם את ארי רץ, אבל אי אפשר לצלם את ארי יודע. know, like, want, need, believe הם מצב שנמצא בראש ובלב, ולכן המצלמה של ing לא קולטת אותם.",
+    "rule": "פעלים של מצב (ידיעה, רגש, רצון, בעלות) כמעט לא מקבלים ing, גם כשמדובר בעכשיו. משתמשים בהם בהווה פשוט: know, understand, like, love, want, need, believe, have (במובן של 'יש לי').",
+    "pattern": "know / like / want / need + הווה פשוט, בלי ing",
+    "examples": [
+      {
+        "en": "Tamar knows all the brachot.",
+        "he": "תמר יודעת את כל הברכות."
+      },
+      {
+        "en": "Eli wants his bottle now.",
+        "he": "אלי רוצה את הבקבוק שלו עכשיו."
+      },
+      {
+        "en": "Grandma Chana loves the smell of challah.",
+        "he": "סבתא חנה אוהבת את הריח של החלה."
+      }
+    ],
+    "hebrewTrap": "בעברית אין הבדל בין מצב לבין פעולה שקורית עכשיו. מי שלמד את ing שם אותו בכל דבר שקורה עכשיו, ואומר בטעות I am knowing או I am wanting.",
+    "source": "original"
+  },
+  {
+    "id": "past-simple",
+    "emoji": "📸",
+    "title": "תמונה מאלבום",
+    "skills": [
+      "grammar.past-simple",
+      "grammar.past-simple.irregular"
+    ],
+    "image": "באלבום המשפחתי יש תמונה מבר המצווה של ארי, והתאריך כתוב מתחתיה. הרגע הזה קרה, נגמר ונסגר בזמן ידוע: זה עבר פשוט.",
+    "rule": "עבר פשוט מתאר פעולה שקרתה ונגמרה בזמן ידוע בעבר. פועל רגיל מקבל ed (played), ופעלים חריגים צריך לזכור (go, went; eat, ate), והצורה זהה לכל הגופים. מילים כמו yesterday, last week, ago, in 2020 הן סימן היכר.",
+    "pattern": "נושא + פועל + ed (או צורה שנייה חריגה)",
+    "examples": [
+      {
+        "en": "We visited Grandpa Yosef yesterday.",
+        "he": "ביקרנו אתמול את סבא יוסף."
+      },
+      {
+        "en": "Rivka went to the Kotel last week.",
+        "he": "רבקה הלכה לכותל בשבוע שעבר."
+      },
+      {
+        "en": "Eli was born two years ago.",
+        "he": "אלי נולד לפני שנתיים."
+      }
+    ],
+    "hebrewTrap": "בעברית 'לפני' בא לפני הזמן ('לפני שנתיים'), ולכן אומרים בטעות ago two years במקום two years ago. וגם קל לשים ed בפועל חריג: goed במקום went.",
+    "source": "original"
+  },
+  {
+    "id": "did",
+    "emoji": "🔙",
+    "title": "did כבר בעבר",
+    "skills": [
+      "grammar.past-simple.questions-negatives"
+    ],
+    "image": "did היא מכונת זמן קטנה. כשהיא נכנסת לשאלה או לשלילה, היא כבר לוקחת את כל המשפט לעבר, והפועל חוזר הביתה לצורה הרגילה שלו: Did you go? ולא Did you went?",
+    "rule": "בשאלה ובשלילה בעבר פשוט משתמשים ב־did לכל הגופים. did כבר מסמנת עבר, ולכן הפועל העיקרי חוזר לצורת הבסיס, בלי ed ובלי צורה חריגה.",
+    "pattern": "Did + נושא + פועל? · נושא + didn't + פועל",
+    "examples": [
+      {
+        "en": "Did you hear the shofar?",
+        "he": "שמעתם את השופר?"
+      },
+      {
+        "en": "Tamar didn't eat the soup.",
+        "he": "תמר לא אכלה את המרק."
+      },
+      {
+        "en": "Did Abba buy the lulav?",
+        "he": "אבא קנה את הלולב?"
+      }
+    ],
+    "hebrewTrap": "בעברית הפועל עצמו מראה עבר ('הלכת?'), ולכן רוצים לשים עבר גם בפועל: Did you went? או I didn't saw. באנגלית מספיק סימן עבר אחד, ו־did כבר לקחה אותו.",
+    "source": "original"
+  },
+  {
+    "id": "present-perfect",
+    "emoji": "🌉",
+    "title": "גשר מהעבר להיום",
+    "skills": [
+      "grammar.present-perfect",
+      "grammar.present-perfect.vs-past-simple",
+      "grammar.present-perfect-progressive"
+    ],
+    "image": "גשר יוצא מהעבר ונוחת בדיוק היום. סבתא חנה אומרת I have lost my glasses: הן אבדו מתישהו, אבל מה שחשוב זה שעכשיו היא לא רואה.",
+    "rule": "have או has + צורה שלישית מחברים עבר להווה: תוצאה שמורגשת עכשיו, ניסיון בחיים (ever, never), או מצב שנמשך עד היום. כשמציינים זמן גמור (yesterday, in 2020) עוברים לעבר פשוט. לפעולה שנמשכת עד עכשיו אפשר גם have / has been + ing.",
+    "pattern": "have / has + צורה שלישית (V3)",
+    "examples": [
+      {
+        "en": "Grandma Chana has lost her glasses.",
+        "he": "סבתא חנה איבדה את המשקפיים שלה."
+      },
+      {
+        "en": "Have you ever visited New York?",
+        "he": "ביקרתם פעם בניו יורק?"
+      },
+      {
+        "en": "Rivka has been studying for three hours.",
+        "he": "רבקה לומדת כבר שלוש שעות."
+      }
+    ],
+    "hebrewTrap": "בעברית יש רק עבר אחד ('איבדה'), ולכן מחברים לגשר גם זמן גמור: I have seen him yesterday. ו'לומדת כבר שלוש שעות' נאמר בעברית בהווה, ולכן אומרים בטעות She studies for three hours.",
+    "source": "original"
+  },
+  {
+    "id": "for-since",
+    "emoji": "⏳",
+    "title": "שעון חול ודגל",
+    "skills": [
+      "grammar.present-perfect"
+    ],
+    "image": "שעון חול על השולחן מודד כמה זמן עבר: for two hours. דגל נעוץ ביום שבו הכל התחיל: since Pesach.",
+    "rule": "for בא לפני משך זמן (for three days, for a long time). since בא לפני נקודת התחלה (since Monday, since 2019, since I was a child). שניהם באים לרוב עם הווה מושלם, כי הדבר עדיין נמשך.",
+    "pattern": "have / has + V3 + for + משך זמן · since + נקודת התחלה",
+    "examples": [
+      {
+        "en": "Grandpa Yosef has lived in Jerusalem for fifty years.",
+        "he": "סבא יוסף גר בירושלים כבר חמישים שנה."
+      },
+      {
+        "en": "Ari has known his chavruta since first grade.",
+        "he": "ארי מכיר את החברותא שלו מכיתה א'."
+      },
+      {
+        "en": "Eli has been asleep since lunch.",
+        "he": "אלי ישן מאז ארוחת הצהריים."
+      }
+    ],
+    "hebrewTrap": "בעברית אומרים 'אני גר כאן עשר שנים' בהווה, ולכן אומרים בטעות I live here for ten years. וגם 'כבר' ו'מאז' מתערבבים: since ten years במקום for ten years.",
+    "source": "original"
+  },
+  {
+    "id": "there-is",
+    "emoji": "👉",
+    "title": "אצבע שמצביעה: יש",
+    "skills": [
+      "grammar.there-is"
+    ],
+    "image": "רבקה פותחת את המקרר ומצביעה: There is a cake! There are three yogurts! האצבע מכריזה שמשהו נמצא שם, ומה שבא אחריה קובע אם is או are.",
+    "rule": "כדי לומר שמשהו קיים במקום מסוים ('יש', 'אין') משתמשים ב־there is ליחיד וב־there are לרבים. בשלילה: there isn't, there aren't, ובשאלה: Is there? Are there? 'יש לי' (בעלות) זה כבר have, לא there is.",
+    "pattern": "There is + יחיד · There are + רבים",
+    "examples": [
+      {
+        "en": "There is a cake in the fridge.",
+        "he": "יש עוגה במקרר."
+      },
+      {
+        "en": "There are ten men in shul, so we have a minyan.",
+        "he": "יש עשרה גברים בבית הכנסת, אז יש לנו מניין."
+      },
+      {
+        "en": "Is there any wine for Kiddush?",
+        "he": "יש יין לקידוש?"
+      }
+    ],
+    "hebrewTrap": "בעברית 'יש' היא מילה אחת קצרה, ולכן מתרגמים מילה במילה: Have a cake in the fridge, או It has a cake. ובגלל 'יש לי' מבלבלים בין there is לבין I have.",
+    "source": "original"
+  },
+  {
+    "id": "articles",
+    "emoji": "☝️",
+    "title": "a = אחד, the = זה שמכירים",
+    "skills": [
+      "grammar.articles"
+    ],
+    "image": "ארי אומר I want a cookie, וכל עוגייה מהצלחת תתאים לו. תמר אומרת I want the cookie, ומצביעה על העוגייה עם השוקולד שכולם כבר ראו.",
+    "rule": "a (או an לפני צליל של תנועה) בא לפני דבר אחד שסופרים, כשמזכירים אותו לראשונה או כשלא משנה איזה. the בא כשברור לשומע על איזה מדובר: הוא כבר הוזכר, יש רק אחד כזה, או מצביעים עליו. דבר אחד שסופרים לא עומד לבד: a dog או the dog, לא dog.",
+    "pattern": "a / an + אחד כלשהו · the + זה שכבר מכירים",
+    "examples": [
+      {
+        "en": "Abba bought a new tallit.",
+        "he": "אבא קנה טלית חדשה."
+      },
+      {
+        "en": "The tallit is blue and white.",
+        "he": "הטלית כחולה ולבנה."
+      },
+      {
+        "en": "Eli ate an apple.",
+        "he": "אלי אכל תפוח."
+      }
+    ],
+    "hebrewTrap": "בעברית אין מילה ל־a בכלל ('אבא קנה טלית'), ולכן שוכחים אותה: Abba bought new tallit. וה' הידיעה מופיעה בעברית גם במקומות שבאנגלית אין בהם the: 'החיים יפים' הוא Life is beautiful, לא The life.",
+    "source": "original"
+  },
+  {
+    "id": "future",
+    "emoji": "🔮",
+    "title": "will מול going to",
+    "skills": [
+      "grammar.future"
+    ],
+    "image": "ביומן של אמא כבר כתוב: חתונה ביום שלישי. זה going to. פתאום הטלפון מצלצל ואבא קורא 'אני אענה!': זה will, החלטה שנולדה ברגע.",
+    "rule": "going to מתאר תוכנית שכבר הוחלטה, או תחזית שרואים לה סימן עכשיו (Look at the clouds. It's going to rain). will מתאר החלטה של הרגע, הבטחה, הצעה או ניחוש על העתיד. אחרי will בא פועל בסיס, בלי to.",
+    "pattern": "am / is / are + going to + פועל · will + פועל",
+    "examples": [
+      {
+        "en": "We are going to visit Grandma Chana on Sukkot.",
+        "he": "אנחנו הולכים לבקר את סבתא חנה בסוכות."
+      },
+      {
+        "en": "The phone is ringing. I'll get it!",
+        "he": "הטלפון מצלצל. אני אענה!"
+      },
+      {
+        "en": "I think Eli will love his new toy.",
+        "he": "אני חושב שאלי יאהב את הצעצוע החדש שלו."
+      }
+    ],
+    "hebrewTrap": "בעברית יש רק צורת עתיד אחת ('נבקר'), ולכן משתמשים ב־will לכל דבר, גם לתוכנית שכבר ביומן. וגם מוסיפים to בטעות: I will to go.",
+    "source": "original"
+  },
+  {
+    "id": "conditionals",
+    "emoji": "🚦",
+    "title": "if בלי will",
+    "skills": [
+      "grammar.conditionals",
+      "grammar.conditionals.first",
+      "grammar.conditionals.second",
+      "grammar.conditionals.third",
+      "grammar.wish"
+    ],
+    "image": "רמזור של תנאים: ירוק הוא דבר אפשרי באמת, צהוב הוא חלום על עכשיו, אדום הוא עבר שכבר נסגר. ככל שהאור מתרחק מהמציאות, הפועל אחרי if זז צעד אחד אחורה בזמן.",
+    "rule": "תנאי אפשרי: if + הווה, ובחלק השני will (If it rains, we will eat inside). תנאי דמיוני על עכשיו: if + עבר, ובחלק השני would, וכך גם אחרי wish (I wish I had a dog). תנאי על עבר שאי אפשר לשנות: if + had + V3, ובחלק השני would have + V3.",
+    "pattern": "If + הווה, will · If + עבר, would · If + had + V3, would have + V3",
+    "examples": [
+      {
+        "en": "If it rains on Sukkot, we will eat in the house.",
+        "he": "אם ירד גשם בסוכות, נאכל בבית."
+      },
+      {
+        "en": "If Ari had a car, he would drive Grandma to shul.",
+        "he": "אילו היה לארי אוטו, הוא היה מסיע את סבתא לבית הכנסת."
+      },
+      {
+        "en": "If we had left earlier, we wouldn't have missed the bus.",
+        "he": "אילו היינו יוצאים מוקדם יותר, לא היינו מפספסים את האוטובוס."
+      }
+    ],
+    "hebrewTrap": "בעברית אומרים 'אם ירד גשם' בעתיד, ולכן שמים will גם אחרי if: If it will rain. ו'היה' משמש בעברית לכל התנאים הדמיוניים, ולכן מבלבלים בין would לבין would have.",
+    "source": "original"
+  },
+  {
+    "id": "comparatives",
+    "emoji": "📏",
+    "title": "er או more, לא שניהם",
+    "skills": [
+      "grammar.comparatives"
+    ],
+    "image": "על המשקוף מסמנים בעיפרון את הגובה של הילדים: Ari is taller than Tamar. מילה קצרה מקבלת זנב er, מילה ארוכה מקבלת סולם more מלפנים, ואף פעם לא שניהם.",
+    "rule": "תואר קצר (הברה אחת, או שתיים שנגמרות ב־y) מקבל er: tall, taller; happy, happier. תואר ארוך מקבל more לפניו: more beautiful. אחרי ההשוואה בא than, ויש חריגים: good, better; bad, worse.",
+    "pattern": "קצר + er + than · more + ארוך + than",
+    "examples": [
+      {
+        "en": "Ari is taller than Tamar.",
+        "he": "ארי גבוה יותר מתמר."
+      },
+      {
+        "en": "Grandma's kugel is better than the bakery's.",
+        "he": "הקוגל של סבתא טוב יותר מזה של המאפייה."
+      },
+      {
+        "en": "This year's Seder was more exciting than last year's.",
+        "he": "הסדר השנה היה מרגש יותר מהסדר של שנה שעברה."
+      }
+    ],
+    "hebrewTrap": "בעברית תמיד מוסיפים מילה ('יותר גבוה'), ולכן אומרים more tall או גם וגם: more taller. וה'מ' של ההשוואה מתורגמת בטעות ל־from: taller from Tamar.",
+    "source": "original"
+  },
+  {
+    "id": "prepositions-time",
+    "emoji": "🔺",
+    "title": "פירמידת at, on, in",
+    "skills": [
+      "grammar.prepositions"
+    ],
+    "image": "פירמידה: בקודקוד החד יושב at, נקודה קטנה של שעה (at 7:00). באמצע on, יום שלם על הלוח (on Friday), ובבסיס הרחב in, חודש, שנה או עונה (in Tishrei, in winter).",
+    "rule": "at בא לפני שעה ורגע מדויק (at 6:30, at noon, at night). on בא לפני יום ותאריך (on Monday, on Shabbat, on May 5th). in בא לפני חלקי היום ופרקי זמן ארוכים (in the morning, in March, in 2025, in the summer).",
+    "pattern": "at + שעה · on + יום · in + חודש / שנה / עונה",
+    "examples": [
+      {
+        "en": "Shacharit starts at 7:00.",
+        "he": "שחרית מתחילה בשבע."
+      },
+      {
+        "en": "We eat cholent on Shabbat.",
+        "he": "אנחנו אוכלים חמין בשבת."
+      },
+      {
+        "en": "Rivka's birthday is in Adar.",
+        "he": "יום ההולדת של רבקה באדר."
+      }
+    ],
+    "hebrewTrap": "בעברית יש מילת יחס אחת לכל הזמנים: ב־ ('בשבע', 'בשבת', 'באדר'). לכן בוחרים באנגלית מילה אחת ומשתמשים בה תמיד, למשל in Shabbat או in 7:00.",
+    "source": "original"
+  },
+  {
+    "id": "connectors",
+    "emoji": "🧭",
+    "title": "מילות קישור הן שלטי דרך",
+    "skills": [
+      "grammar.connectors"
+    ],
+    "image": "בצומת עומדים שלטי דרך: and הוא חץ ישר, ממשיכים באותו כיוון, ו־but הוא חץ שמסתובב. because מצביע אחורה אל הסיבה, ו־so מצביע קדימה אל התוצאה.",
+    "rule": "and מוסיף רעיון באותו כיוון, ו־but מביא ניגוד. because מביא סיבה (למה), ו־so מביא תוצאה (ולכן). because ו־so מחברים את אותה מחשבה מכיוונים הפוכים, ובוחרים רק אחד מהם.",
+    "pattern": "תוצאה + because + סיבה · סיבה + so + תוצאה",
+    "examples": [
+      {
+        "en": "Ari was tired because he got up for Selichot.",
+        "he": "ארי היה עייף כי הוא קם לסליחות."
+      },
+      {
+        "en": "Ari got up for Selichot, so he was tired.",
+        "he": "ארי קם לסליחות, אז הוא היה עייף."
+      },
+      {
+        "en": "Tamar likes honey cake, but Rivka doesn't.",
+        "he": "תמר אוהבת עוגת דבש, אבל רבקה לא."
+      }
+    ],
+    "hebrewTrap": "בעברית אומרים 'בגלל שקמתי מוקדם, אז הייתי עייף', ולכן משלבים בטעות את שני השלטים במשפט אחד: Because I got up early, so I was tired. באנגלית בוחרים רק אחד.",
+    "source": "original"
+  },
+  {
+    "id": "passive",
+    "emoji": "📦",
+    "title": "החפץ עולה לבמה",
+    "skills": [
+      "grammar.passive"
+    ],
+    "image": "בהצגה של פורים הזרקור עובר מהשחקן אל החפץ: לא מעניין מי אפה את החלה, החלה היא הכוכבת. The challah was baked this morning.",
+    "rule": "סביל משמש כשחשוב מה קרה לדבר ולא מי עשה אותו, או כשלא יודעים מי עשה. בונים עם be בזמן המתאים וצורה שלישית. את מי שעשה אפשר להוסיף אחרי by.",
+    "pattern": "am / is / are / was / were + V3 (+ by)",
+    "examples": [
+      {
+        "en": "The challah was baked this morning.",
+        "he": "החלה נאפתה הבוקר."
+      },
+      {
+        "en": "The Torah is read on Mondays and Thursdays.",
+        "he": "קוראים בתורה בימי שני וחמישי."
+      },
+      {
+        "en": "The sukkah was built by Abba and Ari.",
+        "he": "הסוכה נבנתה על ידי אבא וארי."
+      }
+    ],
+    "hebrewTrap": "בעברית הסביל מוסתר בתוך הפועל עצמו ('נאפתה', 'נבנתה'). לכן שוכחים את be ואומרים The challah baked this morning, כאילו החלה אפתה את עצמה.",
+    "source": "original"
+  },
+  {
+    "id": "modals",
+    "emoji": "🔧",
+    "title": "אחרי מודאלי: פועל נקי",
+    "skills": [
+      "grammar.modals",
+      "grammar.modals.deduction"
+    ],
+    "image": "מודאלים הם כלים בארגז של אבא: can, must, should, might. כל כלי עושה את העבודה לבד, ולכן הפועל שאחריו יוצא נקי, בלי to ובלי s: Ari can read Rashi.",
+    "rule": "אחרי can, could, must, should, may, might, will, would בא פועל בסיס, בלי to ובלי s, והמודאלי עצמו לא משתנה לפי הגוף. מודאלים משמשים גם לניחוש: must be (בטוח שכן), might be (אולי), can't be (בטוח שלא).",
+    "pattern": "נושא + מודאלי + פועל בסיס",
+    "examples": [
+      {
+        "en": "Ari can read Rashi.",
+        "he": "ארי יודע לקרוא רש״י."
+      },
+      {
+        "en": "You should call Grandma before Shabbat.",
+        "he": "כדאי להתקשר לסבתא לפני שבת."
+      },
+      {
+        "en": "The lights are off, so they must be asleep.",
+        "he": "האורות כבויים, אז הם בטח ישנים."
+      }
+    ],
+    "hebrewTrap": "בעברית אחרי 'יכול', 'צריך' ו'כדאי' בא שם פועל עם ל' ('יכול לקרוא'), ולכן מוסיפים to: he can to read. וגם 'הוא יכול' גורם להוסיף s: he cans או he can reads.",
+    "source": "original"
+  },
+  {
+    "id": "gerund-infinitive",
+    "emoji": "🧩",
+    "title": "אחרי מילת יחס: ing",
+    "skills": [
+      "grammar.gerunds-infinitives"
+    ],
+    "image": "מילת יחס היא חלק פאזל עם שקע בצורת ing, ורק פועל עם ing נכנס בה בדיוק: Tamar is good at drawing.",
+    "rule": "אחרי מילת יחס (for, at, of, about, in, without, before, after) הפועל מקבל ing. גם אחרי enjoy, finish, mind, avoid בא ing. אחרי want, need, decide, hope, plan בא to + פועל.",
+    "pattern": "מילת יחס + פועל + ing · want / need / decide + to + פועל",
+    "examples": [
+      {
+        "en": "Tamar is good at drawing.",
+        "he": "תמר טובה בציור."
+      },
+      {
+        "en": "Wash your hands before eating bread.",
+        "he": "נוטלים ידיים לפני אכילת לחם."
+      },
+      {
+        "en": "Ari decided to learn Gemara every night.",
+        "he": "ארי החליט ללמוד גמרא כל ערב."
+      }
+    ],
+    "hebrewTrap": "בעברית אחרי מילת יחס בא שם פועל או שם פעולה ('לפני לאכול', 'טובה בציור'), ולכן אומרים בטעות before to eat או good at draw.",
+    "source": "original"
+  },
+  {
+    "id": "relative-clauses",
+    "emoji": "🔗",
+    "title": "who לאנשים, which לדברים",
+    "skills": [
+      "grammar.relative-clauses"
+    ],
+    "image": "בעברית יש דבק אחד לכל דבר, ה־ש'. באנגלית יש ווים שונים: who תולה אנשים, which תולה חפצים ובעלי חיים, ו־that מתאים לשניהם.",
+    "rule": "כדי לחבר תיאור לשם עצם, כמו 'ש' בעברית, משתמשים ב־who לאנשים, ב־which לחפצים ובעלי חיים, וב־that לשניהם. המילה הזאת כבר מחליפה את מי שמדברים עליו, ולכן לא חוזרים עליו: the boy who sings, לא the boy who he sings.",
+    "pattern": "אדם + who · דבר + which · שניהם + that",
+    "examples": [
+      {
+        "en": "Grandpa Yosef is the man who blows the shofar.",
+        "he": "סבא יוסף הוא האיש שתוקע בשופר."
+      },
+      {
+        "en": "This is the siddur which Grandma gave me.",
+        "he": "זה הסידור שסבתא נתנה לי."
+      },
+      {
+        "en": "The cake that Ima baked is gone.",
+        "he": "העוגה שאמא אפתה נגמרה."
+      }
+    ],
+    "hebrewTrap": "בעברית ש' משמשת לאנשים ולחפצים כאחד, ולפעמים חוזרים על המילה ('הספר שקראתי אותו'). לכן אומרים בטעות the man which או the book that I read it.",
+    "source": "original"
+  },
+  {
+    "id": "quantifiers",
+    "emoji": "💧",
+    "title": "much למים, many לתפוחים",
+    "skills": [
+      "grammar.quantifiers"
+    ],
+    "image": "על שולחן ראש השנה יש קערת תפוחים שאפשר לספור אחד אחד: many apples. לידה צנצנת דבש שאי אפשר לספור, רק למזוג: much honey.",
+    "rule": "many בא לפני רבים שסופרים (many apples, many guests), ו־much לפני דבר שלא סופרים (much water, much time). באותו היגיון a few הולך עם נספרים ו־a little עם מה שלא נספר. במשפט חיובי רגיל נוח לומר a lot of, שמתאים לשניהם.",
+    "pattern": "many / a few + רבים · much / a little + לא נספר",
+    "examples": [
+      {
+        "en": "How many apples do we need for Rosh Hashanah?",
+        "he": "כמה תפוחים צריך לראש השנה?"
+      },
+      {
+        "en": "We don't have much honey left.",
+        "he": "לא נשאר לנו הרבה דבש."
+      },
+      {
+        "en": "There were a lot of guests at the Seder.",
+        "he": "היו הרבה אורחים בסדר."
+      }
+    ],
+    "hebrewTrap": "בעברית 'הרבה' ו'כמה' משמשים לשני הסוגים. לכן אומרים בטעות much apples או how much people.",
+    "source": "original"
+  },
+  {
+    "id": "past-progressive",
+    "emoji": "🎬",
+    "title": "סרט שנקטע",
+    "skills": [
+      "grammar.past-progressive"
+    ],
+    "image": "אמא הייתה באמצע לקלוע חלה, כמו סרט ארוך שמתנגן, ופתאום צלצול בדלת: סבא וסבתא הגיעו! הסרט הארוך הוא was / were + ing, והצלצול שקטע אותו הוא עבר פשוט.",
+    "rule": "עבר מתמשך מתאר פעולה שהייתה באמצע בזמן מסוים בעבר. בונים עם was (I, he, she, it) או were (you, we, they) ופועל עם ing. כשפעולה קצרה קוטעת אותה, הקצרה באה בעבר פשוט, לרוב אחרי when.",
+    "pattern": "was / were + פועל + ing, when + עבר פשוט",
+    "examples": [
+      {
+        "en": "Ima was braiding the challah when Grandma arrived.",
+        "he": "אמא קלעה את החלה כשסבתא הגיעה."
+      },
+      {
+        "en": "We were eating in the sukkah when it started to rain.",
+        "he": "אכלנו בסוכה כשהתחיל לרדת גשם."
+      },
+      {
+        "en": "What were you doing at eight last night?",
+        "he": "מה עשיתם אתמול בשמונה בערב?"
+      }
+    ],
+    "hebrewTrap": "בעברית יש רק עבר אחד ('אכלנו'), ולכן משתמשים בעבר פשוט גם לפעולה הארוכה: We ate in the sukkah when it started to rain. כך זה נשמע כאילו התחילו לאכול רק כשהגשם התחיל.",
+    "source": "original"
+  },
+  {
+    "id": "word-order",
+    "emoji": "🚂",
+    "title": "רכבת המשפט",
+    "skills": [
+      "grammar.word-order",
+      "grammar.adverbs"
+    ],
+    "image": "רכבת עם קרונות בסדר קבוע: קטר (מי), ואחריו עושה, מה, איפה, מתי. אי אפשר להחליף קרונות: Ari learns Gemara at home every night.",
+    "rule": "במשפט באנגלית הסדר קבוע: נושא, פועל, מושא, מקום, זמן. מילות תדירות כמו always, often, never באות לפני פועל רגיל אבל אחרי am, is, are. שם תואר בא לפני שם העצם: a big sukkah.",
+    "pattern": "מי + עושה + מה + איפה + מתי",
+    "examples": [
+      {
+        "en": "Ari learns Gemara at home every night.",
+        "he": "ארי לומד גמרא בבית כל ערב."
+      },
+      {
+        "en": "Tamar always sets the table.",
+        "he": "תמר תמיד עורכת את השולחן."
+      },
+      {
+        "en": "Abba built a big sukkah in the yard.",
+        "he": "אבא בנה סוכה גדולה בחצר."
+      }
+    ],
+    "hebrewTrap": "בעברית הסדר גמיש ('כל ערב לומד ארי גמרא'), ושם התואר בא אחרי השם ('סוכה גדולה'). לכן מעבירים לאנגלית סדר עברי: a sukkah big, או Ari learns every night Gemara.",
+    "source": "original"
+  },
+  {
+    "id": "reported-speech",
+    "emoji": "🗣️",
+    "title": "דיבור עקיף זז אחורה",
+    "skills": [
+      "grammar.reported-speech",
+      "grammar.question-tags"
+    ],
+    "image": "סבתא מספרת בטלפון מה ארי אמר לה אתמול. המילים שלו כבר מאחוריה, ולכן כל זמן זז צעד אחד אחורה: ארי אמר I am hungry, וסבתא מספרת He said he was hungry.",
+    "rule": "כשמספרים מה מישהו אמר, אחרי said הזמן בדרך כלל זז צעד אחורה (is הופך ל־was, will ל־would), ו־I הופך ל־he או she. בשאלת זנב (question tag) הולכים הפוך ובונים את הזנב מפועל העזר: משפט חיובי מקבל זנב שלילי (It's cold, isn't it?), ומשפט שלילי מקבל זנב חיובי (You can't come, can you?).",
+    "pattern": "said (that) + זמן אחד אחורה · is → was · will → would",
+    "examples": [
+      {
+        "en": "Ari said he was hungry.",
+        "he": "ארי אמר שהוא רעב."
+      },
+      {
+        "en": "Ima said she would bake a cake.",
+        "he": "אמא אמרה שהיא תאפה עוגה."
+      },
+      {
+        "en": "It's a beautiful Shabbat, isn't it?",
+        "he": "שבת יפה, נכון?"
+      }
+    ],
+    "hebrewTrap": "בעברית משאירים את הזמן המקורי ('אמר שהוא רעב'), ולכן אומרים בטעות He said he is hungry. ו'נכון?' בעברית מתאים לכל משפט, ולכן שוכחים לבנות זנב מהפועל: It's cold, yes?",
+    "source": "original"
+  },
+  {
+    "id": "used-to",
+    "emoji": "🕰️",
+    "title": "פעם, וכבר לא",
+    "skills": [
+      "grammar.used-to"
+    ],
+    "image": "סבא יוסף מראה תמונה בשחור לבן: פעם הוא רכב על אופניים לבית הכנסת כל בוקר. התמונה דהויה כי ההרגל נגמר: He used to ride his bike to shul.",
+    "rule": "used to + פועל בסיס מתאר הרגל או מצב שהיו בעבר ונגמרו, והצורה זהה לכל הגופים. בשאלה ובשלילה באה did, ו־use בלי d: Did you use to...? I didn't use to...",
+    "pattern": "used to + פועל בסיס",
+    "examples": [
+      {
+        "en": "Grandpa Yosef used to ride his bike to shul.",
+        "he": "סבא יוסף היה רוכב על אופניים לבית הכנסת."
+      },
+      {
+        "en": "Eli used to cry every night, but now he sleeps well.",
+        "he": "אלי היה בוכה כל לילה, אבל עכשיו הוא ישן טוב."
+      },
+      {
+        "en": "Did Abba use to live in America?",
+        "he": "אבא גר פעם באמריקה?"
+      }
+    ],
+    "hebrewTrap": "בעברית אומרים 'הייתי רוכב', ולכן מתרגמים בטעות I was ride. וגם used to נשמע כמו 'רגיל ל־', ולכן מבלבלים אותו עם I am used to (להיות רגיל למשהו).",
+    "source": "original"
+  },
+  {
+    "id": "past-perfect",
+    "emoji": "⏪",
+    "title": "העבר של העבר",
+    "skills": [
+      "grammar.past-perfect"
+    ],
+    "image": "ארי הגיע בריצה לבית הכנסת, אבל התפילה כבר נגמרה. על ציר הזמן יש שתי נקודות בעבר, והנקודה הרחוקה יותר, מה שקרה קודם, מקבלת had.",
+    "rule": "עבר מושלם מראה שפעולה אחת קרתה לפני פעולה אחרת בעבר. בונים עם had (לכל הגופים) וצורה שלישית. הפעולה המאוחרת באה בעבר פשוט.",
+    "pattern": "had + V3 (קודם) · עבר פשוט (אחר כך)",
+    "examples": [
+      {
+        "en": "When Ari got to shul, the davening had already ended.",
+        "he": "כשארי הגיע לבית הכנסת, התפילה כבר נגמרה."
+      },
+      {
+        "en": "Tamar had finished her homework before Shabbat started.",
+        "he": "תמר סיימה את שיעורי הבית לפני שנכנסה השבת."
+      },
+      {
+        "en": "Grandpa had never seen snow before he moved to Jerusalem.",
+        "he": "סבא לא ראה שלג אף פעם לפני שעבר לירושלים."
+      }
+    ],
+    "hebrewTrap": "בעברית יש רק עבר אחד, ולכן לא מרגישים צורך ב־had. אבל When Ari got to shul, the davening ended נשמע כאילו התפילה נגמרה בדיוק כשהוא נכנס.",
+    "source": "original"
+  },
+  {
+    "id": "plurals",
+    "emoji": "👥",
+    "title": "רבים: s, ויש חריגים",
+    "skills": [
+      "grammar.plurals"
+    ],
+    "image": "על שולחן הסדר: one cup, four cups; one child, many children. רוב המילים מקבלות זנב s, כמה מילים עקשניות משנות את כל הצורה, ויש מילים כמו information שלא נספרות בכלל.",
+    "rule": "רוב שמות העצם מקבלים s ברבים (books), ואחרי s, sh, ch, x מקבלים es (glasses, dishes). חריגים צריך לזכור: child, children; man, men; woman, women; person, people; foot, feet. מילים כמו information, advice, homework, furniture לא נספרות, ולכן אין להן s ואין לפניהן a.",
+    "pattern": "מילה + s · s / sh / ch / x + es · חריגים: children, men, people",
+    "examples": [
+      {
+        "en": "We drink four cups of wine at the Seder.",
+        "he": "שותים ארבע כוסות יין בסדר."
+      },
+      {
+        "en": "The children are looking for the afikoman.",
+        "he": "הילדים מחפשים את האפיקומן."
+      },
+      {
+        "en": "Ari has a lot of homework tonight.",
+        "he": "לארי יש הרבה שיעורי בית הערב."
+      }
+    ],
+    "hebrewTrap": "בעברית 'עצות', 'רהיטים' ו'שיעורי בית' הם ברבים, ולכן מוסיפים s גם באנגלית: advices, furnitures, homeworks.",
+    "source": "original"
+  },
+  {
+    "id": "prepositions-place",
+    "emoji": "📦",
+    "title": "in, on, at: קופסה, שולחן, נקודה",
+    "skills": [
+      "grammar.prepositions"
+    ],
+    "image": "דמיינו קופסת חלות על השולחן בפינת האוכל. החלה in הקופסה (בתוך). הקופסה on השולחן (על משטח). אבא מחכה at הדלת (בנקודה אחת).",
+    "rule": "in = בתוך משהו סגור או שטח גדול (in the box, in Jerusalem). on = על משטח (on the table, on the wall). at = נקודה או כתובת מוכרת (at the door, at the bus stop, at school).",
+    "pattern": "in = בתוך · on = על · at = בנקודה",
+    "examples": [
+      {
+        "en": "The challah is in the box.",
+        "he": "החלה בתוך הקופסה."
+      },
+      {
+        "en": "The candles are on the table.",
+        "he": "הנרות על השולחן."
+      },
+      {
+        "en": "Grandpa is waiting at the bus stop.",
+        "he": "סבא מחכה בתחנת האוטובוס."
+      }
+    ],
+    "hebrewTrap": "בעברית אומרים \"ב\" כמעט לכל מקום: בשולחן, בתחנה, בבית. באנגלית צריך לבחור: בתוך (in), על (on) או בנקודה (at).",
+    "source": "original"
+  },
+  {
+    "id": "word-partners",
+    "emoji": "👟",
+    "title": "זוג קבוע: מילה ומילת היחס שלה",
+    "skills": [
+      "grammar.prepositions"
+    ],
+    "image": "כמו נעל והשרוך שלה: good תמיד הולכת עם at, afraid עם of, wait עם for. קונים אותן ביחד ולומדים אותן ביחד.",
+    "rule": "יש מילים שמילת היחס שלהן קבועה, ואי אפשר לנחש אותה מהעברית. לומדים את הצירוף כולו כיחידה אחת: good at, afraid of, interested in, wait for, listen to, depend on.",
+    "pattern": "good at · afraid of · interested in · wait for · listen to · depend on",
+    "examples": [
+      {
+        "en": "Tamar is good at math.",
+        "he": "תמר טובה במתמטיקה."
+      },
+      {
+        "en": "Ari is afraid of big dogs.",
+        "he": "ארי מפחד מכלבים גדולים."
+      },
+      {
+        "en": "We are waiting for Grandpa.",
+        "he": "אנחנו מחכים לסבא."
+      }
+    ],
+    "hebrewTrap": "בעברית אומרים \"טובה ב\", \"מחכים ל\", \"מקשיבים ל\". באנגלית מילת היחס שונה: good at, wait for, listen to. תרגום מילה במילה מוביל לטעות.",
+    "source": "original"
+  }
+]

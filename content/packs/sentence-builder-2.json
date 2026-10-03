@@ -5120,8 +5120,8 @@
       "difficulty": 0.5,
       "unit": "order:gt.ps3.live",
       "prompt": "Build the sentence",
-      "answer": "Noa lives in Tel Aviv.",
-      "audioText": "Noa lives in Tel Aviv.",
+      "answer": "Dina lives in Tel Aviv.",
+      "audioText": "Dina lives in Tel Aviv.",
       "targetsMisconceptions": [
         "word-order.sentence"
       ],
@@ -5131,17 +5131,17 @@
       },
       "hints": [
         {
-          "he": "המשפט מתחיל ב־Noa",
-          "en": "It starts with \"Noa\""
+          "he": "המשפט מתחיל ב־Dina",
+          "en": "It starts with \"Dina\""
         },
         {
-          "he": "החצי הראשון: Noa lives in",
-          "en": "The first half: Noa lives in"
+          "he": "החצי הראשון: Dina lives in",
+          "en": "The first half: Dina lives in"
         }
       ],
       "explanation": {
-        "he": "Noa היא she, ולכן lives עם s. לא מוסיפים is לפני פועל רגיל.",
-        "en": "Noa is she, so lives with -s. Do not add is before a normal verb."
+        "he": "Dina היא she, ולכן lives עם s. לא מוסיפים is לפני פועל רגיל.",
+        "en": "Dina is she, so lives with -s. Do not add is before a normal verb."
       },
       "interests": [
         "travel"

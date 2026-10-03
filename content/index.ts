@@ -7,11 +7,13 @@ import sources from './sources.json';
  * ./misconceptions). No code changes needed. See content/AUTHORING.md.
  */
 const packModules = import.meta.glob('./packs/*.json', { eager: true, import: 'default' });
+const anchorModules = import.meta.glob('./anchors/*.json', { eager: true, import: 'default' });
 const misconceptionModules = import.meta.glob('./misconceptions/*.json', { eager: true, import: 'default' });
 
 const authored = Object.values(packModules);
 
 export const contentRegistry: ContentRegistry = buildRegistry({
+  anchors: Object.values(anchorModules).flat() as unknown[],
   packs: authored,
   sources: sources as unknown[],
   misconceptions: Object.values(misconceptionModules).flat() as unknown[],

@@ -15,6 +15,9 @@ import { SpeakButton } from '@/ui/SpeakButton';
 import { TopBar } from '@/ui/TopBar';
 import { BookmarkIcon, CheckIcon, CloseIcon } from '@/ui/icons';
 import { Confetti } from '@/ui/Confetti';
+import { AudioPlayer } from '@/ui/AudioPlayer';
+import { ReadCheck } from '@/ui/ReadCheck';
+import { resume } from '@/app/resume';
 
 /**
  * Reads one story line by line. Each new line is read aloud. Tapping a word
@@ -38,10 +41,14 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
   const { store, speech, content } = useServices();
   const prefs = useSpeechPrefs();
   const nav = useNavigate();
-  const [shown, setShown] = useState(1);
-  const [answered, setAnswered] = useState<Map<string, boolean>>(new Map());
+  // Continue a story where the learner stopped.
+  const [savedPlace] = useState(() => resume.getStory(student.id, story.id));
+  const [shown, setShown] = useState(() => Math.min(savedPlace?.shown ?? 1, story.lines.length));
+  const [answered, setAnswered] = useState<Map<string, boolean>>(() => new Map(savedPlace?.answered ?? []));
   const [gloss, setGloss] = useState<Gloss | null>(null);
   const [translated, setTranslated] = useState<Set<number>>(new Set());
+  const [playingLine, setPlayingLine] = useState<number | null>(null);
+  const [checking, setChecking] = useState<number | null>(null);
   const [sessionId, setSessionId] = useState('');
   const endRef = useRef<HTMLDivElement>(null);
   const loggedRef = useRef(false);
@@ -84,6 +91,11 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
   }, [pending]);
 
   useEffect(() => {
+    if (finished) resume.clearStory(student.id, story.id);
+    else if (shown > 1 || answered.size) resume.saveStory(student.id, story.id, { shown, answered: [...answered] });
+  }, [finished, shown, answered, student.id, story.id]);
+
+  useEffect(() => {
     if (!finished || loggedRef.current) return;
     loggedRef.current = true;
     void store.log(student.id, 'story.completed', { storyId: story.id, correct, total: story.questions.length }, sessionId || undefined);
@@ -124,9 +136,12 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
       </div>
       <p className="xs muted txt-center">להקיש על מילה כדי לראות מה היא אומרת. המילה תישמר ב״המילים שלי״.</p>
 
+      {shown > 1 && (
+        <AudioPlayer segments={story.lines.slice(0, shown).map((l) => ({ text: l.en, ...(l.speaker ? { speaker: l.speaker } : {}) }))} onSegment={setPlayingLine} />
+      )}
       <div className="story-lines">
         {story.lines.slice(0, shown).map((line, i) => (
-          <div key={i} className={`story-line${line.speaker ? ` story-speaker-${line.speaker}` : ''}`}>
+          <div key={i} className={`story-line${line.speaker ? ` story-speaker-${line.speaker}` : ''}`} data-on={playingLine === i}>
             {line.speaker && story.cast && (
               <En className="story-name">{story.cast[line.speaker]}</En>
             )}
@@ -136,6 +151,13 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
               </p>
               <SpeakButton text={line.en} {...(line.speaker ? { speaker: line.speaker } : {})} />
             </div>
+            {checking === i ? (
+              <ReadCheck text={line.en} />
+            ) : (
+              <button className="link-btn xs" onClick={() => setChecking(i)}>
+                להקריא ולבדוק
+              </button>
+            )}
             {translated.has(i) ? (
               <He className="story-he small">{line.he}</He>
             ) : (
@@ -170,9 +192,6 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
           <div className="txt-center small muted">
             {correct} מתוך {story.questions.length} תשובות נכונות · {storyWordsSaved} מילים נשמרו
           </div>
-          <button className="btn btn-block" onClick={() => void speech.speakDialogue(story.lines.map((l) => ({ speaker: l.speaker ?? 'A', text: l.en })), { ...prefs, key: `story-all-${story.id}` })}>
-            להשמיע את כל הסיפור
-          </button>
           {nextStory && (
             <button className="btn btn-primary btn-block" onClick={() => nav(`${base}/stories/${nextStory.id}`)}>
               לסיפור הבא

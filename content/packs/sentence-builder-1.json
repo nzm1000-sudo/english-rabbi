@@ -264,8 +264,8 @@
       "difficulty": 0.6,
       "unit": "order:bg.conn.although-test",
       "prompt": "Build the sentence",
-      "answer": "Although the test was hard, Noa got a good grade.",
-      "audioText": "Although the test was hard, Noa got a good grade.",
+      "answer": "Although the test was hard, Dina got a good grade.",
+      "audioText": "Although the test was hard, Dina got a good grade.",
       "targetsMisconceptions": [
         "word-order.sentence"
       ],
@@ -297,9 +297,9 @@
       "estimatedTimeSec": 25,
       "source": "original",
       "alternatives": [
-        "Noa got a good grade although the test was hard.",
-        "Although Noa got a good grade, the test was hard.",
-        "The test was hard, although Noa got a good grade."
+        "Dina got a good grade although the test was hard.",
+        "Although Dina got a good grade, the test was hard.",
+        "The test was hard, although Dina got a good grade."
       ],
       "distractors": []
     },
@@ -671,8 +671,8 @@
       "difficulty": 0.5,
       "unit": "order:bg.conn.because-tired",
       "prompt": "Build the sentence",
-      "answer": "Noa was tired because she had worked all night.",
-      "audioText": "Noa was tired because she had worked all night.",
+      "answer": "Dina was tired because she had worked all night.",
+      "audioText": "Dina was tired because she had worked all night.",
       "targetsMisconceptions": [
         "word-order.sentence"
       ],
@@ -682,12 +682,12 @@
       },
       "hints": [
         {
-          "he": "המשפט מתחיל ב־Noa",
-          "en": "It starts with \"Noa\""
+          "he": "המשפט מתחיל ב־Dina",
+          "en": "It starts with \"Dina\""
         },
         {
-          "he": "החצי הראשון: Noa was tired because she",
-          "en": "The first half: Noa was tired because she"
+          "he": "החצי הראשון: Dina was tired because she",
+          "en": "The first half: Dina was tired because she"
         }
       ],
       "explanation": {
@@ -702,7 +702,7 @@
       "estimatedTimeSec": 25,
       "source": "original",
       "alternatives": [
-        "Because she had worked all night, Noa was tired."
+        "Because she had worked all night, Dina was tired."
       ],
       "distractors": []
     },
@@ -7371,7 +7371,7 @@
       "distractors": []
     },
     {
-      "id": "sb.gs.rep.noa-hungry",
+      "id": "sb.gs.rep.dina-hungry",
       "type": "order",
       "skill": "grammar.word-order",
       "alsoSkills": [
@@ -7382,10 +7382,10 @@
       ],
       "level": "B1",
       "difficulty": 0.5,
-      "unit": "order:gs.rep.noa-hungry",
+      "unit": "order:gs.rep.dina-hungry",
       "prompt": "Build the sentence",
-      "answer": "Noa said that she was hungry.",
-      "audioText": "Noa said that she was hungry.",
+      "answer": "Dina said that she was hungry.",
+      "audioText": "Dina said that she was hungry.",
       "targetsMisconceptions": [
         "word-order.sentence"
       ],
@@ -7395,16 +7395,16 @@
       },
       "hints": [
         {
-          "he": "המשפט מתחיל ב־Noa",
-          "en": "It starts with \"Noa\""
+          "he": "המשפט מתחיל ב־Dina",
+          "en": "It starts with \"Dina\""
         },
         {
-          "he": "החצי הראשון: Noa said that",
-          "en": "The first half: Noa said that"
+          "he": "החצי הראשון: Dina said that",
+          "en": "The first half: Dina said that"
         }
       ],
       "explanation": {
-        "he": "am → was. בדיבור עקיף מזיזים את הזמן אחורה ומחליפים I ל־she: Noa said that she was hungry.",
+        "he": "am → was. בדיבור עקיף מזיזים את הזמן אחורה ומחליפים I ל־she: Dina said that she was hungry.",
         "en": "am → was. In reported speech, move the tense back and change I to she."
       },
       "interests": [

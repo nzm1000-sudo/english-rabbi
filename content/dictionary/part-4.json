@@ -1,0 +1,4424 @@
+{
+ "say": [
+  {
+   "lemma": "say",
+   "he": "לומר"
+  }
+ ],
+ "saying": [
+  {
+   "lemma": "say",
+   "he": "אומר"
+  }
+ ],
+ "says": [
+  {
+   "lemma": "say",
+   "he": "אומר"
+  }
+ ],
+ "scene": [
+  {
+   "lemma": "scene",
+   "he": "זירה; מקום האירוע"
+  },
+  {
+   "lemma": "scene",
+   "he": "סצנה"
+  }
+ ],
+ "schedule": [
+  {
+   "lemma": "schedule",
+   "he": "לוח זמנים"
+  }
+ ],
+ "scholarship": [
+  {
+   "lemma": "scholarship",
+   "he": "מלגה"
+  }
+ ],
+ "school": [
+  {
+   "lemma": "school",
+   "he": "בית ספר"
+  }
+ ],
+ "schools": [
+  {
+   "lemma": "school",
+   "he": "בתי ספר"
+  }
+ ],
+ "schoolwork": [
+  {
+   "lemma": "schoolwork",
+   "he": "עבודות לבית הספר"
+  }
+ ],
+ "schoolyard": [
+  {
+   "lemma": "schoolyard",
+   "he": "חצר בית הספר"
+  }
+ ],
+ "science": [
+  {
+   "lemma": "science",
+   "he": "מדע"
+  }
+ ],
+ "scientists": [
+  {
+   "lemma": "scientist",
+   "he": "מדענים"
+  }
+ ],
+ "score": [
+  {
+   "lemma": "score",
+   "he": "תוצאה (במשחק); ציון"
+  }
+ ],
+ "scored": [
+  {
+   "lemma": "score",
+   "he": "הבקיע (שער)"
+  }
+ ],
+ "screen": [
+  {
+   "lemma": "screen",
+   "he": "מסך"
+  }
+ ],
+ "screens": [
+  {
+   "lemma": "screen",
+   "he": "מסכים"
+  }
+ ],
+ "sea": [
+  {
+   "lemma": "sea",
+   "he": "ים"
+  }
+ ],
+ "search": [
+  {
+   "lemma": "search",
+   "he": "לחפש"
+  },
+  {
+   "lemma": "search",
+   "he": "חיפוש"
+  }
+ ],
+ "searched": [
+  {
+   "lemma": "search",
+   "he": "חיפש"
+  }
+ ],
+ "season": [
+  {
+   "lemma": "season",
+   "he": "עונה"
+  }
+ ],
+ "seat": [
+  {
+   "lemma": "seat",
+   "he": "מושב"
+  }
+ ],
+ "seats": [
+  {
+   "lemma": "seat",
+   "he": "מושבים"
+  }
+ ],
+ "second": [
+  {
+   "lemma": "second",
+   "he": "שנייה"
+  },
+  {
+   "lemma": "second",
+   "he": "שני"
+  }
+ ],
+ "secondary": [
+  {
+   "lemma": "secondary",
+   "he": "תיכון; משני"
+  }
+ ],
+ "secret": [
+  {
+   "lemma": "secret",
+   "he": "סוד"
+  }
+ ],
+ "section": [
+  {
+   "lemma": "section",
+   "he": "מדור; חלק"
+  }
+ ],
+ "seder": [
+  {
+   "lemma": "seder",
+   "he": "ליל הסדר"
+  }
+ ],
+ "see": [
+  {
+   "lemma": "see",
+   "he": "לראות"
+  }
+ ],
+ "seed": [
+  {
+   "lemma": "seed",
+   "he": "זרע"
+  }
+ ],
+ "seeing": [
+  {
+   "lemma": "see",
+   "he": "לראות; ראייה"
+  }
+ ],
+ "seen": [
+  {
+   "lemma": "see",
+   "he": "ראה; נראה (צורה שלישית)"
+  }
+ ],
+ "sees": [
+  {
+   "lemma": "see",
+   "he": "רואה"
+  }
+ ],
+ "self": [
+  {
+   "lemma": "self",
+   "he": "עצמי; האני"
+  }
+ ],
+ "sell": [
+  {
+   "lemma": "sell",
+   "he": "למכור"
+  }
+ ],
+ "selling": [
+  {
+   "lemma": "sell",
+   "he": "מכירה; מוכר"
+  }
+ ],
+ "semester": [
+  {
+   "lemma": "semester",
+   "he": "סמסטר"
+  }
+ ],
+ "send": [
+  {
+   "lemma": "send",
+   "he": "לשלוח"
+  }
+ ],
+ "sent": [
+  {
+   "lemma": "send",
+   "he": "נשלח; שלח"
+  }
+ ],
+ "sentence": [
+  {
+   "lemma": "sentence",
+   "he": "משפט"
+  }
+ ],
+ "separate": [
+  {
+   "lemma": "separate",
+   "he": "נפרד"
+  },
+  {
+   "lemma": "separate",
+   "he": "להפריד"
+  }
+ ],
+ "september": [
+  {
+   "lemma": "September",
+   "he": "ספטמבר"
+  }
+ ],
+ "serious": [
+  {
+   "lemma": "serious",
+   "he": "רציני; חמור"
+  }
+ ],
+ "seriously": [
+  {
+   "lemma": "seriously",
+   "he": "ברצינות"
+  }
+ ],
+ "service": [
+  {
+   "lemma": "service",
+   "he": "שירות"
+  }
+ ],
+ "set": [
+  {
+   "lemma": "set",
+   "he": "לערוך (שולחן); לקבוע"
+  },
+  {
+   "lemma": "set",
+   "he": "סט; ערכה"
+  }
+ ],
+ "seven": [
+  {
+   "lemma": "seven",
+   "he": "שבע"
+  }
+ ],
+ "several": [
+  {
+   "lemma": "several",
+   "he": "כמה; מספר"
+  }
+ ],
+ "shabbat": [
+  {
+   "lemma": "Shabbat",
+   "he": "שבת"
+  }
+ ],
+ "shade": [
+  {
+   "lemma": "shade",
+   "he": "צל"
+  }
+ ],
+ "shakespeare": [
+  {
+   "lemma": "Shakespeare",
+   "he": "שייקספיר (שם)"
+  }
+ ],
+ "shaking": [
+  {
+   "lemma": "shake",
+   "he": "רועד"
+  }
+ ],
+ "shall": [
+  {
+   "lemma": "shall",
+   "he": "האם נ...? (הצעה); עתיד"
+  }
+ ],
+ "shapiro": [
+  {
+   "lemma": "Shapiro",
+   "he": "שפירו (שם)"
+  }
+ ],
+ "shapiros": [
+  {
+   "lemma": "Shapiro",
+   "he": "משפחת שפירו (שם)"
+  }
+ ],
+ "share": [
+  {
+   "lemma": "share",
+   "he": "לחלוק; לשתף"
+  }
+ ],
+ "shared": [
+  {
+   "lemma": "share",
+   "he": "שיתף; חלק"
+  }
+ ],
+ "shark": [
+  {
+   "lemma": "shark",
+   "he": "כריש"
+  }
+ ],
+ "sharp": [
+  {
+   "lemma": "sharp",
+   "he": "חד"
+  }
+ ],
+ "she": [
+  {
+   "lemma": "she",
+   "he": "היא"
+  }
+ ],
+ "she'll": [
+  {
+   "lemma": "she will",
+   "he": "היא (בעתיד)"
+  }
+ ],
+ "sheep": [
+  {
+   "lemma": "sheep",
+   "he": "כבשה; כבשים"
+  }
+ ],
+ "sheepes": [
+  {
+   "lemma": "sheep",
+   "he": "צורה שגויה (נכון: sheep)"
+  }
+ ],
+ "sheeping": [
+  {
+   "lemma": "sheep",
+   "he": "צורה שגויה (נכון: sheep)"
+  }
+ ],
+ "sheeps": [
+  {
+   "lemma": "sheep",
+   "he": "צורה שגויה (נכון: sheep)"
+  }
+ ],
+ "sheets": [
+  {
+   "lemma": "sheet",
+   "he": "סדינים; כיסויים"
+  },
+  {
+   "lemma": "sheet",
+   "he": "דפים"
+  }
+ ],
+ "shekels": [
+  {
+   "lemma": "shekel",
+   "he": "שקלים"
+  }
+ ],
+ "shelf": [
+  {
+   "lemma": "shelf",
+   "he": "מדף"
+  }
+ ],
+ "shelter": [
+  {
+   "lemma": "shelter",
+   "he": "מקלט"
+  }
+ ],
+ "shh": [
+  {
+   "lemma": "shh",
+   "he": "ששש! (שקט)"
+  }
+ ],
+ "shifts": [
+  {
+   "lemma": "shift",
+   "he": "זז; משתנה"
+  }
+ ],
+ "shining": [
+  {
+   "lemma": "shine",
+   "he": "זורח"
+  }
+ ],
+ "ship": [
+  {
+   "lemma": "ship",
+   "he": "ספינה"
+  }
+ ],
+ "shira": [
+  {
+   "lemma": "Shira",
+   "he": "שירה (שם)"
+  }
+ ],
+ "shirt": [
+  {
+   "lemma": "shirt",
+   "he": "חולצה"
+  }
+ ],
+ "shoes": [
+  {
+   "lemma": "shoe",
+   "he": "נעליים"
+  }
+ ],
+ "shop": [
+  {
+   "lemma": "shop",
+   "he": "חנות"
+  }
+ ],
+ "shopping": [
+  {
+   "lemma": "shopping",
+   "he": "קניות"
+  }
+ ],
+ "shops": [
+  {
+   "lemma": "shop",
+   "he": "חנויות"
+  }
+ ],
+ "short": [
+  {
+   "lemma": "short",
+   "he": "קצר; נמוך"
+  }
+ ],
+ "shorter": [
+  {
+   "lemma": "short",
+   "he": "קצר יותר"
+  }
+ ],
+ "should": [
+  {
+   "lemma": "should",
+   "he": "צריך; כדאי"
+  }
+ ],
+ "shouldn't": [
+  {
+   "lemma": "should not",
+   "he": "לא כדאי; אסור"
+  }
+ ],
+ "shouted": [
+  {
+   "lemma": "shout",
+   "he": "צעק"
+  }
+ ],
+ "shouting": [
+  {
+   "lemma": "shout",
+   "he": "צעקות; צועק"
+  }
+ ],
+ "show": [
+  {
+   "lemma": "show",
+   "he": "הופעה; מופע"
+  },
+  {
+   "lemma": "show",
+   "he": "להראות"
+  }
+ ],
+ "showed": [
+  {
+   "lemma": "show",
+   "he": "הראה"
+  }
+ ],
+ "shower": [
+  {
+   "lemma": "shower",
+   "he": "מקלחת"
+  }
+ ],
+ "shows": [
+  {
+   "lemma": "show",
+   "he": "ניכר; מראה"
+  },
+  {
+   "lemma": "show",
+   "he": "הופעות"
+  }
+ ],
+ "shul": [
+  {
+   "lemma": "shul",
+   "he": "בית כנסת"
+  }
+ ],
+ "sick": [
+  {
+   "lemma": "sick",
+   "he": "חולה"
+  }
+ ],
+ "siddur": [
+  {
+   "lemma": "siddur",
+   "he": "סידור"
+  }
+ ],
+ "side": [
+  {
+   "lemma": "side",
+   "he": "צד"
+  }
+ ],
+ "sidewalk": [
+  {
+   "lemma": "sidewalk",
+   "he": "מדרכה"
+  }
+ ],
+ "sign": [
+  {
+   "lemma": "sign",
+   "he": "שלט"
+  },
+  {
+   "lemma": "sign",
+   "he": "סימן"
+  }
+ ],
+ "significant": [
+  {
+   "lemma": "significant",
+   "he": "משמעותי"
+  }
+ ],
+ "signs": [
+  {
+   "lemma": "sign",
+   "he": "שלטים"
+  },
+  {
+   "lemma": "sign",
+   "he": "סימנים"
+  }
+ ],
+ "silver": [
+  {
+   "lemma": "silver",
+   "he": "כסף (מתכת)"
+  }
+ ],
+ "simple": [
+  {
+   "lemma": "simple",
+   "he": "פשוט"
+  }
+ ],
+ "simply": [
+  {
+   "lemma": "simply",
+   "he": "פשוט; פשוט מאוד"
+  }
+ ],
+ "since": [
+  {
+   "lemma": "since",
+   "he": "מאז"
+  },
+  {
+   "lemma": "since",
+   "he": "מכיוון ש"
+  }
+ ],
+ "sing": [
+  {
+   "lemma": "sing",
+   "he": "לשיר"
+  }
+ ],
+ "singer": [
+  {
+   "lemma": "singer",
+   "he": "זמר"
+  }
+ ],
+ "singing": [
+  {
+   "lemma": "sing",
+   "he": "שר"
+  }
+ ],
+ "single": [
+  {
+   "lemma": "single",
+   "he": "יחיד; אחד בלבד"
+  }
+ ],
+ "sings": [
+  {
+   "lemma": "sing",
+   "he": "שרה; שר"
+  }
+ ],
+ "sink": [
+  {
+   "lemma": "sink",
+   "he": "כיור"
+  },
+  {
+   "lemma": "sink",
+   "he": "לשקוע"
+  }
+ ],
+ "sister": [
+  {
+   "lemma": "sister",
+   "he": "אחות"
+  }
+ ],
+ "sit": [
+  {
+   "lemma": "sit",
+   "he": "לשבת"
+  }
+ ],
+ "sits": [
+  {
+   "lemma": "sit",
+   "he": "יושבת; יושב"
+  }
+ ],
+ "sitting": [
+  {
+   "lemma": "sit",
+   "he": "יושב"
+  }
+ ],
+ "situation": [
+  {
+   "lemma": "situation",
+   "he": "מצב"
+  }
+ ],
+ "six": [
+  {
+   "lemma": "six",
+   "he": "שש"
+  }
+ ],
+ "sixty": [
+  {
+   "lemma": "sixty",
+   "he": "שישים"
+  }
+ ],
+ "size": [
+  {
+   "lemma": "size",
+   "he": "מידה; גודל"
+  }
+ ],
+ "skateboards": [
+  {
+   "lemma": "skateboard",
+   "he": "סקייטבורדים"
+  }
+ ],
+ "skiing": [
+  {
+   "lemma": "ski",
+   "he": "סקי; גולש בסקי"
+  }
+ ],
+ "skin": [
+  {
+   "lemma": "skin",
+   "he": "עור"
+  }
+ ],
+ "sky": [
+  {
+   "lemma": "sky",
+   "he": "שמיים"
+  }
+ ],
+ "sleep": [
+  {
+   "lemma": "sleep",
+   "he": "לישון"
+  },
+  {
+   "lemma": "sleep",
+   "he": "שינה"
+  }
+ ],
+ "sleeping": [
+  {
+   "lemma": "sleep",
+   "he": "ישן"
+  }
+ ],
+ "sleeps": [
+  {
+   "lemma": "sleep",
+   "he": "ישן"
+  }
+ ],
+ "sleepy": [
+  {
+   "lemma": "sleepy",
+   "he": "ישנוני"
+  }
+ ],
+ "slept": [
+  {
+   "lemma": "sleep",
+   "he": "ישן (עבר)"
+  }
+ ],
+ "slightly": [
+  {
+   "lemma": "slightly",
+   "he": "קצת; מעט"
+  }
+ ],
+ "slow": [
+  {
+   "lemma": "slow",
+   "he": "איטי"
+  }
+ ],
+ "slowly": [
+  {
+   "lemma": "slowly",
+   "he": "לאט"
+  }
+ ],
+ "small": [
+  {
+   "lemma": "small",
+   "he": "קטן"
+  }
+ ],
+ "smaller": [
+  {
+   "lemma": "small",
+   "he": "קטן יותר"
+  }
+ ],
+ "smartphones": [
+  {
+   "lemma": "smartphone",
+   "he": "טלפונים חכמים"
+  }
+ ],
+ "smelled": [
+  {
+   "lemma": "smell",
+   "he": "הדיף ריח"
+  }
+ ],
+ "smells": [
+  {
+   "lemma": "smell",
+   "he": "מריח (ריח)"
+  }
+ ],
+ "smile": [
+  {
+   "lemma": "smile",
+   "he": "חיוך"
+  },
+  {
+   "lemma": "smile",
+   "he": "לחייך"
+  }
+ ],
+ "smiled": [
+  {
+   "lemma": "smile",
+   "he": "חייך"
+  }
+ ],
+ "smoke": [
+  {
+   "lemma": "smoke",
+   "he": "לעשן"
+  },
+  {
+   "lemma": "smoke",
+   "he": "עשן"
+  }
+ ],
+ "smoking": [
+  {
+   "lemma": "smoking",
+   "he": "עישון"
+  }
+ ],
+ "snake": [
+  {
+   "lemma": "snake",
+   "he": "נחש"
+  }
+ ],
+ "snakes": [
+  {
+   "lemma": "snake",
+   "he": "נחשים"
+  }
+ ],
+ "snow": [
+  {
+   "lemma": "snow",
+   "he": "שלג"
+  }
+ ],
+ "so": [
+  {
+   "lemma": "so",
+   "he": "אז; לכן"
+  },
+  {
+   "lemma": "so",
+   "he": "כל כך"
+  }
+ ],
+ "social": [
+  {
+   "lemma": "social",
+   "he": "חברתי"
+  }
+ ],
+ "society": [
+  {
+   "lemma": "society",
+   "he": "חברה (ציבור)"
+  }
+ ],
+ "sock": [
+  {
+   "lemma": "sock",
+   "he": "גרב"
+  }
+ ],
+ "sofa": [
+  {
+   "lemma": "sofa",
+   "he": "ספה"
+  }
+ ],
+ "soft": [
+  {
+   "lemma": "soft",
+   "he": "רך"
+  },
+  {
+   "lemma": "soft",
+   "he": "קל (משקה קל)"
+  }
+ ],
+ "sold": [
+  {
+   "lemma": "sell",
+   "he": "נמכר; מכר"
+  }
+ ],
+ "solve": [
+  {
+   "lemma": "solve",
+   "he": "לפתור"
+  }
+ ],
+ "solved": [
+  {
+   "lemma": "solve",
+   "he": "פתר; נפתר"
+  }
+ ],
+ "some": [
+  {
+   "lemma": "some",
+   "he": "כמה; קצת"
+  }
+ ],
+ "someone": [
+  {
+   "lemma": "someone",
+   "he": "מישהו"
+  }
+ ],
+ "something": [
+  {
+   "lemma": "something",
+   "he": "משהו"
+  }
+ ],
+ "sometimes": [
+  {
+   "lemma": "sometimes",
+   "he": "לפעמים"
+  }
+ ],
+ "somewhere": [
+  {
+   "lemma": "somewhere",
+   "he": "איפשהו"
+  }
+ ],
+ "son": [
+  {
+   "lemma": "son",
+   "he": "בן"
+  }
+ ],
+ "song": [
+  {
+   "lemma": "song",
+   "he": "שיר"
+  }
+ ],
+ "songs": [
+  {
+   "lemma": "song",
+   "he": "שירים"
+  }
+ ],
+ "soon": [
+  {
+   "lemma": "soon",
+   "he": "בקרוב"
+  }
+ ],
+ "sooner": [
+  {
+   "lemma": "soon",
+   "he": "מוקדם יותר"
+  },
+  {
+   "lemma": "no sooner",
+   "he": "ברגע ש־ (no sooner)"
+  }
+ ],
+ "sorry": [
+  {
+   "lemma": "sorry",
+   "he": "מצטער; סליחה"
+  }
+ ],
+ "sound": [
+  {
+   "lemma": "sound",
+   "he": "צליל; קול"
+  },
+  {
+   "lemma": "sound",
+   "he": "להישמע"
+  }
+ ],
+ "soup": [
+  {
+   "lemma": "soup",
+   "he": "מרק"
+  }
+ ],
+ "south": [
+  {
+   "lemma": "south",
+   "he": "דרום"
+  }
+ ],
+ "space": [
+  {
+   "lemma": "space",
+   "he": "מקום"
+  },
+  {
+   "lemma": "space",
+   "he": "חלל"
+  }
+ ],
+ "spanish": [
+  {
+   "lemma": "Spanish",
+   "he": "ספרדית"
+  }
+ ],
+ "speak": [
+  {
+   "lemma": "speak",
+   "he": "לדבר"
+  }
+ ],
+ "speaker": [
+  {
+   "lemma": "speaker",
+   "he": "הדובר"
+  },
+  {
+   "lemma": "speaker",
+   "he": "רמקול"
+  }
+ ],
+ "speaking": [
+  {
+   "lemma": "speak",
+   "he": "מדבר; דיבור"
+  }
+ ],
+ "speaks": [
+  {
+   "lemma": "speak",
+   "he": "מדברת; מדבר"
+  }
+ ],
+ "special": [
+  {
+   "lemma": "special",
+   "he": "מיוחד"
+  }
+ ],
+ "spelled": [
+  {
+   "lemma": "spell",
+   "he": "נכתב; מאוית"
+  }
+ ],
+ "spelling": [
+  {
+   "lemma": "spelling",
+   "he": "איות"
+  }
+ ],
+ "spend": [
+  {
+   "lemma": "spend",
+   "he": "לבלות (זמן)"
+  },
+  {
+   "lemma": "spend",
+   "he": "להוציא (כסף)"
+  }
+ ],
+ "spending": [
+  {
+   "lemma": "spend",
+   "he": "מבלה"
+  }
+ ],
+ "spends": [
+  {
+   "lemma": "spend",
+   "he": "מבלה"
+  }
+ ],
+ "spent": [
+  {
+   "lemma": "spend",
+   "he": "בילה"
+  },
+  {
+   "lemma": "spend",
+   "he": "הוציא (כסף)"
+  }
+ ],
+ "spiders": [
+  {
+   "lemma": "spider",
+   "he": "עכבישים"
+  }
+ ],
+ "spilled": [
+  {
+   "lemma": "spill",
+   "he": "שפך"
+  }
+ ],
+ "spite": [
+  {
+   "lemma": "spite",
+   "he": "למרות (in spite of)"
+  }
+ ],
+ "spoke": [
+  {
+   "lemma": "speak",
+   "he": "דיבר"
+  },
+  {
+   "lemma": "spoke",
+   "he": "חישור (גלגל)"
+  }
+ ],
+ "spoken": [
+  {
+   "lemma": "speak",
+   "he": "מדוברת; נאמר"
+  }
+ ],
+ "sponge": [
+  {
+   "lemma": "sponge",
+   "he": "ספוג"
+  }
+ ],
+ "spoon": [
+  {
+   "lemma": "spoon",
+   "he": "כף"
+  }
+ ],
+ "sport": [
+  {
+   "lemma": "sport",
+   "he": "ספורט"
+  }
+ ],
+ "sports": [
+  {
+   "lemma": "sport",
+   "he": "ספורט; ענפי ספורט"
+  }
+ ],
+ "spring": [
+  {
+   "lemma": "spring",
+   "he": "אביב"
+  },
+  {
+   "lemma": "spring",
+   "he": "מעיין; קפיץ"
+  }
+ ],
+ "square": [
+  {
+   "lemma": "square",
+   "he": "כיכר"
+  },
+  {
+   "lemma": "square",
+   "he": "ריבוע"
+  }
+ ],
+ "stage": [
+  {
+   "lemma": "stage",
+   "he": "במה"
+  },
+  {
+   "lemma": "stage",
+   "he": "שלב"
+  }
+ ],
+ "stairs": [
+  {
+   "lemma": "stairs",
+   "he": "מדרגות"
+  }
+ ],
+ "stamp": [
+  {
+   "lemma": "stamp",
+   "he": "בול"
+  },
+  {
+   "lemma": "stamp",
+   "he": "חותמת"
+  }
+ ],
+ "stand": [
+  {
+   "lemma": "stand",
+   "he": "לעמוד"
+  }
+ ],
+ "standing": [
+  {
+   "lemma": "stand",
+   "he": "עמידה; עומד"
+  }
+ ],
+ "start": [
+  {
+   "lemma": "start",
+   "he": "להתחיל"
+  }
+ ],
+ "started": [
+  {
+   "lemma": "start",
+   "he": "התחיל"
+  }
+ ],
+ "starting": [
+  {
+   "lemma": "start",
+   "he": "התחלה; מתחיל"
+  }
+ ],
+ "starts": [
+  {
+   "lemma": "start",
+   "he": "מתחיל"
+  }
+ ],
+ "state": [
+  {
+   "lemma": "state",
+   "he": "מצב"
+  },
+  {
+   "lemma": "state",
+   "he": "מדינה"
+  }
+ ],
+ "station": [
+  {
+   "lemma": "station",
+   "he": "תחנה"
+  }
+ ],
+ "stay": [
+  {
+   "lemma": "stay",
+   "he": "להישאר"
+  }
+ ],
+ "stayed": [
+  {
+   "lemma": "stay",
+   "he": "נשאר"
+  }
+ ],
+ "staying": [
+  {
+   "lemma": "stay",
+   "he": "נשאר; שהייה"
+  }
+ ],
+ "stays": [
+  {
+   "lemma": "stay",
+   "he": "נשאר"
+  }
+ ],
+ "stealed": [
+  {
+   "lemma": "stole",
+   "he": "צורה שגויה (נכון: stole)"
+  }
+ ],
+ "step": [
+  {
+   "lemma": "step",
+   "he": "שלב"
+  },
+  {
+   "lemma": "step",
+   "he": "צעד"
+  }
+ ],
+ "still": [
+  {
+   "lemma": "still",
+   "he": "עדיין"
+  }
+ ],
+ "stole": [
+  {
+   "lemma": "steal",
+   "he": "גנב"
+  }
+ ],
+ "stolen": [
+  {
+   "lemma": "steal",
+   "he": "נגנב"
+  }
+ ],
+ "stone": [
+  {
+   "lemma": "stone",
+   "he": "אבן"
+  }
+ ],
+ "stood": [
+  {
+   "lemma": "stand",
+   "he": "עמד"
+  }
+ ],
+ "stop": [
+  {
+   "lemma": "stop",
+   "he": "לעצור; להפסיק"
+  },
+  {
+   "lemma": "stop",
+   "he": "תחנה"
+  }
+ ],
+ "stopped": [
+  {
+   "lemma": "stop",
+   "he": "הפסיק; עצר"
+  }
+ ],
+ "stops": [
+  {
+   "lemma": "stop",
+   "he": "נפסק; עוצר"
+  }
+ ],
+ "store": [
+  {
+   "lemma": "store",
+   "he": "חנות"
+  }
+ ],
+ "stores": [
+  {
+   "lemma": "store",
+   "he": "חנויות"
+  }
+ ],
+ "stories": [
+  {
+   "lemma": "story",
+   "he": "סיפורים"
+  },
+  {
+   "lemma": "story",
+   "he": "קומות (בבניין)"
+  }
+ ],
+ "storm": [
+  {
+   "lemma": "storm",
+   "he": "סערה"
+  }
+ ],
+ "story": [
+  {
+   "lemma": "story",
+   "he": "סיפור"
+  }
+ ],
+ "strange": [
+  {
+   "lemma": "strange",
+   "he": "מוזר"
+  }
+ ],
+ "strangely": [
+  {
+   "lemma": "strangely",
+   "he": "באופן מוזר"
+  }
+ ],
+ "straw": [
+  {
+   "lemma": "straw",
+   "he": "קש"
+  }
+ ],
+ "streaming": [
+  {
+   "lemma": "streaming",
+   "he": "סטרימינג; הזרמה"
+  }
+ ],
+ "street": [
+  {
+   "lemma": "street",
+   "he": "רחוב"
+  }
+ ],
+ "streets": [
+  {
+   "lemma": "street",
+   "he": "רחובות"
+  }
+ ],
+ "stress": [
+  {
+   "lemma": "stress",
+   "he": "לחץ; מתח"
+  }
+ ],
+ "stressful": [
+  {
+   "lemma": "stressful",
+   "he": "מלחיץ"
+  }
+ ],
+ "stroller": [
+  {
+   "lemma": "stroller",
+   "he": "עגלת תינוק"
+  }
+ ],
+ "strong": [
+  {
+   "lemma": "strong",
+   "he": "חזק"
+  }
+ ],
+ "struggling": [
+  {
+   "lemma": "struggle",
+   "he": "מתקשה; נאבק"
+  }
+ ],
+ "stuck": [
+  {
+   "lemma": "stick",
+   "he": "תקוע"
+  }
+ ],
+ "student": [
+  {
+   "lemma": "student",
+   "he": "תלמיד; סטודנט"
+  }
+ ],
+ "students": [
+  {
+   "lemma": "student",
+   "he": "תלמידים; סטודנטים"
+  }
+ ],
+ "studied": [
+  {
+   "lemma": "study",
+   "he": "למד"
+  }
+ ],
+ "studies": [
+  {
+   "lemma": "study",
+   "he": "לומדת; לומד"
+  }
+ ],
+ "study": [
+  {
+   "lemma": "study",
+   "he": "ללמוד"
+  }
+ ],
+ "studying": [
+  {
+   "lemma": "study",
+   "he": "לומדים; לימוד"
+  }
+ ],
+ "style": [
+  {
+   "lemma": "style",
+   "he": "סגנון"
+  }
+ ],
+ "subject": [
+  {
+   "lemma": "subject",
+   "he": "מקצוע (לימוד); נושא"
+  }
+ ],
+ "subjects": [
+  {
+   "lemma": "subject",
+   "he": "מקצועות; נושאים"
+  }
+ ],
+ "succeed": [
+  {
+   "lemma": "succeed",
+   "he": "להצליח"
+  }
+ ],
+ "succeeded": [
+  {
+   "lemma": "succeed",
+   "he": "הצליח"
+  }
+ ],
+ "success": [
+  {
+   "lemma": "success",
+   "he": "הצלחה"
+  }
+ ],
+ "successful": [
+  {
+   "lemma": "successful",
+   "he": "מוצלח; מצליח"
+  }
+ ],
+ "successfully": [
+  {
+   "lemma": "successfully",
+   "he": "בהצלחה"
+  }
+ ],
+ "such": [
+  {
+   "lemma": "such",
+   "he": "כזה; כל כך"
+  }
+ ],
+ "sudden": [
+  {
+   "lemma": "sudden",
+   "he": "פתאומי"
+  }
+ ],
+ "suddenly": [
+  {
+   "lemma": "suddenly",
+   "he": "פתאום"
+  }
+ ],
+ "sufficient": [
+  {
+   "lemma": "sufficient",
+   "he": "מספיק"
+  }
+ ],
+ "sugar": [
+  {
+   "lemma": "sugar",
+   "he": "סוכר"
+  }
+ ],
+ "sugary": [
+  {
+   "lemma": "sugary",
+   "he": "ממותק; מלא סוכר"
+  }
+ ],
+ "suggest": [
+  {
+   "lemma": "suggest",
+   "he": "להציע"
+  }
+ ],
+ "suggested": [
+  {
+   "lemma": "suggest",
+   "he": "הציע"
+  }
+ ],
+ "suggesting": [
+  {
+   "lemma": "suggest",
+   "he": "מציע"
+  }
+ ],
+ "suggests": [
+  {
+   "lemma": "suggest",
+   "he": "מציע"
+  }
+ ],
+ "suitcase": [
+  {
+   "lemma": "suitcase",
+   "he": "מזוודה"
+  }
+ ],
+ "sukkah": [
+  {
+   "lemma": "sukkah",
+   "he": "סוכה"
+  }
+ ],
+ "sukkot": [
+  {
+   "lemma": "Sukkot",
+   "he": "סוכות (חג)"
+  }
+ ],
+ "summer": [
+  {
+   "lemma": "summer",
+   "he": "קיץ"
+  }
+ ],
+ "sun": [
+  {
+   "lemma": "sun",
+   "he": "שמש"
+  }
+ ],
+ "sunday": [
+  {
+   "lemma": "Sunday",
+   "he": "יום ראשון"
+  }
+ ],
+ "sundays": [
+  {
+   "lemma": "Sunday",
+   "he": "בימי ראשון"
+  }
+ ],
+ "sunglasses": [
+  {
+   "lemma": "sunglasses",
+   "he": "משקפי שמש"
+  }
+ ],
+ "sunny": [
+  {
+   "lemma": "sunny",
+   "he": "שמשי"
+  }
+ ],
+ "sunrise": [
+  {
+   "lemma": "sunrise",
+   "he": "זריחה"
+  }
+ ],
+ "sunscreen": [
+  {
+   "lemma": "sunscreen",
+   "he": "קרם הגנה"
+  }
+ ],
+ "sunset": [
+  {
+   "lemma": "sunset",
+   "he": "שקיעה"
+  }
+ ],
+ "supermarket": [
+  {
+   "lemma": "supermarket",
+   "he": "סופרמרקט"
+  }
+ ],
+ "support": [
+  {
+   "lemma": "support",
+   "he": "לתמוך; לאהוד (קבוצה)"
+  }
+ ],
+ "supported": [
+  {
+   "lemma": "support",
+   "he": "תמך"
+  }
+ ],
+ "supporters": [
+  {
+   "lemma": "supporter",
+   "he": "תומכים"
+  }
+ ],
+ "supposed": [
+  {
+   "lemma": "suppose",
+   "he": "אמור (supposed to)"
+  }
+ ],
+ "sure": [
+  {
+   "lemma": "sure",
+   "he": "בטוח"
+  }
+ ],
+ "surprise": [
+  {
+   "lemma": "surprise",
+   "he": "הפתעה"
+  }
+ ],
+ "surprised": [
+  {
+   "lemma": "surprised",
+   "he": "מופתע"
+  }
+ ],
+ "surprising": [
+  {
+   "lemma": "surprising",
+   "he": "מפתיע"
+  }
+ ],
+ "surprisingly": [
+  {
+   "lemma": "surprisingly",
+   "he": "באופן מפתיע"
+  }
+ ],
+ "survey": [
+  {
+   "lemma": "survey",
+   "he": "סקר"
+  }
+ ],
+ "survive": [
+  {
+   "lemma": "survive",
+   "he": "לשרוד"
+  }
+ ],
+ "survived": [
+  {
+   "lemma": "survive",
+   "he": "שרד"
+  }
+ ],
+ "survives": [
+  {
+   "lemma": "survive",
+   "he": "שורד"
+  }
+ ],
+ "sweaty": [
+  {
+   "lemma": "sweaty",
+   "he": "מזיע"
+  }
+ ],
+ "sweet": [
+  {
+   "lemma": "sweet",
+   "he": "מתוק"
+  }
+ ],
+ "swim": [
+  {
+   "lemma": "swim",
+   "he": "לשחות"
+  }
+ ],
+ "swimming": [
+  {
+   "lemma": "swimming",
+   "he": "שחייה"
+  }
+ ],
+ "symbol": [
+  {
+   "lemma": "symbol",
+   "he": "סמל"
+  }
+ ],
+ "table": [
+  {
+   "lemma": "table",
+   "he": "שולחן"
+  }
+ ],
+ "tablecloth": [
+  {
+   "lemma": "tablecloth",
+   "he": "מפת שולחן"
+  }
+ ],
+ "tables": [
+  {
+   "lemma": "table",
+   "he": "שולחנות"
+  },
+  {
+   "lemma": "table",
+   "he": "טבלאות"
+  }
+ ],
+ "tail": [
+  {
+   "lemma": "tail",
+   "he": "זנב"
+  }
+ ],
+ "take": [
+  {
+   "lemma": "take",
+   "he": "לקחת"
+  },
+  {
+   "lemma": "take",
+   "he": "לצלם (take a photo)"
+  }
+ ],
+ "takes": [
+  {
+   "lemma": "take",
+   "he": "לוקח"
+  }
+ ],
+ "taking": [
+  {
+   "lemma": "take",
+   "he": "לקיחה; לוקח"
+  }
+ ],
+ "talent": [
+  {
+   "lemma": "talent",
+   "he": "כישרון"
+  }
+ ],
+ "talk": [
+  {
+   "lemma": "talk",
+   "he": "לדבר"
+  },
+  {
+   "lemma": "talk",
+   "he": "שיחה; הרצאה"
+  }
+ ],
+ "talked": [
+  {
+   "lemma": "talk",
+   "he": "דיבר"
+  }
+ ],
+ "talking": [
+  {
+   "lemma": "talk",
+   "he": "מדבר; דיבור"
+  }
+ ],
+ "talks": [
+  {
+   "lemma": "talk",
+   "he": "מדבר"
+  }
+ ],
+ "tall": [
+  {
+   "lemma": "tall",
+   "he": "גבוה"
+  }
+ ],
+ "taller": [
+  {
+   "lemma": "tall",
+   "he": "גבוה יותר"
+  }
+ ],
+ "tallest": [
+  {
+   "lemma": "tall",
+   "he": "הגבוה ביותר"
+  }
+ ],
+ "tamar": [
+  {
+   "lemma": "Tamar",
+   "he": "תמר (שם)"
+  }
+ ],
+ "taste": [
+  {
+   "lemma": "taste",
+   "he": "טעם"
+  },
+  {
+   "lemma": "taste",
+   "he": "לטעום"
+  }
+ ],
+ "taught": [
+  {
+   "lemma": "teach",
+   "he": "לימד"
+  }
+ ],
+ "taxes": [
+  {
+   "lemma": "tax",
+   "he": "מסים"
+  }
+ ],
+ "tea": [
+  {
+   "lemma": "tea",
+   "he": "תה"
+  }
+ ],
+ "teach": [
+  {
+   "lemma": "teach",
+   "he": "ללמד"
+  }
+ ],
+ "teacher": [
+  {
+   "lemma": "teacher",
+   "he": "מורה"
+  }
+ ],
+ "teachers": [
+  {
+   "lemma": "teacher",
+   "he": "מורים"
+  }
+ ],
+ "teaches": [
+  {
+   "lemma": "teach",
+   "he": "מלמד"
+  }
+ ],
+ "teaching": [
+  {
+   "lemma": "teach",
+   "he": "מלמדת; הוראה"
+  }
+ ],
+ "team": [
+  {
+   "lemma": "team",
+   "he": "קבוצה"
+  }
+ ],
+ "teammates": [
+  {
+   "lemma": "teammate",
+   "he": "חברי הקבוצה"
+  }
+ ],
+ "teams": [
+  {
+   "lemma": "team",
+   "he": "קבוצות"
+  }
+ ],
+ "tears": [
+  {
+   "lemma": "tear",
+   "he": "דמעות"
+  }
+ ],
+ "technology": [
+  {
+   "lemma": "technology",
+   "he": "טכנולוגיה"
+  }
+ ],
+ "teenage": [
+  {
+   "lemma": "teenage",
+   "he": "של בני נוער"
+  }
+ ],
+ "teenager": [
+  {
+   "lemma": "teenager",
+   "he": "נער; מתבגר"
+  }
+ ],
+ "teenagers": [
+  {
+   "lemma": "teenager",
+   "he": "בני נוער"
+  }
+ ],
+ "teens": [
+  {
+   "lemma": "teen",
+   "he": "בני נוער"
+  }
+ ],
+ "teeth": [
+  {
+   "lemma": "tooth",
+   "he": "שיניים"
+  }
+ ],
+ "teeths": [
+  {
+   "lemma": "teeth",
+   "he": "צורה שגויה (נכון: teeth)"
+  }
+ ],
+ "tel": [
+  {
+   "lemma": "Tel Aviv",
+   "he": "תל (תל אביב)"
+  }
+ ],
+ "telephone": [
+  {
+   "lemma": "telephone",
+   "he": "טלפון"
+  }
+ ],
+ "tell": [
+  {
+   "lemma": "tell",
+   "he": "לספר; לומר"
+  }
+ ],
+ "telled": [
+  {
+   "lemma": "told",
+   "he": "צורה שגויה (נכון: told)"
+  }
+ ],
+ "tells": [
+  {
+   "lemma": "tell",
+   "he": "מספר; אומר"
+  }
+ ],
+ "temperature": [
+  {
+   "lemma": "temperature",
+   "he": "טמפרטורה; חום"
+  }
+ ],
+ "temporary": [
+  {
+   "lemma": "temporary",
+   "he": "זמני"
+  }
+ ],
+ "ten": [
+  {
+   "lemma": "ten",
+   "he": "עשר"
+  }
+ ],
+ "tendency": [
+  {
+   "lemma": "tendency",
+   "he": "נטייה"
+  }
+ ],
+ "tends": [
+  {
+   "lemma": "tend",
+   "he": "נוטה"
+  }
+ ],
+ "tennis": [
+  {
+   "lemma": "tennis",
+   "he": "טניס"
+  }
+ ],
+ "terrible": [
+  {
+   "lemma": "terrible",
+   "he": "נורא; איום"
+  }
+ ],
+ "test": [
+  {
+   "lemma": "test",
+   "he": "מבחן"
+  }
+ ],
+ "tests": [
+  {
+   "lemma": "test",
+   "he": "מבחנים"
+  }
+ ],
+ "text": [
+  {
+   "lemma": "text",
+   "he": "טקסט"
+  }
+ ],
+ "than": [
+  {
+   "lemma": "than",
+   "he": "מאשר; מ־"
+  }
+ ],
+ "thank": [
+  {
+   "lemma": "thank",
+   "he": "להודות"
+  }
+ ],
+ "thanked": [
+  {
+   "lemma": "thank",
+   "he": "הודה"
+  }
+ ],
+ "thankful": [
+  {
+   "lemma": "thankful",
+   "he": "אסיר תודה"
+  }
+ ],
+ "thanks": [
+  {
+   "lemma": "thanks",
+   "he": "תודה"
+  }
+ ],
+ "that": [
+  {
+   "lemma": "that",
+   "he": "ש־ (מילת קישור)"
+  },
+  {
+   "lemma": "that",
+   "he": "ההוא; זה"
+  }
+ ],
+ "the": [
+  {
+   "lemma": "the",
+   "he": "ה׳ הידיעה"
+  }
+ ],
+ "their": [
+  {
+   "lemma": "their",
+   "he": "שלהם"
+  }
+ ],
+ "theirselves": [
+  {
+   "lemma": "themselves",
+   "he": "צורה שגויה (נכון: themselves)"
+  }
+ ],
+ "them": [
+  {
+   "lemma": "them",
+   "he": "אותם"
+  }
+ ],
+ "themself": [
+  {
+   "lemma": "themselves",
+   "he": "צורה שגויה (נכון: themselves)"
+  }
+ ],
+ "themselves": [
+  {
+   "lemma": "themselves",
+   "he": "בעצמם"
+  }
+ ],
+ "then": [
+  {
+   "lemma": "then",
+   "he": "אז; אחר כך"
+  }
+ ],
+ "there": [
+  {
+   "lemma": "there",
+   "he": "שם"
+  },
+  {
+   "lemma": "there",
+   "he": "יש (there is)"
+  }
+ ],
+ "therefore": [
+  {
+   "lemma": "therefore",
+   "he": "לכן"
+  }
+ ],
+ "these": [
+  {
+   "lemma": "these",
+   "he": "אלה"
+  }
+ ],
+ "they": [
+  {
+   "lemma": "they",
+   "he": "הם"
+  }
+ ],
+ "they'll": [
+  {
+   "lemma": "they will",
+   "he": "הם (בעתיד)"
+  }
+ ],
+ "they're": [
+  {
+   "lemma": "they are",
+   "he": "הם (they are)"
+  }
+ ],
+ "thick": [
+  {
+   "lemma": "thick",
+   "he": "עבה; סמיך"
+  }
+ ],
+ "thief": [
+  {
+   "lemma": "thief",
+   "he": "גנב"
+  }
+ ],
+ "thin": [
+  {
+   "lemma": "thin",
+   "he": "דק; רזה"
+  }
+ ],
+ "thing": [
+  {
+   "lemma": "thing",
+   "he": "דבר"
+  }
+ ],
+ "things": [
+  {
+   "lemma": "thing",
+   "he": "דברים"
+  }
+ ],
+ "think": [
+  {
+   "lemma": "think",
+   "he": "לחשוב"
+  }
+ ],
+ "thinked": [
+  {
+   "lemma": "thought",
+   "he": "צורה שגויה (נכון: thought)"
+  }
+ ],
+ "thinking": [
+  {
+   "lemma": "think",
+   "he": "חושב"
+  }
+ ],
+ "thinks": [
+  {
+   "lemma": "think",
+   "he": "חושב"
+  }
+ ],
+ "third": [
+  {
+   "lemma": "third",
+   "he": "שלישי"
+  }
+ ],
+ "thirsty": [
+  {
+   "lemma": "thirsty",
+   "he": "צמא"
+  }
+ ],
+ "thirteen": [
+  {
+   "lemma": "thirteen",
+   "he": "שלוש עשרה"
+  }
+ ],
+ "thirty": [
+  {
+   "lemma": "thirty",
+   "he": "שלושים"
+  }
+ ],
+ "this": [
+  {
+   "lemma": "this",
+   "he": "זה; הזה"
+  }
+ ],
+ "those": [
+  {
+   "lemma": "those",
+   "he": "ההם; אלה"
+  }
+ ],
+ "though": [
+  {
+   "lemma": "though",
+   "he": "למרות ש"
+  }
+ ],
+ "thought": [
+  {
+   "lemma": "think",
+   "he": "חשב"
+  },
+  {
+   "lemma": "thought",
+   "he": "מחשבה"
+  }
+ ],
+ "thousand": [
+  {
+   "lemma": "thousand",
+   "he": "אלף"
+  }
+ ],
+ "thousands": [
+  {
+   "lemma": "thousand",
+   "he": "אלפים"
+  }
+ ],
+ "three": [
+  {
+   "lemma": "three",
+   "he": "שלוש"
+  }
+ ],
+ "threw": [
+  {
+   "lemma": "throw",
+   "he": "זרק"
+  }
+ ],
+ "thrive": [
+  {
+   "lemma": "thrive",
+   "he": "לשגשג"
+  }
+ ],
+ "thrived": [
+  {
+   "lemma": "thrive",
+   "he": "שגשג"
+  }
+ ],
+ "through": [
+  {
+   "lemma": "through",
+   "he": "דרך"
+  }
+ ],
+ "throw": [
+  {
+   "lemma": "throw",
+   "he": "לזרוק"
+  }
+ ],
+ "thumb": [
+  {
+   "lemma": "thumb",
+   "he": "אגודל"
+  }
+ ],
+ "thursday": [
+  {
+   "lemma": "Thursday",
+   "he": "יום חמישי"
+  }
+ ],
+ "ticket": [
+  {
+   "lemma": "ticket",
+   "he": "כרטיס"
+  }
+ ],
+ "tickets": [
+  {
+   "lemma": "ticket",
+   "he": "כרטיסים"
+  }
+ ],
+ "tie": [
+  {
+   "lemma": "tie",
+   "he": "לקשור"
+  },
+  {
+   "lemma": "tie",
+   "he": "עניבה"
+  }
+ ],
+ "tied": [
+  {
+   "lemma": "tie",
+   "he": "קשור"
+  }
+ ],
+ "tight": [
+  {
+   "lemma": "tight",
+   "he": "הדוק; צמוד"
+  }
+ ],
+ "tightly": [
+  {
+   "lemma": "tightly",
+   "he": "בחוזקה; היטב"
+  }
+ ],
+ "till": [
+  {
+   "lemma": "till",
+   "he": "עד"
+  }
+ ],
+ "time": [
+  {
+   "lemma": "time",
+   "he": "זמן"
+  },
+  {
+   "lemma": "time",
+   "he": "פעם"
+  }
+ ],
+ "times": [
+  {
+   "lemma": "time",
+   "he": "פעמים"
+  },
+  {
+   "lemma": "time",
+   "he": "זמנים"
+  }
+ ],
+ "timetable": [
+  {
+   "lemma": "timetable",
+   "he": "מערכת שעות; לוח זמנים"
+  }
+ ],
+ "tin": [
+  {
+   "lemma": "tin",
+   "he": "קופסת פח"
+  },
+  {
+   "lemma": "tin",
+   "he": "בדיל"
+  }
+ ],
+ "tinned": [
+  {
+   "lemma": "tinned",
+   "he": "משומר (בקופסה)"
+  }
+ ],
+ "tiny": [
+  {
+   "lemma": "tiny",
+   "he": "זעיר"
+  }
+ ],
+ "tired": [
+  {
+   "lemma": "tired",
+   "he": "עייף"
+  }
+ ],
+ "title": [
+  {
+   "lemma": "title",
+   "he": "כותרת"
+  }
+ ],
+ "to": [
+  {
+   "lemma": "to",
+   "he": "אל; ל־"
+  }
+ ],
+ "today": [
+  {
+   "lemma": "today",
+   "he": "היום"
+  }
+ ],
+ "together": [
+  {
+   "lemma": "together",
+   "he": "ביחד"
+  }
+ ],
+ "toilets": [
+  {
+   "lemma": "toilet",
+   "he": "שירותים"
+  }
+ ],
+ "told": [
+  {
+   "lemma": "tell",
+   "he": "אמר; סיפר"
+  }
+ ],
+ "tom": [
+  {
+   "lemma": "Tom",
+   "he": "טום (שם)"
+  }
+ ],
+ "tomatoes": [
+  {
+   "lemma": "tomato",
+   "he": "עגבניות"
+  }
+ ],
+ "tomorrow": [
+  {
+   "lemma": "tomorrow",
+   "he": "מחר"
+  }
+ ],
+ "ton": [
+  {
+   "lemma": "ton",
+   "he": "טון"
+  }
+ ],
+ "tonight": [
+  {
+   "lemma": "tonight",
+   "he": "הלילה; הערב"
+  }
+ ],
+ "too": [
+  {
+   "lemma": "too",
+   "he": "מדי"
+  },
+  {
+   "lemma": "too",
+   "he": "גם"
+  }
+ ],
+ "took": [
+  {
+   "lemma": "take",
+   "he": "לקח"
+  }
+ ],
+ "tools": [
+  {
+   "lemma": "tool",
+   "he": "כלים"
+  }
+ ],
+ "tooth": [
+  {
+   "lemma": "tooth",
+   "he": "שן"
+  }
+ ],
+ "tooths": [
+  {
+   "lemma": "teeth",
+   "he": "צורה שגויה (נכון: teeth)"
+  }
+ ],
+ "top": [
+  {
+   "lemma": "top",
+   "he": "פסגה; ראש"
+  }
+ ],
+ "torah": [
+  {
+   "lemma": "Torah",
+   "he": "תורה"
+  }
+ ],
+ "torn": [
+  {
+   "lemma": "tear",
+   "he": "קרוע"
+  }
+ ],
+ "total": [
+  {
+   "lemma": "total",
+   "he": "סך הכול"
+  }
+ ],
+ "touch": [
+  {
+   "lemma": "touch",
+   "he": "לגעת"
+  }
+ ],
+ "touched": [
+  {
+   "lemma": "touch",
+   "he": "נגע"
+  }
+ ],
+ "touching": [
+  {
+   "lemma": "touch",
+   "he": "נגיעה; נוגע"
+  }
+ ],
+ "tourists": [
+  {
+   "lemma": "tourist",
+   "he": "תיירים"
+  }
+ ],
+ "toward": [
+  {
+   "lemma": "toward",
+   "he": "לעבר"
+  }
+ ],
+ "towards": [
+  {
+   "lemma": "towards",
+   "he": "כלפי; לעבר"
+  }
+ ],
+ "towel": [
+  {
+   "lemma": "towel",
+   "he": "מגבת"
+  }
+ ],
+ "tower": [
+  {
+   "lemma": "tower",
+   "he": "מגדל"
+  }
+ ],
+ "town": [
+  {
+   "lemma": "town",
+   "he": "עיר; עיירה"
+  }
+ ],
+ "towns": [
+  {
+   "lemma": "town",
+   "he": "ערים; עיירות"
+  }
+ ],
+ "tradition": [
+  {
+   "lemma": "tradition",
+   "he": "מסורת"
+  }
+ ],
+ "traffic": [
+  {
+   "lemma": "traffic",
+   "he": "תנועה (בכביש); פקקים"
+  }
+ ],
+ "tragic": [
+  {
+   "lemma": "tragic",
+   "he": "טרגי"
+  }
+ ],
+ "train": [
+  {
+   "lemma": "train",
+   "he": "רכבת"
+  },
+  {
+   "lemma": "train",
+   "he": "להתאמן"
+  }
+ ],
+ "trained": [
+  {
+   "lemma": "train",
+   "he": "התאמן"
+  }
+ ],
+ "training": [
+  {
+   "lemma": "training",
+   "he": "אימון"
+  }
+ ],
+ "tram": [
+  {
+   "lemma": "tram",
+   "he": "רכבת קלה"
+  }
+ ],
+ "transport": [
+  {
+   "lemma": "transport",
+   "he": "תחבורה"
+  }
+ ],
+ "travel": [
+  {
+   "lemma": "travel",
+   "he": "לטייל; לנסוע"
+  }
+ ],
+ "travellers": [
+  {
+   "lemma": "traveller",
+   "he": "נוסעים; מטיילים"
+  }
+ ],
+ "tree": [
+  {
+   "lemma": "tree",
+   "he": "עץ"
+  }
+ ],
+ "trees": [
+  {
+   "lemma": "tree",
+   "he": "עצים"
+  }
+ ],
+ "trial": [
+  {
+   "lemma": "trial",
+   "he": "ניסוי"
+  },
+  {
+   "lemma": "trial",
+   "he": "משפט (בבית משפט)"
+  }
+ ],
+ "tricky": [
+  {
+   "lemma": "tricky",
+   "he": "מסובך; בעייתי"
+  }
+ ],
+ "tried": [
+  {
+   "lemma": "try",
+   "he": "ניסה"
+  }
+ ],
+ "tries": [
+  {
+   "lemma": "try",
+   "he": "מנסה"
+  }
+ ],
+ "trip": [
+  {
+   "lemma": "trip",
+   "he": "טיול"
+  }
+ ],
+ "trouble": [
+  {
+   "lemma": "trouble",
+   "he": "צרה; בעיה"
+  }
+ ],
+ "truck": [
+  {
+   "lemma": "truck",
+   "he": "משאית"
+  }
+ ],
+ "true": [
+  {
+   "lemma": "true",
+   "he": "נכון; אמיתי"
+  }
+ ],
+ "trust": [
+  {
+   "lemma": "trust",
+   "he": "לסמוך על"
+  }
+ ],
+ "truth": [
+  {
+   "lemma": "truth",
+   "he": "אמת"
+  }
+ ],
+ "try": [
+  {
+   "lemma": "try",
+   "he": "לנסות"
+  }
+ ],
+ "trying": [
+  {
+   "lemma": "try",
+   "he": "מנסה"
+  }
+ ],
+ "tuesday": [
+  {
+   "lemma": "Tuesday",
+   "he": "יום שלישי"
+  }
+ ],
+ "tuesdays": [
+  {
+   "lemma": "Tuesday",
+   "he": "בימי שלישי"
+  }
+ ],
+ "tune": [
+  {
+   "lemma": "tune",
+   "he": "מנגינה; טעמים"
+  }
+ ],
+ "turn": [
+  {
+   "lemma": "turn",
+   "he": "תור"
+  },
+  {
+   "lemma": "turn",
+   "he": "לסובב; לפנות"
+  }
+ ],
+ "turned": [
+  {
+   "lemma": "turn",
+   "he": "הסתובב, פנה"
+  },
+  {
+   "lemma": "turn",
+   "he": "כיבה (turned off)"
+  }
+ ],
+ "turning": [
+  {
+   "lemma": "turn",
+   "he": "פונה, מסתובב"
+  },
+  {
+   "lemma": "turn",
+   "he": "מכבה (turning off)"
+  }
+ ],
+ "turns": [
+  {
+   "lemma": "turn",
+   "he": "מסתובב, פונה"
+  },
+  {
+   "lemma": "turn",
+   "he": "מתברר (turns out)"
+  }
+ ],
+ "tutoring": [
+  {
+   "lemma": "tutor",
+   "he": "שיעורים פרטיים"
+  }
+ ],
+ "tv": [
+  {
+   "lemma": "TV",
+   "he": "טלוויזיה"
+  }
+ ],
+ "twelve": [
+  {
+   "lemma": "twelve",
+   "he": "שתים עשרה"
+  }
+ ],
+ "twenty": [
+  {
+   "lemma": "twenty",
+   "he": "עשרים"
+  }
+ ],
+ "twice": [
+  {
+   "lemma": "twice",
+   "he": "פעמיים"
+  }
+ ],
+ "two": [
+  {
+   "lemma": "two",
+   "he": "שתיים; שניים"
+  }
+ ],
+ "type": [
+  {
+   "lemma": "type",
+   "he": "להקליד"
+  },
+  {
+   "lemma": "type",
+   "he": "סוג"
+  }
+ ],
+ "tzedakah": [
+  {
+   "lemma": "tzedakah",
+   "he": "צדקה"
+  }
+ ],
+ "ufo": [
+  {
+   "lemma": "UFO",
+   "he": "עב״ם"
+  }
+ ],
+ "umbrella": [
+  {
+   "lemma": "umbrella",
+   "he": "מטרייה"
+  }
+ ],
+ "unable": [
+  {
+   "lemma": "unable",
+   "he": "לא מסוגל"
+  }
+ ],
+ "unagree": [
+  {
+   "lemma": "disagree",
+   "he": "צורה שגויה (נכון: disagree)"
+  }
+ ],
+ "unappeared": [
+  {
+   "lemma": "disappeared",
+   "he": "צורה שגויה (נכון: disappeared)"
+  }
+ ],
+ "unbelievable": [
+  {
+   "lemma": "unbelievable",
+   "he": "לא ייאמן"
+  }
+ ],
+ "uncertain": [
+  {
+   "lemma": "uncertain",
+   "he": "לא ודאי"
+  }
+ ],
+ "uncle": [
+  {
+   "lemma": "uncle",
+   "he": "דוד"
+  }
+ ],
+ "uncomfortable": [
+  {
+   "lemma": "uncomfortable",
+   "he": "לא נוח"
+  }
+ ],
+ "under": [
+  {
+   "lemma": "under",
+   "he": "מתחת ל־"
+  }
+ ],
+ "understand": [
+  {
+   "lemma": "understand",
+   "he": "להבין"
+  }
+ ],
+ "understanding": [
+  {
+   "lemma": "understand",
+   "he": "הבנה; מבין"
+  }
+ ],
+ "understands": [
+  {
+   "lemma": "understand",
+   "he": "מבין"
+  }
+ ],
+ "understood": [
+  {
+   "lemma": "understand",
+   "he": "הבין"
+  }
+ ],
+ "underwater": [
+  {
+   "lemma": "underwater",
+   "he": "תת־ימי"
+  }
+ ],
+ "unemployed": [
+  {
+   "lemma": "unemployed",
+   "he": "מובטל"
+  }
+ ],
+ "unemployment": [
+  {
+   "lemma": "unemployment",
+   "he": "אבטלה"
+  }
+ ],
+ "unfriendly": [
+  {
+   "lemma": "unfriendly",
+   "he": "לא ידידותי"
+  }
+ ],
+ "ungrateful": [
+  {
+   "lemma": "ungrateful",
+   "he": "כפוי טובה"
+  }
+ ],
+ "unhappy": [
+  {
+   "lemma": "unhappy",
+   "he": "אומלל; לא מאושר"
+  }
+ ],
+ "unhonest": [
+  {
+   "lemma": "dishonest",
+   "he": "צורה שגויה (נכון: dishonest)"
+  }
+ ],
+ "uniform": [
+  {
+   "lemma": "uniform",
+   "he": "תלבושת אחידה"
+  }
+ ],
+ "unimportant": [
+  {
+   "lemma": "unimportant",
+   "he": "לא חשוב"
+  }
+ ],
+ "university": [
+  {
+   "lemma": "university",
+   "he": "אוניברסיטה"
+  }
+ ],
+ "unkind": [
+  {
+   "lemma": "unkind",
+   "he": "לא נחמד; אכזרי"
+  }
+ ],
+ "unlegal": [
+  {
+   "lemma": "illegal",
+   "he": "צורה שגויה (נכון: illegal)"
+  }
+ ],
+ "unless": [
+  {
+   "lemma": "unless",
+   "he": "אלא אם כן"
+  }
+ ],
+ "unlikely": [
+  {
+   "lemma": "unlikely",
+   "he": "לא סביר"
+  }
+ ],
+ "unpatient": [
+  {
+   "lemma": "impatient",
+   "he": "צורה שגויה (נכון: impatient)"
+  }
+ ],
+ "unpossible": [
+  {
+   "lemma": "impossible",
+   "he": "צורה שגויה (נכון: impossible)"
+  }
+ ],
+ "unresponsible": [
+  {
+   "lemma": "irresponsible",
+   "he": "צורה שגויה (נכון: irresponsible)"
+  }
+ ],
+ "unsteady": [
+  {
+   "lemma": "unsteady",
+   "he": "לא יציב"
+  }
+ ],
+ "unsure": [
+  {
+   "lemma": "unsure",
+   "he": "לא בטוח"
+  }
+ ],
+ "until": [
+  {
+   "lemma": "until",
+   "he": "עד"
+  }
+ ],
+ "ununderstanding": [
+  {
+   "lemma": "misunderstanding",
+   "he": "צורה שגויה (נכון: misunderstanding)"
+  }
+ ],
+ "unusual": [
+  {
+   "lemma": "unusual",
+   "he": "יוצא דופן; לא רגיל"
+  }
+ ],
+ "up": [
+  {
+   "lemma": "up",
+   "he": "למעלה"
+  }
+ ],
+ "upset": [
+  {
+   "lemma": "upset",
+   "he": "נסער; מוטרד"
+  }
+ ],
+ "upstairs": [
+  {
+   "lemma": "upstairs",
+   "he": "למעלה (בקומה עליונה)"
+  }
+ ],
+ "urgent": [
+  {
+   "lemma": "urgent",
+   "he": "דחוף"
+  }
+ ],
+ "us": [
+  {
+   "lemma": "us",
+   "he": "אותנו; לנו"
+  }
+ ],
+ "usage": [
+  {
+   "lemma": "usage",
+   "he": "שימוש"
+  }
+ ],
+ "use": [
+  {
+   "lemma": "use",
+   "he": "שימוש; תועלת"
+  },
+  {
+   "lemma": "use",
+   "he": "להשתמש"
+  }
+ ],
+ "used": [
+  {
+   "lemma": "use",
+   "he": "השתמש"
+  },
+  {
+   "lemma": "use",
+   "he": "נהג ל־ (used to)"
+  }
+ ],
+ "useful": [
+  {
+   "lemma": "useful",
+   "he": "שימושי; מועיל"
+  }
+ ],
+ "usefully": [
+  {
+   "lemma": "usefully",
+   "he": "באופן מועיל"
+  }
+ ],
+ "useless": [
+  {
+   "lemma": "useless",
+   "he": "חסר תועלת"
+  }
+ ],
+ "uses": [
+  {
+   "lemma": "use",
+   "he": "משתמש"
+  }
+ ],
+ "using": [
+  {
+   "lemma": "use",
+   "he": "משתמש; שימוש"
+  }
+ ],
+ "usual": [
+  {
+   "lemma": "usual",
+   "he": "רגיל; כרגיל"
+  }
+ ],
+ "usually": [
+  {
+   "lemma": "usually",
+   "he": "בדרך כלל"
+  }
+ ],
+ "vacation": [
+  {
+   "lemma": "vacation",
+   "he": "חופשה"
+  }
+ ],
+ "varga": [
+  {
+   "lemma": "Varga",
+   "he": "ורגה (שם)"
+  }
+ ],
+ "vegetable": [
+  {
+   "lemma": "vegetable",
+   "he": "ירק"
+  }
+ ],
+ "vegetables": [
+  {
+   "lemma": "vegetable",
+   "he": "ירקות"
+  }
+ ],
+ "vegetarian": [
+  {
+   "lemma": "vegetarian",
+   "he": "צמחוני"
+  }
+ ],
+ "verse": [
+  {
+   "lemma": "verse",
+   "he": "פסוק"
+  }
+ ],
+ "very": [
+  {
+   "lemma": "very",
+   "he": "מאוד"
+  }
+ ],
+ "vest": [
+  {
+   "lemma": "vest",
+   "he": "אפוד; גופייה"
+  }
+ ],
+ "vet": [
+  {
+   "lemma": "vet",
+   "he": "וטרינר"
+  }
+ ],
+ "video": [
+  {
+   "lemma": "video",
+   "he": "וידאו; סרטון"
+  }
+ ],
+ "videos": [
+  {
+   "lemma": "video",
+   "he": "סרטונים"
+  }
+ ],
+ "view": [
+  {
+   "lemma": "view",
+   "he": "נוף"
+  },
+  {
+   "lemma": "view",
+   "he": "דעה"
+  }
+ ],
+ "village": [
+  {
+   "lemma": "village",
+   "he": "כפר"
+  }
+ ],
+ "vinci": [
+  {
+   "lemma": "da Vinci",
+   "he": "דה וינצ׳י (שם)"
+  }
+ ],
+ "vine": [
+  {
+   "lemma": "vine",
+   "he": "גפן"
+  }
+ ],
+ "visa": [
+  {
+   "lemma": "visa",
+   "he": "ויזה; אשרה"
+  }
+ ],
+ "visit": [
+  {
+   "lemma": "visit",
+   "he": "ביקור"
+  },
+  {
+   "lemma": "visit",
+   "he": "לבקר"
+  }
+ ],
+ "visited": [
+  {
+   "lemma": "visit",
+   "he": "ביקר"
+  }
+ ],
+ "visiting": [
+  {
+   "lemma": "visit",
+   "he": "ביקור; מבקר"
+  }
+ ],
+ "visitor": [
+  {
+   "lemma": "visitor",
+   "he": "מבקר; אורח"
+  }
+ ],
+ "visitors": [
+  {
+   "lemma": "visitor",
+   "he": "מבקרים"
+  }
+ ],
+ "visits": [
+  {
+   "lemma": "visit",
+   "he": "ביקורים"
+  },
+  {
+   "lemma": "visit",
+   "he": "מבקר"
+  }
+ ],
+ "vitamin": [
+  {
+   "lemma": "vitamin",
+   "he": "ויטמין"
+  }
+ ],
+ "voice": [
+  {
+   "lemma": "voice",
+   "he": "קול"
+  }
+ ],
+ "volcano": [
+  {
+   "lemma": "volcano",
+   "he": "הר געש"
+  }
+ ],
+ "volunteer": [
+  {
+   "lemma": "volunteer",
+   "he": "מתנדב"
+  }
+ ],
+ "volunteers": [
+  {
+   "lemma": "volunteer",
+   "he": "מתנדבת; מתנדב"
+  },
+  {
+   "lemma": "volunteer",
+   "he": "מתנדבים"
+  }
+ ],
+ "voted": [
+  {
+   "lemma": "vote",
+   "he": "הצביע"
+  }
+ ],
+ "wagging": [
+  {
+   "lemma": "wag",
+   "he": "מכשכש"
+  }
+ ],
+ "wait": [
+  {
+   "lemma": "wait",
+   "he": "לחכות"
+  }
+ ],
+ "waited": [
+  {
+   "lemma": "wait",
+   "he": "חיכה"
+  }
+ ],
+ "waiter": [
+  {
+   "lemma": "waiter",
+   "he": "מלצר"
+  }
+ ],
+ "waiting": [
+  {
+   "lemma": "wait",
+   "he": "מחכה"
+  }
+ ],
+ "waits": [
+  {
+   "lemma": "wait",
+   "he": "מחכה"
+  }
+ ],
+ "wake": [
+  {
+   "lemma": "wake",
+   "he": "להתעורר (wake up)"
+  }
+ ],
+ "waking": [
+  {
+   "lemma": "wake",
+   "he": "התעוררות"
+  }
+ ],
+ "walk": [
+  {
+   "lemma": "walk",
+   "he": "ללכת (ברגל)"
+  },
+  {
+   "lemma": "walk",
+   "he": "הליכה"
+  }
+ ],
+ "walked": [
+  {
+   "lemma": "walk",
+   "he": "הלך (ברגל)"
+  }
+ ],
+ "walking": [
+  {
+   "lemma": "walk",
+   "he": "הליכה"
+  }
+ ],
+ "walks": [
+  {
+   "lemma": "walk",
+   "he": "הולך (ברגל)"
+  }
+ ],
+ "wall": [
+  {
+   "lemma": "wall",
+   "he": "קיר; חומה"
+  }
+ ],
+ "wallet": [
+  {
+   "lemma": "wallet",
+   "he": "ארנק"
+  }
+ ],
+ "walls": [
+  {
+   "lemma": "wall",
+   "he": "קירות"
+  }
+ ],
+ "want": [
+  {
+   "lemma": "want",
+   "he": "לרצות"
+  }
+ ],
+ "wanted": [
+  {
+   "lemma": "want",
+   "he": "רצה"
+  }
+ ],
+ "wanting": [
+  {
+   "lemma": "want",
+   "he": "רוצה; רצון"
+  }
+ ],
+ "wants": [
+  {
+   "lemma": "want",
+   "he": "רוצה"
+  }
+ ],
+ "war": [
+  {
+   "lemma": "war",
+   "he": "מלחמה"
+  }
+ ],
+ "warm": [
+  {
+   "lemma": "warm",
+   "he": "חם; חמים"
+  },
+  {
+   "lemma": "warm",
+   "he": "להתחמם (warm up)"
+  }
+ ],
+ "warn": [
+  {
+   "lemma": "warn",
+   "he": "להזהיר"
+  }
+ ],
+ "warning": [
+  {
+   "lemma": "warning",
+   "he": "אזהרה"
+  }
+ ],
+ "warns": [
+  {
+   "lemma": "warn",
+   "he": "מזהיר"
+  }
+ ],
+ "was": [
+  {
+   "lemma": "be",
+   "he": "היה"
+  }
+ ],
+ "wash": [
+  {
+   "lemma": "wash",
+   "he": "לשטוף; לרחוץ"
+  }
+ ],
+ "washed": [
+  {
+   "lemma": "wash",
+   "he": "נשטף; שטף"
+  }
+ ],
+ "washing": [
+  {
+   "lemma": "wash",
+   "he": "שטיפה; כביסה"
+  }
+ ],
+ "wasn't": [
+  {
+   "lemma": "was not",
+   "he": "לא היה"
+  }
+ ],
+ "waste": [
+  {
+   "lemma": "waste",
+   "he": "בזבוז"
+  },
+  {
+   "lemma": "waste",
+   "he": "לבזבז"
+  }
+ ],
+ "wasting": [
+  {
+   "lemma": "waste",
+   "he": "בזבוז; מבזבז"
+  }
+ ],
+ "watch": [
+  {
+   "lemma": "watch",
+   "he": "לצפות"
+  },
+  {
+   "lemma": "watch",
+   "he": "שעון יד"
+  }
+ ],
+ "watched": [
+  {
+   "lemma": "watch",
+   "he": "צפה"
+  }
+ ],
+ "watches": [
+  {
+   "lemma": "watch",
+   "he": "צופה"
+  },
+  {
+   "lemma": "watch",
+   "he": "שעונים"
+  }
+ ],
+ "watching": [
+  {
+   "lemma": "watch",
+   "he": "צופה"
+  }
+ ],
+ "water": [
+  {
+   "lemma": "water",
+   "he": "מים"
+  }
+ ],
+ "waves": [
+  {
+   "lemma": "wave",
+   "he": "גלים"
+  }
+ ],
+ "way": [
+  {
+   "lemma": "way",
+   "he": "דרך"
+  }
+ ],
+ "we": [
+  {
+   "lemma": "we",
+   "he": "אנחנו"
+  }
+ ],
+ "we'll": [
+  {
+   "lemma": "we will",
+   "he": "אנחנו (בעתיד)"
+  }
+ ],
+ "we're": [
+  {
+   "lemma": "we are",
+   "he": "אנחנו (we are)"
+  }
+ ],
+ "we've": [
+  {
+   "lemma": "we have",
+   "he": "אנחנו (we have)"
+  }
+ ],
+ "weak": [
+  {
+   "lemma": "weak",
+   "he": "חלש"
+  }
+ ],
+ "wear": [
+  {
+   "lemma": "wear",
+   "he": "ללבוש; להרכיב"
+  }
+ ],
+ "weather": [
+  {
+   "lemma": "weather",
+   "he": "מזג אוויר"
+  }
+ ],
+ "website": [
+  {
+   "lemma": "website",
+   "he": "אתר אינטרנט"
+  }
+ ],
+ "wedding": [
+  {
+   "lemma": "wedding",
+   "he": "חתונה"
+  }
+ ],
+ "wednesday": [
+  {
+   "lemma": "Wednesday",
+   "he": "יום רביעי"
+  }
+ ],
+ "week": [
+  {
+   "lemma": "week",
+   "he": "שבוע"
+  }
+ ],
+ "weekend": [
+  {
+   "lemma": "weekend",
+   "he": "סוף שבוע"
+  }
+ ],
+ "weeks": [
+  {
+   "lemma": "week",
+   "he": "שבועות"
+  }
+ ],
+ "well": [
+  {
+   "lemma": "well",
+   "he": "טוב (תואר הפועל)"
+  },
+  {
+   "lemma": "well",
+   "he": "ובכן"
+  }
+ ],
+ "went": [
+  {
+   "lemma": "go",
+   "he": "הלך; נמשך"
+  }
+ ],
+ "were": [
+  {
+   "lemma": "be",
+   "he": "היו"
+  }
+ ],
+ "weren't": [
+  {
+   "lemma": "were not",
+   "he": "לא היו"
+  }
+ ],
+ "west": [
+  {
+   "lemma": "west",
+   "he": "מערב"
+  }
+ ],
+ "wet": [
+  {
+   "lemma": "wet",
+   "he": "רטוב"
+  }
+ ],
+ "wetter": [
+  {
+   "lemma": "wet",
+   "he": "רטוב יותר"
+  }
+ ],
+ "what": [
+  {
+   "lemma": "what",
+   "he": "מה"
+  }
+ ],
+ "wheels": [
+  {
+   "lemma": "wheel",
+   "he": "גלגלים"
+  }
+ ],
+ "when": [
+  {
+   "lemma": "when",
+   "he": "כאשר"
+  },
+  {
+   "lemma": "when",
+   "he": "מתי"
+  }
+ ],
+ "where": [
+  {
+   "lemma": "where",
+   "he": "איפה; איפה ש"
+  }
+ ],
+ "whereas": [
+  {
+   "lemma": "whereas",
+   "he": "ואילו; בעוד ש"
+  }
+ ],
+ "whether": [
+  {
+   "lemma": "whether",
+   "he": "האם; אם"
+  }
+ ],
+ "which": [
+  {
+   "lemma": "which",
+   "he": "איזה; אשר"
+  }
+ ],
+ "while": [
+  {
+   "lemma": "while",
+   "he": "בזמן ש"
+  },
+  {
+   "lemma": "while",
+   "he": "זמן מה"
+  }
+ ],
+ "white": [
+  {
+   "lemma": "white",
+   "he": "לבן"
+  }
+ ],
+ "who": [
+  {
+   "lemma": "who",
+   "he": "מי"
+  },
+  {
+   "lemma": "who",
+   "he": "אשר; ש־"
+  }
+ ],
+ "whole": [
+  {
+   "lemma": "whole",
+   "he": "כל ה־; שלם"
+  }
+ ],
+ "whom": [
+  {
+   "lemma": "whom",
+   "he": "אשר (אותם); את מי"
+  }
+ ],
+ "whose": [
+  {
+   "lemma": "whose",
+   "he": "של מי; ששלו"
+  }
+ ],
+ "why": [
+  {
+   "lemma": "why",
+   "he": "למה"
+  }
+ ],
+ "widespread": [
+  {
+   "lemma": "widespread",
+   "he": "נפוץ"
+  }
+ ],
+ "widows": [
+  {
+   "lemma": "widow",
+   "he": "אלמנות"
+  }
+ ],
+ "wife": [
+  {
+   "lemma": "wife",
+   "he": "אישה (רעיה)"
+  }
+ ],
+ "wild": [
+  {
+   "lemma": "wild",
+   "he": "פראי; הטבע"
+  }
+ ],
+ "will": [
+  {
+   "lemma": "will",
+   "he": "פועל עזר לעתיד"
+  },
+  {
+   "lemma": "will",
+   "he": "רצון; צוואה"
+  }
+ ],
+ "win": [
+  {
+   "lemma": "win",
+   "he": "לנצח; לזכות"
+  }
+ ],
+ "wind": [
+  {
+   "lemma": "wind",
+   "he": "רוח"
+  }
+ ],
+ "window": [
+  {
+   "lemma": "window",
+   "he": "חלון"
+  }
+ ],
+ "windows": [
+  {
+   "lemma": "window",
+   "he": "חלונות"
+  }
+ ],
+ "windy": [
+  {
+   "lemma": "windy",
+   "he": "סוער, עם רוח חזקה"
+  }
+ ],
+ "wine": [
+  {
+   "lemma": "wine",
+   "he": "יין"
+  }
+ ],
+ "wings": [
+  {
+   "lemma": "wing",
+   "he": "כנפיים"
+  }
+ ],
+ "winter": [
+  {
+   "lemma": "winter",
+   "he": "חורף"
+  }
+ ],
+ "wish": [
+  {
+   "lemma": "wish",
+   "he": "הלוואי; לאחל"
+  },
+  {
+   "lemma": "wish",
+   "he": "משאלה"
+  }
+ ],
+ "wished": [
+  {
+   "lemma": "wish",
+   "he": "איחל"
+  }
+ ],
+ "wishes": [
+  {
+   "lemma": "wish",
+   "he": "רוצה ש; מתחרטת ש"
+  },
+  {
+   "lemma": "wish",
+   "he": "איחולים"
+  }
+ ],
+ "with": [
+  {
+   "lemma": "with",
+   "he": "עם; ב־"
+  }
+ ],
+ "within": [
+  {
+   "lemma": "within",
+   "he": "תוך; בתוך"
+  }
+ ],
+ "without": [
+  {
+   "lemma": "without",
+   "he": "בלי"
+  }
+ ],
+ "woke": [
+  {
+   "lemma": "wake",
+   "he": "התעורר"
+  }
+ ],
+ "woman": [
+  {
+   "lemma": "woman",
+   "he": "אישה"
+  }
+ ],
+ "women": [
+  {
+   "lemma": "woman",
+   "he": "נשים"
+  }
+ ],
+ "won": [
+  {
+   "lemma": "win",
+   "he": "ניצח; זכה"
+  }
+ ],
+ "won't": [
+  {
+   "lemma": "will not",
+   "he": "לא (בעתיד)"
+  }
+ ],
+ "wonderful": [
+  {
+   "lemma": "wonderful",
+   "he": "נפלא"
+  }
+ ],
+ "wonderfully": [
+  {
+   "lemma": "wonderfully",
+   "he": "באופן נפלא"
+  }
+ ],
+ "wooden": [
+  {
+   "lemma": "wooden",
+   "he": "עשוי עץ"
+  }
+ ],
+ "word": [
+  {
+   "lemma": "word",
+   "he": "מילה"
+  }
+ ],
+ "words": [
+  {
+   "lemma": "word",
+   "he": "מילים"
+  }
+ ],
+ "wore": [
+  {
+   "lemma": "wear",
+   "he": "לבש"
+  }
+ ],
+ "work": [
+  {
+   "lemma": "work",
+   "he": "לעבוד"
+  },
+  {
+   "lemma": "work",
+   "he": "עבודה"
+  }
+ ],
+ "worked": [
+  {
+   "lemma": "work",
+   "he": "עבד"
+  }
+ ],
+ "workers": [
+  {
+   "lemma": "worker",
+   "he": "עובדים"
+  }
+ ],
+ "working": [
+  {
+   "lemma": "work",
+   "he": "עובד"
+  }
+ ],
+ "works": [
+  {
+   "lemma": "work",
+   "he": "עובד; פועל"
+  }
+ ],
+ "world": [
+  {
+   "lemma": "world",
+   "he": "עולם"
+  }
+ ],
+ "worn": [
+  {
+   "lemma": "wear",
+   "he": "לבש (צורה שלישית)"
+  }
+ ],
+ "worried": [
+  {
+   "lemma": "worried",
+   "he": "מודאג"
+  }
+ ],
+ "worry": [
+  {
+   "lemma": "worry",
+   "he": "לדאוג"
+  }
+ ],
+ "worse": [
+  {
+   "lemma": "bad",
+   "he": "גרוע יותר"
+  }
+ ],
+ "worst": [
+  {
+   "lemma": "bad",
+   "he": "הגרוע ביותר"
+  }
+ ],
+ "worth": [
+  {
+   "lemma": "worth",
+   "he": "שווה; כדאי"
+  }
+ ],
+ "would": [
+  {
+   "lemma": "would",
+   "he": "פועל עזר לתנאי"
+  }
+ ],
+ "wouldn't": [
+  {
+   "lemma": "would not",
+   "he": "לא (פועל עזר לתנאי)"
+  }
+ ],
+ "wrapped": [
+  {
+   "lemma": "wrap",
+   "he": "עטוף"
+  }
+ ],
+ "wright": [
+  {
+   "lemma": "Wright",
+   "he": "רייט (שם)"
+  }
+ ],
+ "write": [
+  {
+   "lemma": "write",
+   "he": "לכתוב"
+  }
+ ],
+ "writed": [
+  {
+   "lemma": "wrote",
+   "he": "צורה שגויה (נכון: wrote)"
+  }
+ ],
+ "writer": [
+  {
+   "lemma": "writer",
+   "he": "הכותב; סופר"
+  }
+ ],
+ "writes": [
+  {
+   "lemma": "write",
+   "he": "כותב"
+  }
+ ],
+ "writing": [
+  {
+   "lemma": "write",
+   "he": "כותבת; כתיבה"
+  }
+ ],
+ "written": [
+  {
+   "lemma": "write",
+   "he": "נכתב"
+  }
+ ],
+ "wrong": [
+  {
+   "lemma": "wrong",
+   "he": "לא נכון; טועה"
+  }
+ ],
+ "wrote": [
+  {
+   "lemma": "write",
+   "he": "כתב"
+  }
+ ],
+ "michal": [
+  {
+   "lemma": "Michal",
+   "he": "מיכל (שם)"
+  }
+ ],
+ "yard": [
+  {
+   "lemma": "yard",
+   "he": "חצר"
+  }
+ ],
+ "year": [
+  {
+   "lemma": "year",
+   "he": "שנה"
+  }
+ ],
+ "yearly": [
+  {
+   "lemma": "yearly",
+   "he": "שנתי"
+  }
+ ],
+ "years": [
+  {
+   "lemma": "year",
+   "he": "שנים"
+  }
+ ],
+ "yes": [
+  {
+   "lemma": "yes",
+   "he": "כן"
+  }
+ ],
+ "yesterday": [
+  {
+   "lemma": "yesterday",
+   "he": "אתמול"
+  }
+ ],
+ "yet": [
+  {
+   "lemma": "yet",
+   "he": "עדיין (לא); כבר"
+  },
+  {
+   "lemma": "yet",
+   "he": "אבל; עם זאת"
+  }
+ ],
+ "yoav": [
+  {
+   "lemma": "Yoav",
+   "he": "יואב (שם)"
+  }
+ ],
+ "yom": [
+  {
+   "lemma": "Yom Kippur",
+   "he": "יום (יום כיפור)"
+  }
+ ],
+ "yoni": [
+  {
+   "lemma": "Yoni",
+   "he": "יוני (שם)"
+  }
+ ],
+ "york": [
+  {
+   "lemma": "New York",
+   "he": "יורק (ניו יורק)"
+  }
+ ],
+ "yosef": [
+  {
+   "lemma": "Yosef",
+   "he": "יוסף (שם)"
+  }
+ ],
+ "you": [
+  {
+   "lemma": "you",
+   "he": "אתה; את; אתם"
+  }
+ ],
+ "you'd": [
+  {
+   "lemma": "you had",
+   "he": "כדאי לך (you'd better)"
+  },
+  {
+   "lemma": "you would",
+   "he": "היית (תנאי)"
+  }
+ ],
+ "you'll": [
+  {
+   "lemma": "you will",
+   "he": "אתה (בעתיד)"
+  }
+ ],
+ "you're": [
+  {
+   "lemma": "you are",
+   "he": "אתה; את (you are)"
+  }
+ ],
+ "young": [
+  {
+   "lemma": "young",
+   "he": "צעיר"
+  }
+ ],
+ "younger": [
+  {
+   "lemma": "young",
+   "he": "צעיר יותר"
+  }
+ ],
+ "your": [
+  {
+   "lemma": "your",
+   "he": "שלך; שלכם"
+  }
+ ],
+ "yours": [
+  {
+   "lemma": "yours",
+   "he": "שלך"
+  }
+ ],
+ "zones": [
+  {
+   "lemma": "zone",
+   "he": "אזורים"
+  }
+ ]
+}

@@ -1453,7 +1453,7 @@
       "difficulty": 0.4,
       "modality": "listen",
       "prompt": "Where does the speaker think the keys are?",
-      "audioText": "I've lost my keys again! I think I left them at Noa's house.",
+      "audioText": "I've lost my keys again! I think I left them at Dina's house.",
       "instruction": {
         "he": "להקשיב ולענות על השאלה",
         "en": "Listen and answer the question"
@@ -1461,7 +1461,7 @@
       "options": [
         {
           "id": "a",
-          "text": "At Noa's house"
+          "text": "At Dina's house"
         },
         {
           "id": "b",
@@ -1480,8 +1480,8 @@
         }
       ],
       "explanation": {
-        "he": "I left them at Noa's house = השארתי אותם אצל נועה.",
-        "en": "They think they left them at Noa's house."
+        "he": "I left them at Dina's house = השארתי אותם אצל דינה.",
+        "en": "They think they left them at Dina's house."
       },
       "interests": [],
       "estimatedTimeSec": 20,
@@ -2321,7 +2321,7 @@
       "difficulty": 0.5,
       "modality": "listen",
       "prompt": "Whose bike will Amit use?",
-      "audioText": "Noa: Do you want to borrow my bike? Amit: Thanks, but my brother is lending me his.",
+      "audioText": "Dina: Do you want to borrow my bike? Amit: Thanks, but my brother is lending me his.",
       "instruction": {
         "he": "להקשיב ולענות על השאלה",
         "en": "Listen and answer the question"
@@ -2333,7 +2333,7 @@
         },
         {
           "id": "b",
-          "text": "Noa's"
+          "text": "Dina's"
         },
         {
           "id": "c",
@@ -2348,7 +2348,7 @@
         }
       ],
       "explanation": {
-        "he": "עמית אומר my brother is lending me his: אחיו משאיל לו את האופניים שלו. לכן הוא לא צריך את של נועה.",
+        "he": "עמית אומר my brother is lending me his: אחיו משאיל לו את האופניים שלו. לכן הוא לא צריך את של דינה.",
         "en": "Amit's brother is lending him his bike."
       },
       "interests": [
@@ -2756,8 +2756,8 @@
       "level": "B2",
       "difficulty": 0.6,
       "modality": "listen",
-      "prompt": "Why does Yael want to join the drama club?",
-      "audioText": "Yael: I'm thinking of joining the drama club. Noam: You? You hate standing in front of people! Yael: That's exactly why. I want to get over it.",
+      "prompt": "Why does Michal want to join the drama club?",
+      "audioText": "Michal: I'm thinking of joining the drama club. Noam: You? You hate standing in front of people! Michal: That's exactly why. I want to get over it.",
       "instruction": {
         "he": "להקשיב ולענות על השאלה",
         "en": "Listen and answer the question"
@@ -2784,7 +2784,7 @@
         }
       ],
       "explanation": {
-        "he": "יעל שונאת לעמוד מול אנשים, ודווקא בגלל זה רוצה להצטרף: כדי להתגבר על הפחד.",
+        "he": "מיכל שונאת לעמוד מול אנשים, ודווקא בגלל זה רוצה להצטרף: כדי להתגבר על הפחד.",
         "en": "She hates it, and wants to get over it."
       },
       "interests": [

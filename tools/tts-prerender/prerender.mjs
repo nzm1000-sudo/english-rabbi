@@ -18,7 +18,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { audioKey } from '../../src/services/speech/audioKey.ts';
-import { splitSentences } from '../../src/services/speech/textPrep.ts';
+import { questionSpeech, splitSentences } from '../../src/services/speech/textPrep.ts';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '../..');
@@ -33,6 +33,7 @@ const VOICES = { 'en-US': { A: 'af_heart', B: 'am_michael' }, 'en-GB': { A: 'bf_
 const accArg = process.argv.indexOf('--accents');
 const ACCENTS = accArg > 0 ? process.argv[accArg + 1].split(',') : ['en-US'];
 const RATES = { normal: 1, slow: 0.8 };
+const ALL_RATES = Object.keys(RATES);
 const TEST_SENTENCES = [
   'Hello, my name is Sarah.',
   "I'd like to know what you're doing tomorrow.",
@@ -43,8 +44,19 @@ const TEST_SENTENCES = [
 
 /** Texts to render, with the dialogue speaker ("A" or "B") that says them. */
 function collectTexts() {
-  const texts = new Map(TEST_SENTENCES.map((t) => [`A|${t}`, { text: t, speaker: 'A' }]));
-  const add = (text, speaker = 'A') => texts.set(`${speaker}|${text}`, { text, speaker });
+  const texts = new Map(TEST_SENTENCES.map((t) => [`A|${t}`, { text: t, speaker: 'A', rates: ALL_RATES }]));
+  const add = (text, speaker = 'A', rates = ALL_RATES) => {
+    const prev = texts.get(`${speaker}|${text}`);
+    texts.set(`${speaker}|${text}`, { text, speaker, rates: prev && prev.rates.length > rates.length ? prev.rates : rates });
+  };
+  const HEBREW = /[\u0590-\u05ff]/;
+  // Questions and English answer options: normal speed only (slowed on playback).
+  const addQuestion = (it) => {
+    if ((it.type === 'choice' || it.type === 'typed') && (it.promptLanguage ?? 'en') === 'en' && !HEBREW.test(it.prompt)) {
+      add(questionSpeech(it.prompt), 'A', ['normal']);
+    }
+    if (it.type === 'choice') for (const o of it.options) if (!HEBREW.test(o.text)) add(o.text, 'A', ['normal']);
+  };
   const packDir = path.join(root, 'content/packs');
   for (const f of fs.readdirSync(packDir).filter((f) => f.endsWith('.json'))) {
     const pack = JSON.parse(fs.readFileSync(path.join(packDir, f), 'utf8'));
@@ -52,6 +64,7 @@ function collectTexts() {
       if (it.audioText) add(it.audioText);
       if (it.word?.lemma) add(it.word.lemma);
       if (it.word?.example) add(it.word.example);
+      addQuestion(it);
     }
     // Passages are rendered per sentence; the app plays them in sequence.
     for (const p of pack.passages ?? []) for (const s of splitSentences(p.text)) add(s);
@@ -59,7 +72,13 @@ function collectTexts() {
     for (const st of pack.stories ?? []) {
       for (const l of st.lines ?? []) add(l.en, l.speaker ?? 'A');
       for (const g of Object.values(st.glossary ?? {})) add(g.lemma);
+      for (const q of st.questions ?? []) addQuestion(q.item);
     }
+  }
+  // Example sentences on the memory anchor cards.
+  const anchorDir = path.join(root, 'content/anchors');
+  for (const f of fs.readdirSync(anchorDir).filter((f) => f.endsWith('.json'))) {
+    for (const a of JSON.parse(fs.readFileSync(path.join(anchorDir, f), 'utf8'))) for (const e of a.examples ?? []) add(e.en, 'A', ['normal']);
   }
   return [...texts.values()];
 }
@@ -75,7 +94,7 @@ const texts = collectTexts().slice(0, limit);
 // --prune: delete audio for texts that no longer exist in the content.
 if (process.argv.includes('--prune')) {
   const keep = new Set();
-  for (const { text, speaker } of collectTexts()) for (const accent of ACCENTS) for (const rate of Object.keys(RATES)) keep.add(audioKey(VOICES[accent][speaker], rate, text));
+  for (const { text, speaker, rates } of collectTexts()) for (const accent of ACCENTS) for (const rate of rates) keep.add(audioKey(VOICES[accent][speaker], rate, text));
   let removed = 0;
   for (const [key, url] of Object.entries(manifest.entries)) {
     if (keep.has(key)) continue;
@@ -87,9 +106,10 @@ if (process.argv.includes('--prune')) {
   console.log(`pruned ${removed} files`);
 }
 const jobs = [];
-for (const { text, speaker } of texts) {
+for (const { text, speaker, rates } of texts) {
   for (const accent of ACCENTS) {
-    for (const [rate, speed] of Object.entries(RATES)) {
+    for (const rate of rates) {
+      const speed = RATES[rate];
       const voice = VOICES[accent][speaker];
       const key = audioKey(voice, rate, text);
       if (!manifest.entries[key]) jobs.push({ text, voice, rate, speed, key });

@@ -36,6 +36,7 @@ import { useGameHistory } from '@/features/practice/useGameHistory';
 import { localDay } from '@/domain/learning/events';
 import { levelCenter } from '@/domain/skills/cefr';
 import type { ReactNode } from 'react';
+import { resume } from '@/app/resume';
 
 const PRACTICE: { domain: Domain; title: string; en: string }[] = [
   { domain: 'vocabulary', title: 'אוצר מילים', en: 'Vocabulary' },
@@ -63,6 +64,7 @@ export function HomeScreen() {
   const today = localDay(Date.now());
   const dailyDone = !!games?.some((g) => g.game === 'daily' && g.day === today);
   const base = `/s/${student.id}`;
+  const saved = resume.latestSession(student.id);
 
   return (
     <main className="screen">
@@ -109,6 +111,21 @@ export function HomeScreen() {
           </span>
         </Ring>
       </Link>
+
+      {saved && (
+        <Link to={`${base}/practice/${saved.mode}${Object.keys(saved.params).length ? `?${new URLSearchParams(saved.params).toString()}` : ''}`} className="row-card resume-card">
+          <span className="tile-icon" style={{ background: 'var(--primary-weak)', color: 'var(--primary-fg)' }}>
+            <RepeatIcon />
+          </span>
+          <span className="grow">
+            <strong>להמשיך מאיפה שעצרת</strong>
+            <span className="xs muted" style={{ display: 'block' }}>
+              {saved.title} · {saved.results.length} מתוך {saved.total}
+            </span>
+          </span>
+          <ChevronIcon />
+        </Link>
+      )}
 
       <Link to={`${base}/path`} className="row-card">
         <span className="tile-icon" style={{ background: 'var(--primary-weak)', color: 'var(--primary-fg)' }}>

@@ -12,6 +12,7 @@ import { En } from '@/ui/En';
 import { SpeakButton } from '@/ui/SpeakButton';
 import { TopBar } from '@/ui/TopBar';
 import { MicIcon, StopIcon } from '@/ui/icons';
+import { ReadCheck } from '@/ui/ReadCheck';
 
 const ROUND = 8;
 const RATINGS = [
@@ -140,6 +141,7 @@ export function ShadowScreen() {
           <SpeakButton text={current.text} speaker={current.speaker} large label="להקשיב" />
           <SpeakButton text={current.text} speaker={current.speaker} slow label="להקשיב לאט" />
         </div>
+        <ReadCheck key={current.text} text={current.text} />
       </div>
 
       {phase === 'recording' ? (

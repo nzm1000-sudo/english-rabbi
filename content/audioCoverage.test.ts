@@ -1,6 +1,6 @@
 import { contentRegistry as reg } from './index';
 import { audioKey } from '@/services/speech/audioKey';
-import { canonicalSpeechText, splitSentences } from '@/services/speech/textPrep';
+import { canonicalSpeechText, questionSpeech, splitSentences } from '@/services/speech/textPrep';
 import { NEURAL_VOICES } from '@/services/speech/voiceProfiles';
 
 /**
@@ -39,7 +39,25 @@ function covered({ text, speaker }: { text: string; speaker: 'A' | 'B' }, rate: 
   return parts.length > 1 && parts.every((p) => manifest.entries[audioKey(voice, rate, p)]);
 }
 
+/** Questions, English options and anchor examples: recorded at normal speed only. */
+function normalOnly(): { text: string; speaker: 'A' | 'B' }[] {
+  const out = new Set<string>();
+  const he = /[\u0590-\u05ff]/;
+  const items = [...reg.items, ...[...reg.stories.values()].flatMap((st) => st.questions.map((q) => q.item))];
+  for (const i of items) {
+    if ((i.type === 'choice' || i.type === 'typed') && i.promptLanguage === 'en' && !he.test(i.prompt)) out.add(questionSpeech(i.prompt));
+    if (i.type === 'choice') for (const o of i.options) if (!he.test(o.text)) out.add(o.text);
+  }
+  for (const a of reg.anchors.values()) for (const e of a.examples) out.add(e.en);
+  return [...out].map((text) => ({ text, speaker: 'A' as const }));
+}
+
 describe('pre-rendered audio', () => {
+  it('covers every question, answer option and anchor example at normal speed', () => {
+    const missing = normalOnly().filter((t) => !covered(t, 'normal')).map((t) => t.text);
+    expect(missing).toEqual([]);
+  });
+
   it.each(['normal', 'slow'] as const)('covers every speakable text at %s speed', (rate) => {
     const missing = speakable().filter((t) => !covered(t, rate)).map((t) => `${t.speaker}: ${t.text}`);
     expect(missing).toEqual([]);

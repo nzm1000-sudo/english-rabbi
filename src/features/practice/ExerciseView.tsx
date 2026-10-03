@@ -8,12 +8,16 @@ import type { Bilingual } from '@/domain/content/schema';
 import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
+import { TapText } from '@/ui/Gloss';
+import { questionSpeech, splitSentences } from '@/services/speech/textPrep';
+import { AudioPlayer } from '@/ui/AudioPlayer';
 import { seededShuffle } from './shuffle';
 import { useServices } from '@/app/services';
 import { domainOf } from '@/domain/skills/taxonomy';
 import { CheckIcon, XIcon } from '@/ui/icons';
 import { Sheet } from '@/ui/Sheet';
 import { LessonView } from '@/features/lessons/LessonView';
+import { AnchorCard } from '@/ui/AnchorCard';
 import { sounds } from '@/services/sound';
 
 type Props = {
@@ -44,6 +48,9 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   useEffect(() => () => speech.stop(), [speech]);
   const lesson = content.lessonsForSkill(item.skill)[0];
   const finished = isFinished(flow);
+  // Translating words must not give the answer away: vocabulary items and
+  // tests unlock it only after answering.
+  const glossLocked = !finished && (domainOf(item.skill) === 'vocabulary' || policy === 'test');
 
   useEffect(() => {
     if (flow.phase === 'solved') sounds.correct();
@@ -82,17 +89,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
         <BiText text={instruction} />
       </div>
 
-      {passage && (
-        <div className="panel stack">
-          <div className="spread">
-            <En className="small muted">{passage.title}</En>
-            <SpeakButton text={passage.text} label="השמעת הקטע" />
-          </div>
-          <En as="p" className="passage">
-            {passage.text}
-          </En>
-        </div>
-      )}
+      {passage && <PassagePanel passage={passage} locked={glossLocked || (item.skill === 'reading.vocabulary-in-context' && !finished)} />}
 
       {listen && (
         <div className="center" style={{ minHeight: 140 }}>
@@ -104,7 +101,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
       )}
 
       {(item.type === 'order' ? item.promptLanguage === 'he' : item.type !== 'fix') && (
-        <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} />
+        <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} glossLocked={glossLocked} />
       )}
 
       {item.type === 'order' ? (
@@ -172,12 +169,34 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   );
 }
 
-function Prompt({ item, finished, canSpeak }: { item: Props['item']; finished: boolean; canSpeak: boolean }) {
+/** Reading passage: seekable player, the sentence being read is highlighted, words can be tapped. */
+function PassagePanel({ passage, locked }: { passage: Passage; locked: boolean }) {
+  const sentences = useMemo(() => splitSentences(passage.text), [passage.text]);
+  const segments = useMemo(() => sentences.map((text) => ({ text })), [sentences]);
+  const [on, setOn] = useState<number | null>(null);
+  return (
+    <div className="panel stack">
+      <En className="small muted">{passage.title}</En>
+      <AudioPlayer segments={segments} onSegment={setOn} />
+      <p className="passage" dir="ltr" lang="en">
+        {sentences.map((s, i) => (
+          <span key={i}>
+            <span className="sent" data-on={on === i}>
+              <TapText text={s} locked={locked} />
+            </span>{' '}
+          </span>
+        ))}
+      </p>
+    </div>
+  );
+}
+
+function Prompt({ item, finished, canSpeak, glossLocked }: { item: Props['item']; finished: boolean; canSpeak: boolean; glossLocked: boolean }) {
   if (item.type === 'fix') return null;
   const isHe = 'promptLanguage' in item && item.promptLanguage === 'he';
   const isWord = !!item.word && (item.prompt === item.word.lemma || item.prompt === item.word.he);
   const fill = finished ? modelAnswer(item) : undefined;
-  const content = renderCloze(item.prompt, fill);
+  const content = renderCloze(item.prompt, fill, isHe ? undefined : { locked: glossLocked });
   return (
     <div className="row prompt-card" style={{ alignItems: 'center' }}>
       {isHe ? (
@@ -187,7 +206,11 @@ function Prompt({ item, finished, canSpeak }: { item: Props['item']; finished: b
           {content}
         </En>
       )}
-      {canSpeak && <SpeakButton text={item.prompt} />}
+      {canSpeak ? (
+        <SpeakButton text={item.prompt} />
+      ) : (
+        !isHe && <SpeakButton text={finished && fill && item.prompt.includes('___') ? item.prompt.replace('___', fill) : questionSpeech(item.prompt)} label="הקראת השאלה" />
+      )}
     </div>
   );
 }
@@ -321,12 +344,13 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
   );
 }
 
-function renderCloze(prompt: string, fill?: string): ReactNode {
-  if (!prompt.includes('___')) return prompt;
+function renderCloze(prompt: string, fill?: string, tap?: { locked: boolean }): ReactNode {
+  const t = (s: string | undefined) => (tap && s ? <TapText text={s} locked={tap.locked} sentence={prompt.replace('___', fill ?? '___')} /> : s);
+  if (!prompt.includes('___')) return tap ? t(prompt) : prompt;
   const [before, after] = prompt.split('___');
   return (
     <>
-      {before}
+      {t(before)}
       {fill ? (
         <strong style={{ color: 'var(--good-ink)' }}>{fill}</strong>
       ) : (
@@ -334,7 +358,7 @@ function renderCloze(prompt: string, fill?: string): ReactNode {
           &nbsp;
         </span>
       )}
-      {after}
+      {t(after)}
     </>
   );
 }
@@ -359,6 +383,7 @@ function ChoiceInput({
   const finished = isFinished(flow);
   const wrong = new Set(flow.attempts.filter((a) => !a.correct).map((a) => a.answer));
   const isEnglish = item.promptLanguage === 'en' && !(item.word && item.prompt === item.word.lemma);
+  const listen = item.modality === 'listen';
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
@@ -371,10 +396,26 @@ function ChoiceInput({
     <form id={`answer-${item.id}`} className="options" onSubmit={submit} role="group" aria-label="תשובות">
       {options.map((o, idx) => {
         const state = finished && o.id === item.correctOptionId ? 'correct' : wrong.has(o.id) ? 'wrong' : undefined;
-        const text = isEnglish ? <En>{o.text}</En> : <He>{o.text}</He>;
+        // After answering, English options can be tapped word by word.
+        const text = isEnglish ? <En>{finished ? <TapText text={o.text} /> : o.text}</En> : <He>{o.text}</He>;
+        // Hearing the options of a listening item would give the answer away.
+        const speak = isEnglish && !(listen && !finished) && <SpeakButton text={o.text} label="הקראת התשובה" />;
+        if (finished) {
+          return (
+            <div key={o.id} className="option-row">
+              <div className="option" dir={isEnglish ? 'ltr' : undefined} data-state={state} aria-disabled="true">
+                <span className="key" aria-hidden="true">
+                  {'ABCDEF'[idx]}
+                </span>
+                {text}
+              </div>
+              {speak}
+            </div>
+          );
+        }
         return (
+          <div key={o.id} className="option-row">
           <button
-            key={o.id}
             type="button"
             className="option"
             dir={isEnglish ? 'ltr' : undefined}
@@ -395,6 +436,8 @@ function ChoiceInput({
             </span>
             {text}
           </button>
+          {speak}
+          </div>
         );
       })}
     </form>
@@ -442,7 +485,9 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
 }
 
 function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowState; last: CheckResult | null; support: SupportLanguage }) {
+  const { content } = useServices();
   if (isFinished(flow)) return null;
+  const anchor = content.anchorFor(item);
   const blocks: ReactNode[] = [];
   if (flow.lastHelp === 'spelling' && last?.nearMiss) {
     blocks.push(
@@ -476,13 +521,38 @@ function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowSt
         <BiText text={chooseText(item.explanation, support)} />
       </div>,
     );
+    if (anchor) blocks.push(<AnchorCard key="anchor" anchor={anchor} />);
   }
   return blocks.length ? <div className="stack" aria-live="polite">{blocks}</div> : null;
 }
 
 const PRAISE = ['מצוין!', 'נכון!', 'יפה מאוד!', 'בדיוק!', 'כל הכבוד!'];
 
+/** "Why not the others": the reason each wrong option does not fit, chosen ones first. */
+function WhyNot({ item, chosen, support, open }: { item: ChoiceItem; chosen: Set<string>; support: SupportLanguage; open: boolean }) {
+  const wrong = item.options.filter((o) => o.id !== item.correctOptionId && o.feedback);
+  if (!wrong.length) return null;
+  wrong.sort((a, b) => Number(chosen.has(b.id)) - Number(chosen.has(a.id)));
+  const isEnglish = item.promptLanguage === 'en';
+  return (
+    <details className="why-not" open={open}>
+      <summary>למה לא האפשרויות האחרות?</summary>
+      {wrong.map((o) => (
+        <div key={o.id} className="why-not-item" data-chosen={chosen.has(o.id)}>
+          <span aria-hidden="true">✖️</span>
+          <span className="grow">
+            <strong>{isEnglish ? <En>{o.text}</En> : <He>{o.text}</He>}</strong>
+            <BiText text={chooseText(o.feedback!, support)} />
+          </span>
+        </div>
+      ))}
+    </details>
+  );
+}
+
 function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['item']; flow: FlowState; support: SupportLanguage; listen: boolean; audioText: string }) {
+  const { content } = useServices();
+  const anchor = content.anchorFor(item);
   const solved = flow.phase === 'solved';
   const clean = solved && flow.attempts.length === 1 && flow.hintsShown === 0 && !flow.explanationShown;
   const praise = PRAISE[[...item.id].reduce((a, ch) => a + ch.charCodeAt(0), 0) % PRAISE.length]!;
@@ -506,6 +576,8 @@ function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['
         )}
         {item.type === 'fix' && item.meaning && <He className="small">{item.meaning}</He>}
         {!flow.explanationShown && <BiText text={chooseText(item.explanation, support)} className="small" />}
+        {item.type === 'choice' && <WhyNot item={item} chosen={new Set(flow.attempts.map((a) => a.answer))} support={support} open={!solved || !clean} />}
+        {anchor && !clean && <AnchorCard anchor={anchor} />}
         {sentence && (
           <div className="row">
             <En className="grow">{sentence}</En>
@@ -536,7 +608,7 @@ function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['
 function BiText({ text, className = '' }: { text: ReturnType<typeof chooseText>; className?: string }) {
   const main = text.primaryLang === 'en' ? <En>{text.primary}</En> : <He>{text.primary}</He>;
   return (
-    <div className={className}>
+    <div className={`bi-text ${className}`}>
       <div>{main}</div>
       {text.secondary && (
         <div className="secondary small muted">{text.secondaryLang === 'he' ? <He>{text.secondary}</He> : <En>{text.secondary}</En>}</div>

@@ -22,6 +22,8 @@ export interface AppServices {
   content: ContentRegistry;
   speech: SpeechService;
   settings: Settings;
+  /** Pre-recorded audio files, for the seekable audio player. */
+  recorded: PrerenderedProvider;
 }
 
 export function createAppServices(): AppServices {
@@ -36,8 +38,9 @@ export function createAppServices(): AppServices {
     applyTheme(settings.get('theme'));
   });
   // Priority: neural audio first, device voice last so speech always works offline.
-  const speech = new SpeechService([new PrerenderedProvider(playback), remote, new WebSpeechProvider()]);
-  return { db, store, content: contentRegistry, speech, settings };
+  const recorded = new PrerenderedProvider(playback);
+  const speech = new SpeechService([recorded, remote, new WebSpeechProvider()]);
+  return { db, store, content: contentRegistry, speech, settings, recorded };
 }
 
 const Ctx = createContext<AppServices | null>(null);
