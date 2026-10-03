@@ -2,6 +2,8 @@
  * Imports the 3D illustrations (600x600 PNG, made in Canva) into the app.
  *
  * Usage: node tools/pics/import.mjs <folder with <id>.png>
+ *   First run tools/pics/cutout.py on the raw folder to get transparent
+ *   backgrounds, then import the cut-out folder.
  *   ids: w-<word> (picture words), s-<sticker id>, m-<mascot>, b-<book>-<page>
  * Output: public/pics/<id>.webp (480 px) and content/kids/pics.json, the list
  * of ids the app can show. Words without a picture keep their emoji.
@@ -22,7 +24,7 @@ for (const f of fs.readdirSync(src).filter((f) => f.endsWith('.png'))) {
   if (!/^[a-z0-9-]+$/.test(id)) continue;
   const dest = path.join(out, `${id}.webp`);
   if (fs.existsSync(dest) && fs.statSync(dest).mtimeMs >= fs.statSync(path.join(src, f)).mtimeMs) continue;
-  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', path.join(src, f), '-vf', 'scale=480:480:flags=lanczos', '-c:v', 'libwebp', '-quality', '82', dest]);
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', path.join(src, f), '-vf', 'scale=480:480:flags=lanczos', '-c:v', 'libwebp', '-quality', '82', '-alpha_quality', '90', dest]);
   added++;
 }
 const ids = fs.readdirSync(out).filter((f) => f.endsWith('.webp')).map((f) => f.slice(0, -5)).sort();
