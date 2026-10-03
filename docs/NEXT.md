@@ -8,8 +8,14 @@ not human enough and wants a better female and male voice.
 Plan:
 1. The Google AI Studio key is stored as an environment API credential for
    `generativelanguage.googleapis.com` (header `x-goog-api-key`): call the
-   Gemini API without a key and the session proxy adds it. If calls fail with
-   401/403, read the `environment.secrets` documentation page and ask the owner.
+   Gemini API without a key and the session proxy adds it.
+   The owner's key starts with "AQ" (not the classic "AIza"), so it may be a
+   newer Google key or a Vertex AI express-mode key. First make one tiny test
+   call (e.g. list models on generativelanguage.googleapis.com). If it fails
+   with 401/403, it is probably a Vertex key: ask the owner to change the
+   credential's allowed website to `aiplatform.googleapis.com` (same header),
+   or to create a key at aistudio.google.com/apikey. Read the
+   `environment.secrets` documentation page before guiding her.
    Never ask for the key in chat and never print it.
 2. Render the same 5 sample phrases ("כל הכבוד!", "איפה המילה?", "בונים את
    המילה", "מדבקה חדשה! כלבלב", "נסו שוב") with 2 female + 2 male Gemini TTS
