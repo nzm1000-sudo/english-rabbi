@@ -12,3 +12,4 @@ coverage/
 .ctx/
 .vite/
 .tmp.wav
+__pycache__/
