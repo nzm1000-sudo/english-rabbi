@@ -4,11 +4,11 @@ import { createRoot } from 'react-dom/client';
 import { App } from './app/App';
 import { createAppServices, ServicesProvider } from './app/services';
 import './app/styles/index.css';
-import { installSharedDeviceGuard, startHash } from './app/sharedDevice';
+import { installSharedDeviceGuard, isReload, startHash } from './app/sharedDevice';
 
 async function boot() {
   // Shared family phone: every launch starts at "who is learning now?".
-  const start = startHash(window.location.hash);
+  const start = startHash(window.location.hash, isReload());
   if (start) window.history.replaceState(null, '', start);
   installSharedDeviceGuard();
 
