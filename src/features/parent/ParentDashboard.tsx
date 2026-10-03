@@ -18,6 +18,7 @@ import { localDay } from '@/domain/learning/events';
 import { ThemePicker } from '@/ui/ThemePicker';
 import { normalizeServerUrl } from './serverUrl';
 import type { PrerenderedProvider } from '@/services/speech/tts/prerenderedProvider';
+import { heCount } from '@/domain/text/heCount';
 
 const LABEL: Record<ParentLabel, { he: string; cls: string }> = {
   strong: { he: 'חזק', cls: 'badge-good' },
@@ -147,7 +148,7 @@ function StudentReport({ student }: { student: Student }) {
             {p.memory.map((m) => (
               <Stack key={m.misconceptionId} gap={1} align="start" className="list-item">
                 <He>{m.note.he}</He>
-                <span className="xs muted">{m.count} פעמים · לאחרונה {formatDay(localDay(m.lastSeenAt))}</span>
+                <span className="xs muted">{heCount(m.count, 'פעם אחת', 'פעמים')} · לאחרונה {formatDay(localDay(m.lastSeenAt))}</span>
               </Stack>
             ))}
           </div>
@@ -281,7 +282,8 @@ function DeviceSection() {
   const importBackup = async (f: File) => {
     try {
       const r = await store.importBackup(JSON.parse(await f.text()));
-      setMsg(`שוחזרו ${r.students} תלמידים ו־${r.events} אירועים.`);
+      const events = heCount(r.events, 'אירוע אחד', 'אירועים');
+      setMsg(r.students === 1 ? `תלמיד אחד שוחזר, עם ${events}.` : `שוחזרו ${r.students} תלמידים, עם ${events}.`);
     } catch (e) {
       const newer = (e as Error).message.includes('newer');
       setMsg(newer ? 'השחזור נכשל: הגיבוי נוצר בגרסה חדשה יותר של האפליקציה. כדאי לעדכן ולנסות שוב.' : 'השחזור נכשל: זה לא קובץ גיבוי של האפליקציה.');

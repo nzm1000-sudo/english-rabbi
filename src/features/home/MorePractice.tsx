@@ -4,6 +4,7 @@ import { TopBar } from '@/ui/TopBar';
 import { Stack } from '@/ui/layout';
 import { RowLink } from '@/ui/RowLink';
 import { GROUPS } from './moreModes';
+import { heCount } from '@/domain/text/heCount';
 
 /** "עוד תרגולים": the full catalog, grouped, one list per group. */
 export function MorePractice() {
@@ -32,7 +33,7 @@ export function MorePractice() {
                 tone={it.tone}
                 icon={it.icon}
                 title={it.title}
-                sub={it.path === 'practice/review' && due > 0 ? `${due} מילים לחזרה היום` : it.sub}
+                sub={it.path === 'practice/review' && due > 0 ? `${heCount(due, 'מילה אחת', 'מילים')} לחזרה היום` : it.sub}
               />
             ))}
           </div>

@@ -26,6 +26,7 @@ import {
   TargetIcon,
   TrophyIcon,
 } from '@/ui/icons';
+import { heCount } from '@/domain/text/heCount';
 
 /** One drawing per achievement, so each one is a landmark. */
 const ACH: Record<string, { icon: ReactNode; tone: string }> = {
@@ -180,7 +181,7 @@ function WeekStrip({ profile, goal }: { profile: LearnerProfile; goal: number })
           const pct = Math.min(100, (d.minutes / goal) * 100);
           const letter = DAY_LETTERS[new Date(`${d.day}T12:00:00`).getDay()];
           return (
-            <div className={`week-day${d.day === today ? ' today' : ''}`} key={d.day} title={`${d.minutes} דקות`}>
+            <div className={`week-day${d.day === today ? ' today' : ''}`} key={d.day} title={heCount(d.minutes, 'דקה אחת', 'דקות')}>
               <div className="week-bar" data-goal={pct >= 100}>
                 <span style={{ height: `${d.items ? Math.max(12, pct) : 0}%` }} />
               </div>

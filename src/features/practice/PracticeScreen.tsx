@@ -21,6 +21,7 @@ import { Art } from '@/ui/Art';
 import { Button } from '@/ui/Button';
 import { TopBar } from '@/ui/TopBar';
 import { Stack } from '@/ui/layout';
+import { heCount } from '@/domain/text/heCount';
 
 export function PracticeScreen() {
   const { sid, mode } = useParams();
@@ -104,7 +105,7 @@ function Session({
           ) : empty ? (
             <He className="t-strong txt-center">{title}</He>
           ) : (
-            <He className="t-strong txt-center">{`${title} · ${s.results.filter((r) => r.correct).length} נכונות`}</He>
+            <He className="t-strong txt-center">{`${title} · ${heCount(s.results.filter((r) => r.correct).length, 'נכונה אחת', 'נכונות')}`}</He>
           )
         }
         end={
@@ -240,7 +241,7 @@ function Timer({ deadline, onEnd }: { deadline: number; onEnd: () => void }) {
     if (left === 0) onEnd();
   }, [left, onEnd]);
   return (
-    <span className="timer" data-low={left <= 10} aria-live="off" aria-label={`נותרו ${left} שניות`}>
+    <span className="timer" data-low={left <= 10} aria-live="off" aria-label={left === 1 ? 'נותרה שנייה אחת' : `נותרו ${left} שניות`}>
       {left}
     </span>
   );
@@ -296,7 +297,7 @@ function Summary({
     // All questions answered before the clock ran out.
     headline = results.length >= total ? 'כל השאלות נענו' : 'הזמן נגמר';
     big = `${score}`;
-    sub = score > prevBest && prevBest > 0 ? 'שיא אישי חדש' : prevBest ? `השיא שלך: ${prevBest}` : `${correct} תשובות נכונות`;
+    sub = score > prevBest && prevBest > 0 ? 'שיא אישי חדש' : prevBest ? `השיא שלך: ${prevBest}` : correct === 1 ? 'תשובה נכונה אחת' : `${correct} תשובות נכונות`;
   } else if (mode === 'quiz' || mode === 'exam' || mode === 'daily' || mode === 'riddles') {
     headline = mode === 'exam' ? 'תוצאת המבחן' : mode === 'daily' ? 'האתגר היומי הושלם' : 'סיום';
     big = `${pct}`;

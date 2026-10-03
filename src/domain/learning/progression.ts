@@ -1,5 +1,6 @@
 import type { LearnerProfile } from '../student/profile';
 import type { GameResult } from './events';
+import { heCount } from '@/domain/text/heCount';
 
 /**
  * Ranks and achievements.
@@ -44,9 +45,9 @@ export function rankFor(xp: number, words: number, mastered: number): RankProgre
   const part = (have: number, from: number, to: number) => (to <= from ? 1 : Math.min(1, Math.max(0, (have - from) / (to - from))));
   const progress = Math.min(part(xp, current.xp, next.xp), part(words, current.words, next.words), part(mastered, current.mastered, next.mastered));
   const missing: string[] = [];
-  if (xp < next.xp) missing.push(`עוד ${next.xp - xp} נקודות`);
-  if (words < next.words) missing.push(`עוד ${next.words - words} מילים שנזכרות היטב`);
-  if (mastered < next.mastered) missing.push(`עוד ${next.mastered - mastered} מיומנויות בשליטה מלאה`);
+  if (xp < next.xp) missing.push(`עוד ${heCount(next.xp - xp, 'נקודה אחת', 'נקודות')}`);
+  if (words < next.words) missing.push(next.words - words === 1 ? 'עוד מילה אחת שנזכרת היטב' : `עוד ${next.words - words} מילים שנזכרות היטב`);
+  if (mastered < next.mastered) missing.push(`עוד ${heCount(next.mastered - mastered, 'מיומנות אחת', 'מיומנויות')} בשליטה מלאה`);
   return { current, next, progress, missing };
 }
 
