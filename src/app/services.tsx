@@ -9,7 +9,7 @@ import { HtmlAudioPlayback } from '@/services/speech/playback/audioPlayer';
 import { PrerenderedProvider } from '@/services/speech/tts/prerenderedProvider';
 import { RemoteTtsProvider } from '@/services/speech/tts/remoteProvider';
 import { WebSpeechProvider } from '@/services/speech/tts/webSpeechProvider';
-import { Settings } from './settings';
+import { applyTheme, Settings } from './settings';
 import { setSoundEnabled } from '@/services/sound';
 
 /**
@@ -33,6 +33,7 @@ export function createAppServices(): AppServices {
   settings.subscribe(() => {
     remote.resetHealth();
     setSoundEnabled(!settings.get('soundOff'));
+    applyTheme(settings.get('theme'));
   });
   // Priority: neural audio first, device voice last so speech always works offline.
   const speech = new SpeechService([new PrerenderedProvider(playback), remote, new WebSpeechProvider()]);

@@ -19,7 +19,7 @@
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": false,
     "skipLibCheck": true,
-    "types": ["vite/client", "vitest/globals", "@testing-library/jest-dom"],
+    "types": ["vite/client", "vite-plugin-pwa/client", "vitest/globals", "@testing-library/jest-dom"],
     "paths": { "@/*": ["./src/*"], "@content/*": ["./content/*"] }
   },
   "include": ["src", "content", "tests"]

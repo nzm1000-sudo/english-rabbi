@@ -97,7 +97,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme='light']) {
     --bg: #14112b;
     --bg-tint: radial-gradient(1200px 500px at 100% -10%, #2a1f66 0%, transparent 60%), radial-gradient(900px 400px at -10% 10%, #3a1736 0%, transparent 55%);
     --surface: #1e1a3c;
@@ -126,6 +126,35 @@
     --shadow-2: 0 6px 24px rgb(0 0 0 / 0.4);
     color-scheme: dark;
   }
+}
+:root[data-theme='dark'] {
+  --bg: #14112b;
+  --bg-tint: radial-gradient(1200px 500px at 100% -10%, #2a1f66 0%, transparent 60%), radial-gradient(900px 400px at -10% 10%, #3a1736 0%, transparent 55%);
+  --surface: #1e1a3c;
+  --surface-2: #22254a;
+  --line: #2c2f5a;
+  --line-strong: #3a3e72;
+  --ink: #ecebff;
+  --ink-2: #cfd0f2;
+  --muted: #9fa2d0;
+  --primary: #5b3df5;
+  --primary-deep: #4128c9;
+  --primary-ink: #ffffff;
+  --primary-weak: #2a2560;
+  --primary-fg: #8b7bff;
+  --t-vocabulary-weak: #3a2418; --t-grammar-weak: #172a4f; --t-reading-weak: #10352b;
+  --t-listening-weak: #3d1730; --t-writing-weak: #3a2c12; --t-speaking-weak: #0f3540;
+  --t-games-weak: #2a2560; --t-primary-weak: #2a2560;
+  --t-vocabulary-fg: #4dabf7; --t-grammar-fg: #38d9a9; --t-reading-fg: #ff922b;
+  --t-listening-fg: #da77f2; --t-writing-fg: #f783ac; --t-speaking-fg: #ffc800;
+  --t-games-fg: #b197fc; --t-primary-fg: #8b7bff;
+  --good: #2f9e44; --bad: #e03131;
+  --good-weak: #12351f; --good-ink: #69db7c;
+  --bad-weak: #3d1a1a; --bad-ink: #ff8787;
+  --warn-weak: #3a2c10; --warn-ink: #ffd27a;
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-2: 0 6px 24px rgb(0 0 0 / 0.4);
+  color-scheme: dark;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -640,7 +669,7 @@ a.row-card:active, button.row-card:active { transform: translateY(3px); border-b
   --shadow-2: 0 4px 18px rgb(60 72 140 / 0.10);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme='light']) {
     --bg: #14162a;
     --bg-tint: radial-gradient(1000px 420px at 100% -10%, #1d2246 0%, transparent 60%);
     --primary: #5566dc;
@@ -649,6 +678,15 @@ a.row-card:active, button.row-card:active { transform: translateY(3px); border-b
     --primary-fg: #9aa7ff;
     --hero: linear-gradient(135deg, #1f2448 0%, #26203f 100%);
   }
+}
+:root[data-theme='dark'] {
+  --bg: #14162a;
+  --bg-tint: radial-gradient(1000px 420px at 100% -10%, #1d2246 0%, transparent 60%);
+  --primary: #5566dc;
+  --primary-deep: #3f4fbd;
+  --primary-weak: #252a52;
+  --primary-fg: #9aa7ff;
+  --hero: linear-gradient(135deg, #1f2448 0%, #26203f 100%);
 }
 
 .hero { color: var(--ink); border: 1.5px solid var(--line); border-bottom: 5px solid var(--line-strong); }
@@ -682,10 +720,14 @@ a.row-card:active, button.row-card:active { transform: translateY(3px); border-b
 .avatar { background: linear-gradient(135deg, hsl(var(--hue) 55% 68%), hsl(calc(var(--hue) + 30) 50% 58%)); }
 
 @media (prefers-color-scheme: dark) {
-  .tile-solid {
+  :root:not([data-theme='light']) .tile-solid {
     background: color-mix(in srgb, var(--c-fg) 9%, var(--surface));
     border-color: color-mix(in srgb, var(--c-fg) 20%, var(--line));
   }
+}
+:root[data-theme='dark'] .tile-solid {
+  background: color-mix(in srgb, var(--c-fg) 9%, var(--surface));
+  border-color: color-mix(in srgb, var(--c-fg) 20%, var(--line));
 }
 
 /* Stories, my words, spot the mistake, shadowing ----------------------------- */
