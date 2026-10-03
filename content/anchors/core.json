@@ -792,5 +792,32 @@
     ],
     "hebrewTrap": "בעברית אומרים \"ב\" כמעט לכל מקום: בשולחן, בתחנה, בבית. באנגלית צריך לבחור: בתוך (in), על (on) או בנקודה (at).",
     "source": "original"
+  },
+  {
+    "id": "word-partners",
+    "emoji": "👟",
+    "title": "זוג קבוע: מילה ומילת היחס שלה",
+    "skills": [
+      "grammar.prepositions"
+    ],
+    "image": "כמו נעל והשרוך שלה: good תמיד הולכת עם at, afraid עם of, wait עם for. קונים אותן ביחד ולומדים אותן ביחד.",
+    "rule": "יש מילים שמילת היחס שלהן קבועה, ואי אפשר לנחש אותה מהעברית. לומדים את הצירוף כולו כיחידה אחת: good at, afraid of, interested in, wait for, listen to, depend on.",
+    "pattern": "good at · afraid of · interested in · wait for · listen to · depend on",
+    "examples": [
+      {
+        "en": "Tamar is good at math.",
+        "he": "תמר טובה במתמטיקה."
+      },
+      {
+        "en": "Ari is afraid of big dogs.",
+        "he": "ארי מפחד מכלבים גדולים."
+      },
+      {
+        "en": "We are waiting for Grandpa.",
+        "he": "אנחנו מחכים לסבא."
+      }
+    ],
+    "hebrewTrap": "בעברית אומרים \"טובה ב\", \"מחכים ל\", \"מקשיבים ל\". באנגלית מילת היחס שונה: good at, wait for, listen to. תרגום מילה במילה מוביל לטעות.",
+    "source": "original"
   }
 ]

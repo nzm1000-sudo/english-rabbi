@@ -23,23 +23,35 @@
         {
           "id": "b",
           "text": "because",
-          "misconception": "connectors.cause-result"
+          "misconception": "connectors.cause-result",
+          "feedback": {
+            "he": "because מצביע אחורה לסיבה. הכריך הוא לא הסיבה לרעב, הוא התוצאה.",
+            "en": "because gives a reason. The sandwich is the result, not the reason."
+          }
         },
         {
           "id": "c",
-          "text": "but"
+          "text": "but",
+          "feedback": {
+            "he": "but מסובב לניגוד. אין ניגוד בין רעב לבין הכנת כריך.",
+            "en": "but shows a contrast. There is no contrast here."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה בא קודם: הרעב או הכריך?",
-          "en": "What came first: the hunger or the sandwich?"
+          "he": "מה בא קודם ומה בא בגללו: הרעב או הכריך?",
+          "en": "Which came first and caused the other?"
+        },
+        {
+          "he": "🧭 סיבה ואז תוצאה: איזה שלט דרך מצביע קדימה?",
+          "en": "Reason then result: which sign points forward?"
         }
       ],
       "explanation": {
-        "he": "החלק השני הוא תוצאה של הראשון: הייתי רעב/ה ולכן הכנתי כריך. לתוצאה משתמשים ב־so.",
-        "en": "The second part is a result of the first, so we use so."
+        "he": "🔎 הרמז: hungry ואז made a sandwich.\n🧭 so מצביע קדימה לתוצאה: \"ולכן\".\nהרעב הוא הסיבה, והכריך הוא התוצאה: so.",
+        "en": "Being hungry caused the sandwich, so the second part is a result: so."
       },
       "interests": [
         "food"
@@ -49,7 +61,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.because-rain",
@@ -71,23 +84,35 @@
         {
           "id": "b",
           "text": "so",
-          "misconception": "connectors.cause-result"
+          "misconception": "connectors.cause-result",
+          "feedback": {
+            "he": "so מצביע קדימה לתוצאה. אבל הגשם הוא הסיבה, לא התוצאה.",
+            "en": "so shows a result. The rain is the reason."
+          }
         },
         {
           "id": "c",
-          "text": "but"
+          "text": "but",
+          "feedback": {
+            "he": "but מסובב לניגוד. אין ניגוד בין גשם לבין להישאר בבית.",
+            "en": "but shows a contrast. There is none here."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "החלק השני מסביר למה נשארנו בבית?",
-          "en": "Does the second part explain why we stayed home?"
+          "he": "למה נשארו בבית? איזה חלק עונה על זה?",
+          "en": "Why did we stay home? Which part answers that?"
+        },
+        {
+          "he": "🧭 איזה שלט מצביע אחורה לסיבה?",
+          "en": "Which sign points back to a reason?"
         }
       ],
       "explanation": {
-        "he": "הגשם הוא הסיבה שנשארנו בבית. לסיבה משתמשים ב־because. so היה הופך את הסדר: הגשם היה תוצאה.",
-        "en": "The rain is the reason, so we use because."
+        "he": "🔎 הרמז: it was raining.\n🧭 because מצביע אחורה לסיבה: \"כי\".\nהגשם הוא הסיבה שנשארו בבית: because.",
+        "en": "The rain is the reason we stayed home: because."
       },
       "interests": [],
       "tags": [
@@ -95,7 +120,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.but-football",
@@ -116,24 +142,36 @@
         },
         {
           "id": "b",
-          "text": "so"
+          "text": "so",
+          "feedback": {
+            "he": "so = לכן. ההעדפה של הדובר היא לא תוצאה של מה שהאח אוהב.",
+            "en": "so = therefore. My preference is not a result of his."
+          }
         },
         {
           "id": "c",
           "text": "because",
-          "misconception": "connectors.contrast-cause"
+          "misconception": "connectors.contrast-cause",
+          "feedback": {
+            "he": "because = כי. מה שהאח אוהב הוא לא הסיבה להעדפה של הדובר.",
+            "en": "because = reason. His taste is not the reason for mine."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "שני האנשים אוהבים אותו דבר או דברים שונים?",
-          "en": "Do the two people like the same thing or different things?"
+          "he": "האם שני החלקים דומים או שונים?",
+          "en": "Are the two parts similar or different?"
+        },
+        {
+          "he": "🧭 ניגוד: איזה שלט מסובב?",
+          "en": "Contrast: which sign turns the direction?"
         }
       ],
       "explanation": {
-        "he": "יש כאן ניגוד בין שני אנשים. לניגוד משתמשים ב־but.",
-        "en": "There is a contrast between two people, so we use but."
+        "he": "🔎 הרמז: football מול basketball, שני טעמים שונים.\n🧭 but מסובב את הכיוון: \"אבל\".\nהאח אוהב דבר אחד, והדובר מעדיף דבר אחר: but.",
+        "en": "Two different preferences are a contrast: but."
       },
       "interests": [
         "sports"
@@ -143,7 +181,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.and-guitar",
@@ -164,23 +203,35 @@
         },
         {
           "id": "b",
-          "text": "so"
+          "text": "so",
+          "feedback": {
+            "he": "so = לכן. הגיטרה היא לא תוצאה של הפסנתר. כאן פשוט מוסיפים: and.",
+            "en": "so = therefore. We are only adding: and."
+          }
         },
         {
           "id": "c",
-          "text": "because"
+          "text": "because",
+          "feedback": {
+            "he": "because = כי. הגיטרה היא לא סיבה לפסנתר. מוסיפים: and.",
+            "en": "because gives a reason. We are only adding: and."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "היא מנגנת בשני כלים. מה מחבר ביניהם?",
-          "en": "She plays two instruments. What joins them?"
+          "he": "מה הקשר בין piano ל־guitar? עוד דבר, סיבה או תוצאה?",
+          "en": "piano and guitar: one more thing, a reason, or a result?"
+        },
+        {
+          "he": "🧭 איזה שלט מוסיף?",
+          "en": "Which sign adds?"
         }
       ],
       "explanation": {
-        "he": "מוסיפים עוד פריט לרשימה, ולכן and.",
-        "en": "We add another item, so we use and."
+        "he": "🔎 הרמז: the piano ... the guitar, עוד כלי.\n🧭 and מוסיף: \"ו־\".\nהיא מנגנת בפסנתר, וגם בגיטרה: and.",
+        "en": "She plays two instruments, so we add: and."
       },
       "interests": [
         "music"
@@ -190,7 +241,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.or-hurry",
@@ -211,23 +263,35 @@
         },
         {
           "id": "b",
-          "text": "so"
+          "text": "so",
+          "feedback": {
+            "he": "so = לכן. מיהור לא גורם לפספס את האוטובוס, ההפך.",
+            "en": "so = therefore. Hurrying does not make you miss the bus."
+          }
         },
         {
           "id": "c",
-          "text": "because"
+          "text": "because",
+          "feedback": {
+            "he": "because אומר שממהרים בגלל שמפספסים. זה לא הגיוני. צריך \"אחרת\": or.",
+            "en": "because makes no sense here. We need or (= otherwise)."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
           "he": "מה יקרה אם לא ממהרים?",
-          "en": "What will happen if you don't hurry?"
+          "en": "What happens if you do not hurry?"
+        },
+        {
+          "he": "🧭 איזו מילה קטנה אומרת \"אחרת\"?",
+          "en": "Which small word means otherwise?"
         }
       ],
       "explanation": {
-        "he": "or אחרי בקשה פירושו 'אחרת': אם לא ממהרים, מפספסים את האוטובוס.",
-        "en": "After a request, or means 'if not': if you don't hurry, you'll miss the bus."
+        "he": "🔎 הרמז: Hurry up ... you'll miss the bus, אזהרה.\n🧭 or אחרי פקודה = \"אחרת\".\nאם לא ממהרים, מפספסים את האוטובוס: or.",
+        "en": "After an order, or means otherwise: hurry, or you will miss the bus."
       },
       "interests": [],
       "tags": [
@@ -235,7 +299,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.although-test",
@@ -257,28 +322,44 @@
         {
           "id": "b",
           "text": "Because",
-          "misconception": "connectors.contrast-cause"
+          "misconception": "connectors.contrast-cause",
+          "feedback": {
+            "he": "Because מצביע לסיבה. מבחן קשה לא גורם לציון טוב.",
+            "en": "Because gives a reason. A hard test does not cause a good grade."
+          }
         },
         {
           "id": "c",
-          "text": "So"
+          "text": "So",
+          "feedback": {
+            "he": "So מצביע לתוצאה ולא פותח משפט לפני הסיבה. כאן יש ניגוד.",
+            "en": "So shows a result. Here there is a contrast."
+          }
         },
         {
           "id": "d",
           "text": "Despite",
-          "misconception": "connectors.despite-clause"
+          "misconception": "connectors.despite-clause",
+          "feedback": {
+            "he": "Despite בא לפני שם עצם (Despite the hard test). כאן אחריו משפט שלם עם was, אז Although.",
+            "en": "Despite goes before a noun. Here there is a full clause: Although."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מבחן קשה וציון טוב. זה מפתיע או צפוי?",
-          "en": "A hard test and a good grade. Is that surprising or expected?"
+          "he": "האם קושי המבחן עזר לציון או הפריע?",
+          "en": "Did the hard test help or get in the way?"
+        },
+        {
+          "he": "🧭 ניגוד בתחילת משפט, ואחריו נושא ופועל (was).",
+          "en": "Contrast at the start, followed by a subject and verb."
         }
       ],
       "explanation": {
-        "he": "יש כאן ניגוד מפתיע, ואחרי המילה בא משפט שלם (the test was hard). לכן Although. despite בא רק עם שם עצם או עם ing, לא עם משפט שלם.",
-        "en": "The result is surprising and a full clause follows, so Although. Despite needs a noun or an -ing form, not a clause."
+        "he": "🔎 הרמז: hard מול good grade, ניגוד.\n🧭 Although = \"למרות ש\", ואחריו משפט שלם עם פועל.\nהמבחן היה קשה, ובכל זאת ציון טוב: Although.",
+        "en": "Hard test but good grade is a contrast. Although + a full clause."
       },
       "interests": [
         "school"
@@ -288,7 +369,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.although-trained",
@@ -310,29 +392,45 @@
         {
           "id": "b",
           "text": "Because",
-          "misconception": "connectors.contrast-cause"
+          "misconception": "connectors.contrast-cause",
+          "feedback": {
+            "he": "Because מצביע לסיבה. אימונים הם לא סיבה להפסיד.",
+            "en": "Because gives a reason. Training is not a reason to lose."
+          }
         },
         {
           "id": "c",
           "text": "Despite",
-          "misconception": "connectors.despite-clause"
+          "misconception": "connectors.despite-clause",
+          "feedback": {
+            "he": "Despite בא לפני שם עצם או ing (Despite training). כאן משפט שלם he trained, אז Although.",
+            "en": "Despite needs a noun or -ing. Here there is a full clause: Although."
+          }
         },
         {
           "id": "d",
           "text": "Unless",
-          "misconception": "connectors.unless-if"
+          "misconception": "connectors.unless-if",
+          "feedback": {
+            "he": "Unless = \"אלא אם\". הוא באמת התאמן, אז זה לא תנאי. כאן יש ניגוד: Although.",
+            "en": "Unless = if not. He did train, so it is a contrast: Although."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "התאמן כל יום ולא ניצח. זה צפוי?",
-          "en": "He trained every day and didn't win. Is that expected?"
+          "he": "האם האימונים הובילו לניצחון?",
+          "en": "Did the training lead to a win?"
+        },
+        {
+          "he": "🧭 ניגוד בתחילת משפט, ואחריו he trained.",
+          "en": "Contrast at the start, followed by he trained."
         }
       ],
       "explanation": {
-        "he": "מצפים שאימון יביא לניצחון, אבל זה לא קרה. זה ניגוד, ואחריו משפט שלם, לכן Although.",
-        "en": "We expect training to bring a win, but it didn't. Contrast + full clause = Although."
+        "he": "🔎 הרמז: trained every day מול didn't win, ניגוד.\n🧭 Although = \"למרות ש\", ואחריו משפט שלם עם פועל.\nהתאמן כל יום, ובכל זאת לא ניצח: Although.",
+        "en": "Training every day but not winning is a contrast. Although + a full clause."
       },
       "interests": [
         "sports"
@@ -342,7 +440,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.because-party",
@@ -364,23 +463,35 @@
         {
           "id": "b",
           "text": "although",
-          "misconception": "connectors.contrast-cause"
+          "misconception": "connectors.contrast-cause",
+          "feedback": {
+            "he": "although = למרות ש. אין ניגוד: מסיבה רועשת באמת מפריעה לישון.",
+            "en": "although shows contrast. A loud party really does stop sleep."
+          }
         },
         {
           "id": "c",
-          "text": "so"
+          "text": "so",
+          "feedback": {
+            "he": "so מצביע לתוצאה. המסיבה היא הסיבה, לא התוצאה.",
+            "en": "so shows a result. The party is the reason."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "המסיבה היא הסיבה או התוצאה?",
-          "en": "Is the party the reason or the result?"
+          "he": "למה לא הצלחתי לישון?",
+          "en": "Why couldn't I sleep?"
+        },
+        {
+          "he": "🧭 איזה שלט מצביע אחורה לסיבה?",
+          "en": "Which sign points back to a reason?"
         }
       ],
       "explanation": {
-        "he": "המסיבה הרועשת היא הסיבה שלא נרדמתי, לכן because.",
-        "en": "The loud party is the reason I couldn't sleep, so because."
+        "he": "🔎 הרמז: a loud party.\n🧭 because מצביע אחורה לסיבה: \"כי\".\nהמסיבה הרועשת היא הסיבה שלא הצלחתי לישון: because.",
+        "en": "The loud party is the reason I could not sleep: because."
       },
       "interests": [],
       "tags": [
@@ -388,7 +499,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.moreover-hotel",
@@ -410,27 +522,43 @@
         {
           "id": "b",
           "text": "However",
-          "misconception": "connectors.addition-contrast"
+          "misconception": "connectors.addition-contrast",
+          "feedback": {
+            "he": "However מסובב לניגוד. אבל גם המשפט השני רע, אין ניגוד.",
+            "en": "However shows contrast. Both sentences are negative."
+          }
         },
         {
           "id": "c",
-          "text": "Therefore"
+          "text": "Therefore",
+          "feedback": {
+            "he": "Therefore = לכן. חדרים קטנים הם לא תוצאה של מחיר גבוה.",
+            "en": "Therefore = result. Small rooms are not a result of the price."
+          }
         },
         {
           "id": "d",
-          "text": "For example"
+          "text": "For example",
+          "feedback": {
+            "he": "For example מביא דוגמה. חדרים קטנים הם לא דוגמה למחיר יקר.",
+            "en": "For example gives an example. This is not an example of price."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "שני המשפטים חיוביים, שליליים, או אחד מכל סוג?",
-          "en": "Are both sentences positive, negative, or one of each?"
+          "he": "האם המשפט השני הפוך לראשון או באותו כיוון?",
+          "en": "Is the second sentence the opposite or the same direction?"
+        },
+        {
+          "he": "🧭 איזה שלט מוסיף עוד דבר באותו כיוון?",
+          "en": "Which sign adds more in the same direction?"
         }
       ],
       "explanation": {
-        "he": "שני המשפטים מתארים דברים רעים. המשפט השני מוסיף עוד חיסרון, לכן Moreover (בנוסף). However מתאים רק לניגוד.",
-        "en": "Both sentences are negative. The second adds another problem, so Moreover. However is only for contrast."
+        "he": "🔎 הרמז: expensive, ועוד small and dirty. שני דברים רעים.\n🧭 Moreover = \"יתרה מזאת\". זה כמו and בין שני משפטים.\nמוסיפים עוד חיסרון באותו כיוון: Moreover.",
+        "en": "Both sentences are negative, so we add more: Moreover (= also, and more)."
       },
       "interests": [
         "travel"
@@ -440,7 +568,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.however-hotel",
@@ -462,27 +591,43 @@
         {
           "id": "b",
           "text": "In addition",
-          "misconception": "connectors.addition-contrast"
+          "misconception": "connectors.addition-contrast",
+          "feedback": {
+            "he": "In addition מוסיף עוד דבר באותו כיוון. כאן הכיוון מתהפך מרע לטוב.",
+            "en": "In addition adds in the same direction. Here it turns."
+          }
         },
         {
           "id": "c",
-          "text": "Therefore"
+          "text": "Therefore",
+          "feedback": {
+            "he": "Therefore = לכן. חדרים גדולים הם לא תוצאה של המרחק מהים.",
+            "en": "Therefore = result. Big rooms are not caused by the distance."
+          }
         },
         {
           "id": "d",
-          "text": "For example"
+          "text": "For example",
+          "feedback": {
+            "he": "For example מביא דוגמה. חדרים גדולים הם לא דוגמה למרחק מהים.",
+            "en": "This is not an example of the first sentence."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "המשפט הראשון הוא חיסרון. מה המשפט השני?",
-          "en": "The first sentence is a disadvantage. What is the second?"
+          "he": "המשפט הראשון טוב או רע? והשני?",
+          "en": "Is the first sentence good or bad? And the second?"
+        },
+        {
+          "he": "🧭 ניגוד בין שני משפטים: איזה שלט מסובב?",
+          "en": "Contrast between two sentences: which sign turns?"
         }
       ],
       "explanation": {
-        "he": "חיסרון ואחריו יתרון: זה ניגוד. However מתחיל משפט חדש ומראה ניגוד.",
-        "en": "A disadvantage, then an advantage: that is contrast. However starts a new sentence and shows contrast."
+        "he": "🔎 הרמז: far from the beach מול large and comfortable.\n🧭 However = but בתחילת משפט חדש, עם פסיק.\nחיסרון ואז יתרון, הכיוון מתהפך: However.",
+        "en": "A minus and then a plus is a contrast. Between sentences we use However."
       },
       "interests": [
         "travel"
@@ -492,7 +637,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.therefore-ice",
@@ -514,15 +660,27 @@
         {
           "id": "b",
           "text": "However",
-          "misconception": "connectors.addition-contrast"
+          "misconception": "connectors.addition-contrast",
+          "feedback": {
+            "he": "However מסובב לניגוד. אין ניגוד: קרח באמת סוגר בתי ספר.",
+            "en": "However shows contrast. There is none."
+          }
         },
         {
           "id": "c",
-          "text": "Otherwise"
+          "text": "Otherwise",
+          "feedback": {
+            "he": "Otherwise = \"אחרת, אם לא\". אבל הקרח באמת היה. כאן תוצאה: Therefore.",
+            "en": "Otherwise = if not. The ice was real. Use Therefore."
+          }
         },
         {
           "id": "d",
-          "text": "Instead"
+          "text": "Instead",
+          "feedback": {
+            "he": "Instead = \"במקום זה\". הסגירה היא תוצאה של הקרח, לא תחליף.",
+            "en": "Instead = in place of. The closing is a result."
+          }
         }
       ],
       "correctOptionId": "a",
@@ -530,11 +688,15 @@
         {
           "he": "למה בתי הספר נסגרו?",
           "en": "Why were the schools closed?"
+        },
+        {
+          "he": "🧭 איזה שלט מצביע קדימה לתוצאה?",
+          "en": "Which sign points forward to a result?"
         }
       ],
       "explanation": {
-        "he": "הקרח הוא הסיבה, והסגירה היא התוצאה. Therefore פירושו 'לכן'.",
-        "en": "The ice is the cause and closing the schools is the result. Therefore means 'for that reason'."
+        "he": "🔎 הרמז: covered in ice ואז schools were closed.\n🧭 Therefore = \"לכן\". זה כמו so בתחילת משפט חדש.\nהקרח הוא הסיבה, וסגירת בתי הספר היא התוצאה: Therefore.",
+        "en": "The ice caused the schools to close, so a result word: Therefore."
       },
       "interests": [
         "school"
@@ -544,7 +706,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.as-a-result-exam",
@@ -565,27 +728,43 @@
         },
         {
           "id": "b",
-          "text": "On the other hand"
+          "text": "On the other hand",
+          "feedback": {
+            "he": "On the other hand מציג צד שני, ניגוד. הכישלון הוא לא צד שני, הוא תוצאה.",
+            "en": "On the other hand shows another side. Failing is a result."
+          }
         },
         {
           "id": "c",
-          "text": "For example"
+          "text": "For example",
+          "feedback": {
+            "he": "For example מביא דוגמה. הכישלון הוא לא דוגמה, הוא תוצאה.",
+            "en": "Failing is not an example. It is a result."
+          }
         },
         {
           "id": "d",
-          "text": "Otherwise"
+          "text": "Otherwise",
+          "feedback": {
+            "he": "Otherwise = \"אחרת, אם לא\". אבל הוא באמת לא למד. כאן תוצאה.",
+            "en": "Otherwise = if not. Here it is a result."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "הכישלון קרה בגלל משהו?",
-          "en": "Did the failure happen because of something?"
+          "he": "למה Dan נכשל?",
+          "en": "Why did Dan fail?"
+        },
+        {
+          "he": "🧭 איזה שלט מצביע קדימה לתוצאה?",
+          "en": "Which sign points forward to a result?"
         }
       ],
       "explanation": {
-        "he": "הכישלון הוא תוצאה של חוסר הלמידה. As a result פירושו 'כתוצאה מכך'.",
-        "en": "Failing is a result of not studying, so As a result."
+        "he": "🔎 הרמז: didn't study ואז failed.\n🧭 As a result = \"כתוצאה מכך\", כמו so בתחילת משפט.\nלא למד, ובגלל זה נכשל: As a result.",
+        "en": "Not studying caused the failure: As a result."
       },
       "interests": [
         "school"
@@ -595,7 +774,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.in-addition-swim",
@@ -617,27 +797,43 @@
         {
           "id": "b",
           "text": "However",
-          "misconception": "connectors.addition-contrast"
+          "misconception": "connectors.addition-contrast",
+          "feedback": {
+            "he": "However מסובב לניגוד. שני החלקים טובים, אין ניגוד.",
+            "en": "However shows contrast. Both parts are positive."
+          }
         },
         {
           "id": "c",
-          "text": "As a result"
+          "text": "As a result",
+          "feedback": {
+            "he": "As a result = תוצאה. רגיעה היא לא תוצאה של לב בריא, היא עוד יתרון.",
+            "en": "Relaxing is not a result of a healthy heart. It is another benefit."
+          }
         },
         {
           "id": "d",
-          "text": "Instead"
+          "text": "Instead",
+          "feedback": {
+            "he": "Instead = \"במקום זה\". הרגיעה לא באה במקום הבריאות, היא נוספת.",
+            "en": "Instead = in place of. Here we add."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "המשפט השני מוסיף עוד יתרון או מתנגד לראשון?",
-          "en": "Does the second sentence add another advantage or go against the first?"
+          "he": "האם המשפט השני הפוך לראשון או מוסיף עליו?",
+          "en": "Is the second sentence opposite, or does it add?"
+        },
+        {
+          "he": "🧭 איזה שלט מוסיף?",
+          "en": "Which sign adds?"
         }
       ],
       "explanation": {
-        "he": "שני יתרונות של שחייה. המשפט השני מוסיף, לכן In addition (בנוסף).",
-        "en": "Two advantages of swimming. The second one adds, so In addition."
+        "he": "🔎 הרמז: good for your heart, ועוד helps you relax. שני דברים טובים.\n🧭 In addition = \"בנוסף\". זה כמו and בין שני משפטים.\nמוסיפים עוד יתרון באותו כיוון: In addition.",
+        "en": "Two benefits in the same direction: In addition."
       },
       "interests": [
         "sports"
@@ -647,7 +843,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.on-the-other-hand-city",
@@ -669,27 +866,43 @@
         {
           "id": "b",
           "text": "In addition",
-          "misconception": "connectors.addition-contrast"
+          "misconception": "connectors.addition-contrast",
+          "feedback": {
+            "he": "In addition מוסיף באותו כיוון. רועש ויקר זה הצד ההפוך מ־exciting.",
+            "en": "In addition adds in the same direction. This is the other side."
+          }
         },
         {
           "id": "c",
-          "text": "As a result"
+          "text": "As a result",
+          "feedback": {
+            "he": "As a result = תוצאה. רעש ויוקר הם לא תוצאה של ההתרגשות.",
+            "en": "Noise and cost are not a result of excitement."
+          }
         },
         {
           "id": "d",
-          "text": "For example"
+          "text": "For example",
+          "feedback": {
+            "he": "For example מביא דוגמה. רעש הוא לא דוגמה לחיים מרגשים.",
+            "en": "Noise is not an example of excitement."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "המשפט הראשון חיובי. מה עם השני?",
-          "en": "The first sentence is positive. What about the second?"
+          "he": "המשפט הראשון טוב או רע? והשני?",
+          "en": "Is the first sentence good or bad? And the second?"
+        },
+        {
+          "he": "🧭 איזה שלט מסובב לצד השני?",
+          "en": "Which sign turns to the other side?"
         }
       ],
       "explanation": {
-        "he": "יתרון ואחריו חסרונות: זה ניגוד. On the other hand (מצד שני) מציג את הצד השני.",
-        "en": "An advantage and then disadvantages: contrast. On the other hand shows the other side."
+        "he": "🔎 הרמז: exciting מול noisy and expensive.\n🧭 On the other hand = \"מצד שני\". מציג את הצד ההפוך.\nיתרון ואז חיסרונות: On the other hand.",
+        "en": "A good side and then a bad side: On the other hand."
       },
       "interests": [
         "travel"
@@ -699,7 +912,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.despite-rain",
@@ -721,27 +935,43 @@
         {
           "id": "b",
           "text": "Although",
-          "misconception": "connectors.despite-clause"
+          "misconception": "connectors.despite-clause",
+          "feedback": {
+            "he": "Although בא לפני משפט שלם עם פועל (Although it rained). the heavy rain הוא שם עצם, אז Despite.",
+            "en": "Although needs a clause. Before a noun: Despite."
+          }
         },
         {
           "id": "c",
-          "text": "Because of"
+          "text": "Because of",
+          "feedback": {
+            "he": "Because of = \"בגלל\". גשם לא גורם למשחק להמשיך. כאן ניגוד.",
+            "en": "Because of = reason. Rain does not make the match go on."
+          }
         },
         {
           "id": "d",
-          "text": "Unless"
+          "text": "Unless",
+          "feedback": {
+            "he": "Unless = \"אלא אם\". הגשם באמת היה, וזה לא תנאי. כאן ניגוד: Despite.",
+            "en": "Unless = if not. Here it is a contrast."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה בא אחרי הרווח: משפט שלם או שם עצם?",
-          "en": "What comes after the gap: a full clause or a noun?"
+          "he": "האם אחרי הרווח יש משפט עם פועל, או רק שם עצם?",
+          "en": "After the gap: a full clause or just a noun?"
+        },
+        {
+          "he": "🧭 ניגוד לפני שם עצם: איזו מילה?",
+          "en": "Contrast before a noun: which word?"
         }
       ],
       "explanation": {
-        "he": "המשחק המשיך למרות הגשם: ניגוד. אחרי הרווח בא שם עצם (the heavy rain), ולכן Despite. Although צריך משפט שלם עם פועל.",
-        "en": "The match continued even with the rain: contrast. A noun follows, so Despite. Although needs a clause with a verb."
+        "he": "🔎 הרמז: the heavy rain, שם עצם בלי פועל.\n🧭 Despite = \"למרות\", ואחריו שם עצם. Although בא לפני משפט שלם.\nהגשם הפריע, ובכל זאת המשחק המשיך: Despite.",
+        "en": "Contrast before a noun (the heavy rain): Despite."
       },
       "interests": [
         "sports"
@@ -751,7 +981,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.in-spite-of-delays",
@@ -773,27 +1004,43 @@
         {
           "id": "b",
           "text": "although",
-          "misconception": "connectors.despite-clause"
+          "misconception": "connectors.despite-clause",
+          "feedback": {
+            "he": "although בא לפני משפט עם פועל. the long delays הוא שם עצם, אז in spite of.",
+            "en": "although needs a clause. Before a noun: in spite of."
+          }
         },
         {
           "id": "c",
-          "text": "because of"
+          "text": "because of",
+          "feedback": {
+            "he": "because of = \"בגלל\". העיכובים לא גרמו להנאה. כאן ניגוד.",
+            "en": "because of = reason. The delays did not cause the fun."
+          }
         },
         {
           "id": "d",
-          "text": "so"
+          "text": "so",
+          "feedback": {
+            "he": "so = לכן, ואחריו משפט. כאן יש ניגוד לפני שם עצם.",
+            "en": "so shows a result. Here there is a contrast."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "יש פועל אחרי הרווח?",
-          "en": "Is there a verb after the gap?"
+          "he": "האם העיכובים עזרו להנאה או הפריעו?",
+          "en": "Did the delays help or get in the way?"
+        },
+        {
+          "he": "🧭 ניגוד לפני שם עצם: איזה ביטוי?",
+          "en": "Contrast before a noun: which phrase?"
         }
       ],
       "explanation": {
-        "he": "נהנו למרות העיכובים: ניגוד. אחרי הרווח בא שם עצם, ולכן in spite of. although צריך משפט עם פועל.",
-        "en": "They enjoyed it even with the delays. A noun follows, so in spite of, not although."
+        "he": "🔎 הרמז: the long delays, שם עצם בלי פועל.\n🧭 in spite of = \"למרות\", ואחריו שם עצם. although בא לפני משפט שלם.\nהעיכובים הפריעו, ובכל זאת נהנו: in spite of.",
+        "en": "Contrast before a noun (the long delays): in spite of."
       },
       "interests": [
         "travel"
@@ -803,7 +1050,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.whereas-horror",
@@ -825,27 +1073,43 @@
         {
           "id": "b",
           "text": "because",
-          "misconception": "connectors.contrast-cause"
+          "misconception": "connectors.contrast-cause",
+          "feedback": {
+            "he": "because = כי. הטעם של האחות הוא לא הסיבה שהדובר לא צופה.",
+            "en": "because = reason. Her taste is not the reason."
+          }
         },
         {
           "id": "c",
-          "text": "so"
+          "text": "so",
+          "feedback": {
+            "he": "so = לכן. זה לא תוצאה, אלא השוואה בין שניים.",
+            "en": "so = result. This is a comparison."
+          }
         },
         {
           "id": "d",
-          "text": "unless"
+          "text": "unless",
+          "feedback": {
+            "he": "unless = \"אלא אם\". אין כאן תנאי, אלא שני צדדים הפוכים.",
+            "en": "unless = if not. There is no condition here."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "האחות ואני דומים או שונים?",
-          "en": "Are my sister and I similar or different?"
+          "he": "האם שני האנשים מרגישים אותו דבר?",
+          "en": "Do the two people feel the same?"
+        },
+        {
+          "he": "🧭 איזו מילה אומרת \"ואילו\"?",
+          "en": "Which word compares two opposite sides?"
         }
       ],
       "explanation": {
-        "he": "משווים בין שני אנשים שונים. whereas (ואילו) מראה ניגוד בין שני צדדים.",
-        "en": "We compare two different people. whereas shows a contrast between two sides."
+        "he": "🔎 הרמז: loves מול can't watch, שני אנשים הפוכים.\n🧭 whereas = \"ואילו\". משווה בין שני צדדים שונים.\nאחותי אוהבת, ואילו הדובר בכלל לא מסוגל לצפות: whereas.",
+        "en": "Two people with opposite feelings: whereas (= while)."
       },
       "interests": [
         "movies"
@@ -855,7 +1119,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.whereas-north",
@@ -876,27 +1141,43 @@
         },
         {
           "id": "b",
-          "text": "therefore"
+          "text": "therefore",
+          "feedback": {
+            "he": "therefore = לכן. הדרום לא יבש בגלל שבצפון יורד גשם.",
+            "en": "therefore = result. The south is not dry because of the north."
+          }
         },
         {
           "id": "c",
-          "text": "unless"
+          "text": "unless",
+          "feedback": {
+            "he": "unless = \"אלא אם\". אין כאן תנאי, אלא השוואה.",
+            "en": "unless = if not. There is no condition."
+          }
         },
         {
           "id": "d",
-          "text": "because"
+          "text": "because",
+          "feedback": {
+            "he": "because = כי. הגשם בצפון הוא לא הסיבה ליובש בדרום.",
+            "en": "because = reason. That is not the reason."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "הצפון והדרום דומים או שונים?",
-          "en": "Are the north and the south similar or different?"
+          "he": "מה ההבדל בין הצפון לדרום במשפט?",
+          "en": "What is the difference between north and south?"
+        },
+        {
+          "he": "🧭 איזו מילה אומרת \"ואילו\"?",
+          "en": "Which word compares two opposite sides?"
         }
       ],
       "explanation": {
-        "he": "משווים בין שני אזורים הפוכים: גשום ויבש. whereas (ואילו) מתאים להשוואה כזאת.",
-        "en": "Two opposite areas are compared, so whereas."
+        "he": "🔎 הרמז: rains a lot מול stays dry, צפון מול דרום.\n🧭 whereas = \"ואילו\". משווה בין שני צדדים שונים.\nבצפון גשום, ואילו בדרום יבש: whereas.",
+        "en": "North and south are opposites: whereas (= while)."
       },
       "interests": [
         "science"
@@ -906,7 +1187,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.unless-projects",
@@ -928,27 +1210,43 @@
         {
           "id": "b",
           "text": "if",
-          "misconception": "connectors.unless-if"
+          "misconception": "connectors.unless-if",
+          "feedback": {
+            "he": "if יוצר \"לא תעבור אם תגיש\", וזה הפוך מההיגיון. צריך \"אלא אם\": unless.",
+            "en": "if gives the opposite meaning. Use unless."
+          }
         },
         {
           "id": "c",
-          "text": "because"
+          "text": "because",
+          "feedback": {
+            "he": "because = כי. הגשת פרויקטים היא לא סיבה להיכשל.",
+            "en": "Handing in projects is not a reason to fail."
+          }
         },
         {
           "id": "d",
-          "text": "although"
+          "text": "although",
+          "feedback": {
+            "he": "although = למרות ש. זה לא ניגוד אלא תנאי: unless.",
+            "en": "although shows contrast. This is a condition."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
           "he": "מה צריך לקרות כדי לעבור?",
-          "en": "What has to happen to pass?"
+          "en": "What must happen to pass?"
+        },
+        {
+          "he": "🧭 איזו מילה אומרת \"אלא אם\"?",
+          "en": "Which word means if ... not?"
         }
       ],
       "explanation": {
-        "he": "unless = if not. אי אפשר לעבור את הקורס בלי להגיש את כל העבודות. עם if המשפט אומר שמי שמגיש לא עובר, וזה לא הגיוני.",
-        "en": "unless = if not: you won't pass if you don't hand in the projects."
+        "he": "🔎 הרמז: won't pass, תנאי שלילי.\n🧭 unless = \"אלא אם\", כלומר if ... not.\nלא עוברים את הקורס אם לא מגישים את כל הפרויקטים: unless.",
+        "en": "unless = if not: you will not pass if you do not hand in the projects."
       },
       "interests": [
         "school"
@@ -958,7 +1256,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.unless-picnic",
@@ -980,27 +1279,43 @@
         {
           "id": "b",
           "text": "if",
-          "misconception": "connectors.unless-if"
+          "misconception": "connectors.unless-if",
+          "feedback": {
+            "he": "if יוצר \"פיקניק בפארק אם יורד גשם\", וזה לא הגיוני. צריך unless.",
+            "en": "if makes it a picnic in the rain. Use unless."
+          }
         },
         {
           "id": "c",
-          "text": "so"
+          "text": "so",
+          "feedback": {
+            "he": "so = לכן. הפיקניק לא גורם לגשם.",
+            "en": "so = result. That makes no sense."
+          }
         },
         {
           "id": "d",
-          "text": "because"
+          "text": "because",
+          "feedback": {
+            "he": "because = כי. גשם הוא לא סיבה לפיקניק בחוץ.",
+            "en": "Rain is not a reason for a picnic."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "הפיקניק יתקיים כשיורד גשם או כשלא יורד?",
-          "en": "Will the picnic happen when it rains or when it doesn't?"
+          "he": "האם עושים פיקניק בגשם?",
+          "en": "Do people have a picnic in the rain?"
+        },
+        {
+          "he": "🧭 איזו מילה אומרת \"אלא אם\"?",
+          "en": "Which word means if ... not?"
         }
       ],
       "explanation": {
-        "he": "unless = if not. נעשה פיקניק אם לא ירד גשם.",
-        "en": "unless = if not: we'll have the picnic if it doesn't rain."
+        "he": "🔎 הרמז: picnic in the park ... it rains.\n🧭 unless = \"אלא אם\", כלומר if ... not.\nעושים פיקניק, חוץ ממקרה שיורד גשם: unless.",
+        "en": "We will have the picnic if it does not rain: unless."
       },
       "interests": [
         "food"
@@ -1010,7 +1325,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.unless-act",
@@ -1032,27 +1348,43 @@
         {
           "id": "b",
           "text": "If",
-          "misconception": "connectors.unless-if"
+          "misconception": "connectors.unless-if",
+          "feedback": {
+            "he": "If יוצר \"אם נפעל, החיות ייעלמו\", וזה הפוך מהכוונה. צריך Unless.",
+            "en": "If gives the opposite meaning. Use Unless."
+          }
         },
         {
           "id": "c",
-          "text": "Because"
+          "text": "Because",
+          "feedback": {
+            "he": "Because = כי. הפעולה שלנו היא לא הסיבה שהחיות ייעלמו.",
+            "en": "Acting is not the reason they disappear."
+          }
         },
         {
           "id": "d",
-          "text": "Although"
+          "text": "Although",
+          "feedback": {
+            "he": "Although = למרות ש. זה לא ניגוד אלא תנאי: Unless.",
+            "en": "This is a condition, not a contrast."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה יציל את החיות: לפעול או לא לפעול?",
-          "en": "What will save the animals: acting or not acting?"
+          "he": "מה יקרה אם לא פועלים עכשיו?",
+          "en": "What happens if we do not act now?"
+        },
+        {
+          "he": "🧭 איזו מילה אומרת \"אלא אם\"?",
+          "en": "Which word means if ... not?"
         }
       ],
       "explanation": {
-        "he": "החיות ייעלמו אם לא נפעל. unless = if not. עם If המשפט אומר שהפעולה תגרום להיעלמות, וזה הפוך.",
-        "en": "The animals will disappear if we don't act. unless = if not."
+        "he": "🔎 הרמז: act now ... will disappear.\n🧭 Unless = \"אלא אם\", כלומר if ... not.\nאם לא פועלים עכשיו, החיות ייעלמו: Unless.",
+        "en": "If we do not act now, the animals will disappear: Unless."
       },
       "interests": [
         "animals",
@@ -1063,7 +1395,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.otherwise-coat",
@@ -1084,27 +1417,43 @@
         },
         {
           "id": "b",
-          "text": "However"
+          "text": "However",
+          "feedback": {
+            "he": "However מסובב לניגוד. כאן יש אזהרה מה יקרה אם לא: Otherwise.",
+            "en": "However shows contrast. This is a warning."
+          }
         },
         {
           "id": "c",
-          "text": "Moreover"
+          "text": "Moreover",
+          "feedback": {
+            "he": "Moreover מוסיף עוד מידע. כאן יש אזהרה מה יקרה אם לא.",
+            "en": "Moreover adds. This is a warning."
+          }
         },
         {
           "id": "d",
-          "text": "For example"
+          "text": "For example",
+          "feedback": {
+            "he": "For example מביא דוגמה. הצטננות היא לא דוגמה ללבישת מעיל.",
+            "en": "A cold is not an example of wearing a coat."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
           "he": "מה יקרה אם לא לובשים מעיל?",
-          "en": "What will happen if you don't wear a coat?"
+          "en": "What happens without a coat?"
+        },
+        {
+          "he": "🧭 איזו מילה אומרת \"אחרת\"?",
+          "en": "Which word means if not?"
         }
       ],
       "explanation": {
-        "he": "Otherwise פירושו 'אחרת': בלי מעיל אפשר להצטנן.",
-        "en": "Otherwise means 'if not': if you don't wear a coat, you'll catch a cold."
+        "he": "🔎 הרמז: Wear a coat ... catch a cold, אזהרה.\n🧭 Otherwise = \"אחרת\", כלומר אם לא עושים את מה שנאמר קודם.\nאם לא לובשים מעיל, מצטננים: Otherwise.",
+        "en": "If you do not wear a coat, you will catch a cold: Otherwise."
       },
       "interests": [],
       "tags": [
@@ -1112,7 +1461,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.otherwise-late",
@@ -1134,27 +1484,43 @@
         {
           "id": "b",
           "text": "Therefore",
-          "misconception": "connectors.cause-result"
+          "misconception": "connectors.cause-result",
+          "feedback": {
+            "he": "Therefore = לכן. יציאה עכשיו לא גורמת לאיחור, ההפך.",
+            "en": "Leaving now does not cause lateness."
+          }
         },
         {
           "id": "c",
-          "text": "In addition"
+          "text": "In addition",
+          "feedback": {
+            "he": "In addition מוסיף עוד דבר. כאן יש אזהרה מה יקרה אם לא.",
+            "en": "In addition adds. This is a warning."
+          }
         },
         {
           "id": "d",
-          "text": "Instead"
+          "text": "Instead",
+          "feedback": {
+            "he": "Instead = \"במקום זה\". האיחור לא בא במקום היציאה.",
+            "en": "Instead = in place of. That does not fit."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "האיחור יקרה אם יוצאים או אם לא יוצאים?",
-          "en": "Will we be late if we leave, or if we don't?"
+          "he": "מה יקרה אם לא יוצאים עכשיו?",
+          "en": "What happens if we do not leave now?"
+        },
+        {
+          "he": "🧭 איזו מילה אומרת \"אחרת\"?",
+          "en": "Which word means if not?"
         }
       ],
       "explanation": {
-        "he": "נאחר רק אם לא נצא עכשיו. Otherwise = אחרת. Therefore היה אומר שהיציאה גורמת לאיחור.",
-        "en": "We'll be late only if we don't leave now. Otherwise = if not."
+        "he": "🔎 הרמז: leave now ... be late, אזהרה.\n🧭 Otherwise = \"אחרת\", כלומר אם לא עושים את מה שנאמר קודם.\nאם לא יוצאים עכשיו, מאחרים: Otherwise.",
+        "en": "If we do not leave now, we will be late: Otherwise."
       },
       "interests": [
         "movies"
@@ -1164,7 +1530,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.for-example-vitamin",
@@ -1185,27 +1552,43 @@
         },
         {
           "id": "b",
-          "text": "However"
+          "text": "However",
+          "feedback": {
+            "he": "However מסובב לניגוד. תפוזים לא סותרים את המשפט הראשון, הם דוגמה לו.",
+            "en": "However shows contrast. This is an example."
+          }
         },
         {
           "id": "c",
-          "text": "Otherwise"
+          "text": "Otherwise",
+          "feedback": {
+            "he": "Otherwise = \"אחרת\". אין כאן אזהרה או תנאי.",
+            "en": "Otherwise = if not. No warning here."
+          }
         },
         {
           "id": "d",
-          "text": "Instead"
+          "text": "Instead",
+          "feedback": {
+            "he": "Instead = \"במקום זה\". תפוזים לא באים במקום פירות, הם דוגמה.",
+            "en": "Instead = in place of. This is an example."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "oranges and kiwis הם סוגים של מה?",
-          "en": "oranges and kiwis are kinds of what?"
+          "he": "האם תפוזים וקיווי הם חלק מ־many fruits?",
+          "en": "Are oranges and kiwis some of the many fruits?"
+        },
+        {
+          "he": "🧭 איזה שלט מביא דוגמה?",
+          "en": "Which sign gives an example?"
         }
       ],
       "explanation": {
-        "he": "תפוזים וקיווי הם דוגמאות לפירות עם ויטמין C. לכן For example.",
-        "en": "Oranges and kiwis are examples of such fruits, so For example."
+        "he": "🔎 הרמז: many fruits ואז oranges and kiwis.\n🧭 For example = \"לדוגמה\". מכלל לפרט.\nתפוזים וקיווי הם דוגמה לפירות עם ויטמין C: For example.",
+        "en": "Oranges and kiwis are examples of these fruits: For example."
       },
       "interests": [
         "food",
@@ -1216,7 +1599,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.for-example-owls",
@@ -1237,27 +1621,43 @@
         },
         {
           "id": "b",
-          "text": "however"
+          "text": "however",
+          "feedback": {
+            "he": "however מסובב לניגוד. גם ינשופים צדים בלילה, אין ניגוד.",
+            "en": "however shows contrast. Owls also hunt at night."
+          }
         },
         {
           "id": "c",
-          "text": "otherwise"
+          "text": "otherwise",
+          "feedback": {
+            "he": "otherwise = \"אחרת\". אין כאן אזהרה או תנאי.",
+            "en": "otherwise = if not. No warning here."
+          }
         },
         {
           "id": "d",
-          "text": "instead"
+          "text": "instead",
+          "feedback": {
+            "he": "instead = \"במקום זה\". ינשופים הם דוגמה, לא תחליף.",
+            "en": "instead = in place of. Owls are an example."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "ינשופים הם חלק מהקבוצה במשפט הראשון?",
-          "en": "Are owls part of the group in the first sentence?"
+          "he": "האם ינשופים הם חלק מ־some birds?",
+          "en": "Are owls some of those birds?"
+        },
+        {
+          "he": "🧭 איזה שלט מביא דוגמה?",
+          "en": "Which sign gives an example?"
         }
       ],
       "explanation": {
-        "he": "ינשופים הם דוגמה לציפורים שצדות בלילה. for example יכול לבוא גם באמצע משפט.",
-        "en": "Owls are an example of birds that hunt at night. for example can come in the middle of a sentence."
+        "he": "🔎 הרמז: some birds ואז Owls.\n🧭 for example = \"לדוגמה\". אפשר לשים אותו באמצע המשפט בין פסיקים.\nינשופים הם דוגמה לציפורים שצדות בלילה: for example.",
+        "en": "Owls are an example of birds that hunt at night: for example."
       },
       "interests": [
         "animals"
@@ -1267,7 +1667,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.instead-beach",
@@ -1288,27 +1689,43 @@
         },
         {
           "id": "b",
-          "text": "Moreover"
+          "text": "Moreover",
+          "feedback": {
+            "he": "Moreover מוסיף עוד דבר באותו כיוון. כאן המוזיאון בא במקום החוף.",
+            "en": "Moreover adds. Here one thing replaced the other."
+          }
         },
         {
           "id": "c",
-          "text": "For example"
+          "text": "For example",
+          "feedback": {
+            "he": "For example מביא דוגמה. מוזיאון הוא לא דוגמה לחוף.",
+            "en": "A museum is not an example of the beach."
+          }
         },
         {
           "id": "d",
-          "text": "Otherwise"
+          "text": "Otherwise",
+          "feedback": {
+            "he": "Otherwise = \"אחרת, אם לא\". כאן לא אזהרה, אלא תחליף.",
+            "en": "Otherwise = if not. This is a replacement."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "המוזיאון בא בנוסף לחוף או במקום החוף?",
-          "en": "Was the museum in addition to the beach or in place of it?"
+          "he": "האם המוזיאון היה בנוסף לחוף או במקומו?",
+          "en": "Was the museum in addition to the beach, or in its place?"
+        },
+        {
+          "he": "🧭 איזה שלט אומר \"במקום זה\"?",
+          "en": "Which sign means in its place?"
         }
       ],
       "explanation": {
-        "he": "המוזיאון בא במקום החוף. Instead פירושו 'במקום זה'.",
-        "en": "The museum replaced the beach. Instead means 'in place of that'."
+        "he": "🔎 הרמז: didn't go to the beach ואז went to a museum.\n🧭 Instead = \"במקום זה\". דבר אחד בא במקום דבר אחר.\nהמוזיאון בא במקום החוף: Instead.",
+        "en": "The museum replaced the beach: Instead."
       },
       "interests": [
         "travel"
@@ -1318,7 +1735,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.instead-of-bus",
@@ -1339,27 +1757,43 @@
         },
         {
           "id": "b",
-          "text": "Because of"
+          "text": "Because of",
+          "feedback": {
+            "he": "Because of = \"בגלל\". ההליכה לא קרתה בגלל האוטובוס, אלא במקומו.",
+            "en": "Because of = reason. She walked in place of the bus."
+          }
         },
         {
           "id": "c",
-          "text": "Unless"
+          "text": "Unless",
+          "feedback": {
+            "he": "Unless = \"אלא אם\", ואחריו משפט שלם. כאן תחליף: Instead of.",
+            "en": "Unless is a condition. This is a replacement."
+          }
         },
         {
           "id": "d",
-          "text": "Although"
+          "text": "Although",
+          "feedback": {
+            "he": "Although בא לפני משפט שלם עם נושא ופועל. taking the bus הוא לא משפט שלם, וגם אין כאן ניגוד.",
+            "en": "Although needs a full clause, and this is not a contrast."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "היא נסעה באוטובוס בסוף?",
-          "en": "Did she take the bus in the end?"
+          "he": "האם היא נסעה באוטובוס?",
+          "en": "Did she take the bus?"
+        },
+        {
+          "he": "🧭 איזה ביטוי אומר \"במקום\" ובא לפני ing?",
+          "en": "Which phrase means in place of and goes before -ing?"
         }
       ],
       "explanation": {
-        "he": "היא הלכה ברגל במקום לנסוע. Instead of + ing פירושו 'במקום ל...'.",
-        "en": "She walked and didn't take the bus. Instead of + -ing = in place of."
+        "he": "🔎 הרמז: taking the bus ואז walked.\n🧭 Instead of = \"במקום\", ואחריו שם עצם או ing.\nההליכה באה במקום האוטובוס: Instead of taking.",
+        "en": "Walking replaced the bus: Instead of + -ing."
       },
       "interests": [
         "school"
@@ -1369,7 +1803,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.so-museum",
@@ -1391,27 +1826,43 @@
         {
           "id": "b",
           "text": "because",
-          "misconception": "connectors.cause-result"
+          "misconception": "connectors.cause-result",
+          "feedback": {
+            "he": "because מצביע לסיבה. הביקור ביום שלישי הוא התוצאה, לא הסיבה.",
+            "en": "because gives a reason. Tuesday is the result."
+          }
         },
         {
           "id": "c",
-          "text": "although"
+          "text": "although",
+          "feedback": {
+            "he": "although = למרות ש. אין ניגוד, הביקור ביום שלישי הגיוני.",
+            "en": "although shows contrast. There is none."
+          }
         },
         {
           "id": "d",
-          "text": "unless"
+          "text": "unless",
+          "feedback": {
+            "he": "unless = \"אלא אם\". אין כאן תנאי.",
+            "en": "unless is a condition. There is none here."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "למה ביקרנו ביום שלישי?",
-          "en": "Why did we visit on Tuesday?"
+          "he": "למה הביקור היה ביום שלישי?",
+          "en": "Why was the visit on Tuesday?"
+        },
+        {
+          "he": "🧭 איזה שלט מצביע קדימה לתוצאה?",
+          "en": "Which sign points forward to a result?"
         }
       ],
       "explanation": {
-        "he": "המוזיאון היה סגור, ולכן ביקרנו ביום אחר. התוצאה באה אחרי so.",
-        "en": "The museum was closed, so we went another day. The result comes after so."
+        "he": "🔎 הרמז: closed on Monday ואז visited on Tuesday.\n🧭 so מצביע קדימה לתוצאה: \"ולכן\".\nסגור ביום שני, ולכן הלכו ביום שלישי: so.",
+        "en": "It was closed on Monday, so we went on Tuesday: a result."
       },
       "interests": [
         "travel"
@@ -1421,7 +1872,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.because-tired",
@@ -1443,23 +1895,35 @@
         {
           "id": "b",
           "text": "so",
-          "misconception": "connectors.cause-result"
+          "misconception": "connectors.cause-result",
+          "feedback": {
+            "he": "so מצביע לתוצאה. העבודה בלילה היא הסיבה, לא התוצאה.",
+            "en": "so shows a result. Working was the reason."
+          }
         },
         {
           "id": "c",
-          "text": "but"
+          "text": "but",
+          "feedback": {
+            "he": "but מסובב לניגוד. אין ניגוד בין עבודה כל הלילה לעייפות.",
+            "en": "but shows contrast. There is none."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה הסיבה ומה התוצאה?",
-          "en": "What is the cause and what is the result?"
+          "he": "למה נועה הייתה עייפה?",
+          "en": "Why was Noa tired?"
+        },
+        {
+          "he": "🧭 איזה שלט מצביע אחורה לסיבה?",
+          "en": "Which sign points back to a reason?"
         }
       ],
       "explanation": {
-        "he": "העבודה כל הלילה היא הסיבה לעייפות. הסיבה באה אחרי because.",
-        "en": "Working all night is the reason she was tired, so because."
+        "he": "🔎 הרמז: she had worked all night.\n🧭 because מצביע אחורה לסיבה: \"כי\".\nהעבודה כל הלילה היא הסיבה לעייפות: because.",
+        "en": "Working all night is the reason she was tired: because."
       },
       "interests": [],
       "tags": [
@@ -1467,7 +1931,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.but-called",
@@ -1488,23 +1953,35 @@
         },
         {
           "id": "b",
-          "text": "so"
+          "text": "so",
+          "feedback": {
+            "he": "so אומר שהשיחות גרמו לו לא לענות. זה לא הגיוני.",
+            "en": "so means my calls made him not answer. That is not logical."
+          }
         },
         {
           "id": "c",
-          "text": "because"
+          "text": "because",
+          "feedback": {
+            "he": "because אומר שהתקשרתי בגלל שלא ענה. הכוונה כאן היא ניגוד.",
+            "en": "because gives a reason. Here it is a contrast."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מצפים שיענה אחרי שלוש שיחות?",
-          "en": "Do we expect him to answer after three calls?"
+          "he": "האם קרה מה שציפיתי?",
+          "en": "Did what I expected happen?"
+        },
+        {
+          "he": "🧭 ניגוד: איזה שלט מסובב?",
+          "en": "Contrast: which sign turns?"
         }
       ],
       "explanation": {
-        "he": "התקשרתי שלוש פעמים, והוא בכל זאת לא ענה: ניגוד. לכן but.",
-        "en": "I called three times and still no answer: contrast, so but."
+        "he": "🔎 הרמז: called three times מול didn't answer.\n🧭 but מסובב את הכיוון: \"אבל\".\nהתקשרתי, והוא לא ענה. מה שציפיתי לו לא קרה: but.",
+        "en": "I expected an answer and did not get one: a contrast, but."
       },
       "interests": [],
       "tags": [
@@ -1512,7 +1989,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.and-bread",
@@ -1533,23 +2011,35 @@
         },
         {
           "id": "b",
-          "text": "but"
+          "text": "but",
+          "feedback": {
+            "he": "but מסובב לניגוד. אין ניגוד בין עגבניות לגבינה, זו רשימה.",
+            "en": "but shows contrast. This is a list."
+          }
         },
         {
           "id": "c",
-          "text": "so"
+          "text": "so",
+          "feedback": {
+            "he": "so מצביע לתוצאה. עגבניות הן לא תוצאה של לחם וגבינה.",
+            "en": "so shows a result. This is a list."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "זו רשימה של דברים. מה בא לפני הפריט האחרון?",
-          "en": "It's a list. What comes before the last item?"
+          "he": "מה יש במשפט: רשימה, ניגוד או סיבה?",
+          "en": "What is in the sentence: a list, a contrast or a reason?"
+        },
+        {
+          "he": "🧭 איזה שלט מוסיף?",
+          "en": "Which sign adds?"
         }
       ],
       "explanation": {
-        "he": "ברשימה משתמשים ב־and לפני הפריט האחרון.",
-        "en": "In a list, use and before the last item."
+        "he": "🔎 הרמז: bread, cheese ... tomatoes, רשימה.\n🧭 and מוסיף. ברשימה שמים and לפני הפריט האחרון.\nלחם, גבינה ועגבניות: and.",
+        "en": "In a list, and comes before the last item."
       },
       "interests": [
         "food",
@@ -1560,7 +2050,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.however-phone",
@@ -1582,27 +2073,43 @@
         {
           "id": "b",
           "text": "Although",
-          "misconception": "connectors.although-however"
+          "misconception": "connectors.although-however",
+          "feedback": {
+            "he": "Although מחבר שני חלקים באותו משפט (Although it is old, it works). הוא לא עומד לבד עם פסיק אחריו.",
+            "en": "Although joins two parts of one sentence. It cannot stand alone with a comma."
+          }
         },
         {
           "id": "c",
-          "text": "Therefore"
+          "text": "Therefore",
+          "feedback": {
+            "he": "Therefore = לכן. זה שהטלפון עובד הוא לא תוצאה של היותו ישן.",
+            "en": "Working well is not a result of being old."
+          }
         },
         {
           "id": "d",
-          "text": "For example"
+          "text": "For example",
+          "feedback": {
+            "he": "For example מביא דוגמה. אין כאן דוגמה, יש ניגוד.",
+            "en": "This is a contrast, not an example."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "המילה פותחת משפט חדש אחרי נקודה. מה מתאים כאן?",
-          "en": "The word starts a new sentence after a full stop. What fits?"
+          "he": "האם טלפון ישן אמור לעבוד מצוין?",
+          "en": "Would you expect an old phone to work perfectly?"
+        },
+        {
+          "he": "🧭 ניגוד בתחילת משפט חדש עם פסיק.",
+          "en": "Contrast at the start of a new sentence, with a comma."
         }
       ],
       "explanation": {
-        "he": "יש ניגוד: ישן אבל עובד. However פותח משפט חדש ובא אחריו פסיק. Although מחבר שני חלקים באותו משפט ולא בא לבד עם פסיק.",
-        "en": "There is contrast. However starts a new sentence with a comma. Although joins two clauses in one sentence."
+        "he": "🔎 הרמז: quite old מול works perfectly.\n🧭 However = but בתחילת משפט חדש, עם פסיק אחריו.\nישן, ובכל זאת עובד מצוין: However.",
+        "en": "Old but works perfectly is a contrast. At the start of a new sentence: However."
       },
       "interests": [
         "technology"
@@ -1612,7 +2119,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.although-film",
@@ -1634,28 +2142,44 @@
         {
           "id": "b",
           "text": "However",
-          "misconception": "connectors.although-however"
+          "misconception": "connectors.although-however",
+          "feedback": {
+            "he": "However פותח משפט נפרד, ולא מחבר שני חלקים באותו משפט כמו כאן.",
+            "en": "However starts a new sentence. It cannot join these two parts."
+          }
         },
         {
           "id": "c",
           "text": "Despite",
-          "misconception": "connectors.despite-clause"
+          "misconception": "connectors.despite-clause",
+          "feedback": {
+            "he": "Despite בא לפני שם עצם (Despite the bad reviews). כאן משפט עם got, אז Although.",
+            "en": "Despite needs a noun. Here there is a clause: Although."
+          }
         },
         {
           "id": "d",
-          "text": "Therefore"
+          "text": "Therefore",
+          "feedback": {
+            "he": "Therefore = לכן. ביקורות רעות לא גורמות להצלחה, וגם Therefore לא פותח משפט כזה.",
+            "en": "Therefore = result. That is not logical here."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "כמה משפטים יש כאן, ואיפה הפסיק?",
-          "en": "How many clauses are there, and where is the comma?"
+          "he": "האם ביקורות רעות מובילות בדרך כלל להצלחה?",
+          "en": "Do bad reviews usually lead to success?"
+        },
+        {
+          "he": "🧭 ניגוד בתחילת משפט, ואחריו נושא ופועל (got).",
+          "en": "Contrast at the start, followed by a subject and verb."
         }
       ],
       "explanation": {
-        "he": "שני חלקים באותו משפט עם ניגוד: Although. However לא מחבר שני חלקים בתוך משפט אחד, ו־Despite לא בא לפני משפט עם פועל.",
-        "en": "Two clauses in one sentence with contrast: Although. However doesn't join clauses, and Despite isn't followed by a clause."
+        "he": "🔎 הרמז: bad reviews מול big success, ובאמצע פסיק אחד במשפט אחד.\n🧭 Although = \"למרות ש\". מחבר שני חלקים באותו משפט, ואחריו משפט עם פועל.\nביקורות רעות, ובכל זאת הצלחה: Although.",
+        "en": "A contrast inside one sentence, before a clause: Although."
       },
       "interests": [
         "movies"
@@ -1665,7 +2189,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.therefore-company",
@@ -1687,11 +2212,19 @@
         {
           "id": "b",
           "text": "however",
-          "misconception": "connectors.addition-contrast"
+          "misconception": "connectors.addition-contrast",
+          "feedback": {
+            "he": "however מסובב לניגוד. אין ניגוד: הפסד באמת מוביל לסגירה.",
+            "en": "however shows contrast. There is none."
+          }
         },
         {
           "id": "c",
-          "text": "otherwise"
+          "text": "otherwise",
+          "feedback": {
+            "he": "otherwise = \"אחרת, אם לא\". ההפסד באמת קרה, אז זו תוצאה.",
+            "en": "otherwise = if not. This is a result."
+          }
         }
       ],
       "correctOptionId": "a",
@@ -1699,11 +2232,15 @@
         {
           "he": "למה החברה סוגרת חנויות?",
           "en": "Why is the company closing stores?"
+        },
+        {
+          "he": "🧭 איזה שלט מצביע קדימה לתוצאה?",
+          "en": "Which sign points forward to a result?"
         }
       ],
       "explanation": {
-        "he": "ההפסד הוא הסיבה, והסגירה היא התוצאה. therefore יכול לבוא גם באמצע משפט.",
-        "en": "Losing money is the cause and closing stores is the result. therefore can come mid-sentence."
+        "he": "🔎 הרמז: lost a lot of money ואז decided to close.\n🧭 therefore = \"לכן\". אפשר לשים אותו גם באמצע המשפט: It has therefore decided.\nההפסד הוא הסיבה, והסגירה היא התוצאה: therefore.",
+        "en": "Losing money caused the decision to close stores: therefore."
       },
       "interests": [],
       "tags": [
@@ -1711,7 +2248,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.as-a-result-home",
@@ -1732,16 +2270,28 @@
         },
         {
           "id": "b",
-          "text": "For example"
+          "text": "For example",
+          "feedback": {
+            "he": "For example מביא דוגמה. פחות פקקים זו לא דוגמה, זו תוצאה.",
+            "en": "Less traffic is a result, not an example."
+          }
         },
         {
           "id": "c",
-          "text": "Otherwise"
+          "text": "Otherwise",
+          "feedback": {
+            "he": "Otherwise = \"אחרת, אם לא\". כאן אין אזהרה, יש תוצאה.",
+            "en": "Otherwise = if not. This is a result."
+          }
         },
         {
           "id": "d",
           "text": "Although",
-          "misconception": "connectors.although-however"
+          "misconception": "connectors.although-however",
+          "feedback": {
+            "he": "Although מחבר שני חלקים באותו משפט, ולא בא לבד עם פסיק. וגם אין כאן ניגוד.",
+            "en": "Although cannot stand alone with a comma, and there is no contrast."
+          }
         }
       ],
       "correctOptionId": "a",
@@ -1749,11 +2299,15 @@
         {
           "he": "למה יש פחות פקקים?",
           "en": "Why is there less traffic?"
+        },
+        {
+          "he": "🧭 איזה שלט מצביע קדימה לתוצאה?",
+          "en": "Which sign points forward to a result?"
         }
       ],
       "explanation": {
-        "he": "העבודה מהבית גורמת לפחות פקקים. As a result מציג תוצאה ופותח משפט חדש.",
-        "en": "Working from home causes less traffic. As a result shows a result and starts a new sentence."
+        "he": "🔎 הרמז: work from home ואז less traffic.\n🧭 As a result = \"כתוצאה מכך\", כמו so בתחילת משפט.\nעבודה מהבית גורמת לפחות פקקים: As a result.",
+        "en": "Working from home causes less traffic: As a result."
       },
       "interests": [
         "technology"
@@ -1763,7 +2317,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.despite-ill",
@@ -1784,27 +2339,43 @@
         },
         {
           "id": "b",
-          "text": "Because of"
+          "text": "Because of",
+          "feedback": {
+            "he": "Because of = \"בגלל\". מחלה היא לא סיבה ללכת לעבודה.",
+            "en": "Being ill is not a reason to go to work."
+          }
         },
         {
           "id": "c",
-          "text": "Instead of"
+          "text": "Instead of",
+          "feedback": {
+            "he": "Instead of = \"במקום\". היא לא הלכה לעבודה במקום להרגיש חולה.",
+            "en": "She did not go to work in place of feeling ill."
+          }
         },
         {
           "id": "d",
-          "text": "Unless"
+          "text": "Unless",
+          "feedback": {
+            "he": "Unless = \"אלא אם\", ואחריו משפט שלם. כאן ניגוד: Despite.",
+            "en": "Unless is a condition. Here it is a contrast."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מצפים שמי שחולה ילך לעבודה?",
-          "en": "Do we expect a sick person to go to work?"
+          "he": "האם מחלה היא סיבה ללכת לעבודה?",
+          "en": "Is being ill a reason to go to work?"
+        },
+        {
+          "he": "🧭 ניגוד לפני ing: איזו מילה?",
+          "en": "Contrast before -ing: which word?"
         }
       ],
       "explanation": {
-        "he": "היא הלכה לעבודה למרות שהרגישה רע: ניגוד. Despite + ing מתאים כאן.",
-        "en": "She went to work even though she felt ill. Despite + -ing shows contrast."
+        "he": "🔎 הרמז: feeling ill מול went to work.\n🧭 Despite = \"למרות\", ואחריו שם עצם או ing.\nהרגישה חולה, ובכל זאת הלכה לעבודה: Despite.",
+        "en": "Feeling ill but going to work is a contrast. Before -ing: Despite."
       },
       "interests": [],
       "tags": [
@@ -1812,7 +2383,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.moreover-cycling",
@@ -1834,27 +2406,43 @@
         {
           "id": "b",
           "text": "However",
-          "misconception": "connectors.addition-contrast"
+          "misconception": "connectors.addition-contrast",
+          "feedback": {
+            "he": "However מסובב לניגוד. שני החלקים טובים, אין ניגוד.",
+            "en": "However shows contrast. Both are positive."
+          }
         },
         {
           "id": "c",
-          "text": "Otherwise"
+          "text": "Otherwise",
+          "feedback": {
+            "he": "Otherwise = \"אחרת, אם לא\". אין כאן אזהרה.",
+            "en": "Otherwise = if not. No warning here."
+          }
         },
         {
           "id": "d",
-          "text": "Instead"
+          "text": "Instead",
+          "feedback": {
+            "he": "Instead = \"במקום זה\". הכושר לא בא במקום המחיר הזול, הוא נוסף.",
+            "en": "Instead = in place of. Here we add."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "שני המשפטים הם יתרונות?",
-          "en": "Are both sentences advantages?"
+          "he": "האם המשפט השני הפוך לראשון או מוסיף עליו?",
+          "en": "Is the second sentence opposite, or does it add?"
+        },
+        {
+          "he": "🧭 איזה שלט מוסיף?",
+          "en": "Which sign adds?"
         }
       ],
       "explanation": {
-        "he": "זול ובריא: שני יתרונות. Moreover מוסיף עוד נקודה באותו כיוון.",
-        "en": "Cheap and healthy: two advantages. Moreover adds another point."
+        "he": "🔎 הרמז: cheap, ועוד keeps you fit. שני יתרונות.\n🧭 Moreover = \"יתרה מזאת\", כמו and בין שני משפטים.\nמוסיפים עוד יתרון באותו כיוון: Moreover.",
+        "en": "Two advantages in the same direction: Moreover."
       },
       "interests": [
         "sports",
@@ -1865,7 +2453,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.so-last-day",
@@ -1887,27 +2476,43 @@
         {
           "id": "b",
           "text": "because",
-          "misconception": "connectors.cause-result"
+          "misconception": "connectors.cause-result",
+          "feedback": {
+            "he": "because מצביע לסיבה. מצב הרוח לא גרם ליום האחרון, ההפך.",
+            "en": "because gives a reason. The mood did not cause the last day."
+          }
         },
         {
           "id": "c",
-          "text": "although"
+          "text": "although",
+          "feedback": {
+            "he": "although = למרות ש. אין ניגוד: יום אחרון באמת משמח.",
+            "en": "although shows contrast. There is none."
+          }
         },
         {
           "id": "d",
-          "text": "unless"
+          "text": "unless",
+          "feedback": {
+            "he": "unless = \"אלא אם\". אין כאן תנאי.",
+            "en": "unless is a condition. There is none here."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה גרם למצב הרוח הטוב?",
-          "en": "What caused the good mood?"
+          "he": "למה כולם היו במצב רוח טוב?",
+          "en": "Why was everyone in a great mood?"
+        },
+        {
+          "he": "🧭 איזה שלט מצביע קדימה לתוצאה?",
+          "en": "Which sign points forward to a result?"
         }
       ],
       "explanation": {
-        "he": "היום האחרון הוא הסיבה, ומצב הרוח הוא התוצאה. לכן so.",
-        "en": "The last day is the cause and the good mood is the result, so so."
+        "he": "🔎 הרמז: the last day of school ואז a great mood.\n🧭 so מצביע קדימה לתוצאה: \"ולכן\".\nהיום האחרון גרם למצב רוח טוב: so.",
+        "en": "The last day caused the good mood: so."
       },
       "interests": [
         "school"
@@ -1917,7 +2522,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.in-addition-to-languages",
@@ -1938,27 +2544,43 @@
         },
         {
           "id": "b",
-          "text": "Despite"
+          "text": "Despite",
+          "feedback": {
+            "he": "Despite = \"למרות\". אין סתירה בין אנגלית לערבית וצרפתית.",
+            "en": "Despite shows contrast. There is none."
+          }
         },
         {
           "id": "c",
-          "text": "Because of"
+          "text": "Because of",
+          "feedback": {
+            "he": "Because of = \"בגלל\". האנגלית היא לא הסיבה שהיא מדברת ערבית.",
+            "en": "English is not the reason she speaks Arabic."
+          }
         },
         {
           "id": "d",
-          "text": "Unless"
+          "text": "Unless",
+          "feedback": {
+            "he": "Unless = \"אלא אם\", ואחריו משפט שלם. כאן מוסיפים: In addition to.",
+            "en": "Unless is a condition. Here we add."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מאיה יודעת אנגלית?",
-          "en": "Does Maya speak English?"
+          "he": "האם השפות האחרות באות בנוסף לאנגלית או נגדה?",
+          "en": "Are the other languages added to English or against it?"
+        },
+        {
+          "he": "🧭 איזה ביטוי מוסיף ובא לפני שם עצם?",
+          "en": "Which phrase adds and goes before a noun?"
         }
       ],
       "explanation": {
-        "he": "מאיה יודעת אנגלית ועוד שתי שפות. In addition to פירושו 'בנוסף ל'.",
-        "en": "Maya speaks English and two more languages. In addition to means 'as well as'."
+        "he": "🔎 הרמז: English, ועוד Arabic and French.\n🧭 In addition to = \"בנוסף ל־\", ואחריו שם עצם.\nמוסיפים עוד שפות לאנגלית: In addition to.",
+        "en": "She speaks English and more languages: In addition to + noun."
       },
       "interests": [
         "travel"
@@ -1968,7 +2590,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.on-the-other-hand-cars",
@@ -1989,28 +2612,44 @@
         },
         {
           "id": "b",
-          "text": "As a result"
+          "text": "As a result",
+          "feedback": {
+            "he": "As a result = תוצאה. מחיר יקר הוא לא תוצאה של שקט וניקיון.",
+            "en": "Being expensive is not a result of being quiet."
+          }
         },
         {
           "id": "c",
           "text": "Moreover",
-          "misconception": "connectors.addition-contrast"
+          "misconception": "connectors.addition-contrast",
+          "feedback": {
+            "he": "Moreover מוסיף באותו כיוון. יקר הוא חיסרון, הפוך מהיתרונות.",
+            "en": "Moreover adds in the same direction. This is the other side."
+          }
         },
         {
           "id": "d",
-          "text": "For example"
+          "text": "For example",
+          "feedback": {
+            "he": "For example מביא דוגמה. מחיר יקר הוא לא דוגמה לשקט.",
+            "en": "This is not an example."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "המחיר הגבוה הוא יתרון או חיסרון?",
-          "en": "Is the high price an advantage or a disadvantage?"
+          "he": "המשפט הראשון טוב או רע? והשני?",
+          "en": "Is the first sentence good or bad? And the second?"
+        },
+        {
+          "he": "🧭 איזה שלט מסובב לצד השני?",
+          "en": "Which sign turns to the other side?"
         }
       ],
       "explanation": {
-        "he": "יתרונות ואחריהם חיסרון: ניגוד. On the other hand מציג את הצד השני. Moreover מוסיף נקודה באותו כיוון.",
-        "en": "Advantages, then a disadvantage: On the other hand. Moreover adds a point in the same direction."
+        "he": "🔎 הרמז: quiet and clean מול expensive.\n🧭 On the other hand = \"מצד שני\". מציג את הצד ההפוך.\nיתרונות ואז חיסרון: On the other hand.",
+        "en": "Good points, then a bad point: On the other hand."
       },
       "interests": [
         "technology"
@@ -2020,7 +2659,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.so-forgot-keys",
@@ -2042,11 +2682,19 @@
         {
           "id": "b",
           "text": "because",
-          "misconception": "connectors.cause-result"
+          "misconception": "connectors.cause-result",
+          "feedback": {
+            "he": "because מצביע לסיבה. ההמתנה היא התוצאה, לא הסיבה לשכחה.",
+            "en": "because gives a reason. Waiting is the result."
+          }
         },
         {
           "id": "c",
-          "text": "but"
+          "text": "but",
+          "feedback": {
+            "he": "but מסובב לניגוד. אין ניגוד בין שכחת מפתחות להמתנה בחוץ.",
+            "en": "but shows contrast. There is none."
+          }
         }
       ],
       "correctOptionId": "a",
@@ -2054,11 +2702,15 @@
         {
           "he": "למה חיכיתי בחוץ?",
           "en": "Why did I wait outside?"
+        },
+        {
+          "he": "🧭 איזה שלט מצביע קדימה לתוצאה?",
+          "en": "Which sign points forward to a result?"
         }
       ],
       "explanation": {
-        "he": "שכחתי מפתחות, ולכן חיכיתי בחוץ. התוצאה באה אחרי so.",
-        "en": "I forgot my keys, and the result was waiting outside: so."
+        "he": "🔎 הרמז: forgot my keys ואז wait outside.\n🧭 so מצביע קדימה לתוצאה: \"ולכן\".\nשכחתי מפתחות, ולכן חיכיתי בחוץ: so.",
+        "en": "Forgetting the keys caused the waiting: so."
       },
       "interests": [],
       "tags": [
@@ -2066,7 +2718,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.conn.whereas-sleep",
@@ -2087,27 +2740,43 @@
         },
         {
           "id": "b",
-          "text": "therefore"
+          "text": "therefore",
+          "feedback": {
+            "he": "therefore = לכן. מבוגרים לא צריכים פחות שינה בגלל בני הנוער.",
+            "en": "therefore = result. That is not the logic here."
+          }
         },
         {
           "id": "c",
-          "text": "for example"
+          "text": "for example",
+          "feedback": {
+            "he": "for example מביא דוגמה. מבוגרים הם לא דוגמה לבני נוער.",
+            "en": "Adults are not an example of teenagers."
+          }
         },
         {
           "id": "d",
-          "text": "unless"
+          "text": "unless",
+          "feedback": {
+            "he": "unless = \"אלא אם\". אין כאן תנאי, אלא השוואה.",
+            "en": "unless is a condition. This is a comparison."
+          }
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "משווים בין שתי קבוצות?",
-          "en": "Are two groups compared?"
+          "he": "מה ההבדל בין בני נוער למבוגרים?",
+          "en": "What is the difference between teenagers and adults?"
+        },
+        {
+          "he": "🧭 איזו מילה אומרת \"ואילו\"?",
+          "en": "Which word compares two different sides?"
         }
       ],
       "explanation": {
-        "he": "משווים מתבגרים למבוגרים: מספרים שונים. whereas (ואילו) מתאים להשוואה.",
-        "en": "Teenagers and adults are compared, so whereas."
+        "he": "🔎 הרמז: Teenagers nine hours מול adults seven or eight.\n🧭 whereas = \"ואילו\". משווה בין שתי קבוצות שונות.\nבני נוער צריכים יותר, ואילו מבוגרים פחות: whereas.",
+        "en": "Two groups with different needs: whereas (= while)."
       },
       "interests": [
         "science"
@@ -2117,7 +2786,8 @@
         "connector"
       ],
       "estimatedTimeSec": 20,
-      "source": "original"
+      "source": "original",
+      "anchor": "connectors"
     },
     {
       "id": "bg.col.make-a-decision",

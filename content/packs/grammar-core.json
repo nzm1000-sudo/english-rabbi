@@ -20,21 +20,39 @@
       "knownErrors": [
         {
           "answer": "walk",
-          "misconception": "present-simple.missing-s",
           "feedback": {
-            "he": "כמעט. עם she מוסיפים s.",
-            "en": "Almost. With she, add -s."
+            "he": "walk בלי s מתאים ל־I, you, we, they. עם she הנחש 🐍 מוסיף s: walks.",
+            "en": "walk is for I/you/we/they. With she, add s: walks."
+          },
+          "misconception": "present-simple.missing-s"
+        },
+        {
+          "answer": "walking",
+          "feedback": {
+            "he": "walking לבד הוא לא פועל שלם. וכאן every day, הרגל 📅, אז walks.",
+            "en": "walking alone is not a full verb. Every day = habit, so walks."
+          }
+        },
+        {
+          "answer": "is walking",
+          "feedback": {
+            "he": "is walking זה 🎥 שידור חי, מה שקורה עכשיו. every day זה הרגל, אז walks.",
+            "en": "is walking = happening now. Every day = habit, so walks."
           }
         }
       ],
       "explanation": {
-        "he": "she בהווה פשוט: מוסיפים s. She walks.",
-        "en": "With she in the Present Simple, add -s: She walks."
+        "he": "🔎 הרמז: She (אחת) ו־every day (הרגל).\n📅 הרגל = הווה פשוט, כמו הלוח על המקרר.\n🐍 עם he, she, it נדבק לפועל s: walks.",
+        "en": "Every day = a habit, so present simple. She = one person, so walks."
       },
       "hints": [
         {
-          "he": "מי עושה את הפעולה? she. מה מוסיפים לפועל?",
-          "en": "Who does it? she. What do we add to the verb?"
+          "he": "מי עושה את הפעולה? אחת או הרבה?",
+          "en": "Who does it? One person or many?"
+        },
+        {
+          "he": "every day = הרגל 📅. מה קורה לפועל אחרי she? 🐍",
+          "en": "every day = habit. What happens to the verb after she?"
         }
       ],
       "interests": [],
@@ -43,7 +61,8 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "She walks to school every day."
+      "audioText": "She walks to school every day.",
+      "anchor": "third-person-s"
     },
     {
       "id": "gr.ps.third-person.watch",
@@ -62,28 +81,39 @@
       "knownErrors": [
         {
           "answer": "watch",
-          "misconception": "present-simple.missing-s",
           "feedback": {
-            "he": "my brother זה he, ולכן צריך es.",
-            "en": "my brother is he, so add -es."
-          }
+            "he": "watch בלי s מתאים ל־I, you, we, they. My brother הוא אחד, אז 🐍 watches.",
+            "en": "watch is for I/you/we/they. My brother = he, so watches."
+          },
+          "misconception": "present-simple.missing-s"
         },
         {
           "answer": "watchs",
           "feedback": {
-            "he": "כמעט. אחרי ch מוסיפים es.",
-            "en": "Almost. After ch, add -es."
+            "he": "נכון שצריך s 🐍, אבל אחרי ch מוסיפים es: watches. אי אפשר להגות watchs.",
+            "en": "Right idea, but after ch we add -es: watches."
+          }
+        },
+        {
+          "answer": "is watching",
+          "feedback": {
+            "he": "is watching זה 🎥 עכשיו. after dinner כל ערב זה הרגל 📅, אז watches.",
+            "en": "is watching = now. After dinner = a habit, so watches."
           }
         }
       ],
       "explanation": {
-        "he": "פועל שמסתיים ב־ch מקבל es: watches.",
-        "en": "Verbs ending in -ch take -es: watches."
+        "he": "🔎 הרמז: My brother (הוא, אחד) ו־after dinner (הרגל).\n📅 הרגל = הווה פשוט. 🐍 עם he מוסיפים s.\nאחרי ch מוסיפים es, כדי שיהיה אפשר להגות: watches.",
+        "en": "My brother = he, and it is a habit, so add -es after ch: watches."
       },
       "hints": [
         {
-          "he": "my brother = he. מוסיפים s או es?",
-          "en": "my brother = he. Add -s or -es?"
+          "he": "מי צופה? אחד או הרבה?",
+          "en": "Who watches? One or many?"
+        },
+        {
+          "he": "הרגל = 📅, ואחרי he בא 🐍. איך מוסיפים s למילה שנגמרת ב־ch?",
+          "en": "Habit + he = add s. How do you add s after ch?"
         }
       ],
       "interests": [
@@ -94,7 +124,8 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "My brother watches TV after dinner."
+      "audioText": "My brother watches TV after dinner.",
+      "anchor": "third-person-s"
     },
     {
       "id": "gr.ps.negative.does",
@@ -115,22 +146,34 @@
         {
           "id": "b",
           "text": "don't",
-          "misconception": "present-simple.do-does"
+          "misconception": "present-simple.do-does",
+          "feedback": {
+            "he": "don't מתאים ל־I, you, we, they. He הוא אחד, אז doesn't 🧰.",
+            "en": "don't is for I/you/we/they. He needs doesn't."
+          }
         },
         {
           "id": "c",
-          "text": "isn't"
+          "text": "isn't",
+          "feedback": {
+            "he": "isn't הולך עם תיאור או ing (He isn't tall). like הוא פועל רגיל, אז שוללים עם doesn't.",
+            "en": "isn't goes with adjectives or -ing. like is a normal verb, so doesn't."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "he בשלילה בהווה פשוט: doesn't + פועל בסיס.",
-        "en": "With he, the negative is doesn't + base verb."
+        "he": "🔎 הרמז: He, כלומר אחד.\n🧰 בשלילה בהווה פשוט באה מילת עזר: don't או doesn't.\nעם he משתמשים ב־doesn't. היא לוקחת את ה־s, ו־like נשאר נקי.",
+        "en": "With he, the negative helper is doesn't, and like stays without s."
       },
       "hints": [
         {
-          "he": "he, she, it הולכים עם does.",
-          "en": "he, she, it go with does."
+          "he": "מי לא אוהב קפה? אחד או הרבה?",
+          "en": "Who does not like coffee? One or many?"
+        },
+        {
+          "he": "בשלילה צריך מילת עזר 🧰. איזו מהן הולכת עם he?",
+          "en": "A negative needs a helper. Which one goes with he?"
         }
       ],
       "interests": [
@@ -141,7 +184,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "He doesn't like coffee."
+      "audioText": "He doesn't like coffee.",
+      "anchor": "do-does"
     },
     {
       "id": "gr.ps.question.do",
@@ -162,22 +206,34 @@
         {
           "id": "b",
           "text": "Does",
-          "misconception": "present-simple.do-does"
+          "misconception": "present-simple.do-does",
+          "feedback": {
+            "he": "Does רק ל־he, she, it. כאן you, אז Do.",
+            "en": "Does is only for he/she/it. Here it is you, so Do."
+          }
         },
         {
           "id": "c",
-          "text": "Are"
+          "text": "Are",
+          "feedback": {
+            "he": "Are בא עם תיאור או ing (Are you ready?). play הוא פועל רגיל, אז השאלה מתחילה ב־Do.",
+            "en": "Are goes with adjectives or -ing. play is a normal verb, so Do."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "you בשאלה בהווה פשוט: Do you...?",
-        "en": "Questions with you use Do: Do you play...?"
+        "he": "🔎 הרמז: you.\n🧰 שאלה בהווה פשוט מתחילה במילת עזר: Do או Does.\nעם you משתמשים ב־Do, ו־play נשאר נקי.",
+        "en": "Questions in present simple start with Do or Does. With you, use Do."
       },
       "hints": [
         {
-          "he": "עם you משתמשים ב־do.",
-          "en": "With you, use do."
+          "he": "מי השחקן במשפט? איזו מילה באה אחרי הרווח?",
+          "en": "Who is the subject after the gap?"
+        },
+        {
+          "he": "שאלה צריכה מילת עזר 🧰. Does רק ל־he, she, it.",
+          "en": "A question needs a helper. Does is only for he, she, it."
         }
       ],
       "interests": [
@@ -188,7 +244,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "Do you play the guitar?"
+      "audioText": "Do you play the guitar?",
+      "anchor": "do-does"
     },
     {
       "id": "gr.pp.now.rain",
@@ -208,22 +265,34 @@
         },
         {
           "id": "b",
-          "text": "rains"
+          "text": "rains",
+          "feedback": {
+            "he": "rains זה 📅 עובדה קבועה (It rains a lot in winter). Look! אומר שזה קורה עכשיו 🎥.",
+            "en": "rains = a general fact. Look! means now."
+          }
         },
         {
           "id": "c",
-          "text": "rain"
+          "text": "rain",
+          "feedback": {
+            "he": "rain בלי is ובלי ing לא מתאים ל־It. ועכשיו 🎥 צריך is raining.",
+            "en": "rain has no is and no -ing. Now needs is raining."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "Look! מראה שזה קורה עכשיו. לכן is + ing.",
-        "en": "Look! shows it is happening now, so: is raining."
+        "he": "🔎 הרמז: Look outside! כלומר זה קורה עכשיו.\n🎥 מה שקורה עכשיו מול העיניים: is + ing.\nIt הוא אחד, אז is raining.",
+        "en": "Look! means it is happening now, so present progressive: is raining."
       },
       "hints": [
         {
-          "he": "זה קורה עכשיו או תמיד?",
-          "en": "Is it happening now or always?"
+          "he": "איזו מילה במשפט אומרת שזה קורה ממש עכשיו?",
+          "en": "Which word shows it is happening right now?"
+        },
+        {
+          "he": "עכשיו = 🎥 מצלמה בשידור חי: am/is/are + ing.",
+          "en": "Now = live camera: am/is/are + -ing."
         }
       ],
       "interests": [],
@@ -232,7 +301,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "Look outside! It is raining."
+      "audioText": "Look outside! It is raining.",
+      "anchor": "present-progressive"
     },
     {
       "id": "gr.past.irregular.go",
@@ -251,32 +321,39 @@
       "knownErrors": [
         {
           "answer": "goed",
-          "misconception": "past-simple.overregularization",
           "feedback": {
-            "he": "go הוא פועל חריג, ולכן לא goed.",
-            "en": "go is irregular, so not goed."
-          }
+            "he": "go הוא פועל חריג ולא מקבל ed. העבר שלו הוא went.",
+            "en": "go is irregular. No -ed: went."
+          },
+          "misconception": "past-simple.overregularization"
         },
         {
           "answer": "go",
           "feedback": {
-            "he": "yesterday מבקש עבר.",
-            "en": "yesterday needs the past."
+            "he": "go זה הווה. yesterday = 📸 עבר, אז went.",
+            "en": "go is present. Yesterday needs the past: went."
+          }
+        },
+        {
+          "answer": "gone",
+          "feedback": {
+            "he": "gone היא הצורה השלישית ובאה רק אחרי have/has. אחרי yesterday: went.",
+            "en": "gone needs have/has. With yesterday: went."
           }
         }
       ],
       "explanation": {
-        "he": "go הוא פועל חריג. העבר שלו: went.",
-        "en": "go is irregular. Its past form is went."
+        "he": "🔎 הרמז: Yesterday.\n📸 משהו שקרה ונגמר בזמן ידוע: עבר פשוט.\ngo הוא פועל חריג. העבר שלו הוא went, לא goed.",
+        "en": "Yesterday = past simple. go is irregular: went."
       },
       "hints": [
         {
-          "he": "yesterday = אתמול. צריך עבר.",
-          "en": "yesterday means past."
+          "he": "איזו מילה אומרת מתי זה קרה?",
+          "en": "Which word tells you when it happened?"
         },
         {
-          "he": "זה פועל חריג. לא מוסיפים ed.",
-          "en": "It is irregular. Do not add -ed."
+          "he": "yesterday = 📸 עבר פשוט. go הוא פועל חריג, בלי ed.",
+          "en": "yesterday = past simple. go is irregular, no -ed."
         }
       ],
       "interests": [],
@@ -285,7 +362,8 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "Yesterday I went to the park."
+      "audioText": "Yesterday I went to the park.",
+      "anchor": "past-simple"
     },
     {
       "id": "gr.past.irregular.buy",
@@ -304,32 +382,39 @@
       "knownErrors": [
         {
           "answer": "buyed",
-          "misconception": "past-simple.overregularization",
           "feedback": {
-            "he": "buy הוא חריג: bought.",
-            "en": "buy is irregular: bought."
-          }
+            "he": "buy הוא פועל חריג ולא מקבל ed. העבר שלו הוא bought.",
+            "en": "buy is irregular. No -ed: bought."
+          },
+          "misconception": "past-simple.overregularization"
         },
         {
           "answer": "brought",
           "feedback": {
-            "he": "brought זה העבר של bring. העבר של buy הוא bought.",
-            "en": "brought is the past of bring. buy → bought."
+            "he": "brought זה העבר של bring (להביא). buy (לקנות) הופך ל־bought. המילים דומות, כדאי לשים לב ל־r.",
+            "en": "brought is the past of bring. buy becomes bought."
+          }
+        },
+        {
+          "answer": "buy",
+          "feedback": {
+            "he": "buy זה הווה. last week = 📸 עבר, אז bought.",
+            "en": "buy is present. Last week needs bought."
           }
         }
       ],
       "explanation": {
-        "he": "buy → bought.",
-        "en": "buy → bought."
+        "he": "🔎 הרמז: Last week.\n📸 משהו שקרה ונגמר בזמן ידוע: עבר פשוט.\nbuy הוא פועל חריג. העבר שלו הוא bought.",
+        "en": "Last week = past simple. buy is irregular: bought."
       },
       "hints": [
         {
-          "he": "last week = שבוע שעבר. צריך עבר.",
-          "en": "last week means past."
+          "he": "איזו מילה אומרת מתי אמא קנתה?",
+          "en": "Which words tell you when Mom bought them?"
         },
         {
-          "he": "זה פועל חריג שמתחיל ב־b ונגמר ב־ght.",
-          "en": "It's irregular. It starts with b and ends with -ght."
+          "he": "last week = 📸 עבר פשוט. buy הוא פועל חריג.",
+          "en": "last week = past simple. buy is irregular."
         }
       ],
       "interests": [
@@ -340,7 +425,8 @@
       ],
       "estimatedTimeSec": 20,
       "source": "original",
-      "audioText": "Last week my mom bought me new shoes."
+      "audioText": "Last week my mom bought me new shoes.",
+      "anchor": "past-simple"
     },
     {
       "id": "gr.past.irregular.see",
@@ -361,22 +447,34 @@
         {
           "id": "b",
           "text": "seed",
-          "misconception": "past-simple.overregularization"
+          "misconception": "past-simple.overregularization",
+          "feedback": {
+            "he": "אין מילה seed בתור עבר. see הוא פועל חריג, והעבר שלו saw.",
+            "en": "seed is not a past form. The past of see is saw."
+          }
         },
         {
           "id": "c",
-          "text": "seen"
+          "text": "seen",
+          "feedback": {
+            "he": "seen היא הצורה השלישית ובאה רק אחרי have/has. last night = 📸, אז saw.",
+            "en": "seen needs have/has. Last night needs saw."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "see → saw. seen היא הצורה השלישית ובאה אחרי have.",
-        "en": "see → saw. seen is the third form, used after have."
+        "he": "🔎 הרמז: last night.\n📸 משהו שקרה ונגמר בזמן ידוע: עבר פשוט.\nsee הוא פועל חריג: see, saw, seen. בעבר פשוט: saw.",
+        "en": "Last night = past simple. see is irregular: saw."
       },
       "hints": [
         {
-          "he": "last night = עבר פשוט.",
-          "en": "last night: Past Simple."
+          "he": "איזו מילה אומרת מתי ראינו את הסרט?",
+          "en": "Which words tell you when we saw the movie?"
+        },
+        {
+          "he": "last night = 📸 עבר פשוט. see הוא פועל חריג.",
+          "en": "last night = past simple. see is irregular."
         }
       ],
       "interests": [
@@ -387,7 +485,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "We saw a great movie last night."
+      "audioText": "We saw a great movie last night.",
+      "anchor": "past-simple"
     },
     {
       "id": "gr.past.question.did",
@@ -407,22 +506,34 @@
         },
         {
           "id": "b",
-          "text": "Do"
+          "text": "Do",
+          "feedback": {
+            "he": "Do זה להווה 📅. yesterday אומר עבר, אז Did.",
+            "en": "Do is present. Yesterday needs Did."
+          }
         },
         {
           "id": "c",
-          "text": "Were"
+          "text": "Were",
+          "feedback": {
+            "he": "Were בא עם תיאור או ing (Were you tired?). finish הוא פועל רגיל, אז Did.",
+            "en": "Were goes with adjectives or -ing. finish is a normal verb, so Did."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "שאלה בעבר פשוט: Did + פועל בסיס.",
-        "en": "Past Simple questions: Did + base verb."
+        "he": "🔎 הרמז: yesterday.\n🔙 שאלה בעבר פשוט מתחילה ב־Did.\ndid מחזיקה את העבר, ו־finish נשאר נקי.",
+        "en": "Yesterday = past. Past simple questions start with Did."
       },
       "hints": [
         {
-          "he": "yesterday = עבר. איזו מילת עזר מתאימה לעבר?",
-          "en": "yesterday is past. Which helper verb is past?"
+          "he": "איזו מילה אומרת מתי זה היה?",
+          "en": "Which word tells you when it was?"
+        },
+        {
+          "he": "שאלה בעבר צריכה מילת עזר של עבר 🔙.",
+          "en": "A past question needs a past helper."
         }
       ],
       "interests": [
@@ -433,7 +544,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "Did you finish your homework yesterday?"
+      "audioText": "Did you finish your homework yesterday?",
+      "anchor": "did"
     },
     {
       "id": "gr.past.question.base",
@@ -454,22 +566,34 @@
         {
           "id": "b",
           "text": "went",
-          "misconception": "past-simple.did-plus-past"
+          "misconception": "past-simple.did-plus-past",
+          "feedback": {
+            "he": "did כבר מחזיקה את העבר 🔙. went יוצר עבר כפול. אחרי did: go.",
+            "en": "did already shows the past. went makes it double. Use go."
+          }
         },
         {
           "id": "c",
-          "text": "goes"
+          "text": "goes",
+          "feedback": {
+            "he": "אחרי did הפועל נקי, בלי s. ה־s 🐍 שייכת רק להווה פשוט.",
+            "en": "After did, no s. The s is only for present simple."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "אחרי did בא הפועל בצורת בסיס: did she go.",
-        "en": "After did, use the base verb: did she go."
+        "he": "🔎 הרמז: did.\n🔙 did כבר מחזיקה את העבר.\nלכן הפועל חוזר לצורת הבסיס: go.",
+        "en": "did already shows the past, so the verb stays in its base form: go."
       },
       "hints": [
         {
-          "he": "did כבר מראה שזה עבר.",
-          "en": "did already shows the past."
+          "he": "איזו מילה במשפט כבר אומרת שזה עבר?",
+          "en": "Which word already shows the past?"
+        },
+        {
+          "he": "אחרי did 🔙 הפועל חוזר לצורה הבסיסית.",
+          "en": "After did, the verb goes back to its base form."
         }
       ],
       "interests": [
@@ -480,7 +604,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "Where did she go on vacation?"
+      "audioText": "Where did she go on vacation?",
+      "anchor": "did"
     },
     {
       "id": "gr.past.negative.base",
@@ -501,22 +626,34 @@
         {
           "id": "b",
           "text": "saw",
-          "misconception": "past-simple.did-plus-past"
+          "misconception": "past-simple.did-plus-past",
+          "feedback": {
+            "he": "didn't כבר מחזיקה את העבר 🔙. saw יוצר עבר כפול. אחרי didn't: see.",
+            "en": "didn't already shows the past. saw doubles it. Use see."
+          }
         },
         {
           "id": "c",
-          "text": "seen"
+          "text": "seen",
+          "feedback": {
+            "he": "seen היא הצורה השלישית ובאה אחרי have/has. אחרי didn't: see.",
+            "en": "seen goes after have/has. After didn't: see."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "didn't + פועל בסיס: didn't see.",
-        "en": "didn't + base verb: didn't see."
+        "he": "🔎 הרמז: didn't.\n🔙 בשלילה בעבר did מחזיקה את העבר.\nלכן הפועל חוזר לצורת הבסיס: see.",
+        "en": "didn't already shows the past, so use the base form: see."
       },
       "hints": [
         {
-          "he": "מה בא אחרי didn't?",
-          "en": "What comes after didn't?"
+          "he": "איזו מילה במשפט כבר אומרת שזה עבר?",
+          "en": "Which word already shows the past?"
+        },
+        {
+          "he": "אחרי didn't 🔙 הפועל חוזר לצורה הבסיסית.",
+          "en": "After didn't, use the base form."
         }
       ],
       "interests": [],
@@ -525,7 +662,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "I didn't see your message."
+      "audioText": "I didn't see your message.",
+      "anchor": "did"
     },
     {
       "id": "gr.pastprog.interrupted",
@@ -546,22 +684,34 @@
         {
           "id": "b",
           "text": "watched",
-          "misconception": "past-progressive.interrupted"
+          "misconception": "past-progressive.interrupted",
+          "feedback": {
+            "he": "watched זה 📸 תמונה אחת שנגמרה. כאן הצפייה הייתה באמצע כשהטלפון צלצל 🎬.",
+            "en": "watched = a finished action. Here the watching was in progress."
+          }
         },
         {
           "id": "c",
-          "text": "am watching"
+          "text": "am watching",
+          "feedback": {
+            "he": "am watching זה 🎥 עכשיו. rang אומר שזה קרה בעבר, אז was watching.",
+            "en": "am watching = now. rang shows the past, so was watching."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "פעולה ארוכה שנקטעה על ידי פעולה קצרה: was + ing.",
-        "en": "A long action interrupted by a short one: was + -ing."
+        "he": "🔎 הרמז: when the phone rang.\n🎬 סרט שנקטע: was/were + ing לפעולה הארוכה, ועבר פשוט למה שקטע אותה.\nהצפייה הייתה באמצע, והטלפון קטע אותה: was watching.",
+        "en": "The long action was in progress when the phone interrupted it: was watching."
       },
       "hints": [
         {
-          "he": "מה נמשך זמן רב יותר: הצפייה או הצלצול?",
-          "en": "Which lasted longer: watching or the ring?"
+          "he": "מה קטע את מה במשפט?",
+          "en": "What interrupted what?"
+        },
+        {
+          "he": "🎬 פעולה ארוכה בעבר שנקטעה: was/were + ing.",
+          "en": "A long past action that was interrupted: was/were + -ing."
         }
       ],
       "interests": [],
@@ -570,7 +720,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "I was watching TV when the phone rang."
+      "audioText": "I was watching TV when the phone rang.",
+      "anchor": "past-progressive"
     },
     {
       "id": "gr.future.offer",
@@ -590,22 +741,34 @@
         },
         {
           "id": "b",
-          "text": "would"
+          "text": "would",
+          "feedback": {
+            "he": "would זה \"הייתי\", לתנאי דמיוני. כאן מבטיחים עזרה אמיתית: will.",
+            "en": "would is for imagined situations. This is a real promise: will."
+          }
         },
         {
           "id": "c",
-          "text": "was"
+          "text": "was",
+          "feedback": {
+            "he": "was זה עבר ולא יכול לבוא לפני help. לעתיד: will + פועל נקי.",
+            "en": "was is past and cannot go before help. Use will."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "הבטחה או הצעה ספונטנית לעתיד: will.",
-        "en": "A promise or offer about the future: will."
+        "he": "🔎 הרמז: Don't worry.\n🔮 will = החלטה של הרגע, הבטחה או הצעה לעזור.\nמחליטים עכשיו לעזור, אז will help.",
+        "en": "An offer or promise decided now uses will: I will help you."
       },
       "hints": [
         {
-          "he": "זה קורה בעתיד.",
-          "en": "This is about the future."
+          "he": "מה הדובר מציע ברגע זה?",
+          "en": "What is the speaker offering right now?"
+        },
+        {
+          "he": "🔮 החלטה של הרגע או הבטחה: איזו מילה?",
+          "en": "A decision made now or a promise: which word?"
         }
       ],
       "interests": [],
@@ -614,7 +777,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "Don't worry. I will help you with your project."
+      "audioText": "Don't worry. I will help you with your project.",
+      "anchor": "future"
     },
     {
       "id": "gr.perf.been",
@@ -635,21 +799,33 @@
         {
           "id": "b",
           "text": "went",
-          "misconception": "present-perfect.past-participle"
+          "misconception": "present-perfect.past-participle",
+          "feedback": {
+            "he": "went זה 📸 עבר פשוט, לא בא אחרי have. אחרי have: been.",
+            "en": "went is past simple and cannot follow have. Use been."
+          }
         },
         {
           "id": "c",
-          "text": "go"
+          "text": "go",
+          "feedback": {
+            "he": "go היא צורת הבסיס. אחרי have צריך צורה שלישית 🌉: been.",
+            "en": "go is the base form. After have, use the third form: been."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "have + צורה שלישית. go/be בהקשר של ביקור: have been to.",
-        "en": "have + past participle. For visits we say: have been to."
+        "he": "🔎 הרמז: Have you ever.\n🌉 have + צורה שלישית: ניסיון מהעבר בלי זמן מדויק.\nHave you ever been to = \"היית פעם ב־\". been היא הצורה השלישית של be.",
+        "en": "Have you ever + third form. For visiting a place we say been."
       },
       "hints": [
         {
-          "he": "אחרי have באה הצורה השלישית.",
+          "he": "איזו מילה באה לפני הרווח ומה היא דורשת?",
+          "en": "Which word comes before the gap?"
+        },
+        {
+          "he": "🌉 אחרי have באה הצורה השלישית.",
           "en": "After have, use the third form."
         }
       ],
@@ -661,7 +837,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "Have you ever been to London?"
+      "audioText": "Have you ever been to London?",
+      "anchor": "present-perfect"
     },
     {
       "id": "gr.perf.since",
@@ -682,22 +859,34 @@
         {
           "id": "b",
           "text": "for",
-          "misconception": "present-perfect.for-since"
+          "misconception": "present-perfect.for-since",
+          "feedback": {
+            "he": "for בא עם משך זמן (for ten years). 2015 היא נקודת התחלה, דגל, אז since.",
+            "en": "for is for a length of time. 2015 is a starting point: since."
+          }
         },
         {
           "id": "c",
-          "text": "from"
+          "text": "from",
+          "feedback": {
+            "he": "בעברית אומרים \"מ־2015\", אבל באנגלית from בא עם to (from 2015 to 2020). מנקודה ועד היום: since.",
+            "en": "from goes with to. From a point until now: since."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "2015 היא נקודת התחלה, לכן since.",
-        "en": "2015 is a starting point, so since."
+        "he": "🔎 הרמז: 2015, נקודה אחת בזמן.\n⏳ for = כמה זמן (שעון חול). since = מאיזו נקודה זה התחיל (דגל).\n2015 היא נקודת ההתחלה, אז since.",
+        "en": "2015 is a starting point, so since. for is for a length of time."
       },
       "hints": [
         {
-          "he": "2015 זה משך זמן או נקודת התחלה?",
+          "he": "האם 2015 זה משך זמן או נקודה שבה משהו התחיל?",
           "en": "Is 2015 a length of time or a starting point?"
+        },
+        {
+          "he": "⏳ שעון חול או דגל?",
+          "en": "Hourglass or flag?"
         }
       ],
       "interests": [],
@@ -706,7 +895,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "She has lived in Haifa since 2015."
+      "audioText": "She has lived in Haifa since 2015.",
+      "anchor": "for-since"
     },
     {
       "id": "gr.perf.duration",
@@ -727,26 +917,34 @@
         {
           "id": "b",
           "text": "know",
-          "misconception": "present-perfect.hebrew-present"
+          "misconception": "present-perfect.hebrew-present",
+          "feedback": {
+            "he": "know זה הווה בלבד. בעברית זה נשמע נכון, אבל עם for five years צריך גשר 🌉: have known.",
+            "en": "know is only present. With for five years, use have known."
+          }
         },
         {
           "id": "c",
-          "text": "knew"
+          "text": "knew",
+          "feedback": {
+            "he": "knew זה 📸 משהו שנגמר. אבל הם עדיין מכירים, אז have known 🌉.",
+            "en": "knew = finished. They still know each other: have known."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "משהו שהתחיל בעבר ונמשך עד עכשיו: have + צורה שלישית. בעברית אומרים \"מכירים\", אבל באנגלית have known.",
-        "en": "Something that started in the past and continues now: have known."
+        "he": "🔎 הרמז: for five years, ועדיין מכירים.\n🌉 משהו שהתחיל בעבר ועדיין נמשך: have + צורה שלישית.\nבעברית אומרים \"מכירים כבר חמש שנים\" בהווה, ובאנגלית צריך have known.",
+        "en": "It started in the past and is still true, so present perfect: have known."
       },
       "hints": [
         {
-          "he": "החברות התחילה בעבר ועדיין נמשכת.",
-          "en": "The friendship started in the past and continues."
+          "he": "האם הם עדיין מכירים היום? מה אומר for five years?",
+          "en": "Do they still know each other? What does for five years tell you?"
         },
         {
-          "he": "for five years עד היום מבקש Present Perfect.",
-          "en": "for five years until now needs the Present Perfect."
+          "he": "🌉 גשר מהעבר להיום: have + צורה שלישית.",
+          "en": "Past to now: have + third form."
         }
       ],
       "interests": [],
@@ -755,7 +953,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "We have known each other for five years."
+      "audioText": "We have known each other for five years.",
+      "anchor": "present-perfect"
     },
     {
       "id": "gr.perf.vs-past.yesterday",
@@ -776,22 +975,34 @@
         {
           "id": "b",
           "text": "have lost",
-          "misconception": "present-perfect.with-past-time"
+          "misconception": "present-perfect.with-past-time",
+          "feedback": {
+            "he": "have lost זה 🌉 גשר בלי זמן מדויק. yesterday הוא זמן מדויק, אז lost 📸.",
+            "en": "have lost has no exact time. Yesterday needs lost."
+          }
         },
         {
           "id": "c",
-          "text": "have lose"
+          "text": "have lose",
+          "feedback": {
+            "he": "אחרי have צריך צורה שלישית, ולא lose. ובכל מקרה yesterday דורש עבר פשוט: lost.",
+            "en": "have needs a third form, and yesterday needs past simple: lost."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "yesterday הוא זמן עבר מוגדר, לכן Past Simple.",
-        "en": "yesterday is a finished time, so Past Simple."
+        "he": "🔎 הרמז: yesterday.\n📸 זמן מדויק שנגמר: עבר פשוט.\nyesterday לא הולך עם have. אז lost.",
+        "en": "Yesterday is a finished time, so past simple: lost."
       },
       "hints": [
         {
-          "he": "איזו מילת זמן יש במשפט?",
-          "en": "Which time word is in the sentence?"
+          "he": "איזו מילה אומרת מתי בדיוק זה קרה?",
+          "en": "Which word says exactly when it happened?"
+        },
+        {
+          "he": "זמן מדויק בעבר = 📸, לא 🌉.",
+          "en": "An exact past time = past simple, not present perfect."
         }
       ],
       "interests": [],
@@ -800,7 +1011,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "I lost my keys yesterday."
+      "audioText": "I lost my keys yesterday.",
+      "anchor": "past-simple"
     },
     {
       "id": "gr.cond1.if-present",
@@ -821,22 +1033,34 @@
         {
           "id": "b",
           "text": "will rain",
-          "misconception": "conditionals.will-in-if-clause"
+          "misconception": "conditionals.will-in-if-clause",
+          "feedback": {
+            "he": "אחרי if לא שמים will 🚦. ה־will נמצא כבר בחלק השני: we will stay.",
+            "en": "No will after if. will is already in the second part."
+          }
         },
         {
           "id": "c",
-          "text": "rained"
+          "text": "rained",
+          "feedback": {
+            "he": "rained זה עבר. התנאי הוא על מחר ואפשרי באמת, אז הווה: rains.",
+            "en": "rained is past. This is a real condition about tomorrow: rains."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "בחלק של if משתמשים בהווה, גם כשמדברים על העתיד.",
-        "en": "After if, use the present, even about the future."
+        "he": "🔎 הרמז: If.\n🚦 אחרי if לא שמים will, גם כשמדברים על מחר.\nit הוא אחד 🐍, אז rains.",
+        "en": "After if we use present simple, not will, even for the future: if it rains."
       },
       "hints": [
         {
-          "he": "מה בא אחרי if בתנאי מסוג ראשון?",
-          "en": "What follows if in the first conditional?"
+          "he": "איזו מילה פותחת את המשפט?",
+          "en": "Which word starts the sentence?"
+        },
+        {
+          "he": "🚦 מה לא שמים אחרי if?",
+          "en": "What do we not put after if?"
         }
       ],
       "interests": [],
@@ -845,7 +1069,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "If it rains tomorrow, we will stay home."
+      "audioText": "If it rains tomorrow, we will stay home.",
+      "anchor": "conditionals"
     },
     {
       "id": "gr.cond2.were",
@@ -865,22 +1090,34 @@
         },
         {
           "id": "b",
-          "text": "am"
+          "text": "am",
+          "feedback": {
+            "he": "am זה מצב אמיתי עכשיו. would מראה שזה דמיון, אז were.",
+            "en": "am is a real situation. would shows it is imagined: were."
+          }
         },
         {
           "id": "c",
-          "text": "will be"
+          "text": "will be",
+          "feedback": {
+            "he": "אחרי if לא שמים will 🚦. בתנאי דמיוני: were.",
+            "en": "No will after if. Imagined: were."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "תנאי דמיוני בהווה: If + עבר, would + פועל.",
-        "en": "Imaginary present: If + past, would + verb."
+        "he": "🔎 הרמז: would, כלומר דמיון.\n🚦 תנאי דמיוני: הזמן זז אחורה לעבר.\nעם be משתמשים ב־were, גם אחרי I: If I were rich.",
+        "en": "would shows an imagined situation, so the if part moves back: If I were."
       },
       "hints": [
         {
-          "he": "זה מצב דמיוני. איזה זמן בא אחרי if?",
-          "en": "It's imaginary. Which tense follows if?"
+          "he": "האם הדובר באמת עשיר? איזו מילה בחלק השני מראה את זה?",
+          "en": "Is the speaker really rich? Which word shows it?"
+        },
+        {
+          "he": "🚦 בתנאי דמיוני הזמן זז אחורה.",
+          "en": "In an imagined condition, the tense moves back."
         }
       ],
       "interests": [
@@ -891,7 +1128,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "If I were rich, I would travel around the world."
+      "audioText": "If I were rich, I would travel around the world.",
+      "anchor": "conditionals"
     },
     {
       "id": "gr.cond3.would-have",
@@ -911,22 +1149,34 @@
         },
         {
           "id": "b",
-          "text": "will call"
+          "text": "will call",
+          "feedback": {
+            "he": "will call זה עתיד אמיתי. כאן מדברים על עבר שכבר אי אפשר לשנות.",
+            "en": "will call is a real future. This is about an unchangeable past."
+          }
         },
         {
           "id": "c",
-          "text": "would call"
+          "text": "would call",
+          "feedback": {
+            "he": "would call מתאים ל־If I knew (דמיון בהווה). had known דורש would have called.",
+            "en": "would call fits If I knew. had known needs would have called."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "תנאי על העבר שלא קרה: If + had + צורה שלישית, would have + צורה שלישית.",
-        "en": "Unreal past: If + had + participle, would have + participle."
+        "he": "🔎 הרמז: If I had known, דמיון על העבר.\n🚦 ככל שהתנאי דמיוני יותר, הזמן זז אחורה.\nעל עבר שכבר אי אפשר לשנות: would have + צורה שלישית: would have called.",
+        "en": "had known = an imagined past, so the result is would have called."
       },
       "hints": [
         {
-          "he": "המשפט מדבר על העבר. זה קרה או לא קרה?",
-          "en": "Is this about the past? Did it happen?"
+          "he": "האם הדובר ידע? מתי זה היה?",
+          "en": "Did the speaker know? When was it?"
+        },
+        {
+          "he": "🚦 had + צורה שלישית בחלק של if. מה בא בחלק השני?",
+          "en": "if + had known. What comes in the other part?"
         }
       ],
       "interests": [],
@@ -935,7 +1185,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "If I had known you were home, I would have called you."
+      "audioText": "If I had known you were home, I would have called you.",
+      "anchor": "conditionals"
     },
     {
       "id": "gr.passive.past",
@@ -956,23 +1207,35 @@
         {
           "id": "b",
           "text": "wrote",
-          "misconception": "passive.form"
+          "misconception": "passive.form",
+          "feedback": {
+            "he": "wrote אומר שהספר כתב משהו. הספר לא כותב, כותבים אותו 📦: was written.",
+            "en": "wrote means the book wrote something. Use was written."
+          }
         },
         {
           "id": "c",
           "text": "was wrote",
-          "misconception": "passive.form"
+          "misconception": "passive.form",
+          "feedback": {
+            "he": "אחרי was צריך צורה שלישית: written, לא wrote.",
+            "en": "After was, use the third form: written."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "סביל = be + צורה שלישית: was written.",
-        "en": "Passive = be + past participle: was written."
+        "he": "🔎 הרמז: by a famous writer.\n📦 הספר לא כותב, כותבים אותו: be + צורה שלישית.\nזה קרה בעבר, אז was written.",
+        "en": "The book did not write; someone wrote it. Passive: was written."
       },
       "hints": [
         {
-          "he": "הספר לא כתב. מישהו כתב אותו.",
-          "en": "The book didn't write. Someone wrote it."
+          "he": "האם הספר כתב משהו, או שמישהו כתב אותו?",
+          "en": "Did the book write, or did someone write it?"
+        },
+        {
+          "he": "📦 החפץ עולה לבמה: be + צורה שלישית.",
+          "en": "Passive: be + third form."
         }
       ],
       "interests": [
@@ -983,7 +1246,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "This book was written by a famous writer."
+      "audioText": "This book was written by a famous writer.",
+      "anchor": "passive"
     },
     {
       "id": "gr.modals.must",
@@ -1003,22 +1267,34 @@
         },
         {
           "id": "b",
-          "text": "might"
+          "text": "might",
+          "feedback": {
+            "he": "might = אולי. חוק הוא לא \"אולי\", הוא חובה: must.",
+            "en": "might = maybe. A law is not maybe: must."
+          }
         },
         {
           "id": "c",
-          "text": "can"
+          "text": "can",
+          "feedback": {
+            "he": "can = יכולים, מותר. חוק אומר שחייבים: must.",
+            "en": "can = able or allowed. A law means must."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "חובה או חוק: must.",
-        "en": "An obligation or a law: must."
+        "he": "🔎 הרמז: It's the law.\n🔧 must = חובה. אחרי must בא פועל נקי.\nחוק הוא חובה, אז must wear.",
+        "en": "A law is an obligation, so must."
       },
       "hints": [
         {
-          "he": "It's the law מראה חובה.",
-          "en": "It's the law shows an obligation."
+          "he": "מה אומר המשפט השני על הקסדה?",
+          "en": "What does the second sentence tell you?"
+        },
+        {
+          "he": "🔧 איזו מילה אומרת \"חייבים\"?",
+          "en": "Which word means you have to?"
         }
       ],
       "interests": [
@@ -1029,7 +1305,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "You must wear a helmet when you ride a bike. It's the law."
+      "audioText": "You must wear a helmet when you ride a bike. It's the law.",
+      "anchor": "modals"
     },
     {
       "id": "gr.relative.who",
@@ -1050,22 +1327,34 @@
         {
           "id": "b",
           "text": "which",
-          "misconception": "relative.which-for-people"
+          "misconception": "relative.which-for-people",
+          "feedback": {
+            "he": "which לחפצים ובעלי חיים 🔗. girl היא בן אדם, אז who.",
+            "en": "which is for things and animals. A girl is a person: who."
+          }
         },
         {
           "id": "c",
-          "text": "what"
+          "text": "what",
+          "feedback": {
+            "he": "what לא מחבר שם עצם לתיאור שלו. אחרי The girl צריך who.",
+            "en": "what cannot connect a noun to its description. Use who."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "who לאנשים. which לדברים.",
-        "en": "who for people, which for things."
+        "he": "🔎 הרמז: The girl, בן אדם.\n🔗 who מתחבר לאנשים, which לחפצים ובעלי חיים.\nבעברית יש מילה אחת \"ש\" לכולם, ובאנגלית לאדם בוחרים who.",
+        "en": "girl is a person, so who."
       },
       "hints": [
         {
-          "he": "מדובר באדם או בדבר?",
-          "en": "Is it a person or a thing?"
+          "he": "על מי או על מה מדברים לפני הרווח?",
+          "en": "Who or what comes before the gap?"
+        },
+        {
+          "he": "🔗 אדם או חפץ?",
+          "en": "A person or a thing?"
         }
       ],
       "interests": [],
@@ -1074,7 +1363,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "The girl who lives next door is my best friend."
+      "audioText": "The girl who lives next door is my best friend.",
+      "anchor": "relative-clauses"
     },
     {
       "id": "gr.gerund.enjoy",
@@ -1095,22 +1385,34 @@
         {
           "id": "b",
           "text": "to read",
-          "misconception": "gerund-infinitive.choice"
+          "misconception": "gerund-infinitive.choice",
+          "feedback": {
+            "he": "enjoy לא מקבל to. אחרי enjoy תמיד ing: reading.",
+            "en": "enjoy does not take to. Use reading."
+          }
         },
         {
           "id": "c",
-          "text": "read"
+          "text": "read",
+          "feedback": {
+            "he": "שני פעלים רצופים (enjoy read) לא עובדים. אחרי enjoy: reading.",
+            "en": "Two verbs in a row do not work here. Use reading."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "אחרי enjoy בא פועל עם ing.",
-        "en": "enjoy is followed by -ing."
+        "he": "🔎 הרמז: enjoy.\n🧩 אחרי enjoy הפועל תמיד מקבל ing.\nלכן enjoy reading.",
+        "en": "After enjoy, the next verb takes -ing: enjoy reading."
       },
       "hints": [
         {
-          "he": "enjoy הולך עם ing.",
-          "en": "enjoy goes with -ing."
+          "he": "איזו מילה באה לפני הרווח?",
+          "en": "Which word comes before the gap?"
+        },
+        {
+          "he": "🧩 אחרי enjoy: to או ing?",
+          "en": "After enjoy: to or -ing?"
         }
       ],
       "interests": [
@@ -1121,7 +1423,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "I really enjoy reading books before bed."
+      "audioText": "I really enjoy reading books before bed.",
+      "anchor": "gerund-infinitive"
     },
     {
       "id": "gr.infinitive.decide",
@@ -1142,22 +1445,34 @@
         {
           "id": "b",
           "text": "buying",
-          "misconception": "gerund-infinitive.choice"
+          "misconception": "gerund-infinitive.choice",
+          "feedback": {
+            "he": "decide לא מקבל ing. אחריו to + פועל: to buy.",
+            "en": "decide does not take -ing. Use to buy."
+          }
         },
         {
           "id": "c",
-          "text": "buy"
+          "text": "buy",
+          "feedback": {
+            "he": "בלי to שני הפעלים נדבקים (decided buy). צריך to buy.",
+            "en": "Without to, the two verbs clash. Use to buy."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "אחרי decide בא to + פועל.",
-        "en": "decide is followed by to + verb."
+        "he": "🔎 הרמז: decided.\n🧩 אחרי decide באים to + פועל נקי.\nלכן decided to buy.",
+        "en": "After decide, use to + verb: decided to buy."
       },
       "hints": [
         {
-          "he": "decide הולך עם to.",
-          "en": "decide goes with to."
+          "he": "איזו מילה באה לפני הרווח?",
+          "en": "Which word comes before the gap?"
+        },
+        {
+          "he": "🧩 אחרי decide: to או ing?",
+          "en": "After decide: to or -ing?"
         }
       ],
       "interests": [
@@ -1168,7 +1483,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "She decided to buy a new phone."
+      "audioText": "She decided to buy a new phone.",
+      "anchor": "gerund-infinitive"
     },
     {
       "id": "gr.articles.job",
@@ -1189,27 +1505,35 @@
         {
           "id": "b",
           "text": "a",
-          "misconception": "articles.a-an"
+          "misconception": "articles.a-an",
+          "feedback": {
+            "he": "a בא לפני צליל עיצור. engineer מתחיל בצליל e, אז an.",
+            "en": "a goes before a consonant sound. engineer starts with e: an."
+          }
         },
         {
           "id": "c",
           "text": "(nothing)",
-          "misconception": "articles.missing-a"
+          "misconception": "articles.missing-a",
+          "feedback": {
+            "he": "בעברית אין מילה כאן, אבל באנגלית מקצוע צריך a/an ☝️: an engineer.",
+            "en": "In English a job needs a/an: an engineer."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "מקצוע באנגלית בא עם a או an. engineer מתחילה בצליל תנועה, לכן an.",
-        "en": "Jobs take a / an. engineer starts with a vowel sound, so an."
+        "he": "🔎 הרמז: engineer מתחיל בצליל e.\n☝️ מקצוע באנגלית מקבל a/an. בעברית אומרים \"היא מהנדסת\" בלי מילה, ולכן קל לשכוח.\nלפני צליל תנועה (a, e, i, o, u) משתמשים ב־an.",
+        "en": "Jobs need a/an. engineer starts with a vowel sound, so an."
       },
       "hints": [
         {
-          "he": "בעברית אין מילה כזאת, אבל באנגלית צריך אותה לפני מקצוע.",
-          "en": "Hebrew has no a, but English needs it before a job."
+          "he": "באיזה צליל מתחילה המילה engineer?",
+          "en": "What sound does engineer start with?"
         },
         {
-          "he": "איך מתחילה המילה engineer?",
-          "en": "How does engineer begin?"
+          "he": "☝️ מקצוע צריך a או an. מתי an?",
+          "en": "A job needs a or an. When do we use an?"
         }
       ],
       "interests": [],
@@ -1218,7 +1542,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "My aunt is an engineer."
+      "audioText": "My aunt is an engineer.",
+      "anchor": "articles"
     },
     {
       "id": "gr.articles.teacher",
@@ -1239,22 +1564,34 @@
         {
           "id": "b",
           "text": "(nothing)",
-          "misconception": "articles.missing-a"
+          "misconception": "articles.missing-a",
+          "feedback": {
+            "he": "בעברית אין מילה כאן, אבל באנגלית מקצוע צריך a/an ☝️: a teacher.",
+            "en": "In English a job needs a/an: a teacher."
+          }
         },
         {
           "id": "c",
-          "text": "an"
+          "text": "an",
+          "feedback": {
+            "he": "an רק לפני צליל תנועה (a, e, i, o, u). teacher מתחיל ב־t, אז a.",
+            "en": "an is only before a vowel sound. teacher: a."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "לפני מקצוע ביחיד צריך a: He is a teacher.",
-        "en": "A single job needs a: He is a teacher."
+        "he": "🔎 הרמז: teacher, מקצוע שמתחיל בצליל t.\n☝️ מקצוע באנגלית מקבל a/an. בעברית אומרים \"הוא מורה\" בלי מילה, ולכן קל לשכוח.\nלפני צליל עיצור: a teacher.",
+        "en": "Jobs need a/an. teacher starts with a consonant sound, so a."
       },
       "hints": [
         {
-          "he": "בעברית: הוא מורה. באנגלית צריך עוד מילה קטנה.",
-          "en": "In Hebrew there's no extra word. English needs one."
+          "he": "באיזה צליל מתחילה המילה teacher?",
+          "en": "What sound does teacher start with?"
+        },
+        {
+          "he": "☝️ מקצוע צריך a או an.",
+          "en": "A job needs a or an."
         }
       ],
       "interests": [
@@ -1265,7 +1602,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "He is a teacher."
+      "audioText": "He is a teacher.",
+      "anchor": "articles"
     },
     {
       "id": "gr.prep.in-month",
@@ -1286,23 +1624,35 @@
         {
           "id": "b",
           "text": "on",
-          "misconception": "prepositions.time"
+          "misconception": "prepositions.time",
+          "feedback": {
+            "he": "on לימים ותאריכים (on Sunday). May הוא חודש שלם: in.",
+            "en": "on is for days. May is a month: in."
+          }
         },
         {
           "id": "c",
           "text": "at",
-          "misconception": "prepositions.time"
+          "misconception": "prepositions.time",
+          "feedback": {
+            "he": "at לנקודה, כמו שעה (at 5). חודש הוא גדול: in.",
+            "en": "at is for clock times. A month: in."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "in לחודשים ושנים: in May.",
-        "en": "in for months and years: in May."
+        "he": "🔎 הרמז: May, חודש.\n🔺 at = נקודה (שעה). on = יום. in = משהו גדול (חודש, שנה).\nחודש הוא גדול, אז in May.",
+        "en": "May is a month, so in."
       },
       "hints": [
         {
-          "he": "May זה חודש.",
-          "en": "May is a month."
+          "he": "May זה שעה, יום או חודש?",
+          "en": "Is May a time, a day or a month?"
+        },
+        {
+          "he": "🔺 בפירמידה: מה הולך עם חודש?",
+          "en": "In the pyramid, which word goes with a month?"
         }
       ],
       "interests": [],
@@ -1311,7 +1661,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "My birthday is in May."
+      "audioText": "My birthday is in May.",
+      "anchor": "prepositions-time"
     },
     {
       "id": "gr.prep.on-day",
@@ -1332,23 +1683,35 @@
         {
           "id": "b",
           "text": "in",
-          "misconception": "prepositions.time"
+          "misconception": "prepositions.time",
+          "feedback": {
+            "he": "in לחודשים ושנים. Sunday הוא יום: on.",
+            "en": "in is for months and years. A day: on."
+          }
         },
         {
           "id": "c",
           "text": "at",
-          "misconception": "prepositions.time"
+          "misconception": "prepositions.time",
+          "feedback": {
+            "he": "at לשעה (at 5). Sunday הוא יום: on.",
+            "en": "at is for clock times. A day: on."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "on לימים: on Sunday.",
-        "en": "on for days: on Sunday."
+        "he": "🔎 הרמז: Sunday, יום.\n🔺 at = שעה. on = יום. in = חודש, שנה.\nSunday הוא יום, אז on.",
+        "en": "Sunday is a day, so on."
       },
       "hints": [
         {
-          "he": "Sunday זה יום.",
-          "en": "Sunday is a day."
+          "he": "Sunday זה שעה, יום או חודש?",
+          "en": "Is Sunday a time, a day or a month?"
+        },
+        {
+          "he": "🔺 בפירמידה: מה הולך עם יום?",
+          "en": "Which word goes with a day?"
         }
       ],
       "interests": [],
@@ -1357,7 +1720,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "See you on Sunday!"
+      "audioText": "See you on Sunday!",
+      "anchor": "prepositions-time"
     },
     {
       "id": "gr.quant.much-water",
@@ -1378,22 +1742,34 @@
         {
           "id": "b",
           "text": "many",
-          "misconception": "quantifiers.much-many"
+          "misconception": "quantifiers.much-many",
+          "feedback": {
+            "he": "many לדברים שסופרים (many cups). water לא סופרים 💧: much.",
+            "en": "many is for countable things. Water is not countable: much."
+          }
         },
         {
           "id": "c",
-          "text": "lot"
+          "text": "lot",
+          "feedback": {
+            "he": "lot לא עומד לבד. אומרים a lot of, ולא How lot. בשאלה: How much.",
+            "en": "lot cannot stand alone. Use How much."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "water זה דבר שלא סופרים, לכן much.",
-        "en": "water is uncountable, so much."
+        "he": "🔎 הרמז: water.\n💧 much לדברים שלא סופרים (מים). many לדברים שסופרים (תפוחים).\nwater לא סופרים, אז How much.",
+        "en": "You cannot count water, so How much."
       },
       "hints": [
         {
-          "he": "אפשר לספור מים? אחד, שניים, שלושה?",
-          "en": "Can you count water? One, two, three?"
+          "he": "על מה שואלים? אפשר לספור את זה?",
+          "en": "What is the question about? Can you count it?"
+        },
+        {
+          "he": "💧 מים או תפוחים?",
+          "en": "Water or apples?"
         }
       ],
       "interests": [
@@ -1405,7 +1781,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "How much water do you drink every day?"
+      "audioText": "How much water do you drink every day?",
+      "anchor": "quantifiers"
     },
     {
       "id": "gr.quant.many-people",
@@ -1426,22 +1803,34 @@
         {
           "id": "b",
           "text": "much",
-          "misconception": "quantifiers.much-many"
+          "misconception": "quantifiers.much-many",
+          "feedback": {
+            "he": "much לדברים שלא סופרים 💧. people סופרים: many.",
+            "en": "much is for uncountable things. People are countable: many."
+          }
         },
         {
           "id": "c",
-          "text": "lot"
+          "text": "lot",
+          "feedback": {
+            "he": "lot לא עומד לבד. צריך a lot of. כאן: many.",
+            "en": "lot cannot stand alone. Use many."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "people אפשר לספור, לכן many.",
-        "en": "people are countable, so many."
+        "he": "🔎 הרמז: people.\n💧 many לדברים שסופרים (תפוחים). much לדברים שלא סופרים (מים).\npeople סופרים: אחד, שניים, שלושה. אז many.",
+        "en": "People can be counted, so many."
       },
       "hints": [
         {
-          "he": "אפשר לספור אנשים?",
-          "en": "Can you count people?"
+          "he": "על מה מדברים? אפשר לספור את זה?",
+          "en": "What are we talking about? Can you count it?"
+        },
+        {
+          "he": "💧 מים או תפוחים?",
+          "en": "Water or apples?"
         }
       ],
       "interests": [
@@ -1452,7 +1841,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "There weren't many people at the concert."
+      "audioText": "There weren't many people at the concert.",
+      "anchor": "quantifiers"
     },
     {
       "id": "gr.comp.easier",
@@ -1473,22 +1863,34 @@
         {
           "id": "b",
           "text": "more easier",
-          "misconception": "comparatives.double"
+          "misconception": "comparatives.double",
+          "feedback": {
+            "he": "easier כבר משווה. more + er זה כפול 📏.",
+            "en": "easier already compares. more + -er is double."
+          }
         },
         {
           "id": "c",
-          "text": "more easy"
+          "text": "more easy",
+          "feedback": {
+            "he": "easy היא מילה קצרה, אז מוסיפים er ולא more: easier.",
+            "en": "easy is short: easier, not more easy."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "easy היא מילה קצרה: easier. לא מוסיפים more.",
-        "en": "easy is short: easier. No more."
+        "he": "🔎 הרמז: than.\n📏 מילה קצרה + er than. אף פעם לא more + er.\neasy קצרה, ה־y הופך ל־i: easier.",
+        "en": "easy is short, so add -er: easier. Never more + -er."
       },
       "hints": [
         {
-          "he": "מילה קצרה מקבלת er.",
-          "en": "Short words take -er."
+          "he": "איזו מילה אחרי הרווח מראה שמשווים?",
+          "en": "Which word shows a comparison?"
+        },
+        {
+          "he": "📏 easy קצרה או ארוכה?",
+          "en": "Is easy short or long?"
         }
       ],
       "interests": [
@@ -1499,7 +1901,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "This test is easier than the last one."
+      "audioText": "This test is easier than the last one.",
+      "anchor": "comparatives"
     },
     {
       "id": "gr.order.adjective",
@@ -1520,22 +1923,34 @@
         {
           "id": "b",
           "text": "She is a student good.",
-          "misconception": "word-order.adjective-after-noun"
+          "misconception": "word-order.adjective-after-noun",
+          "feedback": {
+            "he": "a student good זה סדר עברי. באנגלית התואר בא לפני השם: a good student.",
+            "en": "This is Hebrew order. In English: a good student."
+          }
         },
         {
           "id": "c",
-          "text": "She a good student is."
+          "text": "She a good student is.",
+          "feedback": {
+            "he": "is צריך לבוא מיד אחרי She 🚂. הסדר: She is a good student.",
+            "en": "is must come right after She."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "באנגלית התואר בא לפני שם העצם: a good student.",
-        "en": "In English the adjective comes before the noun."
+        "he": "🔎 הרמז: good student.\n🚂 באנגלית התואר בא לפני השם. בעברית הפוך: \"תלמידה טובה\".\nוהפועל is בא מיד אחרי She: She is a good student.",
+        "en": "In English the adjective comes before the noun: a good student."
       },
       "hints": [
         {
-          "he": "בעברית: תלמידה טובה. באנגלית הסדר הפוך.",
-          "en": "Hebrew puts the adjective after. English puts it before."
+          "he": "איפה בא התואר good: לפני student או אחריו?",
+          "en": "Where does good go: before or after student?"
+        },
+        {
+          "he": "🚂 ברכבת המשפט: מי, is, ואז תיאור.",
+          "en": "Sentence train: who, is, then description."
         }
       ],
       "interests": [],
@@ -1544,7 +1959,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "She is a good student."
+      "audioText": "She is a good student.",
+      "anchor": "word-order"
     },
     {
       "id": "gr.order.adverb",
@@ -1564,22 +1980,34 @@
         },
         {
           "id": "b",
-          "text": "I like really this song."
+          "text": "I like really this song.",
+          "feedback": {
+            "he": "באנגלית לא מפרידים בין like לבין this song 🚂. really בא לפני like.",
+            "en": "Do not separate like from this song. really goes before like."
+          }
         },
         {
           "id": "c",
-          "text": "Really I like this song very."
+          "text": "Really I like this song very.",
+          "feedback": {
+            "he": "very לא יכול לעמוד בסוף אחרי song, וגם Really בהתחלה וגם very זה כפול. הסדר: I really like this song.",
+            "en": "very cannot go at the end here. Correct: I really like this song."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "really בא לפני הפועל: I really like.",
-        "en": "really goes before the verb: I really like."
+        "he": "🔎 הרמז: really.\n🚂 really (ממש) בא לפני הפועל like.\nלא מפרידים בין like לבין מה שאוהבים: like this song.",
+        "en": "really goes before the verb, and nothing comes between like and this song."
       },
       "hints": [
         {
-          "he": "איפה עומדת המילה really ביחס לפועל like?",
-          "en": "Where does really go relative to like?"
+          "he": "איפה עומדת המילה really ביחס ל־like?",
+          "en": "Where does really go next to like?"
+        },
+        {
+          "he": "🚂 לא שמים מילה בין הפועל לבין מה שאוהבים.",
+          "en": "Do not put a word between the verb and its object."
         }
       ],
       "interests": [
@@ -1590,7 +2018,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "I really like this song."
+      "audioText": "I really like this song.",
+      "anchor": "word-order"
     },
     {
       "id": "gr.conn.although",
@@ -1611,22 +2040,34 @@
         {
           "id": "b",
           "text": "Because",
-          "misconception": "connectors.contrast-cause"
+          "misconception": "connectors.contrast-cause",
+          "feedback": {
+            "he": "Because מצביע לסיבה 🧭. גשם הוא לא סיבה לצאת החוצה.",
+            "en": "Because gives a reason. Rain is not a reason to go out."
+          }
         },
         {
           "id": "c",
-          "text": "So"
+          "text": "So",
+          "feedback": {
+            "he": "So מצביע לתוצאה ובא באמצע, אחרי הסיבה. כאן יש ניגוד: Although.",
+            "en": "So shows a result. Here there is a contrast."
+          }
         }
       ],
       "correctOptionId": "a",
       "explanation": {
-        "he": "יש ניגוד: ירד גשם, ובכל זאת יצאנו. Although = למרות ש.",
-        "en": "There is a contrast: it rained, yet we went out. Although."
+        "he": "🔎 הרמז: raining מול go outside, ניגוד.\n🧭 Although = \"למרות ש\". זה כמו but שבא בתחילת המשפט.\nיורד גשם, ובכל זאת יצאו: Although.",
+        "en": "Rain and going outside are a contrast, so Although (= even though)."
       },
       "hints": [
         {
-          "he": "הגשם הוא סיבה לצאת, או דווקא ניגוד?",
-          "en": "Is the rain a reason to go out, or a contrast?"
+          "he": "האם הגשם הוא סיבה לצאת, או משהו שמפריע?",
+          "en": "Is the rain a reason to go out, or a problem?"
+        },
+        {
+          "he": "🧭 ניגוד בתחילת המשפט: איזו מילה?",
+          "en": "A contrast at the start: which word?"
         }
       ],
       "interests": [],
@@ -1635,7 +2076,8 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "Although it was raining, we decided to go outside."
+      "audioText": "Although it was raining, we decided to go outside.",
+      "anchor": "connectors"
     }
   ],
   "passages": []

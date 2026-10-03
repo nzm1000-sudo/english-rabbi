@@ -29,22 +29,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "לבדוק את המילה שלפני know. האם צריך אותה?",
+          "en": "Look at the word before know. Is it needed?"
         },
         {
-          "he": "know הוא כבר הפועל. האם צריך לפניו עוד מילה?",
-          "en": "know is already the verb. Does it need another word before it?"
+          "he": "📅 הווה פשוט: מי + פועל, בלי am/is/are באמצע.",
+          "en": "Present simple: subject + verb, no am/is/are."
         }
       ],
       "explanation": {
-        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. We know, בלי are.",
-        "en": "Do not put am / is / are before a normal verb in the Present Simple. We know, not we are know."
+        "he": "🔎 הרמז: know, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: We + know.\n🎩 am, is, are באים רק לפני תיאור או ing. בעברית אין פועל עזר, ולכן מתבלבלים ומוסיפים אותו. כאן מוחקים: We know.",
+        "en": "Do not put am/is/are before a normal verb in present simple: We know."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "present-simple"
     },
     {
       "id": "fix.a1.want-challah",
@@ -72,22 +73,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "לבדוק את המילה שלפני want. האם צריך אותה?",
+          "en": "Look at the word before want. Is it needed?"
         },
         {
-          "he": "want הוא פועל. האם צריך לפניו am?",
-          "en": "want is a verb. Does it need am?"
+          "he": "📅 הווה פשוט: מי + פועל, בלי am/is/are באמצע.",
+          "en": "Present simple: subject + verb, no am/is/are."
         }
       ],
       "explanation": {
-        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. בעברית \"אני רוצה\", ובאנגלית I want. challah היא חלה.",
-        "en": "Do not put am / is / are before a normal verb in the Present Simple. I want, not I am want."
+        "he": "🔎 הרמז: want, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: I + want.\n🎩 am, is, are באים רק לפני תיאור או ing. בעברית אין פועל עזר, ולכן מתבלבלים ומוסיפים אותו. כאן מוחקים: I want.",
+        "en": "Do not put am/is/are before a normal verb in present simple: I want."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "present-simple"
     },
     {
       "id": "fix.a1.like-grandmas-challah",
@@ -115,22 +117,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "לבדוק את המילה שלפני like. האם צריך אותה?",
+          "en": "Look at the word before like. Is it needed?"
         },
         {
-          "he": "like הוא הפועל במשפט. מה מיותר לפניו?",
-          "en": "like is the verb. What extra word comes before it?"
+          "he": "📅 הווה פשוט: מי + פועל, בלי am/is/are באמצע.",
+          "en": "Present simple: subject + verb, no am/is/are."
         }
       ],
       "explanation": {
-        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. I like, בלי am.",
-        "en": "Do not put am / is / are before a normal verb in the Present Simple. I like, not I am like."
+        "he": "🔎 הרמז: like, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: I + like.\n🎩 am, is, are באים רק לפני תיאור או ing. בעברית אין פועל עזר, ולכן מתבלבלים ומוסיפים אותו. כאן מוחקים: I like.",
+        "en": "Do not put am/is/are before a normal verb in present simple: I like."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "present-simple"
     },
     {
       "id": "fix.a1.ari-go-shul",
@@ -158,22 +161,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי עושה את הפעולה? אחד או הרבה?",
+          "en": "Who does the action? One or many?"
         },
         {
-          "he": "מי הולך? ארי, אדם אחד. מה חסר בפועל?",
-          "en": "Who goes? Ari, one person. What is missing in the verb?"
+          "he": "🐍 מה נדבק לפועל אחרי he או she?",
+          "en": "What sticks to the verb after he or she?"
         }
       ],
       "explanation": {
-        "he": "בהווה פשוט, כשהנושא הוא אדם אחד (he / she), מוסיפים s לפועל. בעברית הפועל משתנה לפי הגוף, ובאנגלית מסמנים את זה ב־s. Ari הוא he, ולכן goes. ב־go מוסיפים es. shul הוא בית כנסת.",
-        "en": "In the Present Simple, add -s to the verb after one person (he / she / it). Ari = he, so goes."
+        "he": "🔎 הרמז: Ari, אדם אחד (he או she).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\ngo בלי s מתאים ל־I, you, we, they. לכן goes. אחרי o מוסיפים es. every morning = 📅 הרגל.",
+        "en": "Ari is one person, so the verb takes s: goes."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "third-person-s"
     },
     {
       "id": "fix.a1.ima-light",
@@ -201,22 +205,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי עושה את הפעולה? אחד או הרבה?",
+          "en": "Who does the action? One or many?"
         },
         {
-          "he": "Ima היא she. מה צריך להוסיף לפועל?",
-          "en": "Ima is she. What does the verb need?"
+          "he": "🐍 מה נדבק לפועל אחרי he או she?",
+          "en": "What sticks to the verb after he or she?"
         }
       ],
       "explanation": {
-        "he": "בהווה פשוט, כשהנושא הוא אדם אחד (he / she), מוסיפים s לפועל. בעברית הפועל משתנה לפי הגוף, ובאנגלית מסמנים את זה ב־s. Ima היא she, ולכן lights.",
-        "en": "In the Present Simple, add -s to the verb after one person (he / she / it). Ima = she, so lights."
+        "he": "🔎 הרמז: Ima, אדם אחד (he או she).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\nlight בלי s מתאים ל־I, you, we, they. לכן lights. כמו שבהמשך כתוב we look בלי s, כי we הם הרבה.",
+        "en": "Ima is one person, so the verb takes s: lights."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "third-person-s"
     },
     {
       "id": "fix.a1.grandma-bake",
@@ -244,22 +249,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי עושה את הפעולה? אחד או הרבה?",
+          "en": "Who does the action? One or many?"
         },
         {
-          "he": "Grandma Chana היא אדם אחד. איך נראה הפועל בהווה?",
-          "en": "Grandma Chana is one person. What does the verb look like in the present?"
+          "he": "🐍 מה נדבק לפועל אחרי he או she?",
+          "en": "What sticks to the verb after he or she?"
         }
       ],
       "explanation": {
-        "he": "בהווה פשוט, כשהנושא הוא אדם אחד (he / she), מוסיפים s לפועל. בעברית הפועל משתנה לפי הגוף, ובאנגלית מסמנים את זה ב־s. Grandma Chana היא she, ולכן bakes.",
-        "en": "In the Present Simple, add -s to the verb after one person (he / she / it). Grandma Chana = she, so bakes."
+        "he": "🔎 הרמז: Grandma Chana, אדם אחד (he או she).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\nbake בלי s מתאים ל־I, you, we, they. לכן bakes. every week = 📅 הרגל.",
+        "en": "Grandma Chana is one person, so the verb takes s: bakes."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "third-person-s"
     },
     {
       "id": "fix.a1.mrs-klein-live",
@@ -287,22 +293,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי עושה את הפעולה? אחד או הרבה?",
+          "en": "Who does the action? One or many?"
         },
         {
-          "he": "מי גרה לבד? אישה אחת. מה חסר בפועל?",
-          "en": "Who lives alone? One woman. What is missing in the verb?"
+          "he": "🐍 מה נדבק לפועל אחרי he או she?",
+          "en": "What sticks to the verb after he or she?"
         }
       ],
       "explanation": {
-        "he": "בהווה פשוט, כשהנושא הוא אדם אחד (he / she), מוסיפים s לפועל. בעברית הפועל משתנה לפי הגוף, ובאנגלית מסמנים את זה ב־s. Mrs. Klein היא she, ולכן lives.",
-        "en": "In the Present Simple, add -s to the verb after one person (he / she / it). Mrs. Klein = she, so lives."
+        "he": "🔎 הרמז: Mrs. Klein, אדם אחד (he או she).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\nlive בלי s מתאים ל־I, you, we, they. לכן lives.",
+        "en": "Mrs. Klein is one person, so the verb takes s: lives."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "third-person-s"
     },
     {
       "id": "fix.a1.where-do-rivka",
@@ -330,22 +337,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את פועל העזר",
-          "en": "Check the helping verb."
+          "he": "מי שומרת את הסידור? אחת או הרבה?",
+          "en": "Who keeps the siddur? One or many?"
         },
         {
-          "he": "Rivka היא אדם אחד. איזה פועל עזר מתאים לה?",
-          "en": "Rivka is one person. Which helping verb fits her?"
+          "he": "🧰 איזו מילת עזר הולכת עם she?",
+          "en": "Which helper goes with she?"
         }
       ],
       "explanation": {
-        "he": "עם אדם אחד (he / she / it) משתמשים ב־does / doesn't. עם כמה אנשים, I, you, we, they משתמשים ב־do / don't. Rivka היא she, ולכן does. siddur הוא סידור.",
-        "en": "Use does / doesn't with he, she, it. Use do / don't with I, you, we, they. Rivka = she, so does."
+        "he": "🔎 הרמז: Rivka, אחת (she).\n🧰 בשאלה בהווה פשוט עם he, she, it משתמשים ב־does. היא לוקחת את ה־s.\nלכן Where does Rivka keep, ו־keep נשאר נקי.",
+        "en": "Rivka = she, so the question helper is does: Where does Rivka keep...?"
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "do-does"
     },
     {
       "id": "fix.a1.ari-do-not-school",
@@ -373,22 +381,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את פועל העזר",
-          "en": "Check the helping verb."
+          "he": "מי לא הולך לבית הספר? אחד או הרבה?",
+          "en": "Who has no school? One or many?"
         },
         {
-          "he": "Ari הוא he. האם מתאים do או צורה אחרת?",
-          "en": "Ari is he. Is do right, or another form?"
+          "he": "🧰 איזו מילת עזר לשלילה הולכת עם he?",
+          "en": "Which negative helper goes with he?"
         }
       ],
       "explanation": {
-        "he": "עם אדם אחד (he / she / it) משתמשים ב־does / doesn't. עם כמה אנשים, I, you, we, they משתמשים ב־do / don't. Ari הוא he, ולכן does not. אחרי does הפועל נשאר have.",
-        "en": "Use does / doesn't with he, she, it. Use do / don't with I, you, we, they. Ari = he, so does not have."
+        "he": "🔎 הרמז: Ari, אחד (he).\n🧰 בשלילה בהווה פשוט עם he, she, it משתמשים ב־does not.\ndoes לוקחת את ה־s, ו־have נשאר נקי: Ari does not have.",
+        "en": "Ari = he, so the negative is does not: Ari does not have."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "do-does"
     },
     {
       "id": "fix.a1.much-grandchildren",
@@ -416,22 +425,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת הכמות",
-          "en": "Check the word for amount."
+          "he": "אפשר לספור נכדים?",
+          "en": "Can you count grandchildren?"
         },
         {
-          "he": "אפשר לספור נכדים?",
-          "en": "Can we count grandchildren?"
+          "he": "💧 מים או תפוחים?",
+          "en": "Water or apples?"
         }
       ],
       "explanation": {
-        "he": "many בא עם דברים שאפשר לספור (candles, children). much בא עם דברים שלא סופרים (time, water). בעברית יש רק \"הרבה\" או \"כמה\". נכדים אפשר לספור, ולכן many grandchildren.",
-        "en": "many + things we can count. much + things we cannot count. We can count grandchildren, so many."
+        "he": "🔎 הרמז: grandchildren, נכדים שאפשר לספור.\n💧 many לדברים שסופרים (תפוחים). much לדברים שלא סופרים (מים).\nנכדים סופרים: אחד, שניים, שלושה. לכן many.",
+        "en": "Grandchildren can be counted, so many, not much."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "quantifiers"
     },
     {
       "id": "fix.a1.how-much-candles",
@@ -459,22 +469,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת הכמות",
-          "en": "Check the word for amount."
+          "he": "אפשר לספור נרות?",
+          "en": "Can you count candles?"
         },
         {
-          "he": "candles הוא ברבים. אפשר לספור אותם?",
-          "en": "candles is plural. Can we count them?"
+          "he": "💧 מים או תפוחים?",
+          "en": "Water or apples?"
         }
       ],
       "explanation": {
-        "he": "many בא עם דברים שאפשר לספור (candles, children). much בא עם דברים שלא סופרים (time, water). בעברית יש רק \"הרבה\" או \"כמה\". נרות סופרים, ולכן How many candles. Chanukah היא חנוכה.",
-        "en": "many + things we can count. much + things we cannot count. We count candles, so how many."
+        "he": "🔎 הרמז: candles, נרות שסופרים.\n💧 How many לדברים שסופרים. How much לדברים שלא סופרים.\nנרות סופרים (בחנוכה ממש סופרים אותם!), אז How many.",
+        "en": "Candles can be counted, so How many."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "quantifiers"
     },
     {
       "id": "fix.a1.a-orange",
@@ -502,22 +513,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילה הקטנה לפני שם העצם",
-          "en": "Check the small word before the noun."
-        },
-        {
           "he": "באיזה צליל מתחילה המילה orange?",
           "en": "What sound does orange start with?"
+        },
+        {
+          "he": "☝️ מתי אומרים an במקום a?",
+          "en": "When do we say an instead of a?"
         }
       ],
       "explanation": {
-        "he": "לפני צליל של תנועה (a, e, i, o, u) אומרים an. לפני צליל של עיצור אומרים a. קובע הצליל של המילה הבאה. orange מתחילה בצליל o, תנועה, ולכן an orange.",
-        "en": "an before a vowel sound, a before a consonant sound. orange starts with a vowel sound, so an."
+        "he": "🔎 הרמז: orange מתחיל בצליל o.\n☝️ a/an = אחד. לפני צליל תנועה (a, e, i, o, u) אומרים an.\nan orange, כדי שלא יהיו שתי תנועות צמודות.",
+        "en": "orange starts with a vowel sound, so an."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "articles"
     },
     {
       "id": "fix.a1.an-story",
@@ -545,22 +557,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילה הקטנה לפני שם העצם",
-          "en": "Check the small word before the noun."
-        },
-        {
           "he": "באיזה צליל מתחילה המילה story?",
           "en": "What sound does story start with?"
+        },
+        {
+          "he": "☝️ an רק לפני תנועה. מה לפני עיצור?",
+          "en": "an is only before a vowel. What goes before a consonant?"
         }
       ],
       "explanation": {
-        "he": "לפני צליל של תנועה (a, e, i, o, u) אומרים an. לפני צליל של עיצור אומרים a. קובע הצליל של המילה הבאה. story מתחילה בצליל s, עיצור, ולכן a story.",
-        "en": "an before a vowel sound, a before a consonant sound. story starts with a consonant sound, so a."
+        "he": "🔎 הרמז: story מתחיל בצליל s.\n☝️ a/an = אחד. an רק לפני צליל תנועה (a, e, i, o, u).\nלפני צליל עיצור: a story.",
+        "en": "story starts with a consonant sound, so a."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "articles"
     },
     {
       "id": "fix.a1.a-apple",
@@ -588,22 +601,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילה הקטנה לפני שם העצם",
-          "en": "Check the small word before the noun."
+          "he": "באיזה צליל מתחילה המילה apple?",
+          "en": "What sound does apple start with?"
         },
         {
-          "he": "apple מתחילה באות a. מה זה אומר על המילה שלפניה?",
-          "en": "apple starts with a. What does that mean for the word before it?"
+          "he": "☝️ מתי אומרים an במקום a?",
+          "en": "When do we say an instead of a?"
         }
       ],
       "explanation": {
-        "he": "לפני צליל של תנועה (a, e, i, o, u) אומרים an. לפני צליל של עיצור אומרים a. קובע הצליל של המילה הבאה. apple מתחילה בתנועה, ולכן an apple.",
-        "en": "an before a vowel sound, a before a consonant sound. apple starts with a vowel sound, so an."
+        "he": "🔎 הרמז: apple מתחיל בצליל a.\n☝️ a/an = אחד. לפני צליל תנועה (a, e, i, o, u) אומרים an.\nלכן an apple.",
+        "en": "apple starts with a vowel sound, so an."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "articles"
     },
     {
       "id": "fix.a1.in-night",
@@ -631,22 +645,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת היחס של הזמן",
-          "en": "Check the time preposition."
+          "he": "לבדוק את המילה שלפני night.",
+          "en": "Check the word before night."
         },
         {
-          "he": "איזו מילת יחס באה עם night?",
-          "en": "Which preposition goes with night?"
+          "he": "🔺 night הולך עם המילה של הנקודה בפירמידה. צירוף קבוע.",
+          "en": "night goes with the point word. It is a fixed phrase."
         }
       ],
       "explanation": {
-        "he": "at לשעה ול־night. on ליום ולתאריך. in לחודש, לשנה ולעונה. בעברית יש רק \"ב\", ולכן קל להתבלבל. אומרים at night. בעברית \"בלילה\", באנגלית at.",
-        "en": "at + clock time and night, on + day and date, in + month, year and season. We say at night."
+        "he": "🔎 הרמז: night.\n🔺 at = נקודה בזמן. in = משהו גדול (חודש, שנה).\nat night הוא צירוף קבוע, כמו at noon. בעברית \"בלילה\", ולכן קל לכתוב in.",
+        "en": "We always say at night."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "prepositions-time"
     },
     {
       "id": "fix.a1.in-thursday",
@@ -674,22 +689,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת היחס של הזמן",
-          "en": "Check the time preposition."
+          "he": "Thursday זה שעה, יום או חודש?",
+          "en": "Is Thursday a time, a day or a month?"
         },
         {
-          "he": "Thursday הוא יום בשבוע. איזו מילת יחס באה עם ימים?",
-          "en": "Thursday is a day. Which preposition goes with days?"
+          "he": "🔺 בפירמידה: מה הולך עם יום?",
+          "en": "Which word goes with a day?"
         }
       ],
       "explanation": {
-        "he": "at לשעה ול־night. on ליום ולתאריך. in לחודש, לשנה ולעונה. בעברית יש רק \"ב\", ולכן קל להתבלבל. עם ימים אומרים on: on Thursday.",
-        "en": "at + clock time and night, on + day and date, in + month, year and season. We use on with days."
+        "he": "🔎 הרמז: Thursday, יום.\n🔺 at = שעה. on = יום. in = חודש, שנה.\nThursday הוא יום, אז on Thursday.",
+        "en": "Thursday is a day, so on."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "prepositions-time"
     },
     {
       "id": "fix.a1.candles-in-table",
@@ -717,22 +733,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת היחס של המקום",
-          "en": "Check the place preposition."
+          "he": "הנרות בתוך השולחן או עליו?",
+          "en": "Are the candles inside the table or on it?"
         },
         {
-          "he": "הנרות בתוך השולחן או על השולחן?",
-          "en": "Are the candles inside the table or on it?"
+          "he": "in = בתוך. מה אומרים כשמשהו מונח על משטח?",
+          "en": "in = inside. What do we say for a surface?"
         }
       ],
       "explanation": {
-        "he": "in זה בתוך. on זה על משטח. at זה בנקודה או במקום מסוים. בעברית \"ב\" ו\"על\" לא תמיד מתאימים לאנגלית. הנרות על השולחן, על משטח, ולכן on the table.",
-        "en": "in = inside, on = on a surface, at = at a point or place. The candles are on top of the table, so on."
+        "he": "🔎 הרמז: the table, משטח.\non = על משטח. in = בתוך משהו סגור (in the box).\nהנרות עומדים על השולחן, לא בתוכו: on the table.",
+        "en": "The candles stand on the surface of the table: on."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "prepositions-place"
     },
     {
       "id": "fix.a1.there-is-two",
@@ -760,22 +777,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את is / are",
-          "en": "Check is / are."
+          "he": "כמה נרות יש?",
+          "en": "How many candles are there?"
         },
         {
-          "he": "כמה נרות יש? אחד או יותר?",
-          "en": "How many candles? One or more?"
+          "he": "👉 there is לאחד. מה להרבה?",
+          "en": "there is for one. What for many?"
         }
       ],
       "explanation": {
-        "he": "אחרי there בוחרים is או are לפי שם העצם שבא אחריו. יחיד או משהו שלא סופרים: there is. רבים: there are. בעברית \"יש\" לא משתנה. two candles זה רבים, ולכן there are.",
-        "en": "there is + singular or uncountable, there are + plural. two candles is plural, so there are."
+        "he": "🔎 הרמז: two candles, הרבה.\n👉 \"יש\" באנגלית: there is לאחד, there are להרבה.\nשני נרות = הרבה, אז There are.",
+        "en": "two candles = more than one, so There are."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "there-is"
     },
     {
       "id": "fix.a1.there-are-sukkah",
@@ -803,22 +821,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את is / are",
-          "en": "Check is / are."
+          "he": "כמה סוכות יש בחצר?",
+          "en": "How many sukkahs are in the yard?"
         },
         {
-          "he": "כמה סוכות יש? מה המילה a אומרת?",
-          "en": "How many sukkahs? What does a tell you?"
+          "he": "👉 there are להרבה. מה לאחד?",
+          "en": "there are for many. What for one?"
         }
       ],
       "explanation": {
-        "he": "אחרי there בוחרים is או are לפי שם העצם שבא אחריו. יחיד או משהו שלא סופרים: there is. רבים: there are. בעברית \"יש\" לא משתנה. a big sukkah זה יחיד, ולכן there is. sukkah היא סוכה.",
-        "en": "there is + singular or uncountable, there are + plural. a sukkah is singular, so there is."
+        "he": "🔎 הרמז: a big sukkah, אחת.\n👉 \"יש\" באנגלית: there is לאחד, there are להרבה.\nסוכה אחת, אז There is.",
+        "en": "a sukkah = one, so There is."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "there-is"
     },
     {
       "id": "fix.a1.learns-ari-songs",
@@ -846,22 +865,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי נותן את הידע ומי מקבל אותו?",
+          "en": "Who gives the knowledge, and who gets it?"
         },
         {
-          "he": "מי נותן את הידע? סבא או ארי?",
-          "en": "Who gives the knowledge, Grandpa or Ari?"
+          "he": "ללמוד או ללמד? באנגלית יש לזה שתי מילים שונות.",
+          "en": "To learn or to teach? English has two different words."
         }
       ],
       "explanation": {
-        "he": "learn זה ללמוד בעצמי. teach זה ללמד מישהו אחר. בעברית \"לומד\" ו\"מלמד\" דומים, אבל באנגלית אלה שתי מילים שונות. סבא מלמד, ולכן teaches. ארי הוא זה שלומד: Ari learns.",
-        "en": "learn = get knowledge yourself, teach = give knowledge to someone. Grandpa teaches. Ari learns."
+        "he": "🔎 הרמז: Grandpa Yosef נותן את הידע ל־Ari.\nlearn = ללמוד (לקבל ידע). teach = ללמד (לתת ידע).\nבעברית \"ללמוד\" ו\"ללמד\" דומות, אבל באנגלית אלה שתי מילים: Grandpa teaches Ari.",
+        "en": "learn = get knowledge; teach = give knowledge. Grandpa teaches."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.a2.rivka-tamar-want",
@@ -889,22 +909,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "לבדוק את המילה שלפני want. האם צריך אותה?",
+          "en": "Look at the word before want. Is it needed?"
         },
         {
-          "he": "want הוא פועל רגיל. האם צריך לפניו are?",
-          "en": "want is a normal verb. Does it need are?"
+          "he": "📅 הווה פשוט: מי + פועל, בלי am/is/are באמצע.",
+          "en": "Present simple: subject + verb, no am/is/are."
         }
       ],
       "explanation": {
-        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. Rivka and Tamar want, בלי are.",
-        "en": "Do not put am / is / are before a normal verb in the Present Simple. Rivka and Tamar want, not are want."
+        "he": "🔎 הרמז: want, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: Rivka and Tamar + want.\n🎩 am, is, are באים רק לפני תיאור או ing. בעברית אין פועל עזר, ולכן מתבלבלים ומוסיפים אותו. כאן מוחקים: Rivka and Tamar want.",
+        "en": "Do not put am/is/are before a normal verb in present simple: Rivka and Tamar want."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "present-simple"
     },
     {
       "id": "fix.a2.need-bigger-table",
@@ -932,22 +953,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "לבדוק את המילה שלפני need. האם צריך אותה?",
+          "en": "Look at the word before need. Is it needed?"
         },
         {
-          "he": "need הוא פועל רגיל. האם צריך לפניו are?",
-          "en": "need is a normal verb. Does it need are?"
+          "he": "📅 הווה פשוט: מי + פועל, בלי am/is/are באמצע.",
+          "en": "Present simple: subject + verb, no am/is/are."
         }
       ],
       "explanation": {
-        "he": "באנגלית לא שמים am / is / are לפני פועל רגיל בהווה פשוט. בעברית אין פועל עזר, וגם באנגלית אומרים פשוט: I like, we walk. We need, בלי are.",
-        "en": "Do not put am / is / are before a normal verb in the Present Simple. We need, not we are need."
+        "he": "🔎 הרמז: need, שכבר פועל בפני עצמו.\n📅 בהווה פשוט הפועל עומד לבד: We + need.\n🎩 am, is, are באים רק לפני תיאור או ing. בעברית אין פועל עזר, ולכן מתבלבלים ומוסיפים אותו. כאן מוחקים: We need.",
+        "en": "Do not put am/is/are before a normal verb in present simple: We need."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "present-simple"
     },
     {
       "id": "fix.a2.eli-cry",
@@ -975,22 +997,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי בוכה? אחד או הרבה?",
+          "en": "Who cries? One or many?"
         },
         {
-          "he": "Eli הוא he. מה קורה לפועל שנגמר ב־y?",
-          "en": "Eli is he. What happens to a verb that ends in y?"
+          "he": "🐍 צריך s. איך מוסיפים s למילה שנגמרת ב־y?",
+          "en": "Add s. How do you add s to a word ending in y?"
         }
       ],
       "explanation": {
-        "he": "בהווה פשוט, כשהנושא הוא אדם אחד (he / she), מוסיפים s לפועל. בעברית הפועל משתנה לפי הגוף, ובאנגלית מסמנים את זה ב־s. Eli הוא he, ולכן מוסיפים s. ב־cry ה־y הופכת ל־ies: cries.",
-        "en": "In the Present Simple, add -s to the verb after one person (he / she / it). Eli = he, so cries (y becomes ies)."
+        "he": "🔎 הרמז: Baby Eli, אחד (he).\n🐍 בהווה פשוט, כשמדברים על אחד, נדבק לפועל s.\ncry נגמר בעיצור + y, אז ה־y הופך ל־ies: cries.",
+        "en": "Baby Eli = he, so add s. After consonant + y, use -ies: cries."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "third-person-s"
     },
     {
       "id": "fix.a2.does-tamar-shira",
@@ -1018,22 +1041,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את פועל העזר",
-          "en": "Check the helping verb."
+          "he": "כמה בנות לומדות יחד?",
+          "en": "How many girls learn together?"
         },
         {
-          "he": "כמה בנות יש בשאלה?",
-          "en": "How many girls are in the question?"
+          "he": "🧰 Does רק לאחד. מה מתאים ל־they?",
+          "en": "Does is only for one. What fits they?"
         }
       ],
       "explanation": {
-        "he": "עם אדם אחד (he / she / it) משתמשים ב־does / doesn't. עם כמה אנשים, I, you, we, they משתמשים ב־do / don't. Tamar and Shira הן they, ולכן Do.",
-        "en": "Use does / doesn't with he, she, it. Use do / don't with I, you, we, they. Tamar and Shira = they, so do."
+        "he": "🔎 הרמז: Tamar and Shira, שתיים (they).\n🧰 Does רק ל־he, she, it. עם they משתמשים ב־Do.\nשתי בנות = הרבה, אז Do Tamar and Shira learn.",
+        "en": "Tamar and Shira = they, so Do, not Does."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "do-does"
     },
     {
       "id": "fix.a2.mrs-klein-dont",
@@ -1061,22 +1085,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את פועל העזר",
-          "en": "Check the helping verb."
+          "he": "מי אין לה משפחה? אחת או הרבה?",
+          "en": "Who has no family? One or many?"
         },
         {
-          "he": "Mrs. Klein היא she. איזו שלילה מתאימה לה?",
-          "en": "Mrs. Klein is she. Which negative fits her?"
+          "he": "🧰 איזו מילת עזר לשלילה הולכת עם she?",
+          "en": "Which negative helper goes with she?"
         }
       ],
       "explanation": {
-        "he": "עם אדם אחד (he / she / it) משתמשים ב־does / doesn't. עם כמה אנשים, I, you, we, they משתמשים ב־do / don't. Mrs. Klein היא she, ולכן doesn't have.",
-        "en": "Use does / doesn't with he, she, it. Use do / don't with I, you, we, they. Mrs. Klein = she, so doesn't."
+        "he": "🔎 הרמז: Mrs. Klein, אחת (she).\n🧰 בשלילה עם he, she, it משתמשים ב־doesn't. don't מתאים ל־I, you, we, they.\nלכן Mrs. Klein doesn't have.",
+        "en": "Mrs. Klein = she, so doesn't, not don't."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "do-does"
     },
     {
       "id": "fix.a2.did-ari-went",
@@ -1104,22 +1129,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל אחרי did",
-          "en": "Check the verb after did."
+          "he": "איזו מילה בשאלה כבר אומרת שזה עבר?",
+          "en": "Which word already shows the past?"
         },
         {
-          "he": "יש כבר did בשאלה. באיזו צורה בא הפועל אחריו?",
-          "en": "The question already has did. What form comes after it?"
+          "he": "🔙 מה קורה לפועל אחרי did?",
+          "en": "What happens to the verb after did?"
         }
       ],
       "explanation": {
-        "he": "did כבר מראה שזה עבר. אחריו בא הפועל בצורה הבסיסית: did go, didn't eat. בעברית הפועל עצמו בעבר, ובאנגלית רק did. Did Ari go, ולא went.",
-        "en": "did already shows the past. After did, use the base verb. Did + go, not went."
+        "he": "🔎 הרמז: Did בתחילת השאלה.\n🔙 did כבר מחזיקה את העבר. אחריה הפועל חוזר לצורת הבסיס.\nwent יוצר עבר כפול. לכן Did Ari go.",
+        "en": "Did already shows the past, so the verb is go, not went."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "did"
     },
     {
       "id": "fix.a2.did-not-ate",
@@ -1147,22 +1173,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל אחרי did",
-          "en": "Check the verb after did."
+          "he": "איזו מילה במשפט כבר אומרת שזה עבר?",
+          "en": "Which word already shows the past?"
         },
         {
-          "he": "did not כבר מראה עבר. מה צריך לקרות לפועל?",
-          "en": "did not already shows the past. What should happen to the verb?"
+          "he": "🔙 מה קורה לפועל אחרי did not?",
+          "en": "What happens to the verb after did not?"
         }
       ],
       "explanation": {
-        "he": "did כבר מראה שזה עבר. אחריו בא הפועל בצורה הבסיסית: did go, didn't eat. בעברית הפועל עצמו בעבר, ובאנגלית רק did. did not eat, ולא did not ate.",
-        "en": "did already shows the past. After did, use the base verb. did not + eat."
+        "he": "🔎 הרמז: did not.\n🔙 did כבר מחזיקה את העבר. אחריה הפועל חוזר לצורת הבסיס.\nate יוצר עבר כפול. לכן did not eat.",
+        "en": "did not already shows the past, so the verb is eat, not ate."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "did"
     },
     {
       "id": "fix.a2.did-rivka-took",
@@ -1190,22 +1217,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל אחרי did",
-          "en": "Check the verb after did."
+          "he": "איזו מילה בשאלה כבר אומרת שזה עבר?",
+          "en": "Which word already shows the past?"
         },
         {
-          "he": "did נמצא בתחילת השאלה. איזה פועל בא אחריו?",
-          "en": "did starts the question. Which verb form follows it?"
+          "he": "🔙 מה קורה לפועל אחרי did?",
+          "en": "What happens to the verb after did?"
         }
       ],
       "explanation": {
-        "he": "did כבר מראה שזה עבר. אחריו בא הפועל בצורה הבסיסית: did go, didn't eat. בעברית הפועל עצמו בעבר, ובאנגלית רק did. Did Rivka take, ולא took.",
-        "en": "did already shows the past. After did, use the base verb. Did + take, not took."
+        "he": "🔎 הרמז: Did בתחילת השאלה.\n🔙 did כבר מחזיקה את העבר. אחריה הפועל חוזר לצורת הבסיס.\ntook יוצר עבר כפול. לכן Did Rivka take.",
+        "en": "Did already shows the past, so the verb is take, not took."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "did"
     },
     {
       "id": "fix.a2.buyed",
@@ -1233,22 +1261,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל בעבר",
-          "en": "Check the past verb."
+          "he": "האם לכל פועל מוסיפים ed בעבר?",
+          "en": "Does every verb take -ed in the past?"
         },
         {
-          "he": "buy הוא פועל חריג. מה העבר שלו?",
+          "he": "📸 buy הוא פועל חריג. מה הצורה שלו בעבר?",
           "en": "buy is irregular. What is its past form?"
         }
       ],
       "explanation": {
-        "he": "זה פועל חריג. לא מוסיפים לו ed. את צורת העבר שלו לומדים בעל פה. buy, bought. לא buyed.",
-        "en": "This verb is irregular. Do not add -ed. buy, bought."
+        "he": "🔎 הרמז: Yesterday.\n📸 משהו שקרה ונגמר בזמן ידוע: עבר פשוט.\nbuy הוא פועל חריג ולא מקבל ed: bought.",
+        "en": "buy is irregular. The past is bought, not buyed."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "past-simple"
     },
     {
       "id": "fix.a2.goed",
@@ -1276,22 +1305,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל בעבר",
-          "en": "Check the past verb."
+          "he": "האם לכל פועל מוסיפים ed בעבר?",
+          "en": "Does every verb take -ed in the past?"
         },
         {
-          "he": "go הוא פועל חריג. מה העבר שלו?",
+          "he": "📸 go הוא פועל חריג. מה הצורה שלו בעבר?",
           "en": "go is irregular. What is its past form?"
         }
       ],
       "explanation": {
-        "he": "זה פועל חריג. לא מוסיפים לו ed. את צורת העבר שלו לומדים בעל פה. go, went. לא goed. Kotel הוא הכותל.",
-        "en": "This verb is irregular. Do not add -ed. go, went."
+        "he": "🔎 הרמז: Last week.\n📸 משהו שקרה ונגמר בזמן ידוע: עבר פשוט.\ngo הוא פועל חריג ולא מקבל ed: went.",
+        "en": "go is irregular. The past is went, not goed."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "past-simple"
     },
     {
       "id": "fix.a2.maked",
@@ -1319,22 +1349,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל בעבר",
-          "en": "Check the past verb."
+          "he": "האם לכל פועל מוסיפים ed בעבר?",
+          "en": "Does every verb take -ed in the past?"
         },
         {
-          "he": "make הוא פועל חריג. מה העבר שלו?",
+          "he": "📸 make הוא פועל חריג. מה הצורה שלו בעבר?",
           "en": "make is irregular. What is its past form?"
         }
       ],
       "explanation": {
-        "he": "זה פועל חריג. לא מוסיפים לו ed. את צורת העבר שלו לומדים בעל פה. make, made. לא maked.",
-        "en": "This verb is irregular. Do not add -ed. make, made."
+        "he": "🔎 הרמז: Last Friday.\n📸 משהו שקרה ונגמר בזמן ידוע: עבר פשוט.\nmake הוא פועל חריג ולא מקבל ed: made.",
+        "en": "make is irregular. The past is made, not maked."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "past-simple"
     },
     {
       "id": "fix.a2.many-sugar",
@@ -1362,22 +1393,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת הכמות",
-          "en": "Check the word for amount."
+          "he": "אפשר לספור סוכר?",
+          "en": "Can you count sugar?"
         },
         {
-          "he": "אפשר לספור sugar?",
-          "en": "Can we count sugar?"
+          "he": "💧 מים או תפוחים?",
+          "en": "Water or apples?"
         }
       ],
       "explanation": {
-        "he": "many בא עם דברים שאפשר לספור (candles, children). much בא עם דברים שלא סופרים (time, sugar). בעברית יש רק \"הרבה\" או \"כמה\". סוכר לא סופרים, ולכן much sugar.",
-        "en": "many + things we can count. much + things we cannot count. We cannot count sugar, so much."
+        "he": "🔎 הרמז: sugar, משהו שלא סופרים.\n💧 much לדברים שלא סופרים (מים, סוכר). many לדברים שסופרים.\nסוכר לא סופרים, אז much sugar.",
+        "en": "Sugar cannot be counted, so much."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "quantifiers"
     },
     {
       "id": "fix.a2.the-shabbat",
@@ -1405,22 +1437,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילים הקטנות לפני שמות העצם",
-          "en": "Check the small words before the nouns."
+          "he": "לבדוק את המילה שלפני Shabbat.",
+          "en": "Check the word before Shabbat."
         },
         {
-          "he": "בעברית אומרים \"את השבת\". האם באנגלית צריך the לפני שם של יום קדוש?",
-          "en": "In Hebrew we say \"the Shabbat\". Does English need the before a holy day name?"
+          "he": "☝️ שמים the לפני שם של יום?",
+          "en": "Do we put the before the name of a day?"
         }
       ],
       "explanation": {
-        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו school ו־work במשמעות \"לבית הספר\" ו\"לעבודה\". Shabbat הוא שם, כמו שם של חג. אומרים Ari loves Shabbat, בלי the.",
-        "en": "Do not use the for a general idea, a holiday name, or go to work. Shabbat is a name, so no the."
+        "he": "🔎 הרמז: Shabbat, שם של יום.\n☝️ the בא לפני משהו מסוים שמכירים. לפני שמות של ימים וחגים בדרך כלל לא שמים the.\nבעברית אומרים \"את השבת\", ולכן קל להוסיף the. באנגלית: loves Shabbat.",
+        "en": "Names of days and holidays usually take no the: loves Shabbat."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "articles"
     },
     {
       "id": "fix.a2.after-the-school",
@@ -1448,22 +1481,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילים הקטנות לפני שמות העצם",
-          "en": "Check the small words before the nouns."
+          "he": "לבדוק את המילה שבין After ל־school.",
+          "en": "Check the word between After and school."
         },
         {
-          "he": "בעברית \"אחרי בית הספר\". מה אומרים באנגלית?",
-          "en": "In Hebrew: \"after the school\". What do we say in English?"
+          "he": "☝️ כשמדברים על הלימודים עצמם, ולא על הבניין, אין the.",
+          "en": "When we mean classes, not the building, there is no the."
         }
       ],
       "explanation": {
-        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו school ו־work במשמעות \"לבית הספר\" ו\"לעבודה\". אומרים after school, בלי the, כמו go to school ו־go to work.",
-        "en": "Do not use the for a general idea, a holiday name, or school and work as places we go every day. We say after school, without the."
+        "he": "🔎 הרמז: After ... school, כלומר אחרי הלימודים.\n☝️ the מצביע על דבר מסוים. after school הוא צירוף קבוע שפירושו \"אחרי הלימודים\", בלי the.\nבעברית \"אחרי בית הספר\" עם ה׳, ולכן קל להוסיף the. באנגלית: After school.",
+        "en": "after school (= after classes) is a fixed phrase with no the."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "articles"
     },
     {
       "id": "fix.a2.born-in-march-3",
@@ -1491,22 +1525,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת היחס של הזמן",
-          "en": "Check the time preposition."
+          "he": "האם March 3 זה חודש שלם או יום אחד?",
+          "en": "Is March 3 a whole month or one day?"
         },
         {
-          "he": "March 3 הוא תאריך. איזו מילת יחס באה עם תאריך?",
-          "en": "March 3 is a date. Which preposition goes with a date?"
+          "he": "🔺 בפירמידה: מה הולך עם יום ותאריך?",
+          "en": "Which word goes with a day or date?"
         }
       ],
       "explanation": {
-        "he": "at לשעה ול־night. on ליום ולתאריך. in לחודש, לשנה ולעונה. בעברית יש רק \"ב\", ולכן קל להתבלבל. עם תאריך אומרים on: on March 3. רק עם חודש בלבד אומרים in March.",
-        "en": "at + clock time and night, on + day and date, in + month, year and season. on + a date, in + a month alone."
+        "he": "🔎 הרמז: March 3, תאריך מסוים.\n🔺 at = שעה. on = יום ותאריך. in = חודש, שנה.\nחודש לבד הוא in March, אבל עם יום מסוים זה תאריך: on March 3.",
+        "en": "A date is a specific day, so on March 3."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "prepositions-time"
     },
     {
       "id": "fix.a2.at-the-summer",
@@ -1534,22 +1569,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת היחס של הזמן",
-          "en": "Check the time preposition."
+          "he": "summer זה שעה, יום או עונה?",
+          "en": "Is summer a time, a day or a season?"
         },
         {
-          "he": "summer היא עונה. איזו מילת יחס באה עם עונות?",
-          "en": "summer is a season. Which preposition goes with seasons?"
+          "he": "🔺 בפירמידה: מה הולך עם עונה?",
+          "en": "Which word goes with a season?"
         }
       ],
       "explanation": {
-        "he": "at לשעה ול־night. on ליום ולתאריך. in לחודש, לשנה ולעונה. בעברית יש רק \"ב\", ולכן קל להתבלבל. עם עונה אומרים in: in the summer.",
-        "en": "at + clock time and night, on + day and date, in + month, year and season. in + a season."
+        "he": "🔎 הרמז: the summer, עונה.\n🔺 at = נקודה (שעה). on = יום. in = משהו גדול (חודש, שנה, עונה).\nקיץ הוא עונה, משהו גדול: in the summer.",
+        "en": "A season is long, so in the summer."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "prepositions-time"
     },
     {
       "id": "fix.a2.there-are-little-challah",
@@ -1577,22 +1613,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את is / are",
-          "en": "Check is / are."
+          "he": "האם סופרים כאן חלות, או מדברים על כמות?",
+          "en": "Are we counting loaves, or talking about an amount?"
         },
         {
-          "he": "challah כאן היא משהו שלא סופרים. יחיד או רבים?",
-          "en": "Here challah is something we do not count. Singular or plural?"
+          "he": "👉 💧 מה שלא סופרים הולך עם there is.",
+          "en": "Uncountable things go with there is."
         }
       ],
       "explanation": {
-        "he": "אחרי there בוחרים is או are לפי שם העצם שבא אחריו. יחיד או משהו שלא סופרים: there is. רבים: there are. בעברית \"יש\" לא משתנה. a little challah זה משהו שלא סופרים, ולכן there is.",
-        "en": "there is + singular or uncountable, there are + plural. Uncountable, so there is."
+        "he": "🔎 הרמז: a little challah, כמות שלא סופרים.\n👉 there is לאחד ולמה שלא סופרים. there are להרבה דברים נספרים.\na little = קצת, לא הרבה פריטים. לכן There is.",
+        "en": "a little challah is uncountable, so There is."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "there-is"
     },
     {
       "id": "fix.a2.makes-homework",
@@ -1620,22 +1657,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "איזה פועל הולך עם homework באנגלית?",
+          "en": "Which verb goes with homework?"
         },
         {
-          "he": "איזה פועל הולך עם homework?",
-          "en": "Which verb goes with homework?"
+          "he": "make יוצר משהו חדש. do מבצע משימה. מה שיעורי בית?",
+          "en": "make creates; do performs a task. Which is homework?"
         }
       ],
       "explanation": {
-        "he": "make ו־do שניהם \"לעשות\", אבל כל אחד הולך עם מילים קבועות: make a mistake, make an effort, do homework, do a favor. את הצירופים לומדים בעל פה. אומרים do homework. בעברית \"מכין שיעורים\", ובאנגלית does his homework.",
-        "en": "make and do go with fixed words: make a mistake, make an effort, do homework, do a favor. We say do homework."
+        "he": "🔎 הרמז: homework.\nבאנגלית אומרים do homework. make = ליצור משהו חדש (make a cake).\nשיעורי בית \"עושים\" במובן של לבצע, אז does his homework.",
+        "en": "We say do homework, not make homework."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.a2.says-eli-story",
@@ -1663,22 +1701,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "איזה פועל הולך עם a story באנגלית?",
+          "en": "Which verb goes with a story?"
         },
         {
-          "he": "יש כאן אדם ששומע (Eli). איזה פועל בא עם אדם?",
-          "en": "There is a listener here (Eli). Which verb takes a person?"
+          "he": "say או tell: איזה מהם יכול לבוא ישר עם אדם (Eli) אחריו?",
+          "en": "say or tell: which can take a person right after it?"
         }
       ],
       "explanation": {
-        "he": "tell בא עם האדם ששומע: tell someone something. say בא בלי האדם, או עם to: say something (to someone). בעברית \"אמר ל\" מתאים לשניהם. מספרים סיפור: tell a story. וגם tell someone. לכן Ima tells Eli a story.",
-        "en": "tell + a person (tell Tamar), say + no person (say that...). We tell a story, and tell someone."
+        "he": "🔎 הרמז: a story, ו־Eli מקבל אותו.\ntell = לספר (tell a story, tell someone). say = לומר מילים, ולא בא ישר עם אדם אחריו.\nסיפור מספרים: Ima tells Eli a story.",
+        "en": "We tell a story, and tell someone. say does not take a person right after it."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.a2.borrow-me-siddur",
@@ -1706,22 +1745,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי נותן את הסידור ומי מקבל אותו?",
+          "en": "Who gives the siddur and who gets it?"
         },
         {
-          "he": "מי נותנת את הסידור? שירה. האם היא שואלת או משאילה?",
-          "en": "Who gives the siddur? Shira. Does she borrow or lend?"
+          "he": "לתת בהשאלה או לקחת בהשאלה?",
+          "en": "Give for a while, or take for a while?"
         }
       ],
       "explanation": {
-        "he": "borrow זה לשאול, לקחת משהו לזמן קצר. lend זה להשאיל, לתת משהו לזמן קצר. בעברית \"לשאול\" ו\"להשאיל\" דומים מאוד. שירה נותנת, ולכן lend me. מי שמבקש הוא ששואל: I borrow.",
-        "en": "borrow = take for a short time, lend = give for a short time. Shira gives it, so lend."
+        "he": "🔎 הרמז: me, הדובר מקבל את הסידור.\nborrow = לקחת בהשאלה (לקבל). lend = להשאיל (לתת).\nShira נותנת, אז מבקשים ממנה lend: can you lend me.",
+        "en": "Shira gives the siddur, so lend. borrow means to take."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.a2.lend-umbrella",
@@ -1749,22 +1789,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי נותן את המטריה ומי מקבל אותה?",
+          "en": "Who gives the umbrella and who gets it?"
         },
         {
-          "he": "מי לוקח את המטרייה? אני. מה הפועל ללקיחה לזמן קצר?",
-          "en": "Who takes the umbrella? I do. Which verb means take for a short time?"
+          "he": "לתת בהשאלה או לקחת בהשאלה?",
+          "en": "Give for a while, or take for a while?"
         }
       ],
       "explanation": {
-        "he": "borrow זה לשאול, לקחת משהו לזמן קצר. lend זה להשאיל, לתת משהו לזמן קצר. בעברית \"לשאול\" ו\"להשאיל\" דומים מאוד. מי שמדבר רוצה לקחת לזמן קצר, ולכן borrow. רבקה היא שמשאילה: she lends.",
-        "en": "borrow = take for a short time, lend = give for a short time. I take it for a short time, so borrow."
+        "he": "🔎 הרמז: can I ... your umbrella, הדובר מקבל.\nborrow = לקחת בהשאלה (לקבל). lend = להשאיל (לתת).\nהדובר רוצה לקחת את המטריה של Rivka, אז can I borrow.",
+        "en": "The speaker takes Rivka's umbrella, so borrow. lend means to give."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.a2.learns-us-torah",
@@ -1792,22 +1833,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי נותן את הידע ומי מקבל אותו?",
+          "en": "Who gives the knowledge, and who gets it?"
         },
         {
-          "he": "הרב נותן את הידע לתלמידים. איזה פועל מתאים?",
-          "en": "The Rabbi gives the knowledge. Which verb fits?"
+          "he": "ללמוד או ללמד? באנגלית יש לזה שתי מילים שונות.",
+          "en": "To learn or to teach? English has two different words."
         }
       ],
       "explanation": {
-        "he": "learn זה ללמוד בעצמי. teach זה ללמד מישהו אחר. בעברית \"לומד\" ו\"מלמד\" דומים, אבל באנגלית אלה שתי מילים שונות. הרב מלמד, ולכן teaches us. אנחנו לומדים: we learn. Torah היא תורה.",
-        "en": "learn = get knowledge yourself, teach = give knowledge to someone. The Rabbi teaches. We learn."
+        "he": "🔎 הרמז: Rabbi Gold נותן לנו ידע (us).\nlearn = ללמוד (לקבל ידע). teach = ללמד (לתת ידע).\nהרב מלמד אותנו: Rabbi Gold teaches us.",
+        "en": "learn = get knowledge; teach = give knowledge. The rabbi teaches us."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.a2.remembers-say-thanks",
@@ -1835,22 +1877,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי צריך לזכור: אמא או הילדים?",
+          "en": "Who needs to remember: Ima or the children?"
         },
         {
-          "he": "אמא עוזרת לילדים לא לשכוח. היא זוכרת או מזכירה?",
-          "en": "Ima helps the children not to forget. Does she remember or remind?"
+          "he": "לזכור או להזכיר? באנגלית אלה שתי מילים שונות.",
+          "en": "Remember or remind? English has two words."
         }
       ],
       "explanation": {
-        "he": "remember זה לזכור, בתוך הראש שלי. remind זה להזכיר למישהו אחר. remind someone to do, remind someone of something. להזכיר למישהו לעשות משהו: remind someone to. לכן Ima reminds Ari and Tamar.",
-        "en": "remember = keep in your mind, remind = make someone else remember. remind someone to do something."
+        "he": "🔎 הרמז: Ari and Tamar, אמא גורמת להם לזכור.\nremember = לזכור (בעצמי). remind = להזכיר (לגרום למישהו אחר לזכור).\nאמא מזכירה להם: Ima reminds Ari and Tamar.",
+        "en": "remind = make someone else remember. Ima reminds them."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.a2.feels-boring",
@@ -1878,22 +1921,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את התואר",
-          "en": "Check the describing word."
+          "he": "האם המילה מתארת איך Ari מרגיש, או משהו שגורם לשעמום?",
+          "en": "Does the word describe how Ari feels, or what causes it?"
         },
         {
-          "he": "מדובר באיך שארי מרגיש. איזו סיומת מתאימה לרגש של אדם?",
-          "en": "This is how Ari feels. Which ending fits a person's feeling?"
+          "he": "ed = מה שמרגישים. ing = מה שגורם להרגשה.",
+          "en": "-ed = the feeling. -ing = the cause."
         }
       ],
       "explanation": {
-        "he": "bored זה איך שאדם מרגיש: משועמם. boring זה מה שגורם לשעמום: משעמם. ed לאדם, ing לדבר. ארי מרגיש משועמם: bored.",
-        "en": "bored = how a person feels, boring = what makes people feel that way. Ari feels bored."
+        "he": "🔎 הרמז: Ari feels, איך הוא מרגיש.\nbored = משועמם (מה שמרגישים). boring = משעמם (מה שגורם לשעמום).\nAri מרגיש שעמום, אז feels bored.",
+        "en": "bored = how you feel; boring = what makes you feel that. Ari feels bored."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.a2.more-better",
@@ -1921,22 +1965,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את ההשוואה",
-          "en": "Check the comparison."
+          "he": "האם better כבר משווה בעצמו?",
+          "en": "Does better already compare?"
         },
         {
-          "he": "better כבר אומר \"יותר טוב\". האם צריך עוד מילה?",
-          "en": "better already means \"more good\". Is another word needed?"
+          "he": "📏 er או more, לא שניהם.",
+          "en": "er or more, never both."
         }
       ],
       "explanation": {
-        "he": "לא משתמשים גם ב־more וגם בצורה עם er או best/better. בוחרים רק אחת: bigger, better, the happiest. better היא כבר צורת ההשוואה של good. לא מוסיפים more.",
-        "en": "Do not use more or most together with -er / -est or better. better already compares. No more."
+        "he": "🔎 הרמז: better, שכבר מילת השוואה.\n📏 er או more, לא שניהם.\nbetter היא כבר הצורה המשווה של good, אז מוחקים את more: is better than.",
+        "en": "better already compares, so more is extra: is better than."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "comparatives"
     },
     {
       "id": "fix.a2.more-bigger",
@@ -1964,22 +2009,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את ההשוואה",
-          "en": "Check the comparison."
+          "he": "האם bigger כבר משווה בעצמו?",
+          "en": "Does bigger already compare?"
         },
         {
-          "he": "bigger כבר אומר \"יותר גדול\". מה מיותר?",
-          "en": "bigger already means \"more big\". What is extra?"
+          "he": "📏 er או more, לא שניהם.",
+          "en": "er or more, never both."
         }
       ],
       "explanation": {
-        "he": "לא משתמשים גם ב־more וגם בצורה עם er או best/better. בוחרים רק אחת: bigger, better, the happiest. במילה קצרה מוסיפים er: bigger. לא more bigger.",
-        "en": "Do not use more or most together with -er / -est or better. Short word + -er. No more."
+        "he": "🔎 הרמז: bigger, שכבר מילת השוואה.\n📏 er או more, לא שניהם.\nbigger כבר מקבל er, אז מוחקים את more: is bigger than.",
+        "en": "bigger already has -er, so more is extra: is bigger than."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "comparatives"
     },
     {
       "id": "fix.a2.cant-to-walk",
@@ -2007,22 +2053,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מה שבא אחרי can't / should",
-          "en": "Check what comes after the modal."
+          "he": "לבדוק את המילה שבין can't לבין walk.",
+          "en": "Check the word between can't and walk."
         },
         {
-          "he": "מה בא אחרי can't?",
-          "en": "What comes after can't?"
+          "he": "🔧 מה בא אחרי מילה מודאלית?",
+          "en": "What comes after a modal?"
         }
       ],
       "explanation": {
-        "he": "אחרי פועל מודאלי (can, could, should, must) בא פועל בסיסי בלי to. בעברית אומרים \"לא יכול ללכת\", אבל באנגלית can't walk. אחרי can't בא פועל בלי to: can't walk.",
-        "en": "After a modal (can, could, should, must), use the base verb without to. can't + base verb, no to."
+        "he": "🔎 הרמז: can't.\n🔧 אחרי can, must, should בא פועל נקי, בלי to.\nבעברית \"לא יכול ללכת\" עם ל׳, ולכן קל להוסיף to. באנגלית: can't walk.",
+        "en": "After can't, use the verb without to: can't walk."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "modals"
     },
     {
       "id": "fix.a2.couldnt-to-stop",
@@ -2050,22 +2097,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מה שבא אחרי can't / should",
-          "en": "Check what comes after the modal."
+          "he": "לבדוק את המילה שבין couldn't לבין stop.",
+          "en": "Check the word between couldn't and stop."
         },
         {
-          "he": "couldn't הוא פועל מודאלי. מה בא אחריו?",
-          "en": "couldn't is a modal. What comes after it?"
+          "he": "🔧 מה בא אחרי מילה מודאלית?",
+          "en": "What comes after a modal?"
         }
       ],
       "explanation": {
-        "he": "אחרי פועל מודאלי (can, could, should, must) בא פועל בסיסי בלי to. בעברית אומרים \"לא יכול ללכת\", אבל באנגלית can't walk. couldn't stop, בלי to.",
-        "en": "After a modal (can, could, should, must), use the base verb without to. couldn't + base verb, no to."
+        "he": "🔎 הרמז: couldn't.\n🔧 could הוא מודאלי, כמו can. אחריו בא פועל נקי, בלי to.\nבעברית \"לא הצליח להפסיק\" עם ל׳, אבל באנגלית: couldn't stop.",
+        "en": "After couldn't, use the verb without to: couldn't stop."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "modals"
     },
     {
       "id": "fix.a2.three-bedrooms",
@@ -2093,22 +2141,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את is / are",
-          "en": "Check is / are."
+          "he": "כמה חדרים יש?",
+          "en": "How many bedrooms are there?"
         },
         {
-          "he": "three bedrooms זה יחיד או רבים?",
-          "en": "three bedrooms: singular or plural?"
+          "he": "👉 there is לאחד. מה להרבה?",
+          "en": "there is for one. What for many?"
         }
       ],
       "explanation": {
-        "he": "אחרי there בוחרים is או are לפי שם העצם שבא אחריו. יחיד או משהו שלא סופרים: there is. רבים: there are. בעברית \"יש\" לא משתנה. three bedrooms זה רבים, ולכן there are.",
-        "en": "there is + singular or uncountable, there are + plural. Plural, so there are."
+        "he": "🔎 הרמז: three bedrooms, הרבה.\n👉 \"יש\" באנגלית: there is לאחד, there are להרבה.\nשלושה חדרים = הרבה, אז There are.",
+        "en": "three bedrooms = more than one, so There are."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "there-is"
     },
     {
       "id": "fix.a2.writed",
@@ -2136,22 +2185,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל בעבר",
-          "en": "Check the past verb."
+          "he": "האם לכל פועל מוסיפים ed בעבר?",
+          "en": "Does every verb take -ed in the past?"
         },
         {
-          "he": "write הוא פועל חריג. מה העבר שלו?",
+          "he": "📸 write הוא פועל חריג. מה הצורה שלו בעבר?",
           "en": "write is irregular. What is its past form?"
         }
       ],
       "explanation": {
-        "he": "זה פועל חריג. לא מוסיפים לו ed. את צורת העבר שלו לומדים בעל פה. write, wrote. לא writed.",
-        "en": "This verb is irregular. Do not add -ed. write, wrote."
+        "he": "🔎 הרמז: Last night.\n📸 משהו שקרה ונגמר בזמן ידוע: עבר פשוט.\nwrite הוא פועל חריג ולא מקבל ed: wrote.",
+        "en": "write is irregular. The past is wrote, not writed."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "past-simple"
     },
     {
       "id": "fix.b1.moved-ten-years-ago",
@@ -2179,22 +2229,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את זמן הפועל",
-          "en": "Check the tense."
+          "he": "איזו מילה בסוף המשפט אומרת מתי בדיוק זה קרה?",
+          "en": "Which word at the end says exactly when?"
         },
         {
-          "he": "ten years ago זה זמן שנגמר. איזה זמן דקדוקי מתאים?",
-          "en": "ten years ago is a finished time. Which tense fits?"
+          "he": "📸 או 🌉? עם ago משתמשים בתמונה מהאלבום.",
+          "en": "Past simple or present perfect? ago goes with past simple."
         }
       ],
       "explanation": {
-        "he": "עם זמן שהסתיים בעבר (ago, yesterday, last week) משתמשים ב־Past Simple, בלי have / has. עם ago משתמשים ב־Past Simple: moved, בלי has.",
-        "en": "With a finished past time (ago, yesterday, last week) use the Past Simple, not have / has. With ago, use the Past Simple."
+        "he": "🔎 הרמז: ten years ago, זמן מדויק שנגמר.\n🌉 has + צורה שלישית זה גשר בלי זמן מדויק. עם ago לא משתמשים בו.\n📸 זמן מדויק בעבר = עבר פשוט. מוחקים את has: Grandpa Yosef moved.",
+        "en": "ten years ago is a finished time, so past simple, not has + verb: Grandpa Yosef moved."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "past-simple"
     },
     {
       "id": "fix.b1.baked-two-hours-ago",
@@ -2222,22 +2273,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את זמן הפועל",
-          "en": "Check the tense."
+          "he": "איזו מילה בסוף המשפט אומרת מתי בדיוק זה קרה?",
+          "en": "Which word at the end says exactly when?"
         },
         {
-          "he": "two hours ago מראה זמן מוגדר בעבר. מה מיותר?",
-          "en": "two hours ago is a set time in the past. What is extra?"
+          "he": "📸 או 🌉? עם ago משתמשים בתמונה מהאלבום.",
+          "en": "Past simple or present perfect? ago goes with past simple."
         }
       ],
       "explanation": {
-        "he": "עם זמן שהסתיים בעבר (ago, yesterday, last week) משתמשים ב־Past Simple, בלי have / has. two hours ago זה זמן שהסתיים, ולכן Ima baked.",
-        "en": "With a finished past time (ago, yesterday, last week) use the Past Simple, not have / has. A finished time, so baked."
+        "he": "🔎 הרמז: two hours ago, זמן מדויק שנגמר.\n🌉 has + צורה שלישית זה גשר בלי זמן מדויק. עם ago לא משתמשים בו.\n📸 זמן מדויק בעבר = עבר פשוט. מוחקים את has: Ima baked.",
+        "en": "two hours ago is a finished time, so past simple, not has + verb: Ima baked."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "past-simple"
     },
     {
       "id": "fix.b1.lost-kippah-ago",
@@ -2265,22 +2317,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את זמן הפועל",
-          "en": "Check the tense."
+          "he": "איזו מילה בסוף המשפט אומרת מתי בדיוק זה קרה?",
+          "en": "Which word at the end says exactly when?"
         },
         {
-          "he": "an hour ago אומר מתי זה קרה. האם has מתאים?",
-          "en": "an hour ago says when it happened. Does has fit?"
+          "he": "📸 או 🌉? עם ago משתמשים בתמונה מהאלבום.",
+          "en": "Past simple or present perfect? ago goes with past simple."
         }
       ],
       "explanation": {
-        "he": "עם זמן שהסתיים בעבר (ago, yesterday, last week) משתמשים ב־Past Simple, בלי have / has. כשאומרים מתי זה קרה (ago), משתמשים ב־Past Simple: Ari lost. kippah היא כיפה.",
-        "en": "With a finished past time (ago, yesterday, last week) use the Past Simple, not have / has. When we say when, use the Past Simple."
+        "he": "🔎 הרמז: an hour ago, זמן מדויק שנגמר.\n🌉 has + צורה שלישית זה גשר בלי זמן מדויק. עם ago לא משתמשים בו.\n📸 זמן מדויק בעבר = עבר פשוט. מוחקים את has: Ari lost.",
+        "en": "an hour ago is a finished time, so past simple, not has + verb: Ari lost."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "past-simple"
     },
     {
       "id": "fix.b1.since-ten-years",
@@ -2308,22 +2361,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת הזמן",
-          "en": "Check the time word."
+          "he": "האם ten years זה משך זמן או נקודה שבה משהו התחיל?",
+          "en": "Is ten years a length of time or a starting point?"
         },
         {
-          "he": "ten years זה נקודת התחלה או משך זמן?",
-          "en": "Is ten years a starting point or a length of time?"
+          "he": "⏳ שעון חול או דגל?",
+          "en": "Hourglass or flag?"
         }
       ],
       "explanation": {
-        "he": "since בא עם נקודת התחלה (2010, first grade, Pesach). for בא עם משך זמן (ten years, two weeks). בעברית שתיהן יכולות להיות \"כבר\" או \"מאז\". ten years זה משך זמן, ולכן for ten years.",
-        "en": "since + a starting point, for + a length of time. A length of time, so for."
+        "he": "🔎 הרמז: ten years, משך זמן.\n⏳ for = כמה זמן (שעון חול). since = מאיזו נקודה זה התחיל (דגל).\nעשר שנים זה משך, לא נקודת התחלה: for ten years.",
+        "en": "ten years is a length of time, so for."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "for-since"
     },
     {
       "id": "fix.b1.for-first-grade",
@@ -2351,22 +2405,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת הזמן",
-          "en": "Check the time word."
+          "he": "האם first grade זה משך זמן או נקודה שבה משהו התחיל?",
+          "en": "Is first grade a length of time or a starting point?"
         },
         {
-          "he": "first grade זה משך זמן או נקודת התחלה?",
-          "en": "Is first grade a length of time or a starting point?"
+          "he": "⏳ שעון חול או דגל?",
+          "en": "Hourglass or flag?"
         }
       ],
       "explanation": {
-        "he": "since בא עם נקודת התחלה (2010, first grade, Pesach). for בא עם משך זמן (ten years, two weeks). בעברית שתיהן יכולות להיות \"כבר\" או \"מאז\". first grade זו נקודת התחלה, ולכן since first grade.",
-        "en": "since + a starting point, for + a length of time. A starting point, so since."
+        "he": "🔎 הרמז: first grade, נקודת התחלה.\n⏳ for = כמה זמן (שעון חול). since = מאיזו נקודה זה התחיל (דגל).\nכיתה א׳ היא הנקודה שבה החברות התחילה: since first grade.",
+        "en": "first grade is a starting point, so since."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "for-since"
     },
     {
       "id": "fix.b1.if-will-finish",
@@ -2394,22 +2449,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את החלק עם if",
-          "en": "Check the if part."
+          "he": "לבדוק את המילה שבאה אחרי If we.",
+          "en": "Check the word after If we."
         },
         {
-          "he": "יש שני will במשפט. איזה מהם לא במקום?",
-          "en": "There are two wills. Which one is in the wrong place?"
+          "he": "🚦 מה לא שמים אחרי If?",
+          "en": "What do we not put after If?"
         }
       ],
       "explanation": {
-        "he": "אחרי if לא שמים will, גם כשמדברים על העתיד. כותבים if + הווה פשוט, ואת will שמים רק בחלק השני. בעברית אומרים \"אם נסיים\", ובאנגלית if we finish. If we finish early, we will visit. will נשאר רק בחלק השני.",
-        "en": "No will after if. Use if + Present Simple, and will in the other part. No will after if."
+        "he": "🔎 הרמז: If.\n🚦 אחרי If לא שמים will, גם כשמדברים על העתיד. בעברית משתמשים כאן בזמן עתיד, ולכן קל להוסיף will.\nה־will נמצא רק בחלק השני. מוחקים: If we finish early.",
+        "en": "No will after If. Use present simple: If we finish early."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "conditionals"
     },
     {
       "id": "fix.b1.when-guests-will",
@@ -2437,22 +2493,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את החלק עם when",
-          "en": "Check the when part."
+          "he": "לבדוק את המילה שבאה אחרי When the guests.",
+          "en": "Check the word after When the guests."
         },
         {
-          "he": "יש שני will. איזה מהם בא אחרי when?",
-          "en": "There are two wills. Which one comes after when?"
+          "he": "🚦 מה לא שמים אחרי if ואחרי when?",
+          "en": "What do we not put after if or when?"
         }
       ],
       "explanation": {
-        "he": "אחרי when, as soon as ו־until לא שמים will, גם כשמדברים על העתיד. בעברית אומרים \"כשהאורחים יגיעו\", ובאנגלית when the guests arrive. When the guests arrive, בלי will. Kiddush הוא קידוש.",
-        "en": "No will after when. Use the Present Simple there. No will after when."
+        "he": "🔎 הרמז: When.\n🚦 כמו אחרי if, גם אחרי when שמדבר על העתיד לא שמים will.\nה־will נמצא רק בחלק השני (Abba will make). מוחקים: When the guests arrive.",
+        "en": "Like if, when about the future takes present simple, not will: When the guests arrive."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "conditionals"
     },
     {
       "id": "fix.b1.neighbor-which",
@@ -2480,22 +2537,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילה שמחברת",
-          "en": "Check the joining word."
+          "he": "על מי מדברים לפני which: אדם או חפץ?",
+          "en": "Who comes before which: a person or a thing?"
         },
         {
-          "he": "neighbor הוא אדם או דבר?",
-          "en": "Is a neighbor a person or a thing?"
+          "he": "🔗 איזו מילה מתחברת לאנשים?",
+          "en": "Which word connects to people?"
         }
       ],
       "explanation": {
-        "he": "על אנשים אומרים who (או that). which רק לדברים ולבעלי חיים. בעברית \"ש\" מתאים לכולם, ובאנגלית לא. שכנה היא אדם, ולכן who.",
-        "en": "who for people, which for things. A neighbor is a person, so who."
+        "he": "🔎 הרמז: the neighbor, בן אדם.\n🔗 who מתחבר לאנשים, which לחפצים ובעלי חיים.\nבעברית יש \"ש\" אחד לכולם, ובאנגלית לאדם בוחרים who: the neighbor who lives alone.",
+        "en": "the neighbor is a person, so who, not which."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "relative-clauses"
     },
     {
       "id": "fix.b1.teacher-which",
@@ -2523,22 +2581,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילה שמחברת",
-          "en": "Check the joining word."
+          "he": "על מי מדברים לפני which: אדם או חפץ?",
+          "en": "Who comes before which: a person or a thing?"
         },
         {
-          "he": "המילה מתייחסת ל־teacher. מה מתאים לאנשים?",
-          "en": "The word refers to teacher. What fits people?"
+          "he": "🔗 איזו מילה מתחברת לאנשים?",
+          "en": "Which word connects to people?"
         }
       ],
       "explanation": {
-        "he": "על אנשים אומרים who (או that). which רק לדברים ולבעלי חיים. בעברית \"ש\" מתאים לכולם, ובאנגלית לא. מורה הוא אדם, ולכן who (או that, או whom).",
-        "en": "who for people, which for things. A teacher is a person, so who."
+        "he": "🔎 הרמז: a teacher, בן אדם.\n🔗 who מתחבר לאנשים, which לחפצים ובעלי חיים.\nבעברית יש \"ש\" אחד לכולם, ובאנגלית לאדם בוחרים who: a teacher who everyone loves.",
+        "en": "a teacher is a person, so who, not which."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "relative-clauses"
     },
     {
       "id": "fix.b1.did-a-mistake",
@@ -2566,22 +2625,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "איזה פועל הולך עם mistake באנגלית?",
+          "en": "Which verb goes with mistake?"
         },
         {
-          "he": "איזה פועל הולך עם a mistake?",
-          "en": "Which verb goes with a mistake?"
+          "he": "do או make? mistake הולך עם אחד מהם תמיד.",
+          "en": "do or make? mistake always takes one of them."
         }
       ],
       "explanation": {
-        "he": "make ו־do שניהם \"לעשות\", אבל כל אחד הולך עם מילים קבועות: make a mistake, make an effort, do homework, do a favor. את הצירופים לומדים בעל פה. אומרים make a mistake, ובעבר made a mistake.",
-        "en": "make and do go with fixed words: make a mistake, make an effort, do homework, do a favor. We say make a mistake."
+        "he": "🔎 הרמז: a mistake.\nבאנגלית אומרים make a mistake. בעברית \"עשיתי טעות\", ולכן קל לכתוב did.\nעם mistake תמיד make: made a mistake.",
+        "en": "We say make a mistake, not do a mistake."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b1.did-effort",
@@ -2609,22 +2669,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "איזה פועל הולך עם effort באנגלית?",
+          "en": "Which verb goes with effort?"
         },
         {
-          "he": "איזה פועל הולך עם effort?",
-          "en": "Which verb goes with effort?"
+          "he": "do או make? effort הולך עם אחד מהם תמיד.",
+          "en": "do or make? effort always takes one of them."
         }
       ],
       "explanation": {
-        "he": "make ו־do שניהם \"לעשות\", אבל כל אחד הולך עם מילים קבועות: make a mistake, make an effort, do homework, do a favor. את הצירופים לומדים בעל פה. אומרים make an effort, ובעבר made a big effort.",
-        "en": "make and do go with fixed words: make a mistake, make an effort, do homework, do a favor. We say make an effort."
+        "he": "🔎 הרמז: a big effort.\nבאנגלית אומרים make an effort. בעברית \"עשה מאמץ\", ולכן קל לכתוב did.\nעם effort תמיד make: made a big effort.",
+        "en": "We say make an effort, not do an effort."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b1.said-tamar",
@@ -2652,22 +2713,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מה בא מיד אחרי הפועל: אדם או מילים?",
+          "en": "What comes right after the verb: a person or words?"
         },
         {
-          "he": "אחרי הפועל בא אדם (Tamar). איזה פועל מקבל אדם בלי to?",
-          "en": "A person (Tamar) comes after the verb. Which verb takes a person without to?"
+          "he": "say או tell: איזה מהם יכול לבוא ישר עם אדם אחריו?",
+          "en": "say or tell: which takes a person right after it?"
         }
       ],
       "explanation": {
-        "he": "tell בא עם האדם ששומע: tell someone something. say בא בלי האדם, או עם to: say something (to someone). בעברית \"אמר ל\" מתאים לשניהם. tell someone something: Rivka told Tamar the news.",
-        "en": "tell + a person (tell Tamar), say + no person (say that...). tell + person + news."
+        "he": "🔎 הרמז: Tamar בא מיד אחרי הפועל.\ntell + אדם (tell Tamar). say לא בא ישר עם אדם אחריו (say something to Tamar).\nכאן מישהו מקבל את החדשות: Rivka told Tamar.",
+        "en": "tell takes a person right after it; say does not. Rivka told Tamar."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b1.borrowed-mrs-klein",
@@ -2695,22 +2757,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי נתן את הסוכר ומי קיבל?",
+          "en": "Who gave the sugar and who got it?"
         },
         {
-          "he": "מי נתנה את הסוכר? אמא. אז היא שאלה או השאילה?",
-          "en": "Who gave the sugar? Ima. Did she borrow or lend?"
+          "he": "לתת בהשאלה או לקחת בהשאלה? וכדאי לשים לב ל־yesterday.",
+          "en": "Give or take for a while? Notice yesterday."
         }
       ],
       "explanation": {
-        "he": "borrow זה לשאול, לקחת משהו לזמן קצר. lend זה להשאיל, לתת משהו לזמן קצר. בעברית \"לשאול\" ו\"להשאיל\" דומים מאוד. אמא נתנה, ולכן lent (העבר של lend). גברת קליין היא ששאלה: she borrowed.",
-        "en": "borrow = take for a short time, lend = give for a short time. Ima gave it, so lent."
+        "he": "🔎 הרמז: Ima נתנה סוכר ל־Mrs. Klein.\nborrow = לקחת בהשאלה (לקבל). lend = להשאיל (לתת). העבר של lend הוא lent.\nאמא נתנה, ו־yesterday = 📸 עבר: Ima lent.",
+        "en": "Ima gave the sugar, so lend; yesterday makes it lent."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b1.reminds-the-day",
@@ -2738,22 +2801,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "האם תמר גורמת למישהו לזכור, או זוכרת בעצמה?",
+          "en": "Does Tamar make someone remember, or does she remember?"
         },
         {
-          "he": "אין כאן אדם אחר שתמר עוזרת לו. היא זוכרת או מזכירה?",
-          "en": "No one else is helped here. Does Tamar remember or remind?"
+          "he": "לזכור או להזכיר? באנגלית אלה שתי מילים שונות.",
+          "en": "Remember or remind? English has two words."
         }
       ],
       "explanation": {
-        "he": "remember זה לזכור, בתוך הראש שלי. remind זה להזכיר למישהו אחר. remind someone to do, remind someone of something. הזיכרון נמצא בראש של תמר, ולכן remembers.",
-        "en": "remember = keep in your mind, remind = make someone else remember. It is in Tamar's own mind, so remembers."
+        "he": "🔎 הרמז: the day Eli was born, משהו שתמר זוכרת בעצמה.\nremember = לזכור (בעצמי). remind = להזכיר (לגרום למישהו אחר לזכור).\nתמר זוכרת את היום: Tamar remembers.",
+        "en": "Tamar keeps the day in her memory: remembers. remind is for making someone else remember."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b1.trip-bored",
@@ -2781,22 +2845,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את התואר",
-          "en": "Check the describing word."
+          "he": "האם המילה מתארת את הטיול או את ההרגשה של Ari?",
+          "en": "Does the word describe the trip or how Ari feels?"
         },
         {
-          "he": "המילה מתארת את הטיול, לא את ארי. איזו סיומת מתאימה?",
-          "en": "The word describes the trip, not Ari. Which ending fits?"
+          "he": "ing = מה שגורם להרגשה. ed = מה שמרגישים.",
+          "en": "-ing = the cause. -ed = the feeling."
         }
       ],
       "explanation": {
-        "he": "bored זה איך שאדם מרגיש: משועמם. boring זה מה שגורם לשעמום: משעמם. ed לאדם, ing לדבר. הטיול גורם לשעמום, ולכן boring. ארי מרגיש bored.",
-        "en": "bored = how a person feels, boring = what makes people feel that way. The trip is boring. Ari is bored."
+        "he": "🔎 הרמז: The trip, הטיול הוא מה שגורם לשעמום.\nboring = משעמם (מה שגורם לשעמום). bored = משועמם (מה שמרגישים).\nהטיול משעמם, Ari משועמם: The trip was boring.",
+        "en": "The trip causes the feeling, so boring. Ari is bored."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b1.older-from",
@@ -2824,22 +2889,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את ההשוואה",
-          "en": "Check the comparison."
+          "he": "לבדוק את המילה שבאה אחרי older.",
+          "en": "Check the word after older."
         },
         {
-          "he": "older היא השוואה. איזו מילה באה אחרי השוואה?",
-          "en": "older compares. Which word follows a comparison?"
+          "he": "📏 er + ? איזו מילה תמיד באה אחרי השוואה?",
+          "en": "Which word always follows a comparative?"
         }
       ],
       "explanation": {
-        "he": "אחרי מילת השוואה (older, bigger) אומרים than. בעברית אומרים \"מבוגרת מ\", אבל באנגלית לא משתמשים ב־from. older than. בעברית \"מ\", באנגלית than.",
-        "en": "After a comparative, use than, not from. older than, not from."
+        "he": "🔎 הרמז: older, מילת השוואה.\n📏 אחרי er באה המילה than.\nבעברית \"גדולה מתמר\", ולכן קל לכתוב from. באנגלית: older than.",
+        "en": "After a comparative we use than, not from."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "comparatives"
     },
     {
       "id": "fix.b1.most-biggest",
@@ -2867,22 +2933,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את ההשוואה",
-          "en": "Check the comparison."
+          "he": "האם biggest כבר אומר \"הכי\"?",
+          "en": "Does biggest already mean the most?"
         },
         {
-          "he": "biggest כבר אומר \"הכי גדול\". מה מיותר?",
-          "en": "biggest already means \"the most big\". What is extra?"
+          "he": "📏 est או most, לא שניהם.",
+          "en": "est or most, never both."
         }
       ],
       "explanation": {
-        "he": "לא משתמשים גם ב־more וגם בצורה עם er או best/better. בוחרים רק אחת: bigger, better, the happiest. biggest היא כבר הצורה של \"הכי\". לא מוסיפים most. Purim הוא פורים.",
-        "en": "Do not use more or most together with -er / -est or better. biggest already means the most big."
+        "he": "🔎 הרמז: biggest, שכבר הכי.\n📏 כמו er או more: est או most, לא שניהם.\nbiggest כבר מקבל est, אז מוחקים את most: the biggest.",
+        "en": "biggest already has -est, so most is extra: the biggest."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "comparatives"
     },
     {
       "id": "fix.b1.its-walls",
@@ -2910,22 +2977,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילה עם הגרש",
-          "en": "Check the word with the apostrophe."
+          "he": "אפשר להחליף את המילה ב־it is?",
+          "en": "Can you replace the word with it is?"
         },
         {
-          "he": "אפשר לומר כאן it is walls?",
-          "en": "Can we say it is walls here?"
+          "he": "גרש = משהו חסר (it is). שייכות = בלי גרש.",
+          "en": "Apostrophe = a missing letter. Possession: no apostrophe."
         }
       ],
       "explanation": {
-        "he": "it's עם גרש זה קיצור של it is. its בלי גרש זה \"שלו\" או \"שלה\" לדבר. אפשר לבדוק: אם אפשר לומר it is, כותבים it's. אי אפשר לומר it is walls. מדובר בקירות של הסוכה, ולכן its, בלי גרש.",
-        "en": "it's = it is. its = belonging to it. Not it is, but belonging to it: its."
+        "he": "🔎 הרמז: walls של הסוכה, שייכות.\nits = שלו/שלה (לחפץ). it's = it is.\nאי אפשר לומר \"it is walls\", אז its walls, בלי גרש.",
+        "en": "its = belonging to it. it's = it is. Here: its walls."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b1.its-time",
@@ -2953,22 +3021,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילה עם הגרש",
-          "en": "Check the word with the apostrophe."
+          "he": "אפשר להחליף את המילה ב־It is?",
+          "en": "Can you replace the word with It is?"
         },
         {
-          "he": "אפשר לומר כאן It is time?",
-          "en": "Can we say It is time here?"
+          "he": "גרש = משהו חסר (It is). שייכות = בלי גרש.",
+          "en": "Apostrophe = a missing letter."
         }
       ],
       "explanation": {
-        "he": "it's עם גרש זה קיצור של it is. its בלי גרש זה \"שלו\" או \"שלה\" לדבר. אפשר לבדוק: אם אפשר לומר it is, כותבים it's. It is time, ולכן It's עם גרש.",
-        "en": "it's = it is. its = belonging to it. It is time, so it's."
+        "he": "🔎 הרמז: time to light, כלומר \"הגיע הזמן\".\nIt's = It is. its = שלו/שלה, שייכות.\nכאן אומרים It is time, אז It's עם גרש.",
+        "en": "It is time, so It's with an apostrophe."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b1.there-coats",
@@ -2996,22 +3065,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק מילה שנשמעת אותו דבר",
-          "en": "Check a word that sounds the same."
-        },
-        {
           "he": "של מי המעילים?",
           "en": "Whose coats are they?"
+        },
+        {
+          "he": "שלושה צלילים דומים: מקום, שייכות, they are. איזה מתאים?",
+          "en": "Place, belonging or they are: which one fits?"
         }
       ],
       "explanation": {
-        "he": "their זה \"שלהם\". there זה \"שם\". they're זה they are. שלוש המילים נשמעות אותו דבר, ולכן צריך לבדוק את המשמעות. המעילים של האורחים, שלהם, ולכן their.",
-        "en": "their = belonging to them, there = in that place, they're = they are. The coats belong to them: their."
+        "he": "🔎 הרמז: coats של האורחים, שייכות.\ntheir = שלהם. there = שם (מקום). they're = they are.\nהמעילים שלהם: their coats.",
+        "en": "their = belonging to them. Here: their coats."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b1.walks-their",
@@ -3039,22 +3109,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק מילה שנשמעת אותו דבר",
-          "en": "Check a word that sounds the same."
+          "he": "האם המילה אומרת מקום או של מי?",
+          "en": "Does the word mean a place or whose?"
         },
         {
-          "he": "היא הולכת למקום. איזו מילה אומרת \"לשם\"?",
-          "en": "She walks to a place. Which word means \"to that place\"?"
+          "he": "שלושה צלילים דומים: מקום, שייכות, they are. איזה מתאים?",
+          "en": "Place, belonging or they are: which one fits?"
         }
       ],
       "explanation": {
-        "he": "their זה \"שלהם\". there זה \"שם\". they're זה they are. שלוש המילים נשמעות אותו דבר, ולכן צריך לבדוק את המשמעות. מקום, \"לשם\", כותבים there.",
-        "en": "their = belonging to them, there = in that place, they're = they are. A place: there."
+        "he": "🔎 הרמז: walks ... every day, הולכת לאן? למקום.\nthere = שם (מקום). their = שלהם. they're = they are.\nהיא הולכת לשם, לבית הספר: walks there.",
+        "en": "there = to that place. Here: walks there."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b1.there-is-many-people",
@@ -3082,22 +3153,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את is / are",
-          "en": "Check is / are."
+          "he": "כמה אנשים יש בבית הכנסת?",
+          "en": "How many people are in shul?"
         },
         {
-          "he": "people זה יחיד או רבים?",
-          "en": "Is people singular or plural?"
+          "he": "👉 there is לאחד. מה להרבה?",
+          "en": "there is for one. What for many?"
         }
       ],
       "explanation": {
-        "he": "אחרי there בוחרים is או are לפי שם העצם שבא אחריו. יחיד או משהו שלא סופרים: there is. רבים: there are. בעברית \"יש\" לא משתנה. people זה רבים, ולכן there are. Yom Kippur הוא יום כיפור.",
-        "en": "there is + singular or uncountable, there are + plural. people is plural, so there are."
+        "he": "🔎 הרמז: many people, הרבה.\n👉 \"יש\" באנגלית: there is לאחד, there are להרבה.\nהרבה אנשים, אז There are.",
+        "en": "many people = more than one, so There are."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "there-is"
     },
     {
       "id": "fix.b1.thanked-for-carry",
@@ -3125,22 +3197,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל אחרי מילת היחס",
-          "en": "Check the verb after the preposition."
+          "he": "איזו מילה באה לפני הפועל carry?",
+          "en": "Which word comes before carry?"
         },
         {
-          "he": "איזו מילה באה לפני הפועל? מה בא אחרי מילת יחס?",
-          "en": "What word comes before the verb? What follows a preposition?"
+          "he": "🧩 מה קורה לפועל אחרי מילת יחס?",
+          "en": "What happens to a verb after a preposition?"
         }
       ],
       "explanation": {
-        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"טובה באפייה\", ובאנגלית for carrying, at baking. thank someone for + ing: for carrying.",
-        "en": "After a preposition, use the verb + -ing. for + carrying."
+        "he": "🔎 הרמז: for, מילת יחס.\n🧩 אחרי מילת יחס הפועל מקבל ing.\ncarry הוא צורת בסיס ולא יכול לבוא אחרי for. לכן for carrying.",
+        "en": "After the preposition for, the verb takes -ing: for carrying."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "gerund-infinitive"
     },
     {
       "id": "fix.b1.good-at-bake",
@@ -3168,22 +3241,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל אחרי מילת היחס",
-          "en": "Check the verb after the preposition."
+          "he": "איזו מילה באה לפני הפועל bake?",
+          "en": "Which word comes before bake?"
         },
         {
-          "he": "at היא מילת יחס. מה בא אחריה?",
-          "en": "at is a preposition. What follows it?"
+          "he": "🧩 מה קורה לפועל אחרי מילת יחס?",
+          "en": "What happens to a verb after a preposition?"
         }
       ],
       "explanation": {
-        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"טובה באפייה\", ובאנגלית for carrying, at baking. good at + ing: good at baking.",
-        "en": "After a preposition, use the verb + -ing. good at + baking."
+        "he": "🔎 הרמז: at, מילת יחס.\n🧩 אחרי מילת יחס הפועל מקבל ing.\nbake הוא צורת בסיס ולא יכול לבוא אחרי at. לכן good at baking.",
+        "en": "After the preposition at, the verb takes -ing: good at baking."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "gerund-infinitive"
     },
     {
       "id": "fix.b1.forward-to-see",
@@ -3211,22 +3285,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל אחרי מילת היחס",
-          "en": "Check the verb after the preposition."
+          "he": "איזה ביטוי בא לפני see?",
+          "en": "Which phrase comes before see?"
         },
         {
-          "he": "ב־look forward to, המילה to היא מילת יחס. מה בא אחריה?",
-          "en": "In look forward to, to is a preposition. What follows it?"
+          "he": "🧩 to כאן היא מילת יחס. מה בא אחרי מילת יחס?",
+          "en": "Here to is a preposition. What comes after it?"
         }
       ],
       "explanation": {
-        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"טובה באפייה\", ובאנגלית for carrying, at baking. look forward to + ing: looks forward to seeing.",
-        "en": "After a preposition, use the verb + -ing. look forward to + seeing."
+        "he": "🔎 הרמז: looks forward to.\n🧩 ב־look forward to המילה to היא מילת יחס, לא חלק מפועל. אחרי מילת יחס בא ing.\nלכן looks forward to seeing, ולא to see.",
+        "en": "In look forward to, to is a preposition, so the verb takes -ing: seeing."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "gerund-infinitive"
     },
     {
       "id": "fix.b1.shouldnt-to-eat",
@@ -3254,22 +3329,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מה שבא אחרי can't / should",
-          "en": "Check what comes after the modal."
+          "he": "לבדוק את המילה שבין shouldn't לבין eat.",
+          "en": "Check the word between shouldn't and eat."
         },
         {
-          "he": "shouldn't הוא פועל מודאלי. מה בא אחריו?",
-          "en": "shouldn't is a modal. What comes after it?"
+          "he": "🔧 מה בא אחרי מילה מודאלית?",
+          "en": "What comes after a modal?"
         }
       ],
       "explanation": {
-        "he": "אחרי פועל מודאלי (can, could, should, must) בא פועל בסיסי בלי to. בעברית אומרים \"לא יכול ללכת\", אבל באנגלית can't walk. shouldn't eat, בלי to.",
-        "en": "After a modal (can, could, should, must), use the base verb without to. shouldn't + base verb."
+        "he": "🔎 הרמז: shouldn't.\n🔧 אחרי can, must, should בא פועל נקי, בלי to.\nבעברית \"לא כדאי לאכול\" עם ל׳, אבל באנגלית: shouldn't eat.",
+        "en": "After shouldn't, use the verb without to: shouldn't eat."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "modals"
     },
     {
       "id": "fix.b1.in-the-bus-stop",
@@ -3297,22 +3373,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת היחס של המקום",
-          "en": "Check the place preposition."
+          "he": "האם אבא נמצא בתוך התחנה או בנקודה שלה?",
+          "en": "Is Abba inside the stop or at that point?"
         },
         {
-          "he": "תחנה היא נקודה שעומדים בה, לא מקום סגור. איזו מילת יחס מתאימה?",
-          "en": "A bus stop is a point, not a closed space. Which preposition fits?"
+          "he": "in = בתוך. מה אומרים לנקודה?",
+          "en": "in = inside. What do we say for a point?"
         }
       ],
       "explanation": {
-        "he": "in זה בתוך. on זה על משטח. at זה בנקודה או במקום מסוים. בעברית \"ב\" ו\"על\" לא תמיד מתאימים לאנגלית. במקום מסוים, כמו תחנה, אומרים at: at the bus stop.",
-        "en": "in = inside, on = on a surface, at = at a point or place. at + a point or place."
+        "he": "🔎 הרמז: the bus stop, נקודה במקום.\nat = בנקודה מסוימת (at the bus stop, at the door). in = בתוך משהו סגור.\nמחכים ליד התחנה, לא בתוכה: at the bus stop.",
+        "en": "A bus stop is a point, not a closed space: at."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "prepositions-place"
     },
     {
       "id": "fix.b1.the-honesty",
@@ -3340,22 +3417,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילים הקטנות לפני שמות העצם",
-          "en": "Check the small words before the nouns."
+          "he": "האם מדברים על יושר מסוים, או על יושר באופן כללי?",
+          "en": "A specific honesty, or honesty in general?"
         },
         {
-          "he": "honesty הוא מושג כללי. האם צריך לפניו the?",
-          "en": "honesty is a general idea. Does it need the?"
+          "he": "☝️ שמים the לפני רעיון כללי?",
+          "en": "Do general ideas take the?"
         }
       ],
       "explanation": {
-        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו school ו־work במשמעות \"לבית הספר\" ו\"לעבודה\". על מושג כללי (honesty, life, music) לא שמים the. the most נשאר, כי זו צורת \"הכי\".",
-        "en": "Do not use the for a general idea, a holiday name, or go to work. No the before a general idea."
+        "he": "🔎 הרמז: honesty, רעיון כללי.\n☝️ the מצביע על דבר מסוים שמכירים. על רעיון כללי (honesty, love) לא שמים the.\nבעברית \"היושר הוא הכי חשוב\", ולכן קל להוסיף the. באנגלית: honesty is.",
+        "en": "General ideas take no the: honesty is the most important thing."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "articles"
     },
     {
       "id": "fix.b2.lives-alone-since",
@@ -3383,22 +3461,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את זמן הפועל",
-          "en": "Check the tense."
+          "he": "מה אומר since 2015 על מתי זה התחיל ואם זה עדיין נכון?",
+          "en": "What does since 2015 tell you?"
         },
         {
-          "he": "since מראה שזה התחיל בעבר ונמשך עד היום. איזה זמן מתאים?",
-          "en": "since shows it started in the past and goes on until now. Which tense fits?"
+          "he": "🌉 גשר מהעבר להיום: has + צורה שלישית.",
+          "en": "Past to now: has + third form."
         }
       ],
       "explanation": {
-        "he": "משהו שהתחיל בעבר ונמשך עד עכשיו, עם since או for, דורש have / has + V3. בעברית אומרים \"גרה מאז\", בהווה, אבל באנגלית לא. עם since ו־for, כשמשהו נמשך עד עכשיו, משתמשים ב־Present Perfect: has lived.",
-        "en": "Something that started in the past and continues now, with since or for, needs have / has + V3. Use the Present Perfect with since: has lived."
+        "he": "🔎 הרמז: since 2015, ועד היום.\n🌉 משהו שהתחיל בעבר ועדיין נמשך: have/has + צורה שלישית.\nבעברית אומרים \"גרה לבד מאז 2015\" בהווה, ובאנגלית צריך גשר: has lived.",
+        "en": "Started in 2015 and still true, so present perfect: has lived."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "present-perfect"
     },
     {
       "id": "fix.b2.lived-for-2010",
@@ -3426,22 +3505,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את מילת הזמן",
-          "en": "Check the time word."
+          "he": "האם 2010 זה משך זמן או נקודה שבה משהו התחיל?",
+          "en": "Is 2010 a length of time or a starting point?"
         },
         {
-          "he": "2010 זה משך זמן או נקודת התחלה?",
-          "en": "Is 2010 a length of time or a starting point?"
+          "he": "⏳ שעון חול או דגל?",
+          "en": "Hourglass or flag?"
         }
       ],
       "explanation": {
-        "he": "since בא עם נקודת התחלה (2010, first grade, Pesach). for בא עם משך זמן (ten years, two weeks). בעברית שתיהן יכולות להיות \"כבר\" או \"מאז\". 2010 היא נקודת התחלה, ולכן since 2010.",
-        "en": "since + a starting point, for + a length of time. A starting point, so since."
+        "he": "🔎 הרמז: 2010, נקודה אחת בזמן.\n⏳ for = כמה זמן (שעון חול). since = מאיזו נקודה זה התחיל (דגל).\n2010 היא נקודת ההתחלה: since 2010.",
+        "en": "2010 is a starting point, so since."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "for-since"
     },
     {
       "id": "fix.b2.if-will-leave",
@@ -3469,22 +3549,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את החלק עם if",
-          "en": "Check the if part."
+          "he": "לבדוק את המילה שבאה אחרי If we.",
+          "en": "Check the word after If we."
         },
         {
-          "he": "במשפט יש תנאי ותוצאה. באיזה חלק will לא מתאים?",
-          "en": "There is a condition and a result. Where does will not fit?"
+          "he": "🚦 מה לא שמים אחרי If?",
+          "en": "What do we not put after If?"
         }
       ],
       "explanation": {
-        "he": "אחרי if לא שמים will, גם כשמדברים על העתיד. כותבים if + הווה פשוט, ואת will שמים רק בחלק השני. בעברית אומרים \"אם נסיים\", ובאנגלית if we finish. If we leave now, we will get there. will רק בתוצאה.",
-        "en": "No will after if. Use if + Present Simple, and will in the other part. No will after if."
+        "he": "🔎 הרמז: If.\n🚦 אחרי If לא שמים will, גם כשמדברים על העתיד. בעברית משתמשים כאן בזמן עתיד, ולכן קל להוסיף will.\nה־will נמצא רק בחלק השני. מוחקים: If we leave now.",
+        "en": "No will after If. Use present simple: If we leave now."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "conditionals"
     },
     {
       "id": "fix.b2.boy-which-sat",
@@ -3512,22 +3593,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילה שמחברת",
-          "en": "Check the joining word."
+          "he": "על מי מדברים לפני which: אדם או חפץ?",
+          "en": "Who comes before which: a person or a thing?"
         },
         {
-          "he": "The boy הוא אדם. איזו מילה מחברת מתאימה לאנשים?",
-          "en": "The boy is a person. Which joining word fits people?"
+          "he": "🔗 איזו מילה מתחברת לאנשים?",
+          "en": "Which word connects to people?"
         }
       ],
       "explanation": {
-        "he": "על אנשים אומרים who (או that). which רק לדברים ולבעלי חיים. בעברית \"ש\" מתאים לכולם, ובאנגלית לא. ילד הוא אדם, ולכן who (או that).",
-        "en": "who for people, which for things. A boy is a person, so who."
+        "he": "🔎 הרמז: The boy, בן אדם.\n🔗 who מתחבר לאנשים, which לחפצים ובעלי חיים.\nבעברית יש \"ש\" אחד לכולם, ובאנגלית לאדם בוחרים who: The boy who sat next to Ari.",
+        "en": "The boy is a person, so who, not which."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "relative-clauses"
     },
     {
       "id": "fix.b2.made-a-favor",
@@ -3555,22 +3637,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "איזה פועל הולך עם favor באנגלית?",
+          "en": "Which verb goes with favor?"
         },
         {
-          "he": "איזה פועל הולך עם a favor?",
-          "en": "Which verb goes with a favor?"
+          "he": "do או make? favor הולך עם אחד מהם תמיד.",
+          "en": "do or make? favor always takes one of them."
         }
       ],
       "explanation": {
-        "he": "make ו־do שניהם \"לעשות\", אבל כל אחד הולך עם מילים קבועות: make a mistake, make an effort, do homework, do a favor. את הצירופים לומדים בעל פה. אומרים do someone a favor, ובעבר did Ari a favor.",
-        "en": "make and do go with fixed words: make a mistake, make an effort, do homework, do a favor. We say do someone a favor."
+        "he": "🔎 הרמז: a favor.\nבאנגלית אומרים do someone a favor. בעברית \"עשה טובה\", והמילה make נראית מתאימה, אבל לא.\nעם favor תמיד do: did Ari a favor.",
+        "en": "We say do someone a favor, not make."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b2.the-medicine",
@@ -3598,22 +3681,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילים הקטנות לפני שמות העצם",
-          "en": "Check the small words before the nouns."
+          "he": "האם medicine כאן זו תרופה מסוימת או תחום לימוד?",
+          "en": "Is medicine here a specific drug or a subject?"
         },
         {
-          "he": "medicine כאן הוא תחום לימוד כללי. האם צריך the?",
-          "en": "medicine here is a general field. Does it need the?"
+          "he": "☝️ שמים the לפני שם של תחום לימוד?",
+          "en": "Do subjects of study take the?"
         }
       ],
       "explanation": {
-        "he": "בעברית אומרים \"ה\" גם על דבר כללי. באנגלית לא שמים the לפני מושג כללי, שם של חג, או מילים כמו school ו־work במשמעות \"לבית הספר\" ו\"לעבודה\". תחום לימוד (medicine, history) בא בלי the. the Hebrew University נשאר, כי זה שם של מוסד.",
-        "en": "Do not use the for a general idea, a holiday name, or go to work. No the before a field of study."
+        "he": "🔎 הרמז: study medicine, תחום לימוד.\n☝️ the מצביע על דבר מסוים. לפני תחום לימוד כללי (medicine, history) לא שמים the.\nבעברית \"ללמוד רפואה\" בלי ה׳, וגם באנגלית: study medicine.",
+        "en": "Subjects of study take no the: study medicine."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "articles"
     },
     {
       "id": "fix.b2.instead-of-complain",
@@ -3641,22 +3725,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל אחרי מילת היחס",
-          "en": "Check the verb after the preposition."
+          "he": "איזו מילה באה לפני הפועל complain?",
+          "en": "Which word comes before complain?"
         },
         {
-          "he": "instead of נגמר במילת יחס. מה בא אחריה?",
-          "en": "instead of ends with a preposition. What follows it?"
+          "he": "🧩 מה קורה לפועל אחרי מילת יחס?",
+          "en": "What happens to a verb after a preposition?"
         }
       ],
       "explanation": {
-        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"טובה באפייה\", ובאנגלית for carrying, at baking. instead of + ing: instead of complaining. בעברית \"במקום להתלונן\", אבל באנגלית לא בא to.",
-        "en": "After a preposition, use the verb + -ing. instead of + complaining."
+        "he": "🔎 הרמז: Instead of, מילת יחס.\n🧩 אחרי מילת יחס הפועל מקבל ing.\ncomplain הוא צורת בסיס ולא יכול לבוא אחרי Instead of. לכן Instead of complaining.",
+        "en": "After the preposition Instead of, the verb takes -ing: Instead of complaining."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "gerund-infinitive"
     },
     {
       "id": "fix.b2.apologized-for-come",
@@ -3684,22 +3769,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל אחרי מילת היחס",
-          "en": "Check the verb after the preposition."
+          "he": "איזו מילה באה לפני הפועל come?",
+          "en": "Which word comes before come?"
         },
         {
-          "he": "for היא מילת יחס. איזו צורה של הפועל באה אחריה?",
-          "en": "for is a preposition. What verb form follows it?"
+          "he": "🧩 מה קורה לפועל אחרי מילת יחס?",
+          "en": "What happens to a verb after a preposition?"
         }
       ],
       "explanation": {
-        "he": "אחרי מילת יחס (for, at, of, to ב־look forward to) בא פועל עם ing. בעברית אומרים \"על שסחבה\" או \"טובה באפייה\", ובאנגלית for carrying, at baking. apologize for + ing: for coming.",
-        "en": "After a preposition, use the verb + -ing. apologize for + coming."
+        "he": "🔎 הרמז: for, מילת יחס.\n🧩 אחרי מילת יחס הפועל מקבל ing.\ncome הוא צורת בסיס ולא יכול לבוא אחרי for. לכן apologized for coming.",
+        "en": "After the preposition for, the verb takes -ing: apologized for coming."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "gerund-infinitive"
     },
     {
       "id": "fix.b2.remembers-me-of",
@@ -3727,22 +3813,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מי זוכר כאן, ומי גורם לזכור?",
+          "en": "Who remembers here, and what makes them remember?"
         },
         {
-          "he": "השיר גורם לי לזכור. זה remember או remind?",
-          "en": "The song makes me remember. Is that remember or remind?"
+          "he": "לזכור או להזכיר? איזו מילה באה עם me of?",
+          "en": "Remember or remind? Which goes with me of?"
         }
       ],
       "explanation": {
-        "he": "remember זה לזכור, בתוך הראש שלי. remind זה להזכיר למישהו אחר. remind someone to do, remind someone of something. X reminds me of Y: השיר מזכיר לי משהו.",
-        "en": "remember = keep in your mind, remind = make someone else remember. X reminds me of Y."
+        "he": "🔎 הרמז: This song ... me of, השיר גורם לי לזכור.\nremind = להזכיר (לגרום למישהו לזכור), ובא עם of. remember = לזכור בעצמי.\nהשיר מזכיר לי: This song reminds me of.",
+        "en": "The song makes me remember: reminds me of."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b2.told-sorry",
@@ -3770,22 +3857,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את הפועל",
-          "en": "Check the verb."
+          "he": "מה בא מיד אחרי הפועל: אדם או מילה שאומרים?",
+          "en": "What comes after the verb: a person or the words?"
         },
         {
-          "he": "אחרי הפועל בא sorry, ורק אחר כך to Moshe. איזה פועל מתאים?",
-          "en": "After the verb comes sorry, and then to Moshe. Which verb fits?"
+          "he": "say או tell: איזה מהם הולך עם sorry?",
+          "en": "say or tell: which goes with sorry?"
         }
       ],
       "explanation": {
-        "he": "tell בא עם האדם ששומע: tell someone something. say בא בלי האדם, או עם to: say something (to someone). בעברית \"אמר ל\" מתאים לשניהם. אומרים say sorry (to someone), ובעבר said sorry. tell צריך אדם מיד אחריו.",
-        "en": "tell + a person (tell Tamar), say + something (to someone). We say sorry, so said sorry."
+        "he": "🔎 הרמז: sorry, מילה שאומרים.\nsay + המילים עצמן (say sorry, say thank you). tell צריך אדם אחריו (tell Moshe).\nsorry היא מילה שאומרים: Ari said sorry.",
+        "en": "We say sorry. tell needs a person right after it."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b2.there-home",
@@ -3813,22 +3901,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק מילה שנשמעת אותו דבר",
-          "en": "Check a word that sounds the same."
-        },
-        {
           "he": "של מי הבית?",
           "en": "Whose home is it?"
+        },
+        {
+          "he": "שלושה צלילים דומים: מקום, שייכות, they are. איזה מתאים?",
+          "en": "Place, belonging or they are: which one fits?"
         }
       ],
       "explanation": {
-        "he": "their זה \"שלהם\". there זה \"שם\". they're זה they are. שלוש המילים נשמעות אותו דבר, ולכן צריך לבדוק את המשמעות. הבית של משפחת שפירא, שלהם, ולכן their home.",
-        "en": "their = belonging to them, there = in that place, they're = they are. The home belongs to them: their."
+        "he": "🔎 הרמז: home של משפחת שפירא, שייכות.\ntheir = שלהם. there = שם (מקום). they're = they are.\nהבית שלהם: their home.",
+        "en": "their = belonging to them. Here: their home."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     },
     {
       "id": "fix.b2.its-own",
@@ -3856,22 +3945,23 @@
       },
       "hints": [
         {
-          "he": "לבדוק את המילה עם הגרש",
-          "en": "Check the word with the apostrophe."
+          "he": "אפשר להחליף את המילה ב־it is?",
+          "en": "Can you replace the word with it is?"
         },
         {
-          "he": "אפשר לומר כאן it is own?",
-          "en": "Can we say it is own here?"
+          "he": "גרש = משהו חסר (it is). שייכות = בלי גרש.",
+          "en": "Apostrophe = a missing letter. Possession: no apostrophe."
         }
       ],
       "explanation": {
-        "he": "it's עם גרש זה קיצור של it is. its בלי גרש זה \"שלו\" או \"שלה\" לדבר. אפשר לבדוק: אם אפשר לומר it is, כותבים it's. it is own לא הגיוני. זה האוכל של החג, ולכן its own.",
-        "en": "it's = it is. its = belonging to it. Not it is, so its."
+        "he": "🔎 הרמז: own special food, שייכות.\nits = שלו/שלה (לחפץ). it's = it is.\nאי אפשר לומר \"has it is own\", אז its own, בלי גרש.",
+        "en": "its = belonging to it. it's = it is. Here: its own."
       },
       "tags": [
         "fix"
       ],
-      "source": "original"
+      "source": "original",
+      "anchor": "none"
     }
   ],
   "passages": [],
