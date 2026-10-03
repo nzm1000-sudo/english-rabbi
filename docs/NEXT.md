@@ -32,3 +32,15 @@ Canva monthly AI allowance ran low on 2026-10-03. Remaining little-book pages
 whatever is missing continues after the allowance resets (about 2026-10-11).
 Pipeline: Canva generate → export PNG → `tools/pics/cutout.py` (non-book) /
 `tools/pics/sticker_border.py` (stickers) → `tools/pics/import.mjs`.
+
+### Pending Canva work (2026-10-03)
+The Canva connector sign-in expired mid-run. 28 images were generated in the
+owner's Canva but not exported yet: media ids in
+`tools/pics/pending/generated-not-exported.jsonl` (4 words, little-book pages
+rainy-day 0-5, park 0-5, sukkah 0-7, shabbat 0-3). Prompts for the rest (field
+`prompt2`) are in `tools/pics/pending/remaining-prompts.json`; storybook
+character media ids in `tools/pics/pending/characters.json`. Next first item:
+`b-kb-little-shabbat-4` (a job id may be in `pending-final.txt`).
+Export: one container design, insert all, commit, export PNG (words 600x600,
+pages 800x600), then cutout.py for words and import.mjs for both.
+Canva started rate-limiting ("quota_cooldown"); go slowly (1 call per few minutes).

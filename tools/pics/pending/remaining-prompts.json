@@ -1,0 +1,740 @@
+{
+ "words": [
+  {
+   "id": "w-milk",
+   "prompt": "a glass of milk next to a simple blue and white milk carton with no text, 3D animated feature film style stylized cartoon (not photorealistic), soft warm studio lighting, smooth rounded shapes, cute and friendly, single subject centered and filling most of the frame, plain solid soft cream background, no text, no letters, high detail 3D render"
+  },
+  {
+   "id": "w-snail",
+   "prompt": "a cute friendly snail with a swirly shell, 3D animated feature film style stylized cartoon (not photorealistic), soft warm studio lighting, smooth rounded shapes, cute and friendly, single subject centered and filling most of the frame, plain solid soft cream background, no text, no letters, high detail 3D render"
+  },
+  {
+   "id": "w-slide",
+   "prompt": "a colorful playground slide, 3D animated feature film style stylized cartoon (not photorealistic), soft warm studio lighting, smooth rounded shapes, cute and friendly, single subject centered and filling most of the frame, plain solid soft cream background, no text, no letters, high detail 3D render"
+  },
+  {
+   "id": "w-picture",
+   "prompt": "a framed picture of a sunny landscape hanging, wooden frame, 3D animated feature film style stylized cartoon (not photorealistic), soft warm studio lighting, smooth rounded shapes, cute and friendly, single subject centered and filling most of the frame, plain solid soft cream background, no text, no letters, high detail 3D render"
+  }
+ ],
+ "pages": [
+  {
+   "id": "b-kb-little-rainy-day-0",
+   "book": "A Rainy Day",
+   "text": "It is raining.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"It is raining.\" (page of the picture book \"A Rainy Day\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"It is raining.\" (page of the picture book \"A Rainy Day\"). Setting for the whole book: a small quiet Israeli neighborhood street with white stone houses and a green garden. Tamar wears a yellow raincoat over her clothes and yellow rain boots and carries a red umbrella. Scene: Rain falling on the street, puddles on the path, grey clouds, no people. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-rainy-day-1",
+   "book": "A Rainy Day",
+   "text": "I put on my coat.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I put on my coat.\" (page of the picture book \"A Rainy Day\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I put on my coat.\" (page of the picture book \"A Rainy Day\"). Setting for the whole book: a small quiet Israeli neighborhood street with white stone houses and a green garden. Tamar wears a yellow raincoat over her clothes and yellow rain boots and carries a red umbrella. Scene: Tamar at the front door putting on her yellow raincoat, one arm in the sleeve. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-rainy-day-2",
+   "book": "A Rainy Day",
+   "text": "I take my umbrella.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I take my umbrella.\" (page of the picture book \"A Rainy Day\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I take my umbrella.\" (page of the picture book \"A Rainy Day\"). Setting for the whole book: a small quiet Israeli neighborhood street with white stone houses and a green garden. Tamar wears a yellow raincoat over her clothes and yellow rain boots and carries a red umbrella. Scene: Tamar outside in the rain opening and holding her red umbrella above her head. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-rainy-day-3",
+   "book": "A Rainy Day",
+   "text": "I see a snail.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see a snail.\" (page of the picture book \"A Rainy Day\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see a snail.\" (page of the picture book \"A Rainy Day\"). Setting for the whole book: a small quiet Israeli neighborhood street with white stone houses and a green garden. Tamar wears a yellow raincoat over her clothes and yellow rain boots and carries a red umbrella. Scene: Tamar under her red umbrella bending down to look at a big snail on the wet garden path. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-rainy-day-4",
+   "book": "A Rainy Day",
+   "text": "Now the sun is out.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"Now the sun is out.\" (page of the picture book \"A Rainy Day\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Now the sun is out.\" (page of the picture book \"A Rainy Day\"). Setting for the whole book: a small quiet Israeli neighborhood street with white stone houses and a green garden. Tamar wears a yellow raincoat over her clothes and yellow rain boots and carries a red umbrella. Scene: The rain has stopped, the sun shines bright through parting clouds over the wet street, no people. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-rainy-day-5",
+   "book": "A Rainy Day",
+   "text": "I see a rainbow!",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see a rainbow!\" (page of the picture book \"A Rainy Day\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see a rainbow!\" (page of the picture book \"A Rainy Day\"). Setting for the whole book: a small quiet Israeli neighborhood street with white stone houses and a green garden. Tamar wears a yellow raincoat over her clothes and yellow rain boots and carries a red umbrella. Scene: Tamar with her closed red umbrella pointing up happily at a big colorful rainbow in the sky. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-park-0",
+   "book": "At the Park",
+   "text": "We go to the park.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We go to the park.\" (page of the picture book \"At the Park\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We go to the park.\" (page of the picture book \"At the Park\"). Setting for the whole book: a sunny green neighborhood park with a red slide, trees and grass; Ari is the boy telling the story and has a blue ball. Scene: Ari walking happily through the park gate holding his blue ball. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-park-1",
+   "book": "At the Park",
+   "text": "I go down the slide.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I go down the slide.\" (page of the picture book \"At the Park\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I go down the slide.\" (page of the picture book \"At the Park\"). Setting for the whole book: a sunny green neighborhood park with a red slide, trees and grass; Ari is the boy telling the story and has a blue ball. Scene: Ari sliding down the red slide with arms up, smiling. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-park-2",
+   "book": "At the Park",
+   "text": "I run on the grass.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I run on the grass.\" (page of the picture book \"At the Park\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I run on the grass.\" (page of the picture book \"At the Park\"). Setting for the whole book: a sunny green neighborhood park with a red slide, trees and grass; Ari is the boy telling the story and has a blue ball. Scene: Ari running fast across the green grass. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-park-3",
+   "book": "At the Park",
+   "text": "I kick the ball.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I kick the ball.\" (page of the picture book \"At the Park\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I kick the ball.\" (page of the picture book \"At the Park\"). Setting for the whole book: a sunny green neighborhood park with a red slide, trees and grass; Ari is the boy telling the story and has a blue ball. Scene: Ari kicking the blue ball on the grass. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-park-4",
+   "book": "At the Park",
+   "text": "I see a bird.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see a bird.\" (page of the picture book \"At the Park\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see a bird.\" (page of the picture book \"At the Park\"). Setting for the whole book: a sunny green neighborhood park with a red slide, trees and grass; Ari is the boy telling the story and has a blue ball. Scene: Ari pointing at a small bird sitting on a tree branch. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-park-5",
+   "book": "At the Park",
+   "text": "I play with Tamar.",
+   "refs": [
+    "MAHW_Fh-Ryg",
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I play with Tamar.\" (page of the picture book \"At the Park\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants); Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I play with Tamar.\" (page of the picture book \"At the Park\"). Setting for the whole book: a sunny green neighborhood park with a red slide, trees and grass; Ari is the boy telling the story and has a blue ball. Scene: Ari and his sister Tamar playing together with the blue ball on the grass, both laughing. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants); Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-sukkah-0",
+   "book": "Our Sukkah",
+   "text": "We build a sukkah.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We build a sukkah.\" (page of the picture book \"Our Sukkah\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We build a sukkah.\" (page of the picture book \"Our Sukkah\"). Setting for the whole book: a sukkah with white cloth walls in a sunny garden, roof of green palm branches; Ari is the boy telling the story; decorations are red apples, yellow paper stars, a framed picture and warm string lights. Scene: Ari helping to put up the white cloth walls of the sukkah frame. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-sukkah-1",
+   "book": "Our Sukkah",
+   "text": "We put green branches on top.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We put green branches on top.\" (page of the picture book \"Our Sukkah\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We put green branches on top.\" (page of the picture book \"Our Sukkah\"). Setting for the whole book: a sukkah with white cloth walls in a sunny garden, roof of green palm branches; Ari is the boy telling the story; decorations are red apples, yellow paper stars, a framed picture and warm string lights. Scene: Ari on a small step stool placing green palm branches on top of the sukkah roof. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-sukkah-2",
+   "book": "Our Sukkah",
+   "text": "We hang red apples.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We hang red apples.\" (page of the picture book \"Our Sukkah\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We hang red apples.\" (page of the picture book \"Our Sukkah\"). Setting for the whole book: a sukkah with white cloth walls in a sunny garden, roof of green palm branches; Ari is the boy telling the story; decorations are red apples, yellow paper stars, a framed picture and warm string lights. Scene: Ari hanging shiny red apples on strings from the sukkah roof. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-sukkah-3",
+   "book": "Our Sukkah",
+   "text": "We hang yellow stars.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We hang yellow stars.\" (page of the picture book \"Our Sukkah\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We hang yellow stars.\" (page of the picture book \"Our Sukkah\"). Setting for the whole book: a sukkah with white cloth walls in a sunny garden, roof of green palm branches; Ari is the boy telling the story; decorations are red apples, yellow paper stars, a framed picture and warm string lights. Scene: Ari hanging yellow paper stars from the sukkah roof. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-sukkah-4",
+   "book": "Our Sukkah",
+   "text": "We hang a picture.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We hang a picture.\" (page of the picture book \"Our Sukkah\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We hang a picture.\" (page of the picture book \"Our Sukkah\"). Setting for the whole book: a sukkah with white cloth walls in a sunny garden, roof of green palm branches; Ari is the boy telling the story; decorations are red apples, yellow paper stars, a framed picture and warm string lights. Scene: Ari hanging a framed colorful drawing of a landscape on the sukkah wall. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-sukkah-5",
+   "book": "Our Sukkah",
+   "text": "We hang the lights.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We hang the lights.\" (page of the picture book \"Our Sukkah\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We hang the lights.\" (page of the picture book \"Our Sukkah\"). Setting for the whole book: a sukkah with white cloth walls in a sunny garden, roof of green palm branches; Ari is the boy telling the story; decorations are red apples, yellow paper stars, a framed picture and warm string lights. Scene: Ari hanging glowing warm string lights in the sukkah. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-sukkah-6",
+   "book": "Our Sukkah",
+   "text": "We eat in the sukkah.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We eat in the sukkah.\" (page of the picture book \"Our Sukkah\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We eat in the sukkah.\" (page of the picture book \"Our Sukkah\"). Setting for the whole book: a sukkah with white cloth walls in a sunny garden, roof of green palm branches; Ari is the boy telling the story; decorations are red apples, yellow paper stars, a framed picture and warm string lights. Scene: Ari sitting at a table inside the decorated sukkah eating a meal from a plate. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-sukkah-7",
+   "book": "Our Sukkah",
+   "text": "Our sukkah is pretty!",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"Our sukkah is pretty!\" (page of the picture book \"Our Sukkah\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Our sukkah is pretty!\" (page of the picture book \"Our Sukkah\"). Setting for the whole book: a sukkah with white cloth walls in a sunny garden, roof of green palm branches; Ari is the boy telling the story; decorations are red apples, yellow paper stars, a framed picture and warm string lights. Scene: The finished sukkah glowing at dusk with apples, yellow stars, picture and string lights, no people. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-shabbat-0",
+   "book": "Ready for Shabbat",
+   "text": "We clean the house.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We clean the house.\" (page of the picture book \"Ready for Shabbat\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We clean the house.\" (page of the picture book \"Ready for Shabbat\"). Setting for the whole book: a cozy family home on Friday afternoon, with a white tablecloth table, two silver candlesticks and a braided challah; Ari is the boy telling the story. Scene: Ari sweeping the floor with a broom, the home tidy. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-shabbat-1",
+   "book": "Ready for Shabbat",
+   "text": "We bake the challah.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We bake the challah.\" (page of the picture book \"Ready for Shabbat\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We bake the challah.\" (page of the picture book \"Ready for Shabbat\"). Setting for the whole book: a cozy family home on Friday afternoon, with a white tablecloth table, two silver candlesticks and a braided challah; Ari is the boy telling the story. Scene: Ari at the kitchen counter braiding challah dough, a golden challah on a tray beside him. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-shabbat-2",
+   "book": "Ready for Shabbat",
+   "text": "Time for a bath.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"Time for a bath.\" (page of the picture book \"Ready for Shabbat\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Time for a bath.\" (page of the picture book \"Ready for Shabbat\"). Setting for the whole book: a cozy family home on Friday afternoon, with a white tablecloth table, two silver candlesticks and a braided challah; Ari is the boy telling the story. Scene: A small bathtub full of bubbles with a yellow rubber duck and a towel, no people. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-shabbat-3",
+   "book": "Ready for Shabbat",
+   "text": "We wear nice clothes.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We wear nice clothes.\" (page of the picture book \"Ready for Shabbat\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We wear nice clothes.\" (page of the picture book \"Ready for Shabbat\"). Setting for the whole book: a cozy family home on Friday afternoon, with a white tablecloth table, two silver candlesticks and a braided challah; Ari is the boy telling the story. Scene: Ari in a crisp white long-sleeved Shabbat shirt and dark pants, smiling proudly. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-shabbat-4",
+   "book": "Ready for Shabbat",
+   "text": "Ima lights the candles.",
+   "refs": [
+    "MAHW_ArI6cw"
+   ],
+   "prompt": "Illustration that clearly shows: \"Ima lights the candles.\" (page of the picture book \"Ready for Shabbat\"). Characters: Ima the mother (green tichel tied at the back, lilac long-sleeved dress below the knee). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Ima lights the candles.\" (page of the picture book \"Ready for Shabbat\"). Setting for the whole book: a cozy family home on Friday afternoon, with a white tablecloth table, two silver candlesticks and a braided challah; Ari is the boy telling the story. Scene: Ima lighting the two Shabbat candles in silver candlesticks on the white table, hands near the flames. Characters: Ima the mother (green tichel tied at the back, lilac long-sleeved dress below the knee). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-shabbat-5",
+   "book": "Ready for Shabbat",
+   "text": "We say Shabbat Shalom!",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"We say Shabbat Shalom!\" (page of the picture book \"Ready for Shabbat\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We say Shabbat Shalom!\" (page of the picture book \"Ready for Shabbat\"). Setting for the whole book: a cozy family home on Friday afternoon, with a white tablecloth table, two silver candlesticks and a braided challah; Ari is the boy telling the story. Scene: Ari in his white Shabbat shirt waving warmly beside the set Shabbat table with lit candles and challah. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-bedtime-0",
+   "book": "Good Night",
+   "text": "I brush my teeth.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I brush my teeth.\" (page of the picture book \"Good Night\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I brush my teeth.\" (page of the picture book \"Good Night\"). Setting for the whole book: Ari's cozy bedroom at night with a blue blanket, a small lamp and a window showing the moon; Ari wears long-sleeved blue pajamas and his kippah. Scene: Ari in pajamas brushing his teeth at the bathroom sink. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-bedtime-1",
+   "book": "Good Night",
+   "text": "I read a book.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I read a book.\" (page of the picture book \"Good Night\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I read a book.\" (page of the picture book \"Good Night\"). Setting for the whole book: Ari's cozy bedroom at night with a blue blanket, a small lamp and a window showing the moon; Ari wears long-sleeved blue pajamas and his kippah. Scene: Ari sitting in bed reading a picture book by the small lamp. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-bedtime-2",
+   "book": "Good Night",
+   "text": "I hug Ima.",
+   "refs": [
+    "MAHW_Fh-Ryg",
+    "MAHW_ArI6cw"
+   ],
+   "prompt": "Illustration that clearly shows: \"I hug Ima.\" (page of the picture book \"Good Night\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants); Ima the mother (green tichel tied at the back, lilac long-sleeved dress below the knee). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I hug Ima.\" (page of the picture book \"Good Night\"). Setting for the whole book: Ari's cozy bedroom at night with a blue blanket, a small lamp and a window showing the moon; Ari wears long-sleeved blue pajamas and his kippah. Scene: Ari in pajamas hugging Ima tightly beside his bed. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants); Ima the mother (green tichel tied at the back, lilac long-sleeved dress below the knee). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-bedtime-3",
+   "book": "Good Night",
+   "text": "I say the Shema.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I say the Shema.\" (page of the picture book \"Good Night\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I say the Shema.\" (page of the picture book \"Good Night\"). Setting for the whole book: Ari's cozy bedroom at night with a blue blanket, a small lamp and a window showing the moon; Ari wears long-sleeved blue pajamas and his kippah. Scene: Ari in bed covering his eyes with his right hand, saying the Shema. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-bedtime-4",
+   "book": "Good Night",
+   "text": "I close my eyes.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I close my eyes.\" (page of the picture book \"Good Night\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I close my eyes.\" (page of the picture book \"Good Night\"). Setting for the whole book: Ari's cozy bedroom at night with a blue blanket, a small lamp and a window showing the moon; Ari wears long-sleeved blue pajamas and his kippah. Scene: Ari lying in bed under the blue blanket with his eyes closed, peaceful. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-bedtime-5",
+   "book": "Good Night",
+   "text": "Good night, moon!",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"Good night, moon!\" (page of the picture book \"Good Night\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Good night, moon!\" (page of the picture book \"Good Night\"). Setting for the whole book: Ari's cozy bedroom at night with a blue blanket, a small lamp and a window showing the moon; Ari wears long-sleeved blue pajamas and his kippah. Scene: The bedroom window with a big smiling crescent moon and stars outside, no people. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-helping-ima-0",
+   "book": "Helping Ima",
+   "text": "I help Ima.",
+   "refs": [
+    "MAHW_Fh-Ryg",
+    "MAHW_ArI6cw"
+   ],
+   "prompt": "Illustration that clearly shows: \"I help Ima.\" (page of the picture book \"Helping Ima\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants); Ima the mother (green tichel tied at the back, lilac long-sleeved dress below the knee). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I help Ima.\" (page of the picture book \"Helping Ima\"). Setting for the whole book: a bright cozy family kitchen and living room; Ari is the boy telling the story. Scene: Ari carrying a basket of vegetables next to Ima in the kitchen, both smiling. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants); Ima the mother (green tichel tied at the back, lilac long-sleeved dress below the knee). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-helping-ima-1",
+   "book": "Helping Ima",
+   "text": "I set the table.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I set the table.\" (page of the picture book \"Helping Ima\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I set the table.\" (page of the picture book \"Helping Ima\"). Setting for the whole book: a bright cozy family kitchen and living room; Ari is the boy telling the story. Scene: Ari putting plates and cups on the dining table. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-helping-ima-2",
+   "book": "Helping Ima",
+   "text": "I put away toys.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I put away toys.\" (page of the picture book \"Helping Ima\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I put away toys.\" (page of the picture book \"Helping Ima\"). Setting for the whole book: a bright cozy family kitchen and living room; Ari is the boy telling the story. Scene: Ari putting toy blocks and a teddy bear into a toy box. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-helping-ima-3",
+   "book": "Helping Ima",
+   "text": "I fold the socks.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I fold the socks.\" (page of the picture book \"Helping Ima\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I fold the socks.\" (page of the picture book \"Helping Ima\"). Setting for the whole book: a bright cozy family kitchen and living room; Ari is the boy telling the story. Scene: Ari sitting on the sofa folding small colorful socks in pairs. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-helping-ima-4",
+   "book": "Helping Ima",
+   "text": "I feed baby Eli.",
+   "refs": [
+    "MAHW_Fh-Ryg",
+    "MAHW_Ktq_8A"
+   ],
+   "prompt": "Illustration that clearly shows: \"I feed baby Eli.\" (page of the picture book \"Helping Ima\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants); baby Eli (yellow long-sleeved onesie). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I feed baby Eli.\" (page of the picture book \"Helping Ima\"). Setting for the whole book: a bright cozy family kitchen and living room; Ari is the boy telling the story. Scene: Ari feeding baby Eli in a high chair with a small spoon. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants); baby Eli (yellow long-sleeved onesie). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-helping-ima-5",
+   "book": "Helping Ima",
+   "text": "Ima says, \"Thank you!\"",
+   "refs": [
+    "MAHW_ArI6cw"
+   ],
+   "prompt": "Illustration that clearly shows: \"Ima says, \"Thank you!\"\" (page of the picture book \"Helping Ima\"). Characters: Ima the mother (green tichel tied at the back, lilac long-sleeved dress below the knee). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Ima says, \"Thank you!\"\" (page of the picture book \"Helping Ima\"). Setting for the whole book: a bright cozy family kitchen and living room; Ari is the boy telling the story. Scene: Ima smiling warmly and giving a thumbs up in the kitchen, grateful. Characters: Ima the mother (green tichel tied at the back, lilac long-sleeved dress below the knee). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-thank-you-0",
+   "book": "Thank You",
+   "text": "Thank you for the apple.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"Thank you for the apple.\" (page of the picture book \"Thank You\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Thank you for the apple.\" (page of the picture book \"Thank You\"). Setting for the whole book: a warm cozy family home and its sunny garden; Tamar is the girl telling the story and says thank you with a big smile. Scene: Tamar receiving a red apple from an adult's hand (long sleeve), smiling. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-thank-you-1",
+   "book": "Thank You",
+   "text": "Thank you for the hug.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"Thank you for the hug.\" (page of the picture book \"Thank You\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Thank you for the hug.\" (page of the picture book \"Thank You\"). Setting for the whole book: a warm cozy family home and its sunny garden; Tamar is the girl telling the story and says thank you with a big smile. Scene: Tamar being hugged warmly by her mother (green tichel, lilac long-sleeved dress), Tamar's face visible and happy. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-thank-you-2",
+   "book": "Thank You",
+   "text": "Thank you for the book.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"Thank you for the book.\" (page of the picture book \"Thank You\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Thank you for the book.\" (page of the picture book \"Thank You\"). Setting for the whole book: a warm cozy family home and its sunny garden; Tamar is the girl telling the story and says thank you with a big smile. Scene: Tamar holding a new picture book with a colorful plain cover, delighted. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-thank-you-3",
+   "book": "Thank You",
+   "text": "Thank you for the teddy bear.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"Thank you for the teddy bear.\" (page of the picture book \"Thank You\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Thank you for the teddy bear.\" (page of the picture book \"Thank You\"). Setting for the whole book: a warm cozy family home and its sunny garden; Tamar is the girl telling the story and says thank you with a big smile. Scene: Tamar hugging a soft brown teddy bear. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-thank-you-4",
+   "book": "Thank You",
+   "text": "Thank you for the sun.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"Thank you for the sun.\" (page of the picture book \"Thank You\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Thank you for the sun.\" (page of the picture book \"Thank You\"). Setting for the whole book: a warm cozy family home and its sunny garden; Tamar is the girl telling the story and says thank you with a big smile. Scene: Tamar in the sunny garden with arms open to the bright warm sun in the sky. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-thank-you-5",
+   "book": "Thank You",
+   "text": "I always say thank you.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I always say thank you.\" (page of the picture book \"Thank You\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I always say thank you.\" (page of the picture book \"Thank You\"). Setting for the whole book: a warm cozy family home and its sunny garden; Tamar is the girl telling the story and says thank you with a big smile. Scene: Tamar smiling with her hands together politely, in the cozy living room. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-chanukah-lights-0",
+   "book": "The Chanukah Lights",
+   "text": "On night one, we light one candle.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"On night one, we light one candle.\" (page of the picture book \"The Chanukah Lights\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"On night one, we light one candle.\" (page of the picture book \"The Chanukah Lights\"). Setting for the whole book: one silver Chanukah menorah with eight candle holders in a row plus a raised shamash holder in the middle, standing on a windowsill at night in a cozy home, no people faces shown. Scene: Night one: EXACTLY ONE lit candle at the far right holder plus the lit shamash in the middle; all other seven holders are empty with no candles. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-chanukah-lights-1",
+   "book": "The Chanukah Lights",
+   "text": "On night two, we light two candles.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"On night two, we light two candles.\" (page of the picture book \"The Chanukah Lights\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"On night two, we light two candles.\" (page of the picture book \"The Chanukah Lights\"). Setting for the whole book: one silver Chanukah menorah with eight candle holders in a row plus a raised shamash holder in the middle, standing on a windowsill at night in a cozy home, no people faces shown. Scene: Night two: EXACTLY TWO lit candles at the two right-most holders plus the lit shamash in the middle; the other six holders are empty with no candles. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-chanukah-lights-2",
+   "book": "The Chanukah Lights",
+   "text": "Every night, we add one more candle.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"Every night, we add one more candle.\" (page of the picture book \"The Chanukah Lights\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Every night, we add one more candle.\" (page of the picture book \"The Chanukah Lights\"). Setting for the whole book: one silver Chanukah menorah with eight candle holders in a row plus a raised shamash holder in the middle, standing on a windowsill at night in a cozy home, no people faces shown. Scene: Night three: EXACTLY THREE lit candles at the three right-most holders plus the lit shamash in the middle; the other five holders are empty with no candles. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-chanukah-lights-3",
+   "book": "The Chanukah Lights",
+   "text": "On night eight, we light eight candles!",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"On night eight, we light eight candles!\" (page of the picture book \"The Chanukah Lights\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"On night eight, we light eight candles!\" (page of the picture book \"The Chanukah Lights\"). Setting for the whole book: one silver Chanukah menorah with eight candle holders in a row plus a raised shamash holder in the middle, standing on a windowsill at night in a cozy home, no people faces shown. Scene: Night eight: all EIGHT holders have lit candles plus the lit shamash in the middle, glowing brightly. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-chanukah-lights-4",
+   "book": "The Chanukah Lights",
+   "text": "The shamash helps light them.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"The shamash helps light them.\" (page of the picture book \"The Chanukah Lights\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"The shamash helps light them.\" (page of the picture book \"The Chanukah Lights\"). Setting for the whole book: one silver Chanukah menorah with eight candle holders in a row plus a raised shamash holder in the middle, standing on a windowsill at night in a cozy home, no people faces shown. Scene: Close-up of a child's hand in a long sleeve holding the lit shamash candle and lighting one candle on the menorah. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-chanukah-lights-5",
+   "book": "The Chanukah Lights",
+   "text": "The menorah is bright!",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"The menorah is bright!\" (page of the picture book \"The Chanukah Lights\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"The menorah is bright!\" (page of the picture book \"The Chanukah Lights\"). Setting for the whole book: one silver Chanukah menorah with eight candle holders in a row plus a raised shamash holder in the middle, standing on a windowsill at night in a cozy home, no people faces shown. Scene: The menorah with all eight candles and the shamash lit, shining very brightly and lighting up the window. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-chanukah-lights-6",
+   "book": "The Chanukah Lights",
+   "text": "Happy Chanukah!",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"Happy Chanukah!\" (page of the picture book \"The Chanukah Lights\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Happy Chanukah!\" (page of the picture book \"The Chanukah Lights\"). Setting for the whole book: one silver Chanukah menorah with eight candle holders in a row plus a raised shamash holder in the middle, standing on a windowsill at night in a cozy home, no people faces shown. Scene: The glowing menorah with colorful dreidels and a plate of jelly doughnuts (sufganiyot) on the table in front of it, festive. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-my-body-0",
+   "book": "My Body",
+   "text": "I see with my eyes.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see with my eyes.\" (page of the picture book \"My Body\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see with my eyes.\" (page of the picture book \"My Body\"). Setting for the whole book: Tamar in a bright simple room, close-up so the body part is very clear. Scene: Tamar with big open eyes looking through a toy magnifying glass at a flower. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-my-body-1",
+   "book": "My Body",
+   "text": "I hear with my ears.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I hear with my ears.\" (page of the picture book \"My Body\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I hear with my ears.\" (page of the picture book \"My Body\"). Setting for the whole book: Tamar in a bright simple room, close-up so the body part is very clear. Scene: Tamar with her hand cupped behind her ear listening to a little bird singing. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-my-body-2",
+   "book": "My Body",
+   "text": "I smell with my nose.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I smell with my nose.\" (page of the picture book \"My Body\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I smell with my nose.\" (page of the picture book \"My Body\"). Setting for the whole book: Tamar in a bright simple room, close-up so the body part is very clear. Scene: Tamar smelling a pink flower with her nose, eyes closed happily. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-my-body-3",
+   "book": "My Body",
+   "text": "I eat with my mouth.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I eat with my mouth.\" (page of the picture book \"My Body\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I eat with my mouth.\" (page of the picture book \"My Body\"). Setting for the whole book: Tamar in a bright simple room, close-up so the body part is very clear. Scene: Tamar eating a spoonful of yogurt with her mouth open. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-my-body-4",
+   "book": "My Body",
+   "text": "I walk with my feet.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I walk with my feet.\" (page of the picture book \"My Body\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I walk with my feet.\" (page of the picture book \"My Body\"). Setting for the whole book: Tamar in a bright simple room, close-up so the body part is very clear. Scene: Tamar walking, her shoes and feet clearly visible, on a garden path. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-my-body-5",
+   "book": "My Body",
+   "text": "I clap with my hands!",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I clap with my hands!\" (page of the picture book \"My Body\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I clap with my hands!\" (page of the picture book \"My Body\"). Setting for the whole book: Tamar in a bright simple room, close-up so the body part is very clear. Scene: Tamar clapping her hands happily. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-counting-stars-0",
+   "book": "Counting Stars",
+   "text": "I see one star.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see one star.\" (page of the picture book \"Counting Stars\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see one star.\" (page of the picture book \"Counting Stars\"). Setting for the whole book: Tamar in long-sleeved pink pajamas on a balcony at night looking up at a dark blue sky; stars are big, bright, clearly separated and easy to count. Scene: The sky has EXACTLY ONE big bright star and nothing else in it, Tamar points at it. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-counting-stars-1",
+   "book": "Counting Stars",
+   "text": "I see two stars.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see two stars.\" (page of the picture book \"Counting Stars\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see two stars.\" (page of the picture book \"Counting Stars\"). Setting for the whole book: Tamar in long-sleeved pink pajamas on a balcony at night looking up at a dark blue sky; stars are big, bright, clearly separated and easy to count. Scene: The sky has EXACTLY TWO big bright stars and nothing else in it, Tamar points at them. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-counting-stars-2",
+   "book": "Counting Stars",
+   "text": "I see three stars.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see three stars.\" (page of the picture book \"Counting Stars\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see three stars.\" (page of the picture book \"Counting Stars\"). Setting for the whole book: Tamar in long-sleeved pink pajamas on a balcony at night looking up at a dark blue sky; stars are big, bright, clearly separated and easy to count. Scene: The sky has EXACTLY THREE big bright stars and nothing else in it, Tamar points at them. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-counting-stars-3",
+   "book": "Counting Stars",
+   "text": "I see four stars.",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see four stars.\" (page of the picture book \"Counting Stars\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see four stars.\" (page of the picture book \"Counting Stars\"). Setting for the whole book: Tamar in long-sleeved pink pajamas on a balcony at night looking up at a dark blue sky; stars are big, bright, clearly separated and easy to count. Scene: The sky has EXACTLY FOUR big bright stars and nothing else in it, Tamar points at them. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-counting-stars-4",
+   "book": "Counting Stars",
+   "text": "I see many stars!",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see many stars!\" (page of the picture book \"Counting Stars\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see many stars!\" (page of the picture book \"Counting Stars\"). Setting for the whole book: Tamar in long-sleeved pink pajamas on a balcony at night looking up at a dark blue sky; stars are big, bright, clearly separated and easy to count. Scene: The sky is full of very many twinkling stars, Tamar looks up amazed with arms wide. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-counting-stars-5",
+   "book": "Counting Stars",
+   "text": "Good night, stars.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"Good night, stars.\" (page of the picture book \"Counting Stars\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"Good night, stars.\" (page of the picture book \"Counting Stars\"). Setting for the whole book: Tamar in long-sleeved pink pajamas on a balcony at night looking up at a dark blue sky; stars are big, bright, clearly separated and easy to count. Scene: The empty balcony at night under a sky of soft stars and a crescent moon, peaceful and sleepy, no people. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-fruit-colors-0",
+   "book": "Colors of Fruit",
+   "text": "The apple is red.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"The apple is red.\" (page of the picture book \"Colors of Fruit\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"The apple is red.\" (page of the picture book \"Colors of Fruit\"). Setting for the whole book: a single fruit shown big on a light wooden kitchen table, simple cream background. Scene: One shiny red apple. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-fruit-colors-1",
+   "book": "Colors of Fruit",
+   "text": "The banana is yellow.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"The banana is yellow.\" (page of the picture book \"Colors of Fruit\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"The banana is yellow.\" (page of the picture book \"Colors of Fruit\"). Setting for the whole book: a single fruit shown big on a light wooden kitchen table, simple cream background. Scene: One bright yellow banana. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-fruit-colors-2",
+   "book": "Colors of Fruit",
+   "text": "The grapes are purple.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"The grapes are purple.\" (page of the picture book \"Colors of Fruit\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"The grapes are purple.\" (page of the picture book \"Colors of Fruit\"). Setting for the whole book: a single fruit shown big on a light wooden kitchen table, simple cream background. Scene: One bunch of purple grapes. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-fruit-colors-3",
+   "book": "Colors of Fruit",
+   "text": "The orange is orange.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"The orange is orange.\" (page of the picture book \"Colors of Fruit\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"The orange is orange.\" (page of the picture book \"Colors of Fruit\"). Setting for the whole book: a single fruit shown big on a light wooden kitchen table, simple cream background. Scene: One round orange fruit. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-fruit-colors-4",
+   "book": "Colors of Fruit",
+   "text": "The pear is green.",
+   "refs": [],
+   "prompt": "Illustration that clearly shows: \"The pear is green.\" (page of the picture book \"Colors of Fruit\"). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"The pear is green.\" (page of the picture book \"Colors of Fruit\"). Setting for the whole book: a single fruit shown big on a light wooden kitchen table, simple cream background. Scene: One green pear. children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-fruit-colors-5",
+   "book": "Colors of Fruit",
+   "text": "We like fruit!",
+   "refs": [
+    "MAHW_Kxt9Ak"
+   ],
+   "prompt": "Illustration that clearly shows: \"We like fruit!\" (page of the picture book \"Colors of Fruit\"). Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"We like fruit!\" (page of the picture book \"Colors of Fruit\"). Setting for the whole book: a single fruit shown big on a light wooden kitchen table, simple cream background. Scene: Tamar at the wooden table smiling and hugging a bowl with a red apple, yellow banana, purple grapes, an orange and a green pear. Characters: Tamar (6-year-old girl, two dark braids, pink long-sleeved top, navy skirt below the knee, white tights). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-farm-0",
+   "book": "On the Farm",
+   "text": "I see a cow.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see a cow.\" (page of the picture book \"On the Farm\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see a cow.\" (page of the picture book \"On the Farm\"). Setting for the whole book: a sunny farm with a red barn, wooden fence and green field; Ari visits and stands next to the animal. Scene: Ari standing by the fence next to a big friendly black and white cow. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-farm-1",
+   "book": "On the Farm",
+   "text": "I see a sheep.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see a sheep.\" (page of the picture book \"On the Farm\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see a sheep.\" (page of the picture book \"On the Farm\"). Setting for the whole book: a sunny farm with a red barn, wooden fence and green field; Ari visits and stands next to the animal. Scene: Ari next to a fluffy white sheep. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-farm-2",
+   "book": "On the Farm",
+   "text": "I see a hen.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see a hen.\" (page of the picture book \"On the Farm\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see a hen.\" (page of the picture book \"On the Farm\"). Setting for the whole book: a sunny farm with a red barn, wooden fence and green field; Ari visits and stands next to the animal. Scene: Ari next to a brown hen pecking on the ground. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-farm-3",
+   "book": "On the Farm",
+   "text": "I see a horse.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see a horse.\" (page of the picture book \"On the Farm\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see a horse.\" (page of the picture book \"On the Farm\"). Setting for the whole book: a sunny farm with a red barn, wooden fence and green field; Ari visits and stands next to the animal. Scene: Ari next to a tall brown horse looking over the fence. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-farm-4",
+   "book": "On the Farm",
+   "text": "I see a goat.",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see a goat.\" (page of the picture book \"On the Farm\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see a goat.\" (page of the picture book \"On the Farm\"). Setting for the whole book: a sunny farm with a red barn, wooden fence and green field; Ari visits and stands next to the animal. Scene: Ari next to a small white goat. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  },
+  {
+   "id": "b-kb-little-farm-5",
+   "book": "On the Farm",
+   "text": "I see the farm!",
+   "refs": [
+    "MAHW_Fh-Ryg"
+   ],
+   "prompt": "Illustration that clearly shows: \"I see the farm!\" (page of the picture book \"On the Farm\"). Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers",
+   "prompt2": "Illustration that clearly shows: \"I see the farm!\" (page of the picture book \"On the Farm\"). Setting for the whole book: a sunny farm with a red barn, wooden fence and green field; Ari visits and stands next to the animal. Scene: Ari waving in front of the whole farm: the red barn, field, and the cow, sheep, hen, horse and goat together. Characters: Ari (7-year-old boy, short curly brown hair, small navy knitted kippah, light blue long-sleeved shirt, dark pants). children's storybook illustration for ages 3-6, 3D animated feature film style, stylized cartoon, warm soft lighting, simple clean uncluttered scene, big clear main subject, all people modestly dressed (long sleeves, skirts below the knee, boys and men with kippah, married women with tichel), no text, no letters, no numbers"
+  }
+ ]
+}
