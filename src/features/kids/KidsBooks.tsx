@@ -86,17 +86,20 @@ export function KidsBooks() {
 export function KidsBook() {
   const { sid, bookId } = useParams();
   const student = useStudent(sid);
+  // "Again" on the reward screen is a new reading: a new session, and the time limit is checked again.
+  const [round, setRound] = useState(0);
+  const again = () => setRound((r) => r + 1);
   if (student === undefined) return <main className="screen kids-screen" data-mood="kids" />;
-  if (!student) return <BookReader key={`${sid}:${bookId}`} />;
+  if (!student) return <BookReader key={`${sid}:${bookId}:${round}`} onAgain={again} />;
   return (
-    <TimeGate key={`${sid}:${bookId}`} student={student} home={<KidsIconLink to={`/s/${student.id}`} label="הביתה" />}>
-      <BookReader />
+    <TimeGate key={`${sid}:${bookId}:${round}`} student={student} home={<KidsIconLink to={`/s/${student.id}`} label="הביתה" />}>
+      <BookReader onAgain={again} />
     </TimeGate>
   );
 }
 
 /** A big picture, one sentence, read aloud. Early readers can tap each word. */
-function BookReader() {
+function BookReader({ onAgain }: { onAgain: () => void }) {
   const { sid, bookId } = useParams();
   const student = useStudent(sid);
   const { speech } = useServices();
@@ -126,7 +129,11 @@ function BookReader() {
     },
     [speech],
   );
-  useKidsSession(student?.id, 'kids:book');
+  const { finish } = useKidsSession(student?.id, 'kids:book');
+  // The reading is over when the reward shows: time on the reward screen is not screen time.
+  useEffect(() => {
+    if (done) finish();
+  }, [done, finish]);
 
   if (!student || !book || !p) {
     return (
@@ -142,11 +149,7 @@ function BookReader() {
         score={{ correct: book.pages.length, total: book.pages.length }}
         source={`book:${book.id}`}
         earned={heard.current.size >= book.pages.length}
-        onAgain={() => {
-          heard.current = new Set();
-          setDone(false);
-          setPage(0);
-        }}
+        onAgain={onAgain}
       />
     );
   }

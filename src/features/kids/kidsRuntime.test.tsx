@@ -122,3 +122,32 @@ describe('TimeGate', () => {
     expect(await screen.findByText('game')).toBeInTheDocument();
   });
 });
+
+/** Regression: a book's screen time ran on through the reward screen until the child left it. */
+it('a book ends its session when the reward shows', async () => {
+  const { kidBooks } = await import('@content/kids');
+  const { MemoryRouter, Route, Routes } = await import('react-router-dom');
+  const { KidsBook } = await import('./KidsBooks');
+  const db = new TutorDB(`kids-${Math.random()}`);
+  const store = new LearningStore(db);
+  const student = await store.createStudent({ name: 'דנה' });
+  const idle = { status: 'idle' } as const;
+  const speech = { speak: vi.fn(async () => 'done'), stop: vi.fn(), subscribe: () => () => {}, getState: () => idle };
+  const services = { db, store, speech, settings: { get: () => undefined } } as unknown as AppServices;
+  const book = kidBooks[0]!;
+  render(
+    <ServicesProvider services={services}>
+      <MemoryRouter initialEntries={[`/s/${student.id}/kids/books/${book.id}`]}>
+        <Routes>
+          <Route path="/s/:sid/kids/books/:bookId" element={<KidsBook />} />
+        </Routes>
+      </MemoryRouter>
+    </ServicesProvider>,
+  );
+  const open = async () => (await db.sessions.toArray()).filter((s) => !s.endedAt);
+  await waitFor(async () => expect(await open()).toHaveLength(1));
+  for (let i = 1; i < book.pages.length; i++) fireEvent.click(await screen.findByRole('button', { name: 'הדף הבא' }));
+  fireEvent.click(await screen.findByRole('button', { name: 'סוף' }));
+  await waitFor(async () => expect(await open()).toHaveLength(0));
+  expect(await db.sessions.count()).toBe(1);
+});
