@@ -44,7 +44,7 @@ def call(model, body, tries=5):
             msg = e.read().decode(errors='replace')
             if e.code == 429 and 'PerDay' in msg:
                 raise DailyQuota(model) from None
-            if e.code not in (429, 500, 503) or attempt == tries - 1:
+            if e.code not in (429, 500, 502, 503) or attempt == tries - 1:
                 raise RuntimeError(f'{model} {e.code}: {msg[:300]}') from None
             wait = 30 * (attempt + 1)
             m = re.search(r'"retryDelay": "(\d+)s"', msg)
@@ -152,7 +152,12 @@ def main():
                 batch = jobs[i : i + cfg['batch']]
                 lines = [j['text'] for j in batch]
                 print(f'{voice}: {len(batch)} lines', flush=True)
-                pcm = speak(cfg['model'], voice, lines)
+                try:
+                    pcm = speak(cfg['model'], voice, lines)
+                except RuntimeError as e:
+                    print(f'  {str(e)[:120]}; will retry next run', flush=True)
+                    failed += len(batch)
+                    continue
                 cut = pieces(pcm, len(batch))
                 if not cut:
                     print('  could not find the pauses; will retry next run', flush=True)
