@@ -21,6 +21,7 @@ import { KidsPlay } from '@/features/kids/KidsPlay';
 import { KidsBook, KidsBooks } from '@/features/kids/KidsBooks';
 import { StickerAlbum } from '@/features/kids/StickerAlbum';
 import { useStudent } from './hooks';
+import { parentGate } from './parentGate';
 import { SpeechPrefsProvider } from './speechPrefs';
 import { GlossProvider } from '@/ui/Gloss';
 import type { ReactNode } from 'react';
@@ -54,12 +55,19 @@ export function App() {
           <Route path="kids/album" element={<StickerAlbum />} />
           <Route path="shadow" element={<WithStudentSpeech><ShadowScreen /></WithStudentSpeech>} />
         </Route>
-        <Route path="/parent" element={<ParentDashboard />} />
-        <Route path="/parent/voices" element={<VoiceLab />} />
+        <Route path="/parent" element={<ParentOnly />}>
+          <Route index element={<ParentDashboard />} />
+          <Route path="voices" element={<VoiceLab />} />
+        </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </HashRouter>
   );
+}
+
+/** The parent screens, only after the long press (not by URL or the back button). */
+function ParentOnly() {
+  return parentGate.isUnlocked() ? <Outlet /> : <Navigate to="/" replace />;
 }
 
 /** Renders the student's screens only for a student that exists. */
