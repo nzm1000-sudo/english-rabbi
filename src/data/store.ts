@@ -24,6 +24,15 @@ export interface LearnerState {
 const DERIVED_TABLES = ['skillStates', 'unitMemories', 'mistakePatterns', 'dailyStats'] as const;
 
 /**
+ * A session never ended (the app was killed or crashed) counts at most this
+ * long past its last activity (its start or its latest event); otherwise it
+ * would count every minute until midnight toward the daily limit.
+ */
+export const OPEN_SESSION_CAP_MS = 20 * 60 * 1000;
+/** How far before midnight a session may start and still reach into today. */
+const SESSION_LOOKBACK_MS = 24 * 60 * 60 * 1000;
+
+/**
  * The only module that writes learner data. All writes for one answer happen
  * in a single IndexedDB transaction: the raw event and every derived record
  * are saved together or not at all.
@@ -201,12 +210,32 @@ export class LearningStore {
     return evs.some((e) => e.payload.source === source);
   }
 
-  /** Minutes spent today in sessions whose mode starts with a prefix (e.g. "kids"). */
+  /**
+   * Minutes spent today in sessions whose mode starts with a prefix (e.g.
+   * "kids"). Only the part after midnight counts, also of a session that
+   * started before it; an open session counts up to OPEN_SESSION_CAP_MS past
+   * its last activity.
+   */
   async minutesToday(studentId: string, modePrefix: string, now = this.clock()): Promise<number> {
     const d = new Date(now);
     const start = new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
-    const rows = await this.db.sessions.where('[studentId+startedAt]').between([studentId, start], [studentId, now + 1]).toArray();
-    const ms = rows.filter((r) => r.mode.startsWith(modePrefix)).reduce((s, r) => s + Math.max(0, (r.endedAt ?? now) - r.startedAt), 0);
+    const rows = (
+      await this.db.sessions.where('[studentId+startedAt]').between([studentId, start - SESSION_LOOKBACK_MS], [studentId, now + 1]).toArray()
+    ).filter((r) => r.mode.startsWith(modePrefix));
+    const open = rows.filter((r) => r.endedAt === undefined);
+    const lastActive = new Map(open.map((r) => [r.id, r.startedAt]));
+    if (open.length) {
+      const from = Math.min(...open.map((r) => r.startedAt));
+      const evs = await this.db.events.where('[studentId+at]').between([studentId, from], [studentId, now + 1]).toArray();
+      for (const e of evs) {
+        const at = e.sessionId ? lastActive.get(e.sessionId) : undefined;
+        if (at !== undefined && e.at > at) lastActive.set(e.sessionId!, e.at);
+      }
+    }
+    const ms = rows.reduce((sum, r) => {
+      const end = Math.min(now, r.endedAt ?? lastActive.get(r.id)! + OPEN_SESSION_CAP_MS);
+      return sum + Math.max(0, end - Math.max(r.startedAt, start));
+    }, 0);
     return Math.round(ms / 60000);
   }
 
