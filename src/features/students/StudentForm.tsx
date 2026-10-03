@@ -4,6 +4,7 @@ import { useServices } from '@/app/services';
 import { useStudent } from '@/app/hooks';
 import { TopBar } from '@/ui/TopBar';
 import { ThemePicker } from '@/ui/ThemePicker';
+import { stageOf, type AgeStage } from '@/domain/student/student';
 import {
   INTERESTS,
   INTEREST_LABELS,
@@ -40,6 +41,12 @@ function StudentFormInner({ student }: { student: Student | null }) {
   const [accent, setAccent] = useState<Accent>(student?.preferences.accent ?? 'en-US');
   const [rate, setRate] = useState<SpeechRate>(student?.preferences.speechRate ?? 'normal');
   const [goal, setGoal] = useState(student?.preferences.dailyGoalMinutes ?? 10);
+  const [age, setAge] = useState(student?.birthYear ? String(new Date().getFullYear() - student.birthYear) : '');
+  const [stage, setStage] = useState<AgeStage | 'auto'>(student?.stage ?? 'auto');
+  const [kidsLimit, setKidsLimit] = useState<number>(student?.kidsDailyLimit ?? 0);
+  const ageNum = Number(age);
+  const birthYear = age && ageNum >= 2 && ageNum < 120 ? new Date().getFullYear() - Math.round(ageNum) : undefined;
+  const effective = stage === 'auto' ? stageOf({ ...(birthYear ? { birthYear } : {}) }) : stage;
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
 
@@ -51,11 +58,17 @@ function StudentFormInner({ student }: { student: Student | null }) {
     if (err) return setError(err);
     setSaving(true);
     const preferences = { ...(student?.preferences ?? {}), accent, speechRate: rate, dailyGoalMinutes: goal };
+    const extra = {
+      ...(birthYear ? { birthYear } : {}),
+      stage: stage === 'auto' ? undefined : stage,
+      kidsDailyLimit: kidsLimit || undefined,
+    };
     if (student) {
-      await store.updateStudent(student.id, { name: name.trim(), goal: { ...student.goal, track }, interests, preferences });
+      await store.updateStudent(student.id, { name: name.trim(), goal: { ...student.goal, track }, interests, preferences, ...extra });
       nav(`/s/${student.id}`);
     } else {
-      const s = await store.createStudent({ name, goal: { track }, interests, preferences });
+      const s = await store.createStudent({ name, goal: { track }, interests, preferences, ...(birthYear ? { birthYear } : {}) });
+      if (extra.stage || extra.kidsDailyLimit) await store.updateStudent(s.id, extra);
       nav(`/s/${s.id}`);
     }
   };
@@ -87,6 +100,49 @@ function StudentFormInner({ student }: { student: Student | null }) {
           />
           {error && <span className="small" style={{ color: 'var(--bad)' }}>{error}</span>}
         </div>
+
+        <div className="field">
+          <label htmlFor="age">גיל</label>
+          <input id="age" className="input" inputMode="numeric" value={age} onChange={(e) => setAge(e.target.value.replace(/\D/g, '').slice(0, 3))} placeholder="למשל 5" style={{ maxWidth: 120 }} />
+        </div>
+
+        <div className="field">
+          <span className="label">איזו אפליקציה לראות</span>
+          <div className="segmented" role="group" aria-label="שלב גיל" style={{ gridAutoFlow: 'row', gridTemplateColumns: '1fr 1fr' }}>
+            {(
+              [
+                ['auto', 'לפי הגיל'],
+                ['little', 'קטנים (3 עד 6)'],
+                ['young', 'מתחילים לקרוא (6 עד 12)'],
+                ['regular', 'רגילה'],
+              ] as const
+            ).map(([id, label]) => (
+              <button type="button" key={id} aria-pressed={stage === id} onClick={() => setStage(id)}>
+                {label}
+              </button>
+            ))}
+          </div>
+          <span className="xs muted">
+            {effective === 'little'
+              ? 'קטנים: בלי קריאה. שומעים מילה ולוחצים על התמונה.'
+              : effective === 'young'
+                ? 'מתחילים לקרוא: אותיות, צלילים, מילים קצרות וספרונים.'
+                : 'האפליקציה המלאה: אוצר מילים, דקדוק, סיפורים ובגרות.'}
+          </span>
+        </div>
+
+        {effective === 'little' && (
+          <div className="field">
+            <span className="label">זמן משחק ביום</span>
+            <div className="segmented" role="group" aria-label="זמן משחק ביום">
+              {[0, 10, 15, 20, 30].map((m) => (
+                <button type="button" key={m} aria-pressed={kidsLimit === m} onClick={() => setKidsLimit(m)}>
+                  {m ? `${m} דק׳` : 'ללא הגבלה'}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="field">
           <span className="label">מסלול</span>

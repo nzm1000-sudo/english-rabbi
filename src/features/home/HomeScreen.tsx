@@ -37,6 +37,8 @@ import { localDay } from '@/domain/learning/events';
 import { levelCenter } from '@/domain/skills/cefr';
 import type { ReactNode } from 'react';
 import { resume } from '@/app/resume';
+import { stageOf } from '@/domain/student/student';
+import { KidsHome } from '@/features/kids/KidsHome';
 
 const PRACTICE: { domain: Domain; title: string; en: string }[] = [
   { domain: 'vocabulary', title: 'אוצר מילים', en: 'Vocabulary' },
@@ -53,6 +55,7 @@ export function HomeScreen() {
   const games = useGameHistory(student?.id);
 
   if (student === null) return <main className="screen empty">התלמיד לא נמצא</main>;
+  if (student && stageOf(student) !== 'regular') return <KidsHome student={student} stage={stageOf(student) === 'little' ? 'little' : 'young'} />;
   if (!student || !profile) return <main className="screen" />;
 
   const p = profile;

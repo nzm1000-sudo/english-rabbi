@@ -1,0 +1,1019 @@
+[
+  {
+    "id": "kb.little.farm",
+    "title": {
+      "he": "בחווה",
+      "en": "On the Farm"
+    },
+    "stage": "little",
+    "cover": "🐄🐑🐔",
+    "pages": [
+      {
+        "en": "I see a cow.",
+        "he": "אני רואה פרה.",
+        "scene": "🐄"
+      },
+      {
+        "en": "I see a sheep.",
+        "he": "אני רואה כבשה.",
+        "scene": "🐑"
+      },
+      {
+        "en": "I see a hen.",
+        "he": "אני רואה תרנגולת.",
+        "scene": "🐔"
+      },
+      {
+        "en": "I see a horse.",
+        "he": "אני רואה סוס.",
+        "scene": "🐴"
+      },
+      {
+        "en": "I see a goat.",
+        "he": "אני רואה עז.",
+        "scene": "🐐"
+      },
+      {
+        "en": "I see the farm!",
+        "he": "אני רואה את החווה!",
+        "scene": "🐄🐑🐔🐐"
+      }
+    ]
+  },
+  {
+    "id": "kb.little.fruit-colors",
+    "title": {
+      "he": "הצבעים של הפירות",
+      "en": "Colors of Fruit"
+    },
+    "stage": "little",
+    "cover": "🍎🍌🍇",
+    "pages": [
+      {
+        "en": "The apple is red.",
+        "he": "התפוח אדום.",
+        "scene": "🍎"
+      },
+      {
+        "en": "The banana is yellow.",
+        "he": "הבננה צהובה.",
+        "scene": "🍌"
+      },
+      {
+        "en": "The grapes are purple.",
+        "he": "הענבים סגולים.",
+        "scene": "🍇"
+      },
+      {
+        "en": "The orange is orange.",
+        "he": "התפוז כתום.",
+        "scene": "🍊"
+      },
+      {
+        "en": "The pear is green.",
+        "he": "האגס ירוק.",
+        "scene": "🍐"
+      },
+      {
+        "en": "We like fruit!",
+        "he": "אנחנו אוהבים פירות!",
+        "scene": "🍎🍌🍇🍊"
+      }
+    ]
+  },
+  {
+    "id": "kb.little.shabbat",
+    "title": {
+      "he": "מתכוננים לשבת",
+      "en": "Ready for Shabbat"
+    },
+    "stage": "little",
+    "cover": "🕯️🕯️🍞",
+    "pages": [
+      {
+        "en": "We clean the house.",
+        "he": "אנחנו מנקים את הבית.",
+        "scene": "🧹🏠"
+      },
+      {
+        "en": "We bake the challah.",
+        "he": "אנחנו אופים חלה.",
+        "scene": "🍞"
+      },
+      {
+        "en": "Time for a bath.",
+        "he": "זמן לאמבטיה.",
+        "scene": "🛁"
+      },
+      {
+        "en": "We wear nice clothes.",
+        "he": "אנחנו לובשים בגדים יפים.",
+        "scene": "👗👔"
+      },
+      {
+        "en": "Ima lights the candles.",
+        "he": "אמא מדליקה נרות.",
+        "scene": "👩🕯️🕯️"
+      },
+      {
+        "en": "We say Shabbat Shalom!",
+        "he": "אנחנו אומרים שבת שלום!",
+        "scene": "🕯️🕯️🍞😊"
+      }
+    ]
+  },
+  {
+    "id": "kb.little.chanukah-lights",
+    "title": {
+      "he": "נרות חנוכה",
+      "en": "The Chanukah Lights"
+    },
+    "stage": "little",
+    "cover": "🕎",
+    "pages": [
+      {
+        "scene": "1️⃣🕯️",
+        "en": "On night one, we light one candle.",
+        "he": "בלילה הראשון מדליקים נר אחד."
+      },
+      {
+        "scene": "2️⃣🕯️🕯️",
+        "en": "On night two, we light two candles.",
+        "he": "בלילה השני מדליקים שני נרות."
+      },
+      {
+        "scene": "➕🕯️",
+        "en": "Every night, we add one more candle.",
+        "he": "בכל לילה מוסיפים עוד נר אחד."
+      },
+      {
+        "scene": "8️⃣🕎",
+        "en": "On night eight, we light eight candles!",
+        "he": "בלילה השמיני מדליקים שמונה נרות!"
+      },
+      {
+        "scene": "🕯️✨",
+        "en": "The shamash helps light them.",
+        "he": "השַּׁמָּשׁ עוזר להדליק אותם."
+      },
+      {
+        "scene": "🕎✨",
+        "en": "The menorah is bright!",
+        "he": "החנוכייה מאירה!"
+      },
+      {
+        "scene": "🕎🍩😊",
+        "en": "Happy Chanukah!",
+        "he": "חנוכה שמח!"
+      }
+    ]
+  },
+  {
+    "id": "kb.little.bedtime",
+    "title": {
+      "he": "לילה טוב",
+      "en": "Good Night"
+    },
+    "stage": "little",
+    "cover": "🌙🛏️",
+    "pages": [
+      {
+        "en": "I brush my teeth.",
+        "he": "אני מצחצח שיניים.",
+        "scene": "🪥🦷"
+      },
+      {
+        "en": "I read a book.",
+        "he": "אני קורא ספר.",
+        "scene": "📖"
+      },
+      {
+        "en": "I hug Ima.",
+        "he": "אני מחבק את אמא.",
+        "scene": "🤗👩"
+      },
+      {
+        "en": "I say the Shema.",
+        "he": "אני אומר קריאת שמע.",
+        "scene": "🛏️🙏"
+      },
+      {
+        "en": "I close my eyes.",
+        "he": "אני עוצם את העיניים.",
+        "scene": "😴"
+      },
+      {
+        "en": "Good night, moon!",
+        "he": "לילה טוב, ירח!",
+        "scene": "🌙⭐"
+      }
+    ]
+  },
+  {
+    "id": "kb.little.rainy-day",
+    "title": {
+      "he": "יום גשום",
+      "en": "A Rainy Day"
+    },
+    "stage": "little",
+    "cover": "🌧️☔",
+    "pages": [
+      {
+        "en": "It is raining.",
+        "he": "יורד גשם.",
+        "scene": "🌧️"
+      },
+      {
+        "en": "I put on my coat.",
+        "he": "אני לובש מעיל.",
+        "scene": "🧥"
+      },
+      {
+        "en": "I take my umbrella.",
+        "he": "אני לוקח מטרייה.",
+        "scene": "☔"
+      },
+      {
+        "en": "I see a snail.",
+        "he": "אני רואה חילזון.",
+        "scene": "🐌"
+      },
+      {
+        "en": "Now the sun is out.",
+        "he": "עכשיו השמש יצאה.",
+        "scene": "☀️"
+      },
+      {
+        "en": "I see a rainbow!",
+        "he": "אני רואה קשת!",
+        "scene": "🌈"
+      }
+    ]
+  },
+  {
+    "id": "kb.little.helping-ima",
+    "title": {
+      "he": "עוזרים לאמא",
+      "en": "Helping Ima"
+    },
+    "stage": "little",
+    "cover": "👩🧒🧺",
+    "pages": [
+      {
+        "en": "I help Ima.",
+        "he": "אני עוזר לאמא.",
+        "scene": "👩🧒"
+      },
+      {
+        "en": "I set the table.",
+        "he": "אני עורך את השולחן.",
+        "scene": "🍽️"
+      },
+      {
+        "en": "I put away toys.",
+        "he": "אני מסדר את הצעצועים.",
+        "scene": "🧸📦"
+      },
+      {
+        "en": "I fold the socks.",
+        "he": "אני מקפל גרביים.",
+        "scene": "🧦"
+      },
+      {
+        "en": "I feed baby Eli.",
+        "he": "אני מאכיל את אלי התינוק.",
+        "scene": "👶🥣"
+      },
+      {
+        "en": "Ima says, \"Thank you!\"",
+        "he": "אמא אומרת: \"תודה!\"",
+        "scene": "👩😊"
+      }
+    ]
+  },
+  {
+    "id": "kb.little.my-body",
+    "title": {
+      "he": "הגוף שלי",
+      "en": "My Body"
+    },
+    "stage": "little",
+    "cover": "👀👃👂",
+    "pages": [
+      {
+        "en": "I see with my eyes.",
+        "he": "אני רואה בעיניים.",
+        "scene": "👀"
+      },
+      {
+        "en": "I hear with my ears.",
+        "he": "אני שומע באוזניים.",
+        "scene": "👂"
+      },
+      {
+        "en": "I smell with my nose.",
+        "he": "אני מריח באף.",
+        "scene": "👃🌸"
+      },
+      {
+        "en": "I eat with my mouth.",
+        "he": "אני אוכל בפה.",
+        "scene": "👄🍎"
+      },
+      {
+        "en": "I walk with my feet.",
+        "he": "אני הולך ברגליים.",
+        "scene": "🦶"
+      },
+      {
+        "en": "I clap with my hands!",
+        "he": "אני מוחא כפיים!",
+        "scene": "👏"
+      }
+    ]
+  },
+  {
+    "id": "kb.little.park",
+    "title": {
+      "he": "בגן השעשועים",
+      "en": "At the Park"
+    },
+    "stage": "little",
+    "cover": "🌳🛝⚽",
+    "pages": [
+      {
+        "en": "We go to the park.",
+        "he": "אנחנו הולכים לגן השעשועים.",
+        "scene": "🌳"
+      },
+      {
+        "en": "I go down the slide.",
+        "he": "אני מחליק במגלשה.",
+        "scene": "🛝"
+      },
+      {
+        "en": "I run on the grass.",
+        "he": "אני רץ על הדשא.",
+        "scene": "🏃🌱"
+      },
+      {
+        "en": "I kick the ball.",
+        "he": "אני בועט בכדור.",
+        "scene": "⚽"
+      },
+      {
+        "en": "I see a bird.",
+        "he": "אני רואה ציפור.",
+        "scene": "🐦"
+      },
+      {
+        "en": "I play with Tamar.",
+        "he": "אני משחק עם תמר.",
+        "scene": "🧒👧"
+      }
+    ]
+  },
+  {
+    "id": "kb.little.thank-you",
+    "title": {
+      "he": "תודה",
+      "en": "Thank You"
+    },
+    "stage": "little",
+    "cover": "😊💐",
+    "pages": [
+      {
+        "en": "Thank you for the apple.",
+        "he": "תודה על התפוח.",
+        "scene": "🍎"
+      },
+      {
+        "en": "Thank you for the hug.",
+        "he": "תודה על החיבוק.",
+        "scene": "🤗"
+      },
+      {
+        "en": "Thank you for the book.",
+        "he": "תודה על הספר.",
+        "scene": "📖"
+      },
+      {
+        "en": "Thank you for the teddy bear.",
+        "he": "תודה על הדובי.",
+        "scene": "🧸"
+      },
+      {
+        "en": "Thank you for the sun.",
+        "he": "תודה על השמש.",
+        "scene": "☀️"
+      },
+      {
+        "en": "I always say thank you.",
+        "he": "אני תמיד אומר תודה.",
+        "scene": "😊"
+      }
+    ]
+  },
+  {
+    "id": "kb.little.sukkah",
+    "title": {
+      "he": "הסוכה שלנו",
+      "en": "Our Sukkah"
+    },
+    "stage": "little",
+    "cover": "🌿🍎⭐",
+    "pages": [
+      {
+        "scene": "🪵🔨",
+        "en": "We build a sukkah.",
+        "he": "אנחנו בונים סוכה."
+      },
+      {
+        "scene": "🌿🌿",
+        "en": "We put green branches on top.",
+        "he": "אנחנו שמים ענפים ירוקים למעלה."
+      },
+      {
+        "scene": "🍎🍎",
+        "en": "We hang red apples.",
+        "he": "אנחנו תולים תפוחים אדומים."
+      },
+      {
+        "scene": "⭐⭐",
+        "en": "We hang yellow stars.",
+        "he": "אנחנו תולים כוכבים צהובים."
+      },
+      {
+        "scene": "🖼️",
+        "en": "We hang a picture.",
+        "he": "אנחנו תולים ציור."
+      },
+      {
+        "scene": "💡✨",
+        "en": "We hang the lights.",
+        "he": "אנחנו תולים אורות."
+      },
+      {
+        "scene": "🍽️🌿😊",
+        "en": "We eat in the sukkah.",
+        "he": "אנחנו אוכלים בסוכה."
+      },
+      {
+        "scene": "🌿🍎⭐✨",
+        "en": "Our sukkah is pretty!",
+        "he": "הסוכה שלנו יפה!"
+      }
+    ]
+  },
+  {
+    "id": "kb.little.counting-stars",
+    "title": {
+      "he": "סופרים כוכבים",
+      "en": "Counting Stars"
+    },
+    "stage": "little",
+    "cover": "🌙⭐⭐",
+    "pages": [
+      {
+        "en": "I see one star.",
+        "he": "אני רואה כוכב אחד.",
+        "scene": "⭐"
+      },
+      {
+        "en": "I see two stars.",
+        "he": "אני רואה שני כוכבים.",
+        "scene": "⭐⭐"
+      },
+      {
+        "en": "I see three stars.",
+        "he": "אני רואה שלושה כוכבים.",
+        "scene": "⭐⭐⭐"
+      },
+      {
+        "en": "I see four stars.",
+        "he": "אני רואה ארבעה כוכבים.",
+        "scene": "⭐⭐⭐⭐"
+      },
+      {
+        "en": "I see many stars!",
+        "he": "אני רואה הרבה כוכבים!",
+        "scene": "🌌"
+      },
+      {
+        "en": "Good night, stars.",
+        "he": "לילה טוב, כוכבים.",
+        "scene": "🌙😴"
+      }
+    ]
+  },
+  {
+    "id": "kb.young.big-bun",
+    "title": {
+      "he": "הלחמנייה הגדולה",
+      "en": "The Big Bun"
+    },
+    "stage": "young",
+    "cover": "🍞🧒👧",
+    "pages": [
+      {
+        "en": "Ari has a big bun.",
+        "he": "לארי יש לחמנייה גדולה.",
+        "scene": "🧒🍞"
+      },
+      {
+        "en": "Tamar has no bun.",
+        "he": "לתמר אין לחמנייה.",
+        "scene": "👧"
+      },
+      {
+        "en": "Now Tamar is sad.",
+        "he": "עכשיו תמר עצובה.",
+        "scene": "👧😢"
+      },
+      {
+        "en": "Ari rips the bun in two.",
+        "he": "ארי חוצה את הלחמנייה לשתיים.",
+        "scene": "🧒🍞🤲"
+      },
+      {
+        "en": "\"This bit is for you,\" said Ari.",
+        "he": "\"החתיכה הזאת בשבילך,\" אמר ארי.",
+        "scene": "🧒🍞👧"
+      },
+      {
+        "en": "Tamar is not sad now.",
+        "he": "תמר כבר לא עצובה.",
+        "scene": "👧😊"
+      },
+      {
+        "en": "Ari and Tamar sit and eat.",
+        "he": "ארי ותמר יושבים ואוכלים.",
+        "scene": "🧒👧🍞"
+      },
+      {
+        "en": "It is fun to share.",
+        "he": "כיף לחלוק.",
+        "scene": "🤝😊"
+      }
+    ]
+  },
+  {
+    "id": "kb.young.milk-rug",
+    "title": {
+      "he": "החלב על השטיח",
+      "en": "The Milk on the Rug"
+    },
+    "stage": "young",
+    "cover": "🥛💦",
+    "pages": [
+      {
+        "en": "Ari has a cup of milk.",
+        "he": "לארי יש כוס חלב.",
+        "scene": "🧒🥛"
+      },
+      {
+        "en": "Ari runs and runs.",
+        "he": "ארי רץ ורץ.",
+        "scene": "🧒🏃"
+      },
+      {
+        "en": "Oh no! The milk is on the rug.",
+        "he": "אוי לא! החלב נשפך על השטיח.",
+        "scene": "🥛💦"
+      },
+      {
+        "en": "Ima sees the wet rug.",
+        "he": "אמא רואה את השטיח הרטוב.",
+        "scene": "👩👀"
+      },
+      {
+        "en": "\"Who did this?\" said Ima.",
+        "he": "\"מי עשה את זה?\" שאלה אמא.",
+        "scene": "👩❓"
+      },
+      {
+        "en": "\"I did it. I am sorry,\" said Ari.",
+        "he": "\"אני עשיתי את זה. סליחה,\" אמר ארי.",
+        "scene": "🧒😔"
+      },
+      {
+        "en": "Ima and Ari mop it up.",
+        "he": "אמא וארי מנגבים את זה.",
+        "scene": "👩🧒🧽"
+      },
+      {
+        "en": "Ima hugs Ari for telling the truth.",
+        "he": "אמא מחבקת את ארי כי אמר את האמת.",
+        "scene": "👩🤗🧒"
+      }
+    ]
+  },
+  {
+    "id": "kb.young.big-box",
+    "title": {
+      "he": "הקופסה הגדולה",
+      "en": "The Big Box"
+    },
+    "stage": "young",
+    "cover": "📦👴",
+    "pages": [
+      {
+        "en": "Grandpa Yosef has a big box.",
+        "he": "לסבא יוסף יש קופסה גדולה.",
+        "scene": "👴📦"
+      },
+      {
+        "en": "The box is in the van.",
+        "he": "הקופסה בתוך הוואן.",
+        "scene": "📦🚐"
+      },
+      {
+        "en": "Grandpa tugs and tugs.",
+        "he": "סבא מושך ומושך.",
+        "scene": "👴📦"
+      },
+      {
+        "en": "Ari and Tamar run to help.",
+        "he": "ארי ותמר רצים לעזור.",
+        "scene": "🧒👧🏃"
+      },
+      {
+        "en": "Ari, Tamar, and Grandpa lift it.",
+        "he": "ארי, תמר וסבא מרימים אותה.",
+        "scene": "🧒👧👴📦"
+      },
+      {
+        "en": "Now the box is in the house.",
+        "he": "עכשיו הקופסה בבית.",
+        "scene": "📦🏠"
+      },
+      {
+        "en": "In the box is a bed for Eli!",
+        "he": "בקופסה יש מיטה לאלי!",
+        "scene": "🛏️👶"
+      },
+      {
+        "en": "Grandpa said, \"Thank you! You are a big help!\"",
+        "he": "סבא אמר: \"תודה! עזרתם לי מאוד!\"",
+        "scene": "👴😊"
+      }
+    ]
+  },
+  {
+    "id": "kb.young.blocks",
+    "title": {
+      "he": "הקוביות של תמר",
+      "en": "Tamar and the Blocks"
+    },
+    "stage": "young",
+    "cover": "🧱👧",
+    "pages": [
+      {
+        "en": "Tamar has a lot of blocks.",
+        "he": "לתמר יש הרבה קוביות.",
+        "scene": "👧🧱"
+      },
+      {
+        "en": "She sets them up, up, up. It is a big stack!",
+        "he": "היא בונה אותן גבוה, גבוה, גבוה. זה מגדל גדול!",
+        "scene": "🧱🧱🧱"
+      },
+      {
+        "en": "Ari runs in fast and bumps it.",
+        "he": "ארי נכנס בריצה ונתקל במגדל.",
+        "scene": "🧒🏃💥"
+      },
+      {
+        "en": "The blocks fall down. Bam!",
+        "he": "הקוביות נופלות. בום!",
+        "scene": "🧱💥"
+      },
+      {
+        "en": "Tamar is sad and mad.",
+        "he": "תמר עצובה וכועסת.",
+        "scene": "👧😢"
+      },
+      {
+        "en": "Ari said, \"I am sorry, Tamar.\"",
+        "he": "ארי אמר: \"סליחה, תמר.\"",
+        "scene": "🧒😔👧"
+      },
+      {
+        "en": "Ari helps Tamar set them up.",
+        "he": "ארי עוזר לתמר לבנות אותן שוב.",
+        "scene": "🧒👧🧱"
+      },
+      {
+        "en": "Now the stack is big again, and Tamar is glad.",
+        "he": "עכשיו המגדל שוב גדול, ותמר שמחה.",
+        "scene": "🧱👧😊"
+      }
+    ]
+  },
+  {
+    "id": "kb.young.wet-pup",
+    "title": {
+      "he": "הגור הרטוב",
+      "en": "The Wet Pup"
+    },
+    "stage": "young",
+    "cover": "🐶🌧️",
+    "pages": [
+      {
+        "en": "Ari and Abba go for a walk.",
+        "he": "ארי ואבא יוצאים לטיול.",
+        "scene": "🧒👨🚶"
+      },
+      {
+        "en": "Ari sees a pup in a box.",
+        "he": "ארי רואה גור בתוך קופסה.",
+        "scene": "🐶📦"
+      },
+      {
+        "en": "The pup is wet and sad.",
+        "he": "הגור רטוב ועצוב.",
+        "scene": "🐶💧😢"
+      },
+      {
+        "en": "Ari rubs the pup with a rag.",
+        "he": "ארי מנגב את הגור עם מטלית.",
+        "scene": "🧒🐶"
+      },
+      {
+        "en": "Abba gets the pup a bit of food.",
+        "he": "אבא מביא לגור קצת אוכל.",
+        "scene": "👨🥣🐶"
+      },
+      {
+        "en": "The pup is not sad. It is glad!",
+        "he": "הגור כבר לא עצוב. הוא שמח!",
+        "scene": "🐶😊"
+      },
+      {
+        "en": "A boy runs up. \"My pup! Thank you!\"",
+        "he": "ילד רץ אליהם: \"הגור שלי! תודה!\"",
+        "scene": "👦🐶"
+      },
+      {
+        "en": "Ari is glad he can help.",
+        "he": "ארי שמח שהוא יכול לעזור.",
+        "scene": "🧒😊"
+      }
+    ]
+  },
+  {
+    "id": "kb.young.bus",
+    "title": {
+      "he": "ארי באוטובוס",
+      "en": "Ari on the Bus"
+    },
+    "stage": "young",
+    "cover": "🚌🧒",
+    "pages": [
+      {
+        "en": "Ari runs to the bus.",
+        "he": "ארי רץ לאוטובוס.",
+        "scene": "🧒🏃🚌"
+      },
+      {
+        "en": "Ari gets on and sits.",
+        "he": "ארי עולה ויושב.",
+        "scene": "🚌🧒"
+      },
+      {
+        "en": "Then an old man gets on the bus.",
+        "he": "אז איש מבוגר עולה לאוטובוס.",
+        "scene": "👴🚌"
+      },
+      {
+        "en": "He has a big bag.",
+        "he": "יש לו תיק גדול.",
+        "scene": "👴🛍️"
+      },
+      {
+        "en": "There is no seat for him.",
+        "he": "אין לו מקום לשבת.",
+        "scene": "👴🚌"
+      },
+      {
+        "en": "Ari gets up. \"Sit here, please.\"",
+        "he": "ארי קם: \"שב כאן, בבקשה.\"",
+        "scene": "🧒👴"
+      },
+      {
+        "en": "The man sits and says, \"Thank you!\"",
+        "he": "האיש מתיישב ואומר: \"תודה!\"",
+        "scene": "👴😊"
+      },
+      {
+        "en": "Ari is glad. It is good to help.",
+        "he": "ארי שמח. טוב לעזור.",
+        "scene": "🧒😊"
+      }
+    ]
+  },
+  {
+    "id": "kb.young.red-bag",
+    "title": {
+      "he": "התיק האדום",
+      "en": "The Red Bag"
+    },
+    "stage": "young",
+    "cover": "👜👧",
+    "pages": [
+      {
+        "en": "Tamar and Ima go to the shop.",
+        "he": "תמר ואמא הולכות לחנות.",
+        "scene": "👧👩🏪"
+      },
+      {
+        "en": "Tamar sees a red bag on the step.",
+        "he": "תמר רואה תיק אדום על המדרגה.",
+        "scene": "👧👜"
+      },
+      {
+        "en": "In the bag is a lot of money.",
+        "he": "בתוך התיק יש הרבה כסף.",
+        "scene": "👜💵"
+      },
+      {
+        "en": "Is it for me? No, it is not.",
+        "he": "זה שלי? לא, זה לא שלי.",
+        "scene": "👧🤔"
+      },
+      {
+        "en": "Tamar and Ima take the bag to the shop.",
+        "he": "תמר ואמא לוקחות את התיק לחנות.",
+        "scene": "👧👩👜🏪"
+      },
+      {
+        "en": "A lady runs in. \"My bag!\"",
+        "he": "אישה נכנסת בריצה: \"התיק שלי!\"",
+        "scene": "👩👜"
+      },
+      {
+        "en": "The lady is so glad. \"Thank you!\"",
+        "he": "האישה שמחה מאוד: \"תודה!\"",
+        "scene": "👩😊"
+      },
+      {
+        "en": "Ima said, \"Tamar, you did a good thing.\"",
+        "he": "אמא אמרה: \"תמר, עשית דבר טוב.\"",
+        "scene": "👩👧❤️"
+      }
+    ]
+  },
+  {
+    "id": "kb.young.new-pal",
+    "title": {
+      "he": "חבר חדש",
+      "en": "A New Pal"
+    },
+    "stage": "young",
+    "cover": "⚽🧒👦",
+    "pages": [
+      {
+        "en": "Ari has a big ball.",
+        "he": "לארי יש כדור גדול.",
+        "scene": "🧒⚽"
+      },
+      {
+        "en": "Ari kicks it to the net.",
+        "he": "ארי בועט בו לשער.",
+        "scene": "⚽🥅"
+      },
+      {
+        "en": "Ari sees a new boy. He is sad.",
+        "he": "ארי רואה ילד חדש. הוא עצוב.",
+        "scene": "👦😢"
+      },
+      {
+        "en": "The boy has no ball.",
+        "he": "לילד אין כדור.",
+        "scene": "👦"
+      },
+      {
+        "en": "Ari said, \"Come and play with me!\"",
+        "he": "ארי אמר: \"בוא לשחק איתי!\"",
+        "scene": "🧒👦"
+      },
+      {
+        "en": "Ari kicks the ball to the boy.",
+        "he": "ארי בועט בכדור אל הילד.",
+        "scene": "🧒⚽👦"
+      },
+      {
+        "en": "The boy kicks it back. Fun!",
+        "he": "הילד בועט בו בחזרה. כיף!",
+        "scene": "👦⚽🧒"
+      },
+      {
+        "en": "Now Ari has a new pal.",
+        "he": "עכשיו יש לארי חבר חדש.",
+        "scene": "🧒👦😊"
+      }
+    ]
+  },
+  {
+    "id": "kb.young.cat-mat",
+    "title": {
+      "he": "החתול והמחצלת",
+      "en": "The Cat and the Mat"
+    },
+    "stage": "young",
+    "cover": "🐱🐶",
+    "pages": [
+      {
+        "en": "The cat sat on a mat.",
+        "he": "החתול ישב על מחצלת.",
+        "scene": "🐱"
+      },
+      {
+        "en": "The dog ran in. \"Can I sit?\"",
+        "he": "הכלב רץ פנימה: \"אפשר לשבת?\"",
+        "scene": "🐶"
+      },
+      {
+        "en": "The cat said, \"No! It is my mat.\"",
+        "he": "החתול אמר: \"לא! זאת המחצלת שלי.\"",
+        "scene": "🐱😾"
+      },
+      {
+        "en": "The dog sat on a rock.",
+        "he": "הכלב ישב על אבן.",
+        "scene": "🐶🪨"
+      },
+      {
+        "en": "The cat felt bad.",
+        "he": "החתול הצטער.",
+        "scene": "🐱😟"
+      },
+      {
+        "en": "The cat said, \"I am sorry. Come sit.\"",
+        "he": "החתול אמר: \"סליחה. בוא שב.\"",
+        "scene": "🐱🐶"
+      },
+      {
+        "en": "The cat and the dog sat on the mat.",
+        "he": "החתול והכלב ישבו על המחצלת.",
+        "scene": "🐱🐶"
+      },
+      {
+        "en": "It is fun to sit with a pal.",
+        "he": "כיף לשבת עם חבר.",
+        "scene": "🐱🐶😊"
+      }
+    ]
+  },
+  {
+    "id": "kb.young.hot-soup",
+    "title": {
+      "he": "מרק חם",
+      "en": "Hot Soup"
+    },
+    "stage": "young",
+    "cover": "🍲👵👧",
+    "pages": [
+      {
+        "en": "Grandma Chana has a big pot.",
+        "he": "לסבתא חנה יש סיר גדול.",
+        "scene": "👵🍲"
+      },
+      {
+        "en": "Tamar and Grandma make hot soup.",
+        "he": "תמר וסבתא מכינות מרק חם.",
+        "scene": "👧👵🍲"
+      },
+      {
+        "en": "The man next door is sick in bed.",
+        "he": "השכן חולה ושוכב במיטה.",
+        "scene": "🤒🛏️"
+      },
+      {
+        "en": "Tamar fills a cup with soup.",
+        "he": "תמר ממלאת כוס מרק.",
+        "scene": "👧🍲"
+      },
+      {
+        "en": "Tamar and Grandma go next door.",
+        "he": "תמר וסבתא הולכות לשכן.",
+        "scene": "👧👵🚪"
+      },
+      {
+        "en": "Knock, knock! \"Here is soup for you.\"",
+        "he": "טוק, טוק! \"הבאנו לך מרק.\"",
+        "scene": "🚪🍲"
+      },
+      {
+        "en": "The man sips the hot soup.",
+        "he": "השכן לוגם מהמרק החם.",
+        "scene": "🍲😊"
+      },
+      {
+        "en": "He is glad. \"Thank you, Tamar!\"",
+        "he": "הוא שמח: \"תודה, תמר!\"",
+        "scene": "😊👧"
+      }
+    ]
+  }
+]

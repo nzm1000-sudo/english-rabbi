@@ -1,0 +1,3090 @@
+[
+  {
+    "id": "kw.colors.red",
+    "en": "red",
+    "he": "אדום",
+    "picture": {
+      "color": "#E53935"
+    },
+    "topic": "colors",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I see a red apple.",
+      "he": "אני רואה תפוח אדום."
+    }
+  },
+  {
+    "id": "kw.colors.blue",
+    "en": "blue",
+    "he": "כחול",
+    "picture": {
+      "color": "#1E88E5"
+    },
+    "topic": "colors",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The sky is blue.",
+      "he": "השמיים כחולים."
+    }
+  },
+  {
+    "id": "kw.colors.yellow",
+    "en": "yellow",
+    "he": "צהוב",
+    "picture": {
+      "color": "#FDD835"
+    },
+    "topic": "colors",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The sun is yellow.",
+      "he": "השמש צהובה."
+    }
+  },
+  {
+    "id": "kw.colors.green",
+    "en": "green",
+    "he": "ירוק",
+    "picture": {
+      "color": "#43A047"
+    },
+    "topic": "colors",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The grass is green.",
+      "he": "הדשא ירוק."
+    }
+  },
+  {
+    "id": "kw.colors.orange",
+    "en": "orange",
+    "he": "כתום",
+    "picture": {
+      "color": "#FB8C00"
+    },
+    "topic": "colors",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I have an orange ball.",
+      "he": "יש לי כדור כתום."
+    }
+  },
+  {
+    "id": "kw.colors.purple",
+    "en": "purple",
+    "he": "סגול",
+    "picture": {
+      "color": "#8E24AA"
+    },
+    "topic": "colors",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I like purple grapes.",
+      "he": "אני אוהב ענבים סגולים."
+    }
+  },
+  {
+    "id": "kw.colors.pink",
+    "en": "pink",
+    "he": "ורוד",
+    "picture": {
+      "color": "#F48FB1"
+    },
+    "topic": "colors",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The flower is pink.",
+      "he": "הפרח ורוד."
+    }
+  },
+  {
+    "id": "kw.colors.brown",
+    "en": "brown",
+    "he": "חום",
+    "picture": {
+      "color": "#8D6E63"
+    },
+    "topic": "colors",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The bear is brown.",
+      "he": "הדוב חום."
+    }
+  },
+  {
+    "id": "kw.colors.black",
+    "en": "black",
+    "he": "שחור",
+    "picture": {
+      "color": "#212121"
+    },
+    "topic": "colors",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The cat is black.",
+      "he": "החתול שחור."
+    }
+  },
+  {
+    "id": "kw.colors.white",
+    "en": "white",
+    "he": "לבן",
+    "picture": {
+      "color": "#FAFAFA"
+    },
+    "topic": "colors",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The snow is white.",
+      "he": "השלג לבן."
+    }
+  },
+  {
+    "id": "kw.numbers.one",
+    "en": "one",
+    "he": "אחת",
+    "picture": {
+      "count": 1
+    },
+    "topic": "numbers",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I have one head.",
+      "he": "יש לי ראש אחד."
+    }
+  },
+  {
+    "id": "kw.numbers.two",
+    "en": "two",
+    "he": "שתיים",
+    "picture": {
+      "count": 2
+    },
+    "topic": "numbers",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I have two hands.",
+      "he": "יש לי שתי ידיים."
+    }
+  },
+  {
+    "id": "kw.numbers.three",
+    "en": "three",
+    "he": "שלוש",
+    "picture": {
+      "count": 3
+    },
+    "topic": "numbers",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I see three birds.",
+      "he": "אני רואה שלוש ציפורים."
+    }
+  },
+  {
+    "id": "kw.numbers.four",
+    "en": "four",
+    "he": "ארבע",
+    "picture": {
+      "count": 4
+    },
+    "topic": "numbers",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The cat has four legs.",
+      "he": "לחתול יש ארבע רגליים."
+    }
+  },
+  {
+    "id": "kw.numbers.five",
+    "en": "five",
+    "he": "חמש",
+    "picture": {
+      "count": 5
+    },
+    "topic": "numbers",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I have five fingers.",
+      "he": "יש לי חמש אצבעות."
+    }
+  },
+  {
+    "id": "kw.numbers.six",
+    "en": "six",
+    "he": "שש",
+    "picture": {
+      "count": 6
+    },
+    "topic": "numbers",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I see six eggs.",
+      "he": "אני רואה שש ביצים."
+    }
+  },
+  {
+    "id": "kw.numbers.seven",
+    "en": "seven",
+    "he": "שבע",
+    "picture": {
+      "count": 7
+    },
+    "topic": "numbers",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I have seven books.",
+      "he": "יש לי שבעה ספרים."
+    }
+  },
+  {
+    "id": "kw.numbers.eight",
+    "en": "eight",
+    "he": "שמונה",
+    "picture": {
+      "count": 8
+    },
+    "topic": "numbers",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We light eight candles.",
+      "he": "אנחנו מדליקים שמונה נרות."
+    }
+  },
+  {
+    "id": "kw.numbers.nine",
+    "en": "nine",
+    "he": "תשע",
+    "picture": {
+      "count": 9
+    },
+    "topic": "numbers",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I count nine stars.",
+      "he": "אני סופר תשעה כוכבים."
+    }
+  },
+  {
+    "id": "kw.numbers.ten",
+    "en": "ten",
+    "he": "עשר",
+    "picture": {
+      "count": 10
+    },
+    "topic": "numbers",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I have ten toes.",
+      "he": "יש לי עשר אצבעות ברגליים."
+    }
+  },
+  {
+    "id": "kw.animals.dog",
+    "en": "dog",
+    "he": "כלב",
+    "picture": {
+      "emoji": "🐶"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The dog is big.",
+      "he": "הכלב גדול."
+    }
+  },
+  {
+    "id": "kw.animals.cat",
+    "en": "cat",
+    "he": "חתול",
+    "picture": {
+      "emoji": "🐱"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The cat is soft.",
+      "he": "החתול רך."
+    }
+  },
+  {
+    "id": "kw.animals.cow",
+    "en": "cow",
+    "he": "פרה",
+    "picture": {
+      "emoji": "🐄"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The cow gives milk.",
+      "he": "הפרה נותנת חלב."
+    }
+  },
+  {
+    "id": "kw.animals.horse",
+    "en": "horse",
+    "he": "סוס",
+    "picture": {
+      "emoji": "🐴"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The horse runs fast.",
+      "he": "הסוס רץ מהר."
+    }
+  },
+  {
+    "id": "kw.animals.sheep",
+    "en": "sheep",
+    "he": "כבשה",
+    "picture": {
+      "emoji": "🐑"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The sheep is white.",
+      "he": "הכבשה לבנה."
+    }
+  },
+  {
+    "id": "kw.animals.goat",
+    "en": "goat",
+    "he": "עז",
+    "picture": {
+      "emoji": "🐐"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I see a goat.",
+      "he": "אני רואה עז."
+    }
+  },
+  {
+    "id": "kw.animals.chicken",
+    "en": "chicken",
+    "he": "תרנגולת",
+    "picture": {
+      "emoji": "🐔"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The chicken has an egg.",
+      "he": "לתרנגולת יש ביצה."
+    }
+  },
+  {
+    "id": "kw.animals.duck",
+    "en": "duck",
+    "he": "ברווז",
+    "picture": {
+      "emoji": "🦆"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The duck can swim.",
+      "he": "הברווז יודע לשחות."
+    }
+  },
+  {
+    "id": "kw.animals.bird",
+    "en": "bird",
+    "he": "ציפור",
+    "picture": {
+      "emoji": "🐦"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The bird can fly.",
+      "he": "הציפור יודעת לעוף."
+    }
+  },
+  {
+    "id": "kw.animals.fish",
+    "en": "fish",
+    "he": "דג",
+    "picture": {
+      "emoji": "🐟"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The fish is in the water.",
+      "he": "הדג במים."
+    }
+  },
+  {
+    "id": "kw.animals.lion",
+    "en": "lion",
+    "he": "אריה",
+    "picture": {
+      "emoji": "🦁"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The lion is big.",
+      "he": "האריה גדול."
+    }
+  },
+  {
+    "id": "kw.animals.elephant",
+    "en": "elephant",
+    "he": "פיל",
+    "picture": {
+      "emoji": "🐘"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The elephant is gray.",
+      "he": "הפיל אפור."
+    }
+  },
+  {
+    "id": "kw.animals.monkey",
+    "en": "monkey",
+    "he": "קוף",
+    "picture": {
+      "emoji": "🐵"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The monkey eats a banana.",
+      "he": "הקוף אוכל בננה."
+    }
+  },
+  {
+    "id": "kw.animals.bear",
+    "en": "bear",
+    "he": "דוב",
+    "picture": {
+      "emoji": "🐻"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The bear is sleeping.",
+      "he": "הדוב ישן."
+    }
+  },
+  {
+    "id": "kw.animals.rabbit",
+    "en": "rabbit",
+    "he": "ארנב",
+    "picture": {
+      "emoji": "🐰"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The rabbit can jump.",
+      "he": "הארנב יודע לקפוץ."
+    }
+  },
+  {
+    "id": "kw.animals.frog",
+    "en": "frog",
+    "he": "צפרדע",
+    "picture": {
+      "emoji": "🐸"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The frog is green.",
+      "he": "הצפרדע ירוקה."
+    }
+  },
+  {
+    "id": "kw.animals.butterfly",
+    "en": "butterfly",
+    "he": "פרפר",
+    "picture": {
+      "emoji": "🦋"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I see a butterfly.",
+      "he": "אני רואה פרפר."
+    }
+  },
+  {
+    "id": "kw.animals.giraffe",
+    "en": "giraffe",
+    "he": "ג'ירפה",
+    "picture": {
+      "emoji": "🦒"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The giraffe is tall.",
+      "he": "הג'ירפה גבוהה."
+    }
+  },
+  {
+    "id": "kw.animals.turtle",
+    "en": "turtle",
+    "he": "צב",
+    "picture": {
+      "emoji": "🐢"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The turtle is slow.",
+      "he": "הצב איטי."
+    }
+  },
+  {
+    "id": "kw.animals.bee",
+    "en": "bee",
+    "he": "דבורה",
+    "picture": {
+      "emoji": "🐝"
+    },
+    "topic": "animals",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The bee makes honey.",
+      "he": "הדבורה עושה דבש."
+    }
+  },
+  {
+    "id": "kw.food.apple",
+    "en": "apple",
+    "he": "תפוח",
+    "picture": {
+      "emoji": "🍎"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I eat a red apple.",
+      "he": "אני אוכל תפוח אדום."
+    }
+  },
+  {
+    "id": "kw.food.banana",
+    "en": "banana",
+    "he": "בננה",
+    "picture": {
+      "emoji": "🍌"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The banana is yellow.",
+      "he": "הבננה צהובה."
+    }
+  },
+  {
+    "id": "kw.food.orange",
+    "en": "orange",
+    "he": "תפוז",
+    "picture": {
+      "emoji": "🍊"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I like this orange.",
+      "he": "אני אוהב את התפוז הזה."
+    }
+  },
+  {
+    "id": "kw.food.grapes",
+    "en": "grapes",
+    "he": "ענבים",
+    "picture": {
+      "emoji": "🍇"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The grapes are sweet.",
+      "he": "הענבים מתוקים."
+    }
+  },
+  {
+    "id": "kw.food.strawberry",
+    "en": "strawberry",
+    "he": "תות",
+    "picture": {
+      "emoji": "🍓"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The strawberry is red.",
+      "he": "התות אדום."
+    }
+  },
+  {
+    "id": "kw.food.watermelon",
+    "en": "watermelon",
+    "he": "אבטיח",
+    "picture": {
+      "emoji": "🍉"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I love watermelon.",
+      "he": "אני אוהב אבטיח."
+    }
+  },
+  {
+    "id": "kw.food.pear",
+    "en": "pear",
+    "he": "אגס",
+    "picture": {
+      "emoji": "🍐"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The pear is green.",
+      "he": "האגס ירוק."
+    }
+  },
+  {
+    "id": "kw.food.carrot",
+    "en": "carrot",
+    "he": "גזר",
+    "picture": {
+      "emoji": "🥕"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The rabbit eats a carrot.",
+      "he": "הארנב אוכל גזר."
+    }
+  },
+  {
+    "id": "kw.food.tomato",
+    "en": "tomato",
+    "he": "עגבנייה",
+    "picture": {
+      "emoji": "🍅"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The tomato is red.",
+      "he": "העגבנייה אדומה."
+    }
+  },
+  {
+    "id": "kw.food.cucumber",
+    "en": "cucumber",
+    "he": "מלפפון",
+    "picture": {
+      "emoji": "🥒"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I eat a cucumber.",
+      "he": "אני אוכל מלפפון."
+    }
+  },
+  {
+    "id": "kw.food.corn",
+    "en": "corn",
+    "he": "תירס",
+    "picture": {
+      "emoji": "🌽"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The corn is yellow.",
+      "he": "התירס צהוב."
+    }
+  },
+  {
+    "id": "kw.food.bread",
+    "en": "bread",
+    "he": "לחם",
+    "picture": {
+      "emoji": "🥖"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I eat bread.",
+      "he": "אני אוכל לחם."
+    }
+  },
+  {
+    "id": "kw.food.egg",
+    "en": "egg",
+    "he": "ביצה",
+    "picture": {
+      "emoji": "🥚"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I eat an egg.",
+      "he": "אני אוכל ביצה."
+    }
+  },
+  {
+    "id": "kw.food.milk",
+    "en": "milk",
+    "he": "חלב",
+    "picture": {
+      "emoji": "🥛"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I drink milk.",
+      "he": "אני שותה חלב."
+    }
+  },
+  {
+    "id": "kw.food.cheese",
+    "en": "cheese",
+    "he": "גבינה",
+    "picture": {
+      "emoji": "🧀"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I like cheese.",
+      "he": "אני אוהב גבינה."
+    }
+  },
+  {
+    "id": "kw.food.rice",
+    "en": "rice",
+    "he": "אורז",
+    "picture": {
+      "emoji": "🍚"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The rice is hot.",
+      "he": "האורז חם."
+    }
+  },
+  {
+    "id": "kw.food.soup",
+    "en": "soup",
+    "he": "מרק",
+    "picture": {
+      "emoji": "🍲"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Ima makes soup.",
+      "he": "אמא מכינה מרק."
+    }
+  },
+  {
+    "id": "kw.food.pizza",
+    "en": "pizza",
+    "he": "פיצה",
+    "picture": {
+      "emoji": "🍕"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We eat pizza.",
+      "he": "אנחנו אוכלים פיצה."
+    }
+  },
+  {
+    "id": "kw.food.cookie",
+    "en": "cookie",
+    "he": "עוגייה",
+    "picture": {
+      "emoji": "🍪"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Thank you for the cookie.",
+      "he": "תודה על העוגייה."
+    }
+  },
+  {
+    "id": "kw.food.ice-cream",
+    "en": "ice cream",
+    "he": "גלידה",
+    "picture": {
+      "emoji": "🍦"
+    },
+    "topic": "food",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The ice cream is cold.",
+      "he": "הגלידה קרה."
+    }
+  },
+  {
+    "id": "kw.body.eyes",
+    "en": "eyes",
+    "he": "עיניים",
+    "picture": {
+      "emoji": "👀"
+    },
+    "topic": "body",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I see with my eyes.",
+      "he": "אני רואה בעיניים."
+    }
+  },
+  {
+    "id": "kw.body.ear",
+    "en": "ear",
+    "he": "אוזן",
+    "picture": {
+      "emoji": "👂"
+    },
+    "topic": "body",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I hear with my ears.",
+      "he": "אני שומע באוזניים."
+    }
+  },
+  {
+    "id": "kw.body.nose",
+    "en": "nose",
+    "he": "אף",
+    "picture": {
+      "emoji": "👃"
+    },
+    "topic": "body",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "This is my nose.",
+      "he": "זה האף שלי."
+    }
+  },
+  {
+    "id": "kw.body.mouth",
+    "en": "mouth",
+    "he": "פה",
+    "picture": {
+      "emoji": "👄"
+    },
+    "topic": "body",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I eat with my mouth.",
+      "he": "אני אוכל בפה."
+    }
+  },
+  {
+    "id": "kw.body.hand",
+    "en": "hand",
+    "he": "יד",
+    "picture": {
+      "emoji": "✋"
+    },
+    "topic": "body",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Wash your hands.",
+      "he": "תשטפו את הידיים."
+    }
+  },
+  {
+    "id": "kw.body.finger",
+    "en": "finger",
+    "he": "אצבע",
+    "picture": {
+      "emoji": "👆"
+    },
+    "topic": "body",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I have ten fingers.",
+      "he": "יש לי עשר אצבעות."
+    }
+  },
+  {
+    "id": "kw.body.foot",
+    "en": "foot",
+    "he": "כף רגל",
+    "picture": {
+      "emoji": "🦶"
+    },
+    "topic": "body",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "This is my foot.",
+      "he": "זאת כף הרגל שלי."
+    }
+  },
+  {
+    "id": "kw.body.leg",
+    "en": "leg",
+    "he": "רגל",
+    "picture": {
+      "emoji": "🦵"
+    },
+    "topic": "body",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I stand on my legs.",
+      "he": "אני עומד על הרגליים."
+    }
+  },
+  {
+    "id": "kw.body.arm",
+    "en": "arm",
+    "he": "זרוע",
+    "picture": {
+      "emoji": "💪"
+    },
+    "topic": "body",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "My arm is strong.",
+      "he": "הזרוע שלי חזקה."
+    }
+  },
+  {
+    "id": "kw.body.tooth",
+    "en": "tooth",
+    "he": "שן",
+    "picture": {
+      "emoji": "🦷"
+    },
+    "topic": "body",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I brush my teeth.",
+      "he": "אני מצחצח שיניים."
+    }
+  },
+  {
+    "id": "kw.body.tongue",
+    "en": "tongue",
+    "he": "לשון",
+    "picture": {
+      "emoji": "👅"
+    },
+    "topic": "body",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "This is my tongue.",
+      "he": "זאת הלשון שלי."
+    }
+  },
+  {
+    "id": "kw.family.mom",
+    "en": "mom",
+    "he": "אמא",
+    "picture": {
+      "emoji": "👩"
+    },
+    "topic": "family",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I love my mom.",
+      "he": "אני אוהב את אמא שלי."
+    }
+  },
+  {
+    "id": "kw.family.dad",
+    "en": "dad",
+    "he": "אבא",
+    "picture": {
+      "emoji": "👨"
+    },
+    "topic": "family",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "My dad reads to me.",
+      "he": "אבא שלי מקריא לי."
+    }
+  },
+  {
+    "id": "kw.family.baby",
+    "en": "baby",
+    "he": "תינוק",
+    "picture": {
+      "emoji": "👶"
+    },
+    "topic": "family",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Baby Eli is small.",
+      "he": "אלי התינוק קטן."
+    }
+  },
+  {
+    "id": "kw.family.grandma",
+    "en": "grandma",
+    "he": "סבתא",
+    "picture": {
+      "emoji": "👵"
+    },
+    "topic": "family",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Grandma Chana bakes a cake.",
+      "he": "סבתא חנה אופה עוגה."
+    }
+  },
+  {
+    "id": "kw.family.grandpa",
+    "en": "grandpa",
+    "he": "סבא",
+    "picture": {
+      "emoji": "👴"
+    },
+    "topic": "family",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Grandpa Yosef tells a story.",
+      "he": "סבא יוסף מספר סיפור."
+    }
+  },
+  {
+    "id": "kw.family.brother",
+    "en": "brother",
+    "he": "אח",
+    "picture": {
+      "emoji": "👦"
+    },
+    "topic": "family",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Ari is my brother.",
+      "he": "ארי הוא אח שלי."
+    }
+  },
+  {
+    "id": "kw.family.sister",
+    "en": "sister",
+    "he": "אחות",
+    "picture": {
+      "emoji": "👧"
+    },
+    "topic": "family",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Tamar is my sister.",
+      "he": "תמר היא אחות שלי."
+    }
+  },
+  {
+    "id": "kw.family.family",
+    "en": "family",
+    "he": "משפחה",
+    "picture": {
+      "emoji": "👨‍👩‍👧‍👦"
+    },
+    "topic": "family",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I love my family.",
+      "he": "אני אוהב את המשפחה שלי."
+    }
+  },
+  {
+    "id": "kw.family.friend",
+    "en": "friend",
+    "he": "חבר",
+    "picture": {
+      "emoji": "🧑‍🤝‍🧑"
+    },
+    "topic": "family",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "He is my good friend.",
+      "he": "הוא חבר טוב שלי."
+    }
+  },
+  {
+    "id": "kw.family.teacher",
+    "en": "teacher",
+    "he": "מורה",
+    "picture": {
+      "emoji": "🧑‍🏫"
+    },
+    "topic": "family",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "My teacher is kind.",
+      "he": "המורה שלי נחמדה."
+    }
+  },
+  {
+    "id": "kw.home.house",
+    "en": "house",
+    "he": "בית",
+    "picture": {
+      "emoji": "🏠"
+    },
+    "topic": "home",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "This is my house.",
+      "he": "זה הבית שלי."
+    }
+  },
+  {
+    "id": "kw.home.door",
+    "en": "door",
+    "he": "דלת",
+    "picture": {
+      "emoji": "🚪"
+    },
+    "topic": "home",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Close the door, please.",
+      "he": "תסגרו את הדלת, בבקשה."
+    }
+  },
+  {
+    "id": "kw.home.window",
+    "en": "window",
+    "he": "חלון",
+    "picture": {
+      "emoji": "🪟"
+    },
+    "topic": "home",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I look out the window.",
+      "he": "אני מסתכל מהחלון."
+    }
+  },
+  {
+    "id": "kw.home.bed",
+    "en": "bed",
+    "he": "מיטה",
+    "picture": {
+      "emoji": "🛏️"
+    },
+    "topic": "home",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I sleep in my bed.",
+      "he": "אני ישן במיטה שלי."
+    }
+  },
+  {
+    "id": "kw.home.chair",
+    "en": "chair",
+    "he": "כיסא",
+    "picture": {
+      "emoji": "🪑"
+    },
+    "topic": "home",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Sit on the chair.",
+      "he": "שבו על הכיסא."
+    }
+  },
+  {
+    "id": "kw.home.couch",
+    "en": "couch",
+    "he": "ספה",
+    "picture": {
+      "emoji": "🛋️"
+    },
+    "topic": "home",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "We sit on the couch.",
+      "he": "אנחנו יושבים על הספה."
+    }
+  },
+  {
+    "id": "kw.home.bath",
+    "en": "bath",
+    "he": "אמבטיה",
+    "picture": {
+      "emoji": "🛁"
+    },
+    "topic": "home",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The baby is in the bath.",
+      "he": "התינוק באמבטיה."
+    }
+  },
+  {
+    "id": "kw.home.plate",
+    "en": "plate",
+    "he": "צלחת",
+    "picture": {
+      "emoji": "🍽️"
+    },
+    "topic": "home",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I put food on my plate.",
+      "he": "אני שם אוכל בצלחת."
+    }
+  },
+  {
+    "id": "kw.home.spoon",
+    "en": "spoon",
+    "he": "כף",
+    "picture": {
+      "emoji": "🥄"
+    },
+    "topic": "home",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I eat with a spoon.",
+      "he": "אני אוכל בכף."
+    }
+  },
+  {
+    "id": "kw.home.key",
+    "en": "key",
+    "he": "מפתח",
+    "picture": {
+      "emoji": "🔑"
+    },
+    "topic": "home",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Abba has a key.",
+      "he": "לאבא יש מפתח."
+    }
+  },
+  {
+    "id": "kw.home.clock",
+    "en": "clock",
+    "he": "שעון",
+    "picture": {
+      "emoji": "⏰"
+    },
+    "topic": "home",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "Look at the clock.",
+      "he": "תסתכלו על השעון."
+    }
+  },
+  {
+    "id": "kw.home.broom",
+    "en": "broom",
+    "he": "מטאטא",
+    "picture": {
+      "emoji": "🧹"
+    },
+    "topic": "home",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "I help with the broom.",
+      "he": "אני עוזר עם המטאטא."
+    }
+  },
+  {
+    "id": "kw.home.light",
+    "en": "light",
+    "he": "אור",
+    "picture": {
+      "emoji": "💡"
+    },
+    "topic": "home",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Turn on the light.",
+      "he": "תדליקו את האור."
+    }
+  },
+  {
+    "id": "kw.home.box",
+    "en": "box",
+    "he": "קופסה",
+    "picture": {
+      "emoji": "📦"
+    },
+    "topic": "home",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The box is big.",
+      "he": "הקופסה גדולה."
+    }
+  },
+  {
+    "id": "kw.clothes.shirt",
+    "en": "shirt",
+    "he": "חולצה",
+    "picture": {
+      "emoji": "👕"
+    },
+    "topic": "clothes",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I wear a blue shirt.",
+      "he": "אני לובש חולצה כחולה."
+    }
+  },
+  {
+    "id": "kw.clothes.pants",
+    "en": "pants",
+    "he": "מכנסיים",
+    "picture": {
+      "emoji": "👖"
+    },
+    "topic": "clothes",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "My pants are long.",
+      "he": "המכנסיים שלי ארוכים."
+    }
+  },
+  {
+    "id": "kw.clothes.dress",
+    "en": "dress",
+    "he": "שמלה",
+    "picture": {
+      "emoji": "👗"
+    },
+    "topic": "clothes",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Tamar has a new dress.",
+      "he": "לתמר יש שמלה חדשה."
+    }
+  },
+  {
+    "id": "kw.clothes.coat",
+    "en": "coat",
+    "he": "מעיל",
+    "picture": {
+      "emoji": "🧥"
+    },
+    "topic": "clothes",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Put on your coat.",
+      "he": "תלבשו את המעיל."
+    }
+  },
+  {
+    "id": "kw.clothes.hat",
+    "en": "hat",
+    "he": "כובע",
+    "picture": {
+      "emoji": "🧢"
+    },
+    "topic": "clothes",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I have a red hat.",
+      "he": "יש לי כובע אדום."
+    }
+  },
+  {
+    "id": "kw.clothes.shoes",
+    "en": "shoes",
+    "he": "נעליים",
+    "picture": {
+      "emoji": "👟"
+    },
+    "topic": "clothes",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I put on my shoes.",
+      "he": "אני נועל את הנעליים."
+    }
+  },
+  {
+    "id": "kw.clothes.socks",
+    "en": "socks",
+    "he": "גרביים",
+    "picture": {
+      "emoji": "🧦"
+    },
+    "topic": "clothes",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "My socks are warm.",
+      "he": "הגרביים שלי חמים."
+    }
+  },
+  {
+    "id": "kw.clothes.gloves",
+    "en": "gloves",
+    "he": "כפפות",
+    "picture": {
+      "emoji": "🧤"
+    },
+    "topic": "clothes",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "I wear gloves in the cold.",
+      "he": "אני לובש כפפות בקור."
+    }
+  },
+  {
+    "id": "kw.clothes.scarf",
+    "en": "scarf",
+    "he": "צעיף",
+    "picture": {
+      "emoji": "🧣"
+    },
+    "topic": "clothes",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "Grandma made me a scarf.",
+      "he": "סבתא סרגה לי צעיף."
+    }
+  },
+  {
+    "id": "kw.clothes.glasses",
+    "en": "glasses",
+    "he": "משקפיים",
+    "picture": {
+      "emoji": "👓"
+    },
+    "topic": "clothes",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "Grandpa wears glasses.",
+      "he": "סבא מרכיב משקפיים."
+    }
+  },
+  {
+    "id": "kw.clothes.backpack",
+    "en": "backpack",
+    "he": "תיק",
+    "picture": {
+      "emoji": "🎒"
+    },
+    "topic": "clothes",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "My backpack is heavy.",
+      "he": "התיק שלי כבד."
+    }
+  },
+  {
+    "id": "kw.nature.sun",
+    "en": "sun",
+    "he": "שמש",
+    "picture": {
+      "emoji": "☀️"
+    },
+    "topic": "nature",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The sun is hot.",
+      "he": "השמש חמה."
+    }
+  },
+  {
+    "id": "kw.nature.moon",
+    "en": "moon",
+    "he": "ירח",
+    "picture": {
+      "emoji": "🌙"
+    },
+    "topic": "nature",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I see the moon.",
+      "he": "אני רואה את הירח."
+    }
+  },
+  {
+    "id": "kw.nature.star",
+    "en": "star",
+    "he": "כוכב",
+    "picture": {
+      "emoji": "⭐"
+    },
+    "topic": "nature",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The star is bright.",
+      "he": "הכוכב מאיר."
+    }
+  },
+  {
+    "id": "kw.nature.cloud",
+    "en": "cloud",
+    "he": "ענן",
+    "picture": {
+      "emoji": "☁️"
+    },
+    "topic": "nature",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The cloud is white.",
+      "he": "הענן לבן."
+    }
+  },
+  {
+    "id": "kw.nature.rain",
+    "en": "rain",
+    "he": "גשם",
+    "picture": {
+      "emoji": "☔"
+    },
+    "topic": "nature",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "It is raining.",
+      "he": "יורד גשם."
+    }
+  },
+  {
+    "id": "kw.nature.snow",
+    "en": "snow",
+    "he": "שלג",
+    "picture": {
+      "emoji": "❄️"
+    },
+    "topic": "nature",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The snow is cold.",
+      "he": "השלג קר."
+    }
+  },
+  {
+    "id": "kw.nature.rainbow",
+    "en": "rainbow",
+    "he": "קשת",
+    "picture": {
+      "emoji": "🌈"
+    },
+    "topic": "nature",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I see a rainbow.",
+      "he": "אני רואה קשת."
+    }
+  },
+  {
+    "id": "kw.nature.tree",
+    "en": "tree",
+    "he": "עץ",
+    "picture": {
+      "emoji": "🌳"
+    },
+    "topic": "nature",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The tree is tall.",
+      "he": "העץ גבוה."
+    }
+  },
+  {
+    "id": "kw.nature.flower",
+    "en": "flower",
+    "he": "פרח",
+    "picture": {
+      "emoji": "🌷"
+    },
+    "topic": "nature",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The flower smells nice.",
+      "he": "לפרח יש ריח טוב."
+    }
+  },
+  {
+    "id": "kw.nature.leaf",
+    "en": "leaf",
+    "he": "עלה",
+    "picture": {
+      "emoji": "🍁"
+    },
+    "topic": "nature",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The leaf falls from the tree.",
+      "he": "העלה נופל מהעץ."
+    }
+  },
+  {
+    "id": "kw.nature.plant",
+    "en": "plant",
+    "he": "צמח",
+    "picture": {
+      "emoji": "🌱"
+    },
+    "topic": "nature",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "The plant needs water.",
+      "he": "הצמח צריך מים."
+    }
+  },
+  {
+    "id": "kw.nature.sea",
+    "en": "sea",
+    "he": "ים",
+    "picture": {
+      "emoji": "🌊"
+    },
+    "topic": "nature",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We go to the sea.",
+      "he": "אנחנו הולכים לים."
+    }
+  },
+  {
+    "id": "kw.nature.mountain",
+    "en": "mountain",
+    "he": "הר",
+    "picture": {
+      "emoji": "⛰️"
+    },
+    "topic": "nature",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "The mountain is high.",
+      "he": "ההר גבוה."
+    }
+  },
+  {
+    "id": "kw.nature.rock",
+    "en": "rock",
+    "he": "אבן",
+    "picture": {
+      "emoji": "🪨"
+    },
+    "topic": "nature",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "The rock is heavy.",
+      "he": "האבן כבדה."
+    }
+  },
+  {
+    "id": "kw.shabbat.candles",
+    "en": "candles",
+    "he": "נרות",
+    "picture": {
+      "emoji": "🕯️"
+    },
+    "topic": "shabbat",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Ima lights the Shabbat candles.",
+      "he": "אמא מדליקה נרות שבת."
+    }
+  },
+  {
+    "id": "kw.shabbat.challah",
+    "en": "challah",
+    "he": "חלה",
+    "picture": {
+      "emoji": "🍞"
+    },
+    "topic": "shabbat",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We eat challah on Shabbat.",
+      "he": "אנחנו אוכלים חלה בשבת."
+    }
+  },
+  {
+    "id": "kw.shabbat.book",
+    "en": "book",
+    "he": "ספר",
+    "picture": {
+      "emoji": "📖"
+    },
+    "topic": "shabbat",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "On Shabbat, Abba reads us a story.",
+      "he": "בשבת אבא מקריא לנו סיפור."
+    }
+  },
+  {
+    "id": "kw.shabbat.flowers",
+    "en": "flowers",
+    "he": "פרחים",
+    "picture": {
+      "emoji": "💐"
+    },
+    "topic": "shabbat",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The flowers are for Shabbat.",
+      "he": "הפרחים לכבוד שבת."
+    }
+  },
+  {
+    "id": "kw.shabbat.juice",
+    "en": "juice",
+    "he": "מיץ",
+    "picture": {
+      "emoji": "🧃"
+    },
+    "topic": "shabbat",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I drink grape juice for Kiddush.",
+      "he": "אני שותה מיץ ענבים בקידוש."
+    }
+  },
+  {
+    "id": "kw.shabbat.cake",
+    "en": "cake",
+    "he": "עוגה",
+    "picture": {
+      "emoji": "🍰"
+    },
+    "topic": "shabbat",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We eat cake on Shabbat.",
+      "he": "אנחנו אוכלים עוגה בשבת."
+    }
+  },
+  {
+    "id": "kw.shabbat.salad",
+    "en": "salad",
+    "he": "סלט",
+    "picture": {
+      "emoji": "🥗"
+    },
+    "topic": "shabbat",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The salad is fresh.",
+      "he": "הסלט טרי."
+    }
+  },
+  {
+    "id": "kw.shabbat.song",
+    "en": "song",
+    "he": "שיר",
+    "picture": {
+      "emoji": "🎶"
+    },
+    "topic": "shabbat",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We sing a song.",
+      "he": "אנחנו שרים שיר."
+    }
+  },
+  {
+    "id": "kw.shabbat.synagogue",
+    "en": "synagogue",
+    "he": "בית כנסת",
+    "picture": {
+      "emoji": "🕍"
+    },
+    "topic": "shabbat",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "We walk to the synagogue.",
+      "he": "אנחנו הולכים לבית הכנסת."
+    }
+  },
+  {
+    "id": "kw.holidays.menorah",
+    "en": "menorah",
+    "he": "חנוכייה",
+    "picture": {
+      "emoji": "🕎"
+    },
+    "topic": "holidays",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We light the menorah on Chanukah.",
+      "he": "אנחנו מדליקים את החנוכייה בחנוכה."
+    }
+  },
+  {
+    "id": "kw.holidays.doughnut",
+    "en": "doughnut",
+    "he": "סופגנייה",
+    "picture": {
+      "emoji": "🍩"
+    },
+    "topic": "holidays",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I eat a doughnut on Chanukah.",
+      "he": "אני אוכל סופגנייה בחנוכה."
+    }
+  },
+  {
+    "id": "kw.holidays.honey",
+    "en": "honey",
+    "he": "דבש",
+    "picture": {
+      "emoji": "🍯"
+    },
+    "topic": "holidays",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "On Rosh Hashanah, we dip apples in honey.",
+      "he": "בראש השנה טובלים תפוח בדבש."
+    }
+  },
+  {
+    "id": "kw.holidays.gift",
+    "en": "gift",
+    "he": "מתנה",
+    "picture": {
+      "emoji": "🎁"
+    },
+    "topic": "holidays",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Thank you for the gift.",
+      "he": "תודה על המתנה."
+    }
+  },
+  {
+    "id": "kw.holidays.crown",
+    "en": "crown",
+    "he": "כתר",
+    "picture": {
+      "emoji": "👑"
+    },
+    "topic": "holidays",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I wear a crown on Purim.",
+      "he": "אני שם כתר בפורים."
+    }
+  },
+  {
+    "id": "kw.holidays.matzah",
+    "en": "matzah",
+    "he": "מצה",
+    "picture": {
+      "emoji": "🫓"
+    },
+    "topic": "holidays",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "We eat matzah on Pesach.",
+      "he": "אנחנו אוכלים מצה בפסח."
+    }
+  },
+  {
+    "id": "kw.holidays.flag",
+    "en": "flag",
+    "he": "דגל",
+    "picture": {
+      "emoji": "🇮🇱"
+    },
+    "topic": "holidays",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I wave the flag of Israel.",
+      "he": "אני מנופף בדגל ישראל."
+    }
+  },
+  {
+    "id": "kw.holidays.torah",
+    "en": "Torah",
+    "he": "תורה",
+    "picture": {
+      "emoji": "📜"
+    },
+    "topic": "holidays",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "We dance with the Torah.",
+      "he": "אנחנו רוקדים עם התורה."
+    }
+  },
+  {
+    "id": "kw.holidays.olive",
+    "en": "olive",
+    "he": "זית",
+    "picture": {
+      "emoji": "🫒"
+    },
+    "topic": "holidays",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "We get oil from olives.",
+      "he": "מזיתים מכינים שמן."
+    }
+  },
+  {
+    "id": "kw.holidays.party",
+    "en": "party",
+    "he": "מסיבה",
+    "picture": {
+      "emoji": "🎉"
+    },
+    "topic": "holidays",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We have a party.",
+      "he": "יש לנו מסיבה."
+    }
+  },
+  {
+    "id": "kw.toys.ball",
+    "en": "ball",
+    "he": "כדור",
+    "picture": {
+      "emoji": "⚽"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I kick the ball.",
+      "he": "אני בועט בכדור."
+    }
+  },
+  {
+    "id": "kw.toys.teddy-bear",
+    "en": "teddy bear",
+    "he": "דובי",
+    "picture": {
+      "emoji": "🧸"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "My teddy bear is soft.",
+      "he": "הדובי שלי רך."
+    }
+  },
+  {
+    "id": "kw.toys.car",
+    "en": "car",
+    "he": "מכונית",
+    "picture": {
+      "emoji": "🚗"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The car is red.",
+      "he": "המכונית אדומה."
+    }
+  },
+  {
+    "id": "kw.toys.train",
+    "en": "train",
+    "he": "רכבת",
+    "picture": {
+      "emoji": "🚂"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The train goes fast.",
+      "he": "הרכבת נוסעת מהר."
+    }
+  },
+  {
+    "id": "kw.toys.bus",
+    "en": "bus",
+    "he": "אוטובוס",
+    "picture": {
+      "emoji": "🚌"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We ride the bus.",
+      "he": "אנחנו נוסעים באוטובוס."
+    }
+  },
+  {
+    "id": "kw.toys.truck",
+    "en": "truck",
+    "he": "משאית",
+    "picture": {
+      "emoji": "🚚"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The truck is big.",
+      "he": "המשאית גדולה."
+    }
+  },
+  {
+    "id": "kw.toys.airplane",
+    "en": "airplane",
+    "he": "מטוס",
+    "picture": {
+      "emoji": "✈️"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The airplane flies high.",
+      "he": "המטוס עף גבוה."
+    }
+  },
+  {
+    "id": "kw.toys.boat",
+    "en": "boat",
+    "he": "סירה",
+    "picture": {
+      "emoji": "⛵"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The boat is on the sea.",
+      "he": "הסירה בים."
+    }
+  },
+  {
+    "id": "kw.toys.bike",
+    "en": "bike",
+    "he": "אופניים",
+    "picture": {
+      "emoji": "🚲"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I have a new bike.",
+      "he": "יש לי אופניים חדשים."
+    }
+  },
+  {
+    "id": "kw.toys.kite",
+    "en": "kite",
+    "he": "עפיפון",
+    "picture": {
+      "emoji": "🪁"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "My kite flies high.",
+      "he": "העפיפון שלי עף גבוה."
+    }
+  },
+  {
+    "id": "kw.toys.balloon",
+    "en": "balloon",
+    "he": "בלון",
+    "picture": {
+      "emoji": "🎈"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The balloon is red.",
+      "he": "הבלון אדום."
+    }
+  },
+  {
+    "id": "kw.toys.puzzle",
+    "en": "puzzle",
+    "he": "פאזל",
+    "picture": {
+      "emoji": "🧩"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We do a puzzle.",
+      "he": "אנחנו מרכיבים פאזל."
+    }
+  },
+  {
+    "id": "kw.toys.drum",
+    "en": "drum",
+    "he": "תוף",
+    "picture": {
+      "emoji": "🥁"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I play the drum.",
+      "he": "אני מתופף על התוף."
+    }
+  },
+  {
+    "id": "kw.toys.crayon",
+    "en": "crayon",
+    "he": "צבע",
+    "picture": {
+      "emoji": "🖍️"
+    },
+    "topic": "toys",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I draw with a crayon.",
+      "he": "אני מצייר בצבע."
+    }
+  },
+  {
+    "id": "kw.toys.yo-yo",
+    "en": "yo-yo",
+    "he": "יו-יו",
+    "picture": {
+      "emoji": "🪀"
+    },
+    "topic": "toys",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "I play with a yo-yo.",
+      "he": "אני משחק ביו-יו."
+    }
+  },
+  {
+    "id": "kw.actions.run",
+    "en": "run",
+    "he": "לרוץ",
+    "picture": {
+      "emoji": "🏃"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I run fast.",
+      "he": "אני רץ מהר."
+    }
+  },
+  {
+    "id": "kw.actions.walk",
+    "en": "walk",
+    "he": "ללכת",
+    "picture": {
+      "emoji": "🚶"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We walk to the park.",
+      "he": "אנחנו הולכים לגינה."
+    }
+  },
+  {
+    "id": "kw.actions.eat",
+    "en": "eat",
+    "he": "לאכול",
+    "picture": {
+      "emoji": "🍴"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I eat my lunch.",
+      "he": "אני אוכל ארוחת צהריים."
+    }
+  },
+  {
+    "id": "kw.actions.drink",
+    "en": "drink",
+    "he": "לשתות",
+    "picture": {
+      "emoji": "🥤"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I drink water.",
+      "he": "אני שותה מים."
+    }
+  },
+  {
+    "id": "kw.actions.sleep",
+    "en": "sleep",
+    "he": "לישון",
+    "picture": {
+      "emoji": "😴"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The baby is sleeping.",
+      "he": "התינוק ישן."
+    }
+  },
+  {
+    "id": "kw.actions.read",
+    "en": "read",
+    "he": "לקרוא",
+    "picture": {
+      "emoji": "📚"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I read a book.",
+      "he": "אני קורא ספר."
+    }
+  },
+  {
+    "id": "kw.actions.write",
+    "en": "write",
+    "he": "לכתוב",
+    "picture": {
+      "emoji": "✍️"
+    },
+    "topic": "actions",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "I write my name.",
+      "he": "אני כותב את השם שלי."
+    }
+  },
+  {
+    "id": "kw.actions.wash",
+    "en": "wash",
+    "he": "לשטוף",
+    "picture": {
+      "emoji": "🧼"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I wash my hands.",
+      "he": "אני שוטף ידיים."
+    }
+  },
+  {
+    "id": "kw.actions.swim",
+    "en": "swim",
+    "he": "לשחות",
+    "picture": {
+      "emoji": "🏊"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I swim in the sea.",
+      "he": "אני שוחה בים."
+    }
+  },
+  {
+    "id": "kw.actions.sing",
+    "en": "sing",
+    "he": "לשיר",
+    "picture": {
+      "emoji": "🎤"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "We sing together.",
+      "he": "אנחנו שרים יחד."
+    }
+  },
+  {
+    "id": "kw.actions.laugh",
+    "en": "laugh",
+    "he": "לצחוק",
+    "picture": {
+      "emoji": "😂"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Ari likes to laugh.",
+      "he": "ארי אוהב לצחוק."
+    }
+  },
+  {
+    "id": "kw.actions.clap",
+    "en": "clap",
+    "he": "למחוא כפיים",
+    "picture": {
+      "emoji": "👏"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Clap your hands.",
+      "he": "מחאו כפיים."
+    }
+  },
+  {
+    "id": "kw.actions.wave",
+    "en": "wave",
+    "he": "לנופף",
+    "picture": {
+      "emoji": "👋"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I wave to Grandpa.",
+      "he": "אני מנופף לסבא."
+    }
+  },
+  {
+    "id": "kw.actions.hug",
+    "en": "hug",
+    "he": "לחבק",
+    "picture": {
+      "emoji": "🤗"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I hug Mom.",
+      "he": "אני מחבק את אמא."
+    }
+  },
+  {
+    "id": "kw.actions.cook",
+    "en": "cook",
+    "he": "לבשל",
+    "picture": {
+      "emoji": "🍳"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "Abba likes to cook.",
+      "he": "אבא אוהב לבשל."
+    }
+  },
+  {
+    "id": "kw.actions.ride",
+    "en": "ride",
+    "he": "לרכוב",
+    "picture": {
+      "emoji": "🚴"
+    },
+    "topic": "actions",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I ride my bike.",
+      "he": "אני רוכב על האופניים."
+    }
+  },
+  {
+    "id": "kw.actions.climb",
+    "en": "climb",
+    "he": "לטפס",
+    "picture": {
+      "emoji": "🧗"
+    },
+    "topic": "actions",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "I climb up high.",
+      "he": "אני מטפס גבוה."
+    }
+  },
+  {
+    "id": "kw.actions.help",
+    "en": "help",
+    "he": "לעזור",
+    "picture": {
+      "emoji": "🤝"
+    },
+    "topic": "actions",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "I help Ima.",
+      "he": "אני עוזר לאמא."
+    }
+  },
+  {
+    "id": "kw.actions.pray",
+    "en": "pray",
+    "he": "להתפלל",
+    "picture": {
+      "emoji": "🙏"
+    },
+    "topic": "actions",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "We pray in the morning.",
+      "he": "אנחנו מתפללים בבוקר."
+    }
+  },
+  {
+    "id": "kw.actions.think",
+    "en": "think",
+    "he": "לחשוב",
+    "picture": {
+      "emoji": "🤔"
+    },
+    "topic": "actions",
+    "stages": [
+      "young"
+    ],
+    "sentence": {
+      "en": "I think about it.",
+      "he": "אני חושב על זה."
+    }
+  },
+  {
+    "id": "kw.feelings.happy",
+    "en": "happy",
+    "he": "שמח",
+    "picture": {
+      "emoji": "😊"
+    },
+    "topic": "feelings",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I am happy today.",
+      "he": "אני שמח היום."
+    }
+  },
+  {
+    "id": "kw.feelings.sad",
+    "en": "sad",
+    "he": "עצוב",
+    "picture": {
+      "emoji": "😢"
+    },
+    "topic": "feelings",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The boy is sad.",
+      "he": "הילד עצוב."
+    }
+  },
+  {
+    "id": "kw.feelings.tired",
+    "en": "tired",
+    "he": "עייף",
+    "picture": {
+      "emoji": "🥱"
+    },
+    "topic": "feelings",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I am tired.",
+      "he": "אני עייף."
+    }
+  },
+  {
+    "id": "kw.feelings.angry",
+    "en": "angry",
+    "he": "כועס",
+    "picture": {
+      "emoji": "😠"
+    },
+    "topic": "feelings",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "He is angry.",
+      "he": "הוא כועס."
+    }
+  },
+  {
+    "id": "kw.feelings.scared",
+    "en": "scared",
+    "he": "מפחד",
+    "picture": {
+      "emoji": "😨"
+    },
+    "topic": "feelings",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "The cat is scared.",
+      "he": "החתול מפחד."
+    }
+  },
+  {
+    "id": "kw.feelings.sick",
+    "en": "sick",
+    "he": "חולה",
+    "picture": {
+      "emoji": "🤒"
+    },
+    "topic": "feelings",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I am sick today.",
+      "he": "אני חולה היום."
+    }
+  },
+  {
+    "id": "kw.feelings.cold",
+    "en": "cold",
+    "he": "קר",
+    "picture": {
+      "emoji": "🥶"
+    },
+    "topic": "feelings",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I am cold.",
+      "he": "קר לי."
+    }
+  },
+  {
+    "id": "kw.feelings.hot",
+    "en": "hot",
+    "he": "חם",
+    "picture": {
+      "emoji": "🥵"
+    },
+    "topic": "feelings",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I am hot.",
+      "he": "חם לי."
+    }
+  },
+  {
+    "id": "kw.feelings.love",
+    "en": "love",
+    "he": "אהבה",
+    "picture": {
+      "emoji": "❤️"
+    },
+    "topic": "feelings",
+    "stages": [
+      "little",
+      "young"
+    ],
+    "sentence": {
+      "en": "I love you, Ima.",
+      "he": "אני אוהב אותך, אמא."
+    }
+  }
+]

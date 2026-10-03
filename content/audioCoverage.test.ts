@@ -1,4 +1,5 @@
 import { contentRegistry as reg } from './index';
+import { kidBooks, kidWords, phonics } from './kids';
 import { audioKey } from '@/services/speech/audioKey';
 import { canonicalSpeechText, questionSpeech, splitSentences } from '@/services/speech/textPrep';
 import { NEURAL_VOICES } from '@/services/speech/voiceProfiles';
@@ -49,6 +50,17 @@ function normalOnly(): { text: string; speaker: 'A' | 'B' }[] {
     if (i.type === 'choice') for (const o of i.options) if (!he.test(o.text)) out.add(o.text);
   }
   for (const a of reg.anchors.values()) for (const e of a.examples) out.add(e.en);
+  for (const w of kidWords) {
+    out.add(w.en);
+    if (w.sentence) out.add(w.sentence.en);
+  }
+  for (const l of phonics.letters) out.add(l.word);
+  for (const f of phonics.families) for (const w of f.words) out.add(w.en);
+  for (const s of phonics.sightWords) {
+    out.add(s.en);
+    out.add(s.sentence.en);
+  }
+  for (const b of kidBooks) for (const pg of b.pages) out.add(pg.en);
   return [...out].map((text) => ({ text, speaker: 'A' as const }));
 }
 

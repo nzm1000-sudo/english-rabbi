@@ -85,6 +85,8 @@ export interface EventMap {
   'word.saved': { lemma: string; storyId?: string };
   'word.removed': { lemma: string };
   'speaking.shadowed': { text: string; rating: 1 | 2 | 3 };
+  'kids.round': { game: string; topic?: string; correct: number; total: number };
+  'sticker.earned': { stickerId: string };
 }
 
 /** Result of a quiz, lightning round, exam or daily challenge. */

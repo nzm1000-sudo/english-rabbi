@@ -51,6 +51,25 @@ export interface Student {
   hue: number;
   /** Archived students are hidden but their history is kept. */
   archived: boolean;
+  /** Which app the child sees. Unset: chosen by age (see stageOf). */
+  stage?: AgeStage;
+  /** Daily minutes for the little children's area; unset = no limit. */
+  kidsDailyLimit?: number;
+}
+
+/**
+ * little: ages 3-6, pictures and sound only. young: early readers.
+ * regular: the full app (vocabulary, grammar, bagrut).
+ */
+export type AgeStage = 'little' | 'young' | 'regular';
+
+export function stageOf(student: Pick<Student, 'stage' | 'birthYear'>, now = Date.now()): AgeStage {
+  if (student.stage) return student.stage;
+  if (!student.birthYear) return 'regular';
+  const age = new Date(now).getFullYear() - student.birthYear;
+  if (age <= 6) return 'little';
+  if (age <= 8) return 'young';
+  return 'regular';
 }
 
 export const DEFAULT_PREFERENCES: StudentPreferences = {

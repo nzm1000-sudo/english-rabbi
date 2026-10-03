@@ -75,6 +75,24 @@ function collectTexts() {
       for (const q of st.questions ?? []) addQuestion(q.item);
     }
   }
+  // Children's area: words, sentences, phonics and little books (normal speed;
+  // slow playback slows the recording down).
+  const kidsDir = path.join(root, 'content/kids');
+  const kid = (f) => (fs.existsSync(path.join(kidsDir, f)) ? JSON.parse(fs.readFileSync(path.join(kidsDir, f), 'utf8')) : null);
+  for (const w of kid('words.json') ?? []) {
+    add(w.en, 'A', ['normal']);
+    if (w.sentence) add(w.sentence.en, 'A', ['normal']);
+  }
+  const ph = kid('phonics.json');
+  if (ph) {
+    for (const l of ph.letters) add(l.word, 'A', ['normal']);
+    for (const f of ph.families) for (const w of f.words) add(w.en, 'A', ['normal']);
+    for (const s of ph.sightWords) {
+      add(s.en, 'A', ['normal']);
+      add(s.sentence.en, 'A', ['normal']);
+    }
+  }
+  for (const b of kid('books.json') ?? []) for (const pg of b.pages) add(pg.en, 'A', ['normal']);
   // Example sentences on the memory anchor cards.
   const anchorDir = path.join(root, 'content/anchors');
   for (const f of fs.readdirSync(anchorDir).filter((f) => f.endsWith('.json'))) {
