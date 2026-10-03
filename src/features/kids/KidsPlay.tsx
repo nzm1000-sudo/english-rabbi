@@ -20,13 +20,13 @@ import { KID_TOPICS, type KidStage, type KidTopic, type KidWord } from '@/domain
 import { stageOf, type Student } from '@/domain/student/student';
 import { speakHebrew, stopHebrew } from '@/services/speech/hebrewVoice';
 import { sounds } from '@/services/sound';
+import { PRAISE } from './hebrewPhrases';
 import { Picture } from './Picture';
 import { Reward } from './Reward';
 import { TOPIC_INFO } from './topics';
 
 type Game = 'listen' | 'read' | 'letters' | 'build' | 'sight' | 'memory';
 const GAMES: Game[] = ['listen', 'read', 'letters', 'build', 'sight', 'memory'];
-const PRAISE = ['כל הכבוד!', 'יופי!', 'מעולה!', 'נכון מאוד!', 'איזה יופי!'];
 
 export function KidsPlay() {
   const { sid } = useParams();

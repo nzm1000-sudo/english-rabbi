@@ -5,6 +5,7 @@ import { stickers, type StickerInfo } from '@content/kids';
 import type { Student } from '@/domain/student/student';
 import { speakHebrew } from '@/services/speech/hebrewVoice';
 import { Confetti } from '@/ui/Confetti';
+import { newStickerPhrase } from './hebrewPhrases';
 
 /** End of a round: a new sticker for the album, every time. */
 export function Reward({ student, score, onAgain }: { student: Student; score: { correct: number; total: number }; onAgain: () => void }) {
@@ -19,7 +20,7 @@ export function Reward({ student, score, onAgain }: { student: Student; score: {
       if (next) await store.log(student.id, 'sticker.earned', { stickerId: next.id });
       if (!live) return;
       setSticker(next);
-      void speakHebrew(next ? `מדבקה חדשה! ${next.he}` : 'כל הכבוד! אספתם את כל המדבקות');
+      void speakHebrew(next ? newStickerPhrase(next.he) : 'כל הכבוד! אספתם את כל המדבקות');
     })();
     return () => {
       live = false;
