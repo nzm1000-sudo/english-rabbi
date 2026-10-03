@@ -4,7 +4,8 @@
  * Usage: node tools/pics/import.mjs <folder with <id>.png>
  *   First run tools/pics/cutout.py on the raw folder to get transparent
  *   backgrounds, then import the cut-out folder.
- *   ids: w-<word> (picture words), s-<sticker id>, m-<mascot>, b-<book>-<page>
+ *   ids: w-<word> (picture words), s-<sticker id>, m-<mascot>, c-<character>,
+ *   a-<adult icon>, b-<book>-<page> (800x600 scene, no background removal)
  * Output: public/pics/<id>.webp (480 px) and content/kids/pics.json, the list
  * of ids the app can show. Words without a picture keep their emoji.
  */
@@ -24,7 +25,9 @@ for (const f of fs.readdirSync(src).filter((f) => f.endsWith('.png'))) {
   if (!/^[a-z0-9-]+$/.test(id)) continue;
   const dest = path.join(out, `${id}.webp`);
   if (fs.existsSync(dest) && fs.statSync(dest).mtimeMs >= fs.statSync(path.join(src, f)).mtimeMs) continue;
-  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', path.join(src, f), '-vf', 'scale=480:480:flags=lanczos', '-c:v', 'libwebp', '-quality', '82', dest]);
+  // Book pages (b-*) are 4:3 scenes; everything else is a square cut-out.
+  const scale = id.startsWith('b-') ? 'scale=800:600:flags=lanczos' : 'scale=480:480:flags=lanczos';
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', path.join(src, f), '-vf', scale, '-c:v', 'libwebp', '-quality', '82', dest]);
   added++;
 }
 const ids = fs.readdirSync(out).filter((f) => f.endsWith('.webp')).map((f) => f.slice(0, -5)).sort();
