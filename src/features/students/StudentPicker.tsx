@@ -15,8 +15,8 @@ export function StudentPicker() {
         <span className="brand-mark" aria-hidden="true" lang="en">
           En
         </span>
-        <h1 className="page-title">מי לומד עכשיו?</h1>
-        <p className="subtitle">כל אחד עם מסלול משלו</p>
+        <h1 className="page-title">למי התור ללמוד?</h1>
+        <p className="subtitle">לכל תלמיד מסלול משלו</p>
       </div>
 
       {students === undefined ? null : (
