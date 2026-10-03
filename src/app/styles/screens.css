@@ -173,6 +173,7 @@
   border-radius: var(--radius-full); border: var(--stroke) solid var(--border-strong); background: var(--surface-1); color: var(--ink);
   font-weight: var(--fw-bold); transition: background var(--dur-1) var(--ease-out);
 }
+.kid-tab > span:last-child { max-width: 16ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .kid-tab .avatar { width: 32px !important; height: 32px !important; font-size: var(--fs-caption); }
 .kid-tab[aria-selected='true'] { background: var(--grad-accent); border-color: transparent; color: #fff; box-shadow: var(--glow); }
 .report-head { display: flex; align-items: center; gap: var(--space-3); }
