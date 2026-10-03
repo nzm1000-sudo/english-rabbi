@@ -36,3 +36,8 @@ function splitLong(s: string, maxLen: number): string[] {
 export function canonicalSpeechText(text: string): string {
   return text.normalize('NFC').replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim();
 }
+
+/** How a question with a gap is read aloud: "She has worked here blank 2019." */
+export function questionSpeech(prompt: string): string {
+  return prompt.replace(/_{3,}/g, 'blank');
+}

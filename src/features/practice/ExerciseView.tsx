@@ -8,6 +8,8 @@ import type { Bilingual } from '@/domain/content/schema';
 import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
+import { TapText } from '@/ui/Gloss';
+import { questionSpeech } from '@/services/speech/textPrep';
 import { seededShuffle } from './shuffle';
 import { useServices } from '@/app/services';
 import { domainOf } from '@/domain/skills/taxonomy';
@@ -44,6 +46,9 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   useEffect(() => () => speech.stop(), [speech]);
   const lesson = content.lessonsForSkill(item.skill)[0];
   const finished = isFinished(flow);
+  // Translating words must not give the answer away: vocabulary items and
+  // tests unlock it only after answering.
+  const glossLocked = !finished && (domainOf(item.skill) === 'vocabulary' || policy === 'test');
 
   useEffect(() => {
     if (flow.phase === 'solved') sounds.correct();
@@ -104,7 +109,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
       )}
 
       {(item.type === 'order' ? item.promptLanguage === 'he' : item.type !== 'fix') && (
-        <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} />
+        <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} glossLocked={glossLocked} />
       )}
 
       {item.type === 'order' ? (
@@ -172,12 +177,12 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   );
 }
 
-function Prompt({ item, finished, canSpeak }: { item: Props['item']; finished: boolean; canSpeak: boolean }) {
+function Prompt({ item, finished, canSpeak, glossLocked }: { item: Props['item']; finished: boolean; canSpeak: boolean; glossLocked: boolean }) {
   if (item.type === 'fix') return null;
   const isHe = 'promptLanguage' in item && item.promptLanguage === 'he';
   const isWord = !!item.word && (item.prompt === item.word.lemma || item.prompt === item.word.he);
   const fill = finished ? modelAnswer(item) : undefined;
-  const content = renderCloze(item.prompt, fill);
+  const content = renderCloze(item.prompt, fill, isHe ? undefined : { locked: glossLocked });
   return (
     <div className="row prompt-card" style={{ alignItems: 'center' }}>
       {isHe ? (
@@ -187,7 +192,11 @@ function Prompt({ item, finished, canSpeak }: { item: Props['item']; finished: b
           {content}
         </En>
       )}
-      {canSpeak && <SpeakButton text={item.prompt} />}
+      {canSpeak ? (
+        <SpeakButton text={item.prompt} />
+      ) : (
+        !isHe && <SpeakButton text={finished && fill && item.prompt.includes('___') ? item.prompt.replace('___', fill) : questionSpeech(item.prompt)} label="הקראת השאלה" />
+      )}
     </div>
   );
 }
@@ -321,12 +330,13 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
   );
 }
 
-function renderCloze(prompt: string, fill?: string): ReactNode {
-  if (!prompt.includes('___')) return prompt;
+function renderCloze(prompt: string, fill?: string, tap?: { locked: boolean }): ReactNode {
+  const t = (s: string | undefined) => (tap && s ? <TapText text={s} locked={tap.locked} sentence={prompt.replace('___', fill ?? '___')} /> : s);
+  if (!prompt.includes('___')) return tap ? t(prompt) : prompt;
   const [before, after] = prompt.split('___');
   return (
     <>
-      {before}
+      {t(before)}
       {fill ? (
         <strong style={{ color: 'var(--good-ink)' }}>{fill}</strong>
       ) : (
@@ -334,7 +344,7 @@ function renderCloze(prompt: string, fill?: string): ReactNode {
           &nbsp;
         </span>
       )}
-      {after}
+      {t(after)}
     </>
   );
 }
