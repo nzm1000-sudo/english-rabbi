@@ -55,6 +55,10 @@ const auto = (i: ContentItem) => i.type !== 'open-writing';
 const inDomain = (...d: string[]) => (ctx: PoolContext) =>
   ctx.registry.items.filter((i) => auto(i) && (d.includes(domainOf(i.skill)) || (d.includes('listening') && i.modality === 'listen')));
 
+/** Items a lesson's pretest can ask: of the skill, standalone (no reading passage). */
+export const pretestItems = (registry: ContentRegistry, skill: string) =>
+  registry.items.filter((i) => auto(i) && !i.passageId && lineage(i.skill).includes(skill));
+
 const teach = { selection: 'practice' as const, policy: 'teach' as const, feedback: 'full' as const };
 
 export const MODES: Record<PracticeMode, ModeDef> = {
@@ -150,7 +154,7 @@ export const MODES: Record<PracticeMode, ModeDef> = {
     feedback: 'full',
     // Pretesting: guessing before the lesson improves learning when feedback follows.
     targetSuccess: 0.5,
-    pool: (c) => c.registry.items.filter((i) => auto(i) && !i.passageId && !!c.params.skill && lineage(i.skill).includes(c.params.skill)),
+    pool: (c) => (c.params.skill ? pretestItems(c.registry, c.params.skill) : []),
   },
   sentences: {
     title: 'בונים משפטים',
