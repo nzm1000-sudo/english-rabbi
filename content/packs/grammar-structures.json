@@ -1711,7 +1711,8 @@
         "mustn't",
         "can't",
         "cannot",
-        "may not"
+        "may not",
+        "shouldn't"
       ],
       "knownErrors": [
         {
@@ -5040,8 +5041,7 @@
         "en": "Fill in the missing word"
       },
       "answers": [
-        "can't",
-        "cannot"
+        "can't"
       ],
       "knownErrors": [
         {
