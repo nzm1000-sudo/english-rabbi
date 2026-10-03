@@ -168,7 +168,8 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
       const [st, session] = await Promise.all([store.loadLearnerState(student.id), store.startSession(student.id, mode)]);
       sid = session.id;
       if (cancelled) {
-        endedRef.current = true;
+        // This run was replaced (StrictMode re-run or a new student/mode).
+        // Close only its own session; endedRef now belongs to the newer run.
         void store.endSession(sid, 'left');
         return;
       }
@@ -211,6 +212,7 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
     })();
     return () => {
       cancelled = true;
+      // sid is set only once this run has started; a run still loading closes its session itself.
       if (sid && !endedRef.current) {
         endedRef.current = true;
         void store.endSession(sid, 'left');
