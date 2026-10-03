@@ -73,7 +73,7 @@ export function StoriesScreen() {
                     <span className="tile-icon" data-done={!!r}>
                       {r ? <CheckIcon /> : kind === 'read' ? <BookIcon /> : <ChatIcon />}
                     </span>
-                    <span className="grow stack" style={{ gap: 2 }}>
+                    <span className="grow stack gap-1">
                       <He>{s.title.he}</He>
                       <En className="xs muted">{s.title.en}</En>
                     </span>

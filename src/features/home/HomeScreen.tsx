@@ -39,6 +39,7 @@ import type { ReactNode } from 'react';
 import { resume } from '@/app/resume';
 import { stageOf } from '@/domain/student/student';
 import { KidsHome } from '@/features/kids/KidsHome';
+import { Row, Stack } from '@/ui/layout';
 
 const PRACTICE: { domain: Domain; title: string; en: string }[] = [
   { domain: 'vocabulary', title: 'אוצר מילים', en: 'Vocabulary' },
@@ -72,16 +73,16 @@ export function HomeScreen() {
   return (
     <main className="screen">
       <header className="spread">
-        <div className="row" style={{ gap: 10 }}>
+        <Row gap={2}>
           <Avatar name={student.name} hue={student.hue} />
           <div>
-            <div style={{ fontSize: 'var(--t-lg)', fontWeight: 700 }}>שלום, {student.name}</div>
+            <div className="t-h3">שלום, {student.name}</div>
             <Link to="/" className="switch-link">
               לא {student.name}? החלפה
             </Link>
           </div>
-        </div>
-        <div className="row" style={{ gap: 6 }}>
+        </Row>
+        <Row gap={1}>
           <span className="chip-stat" aria-label={`${p.activity.streakDays} ימים ברצף`}>
             <FlameIcon size={18} />
             {p.activity.streakDays}
@@ -90,14 +91,14 @@ export function HomeScreen() {
             <StarIcon size={18} />
             {p.activity.xpTotal}
           </Link>
-          <Link to={`${base}/settings`} className="icon-btn" aria-label="הגדרות" style={{ width: 38, height: 38 }}>
-            <GearIcon size={20} />
+          <Link to={`${base}/settings`} className="icon-btn" aria-label="הגדרות">
+            <GearIcon size={22} />
           </Link>
-        </div>
+        </Row>
       </header>
 
       <Link to={`${base}/practice/${p.calibrated ? 'lesson' : 'placement'}`} className="hero">
-        <div className="grow stack" style={{ gap: 4, position: 'relative' }}>
+        <Stack gap={1} className="grow">
           <span className="title">{p.calibrated ? 'השיעור של היום' : 'בואו נכיר'}</span>
           <span className="hero-sub">
             {p.calibrated ? 'תרגול שנבנה בדיוק בשבילך' : 'אבחון קצר, כ־5 דקות. מתחילים בינוני ומתאימים את הקושי.'}
@@ -106,7 +107,7 @@ export function HomeScreen() {
             {p.calibrated ? 'להתחיל' : 'להתחיל אבחון'}
             <ChevronIcon size={16} />
           </span>
-        </div>
+        </Stack>
         <Ring value={todayPct} size={84} stroke={8}>
           <span>
             {p.activity.minutesToday}
@@ -117,12 +118,12 @@ export function HomeScreen() {
 
       {saved && (
         <Link to={`${base}/practice/${saved.mode}${Object.keys(saved.params).length ? `?${new URLSearchParams(saved.params).toString()}` : ''}`} className="row-card resume-card">
-          <span className="tile-icon" style={{ background: 'var(--primary-weak)', color: 'var(--primary-fg)' }}>
+          <span className="tile-icon tone-primary">
             <RepeatIcon />
           </span>
           <span className="grow">
             <strong>להמשיך מאיפה שעצרת</strong>
-            <span className="xs muted" style={{ display: 'block' }}>
+            <span className="xs muted block">
               {saved.title} · {saved.results.length} מתוך {saved.total}
             </span>
           </span>
@@ -131,12 +132,12 @@ export function HomeScreen() {
       )}
 
       <Link to={`${base}/path`} className="row-card">
-        <span className="tile-icon" style={{ background: 'var(--primary-weak)', color: 'var(--primary-fg)' }}>
+        <span className="tile-icon tone-primary">
           <TargetIcon />
         </span>
         <span className="grow">
           <strong>המסלול שלי</strong>
-          <span className="xs muted" style={{ display: 'block' }}>
+          <span className="xs muted block">
             {rank.current.he} · דרגה {rank.current.level}
             {p.activity.frozenDays > 0 ? ' · מגן הרצף שמר על הרצף' : ''}
           </span>
@@ -147,12 +148,12 @@ export function HomeScreen() {
       {p.calibrated &&
         (dailyDone ? (
           <div className="row-card tone-games" aria-label="האתגר היומי הושלם">
-            <span className="tile-icon" style={{ background: 'var(--good-weak)', color: 'var(--good-ink)' }}>
+            <span className="tile-icon tone-good">
               <TargetIcon />
             </span>
             <span className="grow">
               <strong>האתגר היומי הושלם</strong>
-              <span className="xs muted" style={{ display: 'block' }}>
+              <span className="xs muted block">
                 מחר מחכה אתגר חדש
               </span>
             </span>
@@ -160,12 +161,12 @@ export function HomeScreen() {
           </div>
         ) : (
           <Link to={`${base}/practice/daily`} className="row-card tone-games">
-            <span className="tile-icon" style={{ background: 'var(--t-games-weak)', color: 'var(--t-games-fg)' }}>
+            <span className="tile-icon tone-games">
               <TargetIcon />
             </span>
             <span className="grow">
               <strong>האתגר היומי</strong>
-              <span className="xs muted" style={{ display: 'block' }}>
+              <span className="xs muted block">
                 6 שאלות, חידה אחת בפנים
               </span>
             </span>
@@ -177,7 +178,7 @@ export function HomeScreen() {
         <div className="section-head">
           <h2>תרגול</h2>
           {p.words.due > 0 && (
-            <Link to={`${base}/practice/review`} className="badge badge-accent" style={{ textDecoration: 'none' }}>
+            <Link to={`${base}/practice/review`} className="badge badge-accent">
               {p.words.due} לחזרה היום
             </Link>
           )}
@@ -194,12 +195,12 @@ export function HomeScreen() {
           <h2>קוראים ומדברים</h2>
         </div>
         <Link to={`${base}/stories`} className="row-card">
-          <span className="tile-icon" style={{ background: 'var(--t-reading-weak)', color: 'var(--t-reading-fg)' }}>
+          <span className="tile-icon tone-reading">
             <BookIcon />
           </span>
           <span className="grow">
             <strong>סיפורים</strong>
-            <span className="xs muted" style={{ display: 'block' }}>
+            <span className="xs muted block">
               סיפורים ושיחות על משפחת שפירו, בכל הרמות
             </span>
           </span>
@@ -245,18 +246,18 @@ export function HomeScreen() {
             <h2>כדאי לחזק</h2>
           </div>
           {focus ? (
-            <Link to={`${base}/practice/mistakes`} className="row-card" style={{ alignItems: 'flex-start' }}>
-              <span className="tile-icon" style={{ background: 'var(--warn-weak)', color: 'var(--warn-ink)' }}>
+            <Link to={`${base}/practice/mistakes`} className="row-card items-start">
+              <span className="tile-icon tone-warn">
                 <RepeatIcon />
               </span>
-              <span className="grow stack" style={{ gap: 2 }}>
+              <span className="grow stack gap-1">
                 <He className="">{focus.note.he}</He>
                 <He className="small muted">{focus.tip.he}</He>
               </span>
             </Link>
           ) : weak ? (
             <Link to={`${base}/practice/skill?skill=${encodeURIComponent(weak.skillId)}`} className="row-card">
-              <span className="tile-icon" style={{ background: 'var(--warn-weak)', color: 'var(--warn-ink)' }}>
+              <span className="tile-icon tone-warn">
                 <RepeatIcon />
               </span>
               <He className="grow">{weak.name.he}</He>
@@ -266,13 +267,13 @@ export function HomeScreen() {
         </section>
       )}
 
-      <div className="row-card" aria-disabled="true" style={{ opacity: 0.6 }}>
-        <span className="tile-icon tone-speaking" style={{ background: 'var(--t-speaking-weak)', color: 'var(--t-speaking-fg)' }}>
+      <div className="row-card" aria-disabled="true">
+        <span className="tile-icon tone-speaking">
           <ChatIcon />
         </span>
         <span className="grow">
           <strong>שיחה עם המורה</strong> <En className="xs muted">Conversation</En>
-          <span className="xs muted" style={{ display: 'block' }}>
+          <span className="xs muted block">
             בקרוב
           </span>
         </span>
@@ -303,7 +304,7 @@ function SkillTile({ to, d, title, en }: { to: string; d: DomainSummary; title: 
         </span>
       )}
       <span>
-        <strong style={{ display: 'block' }}>{title}</strong>
+        <strong className="block">{title}</strong>
         <En className="tile-sub">{en}</En>
       </span>
       <span className="tile-bar" aria-hidden="true">
@@ -317,8 +318,8 @@ function GameTile({ to, tone, icon, title, sub }: { to: string; tone: string; ic
   return (
     <Link to={to} className={`tile tile-solid tone-${tone}`}>
       <span className="tile-icon">{icon}</span>
-      <span style={{ position: 'relative' }}>
-        <strong style={{ display: 'block' }}>{title}</strong>
+      <span>
+        <strong className="block">{title}</strong>
         <span className="tile-sub">{sub}</span>
       </span>
     </Link>

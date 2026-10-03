@@ -50,9 +50,9 @@ export function MyWordsScreen() {
           </div>
           <div className="list">
             {data.words.map((w) => (
-              <div key={w.lemma} className="list-item" style={{ alignItems: 'center' }}>
+              <div key={w.lemma} className="list-item">
                 <SpeakButton text={w.lemma} />
-                <span className="grow stack" style={{ gap: 2 }}>
+                <span className="grow stack gap-1">
                   <En>
                     <strong>{w.lemma}</strong>
                   </En>

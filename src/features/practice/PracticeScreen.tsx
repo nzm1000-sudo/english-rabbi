@@ -16,6 +16,8 @@ import { useGameHistory } from './useGameHistory';
 import { Confetti } from '@/ui/Confetti';
 import { sounds } from '@/services/sound';
 import { StarIcon, TrophyIcon } from '@/ui/icons';
+import { TopBar } from '@/ui/TopBar';
+import { Row, Stack } from '@/ui/layout';
 
 export function PracticeScreen() {
   const { sid, mode } = useParams();
@@ -64,30 +66,39 @@ function Session({
   const progress = s.deadline ? null : Math.round(((done ? s.total : Math.max(0, s.index - 1)) / s.total) * 100);
   const combo = useCombo(s.results.map((r) => r.correct));
   const title = mode === 'skill' && params.skill ? (content.lessonsForSkill(params.skill)[0]?.title.he ?? def.title) : def.title;
+  const counter = s.status === 'loading' ? '' : `${done ? s.total : Math.min(s.index, s.total)}/${s.total}`;
 
   return (
-    <main className="screen" style={{ gap: 'var(--s-4)' }}>
-      <header className="row">
-        <button className="icon-btn" onClick={() => nav(home)} aria-label="יציאה">
-          <CloseIcon />
-        </button>
-        {progress !== null ? (
-          <div className="grow progress" role="progressbar" aria-label={title} aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}>
-            <span style={{ width: `${progress}%` }} />
-          </div>
-        ) : (
-          <span className="grow" style={{ fontWeight: 600 }}>
-            <He>{`${title} · ${s.results.filter((r) => r.correct).length} נכונות`}</He>
-          </span>
-        )}
-        {s.deadline && !done ? (
-          <Timer deadline={s.deadline} onEnd={s.timeUp} />
-        ) : (
-          <span className="small muted" style={{ minWidth: 44, textAlign: 'center' }}>
-            {title}
-          </span>
-        )}
-      </header>
+    <main className="screen tight">
+      <TopBar
+        wide={!!s.deadline}
+        start={
+          <button className="icon-btn" onClick={() => nav(home)} aria-label="יציאה">
+            <CloseIcon />
+          </button>
+        }
+        center={
+          progress !== null ? (
+            <Stack gap={1} className="grow">
+              <div className="progress" role="progressbar" aria-label={title} aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}>
+                <span style={{ width: `${progress}%` }} />
+              </div>
+              <He className="xs muted txt-center">{title}</He>
+            </Stack>
+          ) : (
+            <He className="t-strong txt-center">{`${title} · ${s.results.filter((r) => r.correct).length} נכונות`}</He>
+          )
+        }
+        end={
+          s.deadline && !done ? (
+            <Timer deadline={s.deadline} onEnd={s.timeUp} />
+          ) : (
+            <span className="small muted wt" dir="ltr">
+              {counter}
+            </span>
+          )
+        }
+      />
 
       {s.status === 'loading' && <div className="center muted">טוען…</div>}
 
@@ -103,14 +114,14 @@ function Session({
           >
             להתחיל מחדש
           </button>
-          <button className="icon-btn" style={{ width: 32, height: 32 }} aria-label="סגירה" onClick={() => setResumeHidden(true)}>
+          <button className="icon-btn sm" aria-label="סגירה" onClick={() => setResumeHidden(true)}>
             <CloseIcon size={16} />
           </button>
         </div>
       )}
 
       {s.status === 'empty' && (
-        <div className="center stack" style={{ textAlign: 'center' }}>
+        <div className="center stack txt-center">
           <p>{emptyText(mode)}</p>
           <button className="btn btn-primary" onClick={() => nav(home)}>
             חזרה למסך הבית
@@ -249,7 +260,7 @@ function Summary({
   const subtitle = sub ?? (pct >= 80 ? 'עבודה מצוינת' : pct >= 50 ? 'התקדמות יפה' : 'כל טעות היא שיעור. נחזור לזה.');
 
   return (
-    <section className="stack" style={{ gap: 'var(--s-4)', marginTop: 'var(--s-2)' }}>
+    <Stack as="section" gap={4}>
       {celebrate && <Confetti />}
       <div className="result-hero">
         <span className="tile-icon result-icon">
@@ -257,7 +268,7 @@ function Summary({
         </span>
         <h2 className="title">{headline}</h2>
         {big ? <span className="big">{big}{mode === 'lightning' ? '' : '%'}</span> : <span className="big">{pct}%</span>}
-        <span style={{ opacity: 0.92 }}>{subtitle}</span>
+        <span>{subtitle}</span>
       </div>
       <div className="stat-grid">
         <div className="stat">
@@ -265,9 +276,9 @@ function Summary({
           <span>נכונות</span>
         </div>
         <div className="stat">
-          <b className="row" style={{ gap: 4 }}>
+          <Row as="span" gap={1} className="t-h2">
             <StarIcon size={18} />+{xp}
-          </b>
+          </Row>
           <span>נקודות</span>
         </div>
         <div className="stat">
@@ -280,7 +291,7 @@ function Summary({
           {[...byDomain.entries()].map(([d, v]) => (
             <div key={d} className="list-item">
               <span className="grow">{domainNameHe(d as never)}</span>
-              <span style={{ fontWeight: 700 }}>
+              <span className="t-strong">
                 {v.c}/{v.t}
               </span>
             </div>
@@ -298,7 +309,7 @@ function Summary({
           <span className="section-label">כדאי לעבור שוב</span>
           <div className="list">
             {wrong.slice(0, 8).map((i) => (
-              <div key={i.id} className="list-item" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: 2 }}>
+              <Stack key={i.id} gap={1} align="start" className="list-item">
                 {i.type === 'order' ? (
                   <En className="small">{i.answer}</En>
                 ) : i.type === 'fix' ? (
@@ -314,7 +325,7 @@ function Summary({
                     לשיעור
                   </Link>
                 )}
-              </div>
+              </Stack>
             ))}
           </div>
         </div>
@@ -342,6 +353,6 @@ function Summary({
           חזרה למסך הבית
         </button>
       </div>
-    </section>
+    </Stack>
   );
 }

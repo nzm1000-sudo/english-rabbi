@@ -9,8 +9,8 @@ export function StudentPicker() {
 
   return (
     <main className="screen">
-      <div className="stack" style={{ marginTop: 'var(--s-6)', textAlign: 'center', alignItems: 'center', gap: 'var(--s-2)' }}>
-        <span className="rank-badge" aria-hidden="true" style={{ width: 64, height: 72, fontSize: 24 }} lang="en">
+      <div className="stack gap-2 items-center txt-center page-intro">
+        <span className="rank-badge lg" aria-hidden="true" lang="en">
           En
         </span>
         <h1 className="title">מי לומד עכשיו?</h1>
@@ -34,7 +34,7 @@ export function StudentPicker() {
         </nav>
       )}
 
-      <div style={{ marginTop: 'auto', textAlign: 'center' }}>
+      <div className="mt-auto txt-center">
         <Link to="/parent" className="btn btn-ghost btn-sm">
           מצב הורה
         </Link>

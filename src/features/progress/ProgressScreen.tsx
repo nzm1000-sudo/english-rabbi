@@ -21,11 +21,11 @@ export function ProgressScreen() {
     <main className="screen">
       <TopBar back={`/s/${student.id}`} title="ההתקדמות שלי" />
 
-      <section className="result-hero" style={{ alignItems: 'stretch', textAlign: 'start' }}>
+      <section className="result-hero start">
         <div className="rank">
           <span className="rank-badge">{r.current.level}</span>
           <div className="grow">
-            <div style={{ fontWeight: 700, fontSize: 'var(--t-xl)' }}>
+            <div className="t-h2">
               {r.current.he} <En className="small">{r.current.name}</En>
             </div>
             <div className="small muted">
@@ -67,7 +67,7 @@ export function ProgressScreen() {
         </span>
         <div className="grid-2">
           {ach.map((a) => (
-            <div key={a.id} className={`tile ${a.earned ? 'tile-solid tone-games' : ''}`} aria-disabled={!a.earned} style={{ minHeight: 104 }}>
+            <div key={a.id} className={`tile compact ${a.earned ? 'tile-solid tone-games' : ''}`} aria-disabled={!a.earned}>
               <span className="tile-icon">{a.earned ? <CheckIcon size={20} /> : <StarIcon size={20} />}</span>
               <strong>{a.title}</strong>
               <span className="tile-sub">{a.description}</span>

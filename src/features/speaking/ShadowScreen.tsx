@@ -52,7 +52,7 @@ export function ShadowScreen() {
       <main className="screen">
         <TopBar back={base} title="חזרה בקול" />
         <div className="panel stack txt-center">
-          <strong style={{ fontSize: 'var(--t-lg)' }}>{scores.length ? 'כל הכבוד על התרגול!' : 'אין עדיין משפטים לתרגול'}</strong>
+          <strong className="t-h3">{scores.length ? 'כל הכבוד על התרגול!' : 'אין עדיין משפטים לתרגול'}</strong>
           {scores.length > 0 && (
             <He className="muted">{avg >= 0.9 ? 'נשמע מצוין. מחר אפשר לנסות משפטים ארוכים יותר.' : 'כל חזרה משפרת את ההגייה. מחר עוד סבב.'}</He>
           )}
@@ -86,9 +86,9 @@ export function ShadowScreen() {
 
       <section className="shadow-step">
         <span className="shadow-num">1</span>
-        <div className="grow stack" style={{ gap: 'var(--s-2)' }}>
+        <div className="grow stack gap-2">
           <strong>להקשיב</strong>
-          <div className="row" style={{ gap: 'var(--s-3)' }}>
+          <div className="row">
             <SpeakButton text={current.text} speaker={current.speaker} large label="להקשיב" />
             <SpeakButton text={current.text} speaker={current.speaker} slow label="להקשיב לאט" />
           </div>
@@ -97,7 +97,7 @@ export function ShadowScreen() {
 
       <section className="shadow-step">
         <span className="shadow-num">2</span>
-        <div className="grow stack" style={{ gap: 'var(--s-2)' }}>
+        <div className="grow stack gap-2">
           <strong>לקרוא בקול ולבדוק</strong>
           <ReadCheck key={current.text} text={current.text} onDone={setOutcome} />
         </div>

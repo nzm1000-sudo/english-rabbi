@@ -26,11 +26,11 @@ export function AnchorCard({ anchor, compact = false }: { anchor: Anchor; compac
       )}
       {!compact && anchor.rule && <He className="small">{anchor.rule}</He>}
       {!compact && anchor.examples.length > 0 && (
-        <div className="stack" style={{ gap: 4 }}>
+        <div className="stack gap-1">
           {anchor.examples.map((e, i) => (
-            <div key={i} className="row" style={{ gap: 'var(--s-2)', alignItems: 'center' }}>
+            <div key={i} className="row gap-2">
               <SpeakButton text={e.en} />
-              <span className="grow stack" style={{ gap: 0 }}>
+              <span className="grow stack gap-0">
                 <En className="small">{e.en}</En>
                 <He className="xs muted">{e.he}</He>
               </span>

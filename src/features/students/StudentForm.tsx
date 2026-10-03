@@ -83,7 +83,7 @@ function StudentFormInner({ student }: { student: Student | null }) {
   return (
     <main className="screen">
       <TopBar back={student ? `/s/${student.id}` : '/'} title={student ? 'הגדרות' : 'תלמיד חדש'} />
-      <form className="stack" style={{ gap: 'var(--s-5)' }} onSubmit={submit} noValidate>
+      <form className="stack gap-4" onSubmit={submit} noValidate>
         <div className="field">
           <label htmlFor="name">שם</label>
           <input
@@ -98,17 +98,17 @@ function StudentFormInner({ student }: { student: Student | null }) {
             enterKeyHint="next"
             aria-invalid={!!error}
           />
-          {error && <span className="small" style={{ color: 'var(--bad)' }}>{error}</span>}
+          {error && <span className="small error-text">{error}</span>}
         </div>
 
         <div className="field">
           <label htmlFor="age">גיל</label>
-          <input id="age" className="input" inputMode="numeric" value={age} onChange={(e) => setAge(e.target.value.replace(/\D/g, '').slice(0, 3))} placeholder="למשל 5" style={{ maxWidth: 120 }} />
+          <input id="age" className="input narrow" inputMode="numeric" value={age} onChange={(e) => setAge(e.target.value.replace(/\D/g, '').slice(0, 3))} placeholder="למשל 5" />
         </div>
 
         <div className="field">
           <span className="label">איזו אפליקציה לראות</span>
-          <div className="segmented" role="group" aria-label="שלב גיל" style={{ gridAutoFlow: 'row', gridTemplateColumns: '1fr 1fr' }}>
+          <div className="segmented cols-2" role="group" aria-label="שלב גיל">
             {(
               [
                 ['auto', 'לפי הגיל'],

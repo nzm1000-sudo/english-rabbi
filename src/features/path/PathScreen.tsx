@@ -34,14 +34,14 @@ export function PathScreen() {
   return (
     <main className="screen">
       <TopBar back={`/s/${student.id}`} title="המסלול שלי" />
-      <p className="subtitle" style={{ textAlign: 'center' }}>
+      <p className="subtitle txt-center">
         כל עיגול הוא מיומנות. הטבעת מתמלאת ככל שהשליטה עולה.
       </p>
       {levels.map((level) => {
         const list = nodes(level);
         if (!list.length) return null;
         return (
-          <section key={level} className="stack" style={{ gap: 'var(--s-4)' }}>
+          <section key={level} className="stack">
             <div className={`path-level${level === here ? ' here' : ''}`}>
               <En className="path-level-code">{level}</En>
               <span>{LEVEL_NAME[level]}</span>

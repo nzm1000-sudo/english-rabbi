@@ -125,7 +125,7 @@ function MatchRound({ again }: { again: () => void }) {
 
   const home = `/s/${student.id}`;
   return (
-    <main className="screen" style={{ gap: 'var(--s-4)' }}>
+    <main className="screen tight">
       <header className="row">
         <button className="icon-btn" onClick={() => nav(home)} aria-label="יציאה">
           <CloseIcon />
@@ -145,14 +145,14 @@ function MatchRound({ again }: { again: () => void }) {
             להתאים כל מילה לפירוש שלה
           </div>
           <div className="match-grid">
-            <div className="stack" style={{ gap: 'var(--s-2)' }}>
+            <div className="stack gap-2">
               {heCol.map((w) => (
                 <button key={`he-${w.lemma}`} className="match-card" data-state={state('he', w)} onClick={() => pick('he', w)} disabled={done.has(w.lemma)}>
                   {w.he}
                 </button>
               ))}
             </div>
-            <div className="stack" style={{ gap: 'var(--s-2)' }}>
+            <div className="stack gap-2">
               {enCol.map((w) => (
                 <button key={`en-${w.lemma}`} className="match-card en" dir="ltr" lang="en" data-state={state('en', w)} onClick={() => pick('en', w)} disabled={done.has(w.lemma)}>
                   {w.lemma}
@@ -162,7 +162,7 @@ function MatchRound({ again }: { again: () => void }) {
           </div>
         </>
       ) : (
-        <section className="stack" style={{ gap: 'var(--s-4)' }}>
+        <section className="stack">
           {firstTry >= words.length * 0.6 && <Confetti />}
           <div className="result-hero">
             <span className="tile-icon result-icon">
@@ -172,7 +172,7 @@ function MatchRound({ again }: { again: () => void }) {
             <span className="big">
               {firstTry}/{words.length}
             </span>
-            <span style={{ opacity: 0.92 }}>בניסיון הראשון</span>
+            <span>בניסיון הראשון</span>
           </div>
           <button className="btn btn-primary btn-block" onClick={again}>
             עוד משחק

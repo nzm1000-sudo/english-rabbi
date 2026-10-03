@@ -2,24 +2,25 @@ import type { Lesson, LessonBlock } from '@/domain/content/schema';
 import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
+import { Stack } from '@/ui/layout';
 
 /** Renders a lesson: Hebrew explanation, English examples with audio, tables, typical mistakes. */
 export function LessonView({ lesson }: { lesson: Lesson }) {
   return (
-    <article className="stack" style={{ gap: 'var(--s-4)' }}>
-      <header className="stack" style={{ gap: 4 }}>
-        <h2 className="title" style={{ fontSize: 'var(--t-xl)' }}>
+    <Stack as="article" gap={4}>
+      <Stack as="header" gap={1}>
+        <h2 className="title lesson-title">
           <He>{lesson.title.he}</He>
         </h2>
         <En as="p" className="muted small">
           {lesson.title.en}
         </En>
         <p className="muted"><He>{lesson.goal}</He></p>
-      </header>
+      </Stack>
       {lesson.blocks.map((b, i) => (
         <Block key={i} b={b} />
       ))}
-    </article>
+    </Stack>
   );
 }
 
@@ -27,17 +28,17 @@ function Block({ b }: { b: LessonBlock }) {
   switch (b.kind) {
     case 'text':
       return (
-        <div className="stack" style={{ gap: 4 }}>
+        <Stack gap={1}>
           <p><He>{b.he}</He></p>
           {b.en && <En as="p" className="small muted">{b.en}</En>}
-        </div>
+        </Stack>
       );
     case 'rule':
       return (
         <div className="rule-box">
           <span className="small"><He>{b.he}</He></span>
           <En as="p" className="" >
-            <strong style={{ fontSize: 'var(--t-lg)' }}>{b.pattern}</strong>
+            <strong className="t-h3">{b.pattern}</strong>
           </En>
         </div>
       );
@@ -45,8 +46,8 @@ function Block({ b }: { b: LessonBlock }) {
       return (
         <div className="list">
           {b.items.map((e, i) => (
-            <div key={i} className="list-item" style={{ alignItems: 'flex-start' }}>
-              <div className="grow stack" style={{ gap: 2 }}>
+            <div key={i} className="list-item items-start">
+              <div className="grow stack gap-1">
                 <En>{e.en}</En>
                 {e.he && <He className="small muted">{e.he}</He>}
                 {e.note && <He className="xs muted">{e.note}</He>}
@@ -58,7 +59,7 @@ function Block({ b }: { b: LessonBlock }) {
       );
     case 'mistake':
       return (
-        <div className="panel stack" style={{ gap: 6 }}>
+        <div className="panel stack gap-2">
           <div className="row small">
             <span className="badge badge-bad">לא</span>
             <En className="grow" ><s>{b.wrong}</s></En>
@@ -80,7 +81,7 @@ function Block({ b }: { b: LessonBlock }) {
       );
     case 'table':
       return (
-        <div style={{ overflowX: 'auto' }}>
+        <div className="table-scroll">
           <table className="table">
             <thead>
               <tr>{b.head.map((h, i) => <th key={i}><He>{h}</He></th>)}</tr>

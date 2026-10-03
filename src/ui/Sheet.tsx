@@ -18,7 +18,7 @@ export function Sheet({ open, onClose, children, label }: { open: boolean; onClo
   return (
     <div className="sheet-backdrop" onClick={onClose}>
       <div className="sheet" role="dialog" aria-modal="true" aria-label={label} onClick={(e) => e.stopPropagation()}>
-        <div className="row" style={{ justifyContent: 'flex-end' }}>
+        <div className="row justify-end">
           <button className="icon-btn" onClick={onClose} aria-label="סגירה">
             <CloseIcon />
           </button>

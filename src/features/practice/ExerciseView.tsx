@@ -85,15 +85,15 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
   return (
     <div className="exercise">
       <div className={`ex-instruction tone-${domainOf(item.skill)}`}>
-        <span className="dot" style={{ background: 'var(--c-fg)' }} />
+        <span className="dot" />
         <BiText text={instruction} />
       </div>
 
       {passage && <PassagePanel passage={passage} locked={glossLocked || (item.skill === 'reading.vocabulary-in-context' && !finished)} />}
 
       {listen && (
-        <div className="center" style={{ minHeight: 140 }}>
-          <div className="row" style={{ gap: 'var(--s-4)' }}>
+        <div className="center prompt-solo">
+          <div className="row gap-4">
             <SpeakButton text={audioText} large label="השמעה" onPlayed={() => dispatch({ type: 'replay' })} />
             <SpeakButton text={audioText} slow label="השמעה איטית מאוד" onPlayed={() => dispatch({ type: 'replay' })} />
           </div>
@@ -124,7 +124,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
       {policy === 'teach' && <Help item={item} flow={flow} last={last} support={support} />}
 
       {lesson && feedback === 'full' && flow.explanationShown && !finished && (
-        <button className="btn btn-ghost btn-sm" style={{ alignSelf: 'flex-start' }} onClick={() => setLessonOpen(true)}>
+        <button className="btn btn-ghost btn-sm self-start" onClick={() => setLessonOpen(true)}>
           <He>{`לשיעור המלא: ${lesson.title.he}`}</He>
         </button>
       )}
@@ -136,7 +136,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
         <div className={`banner ${flow.phase === 'solved' ? 'banner-good' : 'banner-bad'}`} role="status" aria-live="polite">
           <AfterAnswer item={item} flow={flow} support={support} listen={listen} audioText={audioText} />
           {lesson && (
-            <button className="btn btn-ghost btn-sm" style={{ alignSelf: 'flex-start' }} onClick={() => setLessonOpen(true)}>
+            <button className="btn btn-ghost btn-sm self-start" onClick={() => setLessonOpen(true)}>
               <He>{`לשיעור המלא: ${lesson.title.he}`}</He>
             </button>
           )}
@@ -198,7 +198,7 @@ function Prompt({ item, finished, canSpeak, glossLocked }: { item: Props['item']
   const fill = finished ? modelAnswer(item) : undefined;
   const content = renderCloze(item.prompt, fill, isHe ? undefined : { locked: glossLocked });
   return (
-    <div className="row prompt-card" style={{ alignItems: 'center' }}>
+    <div className="row prompt-card">
       {isHe ? (
         <p className={`grow ${isWord ? 'prompt-word' : 'prompt'}`}>{typeof content === 'string' ? <He>{content}</He> : content}</p>
       ) : (
@@ -243,7 +243,7 @@ function OrderInput({ item, seed, flow, onSubmit }: { item: OrderItem; seed: str
   };
 
   return (
-    <form id={`answer-${item.id}`} onSubmit={submit} className="stack" style={{ gap: 'var(--s-4)' }}>
+    <form id={`answer-${item.id}`} onSubmit={submit} className="stack gap-4">
       <div className="order-line prompt-card" dir="ltr" lang="en" aria-label="המשפט שלך">
         {placed.length === 0 && <span className="muted small" dir="rtl" lang="he">להקיש על המילים למטה</span>}
         {placed.map((id) => (
@@ -303,7 +303,7 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
   };
 
   return (
-    <form id={`answer-${item.id}`} onSubmit={submit} className="stack" style={{ gap: 'var(--s-4)' }}>
+    <form id={`answer-${item.id}`} onSubmit={submit} className="stack gap-4">
       <div className="fix-line prompt-card" dir="ltr" lang="en" aria-label="המשפט">
         {tokens.map((t, i) => (
           <button
@@ -320,7 +320,7 @@ function FixInput({ item, seed, flow, onSubmit }: { item: FixItem; seed: string;
         ))}
       </div>
       {picked !== null && !finished && (
-        <div className="stack" style={{ gap: 'var(--s-2)' }}>
+        <div className="stack gap-2">
           <span className="small muted">במה להחליף את המילה?</span>
           <div className="options" role="group" aria-label="תיקונים">
             {fixes.map((f) => (
@@ -352,9 +352,9 @@ function renderCloze(prompt: string, fill?: string, tap?: { locked: boolean }): 
     <>
       {t(before)}
       {fill ? (
-        <strong style={{ color: 'var(--good-ink)' }}>{fill}</strong>
+        <strong className="fill">{fill}</strong>
       ) : (
-        <span aria-label="מילה חסרה" style={{ display: 'inline-block', minWidth: '3.5em', borderBottom: '3px solid var(--primary-fg)', margin: '0 3px', verticalAlign: 'baseline' }}>
+        <span aria-label="מילה חסרה" className="blank">
           &nbsp;
         </span>
       )}
@@ -465,7 +465,7 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
       <input
         ref={ref}
         id={`in-${item.id}`}
-        className="input"
+        className="input en"
         dir="ltr"
         lang="en"
         value={value}
@@ -478,7 +478,6 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
         enterKeyHint="done"
         inputMode="text"
         placeholder="לכתוב כאן באנגלית"
-        style={{ fontFamily: 'var(--font-en)' }}
       />
     </form>
   );
@@ -517,7 +516,7 @@ function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowSt
   if (flow.explanationShown) {
     blocks.push(
       <div key="ex" className="feedback feedback-info" role="status">
-        <span className="feedback-tag" style={{ color: 'var(--primary-fg)' }}>הסבר</span>
+        <span className="feedback-tag accent">הסבר</span>
         <BiText text={chooseText(item.explanation, support)} />
       </div>,
     );
@@ -570,7 +569,7 @@ function AfterAnswer({ item, flow, support, listen, audioText }: { item: Props['
       </div>
       <div className="banner-body">
         {!solved && model && (
-          <div style={{ fontWeight: 650 }}>
+          <div className="t-strong">
             התשובה הנכונה: <En>{model}</En>
           </div>
         )}

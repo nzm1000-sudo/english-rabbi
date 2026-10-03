@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useServices } from '@/app/services';
 import { useProfile, useStudent } from '@/app/hooks';
 import { TopBar } from '@/ui/TopBar';
+import { Row } from '@/ui/layout';
 import { ChevronIcon } from '@/ui/icons';
 import { DOMAINS, domainOf } from '@/domain/skills/taxonomy';
 import { domainNameHe } from '@/domain/student/profile';
@@ -30,20 +31,20 @@ export function LearnHub() {
         if (!ls.length) return null;
         return (
           <section key={d} className={`stack tone-${d}`}>
-            <div className="row" style={{ gap: 10 }}>
-              <span className="tile-icon" style={{ width: 36, height: 36, borderRadius: 11 }}>
+            <Row gap={2}>
+              <span className="tile-icon">
                 <DomainIcon domain={d} size={20} />
               </span>
-              <h2 style={{ fontSize: 'var(--t-lg)', fontWeight: 650 }}>{domainNameHe(d)}</h2>
-            </div>
+              <h2 className="t-h3">{domainNameHe(d)}</h2>
+            </Row>
             <nav className="list">
               {ls.map((l) => (
-                <Link key={l.id} to={`/s/${student.id}/learn/${l.id}`} className="list-item" style={{ color: 'inherit', textDecoration: 'none' }}>
-                  <span className="grow">
+                <Link key={l.id} to={`/s/${student.id}/learn/${l.id}`} className="list-item">
+                  <Row as="span" gap={2} wrap className="grow">
                     <He>{l.title.he}</He>
-                    {[...weak].some((w) => w.startsWith(l.skill)) && <span className="badge badge-warn" style={{ marginInlineStart: 8 }}>כדאי לחזק</span>}
-                  </span>
-                  <span className="tile-level" style={{ position: 'static' }} dir="ltr">{l.level}</span>
+                    {[...weak].some((w) => w.startsWith(l.skill)) && <span className="badge badge-warn">כדאי לחזק</span>}
+                  </Row>
+                  <span className="tile-level" dir="ltr">{l.level}</span>
                   <ChevronIcon />
                 </Link>
               ))}
@@ -75,12 +76,12 @@ export function LessonScreen() {
           className="row-card"
           replace
         >
-          <span className="tile-icon" style={{ background: 'var(--warn-weak)', color: 'var(--warn-ink)' }}>
+          <span className="tile-icon tone-warn">
             ?
           </span>
           <span className="grow">
             <strong>לנחש לפני ההסבר</strong>
-            <span className="xs muted" style={{ display: 'block' }}>
+            <span className="xs muted block">
               3 שאלות בלי לחץ. ניחוש לפני הלמידה עוזר לזכור יותר.
             </span>
           </span>

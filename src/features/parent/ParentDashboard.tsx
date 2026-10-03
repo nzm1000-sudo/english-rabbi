@@ -9,6 +9,7 @@ import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import { DomainIcon } from '@/ui/DomainIcon';
 import { TopBar } from '@/ui/TopBar';
+import { Stack } from '@/ui/layout';
 import { ChevronIcon } from '@/ui/icons';
 import type { ParentLabel } from '@/domain/learning/mastery';
 import { localDay } from '@/domain/learning/events';
@@ -56,13 +57,13 @@ function StudentReport({ student }: { student: Student }) {
   const a = p.activity;
 
   return (
-    <div className="stack" style={{ gap: 'var(--s-5)' }}>
+    <Stack gap={5}>
       <div className="row">
         <Avatar name={student.name} hue={student.hue} />
         <div className="grow">
-          <div style={{ fontWeight: 650, fontSize: 'var(--t-lg)' }}>{student.name}</div>
+          <div className="t-h3">{student.name}</div>
           <div className="small muted">
-            {a.lastActiveDay ? `פעילות אחרונה: ${formatDay(a.lastActiveDay)}` : 'עוד לא התחיל/ה לתרגל'}
+            {a.lastActiveDay ? `פעילות אחרונה: ${formatDay(a.lastActiveDay)}` : 'עדיין אין תרגול'}
           </div>
         </div>
         {student.archived && (
@@ -74,7 +75,7 @@ function StudentReport({ student }: { student: Student }) {
 
       <section className="stack">
         <span className="section-label">פעילות</span>
-        <div className="panel" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 'var(--s-3)', textAlign: 'center' }}>
+        <div className="panel stat-panel">
           <Stat value={a.minutesLast7} label="דקות השבוע" />
           <Stat value={`${a.activeDaysLast7}/7`} label="ימים השבוע" />
           <Stat value={a.activeDaysLast30} label="ימים ב־30 יום" />
@@ -119,10 +120,10 @@ function StudentReport({ student }: { student: Student }) {
           <span className="section-label">טעויות חוזרות</span>
           <div className="list">
             {p.memory.map((m) => (
-              <div key={m.misconceptionId} className="list-item" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: 2 }}>
+              <Stack key={m.misconceptionId} gap={1} align="start" className="list-item">
                 <He>{m.note.he}</He>
                 <span className="xs muted">{m.count} פעמים · לאחרונה {formatDay(localDay(m.lastSeenAt))}</span>
-              </div>
+              </Stack>
             ))}
           </div>
         </section>
@@ -133,14 +134,14 @@ function StudentReport({ student }: { student: Student }) {
       {p.recommendations.length > 0 && (
         <section className="stack">
           <span className="section-label">המלצה לשבוע הקרוב</span>
-          <ul className="panel stack" style={{ margin: 0, paddingInlineStart: 'var(--s-6)' }}>
+          <ul className="panel stack plain-list">
             {p.recommendations.map((r) => (
               <li key={r}><He>{r}</He></li>
             ))}
           </ul>
         </section>
       )}
-    </div>
+    </Stack>
   );
 }
 
@@ -168,8 +169,8 @@ function DomainRow({ d }: { d: DomainSummary }) {
           ))}
         </span>
         <span>{d.attempts} תשובות</span>
-        {d.trend === 'improving' && <span style={{ color: 'var(--good)' }}>מגמת שיפור</span>}
-        {d.trend === 'declining' && <span style={{ color: 'var(--warn)' }}>ירידה</span>}
+        {d.trend === 'improving' && <span className="trend-up">מגמת שיפור</span>}
+        {d.trend === 'declining' && <span className="trend-down">ירידה</span>}
       </div>
     </div>
   );
@@ -246,11 +247,11 @@ function DeviceSection() {
   };
 
   return (
-    <section className="stack" style={{ marginTop: 'var(--s-5)' }}>
+    <section className="stack device-section">
       <span className="section-label">מכשיר ונתונים</span>
       <ThemePicker />
       <div className="list">
-        <Link to="/parent/voices" className="list-item" style={{ color: 'inherit', textDecoration: 'none' }}>
+        <Link to="/parent/voices" className="list-item">
           <span className="grow">מעבדת קולות</span>
           <ChevronIcon />
         </Link>
@@ -287,7 +288,7 @@ function DeviceSection() {
 function Stat({ value, label }: { value: number | string; label: string }) {
   return (
     <div>
-      <div style={{ fontSize: 'var(--t-xl)', fontWeight: 650 }}>{value}</div>
+      <div className="stat-value">{value}</div>
       <div className="xs muted">{label}</div>
     </div>
   );

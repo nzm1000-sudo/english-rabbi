@@ -145,7 +145,7 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
             {line.speaker && story.cast && (
               <En className="story-name">{story.cast[line.speaker]}</En>
             )}
-            <div className="row" style={{ alignItems: 'flex-start', gap: 'var(--s-2)' }}>
+            <div className="row items-start gap-2">
               <p className="grow story-text" dir="ltr" lang="en">
                 <LineWords text={line.en} story={story} savedSet={savedSet} onTap={(w) => tapWord(w, line.en)} />
               </p>
@@ -185,7 +185,7 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
       ) : finished ? (
         <div className="panel stack story-end">
           <Confetti />
-          <strong className="txt-center" style={{ fontSize: 'var(--t-lg)' }}>
+          <strong className="txt-center t-h3">
             סיימת את הסיפור!
           </strong>
           {story.moral && <He className="txt-center">{story.moral}</He>}
@@ -213,7 +213,7 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
       {gloss && (
         <div className="gloss-pop" role="dialog" aria-label="פירוש המילה">
           <div className="spread">
-            <div className="row" style={{ gap: 'var(--s-2)' }}>
+            <div className="row gap-2">
               <En className="gloss-word">{gloss.lemma}</En>
               <SpeakButton text={gloss.lemma} />
             </div>
@@ -223,7 +223,7 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
           </div>
           <He className="gloss-he">{gloss.he}</He>
           <div className="spread">
-            <span className="xs muted row" style={{ gap: 4 }}>
+            <span className="xs muted row gap-1">
               <BookmarkIcon size={16} />
               {savedSet.has(gloss.lemma) ? 'נשמרה ב״המילים שלי״' : 'שומרים...'}
             </span>
