@@ -1399,8 +1399,8 @@
           "en": "Who is the subject? One or many?"
         },
         {
-          "he": "🧰 does לוקחת את ה־s של he, she, it.",
-          "en": "🧰 does takes the -s of he, she, it."
+          "he": "🧰 מילת העזר בשאלה לוקחת את ה־s מהפועל. האם your brother מקבל s?",
+          "en": "🧰 The helper in a question takes the -s from the verb. Does your brother get an -s?"
         }
       ],
       "explanation": {
@@ -1673,8 +1673,8 @@
           "en": "Who is the subject? What is the verb?"
         },
         {
-          "he": "🧰 does לוקחת את ה־s של he, she, it.",
-          "en": "🧰 does takes the -s of he, she, it."
+          "he": "🧰 מילת העזר לוקחת את ה־s מהפועל. האם your aunt מקבלת s?",
+          "en": "🧰 The helper takes the -s from the verb. Does your aunt get an -s?"
         }
       ],
       "explanation": {
@@ -1749,7 +1749,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: live, פועל רגיל, בתוך שאלה.\n🧰 שאלה עם פועל רגיל צריכה מילת עזר: Where + do + you + live.\nבעברית \"איפה אתה גר?\" בלי מילת עזר, ולכן קל לשכוח את do.",
+        "he": "🔎 הרמז: live, פועל רגיל, בתוך שאלה.\n🧰 שאלה עם פועל רגיל צריכה מילת עזר: Where + do + you + live.\nבעברית \"איפה אתם גרים?\" בלי מילת עזר, ולכן קל לשכוח את do.",
         "en": "A question with a normal verb needs do: Where do you live?"
       },
       "targetsMisconceptions": [
@@ -1868,8 +1868,8 @@
           "en": "Who is the subject? One or many?"
         },
         {
-          "he": "🧰 does לוקחת את ה־s של he, she, it.",
-          "en": "🧰 does takes the -s of he, she, it."
+          "he": "🧰 מילת העזר לוקחת את ה־s מהפועל. האם the movie מקבל s?",
+          "en": "🧰 The helper takes the -s from the verb. Does the movie get an -s?"
         }
       ],
       "explanation": {
@@ -2380,7 +2380,7 @@
         {
           "answer": "swiming",
           "feedback": {
-            "he": "כמעט. מכפילים את ה־m: swimming..",
+            "he": "כמעט. מכפילים את ה־m: swimming.",
             "en": "Almost. Double the m: swimming."
           },
           "misconception": "present-progressive.ing-spelling"
@@ -2747,7 +2747,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: belongs to, שייכות.\n🧠 belong הוא מצב, לא פעולה, ולכן אין לו ing.\nThis bag = it, ולכן belongs 🐍.",
+        "he": "🔎 הרמז: to my brother, כלומר שייכות.\n🧠 belong הוא מצב, לא פעולה, ולכן אין לו ing.\nThis bag = it, ולכן belongs 🐍.",
         "en": "Belong is a state, so present simple. The bag = it: belongs."
       },
       "targetsMisconceptions": [
@@ -3347,7 +3347,7 @@
         {
           "answer": "stoped",
           "feedback": {
-            "he": "כמעט. מכפילים את ה־p: stopped..",
+            "he": "כמעט. מכפילים את ה־p: stopped.",
             "en": "Almost. Double the p: stopped."
           },
           "misconception": "past-simple.spelling"
@@ -3879,13 +3879,13 @@
           "en": "Which words tell you when it happened?"
         },
         {
-          "he": "📸 עבר פשוט. hear מקבל רק אות אחת בסוף.",
-          "en": "📸 Past simple. hear adds only one letter."
+          "he": "📸 עבר פשוט. hear חריג, אבל בכתיב הוא משתנה רק מעט.",
+          "en": "📸 Past simple. hear is irregular, but its spelling changes only a little."
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: last night.\n📸 זמן ידוע שנגמר = עבר פשוט.\nhear הוא כמעט רגיל: מוסיפים רק d. heard.",
-        "en": "Last night = past simple. hear + d = heard."
+        "he": "🔎 הרמז: last night.\n📸 זמן ידוע שנגמר = עבר פשוט.\nhear הוא חריג: בכתיב מוסיפים רק d, אבל ההגייה משתנה: heard.",
+        "en": "Last night = past simple. hear is irregular: add only -d, and the sound changes: heard."
       },
       "targetsMisconceptions": [
         "past-simple.overregularization"
@@ -5459,7 +5459,7 @@
           "text": "sitting",
           "misconception": "past-progressive.form",
           "feedback": {
-            "he": "sitting בלי were חסר. בעברית אין מילה כזאת, ולכן קל לשכוח אותה.",
+            "he": "sitting בלי were חסר. בעברית אומרים \"ישבנו\" במילה אחת, בלי \"היינו\", ולכן קל לשכוח את were.",
             "en": "sitting needs were."
           }
         }
@@ -5804,7 +5804,7 @@
           "text": "doing",
           "misconception": "past-progressive.form",
           "feedback": {
-            "he": "doing בלי was חסר. בעברית אין מילה כזאת, ולכן קל לשכוח אותה.",
+            "he": "doing בלי was חסר. בעברית אומרים \"הכנתי\" במילה אחת, בלי \"הייתי\", ולכן קל לשכוח את was.",
             "en": "doing needs was."
           }
         },
@@ -6280,7 +6280,7 @@
           "text": "walking",
           "misconception": "past-progressive.form",
           "feedback": {
-            "he": "walking בלי was חסר. בעברית אין מילה כזאת, ולכן קל לשכוח אותה.",
+            "he": "walking בלי was חסר. בעברית אומרים \"הלכתי\" במילה אחת, בלי \"הייתי\", ולכן קל לשכוח את was.",
             "en": "walking needs was."
           }
         },
@@ -6433,7 +6433,7 @@
           "id": "d",
           "text": "usually",
           "feedback": {
-            "he": "usually = בדרך כלל, הרגל של היום. וגם אי אפשר לומר I usually be. כאן כתוב When I was little, כלומר פעם.",
+            "he": "usually = בדרך כלל, הרגל של היום. וגם אי אפשר לומר I usually be. כאן יש When I was little, כלומר פעם.",
             "en": "usually = most of the time, a habit now. Also, I usually be is not correct. Here it is When I was little, the past."
           }
         }
@@ -6445,8 +6445,8 @@
           "en": "Which part of the sentence tells you when this was?"
         },
         {
-          "he": "🕰️ פעם, וכבר לא: used to + פועל. כדאי לבדוק את האות האחרונה של used.",
-          "en": "🕰️ In the past, not now: used to + verb. Check the last letter of used."
+          "he": "🕰️ פעם, וכבר לא: יש לזה מבנה קבוע. במשפט חיובי בלי did, המילה נכתבת עם d או בלי?",
+          "en": "🕰️ In the past, not now: there is a fixed structure. In a positive sentence without did, is the word spelled with d or without?"
         }
       ],
       "explanation": {
@@ -6514,12 +6514,12 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה כתוב בסוף המשפט על ההרגל של סבא?",
+          "he": "מה מופיע בסוף המשפט על ההרגל של סבא?",
           "en": "What does the end of the sentence say about grandfather's habit?"
         },
         {
-          "he": "🕰️ הרגל שנגמר = used to. האם יש לו צורת הווה עם s?",
-          "en": "🕰️ A habit that ended = used to. Does it have a present form with -s?"
+          "he": "🕰️ הרגל שנגמר. האם למבנה הזה יש צורת הווה עם s?",
+          "en": "🕰️ A habit that ended. Does this structure have a present form with -s?"
         }
       ],
       "explanation": {
@@ -6584,7 +6584,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "איך כתוב use במשפט: עם d או בלי? ומתי זה קרה?",
+          "he": "איך נכתב use במשפט: עם d או בלי? ומתי זה קרה?",
           "en": "Is use written with d or without? When did it happen?"
         },
         {
@@ -6792,8 +6792,8 @@
           "en": "Which words show that today it is different?"
         },
         {
-          "he": "🕰️ פעם, וכבר לא: used to. במשפט חיובי, עם d או בלי?",
-          "en": "🕰️ In the past, not now: used to. Positive sentence: with d or without?"
+          "he": "🕰️ פעם, וכבר לא. במשפט חיובי בלי did: עם d או בלי?",
+          "en": "🕰️ In the past, not now. Positive sentence without did: with d or without?"
         }
       ],
       "explanation": {
@@ -6858,12 +6858,12 @@
       ],
       "hints": [
         {
-          "he": "מה כתוב אחרי but now?",
+          "he": "מה מופיע אחרי but now?",
           "en": "What does but now tell you?"
         },
         {
-          "he": "🕰️ הרגל שנגמר = used to. יש במשפט did? אם לא, איך כותבים את המילה?",
-          "en": "🕰️ A habit that ended = used to. Is there a did? If not, how is the word spelled?"
+          "he": "🕰️ הרגל שנגמר. יש במשפט did? אם לא, באיזו אות נגמרת המילה?",
+          "en": "🕰️ A habit that ended. Is there a did? If not, which letter ends the word?"
         }
       ],
       "explanation": {
@@ -7273,7 +7273,7 @@
           "id": "d",
           "text": "was",
           "feedback": {
-            "he": "was be לא קיים, וגם was זה עבר. כתוב tomorrow, עתיד.",
+            "he": "was be לא קיים, וגם was זה עבר. במשפט יש tomorrow, עתיד.",
             "en": "was be is not correct, and was is past. It says tomorrow, the future."
           }
         }
@@ -7609,7 +7609,7 @@
           "id": "c",
           "text": "visited",
           "feedback": {
-            "he": "visited זה עבר. אבל כתוב tomorrow evening, עתיד.",
+            "he": "visited זה עבר. אבל במשפט יש tomorrow evening, עתיד.",
             "en": "visited is past. But it says tomorrow evening, the future."
           }
         },
@@ -7888,7 +7888,7 @@
         {
           "answer": "left",
           "feedback": {
-            "he": "left זה עבר. כתוב tomorrow, ולכן 📅 הווה פשוט: leaves.",
+            "he": "left זה עבר. במשפט יש tomorrow, ולכן 📅 הווה פשוט: leaves.",
             "en": "left is past. It says tomorrow, so present simple: leaves."
           }
         }
@@ -8505,7 +8505,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה כתוב אחרי הרווח: כמה זמן או מתי התחיל?",
+          "he": "מה מופיע אחרי הרווח: כמה זמן או מתי התחיל?",
           "en": "What follows the gap: how long, or when it started?"
         },
         {
@@ -10263,7 +10263,7 @@
         {
           "answer": "learned",
           "feedback": {
-            "he": "has been learned זה סביל (מישהו למד אותה). כאן היא זו שלומדת: has been learning.",
+            "he": "has been learned זה מבנה של סביל, כאילו מישהו למד אותה עצמה. כאן היא זו שלומדת: has been learning.",
             "en": "has been learned is passive. Here she is the one learning: has been learning."
           }
         },
@@ -11752,8 +11752,8 @@
           "en": "Which word comes right before the gap?"
         },
         {
-          "he": "📦 was + צורה שלישית. build → built → ?",
-          "en": "📦 was + third form. build → built → ?"
+          "he": "📦 was + צורה שלישית. build הוא חריג, ולא מוסיפים לו ed.",
+          "en": "📦 was + third form. build is irregular, so no -ed."
         }
       ],
       "explanation": {
@@ -11888,8 +11888,8 @@
           "en": "Which word comes right before the gap?"
         },
         {
-          "he": "📦 is + צורה שלישית. make → made → ?",
-          "en": "📦 is + third form. make → made → ?"
+          "he": "📦 is + צורה שלישית. make הוא חריג, ולא מוסיפים לו d.",
+          "en": "📦 is + third form. make is irregular, so no -d."
         }
       ],
       "explanation": {
@@ -12906,8 +12906,8 @@
           "en": "When is it happening, and who is building?"
         },
         {
-          "he": "🎥 עכשיו = being. 📦 סביל = צורה שלישית. build → built → ?",
-          "en": "🎥 Now = being. 📦 Passive = third form. build → built → ?"
+          "he": "🎥 עכשיו = being. 📦 סביל = צורה שלישית. מהי הצורה השלישית של build?",
+          "en": "🎥 Now = being. 📦 Passive = third form. What is the third form of build?"
         }
       ],
       "explanation": {
