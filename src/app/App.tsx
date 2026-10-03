@@ -16,6 +16,9 @@ import { StoriesScreen } from '@/features/stories/StoriesScreen';
 import { StoryScreen } from '@/features/stories/StoryScreen';
 import { MyWordsScreen } from '@/features/words/MyWordsScreen';
 import { ShadowScreen } from '@/features/speaking/ShadowScreen';
+import { KidsPlay } from '@/features/kids/KidsPlay';
+import { KidsBook, KidsBooks } from '@/features/kids/KidsBooks';
+import { StickerAlbum } from '@/features/kids/StickerAlbum';
 import { useStudent } from './hooks';
 import { SpeechPrefsProvider } from './speechPrefs';
 import { GlossProvider } from '@/ui/Gloss';
@@ -41,6 +44,10 @@ export function App() {
         <Route path="/s/:sid/stories" element={<StoriesScreen />} />
         <Route path="/s/:sid/stories/:storyId" element={<WithStudentSpeech><StoryScreen /></WithStudentSpeech>} />
         <Route path="/s/:sid/words" element={<WithStudentSpeech><MyWordsScreen /></WithStudentSpeech>} />
+        <Route path="/s/:sid/kids/play" element={<WithStudentSpeech><KidsPlay /></WithStudentSpeech>} />
+        <Route path="/s/:sid/kids/books" element={<WithStudentSpeech><KidsBooks /></WithStudentSpeech>} />
+        <Route path="/s/:sid/kids/books/:bookId" element={<WithStudentSpeech><KidsBook /></WithStudentSpeech>} />
+        <Route path="/s/:sid/kids/album" element={<StickerAlbum />} />
         <Route path="/s/:sid/shadow" element={<WithStudentSpeech><ShadowScreen /></WithStudentSpeech>} />
         <Route path="/parent" element={<ParentDashboard />} />
         <Route path="/parent/voices" element={<VoiceLab />} />

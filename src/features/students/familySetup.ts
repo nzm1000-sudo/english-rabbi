@@ -20,7 +20,7 @@ export function decodeFamily(d: string | null): FamilyMember[] {
     return raw
       .filter((x): x is { n: string; a?: number } => !!x && typeof x.n === 'string' && x.n.trim().length > 0 && x.n.length <= 40)
       .slice(0, 12)
-      .map((x) => ({ name: x.n.trim(), ...(typeof x.a === 'number' && x.a > 3 && x.a < 120 ? { age: Math.round(x.a) } : {}) }));
+      .map((x) => ({ name: x.n.trim(), ...(typeof x.a === 'number' && x.a >= 2 && x.a < 120 ? { age: Math.round(x.a) } : {}) }));
   } catch {
     return [];
   }

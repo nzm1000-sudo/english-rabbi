@@ -189,6 +189,21 @@ export class LearningStore {
     return rows.sort((a, b) => b.addedAt - a.addedAt);
   }
 
+  /** Sticker ids earned, oldest first. */
+  async stickersEarned(studentId: string): Promise<string[]> {
+    const evs = (await this.db.events.where('[studentId+type]').equals([studentId, 'sticker.earned']).toArray()) as LearningEvent<'sticker.earned'>[];
+    return [...new Set(evs.sort((a, b) => a.at - b.at).map((e) => e.payload.stickerId))];
+  }
+
+  /** Minutes spent today in sessions whose mode starts with a prefix (e.g. "kids"). */
+  async minutesToday(studentId: string, modePrefix: string, now = this.clock()): Promise<number> {
+    const d = new Date(now);
+    const start = new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+    const rows = await this.db.sessions.where('[studentId+startedAt]').between([studentId, start], [studentId, now + 1]).toArray();
+    const ms = rows.filter((r) => r.mode.startsWith(modePrefix)).reduce((s, r) => s + Math.max(0, (r.endedAt ?? now) - r.startedAt), 0);
+    return Math.round(ms / 60000);
+  }
+
   /** Story id -> best result, from story.completed events. */
   async storyResults(studentId: string): Promise<Map<string, { correct: number; total: number }>> {
     const evs = await this.db.events.where('[studentId+type]').equals([studentId, 'story.completed']).toArray();

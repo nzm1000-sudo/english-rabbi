@@ -1,0 +1,1297 @@
+{
+  "letters": [
+    {
+      "letter": "a",
+      "soundHe": "a קצרה כמו ב-apple: אֶ פתוחה, בין אַ לאֶ",
+      "word": "apple",
+      "emoji": "🍎",
+      "wordHe": "תפוח"
+    },
+    {
+      "letter": "b",
+      "soundHe": "כמו ב׳ בבית",
+      "word": "ball",
+      "emoji": "⚽",
+      "wordHe": "כדור"
+    },
+    {
+      "letter": "c",
+      "soundHe": "c קשה, כמו ק׳ בקוף",
+      "word": "cat",
+      "emoji": "🐱",
+      "wordHe": "חתול"
+    },
+    {
+      "letter": "d",
+      "soundHe": "כמו ד׳ בדג",
+      "word": "dog",
+      "emoji": "🐶",
+      "wordHe": "כלב"
+    },
+    {
+      "letter": "e",
+      "soundHe": "e קצרה, כמו אֶ בארץ",
+      "word": "egg",
+      "emoji": "🥚",
+      "wordHe": "ביצה"
+    },
+    {
+      "letter": "f",
+      "soundHe": "כמו ף בסוף המילה כף (f)",
+      "word": "fish",
+      "emoji": "🐟",
+      "wordHe": "דג"
+    },
+    {
+      "letter": "g",
+      "soundHe": "g קשה, כמו ג׳ בגמל",
+      "word": "grapes",
+      "emoji": "🍇",
+      "wordHe": "ענבים"
+    },
+    {
+      "letter": "h",
+      "soundHe": "כמו ה׳ בהר, נשיפה קלה",
+      "word": "house",
+      "emoji": "🏠",
+      "wordHe": "בית"
+    },
+    {
+      "letter": "i",
+      "soundHe": "i קצרה, כמו אִ קצרה ופתוחה, בין אִ לאֶ",
+      "word": "insect",
+      "emoji": "🐞",
+      "wordHe": "חרק"
+    },
+    {
+      "letter": "j",
+      "soundHe": "כמו ג׳ בג׳ירפה",
+      "word": "juice",
+      "emoji": "🧃",
+      "wordHe": "מיץ"
+    },
+    {
+      "letter": "k",
+      "soundHe": "כמו ק׳ בקוף",
+      "word": "kite",
+      "emoji": "🪁",
+      "wordHe": "עפיפון"
+    },
+    {
+      "letter": "l",
+      "soundHe": "כמו ל׳ בלחם",
+      "word": "lion",
+      "emoji": "🦁",
+      "wordHe": "אריה"
+    },
+    {
+      "letter": "m",
+      "soundHe": "כמו מ׳ באמא",
+      "word": "moon",
+      "emoji": "🌙",
+      "wordHe": "ירח"
+    },
+    {
+      "letter": "n",
+      "soundHe": "כמו נ׳ בנר",
+      "word": "nest",
+      "emoji": "🪺",
+      "wordHe": "קן"
+    },
+    {
+      "letter": "o",
+      "soundHe": "o קצרה באנגלית אמריקאית נשמעת כמו אַ פתוחה ועמוקה, כמו ב-hot",
+      "word": "octopus",
+      "emoji": "🐙",
+      "wordHe": "תמנון"
+    },
+    {
+      "letter": "p",
+      "soundHe": "כמו פּ דגושה בפרה",
+      "word": "pencil",
+      "emoji": "✏️",
+      "wordHe": "עיפרון"
+    },
+    {
+      "letter": "q",
+      "soundHe": "q באה תמיד עם u ונשמעת כמו קוו, כמו ב-queen",
+      "word": "queen",
+      "emoji": "👑",
+      "wordHe": "מלכה"
+    },
+    {
+      "letter": "r",
+      "soundHe": "r אמריקאית: הלשון לא נוגעת בפה, לא כמו ר׳ בעברית",
+      "word": "rainbow",
+      "emoji": "🌈",
+      "wordHe": "קשת"
+    },
+    {
+      "letter": "s",
+      "soundHe": "כמו ס׳ בסוס",
+      "word": "sun",
+      "emoji": "☀️",
+      "wordHe": "שמש"
+    },
+    {
+      "letter": "t",
+      "soundHe": "כמו ת׳ בתפוח",
+      "word": "tree",
+      "emoji": "🌳",
+      "wordHe": "עץ"
+    },
+    {
+      "letter": "u",
+      "soundHe": "u קצרה כמו ב-up: אַ קצרה ועמומה",
+      "word": "umbrella",
+      "emoji": "☂️",
+      "wordHe": "מטרייה"
+    },
+    {
+      "letter": "v",
+      "soundHe": "כמו ו׳ בוורד: השיניים העליונות על השפה התחתונה",
+      "word": "violin",
+      "emoji": "🎻",
+      "wordHe": "כינור"
+    },
+    {
+      "letter": "w",
+      "soundHe": "כמו וּ קצרה עם שפתיים עגולות, כמו ב-water",
+      "word": "watermelon",
+      "emoji": "🍉",
+      "wordHe": "אבטיח"
+    },
+    {
+      "letter": "x",
+      "soundHe": "x נשמעת קס, כמו בסוף המילה box. כמעט אין מילים שמתחילות בצליל הזה, לכן הדוגמה היא צליל הסוף",
+      "word": "box",
+      "emoji": "📦",
+      "wordHe": "קופסה"
+    },
+    {
+      "letter": "y",
+      "soundHe": "כמו י׳ בילד",
+      "word": "yo-yo",
+      "emoji": "🪀",
+      "wordHe": "יו-יו"
+    },
+    {
+      "letter": "z",
+      "soundHe": "כמו ז׳ בזברה",
+      "word": "zebra",
+      "emoji": "🦓",
+      "wordHe": "זברה"
+    }
+  ],
+  "families": [
+    {
+      "id": "at",
+      "rime": "at",
+      "words": [
+        {
+          "en": "cat",
+          "he": "חתול",
+          "emoji": "🐱"
+        },
+        {
+          "en": "hat",
+          "he": "כובע",
+          "emoji": "👒"
+        },
+        {
+          "en": "mat",
+          "he": "שטיחון"
+        },
+        {
+          "en": "sat",
+          "he": "ישב"
+        }
+      ]
+    },
+    {
+      "id": "an",
+      "rime": "an",
+      "words": [
+        {
+          "en": "can",
+          "he": "פחית",
+          "emoji": "🥫"
+        },
+        {
+          "en": "pan",
+          "he": "מחבת",
+          "emoji": "🍳"
+        },
+        {
+          "en": "van",
+          "he": "ואן",
+          "emoji": "🚐"
+        },
+        {
+          "en": "man",
+          "he": "איש",
+          "emoji": "👨"
+        },
+        {
+          "en": "fan",
+          "he": "מאוורר"
+        },
+        {
+          "en": "ran",
+          "he": "רץ (בעבר)"
+        }
+      ]
+    },
+    {
+      "id": "ap",
+      "rime": "ap",
+      "words": [
+        {
+          "en": "cap",
+          "he": "כובע מצחייה",
+          "emoji": "🧢"
+        },
+        {
+          "en": "map",
+          "he": "מפה",
+          "emoji": "🗺️"
+        },
+        {
+          "en": "nap",
+          "he": "תנומה",
+          "emoji": "😴"
+        },
+        {
+          "en": "lap",
+          "he": "ברכיים (כשיושבים)"
+        },
+        {
+          "en": "tap",
+          "he": "לטפוח קלות"
+        }
+      ]
+    },
+    {
+      "id": "ig",
+      "rime": "ig",
+      "words": [
+        {
+          "en": "big",
+          "he": "גדול"
+        },
+        {
+          "en": "dig",
+          "he": "לחפור"
+        },
+        {
+          "en": "fig",
+          "he": "תאנה"
+        }
+      ]
+    },
+    {
+      "id": "in",
+      "rime": "in",
+      "words": [
+        {
+          "en": "pin",
+          "he": "נעץ",
+          "emoji": "📌"
+        },
+        {
+          "en": "bin",
+          "he": "פח",
+          "emoji": "🗑️"
+        },
+        {
+          "en": "win",
+          "he": "לנצח",
+          "emoji": "🏆"
+        },
+        {
+          "en": "fin",
+          "he": "סנפיר"
+        },
+        {
+          "en": "chin",
+          "he": "סנטר"
+        }
+      ]
+    },
+    {
+      "id": "ip",
+      "rime": "ip",
+      "words": [
+        {
+          "en": "ship",
+          "he": "אונייה",
+          "emoji": "🚢"
+        },
+        {
+          "en": "zip",
+          "he": "רוכסן"
+        },
+        {
+          "en": "lip",
+          "he": "שפה"
+        },
+        {
+          "en": "sip",
+          "he": "לגימה"
+        },
+        {
+          "en": "dip",
+          "he": "לטבול"
+        }
+      ]
+    },
+    {
+      "id": "op",
+      "rime": "op",
+      "words": [
+        {
+          "en": "stop",
+          "he": "עצור",
+          "emoji": "🛑"
+        },
+        {
+          "en": "top",
+          "he": "סביבון"
+        },
+        {
+          "en": "hop",
+          "he": "לקפץ"
+        },
+        {
+          "en": "mop",
+          "he": "מגב עם סמרטוט"
+        },
+        {
+          "en": "pop",
+          "he": "פוף, להתפוצץ (בלון)"
+        }
+      ]
+    },
+    {
+      "id": "ot",
+      "rime": "ot",
+      "words": [
+        {
+          "en": "hot",
+          "he": "חם",
+          "emoji": "🔥"
+        },
+        {
+          "en": "pot",
+          "he": "סיר",
+          "emoji": "🍲"
+        },
+        {
+          "en": "dot",
+          "he": "נקודה"
+        },
+        {
+          "en": "not",
+          "he": "לא"
+        }
+      ]
+    },
+    {
+      "id": "ug",
+      "rime": "ug",
+      "words": [
+        {
+          "en": "bug",
+          "he": "חרק",
+          "emoji": "🐛"
+        },
+        {
+          "en": "hug",
+          "he": "חיבוק",
+          "emoji": "🤗"
+        },
+        {
+          "en": "mug",
+          "he": "ספל",
+          "emoji": "☕"
+        },
+        {
+          "en": "rug",
+          "he": "שטיח"
+        },
+        {
+          "en": "jug",
+          "he": "כד"
+        }
+      ]
+    },
+    {
+      "id": "un",
+      "rime": "un",
+      "words": [
+        {
+          "en": "sun",
+          "he": "שמש",
+          "emoji": "☀️"
+        },
+        {
+          "en": "run",
+          "he": "לרוץ",
+          "emoji": "🏃"
+        },
+        {
+          "en": "fun",
+          "he": "כיף"
+        },
+        {
+          "en": "bun",
+          "he": "לחמנייה"
+        }
+      ]
+    },
+    {
+      "id": "et",
+      "rime": "et",
+      "words": [
+        {
+          "en": "jet",
+          "he": "מטוס סילון",
+          "emoji": "✈️"
+        },
+        {
+          "en": "net",
+          "he": "רשת",
+          "emoji": "🥅"
+        },
+        {
+          "en": "wet",
+          "he": "רטוב",
+          "emoji": "💦"
+        },
+        {
+          "en": "pet",
+          "he": "חיית מחמד"
+        },
+        {
+          "en": "vet",
+          "he": "וטרינר"
+        }
+      ]
+    },
+    {
+      "id": "en",
+      "rime": "en",
+      "words": [
+        {
+          "en": "hen",
+          "he": "תרנגולת",
+          "emoji": "🐔"
+        },
+        {
+          "en": "pen",
+          "he": "עט",
+          "emoji": "🖊️"
+        },
+        {
+          "en": "ten",
+          "he": "עשר",
+          "emoji": "🔟"
+        },
+        {
+          "en": "men",
+          "he": "גברים"
+        }
+      ]
+    },
+    {
+      "id": "ed",
+      "rime": "ed",
+      "words": [
+        {
+          "en": "bed",
+          "he": "מיטה",
+          "emoji": "🛏️"
+        },
+        {
+          "en": "red",
+          "he": "אדום",
+          "emoji": "🔴"
+        },
+        {
+          "en": "sled",
+          "he": "מזחלת",
+          "emoji": "🛷"
+        },
+        {
+          "en": "fed",
+          "he": "האכיל"
+        }
+      ]
+    },
+    {
+      "id": "og",
+      "rime": "og",
+      "words": [
+        {
+          "en": "dog",
+          "he": "כלב",
+          "emoji": "🐶"
+        },
+        {
+          "en": "frog",
+          "he": "צפרדע",
+          "emoji": "🐸"
+        },
+        {
+          "en": "log",
+          "he": "בול עץ",
+          "emoji": "🪵"
+        },
+        {
+          "en": "jog",
+          "he": "לרוץ בקלילות"
+        }
+      ]
+    }
+  ],
+  "sightWords": [
+    {
+      "en": "I",
+      "he": "אני",
+      "level": 1,
+      "sentence": {
+        "en": "I see a cat.",
+        "he": "אני רואה חתול."
+      }
+    },
+    {
+      "en": "a",
+      "he": "(מילת יחיד, בלי תרגום)",
+      "level": 1,
+      "sentence": {
+        "en": "I see a dog.",
+        "he": "אני רואה כלב."
+      }
+    },
+    {
+      "en": "the",
+      "he": "ה- (הידיעה)",
+      "level": 1,
+      "sentence": {
+        "en": "The sun is hot.",
+        "he": "השמש חמה."
+      }
+    },
+    {
+      "en": "is",
+      "he": "(פועל \"להיות\": הוא, היא, זה; בעברית לרוב בלי תרגום)",
+      "level": 1,
+      "sentence": {
+        "en": "It is big.",
+        "he": "זה גדול."
+      }
+    },
+    {
+      "en": "and",
+      "he": "ו-",
+      "level": 1,
+      "sentence": {
+        "en": "Mom and Dad.",
+        "he": "אמא ואבא."
+      }
+    },
+    {
+      "en": "to",
+      "he": "אל, ל-",
+      "level": 1,
+      "sentence": {
+        "en": "Go to bed.",
+        "he": "לכו למיטה."
+      }
+    },
+    {
+      "en": "see",
+      "he": "לראות",
+      "level": 1,
+      "sentence": {
+        "en": "I see the sun.",
+        "he": "אני רואה את השמש."
+      }
+    },
+    {
+      "en": "my",
+      "he": "שלי",
+      "level": 1,
+      "sentence": {
+        "en": "My hat is red.",
+        "he": "הכובע שלי אדום."
+      }
+    },
+    {
+      "en": "we",
+      "he": "אנחנו",
+      "level": 1,
+      "sentence": {
+        "en": "We can run.",
+        "he": "אנחנו יכולים לרוץ."
+      }
+    },
+    {
+      "en": "can",
+      "he": "יכול, יכולה",
+      "level": 1,
+      "sentence": {
+        "en": "I can hop.",
+        "he": "אני יכול לקפץ."
+      }
+    },
+    {
+      "en": "go",
+      "he": "ללכת, לנסוע",
+      "level": 1,
+      "sentence": {
+        "en": "We go up.",
+        "he": "אנחנו עולים למעלה."
+      }
+    },
+    {
+      "en": "it",
+      "he": "זה (לדבר או חיה)",
+      "level": 1,
+      "sentence": {
+        "en": "It is a hen.",
+        "he": "זו תרנגולת."
+      }
+    },
+    {
+      "en": "in",
+      "he": "בתוך",
+      "level": 1,
+      "sentence": {
+        "en": "The cat is in the box.",
+        "he": "החתול בתוך הקופסה."
+      }
+    },
+    {
+      "en": "like",
+      "he": "אוהב, אוהבת",
+      "level": 1,
+      "sentence": {
+        "en": "I like my dog.",
+        "he": "אני אוהב את הכלב שלי."
+      }
+    },
+    {
+      "en": "look",
+      "he": "להסתכל",
+      "level": 1,
+      "sentence": {
+        "en": "Look at the moon.",
+        "he": "תסתכלו על הירח."
+      }
+    },
+    {
+      "en": "me",
+      "he": "אותי, לי",
+      "level": 1,
+      "sentence": {
+        "en": "Look at me.",
+        "he": "תסתכלו עליי."
+      }
+    },
+    {
+      "en": "you",
+      "he": "אתה, את",
+      "level": 1,
+      "sentence": {
+        "en": "I see you.",
+        "he": "אני רואה אותך."
+      }
+    },
+    {
+      "en": "up",
+      "he": "למעלה",
+      "level": 1,
+      "sentence": {
+        "en": "The jet is up.",
+        "he": "המטוס למעלה."
+      }
+    },
+    {
+      "en": "down",
+      "he": "למטה",
+      "level": 1,
+      "sentence": {
+        "en": "Sit down.",
+        "he": "שבו."
+      }
+    },
+    {
+      "en": "here",
+      "he": "כאן",
+      "level": 1,
+      "sentence": {
+        "en": "Come here.",
+        "he": "בואו הנה."
+      }
+    },
+    {
+      "en": "at",
+      "he": "ב-, אל (מקום)",
+      "level": 1,
+      "sentence": {
+        "en": "Look at the cat.",
+        "he": "תסתכלו על החתול."
+      }
+    },
+    {
+      "en": "am",
+      "he": "(פועל \"להיות\" עם I; בעברית בלי תרגום)",
+      "level": 1,
+      "sentence": {
+        "en": "I am big.",
+        "he": "אני גדול."
+      }
+    },
+    {
+      "en": "on",
+      "he": "על",
+      "level": 1,
+      "sentence": {
+        "en": "The hat is on the bed.",
+        "he": "הכובע על המיטה."
+      }
+    },
+    {
+      "en": "he",
+      "he": "הוא",
+      "level": 1,
+      "sentence": {
+        "en": "He can run.",
+        "he": "הוא יכול לרוץ."
+      }
+    },
+    {
+      "en": "she",
+      "he": "היא",
+      "level": 1,
+      "sentence": {
+        "en": "She can hop.",
+        "he": "היא יכולה לקפץ."
+      }
+    },
+    {
+      "en": "no",
+      "he": "לא",
+      "level": 1,
+      "sentence": {
+        "en": "No, it is not hot.",
+        "he": "לא, זה לא חם."
+      }
+    },
+    {
+      "en": "yes",
+      "he": "כן",
+      "level": 1,
+      "sentence": {
+        "en": "Yes, I can.",
+        "he": "כן, אני יכול."
+      }
+    },
+    {
+      "en": "big",
+      "he": "גדול",
+      "level": 1,
+      "sentence": {
+        "en": "The dog is big.",
+        "he": "הכלב גדול."
+      }
+    },
+    {
+      "en": "said",
+      "he": "אמר, אמרה",
+      "level": 2,
+      "sentence": {
+        "en": "Mom said yes.",
+        "he": "אמא אמרה כן."
+      }
+    },
+    {
+      "en": "was",
+      "he": "היה",
+      "level": 2,
+      "sentence": {
+        "en": "It was hot.",
+        "he": "היה חם."
+      }
+    },
+    {
+      "en": "are",
+      "he": "(פועל \"להיות\" ברבים; בעברית לרוב בלי תרגום)",
+      "level": 2,
+      "sentence": {
+        "en": "We are in the van.",
+        "he": "אנחנו בוואן."
+      }
+    },
+    {
+      "en": "they",
+      "he": "הם",
+      "level": 2,
+      "sentence": {
+        "en": "They can run.",
+        "he": "הם יכולים לרוץ."
+      }
+    },
+    {
+      "en": "have",
+      "he": "יש לי, יש ל-",
+      "level": 2,
+      "sentence": {
+        "en": "I have a pen.",
+        "he": "יש לי עט."
+      }
+    },
+    {
+      "en": "for",
+      "he": "בשביל",
+      "level": 2,
+      "sentence": {
+        "en": "This is for you.",
+        "he": "זה בשבילך."
+      }
+    },
+    {
+      "en": "with",
+      "he": "עם",
+      "level": 2,
+      "sentence": {
+        "en": "Come with me.",
+        "he": "בואו איתי."
+      }
+    },
+    {
+      "en": "this",
+      "he": "זה",
+      "level": 2,
+      "sentence": {
+        "en": "This is my hat.",
+        "he": "זה הכובע שלי."
+      }
+    },
+    {
+      "en": "that",
+      "he": "ההוא, ההיא",
+      "level": 2,
+      "sentence": {
+        "en": "That is a big ship.",
+        "he": "זאת אונייה גדולה."
+      }
+    },
+    {
+      "en": "what",
+      "he": "מה",
+      "level": 2,
+      "sentence": {
+        "en": "What is it?",
+        "he": "מה זה?"
+      }
+    },
+    {
+      "en": "where",
+      "he": "איפה",
+      "level": 2,
+      "sentence": {
+        "en": "Where is the cat?",
+        "he": "איפה החתול?"
+      }
+    },
+    {
+      "en": "come",
+      "he": "לבוא",
+      "level": 2,
+      "sentence": {
+        "en": "Come and see.",
+        "he": "בואו לראות."
+      }
+    },
+    {
+      "en": "play",
+      "he": "לשחק",
+      "level": 2,
+      "sentence": {
+        "en": "We play with the ball.",
+        "he": "אנחנו משחקים בכדור."
+      }
+    },
+    {
+      "en": "help",
+      "he": "לעזור",
+      "level": 2,
+      "sentence": {
+        "en": "I can help Mom.",
+        "he": "אני יכול לעזור לאמא."
+      }
+    },
+    {
+      "en": "has",
+      "he": "יש לו, יש לה",
+      "level": 2,
+      "sentence": {
+        "en": "Ari has a dog.",
+        "he": "לארי יש כלב."
+      }
+    },
+    {
+      "en": "do",
+      "he": "לעשות",
+      "level": 2,
+      "sentence": {
+        "en": "What do you see?",
+        "he": "מה אתם רואים?"
+      }
+    },
+    {
+      "en": "not",
+      "he": "לא",
+      "level": 2,
+      "sentence": {
+        "en": "It is not wet.",
+        "he": "זה לא רטוב."
+      }
+    },
+    {
+      "en": "his",
+      "he": "שלו",
+      "level": 2,
+      "sentence": {
+        "en": "This is his bed.",
+        "he": "זו המיטה שלו."
+      }
+    },
+    {
+      "en": "her",
+      "he": "שלה",
+      "level": 2,
+      "sentence": {
+        "en": "This is her pen.",
+        "he": "זה העט שלה."
+      }
+    },
+    {
+      "en": "get",
+      "he": "לקבל, להביא",
+      "level": 2,
+      "sentence": {
+        "en": "Get the ball.",
+        "he": "תביאו את הכדור."
+      }
+    },
+    {
+      "en": "will",
+      "he": "(צורת עתיד)",
+      "level": 2,
+      "sentence": {
+        "en": "I will help.",
+        "he": "אני אעזור."
+      }
+    },
+    {
+      "en": "saw",
+      "he": "ראה",
+      "level": 2,
+      "sentence": {
+        "en": "I saw a frog.",
+        "he": "ראיתי צפרדע."
+      }
+    },
+    {
+      "en": "there",
+      "he": "שם",
+      "level": 2,
+      "sentence": {
+        "en": "The dog is there.",
+        "he": "הכלב שם."
+      }
+    },
+    {
+      "en": "all",
+      "he": "כל, כולם",
+      "level": 2,
+      "sentence": {
+        "en": "We all sat.",
+        "he": "כולנו ישבנו."
+      }
+    },
+    {
+      "en": "one",
+      "he": "אחד",
+      "level": 2,
+      "sentence": {
+        "en": "I have one hat.",
+        "he": "יש לי כובע אחד."
+      }
+    },
+    {
+      "en": "two",
+      "he": "שניים",
+      "level": 2,
+      "sentence": {
+        "en": "I see two cats.",
+        "he": "אני רואה שני חתולים."
+      }
+    },
+    {
+      "en": "good",
+      "he": "טוב",
+      "level": 2,
+      "sentence": {
+        "en": "The fig is good.",
+        "he": "התאנה טובה."
+      }
+    },
+    {
+      "en": "could",
+      "he": "יכול היה",
+      "level": 3,
+      "sentence": {
+        "en": "I could not see.",
+        "he": "לא יכולתי לראות."
+      }
+    },
+    {
+      "en": "would",
+      "he": "היה רוצה, היה עושה",
+      "level": 3,
+      "sentence": {
+        "en": "Would you like a bun?",
+        "he": "תרצו לחמנייה?"
+      }
+    },
+    {
+      "en": "when",
+      "he": "מתי, כאשר",
+      "level": 3,
+      "sentence": {
+        "en": "When is Shabbat?",
+        "he": "מתי שבת?"
+      }
+    },
+    {
+      "en": "from",
+      "he": "מ-",
+      "level": 3,
+      "sentence": {
+        "en": "This is from Grandma.",
+        "he": "זה מסבתא."
+      }
+    },
+    {
+      "en": "some",
+      "he": "קצת, כמה",
+      "level": 3,
+      "sentence": {
+        "en": "I want some juice.",
+        "he": "אני רוצה קצת מיץ."
+      }
+    },
+    {
+      "en": "them",
+      "he": "אותם",
+      "level": 3,
+      "sentence": {
+        "en": "I see them.",
+        "he": "אני רואה אותם."
+      }
+    },
+    {
+      "en": "then",
+      "he": "אז, ואז",
+      "level": 3,
+      "sentence": {
+        "en": "Then we ran.",
+        "he": "ואז רצנו."
+      }
+    },
+    {
+      "en": "were",
+      "he": "היו",
+      "level": 3,
+      "sentence": {
+        "en": "We were wet.",
+        "he": "היינו רטובים."
+      }
+    },
+    {
+      "en": "our",
+      "he": "שלנו",
+      "level": 3,
+      "sentence": {
+        "en": "This is our home.",
+        "he": "זה הבית שלנו."
+      }
+    },
+    {
+      "en": "your",
+      "he": "שלך",
+      "level": 3,
+      "sentence": {
+        "en": "Is this your cap?",
+        "he": "זה הכובע שלך?"
+      }
+    },
+    {
+      "en": "who",
+      "he": "מי",
+      "level": 3,
+      "sentence": {
+        "en": "Who is at the door?",
+        "he": "מי בדלת?"
+      }
+    },
+    {
+      "en": "why",
+      "he": "למה",
+      "level": 3,
+      "sentence": {
+        "en": "Why is it wet?",
+        "he": "למה זה רטוב?"
+      }
+    },
+    {
+      "en": "because",
+      "he": "כי",
+      "level": 3,
+      "sentence": {
+        "en": "I hug Mom because I love her.",
+        "he": "אני מחבק את אמא כי אני אוהב אותה."
+      }
+    },
+    {
+      "en": "after",
+      "he": "אחרי",
+      "level": 3,
+      "sentence": {
+        "en": "We play after lunch.",
+        "he": "אנחנו משחקים אחרי ארוחת הצהריים."
+      }
+    },
+    {
+      "en": "again",
+      "he": "שוב",
+      "level": 3,
+      "sentence": {
+        "en": "Read it again.",
+        "he": "תקראו את זה שוב."
+      }
+    },
+    {
+      "en": "every",
+      "he": "כל",
+      "level": 3,
+      "sentence": {
+        "en": "I help every day.",
+        "he": "אני עוזר כל יום."
+      }
+    },
+    {
+      "en": "give",
+      "he": "לתת",
+      "level": 3,
+      "sentence": {
+        "en": "Give the cup to Eli.",
+        "he": "תנו את הכוס לאלי."
+      }
+    },
+    {
+      "en": "know",
+      "he": "לדעת",
+      "level": 3,
+      "sentence": {
+        "en": "I know the way.",
+        "he": "אני יודע את הדרך."
+      }
+    },
+    {
+      "en": "little",
+      "he": "קטן",
+      "level": 3,
+      "sentence": {
+        "en": "The cat is little.",
+        "he": "החתול קטן."
+      }
+    },
+    {
+      "en": "many",
+      "he": "הרבה",
+      "level": 3,
+      "sentence": {
+        "en": "I see many stars.",
+        "he": "אני רואה הרבה כוכבים."
+      }
+    },
+    {
+      "en": "new",
+      "he": "חדש",
+      "level": 3,
+      "sentence": {
+        "en": "I have a new pen.",
+        "he": "יש לי עט חדש."
+      }
+    },
+    {
+      "en": "now",
+      "he": "עכשיו",
+      "level": 3,
+      "sentence": {
+        "en": "Come in now.",
+        "he": "תיכנסו עכשיו."
+      }
+    },
+    {
+      "en": "out",
+      "he": "החוצה",
+      "level": 3,
+      "sentence": {
+        "en": "We go out to play.",
+        "he": "אנחנו יוצאים לשחק."
+      }
+    },
+    {
+      "en": "please",
+      "he": "בבקשה",
+      "level": 3,
+      "sentence": {
+        "en": "Please help me.",
+        "he": "תעזרו לי, בבקשה."
+      }
+    },
+    {
+      "en": "thank",
+      "he": "להודות",
+      "level": 3,
+      "sentence": {
+        "en": "Thank you, Dad.",
+        "he": "תודה, אבא."
+      }
+    },
+    {
+      "en": "want",
+      "he": "רוצה",
+      "level": 3,
+      "sentence": {
+        "en": "I want to help.",
+        "he": "אני רוצה לעזור."
+      }
+    },
+    {
+      "en": "went",
+      "he": "הלך, הלכו",
+      "level": 3,
+      "sentence": {
+        "en": "We went to the park.",
+        "he": "הלכנו לגן השעשועים."
+      }
+    }
+  ]
+}
