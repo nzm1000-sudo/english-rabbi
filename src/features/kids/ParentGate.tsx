@@ -38,6 +38,8 @@ export function HoldButton({ onDone, label, children, wide = false }: { onDone: 
       data-holding={p > 0}
       onPointerDown={(e) => {
         e.preventDefault();
+        // A second finger must not start a second timer: it would keep running after both let go.
+        if (timer.current !== null) return;
         start.current = performance.now();
         timer.current = requestAnimationFrame(tick);
       }}
