@@ -13,11 +13,12 @@ import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
 import { TopBar } from '@/ui/TopBar';
-import { BookmarkIcon, CheckIcon, CloseIcon, MicIcon, TranslateIcon } from '@/ui/icons';
+import { CheckIcon, CloseIcon, MicIcon, TranslateIcon } from '@/ui/icons';
 import { Button, ButtonLink } from '@/ui/Button';
 import { Confetti } from '@/ui/Confetti';
 import { AudioPlayer } from '@/ui/AudioPlayer';
 import { ReadCheck } from '@/ui/ReadCheck';
+import { useGloss } from '@/ui/Gloss';
 import { resume } from '@/app/resume';
 
 /**
@@ -36,17 +37,15 @@ export function StoryScreen() {
   return <StoryReader key={story.id} student={student} story={story} support={profile.supportLanguage} />;
 }
 
-type Gloss = { word: string; lemma: string; he: string; line: string };
-
 function StoryReader({ student, story, support }: { student: Student; story: Story; support: SupportLanguage }) {
   const { store, speech, content } = useServices();
   const prefs = useSpeechPrefs();
   const nav = useNavigate();
+  const glossPopup = useGloss();
   // Continue a story where the learner stopped.
   const [savedPlace] = useState(() => resume.getStory(student.id, story.id));
   const [shown, setShown] = useState(() => Math.min(savedPlace?.shown ?? 1, story.lines.length));
   const [answered, setAnswered] = useState<Map<string, boolean>>(() => new Map(savedPlace?.answered ?? []));
-  const [gloss, setGloss] = useState<Gloss | null>(null);
   const [translated, setTranslated] = useState<Set<number>>(new Set());
   const [playingLine, setPlayingLine] = useState<number | null>(null);
   const [checking, setChecking] = useState<number | null>(null);
@@ -109,15 +108,15 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
     setAnswered((m) => new Map(m).set(id, outcome.finalCorrect && !outcome.revealed));
   };
 
-  const tapWord = (word: string, line: string) => {
-    const g = glossFor(story, word);
-    if (!g) return;
-    setGloss({ word, lemma: g.lemma, he: g.he, line });
-    void speech.speak(g.lemma, { ...prefs, key: `gloss-${g.lemma}` });
-    void store.saveWord(student.id, { lemma: g.lemma, he: g.he, example: line, storyId: story.id });
+  // One meaning popup for the whole screen (the questions use it too): it reads
+  // the word aloud and saves it to "my words".
+  const tapWord = (key: string, word: string, line: string) => {
+    const g = glossFor(story, key);
+    if (g) glossPopup?.open({ word, senses: [{ lemma: g.lemma, he: g.he }], sentence: line, storyId: story.id });
   };
 
-  const others = [...content.stories.values()];
+  // The next story of the same kind (reading or dialogue), in library order.
+  const others = [...content.stories.values()].filter((s) => s.kind === story.kind);
   const nextStory = others[others.findIndex((s) => s.id === story.id) + 1];
   const storyWordsSaved = new Set(
     story.lines.flatMap((l) => storyWords(l.en)).flatMap((w) => {
@@ -148,7 +147,7 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
             )}
             <div className="story-line-main" dir="ltr">
               <p className="grow story-text" lang="en">
-                <LineWords text={line.en} story={story} savedSet={savedSet} onTap={(w) => tapWord(w, line.en)} />
+                <LineWords text={line.en} story={story} savedSet={savedSet} onTap={(key, word) => tapWord(key, word, line.en)} />
               </p>
               <SpeakButton text={line.en} size="inline" {...(line.speaker ? { speaker: line.speaker } : {})} />
             </div>
@@ -195,7 +194,7 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
           </strong>
           {story.moral && <He className="txt-center">{story.moral}</He>}
           <div className="txt-center small muted">
-            {correct} מתוך {story.questions.length} תשובות נכונות · {storyWordsSaved} מילים נשמרו
+            {correct} מתוך {story.questions.length} תשובות נכונות · {storyWordsSaved === 1 ? 'מילה אחת נשמרה' : `${storyWordsSaved} מילים נשמרו`}
           </div>
           {nextStory && (
             <Button variant="primary" size="lg" block onClick={() => nav(`${base}/stories/${nextStory.id}`)}>
@@ -215,43 +214,12 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
       )}
       <div ref={endRef} />
 
-      {gloss && (
-        <div className="gloss-pop" role="dialog" aria-label="פירוש המילה">
-          <div className="spread">
-            <div className="row gap-2">
-              <En className="gloss-word">{gloss.lemma}</En>
-              <SpeakButton text={gloss.lemma} size="inline" />
-            </div>
-            <button className="icon-btn" onClick={() => setGloss(null)} aria-label="סגירה">
-              <CloseIcon />
-            </button>
-          </div>
-          <He className="gloss-he">{gloss.he}</He>
-          <div className="spread">
-            <span className="xs muted row gap-1">
-              <BookmarkIcon size={16} />
-              {savedSet.has(gloss.lemma) ? 'נשמרה ב״המילים שלי״' : 'שומרים...'}
-            </span>
-            {savedSet.has(gloss.lemma) && (
-              <button
-                className="link-btn xs"
-                onClick={() => {
-                  void store.removeWord(student.id, gloss.lemma);
-                  setGloss(null);
-                }}
-              >
-                להסיר
-              </button>
-            )}
-          </div>
-        </div>
-      )}
     </main>
   );
 }
 
 /** A line split into tappable words. Punctuation and spaces stay as text. */
-function LineWords({ text, story, savedSet, onTap }: { text: string; story: Story; savedSet: Set<string>; onTap: (word: string) => void }) {
+function LineWords({ text, story, savedSet, onTap }: { text: string; story: Story; savedSet: Set<string>; onTap: (key: string, word: string) => void }) {
   const parts = text.split(/(\s+)/);
   return (
     <>
@@ -265,7 +233,7 @@ function LineWords({ text, story, savedSet, onTap }: { text: string; story: Stor
         return (
           <span key={i} className="wt">
             {lead}
-            <button type="button" className="word-tap" data-saved={savedSet.has(g.lemma)} onClick={() => onTap(key)}>
+            <button type="button" className="word-tap" data-saved={savedSet.has(g.lemma)} onClick={() => onTap(key, core)}>
               {core}
             </button>
             {trail}

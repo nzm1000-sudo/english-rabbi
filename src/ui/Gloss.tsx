@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useServices } from '@/app/services';
 import { useSpeechPrefs } from '@/app/speechPrefs';
@@ -26,7 +26,10 @@ const Ctx = createContext<{ open: (g: GlossEntry) => void } | null>(null);
  * reads it aloud, and keeps it in "my words". One per screen.
  */
 export function GlossProvider({ children }: { children: ReactNode }) {
-  const [gloss, setGloss] = useState<GlossEntry | null>(null);
+  // Kept with the screen it was opened on: another screen (the next story) starts without it.
+  const [opened, setGloss] = useState<{ entry: GlossEntry; path: string } | null>(null);
+  const { pathname } = useLocation();
+  const gloss = opened?.path === pathname ? opened.entry : null;
   const { sid } = useParams();
   const { store, speech } = useServices();
   const prefs = useSpeechPrefs();
@@ -35,18 +38,16 @@ export function GlossProvider({ children }: { children: ReactNode }) {
 
   const open = useCallback(
     (g: GlossEntry) => {
-      setGloss(g);
+      setGloss({ entry: g, path: pathname });
       const first = g.senses[0];
       if (!first) return;
       void speech.speak(first.lemma, { ...prefs, key: `gloss-${first.lemma}` });
       // Very common words ("the", "is") are shown but not saved.
       if (sid && !STORY_STOPWORDS.has(first.lemma.toLowerCase())) void store.saveWord(sid, { lemma: first.lemma, he: g.senses.map((s) => s.he).join(', '), ...(g.sentence ? { example: g.sentence } : {}), ...(g.storyId ? { storyId: g.storyId } : {}) });
     },
-    [prefs, sid, speech, store],
+    [pathname, prefs, sid, speech, store],
   );
 
-  // A new screen closes the popup.
-  useEffect(() => () => setGloss(null), []);
   const lemma = gloss?.senses[0]?.lemma;
 
   return (

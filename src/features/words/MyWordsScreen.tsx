@@ -45,7 +45,14 @@ export function MyWordsScreen() {
         <>
           <div className="panel spread">
             <span>
-              <strong className="num">{data.words.length}</strong> מילים · <strong className="num">{due}</strong> לתרגול עכשיו
+              {data.words.length === 1 ? (
+                <strong>מילה אחת</strong>
+              ) : (
+                <>
+                  <strong className="num">{data.words.length}</strong> מילים
+                </>
+              )}{' '}
+              · <strong className="num">{due}</strong> לתרגול עכשיו
             </span>
             <ButtonLink to={`${base}/practice/mywords`} variant="primary">
               לתרגל
