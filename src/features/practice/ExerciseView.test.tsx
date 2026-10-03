@@ -16,14 +16,18 @@ it('ignores "המשך" right after checking, then continues once', () => {
     const speech = { stop: vi.fn(), speak: vi.fn(), subscribe: () => () => {}, getState: () => idle };
     const services = { content: contentRegistry, speech } as unknown as AppServices;
     const onDone = vi.fn();
+    const onAnswer = vi.fn();
     render(
       <ServicesProvider services={services}>
-        <ExerciseView item={item} support="he" seed="s" policy="test" feedback="full" onDone={onDone} />
+        <ExerciseView item={item} support="he" seed="s" policy="test" feedback="full" onAnswer={onAnswer} onDone={onDone} />
       </ServicesProvider>,
     );
     const correct = item.options.find((o) => o.id === item.correctOptionId)!;
     fireEvent.click(screen.getAllByText(correct.text)[0]!.closest('button')!);
     fireEvent.click(screen.getByRole('button', { name: 'בדיקה' }));
+    // The answer is saved at "בדיקה", before any "המשך".
+    expect(onAnswer).toHaveBeenCalledTimes(1);
+    expect(onAnswer.mock.calls[0]![0]).toMatchObject({ finalCorrect: true });
     const cont = screen.getByRole('button', { name: 'המשך' });
     fireEvent.click(cont);
     expect(onDone).not.toHaveBeenCalled();
@@ -31,6 +35,7 @@ it('ignores "המשך" right after checking, then continues once', () => {
     fireEvent.click(screen.getByRole('button', { name: 'המשך' }));
     expect(onDone).toHaveBeenCalledTimes(1);
     expect(onDone.mock.calls[0]![0]).toMatchObject({ finalCorrect: true });
+    expect(onAnswer).toHaveBeenCalledTimes(1);
   } finally {
     vi.useRealTimers();
   }

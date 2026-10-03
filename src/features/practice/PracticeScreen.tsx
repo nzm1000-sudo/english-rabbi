@@ -163,6 +163,7 @@ function Session({
           seed={s.sessionId}
           policy={def.policy}
           feedback={def.feedback}
+          onAnswer={s.record}
           onDone={s.complete}
         />
       )}

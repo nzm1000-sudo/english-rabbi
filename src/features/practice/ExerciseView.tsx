@@ -32,6 +32,8 @@ type Props = {
   policy?: FlowPolicy;
   /** full: explanation + Continue. brief: flash and auto-advance. none: advance at once. */
   feedback?: 'full' | 'brief' | 'none';
+  /** Called once, the moment the item is answered (before any feedback), to save the answer. */
+  onAnswer?: (outcome: ItemOutcome) => unknown;
   onDone: (outcome: ItemOutcome) => void;
 };
 
@@ -39,7 +41,7 @@ type Props = {
  * One exercise. Implements "teach, don't solve": wrong answers unlock a hint,
  * a second hint, an explanation, and only then the answer.
  */
-export function ExerciseView({ item, passage, support, seed, policy = 'teach', feedback = 'full', onDone }: Props) {
+export function ExerciseView({ item, passage, support, seed, policy = 'teach', feedback = 'full', onAnswer, onDone }: Props) {
   const [flow, dispatch] = useReducer(
     (s: FlowState, a: Parameters<typeof flowReducer>[1]) => flowReducer(s, a, item.hints.length, policy),
     Date.now(),
@@ -61,6 +63,18 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
     if (flow.phase === 'solved') sounds.correct();
     else if (flow.phase === 'revealed') sounds.wrong();
   }, [flow.phase]);
+
+  // The answer is saved when given, not on "המשך": leaving on the feedback
+  // must not lose it (and a test answer must not be tried again).
+  const answerRef = useRef(onAnswer);
+  answerRef.current = onAnswer;
+  useEffect(() => {
+    if (!finished) return;
+    // A failed save is retried by "המשך", which reports the error.
+    void Promise.resolve(answerRef.current?.(toOutcome(flow))).catch(() => {});
+    // Once per answer: later flow changes (replays) do not save again.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [finished]);
 
   // Quick modes move on by themselves.
   useEffect(() => {

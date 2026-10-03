@@ -62,9 +62,10 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
   const resultsRef = useRef<SessionResult[]>([]);
   const startedRef = useRef(0);
   const endedRef = useRef(false);
-  const busyRef = useRef(false);
-  /** The presented question already answered; a stale second tap must not record it again. */
-  const answeredRef = useRef<Candidate | null>(null);
+  /** The save of the presented question's answer; one per question. */
+  const recordingRef = useRef<{ cand: Candidate; done: Promise<void> } | null>(null);
+  /** The presented question already moved on from; a stale second tap must not skip the next one. */
+  const advancedRef = useRef<Candidate | null>(null);
   const deadlineRef = useRef<number | null>(null);
 
   const ctx = useCallback(
@@ -232,34 +233,59 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
     }
   }, [finish, sessionId]);
 
-  const complete = useCallback(
-    async (outcome: ItemOutcome) => {
-      // A fast second tap can reach this with the previous question still in
-      // its closure (before the next one renders): ignore it, or the same
-      // answer is saved twice and the next question is skipped.
-      if (!current || busyRef.current || answeredRef.current === current) return;
-      busyRef.current = true;
-      answeredRef.current = current;
-      try {
-        const r = await store.completeItem({ studentId: student.id, sessionId, item: current.item, outcome, predicted: current.predicted });
+  /**
+   * Saves the answer to the presented question. Called the moment the learner
+   * answers (before any feedback), so leaving or reloading on the feedback
+   * strip neither re-asks the question nor lets a test answer be retried.
+   * Once per question: a second call returns the first save.
+   */
+  const record = useCallback(
+    (outcome: ItemOutcome): Promise<void> => {
+      const cand = current;
+      if (!cand) return Promise.resolve();
+      if (recordingRef.current?.cand === cand) return recordingRef.current.done;
+      const done = (async () => {
+        const r = await store.completeItem({ studentId: student.id, sessionId, item: cand.item, outcome, predicted: cand.predicted });
         const st = stateRef.current!;
         for (const s of r.skills) st.skills.set(s.skillId, s);
         st.units.set(r.unit.unit, r.unit);
         for (const p of r.patterns) st.patterns.set(p.misconceptionId, p);
         const misconceptions = outcome.attempts.flatMap((a) => (a.misconception ? [a.misconception] : []));
-        const res = { itemId: current.item.id, correct: outcome.finalCorrect && !outcome.revealed, evidence: r.evidence, misconceptions };
+        const res = { itemId: cand.item.id, correct: outcome.finalCorrect && !outcome.revealed, evidence: r.evidence, misconceptions };
         resultsRef.current = [...resultsRef.current, res];
         setResults(resultsRef.current);
-        next(sessionId);
+        // The answer is part of the saved place now: a reload goes on to the next question.
+        persist();
+      })();
+      recordingRef.current = { cand, done };
+      // Not saved: the same answer may be saved again (by "המשך").
+      done.catch(() => {
+        if (recordingRef.current?.cand === cand) recordingRef.current = null;
+      });
+      return done;
+    },
+    [current, persist, sessionId, store, student.id],
+  );
+
+  /** Moves on from the presented question, saving its answer first if that has not happened yet. */
+  const complete = useCallback(
+    async (outcome: ItemOutcome) => {
+      // A fast second tap can reach this with the previous question still in
+      // its closure (before the next one renders): ignore it, or the next
+      // question is skipped.
+      const cand = current;
+      if (!cand || advancedRef.current === cand) return;
+      advancedRef.current = cand;
+      try {
+        await record(outcome);
       } catch (e) {
         // Not saved: the same question may be answered again.
-        answeredRef.current = null;
+        advancedRef.current = null;
         throw e;
-      } finally {
-        busyRef.current = false;
       }
+      next(sessionId);
     },
-    [current, next, sessionId, store, student.id],
+    [current, next, record, sessionId],
   );
 
   /** An item of this session, also one generated for it (my words), by id. */
@@ -268,7 +294,7 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
   /** Drops the saved place; the caller starts a fresh round. */
   const discardSaved = useCallback(() => resume.clearSession(student.id, mode), [student.id, mode]);
 
-  return { status, current, results, sessionId, total, index: recentRef.current.length, deadline, complete, timeUp, def, resumed, discardSaved, itemFor };
+  return { status, current, results, sessionId, total, index: recentRef.current.length, deadline, record, complete, timeUp, def, resumed, discardSaved, itemFor };
 }
 
 /** Lightning: 10 per correct answer, +2 per answer in the current streak, capped. */
