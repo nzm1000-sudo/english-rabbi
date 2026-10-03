@@ -56,6 +56,14 @@ function MatchRound({ again }: { again: () => void }) {
     })();
   }, [student, profile, words, store, content.items]);
 
+  // Leaving mid-game closes the session (a finished one stays finished).
+  useEffect(
+    () => () => {
+      if (sessionId.current) void store.endSession(sessionId.current, 'left');
+    },
+    [store],
+  );
+
   const roundWords = useMemo(() => (words ?? []).slice(round * PAIRS_PER_ROUND, (round + 1) * PAIRS_PER_ROUND), [words, round]);
   const enCol = useMemo(() => seededShuffle(roundWords, `en${round}`), [roundWords, round]);
   const heCol = useMemo(() => seededShuffle(roundWords, `he${round}`), [roundWords, round]);

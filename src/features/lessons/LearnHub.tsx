@@ -43,7 +43,7 @@ export function LearnHub() {
                 <Link key={l.id} to={`/s/${student.id}/learn/${l.id}`} className="list-item">
                   <Row as="span" gap={2} wrap className="grow">
                     <He inline className="t-strong">{l.title.he}</He>
-                    {[...weak].some((w) => w.startsWith(l.skill)) && <span className="badge badge-warn">כדאי לחזק</span>}
+                    {[...weak].some((w) => w === l.skill || w.startsWith(`${l.skill}.`)) && <span className="badge badge-warn">כדאי לחזק</span>}
                   </Row>
                   <span className="level-chip" lang="en">
                     {l.level}
