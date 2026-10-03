@@ -1,4 +1,5 @@
-import { buildQuestions, firstLetterQuestions, listenQuestions, memoryCards, sightQuestions } from './games';
+import { buildQuestions, firstLetterQuestions, listenQuestions, memoryCards, memoryScore, sightQuestions } from './games';
+import { earnsSticker } from '@/features/kids/Reward';
 import type { KidWord, Phonics } from './schema';
 
 const w = (id: string, topic: KidWord['topic'], emoji: string): KidWord => ({ id, en: id, he: id, picture: { emoji }, topic, stages: ['little', 'young'] });
@@ -41,5 +42,22 @@ describe('kids games', () => {
     const cards = memoryCards(words, 's', 3);
     expect(cards).toHaveLength(6);
     expect(new Set(cards.map((c) => c.word.id)).size).toBe(3);
+  });
+});
+
+/** Regression: the memory game always reported a full score, so tapping at random earned a sticker every round. */
+describe('memoryScore', () => {
+  it('forgives one mismatch per pair, then costs a pair per two mismatches', () => {
+    expect(memoryScore(6, 0)).toEqual({ correct: 6, total: 6 });
+    expect(memoryScore(6, 6)).toEqual({ correct: 6, total: 6 });
+    expect(memoryScore(6, 7)).toEqual({ correct: 5, total: 6 });
+    expect(memoryScore(6, 12)).toEqual({ correct: 3, total: 6 });
+    expect(memoryScore(6, 13)).toEqual({ correct: 2, total: 6 });
+    expect(memoryScore(6, 40)).toEqual({ correct: 0, total: 6 });
+  });
+  it('gives a sticker for remembering, not for random tapping', () => {
+    expect(earnsSticker(memoryScore(6, 9))).toBe(true);
+    expect(earnsSticker(memoryScore(6, 12))).toBe(true);
+    expect(earnsSticker(memoryScore(6, 27))).toBe(false);
   });
 });
