@@ -2449,7 +2449,7 @@
       "skill": "grammar.present-progressive",
       "level": "B2",
       "difficulty": 0.4,
-      "prompt": "I ___ about buying a new laptop. What do you think?",
+      "prompt": "I ___ about buying a new laptop right now. What do you think?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה",
         "en": "Choose the correct answer"
@@ -2496,7 +2496,7 @@
       ],
       "estimatedTimeSec": 15,
       "source": "original",
-      "audioText": "I am thinking about buying a new laptop. What do you think?"
+      "audioText": "I am thinking about buying a new laptop right now. What do you think?"
     },
     {
       "id": "gt.prog.think-opinion",
@@ -2860,7 +2860,8 @@
         "en": "Complete with the correct form of the verb"
       },
       "answers": [
-        "lived"
+        "lived",
+        "used to live"
       ],
       "knownErrors": [
         {
