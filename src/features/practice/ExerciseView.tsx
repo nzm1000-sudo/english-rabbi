@@ -21,6 +21,9 @@ import { LessonView } from '@/features/lessons/LessonView';
 import { AnchorCard } from '@/ui/AnchorCard';
 import { sounds } from '@/services/sound';
 
+/** Taps on "המשך" sooner than this after answering are the tail of a double tap. */
+export const CONTINUE_DELAY_MS = 350;
+
 type Props = {
   item: Exclude<ContentItem, { type: 'open-writing' }>;
   passage?: Passage | undefined;
@@ -65,6 +68,17 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
     const t = setTimeout(() => onDone(toOutcome(flow)), feedback === 'brief' ? 650 : 0);
     return () => clearTimeout(t);
   }, [finished, feedback, flow, onDone]);
+  // "המשך" sits where "בדיקה" was: the second tap of a double tap on
+  // "בדיקה" must not skip the feedback. Continue works a moment later.
+  const [continueArmed, setContinueArmed] = useState(false);
+  useEffect(() => {
+    if (!finished) return;
+    const t = setTimeout(() => setContinueArmed(true), CONTINUE_DELAY_MS);
+    return () => clearTimeout(t);
+  }, [finished]);
+  const onContinue = () => {
+    if (continueArmed) onDone(toOutcome(flow));
+  };
   const listen = item.modality === 'listen';
   const audioText = ('audioText' in item && item.audioText) || item.prompt;
   const canSpeakPrompt = listen || (!!item.word && item.prompt === item.word.lemma);
@@ -149,7 +163,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
             flow={flow}
             support={support}
             onWhy={() => setWhyOpen(true)}
-            onContinue={() => onDone(toOutcome(flow))}
+            onContinue={onContinue}
           />
           <Sheet
             open={whyOpen}
@@ -157,7 +171,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
             label="הסבר"
             title="הסבר"
             footer={
-              <Button variant="primary" size="lg" block onClick={() => onDone(toOutcome(flow))}>
+              <Button variant="primary" size="lg" block onClick={onContinue}>
                 המשך
               </Button>
             }
