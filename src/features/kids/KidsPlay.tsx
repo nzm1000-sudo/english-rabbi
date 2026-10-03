@@ -25,6 +25,9 @@ import { CardBack, KidsIconLink, KidsMessage, KidsTopBar, ProgressRing } from '.
 import { CheckIcon, HomeIcon, SparkleBurst, SpeakerIcon, TurtleIcon } from './KidIcons';
 import { Picture } from './Picture';
 import { Reward } from './Reward';
+import { pause, useSpeechSteps } from './speechSteps';
+import { useKidsSession } from './kidsSession';
+import { TimeGate } from './timeLimit';
 import { TOPIC_INFO } from './topics';
 
 type Game = 'listen' | 'read' | 'letters' | 'build' | 'sight' | 'memory';
@@ -41,7 +44,12 @@ export function KidsPlay() {
   if (!student) return <main className="screen kids-screen" data-mood="kids" />;
   const s = stageOf(student);
   const stage: KidStage = s === 'little' ? 'little' : 'young';
-  return <Round key={`${game}:${topic}:${round}`} student={student} stage={stage} game={game} topic={topic} onAgain={() => setRound((r) => r + 1)} />;
+  const key = `${student.id}:${game}:${topic}:${round}`;
+  return (
+    <TimeGate key={key} student={student} home={<KidsIconLink to={`/s/${student.id}`} label="הביתה" />}>
+      <Round student={student} stage={stage} game={game} topic={topic} onAgain={() => setRound((r) => r + 1)} />
+    </TimeGate>
+  );
 }
 
 /** One round of a game: a few questions, then a sticker. */
@@ -50,18 +58,12 @@ function Round({ student, stage, game, topic, onAgain }: { student: Student; sta
   const prefs = useSpeechPrefs();
   const [known, setKnown] = useState<((w: KidWord) => boolean) | null>(null);
   const [score, setScore] = useState<{ correct: number; total: number } | null>(null);
-  const sessionRef = useRef<string>('');
+  const { sessionId: sessionRef, finish: endSession } = useKidsSession(student.id, `kids:${game}`);
   const seed = useMemo(() => `${student.id}:${game}:${topic}:${Date.now()}`, [student.id, game, topic]);
 
-  // Session for screen time; learner memory to put new words first.
+  // Learner memory, to put new words first.
   useEffect(() => {
-    let sid = '';
     let live = true;
-    void store.startSession(student.id, `kids:${game}`).then((s) => {
-      sid = s.id;
-      if (live) sessionRef.current = s.id;
-      else void store.endSession(s.id, 'left');
-    });
     void store.loadLearnerState(student.id).then((st) => {
       const now = Date.now();
       if (live)
@@ -74,9 +76,8 @@ function Round({ student, stage, game, topic, onAgain }: { student: Student; sta
       live = false;
       stopHebrew();
       speech.stop();
-      if (sid) void store.endSession(sid, 'left');
     };
-  }, [store, speech, student.id, game]);
+  }, [store, speech, student.id]);
 
   const sayEn = useCallback(
     (text: string, slow = false) => speech.speak(text, { ...prefs, ...(slow ? { rate: 'slower' as const } : {}), key: `kid-${text}` }),
@@ -87,9 +88,9 @@ function Round({ student, stage, game, topic, onAgain }: { student: Student; sta
     (correct: number, total: number) => {
       setScore({ correct, total });
       void store.log(student.id, 'kids.round', { game, ...(topic ? { topic } : {}), correct, total }, sessionRef.current || undefined);
-      if (sessionRef.current) void store.endSession(sessionRef.current, 'finished');
+      endSession();
     },
-    [store, student.id, game, topic],
+    [store, student.id, game, topic, sessionRef, endSession],
   );
 
   /** Records one picture answer in the learner memory (unit word:<en>), like any other item. */
@@ -133,7 +134,7 @@ function Round({ student, stage, game, topic, onAgain }: { student: Student; sta
       };
       void store.completeItem({ studentId: student.id, ...(sessionRef.current ? { sessionId: sessionRef.current } : {}), item, outcome });
     },
-    [store, student.id, game],
+    [store, student.id, game, sessionRef],
   );
 
   if (score) return <Reward student={student} score={score} onAgain={onAgain} source={`game:${game}`} />;
@@ -210,20 +211,13 @@ function PictureGame({
   const [solved, setSolved] = useState(false);
   const [correct, setCorrect] = useState(0);
   const shownAt = useRef(Date.now());
+  const { run, alive } = useSpeechSteps();
   const q = questions[i];
-
-  const ask = useCallback(async () => {
-    if (!q) return;
-    if (!read) {
-      await speakHebrew('איפה');
-      await sayEn(q.say);
-    }
-  }, [q, read, sayEn]);
 
   useEffect(() => {
     shownAt.current = Date.now();
-    void ask();
-  }, [ask]);
+    if (q && !read) void run(() => speakHebrew('איפה'), () => sayEn(q.say));
+  }, [q, read, run, sayEn]);
 
   if (!questions.length) return <EmptyGame back={back} />;
   if (!q) return null;
@@ -236,23 +230,25 @@ function PictureGame({
       const first = wrong.size === 0;
       if (first) setCorrect((c) => c + 1);
       onRecord(q.target, first, wrong.size, Date.now() - shownAt.current);
-      void (async () => {
-        await speakHebrew(PRAISE[(i + correct) % PRAISE.length]!);
-        await sayEn(q.target.sentence?.en ?? q.target.en);
-        setTimeout(() => {
-          if (i + 1 >= questions.length) onFinish(correct + (first ? 1 : 0), questions.length);
-          else {
-            setI(i + 1);
-            setWrong(new Set());
-            setSolved(false);
-          }
-        }, 500);
-      })();
+      void run(
+        () => speakHebrew(PRAISE[(i + correct) % PRAISE.length]!),
+        () => sayEn(q.target.sentence?.en ?? q.target.en),
+        pause(500),
+      ).then(() => {
+        if (!alive()) return;
+        if (i + 1 >= questions.length) onFinish(correct + (first ? 1 : 0), questions.length);
+        else {
+          setI(i + 1);
+          setWrong(new Set());
+          setSolved(false);
+        }
+      });
     } else {
       setWrong((s) => new Set(s).add(w.id));
-      void sayEn(w.en).then(() => speakHebrew('נסו שוב')).then(() => sayEn(q.say));
+      void run(() => sayEn(w.en), () => speakHebrew('נסו שוב'), () => sayEn(q.say));
     }
   };
+  const replay = (slow = false) => void run(() => sayEn(q.say, slow));
 
   const hintOn = wrong.size >= 2;
   const title = topic ? TOPIC_INFO[topic].he : read ? 'קוראים ומתאימים' : 'שומעים ולוחצים';
@@ -266,18 +262,18 @@ function PictureGame({
               {q.target.en}
             </div>
             <div className="k-prompt-row">
-              <button className="k-round-btn" onClick={() => void sayEn(q.say)} aria-label="לשמוע את המילה">
+              <button className="k-round-btn" onClick={() => replay()} aria-label="לשמוע את המילה">
                 <SpeakerIcon size={30} />
               </button>
-              <SlowButton onClick={() => void sayEn(q.say, true)} />
+              <SlowButton onClick={() => replay(true)} />
             </div>
           </>
         ) : (
           <>
-            <button className="k-speak" onClick={() => void sayEn(q.say)} aria-label="לשמוע שוב">
+            <button className="k-speak" onClick={() => replay()} aria-label="לשמוע שוב">
               <SpeakerIcon size={56} />
             </button>
-            <SlowButton onClick={() => void sayEn(q.say, true)} />
+            <SlowButton onClick={() => replay(true)} />
           </>
         )}
         <div className="k-caption" dir="ltr" lang="en" aria-live="polite">
@@ -307,11 +303,11 @@ function LettersGame({ seed, sayEn, onFinish, back }: Common & { seed: string })
   const [wrong, setWrong] = useState<Set<string>>(new Set());
   const [done, setDone] = useState(false);
   const [correct, setCorrect] = useState(0);
+  const { run, alive } = useSpeechSteps();
   const q = questions[i];
   useEffect(() => {
-    if (!q) return;
-    void speakHebrew('באיזו אות זה מתחיל?').then(() => sayEn(q.word));
-  }, [q, sayEn]);
+    if (q) void run(() => speakHebrew('באיזו אות זה מתחיל?'), () => sayEn(q.word));
+  }, [q, run, sayEn]);
   if (!questions.length) return <EmptyGame back={back} />;
   if (!q) return null;
   const tap = (c: string) => {
@@ -321,26 +317,25 @@ function LettersGame({ seed, sayEn, onFinish, back }: Common & { seed: string })
       sounds.correct();
       const first = wrong.size === 0;
       if (first) setCorrect((x) => x + 1);
-      void speakHebrew(PRAISE[i % PRAISE.length]!).then(() => sayEn(q.word)).then(() =>
-        setTimeout(() => {
-          if (i + 1 >= questions.length) onFinish(correct + (first ? 1 : 0), questions.length);
-          else {
-            setI(i + 1);
-            setWrong(new Set());
-            setDone(false);
-          }
-        }, 400),
-      );
+      void run(() => speakHebrew(PRAISE[i % PRAISE.length]!), () => sayEn(q.word), pause(400)).then(() => {
+        if (!alive()) return;
+        if (i + 1 >= questions.length) onFinish(correct + (first ? 1 : 0), questions.length);
+        else {
+          setI(i + 1);
+          setWrong(new Set());
+          setDone(false);
+        }
+      });
     } else {
       setWrong((s) => new Set(s).add(c));
-      void speakHebrew('נסו שוב').then(() => sayEn(q.word));
+      void run(() => speakHebrew('נסו שוב'), () => sayEn(q.word));
     }
   };
   return (
     <main className="screen kids-screen k-game" data-mood="kids">
       <GameTop back={back} progress={i + (done ? 1 : 0)} total={questions.length} title="איזו אות?" />
       <section className="k-prompt">
-        <button className="k-hero-pic" onClick={() => void sayEn(q.word)} aria-label="לשמוע שוב">
+        <button className="k-hero-pic" onClick={() => void run(() => sayEn(q.word))} aria-label="לשמוע שוב">
           <span className="k-card-face">
             <Picture picture={{ emoji: q.emoji }} word={q.word} fill />
           </span>
@@ -374,12 +369,11 @@ function BuildGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
   const [mistakes, setMistakes] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [shake, setShake] = useState(false);
+  const { run, alive } = useSpeechSteps();
   const q = questions[i];
   useEffect(() => {
-    if (!q) return;
-    setPlaced([]);
-    void speakHebrew('בונים את המילה').then(() => sayEn(q.word));
-  }, [q, sayEn]);
+    if (q) void run(() => speakHebrew('בונים את המילה'), () => sayEn(q.word));
+  }, [q, run, sayEn]);
   if (!questions.length) return <EmptyGame back={back} />;
   if (!q) return null;
   const built = placed.map((p) => q.tiles[p]).join('');
@@ -391,7 +385,7 @@ function BuildGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
       setMistakes((m) => m + 1);
       setShake(true);
       setTimeout(() => setShake(false), 400);
-      void sayEn(q.word, true);
+      void run(() => sayEn(q.word, true));
       return;
     }
     const now = [...placed, idx];
@@ -400,20 +394,22 @@ function BuildGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
       sounds.correct();
       const clean = mistakes === 0;
       if (clean) setCorrect((c) => c + 1);
-      void speakHebrew(PRAISE[i % PRAISE.length]!).then(() => sayEn(q.word)).then(() =>
-        setTimeout(() => {
+      void run(() => speakHebrew(PRAISE[i % PRAISE.length]!), () => sayEn(q.word), pause(500)).then(() => {
+        if (!alive()) return;
+        if (i + 1 >= questions.length) onFinish(correct + (clean ? 1 : 0), questions.length);
+        else {
           setMistakes(0);
-          if (i + 1 >= questions.length) onFinish(correct + (clean ? 1 : 0), questions.length);
-          else setI(i + 1);
-        }, 500),
-      );
+          setPlaced([]);
+          setI(i + 1);
+        }
+      });
     }
   };
   return (
     <main className="screen kids-screen k-game" data-mood="kids">
       <GameTop back={back} progress={i + (done ? 1 : 0)} total={questions.length} title="בונים מילה" />
       <section className="k-prompt">
-        <button className="k-hero-pic" onClick={() => void sayEn(q.word)} aria-label="לשמוע שוב" data-state={done ? 'right' : undefined}>
+        <button className="k-hero-pic" onClick={() => void run(() => sayEn(q.word))} aria-label="לשמוע שוב" data-state={done ? 'right' : undefined}>
           <span className="k-card-face">
             <Picture picture={{ emoji: q.emoji ?? '🔤' }} word={q.word} fill />
           </span>
@@ -447,11 +443,11 @@ function SightGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
   const [wrong, setWrong] = useState<Set<string>>(new Set());
   const [done, setDone] = useState(false);
   const [correct, setCorrect] = useState(0);
+  const { run, alive } = useSpeechSteps();
   const q = questions[i];
   useEffect(() => {
-    if (!q) return;
-    void speakHebrew('איפה המילה').then(() => sayEn(q.word));
-  }, [q, sayEn]);
+    if (q) void run(() => speakHebrew('איפה המילה'), () => sayEn(q.word));
+  }, [q, run, sayEn]);
   if (!questions.length) return <EmptyGame back={back} />;
   if (!q) return null;
   const tap = (w: string) => {
@@ -461,26 +457,25 @@ function SightGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
       sounds.correct();
       const first = wrong.size === 0;
       if (first) setCorrect((c) => c + 1);
-      void speakHebrew(PRAISE[i % PRAISE.length]!).then(() => sayEn(q.sentence.en)).then(() =>
-        setTimeout(() => {
-          if (i + 1 >= questions.length) onFinish(correct + (first ? 1 : 0), questions.length);
-          else {
-            setI(i + 1);
-            setWrong(new Set());
-            setDone(false);
-          }
-        }, 400),
-      );
+      void run(() => speakHebrew(PRAISE[i % PRAISE.length]!), () => sayEn(q.sentence.en), pause(400)).then(() => {
+        if (!alive()) return;
+        if (i + 1 >= questions.length) onFinish(correct + (first ? 1 : 0), questions.length);
+        else {
+          setI(i + 1);
+          setWrong(new Set());
+          setDone(false);
+        }
+      });
     } else {
       setWrong((s) => new Set(s).add(w));
-      void sayEn(w).then(() => speakHebrew('נסו שוב')).then(() => sayEn(q.word));
+      void run(() => sayEn(w), () => speakHebrew('נסו שוב'), () => sayEn(q.word));
     }
   };
   return (
     <main className="screen kids-screen k-game" data-mood="kids">
       <GameTop back={back} progress={i + (done ? 1 : 0)} total={questions.length} title="מילים קסומות" />
       <section className="k-prompt">
-        <button className="k-speak" onClick={() => void sayEn(q.word)} aria-label="לשמוע שוב">
+        <button className="k-speak" onClick={() => void run(() => sayEn(q.word))} aria-label="לשמוע שוב">
           <SpeakerIcon size={56} />
         </button>
         <div className="k-sentence-box" aria-live="polite">
@@ -512,10 +507,11 @@ function MemoryGame({ words, seed, sayEn, onFinish, back }: Common & { words: Ki
   const [open, setOpen] = useState<string[]>([]);
   const [found, setFound] = useState<Set<string>>(new Set());
   const [turns, setTurns] = useState(0);
+  const { run, alive } = useSpeechSteps();
   if (cards.length < 4) return <EmptyGame back={back} />;
   const flip = (key: string, w: KidWord) => {
     if (open.includes(key) || found.has(w.id) || open.length === 2) return;
-    void sayEn(w.en);
+    void run(() => sayEn(w.en));
     const now = [...open, key];
     setOpen(now);
     if (now.length === 2) {
@@ -527,7 +523,10 @@ function MemoryGame({ words, seed, sayEn, onFinish, back }: Common & { words: Ki
         setTimeout(() => {
           setFound(f);
           setOpen([]);
-          if (f.size * 2 === cards.length) void speakHebrew('כל הכבוד!').then(() => onFinish(cards.length / 2, cards.length / 2));
+          if (f.size * 2 === cards.length)
+            void run(() => speakHebrew('כל הכבוד!')).then(() => {
+              if (alive()) onFinish(cards.length / 2, cards.length / 2);
+            });
         }, 600);
       } else setTimeout(() => setOpen([]), 1100);
     }
