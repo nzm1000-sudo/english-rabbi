@@ -48,7 +48,7 @@ export function PracticeScreen() {
 /** A broken link (e.g. an old bookmark): say so and offer the way home. */
 function NotFound({ text, home }: { text: string; home: string }) {
   return (
-    <main className="screen empty stack gap-3">
+    <main className="screen empty stack gap-3 items-center">
       <p>{text}</p>
       <Link className="text-link" to={home}>
         חזרה למסך הבית
