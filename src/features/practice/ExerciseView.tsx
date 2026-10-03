@@ -9,7 +9,8 @@ import { En } from '@/ui/En';
 import { He } from '@/ui/He';
 import { SpeakButton } from '@/ui/SpeakButton';
 import { TapText } from '@/ui/Gloss';
-import { questionSpeech } from '@/services/speech/textPrep';
+import { questionSpeech, splitSentences } from '@/services/speech/textPrep';
+import { AudioPlayer } from '@/ui/AudioPlayer';
 import { seededShuffle } from './shuffle';
 import { useServices } from '@/app/services';
 import { domainOf } from '@/domain/skills/taxonomy';
@@ -87,17 +88,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
         <BiText text={instruction} />
       </div>
 
-      {passage && (
-        <div className="panel stack">
-          <div className="spread">
-            <En className="small muted">{passage.title}</En>
-            <SpeakButton text={passage.text} label="השמעת הקטע" />
-          </div>
-          <En as="p" className="passage">
-            {passage.text}
-          </En>
-        </div>
-      )}
+      {passage && <PassagePanel passage={passage} locked={glossLocked || (item.skill === 'reading.vocabulary-in-context' && !finished)} />}
 
       {listen && (
         <div className="center" style={{ minHeight: 140 }}>
@@ -173,6 +164,28 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
         )}
       </div>
       )}
+    </div>
+  );
+}
+
+/** Reading passage: seekable player, the sentence being read is highlighted, words can be tapped. */
+function PassagePanel({ passage, locked }: { passage: Passage; locked: boolean }) {
+  const sentences = useMemo(() => splitSentences(passage.text), [passage.text]);
+  const segments = useMemo(() => sentences.map((text) => ({ text })), [sentences]);
+  const [on, setOn] = useState<number | null>(null);
+  return (
+    <div className="panel stack">
+      <En className="small muted">{passage.title}</En>
+      <AudioPlayer segments={segments} onSegment={setOn} />
+      <p className="passage" dir="ltr" lang="en">
+        {sentences.map((s, i) => (
+          <span key={i}>
+            <span className="sent" data-on={on === i}>
+              <TapText text={s} locked={locked} />
+            </span>{' '}
+          </span>
+        ))}
+      </p>
     </div>
   );
 }
@@ -369,6 +382,7 @@ function ChoiceInput({
   const finished = isFinished(flow);
   const wrong = new Set(flow.attempts.filter((a) => !a.correct).map((a) => a.answer));
   const isEnglish = item.promptLanguage === 'en' && !(item.word && item.prompt === item.word.lemma);
+  const listen = item.modality === 'listen';
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
@@ -381,10 +395,26 @@ function ChoiceInput({
     <form id={`answer-${item.id}`} className="options" onSubmit={submit} role="group" aria-label="תשובות">
       {options.map((o, idx) => {
         const state = finished && o.id === item.correctOptionId ? 'correct' : wrong.has(o.id) ? 'wrong' : undefined;
-        const text = isEnglish ? <En>{o.text}</En> : <He>{o.text}</He>;
+        // After answering, English options can be tapped word by word.
+        const text = isEnglish ? <En>{finished ? <TapText text={o.text} /> : o.text}</En> : <He>{o.text}</He>;
+        // Hearing the options of a listening item would give the answer away.
+        const speak = isEnglish && !(listen && !finished) && <SpeakButton text={o.text} label="הקראת התשובה" />;
+        if (finished) {
+          return (
+            <div key={o.id} className="option-row">
+              <div className="option" dir={isEnglish ? 'ltr' : undefined} data-state={state} aria-disabled="true">
+                <span className="key" aria-hidden="true">
+                  {'ABCDEF'[idx]}
+                </span>
+                {text}
+              </div>
+              {speak}
+            </div>
+          );
+        }
         return (
+          <div key={o.id} className="option-row">
           <button
-            key={o.id}
             type="button"
             className="option"
             dir={isEnglish ? 'ltr' : undefined}
@@ -405,6 +435,8 @@ function ChoiceInput({
             </span>
             {text}
           </button>
+          {speak}
+          </div>
         );
       })}
     </form>

@@ -5,6 +5,7 @@ import { localDay, type ItemOutcome } from '@/domain/learning/events';
 import type { Evidence } from '@/domain/learning/evidence';
 import type { LearnerState } from '@/data/store';
 import type { SavedWordRow } from '@/data/schema';
+import { paramsKey, resume } from '@/app/resume';
 import type { Student } from '@/domain/student/student';
 import type { ContentItem } from '@/domain/content/schema';
 import { MODES, type PoolContext, type PracticeMode } from './modes';
@@ -37,6 +38,25 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
   const [deadline, setDeadline] = useState<number | null>(null);
   const stateRef = useRef<LearnerState | null>(null);
   const wordsRef = useRef<SavedWordRow[] | undefined>(undefined);
+  const [resumed, setResumed] = useState(false);
+
+  /** Keeps the place in this session so leaving the app does not lose it. Timed rounds are not kept. */
+  const persist = useCallback(() => {
+    if (def.timeLimitSec || endedRef.current) return;
+    const fixed = fixedRef.current;
+    const generated = !!fixed?.some((i) => !content.getItem(i.id));
+    resume.saveSession(student.id, {
+      mode,
+      paramsKey: paramsKey(params),
+      title: def.title,
+      recent: recentRef.current,
+      results: resultsRef.current,
+      total: fixed ? fixed.length || 1 : def.length,
+      ...(fixed ? (generated ? { fixedItems: fixed } : { fixedIds: fixed.map((i) => i.id) }) : {}),
+    });
+    // params is stable for the session (see ctx).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [content, def, mode, student.id]);
   const recentRef = useRef<string[]>([]);
   const fixedRef = useRef<ContentItem[] | null>(null);
   const resultsRef = useRef<SessionResult[]>([]);
@@ -91,6 +111,7 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
       const st = stateRef.current;
       if (!st || endedRef.current) return;
       const done = () => {
+        resume.clearSession(student.id, mode);
         setStatus(recentRef.current.length ? 'done' : 'empty');
         finish(sid, 'finished');
       };
@@ -129,11 +150,12 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
       }
       if (!cand) return done();
       recentRef.current = [...recentRef.current, cand.item.id];
+      persist();
       setCurrent(cand);
       setStatus('active');
       void store.log(student.id, 'item.presented', { itemId: cand.item.id, reasons: cand.reasons }, sid);
     },
-    [content, ctx, def, finish, store, student.id, student.interests],
+    [content, ctx, def, finish, persist, store, student.id, student.interests],
   );
 
   useEffect(() => {
@@ -153,8 +175,15 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
       stateRef.current = st;
       if (mode === 'mywords') wordsRef.current = await store.savedWords(student.id);
       startedRef.current = Date.now();
+      const snap = def.timeLimitSec ? undefined : resume.getSession(student.id, mode);
+      const same = snap && snap.mode === mode && snap.paramsKey === paramsKey(params) && snap.recent.length > 0;
       if (def.fixed) {
-        fixedRef.current = def.fixed(ctx());
+        const restored = same
+          ? snap.fixedItems
+            ? (snap.fixedItems as ContentItem[])
+            : snap.fixedIds?.flatMap((id) => content.getItem(id) ?? [])
+          : undefined;
+        fixedRef.current = restored?.length ? restored : def.fixed(ctx());
         setTotal(fixedRef.current.length || 1);
       }
       if (def.timeLimitSec) {
@@ -162,6 +191,22 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
         setDeadline(deadlineRef.current);
       }
       setSessionId(sid);
+      if (same) {
+        // Continue where the learner stopped: the same items, results and progress.
+        const find = (id: string) => fixedRef.current?.find((i) => i.id === id) ?? content.getItem(id);
+        const results = snap.results as SessionResult[];
+        const pendingId = snap.recent.length > results.length ? snap.recent[snap.recent.length - 1] : undefined;
+        const pending = pendingId ? find(pendingId) : undefined;
+        recentRef.current = pending ? snap.recent : snap.recent.slice(0, results.length);
+        resultsRef.current = results;
+        setResults(results);
+        setResumed(true);
+        if (pending) {
+          setCurrent({ item: pending, score: 1, predicted: predictSuccess(pending, st.skills, Date.now()), reasons: [] });
+          setStatus('active');
+          return;
+        }
+      }
       next(sid);
     })();
     return () => {
@@ -205,7 +250,10 @@ export function useSession(student: Student, mode: PracticeMode, params: Record<
     [current, next, sessionId, store, student.id],
   );
 
-  return { status, current, results, sessionId, total, index: recentRef.current.length, deadline, complete, timeUp, def };
+  /** Drops the saved place; the caller starts a fresh round. */
+  const discardSaved = useCallback(() => resume.clearSession(student.id, mode), [student.id, mode]);
+
+  return { status, current, results, sessionId, total, index: recentRef.current.length, deadline, complete, timeUp, def, resumed, discardSaved };
 }
 
 /** Lightning: 10 per correct answer, +2 per answer in the current streak, capped. */

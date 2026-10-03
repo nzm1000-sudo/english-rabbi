@@ -18,6 +18,7 @@ import { MyWordsScreen } from '@/features/words/MyWordsScreen';
 import { ShadowScreen } from '@/features/speaking/ShadowScreen';
 import { useStudent } from './hooks';
 import { SpeechPrefsProvider } from './speechPrefs';
+import { GlossProvider } from '@/ui/Gloss';
 import type { ReactNode } from 'react';
 
 /** Hash routing works from any static host or file path, and offline. */
@@ -64,5 +65,9 @@ function WithStudentSpeech({ children }: { children: ReactNode }) {
   const { sid } = useParams();
   const student = useStudent(sid);
   const prefs = student ? { accent: student.preferences.accent, rate: student.preferences.speechRate } : { accent: 'en-US' as const, rate: 'normal' as const };
-  return <SpeechPrefsProvider value={prefs}>{children}</SpeechPrefsProvider>;
+  return (
+    <SpeechPrefsProvider value={prefs}>
+      <GlossProvider>{children}</GlossProvider>
+    </SpeechPrefsProvider>
+  );
 }

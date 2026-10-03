@@ -182,7 +182,7 @@
  "living": [
   {
    "lemma": "live",
-   "he": "לגור, מגורים"
+   "he": "גר, חי; מגורים"
   }
  ],
  "local": [
@@ -230,11 +230,11 @@
  "longer": [
   {
    "lemma": "long",
-   "he": "(no longer) כבר לא"
+   "he": "ארוך יותר"
   },
   {
-   "lemma": "long",
-   "he": "ארוך יותר"
+   "lemma": "no longer",
+   "he": "כבר לא (no longer)"
   }
  ],
  "look": [
@@ -256,17 +256,21 @@
  "looking": [
   {
    "lemma": "look",
-   "he": "מסתכל; looking forward: מצפה"
+   "he": "מסתכל, מחפש"
+  },
+  {
+   "lemma": "look",
+   "he": "מצפה ל־ (looking forward to)"
   }
  ],
  "looks": [
   {
    "lemma": "look",
-   "he": "מסתכל; looks forward: מצפה"
+   "he": "נראה; מסתכל"
   },
   {
    "lemma": "look",
-   "he": "נראה"
+   "he": "מצפה ל־ (looks forward to)"
   }
  ],
  "loose": [
@@ -294,7 +298,7 @@
  "losing": [
   {
    "lemma": "lose",
-   "he": "איבוד, אובדן"
+   "he": "אובדן, איבוד"
   },
   {
    "lemma": "lose",
@@ -479,7 +483,7 @@
  ],
  "maked": [
   {
-   "lemma": "make",
+   "lemma": "made",
    "he": "צורה שגויה (נכון: made)"
   }
  ],
@@ -619,12 +623,12 @@
  ],
  "may": [
   {
-   "lemma": "May",
-   "he": "מאי (חודש)"
-  },
-  {
    "lemma": "may",
    "he": "ייתכן; מותר"
+  },
+  {
+   "lemma": "May",
+   "he": "מאי (חודש)"
   }
  ],
  "maya": [
@@ -746,7 +750,7 @@
  "melting": [
   {
    "lemma": "melt",
-   "he": "נמס, הֲמַסָּה"
+   "he": "נמס, המסה"
   }
  ],
  "melts": [
@@ -884,11 +888,11 @@
  "mind": [
   {
    "lemma": "mind",
-   "he": "להפריע, אכפת (would you mind)"
+   "he": "שכל, מחשבה"
   },
   {
    "lemma": "mind",
-   "he": "שכל, מחשבה"
+   "he": "אכפת ל־ (would you mind)"
   }
  ],
  "mine": [
@@ -923,32 +927,32 @@
  ],
  "misable": [
   {
-   "lemma": "misable",
-   "he": "מילה שגויה (לא קיימת)"
+   "lemma": "unable",
+   "he": "צורה שגויה (נכון: unable)"
   }
  ],
  "misagree": [
   {
-   "lemma": "misagree",
-   "he": "מילה שגויה (לא קיימת)"
+   "lemma": "disagree",
+   "he": "צורה שגויה (נכון: disagree)"
   }
  ],
  "misappeared": [
   {
-   "lemma": "misappeared",
-   "he": "מילה שגויה (לא קיימת)"
+   "lemma": "disappeared",
+   "he": "צורה שגויה (נכון: disappeared)"
   }
  ],
  "mishonest": [
   {
-   "lemma": "mishonest",
-   "he": "מילה שגויה (לא קיימת)"
+   "lemma": "dishonest",
+   "he": "צורה שגויה (נכון: dishonest)"
   }
  ],
  "mislikely": [
   {
-   "lemma": "mislikely",
-   "he": "מילה שגויה (לא קיימת)"
+   "lemma": "unlikely",
+   "he": "צורה שגויה (נכון: unlikely)"
   }
  ],
  "miss": [
@@ -979,12 +983,12 @@
  ],
  "missing": [
   {
-   "lemma": "miss",
-   "he": "פספוס, החמצה"
+   "lemma": "missing",
+   "he": "חסר, נעדר"
   },
   {
-   "lemma": "missing",
-   "he": "חסר"
+   "lemma": "miss",
+   "he": "פספוס, החמצה"
   }
  ],
  "mistake": [
@@ -1336,11 +1340,11 @@
  "narrow": [
   {
    "lemma": "narrow",
-   "he": "לצמצם"
+   "he": "צר"
   },
   {
    "lemma": "narrow",
-   "he": "צר"
+   "he": "לצמצם"
   }
  ],
  "narrower": [
@@ -1370,7 +1374,7 @@
  "near": [
   {
    "lemma": "near",
-   "he": "ליד, קרוב ל"
+   "he": "ליד, קרוב ל־"
   }
  ],
  "nearby": [
@@ -1520,11 +1524,11 @@
  "next": [
   {
    "lemma": "next",
-   "he": "ליד (next to)"
+   "he": "הבא"
   },
   {
    "lemma": "next",
-   "he": "הבא"
+   "he": "ליד (next to)"
   }
  ],
  "nice": [
@@ -1728,7 +1732,11 @@
  "off": [
   {
    "lemma": "off",
-   "he": "כבוי (turn off: לכבות)"
+   "he": "כבוי, מנותק"
+  },
+  {
+   "lemma": "turn off",
+   "he": "לכבות (turn off)"
   }
  ],
  "offer": [
@@ -2252,7 +2260,11 @@
  "pay": [
   {
    "lemma": "pay",
-   "he": "לשלם; pay attention: לשים לב"
+   "he": "לשלם"
+  },
+  {
+   "lemma": "pay",
+   "he": "לשים לב (pay attention)"
   }
  ],
  "payment": [
@@ -2454,11 +2466,11 @@
  "pick": [
   {
    "lemma": "pick",
-   "he": "לאסוף (pick up)"
+   "he": "לבחור, לקטוף"
   },
   {
    "lemma": "pick",
-   "he": "לבחור"
+   "he": "לאסוף (pick up)"
   }
  ],
  "picking": [
@@ -2552,7 +2564,11 @@
  "place": [
   {
    "lemma": "place",
-   "he": "מקום; take place: להתקיים"
+   "he": "מקום"
+  },
+  {
+   "lemma": "place",
+   "he": "להתקיים (take place)"
   }
  ],
  "plan": [
@@ -2874,11 +2890,11 @@
  "pour": [
   {
    "lemma": "pour",
-   "he": "לרדת גשם חזק"
+   "he": "למזוג, לשפוך"
   },
   {
    "lemma": "pour",
-   "he": "למזוג, לשפוך"
+   "he": "לרדת גשם חזק"
   }
  ],
  "power": [
@@ -3446,11 +3462,11 @@
  "rather": [
   {
    "lemma": "rather",
-   "he": "מעדיף (would rather)"
+   "he": "די, למדי"
   },
   {
    "lemma": "rather",
-   "he": "די, למדי"
+   "he": "מעדיף (would rather)"
   }
  ],
  "reach": [
@@ -3681,6 +3697,10 @@
   {
    "lemma": "regret",
    "he": "חרטות"
+  },
+  {
+   "lemma": "regret",
+   "he": "מתחרט"
   }
  ],
  "regular": [
@@ -4014,11 +4034,11 @@
  "right": [
   {
    "lemma": "right",
-   "he": "ממש, מיד (right after)"
+   "he": "נכון; ימין"
   },
   {
    "lemma": "right",
-   "he": "נכון; ימין"
+   "he": "מיד (right after)"
   }
  ],
  "rights": [
@@ -4039,7 +4059,7 @@
  ],
  "ringed": [
   {
-   "lemma": "ring",
+   "lemma": "rang",
    "he": "צורה שגויה (נכון: rang)"
   }
  ],
@@ -4230,7 +4250,11 @@
  "run": [
   {
    "lemma": "run",
-   "he": "לרוץ; run out: להיגמר"
+   "he": "לרוץ"
+  },
+  {
+   "lemma": "run",
+   "he": "להיגמר (run out)"
   }
  ],
  "rung": [
@@ -4416,7 +4440,7 @@
  "saturday": [
   {
    "lemma": "Saturday",
-   "he": "שבת (יום שבת)"
+   "he": "יום שבת"
   }
  ],
  "save": [

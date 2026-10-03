@@ -20,7 +20,7 @@ export interface PrerenderManifest {
 
 const SLOWER_PLAYBACK = 0.8;
 
-interface Playable {
+export interface Playable {
   urls: string[];
   playbackRate: number;
 }
@@ -70,6 +70,12 @@ export class PrerenderedProvider implements SpeechProvider {
       if (normal) return { urls: normal, playbackRate: req.rate === 'slower' ? 0.7 : 0.85 };
     }
     return undefined;
+  }
+
+  /** Files and playback speed for a text, for the audio player. Undefined if not recorded. */
+  async clipsFor(req: Omit<SpeakRequest, 'signal'>): Promise<Playable | undefined> {
+    const m = await this.load();
+    return (m && this.urlsFor(req, m)) || undefined;
   }
 
   async canSpeak(req: SpeakRequest): Promise<boolean> {

@@ -57,6 +57,7 @@ function Session({
   // Fixed for the whole session so the language does not flip mid-way.
   const [fixedSupport] = useState(support);
   const s = useSession(student, mode, params);
+  const [resumeHidden, setResumeHidden] = useState(false);
   const def = MODES[mode];
   const home = `/s/${student.id}`;
   const done = s.status === 'done';
@@ -89,6 +90,24 @@ function Session({
       </header>
 
       {s.status === 'loading' && <div className="center muted">טוען…</div>}
+
+      {s.resumed && s.status === 'active' && !resumeHidden && (
+        <div className="resume-note" role="status">
+          <span className="grow">ממשיכים מאיפה שעצרת: שאלה {s.index} מתוך {s.total}</span>
+          <button
+            className="link-btn small"
+            onClick={() => {
+              s.discardSaved();
+              onAgain();
+            }}
+          >
+            להתחיל מחדש
+          </button>
+          <button className="icon-btn" style={{ width: 32, height: 32 }} aria-label="סגירה" onClick={() => setResumeHidden(true)}>
+            <CloseIcon size={16} />
+          </button>
+        </div>
+      )}
 
       {s.status === 'empty' && (
         <div className="center stack" style={{ textAlign: 'center' }}>

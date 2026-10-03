@@ -254,7 +254,7 @@
  "advices": [
   {
    "lemma": "advice",
-   "he": "עצות (שגוי; נכון: advice)"
+   "he": "צורה שגויה (נכון: advice)"
   }
  ],
  "advise": [
@@ -454,11 +454,11 @@
  "along": [
   {
    "lemma": "along",
-   "he": "להסתדר (get along)"
+   "he": "לאורך"
   },
   {
    "lemma": "along",
-   "he": "לאורך"
+   "he": "להסתדר (get along)"
   }
  ],
  "already": [
@@ -494,7 +494,7 @@
  "am": [
   {
    "lemma": "be",
-   "he": "(אני) פועל be"
+   "he": "הווה של להיות (אני)"
   }
  ],
  "amari": [
@@ -640,7 +640,7 @@
  "anymore": [
   {
    "lemma": "anymore",
-   "he": "כבר לא (עם not)"
+   "he": "כבר לא"
   }
  ],
  "anyone": [
@@ -744,13 +744,13 @@
  "are": [
   {
    "lemma": "be",
-   "he": "פועל be (רבים, אתה)"
+   "he": "הווה של להיות (אתה, אנחנו, הם)"
   }
  ],
  "aren't": [
   {
    "lemma": "are not",
-   "he": "לא (שלילה של are)"
+   "he": "לא (are not)"
   }
  ],
  "argue": [
@@ -828,7 +828,7 @@
  "article": [
   {
    "lemma": "article",
-   "he": "מילית (a/an/the)"
+   "he": "מילית יידוע"
   },
   {
    "lemma": "article",
@@ -886,7 +886,11 @@
  "assistant": [
   {
    "lemma": "assistant",
-   "he": "עוזר, מוכר"
+   "he": "עוזר"
+  },
+  {
+   "lemma": "assistant",
+   "he": "מוכר (בחנות)"
   }
  ],
  "assume": [
@@ -1057,8 +1061,8 @@
  ],
  "badder": [
   {
-   "lemma": "bad",
-   "he": "רע יותר (שגוי; נכון: worse)"
+   "lemma": "worse",
+   "he": "צורה שגויה (נכון: worse)"
   }
  ],
  "bag": [
@@ -1202,11 +1206,11 @@
  "beans": [
   {
    "lemma": "bean",
-   "he": "לגלות סוד (spill the beans)"
+   "he": "שעועית"
   },
   {
    "lemma": "bean",
-   "he": "שעועית"
+   "he": "לגלות סוד (spill the beans)"
   }
  ],
  "beard": [
@@ -1294,7 +1298,7 @@
  "been": [
   {
    "lemma": "be",
-   "he": "היה (צורת be)"
+   "he": "היה (צורת עבר של להיות)"
   }
  ],
  "bees": [
@@ -1342,7 +1346,7 @@
  "being": [
   {
    "lemma": "be",
-   "he": "להיות, היותו"
+   "he": "היות, להיות"
   }
  ],
  "belief": [
@@ -1985,8 +1989,8 @@
  ],
  "buyed": [
   {
-   "lemma": "buy",
-   "he": "קנה (שגוי; נכון: bought)"
+   "lemma": "bought",
+   "he": "צורה שגויה (נכון: bought)"
   }
  ],
  "buying": [
@@ -2016,7 +2020,7 @@
  "c": [
   {
    "lemma": "c",
-   "he": "סי (האות C)"
+   "he": "האות סי"
   }
  ],
  "cactuses": [
@@ -2176,7 +2180,7 @@
  "candy": [
   {
    "lemma": "candy",
-   "he": "ממתקים, סוכריה"
+   "he": "ממתק, סוכרייה"
   }
  ],
  "cannot": [
@@ -2222,11 +2226,11 @@
  "care": [
   {
    "lemma": "care",
-   "he": "לטפל (take care of)"
+   "he": "דאגה, טיפול"
   },
   {
    "lemma": "care",
-   "he": "אכפתיות"
+   "he": "לטפל ב־ (take care of)"
   }
  ],
  "career": [
@@ -2250,7 +2254,7 @@
  "carefuly": [
   {
    "lemma": "carefully",
-   "he": "בזהירות (שגוי; נכון: carefully)"
+   "he": "צורה שגויה (נכון: carefully)"
   }
  ],
  "careless": [
@@ -2286,7 +2290,7 @@
  "carrying": [
   {
    "lemma": "carry",
-   "he": "נשיאה, סוחב"
+   "he": "נושא, סוחב"
   }
  ],
  "cars": [
@@ -2611,14 +2615,14 @@
  ],
  "childrens": [
   {
-   "lemma": "child",
-   "he": "ילדים (שגוי; נכון: children)"
+   "lemma": "children",
+   "he": "צורה שגויה (נכון: children)"
   }
  ],
  "childs": [
   {
-   "lemma": "child",
-   "he": "ילדים (שגוי; נכון: children)"
+   "lemma": "children",
+   "he": "צורה שגויה (נכון: children)"
   }
  ],
  "china": [
@@ -2954,11 +2958,11 @@
  "cold": [
   {
    "lemma": "cold",
-   "he": "הצטננות"
+   "he": "קר"
   },
   {
    "lemma": "cold",
-   "he": "קר"
+   "he": "הצטננות"
   }
  ],
  "colder": [
@@ -3064,7 +3068,7 @@
  "comfortful": [
   {
    "lemma": "comfortable",
-   "he": "נוח (שגוי; נכון: comfortable)"
+   "he": "צורה שגויה (נכון: comfortable)"
   }
  ],
  "coming": [
@@ -3398,13 +3402,13 @@
   },
   {
    "lemma": "can",
-   "he": "יכל"
+   "he": "יכול היה (עבר)"
   }
  ],
  "couldn't": [
   {
    "lemma": "could not",
-   "he": "לא יכל"
+   "he": "לא יכול היה"
   }
  ],
  "council": [
@@ -3494,11 +3498,11 @@
  "cream": [
   {
    "lemma": "cream",
-   "he": "גלידה (ice cream)"
+   "he": "שמנת"
   },
   {
    "lemma": "cream",
-   "he": "שמנת"
+   "he": "גלידה (ice cream)"
   }
  ],
  "create": [
@@ -3528,7 +3532,7 @@
  "credit": [
   {
    "lemma": "credit",
-   "he": "אשראי (credit card)"
+   "he": "אשראי"
   }
  ],
  "crib": [
@@ -3816,11 +3820,11 @@
  "dead": [
   {
    "lemma": "dead",
-   "he": "המלח (Dead Sea)"
+   "he": "מת"
   },
   {
    "lemma": "dead",
-   "he": "מת"
+   "he": "ים המלח (Dead Sea)"
   }
  ],
  "december": [
@@ -4107,8 +4111,8 @@
  ],
  "difficultest": [
   {
-   "lemma": "difficult",
-   "he": "הכי קשה (שגוי; נכון: most difficult)"
+   "lemma": "most difficult",
+   "he": "צורה שגויה (נכון: most difficult)"
   }
  ],
  "dinner": [
@@ -4216,7 +4220,7 @@
  "disemployment": [
   {
    "lemma": "unemployment",
-   "he": "אבטלה (שגוי; נכון: unemployment)"
+   "he": "צורה שגויה (נכון: unemployment)"
   }
  ],
  "disguise": [
@@ -4250,37 +4254,37 @@
  "dislegal": [
   {
    "lemma": "illegal",
-   "he": "לא חוקי (שגוי; נכון: illegal)"
+   "he": "צורה שגויה (נכון: illegal)"
   }
  ],
  "dislikely": [
   {
    "lemma": "unlikely",
-   "he": "לא סביר (שגוי; נכון: unlikely)"
+   "he": "צורה שגויה (נכון: unlikely)"
   }
  ],
  "dispatient": [
   {
    "lemma": "impatient",
-   "he": "חסר סבלנות (שגוי; נכון: impatient)"
+   "he": "צורה שגויה (נכון: impatient)"
   }
  ],
  "dispossible": [
   {
    "lemma": "impossible",
-   "he": "בלתי אפשרי (שגוי; נכון: impossible)"
+   "he": "צורה שגויה (נכון: impossible)"
   }
  ],
  "disresponsible": [
   {
    "lemma": "irresponsible",
-   "he": "חסר אחריות (שגוי; נכון: irresponsible)"
+   "he": "צורה שגויה (נכון: irresponsible)"
   }
  ],
  "disunderstanding": [
   {
    "lemma": "misunderstanding",
-   "he": "אי הבנה (שגוי; נכון: misunderstanding)"
+   "he": "צורה שגויה (נכון: misunderstanding)"
   }
  ],
  "divers": [
@@ -4359,6 +4363,12 @@
   {
    "lemma": "do not",
    "he": "לא (שלילה)"
+  }
+ ],
+ "café": [
+  {
+   "lemma": "café",
+   "he": "בית קפה"
   }
  ]
 }

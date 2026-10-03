@@ -376,7 +376,7 @@
  "she'll": [
   {
    "lemma": "she will",
-   "he": "היא (פועל בעתיד)"
+   "he": "היא (בעתיד)"
   }
  ],
  "sheep": [
@@ -388,19 +388,19 @@
  "sheepes": [
   {
    "lemma": "sheep",
-   "he": "כבשים (שגוי; נכון: sheep)"
+   "he": "צורה שגויה (נכון: sheep)"
   }
  ],
  "sheeping": [
   {
    "lemma": "sheep",
-   "he": "צורה שגויה (sheep: כבשה)"
+   "he": "צורה שגויה (נכון: sheep)"
   }
  ],
  "sheeps": [
   {
    "lemma": "sheep",
-   "he": "כבשים (שגוי; נכון: sheep)"
+   "he": "צורה שגויה (נכון: sheep)"
   }
  ],
  "sheets": [
@@ -1006,7 +1006,11 @@
  "sooner": [
   {
    "lemma": "soon",
-   "he": "מוקדם יותר (no sooner: ברגע ש)"
+   "he": "מוקדם יותר"
+  },
+  {
+   "lemma": "no sooner",
+   "he": "ברגע ש־ (no sooner)"
   }
  ],
  "sorry": [
@@ -1313,8 +1317,8 @@
  ],
  "stealed": [
   {
-   "lemma": "steal",
-   "he": "גנב (שגוי; נכון: stole)"
+   "lemma": "stole",
+   "he": "צורה שגויה (נכון: stole)"
   }
  ],
  "step": [
@@ -1394,11 +1398,11 @@
  "stories": [
   {
    "lemma": "story",
-   "he": "קומות (בבניין)"
+   "he": "סיפורים"
   },
   {
    "lemma": "story",
-   "he": "סיפורים"
+   "he": "קומות (בבניין)"
   }
  ],
  "storm": [
@@ -2043,8 +2047,8 @@
  ],
  "teeths": [
   {
-   "lemma": "tooth",
-   "he": "שיניים (שגוי; נכון: teeth)"
+   "lemma": "teeth",
+   "he": "צורה שגויה (נכון: teeth)"
   }
  ],
  "tel": [
@@ -2067,8 +2071,8 @@
  ],
  "telled": [
   {
-   "lemma": "tell",
-   "he": "סיפר (שגוי; נכון: told)"
+   "lemma": "told",
+   "he": "צורה שגויה (נכון: told)"
   }
  ],
  "tells": [
@@ -2192,7 +2196,7 @@
  "theirselves": [
   {
    "lemma": "themselves",
-   "he": "בעצמם (שגוי; נכון: themselves)"
+   "he": "צורה שגויה (נכון: themselves)"
   }
  ],
  "them": [
@@ -2204,7 +2208,7 @@
  "themself": [
   {
    "lemma": "themselves",
-   "he": "בעצמם (שגוי; נכון: themselves)"
+   "he": "צורה שגויה (נכון: themselves)"
   }
  ],
  "themselves": [
@@ -2250,7 +2254,7 @@
  "they'll": [
   {
    "lemma": "they will",
-   "he": "הם (פועל בעתיד)"
+   "he": "הם (בעתיד)"
   }
  ],
  "they're": [
@@ -2297,8 +2301,8 @@
  ],
  "thinked": [
   {
-   "lemma": "think",
-   "he": "חשב (שגוי; נכון: thought)"
+   "lemma": "thought",
+   "he": "צורה שגויה (נכון: thought)"
   }
  ],
  "thinking": [
@@ -2621,8 +2625,8 @@
  ],
  "tooths": [
   {
-   "lemma": "tooth",
-   "he": "שיניים (שגוי; נכון: teeth)"
+   "lemma": "teeth",
+   "he": "צורה שגויה (נכון: teeth)"
   }
  ],
  "top": [
@@ -2892,16 +2896,28 @@
  "turned": [
   {
    "lemma": "turn",
-   "he": "כיבה (turned off); הסתובב"
+   "he": "הסתובב, פנה"
+  },
+  {
+   "lemma": "turn",
+   "he": "כיבה (turned off)"
   }
  ],
  "turning": [
   {
    "lemma": "turn",
-   "he": "מכבה (turning off); פונה"
+   "he": "פונה, מסתובב"
+  },
+  {
+   "lemma": "turn",
+   "he": "מכבה (turning off)"
   }
  ],
  "turns": [
+  {
+   "lemma": "turn",
+   "he": "מסתובב, פונה"
+  },
   {
    "lemma": "turn",
    "he": "מתברר (turns out)"
@@ -2980,13 +2996,13 @@
  "unagree": [
   {
    "lemma": "disagree",
-   "he": "לא מסכים (שגוי; נכון: disagree)"
+   "he": "צורה שגויה (נכון: disagree)"
   }
  ],
  "unappeared": [
   {
    "lemma": "disappeared",
-   "he": "נעלם (שגוי; נכון: disappeared)"
+   "he": "צורה שגויה (נכון: disappeared)"
   }
  ],
  "unbelievable": [
@@ -3082,7 +3098,7 @@
  "unhonest": [
   {
    "lemma": "dishonest",
-   "he": "לא ישר (שגוי; נכון: dishonest)"
+   "he": "צורה שגויה (נכון: dishonest)"
   }
  ],
  "uniform": [
@@ -3112,7 +3128,7 @@
  "unlegal": [
   {
    "lemma": "illegal",
-   "he": "לא חוקי (שגוי; נכון: illegal)"
+   "he": "צורה שגויה (נכון: illegal)"
   }
  ],
  "unless": [
@@ -3130,19 +3146,19 @@
  "unpatient": [
   {
    "lemma": "impatient",
-   "he": "חסר סבלנות (שגוי; נכון: impatient)"
+   "he": "צורה שגויה (נכון: impatient)"
   }
  ],
  "unpossible": [
   {
    "lemma": "impossible",
-   "he": "בלתי אפשרי (שגוי; נכון: impossible)"
+   "he": "צורה שגויה (נכון: impossible)"
   }
  ],
  "unresponsible": [
   {
    "lemma": "irresponsible",
-   "he": "חסר אחריות (שגוי; נכון: irresponsible)"
+   "he": "צורה שגויה (נכון: irresponsible)"
   }
  ],
  "unsteady": [
@@ -3165,8 +3181,8 @@
  ],
  "ununderstanding": [
   {
-   "lemma": "understanding",
-   "he": "צורה שגויה (understanding: הבנה)"
+   "lemma": "misunderstanding",
+   "he": "צורה שגויה (נכון: misunderstanding)"
   }
  ],
  "unusual": [
@@ -3224,11 +3240,11 @@
  "used": [
   {
    "lemma": "use",
-   "he": "נהג ל־ (used to)"
+   "he": "השתמש"
   },
   {
    "lemma": "use",
-   "he": "השתמש"
+   "he": "נהג ל־ (used to)"
   }
  ],
  "useful": [
@@ -3714,7 +3730,7 @@
  "we'll": [
   {
    "lemma": "we will",
-   "he": "אנחנו (פועל בעתיד)"
+   "he": "אנחנו (בעתיד)"
   }
  ],
  "we're": [
@@ -3986,7 +4002,7 @@
  "windy": [
   {
    "lemma": "windy",
-   "he": "סוער (רוחות)"
+   "he": "סוער, עם רוח חזקה"
   }
  ],
  "wine": [
@@ -4225,8 +4241,8 @@
  ],
  "writed": [
   {
-   "lemma": "write",
-   "he": "כתב (שגוי; נכון: wrote)"
+   "lemma": "wrote",
+   "he": "צורה שגויה (נכון: wrote)"
   }
  ],
  "writer": [
@@ -4360,13 +4376,13 @@
   },
   {
    "lemma": "you would",
-   "he": "אתה (would, תנאי)"
+   "he": "היית (תנאי)"
   }
  ],
  "you'll": [
   {
    "lemma": "you will",
-   "he": "אתה (פועל בעתיד)"
+   "he": "אתה (בעתיד)"
   }
  ],
  "you're": [
