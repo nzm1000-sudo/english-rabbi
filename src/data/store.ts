@@ -278,6 +278,7 @@ export class LearningStore {
       students: await db.students.toArray(),
       events: await db.events.toArray(),
       sessions: await db.sessions.toArray(),
+      savedWords: await db.savedWords.toArray(),
     };
   }
 
@@ -290,13 +291,18 @@ export class LearningStore {
     if (file.format !== 'smart-english-tutor-backup') throw new Error('not a backup file');
     if (file.schemaVersion > LATEST_VERSION) throw new Error('backup is from a newer app version');
     const { db } = this;
-    await db.transaction('rw', db.students, db.events, db.sessions, async () => {
+    if (!Array.isArray(file.students) || !Array.isArray(file.events) || !Array.isArray(file.sessions)) throw new Error('not a backup file');
+    await db.transaction('rw', [db.students, db.events, db.sessions, db.savedWords], async () => {
       for (const s of file.students) {
         const cur = await db.students.get(s.id);
         if (!cur || cur.updatedAt <= s.updatedAt) await db.students.put(s);
       }
       await db.events.bulkPut(file.events);
       await db.sessions.bulkPut(file.sessions);
+      // Older backups have no saved words; a word saved on this device stays.
+      for (const w of file.savedWords ?? []) {
+        if (!(await db.savedWords.get([w.studentId, w.lemma]))) await db.savedWords.put(w);
+      }
     });
     for (const s of file.students) await this.rebuildDerived(s.id);
     return { students: file.students.length, events: file.events.length };
@@ -314,6 +320,8 @@ export interface BackupFile {
   students: Student[];
   events: LearningEvent[];
   sessions: SessionRow[];
+  /** "My words". Missing in backups made before it was included. */
+  savedWords?: SavedWordRow[];
 }
 
 /** Removes the storage-only columns so domain code gets clean objects. */

@@ -21,6 +21,8 @@ export class PcmRecorder {
   private node: ScriptProcessorNode | null = null;
   private chunks: Float32Array[] = [];
   private startedAt = 0;
+  /** Counts starts and releases, so a late microphone grant is not kept. */
+  private generation = 0;
 
   isSupported(): boolean {
     return !!navigator.mediaDevices?.getUserMedia && (typeof AudioContext !== 'undefined' || 'webkitAudioContext' in window);
@@ -41,7 +43,16 @@ export class PcmRecorder {
   async start(): Promise<void> {
     this.prepare();
     const ctx = this.ctx!;
-    this.stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: true, channelCount: 1 } });
+    const gen = ++this.generation;
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: true, channelCount: 1 } });
+    // Released (left the screen) or started again while waiting for the
+    // microphone: turn this one off, or the phone keeps recording.
+    if (gen !== this.generation || this.ctx !== ctx) {
+      stream.getTracks().forEach((t) => t.stop());
+      throw new DOMException('recording replaced', 'AbortError');
+    }
+    this.disconnect();
+    this.stream = stream;
     await ctx.resume();
     this.chunks = [];
     this.source = ctx.createMediaStreamSource(this.stream);
@@ -82,6 +93,7 @@ export class PcmRecorder {
 
   /** Stops the microphone (the browser's recording indicator turns off). */
   release(): void {
+    this.generation++;
     this.disconnect();
     void this.ctx?.close();
     this.ctx = null;

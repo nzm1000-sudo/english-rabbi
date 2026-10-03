@@ -10,6 +10,11 @@ describe('shared family device', () => {
     expect(startHash('#/setup?d=x')).toBeNull();
   });
 
+  it('a reload (app update, pull to refresh) keeps the current screen', () => {
+    expect(startHash('#/s/abc/practice/lesson', true)).toBeNull();
+    expect(startHash('#/s/abc/practice/lesson', false)).toBe('#/');
+  });
+
   it('returns to the picker only after a long time away', () => {
     expect(shouldReturnToPicker(0, AWAY_MS - 1, '#/s/abc')).toBe(false);
     expect(shouldReturnToPicker(0, AWAY_MS + 1, '#/s/abc')).toBe(true);

@@ -85,7 +85,8 @@ function Block({ b }: { b: LessonBlock }) {
       // An English table reads left to right: first column on the left.
       const ltr = !b.head.some(hasHebrew);
       return (
-        <div className="table-scroll">
+        // The scroll box takes the table's direction, so an English table opens at its first column.
+        <div className="table-scroll" dir={ltr ? 'ltr' : 'rtl'}>
           <table className="table" dir={ltr ? 'ltr' : 'rtl'} lang={ltr ? 'en' : undefined}>
             <thead>
               <tr>

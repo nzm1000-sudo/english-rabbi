@@ -19,6 +19,8 @@ export function decodeFamily(d: string | null): FamilyMember[] {
     if (!Array.isArray(raw)) return [];
     return raw
       .filter((x): x is { n: string; a?: number } => !!x && typeof x.n === 'string' && x.n.trim().length > 0 && x.n.length <= 40)
+      // The same name twice would make two identical profiles.
+      .filter((x, i, all) => all.findIndex((y) => y.n.trim().toLowerCase() === x.n.trim().toLowerCase()) === i)
       .slice(0, 12)
       .map((x) => ({ name: x.n.trim(), ...(typeof x.a === 'number' && x.a >= 2 && x.a < 120 ? { age: Math.round(x.a) } : {}) }));
   } catch {

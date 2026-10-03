@@ -61,6 +61,8 @@
   position: relative; width: 64px; height: 64px; flex: none; padding: 0; border: 0; border-radius: 50%; cursor: pointer;
   background: var(--k-surface); color: var(--k-muted); box-shadow: var(--k-shadow);
   user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent;
+  /* A finger that drifts while holding must not turn into a scroll (which cancels the hold). */
+  touch-action: none;
 }
 .hold-ring { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
 .hold-ring circle { fill: none; stroke-width: 5; }

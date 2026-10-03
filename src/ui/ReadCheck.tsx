@@ -36,7 +36,16 @@ export function ReadCheck({ text, onDone }: { text: string; onDone?: (o: ReadChe
   const { speech } = useServices();
   const prefs = useSpeechPrefs();
 
+  const starting = useRef(false);
   useEffect(() => () => recorder.release(), [recorder]);
+  // The learner's own recording stops when leaving, and when any other sound starts.
+  useEffect(() => {
+    const off = speech.onStop(() => audio.current?.pause());
+    return () => {
+      off();
+      audio.current?.pause();
+    };
+  }, [speech]);
   useEffect(() => () => void (mine && URL.revokeObjectURL(mine)), [mine]);
   useEffect(() => {
     if (phase !== 'recording') return;
@@ -46,15 +55,21 @@ export function ReadCheck({ text, onDone }: { text: string; onDone?: (o: ReadChe
   }, [phase]);
 
   const record = async () => {
+    // A second tap while the phone asks for the microphone does nothing.
+    if (starting.current) return;
+    starting.current = true;
     setError('');
     speech.stop();
     audio.current?.pause();
     try {
       await recorder.start();
       setPhase('recording');
-    } catch {
+    } catch (e) {
+      if ((e as Error)?.name === 'AbortError') return;
       setError('אין גישה למיקרופון. צריך לאשר גישה למיקרופון בהגדרות הדפדפן.');
       setPhase('error');
+    } finally {
+      starting.current = false;
     }
   };
 

@@ -56,7 +56,7 @@ export function ShadowScreen() {
         <TopBar back={base} title="חזרה בקול" />
         <div className="panel empty-state">
           <Art name="speaking" size={104} tone="speaking" fallback={<MicIcon />} />
-          <strong className="t-h3">{scores.length ? 'כל הכבוד על התרגול!' : 'אין עדיין משפטים לתרגול'}</strong>
+          <strong className="t-h3">{!sentences.length ? 'אין עדיין משפטים לתרגול' : scores.length ? 'כל הכבוד על התרגול!' : 'הסבב הסתיים'}</strong>
           {scores.length > 0 && (
             <He className="muted">{avg >= 0.9 ? 'נשמע מצוין. מחר אפשר לנסות משפטים ארוכים יותר.' : 'כל חזרה משפרת את ההגייה. מחר עוד סבב.'}</He>
           )}

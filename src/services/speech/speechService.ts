@@ -28,6 +28,7 @@ export interface SpeechEvents {
 export class SpeechService {
   private state: SpeechState = { status: 'idle' };
   private listeners = new Set<() => void>();
+  private stopListeners = new Set<() => void>();
   private current: AbortController | null = null;
   private active: SpeechProvider | null = null;
 
@@ -42,6 +43,16 @@ export class SpeechService {
   subscribe = (fn: () => void): (() => void) => {
     this.listeners.add(fn);
     return () => this.listeners.delete(fn);
+  };
+
+  /**
+   * Called on every stop, including the stop before each new sound. Other
+   * players (the story player, a learner's own recording) pause here, so
+   * "silence" really silences everything.
+   */
+  onStop = (fn: () => void): (() => void) => {
+    this.stopListeners.add(fn);
+    return () => this.stopListeners.delete(fn);
   };
 
   private set(s: SpeechState) {
@@ -72,6 +83,7 @@ export class SpeechService {
     this.current = null;
     this.active?.stop();
     this.set({ status: 'idle' });
+    for (const l of this.stopListeners) l();
   }
 
   private async run(key: string, body: (signal: AbortSignal) => Promise<void>): Promise<'done' | 'stopped' | 'failed'> {

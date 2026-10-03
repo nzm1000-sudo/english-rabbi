@@ -7,10 +7,11 @@ import { KID_TOPICS, type KidStage } from '@/domain/kids/schema';
 import type { Student } from '@/domain/student/student';
 import { speakHebrew, stopHebrew } from '@/services/speech/hebrewVoice';
 import { HoldButton } from './ParentGate';
-import { Blocks, KidTile, KidsMessage, KidsTopBar, MemoryArt, OwlSays, TileArt, TileGrid, type Tint } from './KidsChrome';
+import { Blocks, KidTile, MemoryArt, OwlSays, TileArt, TileGrid, type Tint } from './KidsChrome';
 import { DoorIcon } from './KidIcons';
 import { stickerPic, topicPic, wordPic } from './pics';
 import { TOPIC_INFO } from './topics';
+import { kidsLimit, TimeUp, unlockedToday } from './timeLimit';
 
 /** Tile tints cycle so that no two neighbors share one (2 columns). */
 const TINTS: Tint[] = ['sky', 'peach', 'mint', 'butter', 'lilac', 'rose'];
@@ -27,16 +28,10 @@ export function KidsHome({ student, stage }: { student: Student; stage: KidStage
   const base = `/s/${student.id}/kids`;
   const earned = useLiveQuery(() => store.stickersEarned(student.id), [store, student.id]);
   const minutes = useLiveQuery(() => store.minutesToday(student.id, 'kids'), [store, student.id]);
-  const [unlocked, setUnlocked] = useState(() => {
-    try {
-      return sessionStorage.getItem(`kids-unlocked:${student.id}`) === new Date().toDateString();
-    } catch {
-      return false;
-    }
-  });
+  const [unlocked, setUnlocked] = useState(() => unlockedToday(student.id));
   useEffect(() => () => stopHebrew(), []);
 
-  const limit = stage === 'little' ? student.kidsDailyLimit : undefined;
+  const limit = kidsLimit(student);
   const timeUp = !!limit && (minutes ?? 0) >= limit && !unlocked;
   const topics = KID_TOPICS.filter((t) => kidWords.filter((w) => w.topic === t && w.stages.includes(stage)).length >= 3);
   const say = (he: string) => () => void speakHebrew(he);
@@ -47,33 +42,7 @@ export function KidsHome({ student, stage }: { student: Student; stage: KidStage
     </HoldButton>
   );
 
-  if (timeUp) {
-    return (
-      <main className="screen kids-screen" data-mood="kids">
-        <KidsTopBar end={exit} />
-        <KidsMessage
-          title="להיום סיימנו!"
-          line="נתראה מחר עם עוד מילים ומדבקות."
-          action={
-            <HoldButton
-              wide
-              label="הורים: עוד זמן היום (להחזיק לחוץ)"
-              onDone={() => {
-                try {
-                  sessionStorage.setItem(`kids-unlocked:${student.id}`, new Date().toDateString());
-                } catch {
-                  /* ignore */
-                }
-                setUnlocked(true);
-              }}
-            >
-              הורים: עוד זמן (להחזיק)
-            </HoldButton>
-          }
-        />
-      </main>
-    );
-  }
+  if (timeUp) return <TimeUp studentId={student.id} onUnlock={() => setUnlocked(true)} end={exit} />;
 
   const more = [
     <KidTile key="memory" to={`${base}/play?game=memory`} label="זוגות" tint="lilac" art={<MemoryArt src={wordPic('cat')} />} onTap={say('זוגות')} />,

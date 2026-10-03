@@ -141,6 +141,26 @@ describe('backup', () => {
     expect((await a.store.eventsFor(s.id)).filter((e) => e.type === 'item.completed')).toHaveLength(1);
   });
 
+  it('keeps "my words" through export and import', async () => {
+    const a = fresh();
+    const s = await a.store.createStudent({ name: 'Test' });
+    await a.store.saveWord(s.id, { lemma: 'brave', he: 'אמיץ', example: 'A brave dog.' });
+    const backup = JSON.parse(JSON.stringify(await a.store.exportBackup()));
+
+    const b = fresh();
+    await b.store.importBackup(backup);
+    expect((await b.store.savedWords(s.id)).map((w) => w.lemma)).toEqual(['brave']);
+    // An old backup without the table still imports.
+    const c = fresh();
+    await c.store.importBackup({ ...backup, savedWords: undefined });
+    expect(await c.store.savedWords(s.id)).toEqual([]);
+  });
+
+  it('rejects a file with the right format tag but no data', async () => {
+    const { store } = fresh();
+    await expect(store.importBackup({ format: 'smart-english-tutor-backup', schemaVersion: 1 } as never)).rejects.toThrow();
+  });
+
   it('rejects foreign files', async () => {
     const { store } = fresh();
     await expect(store.importBackup({ format: 'x' } as never)).rejects.toThrow();

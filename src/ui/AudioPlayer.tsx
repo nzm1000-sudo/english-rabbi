@@ -48,6 +48,7 @@ export function AudioPlayer({
   const audio = useRef<HTMLAudioElement | null>(null);
   const index = useRef(0);
   const urls = useRef<string[]>([]);
+  const selfStop = useRef(false);
   const speechState = useSyncExternalStore(speech.subscribe, speech.getState);
   const textKey = segments.map((s) => `${s.speaker ?? 'A'}:${s.text}`).join('|');
 
@@ -63,7 +64,14 @@ export function AudioPlayer({
         if (!found) return live && setClips('missing');
         for (const u of found.urls) out.push({ url: u, segment: i, duration: 0, rate: found.playbackRate });
       }
-      const blobs = await Promise.all(out.map((c) => fetch(c.url).then((r) => r.blob())));
+      const blobs = await Promise.all(
+        out.map((c) =>
+          fetch(c.url).then((r) => {
+            if (!r.ok) throw new Error(`audio ${r.status}`);
+            return r.blob();
+          }),
+        ),
+      );
       if (!live) return;
       urls.current.forEach((u) => URL.revokeObjectURL(u));
       urls.current = blobs.map((b) => URL.createObjectURL(b));
@@ -82,7 +90,9 @@ export function AudioPlayer({
             }),
         ),
       );
-      if (live) setClips(out);
+      if (!live) return;
+      // A file that cannot be played (broken or not audio) means no player: use the speaker button.
+      setClips(out.every((c) => c.duration > 0) ? out : 'missing');
     })().catch(() => live && setClips('missing'));
     return () => {
       live = false;
@@ -108,6 +118,21 @@ export function AudioPlayer({
     setPlaying(false);
   }, []);
 
+  /** A play cut short by a newer load (dragging the bar) is not a stop. */
+  const playEl = useCallback((el: HTMLAudioElement) => {
+    el.play().then(
+      () => setPlaying(true),
+      (e: unknown) => (e as Error)?.name !== 'AbortError' && setPlaying(false),
+    );
+  }, []);
+
+  /** Silences any other sound before this player plays (without pausing itself). */
+  const stopOthers = useCallback(() => {
+    selfStop.current = true;
+    speech.stop();
+    selfStop.current = false;
+  }, [speech]);
+
   const load = useCallback(
     (i: number, offset: number, autoplay: boolean) => {
       const c = list[i];
@@ -123,17 +148,17 @@ export function AudioPlayer({
       onSegment?.(c.segment);
       setPos(starts[i]! + offset);
       if (autoplay) {
-        speech.stop();
-        void el.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
+        stopOthers();
+        playEl(el);
       }
     },
-    [list, starts, onSegment, speech],
+    [list, starts, onSegment, stopOthers, playEl],
   );
 
   // Advance through the clips and keep the position up to date.
   useEffect(() => {
     const el = (audio.current ??= new Audio());
-    const onTime = () => setPos((starts[index.current] ?? 0) + el.currentTime);
+    const onTime = () => el.getAttribute('src') && setPos((starts[index.current] ?? 0) + el.currentTime);
     const onEnded = () => {
       if (index.current + 1 < list.length) load(index.current + 1, 0, true);
       else {
@@ -149,10 +174,28 @@ export function AudioPlayer({
     };
   }, [list, starts, load, onSegment]);
 
-  // Another sound starting (a speaker button) pauses the player.
+  // Another sound starting (a speaker button) pauses the player, and so
+  // does any "stop all sound" (recording, leaving the screen).
   useEffect(() => {
     if (speechState.status !== 'idle') pause();
   }, [speechState.status, pause]);
+  useEffect(() => speech.onStop(() => selfStop.current || pause()), [speech, pause]);
+
+  // New clips (another speed, or a new line in the story): the element still
+  // holds a file of the old list. Drop it and keep the place, so play
+  // continues from the same point in the new clips.
+  useEffect(() => {
+    const el = audio.current;
+    if (!el?.getAttribute('src') || !list.length || urls.current.includes(el.src)) return;
+    const i = Math.min(index.current, list.length - 1);
+    const part = el.duration > 0 ? Math.min(1, el.currentTime / el.duration) : 0;
+    el.pause();
+    el.removeAttribute('src');
+    el.load();
+    index.current = i;
+    setPlaying(false);
+    setPos(starts[i]! + part * list[i]!.duration);
+  }, [list, starts]);
 
   // Leaving the screen or the app stops the player.
   useEffect(() => {
@@ -189,8 +232,8 @@ export function AudioPlayer({
     if (playing) return pause();
     const el = audio.current;
     if (el && el.src && el.currentTime > 0 && !el.ended) {
-      speech.stop();
-      void el.play().then(() => setPlaying(true));
+      stopOthers();
+      playEl(el);
     } else seek(pos >= total - 0.1 ? 0 : pos, true);
   };
   const currentSeg = list[index.current]?.segment ?? 0;

@@ -46,7 +46,7 @@ export function StickerAlbum() {
       {earned && have.size === 0 && (
         <KidsMessage
           title="המדבקה הראשונה מחכה!"
-          line="כל משחק נגמר במדבקה חדשה לאלבום."
+          line="משחקים יפה או קוראים ספרון, ומקבלים מדבקה לאלבום."
           action={
             <Link className="k-btn primary" to={home}>
               <HomeIcon size={28} />

@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { parentGate } from '@/app/parentGate';
 import { useStudents } from '@/app/hooks';
 import { Avatar } from '@/ui/Avatar';
 import { LockIcon, PlusIcon } from '@/ui/icons';
@@ -8,6 +10,8 @@ import { HoldButton } from '@/features/kids/ParentGate';
 export function StudentPicker() {
   const students = useStudents();
   const nav = useNavigate();
+  // Back on the picker: the parent area needs the long press again.
+  useEffect(() => parentGate.lock(), []);
 
   return (
     <main className="screen picker">
@@ -24,7 +28,9 @@ export function StudentPicker() {
           {students.map((s) => (
             <Link key={s.id} to={`/s/${s.id}`} className="student-card">
               <Avatar name={s.name} hue={s.hue} size={72} />
-              <strong>{s.name}</strong>
+              <strong>
+                <bdi>{s.name}</bdi>
+              </strong>
             </Link>
           ))}
         </nav>
@@ -37,7 +43,10 @@ export function StudentPicker() {
       </Link>
 
       <div className="mt-auto parent-gate">
-        <HoldButton wide label="מצב הורה: להחזיק לחוץ כדי להיכנס" onDone={() => nav('/parent')}>
+        <HoldButton wide label="מצב הורה: להחזיק לחוץ כדי להיכנס" onDone={() => {
+            parentGate.unlock();
+            nav('/parent');
+          }}>
           <span className="gate-inner">
             <LockIcon size={18} />
             מצב הורה

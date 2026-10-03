@@ -21,6 +21,9 @@ import { LessonView } from '@/features/lessons/LessonView';
 import { AnchorCard } from '@/ui/AnchorCard';
 import { sounds } from '@/services/sound';
 
+/** Taps on "המשך" sooner than this after answering are the tail of a double tap. */
+export const CONTINUE_DELAY_MS = 350;
+
 type Props = {
   item: Exclude<ContentItem, { type: 'open-writing' }>;
   passage?: Passage | undefined;
@@ -65,6 +68,17 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
     const t = setTimeout(() => onDone(toOutcome(flow)), feedback === 'brief' ? 650 : 0);
     return () => clearTimeout(t);
   }, [finished, feedback, flow, onDone]);
+  // "המשך" sits where "בדיקה" was: the second tap of a double tap on
+  // "בדיקה" must not skip the feedback. Continue works a moment later.
+  const [continueArmed, setContinueArmed] = useState(false);
+  useEffect(() => {
+    if (!finished) return;
+    const t = setTimeout(() => setContinueArmed(true), CONTINUE_DELAY_MS);
+    return () => clearTimeout(t);
+  }, [finished]);
+  const onContinue = () => {
+    if (continueArmed) onDone(toOutcome(flow));
+  };
   const listen = item.modality === 'listen';
   const audioText = ('audioText' in item && item.audioText) || item.prompt;
   const canSpeakPrompt = listen || (!!item.word && item.prompt === item.word.lemma);
@@ -149,7 +163,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
             flow={flow}
             support={support}
             onWhy={() => setWhyOpen(true)}
-            onContinue={() => onDone(toOutcome(flow))}
+            onContinue={onContinue}
           />
           <Sheet
             open={whyOpen}
@@ -157,7 +171,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
             label="הסבר"
             title="הסבר"
             footer={
-              <Button variant="primary" size="lg" block onClick={() => onDone(toOutcome(flow))}>
+              <Button variant="primary" size="lg" block onClick={onContinue}>
                 המשך
               </Button>
             }
@@ -536,9 +550,16 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
   const ref = useRef<HTMLInputElement>(null);
   const finished = isFinished(flow);
 
+  const [hebrew, setHebrew] = useState(false);
+
   const submit = (e: FormEvent) => {
     e.preventDefault();
     if (finished || !value.trim()) return;
+    // The shared phone's keyboard is often left in Hebrew: that is not an attempt.
+    if (isHebrewOnly(value)) {
+      setHebrew(true);
+      return;
+    }
     onSubmit(value, checkTyped(item, value));
     // Keep the keyboard open and the text selected for a quick retry.
     requestAnimationFrame(() => ref.current?.select());
@@ -556,7 +577,10 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
         dir="ltr"
         lang="en"
         value={value}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={(e) => {
+          setValue(e.target.value);
+          setHebrew(false);
+        }}
         disabled={finished}
         autoComplete="off"
         autoCorrect="off"
@@ -566,8 +590,18 @@ function TypedInput({ item, flow, onSubmit }: { item: TypedItem; flow: FlowState
         inputMode="text"
         placeholder="לכתוב כאן באנגלית"
       />
+      {hebrew && (
+        <div className="feedback feedback-hint" role="status">
+          המקלדת בעברית. צריך לעבור לאנגלית ולכתוב שוב.
+        </div>
+      )}
     </form>
   );
+}
+
+/** Hebrew letters and no English ones: typed with the Hebrew keyboard. */
+export function isHebrewOnly(s: string): boolean {
+  return /[\u05D0-\u05EA]/.test(s) && !/[A-Za-z]/.test(s);
 }
 
 function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowState; last: CheckResult | null; support: SupportLanguage }) {

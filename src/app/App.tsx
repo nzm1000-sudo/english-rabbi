@@ -1,4 +1,4 @@
-import { HashRouter, Navigate, Route, Routes, useLocation, useParams } from 'react-router-dom';
+import { HashRouter, Link, Navigate, Outlet, Route, Routes, useLocation, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useServices } from './services';
 import { StudentPicker } from '@/features/students/StudentPicker';
@@ -21,6 +21,7 @@ import { KidsPlay } from '@/features/kids/KidsPlay';
 import { KidsBook, KidsBooks } from '@/features/kids/KidsBooks';
 import { StickerAlbum } from '@/features/kids/StickerAlbum';
 import { useStudent } from './hooks';
+import { parentGate } from './parentGate';
 import { SpeechPrefsProvider } from './speechPrefs';
 import { GlossProvider } from '@/ui/Gloss';
 import type { ReactNode } from 'react';
@@ -34,29 +35,56 @@ export function App() {
         <Route path="/" element={<StudentPicker />} />
         <Route path="/new" element={<StudentForm />} />
         <Route path="/setup" element={<FamilySetup />} />
-        <Route path="/s/:sid" element={<WithStudentSpeech><HomeScreen /></WithStudentSpeech>} />
-        <Route path="/s/:sid/settings" element={<StudentForm />} />
-        <Route path="/s/:sid/more" element={<MorePractice />} />
-        <Route path="/s/:sid/practice/:mode" element={<WithStudentSpeech><PracticeScreen /></WithStudentSpeech>} />
-        <Route path="/s/:sid/learn" element={<WithStudentSpeech><LearnHub /></WithStudentSpeech>} />
-        <Route path="/s/:sid/learn/:lessonId" element={<WithStudentSpeech><LessonScreen /></WithStudentSpeech>} />
-        <Route path="/s/:sid/progress" element={<ProgressScreen />} />
-        <Route path="/s/:sid/match" element={<WithStudentSpeech><MatchGame /></WithStudentSpeech>} />
-        <Route path="/s/:sid/path" element={<PathScreen />} />
-        <Route path="/s/:sid/stories" element={<StoriesScreen />} />
-        <Route path="/s/:sid/stories/:storyId" element={<WithStudentSpeech><StoryScreen /></WithStudentSpeech>} />
-        <Route path="/s/:sid/words" element={<WithStudentSpeech><MyWordsScreen /></WithStudentSpeech>} />
-        <Route path="/s/:sid/kids/play" element={<WithStudentSpeech><KidsPlay /></WithStudentSpeech>} />
-        <Route path="/s/:sid/kids/books" element={<WithStudentSpeech><KidsBooks /></WithStudentSpeech>} />
-        <Route path="/s/:sid/kids/books/:bookId" element={<WithStudentSpeech><KidsBook /></WithStudentSpeech>} />
-        <Route path="/s/:sid/kids/album" element={<StickerAlbum />} />
-        <Route path="/s/:sid/shadow" element={<WithStudentSpeech><ShadowScreen /></WithStudentSpeech>} />
-        <Route path="/parent" element={<ParentDashboard />} />
-        <Route path="/parent/voices" element={<VoiceLab />} />
+        {/* Every student screen: an unknown id (old link, deleted data) shows a way back. */}
+        <Route path="/s/:sid" element={<KnownStudent />}>
+          <Route index element={<WithStudentSpeech><HomeScreen /></WithStudentSpeech>} />
+          <Route path="settings" element={<StudentForm />} />
+          <Route path="more" element={<MorePractice />} />
+          <Route path="practice/:mode" element={<WithStudentSpeech><PracticeScreen /></WithStudentSpeech>} />
+          <Route path="learn" element={<WithStudentSpeech><LearnHub /></WithStudentSpeech>} />
+          <Route path="learn/:lessonId" element={<WithStudentSpeech><LessonScreen /></WithStudentSpeech>} />
+          <Route path="progress" element={<ProgressScreen />} />
+          <Route path="match" element={<WithStudentSpeech><MatchGame /></WithStudentSpeech>} />
+          <Route path="path" element={<PathScreen />} />
+          <Route path="stories" element={<StoriesScreen />} />
+          <Route path="stories/:storyId" element={<WithStudentSpeech><StoryScreen /></WithStudentSpeech>} />
+          <Route path="words" element={<WithStudentSpeech><MyWordsScreen /></WithStudentSpeech>} />
+          <Route path="kids/play" element={<WithStudentSpeech><KidsPlay /></WithStudentSpeech>} />
+          <Route path="kids/books" element={<WithStudentSpeech><KidsBooks /></WithStudentSpeech>} />
+          <Route path="kids/books/:bookId" element={<WithStudentSpeech><KidsBook /></WithStudentSpeech>} />
+          <Route path="kids/album" element={<StickerAlbum />} />
+          <Route path="shadow" element={<WithStudentSpeech><ShadowScreen /></WithStudentSpeech>} />
+        </Route>
+        <Route path="/parent" element={<ParentOnly />}>
+          <Route index element={<ParentDashboard />} />
+          <Route path="voices" element={<VoiceLab />} />
+        </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </HashRouter>
   );
+}
+
+/** The parent screens, only after the long press (not by URL or the back button). */
+function ParentOnly() {
+  return parentGate.isUnlocked() ? <Outlet /> : <Navigate to="/" replace />;
+}
+
+/** Renders the student's screens only for a student that exists. */
+function KnownStudent() {
+  const { sid } = useParams();
+  const student = useStudent(sid);
+  if (student === undefined) return null;
+  if (student === null)
+    return (
+      <main className="screen empty-state">
+        <p className="t-h3">התלמיד לא נמצא</p>
+        <Link to="/" replace className="btn btn-primary btn-md">
+          לבחירת תלמיד
+        </Link>
+      </main>
+    );
+  return <Outlet />;
 }
 
 /** Any screen change stops speech, so nothing keeps talking after leaving. */

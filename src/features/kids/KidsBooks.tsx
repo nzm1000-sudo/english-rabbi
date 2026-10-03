@@ -11,6 +11,8 @@ import { ArrowIcon, BookIcon, SpeakerIcon, StarIcon } from './KidIcons';
 import { KidsIconLink, KidsMessage, KidsTopBar, type Tint } from './KidsChrome';
 import { bookPagePic, scenePics } from './pics';
 import { Reward } from './Reward';
+import { useKidsSession } from './kidsSession';
+import { TimeGate } from './timeLimit';
 
 /** How long a page must stay open to count as read (about one listen). */
 const PAGE_READ_MS = 3000;
@@ -82,15 +84,22 @@ export function KidsBooks() {
 
 /** One little book. Keyed by the book, so moving to another book starts it fresh. */
 export function KidsBook() {
-  const { bookId } = useParams();
-  return <BookReader key={bookId} />;
+  const { sid, bookId } = useParams();
+  const student = useStudent(sid);
+  if (student === undefined) return <main className="screen kids-screen" data-mood="kids" />;
+  if (!student) return <BookReader key={`${sid}:${bookId}`} />;
+  return (
+    <TimeGate key={`${sid}:${bookId}`} student={student} home={<KidsIconLink to={`/s/${student.id}`} label="הביתה" />}>
+      <BookReader />
+    </TimeGate>
+  );
 }
 
 /** A big picture, one sentence, read aloud. Early readers can tap each word. */
 function BookReader() {
   const { sid, bookId } = useParams();
   const student = useStudent(sid);
-  const { speech, store } = useServices();
+  const { speech } = useServices();
   const prefs = useSpeechPrefs();
   const book = kidBooks.find((b) => b.id === bookId);
   const [page, setPage] = useState(0);
@@ -117,14 +126,7 @@ function BookReader() {
     },
     [speech],
   );
-  useEffect(() => {
-    if (!student) return;
-    let id = '';
-    void store.startSession(student.id, 'kids:book').then((s) => (id = s.id));
-    return () => {
-      if (id) void store.endSession(id, 'left');
-    };
-  }, [store, student]);
+  useKidsSession(student?.id, 'kids:book');
 
   if (!student || !book || !p) {
     return (

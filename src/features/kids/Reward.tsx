@@ -77,8 +77,10 @@ export function Reward({
           outcome?.kind === 'all'
             ? 'אספתם את כל המדבקות!'
             : outcome?.kind === 'none'
-              ? source.startsWith('book:') && deserves
-                ? 'את המדבקה של הספרון כבר קיבלתם'
+              ? source.startsWith('book:')
+                ? deserves
+                  ? 'את המדבקה של הספרון כבר קיבלתם'
+                  : 'מקשיבים לכל דף, ומקבלים מדבקה'
                 : 'עוד קצת תרגול, ומקבלים מדבקה'
               : 'מדבקה חדשה לאלבום'
         } size={88} />

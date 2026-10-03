@@ -16,6 +16,7 @@ import { Button } from '@/ui/Button';
 import type { ParentLabel } from '@/domain/learning/mastery';
 import { localDay } from '@/domain/learning/events';
 import { ThemePicker } from '@/ui/ThemePicker';
+import { normalizeServerUrl } from './serverUrl';
 import type { PrerenderedProvider } from '@/services/speech/tts/prerenderedProvider';
 
 const LABEL: Record<ParentLabel, { he: string; cls: string }> = {
@@ -30,7 +31,8 @@ const LABEL: Record<ParentLabel, { he: string; cls: string }> = {
 export function ParentDashboard() {
   const students = useStudents(true);
   const [selected, setSelected] = useState<string | null>(null);
-  const active = students?.find((s) => s.id === selected) ?? students?.find((s) => !s.archived) ?? null;
+  // With every student hidden, still show the first one (it has the "restore" button).
+  const active = students?.find((s) => s.id === selected) ?? students?.find((s) => !s.archived) ?? students?.[0] ?? null;
 
   return (
     <main className="screen">
@@ -41,7 +43,7 @@ export function ParentDashboard() {
             <button key={s.id} role="tab" className="kid-tab" aria-selected={active?.id === s.id} onClick={() => setSelected(s.id)}>
               <Avatar name={s.name} hue={s.hue} size={28} />
               <span>
-                {s.name}
+                <bdi>{s.name}</bdi>
                 {s.archived ? ' (מוסתר)' : ''}
               </span>
             </button>
@@ -74,7 +76,9 @@ function StudentReport({ student }: { student: Student }) {
       <div className="report-head">
         <Avatar name={student.name} hue={student.hue} size={56} />
         <div className="grow">
-          <div className="t-h2">{student.name}</div>
+          <div className="t-h2">
+            <bdi>{student.name}</bdi>
+          </div>
           <div className="small muted">
             {a.lastActiveDay ? `פעילות אחרונה: ${formatDay(a.lastActiveDay)}` : 'עדיין אין תרגול'}
           </div>
@@ -247,10 +251,17 @@ function DeviceSection() {
   const downloadAudio = async () => {
     const p = speech.getProviders().find((x) => x.id === 'prerendered') as PrerenderedProvider | undefined;
     if (!p) return;
+    if (!navigator.onLine) return setMsg('ההורדה לא הצליחה. צריך חיבור לאינטרנט.');
     setDl({ done: 0, total: 1 });
     const r = await p.downloadAll((done, total) => setDl({ done, total }));
     setDl(null);
-    setMsg(r.failed ? `הורדו ${r.done - r.failed} קבצים. ${r.failed} נכשלו, כדאי לנסות שוב.` : `כל ${r.done} קובצי ההקראה זמינים עכשיו גם בלי אינטרנט.`);
+    setMsg(
+      r.done === 0 || r.done === r.failed
+        ? 'ההורדה לא הצליחה. צריך חיבור לאינטרנט.'
+        : r.failed
+          ? `הורדו ${r.done - r.failed} קבצים. ${r.failed} נכשלו, כדאי לנסות שוב.`
+          : `כל ${r.done} קובצי ההקראה זמינים עכשיו גם בלי אינטרנט.`,
+    );
   };
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState<string | null>(null);
@@ -272,7 +283,8 @@ function DeviceSection() {
       const r = await store.importBackup(JSON.parse(await f.text()));
       setMsg(`שוחזרו ${r.students} תלמידים ו־${r.events} אירועים.`);
     } catch (e) {
-      setMsg(`השחזור נכשל: ${(e as Error).message}`);
+      const newer = (e as Error).message.includes('newer');
+      setMsg(newer ? 'השחזור נכשל: הגיבוי נוצר בגרסה חדשה יותר של האפליקציה. כדאי לעדכן ולנסות שוב.' : 'השחזור נכשל: זה לא קובץ גיבוי של האפליקציה.');
     }
   };
 
@@ -326,7 +338,18 @@ function DeviceSection() {
           </span>
         </button>
       </div>
-      <input ref={fileRef} type="file" accept="application/json" hidden onChange={(e) => e.target.files?.[0] && importBackup(e.target.files[0])} />
+      <input
+        ref={fileRef}
+        type="file"
+        accept="application/json"
+        hidden
+        onChange={(e) => {
+          const f = e.target.files?.[0];
+          // Cleared so choosing the same file again fires a new change.
+          e.target.value = '';
+          if (f) void importBackup(f);
+        }}
+      />
       <div className="settings-card field">
         <label htmlFor="srv">כתובת שרת ביתי להקראה (לא חובה)</label>
         <div className="input-row">
@@ -334,7 +357,9 @@ function DeviceSection() {
           <Button
             size="lg"
             onClick={async () => {
-              await settings.set({ homeServerUrl: url.trim() });
+              const clean = normalizeServerUrl(url);
+              setUrl(clean);
+              await settings.set({ homeServerUrl: clean });
               setMsg('נשמר.');
             }}
           >
