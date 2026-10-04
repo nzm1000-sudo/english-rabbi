@@ -451,9 +451,12 @@
 .explain-ex[data-tone='bad'] .explain-mark { color: var(--danger); }
 .explain-meaning { color: var(--ink-2); font-size: var(--fs-body); padding-inline-start: var(--space-3); }
 .explain-check { margin: 0; display: flex; flex-direction: column; gap: var(--space-1); }
-.explain-check > div { display: flex; justify-content: space-between; gap: var(--space-3); padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); background: var(--surface-2); }
+.explain-check > div { display: flex; flex-direction: column; gap: 2px; padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); background: var(--surface-2); }
 .explain-check dt, .explain-check dd { margin: 0; }
-.explain-check dd { font-weight: var(--fw-bold); text-align: end; }
+.explain-check dt { color: var(--ink-2); font-size: var(--fs-body); }
+.explain-check dd { font-weight: var(--fw-bold); }
+.explain-check-ex, .explain-list-ex { text-align: left; font-weight: var(--fw-bold); color: var(--accent-fg); }
+.explain-list { margin: 0; padding-inline-start: var(--space-4); display: flex; flex-direction: column; gap: var(--space-2); }
 .explain-remember {
   display: flex; flex-direction: column; gap: 2px; padding: var(--space-3) var(--space-4); border-radius: var(--radius-md);
   background: linear-gradient(135deg, var(--hero-from), var(--hero-to)); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);

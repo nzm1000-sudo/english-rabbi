@@ -369,9 +369,10 @@ export const Explain = z.object({
   why: z.string().min(1),
   /** Right and wrong side by side; `he` is the meaning of `ok`. */
   examples: z.array(z.object({ ok: z.string().min(1), bad: z.string().optional(), he: z.string().min(1) })).min(2),
-  /** How to decide in a question: "when you see X" -> "write Y". */
-  check: z.array(z.object({ when: z.string().min(1), then: z.string().min(1) })).default([]),
-  exceptions: z.string().default(''),
+  /** How to decide in a question: "when you see X" -> "write Y", with an English example. */
+  check: z.array(z.object({ when: z.string().min(1), then: z.string().min(1), example: z.string().optional() })).default([]),
+  /** Each exception in Hebrew, with its English example apart. */
+  exceptions: z.array(z.object({ he: z.string().min(1), en: z.string().optional() })).default([]),
   /** One sentence to remember. */
   remember: z.string().min(1),
 });

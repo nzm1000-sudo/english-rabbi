@@ -10,7 +10,7 @@ import type { ReactNode } from 'react';
  *   "(o אחת)" the "(" belongs to the Hebrew, so it mirrors correctly.
  * - "=" after English never starts a line by itself.
  */
-const LATIN_RUN = /((?:["(]|-(?=[A-Za-z]))?[A-Za-z][A-Za-z0-9'’\-+/=→ .,!?:;"()]*[A-Za-z0-9'’.!?")]|[A-Za-z])/g;
+const LATIN_RUN = /((?:["(]|(?<!\S)-(?=[A-Za-z]))?[A-Za-z][A-Za-z0-9'’\-+/=→ .,!?:;"()]*[A-Za-z0-9'’.!?")]|[A-Za-z])/g;
 const BLOCK_WORDS = 4;
 
 export type BidiPart = { kind: 'he' | 'en' | 'en-line'; text: string };

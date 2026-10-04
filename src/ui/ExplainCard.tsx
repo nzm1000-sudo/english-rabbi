@@ -76,6 +76,7 @@ export function ExplainCard({ anchor, explain }: { anchor: Anchor; explain: Expl
                 </dt>
                 <dd>
                   <He>{c.then}</He>
+                  {c.example && <En as="div" className="explain-check-ex">{c.example}</En>}
                 </dd>
               </div>
             ))}
@@ -83,9 +84,16 @@ export function ExplainCard({ anchor, explain }: { anchor: Anchor; explain: Expl
         </Section>
       )}
 
-      {explain.exceptions && (
+      {explain.exceptions.length > 0 && (
         <Section icon="⚠️" label="חריגים">
-          <He>{explain.exceptions}</He>
+          <ul className="explain-list">
+            {explain.exceptions.map((x, i) => (
+              <li key={i}>
+                <He>{x.he}</He>
+                {x.en && <En as="div" className="explain-list-ex">{x.en}</En>}
+              </li>
+            ))}
+          </ul>
         </Section>
       )}
 
