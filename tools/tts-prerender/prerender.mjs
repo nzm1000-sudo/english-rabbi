@@ -99,7 +99,11 @@ function collectTexts() {
   // Example sentences on the memory anchor cards.
   const anchorDir = path.join(root, 'content/anchors');
   for (const f of fs.readdirSync(anchorDir).filter((f) => f.endsWith('.json'))) {
-    for (const a of JSON.parse(fs.readFileSync(path.join(anchorDir, f), 'utf8'))) for (const e of a.examples ?? []) add(e.en, 'A', ['normal']);
+    for (const a of JSON.parse(fs.readFileSync(path.join(anchorDir, f), 'utf8'))) {
+      for (const e of a.examples ?? []) add(e.en, 'A', ['normal']);
+      // The right sentences of the full explanations (the wrong ones are never played).
+      for (const lv of Object.values(a.levels ?? {})) for (const e of lv.examples ?? []) add(e.ok, 'A', ['normal']);
+    }
   }
   return [...texts.values()];
 }

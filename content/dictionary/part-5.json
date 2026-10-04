@@ -117,6 +117,12 @@
    "he": "של אלון (שם)"
   }
  ],
+ "alps": [
+  {
+   "lemma": "Alps",
+   "he": "הרי האלפים"
+  }
+ ],
  "ambiguous": [
   {
    "lemma": "ambiguous",
@@ -347,6 +353,12 @@
   {
    "lemma": "biology",
    "he": "ביולוגיה"
+  }
+ ],
+ "black": [
+  {
+   "lemma": "black",
+   "he": "שחור"
   }
  ],
  "blanket": [
@@ -721,6 +733,12 @@
    "he": "רה (התו D במוזיקה)"
   }
  ],
+ "david": [
+  {
+   "lemma": "David",
+   "he": "דוד"
+  }
+ ],
  "decade": [
   {
    "lemma": "decade",
@@ -797,6 +815,12 @@
    "he": "ד\"ר"
   }
  ],
+ "dress": [
+  {
+   "lemma": "dress",
+   "he": "שמלה"
+  }
+ ],
  "dried": [
   {
    "lemma": "dry",
@@ -807,6 +831,18 @@
   {
    "lemma": "drill",
    "he": "תרגיל (תרגיל אש)"
+  }
+ ],
+ "driver": [
+  {
+   "lemma": "driver",
+   "he": "נהג"
+  }
+ ],
+ "drunk": [
+  {
+   "lemma": "drink",
+   "he": "שתה (צורה שלישית של drink)"
   }
  ],
  "dug": [
@@ -921,6 +957,12 @@
   {
    "lemma": "Europe",
    "he": "אירופה"
+  }
+ ],
+ "european": [
+  {
+   "lemma": "European",
+   "he": "אירופי"
   }
  ],
  "examined": [
@@ -1231,6 +1273,12 @@
    "he": "לתלות"
   }
  ],
+ "hashanah": [
+  {
+   "lemma": "Rosh Hashanah",
+   "he": "השנה (בצירוף ראש השנה)"
+  }
+ ],
  "headphones": [
   {
    "lemma": "headphones",
@@ -1431,6 +1479,12 @@
    "he": "יפני"
   }
  ],
+ "jordan": [
+  {
+   "lemma": "Jordan",
+   "he": "הירדן; ירדן (המדינה)"
+  }
+ ],
  "journal": [
   {
    "lemma": "journal",
@@ -1483,6 +1537,18 @@
   {
    "lemma": "kilo",
    "he": "קילוגרמים"
+  }
+ ],
+ "king": [
+  {
+   "lemma": "king",
+   "he": "מלך"
+  }
+ ],
+ "kingdom": [
+  {
+   "lemma": "kingdom",
+   "he": "ממלכה"
   }
  ],
  "kinneret": [
@@ -2189,6 +2255,12 @@
    "he": "רוברט (שם פרטי)"
   }
  ],
+ "rode": [
+  {
+   "lemma": "ride",
+   "he": "רכב (עבר של ride)"
+  }
+ ],
  "roi's": [
   {
    "lemma": "Roi",
@@ -2199,6 +2271,12 @@
   {
    "lemma": "Ronit",
    "he": "רונית (שם)"
+  }
+ ],
+ "rosh": [
+  {
+   "lemma": "Rosh Hashanah",
+   "he": "ראש (בצירוף ראש השנה)"
   }
  ],
  "route": [
@@ -2283,6 +2361,12 @@
   {
    "lemma": "secure",
    "he": "חיזק, קיבע"
+  }
+ ],
+ "seem": [
+  {
+   "lemma": "seem",
+   "he": "להיראות, להיראות כאילו"
   }
  ],
  "seems": [
@@ -2403,6 +2487,18 @@
    "he": "מיומנויות"
   }
  ],
+ "smell": [
+  {
+   "lemma": "smell",
+   "he": "להריח, להדיף ריח"
+  }
+ ],
+ "snack": [
+  {
+   "lemma": "snack",
+   "he": "חטיף"
+  }
+ ],
  "sneak": [
   {
    "lemma": "sneak",
@@ -2415,6 +2511,12 @@
    "he": "דואה"
   }
  ],
+ "soccer": [
+  {
+   "lemma": "soccer",
+   "he": "כדורגל"
+  }
+ ],
  "soil": [
   {
    "lemma": "soil",
@@ -2425,6 +2527,12 @@
   {
    "lemma": "solo",
    "he": "סולו"
+  }
+ ],
+ "somebody": [
+  {
+   "lemma": "somebody",
+   "he": "מישהו"
   }
  ],
  "sore": [
@@ -2555,6 +2663,12 @@
    "he": "מוקף"
   }
  ],
+ "synagogue": [
+  {
+   "lemma": "synagogue",
+   "he": "בית כנסת"
+  }
+ ],
  "t-shirt": [
   {
    "lemma": "T-shirt",
@@ -2577,6 +2691,12 @@
   {
    "lemma": "Tali",
    "he": "טלי (שם)"
+  }
+ ],
+ "tallit": [
+  {
+   "lemma": "tallit",
+   "he": "טלית"
   }
  ],
  "target": [

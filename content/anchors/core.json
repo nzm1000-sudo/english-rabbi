@@ -79,6 +79,112 @@
       }
     ],
     "hebrewTrap": "בעברית בהווה 'אני הולך' ו'הוא הולך' נשמעים אותו דבר. באנגלית ההבדל הוא רק s קטנה בסוף, ולכן קל לשכוח אותה: she go במקום she goes.",
+    "levels": {
+      "kids": {
+        "title": "מתי מוסיפים s לפועל?",
+        "rule": "כשמדברים בהווה על אחד (he, she, it, אבא, תמר, הכלב), מוסיפים s לפועל: likes. עם I, you, we, they לא מוסיפים: like.",
+        "why": "בעברית אומרים \"אני אוהב\" וגם \"הוא אוהב\", והפועל נשמע אותו דבר. לכן קל לשכוח את ה־s באנגלית ולכתוב Tamar like.",
+        "examples": [
+          {
+            "ok": "Tamar likes chocolate.",
+            "bad": "Tamar like chocolate.",
+            "he": "תמר אוהבת שוקולד."
+          },
+          {
+            "ok": "Ari and Tamar walk to school.",
+            "bad": "Ari and Tamar walks to school.",
+            "he": "ארי ותמר הולכים ברגל לבית הספר."
+          },
+          {
+            "ok": "Ima has a new phone.",
+            "bad": "Ima have a new phone.",
+            "he": "לאמא יש טלפון חדש."
+          }
+        ],
+        "check": [
+          {
+            "when": "מדובר על אחד: he, she, it, אבא, הכלב",
+            "then": "מוסיפים s",
+            "example": "Abba rides his bike."
+          },
+          {
+            "when": "מדובר על I, you, we, they או על כמה",
+            "then": "בלי s",
+            "example": "We ride our bikes."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "במקום have אומרים has.",
+            "en": "She has a cat."
+          },
+          {
+            "he": "יש פעלים שמקבלים es.",
+            "en": "goes, watches"
+          }
+        ],
+        "remember": "הוא, היא או זה? נחש s זוחל ונדבק לסוף הפועל."
+      },
+      "adult": {
+        "title": "מתי מוסיפים s לפועל, ואיך כותבים אותה?",
+        "rule": "בהווה פשוט, כשהנושא בגוף שלישי יחיד (he, she, it, אדם אחד, שם עצם ביחיד או שם עצם שלא נספר), הפועל מקבל s. בשאלה ובשלילה הסימן עובר ל־does, והפועל חוזר לבסיס.",
+        "why": "בעברית הפועל בהווה משתנה לפי מין ומספר, אבל לא לפי גוף: \"אני קורא\" ו\"הוא קורא\" זהים. לכן שוכחים את ה־s, או מסמנים אותה פעמיים: does she works. ו\"כולם\" נשמע רבים, אבל everyone הוא יחיד.",
+        "examples": [
+          {
+            "ok": "Grandpa Yosef drinks tea every morning.",
+            "bad": "Grandpa Yosef drink tea every morning.",
+            "he": "סבא יוסף שותה תה כל בוקר."
+          },
+          {
+            "ok": "Does Rivka study on Friday?",
+            "bad": "Does Rivka studies on Friday?",
+            "he": "רבקה לומדת ביום שישי?"
+          },
+          {
+            "ok": "Everyone knows the answer.",
+            "bad": "Everyone know the answer.",
+            "he": "כולם יודעים את התשובה."
+          }
+        ],
+        "check": [
+          {
+            "when": "הנושא אחד, או everyone, nobody, each",
+            "then": "פועל + s",
+            "example": "My sister plays the violin."
+          },
+          {
+            "when": "הנושא שם עצם שלא נספר: water, music",
+            "then": "פועל + s",
+            "example": "Water boils at 100 degrees."
+          },
+          {
+            "when": "יש does או doesn't",
+            "then": "הפועל בבסיס, בלי s",
+            "example": "He doesn't like fish."
+          },
+          {
+            "when": "הנושא ברבים, או I, you, we, they",
+            "then": "בלי s",
+            "example": "They live in Haifa."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "אחרי s, sh, ch ו־x מוסיפים es, וגם go ו־do מקבלים es.",
+            "en": "watches, fixes, goes, does"
+          },
+          {
+            "he": "עיצור ועוד y נהיים ies, אבל אחרי תנועה מוסיפים רק s.",
+            "en": "studies, tries · plays"
+          },
+          {
+            "he": "has, is, ופעלים מודאליים (can, must, will) בלי s לעולם.",
+            "en": "She has a car. She can swim."
+          }
+        ],
+        "remember": "נושא אחד, s אחת: או בסוף הפועל או אצל does, אף פעם לא בשניהם."
+      }
+    },
     "source": "original"
   },
   {
@@ -188,6 +294,108 @@
       }
     ],
     "hebrewTrap": "בעברית 'לפני' בא לפני הזמן ('לפני שנתיים'), ולכן אומרים בטעות ago two years במקום two years ago. וגם קל לשים ed בפועל חריג: goed במקום went.",
+    "levels": {
+      "kids": {
+        "title": "איך מספרים באנגלית על אתמול?",
+        "rule": "כשמשהו כבר קרה ונגמר, מוסיפים ed בסוף הפועל: play נהיה played. יש פעלים מיוחדים שמשנים צורה: go נהיה went. אותם לומדים בעל פה.",
+        "why": "בעברית הפועל משתנה לפי מי שעשה: שיחקתי, שיחקנו. באנגלית יש בעבר צורה אחת לכולם. ומי שמכיר רק את ה־ed כותב בטעות goed במקום went.",
+        "examples": [
+          {
+            "ok": "Ari played soccer yesterday.",
+            "bad": "Ari play soccer yesterday.",
+            "he": "ארי שיחק כדורגל אתמול."
+          },
+          {
+            "ok": "Tamar went to school by bike.",
+            "bad": "Tamar goed to school by bike.",
+            "he": "תמר נסעה לבית הספר באופניים."
+          },
+          {
+            "ok": "We ate a snack in the sukkah.",
+            "bad": "We eated a snack in the sukkah.",
+            "he": "אכלנו חטיף בסוכה."
+          }
+        ],
+        "check": [
+          {
+            "when": "כתוב yesterday, last week או ago",
+            "then": "הפועל בעבר",
+            "example": "I played yesterday."
+          },
+          {
+            "when": "הפועל מיוחד, כמו go או eat",
+            "then": "בלי ed, בצורה המיוחדת",
+            "example": "I went. I ate."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "פעלים מיוחדים שכדאי לזכור:",
+            "en": "see, saw · have, had · come, came · buy, bought"
+          }
+        ],
+        "remember": "פועל רגיל מקבל זנב ed, ופועל מיוחד מחליף בגדים: go לובש went."
+      },
+      "adult": {
+        "title": "מתי משתמשים בעבר פשוט?",
+        "rule": "עבר פשוט מתאר פעולה שנגמרה בעבר, בדרך כלל בזמן ידוע. פועל רגיל מקבל ed ופועל חריג מקבל צורה שנייה (V2), זהה לכל הגופים. רק be מתחלק ל־was ול־were. אחרי did הפועל חוזר לבסיס.",
+        "why": "בעברית אומרים \"לפני יומיים\", ולכן כותבים בטעות ago two days. ומי שזוכר להוסיף did בשאלה שוכח שהפועל חוזר לבסיס, וכותב did you saw.",
+        "examples": [
+          {
+            "ok": "We visited Grandpa Yosef two days ago.",
+            "bad": "We visited Grandpa Yosef ago two days.",
+            "he": "ביקרנו את סבא יוסף לפני יומיים."
+          },
+          {
+            "ok": "Did you see the game last night?",
+            "bad": "Did you saw the game last night?",
+            "he": "ראיתם את המשחק אתמול בערב?"
+          },
+          {
+            "ok": "The children were tired after the trip.",
+            "bad": "The children was tired after the trip.",
+            "he": "הילדים היו עייפים אחרי הטיול."
+          }
+        ],
+        "check": [
+          {
+            "when": "זמן גמור: yesterday, ago, in 2019",
+            "then": "עבר פשוט",
+            "example": "Rivka bought a dress last week."
+          },
+          {
+            "when": "שאלה שמתחילה ב־When",
+            "then": "עבר פשוט עם did",
+            "example": "When did you arrive?"
+          },
+          {
+            "when": "יש did או didn't",
+            "then": "הפועל בצורת הבסיס",
+            "example": "She didn't go."
+          },
+          {
+            "when": "הפועל be בעבר",
+            "then": "was ליחיד, were לרבים ול־you",
+            "example": "I was late. We were late."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "כתיב: עיצור אחרון מוכפל אחרי תנועה קצרה, ו־y אחרי עיצור נהיה ied.",
+            "en": "stop, stopped · study, studied"
+          },
+          {
+            "he": "יש פעלים שלא משתנים בכלל.",
+            "en": "put, cut, let"
+          },
+          {
+            "he": "read נכתב אותו דבר בעבר, אבל נהגה כמו red.",
+            "en": "I read it yesterday."
+          }
+        ],
+        "remember": "זמן גמור במשפט מחייב עבר פשוט, ואחרי did הפועל חוזר לבסיס."
+      }
+    },
     "source": "original"
   },
   {
@@ -244,6 +452,103 @@
       }
     ],
     "hebrewTrap": "בעברית יש רק עבר אחד ('איבדה'), ולכן מחברים לגשר גם זמן גמור: I have seen him yesterday. ו'לומדת כבר שלוש שעות' נאמר בעברית בהווה, ולכן אומרים בטעות She studies for three hours.",
+    "levels": {
+      "kids": {
+        "title": "למה יש have לפני הפועל?",
+        "rule": "have או has עם צורה מיוחדת של הפועל מספרים מה קרה עד עכשיו, בלי לומר מתי. אם אומרים מתי זה קרה, כמו yesterday, משתמשים בעבר רגיל.",
+        "why": "בעברית יש רק עבר אחד: \"סיימתי\". באנגלית יש שתי דרכים. כשלא אומרים מתי והתוצאה חשובה עכשיו, בוחרים have. עם yesterday, have הוא טעות.",
+        "examples": [
+          {
+            "ok": "I have finished my homework.",
+            "he": "סיימתי את שיעורי הבית."
+          },
+          {
+            "ok": "Have you ever ridden a horse?",
+            "bad": "Have you ever rode a horse?",
+            "he": "רכבתם פעם על סוס?"
+          },
+          {
+            "ok": "Tamar lost a tooth yesterday.",
+            "bad": "Tamar has lost a tooth yesterday.",
+            "he": "לתמר נפלה שן אתמול."
+          }
+        ],
+        "check": [
+          {
+            "when": "כתוב yesterday, last week או ago",
+            "then": "עבר רגיל",
+            "example": "I saw a rainbow yesterday."
+          },
+          {
+            "when": "כתוב ever, never, already או just",
+            "then": "have או has",
+            "example": "I have never seen snow."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "עם he, she, it כותבים has במקום have.",
+            "en": "Tamar has finished."
+          }
+        ],
+        "remember": "have בונה גשר מהעבר אל היום. אבל כשכתוב yesterday, הגשר נסגר."
+      },
+      "adult": {
+        "title": "עבר פשוט או present perfect?",
+        "rule": "have או has עם צורה שלישית (V3) מחברים עבר להווה: ניסיון חיים בלי זמן מוגדר, תוצאה שמורגשת עכשיו, או מצב שנמשך עד היום. כשהפעולה קשורה לזמן שכבר נגמר, משתמשים בעבר פשוט.",
+        "why": "בעברית \"אנחנו גרים כאן עשר שנים\" נאמר בהווה, ולכן כותבים בטעות live במקום have lived. ובגלל שבעברית יש עבר אחד, מחברים have גם לזמן גמור כמו yesterday.",
+        "examples": [
+          {
+            "ok": "I saw him yesterday.",
+            "bad": "I have seen him yesterday.",
+            "he": "ראיתי אותו אתמול."
+          },
+          {
+            "ok": "We have lived in this house for ten years.",
+            "bad": "We live in this house for ten years.",
+            "he": "אנחנו גרים בבית הזה כבר עשר שנים."
+          },
+          {
+            "ok": "When did you arrive?",
+            "bad": "When have you arrived?",
+            "he": "מתי הגעתם?"
+          }
+        ],
+        "check": [
+          {
+            "when": "זמן גמור: yesterday, ago, in 2015, או שאלה עם When",
+            "then": "עבר פשוט",
+            "example": "When did it happen?"
+          },
+          {
+            "when": "ever, never, already ו־yet",
+            "then": "present perfect",
+            "example": "Have you finished yet?"
+          },
+          {
+            "when": "for או since, ומצב שנמשך עד היום",
+            "then": "have או has + V3",
+            "example": "I have known her since 2010."
+          },
+          {
+            "when": "תקופה שעוד לא נגמרה: today, this week",
+            "then": "present perfect",
+            "example": "I have drunk three cups of coffee today."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "באנגלית האמריקאית נפוץ ונכון עבר פשוט עם just, already ו־yet. בכתיבה ובמבחן הבחירה הבטוחה היא present perfect.",
+            "en": "Did you eat yet? I just finished."
+          },
+          {
+            "he": "been פירושו \"היה שם וחזר\", gone פירושו \"נסע ועדיין שם\".",
+            "en": "She has been to Paris. She has gone to Paris."
+          }
+        ],
+        "remember": "זמן גמור סוגר את הגשר: yesterday, ago ו־When מחייבים עבר פשוט."
+      }
+    },
     "source": "original"
   },
   {
@@ -325,6 +630,112 @@
       }
     ],
     "hebrewTrap": "בעברית אין מילה ל־a בכלל ('אבא קנה טלית'), ולכן שוכחים אותה: Abba bought new tallit. וה' הידיעה מופיעה בעברית גם במקומות שבאנגלית אין בהם the: 'החיים יפים' הוא Life is beautiful, לא The life.",
+    "levels": {
+      "kids": {
+        "title": "a או the?",
+        "rule": "a פירושו \"אחד, סתם אחד\". the פירושו \"זה שכולנו יודעים עליו\". לפני צליל של תנועה כותבים an במקום a: an apple.",
+        "why": "בעברית אין מילה כמו a. אומרים \"יש לי כלב\", בלי שום מילה לפני \"כלב\". לכן כותבים בטעות I have dog.",
+        "examples": [
+          {
+            "ok": "I have a dog.",
+            "bad": "I have dog.",
+            "he": "יש לי כלב."
+          },
+          {
+            "ok": "Tamar ate an apple.",
+            "bad": "Tamar ate a apple.",
+            "he": "תמר אכלה תפוח."
+          },
+          {
+            "ok": "The dog is in the sukkah.",
+            "bad": "Dog is in sukkah.",
+            "he": "הכלב בסוכה."
+          }
+        ],
+        "check": [
+          {
+            "when": "דבר אחד שעוד לא דיברנו עליו",
+            "then": "a",
+            "example": "I see a cat."
+          },
+          {
+            "when": "דבר שכבר דיברנו עליו, או שכולם יודעים איזה",
+            "then": "the",
+            "example": "The cat is black."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "לפני שם של אדם לא כותבים a או the.",
+            "en": "Ari is my brother."
+          },
+          {
+            "he": "ולא לפני דבר שלא סופרים, כשמדברים באופן כללי.",
+            "en": "I like milk."
+          }
+        ],
+        "remember": "a אומר \"סתם אחד\", the מצביע באצבע: \"בדיוק זה!\""
+      },
+      "adult": {
+        "title": "a, an, the או בלי כלום?",
+        "rule": "שם עצם נספר ביחיד לא עומד לבד: לפניו a, an, the, my וכדומה. a או an כשמזכירים לראשונה או כשלא משנה איזה, the כשהשומע יודע בדיוק איזה. ברבים ובלא נספר, בהכללה, לא כותבים כלום.",
+        "why": "בעברית אין יידוע לא מסוים, ולכן \"אבא מורה\" נכתב בטעות בלי a. ה\"א הידיעה מופיעה בעברית גם בהכללות (\"החיים יפים\"), ולכן מוסיפים the במקום שאין בו צורך: the life.",
+        "examples": [
+          {
+            "ok": "Abba is a teacher.",
+            "bad": "Abba is teacher.",
+            "he": "אבא מורה."
+          },
+          {
+            "ok": "Life is beautiful.",
+            "bad": "The life is beautiful.",
+            "he": "החיים יפים."
+          },
+          {
+            "ok": "It takes an hour to get to Jerusalem.",
+            "bad": "It takes a hour to get to Jerusalem.",
+            "he": "לוקח שעה להגיע לירושלים."
+          }
+        ],
+        "check": [
+          {
+            "when": "יחיד, נספר, מוזכר לראשונה",
+            "then": "a או an",
+            "example": "I bought a book."
+          },
+          {
+            "when": "השומע יודע איזה: הוזכר כבר, יחיד במינו, או מוגדר",
+            "then": "the",
+            "example": "The book on the table is mine."
+          },
+          {
+            "when": "רבים או לא נספר, במובן כללי",
+            "then": "בלי מילה",
+            "example": "Children love games."
+          },
+          {
+            "when": "צליל של תנועה בתחילת המילה הבאה (הצליל קובע, לא האות)",
+            "then": "an",
+            "example": "an hour, an umbrella, a university"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "בלי the: רוב השמות של אנשים, ערים ומדינות, וביטויים קבועים.",
+            "en": "Israel, go to school, at home"
+          },
+          {
+            "he": "עם the: נהרות, ימים, רכסי הרים ומדינות כמו \"הממלכה המאוחדת\".",
+            "en": "the Jordan, the Dead Sea, the United States"
+          },
+          {
+            "he": "כלי נגינה באים בדרך כלל עם the.",
+            "en": "Tamar plays the piano."
+          }
+        ],
+        "remember": "יחיד שסופרים לא הולך לבד: תמיד a, an או the לפניו."
+      }
+    },
     "source": "original"
   },
   {
@@ -600,6 +1011,107 @@
       }
     ],
     "hebrewTrap": "בעברית 'הרבה' ו'כמה' משמשים לשני הסוגים. לכן אומרים בטעות much apples או how much people.",
+    "levels": {
+      "kids": {
+        "title": "much או many?",
+        "rule": "many בא עם דברים שאפשר לספור, כמו תפוחים וחברים. much בא עם דברים שאי אפשר לספור, כמו מים וזמן. a lot of מתאים לשניהם.",
+        "why": "בעברית יש מילה אחת, \"הרבה\", לכל דבר: הרבה תפוחים, הרבה מים. באנגלית יש שתי מילים שונות, ולכן כותבים בטעות much friends.",
+        "examples": [
+          {
+            "ok": "Tamar has many friends.",
+            "bad": "Tamar has much friends.",
+            "he": "לתמר יש הרבה חברות."
+          },
+          {
+            "ok": "How much juice is left?",
+            "bad": "How many juice is left?",
+            "he": "כמה מיץ נשאר?"
+          },
+          {
+            "ok": "There are a lot of snacks in my bag.",
+            "he": "יש הרבה חטיפים בתיק שלי."
+          }
+        ],
+        "check": [
+          {
+            "when": "אפשר לספור: 1, 2, 3",
+            "then": "many",
+            "example": "many apples, many kids"
+          },
+          {
+            "when": "אי אפשר לספור, רק למזוג או למדוד",
+            "then": "much",
+            "example": "much water, much time"
+          },
+          {
+            "when": "לא בטוחים, ובמשפט רגיל",
+            "then": "a lot of מתאים לשניהם",
+            "example": "a lot of apples, a lot of water"
+          }
+        ],
+        "exceptions": [],
+        "remember": "סופרים? many. מוזגים? much."
+      },
+      "adult": {
+        "title": "כמה זה הרבה: much, many או a lot of?",
+        "rule": "עם נספר ברבים באים many, few, a few. עם לא נספר באים much, little, a little. a lot of מתאים לשניהם. much ו־many נפוצים בעיקר בשאלה ובשלילה, ובמשפט חיובי טבעי יותר a lot of.",
+        "why": "בעברית \"הרבה\" ו\"כמה\" משמשים לכל שם עצם. באנגלית קודם מחליטים אם אפשר לספור. ויש מילים שבעברית נספרות ובאנגלית לא: מידע, עצות, רהיטים, שיעורי בית. לכן כותבים בטעות informations.",
+        "examples": [
+          {
+            "ok": "We don't have much time.",
+            "bad": "We don't have many time.",
+            "he": "אין לנו הרבה זמן."
+          },
+          {
+            "ok": "How much information do you need?",
+            "bad": "How many informations do you need?",
+            "he": "כמה מידע אתם צריכים?"
+          },
+          {
+            "ok": "A few guests came early.",
+            "bad": "A little guests came early.",
+            "he": "כמה אורחים הגיעו מוקדם."
+          }
+        ],
+        "check": [
+          {
+            "when": "נספר ברבים: books, people, days",
+            "then": "many או a few",
+            "example": "How many days are left?"
+          },
+          {
+            "when": "לא נספר: water, money, advice, homework",
+            "then": "much או a little",
+            "example": "I have a little homework."
+          },
+          {
+            "when": "משפט חיובי רגיל",
+            "then": "a lot of, עם שני הסוגים",
+            "example": "Abba drinks a lot of coffee."
+          },
+          {
+            "when": "few או little בלי a",
+            "then": "פירושו \"מעט מדי\", שלילי",
+            "example": "Few people came."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "money לא נספר באנגלית, אבל מטבעות כן.",
+            "en": "much money, many coins"
+          },
+          {
+            "he": "people הוא רבים.",
+            "en": "many people"
+          },
+          {
+            "he": "too much ו־so much טבעיים גם במשפט חיובי.",
+            "en": "I ate too much cake."
+          }
+        ],
+        "remember": "קודם שואלים \"אפשר לספור?\", ורק אז בוחרים מילה. ובספק, a lot of מציל את המצב."
+      }
+    },
     "source": "original"
   },
   {
@@ -634,8 +1146,7 @@
     "emoji": "🚂",
     "title": "רכבת המשפט",
     "skills": [
-      "grammar.word-order",
-      "grammar.adverbs"
+      "grammar.word-order"
     ],
     "image": "רכבת עם קרונות בסדר קבוע: קטר (מי), ואחריו עושה, מה, איפה, מתי. אי אפשר להחליף קרונות: Ari learns Gemara at home every night.",
     "rule": "במשפט באנגלית הסדר קבוע: נושא, פועל, מושא, מקום, זמן. מילות תדירות כמו always, often, never באות לפני פועל רגיל אבל אחרי am, is, are. שם תואר בא לפני שם העצם: a big sukkah.",
@@ -655,6 +1166,138 @@
       }
     ],
     "hebrewTrap": "בעברית הסדר גמיש ('כל ערב לומד ארי גמרא'), ושם התואר בא אחרי השם ('סוכה גדולה'). לכן מעבירים לאנגלית סדר עברי: a sukkah big, או Ari learns every night Gemara.",
+    "source": "original"
+  },
+  {
+    "id": "adverbs",
+    "emoji": "🐢",
+    "title": "careful או carefully",
+    "skills": [
+      "grammar.adverbs"
+    ],
+    "image": "ארי רוכב על האופניים ליד הסוכה. ארי זהיר: Ari is careful. אבל הרכיבה היא בזהירות: Ari rides carefully. כשהמילה מתארת את הפעולה, נדבק לה זנב ly.",
+    "rule": "שם תואר מתאר שם עצם (מי או מה): a careful boy. תואר הפועל מתאר פעולה (איך): he rides carefully. בדרך כלל מוסיפים ly לשם התואר: quick, quickly. החריגים החשובים: במקום good אומרים well, ו fast, hard, late נשארים בלי שינוי.",
+    "pattern": "פועל + שם תואר + ly (rides carefully)",
+    "examples": [
+      {
+        "en": "Ari rides his bike carefully.",
+        "he": "ארי רוכב על האופניים בזהירות."
+      },
+      {
+        "en": "Tamar sings beautifully.",
+        "he": "תמר שרה יפה."
+      },
+      {
+        "en": "Grandpa Yosef speaks English well.",
+        "he": "סבא יוסף מדבר אנגלית טוב."
+      }
+    ],
+    "hebrewTrap": "בעברית אומרים \"שרה יפה\" ו\"מדבר טוב\", עם אותה מילה כמו ב\"שיר יפה\" וב\"ספר טוב\". לכן כותבים באנגלית she sings beautiful או he speaks good.",
+    "levels": {
+      "kids": {
+        "title": "זהיר או בזהירות?",
+        "rule": "כשמתארים איך עושים משהו, מוסיפים ly למילה: slow נהיה slowly. שואלים: איך הוא רוכב? איך היא מדברת? המילה שעונה על \"איך\" מקבלת ly.",
+        "why": "בעברית אומרים \"ציור יפה\" וגם \"היא כותבת יפה\", עם אותה מילה. באנגלית אלה שתי מילים: beautiful לציור, ו־beautifully לכתיבה.",
+        "examples": [
+          {
+            "ok": "Ari rides his bike carefully.",
+            "bad": "Ari rides his bike careful.",
+            "he": "ארי רוכב על האופניים בזהירות."
+          },
+          {
+            "ok": "Tamar is a careful girl.",
+            "he": "תמר ילדה זהירה."
+          },
+          {
+            "ok": "We speak quietly in the synagogue.",
+            "bad": "We speak quiet in the synagogue.",
+            "he": "אנחנו מדברים בשקט בבית הכנסת."
+          }
+        ],
+        "check": [
+          {
+            "when": "המילה מתארת מישהו או משהו (ילד, כלב, עוגה)",
+            "then": "בלי ly",
+            "example": "a quiet boy"
+          },
+          {
+            "when": "המילה מתארת איך עושים (רץ, כותב, מדבר)",
+            "then": "עם ly",
+            "example": "He talks quietly."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "במקום good אומרים well.",
+            "en": "You did well!"
+          },
+          {
+            "he": "fast ו־hard נשארים כמו שהם.",
+            "en": "Abba runs fast."
+          }
+        ],
+        "remember": "שואלים \"איך?\" ומוסיפים זנב ly. הצב slow, אבל הוא זוחל slowly."
+      },
+      "adult": {
+        "title": "שם תואר או תואר הפועל?",
+        "rule": "שם תואר מתאר שם עצם, ובא לפניו או אחרי be ופעלי חושים (look, feel, taste). תואר הפועל מתאר פועל, שם תואר או משפט, ונוצר לרוב ב־ly. השאלה הקובעת: המילה מתארת דבר או פעולה?",
+        "why": "בעברית \"אוכל טוב\" וגם \"מבשל טוב\", עם אותה מילה. לכן כותבים בטעות cooks good. ובכיוון ההפוך, מוסיפים ly גם אחרי פעלי חושים: smells deliciously.",
+        "examples": [
+          {
+            "ok": "Grandpa Yosef drives carefully.",
+            "bad": "Grandpa Yosef drives careful.",
+            "he": "סבא יוסף נוהג בזהירות."
+          },
+          {
+            "ok": "Rivka speaks English well.",
+            "bad": "Rivka speaks English good.",
+            "he": "רבקה מדברת אנגלית טוב."
+          },
+          {
+            "ok": "The soup smells delicious.",
+            "bad": "The soup smells deliciously.",
+            "he": "למרק יש ריח טעים."
+          }
+        ],
+        "check": [
+          {
+            "when": "המילה מתארת שם עצם",
+            "then": "שם תואר, בלי ly",
+            "example": "a careful driver"
+          },
+          {
+            "when": "המילה מתארת איך עושים את הפעולה",
+            "then": "תואר הפועל, עם ly",
+            "example": "He drives carefully."
+          },
+          {
+            "when": "אחרי be ופעלי חושים: look, feel, taste",
+            "then": "שם תואר",
+            "example": "She looks happy."
+          },
+          {
+            "when": "המילה מחזקת שם תואר",
+            "then": "תואר הפועל",
+            "example": "extremely cold, really good"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "fast, hard, late, early לא מקבלים ly. ו־hardly פירושו \"כמעט לא\", מילה אחרת לגמרי.",
+            "en": "Abba works hard. He hardly sleeps."
+          },
+          {
+            "he": "friendly, lovely, lonely הם שמות תואר למרות הסיומת.",
+            "en": "She spoke in a friendly way."
+          },
+          {
+            "he": "well הוא גם שם תואר שפירושו \"בריא\". בדיבור שומעים לפעמים drive slow, אבל בכתיבה כותבים slowly.",
+            "en": "I feel well. Drive slowly!"
+          }
+        ],
+        "remember": "דבר מקבל שם תואר, פעולה מקבלת ly. ואחרי look, feel, taste מתארים את הדבר, ולכן בלי ly."
+      }
+    },
     "source": "original"
   },
   {
