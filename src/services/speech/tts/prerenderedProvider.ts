@@ -19,6 +19,7 @@ export interface PrerenderManifest {
 }
 
 const SLOWER_PLAYBACK = 0.8;
+const FAST_PLAYBACK = 1.25;
 
 export interface Playable {
   urls: string[];
@@ -60,6 +61,11 @@ export class PrerenderedProvider implements SpeechProvider {
       const urls = parts.map((p) => m.entries[audioKey(voice, rate, p)]);
       return urls.every(Boolean) ? (urls as string[]) : undefined;
     };
+    // "Fast" plays the normal recording faster: it sounds natural, unlike slowing down.
+    if (req.rate === 'fast') {
+      const normal = find('normal');
+      return normal ? { urls: normal, playbackRate: FAST_PLAYBACK } : undefined;
+    }
     // "Slower" plays the engine-made slow recording a little slower again.
     const rate = req.rate === 'slower' ? 'slow' : req.rate;
     const exact = find(rate);

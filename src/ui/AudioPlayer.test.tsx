@@ -108,10 +108,24 @@ describe('AudioPlayer', () => {
     // Slower: the slow recording takes over at the same point and keeps playing.
     fireEvent.click(chip());
     expect(chip()).toHaveTextContent('0.65×');
-    await waitFor(() => expect(fileOf.get(el.src)).toBe('slower.mp3'));
+    await waitFor(() => expect(fileOf.get(el.src)).toBe('slow.mp3'));
     expect(el.paused).toBe(false);
     expect(el.currentTime).toBeCloseTo(1);
-    expect(el.playbackRate).toBeCloseTo(1);
+    expect(el.playbackRate).toBeCloseTo(0.8);
+  });
+
+  it('downloads each speed once: many speed taps never fetch again', async () => {
+    const recorded = setup();
+    const play = await screen.findByRole('button', { name: 'ניגון' });
+    await waitFor(() => expect(play).toBeEnabled());
+    await waitFor(() => expect(recorded.clipsFor).toHaveBeenCalledTimes(2));
+    await act(async () => fireEvent.click(play));
+    const el = elements.find((e) => !e.paused)!;
+    const fetches = vi.mocked(fetch).mock.calls.length;
+    for (let i = 0; i < 12; i++) fireEvent.click(screen.getByRole('button', { name: /^מהירות/ }));
+    await waitFor(() => expect(el.paused).toBe(false));
+    expect(vi.mocked(fetch).mock.calls.length).toBe(fetches);
+    expect(recorded.clipsFor).toHaveBeenCalledTimes(2);
   });
 
   it('after a speed change while paused, play resumes in the new recording at the same place', async () => {

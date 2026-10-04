@@ -237,6 +237,9 @@ function StudentFormInner({ student }: { student: Student | null }) {
               <button type="button" aria-pressed={rate === 'normal'} onClick={() => setRate('normal')}>
                 רגיל
               </button>
+              <button type="button" aria-pressed={rate === 'fast'} onClick={() => setRate('fast')}>
+                מהיר
+              </button>
             </div>
           </div>
         </Group>
