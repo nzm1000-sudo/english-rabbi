@@ -11,6 +11,7 @@ import {
   type UnitMemory,
 } from '@/domain/learning/projection';
 import type { MistakePattern } from '@/domain/learning/memory';
+import { EVIDENCE_MODEL_VERSION } from '@/domain/learning/evidence';
 import { snapshotItem } from '@/domain/learning/selector';
 import type { ContentItem } from '@/domain/content/schema';
 import { TutorDB, LATEST_VERSION, type SavedWordRow, type SessionRow } from './schema';
@@ -279,6 +280,19 @@ export class LearningStore {
   }
 
   // Maintenance --------------------------------------------------------------
+
+  /**
+   * After the evidence model changes (EVIDENCE_MODEL_VERSION), replays every
+   * student's events once so schedules and skill estimates follow the new
+   * rules. Runs at start-up; a no-op when already current.
+   */
+  async migrateDerived(): Promise<void> {
+    const row = await this.db.meta.get('evidenceModelVersion');
+    if (row?.value === EVIDENCE_MODEL_VERSION) return;
+    const students = await this.db.students.toArray();
+    for (const s of students) await this.rebuildDerived(s.id);
+    await this.db.meta.put({ key: 'evidenceModelVersion', value: EVIDENCE_MODEL_VERSION });
+  }
 
   /**
    * Rebuilds all derived state for a student from the event log. Safe to run

@@ -1,0 +1,3962 @@
+{
+  "packId": "listening-more-1",
+  "schemaVersion": 1,
+  "title": "More listening: words, sentences and dialogues",
+  "items": [
+    {
+      "id": "lm1.words.live",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "live",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "live"
+        },
+        {
+          "id": "b",
+          "text": "leave",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "life"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע המילה קצר או ארוך?",
+          "en": "Is the middle sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "live (לגור, לחיות) נשמעת עם i קצרה. leave (לעזוב) עם ee ארוכה. life (חיים) נגמרת בצליל f.",
+        "en": "live has a short i. leave has a long ee. life ends with an f sound."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:live-leave",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.fool",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "fool",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "fool"
+        },
+        {
+          "id": "b",
+          "text": "full",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "fall"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע המילה קצר או ארוך?",
+          "en": "Is the middle sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "fool (טיפש) נשמעת עם oo ארוכה. full (מלא) עם u קצרה. fall (ליפול) עם צליל o פתוח.",
+        "en": "fool has a long oo. full has a short u. fall has an open aw sound."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:full-fool",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.walk",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "walk",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "walk"
+        },
+        {
+          "id": "b",
+          "text": "work"
+        },
+        {
+          "id": "c",
+          "text": "woke"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "האם שומעים r באמצע? איזה צליל יש אחרי w?",
+          "en": "Do you hear an r? What sound comes after w?"
+        }
+      ],
+      "explanation": {
+        "he": "walk (ללכת) נשמעת כמו \"ווֹק\", וה־l לא נשמעת. work (לעבוד) נשמעת עם צליל er, כמו \"ווֶרְק\". woke (התעוררתי) נשמעת כמו \"ווֹאוּק\".",
+        "en": "walk sounds like \"wawk\" (silent l). work has an er sound. woke has an oh sound."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:walk-work",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.cap",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "cap",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "cap"
+        },
+        {
+          "id": "b",
+          "text": "cup"
+        },
+        {
+          "id": "c",
+          "text": "cop"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הפה פתוח לרוחב או מעט?",
+          "en": "Is the mouth wide open or only a little?"
+        }
+      ],
+      "explanation": {
+        "he": "cap (כובע מצחייה) נשמעת עם a פתוחה, בין \"א\" ל\"אֶ\". cup (כוס) עם צליל קצר כמו \"אַ\" סגור. cop (שוטר) עם o.",
+        "en": "cap has a wide a sound. cup has a short uh. cop has an o sound."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:cap-cup",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.thank",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "thank",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "thank"
+        },
+        {
+          "id": "b",
+          "text": "tank"
+        },
+        {
+          "id": "c",
+          "text": "sank"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איך מתחילה המילה? הלשון בין השיניים?",
+          "en": "How does the word start? Is the tongue between the teeth?"
+        }
+      ],
+      "explanation": {
+        "he": "thank (להודות) מתחילה ב־th: הלשון בין השיניים והאוויר עובר. tank (מכל, טנק) מתחילה ב־t, ו־sank (שקע) ב־s.",
+        "en": "thank starts with th: the tongue is between the teeth. tank starts with t, sank with s."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:thank-tank",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.they",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "they",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "they"
+        },
+        {
+          "id": "b",
+          "text": "day"
+        },
+        {
+          "id": "c",
+          "text": "say"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איך מתחילה המילה? הלשון בין השיניים?",
+          "en": "How does the word start? Is the tongue between the teeth?"
+        }
+      ],
+      "explanation": {
+        "he": "they (הם, הן) מתחילה ב־th רכה: הלשון בין השיניים ויש זמזום. day (יום) מתחילה ב־d חדה. say (לומר) ב־s.",
+        "en": "they starts with a soft th, with the tongue between the teeth. day starts with a hard d, say with s."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:they-day",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.free",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "free",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "free"
+        },
+        {
+          "id": "b",
+          "text": "three"
+        },
+        {
+          "id": "c",
+          "text": "tree"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איך מתחילה המילה? השפתיים או הלשון?",
+          "en": "How does the word start? Lips or tongue?"
+        }
+      ],
+      "explanation": {
+        "he": "free (חופשי, חינם) מתחילה ב־f: השיניים על השפה התחתונה. three (שלוש) מתחילה ב־th והלשון בין השיניים. tree (עץ) ב־t.",
+        "en": "free starts with f (teeth on the lower lip). three starts with th, tree with t."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:three-free",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.fit",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "fit",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "fit"
+        },
+        {
+          "id": "b",
+          "text": "feet",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "fat"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע המילה קצר או ארוך?",
+          "en": "Is the middle sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "fit (מתאים, בכושר) נשמעת עם i קצרה. feet (רגליים) עם ee ארוכה. fat (שמן) עם a פתוחה.",
+        "en": "fit has a short i. feet has a long ee. fat has a wide a."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:fit-feet",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.slip",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "slip",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "slip"
+        },
+        {
+          "id": "b",
+          "text": "sleep",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "slap"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע המילה קצר או ארוך?",
+          "en": "Is the middle sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "slip (להחליק) נשמעת עם i קצרה. sleep (לישון) עם ee ארוכה. slap (סטירה) עם a פתוחה.",
+        "en": "slip has a short i. sleep has a long ee. slap has a wide a."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:slip-sleep",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.pan",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "pan",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "pan"
+        },
+        {
+          "id": "b",
+          "text": "pen"
+        },
+        {
+          "id": "c",
+          "text": "pin"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הפה פתוח לרוחב או מעט?",
+          "en": "Is the mouth wide open or only a little?"
+        }
+      ],
+      "explanation": {
+        "he": "pan (מחבת) נשמעת עם a פתוחה ורחבה. pen (עט) עם e כמו \"אֶ\". pin (סיכה) עם i קצרה.",
+        "en": "pan has a wide a. pen has an e sound. pin has a short i."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:pan-pen",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.luck",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "luck",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "luck"
+        },
+        {
+          "id": "b",
+          "text": "lock"
+        },
+        {
+          "id": "c",
+          "text": "lack"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איזה צליל באמצע: אַ קצר, אוֹ, או אֶ פתוח?",
+          "en": "Which middle sound: uh, o, or a wide a?"
+        }
+      ],
+      "explanation": {
+        "he": "luck (מזל) נשמעת עם צליל קצר כמו \"לַק\". lock (מנעול) עם o. lack (חוסר) עם a פתוחה ורחבה.",
+        "en": "luck has a short uh. lock has an o sound. lack has a wide a."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:luck-lock",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.shirt",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "shirt",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "shirt"
+        },
+        {
+          "id": "b",
+          "text": "short"
+        },
+        {
+          "id": "c",
+          "text": "shut"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "האם שומעים צליל er באמצע?",
+          "en": "Do you hear an er sound in the middle?"
+        }
+      ],
+      "explanation": {
+        "he": "shirt (חולצה) נשמעת עם צליל er, כמו \"שֶרְט\". short (קצר) עם צליל אוֹ ארוך. shut (לסגור) עם צליל קצר כמו \"שַט\".",
+        "en": "shirt has an er sound. short has a long or sound. shut has a short uh."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:shirt-short",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.bought",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "bought",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "bought"
+        },
+        {
+          "id": "b",
+          "text": "boat"
+        },
+        {
+          "id": "c",
+          "text": "but"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע אחיד, או שהוא זז מ\"אוֹ\" ל\"אוּ\"?",
+          "en": "Is the middle sound steady, or does it glide from oh to oo?"
+        }
+      ],
+      "explanation": {
+        "he": "bought (קניתי) נשמעת עם צליל אוֹ פתוח ואחיד, וה־gh לא נשמעות. boat (סירה) גולשת מ\"אוֹ\" ל\"אוּ\". but (אבל) עם צליל קצר כמו \"בַּט\".",
+        "en": "bought has an open aw sound (gh is silent). boat glides like oh-oo. but has a short uh."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:bought-boat",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.vest",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "vest",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "vest"
+        },
+        {
+          "id": "b",
+          "text": "west"
+        },
+        {
+          "id": "c",
+          "text": "best"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "השיניים נוגעות בשפה, או שהשפתיים עגולות?",
+          "en": "Do the teeth touch the lip, or are the lips round?"
+        }
+      ],
+      "explanation": {
+        "he": "vest (גופייה, אפוד) מתחילה ב־v: השיניים העליונות על השפה התחתונה. west (מערב) מתחילה ב־w עם שפתיים עגולות. best (הכי טוב) ב־b.",
+        "en": "vest starts with v (teeth on the lip). west starts with w (round lips). best starts with b."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:vest-west",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.foot",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "foot",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "foot"
+        },
+        {
+          "id": "b",
+          "text": "food",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "feet"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע המילה קצר או ארוך?",
+          "en": "Is the middle sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "foot (כף רגל) נשמעת עם u קצרה. food (אוכל) עם oo ארוכה. feet (רגליים, ברבים) עם ee.",
+        "en": "foot has a short u. food has a long oo. feet has an ee sound."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:foot-food",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.heel",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "heel",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "heel"
+        },
+        {
+          "id": "b",
+          "text": "hill",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "hall"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע המילה קצר או ארוך?",
+          "en": "Is the middle sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "heel (עקב) נשמעת עם ee ארוכה. hill (גבעה) עם i קצרה. hall (אולם, מסדרון) עם צליל אוֹ.",
+        "en": "heel has a long ee. hill has a short i. hall has an aw sound."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:hill-heel",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.thing",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "thing",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "thing"
+        },
+        {
+          "id": "b",
+          "text": "sing"
+        },
+        {
+          "id": "c",
+          "text": "think"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איך מתחילה המילה, ואיך היא נגמרת?",
+          "en": "How does the word start, and how does it end?"
+        }
+      ],
+      "explanation": {
+        "he": "thing (דבר) מתחילה ב־th ונגמרת ב־ng בלי k. sing (לשיר) מתחילה ב־s. think (לחשוב) נגמרת בצליל k ברור.",
+        "en": "thing starts with th and ends with ng, no k. sing starts with s. think ends with a clear k."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:thing-sing",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.warm",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "warm",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "warm"
+        },
+        {
+          "id": "b",
+          "text": "worm"
+        },
+        {
+          "id": "c",
+          "text": "word"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע הוא \"אוֹ\" או er?",
+          "en": "Is the middle sound or or er?"
+        }
+      ],
+      "explanation": {
+        "he": "warm (חמים) נשמעת עם צליל אוֹ, כמו \"ווֹרְם\". worm (תולעת) עם צליל er, כמו \"ווֶרְם\". word (מילה) נגמרת ב־d.",
+        "en": "warm sounds like \"wawm\". worm has an er sound. word ends with d."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:warm-worm",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.hurt",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "hurt",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "hurt"
+        },
+        {
+          "id": "b",
+          "text": "heart"
+        },
+        {
+          "id": "c",
+          "text": "hot"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע הוא er או \"אָה\" פתוח?",
+          "en": "Is the middle sound er or an open ah?"
+        }
+      ],
+      "explanation": {
+        "he": "hurt (לכאוב, לפגוע) נשמעת עם צליל er, כמו \"הֶרְט\". heart (לב) עם \"אָה\" ארוך ופתוח. hot (חם) עם o קצרה.",
+        "en": "hurt has an er sound. heart has a long ah. hot has a short o."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:hurt-heart",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.words.cheap",
+      "type": "choice",
+      "skill": "listening.words",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Which word did you hear?",
+      "audioText": "cheap",
+      "instruction": {
+        "he": "להקשיב ולבחור את המילה",
+        "en": "Listen and choose the word"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "cheap"
+        },
+        {
+          "id": "b",
+          "text": "chip",
+          "misconception": "listening.vowel-length"
+        },
+        {
+          "id": "c",
+          "text": "chop"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הצליל באמצע המילה קצר או ארוך?",
+          "en": "Is the middle sound short or long?"
+        }
+      ],
+      "explanation": {
+        "he": "cheap (זול) נשמעת עם ee ארוכה. chip (צ'יפס, שבב) עם i קצרה. chop (לקצוץ) עם o.",
+        "en": "cheap has a long ee. chip has a short i. chop has an o sound."
+      },
+      "tags": [
+        "minimal-pairs"
+      ],
+      "unit": "minimal:cheap-chip",
+      "estimatedTimeSec": 10,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.discount",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "How much is the T-shirt today?",
+      "audioText": "This T-shirt usually costs fifty shekels, but today it's ten shekels cheaper.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "40 shekels"
+        },
+        {
+          "id": "b",
+          "text": "50 shekels"
+        },
+        {
+          "id": "c",
+          "text": "60 shekels"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למה שקורה today.",
+          "en": "Listen for what happens today."
+        }
+      ],
+      "explanation": {
+        "he": "בדרך כלל usually costs fifty shekels, אבל היום ten shekels cheaper: עשרה שקלים פחות. 50 פחות 10 זה 40.",
+        "en": "It usually costs 50, but today it is 10 shekels cheaper: 50 - 10 = 40."
+      },
+      "interests": [
+        "fashion"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.bus-time",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "When does the bus leave?",
+      "audioText": "The bus to Haifa leaves at a quarter to seven, so don't be late.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "At 6:45"
+        },
+        {
+          "id": "b",
+          "text": "At 7:15"
+        },
+        {
+          "id": "c",
+          "text": "At 7:45"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "a quarter to זה לפני השעה או אחריה?",
+          "en": "Is a quarter to before or after the hour?"
+        }
+      ],
+      "explanation": {
+        "he": "a quarter to seven פירושו רבע לשבע: 6:45. רבע אחרי שבע זה a quarter past seven.",
+        "en": "A quarter to seven is 6:45. A quarter past seven is 7:15."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.students",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "How many students are in class today?",
+      "audioText": "There are thirty students in our class, but four of them are sick today.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "26"
+        },
+        {
+          "id": "b",
+          "text": "30"
+        },
+        {
+          "id": "c",
+          "text": "34"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כמה תלמידים חסרים היום?",
+          "en": "How many students are missing today?"
+        }
+      ],
+      "explanation": {
+        "he": "יש thirty students, ו־four of them are sick: ארבעה חולים. 30 פחות 4 זה 26.",
+        "en": "There are 30 students and 4 are sick, so 26 are in class."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.uncle",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Who teaches at the speaker's school?",
+      "audioText": "My aunt is a nurse, and her husband teaches maths at my school.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The speaker's uncle"
+        },
+        {
+          "id": "b",
+          "text": "The speaker's aunt"
+        },
+        {
+          "id": "c",
+          "text": "The speaker's father"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "her husband: הבעל של מי?",
+          "en": "her husband: whose husband?"
+        }
+      ],
+      "explanation": {
+        "he": "הדודה היא nurse (אחות). her husband, הבעל של הדודה, הוא הדוד, והוא teaches maths at my school.",
+        "en": "The aunt is a nurse. Her husband, the uncle, teaches at the school."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.glasses",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "Where are the glasses?",
+      "audioText": "I left my glasses next to the computer in Dad's office.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "In Dad's office"
+        },
+        {
+          "id": "b",
+          "text": "In the kitchen"
+        },
+        {
+          "id": "c",
+          "text": "In the speaker's bag"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למילה שבאה אחרי in.",
+          "en": "Listen for the word after in."
+        }
+      ],
+      "explanation": {
+        "he": "הדובר/ת אומר/ת next to the computer in Dad's office: ליד המחשב בחדר העבודה של אבא.",
+        "en": "The glasses are next to the computer in Dad's office."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.birthday",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "When is the brother's birthday?",
+      "audioText": "My birthday is on the twelfth of May, two days after my brother's.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "On May 10th"
+        },
+        {
+          "id": "b",
+          "text": "On May 12th"
+        },
+        {
+          "id": "c",
+          "text": "On May 14th"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "two days after: יום ההולדת של מי בא קודם?",
+          "en": "two days after: whose birthday comes first?"
+        }
+      ],
+      "explanation": {
+        "he": "יום ההולדת של הדובר/ת ב־12 במאי, two days after my brother's: יומיים אחרי של האח. לכן לאח יש יום הולדת ב־10 במאי.",
+        "en": "The speaker's birthday (May 12th) is two days after the brother's, so his is on May 10th."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.pool",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "How long is the bike ride to the pool?",
+      "audioText": "The swimming pool is fifteen minutes from our house by bike.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "15 minutes"
+        },
+        {
+          "id": "b",
+          "text": "50 minutes"
+        },
+        {
+          "id": "c",
+          "text": "5 minutes"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "fifteen או fifty? להקשיב לסוף המילה.",
+          "en": "fifteen or fifty? Listen to the end of the word."
+        }
+      ],
+      "explanation": {
+        "he": "שומעים fifteen, עם teen ארוך ומודגש בסוף: 15. fifty (50) נגמרת ב־ty קצר.",
+        "en": "fifteen has a long, stressed teen at the end. fifty ends with a short ty."
+      },
+      "interests": [
+        "sports"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.music-down",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What does the speaker want?",
+      "audioText": "Can you turn the music down a little? I'm trying to study.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Less noise"
+        },
+        {
+          "id": "b",
+          "text": "Different music"
+        },
+        {
+          "id": "c",
+          "text": "Help with studying"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "turn down: להגביר או להנמיך?",
+          "en": "turn down: louder or quieter?"
+        }
+      ],
+      "explanation": {
+        "he": "turn the music down פירושו להנמיך את המוזיקה. הדובר/ת רוצה שקט כי I'm trying to study.",
+        "en": "turn the music down = make it quieter. The speaker wants less noise to study."
+      },
+      "interests": [
+        "music"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.breakfast",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "What did the speaker eat this morning?",
+      "audioText": "For breakfast I usually have eggs, but this morning I only had a banana.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A banana"
+        },
+        {
+          "id": "b",
+          "text": "Eggs"
+        },
+        {
+          "id": "c",
+          "text": "Eggs and a banana"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למה שקרה this morning.",
+          "en": "Listen for what happened this morning."
+        }
+      ],
+      "explanation": {
+        "he": "usually have eggs זה מה שקורה בדרך כלל. אבל this morning I only had a banana: הבוקר רק בננה.",
+        "en": "Eggs are usual. This morning the speaker only had a banana."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.lesson-early",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "When does the lesson end today?",
+      "audioText": "The lesson usually ends at two, but today it finishes an hour early.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "At one o'clock"
+        },
+        {
+          "id": "b",
+          "text": "At two o'clock"
+        },
+        {
+          "id": "c",
+          "text": "At three o'clock"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "an hour early: לפני השעה הרגילה או אחריה?",
+          "en": "an hour early: before or after the usual time?"
+        }
+      ],
+      "explanation": {
+        "he": "בדרך כלל ends at two. היום an hour early: שעה מוקדם יותר. כלומר באחת.",
+        "en": "Usually at two, but today an hour early, so at one."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.sandwich-drink",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "How much do a sandwich and a drink cost together?",
+      "audioText": "A sandwich costs eighteen shekels, and a drink costs seven.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "25 shekels"
+        },
+        {
+          "id": "b",
+          "text": "18 shekels"
+        },
+        {
+          "id": "c",
+          "text": "11 shekels"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחבר את שני המחירים.",
+          "en": "Add the two prices."
+        }
+      ],
+      "explanation": {
+        "he": "sandwich costs eighteen (18) ו־a drink costs seven (7). ביחד 18 ועוד 7 זה 25.",
+        "en": "18 + 7 = 25 shekels."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.noa-hair",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Which one is Noa?",
+      "audioText": "Noa is the girl with long red hair, sitting next to the window.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The girl with long red hair"
+        },
+        {
+          "id": "b",
+          "text": "The girl with short red hair"
+        },
+        {
+          "id": "c",
+          "text": "The girl next to the door"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב לתיאור השיער ולמקום.",
+          "en": "Listen to the hair and the place."
+        }
+      ],
+      "explanation": {
+        "he": "נועה היא the girl with long red hair: שיער ארוך ואדום, sitting next to the window: ליד החלון.",
+        "en": "Noa has long red hair and sits next to the window."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.hat-advice",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What is the speaker doing?",
+      "audioText": "Don't forget your hat. It's really hot and sunny outside.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Giving advice"
+        },
+        {
+          "id": "b",
+          "text": "Asking for a hat"
+        },
+        {
+          "id": "c",
+          "text": "Saying sorry"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "Don't forget... זו בקשה, התנצלות או עצה?",
+          "en": "Don't forget... is it a request, an apology or advice?"
+        }
+      ],
+      "explanation": {
+        "he": "Don't forget your hat: לא לשכוח כובע, כי hot and sunny. הדובר/ת נותן/ת עצה.",
+        "en": "Don't forget your hat because it's sunny: the speaker is giving advice."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.phone-number",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "What are the last four digits of the number?",
+      "audioText": "My number is zero five two, three four eight, six six one nine.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "6619"
+        },
+        {
+          "id": "b",
+          "text": "6691"
+        },
+        {
+          "id": "c",
+          "text": "6169"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב לחלק האחרון, ספרה אחרי ספרה.",
+          "en": "Listen to the last part, digit by digit."
+        }
+      ],
+      "explanation": {
+        "he": "החלק האחרון הוא six six one nine: 6619. כדאי לכתוב ספרה אחרי ספרה בזמן ההקשבה.",
+        "en": "The last part is six six one nine: 6619."
+      },
+      "interests": [
+        "technology"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.bank-brother",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Who works in a bank?",
+      "audioText": "Dan's sister is a doctor, and his brother works in a bank. Their mother used to be a pilot.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Dan's brother"
+        },
+        {
+          "id": "b",
+          "text": "Dan's sister"
+        },
+        {
+          "id": "c",
+          "text": "Dan's mother"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למי שבא לפני works in a bank.",
+          "en": "Listen for who comes before works in a bank."
+        }
+      ],
+      "explanation": {
+        "he": "his brother works in a bank: האח של דן עובד בבנק. האחות היא doctor, והאמא used to be a pilot.",
+        "en": "Dan's brother works in a bank. His sister is a doctor, and his mother used to be a pilot."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.booked",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Who is speaking?",
+      "audioText": "I'm afraid we're fully booked tonight, but I could give you a table for tomorrow.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Someone who works at a restaurant"
+        },
+        {
+          "id": "b",
+          "text": "A customer at a restaurant"
+        },
+        {
+          "id": "c",
+          "text": "A taxi driver"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מי יכול לתת a table?",
+          "en": "Who can give someone a table?"
+        }
+      ],
+      "explanation": {
+        "he": "we're fully booked (הכול תפוס) ו־I could give you a table (אני יכול/ה לתת לך שולחן): זה מה שאומר מי שעובד במסעדה.",
+        "en": "Only someone working at the restaurant can say \"we're fully booked\" and offer a table."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.landing",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Where is the speaker?",
+      "audioText": "Please fasten your seat belts. We'll be landing in about twenty minutes.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "On a plane"
+        },
+        {
+          "id": "b",
+          "text": "On a train"
+        },
+        {
+          "id": "c",
+          "text": "In a car"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איזה כלי תחבורה עושה landing?",
+          "en": "Which kind of transport does landing?"
+        }
+      ],
+      "explanation": {
+        "he": "landing פירושו נחיתה. רק מטוס נוחת, לכן הדובר/ת on a plane.",
+        "en": "landing means coming down to the ground. Only a plane lands."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.pizza-instead",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What will they eat?",
+      "audioText": "I was going to cook pasta, but we're out of tomatoes, so I ordered pizza instead.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pizza"
+        },
+        {
+          "id": "b",
+          "text": "Pasta"
+        },
+        {
+          "id": "c",
+          "text": "Tomato soup"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למילה instead.",
+          "en": "Listen for the word instead."
+        }
+      ],
+      "explanation": {
+        "he": "I was going to cook pasta זו התוכנית שלא קרתה, כי we're out of tomatoes (נגמרו העגבניות). so I ordered pizza instead: הזמנתי פיצה במקום.",
+        "en": "The pasta plan failed (no tomatoes), so the speaker ordered pizza instead."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.traffic",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "How long did the trip take?",
+      "audioText": "The drive usually takes two hours, but because of the traffic, it took us almost twice as long.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Almost four hours"
+        },
+        {
+          "id": "b",
+          "text": "About two hours"
+        },
+        {
+          "id": "c",
+          "text": "About three hours"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "twice as long: פי כמה?",
+          "en": "twice as long: how many times longer?"
+        }
+      ],
+      "explanation": {
+        "he": "בדרך כלל two hours. בגלל הפקקים almost twice as long: כמעט פי שניים, כלומר כמעט ארבע שעות.",
+        "en": "twice as long as two hours is four hours."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.if-i-were",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What is the speaker doing?",
+      "audioText": "If I were you, I'd talk to the teacher before the test.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Giving advice"
+        },
+        {
+          "id": "b",
+          "text": "Making a complaint"
+        },
+        {
+          "id": "c",
+          "text": "Asking for permission"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "If I were you: מה אומרים בעברית?",
+          "en": "If I were you: what does it mean in Hebrew?"
+        }
+      ],
+      "explanation": {
+        "he": "If I were you, I'd... פירושו \"במקומך הייתי...\". זו הדרך הרגילה לתת עצה.",
+        "en": "\"If I were you, I'd...\" is a common way to give advice."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.sorry-late",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "What is the speaker doing?",
+      "audioText": "Sorry I'm late. The bus broke down halfway here.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Apologizing and explaining"
+        },
+        {
+          "id": "b",
+          "text": "Asking for help"
+        },
+        {
+          "id": "c",
+          "text": "Inviting someone"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה אומרים בהתחלה, ומה אחר כך?",
+          "en": "What comes first, and what comes next?"
+        }
+      ],
+      "explanation": {
+        "he": "Sorry I'm late זו התנצלות. The bus broke down (האוטובוס התקלקל) זה ההסבר.",
+        "en": "\"Sorry I'm late\" is an apology. \"The bus broke down\" is the explanation."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.postponed",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "When is the trip now?",
+      "audioText": "The school trip has been postponed. Instead of this Sunday, it'll be a week later.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A week after this Sunday"
+        },
+        {
+          "id": "b",
+          "text": "This Sunday"
+        },
+        {
+          "id": "c",
+          "text": "Tomorrow"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "postponed: הוקדם או נדחה?",
+          "en": "postponed: earlier or later?"
+        }
+      ],
+      "explanation": {
+        "he": "postponed פירושו נדחה. Instead of this Sunday, it'll be a week later: במקום ביום ראשון הזה, שבוע אחר כך.",
+        "en": "postponed = moved later. It will be a week after this Sunday."
+      },
+      "interests": [
+        "school",
+        "travel"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.half-price",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "How much did the speaker pay for the shoes?",
+      "audioText": "These shoes were two hundred shekels, but I got them for half price in the sale.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "100 shekels"
+        },
+        {
+          "id": "b",
+          "text": "200 shekels"
+        },
+        {
+          "id": "c",
+          "text": "50 shekels"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "half price: איזה חלק מהמחיר?",
+          "en": "half price: what part of the price?"
+        }
+      ],
+      "explanation": {
+        "he": "המחיר היה two hundred (200), וקניתי half price: חצי מחיר. חצי מ־200 זה 100.",
+        "en": "Half of 200 is 100."
+      },
+      "interests": [
+        "fashion"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.ten-past-five",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "When will the speaker arrive?",
+      "audioText": "I'll be there at ten past five, so wait for me at the entrance.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "At 5:10"
+        },
+        {
+          "id": "b",
+          "text": "At 4:50"
+        },
+        {
+          "id": "c",
+          "text": "At 5:50"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "past זה לפני השעה או אחריה?",
+          "en": "Is past before or after the hour?"
+        }
+      ],
+      "explanation": {
+        "he": "ten past five פירושו חמש ועשרה: 5:10. עשרה לחמש זה ten to five (4:50).",
+        "en": "ten past five is 5:10. ten to five is 4:50."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.notes",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "What does the speaker want?",
+      "audioText": "Could you possibly lend me your notes from yesterday's lesson? I was absent.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To borrow someone's notes"
+        },
+        {
+          "id": "b",
+          "text": "To lend someone their notes",
+          "misconception": "vocabulary.borrow-lend"
+        },
+        {
+          "id": "c",
+          "text": "To miss the lesson"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "lend me: מי נותן ומי מקבל?",
+          "en": "lend me: who gives and who gets?"
+        }
+      ],
+      "explanation": {
+        "he": "lend me your notes: להשאיל לי את הסיכומים. הדובר/ת מקבל/ת, כלומר רוצה to borrow (לשאול). lend זה לתת, borrow זה לקבל.",
+        "en": "\"Lend me your notes\" means the speaker wants to borrow them. lend = give, borrow = take."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.predictable",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "How does the speaker feel about the film?",
+      "audioText": "Honestly, I expected the film to be much better. The ending was so predictable.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Disappointed"
+        },
+        {
+          "id": "b",
+          "text": "Excited"
+        },
+        {
+          "id": "c",
+          "text": "Scared"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "I expected... much better: הסרט היה טוב כמו שחשבו?",
+          "en": "I expected much better: was the film as good as expected?"
+        }
+      ],
+      "explanation": {
+        "he": "I expected the film to be much better: ציפיתי ליותר. The ending was so predictable: היה ברור מה יקרה. זו אכזבה.",
+        "en": "The speaker expected more and the ending was predictable: disappointed."
+      },
+      "interests": [
+        "movies"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.return-ticket",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Where is the speaker?",
+      "audioText": "Could I have a return ticket to Tel Aviv, please? On the next train, if possible.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "At a train station"
+        },
+        {
+          "id": "b",
+          "text": "At an airport"
+        },
+        {
+          "id": "c",
+          "text": "At a bus stop"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למילה בסוף.",
+          "en": "Listen for the word at the end."
+        }
+      ],
+      "explanation": {
+        "he": "a return ticket (כרטיס הלוך ושוב) ו־on the next train: מבקשים כרטיס לרכבת, ולכן זו תחנת רכבת.",
+        "en": "Asking for a ticket on the next train: the speaker is at a train station."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.grandma-move",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "What does the speaker mean?",
+      "audioText": "I'd love to join you, but I promised to help my grandma move this weekend.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "They can't come."
+        },
+        {
+          "id": "b",
+          "text": "They will come later."
+        },
+        {
+          "id": "c",
+          "text": "They don't want to help their grandma."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה בא אחרי but?",
+          "en": "What comes after but?"
+        }
+      ],
+      "explanation": {
+        "he": "I'd love to join you זו פתיחה מנומסת. but I promised to help my grandma: הבטחתי לעזור לסבתא. זה סירוב מנומס.",
+        "en": "\"I'd love to, but...\" is a polite way to say no."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.wedding",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "How many people came to the wedding?",
+      "audioText": "There were about sixty people at the wedding, far fewer than we'd expected.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "About 60"
+        },
+        {
+          "id": "b",
+          "text": "About 16"
+        },
+        {
+          "id": "c",
+          "text": "About 600"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "sixty או sixteen? להקשיב לסוף המילה.",
+          "en": "sixty or sixteen? Listen to the end of the word."
+        }
+      ],
+      "explanation": {
+        "he": "שומעים sixty, עם ty קצר והדגש בהתחלה: 60. sixteen (16) נגמרת ב־teen ארוך. far fewer than we'd expected: הרבה פחות ממה שציפו.",
+        "en": "sixty has the stress at the start and a short ty: 60."
+      },
+      "interests": [],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.sentences.library-meet",
+      "type": "choice",
+      "skill": "listening.sentences",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Where will they meet?",
+      "audioText": "Let's meet in front of the library at four. It's easier to find than the café.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "In front of the library"
+        },
+        {
+          "id": "b",
+          "text": "At the café"
+        },
+        {
+          "id": "c",
+          "text": "At the speaker's home"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איפה קל יותר למצוא?",
+          "en": "Which place is easier to find?"
+        }
+      ],
+      "explanation": {
+        "he": "Let's meet in front of the library: ניפגש מול הספרייה. בית הקפה מוזכר רק כמקום שקשה יותר למצוא.",
+        "en": "They will meet in front of the library. The café is only harder to find."
+      },
+      "interests": [
+        "books"
+      ],
+      "estimatedTimeSec": 20,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.share-book",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "A2",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "What will Avi do in the lesson?",
+      "audioText": "Teacher: Please open your books at page forty-two. Avi: Sorry, I left my book at home. Teacher: Then share with Noa today.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Share Noa's book"
+        },
+        {
+          "id": "b",
+          "text": "Go home to get his book"
+        },
+        {
+          "id": "c",
+          "text": "Read page twelve"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה המורה אומר/ת בסוף?",
+          "en": "What does the teacher say at the end?"
+        }
+      ],
+      "explanation": {
+        "he": "אבי שכח את הספר: I left my book at home. המורה אומר/ת Then share with Noa today: היום ישתמש בספר יחד עם נועה.",
+        "en": "Avi forgot his book, so the teacher tells him to share with Noa."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.maths-stuck",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "What will Shira and Eyal do at the break?",
+      "audioText": "Shira: Did you understand the maths homework? Eyal: Most of it, but I got stuck on the last question. Shira: Me too. Let's ask Ms. Levi at the break.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask their teacher for help"
+        },
+        {
+          "id": "b",
+          "text": "Copy the answers from a friend"
+        },
+        {
+          "id": "c",
+          "text": "Skip the last question"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למשפט עם Let's.",
+          "en": "Listen to the sentence with Let's."
+        }
+      ],
+      "explanation": {
+        "he": "שניהם got stuck on the last question (נתקעו בשאלה האחרונה). שירה מציעה Let's ask Ms. Levi at the break: לשאול את המורה בהפסקה.",
+        "en": "Both are stuck, so they will ask Ms. Levi, their teacher, at the break."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.history-test",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "What can we understand about Ori?",
+      "audioText": "Yael: How did the history test go? Ori: Let's just say I should have studied the last chapter. Yael: Oh no. Was the whole test about that? Ori: About half of it.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He didn't do well on the test."
+        },
+        {
+          "id": "b",
+          "text": "He found the test easy."
+        },
+        {
+          "id": "c",
+          "text": "He studied the last chapter well."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "I should have studied: הוא למד את הפרק או לא?",
+          "en": "I should have studied: did he study it or not?"
+        }
+      ],
+      "explanation": {
+        "he": "I should have studied the last chapter פירושו \"הייתי צריך ללמוד\", כלומר לא למד. חצי מהמבחן היה על הפרק הזה, אז המבחן לא הלך טוב.",
+        "en": "\"I should have studied\" means he didn't. Half the test was on that chapter, so it went badly."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.late-project",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "How does the teacher feel?",
+      "audioText": "Teacher: Lior, you've handed in your project two days late again. Lior: I know, I'm really sorry. Teacher: I'll accept it this time, but next time I'll take off points.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Annoyed, but willing to accept it"
+        },
+        {
+          "id": "b",
+          "text": "Very pleased with Lior"
+        },
+        {
+          "id": "c",
+          "text": "Too angry to accept the project"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המורה מקבלת את העבודה או לא?",
+          "en": "Does the teacher accept the project or not?"
+        }
+      ],
+      "explanation": {
+        "he": "המילה again מראה שהמורה לא מרוצה. אבל I'll accept it this time: הפעם העבודה מתקבלת, עם אזהרה לפעם הבאה.",
+        "en": "\"again\" shows the teacher is annoyed, but the project is accepted this time, with a warning."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.class-president",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "What does Hila decide?",
+      "audioText": "Noam: Are you running for class president? Hila: I was thinking about it, but I'm not sure I'd have the time. Noam: You'd be great at it. And Dana said she'd help with the posters. Hila: Okay, you've convinced me.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To run for class president"
+        },
+        {
+          "id": "b",
+          "text": "Not to run for class president"
+        },
+        {
+          "id": "c",
+          "text": "To help Dana with her posters"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "you've convinced me: מה זה אומר?",
+          "en": "you've convinced me: what does it mean?"
+        }
+      ],
+      "explanation": {
+        "he": "בהתחלה הילה לא בטוחה: I'm not sure. בסוף היא אומרת you've convinced me: שכנעת אותי. לכן היא תתמודד.",
+        "en": "At the end Hila says \"you've convinced me\", so she will run."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.headphones",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "How much are the cheaper headphones?",
+      "audioText": "Customer: How much are these headphones? Assistant: They're a hundred and twenty shekels. Customer: Hmm, do you have anything cheaper? Assistant: Yes, these are eighty.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "80 shekels"
+        },
+        {
+          "id": "b",
+          "text": "120 shekels"
+        },
+        {
+          "id": "c",
+          "text": "100 shekels"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב לתשובה האחרונה של המוכר/ת.",
+          "en": "Listen to the assistant's last answer."
+        }
+      ],
+      "explanation": {
+        "he": "הזוג הראשון עולה a hundred and twenty (120). הלקוח/ה שואל/ת על משהו cheaper, והתשובה: these are eighty (80).",
+        "en": "The first pair costs 120. The cheaper ones are eighty: 80."
+      },
+      "interests": [
+        "music",
+        "technology"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.jacket-zip",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What does the customer want?",
+      "audioText": "Customer: I bought this jacket yesterday, but the zip is broken. Assistant: I'm sorry about that. Would you like a new one or your money back? Customer: A new one, please. I really like the colour.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The same jacket without a broken zip"
+        },
+        {
+          "id": "b",
+          "text": "Their money back"
+        },
+        {
+          "id": "c",
+          "text": "A jacket in a different colour"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה הלקוח/ה בוחר/ת: a new one או money back?",
+          "en": "What does the customer choose: a new one or the money?"
+        }
+      ],
+      "explanation": {
+        "he": "המוכר/ת מציע/ה שתי אפשרויות. הלקוח/ה עונה A new one, please: מעיל חדש מאותו סוג, כי I really like the colour.",
+        "en": "The customer wants a new one of the same jacket because they like the colour."
+      },
+      "interests": [
+        "fashion"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.fitting-rooms",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.2,
+      "modality": "listen",
+      "prompt": "Where are the speakers?",
+      "audioText": "Assistant: Can I help you? Gal: I'm just looking, thanks. Assistant: Sure. The fitting rooms are at the back if you want to try anything on.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "In a clothes shop"
+        },
+        {
+          "id": "b",
+          "text": "In a bookshop"
+        },
+        {
+          "id": "c",
+          "text": "In a supermarket"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איפה יש fitting rooms?",
+          "en": "Where are there fitting rooms?"
+        }
+      ],
+      "explanation": {
+        "he": "fitting rooms הם תאי מדידה, ו־try anything on פירושו למדוד בגדים. זה קורה בחנות בגדים.",
+        "en": "Fitting rooms and trying things on: it's a clothes shop."
+      },
+      "interests": [
+        "fashion"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.full-price",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "Why was the customer charged full price?",
+      "audioText": "Customer: This sign says thirty percent off, but you charged me full price. Cashier: Let me check. Oh, you're right. The sale started today and the system hasn't been updated yet. I'll give you back the difference.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The computer system wasn't updated."
+        },
+        {
+          "id": "b",
+          "text": "The sale had already finished."
+        },
+        {
+          "id": "c",
+          "text": "The customer took the wrong item."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה הקופאי/ת מגלה אחרי Let me check?",
+          "en": "What does the cashier find after Let me check?"
+        }
+      ],
+      "explanation": {
+        "he": "הקופאי/ת מסביר/ה: The sale started today and the system hasn't been updated yet. המבצע התחיל היום, והמערכת עוד לא עודכנה.",
+        "en": "The sale started today, but the system hasn't been updated yet."
+      },
+      "interests": [
+        "fashion"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.sore-throat",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "How long has Ella been ill?",
+      "audioText": "Doctor: What seems to be the problem? Ella: I've had a sore throat and a headache since Sunday. Doctor: Any fever? Ella: Only a little, last night.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Since Sunday"
+        },
+        {
+          "id": "b",
+          "text": "Since last night"
+        },
+        {
+          "id": "c",
+          "text": "For two weeks"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למילה since.",
+          "en": "Listen for the word since."
+        }
+      ],
+      "explanation": {
+        "he": "אלה אומרת I've had a sore throat and a headache since Sunday: כאב גרון וכאב ראש מיום ראשון. last night זה רק החום.",
+        "en": "She has been ill since Sunday. Last night was only the fever."
+      },
+      "interests": [],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.pills",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "For how long should Yoni take the pills?",
+      "audioText": "Doctor: Take one of these pills three times a day, after meals. Yoni: Should I take them for a week? Doctor: No, just five days, even if you feel better earlier.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "For five days"
+        },
+        {
+          "id": "b",
+          "text": "For a week"
+        },
+        {
+          "id": "c",
+          "text": "Until he feels better"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה הרופא/ה עונה לשאלה for a week?",
+          "en": "How does the doctor answer the question about a week?"
+        }
+      ],
+      "explanation": {
+        "he": "יוני שואל על שבוע, והתשובה No, just five days: רק חמישה ימים. even if you feel better earlier: גם אם ירגיש טוב קודם.",
+        "en": "The doctor says just five days, even if he feels better earlier."
+      },
+      "interests": [],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.ankle",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "How does Tom feel at the end?",
+      "audioText": "Doctor: So how did you hurt your ankle? Tom: I was playing basketball and landed badly. Doctor: Well, it's not broken, but you need to rest it. No sport for three weeks. Tom: Three weeks? But the final is on Friday!",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Upset that he will miss the final"
+        },
+        {
+          "id": "b",
+          "text": "Bored of playing basketball"
+        },
+        {
+          "id": "c",
+          "text": "Happy to take a break from sport"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איך טום מגיב ל־three weeks?",
+          "en": "How does Tom react to three weeks?"
+        }
+      ],
+      "explanation": {
+        "he": "בסוף טום אומר Three weeks? But the final is on Friday!: הגמר ביום שישי והוא לא יוכל לשחק. הוא מאוכזב ומתוסכל.",
+        "en": "Tom will miss Friday's final, so he is upset."
+      },
+      "interests": [
+        "sports"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.appointment",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "When is Amir's appointment?",
+      "audioText": "Receptionist: Good morning, Doctor Cohen's clinic. Amir: Hi, I'd like to make an appointment for tomorrow. Receptionist: Is ten thirty okay? Amir: Perfect, thanks.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tomorrow at 10:30"
+        },
+        {
+          "id": "b",
+          "text": "Today at 10:30"
+        },
+        {
+          "id": "c",
+          "text": "Tomorrow at 3:10"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב ליום ולשעה.",
+          "en": "Listen for the day and the time."
+        }
+      ],
+      "explanation": {
+        "he": "אמיר מבקש an appointment for tomorrow (תור למחר), והפקיד/ה מציע/ה ten thirty: 10:30. אמיר עונה Perfect.",
+        "en": "He asks for tomorrow and agrees to ten thirty."
+      },
+      "interests": [],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.message",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What is Dana's message for Ron?",
+      "audioText": "Dana: Hi, is Ron there? Dad: Sorry, he's at football practice. Can I take a message? Dana: Yes, could you tell him the meeting is at six, not five? Dad: Sure, I'll tell him.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The meeting time has changed."
+        },
+        {
+          "id": "b",
+          "text": "Football practice is cancelled."
+        },
+        {
+          "id": "c",
+          "text": "Dana will be late for the meeting."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה דנה מבקשת להגיד לרון?",
+          "en": "What does Dana ask Dad to tell Ron?"
+        }
+      ],
+      "explanation": {
+        "he": "דנה אומרת tell him the meeting is at six, not five: הפגישה בשש ולא בחמש. כלומר השעה השתנתה.",
+        "en": "The meeting is at six, not five: the time has changed."
+      },
+      "interests": [
+        "sports"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.keys-call",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Why does Omer call Tali?",
+      "audioText": "Omer: Hey, it's me. I can't find my keys. Did I leave them at your place? Tali: Wait, let me look. Yes, they're on the sofa. Omer: Phew! I'll come and get them in an hour.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To find out if his keys are at her place"
+        },
+        {
+          "id": "b",
+          "text": "To invite Tali to his house"
+        },
+        {
+          "id": "c",
+          "text": "To ask Tali to bring him the keys"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב לשאלה הראשונה של עומר.",
+          "en": "Listen to Omer's first question."
+        }
+      ],
+      "explanation": {
+        "he": "עומר שואל Did I leave them at your place? האם השארתי את המפתחות אצלך. הוא יבוא לקחת אותם בעצמו: I'll come and get them.",
+        "en": "He calls to ask if his keys are at her place. He will come and get them himself."
+      },
+      "interests": [],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.last-bus",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "What will probably happen next?",
+      "audioText": "Sara: Hi, Mom. Just letting you know I'll be home later than I said. Mom: How much later? Sara: The last bus left without me, so I'm walking. About forty minutes. Mom: Walking? Stay where you are. I'm getting in the car.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mom will pick Sara up."
+        },
+        {
+          "id": "b",
+          "text": "Sara will walk home."
+        },
+        {
+          "id": "c",
+          "text": "Sara will wait for the next bus."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה אמא אומרת בסוף?",
+          "en": "What does Mom say at the end?"
+        }
+      ],
+      "explanation": {
+        "he": "אמא אומרת Stay where you are. I'm getting in the car: להישאר במקום, היא נכנסת לרכב. כלומר היא תאסוף את שרה. אין next bus, כי the last bus left.",
+        "en": "Mom tells Sara to stay and gets in the car, so she will pick her up. There is no next bus."
+      },
+      "interests": [],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.bike-price",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "What is Ben's problem?",
+      "audioText": "Ben: Hi, I'm calling about the bike you're selling. Is it still available? Seller: It is. It's almost new. I've only ridden it twice. Ben: And you're asking nine hundred? Seller: That's right. Ben: Hmm, that's a bit more than I wanted to spend.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The price is too high for him."
+        },
+        {
+          "id": "b",
+          "text": "The bike is too old."
+        },
+        {
+          "id": "c",
+          "text": "The bike was already sold."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב למשפט האחרון של בן.",
+          "en": "Listen to Ben's last sentence."
+        }
+      ],
+      "explanation": {
+        "he": "בן אומר that's a bit more than I wanted to spend: זה קצת יותר ממה שרציתי להוציא. האופניים still available ו־almost new.",
+        "en": "Ben says it's more than he wanted to spend. The bike is almost new and still available."
+      },
+      "interests": [
+        "sports"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.galilee",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Where will they go?",
+      "audioText": "Itai: So, are we going to the Galilee or the Dead Sea? Roni: The Dead Sea will be too hot in August. Itai: Good point. The Galilee, then. We can hike near a stream.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To the Galilee"
+        },
+        {
+          "id": "b",
+          "text": "To the Dead Sea"
+        },
+        {
+          "id": "c",
+          "text": "To a beach in Eilat"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למה Roni לא רוצה את Dead Sea?",
+          "en": "Why doesn't Roni want the Dead Sea?"
+        }
+      ],
+      "explanation": {
+        "he": "ים המלח too hot in August: חם מדי באוגוסט. איתי מסכים: Good point. The Galilee, then. הם נוסעים לגליל.",
+        "en": "The Dead Sea is too hot in August, so they choose the Galilee."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.train-friday",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "How will they probably travel to Jerusalem?",
+      "audioText": "Mia: How are we getting to Jerusalem? Adam: The train's quickest, but it doesn't run on Saturday. Mia: We're going on Friday morning, so that's fine.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "By train"
+        },
+        {
+          "id": "b",
+          "text": "By bus"
+        },
+        {
+          "id": "c",
+          "text": "By car"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מתי הם נוסעים, ומתי הרכבת לא נוסעת?",
+          "en": "When are they going, and when doesn't the train run?"
+        }
+      ],
+      "explanation": {
+        "he": "הרכבת quickest, הבעיה היחידה היא Saturday. הם נוסעים on Friday morning, ומיה אומרת that's fine. לכן ייסעו ברכבת.",
+        "en": "The train is quickest and they go on Friday, so the train is fine."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.hostel",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Why did Gili book only three nights?",
+      "audioText": "Gili: I booked the hostel for three nights. Yuval: Three? I thought we said four. Gili: We did, but it was full on the last night. We can camp that night. Yuval: Fine, as long as someone brings a tent.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The hostel had no room on the last night."
+        },
+        {
+          "id": "b",
+          "text": "Yuval wanted only three nights."
+        },
+        {
+          "id": "c",
+          "text": "Four nights were too expensive."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה גילי אומרת אחרי We did, but?",
+          "en": "What does Gili say after We did, but?"
+        }
+      ],
+      "explanation": {
+        "he": "גילי אומרת it was full on the last night: בלילה האחרון לא היה מקום. התוכנית לא השתנתה: בלילה הזה הם יישנו באוהל.",
+        "en": "The hostel was full on the last night. The plan is still four nights; they will camp on the last one."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.flight-six",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What time will they leave home?",
+      "audioText": "Ariel: What time does our flight leave? Noga: At six in the morning, so we need to be at the airport by four. Ariel: Four? Then we'd better leave home at three.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "At three o'clock"
+        },
+        {
+          "id": "b",
+          "text": "At four o'clock"
+        },
+        {
+          "id": "c",
+          "text": "At six o'clock"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "יש שלוש שעות שונות. מה כל אחת?",
+          "en": "There are three times. What is each one?"
+        }
+      ],
+      "explanation": {
+        "he": "six זו הטיסה, four זה בשדה התעופה, ו־we'd better leave home at three: כדאי לצאת מהבית בשלוש.",
+        "en": "Six is the flight, four is the airport, three is leaving home."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.free-time",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "What is Dad's main point?",
+      "audioText": "Dad: Let's not plan every minute of the trip this time. Rina: But what if we get bored? Dad: Then we'll find something to do. Last year we rushed from place to place, and nobody enjoyed it.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The family should leave free time on the trip."
+        },
+        {
+          "id": "b",
+          "text": "The trip should be shorter this year."
+        },
+        {
+          "id": "c",
+          "text": "Last year's trip was the best one."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "Let's not plan every minute: מה אבא רוצה?",
+          "en": "Let's not plan every minute: what does Dad want?"
+        }
+      ],
+      "explanation": {
+        "he": "אבא אומר Let's not plan every minute: לא לתכנן כל דקה. בשנה שעברה we rushed from place to place, and nobody enjoyed it: מיהרו ואף אחד לא נהנה.",
+        "en": "Dad wants less planning, because last year they rushed and nobody enjoyed it."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.laptop",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "What happened to Alon's laptop?",
+      "audioText": "Neta: You look upset. What's wrong? Alon: I lent my brother my laptop, and he spilled juice on it. Now it won't turn on.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "His brother damaged it."
+        },
+        {
+          "id": "b",
+          "text": "Someone stole it."
+        },
+        {
+          "id": "c",
+          "text": "Alon spilled juice on it himself."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מי שפך את המיץ?",
+          "en": "Who spilled the juice?"
+        }
+      ],
+      "explanation": {
+        "he": "אלון אומר I lent my brother my laptop, and he spilled juice on it: האח שפך מיץ, ועכשיו it won't turn on (לא נדלק).",
+        "en": "Alon's brother spilled juice on it, and now it won't turn on."
+      },
+      "interests": [
+        "technology"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.forgot-birthday",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What is Tom's advice?",
+      "audioText": "Maya: I feel terrible. I forgot Shir's birthday. Tom: Have you called her? Maya: Not yet. I'm too embarrassed. Tom: The longer you wait, the worse it'll be. Call her now.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Call Shir right away."
+        },
+        {
+          "id": "b",
+          "text": "Wait until Maya feels better."
+        },
+        {
+          "id": "c",
+          "text": "Buy Shir a big present."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה טום אומר בסוף?",
+          "en": "What does Tom say at the end?"
+        }
+      ],
+      "explanation": {
+        "he": "טום אומר The longer you wait, the worse it'll be. Call her now: ככל שמחכים זה גרוע יותר, אז להתקשר עכשיו.",
+        "en": "Tom says waiting makes it worse: call her now."
+      },
+      "interests": [],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.solo",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "What is Ido trying to do?",
+      "audioText": "Ido: Are you still worried about your solo in the concert? Lihi: I've practised every day, but my hands shake just thinking about it. Ido: Everyone's nervous before going on stage. That's completely normal.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Make Lihi feel calmer"
+        },
+        {
+          "id": "b",
+          "text": "Tell Lihi to practise more"
+        },
+        {
+          "id": "c",
+          "text": "Make fun of Lihi"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "Everyone's nervous... That's normal: למה עידו אומר את זה?",
+          "en": "Everyone's nervous... why does Ido say this?"
+        }
+      ],
+      "explanation": {
+        "he": "ליהי מפחדת: my hands shake. עידו אומר Everyone's nervous... That's completely normal: כולם לחוצים וזה נורמלי. הוא מנסה להרגיע אותה.",
+        "en": "Lihi is scared. Ido says everyone is nervous and it's normal, to calm her down."
+      },
+      "interests": [
+        "music"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.party-ride",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Why might Roi's parents change their minds?",
+      "audioText": "Roi: My parents won't let me go to the party because it ends after midnight. Dana: Did you tell them my mom is driving us home? Roi: No, I didn't think of that. Dana: Tell them. It might change their minds.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Dana's mom will drive them home."
+        },
+        {
+          "id": "b",
+          "text": "The party will end early."
+        },
+        {
+          "id": "c",
+          "text": "Roi will sleep at Dana's house."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה רועי לא סיפר להורים?",
+          "en": "What didn't Roi tell his parents?"
+        }
+      ],
+      "explanation": {
+        "he": "דנה שואלת Did you tell them my mom is driving us home? אמא של דנה תסיע אותם הביתה, וזה might change their minds. המסיבה עדיין ends after midnight.",
+        "en": "Dana's mom will drive them home. The party still ends after midnight."
+      },
+      "interests": [],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.art-school",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "How does Ayelet feel about the long journey?",
+      "audioText": "Ayelet: I got into the art school! Ben: Wow, I knew you would. Ayelet: It's in Tel Aviv, so I'd have to leave at six every morning. Ben: Is that a problem? Ayelet: Not compared to finally studying what I love.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It is worth it for her."
+        },
+        {
+          "id": "b",
+          "text": "It makes her want to say no."
+        },
+        {
+          "id": "c",
+          "text": "It is too tiring for her."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב לתשובה האחרונה של איילת.",
+          "en": "Listen to Ayelet's last answer."
+        }
+      ],
+      "explanation": {
+        "he": "איילת אומרת Not compared to finally studying what I love: זה לא בעיה לעומת ללמוד סוף סוף את מה שהיא אוהבת. הנסיעה שווה את זה.",
+        "en": "\"Not compared to finally studying what I love\": the journey is worth it."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.ice-cream-job",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Why does Tamar want the job?",
+      "audioText": "Interviewer: Why do you want to work at the ice cream shop this summer? Tamar: I love working with people, and I want to save money for a trip. Interviewer: Have you worked before? Tamar: Only as a babysitter.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She likes people and wants to save money."
+        },
+        {
+          "id": "b",
+          "text": "She loves eating ice cream."
+        },
+        {
+          "id": "c",
+          "text": "She needs money for school books."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "תמר נותנת שתי סיבות.",
+          "en": "Tamar gives two reasons."
+        }
+      ],
+      "explanation": {
+        "he": "תמר אומרת I love working with people (אוהבת לעבוד עם אנשים) ו־I want to save money for a trip (לחסוך כסף לטיול).",
+        "en": "She loves working with people and wants to save money for a trip."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.fridays",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Is Friday a problem for the job?",
+      "audioText": "Interviewer: The job is from eight to two, five days a week. Can you do that? Eitan: Yes, except Fridays. I help my grandfather in his shop then. Interviewer: That's fine. We're closed on Fridays anyway.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "No, because the shop is closed on Fridays."
+        },
+        {
+          "id": "b",
+          "text": "Yes, so Eitan can't get the job."
+        },
+        {
+          "id": "c",
+          "text": "No, because Eitan's grandfather will work instead."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה המראיין/ת אומר/ת בסוף?",
+          "en": "What does the interviewer say at the end?"
+        }
+      ],
+      "explanation": {
+        "he": "איתן לא יכול בימי שישי, אבל המראיין/ת עונה We're closed on Fridays anyway: ממילא סגור בשישי. לכן זו לא בעיה.",
+        "en": "The interviewer says they are closed on Fridays anyway, so it's not a problem."
+      },
+      "interests": [],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.early-riser",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "What can we understand about Noa?",
+      "audioText": "Interviewer: The camp starts at seven thirty. Are you an early riser? Noa: Honestly, not really. But I set two alarms, and I've never been late for school. Interviewer: I like your honesty.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She is honest about her weak points."
+        },
+        {
+          "id": "b",
+          "text": "She is often late for school."
+        },
+        {
+          "id": "c",
+          "text": "She loves waking up early."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "Honestly, not really: מה נועה מודה?",
+          "en": "Honestly, not really: what does Noa admit?"
+        }
+      ],
+      "explanation": {
+        "he": "נועה מודה Honestly, not really: היא לא אוהבת לקום מוקדם, ובכל זאת I've never been late. המראיין/ת אומר/ת I like your honesty.",
+        "en": "Noa admits she isn't an early riser but is never late. The interviewer likes her honesty."
+      },
+      "interests": [
+        "school"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.weekly-pay",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.7,
+      "modality": "listen",
+      "prompt": "About how much will Gal earn in a week?",
+      "audioText": "Interviewer: We pay forty shekels an hour, and you'll work about twenty hours a week. Gal: That sounds good. When would I start? Interviewer: On the first of July, if you're free.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "About 800 shekels"
+        },
+        {
+          "id": "b",
+          "text": "About 400 shekels"
+        },
+        {
+          "id": "c",
+          "text": "About 60 shekels"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כמה לשעה, וכמה שעות בשבוע?",
+          "en": "How much per hour, and how many hours a week?"
+        }
+      ],
+      "explanation": {
+        "he": "forty shekels an hour (40 לשעה) כפול twenty hours a week (20 שעות בשבוע): 40 כפול 20 זה 800.",
+        "en": "40 shekels an hour x 20 hours = about 800 shekels a week."
+      },
+      "interests": [],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.lifeguard",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "Why is Yoav a good fit for the job?",
+      "audioText": "Interviewer: Tell me a little about yourself. Yoav: I'm sixteen, I'm on the school swimming team, and I've done a lifeguard course. Interviewer: Great. That's exactly what we need at the pool.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He has done a lifeguard course."
+        },
+        {
+          "id": "b",
+          "text": "He is the oldest person who applied."
+        },
+        {
+          "id": "c",
+          "text": "He has worked at the pool before."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה יואב עשה שמתאים לבריכה?",
+          "en": "What has Yoav done that is useful at a pool?"
+        }
+      ],
+      "explanation": {
+        "he": "יואב אומר I've done a lifeguard course: עשה קורס מציל. המראיין/ת עונה That's exactly what we need at the pool.",
+        "en": "He has done a lifeguard course, which is exactly what the pool needs."
+      },
+      "interests": [
+        "sports"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.weekends",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "How often would Rotem work at weekends?",
+      "audioText": "Interviewer: Do you have any questions for us? Rotem: Yes. Would I need to work at weekends? Interviewer: One Saturday night a month, at most. Rotem: That's fine with me.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "One Saturday night a month at most"
+        },
+        {
+          "id": "b",
+          "text": "Every weekend"
+        },
+        {
+          "id": "c",
+          "text": "Never"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להקשיב לתשובה של המראיין/ת.",
+          "en": "Listen to the interviewer's answer."
+        }
+      ],
+      "explanation": {
+        "he": "המראיין/ת עונה One Saturday night a month, at most: לכל היותר מוצאי שבת אחד בחודש.",
+        "en": "At most one Saturday night a month."
+      },
+      "interests": [],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.lemonade",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "A2",
+      "difficulty": 0.4,
+      "modality": "listen",
+      "prompt": "What will Ofir drink?",
+      "audioText": "Waiter: Are you ready to order? Ofir: Yes, a vegetable salad and an orange juice, please. Waiter: I'm sorry, we've run out of orange juice. Ofir: Then lemonade, please.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lemonade"
+        },
+        {
+          "id": "b",
+          "text": "Orange juice"
+        },
+        {
+          "id": "c",
+          "text": "Water"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה קרה למיץ התפוזים?",
+          "en": "What happened to the orange juice?"
+        }
+      ],
+      "explanation": {
+        "he": "המלצר/ית אומר/ת we've run out of orange juice: נגמר מיץ התפוזים. לכן אופיר מזמין Then lemonade: לימונדה.",
+        "en": "They've run out of orange juice, so Ofir orders lemonade."
+      },
+      "interests": [
+        "food"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.hotel-friday",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "How much will Adi pay for Friday night?",
+      "audioText": "Receptionist: Good evening, Sea View Hotel. Adi: Hi, I booked a room for Thursday, but I need to change it to Friday. Receptionist: Friday's fine, but it's three hundred shekels instead of two hundred and fifty. Adi: That's okay.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "300 shekels"
+        },
+        {
+          "id": "b",
+          "text": "250 shekels"
+        },
+        {
+          "id": "c",
+          "text": "350 shekels"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "instead of: איזה מחיר הוא החדש?",
+          "en": "instead of: which price is the new one?"
+        }
+      ],
+      "explanation": {
+        "he": "הפקיד/ה אומר/ת three hundred shekels instead of two hundred and fifty: שלוש מאות במקום מאתיים וחמישים. 250 זה המחיר של יום חמישי.",
+        "en": "Friday costs 300 instead of 250. 250 was the Thursday price."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.sun-cream",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "A2",
+      "difficulty": 0.3,
+      "modality": "listen",
+      "prompt": "What did Eli forget?",
+      "audioText": "Mom: Did you pack your swimsuit? Eli: Yes, and my towel. Mom: What about sun cream? Eli: Oh, I forgot! I'll get it now.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sun cream"
+        },
+        {
+          "id": "b",
+          "text": "His towel"
+        },
+        {
+          "id": "c",
+          "text": "His swimsuit"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "על מה אלי עונה Oh, I forgot?",
+          "en": "What is Eli answering when he says Oh, I forgot?"
+        }
+      ],
+      "explanation": {
+        "he": "את swimsuit ו־towel הוא ארז: Yes, and my towel. כשאמא שואלת What about sun cream? הוא עונה Oh, I forgot!: שכח קרם הגנה.",
+        "en": "He packed the swimsuit and towel but forgot the sun cream."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.try-out",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "Why doesn't Ofek want to try out for the team?",
+      "audioText": "Ofek: I don't think I'll try out for the team. Hadar: Why not? You're one of the best players I know. Ofek: Last year I didn't get in, and I don't want to feel like that again. Hadar: But you're much better now.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "He is afraid of failing again."
+        },
+        {
+          "id": "b",
+          "text": "He doesn't like the other players."
+        },
+        {
+          "id": "c",
+          "text": "He thinks he plays badly now."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "I don't want to feel like that again: איך הוא הרגיש?",
+          "en": "I don't want to feel like that again: how did he feel?"
+        }
+      ],
+      "explanation": {
+        "he": "אופק אומר Last year I didn't get in: בשנה שעברה לא התקבל, ו־I don't want to feel like that again: הוא מפחד מעוד כישלון.",
+        "en": "He didn't get in last year and doesn't want to feel that way again: he is afraid of failing."
+      },
+      "interests": [
+        "sports"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.ear-drops",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "What will the pharmacist do?",
+      "audioText": "Pharmacist: Here you are. These drops are for your eyes. Mor: My eyes? The doctor said ear drops. Pharmacist: Let me check the prescription. You're right, it says ear drops. I'll get you the right ones.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Give Mor ear drops"
+        },
+        {
+          "id": "b",
+          "text": "Call the doctor"
+        },
+        {
+          "id": "c",
+          "text": "Give Mor eye drops"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה רשום במרשם?",
+          "en": "What does the prescription say?"
+        }
+      ],
+      "explanation": {
+        "he": "הרוקח/ת בודק/ת: it says ear drops (רשום: טיפות לאוזניים), ומבטיח/ה I'll get you the right ones: להביא את הנכונות, טיפות אוזניים.",
+        "en": "The prescription says ear drops, so the pharmacist will get the right ones: ear drops."
+      },
+      "interests": [],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.phones-lockers",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B2",
+      "difficulty": 0.6,
+      "modality": "listen",
+      "prompt": "What is the principal's attitude to the new rule?",
+      "audioText": "Principal: From next month, phones must stay in lockers during lessons. Student: During lessons? What if our parents need us? Principal: They can call the office, just like parents did before phones existed.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Firm about the rule"
+        },
+        {
+          "id": "b",
+          "text": "Unsure about the rule"
+        },
+        {
+          "id": "c",
+          "text": "Ready to cancel the rule"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המנהל/ת משנה דעה אחרי השאלה?",
+          "en": "Does the principal change their mind after the question?"
+        }
+      ],
+      "explanation": {
+        "he": "המנהל/ת עונה מיד They can call the office: יש פתרון, והכלל נשאר. הוא/היא לא מהסס/ת ולא מוותר/ת, כלומר נחרץ/ה.",
+        "en": "The principal answers at once with a solution and keeps the rule: firm."
+      },
+      "interests": [
+        "school",
+        "technology"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    },
+    {
+      "id": "lm1.dialogues.cable-car",
+      "type": "choice",
+      "skill": "listening.dialogues",
+      "level": "B1",
+      "difficulty": 0.5,
+      "modality": "listen",
+      "prompt": "How much will each of them pay?",
+      "audioText": "Liat: Let's take the cable car up the mountain. Erez: How much is it? Liat: Fifty shekels for adults, and half price for students. Erez: Great, we're both students.",
+      "instruction": {
+        "he": "להקשיב ולענות על השאלה",
+        "en": "Listen and answer the question"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "25 shekels"
+        },
+        {
+          "id": "b",
+          "text": "50 shekels"
+        },
+        {
+          "id": "c",
+          "text": "100 shekels"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "half price for students: והם סטודנטים?",
+          "en": "half price for students: are they students?"
+        }
+      ],
+      "explanation": {
+        "he": "למבוגרים fifty shekels (50), half price for students: חצי מחיר לסטודנטים. ארז אומר we're both students, אז כל אחד משלם 25.",
+        "en": "Students pay half of 50, and they are both students: 25 each."
+      },
+      "interests": [
+        "travel"
+      ],
+      "estimatedTimeSec": 35,
+      "source": "original"
+    }
+  ],
+  "passages": [],
+  "lessons": []
+}

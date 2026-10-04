@@ -2,6 +2,7 @@ import { useId, useSyncExternalStore, type MouseEvent } from 'react';
 import { useServices } from '@/app/services';
 import { useSpeechPrefs } from '@/app/speechPrefs';
 import type { Speaker } from '@/services/speech/types';
+import { dialogueLines } from '@/services/speech/textPrep';
 import { SpeakerIcon, TurtleIcon } from './icons';
 
 export type SpeakSize = 'inline' | 'md' | 'hero';
@@ -60,7 +61,10 @@ export function SpeakButton({
       return;
     }
     const voiceId = prefs.accent === 'en-US' ? settings.get('deviceVoiceUS') : settings.get('deviceVoiceGB');
-    const r = await speech.speak(text, { ...prefs, ...(slow ? { rate: 'slower' as const } : {}), key: id, ...(speaker ? { speaker } : {}), ...(voiceId ? { voiceId } : {}) });
+    const opts = { ...prefs, ...(slow ? { rate: 'slower' as const } : {}), key: id, ...(voiceId ? { voiceId } : {}) };
+    // A written dialogue ("Dan: ... Maya: ...") plays as two voices, without reading the names.
+    const lines = speaker ? null : dialogueLines(text);
+    const r = lines ? await speech.speakDialogue(lines, opts) : await speech.speak(text, { ...opts, ...(speaker ? { speaker } : {}) });
     if (r === 'done') onPlayed?.();
   };
 

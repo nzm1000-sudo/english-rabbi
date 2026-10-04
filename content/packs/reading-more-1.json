@@ -1,0 +1,4551 @@
+{
+  "packId": "reading-more-1",
+  "schemaVersion": 1,
+  "title": "More Reading: Unseen Passages 1",
+  "items": [
+    {
+      "id": "rm1.oil-lamp-room.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "What is this museum sign mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Old oil lamps and how people made and used them"
+        },
+        {
+          "id": "b",
+          "text": "How electricity changed the lives of people"
+        },
+        {
+          "id": "c",
+          "text": "How children can make a lamp at the activity table"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחשוב על מה מדברים כמעט בכל הפסקאות.",
+          "en": "Think about what almost every paragraph talks about."
+        }
+      ],
+      "explanation": {
+        "he": "השלט מסביר מה היו מנורות השמן, איך הכינו אותן ואיך השתמשו בהן. החשמל מוזכר רק במשפט הראשון, ושולחן הפעילות מוזכר רק בסוף. אלה פרטים, לא הרעיון המרכזי.",
+        "en": "The sign explains what oil lamps were, how they were made and how people used them. Electricity and the activity table are only small details."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-oil-lamp-room",
+      "source": "original"
+    },
+    {
+      "id": "rm1.oil-lamp-room.2",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "A2",
+      "difficulty": 0.2,
+      "prompt": "Where can visitors see lamps with pictures on them?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "In Case 3"
+        },
+        {
+          "id": "b",
+          "text": "At the activity table"
+        },
+        {
+          "id": "c",
+          "text": "Near the exit"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בקטע את המילה pictures.",
+          "en": "Look for the word pictures in the text."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: Look at the lamps in Case 3. Some of them have pictures of birds, fish and plants. ליד היציאה נמצא שולחן הפעילות, ושם ילדים מכינים מנורה בעצמם.",
+        "en": "The text says: Look at the lamps in Case 3. Some of them have pictures... The activity table near the exit is where children make lamps."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-oil-lamp-room",
+      "source": "original"
+    },
+    {
+      "id": "rm1.oil-lamp-room.3",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "What happened to a new clay lamp right AFTER it dried in the sun?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It was baked in a very hot oven."
+        },
+        {
+          "id": "b",
+          "text": "It was filled with olive oil."
+        },
+        {
+          "id": "c",
+          "text": "It was pressed into a mould."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילים First, Next, Then.",
+          "en": "Look for the words First, Next, Then."
+        },
+        {
+          "he": "מה בא אחרי Next?",
+          "en": "What comes after Next?"
+        }
+      ],
+      "explanation": {
+        "he": "הסדר בשלט: First (עיצוב החימר או לחיצה לתבנית), Next (ייבוש בשמש), Then (אפייה בתנור). את השמן מילאו רק בבית, אחרי שהמנורה הייתה מוכנה.",
+        "en": "The order is: First shape or press the clay, Next dry it in the sun, Then bake it. The oil was added later, at home."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-oil-lamp-room",
+      "source": "original"
+    },
+    {
+      "id": "rm1.oil-lamp-room.4",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "The word \"They\" in \"They are very old and break easily\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the lamps"
+        },
+        {
+          "id": "b",
+          "text": "the children"
+        },
+        {
+          "id": "c",
+          "text": "the families"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שבא ממש לפני.",
+          "en": "Read the sentence just before it."
+        }
+      ],
+      "explanation": {
+        "he": "המשפט הקודם: Please do not touch the lamps. ולכן They הן המנורות. המנורות ישנות ונשברות בקלות, ולכן אסור לגעת בהן.",
+        "en": "The sentence before says: Please do not touch the lamps. So They means the lamps, which are old and break easily."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-oil-lamp-room",
+      "source": "original"
+    },
+    {
+      "id": "rm1.oil-lamp-room.5",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "Why does the sign tell visitors about the activity table?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To show children where they can make a lamp themselves"
+        },
+        {
+          "id": "b",
+          "text": "To tell visitors where they can buy an old lamp"
+        },
+        {
+          "id": "c",
+          "text": "To explain where the old lamps were made"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט האחרון בשלט.",
+          "en": "Read the last sentence of the sign."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: Children can make their own clay lamp at the activity table. כלומר השלט מזמין ילדים להכין מנורה משלהם. לא נאמר שאפשר לקנות שם מנורות, והמנורות העתיקות נעשו אצל קדר.",
+        "en": "The sign says children can make their own clay lamp there. Nothing is sold there, and the old lamps were made by potters."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-oil-lamp-room",
+      "source": "original"
+    },
+    {
+      "id": "rm1.oil-lamp-room.6",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Which sentence is TRUE according to the sign?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lamps with pictures cost more money."
+        },
+        {
+          "id": "b",
+          "text": "Visitors may touch the lamps in Case 3."
+        },
+        {
+          "id": "c",
+          "text": "An oil lamp burned for only a few minutes."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק כל משפט מול הקטע. מה נאמר על המנורות עם התמונות?",
+          "en": "Check each sentence against the text. What does it say about the lamps with pictures?"
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: These lamps were more expensive, כלומר הן עלו יותר. אסור לגעת במנורות (Please do not touch), והבד דלק לאט במשך שעות (for hours), לא דקות.",
+        "en": "The text says these lamps were more expensive. Visitors may not touch the lamps, and the cloth burned for hours, not minutes."
+      },
+      "interests": [
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-oil-lamp-room",
+      "source": "original"
+    },
+    {
+      "id": "rm1.beach-cleanup.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "A2",
+      "difficulty": 0.2,
+      "prompt": "What is the advert mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "An event where people clean a beach together"
+        },
+        {
+          "id": "b",
+          "text": "A new rule about plastic bottles on the beach"
+        },
+        {
+          "id": "c",
+          "text": "A summer job for lifeguards"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה מבקשים מהקוראים לעשות?",
+          "en": "What does the advert ask readers to do?"
+        }
+      ],
+      "explanation": {
+        "he": "המודעה מחפשת מתנדבים ליום ניקיון חוף (Beach Clean-Up Day). אין בה חוק חדש, והמציל מוזכר רק כדי להסביר איפה נפגשים.",
+        "en": "The advert looks for volunteers for a beach clean-up day. There is no new rule, and the lifeguard tower is only the meeting place."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-beach-cleanup",
+      "source": "original"
+    },
+    {
+      "id": "rm1.beach-cleanup.2",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "Why does the advert mention what happened last summer?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To show that the event works and to aim for even more this year"
+        },
+        {
+          "id": "b",
+          "text": "To complain that people leave broken glass on the sand"
+        },
+        {
+          "id": "c",
+          "text": "To thank the lifeguards for their help"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שבא מיד אחרי המידע על הקיץ שעבר.",
+          "en": "Read the sentence right after the information about last summer."
+        }
+      ],
+      "explanation": {
+        "he": "אחרי המספרים של הקיץ שעבר נאמר: This year we want to do even better. המטרה היא להראות שהאירוע מצליח ולעודד אנשים להצטרף ולהגיע לתוצאה גבוהה יותר. הזכוכית מוזכרת בפסקה אחרת, בהקשר של נעליים.",
+        "en": "After last summer's numbers it says: This year we want to do even better. The results show the event works and encourage people to join."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-beach-cleanup",
+      "source": "original"
+    },
+    {
+      "id": "rm1.beach-cleanup.3",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "A2",
+      "difficulty": 0.2,
+      "prompt": "What will every volunteer get?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Gloves, a bag and a cold drink"
+        },
+        {
+          "id": "b",
+          "text": "A hat, sun cream and a water bottle"
+        },
+        {
+          "id": "c",
+          "text": "Closed shoes and a cold drink"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להבחין בין מה שנותנים למתנדבים לבין מה שהם צריכים להביא.",
+          "en": "Tell the difference between what volunteers get and what they must bring."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: We will give every volunteer gloves, a bag and a cold drink. את הכובע, קרם ההגנה ובקבוק המים צריך להביא מהבית (Bring), ונעליים סגורות צריך ללבוש (wear).",
+        "en": "The organisers give gloves, a bag and a cold drink. Volunteers must bring a hat, sun cream and water, and wear closed shoes."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-beach-cleanup",
+      "source": "original"
+    },
+    {
+      "id": "rm1.beach-cleanup.4",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Which sentence is TRUE according to the advert?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Some young volunteers must come with an adult."
+        },
+        {
+          "id": "b",
+          "text": "The clean-up takes place in the evening."
+        },
+        {
+          "id": "c",
+          "text": "Only school groups can take part."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק את השעה ואת מה שכתוב על הגילים.",
+          "en": "Check the time and what the advert says about ages."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: Volunteers aged 12 to 15 must come with an adult. האירוע בבוקר (8:00 to 11:00 a.m.), וקבוצות מבתי ספר הן רק חלק מהמוזמנים. כל אחד יכול להצטרף.",
+        "en": "Volunteers aged 12 to 15 must come with an adult. The event is in the morning, and school groups are welcome but not the only ones."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-beach-cleanup",
+      "source": "original"
+    },
+    {
+      "id": "rm1.beach-cleanup.5",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "Which sentence from the advert is an OPINION?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It is the best way to start a summer weekend."
+        },
+        {
+          "id": "b",
+          "text": "Last summer, 60 volunteers collected more than 200 kilos of rubbish."
+        },
+        {
+          "id": "c",
+          "text": "Volunteers aged 12 to 15 must come with an adult."
+        },
+        {
+          "id": "d",
+          "text": "We will give every volunteer gloves, a bag and a cold drink."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש מילה שמביעה דעה, כמו best.",
+          "en": "Look for a word that shows a feeling or judgement, like best."
+        },
+        {
+          "he": "עובדה אפשר לבדוק. האם אפשר לבדוק מה הדרך הכי טובה לפתוח סוף שבוע?",
+          "en": "A fact can be checked. Can anyone check the best way to start a weekend?"
+        }
+      ],
+      "explanation": {
+        "he": "the best way היא הערכה אישית, ולכן זו דעה. אנשים שונים יחשבו אחרת. מספר המתנדבים, כמות הזבל, כללי הגיל ומה שמחלקים הם עובדות שאפשר לבדוק.",
+        "en": "\"The best way\" is a personal judgement, so it is an opinion. The numbers, the age rule and what volunteers get can all be checked."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-beach-cleanup",
+      "source": "original"
+    },
+    {
+      "id": "rm1.beach-cleanup.6",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "The word \"it\" in \"most of it plastic bottles and bottle caps\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the rubbish"
+        },
+        {
+          "id": "b",
+          "text": "the sand"
+        },
+        {
+          "id": "c",
+          "text": "the sea"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה אספו המתנדבים?",
+          "en": "What did the volunteers collect?"
+        }
+      ],
+      "explanation": {
+        "he": "המשפט המלא: 60 volunteers collected more than 200 kilos of rubbish from the sand, most of it plastic bottles. רוב הזבל היה בקבוקים ופקקים. החול הוא המקום שממנו אספו, לא מה שאספו.",
+        "en": "Volunteers collected rubbish, and most of it was plastic bottles and caps. The sand is where they collected it from."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-beach-cleanup",
+      "source": "original"
+    },
+    {
+      "id": "rm1.first-practice-email.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "What is the second paragraph of the email mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "What happened at Noa's first practice"
+        },
+        {
+          "id": "b",
+          "text": "How Noa learned to play in the park"
+        },
+        {
+          "id": "c",
+          "text": "The team's first match against Haifa"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הפסקה השנייה מתחילה ב־On Monday.",
+          "en": "The second paragraph starts with On Monday."
+        }
+      ],
+      "explanation": {
+        "he": "הפסקה השנייה מתארת את האימון הראשון: ריצה, מסירות בזוגות ומשחק קצר. המשחק נגד חיפה מוזכר רק בפסקה השלישית, והוא עוד לא קרה.",
+        "en": "The second paragraph describes the first practice: running, passing and a short game. The match against Haifa is in the next paragraph and has not happened yet."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-first-practice-email",
+      "source": "original"
+    },
+    {
+      "id": "rm1.first-practice-email.2",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Why did Noa write this email?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To share news about her new team and invite Yael to a match"
+        },
+        {
+          "id": "b",
+          "text": "To ask Yael to join the basketball team"
+        },
+        {
+          "id": "c",
+          "text": "To tell Yael that she scored her first points"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את תחילת המכתב ואת הסוף שלו.",
+          "en": "Read the beginning and the end of the email."
+        }
+      ],
+      "explanation": {
+        "he": "בהתחלה Noa כותבת I have big news: I joined a basketball team, ובסוף היא שואלת Can you come and watch the match? היא לא מבקשת מ־Yael להצטרף לקבוצה, והיא לא קלעה נקודות (I didn't score any points).",
+        "en": "Noa shares her big news and asks Yael to come and watch. She does not ask Yael to join, and she did not score any points."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-first-practice-email",
+      "source": "original"
+    },
+    {
+      "id": "rm1.first-practice-email.3",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "What did the players do FIRST at the practice?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "They ran around the court."
+        },
+        {
+          "id": "b",
+          "text": "They practised passing in pairs."
+        },
+        {
+          "id": "c",
+          "text": "They played a short game."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילה First.",
+          "en": "Look for the word First."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: First, the coach asked us to run around the court ten times. אחר כך (After that) תרגלו מסירות, ובסוף (At the end) שיחקו משחק קצר.",
+        "en": "First they ran around the court. After that they practised passing, and at the end they played a short game."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-first-practice-email",
+      "source": "original"
+    },
+    {
+      "id": "rm1.first-practice-email.4",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "The word \"She\" in \"She plays very well\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Shira"
+        },
+        {
+          "id": "b",
+          "text": "Yael"
+        },
+        {
+          "id": "c",
+          "text": "Noa"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מי מוזכרת במשפט שלפני?",
+          "en": "Who is named in the sentence before?"
+        }
+      ],
+      "explanation": {
+        "he": "המשפט הקודם: My partner was a tall girl called Shira. ולכן She היא Shira. Noa כותבת על עצמה ב־I, ו־Yael היא מי שמקבלת את המכתב.",
+        "en": "The sentence before names Shira. Noa writes about herself with I, and Yael is the person reading the email."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-first-practice-email",
+      "source": "original"
+    },
+    {
+      "id": "rm1.first-practice-email.5",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Which sentence is TRUE according to the email?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The team practises on Mondays and Thursdays."
+        },
+        {
+          "id": "b",
+          "text": "Noa scored two points in the short game."
+        },
+        {
+          "id": "c",
+          "text": "The first match is next week."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק מה נאמר על הנקודות ועל מועד המשחק.",
+          "en": "Check what the email says about points and about when the match is."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: The team practises twice a week, on Mondays and Thursdays. Noa לא קלעה נקודות, היא עשתה two good passes. המשחק הראשון next month, לא בשבוע הבא.",
+        "en": "The team practises on Mondays and Thursdays. Noa made two good passes but scored no points, and the match is next month."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-first-practice-email",
+      "source": "original"
+    },
+    {
+      "id": "rm1.first-practice-email.6",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "In \"she was patient with me\", the word \"patient\" means that Shira...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "stayed calm and gave Noa time"
+        },
+        {
+          "id": "b",
+          "text": "was sick and needed a doctor"
+        },
+        {
+          "id": "c",
+          "text": "played faster than Noa"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המשפט מתחיל ב־She plays very well, but. מה ההפך ממה שהיה אפשר לצפות?",
+          "en": "The sentence says She plays very well, but... What is the surprise?"
+        }
+      ],
+      "explanation": {
+        "he": "patient כאן הוא תואר: סבלני, רגוע. Shira שחקנית טובה, ובכל זאת (but) לא כעסה על Noa המתחילה. נכון שיש גם שם עצם patient שפירושו חולה, אבל כאן אין קשר לרופא.",
+        "en": "Here patient is an adjective: calm and not angry. Shira plays well but was still calm with a beginner. The noun patient (a sick person) does not fit here."
+      },
+      "interests": [
+        "sports"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-first-practice-email",
+      "source": "original"
+    },
+    {
+      "id": "rm1.irises-return.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "What is the news report mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Flowers that are blooming again after a wet winter"
+        },
+        {
+          "id": "b",
+          "text": "A school trip where the students got lost"
+        },
+        {
+          "id": "c",
+          "text": "Visitors who pick too many flowers on Oren Hill"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט הראשון בכתבה.",
+          "en": "Read the first sentence of the report."
+        }
+      ],
+      "explanation": {
+        "he": "כבר המשפט הראשון אומר את העיקר: Hundreds of purple irises are blooming... for the first time in five years. שאר הכתבה מסבירה למה, ומספרת על הכיתה שספרה אותם. אף אחד לא הלך לאיבוד.",
+        "en": "The first sentence gives the main idea: irises are blooming again for the first time in five years. The rest explains why and describes the class that counted them."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-irises-return",
+      "source": "original"
+    },
+    {
+      "id": "rm1.irises-return.2",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "Why did only a few irises grow in the last few winters?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "There was very little rain."
+        },
+        {
+          "id": "b",
+          "text": "Visitors picked them."
+        },
+        {
+          "id": "c",
+          "text": "The hill was closed to visitors."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בפסקה השנייה את המילה so.",
+          "en": "Look for the word so in the second paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: In the last few winters there was very little rain, so only a few irises grew. so מראה תוצאה: מעט גשם, ולכן מעט פרחים. הבקשה לא לקטוף מופיעה בכתבה, אבל לא כסיבה למה לא גדלו פרחים בעבר.",
+        "en": "The text says there was very little rain, so only a few irises grew. Picking is mentioned, but not as the reason for the past winters."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-irises-return",
+      "source": "original"
+    },
+    {
+      "id": "rm1.irises-return.3",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "What did the students do LAST?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "They shared their results on the school website."
+        },
+        {
+          "id": "b",
+          "text": "They counted the flowers."
+        },
+        {
+          "id": "c",
+          "text": "They learned how to walk only on the path."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילים First, Then, In the end.",
+          "en": "Look for First, Then and In the end."
+        }
+      ],
+      "explanation": {
+        "he": "הסדר: First למדו ללכת רק על השביל, Then ספרו את הפרחים, In the end שיתפו את התוצאות באתר בית הספר.",
+        "en": "First they learned to stay on the path, then they counted the flowers, and in the end they shared the results online."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-irises-return",
+      "source": "original"
+    },
+    {
+      "id": "rm1.irises-return.4",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "Which sentence from the report is an OPINION?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "\"It was the most beautiful trip of the year.\""
+        },
+        {
+          "id": "b",
+          "text": "They found 412 irises."
+        },
+        {
+          "id": "c",
+          "text": "Visitors can see the flowers until the end of March."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש מילה שמביעה רגש או הערכה.",
+          "en": "Look for a word that shows a feeling or a judgement."
+        }
+      ],
+      "explanation": {
+        "he": "the most beautiful זו הערכה אישית של Amir. תלמיד אחר יכול לחשוב אחרת. מספר הפרחים והתאריך הם עובדות שאפשר לבדוק.",
+        "en": "\"The most beautiful\" is Amir's personal judgement. The number of flowers and the date can be checked, so they are facts."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-irises-return",
+      "source": "original"
+    },
+    {
+      "id": "rm1.irises-return.5",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "The word \"it\" in \"it cannot make seeds for next year\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "an iris that someone picks"
+        },
+        {
+          "id": "b",
+          "text": "the path on the hill"
+        },
+        {
+          "id": "c",
+          "text": "the school website"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את תחילת המשפט: If you pick an iris.",
+          "en": "Read the start of the sentence: If you pick an iris."
+        }
+      ],
+      "explanation": {
+        "he": "המשפט המלא: If you pick an iris, it cannot make seeds. it הוא הפרח שקוטפים. פרח שנקטף לא יכול לייצר זרעים, ולכן בשנה הבאה יהיו פחות פרחים.",
+        "en": "The full sentence is: If you pick an iris, it cannot make seeds. A picked flower cannot make seeds for next year."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-irises-return",
+      "source": "original"
+    },
+    {
+      "id": "rm1.irises-return.6",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Which sentence is TRUE according to the report?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A park ranger went up the hill with the class."
+        },
+        {
+          "id": "b",
+          "text": "Many irises grow on Oren Hill every year."
+        },
+        {
+          "id": "c",
+          "text": "Each visitor may pick one flower."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק מה קרה בשנים הקודמות ומה מבקשים מהמבקרים.",
+          "en": "Check what happened in past years and what visitors are asked to do."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: a class... walked up the hill with a park ranger. הפרחים פורחים כך for the first time in five years, כלומר לא כל שנה. והפקחית מבקשת not to pick the flowers בכלל.",
+        "en": "The class walked up with a park ranger. The flowers bloom like this for the first time in five years, and visitors should not pick any flowers."
+      },
+      "interests": [
+        "science",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-irises-return",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bottle-bird-feeder.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "A2",
+      "difficulty": 0.2,
+      "prompt": "What does the text mainly explain?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "How to make a feeder that gives birds food"
+        },
+        {
+          "id": "b",
+          "text": "Why birds cannot find food in summer"
+        },
+        {
+          "id": "c",
+          "text": "How to wash and reuse plastic bottles"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחשוב על הכותרת ועל הרשימה הממוספרת.",
+          "en": "Think about the title and the numbered list."
+        }
+      ],
+      "explanation": {
+        "he": "זה טקסט הדרכה (how-to). הוא מסביר צעד אחרי צעד איך מכינים מאכיל לציפורים מבקבוק. שטיפת הבקבוק היא רק צעד אחד, והקטע מדבר על חורף, לא על קיץ.",
+        "en": "This is a how-to text. It explains step by step how to make a bird feeder. Washing the bottle is only one step, and the text talks about winter, not summer."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-bottle-bird-feeder",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bottle-bird-feeder.2",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "What should you do right AFTER you push the spoons through the holes?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask an adult to cut a bigger hole above each spoon."
+        },
+        {
+          "id": "b",
+          "text": "Fill the bottle with seeds."
+        },
+        {
+          "id": "c",
+          "text": "Wash the bottle and let it dry."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "למצוא את הצעד עם הכפות ולקרוא את הצעד הבא.",
+          "en": "Find the step with the spoons and read the next step."
+        }
+      ],
+      "explanation": {
+        "he": "הכפות נכנסות בצעד 3. בצעד 4 חותכים חור גדול יותר מעל קצה כל כף. ממלאים בזרעים רק בצעד 5, ושוטפים את הבקבוק כבר בצעד 1.",
+        "en": "The spoons go in at step 3. Step 4 is cutting a bigger hole above each spoon. Seeds come at step 5, and washing is step 1."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-bottle-bird-feeder",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bottle-bird-feeder.3",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "A2",
+      "difficulty": 0.5,
+      "prompt": "Why does the writer say \"Birds are careful\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To explain why birds may not come to the feeder at once"
+        },
+        {
+          "id": "b",
+          "text": "To warn that birds may hurt young children"
+        },
+        {
+          "id": "c",
+          "text": "To explain why the feeder needs wooden spoons"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שלפני ואת המשפט שאחרי.",
+          "en": "Read the sentence before and the sentence after."
+        }
+      ],
+      "explanation": {
+        "he": "לפני כן נאמר Now wait a few days, ואחר כך they need time to trust something new. הכותב רוצה להסביר שאם הציפורים לא מגיעות מיד, זה טבעי. אין שום אזהרה על פגיעה בילדים.",
+        "en": "The writer says to wait a few days because birds need time to trust something new. It explains why they may not come at once."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-bottle-bird-feeder",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bottle-bird-feeder.4",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "The word \"here\" in \"The seeds will come out here\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the bigger hole above each spoon"
+        },
+        {
+          "id": "b",
+          "text": "the cap of the bottle"
+        },
+        {
+          "id": "c",
+          "text": "the tree branch"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "באיזה צעד מופיע המשפט? מה חותכים באותו צעד?",
+          "en": "In which step is this sentence? What do you cut in that step?"
+        }
+      ],
+      "explanation": {
+        "he": "המשפט נמצא בצעד 4, מיד אחרי cut a bigger hole just above the end of each spoon. הזרעים יוצאים מהחור הזה, והציפורים אוכלות כשהן עומדות על הכף. את הפקק סוגרים, כך שזרעים לא יוצאים ממנו.",
+        "en": "The sentence comes right after cut a bigger hole above each spoon. The seeds come out of that hole. The cap is closed."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-bottle-bird-feeder",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bottle-bird-feeder.5",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "A2",
+      "difficulty": 0.4,
+      "prompt": "Which sentence is TRUE according to the text?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "An adult should help to make the holes."
+        },
+        {
+          "id": "b",
+          "text": "You need a glass bottle."
+        },
+        {
+          "id": "c",
+          "text": "You should add seeds every day."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק את רשימת הדברים שצריך ואת המשפט האחרון.",
+          "en": "Check the list of things you need and the last sentence."
+        }
+      ],
+      "explanation": {
+        "he": "בצעדים 2 ו־4 נאמר Ask an adult. צריך plastic bottle, לא בקבוק זכוכית, ומוסיפים זרעים every week, לא כל יום.",
+        "en": "Steps 2 and 4 say Ask an adult. The bottle is plastic, and you add seeds every week, not every day."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-bottle-bird-feeder",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bottle-bird-feeder.6",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "A2",
+      "difficulty": 0.3,
+      "prompt": "What do the birds stand on?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The wooden spoons"
+        },
+        {
+          "id": "b",
+          "text": "The cap of the bottle"
+        },
+        {
+          "id": "c",
+          "text": "The piece of string"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילה stand.",
+          "en": "Look for the word stand."
+        }
+      ],
+      "explanation": {
+        "he": "בצעד 3 נאמר: Birds will stand on the spoons. החוט משמש לתלות את המאכיל על ענף, והפקק סוגר את הבקבוק.",
+        "en": "Step 3 says: Birds will stand on the spoons. The string is for hanging the feeder, and the cap closes the bottle."
+      },
+      "interests": [
+        "animals"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 35,
+      "passageId": "passage.rm1-bottle-bird-feeder",
+      "source": "original"
+    },
+    {
+      "id": "rm1.three-chords.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "What is the blog post mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The writer's experience of learning to play the guitar"
+        },
+        {
+          "id": "b",
+          "text": "How to choose a good guitar teacher"
+        },
+        {
+          "id": "c",
+          "text": "The life of the writer's grandfather as a musician"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "על מה מדברות כל ארבע הפסקאות?",
+          "en": "What do all four paragraphs talk about?"
+        }
+      ],
+      "explanation": {
+        "he": "הפוסט מספר איך הכותב/ת קיבל/ה גיטרה, התמודד/ה עם כאב באצבעות, למד/ה שלושה אקורדים ומה הלקח. המורה והסבא מופיעים בסיפור, אבל הם לא הנושא המרכזי.",
+        "en": "The post tells how the writer got a guitar, dealt with sore fingers, learned three chords and what the lesson is. The teacher and grandfather are only part of the story."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-three-chords",
+      "source": "original"
+    },
+    {
+      "id": "rm1.three-chords.2",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Which of these is an OPINION in the text?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning an instrument is the best thing a teenager can do with free time."
+        },
+        {
+          "id": "b",
+          "text": "Two of the strings on the old guitar were missing."
+        },
+        {
+          "id": "c",
+          "text": "The writer now knows three chords: G, C and D."
+        },
+        {
+          "id": "d",
+          "text": "The writer's grandfather sang along to the song."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש ביטוי כמו In my opinion או מילה כמו best.",
+          "en": "Look for a phrase like In my opinion or a word like best."
+        }
+      ],
+      "explanation": {
+        "he": "המשפט מתחיל בקטע ב־In my opinion ויש בו the best, סימנים ברורים לדעה. לא כל אחד יסכים. המיתרים החסרים, שלושת האקורדים והשירה של הסבא הם דברים שקרו ואפשר לבדוק.",
+        "en": "The text introduces it with In my opinion and uses the best, clear signs of an opinion. The other sentences describe things that happened."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-three-chords",
+      "source": "original"
+    },
+    {
+      "id": "rm1.three-chords.3",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Which of these happened FIRST?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The writer watched a video about putting on strings."
+        },
+        {
+          "id": "b",
+          "text": "A teacher gave the writer advice about practice."
+        },
+        {
+          "id": "c",
+          "text": "The pain in the writer's fingers went away."
+        },
+        {
+          "id": "d",
+          "text": "The writer played a song for the grandfather."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לעקוב אחרי הסיפור מהפסקה הראשונה.",
+          "en": "Follow the story from the first paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "הסדר: קודם הסרטון על המיתרים (פסקה 1), אחר כך העצה של המורה (פסקה 2), אחרי שלושה שבועות הכאב עבר, ורק אחרי חודשיים השיר לסבא (Last Friday).",
+        "en": "First the video about strings, then the teacher's advice, then the pain went away after three weeks, and finally the song for the grandfather."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-three-chords",
+      "source": "original"
+    },
+    {
+      "id": "rm1.three-chords.4",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "The word \"it\" in \"he enjoyed it more than any present\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "hearing the writer play a song for him"
+        },
+        {
+          "id": "b",
+          "text": "the old guitar that he gave away"
+        },
+        {
+          "id": "c",
+          "text": "the video about putting on strings"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה קרה ביום שישי האחרון?",
+          "en": "What happened last Friday?"
+        }
+      ],
+      "explanation": {
+        "he": "לפני כן נאמר: Last Friday I played a simple song for my grandfather. He sang along. הסבא נהנה מכך שהנכד/ה ניגן/ה לו. זו ההשוואה למתנות: הנגינה הייתה כמו מתנה טובה מכולן.",
+        "en": "The sentence before says the writer played a song for the grandfather. He enjoyed hearing it more than any present."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-three-chords",
+      "source": "original"
+    },
+    {
+      "id": "rm1.three-chords.5",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "What can we understand about the grandfather's guitar?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nobody had played it for a long time."
+        },
+        {
+          "id": "b",
+          "text": "It was a very expensive guitar."
+        },
+        {
+          "id": "c",
+          "text": "The grandfather had broken it on purpose."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איפה הגיטרה הייתה ובמשך כמה זמן?",
+          "en": "Where was the guitar and for how long?"
+        }
+      ],
+      "explanation": {
+        "he": "נאמר שהגיטרה ישבה בארון שלושים שנה וחסרו בה שני מיתרים. מכאן אפשר להבין שאף אחד לא ניגן בה הרבה זמן. על המחיר אין מילה, ואין רמז שמישהו שבר אותה בכוונה.",
+        "en": "The guitar sat in a cupboard for thirty years with two strings missing, so nobody had played it for a long time. Nothing is said about price or breaking it."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-three-chords",
+      "source": "original"
+    },
+    {
+      "id": "rm1.three-chords.6",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "In \"It is much more satisfying than scrolling through videos\", the word \"satisfying\" means...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "giving you a good feeling that you did something worthwhile"
+        },
+        {
+          "id": "b",
+          "text": "easy and fast to do"
+        },
+        {
+          "id": "c",
+          "text": "making you tired and bored"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הכותב/ת משווה בין נגינה לבין גלילה בסרטונים. מה הכותב/ת חושב/ת על נגינה?",
+          "en": "The writer compares playing to scrolling. What does the writer think about playing?"
+        }
+      ],
+      "explanation": {
+        "he": "satisfying פירושו מספק, נותן תחושה טובה של הישג. הכותב/ת אוהב/ת לנגן וממליץ/ה על זה. נגינה לא תוארה כקלה ומהירה: היו כאבים והייתה צריכה סבלנות.",
+        "en": "satisfying means giving a good feeling of achievement. The writer loves playing. It was not easy or fast: it needed patience."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-three-chords",
+      "source": "original"
+    },
+    {
+      "id": "rm1.three-chords.7",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Why does the writer say \"you can play hundreds of songs with just those three\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To show that three chords are more useful than they sound"
+        },
+        {
+          "id": "b",
+          "text": "To complain that learning more chords is too hard"
+        },
+        {
+          "id": "c",
+          "text": "To prove that the writer already plays hundreds of songs"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט כולו. מה בא לפני but?",
+          "en": "Read the whole sentence. What comes before but?"
+        }
+      ],
+      "explanation": {
+        "he": "לפני כן נאמר That doesn't sound like much, but. הכותב/ת מודה ששלושה אקורדים נשמעים מעט, ומסביר/ה שבעצם אפשר לעשות איתם הרבה. לא נאמר שהכותב/ת כבר מנגן/ת מאות שירים.",
+        "en": "The writer admits three chords don't sound like much, but explains they are actually very useful. It does not say the writer plays hundreds of songs."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-three-chords",
+      "source": "original"
+    },
+    {
+      "id": "rm1.desert-sky-interview.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B1",
+      "difficulty": 0.3,
+      "prompt": "What is the interview mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A guide's job showing people the night sky"
+        },
+        {
+          "id": "b",
+          "text": "Why cities should turn off their lights at night"
+        },
+        {
+          "id": "c",
+          "text": "How to build a telescope at home"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה כל השאלות של המראיין שואלות?",
+          "en": "What are all the interviewer's questions about?"
+        }
+      ],
+      "explanation": {
+        "he": "כל השאלות עוסקות בעבודה של Lior: למה במדבר, איך התחיל, מה קורה בסיור ומה הרגע האהוב. האור של הערים מוזכר רק כהסבר, ואין הוראות לבניית טלסקופ.",
+        "en": "All the questions are about Lior's work as a night-sky guide. City lights are only an explanation, and there are no instructions for building a telescope."
+      },
+      "interests": [
+        "science",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-desert-sky-interview",
+      "source": "original"
+    },
+    {
+      "id": "rm1.desert-sky-interview.2",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Why does Lior say that \"light from cities hides the stars\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To explain why the tours take place in the desert"
+        },
+        {
+          "id": "b",
+          "text": "To complain about people who live in cities"
+        },
+        {
+          "id": "c",
+          "text": "To explain why the guide uses a green laser"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לאיזו שאלה זו התשובה?",
+          "en": "Which question is this an answer to?"
+        }
+      ],
+      "explanation": {
+        "he": "זו התשובה לשאלה Why the desert? Lior מסביר שבעיר האור מסתיר את הכוכבים, ולכן הסיורים במדבר החשוך. אין כאן תלונה על אנשים, והלייזר מוזכר רק בהמשך.",
+        "en": "It answers the question Why the desert? City light hides the stars, so the tours happen in the dark desert."
+      },
+      "interests": [
+        "science",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-desert-sky-interview",
+      "source": "original"
+    },
+    {
+      "id": "rm1.desert-sky-interview.3",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Which sentence from the interview is an OPINION?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I think it is the most amazing sight in the universe."
+        },
+        {
+          "id": "b",
+          "text": "It takes about twenty minutes for your eyes to get used to the dark."
+        },
+        {
+          "id": "c",
+          "text": "Later I studied physics at university."
+        },
+        {
+          "id": "d",
+          "text": "When I was twelve, my school took us on a trip to an observatory."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש I think ומילה כמו most amazing.",
+          "en": "Look for I think and a phrase like most amazing."
+        }
+      ],
+      "explanation": {
+        "he": "I think ו־the most amazing מראים שזו דעה אישית. משך הזמן שלוקח לעיניים להתרגל, הלימודים והטיול הם מידע שאפשר לבדוק.",
+        "en": "I think and the most amazing show a personal opinion. The time eyes need, the studies and the school trip are facts."
+      },
+      "interests": [
+        "science",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-desert-sky-interview",
+      "source": "original"
+    },
+    {
+      "id": "rm1.desert-sky-interview.4",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "The word \"Here\" in \"Here, far from big towns, the sky is really dark\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the Negev desert"
+        },
+        {
+          "id": "b",
+          "text": "the observatory"
+        },
+        {
+          "id": "c",
+          "text": "the university"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לאיזו שאלה Lior עונה?",
+          "en": "Which question is Lior answering?"
+        }
+      ],
+      "explanation": {
+        "he": "Lior עונה על Why the desert? ומדבר על המקום שבו הוא עובד, מדבר הנגב. המצפה והאוניברסיטה מוזכרים רק בתשובה הבאה.",
+        "en": "Lior is answering Why the desert?, so Here is the Negev desert. The observatory and university come in the next answer."
+      },
+      "interests": [
+        "science",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-desert-sky-interview",
+      "source": "original"
+    },
+    {
+      "id": "rm1.desert-sky-interview.5",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Which sentence is TRUE according to the interview?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lior paid for the first telescope with money he saved."
+        },
+        {
+          "id": "b",
+          "text": "Lior got a telescope as a present from the school."
+        },
+        {
+          "id": "c",
+          "text": "People on the tour use their phones to find the stars."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא שוב את התשובות How did you start? ו־What happens on a tour?",
+          "en": "Read the answers to How did you start? and What happens on a tour? again."
+        }
+      ],
+      "explanation": {
+        "he": "Lior אומר: I saved money for two years to buy my first small telescope. בית הספר רק לקח אותו לטיול. בסיור כולם מכבים את מסכי הטלפון (turns off their phone screens).",
+        "en": "Lior saved money for two years to buy the telescope. The school only took him on a trip, and phone screens are turned off on tours."
+      },
+      "interests": [
+        "science",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-desert-sky-interview",
+      "source": "original"
+    },
+    {
+      "id": "rm1.desert-sky-interview.6",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "B1",
+      "difficulty": 0.3,
+      "prompt": "What does Lior use to show people planets and stars?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A green laser"
+        },
+        {
+          "id": "b",
+          "text": "A phone screen"
+        },
+        {
+          "id": "c",
+          "text": "A map of the sky"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילים point out.",
+          "en": "Look for the words point out."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: Then I point out planets and stars with a green laser. את הטלפונים מכבים, ומפה בכלל לא מוזכרת.",
+        "en": "Lior says: I point out planets and stars with a green laser. Phones are turned off, and no map is mentioned."
+      },
+      "interests": [
+        "science",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-desert-sky-interview",
+      "source": "original"
+    },
+    {
+      "id": "rm1.desert-sky-interview.7",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Which of these happened LAST in Lior's life?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lior started working as a guide."
+        },
+        {
+          "id": "b",
+          "text": "Lior bought a small telescope."
+        },
+        {
+          "id": "c",
+          "text": "Lior visited an observatory with the school."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילים Afterwards ו־Later.",
+          "en": "Look for the words Afterwards and Later."
+        }
+      ],
+      "explanation": {
+        "he": "בגיל 12 הטיול למצפה, Afterwards חסך וקנה טלסקופ, Later למד באוניברסיטה ובמהלך הלימודים התחיל לעבוד כמדריך. זה הדבר האחרון.",
+        "en": "The trip came at twelve, afterwards the telescope, and later, during university, the guide job."
+      },
+      "interests": [
+        "science",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-desert-sky-interview",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bat-scientist.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B1",
+      "difficulty": 0.3,
+      "prompt": "What is the text mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The life and work of a scientist who studied bats"
+        },
+        {
+          "id": "b",
+          "text": "Why people in villages are afraid of bats"
+        },
+        {
+          "id": "c",
+          "text": "How to visit caves in the Judean Desert"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "זו ביוגרפיה. על מי היא?",
+          "en": "This is a biography. Who is it about?"
+        }
+      ],
+      "explanation": {
+        "he": "הטקסט עוקב אחרי Leah Doron מהילדות ועד הפרישה, ומתאר את המחקר שלה על עטלפים. הפחד של השכנים והמערה הם חלקים קטנים בסיפור.",
+        "en": "The text follows Leah Doron from childhood to retirement and describes her research. The neighbours' fear and the cave are small parts of it."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-bat-scientist",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bat-scientist.2",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Which of these happened FIRST?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Leah served in the army."
+        },
+        {
+          "id": "b",
+          "text": "Leah counted bats in a cave."
+        },
+        {
+          "id": "c",
+          "text": "Leah built a machine for listening to bats."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש תאריכים ומילים כמו After ו־then.",
+          "en": "Look for dates and words like After and then."
+        }
+      ],
+      "explanation": {
+        "he": "After finishing school, Leah served in the army, אחר כך למדה ביולוגיה, ב־1978 ספרה עטלפים במערה, ובשנות ה־80 בנתה את המכשיר.",
+        "en": "After school she served in the army, then studied, counted bats in 1978 and built the machine in the 1980s."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-bat-scientist",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bat-scientist.3",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "Why do bats make very high sounds?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To find food by listening for the echo"
+        },
+        {
+          "id": "b",
+          "text": "To call other bats to the cave"
+        },
+        {
+          "id": "c",
+          "text": "To frighten people away"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את תחילת הפסקה השלישית.",
+          "en": "Read the beginning of the third paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: Bats find food by making very high sounds and listening for the echo. העטלף שומע את ההד וכך מוצא חרקים. שאר התשובות לא מופיעות בקטע.",
+        "en": "The text says bats find food by making high sounds and listening for the echo. The other answers are not in the text."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-bat-scientist",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bat-scientist.4",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "The word \"it\" in \"With it, she discovered\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the machine Leah built"
+        },
+        {
+          "id": "b",
+          "text": "the cave in the Judean Desert"
+        },
+        {
+          "id": "c",
+          "text": "the echo of the bat calls"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה Leah עשתה במשפט הקודם?",
+          "en": "What did Leah do in the sentence before?"
+        }
+      ],
+      "explanation": {
+        "he": "במשפט הקודם Leah built a small machine. בעזרת המכשיר (With it) גילתה שעטלפים שונים מדברים אחרת. המערה מוזכרת בפסקה אחרת.",
+        "en": "In the sentence before, Leah built a small machine. With it, she made her discovery."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-bat-scientist",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bat-scientist.5",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Which sentence from the text is an OPINION?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "In my view, she was one of the most important nature scientists of her generation."
+        },
+        {
+          "id": "b",
+          "text": "Leah Doron was born in 1951 in a small village in the Galilee."
+        },
+        {
+          "id": "c",
+          "text": "Humans cannot hear these sounds."
+        },
+        {
+          "id": "d",
+          "text": "Several caves were closed to visitors to protect the animals."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש ביטוי כמו In my view.",
+          "en": "Look for a phrase like In my view."
+        }
+      ],
+      "explanation": {
+        "he": "In my view ו־one of the most important הם סימני דעה: זו הערכה של הכותב. שנת הלידה, העובדה שבני אדם לא שומעים את הקולות וסגירת המערות הם עובדות.",
+        "en": "In my view and one of the most important show the writer's judgement. The other sentences are facts that can be checked."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-bat-scientist",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bat-scientist.6",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Why does the writer mention that a single bat can eat hundreds of insects in one night?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To explain how bats help farmers"
+        },
+        {
+          "id": "b",
+          "text": "To show that bats are dangerous animals"
+        },
+        {
+          "id": "c",
+          "text": "To explain why Leah's neighbours were afraid of bats"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את כל המשפט. מה בא לפני because?",
+          "en": "Read the whole sentence. What comes before because?"
+        }
+      ],
+      "explanation": {
+        "he": "המשפט: bats help farmers, because a single bat can eat hundreds of insects. הנתון מסביר למה עטלפים מועילים לחקלאים: הם אוכלים חרקים שפוגעים ביבול. אין כאן טענה שעטלפים מסוכנים.",
+        "en": "The fact explains why bats help farmers: they eat many insects. It does not say bats are dangerous."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-bat-scientist",
+      "source": "original"
+    },
+    {
+      "id": "rm1.bat-scientist.7",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.7,
+      "prompt": "What did Leah probably mean by \"People fear what they don't understand\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning about bats can make people less afraid of them."
+        },
+        {
+          "id": "b",
+          "text": "Bats are dangerous, so people are right to fear them."
+        },
+        {
+          "id": "c",
+          "text": "People should not go into caves without a guide."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "להיזכר מה השכנים של Leah הרגישו כלפי עטלפים, ומה Leah רצתה לדעת.",
+          "en": "Remember how Leah's neighbours felt about bats, and what Leah wanted to know."
+        }
+      ],
+      "explanation": {
+        "he": "השכנים פחדו מעטלפים, ו־Leah רצתה להבין אותם. היא כתבה ספרים לילדים כדי שיכירו את העטלפים. המשפט רומז שידע מקטין פחד. אין בטקסט רמז שעטלפים מסוכנים.",
+        "en": "Her neighbours feared bats, while Leah wanted to understand them, and she wrote books for children. Her words suggest that knowledge reduces fear."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-bat-scientist",
+      "source": "original"
+    },
+    {
+      "id": "rm1.pocket-planet-review.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "What is the review mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A nature game, with its strong points and its weak points"
+        },
+        {
+          "id": "b",
+          "text": "How university students can make their own games"
+        },
+        {
+          "id": "c",
+          "text": "Why biology lessons at school are boring"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "ביקורת בודקת דבר אחד. מה הדבר הזה, ומה הכותב/ת אומר/ת עליו?",
+          "en": "A review judges one thing. What is it, and what does the writer say about it?"
+        }
+      ],
+      "explanation": {
+        "he": "הביקורת מתארת את המשחק Pocket Planet, מה טוב בו (לומדים, אין פרסומות, מוזיקה) ומה פחות טוב (הוראות קצרות, נגמר מהר). הסטודנטים ושיעורי הביולוגיה הם רק פרטים.",
+        "en": "The review describes Pocket Planet, its good points and its problems. The students and the biology lessons are only details."
+      },
+      "interests": [
+        "games",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-pocket-planet-review",
+      "source": "original"
+    },
+    {
+      "id": "rm1.pocket-planet-review.2",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "Which sentence about the game is a FACT?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It has twenty levels."
+        },
+        {
+          "id": "b",
+          "text": "Its graphics are charming."
+        },
+        {
+          "id": "c",
+          "text": "Its calm music is lovely."
+        },
+        {
+          "id": "d",
+          "text": "It is a clever and relaxing game."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "עובדה אפשר לבדוק. מה אפשר לספור?",
+          "en": "A fact can be checked. What can you count?"
+        }
+      ],
+      "explanation": {
+        "he": "את מספר השלבים אפשר לבדוק ולספור, ולכן זו עובדה. charming, lovely, clever ו־relaxing הן מילות הערכה: שחקן/ית אחר/ת יכול/ה לחשוב אחרת.",
+        "en": "The number of levels can be checked, so it is a fact. charming, lovely, clever and relaxing are judgements."
+      },
+      "interests": [
+        "games",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-pocket-planet-review",
+      "source": "original"
+    },
+    {
+      "id": "rm1.pocket-planet-review.3",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Why does the writer mention \"a whole term of biology lessons\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To show how well the game teaches about nature"
+        },
+        {
+          "id": "b",
+          "text": "To complain about the writer's biology teacher"
+        },
+        {
+          "id": "c",
+          "text": "To suggest that the game should replace school lessons"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "הכותב/ת משווה בין שבוע של משחק לבין שיעורים. מה ההשוואה מראה?",
+          "en": "The writer compares a week of the game to lessons. What does the comparison show?"
+        }
+      ],
+      "explanation": {
+        "he": "המשפט מופיע אחרי What I liked most was how much I learned. ההשוואה מדגישה כמה המשחק מלמד על שרשראות מזון. אין ביקורת על המורה, ואין הצעה לבטל שיעורים.",
+        "en": "The comparison comes after What I liked most was how much I learned. It shows how much the game teaches. There is no criticism of a teacher."
+      },
+      "interests": [
+        "games",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-pocket-planet-review",
+      "source": "original"
+    },
+    {
+      "id": "rm1.pocket-planet-review.4",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "The word \"they\" in \"they eat all the grass\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the rabbits"
+        },
+        {
+          "id": "b",
+          "text": "the foxes"
+        },
+        {
+          "id": "c",
+          "text": "the plants"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את תחילת אותו משפט.",
+          "en": "Read the start of the same sentence."
+        }
+      ],
+      "explanation": {
+        "he": "המשפט: If you add too many rabbits, they eat all the grass. they הם הארנבים. השועלים מופיעים רק במשפט הבא, והם מקטינים את מספר הארנבים.",
+        "en": "The sentence is: If you add too many rabbits, they eat all the grass. The foxes come in the next sentence."
+      },
+      "interests": [
+        "games",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-pocket-planet-review",
+      "source": "original"
+    },
+    {
+      "id": "rm1.pocket-planet-review.5",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "Which sentence is TRUE according to the review?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "You can play the game without the internet."
+        },
+        {
+          "id": "b",
+          "text": "You see a lot of adverts in the game."
+        },
+        {
+          "id": "c",
+          "text": "The writer finished the game in one day."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק מה נאמר על פרסומות ועל כמה זמן לקח לסיים.",
+          "en": "Check what the review says about adverts and how long it took to finish."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: You can play without an internet connection. אין פרסומות (There are no adverts), והכותב/ת סיים/ה את המשחק in about ten days.",
+        "en": "The review says you can play without an internet connection. There are no adverts, and the writer finished in about ten days."
+      },
+      "interests": [
+        "games",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-pocket-planet-review",
+      "source": "original"
+    },
+    {
+      "id": "rm1.pocket-planet-review.6",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "What problem did the writer have at the beginning of the game?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The instructions were too short to understand what to do."
+        },
+        {
+          "id": "b",
+          "text": "The music was too loud."
+        },
+        {
+          "id": "c",
+          "text": "The game needed an internet connection."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המשפט עם for the first hour.",
+          "en": "Look for the sentence with for the first hour."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: The instructions are too short, so for the first hour I had no idea what to do. המוזיקה תוארה כרגועה, והמשחק עובד בלי אינטרנט.",
+        "en": "The instructions are too short, so at first the writer didn't know what to do. The music is calm and the game works offline."
+      },
+      "interests": [
+        "games",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-pocket-planet-review",
+      "source": "original"
+    },
+    {
+      "id": "rm1.pocket-planet-review.7",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "In \"The graphics are simple but charming\", the word \"charming\" means...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "pleasant and attractive"
+        },
+        {
+          "id": "b",
+          "text": "difficult to understand"
+        },
+        {
+          "id": "c",
+          "text": "old-fashioned and boring"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "המילה but מראה ניגוד. אם simple נשמע קצת חיסרון, מה בא אחריו?",
+          "en": "but shows a contrast. If simple sounds like a weak point, what comes after it?"
+        }
+      ],
+      "explanation": {
+        "he": "charming פירושו מקסים, נעים לעין. but מראה שאחרי simple בא משהו חיובי. גם שאר המשפט חיובי: the calm music is lovely. old-fashioned and boring שלילי ולא מתאים להמשך.",
+        "en": "charming means pleasant and attractive. but shows that something positive follows simple, and the rest of the sentence is positive too."
+      },
+      "interests": [
+        "games",
+        "technology"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-pocket-planet-review",
+      "source": "original"
+    },
+    {
+      "id": "rm1.broken-string.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "What is the story mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A friend helps Maya play her solo after a problem on stage"
+        },
+        {
+          "id": "b",
+          "text": "Maya decides to stop playing in the orchestra"
+        },
+        {
+          "id": "c",
+          "text": "Daniel plays Maya's solo instead of her"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה הבעיה בסיפור ואיך היא נפתרת?",
+          "en": "What is the problem in the story and how is it solved?"
+        }
+      ],
+      "explanation": {
+        "he": "המיתר של Maya נקרע לפני הסולו, ו־Daniel נותן לה את הכינור שלו כדי שתוכל לנגן. Maya ניגנה את הסולו בעצמה, והיא לא מחליטה לעזוב.",
+        "en": "Maya's string breaks before her solo, and Daniel gives her his violin so she can play. Maya plays the solo herself."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-broken-string",
+      "source": "original"
+    },
+    {
+      "id": "rm1.broken-string.2",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "What happened right AFTER Maya's string broke?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Daniel held out his violin to her."
+        },
+        {
+          "id": "b",
+          "text": "Maya played her solo with her eyes closed."
+        },
+        {
+          "id": "c",
+          "text": "The conductor smiled at Maya."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את הפסקה הרביעית.",
+          "en": "Read the fourth paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "אחרי שהמיתר נקרע, Maya נבהלה לשנייה, ואז Daniel הושיט לה את הכינור שלו. רק אחר כך ניגנה בעיניים עצומות, והמנצח חייך בסוף הסולו.",
+        "en": "After the string broke, Daniel held out his violin. Only later did Maya play, and the conductor smiled after the solo."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-broken-string",
+      "source": "original"
+    },
+    {
+      "id": "rm1.broken-string.3",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Why was Maya's mother probably wiping her eyes?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "She was moved and proud, and she had tears in her eyes."
+        },
+        {
+          "id": "b",
+          "text": "The lights in the hall were too bright for her."
+        },
+        {
+          "id": "c",
+          "text": "She was sad because Maya's solo went badly."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איך המנצח הגיב לסולו באותו רגע?",
+          "en": "How did the conductor react to the solo at the same moment?"
+        }
+      ],
+      "explanation": {
+        "he": "המנצח חייך אל Maya, כלומר הסולו הצליח. אם כך, האם בכתה מהתרגשות ומגאווה. אין שום סימן שהסולו נכשל, ולא מדובר באורות.",
+        "en": "The conductor was smiling, so the solo went well. The mother was crying because she was moved and proud."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-broken-string",
+      "source": "original"
+    },
+    {
+      "id": "rm1.broken-string.4",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "The word \"hers\" in \"he took hers and put it on his knees\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Maya's violin"
+        },
+        {
+          "id": "b",
+          "text": "Maya's arm"
+        },
+        {
+          "id": "c",
+          "text": "Maya's sign"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה Daniel הושיט ל־Maya? מה הוא לקח ממנה בתמורה?",
+          "en": "What did Daniel hold out to Maya? What did he take from her in return?"
+        }
+      ],
+      "explanation": {
+        "he": "Daniel הושיט לה את הכינור שלו, ואז he took hers, כלומר את הכינור שלה, עם המיתר הקרוע. את השלט החזיק בכלל האח הקטן.",
+        "en": "Daniel held out his own violin and took hers, Maya's violin with the broken string. The sign belonged to her brother."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-broken-string",
+      "source": "original"
+    },
+    {
+      "id": "rm1.broken-string.5",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B1",
+      "difficulty": 0.6,
+      "prompt": "Why does the writer compare the sound of the string to \"a small whip\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To help the reader hear how sudden and sharp the sound was"
+        },
+        {
+          "id": "b",
+          "text": "To show that someone in the audience was angry"
+        },
+        {
+          "id": "c",
+          "text": "To suggest that the conductor was very strict"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה המילה sharp שלפני ההשוואה אומרת על הצליל?",
+          "en": "What does the word sharp before the comparison tell you about the sound?"
+        }
+      ],
+      "explanation": {
+        "he": "ההשוואה like a small whip עוזרת לקורא לשמוע צליל חד ופתאומי, כמו הצליפה של שוט. זה תיאור של הצליל בלבד, ואין קשר לכעס או לחומרה של המנצח.",
+        "en": "Comparing the sound to a small whip helps readers hear how sudden and sharp it was. It says nothing about anger or the conductor."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-broken-string",
+      "source": "original"
+    },
+    {
+      "id": "rm1.broken-string.6",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B1",
+      "difficulty": 0.5,
+      "prompt": "In \"He shrugged\", the word \"shrugged\" means that Daniel...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "lifted his shoulders to show it was not a big deal"
+        },
+        {
+          "id": "b",
+          "text": "shook his head to say no"
+        },
+        {
+          "id": "c",
+          "text": "laughed loudly at Maya"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה Daniel אומר מיד אחר כך?",
+          "en": "What does Daniel say right after?"
+        }
+      ],
+      "explanation": {
+        "he": "shrug פירושו להרים את הכתפיים, תנועה שאומרת \"לא נורא\" או \"זה לא חשוב\". Daniel ממשיך ואומר That's nothing between friends, וזה מתאים לתנועה הזאת.",
+        "en": "To shrug is to lift your shoulders to show something is not important. Daniel then says: That's nothing between friends."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-broken-string",
+      "source": "original"
+    },
+    {
+      "id": "rm1.broken-string.7",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "B1",
+      "difficulty": 0.4,
+      "prompt": "Which sentence is TRUE according to the story?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The orchestra had practised the piece for four months."
+        },
+        {
+          "id": "b",
+          "text": "Maya's solo came at the end of the piece."
+        },
+        {
+          "id": "c",
+          "text": "Maya's father was holding a sign with her name."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק איפה הסולו היה בקטע, ומי החזיק את השלט.",
+          "en": "Check where the solo came in the piece and who held the sign."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: The youth orchestra had practised this piece for four months. הסולו היה in the middle, ואת השלט החזיק her little brother.",
+        "en": "The orchestra practised for four months. The solo was in the middle, and her little brother held the sign."
+      },
+      "interests": [
+        "music"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 45,
+      "passageId": "passage.rm1-broken-string",
+      "source": "original"
+    },
+    {
+      "id": "rm1.repair-club-column.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "What is the writer's main argument?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Schools should teach students to repair everyday objects."
+        },
+        {
+          "id": "b",
+          "text": "Teenagers should buy better headphones that do not break."
+        },
+        {
+          "id": "c",
+          "text": "Only trained professionals should repair electronic devices."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המשפט שבו הכותב/ת אומר/ת מה הוא/היא מציע/ה.",
+          "en": "Find the sentence where the writer says what he or she proposes."
+        }
+      ],
+      "explanation": {
+        "he": "הטענה המרכזית מופיעה במשפט This is why I believe every secondary school should run a weekly repair club. סיפור האוזניות הוא דוגמה שמובילה לטענה. הטענה על אנשי מקצוע היא של המבקרים, והכותב/ת מסכים/ה איתה רק בחלקה.",
+        "en": "The main argument is: every secondary school should run a repair club. The headphones story leads to it. The point about professionals belongs to the critics."
+      },
+      "interests": [
+        "technology",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-repair-club-column",
+      "source": "original"
+    },
+    {
+      "id": "rm1.repair-club-column.2",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Which sentence from the column is a FACT?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The world produced around 62 million tonnes of electronic waste in 2022."
+        },
+        {
+          "id": "b",
+          "text": "Every secondary school should run a weekly repair club."
+        },
+        {
+          "id": "c",
+          "text": "A repair club is not about turning teenagers into technicians."
+        },
+        {
+          "id": "d",
+          "text": "The skills are surprisingly useful in other subjects."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש מספר ומקור מידע, כמו According to a report.",
+          "en": "Look for a number and a source, like According to a report."
+        }
+      ],
+      "explanation": {
+        "he": "המספר מגיע מדו\"ח של האו\"ם (According to a United Nations report) ואפשר לבדוק אותו, ולכן זו עובדה. should, ההסבר מה המועדון \"באמת\" ו־surprisingly useful הם דעות של הכותב/ת.",
+        "en": "The number comes from a UN report and can be checked, so it is a fact. should, what the club is really about and surprisingly useful are the writer's opinions."
+      },
+      "interests": [
+        "technology",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-repair-club-column",
+      "source": "original"
+    },
+    {
+      "id": "rm1.repair-club-column.3",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Which of these is an OPINION, not a fact?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A repair club is about confidence."
+        },
+        {
+          "id": "b",
+          "text": "The writer's uncle fixed the headphones in under ten minutes."
+        },
+        {
+          "id": "c",
+          "text": "Some towns already run repair cafés for adults."
+        },
+        {
+          "id": "d",
+          "text": "Less than a quarter of the electronic waste was recorded as properly collected and recycled."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "שלושה משפטים מתארים דברים שקרו או נתונים. איזה משפט מתאר איך הכותב/ת מבין/ה את הרעיון?",
+          "en": "Three sentences describe events or data. Which one shows how the writer sees the idea?"
+        }
+      ],
+      "explanation": {
+        "he": "It is about confidence היא פרשנות של הכותב/ת למטרת המועדון, ומבקרים יכולים לחלוק עליה. התיקון של הדוד, בתי הקפה לתיקונים והנתון על המיחזור הם דברים שאפשר לבדוק.",
+        "en": "Saying a repair club is about confidence is the writer's interpretation. The uncle's repair, the repair cafés and the recycling figure can be checked."
+      },
+      "interests": [
+        "technology",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-repair-club-column",
+      "source": "original"
+    },
+    {
+      "id": "rm1.repair-club-column.4",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Why does the writer begin with the story about the headphones?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To show from personal experience how easily things are thrown away instead of fixed"
+        },
+        {
+          "id": "b",
+          "text": "To advertise the uncle's radio repair business"
+        },
+        {
+          "id": "c",
+          "text": "To warn readers that cheap headphones break quickly"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איך הכותב/ת הרגיש/ה בסוף הסיפור, ולאיזו טענה הוא מוביל?",
+          "en": "How did the writer feel at the end of the story, and what argument does it lead to?"
+        }
+      ],
+      "explanation": {
+        "he": "הסיפור מראה שהכותב/ת זרק/ה אוזניות שאפשר היה לתקן בעשר דקות. זו דוגמה אישית שמובילה לטענה על פסולת אלקטרונית ועל מועדון תיקונים. הדוד מתקן כתחביב (as a hobby), לא כעסק.",
+        "en": "The story shows the writer threw away headphones that took ten minutes to fix. This personal example leads to the argument. The uncle repairs radios as a hobby, not a business."
+      },
+      "interests": [
+        "technology",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-repair-club-column",
+      "source": "original"
+    },
+    {
+      "id": "rm1.repair-club-column.5",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "The word \"They\" in \"They have a point\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the critics of the idea"
+        },
+        {
+          "id": "b",
+          "text": "the students in the club"
+        },
+        {
+          "id": "c",
+          "text": "the volunteers from the community"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שלפני.",
+          "en": "Read the sentence before."
+        }
+      ],
+      "explanation": {
+        "he": "המשפט הקודם: Critics will say that schools are already too busy. הכותב/ת מודה שיש למבקרים צדק בנקודה אחת (They have a point), ואז מסביר/ה למה הם בכל זאת טועים.",
+        "en": "The sentence before talks about critics. The writer admits they have a point, then explains why the idea still works."
+      },
+      "interests": [
+        "technology",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-repair-club-column",
+      "source": "original"
+    },
+    {
+      "id": "rm1.repair-club-column.6",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "What did the writer do right AFTER the uncle asked to see the broken headphones?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The writer took them out of the rubbish bin."
+        },
+        {
+          "id": "b",
+          "text": "The writer ordered a new pair."
+        },
+        {
+          "id": "c",
+          "text": "The writer opened them with a tiny screwdriver."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שבא אחרי asked to see the broken ones.",
+          "en": "Read the sentence that comes after asked to see the broken ones."
+        }
+      ],
+      "explanation": {
+        "he": "הסדר: הכותב/ת זרק/ה את האוזניות והזמין/ה חדשות, שבוע אחר כך הדוד ביקש לראות אותן, ואז I dug them out of the rubbish bin. את המברג החזיק הדוד, לא הכותב/ת.",
+        "en": "The writer threw them away and ordered new ones, then the uncle asked to see them, and then the writer dug them out of the bin. The uncle used the screwdriver."
+      },
+      "interests": [
+        "technology",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-repair-club-column",
+      "source": "original"
+    },
+    {
+      "id": "rm1.repair-club-column.7",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "Why did the writer probably feel \"embarrassed\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The writer had thrown away something that was easy to fix."
+        },
+        {
+          "id": "b",
+          "text": "The uncle laughed at the writer in front of the family."
+        },
+        {
+          "id": "c",
+          "text": "The new headphones were worse than the old ones."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כמה זמן לקח לדוד לתקן את האוזניות?",
+          "en": "How long did the uncle need to fix the headphones?"
+        }
+      ],
+      "explanation": {
+        "he": "הדוד תיקן את האוזניות in under ten minutes בעזרת מברג קטן. הכותב/ת הבין/ה שזרק/ה משהו שהיה קל לתקן, ולכן התבייש/ה. לא נאמר שהדוד צחק, ואין השוואה בין האוזניות.",
+        "en": "The uncle fixed them in under ten minutes, so the writer realised the headphones were easy to fix. Nothing says the uncle laughed."
+      },
+      "interests": [
+        "technology",
+        "school"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-repair-club-column",
+      "source": "original"
+    },
+    {
+      "id": "rm1.sky-highway.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "What does the text mainly explain?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Why so many migrating birds fly over Israel"
+        },
+        {
+          "id": "b",
+          "text": "How birds build nests and raise their young in Europe"
+        },
+        {
+          "id": "c",
+          "text": "How pilots learned to fly like storks"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את השאלה שבסוף הפסקה הראשונה.",
+          "en": "Read the question at the end of the first paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "הפסקה הראשונה שואלת why do so many birds choose this route? וכל הטקסט עונה על השאלה: גאוגרפיה, זרמים תרמיים והמסדרון היבשתי. הקינים באירופה הם רקע בלבד.",
+        "en": "The first paragraph asks why so many birds choose this route, and the whole text answers it. The nests in Europe are only background."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-sky-highway",
+      "source": "original"
+    },
+    {
+      "id": "rm1.sky-highway.2",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "According to the text, what does a stork do right AFTER it climbs high inside a thermal?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It glides forward until it finds the next thermal."
+        },
+        {
+          "id": "b",
+          "text": "It flaps its wings for hours."
+        },
+        {
+          "id": "c",
+          "text": "It circles inside the same thermal again."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את המילה Then בפסקה השלישית.",
+          "en": "Look for the word Then in the third paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: A stork circles inside a thermal and climbs high... Then it glides forward... until it finds the next thermal. נפנוף כנפיים לשעות הוא בדיוק מה שהחסידה נמנעת ממנו.",
+        "en": "The stork circles and climbs, then glides forward to the next thermal. Flapping for hours is what it avoids."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-sky-highway",
+      "source": "original"
+    },
+    {
+      "id": "rm1.sky-highway.3",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "B2",
+      "difficulty": 0.4,
+      "prompt": "Why do many birds leave Europe and western Asia in autumn?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It turns cold and insects become hard to find."
+        },
+        {
+          "id": "b",
+          "text": "They need to cross the sea before winter storms."
+        },
+        {
+          "id": "c",
+          "text": "There are no thermals there in autumn."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בפסקה השנייה את המילה When.",
+          "en": "Look for the word When in the second paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: When the weather turns cold and insects become hard to find, they fly south. סערות לא מוזכרות, והזרמים התרמיים מוסברים בהקשר אחר: למה ציפורים גדולות לא עפות מעל הים.",
+        "en": "The text says they fly south when it turns cold and insects are hard to find. Storms are not mentioned."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-sky-highway",
+      "source": "original"
+    },
+    {
+      "id": "rm1.sky-highway.4",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "Why does the writer mention the Mediterranean Sea?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To explain why soaring birds are pushed into a narrow route over land"
+        },
+        {
+          "id": "b",
+          "text": "To describe where storks find food in winter"
+        },
+        {
+          "id": "c",
+          "text": "To show that the sea is dangerous for small birds"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה קורה לזרמים התרמיים מעל הים?",
+          "en": "What happens to thermals over the sea?"
+        }
+      ],
+      "explanation": {
+        "he": "מעל הים כמעט אין thermals, ולכן ציפורים דואות עוקפות את הים התיכון ונדחסות למסדרון יבשתי צר, שישראל נמצאת באמצעו. הקטע לא מדבר על מזון בים או על ציפורים קטנות.",
+        "en": "There are hardly any thermals over the sea, so soaring birds go around it and are pushed into a narrow corridor over Israel."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-sky-highway",
+      "source": "original"
+    },
+    {
+      "id": "rm1.sky-highway.5",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "Which sentence is TRUE according to the text?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Radar is used today to warn pilots about birds."
+        },
+        {
+          "id": "b",
+          "text": "Large birds prefer flying over the sea because the air there is warmer."
+        },
+        {
+          "id": "c",
+          "text": "Birds fly over Israel only in spring."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לבדוק מה נאמר על הים, על העונות ועל המטוסים.",
+          "en": "Check what the text says about the sea, the seasons and planes."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: researchers track the flocks with radar and send warnings to pilots. הציפורים הגדולות נמנעות מהים כי שם כמעט אין זרמים חמים, והן עוברות גם בסתיו וגם באביב (in autumn and north again in spring).",
+        "en": "Researchers track the flocks with radar and warn pilots. Large birds avoid the sea, and they pass in autumn and in spring."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-sky-highway",
+      "source": "original"
+    },
+    {
+      "id": "rm1.sky-highway.6",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Which sentence from the text is an OPINION?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Twice a year, something remarkable happens above Israel."
+        },
+        {
+          "id": "b",
+          "text": "Thermals form over land, but hardly at all over the sea."
+        },
+        {
+          "id": "c",
+          "text": "Researchers track the flocks with radar."
+        },
+        {
+          "id": "d",
+          "text": "Large birds such as storks, pelicans and eagles glide instead of flapping."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש מילה שמביעה התפעלות או הערכה.",
+          "en": "Look for a word that shows admiration or judgement."
+        }
+      ],
+      "explanation": {
+        "he": "remarkable (מדהים, יוצא דופן) היא מילת הערכה של הכותב/ת. הזרמים התרמיים, השימוש במכ\"ם והדאייה של ציפורים גדולות הם עובדות מדעיות שאפשר לבדוק.",
+        "en": "remarkable is the writer's judgement. Thermals, radar tracking and gliding birds are scientific facts that can be checked."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-sky-highway",
+      "source": "original"
+    },
+    {
+      "id": "rm1.sky-highway.7",
+      "type": "choice",
+      "skill": "reading.vocabulary-in-context",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "In \"forces them into a narrow corridor\", the word \"corridor\" means...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "a narrow route that many travel along"
+        },
+        {
+          "id": "b",
+          "text": "a long hallway inside a building"
+        },
+        {
+          "id": "c",
+          "text": "a column of warm, rising air"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כאן אין בניין. על מה מדברים: מקום, דרך או סוג של אוויר?",
+          "en": "There is no building here. Is it a place, a route or a kind of air?"
+        }
+      ],
+      "explanation": {
+        "he": "corridor הוא בדרך כלל מסדרון בבניין, אבל כאן זה שימוש מושאל: דרך צרה שהרבה עוברים בה. הציפורים נדחסות לנתיב צר מעל היבשה. עמוד אוויר חם הוא thermal, לא corridor.",
+        "en": "corridor usually means a hallway, but here it means a narrow route that many travel along. A column of warm air is a thermal."
+      },
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-sky-highway",
+      "source": "original"
+    },
+    {
+      "id": "rm1.mosaic-volunteers.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B2",
+      "difficulty": 0.4,
+      "prompt": "What is the news report mainly about?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "An important discovery made by young volunteers at a dig"
+        },
+        {
+          "id": "b",
+          "text": "How mosaics were made 1,600 years ago"
+        },
+        {
+          "id": "c",
+          "text": "A new museum that is opening in the Lower Galilee"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "כתבה חדשותית אומרת את העיקר כבר בפסקה הראשונה.",
+          "en": "A news report gives the main point in the first paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "הפסקה הראשונה מסכמת: מתנדבים בני נוער חשפו רצפת פסיפס עתיקה. שאר הכתבה מפרטת איך זה קרה ומה יקרה עכשיו. אין הסבר איך הכינו פסיפסים, והמוזיאון הוא רק אפשרות לעתיד.",
+        "en": "The first paragraph sums it up: teen volunteers uncovered an ancient mosaic. There is no explanation of how mosaics were made, and the museum is only a future option."
+      },
+      "interests": [
+        "school",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-mosaic-volunteers",
+      "source": "original"
+    },
+    {
+      "id": "rm1.mosaic-volunteers.2",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "Which of these happened FIRST?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The volunteers dug at the site for two weeks."
+        },
+        {
+          "id": "b",
+          "text": "Noam's brush touched small coloured stones."
+        },
+        {
+          "id": "c",
+          "text": "The archaeologists stopped all other work in that area."
+        },
+        {
+          "id": "d",
+          "text": "The mosaic was covered with cloth and sand."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לשים לב לזמן had been digging for two weeks.",
+          "en": "Notice the tense in had been digging for two weeks."
+        }
+      ],
+      "explanation": {
+        "he": "had been digging (Past Perfect Progressive) מראה שהחפירה נמשכה שבועיים לפני הגילוי. רק On the last Thursday המברשת נגעה באבנים, אחר כך עצרו את העבודה, ובסוף כיסו את הפסיפס.",
+        "en": "had been digging shows the two weeks of digging came before the discovery. Then the brush touched the stones, work stopped, and finally the floor was covered."
+      },
+      "interests": [
+        "school",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-mosaic-volunteers",
+      "source": "original"
+    },
+    {
+      "id": "rm1.mosaic-volunteers.3",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "What happened right AFTER the archaeologists stopped all other work in that area?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The team spent four days carefully removing the soil."
+        },
+        {
+          "id": "b",
+          "text": "Noam saw the shape of a bird's wing."
+        },
+        {
+          "id": "c",
+          "text": "Experts decided to move the floor to a museum."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש את הביטוי Over the following four days.",
+          "en": "Look for the phrase Over the following four days."
+        }
+      ],
+      "explanation": {
+        "he": "Over the following four days פירושו בארבעת הימים שאחרי, כלומר מיד אחרי העצירה ניקו את האדמה בזהירות. Noam ראה את הכנף לפני כן, וההחלטה על מוזיאון עוד לא התקבלה (next year).",
+        "en": "Over the following four days, the team removed the soil. Noam saw the wing earlier, and the museum decision will only come next year."
+      },
+      "interests": [
+        "school",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-mosaic-volunteers",
+      "source": "original"
+    },
+    {
+      "id": "rm1.mosaic-volunteers.4",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "B2",
+      "difficulty": 0.4,
+      "prompt": "Why was the mosaic covered with cloth and sand?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To keep it safe from sun and rain"
+        },
+        {
+          "id": "b",
+          "text": "To hide it from visitors"
+        },
+        {
+          "id": "c",
+          "text": "To prepare it for the move to a museum"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בפסקה החמישית את המילים to keep it.",
+          "en": "Look for the words to keep it in the fifth paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: covered with a protective layer... to keep it safe from sun and rain. לא נאמר דבר על הסתרה ממבקרים, ועוד לא הוחלט אם להעביר אותו למוזיאון.",
+        "en": "It was covered to keep it safe from sun and rain. Hiding it is not mentioned, and no decision about a museum has been made."
+      },
+      "interests": [
+        "school",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-mosaic-volunteers",
+      "source": "original"
+    },
+    {
+      "id": "rm1.mosaic-volunteers.5",
+      "type": "choice",
+      "skill": "reading.reference",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "The word \"it\" in \"At first I thought it was just gravel\" refers to...",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "the small coloured stones that Noam's brush touched"
+        },
+        {
+          "id": "b",
+          "text": "the stone wall that Noam was cleaning"
+        },
+        {
+          "id": "c",
+          "text": "the shape of a bird's wing"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "במה המברשת של Noam נגעה רגע לפני שדיבר?",
+          "en": "What did Noam's brush touch just before he spoke?"
+        }
+      ],
+      "explanation": {
+        "he": "המברשת נגעה ב־small coloured stones, ובהתחלה Noam חשב שהן סתם חצץ (gravel). רק אחר כך ראה קו אדום וכנף. את הקיר הוא ניקה, אבל לא חשב שהקיר הוא חצץ.",
+        "en": "His brush touched small coloured stones, and at first he thought they were gravel. He saw the wing only later."
+      },
+      "interests": [
+        "school",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-mosaic-volunteers",
+      "source": "original"
+    },
+    {
+      "id": "rm1.mosaic-volunteers.6",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Which sentence from the report is an OPINION?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "\"It is one of the finest mosaics found in this region in the past decade.\""
+        },
+        {
+          "id": "b",
+          "text": "The volunteers were aged 16 to 18."
+        },
+        {
+          "id": "c",
+          "text": "The floor measures about six metres by four."
+        },
+        {
+          "id": "d",
+          "text": "The programme has run every summer since 2015."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש מילת הערכה כמו finest.",
+          "en": "Look for a judgement word like finest."
+        }
+      ],
+      "explanation": {
+        "he": "finest (המשובח ביותר) היא הערכה של ד\"ר אפרת. גם מומחית מביעה לפעמים דעה. הגילים, המידות של הרצפה והשנה שבה התחילה התוכנית הן עובדות שאפשר למדוד או לבדוק.",
+        "en": "finest is Dr. Efrat's judgement; even an expert can give an opinion. The ages, the size and the starting year can be measured or checked."
+      },
+      "interests": [
+        "school",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-mosaic-volunteers",
+      "source": "original"
+    },
+    {
+      "id": "rm1.mosaic-volunteers.7",
+      "type": "choice",
+      "skill": "reading.true-false",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Which sentence is TRUE according to the report?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It is not yet clear what kind of building the floor belonged to."
+        },
+        {
+          "id": "b",
+          "text": "The mosaic has already been moved to a museum."
+        },
+        {
+          "id": "c",
+          "text": "The mosaic was found on the first day of the dig."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה אמרה ד\"ר אפרת על הבית או המבנה?",
+          "en": "What did Dr. Efrat say about the house or building?"
+        }
+      ],
+      "explanation": {
+        "he": "ד\"ר אפרת אמרה probably... or perhaps ו־We will only know after we study the whole structure, ולכן עוד לא ברור. הפסיפס עדיין באתר, וההחלטה תתקבל next year. הגילוי היה ביום חמישי האחרון של החפירה.",
+        "en": "Dr. Efrat says they will only know after studying the structure. The mosaic is still at the site, and it was found on the last Thursday of the dig."
+      },
+      "interests": [
+        "school",
+        "travel"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-mosaic-volunteers",
+      "source": "original"
+    },
+    {
+      "id": "rm1.ten-thousand-steps.1",
+      "type": "choice",
+      "skill": "reading.main-idea",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "What is the main idea of the text?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "10,000 steps is not a magic target, and smaller increases in activity also count."
+        },
+        {
+          "id": "b",
+          "text": "Walking is less healthy than other kinds of exercise."
+        },
+        {
+          "id": "c",
+          "text": "Step-counting watches do not count steps correctly."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מה הכותב/ת גילה/תה על המספר 10,000, ומה הלקח בסוף?",
+          "en": "What did the writer learn about the number 10,000, and what is the lesson at the end?"
+        }
+      ],
+      "explanation": {
+        "he": "הכותב/ת מסביר/ה שהמספר 10,000 התחיל בשיווק, שהמחקר מראה עקומה ולא קו קסם, ושגם שיפור קטן הוא הישג. לא נאמר שהליכה פחות בריאה, ולא שהשעונים טועים בספירה.",
+        "en": "The writer explains that 10,000 came from marketing, that research shows a curve, not a magic line, and that smaller improvements count too."
+      },
+      "interests": [
+        "sports",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-ten-thousand-steps",
+      "source": "original"
+    },
+    {
+      "id": "rm1.ten-thousand-steps.2",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Which sentence is a FACT according to the text?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "In the 1960s, a company in Japan sold one of the first popular step counters."
+        },
+        {
+          "id": "b",
+          "text": "This is the most encouraging health news I have read in years."
+        },
+        {
+          "id": "c",
+          "text": "The best number is the one you can keep up."
+        },
+        {
+          "id": "d",
+          "text": "Moving from 3,000 to 6,000 steps a day is a real achievement."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "איזה משפט מתאר אירוע היסטורי שאפשר לבדוק?",
+          "en": "Which sentence describes a historical event that can be checked?"
+        }
+      ],
+      "explanation": {
+        "he": "מכירת מד הצעדים ביפן בשנות ה־60 היא אירוע שאפשר לבדוק בספרי היסטוריה, ולכן זו עובדה. the most encouraging, The best number ו־a real achievement הן הערכות אישיות של הכותב/ת.",
+        "en": "The sale of a step counter in 1960s Japan can be checked, so it is a fact. The others are the writer's personal judgements."
+      },
+      "interests": [
+        "sports",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-ten-thousand-steps",
+      "source": "original"
+    },
+    {
+      "id": "rm1.ten-thousand-steps.3",
+      "type": "choice",
+      "skill": "reading.fact-opinion",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Which sentence from the text is an OPINION?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The best number, I have decided, is the one you can keep up."
+        },
+        {
+          "id": "b",
+          "text": "Several large studies followed tens of thousands of adults for years."
+        },
+        {
+          "id": "c",
+          "text": "Experts usually recommend activities that make your heart beat faster."
+        },
+        {
+          "id": "d",
+          "text": "My watch buzzed every evening when I reached 10,000 steps."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש ביטוי כמו I have decided ומילה כמו best.",
+          "en": "Look for a phrase like I have decided and a word like best."
+        }
+      ],
+      "explanation": {
+        "he": "I have decided ו־The best מראים שזו המסקנה האישית של הכותב/ת. המחקרים, ההמלצה של המומחים (כלומר העובדה שהם ממליצים) והזמזום של השעון הם עובדות.",
+        "en": "I have decided and The best show the writer's personal conclusion. The studies, what experts recommend and the watch buzzing are facts."
+      },
+      "interests": [
+        "sports",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-ten-thousand-steps",
+      "source": "original"
+    },
+    {
+      "id": "rm1.ten-thousand-steps.4",
+      "type": "choice",
+      "skill": "reading.purpose",
+      "level": "B2",
+      "difficulty": 0.6,
+      "prompt": "Why does the writer describe walking around the living room to reach 10,000 steps?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To show how strongly the writer believed in the 10,000-step target"
+        },
+        {
+          "id": "b",
+          "text": "To recommend walking indoors when the weather is bad"
+        },
+        {
+          "id": "c",
+          "text": "To explain how step counters measure steps"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את המשפט שבא אחרי התיאור: I was sure that...",
+          "en": "Read the sentence after the description: I was sure that..."
+        }
+      ],
+      "explanation": {
+        "he": "מיד אחרי כן נאמר: I was sure that 10,000 was a scientific target. התיאור מראה כמה הכותב/ת האמין/ה במספר, וזה מכין את ההפתעה: It turns out that it is not. אין המלצה ללכת בבית ואין הסבר טכני.",
+        "en": "Right after, the writer says: I was sure that 10,000 was a scientific target. The scene shows that belief before the surprise."
+      },
+      "interests": [
+        "sports",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-ten-thousand-steps",
+      "source": "original"
+    },
+    {
+      "id": "rm1.ten-thousand-steps.5",
+      "type": "choice",
+      "skill": "reading.sequence",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "When the writer changed approach, what did the writer do FIRST?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Turned off the evening reminder"
+        },
+        {
+          "id": "b",
+          "text": "Started walking to school at a faster pace"
+        },
+        {
+          "id": "c",
+          "text": "Added two short strength sessions a week"
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לחפש בפסקה האחרונה את המילים First, Then, later.",
+          "en": "Look for First, Then and later in the last paragraph."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: First, I turned off the evening reminder. Then התחיל/ה ללכת מהר יותר לבית הספר, ו־later הוסיף/ה אימוני כוח.",
+        "en": "First the writer turned off the reminder, then walked faster to school, and later added strength sessions."
+      },
+      "interests": [
+        "sports",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-ten-thousand-steps",
+      "source": "original"
+    },
+    {
+      "id": "rm1.ten-thousand-steps.6",
+      "type": "choice",
+      "skill": "reading.details",
+      "level": "B2",
+      "difficulty": 0.5,
+      "prompt": "According to the text, why did the number 10,000 spread around the world?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "It was a round number that was easy to remember."
+        },
+        {
+          "id": "b",
+          "text": "Doctors in Japan proved it was the best target."
+        },
+        {
+          "id": "c",
+          "text": "Large studies showed that it was the ideal number."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "לקרוא את הפסקה השנייה עד הסוף.",
+          "en": "Read the second paragraph to the end."
+        }
+      ],
+      "explanation": {
+        "he": "בקטע: The round number was easy to remember, and it spread around the world. המספר הגיע משיווק (marketing, not medicine), והמחקרים דווקא הראו שאין בו קסם מיוחד.",
+        "en": "The text says the round number was easy to remember. It came from marketing, not medicine, and studies showed it is not magic."
+      },
+      "interests": [
+        "sports",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-ten-thousand-steps",
+      "source": "original"
+    },
+    {
+      "id": "rm1.ten-thousand-steps.7",
+      "type": "choice",
+      "skill": "reading.inference",
+      "level": "B2",
+      "difficulty": 0.7,
+      "prompt": "What does the writer suggest with the words \"even if the watch does not celebrate\"?",
+      "instruction": {
+        "he": "לבחור את התשובה הנכונה לפי הקטע",
+        "en": "Choose the correct answer according to the text"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A real improvement counts even if it does not reach the 10,000 goal."
+        },
+        {
+          "id": "b",
+          "text": "Most step-counting watches are broken."
+        },
+        {
+          "id": "c",
+          "text": "People should buy watches that celebrate smaller numbers."
+        }
+      ],
+      "correctOptionId": "a",
+      "hints": [
+        {
+          "he": "מתי השעון של הכותב/ת זמזם בשמחה?",
+          "en": "When did the writer's watch buzz happily?"
+        }
+      ],
+      "explanation": {
+        "he": "השעון חוגג רק ב־10,000 צעדים. מי שעובר/ת מ־3,000 ל־6,000 לא מקבל/ת חגיגה, אבל הכותב/ת אומר/ת שזה a real achievement. כלומר שיפור אמיתי שווה גם בלי להגיע ליעד של השעון.",
+        "en": "The watch only celebrates at 10,000. The writer says going from 3,000 to 6,000 is still a real achievement, even without the watch's celebration."
+      },
+      "interests": [
+        "sports",
+        "science"
+      ],
+      "tags": [
+        "bagrut"
+      ],
+      "estimatedTimeSec": 55,
+      "passageId": "passage.rm1-ten-thousand-steps",
+      "source": "original"
+    }
+  ],
+  "passages": [
+    {
+      "id": "passage.rm1-oil-lamp-room",
+      "title": "The Oil Lamp Room",
+      "level": "A2",
+      "text": "Welcome to the Oil Lamp Room!\n\nBefore electricity, people needed light after dark. For thousands of years, they used small oil lamps like the ones in this room.\n\nHow were the lamps made? First, a potter shaped wet clay by hand or pressed it into a mould. Next, the lamp dried in the sun for a few days. Then it was baked in a very hot oven. At home, people filled the lamp with olive oil and put a thin piece of cloth in the small hole at the front. They lit the cloth, and it burned slowly for hours.\n\nLook at the lamps in Case 3. Some of them have pictures of birds, fish and plants on top. These lamps were more expensive.\n\nPlease do not touch the lamps. They are very old and break easily. Children can make their own clay lamp at the activity table near the exit.",
+      "interests": [
+        "science"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-beach-cleanup",
+      "title": "Beach Clean-Up Day",
+      "level": "A2",
+      "text": "Volunteers wanted! Do you love the sea? Then come and help us keep it clean!\n\nWhen: Friday, 14 June, 8:00 to 11:00 a.m.\nWhere: North Beach, next to the lifeguard tower\n\nLast summer, 60 volunteers collected more than 200 kilos of rubbish from the sand, most of it plastic bottles and bottle caps. This year we want to do even better.\n\nWe will give every volunteer gloves, a bag and a cold drink. Bring a hat, sun cream and a water bottle. Please wear closed shoes, because there may be broken glass on the sand.\n\nVolunteers aged 12 to 15 must come with an adult. Groups from schools and youth movements are welcome.\n\nIt is the best way to start a summer weekend, and you will meet great people! To join, send a message with your name and age to the Green Coast Club before 10 June.",
+      "interests": [
+        "animals"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-first-practice-email",
+      "title": "My First Practice",
+      "level": "A2",
+      "text": "Hi Yael,\n\nHow are you? I have big news: I joined a basketball team! You know I always played in the park with my brother, but this is my first real team.\n\nOn Monday I went to my first practice. I was really nervous. First, the coach asked us to run around the court ten times. After that, we practised passing in pairs. My partner was a tall girl called Shira. She plays very well, but she was patient with me. At the end, we played a short game. I didn't score any points, but I made two good passes.\n\nThe team practises twice a week, on Mondays and Thursdays. Our first match is next month, against a team from Haifa. I don't know if the coach will let me play, but I'm going to practise every day.\n\nCan you come and watch the match? It would be so cool to see you there!\n\nLove,\nNoa",
+      "interests": [
+        "sports"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-irises-return",
+      "title": "Rare Flowers Return",
+      "level": "A2",
+      "text": "Hundreds of purple irises are blooming on Oren Hill this month, for the first time in five years.\n\nThese flowers need a lot of rain. In the last few winters there was very little rain, so only a few irises grew. This winter was much wetter, and now the hill is full of colour.\n\nLast week, a class of eighth-grade students from the local school walked up the hill with a park ranger. First, the ranger showed them how to walk only on the path. Then the students counted the flowers. They found 412 irises. In the end, they shared their results on the school website.\n\n\"It was the most beautiful trip of the year,\" said Amir, one of the students.\n\nThe ranger asks visitors not to pick the flowers. \"If you pick an iris, it cannot make seeds for next year,\" she explained. Visitors can see the flowers until the end of March.",
+      "interests": [
+        "science",
+        "school"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-bottle-bird-feeder",
+      "title": "How to Make a Bottle Bird Feeder",
+      "level": "A2",
+      "text": "In winter, it is harder for small birds to find food. You can help them with a simple feeder made from an old plastic bottle.\n\nYou need: an empty plastic bottle with its cap, two wooden spoons, a piece of string and some bird seed.\n\n1. Wash the bottle and let it dry. Wet seeds go bad quickly.\n2. Ask an adult to make two pairs of small holes in the bottle, one pair near the bottom and one pair in the middle.\n3. Push a wooden spoon through each pair of holes. Birds will stand on the spoons.\n4. Ask the adult to cut a bigger hole just above the end of each spoon. The seeds will come out here.\n5. Fill the bottle with seeds and close the cap.\n6. Tie the string around the top of the bottle and hang the feeder from a tree branch.\n\nNow wait a few days. Birds are careful, and they need time to trust something new. Remember to add more seeds every week!",
+      "interests": [
+        "animals"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-three-chords",
+      "title": "Three Chords and a Lot of Patience",
+      "level": "B1",
+      "text": "When I turned fifteen, my grandfather gave me his old guitar. It had been sitting in his cupboard for thirty years, and two of the strings were missing. I bought new strings online and watched a video about how to put them on. It took me a whole evening, but when I finally played a note, it sounded almost like real music.\n\nThen the hard part started. My fingers hurt after only ten minutes of practice, and I couldn't press the strings hard enough. A teacher at the community centre told me this happens to everyone. \"Play for fifteen minutes every day,\" she said, \"not two hours once a week.\" I followed her advice, and after about three weeks the pain went away.\n\nNow, two months later, I know three chords: G, C and D. That doesn't sound like much, but you can play hundreds of songs with just those three. Last Friday I played a simple song for my grandfather. He sang along, and I think he enjoyed it more than any present I have ever given him.\n\nIn my opinion, learning an instrument is the best thing a teenager can do with free time. It is much more satisfying than scrolling through videos. If you are thinking about starting, my advice is simple: be patient with your fingers, and don't give up in the first month.",
+      "interests": [
+        "music"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-desert-sky-interview",
+      "title": "Under the Desert Sky",
+      "level": "B1",
+      "text": "Lior Shani, 24, leads night tours in the Negev desert, where people come to look at the stars. We asked him about the job.\n\nWhy the desert?\nLight from cities hides the stars. Here, far from big towns, the sky is really dark. On a clear night, you can see thousands of stars with your own eyes, and the Milky Way looks like a river of light.\n\nHow did you start?\nWhen I was twelve, my school took us on a trip to an observatory. Afterwards, I saved money for two years to buy my first small telescope. Later I studied physics at university, and during my studies I started working as a guide at weekends.\n\nWhat happens on a tour?\nFirst, we walk a few minutes away from the cars, and everyone turns off their phone screens. It takes about twenty minutes for your eyes to get used to the dark. Then I point out planets and stars with a green laser. At the end, people look through a big telescope.\n\nWhat is your favourite moment?\nWhen someone sees the rings of Saturn for the first time. Adults scream like children! Honestly, I think it is the most amazing sight in the universe.\n\nAny advice for young stargazers?\nYou don't need expensive equipment. Lie on a blanket, let your eyes rest, and just look up.",
+      "interests": [
+        "science",
+        "travel"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-bat-scientist",
+      "title": "The Woman Who Listened to Bats",
+      "level": "B1",
+      "text": "This is a made-up story. Leah Doron was born in 1951 in a small village in the Galilee. As a child, she spent summer evenings on the roof of her house, watching bats fly over the fields. Most of her neighbours were afraid of them, but Leah wanted to know how they found insects in the dark.\n\nAfter finishing school, Leah served in the army and then studied biology. In 1978 she visited a cave in the Judean Desert for the first time. There she counted more than two thousand bats sleeping upside down. She later said that this day changed her life.\n\nBats find food by making very high sounds and listening for the echo. Humans cannot hear these sounds. In the 1980s, Leah built a small machine that turned bat calls into sounds that people could hear. With it, she discovered that different kinds of bats \"speak\" in different ways.\n\nHer work also showed that bats help farmers, because a single bat can eat hundreds of insects in one night. Thanks to her reports, several caves were closed to visitors to protect the animals.\n\nLeah taught at a university for thirty years and wrote two books for children about bats. When she retired, she said, \"People fear what they don't understand.\" Today, many young scientists continue her research. In my view, she was one of the most important nature scientists of her generation.",
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-pocket-planet-review",
+      "title": "Game Review: Pocket Planet",
+      "level": "B1",
+      "text": "Pocket Planet is a new phone game in which you look after a tiny world. At the start, your planet is just grey rock. You add water, plants and animals, and you watch how they affect each other. If you add too many rabbits, they eat all the grass. If you add foxes, the number of rabbits goes down again.\n\nThe game was made by a team of four students as a university project, and it is free to download. There are no adverts, which is rare for a free game. You can play without an internet connection, so it is perfect for long bus rides.\n\nWhat I liked most was how much I learned without noticing. After a week, I understood food chains better than after a whole term of biology lessons. The graphics are simple but charming, and the calm music is lovely.\n\nHowever, the game has some problems. The instructions are too short, so for the first hour I had no idea what to do. Also, once your planet is balanced, there is not much left to do. I finished all twenty levels in about ten days.\n\nOverall, Pocket Planet is a clever and relaxing game. It is not perfect, but I would recommend it to anyone who likes nature or puzzles, especially younger players who want to learn something while they play.\n\nRating: 4 out of 5",
+      "interests": [
+        "games",
+        "technology"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-broken-string",
+      "title": "The Broken String",
+      "level": "B1",
+      "text": "The hall was full. Maya could see her parents in the third row, and her little brother was waving a paper sign with her name on it. She sat down, put the violin under her chin and looked at the conductor.\n\nThe youth orchestra had practised this piece for four months. Maya had a short solo in the middle, only sixteen bars, but she had dreamed about it every night for a week.\n\nThe music began, and the first part went perfectly. Then, just four bars before her solo, Maya heard a sharp sound, like a small whip. Her E string, the thinnest one, had broken. It hung from the violin like a piece of hair.\n\nFor a second, she could not breathe. Everyone would hear her fail. Then she felt a gentle touch on her arm. Daniel, the boy sitting next to her, was holding out his own violin. Without a word, he took hers and put it on his knees.\n\nMaya lifted Daniel's violin. It felt heavier than hers, and the strings were a little different. She closed her eyes and played.\n\nWhen the solo ended, she opened her eyes. The conductor was smiling at her, and in the third row her mother was wiping her eyes.\n\nAfter the concert, Maya found Daniel by the door. \"You didn't play the last part,\" she said. \"You gave up your own music for me.\"\n\nHe shrugged. \"Sixteen bars,\" he said. \"That's nothing between friends.\"",
+      "interests": [
+        "music"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-repair-club-column",
+      "title": "Fix It, Don't Bin It",
+      "level": "B2",
+      "text": "Last year my headphones stopped working. One side went silent, and I did what most people my age would do: I threw them away and ordered a new pair. A week later, my uncle, who repairs old radios as a hobby, asked to see the broken ones. I dug them out of the rubbish bin. He opened them with a tiny screwdriver, found a loose wire and fixed it in under ten minutes. I was embarrassed, and I have been thinking about it ever since.\n\nWe live surrounded by machines we do not understand. According to a United Nations report, the world produced around 62 million tonnes of electronic waste in 2022, and less than a quarter of it was recorded as properly collected and recycled. Much of that waste is not broken beyond repair; it is simply broken beyond our knowledge.\n\nThis is why I believe every secondary school should run a weekly repair club. Students would bring in broken lamps, toys, bicycles and phones, and volunteers from the community, such as retired electricians, tailors and engineers, would show them how to fix them. Some towns already run \"repair cafés\" like this for adults, and many of them are popular.\n\nCritics will say that schools are already too busy and that repair is a job for professionals. They have a point: nobody should open a microwave oven without training. But a repair club is not about turning teenagers into technicians. It is about confidence. A student who has replaced a bicycle chain or sewn on a button learns that objects are not magic boxes, and that problems can often be solved with patience.\n\nBesides, the skills are surprisingly useful in other subjects. Physics becomes real when you follow an electric current with your own hands.\n\nMy headphones still work, by the way. Every time I put them on, I hear a small reminder: before you throw something away, open it up.",
+      "interests": [
+        "technology",
+        "school"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-sky-highway",
+      "title": "The Busiest Sky in the World",
+      "level": "B2",
+      "text": "Twice a year, something remarkable happens above Israel. Every year, an estimated 500 million birds pass over this narrow strip of land: they fly south in autumn and north again in spring. But why do so many birds choose this route?\n\nThe answer is geography. Many birds spend the summer in Europe and western Asia, where they build nests and raise their young. When the weather turns cold and insects become hard to find, they fly south to spend the winter in Africa. In spring, they make the same journey in the opposite direction.\n\nLarge birds such as storks, pelicans and eagles face a special problem. Flapping their huge wings for hours would use too much energy, so they glide instead. To do this, they need thermals: columns of warm air that rise when the sun heats the ground. A stork circles inside a thermal and climbs high without moving its wings. Then it glides forward, slowly losing height, until it finds the next thermal.\n\nThermals form over land, but hardly at all over the sea, because water heats up slowly. As a result, soaring birds avoid long flights over the Mediterranean. Instead, they travel around its eastern end, where the land bridge between Asia and Africa forces them into a narrow corridor. Israel sits right in the middle of that corridor.\n\nThis creates challenges as well as wonders. In the past, large flocks were a serious danger to aircraft, and several planes were damaged in collisions with birds. Today, researchers track the flocks with radar and send warnings to pilots, so such accidents are much less common.\n\nNext time you see a long, shining line of storks circling over a field, remember that some of them may have started their trip in Poland and could end it in South Africa.",
+      "interests": [
+        "animals",
+        "science"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-mosaic-volunteers",
+      "title": "Teen Volunteers Uncover Ancient Mosaic",
+      "level": "B2",
+      "text": "This news story is made up, but finds like it are real. A colourful mosaic floor, believed to be about 1,600 years old, has been uncovered by teenage volunteers during a summer excavation in the Lower Galilee, archaeologists announced on Monday.\n\nThe discovery was made by chance. The group of 35 volunteers, aged 16 to 18, had been digging for two weeks at the site of an ancient farming village. On the last Thursday of the dig, 17-year-old Noam Katz was cleaning soil from the bottom of a stone wall when his brush touched small coloured stones. \"At first I thought it was just gravel,\" he said. \"Then I saw a red line, and then the shape of a bird's wing.\"\n\nThe archaeologists immediately stopped all other work in that area. Over the following four days, the team carefully removed the soil with brushes and small tools. The floor, which measures about six metres by four, shows birds, grapes and a large vase surrounded by vines.\n\nAccording to Dr. Ronit Efrat, who directs the excavation, the floor probably belonged to the house of a wealthy family, or perhaps to a public building. \"We will only know after we study the whole structure,\" she said. \"Either way, it is one of the finest mosaics found in this region in the past decade.\"\n\nThe mosaic has now been photographed and covered with a protective layer of cloth and sand to keep it safe from sun and rain. Experts will decide next year whether to move it to a museum or to protect it where it was found.\n\nThe volunteer programme, which has run every summer since 2015, gives young people a chance to experience real archaeological work. Its organisers say this year's discovery shows that anyone can make history, sometimes with nothing more than a paintbrush.",
+      "interests": [
+        "school",
+        "travel"
+      ],
+      "source": "original"
+    },
+    {
+      "id": "passage.rm1-ten-thousand-steps",
+      "title": "Do You Really Need 10,000 Steps?",
+      "level": "B2",
+      "text": "For years, my watch buzzed happily every evening when I reached 10,000 steps. If I had only managed 9,000, I would walk around the living room until the number changed. I was sure that 10,000 was a scientific target. It turns out that it is not.\n\nThe number seems to have started with marketing, not medicine. In the 1960s, a company in Japan sold one of the first popular step counters, and its name meant something like \"10,000-step meter\". The round number was easy to remember, and it spread around the world.\n\nSince then, scientists have actually studied the question. Several large studies, which together followed tens of thousands of adults for years, found that people who walked more did tend to live longer. However, the benefits did not keep rising at the same speed. When researchers combined the results of fifteen of these studies in 2022, they found that the extra gains became much smaller at around 6,000 to 8,000 steps a day for adults over 60, and at around 8,000 to 10,000 steps for younger adults. In other words, 10,000 is not a magic line; it is just one point on a curve.\n\nTo me, this is the most encouraging health news I have read in years. Many people give up on exercise because the goal feels impossible. If someone moves from 3,000 steps a day to 6,000, that is a real achievement, and it may bring real benefits, even if the watch does not celebrate.\n\nSteps are also not the whole story. Experts usually recommend activities that make your heart beat faster, as well as exercises that strengthen your muscles.\n\nSo I have changed my approach. First, I turned off the evening reminder. Then I started walking to school at a faster pace, and later I added two short strength sessions a week. My step count is lower than before, but I feel fitter than ever. The best number, I have decided, is the one you can keep up.",
+      "interests": [
+        "sports",
+        "science"
+      ],
+      "source": "original"
+    }
+  ],
+  "lessons": []
+}

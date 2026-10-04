@@ -34,8 +34,17 @@ export function newCard(now: number): StoredCard {
   return toStored(createEmptyCard(new Date(now)));
 }
 
+/** A card still in learning that is answered Hard again after this long has learned enough to graduate. */
+const GRADUATE_AFTER_MS = 12 * 60 * 60 * 1000;
+
 export function reviewCard(card: StoredCard, grade: ReviewGrade, now: number): StoredCard {
-  const next = scheduler.next(toCard(card), new Date(now), GRADE[grade]);
+  // FSRS keeps a learning card on the same short step for every Hard, so a
+  // unit that is always "hard but solved" would be due in every session.
+  // After a night's gap, a Hard on a learning card counts as Good.
+  const learning = card.state === State.Learning || card.state === State.Relearning;
+  const gapped = card.last_review !== undefined && now - card.last_review >= GRADUATE_AFTER_MS;
+  const g = grade === 'hard' && learning && gapped ? 'good' : grade;
+  const next = scheduler.next(toCard(card), new Date(now), GRADE[g]);
   return toStored(next.card);
 }
 

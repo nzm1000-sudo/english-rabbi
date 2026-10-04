@@ -30,6 +30,8 @@ export interface AppServices {
 export function createAppServices(): AppServices {
   const db = new TutorDB();
   const store = new LearningStore(db);
+  // Replays history once when the grading model changed.
+  void store.migrateDerived().catch((e) => console.warn('[store] migrate failed', e));
   const settings = new Settings(db);
   const playback = new HtmlAudioPlayback();
   const remote = new RemoteTtsProvider(() => ({ baseUrl: settings.get('homeServerUrl') ?? '' }), playback, new DexieAudioCache(db));
