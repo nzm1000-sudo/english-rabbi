@@ -559,7 +559,7 @@
       "skill": "grammar.past-simple",
       "level": "A2",
       "difficulty": 0.5,
-      "prompt": "Our team ___ the match 3 to 1 on Sunday. (win)",
+      "prompt": "Last Sunday our team ___ the match 3 to 1. (win)",
       "instruction": {
         "he": "להשלים בצורה הנכונה של המילה בסוגריים",
         "en": "Complete with the correct form of the word in brackets"
@@ -579,8 +579,8 @@
         {
           "answer": "win",
           "feedback": {
-            "he": "win זה הווה. on Sunday כאן מדבר על משחק שכבר נגמר.",
-            "en": "win is present. The match on Sunday is over."
+            "he": "win זה הווה. Last Sunday כבר עבר, והמשחק נגמר.",
+            "en": "win is present. Last Sunday is over, and so is the match."
           },
           "misconception": "translate.present-for-past"
         },
@@ -595,8 +595,8 @@
       ],
       "hints": [
         {
-          "he": "המשחק כבר נגמר 3 ל־1. איזה זמן?",
-          "en": "The match is over, 3 to 1. Which tense?"
+          "he": "Last Sunday = יום ראשון שעבר. איזה זמן?",
+          "en": "Last Sunday = past time. Which tense?"
         },
         {
           "he": "win הוא פועל חריג. צורת העבר מתחילה ב־w.",
@@ -604,7 +604,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: יש תוצאה סופית, 3 ל־1, כלומר המשחק נגמר.\n📸 עבר פשוט. win הוא חריג: win, won.\nwinned היא טעות נפוצה: לפעלים חריגים אין ed.",
+        "he": "🔎 הרמז: Last Sunday, והתוצאה הסופית 3 ל־1: המשחק כבר נגמר.\n📸 עבר פשוט. win הוא חריג: win, won.\nwinned היא טעות נפוצה: לפעלים חריגים אין ed.",
         "en": "The match is over, so past simple. win is irregular: won, not winned."
       },
       "targetsMisconceptions": [
@@ -619,7 +619,8 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "audioText": "Our team won the match 3 to 1 on Sunday."
+      "audioText": "Last Sunday our team won the match 3 to 1.",
+      "version": 2
     },
     {
       "id": "gg-t.past.stopped-lesson",
@@ -627,7 +628,7 @@
       "skill": "grammar.past-simple",
       "level": "A2",
       "difficulty": 0.75,
-      "prompt": "The teacher ___ the lesson early because of the fire drill. (stop)",
+      "prompt": "Yesterday the teacher ___ the lesson early because of the fire drill. (stop)",
       "instruction": {
         "he": "להשלים בצורה הנכונה של המילה בסוגריים",
         "en": "Complete with the correct form of the word in brackets"
@@ -655,8 +656,8 @@
       ],
       "hints": [
         {
-          "he": "המשפט מספר מה קרה בשיעור. איזה זמן?",
-          "en": "The sentence tells what happened in the lesson. Which tense?"
+          "he": "Yesterday = אתמול. איזה זמן?",
+          "en": "Yesterday = past time. Which tense?"
         },
         {
           "he": "כדאי לבדוק את האיות: stop נגמר בתנועה קצרה + עיצור.",
@@ -664,7 +665,7 @@
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: because of the fire drill, אירוע שכבר קרה.\n📸 עבר פשוט: stop + ed.\nכלל איות: מילה קצרה שנגמרת בתנועה קצרה ועיצור מכפילה את העיצור: stop, stopped. כמו plan, planned.",
+        "he": "🔎 הרמז: Yesterday, אירוע שכבר קרה.\n📸 עבר פשוט: stop + ed.\nכלל איות: מילה קצרה שנגמרת בתנועה קצרה ועיצור מכפילה את העיצור: stop, stopped. כמו plan, planned.",
         "en": "Past simple. Short word ending in a short vowel + consonant: double it. stop, stopped."
       },
       "targetsMisconceptions": [
@@ -679,7 +680,8 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "audioText": "The teacher stopped the lesson early because of the fire drill."
+      "audioText": "Yesterday the teacher stopped the lesson early because of the fire drill.",
+      "version": 2
     },
     {
       "id": "gg-t.past.served-army",
@@ -1255,7 +1257,7 @@
       "skill": "grammar.present-simple",
       "level": "A1",
       "difficulty": 0.3,
-      "prompt": "These days, my friends and I ___ football every Tuesday. (play)",
+      "prompt": "My friends and I ___ football every Tuesday. (play)",
       "instruction": {
         "he": "להשלים בצורה הנכונה של המילה בסוגריים",
         "en": "Complete with the correct form of the word in brackets"
@@ -1305,7 +1307,8 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "audioText": "These days, my friends and I play football every Tuesday."
+      "audioText": "My friends and I play football every Tuesday.",
+      "version": 2
     },
     {
       "id": "gg-t.pres.dog-barks",
@@ -1482,7 +1485,8 @@
       "prompt": "Build the sentence",
       "answer": "We eat dinner together every Friday night.",
       "alternatives": [
-        "Every Friday night we eat dinner together."
+        "Every Friday night we eat dinner together.",
+        "Together we eat dinner every Friday night."
       ],
       "audioText": "We eat dinner together every Friday night.",
       "distractors": [],
@@ -1514,7 +1518,8 @@
         "sentence-builder"
       ],
       "estimatedTimeSec": 30,
-      "source": "original"
+      "source": "original",
+      "version": 2
     },
     {
       "id": "gg-t.pastperf.pizza-eaten",
@@ -2962,7 +2967,7 @@
       "skill": "grammar.present-perfect-progressive",
       "level": "B1",
       "difficulty": 0.55,
-      "sentence": "Yael is studying for her math test for three hours.",
+      "sentence": "Yael is studying for her math test since this morning.",
       "wrongIndex": 1,
       "correction": "has been",
       "distractors": [
@@ -2970,9 +2975,9 @@
         "had",
         "have been"
       ],
-      "corrected": "Yael has been studying for her math test for three hours.",
-      "audioText": "Yael has been studying for her math test for three hours.",
-      "meaning": "יעל לומדת למבחן במתמטיקה כבר שלוש שעות.",
+      "corrected": "Yael has been studying for her math test since this morning.",
+      "audioText": "Yael has been studying for her math test since this morning.",
+      "meaning": "יעל לומדת למבחן במתמטיקה מהבוקר.",
       "targetsMisconceptions": [
         "present-perfect-progressive.hebrew-present"
       ],
@@ -2982,17 +2987,17 @@
       },
       "hints": [
         {
-          "he": "for three hours עד עכשיו. איזה פועל עזר לא מתאים?",
-          "en": "for three hours until now. Which helper verb does not fit?"
+          "he": "since this morning: התחיל בבוקר ועדיין נמשך. איזה פועל עזר לא מתאים?",
+          "en": "since this morning: it started in the morning and is still going on. Which helper verb does not fit?"
         },
         {
-          "he": "בעברית \"לומדת כבר שלוש שעות\". באנגלית צריך has been + ing.",
+          "he": "בעברית \"לומדת מהבוקר\" בהווה. באנגלית צריך has been + ing.",
           "en": "In Hebrew we use the present. English needs has been + -ing."
         }
       ],
       "explanation": {
-        "he": "🔎 הרמז: for three hours, והיא עדיין לומדת.\n⏳ פעולה שנמשכת עד עכשיו: Yael has been studying.\nבעברית \"לומדת\" בהווה. באנגלית is studying מתאים רק בלי משך זמן עד עכשיו.",
-        "en": "She started three hours ago and is still studying: has been studying."
+        "he": "🔎 הרמז: since this morning, והיא עדיין לומדת.\n⏳ פעולה שהתחילה בעבר ונמשכת עד עכשיו: Yael has been studying.\nבעברית \"לומדת\" בהווה. באנגלית לא אומרים is studying ... since.",
+        "en": "She started this morning and is still studying: has been studying. Do not use is studying with since."
       },
       "interests": [
         "school"
@@ -3001,7 +3006,8 @@
         "fix"
       ],
       "estimatedTimeSec": 25,
-      "source": "original"
+      "source": "original",
+      "version": 2
     },
     {
       "id": "gg-t.ppp.brother-playing",
@@ -5702,8 +5708,7 @@
         "en": "Complete with the correct form of the word in brackets"
       },
       "answers": [
-        "quickly",
-        "fast"
+        "quickly"
       ],
       "knownErrors": [
         {
@@ -5747,7 +5752,8 @@
       ],
       "estimatedTimeSec": 25,
       "source": "original",
-      "audioText": "My little sister reads very quickly. She finished the book in one day."
+      "audioText": "My little sister reads very quickly. She finished the book in one day.",
+      "version": 2
     },
     {
       "id": "gg-t.adv.drive-carefully",
@@ -5923,7 +5929,8 @@
       "answer": "We usually eat fish on Friday night.",
       "alternatives": [
         "On Friday night we usually eat fish.",
-        "Usually we eat fish on Friday night."
+        "Usually we eat fish on Friday night.",
+        "Usually on Friday night we eat fish."
       ],
       "audioText": "We usually eat fish on Friday night.",
       "distractors": [],
@@ -5955,7 +5962,8 @@
         "sentence-builder"
       ],
       "estimatedTimeSec": 30,
-      "source": "original"
+      "source": "original",
+      "version": 2
     },
     {
       "id": "gg-t.adv.slowly-door",

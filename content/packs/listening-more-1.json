@@ -3855,12 +3855,12 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה כתוב במרשם?",
+          "he": "מה רשום במרשם?",
           "en": "What does the prescription say?"
         }
       ],
       "explanation": {
-        "he": "הרוקח/ת בודק/ת: it says ear drops (כתוב טיפות לאוזניים), ומבטיח/ה I'll get you the right ones: להביא את הנכונות, טיפות אוזניים.",
+        "he": "הרוקח/ת בודק/ת: it says ear drops (רשום: טיפות לאוזניים), ומבטיח/ה I'll get you the right ones: להביא את הנכונות, טיפות אוזניים.",
         "en": "The prescription says ear drops, so the pharmacist will get the right ones: ear drops."
       },
       "interests": [],

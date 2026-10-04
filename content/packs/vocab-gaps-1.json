@@ -2795,7 +2795,7 @@
    ],
    "source": "original",
    "difficulty": 0.6,
-   "prompt": "דו־משמעי (אפשר להבין בכמה דרכים)",
+   "prompt": "דו־משמעי (אפשר להבין בכמה דרכים). המילה באנגלית מתחילה ב־a.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
@@ -2806,12 +2806,12 @@
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות a",
-     "en": "It starts with a"
-    },
-    {
      "he": "יש בה 9 אותיות.",
      "en": "It has 9 letters."
+    },
+    {
+     "he": "המילה במשפט: The question was ___, so half the class understood it differently.",
+     "en": "In a sentence: The question was ___, so half the class understood it differently."
     }
    ],
    "explanation": {
@@ -2829,7 +2829,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.ambiguous",
@@ -2963,27 +2964,23 @@
    "interests": [],
    "source": "original",
    "difficulty": 0.65,
-   "prompt": "בר־ביצוע (אפשר לעשות את זה בפועל)",
+   "prompt": "בר־ביצוע (אפשר לעשות את זה בפועל). המילה באנגלית מתחילה ב־f.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "feasible",
-    "viable",
-    "doable",
-    "workable",
-    "practicable"
+    "feasible"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות f",
-     "en": "It starts with f"
-    },
-    {
      "he": "יש בה 8 אותיות.",
      "en": "It has 8 letters."
+    },
+    {
+     "he": "המילה במשפט: Building the new bridge in one year is not ___.",
+     "en": "In a sentence: Building the new bridge in one year is not ___."
     }
    ],
    "explanation": {
@@ -3001,7 +2998,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.feasible",
@@ -3133,26 +3131,23 @@
    "interests": [],
    "source": "original",
    "difficulty": 0.5,
-   "prompt": "ליישם (להוציא תוכנית לפועל)",
+   "prompt": "ליישם (להוציא תוכנית לפועל). המילה באנגלית מתחילה ב־i.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "implement",
-    "carry out",
-    "execute",
-    "apply"
+    "implement"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות i",
-     "en": "It starts with i"
-    },
-    {
      "he": "יש בה 9 אותיות.",
      "en": "It has 9 letters."
+    },
+    {
+     "he": "המילה במשפט: The school will ___ the new rules next month.",
+     "en": "In a sentence: The school will ___ the new rules next month."
     }
    ],
    "explanation": {
@@ -3170,7 +3165,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.implement",
@@ -3308,7 +3304,7 @@
    ],
    "source": "original",
    "difficulty": 0.6,
-   "prompt": "להקצות (לתת כסף או זמן למטרה מסוימת)",
+   "prompt": "להקצות (לתת כסף או זמן למטרה מסוימת). המילה באנגלית מתחילה ב־a.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
@@ -3321,12 +3317,12 @@
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות a",
-     "en": "It starts with a"
-    },
-    {
      "he": "יש בה 8 אותיות.",
      "en": "It has 8 letters."
+    },
+    {
+     "he": "המילה במשפט: The government ___ more money to hospitals this year.",
+     "en": "In a sentence: The government ___ more money to hospitals this year."
     }
    ],
    "explanation": {
@@ -3344,7 +3340,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.allocate",
@@ -3483,7 +3480,7 @@
    ],
    "source": "original",
    "difficulty": 0.7,
-   "prompt": "שבא אחרי, שלאחר מכן (תואר)",
+   "prompt": "שבא אחרי, שלאחר מכן (תואר). המילה באנגלית מתחילה ב־s.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
@@ -3491,18 +3488,16 @@
    },
    "answers": [
     "subsequent",
-    "following",
-    "later",
     "succeeding"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות s",
-     "en": "It starts with s"
-    },
-    {
      "he": "יש בה 10 אותיות.",
      "en": "It has 10 letters."
+    },
+    {
+     "he": "המילה במשפט: The first test was hard, but the ___ tests were easier.",
+     "en": "In a sentence: The first test was hard, but the ___ tests were easier."
     }
    ],
    "explanation": {
@@ -3520,7 +3515,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.subsequent",
@@ -3660,24 +3656,23 @@
    ],
    "source": "original",
    "difficulty": 0.75,
-   "prompt": "לעלות ולרדת שוב ושוב (מחירים, טמפרטורה)",
+   "prompt": "לעלות ולרדת שוב ושוב (מחירים, טמפרטורה). המילה באנגלית מתחילה ב־f.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "fluctuate",
-    "vary"
+    "fluctuate"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות f",
-     "en": "It starts with f"
-    },
-    {
      "he": "יש בה 9 אותיות.",
      "en": "It has 9 letters."
+    },
+    {
+     "he": "המילה במשפט: Vegetable prices ___ from season to season.",
+     "en": "In a sentence: Vegetable prices ___ from season to season."
     }
    ],
    "explanation": {
@@ -3695,7 +3690,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.fluctuate",
@@ -3834,26 +3830,23 @@
    ],
    "source": "original",
    "difficulty": 0.7,
-   "prompt": "מתקבל על הדעת, נשמע אמין",
+   "prompt": "מתקבל על הדעת, נשמע אמין. המילה באנגלית מתחילה ב־p.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "plausible",
-    "believable",
-    "credible",
-    "reasonable"
+    "plausible"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות p",
-     "en": "It starts with p"
-    },
-    {
      "he": "יש בה 9 אותיות.",
      "en": "It has 9 letters."
+    },
+    {
+     "he": "המילה במשפט: His excuse sounded ___, so the teacher believed him.",
+     "en": "In a sentence: His excuse sounded ___, so the teacher believed him."
     }
    ],
    "explanation": {
@@ -3871,7 +3864,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.plausible",
@@ -4005,24 +3999,23 @@
    "interests": [],
    "source": "original",
    "difficulty": 0.7,
-   "prompt": "לערער, להחליש (אמון, ביטחון)",
+   "prompt": "לערער, להחליש (אמון, ביטחון). המילה באנגלית מתחילה ב־u.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "undermine",
-    "weaken"
+    "undermine"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות u",
-     "en": "It starts with u"
-    },
-    {
      "he": "יש בה 9 אותיות.",
      "en": "It has 9 letters."
+    },
+    {
+     "he": "המילה במשפט: Constant criticism can ___ a child's confidence.",
+     "en": "In a sentence: Constant criticism can ___ a child's confidence."
     }
    ],
    "explanation": {
@@ -4040,7 +4033,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.undermine",
@@ -4176,25 +4170,23 @@
    ],
    "source": "original",
    "difficulty": 0.55,
-   "prompt": "לפצות (לתת משהו בתמורה לנזק או להפסד)",
+   "prompt": "לפצות (לתת משהו בתמורה לנזק או להפסד). המילה באנגלית מתחילה ב־c.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "compensate",
-    "make up for",
-    "reimburse"
+    "compensate"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות c",
-     "en": "It starts with c"
-    },
-    {
      "he": "יש בה 10 אותיות.",
      "en": "It has 10 letters."
+    },
+    {
+     "he": "המילה במשפט: The airline ___ the passengers for the long delay.",
+     "en": "In a sentence: The airline ___ the passengers for the long delay."
     }
    ],
    "explanation": {
@@ -4212,7 +4204,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.compensate",
@@ -4350,26 +4343,23 @@
    ],
    "source": "original",
    "difficulty": 0.75,
-   "prompt": "לצדד ב, לתמוך בפומבי ברעיון",
+   "prompt": "לצדד ב, לתמוך בפומבי ברעיון. המילה באנגלית מתחילה ב־a.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "advocate",
-    "support",
-    "champion",
-    "promote"
+    "advocate"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות a",
-     "en": "It starts with a"
-    },
-    {
      "he": "יש בה 8 אותיות.",
      "en": "It has 8 letters."
+    },
+    {
+     "he": "המילה במשפט: Many doctors ___ later school start times for teenagers.",
+     "en": "In a sentence: Many doctors ___ later school start times for teenagers."
     }
    ],
    "explanation": {
@@ -4387,7 +4377,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.advocate",
@@ -4525,24 +4516,23 @@
    ],
    "source": "original",
    "difficulty": 0.55,
-   "prompt": "הטיה, משוא פנים (העדפה לא הוגנת)",
+   "prompt": "הטיה, משוא פנים (העדפה לא הוגנת). המילה באנגלית מתחילה ב־b.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "bias",
-    "prejudice"
+    "bias"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות b",
-     "en": "It starts with b"
-    },
-    {
      "he": "יש בה 4 אותיות.",
      "en": "It has 4 letters."
+    },
+    {
+     "he": "המילה במשפט: A good judge must decide without ___.",
+     "en": "In a sentence: A good judge must decide without ___."
     }
    ],
    "explanation": {
@@ -4560,7 +4550,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.bias",
@@ -4694,25 +4685,23 @@
    "interests": [],
    "source": "original",
    "difficulty": 0.85,
-   "prompt": "בדיקה קפדנית וביקורתית",
+   "prompt": "בדיקה קפדנית וביקורתית. המילה באנגלית מתחילה ב־s.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "scrutiny",
-    "examination",
-    "inspection"
+    "scrutiny"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות s",
-     "en": "It starts with s"
-    },
-    {
      "he": "יש בה 8 אותיות.",
      "en": "It has 8 letters."
+    },
+    {
+     "he": "המילה במשפט: The new medicine is under close ___ before it reaches pharmacies.",
+     "en": "In a sentence: The new medicine is under close ___ before it reaches pharmacies."
     }
    ],
    "explanation": {
@@ -4730,7 +4719,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.scrutiny",
@@ -4862,7 +4852,7 @@
    "interests": [],
    "source": "original",
    "difficulty": 0.8,
-   "prompt": "לעכב, להפריע להתקדמות",
+   "prompt": "לעכב, להפריע להתקדמות. המילה באנגלית מתחילה ב־h.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
@@ -4870,19 +4860,16 @@
    },
    "answers": [
     "hinder",
-    "hamper",
-    "impede",
-    "obstruct",
-    "delay"
+    "hamper"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות h",
-     "en": "It starts with h"
-    },
-    {
      "he": "יש בה 6 אותיות.",
      "en": "It has 6 letters."
+    },
+    {
+     "he": "המילה במשפט: Heavy snow ___ the rescue teams.",
+     "en": "In a sentence: Heavy snow ___ the rescue teams."
     }
    ],
    "explanation": {
@@ -4900,7 +4887,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.hinder",
@@ -5036,24 +5024,23 @@
    ],
    "source": "original",
    "difficulty": 0.8,
-   "prompt": "שרירותי (בלי סיבה הגיונית)",
+   "prompt": "שרירותי (בלי סיבה הגיונית). המילה באנגלית מתחילה ב־a.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "arbitrary",
-    "random"
+    "arbitrary"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות a",
-     "en": "It starts with a"
-    },
-    {
      "he": "יש בה 9 אותיות.",
      "en": "It has 9 letters."
+    },
+    {
+     "he": "המילה במשפט: The rule seemed ___: nobody could explain why it existed.",
+     "en": "In a sentence: The rule seemed ___: nobody could explain why it existed."
     }
    ],
    "explanation": {
@@ -5071,7 +5058,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.arbitrary",
@@ -5209,24 +5197,23 @@
    ],
    "source": "original",
    "difficulty": 0.75,
-   "prompt": "קוהרנטי, מאורגן בהיגיון וקל להבנה",
+   "prompt": "קוהרנטי, מאורגן בהיגיון וקל להבנה. המילה באנגלית מתחילה ב־c.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "coherent",
-    "logical"
+    "coherent"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות c",
-     "en": "It starts with c"
-    },
-    {
      "he": "יש בה 8 אותיות.",
      "en": "It has 8 letters."
+    },
+    {
+     "he": "המילה במשפט: Her essay was ___: each paragraph led clearly to the next.",
+     "en": "In a sentence: Her essay was ___: each paragraph led clearly to the next."
     }
    ],
    "explanation": {
@@ -5244,7 +5231,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.coherent",
@@ -5378,7 +5366,7 @@
    "interests": [],
    "source": "original",
    "difficulty": 0.8,
-   "prompt": "להקל על (כאב, סבל, בעיה)",
+   "prompt": "להקל על (כאב, סבל, בעיה). המילה באנגלית מתחילה ב־a.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
@@ -5386,17 +5374,16 @@
    },
    "answers": [
     "alleviate",
-    "relieve",
-    "ease"
+    "allay"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות a",
-     "en": "It starts with a"
-    },
-    {
      "he": "יש בה 9 אותיות.",
      "en": "It has 9 letters."
+    },
+    {
+     "he": "המילה במשפט: This medicine helps ___ headaches.",
+     "en": "In a sentence: This medicine helps ___ headaches."
     }
    ],
    "explanation": {
@@ -5414,7 +5401,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.alleviate",
@@ -5550,26 +5538,23 @@
    ],
    "source": "original",
    "difficulty": 0.75,
-   "prompt": "נפוץ, רווח (בקרב קבוצה או במקום)",
+   "prompt": "נפוץ, רווח (בקרב קבוצה או במקום). המילה באנגלית מתחילה ב־p.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
     "en": "How do you say it in English?"
    },
    "answers": [
-    "prevalent",
-    "common",
-    "widespread",
-    "prevailing"
+    "prevalent"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות p",
-     "en": "It starts with p"
-    },
-    {
      "he": "יש בה 9 אותיות.",
      "en": "It has 9 letters."
+    },
+    {
+     "he": "המילה במשפט: Sleep problems are ___ among teenagers who use screens late at night.",
+     "en": "In a sentence: Sleep problems are ___ among teenagers who use screens late at night."
     }
    ],
    "explanation": {
@@ -5587,7 +5572,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.prevalent",
@@ -5725,7 +5711,7 @@
    ],
    "source": "original",
    "difficulty": 0.6,
-   "prompt": "תמריץ (משהו שמעודד לעשות משהו)",
+   "prompt": "תמריץ (משהו שמעודד לעשות משהו). המילה באנגלית מתחילה ב־i.",
    "promptLanguage": "he",
    "instruction": {
     "he": "איך אומרים באנגלית?",
@@ -5733,17 +5719,16 @@
    },
    "answers": [
     "incentive",
-    "inducement",
-    "motivation"
+    "inducement"
    ],
    "hints": [
     {
-     "he": "המילה מתחילה באות i",
-     "en": "It starts with i"
-    },
-    {
      "he": "יש בה 9 אותיות.",
      "en": "It has 9 letters."
+    },
+    {
+     "he": "המילה במשפט: Free pizza was a good ___ for students to stay after school.",
+     "en": "In a sentence: Free pizza was a good ___ for students to stay after school."
     }
    ],
    "explanation": {
@@ -5761,7 +5746,8 @@
      "id": "writing.spelling",
      "weight": 0.4
     }
-   ]
+   ],
+   "version": 2
   },
   {
    "id": "vg1.context.incentive",

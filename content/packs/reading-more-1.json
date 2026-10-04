@@ -82,7 +82,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: Look at the lamps in Case 3. Some of them have pictures of birds, fish and plants. ליד היציאה נמצא שולחן הפעילות, ושם ילדים מכינים מנורה בעצמם.",
+        "he": "בקטע: Look at the lamps in Case 3. Some of them have pictures of birds, fish and plants. ליד היציאה נמצא שולחן הפעילות, ושם ילדים מכינים מנורה בעצמם.",
         "en": "The text says: Look at the lamps in Case 3. Some of them have pictures... The activity table near the exit is where children make lamps."
       },
       "interests": [
@@ -224,7 +224,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: Children can make their own clay lamp at the activity table. כלומר השלט מזמין ילדים להכין מנורה משלהם. לא כתוב שאפשר לקנות שם מנורות, והמנורות העתיקות נעשו אצל קדר.",
+        "he": "בקטע: Children can make their own clay lamp at the activity table. כלומר השלט מזמין ילדים להכין מנורה משלהם. לא נאמר שאפשר לקנות שם מנורות, והמנורות העתיקות נעשו אצל קדר.",
         "en": "The sign says children can make their own clay lamp there. Nothing is sold there, and the old lamps were made by potters."
       },
       "interests": [
@@ -265,12 +265,12 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לבדוק כל משפט מול הקטע. מה כתוב על המנורות עם התמונות?",
+          "he": "לבדוק כל משפט מול הקטע. מה נאמר על המנורות עם התמונות?",
           "en": "Check each sentence against the text. What does it say about the lamps with pictures?"
         }
       ],
       "explanation": {
-        "he": "כתוב: These lamps were more expensive, כלומר הן עלו יותר. אסור לגעת במנורות (Please do not touch), והבד דלק לאט במשך שעות (for hours), לא דקות.",
+        "he": "בקטע: These lamps were more expensive, כלומר הן עלו יותר. אסור לגעת במנורות (Please do not touch), והבד דלק לאט במשך שעות (for hours), לא דקות.",
         "en": "The text says these lamps were more expensive. Visitors may not touch the lamps, and the cloth burned for hours, not minutes."
       },
       "interests": [
@@ -362,7 +362,7 @@
         }
       ],
       "explanation": {
-        "he": "אחרי המספרים של הקיץ שעבר כתוב: This year we want to do even better. המטרה היא להראות שהאירוע מצליח ולעודד אנשים להצטרף ולהגיע לתוצאה גבוהה יותר. הזכוכית מוזכרת בפסקה אחרת, בהקשר של נעליים.",
+        "he": "אחרי המספרים של הקיץ שעבר נאמר: This year we want to do even better. המטרה היא להראות שהאירוע מצליח ולעודד אנשים להצטרף ולהגיע לתוצאה גבוהה יותר. הזכוכית מוזכרת בפסקה אחרת, בהקשר של נעליים.",
         "en": "After last summer's numbers it says: This year we want to do even better. The results show the event works and encourage people to join."
       },
       "interests": [
@@ -408,7 +408,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: We will give every volunteer gloves, a bag and a cold drink. את הכובע, קרם ההגנה ובקבוק המים צריך להביא מהבית (Bring), ונעליים סגורות צריך ללבוש (wear).",
+        "he": "בקטע: We will give every volunteer gloves, a bag and a cold drink. את הכובע, קרם ההגנה ובקבוק המים צריך להביא מהבית (Bring), ונעליים סגורות צריך ללבוש (wear).",
         "en": "The organisers give gloves, a bag and a cold drink. Volunteers must bring a hat, sun cream and water, and wear closed shoes."
       },
       "interests": [
@@ -454,7 +454,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: Volunteers aged 12 to 15 must come with an adult. האירוע בבוקר (8:00 to 11:00 a.m.), וקבוצות מבתי ספר הן רק חלק מהמוזמנים. כל אחד יכול להצטרף.",
+        "he": "בקטע: Volunteers aged 12 to 15 must come with an adult. האירוע בבוקר (8:00 to 11:00 a.m.), וקבוצות מבתי ספר הן רק חלק מהמוזמנים. כל אחד יכול להצטרף.",
         "en": "Volunteers aged 12 to 15 must come with an adult. The event is in the morning, and school groups are welcome but not the only ones."
       },
       "interests": [
@@ -692,7 +692,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: First, the coach asked us to run around the court ten times. אחר כך (After that) תרגלו מסירות, ובסוף (At the end) שיחקו משחק קצר.",
+        "he": "בקטע: First, the coach asked us to run around the court ten times. אחר כך (After that) תרגלו מסירות, ובסוף (At the end) שיחקו משחק קצר.",
         "en": "First they ran around the court. After that they practised passing, and at the end they played a short game."
       },
       "interests": [
@@ -779,12 +779,12 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לבדוק מה כתוב על הנקודות ועל מועד המשחק.",
+          "he": "לבדוק מה נאמר על הנקודות ועל מועד המשחק.",
           "en": "Check what the email says about points and about when the match is."
         }
       ],
       "explanation": {
-        "he": "כתוב: The team practises twice a week, on Mondays and Thursdays. Noa לא קלעה נקודות, היא עשתה two good passes. המשחק הראשון next month, לא בשבוע הבא.",
+        "he": "בקטע: The team practises twice a week, on Mondays and Thursdays. Noa לא קלעה נקודות, היא עשתה two good passes. המשחק הראשון next month, לא בשבוע הבא.",
         "en": "The team practises on Mondays and Thursdays. Noa made two good passes but scored no points, and the match is next month."
       },
       "interests": [
@@ -923,7 +923,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: In the last few winters there was very little rain, so only a few irises grew. so מראה תוצאה: מעט גשם, ולכן מעט פרחים. הבקשה לא לקטוף מופיעה בכתבה, אבל לא כסיבה למה לא גדלו פרחים בעבר.",
+        "he": "בקטע: In the last few winters there was very little rain, so only a few irises grew. so מראה תוצאה: מעט גשם, ולכן מעט פרחים. הבקשה לא לקטוף מופיעה בכתבה, אבל לא כסיבה למה לא גדלו פרחים בעבר.",
         "en": "The text says there was very little rain, so only a few irises grew. Picking is mentioned, but not as the reason for the past winters."
       },
       "interests": [
@@ -1111,7 +1111,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: a class... walked up the hill with a park ranger. הפרחים פורחים כך for the first time in five years, כלומר לא כל שנה. והפקחית מבקשת not to pick the flowers בכלל.",
+        "he": "בקטע: a class... walked up the hill with a park ranger. הפרחים פורחים כך for the first time in five years, כלומר לא כל שנה. והפקחית מבקשת not to pick the flowers בכלל.",
         "en": "The class walked up with a park ranger. The flowers bloom like this for the first time in five years, and visitors should not pick any flowers."
       },
       "interests": [
@@ -1250,7 +1250,7 @@
         }
       ],
       "explanation": {
-        "he": "לפני כן כתוב Now wait a few days, ואחר כך they need time to trust something new. הכותב רוצה להסביר שאם הציפורים לא מגיעות מיד, זה טבעי. אין שום אזהרה על פגיעה בילדים.",
+        "he": "לפני כן נאמר Now wait a few days, ואחר כך they need time to trust something new. הכותב רוצה להסביר שאם הציפורים לא מגיעות מיד, זה טבעי. אין שום אזהרה על פגיעה בילדים.",
         "en": "The writer says to wait a few days because birds need time to trust something new. It explains why they may not come at once."
       },
       "interests": [
@@ -1342,7 +1342,7 @@
         }
       ],
       "explanation": {
-        "he": "בצעדים 2 ו־4 כתוב Ask an adult. צריך plastic bottle, לא בקבוק זכוכית, ומוסיפים זרעים every week, לא כל יום.",
+        "he": "בצעדים 2 ו־4 נאמר Ask an adult. צריך plastic bottle, לא בקבוק זכוכית, ומוסיפים זרעים every week, לא כל יום.",
         "en": "Steps 2 and 4 say Ask an adult. The bottle is plastic, and you add seeds every week, not every day."
       },
       "interests": [
@@ -1388,7 +1388,7 @@
         }
       ],
       "explanation": {
-        "he": "בצעד 3 כתוב: Birds will stand on the spoons. החוט משמש לתלות את המאכיל על ענף, והפקק סוגר את הבקבוק.",
+        "he": "בצעד 3 נאמר: Birds will stand on the spoons. החוט משמש לתלות את המאכיל על ענף, והפקק סוגר את הבקבוק.",
         "en": "Step 3 says: Birds will stand on the spoons. The string is for hanging the feeder, and the cap closes the bottle."
       },
       "interests": [
@@ -1580,7 +1580,7 @@
         }
       ],
       "explanation": {
-        "he": "לפני כן כתוב: Last Friday I played a simple song for my grandfather. He sang along. הסבא נהנה מכך שהנכד/ה ניגן/ה לו. זו ההשוואה למתנות: הנגינה הייתה כמו מתנה טובה מכולן.",
+        "he": "לפני כן נאמר: Last Friday I played a simple song for my grandfather. He sang along. הסבא נהנה מכך שהנכד/ה ניגן/ה לו. זו ההשוואה למתנות: הנגינה הייתה כמו מתנה טובה מכולן.",
         "en": "The sentence before says the writer played a song for the grandfather. He enjoyed hearing it more than any present."
       },
       "interests": [
@@ -1626,7 +1626,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב שהגיטרה ישבה בארון שלושים שנה וחסרו בה שני מיתרים. מכאן אפשר להבין שאף אחד לא ניגן בה הרבה זמן. על המחיר אין מילה, ואין רמז שמישהו שבר אותה בכוונה.",
+        "he": "נאמר שהגיטרה ישבה בארון שלושים שנה וחסרו בה שני מיתרים. מכאן אפשר להבין שאף אחד לא ניגן בה הרבה זמן. על המחיר אין מילה, ואין רמז שמישהו שבר אותה בכוונה.",
         "en": "The guitar sat in a cupboard for thirty years with two strings missing, so nobody had played it for a long time. Nothing is said about price or breaking it."
       },
       "interests": [
@@ -1718,7 +1718,7 @@
         }
       ],
       "explanation": {
-        "he": "לפני כן כתוב That doesn't sound like much, but. הכותב/ת מודה ששלושה אקורדים נשמעים מעט, ומסביר/ה שבעצם אפשר לעשות איתם הרבה. לא כתוב שהכותב/ת כבר מנגן/ת מאות שירים.",
+        "he": "לפני כן נאמר That doesn't sound like much, but. הכותב/ת מודה ששלושה אקורדים נשמעים מעט, ומסביר/ה שבעצם אפשר לעשות איתם הרבה. לא נאמר שהכותב/ת כבר מנגן/ת מאות שירים.",
         "en": "The writer admits three chords don't sound like much, but explains they are actually very useful. It does not say the writer plays hundreds of songs."
       },
       "interests": [
@@ -2003,7 +2003,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: Then I point out planets and stars with a green laser. את הטלפונים מכבים, ומפה בכלל לא מוזכרת.",
+        "he": "בקטע: Then I point out planets and stars with a green laser. את הטלפונים מכבים, ומפה בכלל לא מוזכרת.",
         "en": "Lior says: I point out planets and stars with a green laser. Phones are turned off, and no map is mentioned."
       },
       "interests": [
@@ -2191,7 +2191,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: Bats find food by making very high sounds and listening for the echo. העטלף שומע את ההד וכך מוצא חרקים. שאר התשובות לא מופיעות בקטע.",
+        "he": "בקטע: Bats find food by making very high sounds and listening for the echo. העטלף שומע את ההד וכך מוצא חרקים. שאר התשובות לא מופיעות בקטע.",
         "en": "The text says bats find food by making high sounds and listening for the echo. The other answers are not in the text."
       },
       "interests": [
@@ -2617,12 +2617,12 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לבדוק מה כתוב על פרסומות ועל כמה זמן לקח לסיים.",
+          "he": "לבדוק מה נאמר על פרסומות ועל כמה זמן לקח לסיים.",
           "en": "Check what the review says about adverts and how long it took to finish."
         }
       ],
       "explanation": {
-        "he": "כתוב: You can play without an internet connection. אין פרסומות (There are no adverts), והכותב/ת סיים/ה את המשחק in about ten days.",
+        "he": "בקטע: You can play without an internet connection. אין פרסומות (There are no adverts), והכותב/ת סיים/ה את המשחק in about ten days.",
         "en": "The review says you can play without an internet connection. There are no adverts, and the writer finished in about ten days."
       },
       "interests": [
@@ -2669,7 +2669,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: The instructions are too short, so for the first hour I had no idea what to do. המוזיקה תוארה כרגועה, והמשחק עובד בלי אינטרנט.",
+        "he": "בקטע: The instructions are too short, so for the first hour I had no idea what to do. המוזיקה תוארה כרגועה, והמשחק עובד בלי אינטרנט.",
         "en": "The instructions are too short, so at first the writer didn't know what to do. The music is calm and the game works offline."
       },
       "interests": [
@@ -3039,7 +3039,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: The youth orchestra had practised this piece for four months. הסולו היה in the middle, ואת השלט החזיק her little brother.",
+        "he": "בקטע: The youth orchestra had practised this piece for four months. הסולו היה in the middle, ואת השלט החזיק her little brother.",
         "en": "The orchestra practised for four months. The solo was in the middle, and her little brother held the sign."
       },
       "interests": [
@@ -3176,7 +3176,7 @@
         },
         {
           "id": "d",
-          "text": "Less than a quarter of the electronic waste was properly collected and recycled."
+          "text": "Less than a quarter of the electronic waste was recorded as properly collected and recycled."
         }
       ],
       "correctOptionId": "a",
@@ -3375,7 +3375,7 @@
         }
       ],
       "explanation": {
-        "he": "הדוד תיקן את האוזניות in under ten minutes בעזרת מברג קטן. הכותב/ת הבין/ה שזרק/ה משהו שהיה קל לתקן, ולכן התבייש/ה. לא כתוב שהדוד צחק, ואין השוואה בין האוזניות.",
+        "he": "הדוד תיקן את האוזניות in under ten minutes בעזרת מברג קטן. הכותב/ת הבין/ה שזרק/ה משהו שהיה קל לתקן, ולכן התבייש/ה. לא נאמר שהדוד צחק, ואין השוואה בין האוזניות.",
         "en": "The uncle fixed them in under ten minutes, so the writer realised the headphones were easy to fix. Nothing says the uncle laughed."
       },
       "interests": [
@@ -3469,7 +3469,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: A stork circles inside a thermal and climbs high... Then it glides forward... until it finds the next thermal. נפנוף כנפיים לשעות הוא בדיוק מה שהחסידה נמנעת ממנו.",
+        "he": "בקטע: A stork circles inside a thermal and climbs high... Then it glides forward... until it finds the next thermal. נפנוף כנפיים לשעות הוא בדיוק מה שהחסידה נמנעת ממנו.",
         "en": "The stork circles and climbs, then glides forward to the next thermal. Flapping for hours is what it avoids."
       },
       "interests": [
@@ -3516,7 +3516,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: When the weather turns cold and insects become hard to find, they fly south. סערות לא מוזכרות, והזרמים התרמיים מוסברים בהקשר אחר: למה ציפורים גדולות לא עפות מעל הים.",
+        "he": "בקטע: When the weather turns cold and insects become hard to find, they fly south. סערות לא מוזכרות, והזרמים התרמיים מוסברים בהקשר אחר: למה ציפורים גדולות לא עפות מעל הים.",
         "en": "The text says they fly south when it turns cold and insects are hard to find. Storms are not mentioned."
       },
       "interests": [
@@ -3605,12 +3605,12 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לבדוק מה כתוב על הים, על העונות ועל המטוסים.",
+          "he": "לבדוק מה נאמר על הים, על העונות ועל המטוסים.",
           "en": "Check what the text says about the sea, the seasons and planes."
         }
       ],
       "explanation": {
-        "he": "כתוב: researchers track the flocks with radar and send warnings to pilots. הציפורים הגדולות נמנעות מהים כי שם כמעט אין זרמים חמים, והן עוברות in autumn and again in spring.",
+        "he": "בקטע: researchers track the flocks with radar and send warnings to pilots. הציפורים הגדולות נמנעות מהים כי שם כמעט אין זרמים חמים, והן עוברות גם בסתיו וגם באביב (in autumn and north again in spring).",
         "en": "Researchers track the flocks with radar and warn pilots. Large birds avoid the sea, and they pass in autumn and in spring."
       },
       "interests": [
@@ -3900,7 +3900,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: covered with a protective layer... to keep it safe from sun and rain. לא נאמר דבר על הסתרה ממבקרים, ועוד לא הוחלט אם להעביר אותו למוזיאון.",
+        "he": "בקטע: covered with a protective layer... to keep it safe from sun and rain. לא נאמר דבר על הסתרה ממבקרים, ועוד לא הוחלט אם להעביר אותו למוזיאון.",
         "en": "It was covered to keep it safe from sun and rain. Hiding it is not mentioned, and no decision about a museum has been made."
       },
       "interests": [
@@ -4241,7 +4241,7 @@
         }
       ],
       "explanation": {
-        "he": "מיד אחרי כן כתוב: I was sure that 10,000 was a scientific target. התיאור מראה כמה הכותב/ת האמין/ה במספר, וזה מכין את ההפתעה: It turns out that it is not. אין המלצה ללכת בבית ואין הסבר טכני.",
+        "he": "מיד אחרי כן נאמר: I was sure that 10,000 was a scientific target. התיאור מראה כמה הכותב/ת האמין/ה במספר, וזה מכין את ההפתעה: It turns out that it is not. אין המלצה ללכת בבית ואין הסבר טכני.",
         "en": "Right after, the writer says: I was sure that 10,000 was a scientific target. The scene shows that belief before the surprise."
       },
       "interests": [
@@ -4288,7 +4288,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: First, I turned off the evening reminder. Then התחיל/ה ללכת מהר יותר לבית הספר, ו־later הוסיף/ה אימוני כוח.",
+        "he": "בקטע: First, I turned off the evening reminder. Then התחיל/ה ללכת מהר יותר לבית הספר, ו־later הוסיף/ה אימוני כוח.",
         "en": "First the writer turned off the reminder, then walked faster to school, and later added strength sessions."
       },
       "interests": [
@@ -4335,7 +4335,7 @@
         }
       ],
       "explanation": {
-        "he": "כתוב: The round number was easy to remember, and it spread around the world. המספר הגיע משיווק (marketing, not medicine), והמחקרים דווקא הראו שאין בו קסם מיוחד.",
+        "he": "בקטע: The round number was easy to remember, and it spread around the world. המספר הגיע משיווק (marketing, not medicine), והמחקרים דווקא הראו שאין בו קסם מיוחד.",
         "en": "The text says the round number was easy to remember. It came from marketing, not medicine, and studies showed it is not magic."
       },
       "interests": [
@@ -4402,7 +4402,7 @@
       "id": "passage.rm1-oil-lamp-room",
       "title": "The Oil Lamp Room",
       "level": "A2",
-      "text": "Welcome to the Oil Lamp Room!\n\nBefore electricity, people needed light after dark. For thousands of years, they used small oil lamps like the ones in this room.\n\nHow were the lamps made? First, a potter shaped wet clay by hand or pressed it into a mould. Next, the lamp dried in the sun for a few days. Then it was baked in a very hot oven. At home, people filled the lamp with olive oil and put a thin piece of cloth in the small hole at the front. They lit the cloth, and it burned slowly for hours.\n\nLook at the lamps in Case 3. Some of them have pictures of birds, fish and plants on top. These lamps were more expensive, and families used them on special days.\n\nPlease do not touch the lamps. They are very old and break easily. Children can make their own clay lamp at the activity table near the exit.",
+      "text": "Welcome to the Oil Lamp Room!\n\nBefore electricity, people needed light after dark. For thousands of years, they used small oil lamps like the ones in this room.\n\nHow were the lamps made? First, a potter shaped wet clay by hand or pressed it into a mould. Next, the lamp dried in the sun for a few days. Then it was baked in a very hot oven. At home, people filled the lamp with olive oil and put a thin piece of cloth in the small hole at the front. They lit the cloth, and it burned slowly for hours.\n\nLook at the lamps in Case 3. Some of them have pictures of birds, fish and plants on top. These lamps were more expensive.\n\nPlease do not touch the lamps. They are very old and break easily. Children can make their own clay lamp at the activity table near the exit.",
       "interests": [
         "science"
       ],
@@ -4474,7 +4474,7 @@
       "id": "passage.rm1-bat-scientist",
       "title": "The Woman Who Listened to Bats",
       "level": "B1",
-      "text": "Leah Doron was born in 1951 in a small village in the Galilee. As a child, she spent summer evenings on the roof of her house, watching bats fly over the fields. Most of her neighbours were afraid of them, but Leah wanted to know how they found insects in the dark.\n\nAfter finishing school, Leah served in the army and then studied biology. In 1978 she visited a cave in the Judean Desert for the first time. There she counted more than two thousand bats sleeping upside down. She later said that this day changed her life.\n\nBats find food by making very high sounds and listening for the echo. Humans cannot hear these sounds. In the 1980s, Leah built a small machine that turned bat calls into sounds that people could hear. With it, she discovered that different kinds of bats \"speak\" in different ways.\n\nHer work also showed that bats help farmers, because a single bat can eat hundreds of insects in one night. Thanks to her reports, several caves were closed to visitors to protect the animals.\n\nLeah taught at a university for thirty years and wrote two books for children about bats. When she retired, she said, \"People fear what they don't understand.\" Today, many young scientists continue her research. In my view, she was one of the most important nature scientists of her generation.",
+      "text": "This is a made-up story. Leah Doron was born in 1951 in a small village in the Galilee. As a child, she spent summer evenings on the roof of her house, watching bats fly over the fields. Most of her neighbours were afraid of them, but Leah wanted to know how they found insects in the dark.\n\nAfter finishing school, Leah served in the army and then studied biology. In 1978 she visited a cave in the Judean Desert for the first time. There she counted more than two thousand bats sleeping upside down. She later said that this day changed her life.\n\nBats find food by making very high sounds and listening for the echo. Humans cannot hear these sounds. In the 1980s, Leah built a small machine that turned bat calls into sounds that people could hear. With it, she discovered that different kinds of bats \"speak\" in different ways.\n\nHer work also showed that bats help farmers, because a single bat can eat hundreds of insects in one night. Thanks to her reports, several caves were closed to visitors to protect the animals.\n\nLeah taught at a university for thirty years and wrote two books for children about bats. When she retired, she said, \"People fear what they don't understand.\" Today, many young scientists continue her research. In my view, she was one of the most important nature scientists of her generation.",
       "interests": [
         "animals",
         "science"
@@ -4506,7 +4506,7 @@
       "id": "passage.rm1-repair-club-column",
       "title": "Fix It, Don't Bin It",
       "level": "B2",
-      "text": "Last year my headphones stopped working. One side went silent, and I did what most people my age would do: I threw them away and ordered a new pair. A week later, my uncle, who repairs old radios as a hobby, asked to see the broken ones. I dug them out of the rubbish bin. He opened them with a tiny screwdriver, found a loose wire and fixed it in under ten minutes. I was embarrassed, and I have been thinking about it ever since.\n\nWe live surrounded by machines we do not understand. According to a United Nations report, the world produced around 62 million tonnes of electronic waste in 2022, and less than a quarter of it was properly collected and recycled. Much of that waste is not broken beyond repair; it is simply broken beyond our knowledge.\n\nThis is why I believe every secondary school should run a weekly repair club. Students would bring in broken lamps, toys, bicycles and phones, and volunteers from the community, such as retired electricians, tailors and engineers, would show them how to fix them. Some towns already run \"repair cafés\" like this for adults, and they are usually full.\n\nCritics will say that schools are already too busy and that repair is a job for professionals. They have a point: nobody should open a microwave oven without training. But a repair club is not about turning teenagers into technicians. It is about confidence. A student who has replaced a bicycle chain or sewn on a button learns that objects are not magic boxes, and that problems can often be solved with patience.\n\nBesides, the skills are surprisingly useful in other subjects. Physics becomes real when you follow an electric current with your own hands.\n\nMy headphones still work, by the way. Every time I put them on, I hear a small reminder: before you throw something away, open it up.",
+      "text": "Last year my headphones stopped working. One side went silent, and I did what most people my age would do: I threw them away and ordered a new pair. A week later, my uncle, who repairs old radios as a hobby, asked to see the broken ones. I dug them out of the rubbish bin. He opened them with a tiny screwdriver, found a loose wire and fixed it in under ten minutes. I was embarrassed, and I have been thinking about it ever since.\n\nWe live surrounded by machines we do not understand. According to a United Nations report, the world produced around 62 million tonnes of electronic waste in 2022, and less than a quarter of it was recorded as properly collected and recycled. Much of that waste is not broken beyond repair; it is simply broken beyond our knowledge.\n\nThis is why I believe every secondary school should run a weekly repair club. Students would bring in broken lamps, toys, bicycles and phones, and volunteers from the community, such as retired electricians, tailors and engineers, would show them how to fix them. Some towns already run \"repair cafés\" like this for adults, and many of them are popular.\n\nCritics will say that schools are already too busy and that repair is a job for professionals. They have a point: nobody should open a microwave oven without training. But a repair club is not about turning teenagers into technicians. It is about confidence. A student who has replaced a bicycle chain or sewn on a button learns that objects are not magic boxes, and that problems can often be solved with patience.\n\nBesides, the skills are surprisingly useful in other subjects. Physics becomes real when you follow an electric current with your own hands.\n\nMy headphones still work, by the way. Every time I put them on, I hear a small reminder: before you throw something away, open it up.",
       "interests": [
         "technology",
         "school"
@@ -4517,7 +4517,7 @@
       "id": "passage.rm1-sky-highway",
       "title": "The Busiest Sky in the World",
       "level": "B2",
-      "text": "Twice a year, something remarkable happens above Israel. In autumn and again in spring, an estimated 500 million birds pass over this narrow strip of land. But why do so many birds choose this route?\n\nThe answer is geography. Many birds spend the summer in Europe and western Asia, where they build nests and raise their young. When the weather turns cold and insects become hard to find, they fly south to spend the winter in Africa. In spring, they make the same journey in the opposite direction.\n\nLarge birds such as storks, pelicans and eagles face a special problem. Flapping their huge wings for hours would use too much energy, so they glide instead. To do this, they need thermals: columns of warm air that rise when the sun heats the ground. A stork circles inside a thermal and climbs high without moving its wings. Then it glides forward, slowly losing height, until it finds the next thermal.\n\nThermals form over land, but hardly at all over the sea, because water heats up slowly. As a result, soaring birds avoid long flights over the Mediterranean. Instead, they travel around its eastern end, where the land bridge between Asia and Africa forces them into a narrow corridor. Israel sits right in the middle of that corridor.\n\nThis creates challenges as well as wonders. In the past, large flocks were a serious danger to aircraft, and several planes were damaged in collisions with birds. Today, researchers track the flocks with radar and send warnings to pilots, so such accidents are much less common.\n\nNext time you see a long, shining line of storks circling over a field, remember that some of them may have started their trip in Poland and could end it in South Africa.",
+      "text": "Twice a year, something remarkable happens above Israel. Every year, an estimated 500 million birds pass over this narrow strip of land: they fly south in autumn and north again in spring. But why do so many birds choose this route?\n\nThe answer is geography. Many birds spend the summer in Europe and western Asia, where they build nests and raise their young. When the weather turns cold and insects become hard to find, they fly south to spend the winter in Africa. In spring, they make the same journey in the opposite direction.\n\nLarge birds such as storks, pelicans and eagles face a special problem. Flapping their huge wings for hours would use too much energy, so they glide instead. To do this, they need thermals: columns of warm air that rise when the sun heats the ground. A stork circles inside a thermal and climbs high without moving its wings. Then it glides forward, slowly losing height, until it finds the next thermal.\n\nThermals form over land, but hardly at all over the sea, because water heats up slowly. As a result, soaring birds avoid long flights over the Mediterranean. Instead, they travel around its eastern end, where the land bridge between Asia and Africa forces them into a narrow corridor. Israel sits right in the middle of that corridor.\n\nThis creates challenges as well as wonders. In the past, large flocks were a serious danger to aircraft, and several planes were damaged in collisions with birds. Today, researchers track the flocks with radar and send warnings to pilots, so such accidents are much less common.\n\nNext time you see a long, shining line of storks circling over a field, remember that some of them may have started their trip in Poland and could end it in South Africa.",
       "interests": [
         "animals",
         "science"
@@ -4528,7 +4528,7 @@
       "id": "passage.rm1-mosaic-volunteers",
       "title": "Teen Volunteers Uncover Ancient Mosaic",
       "level": "B2",
-      "text": "A colourful mosaic floor, believed to be about 1,600 years old, has been uncovered by teenage volunteers during a summer excavation in the Lower Galilee, archaeologists announced on Monday.\n\nThe discovery was made by chance. The group of 35 volunteers, aged 16 to 18, had been digging for two weeks at the site of an ancient farming village. On the last Thursday of the dig, 17-year-old Noam Katz was cleaning soil from the bottom of a stone wall when his brush touched small coloured stones. \"At first I thought it was just gravel,\" he said. \"Then I saw a red line, and then the shape of a bird's wing.\"\n\nThe archaeologists immediately stopped all other work in that area. Over the following four days, the team carefully removed the soil with brushes and small tools. The floor, which measures about six metres by four, shows birds, grapes and a large vase surrounded by vines.\n\nAccording to Dr. Ronit Efrat, who directs the excavation, the floor probably belonged to the house of a wealthy family, or perhaps to a public building. \"We will only know after we study the whole structure,\" she said. \"Either way, it is one of the finest mosaics found in this region in the past decade.\"\n\nThe mosaic has now been photographed and covered with a protective layer of cloth and sand to keep it safe from sun and rain. Experts will decide next year whether to move it to a museum or to protect it where it was found.\n\nThe volunteer programme, which has run every summer since 2015, gives young people a chance to experience real archaeological work. Its organisers say this year's discovery shows that anyone can make history, sometimes with nothing more than a paintbrush.",
+      "text": "This news story is made up, but finds like it are real. A colourful mosaic floor, believed to be about 1,600 years old, has been uncovered by teenage volunteers during a summer excavation in the Lower Galilee, archaeologists announced on Monday.\n\nThe discovery was made by chance. The group of 35 volunteers, aged 16 to 18, had been digging for two weeks at the site of an ancient farming village. On the last Thursday of the dig, 17-year-old Noam Katz was cleaning soil from the bottom of a stone wall when his brush touched small coloured stones. \"At first I thought it was just gravel,\" he said. \"Then I saw a red line, and then the shape of a bird's wing.\"\n\nThe archaeologists immediately stopped all other work in that area. Over the following four days, the team carefully removed the soil with brushes and small tools. The floor, which measures about six metres by four, shows birds, grapes and a large vase surrounded by vines.\n\nAccording to Dr. Ronit Efrat, who directs the excavation, the floor probably belonged to the house of a wealthy family, or perhaps to a public building. \"We will only know after we study the whole structure,\" she said. \"Either way, it is one of the finest mosaics found in this region in the past decade.\"\n\nThe mosaic has now been photographed and covered with a protective layer of cloth and sand to keep it safe from sun and rain. Experts will decide next year whether to move it to a museum or to protect it where it was found.\n\nThe volunteer programme, which has run every summer since 2015, gives young people a chance to experience real archaeological work. Its organisers say this year's discovery shows that anyone can make history, sometimes with nothing more than a paintbrush.",
       "interests": [
         "school",
         "travel"
@@ -4539,7 +4539,7 @@
       "id": "passage.rm1-ten-thousand-steps",
       "title": "Do You Really Need 10,000 Steps?",
       "level": "B2",
-      "text": "For years, my watch buzzed happily every evening when I reached 10,000 steps. If I had only managed 9,000, I would walk around the living room until the number changed. I was sure that 10,000 was a scientific target. It turns out that it is not.\n\nThe number seems to have started with marketing, not medicine. In the 1960s, a company in Japan sold one of the first popular step counters, and its name meant something like \"10,000-step meter\". The round number was easy to remember, and it spread around the world.\n\nSince then, scientists have actually studied the question. Several large studies, which followed tens of thousands of adults for years, found that people who walked more did tend to live longer. However, the benefits did not keep rising at the same speed. In many studies, the extra gains became much smaller somewhere between about 6,000 and 10,000 steps a day, and older adults seemed to reach that point earlier. In other words, 10,000 is not a magic line; it is just one point on a curve.\n\nTo me, this is the most encouraging health news I have read in years. Many people give up on exercise because the goal feels impossible. If someone moves from 3,000 steps a day to 6,000, that is a real achievement, and it may bring real benefits, even if the watch does not celebrate.\n\nSteps are also not the whole story. Experts usually recommend activities that make your heart beat faster, as well as exercises that strengthen your muscles.\n\nSo I have changed my approach. First, I turned off the evening reminder. Then I started walking to school at a faster pace, and later I added two short strength sessions a week. My step count is lower than before, but I feel fitter than ever. The best number, I have decided, is the one you can keep up.",
+      "text": "For years, my watch buzzed happily every evening when I reached 10,000 steps. If I had only managed 9,000, I would walk around the living room until the number changed. I was sure that 10,000 was a scientific target. It turns out that it is not.\n\nThe number seems to have started with marketing, not medicine. In the 1960s, a company in Japan sold one of the first popular step counters, and its name meant something like \"10,000-step meter\". The round number was easy to remember, and it spread around the world.\n\nSince then, scientists have actually studied the question. Several large studies, which together followed tens of thousands of adults for years, found that people who walked more did tend to live longer. However, the benefits did not keep rising at the same speed. When researchers combined the results of fifteen of these studies in 2022, they found that the extra gains became much smaller at around 6,000 to 8,000 steps a day for adults over 60, and at around 8,000 to 10,000 steps for younger adults. In other words, 10,000 is not a magic line; it is just one point on a curve.\n\nTo me, this is the most encouraging health news I have read in years. Many people give up on exercise because the goal feels impossible. If someone moves from 3,000 steps a day to 6,000, that is a real achievement, and it may bring real benefits, even if the watch does not celebrate.\n\nSteps are also not the whole story. Experts usually recommend activities that make your heart beat faster, as well as exercises that strengthen your muscles.\n\nSo I have changed my approach. First, I turned off the evening reminder. Then I started walking to school at a faster pace, and later I added two short strength sessions a week. My step count is lower than before, but I feel fitter than ever. The best number, I have decided, is the one you can keep up.",
       "interests": [
         "sports",
         "science"
