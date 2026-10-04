@@ -13,11 +13,12 @@ export const NEURAL_VOICES: Record<Accent, Record<Speaker, string>> = {
 
 /**
  * Voices of the pre-rendered files (tools/tts-prerender). American English is
- * recorded with Microsoft's neural voices, which sound clearer than Kokoro;
+ * recorded with Microsoft's neural voices, which sound clearer than Kokoro.
+ * Andrew is the main voice (owner's choice), Jenny the second in dialogues;
  * British English is not pre-rendered, so it keeps the Kokoro names.
  */
 export const PRERENDER_VOICES: Record<Accent, Record<Speaker, string>> = {
-  'en-US': { A: 'en-US-JennyNeural', B: 'en-US-AndrewNeural' },
+  'en-US': { A: 'en-US-AndrewNeural', B: 'en-US-JennyNeural' },
   'en-GB': NEURAL_VOICES['en-GB'],
 };
 
