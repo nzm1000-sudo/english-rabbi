@@ -94,6 +94,14 @@ describe('HoldButton', () => {
 });
 
 describe('TimeGate', () => {
+  // The store counts the day from local midnight; a fixed midday keeps the
+  // 12-minute session below inside today whatever the real clock says.
+  beforeEach(() => {
+    vi.useFakeTimers({ toFake: ['Date'] });
+    vi.setSystemTime(new Date(2026, 0, 15, 12, 0));
+  });
+  afterEach(() => vi.useRealTimers());
+
   it('does not start another round once the daily time is used up', async () => {
     const { store, wrapper } = setup();
     const now = Date.now();
