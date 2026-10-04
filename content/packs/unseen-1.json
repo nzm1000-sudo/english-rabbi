@@ -82,7 +82,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: \"It's too small and too complicated,\" he said, and he put it in a drawer. סבא חשב שהטלפון קטן ומסובך מדי. לא נאמר שהוא שבור או שסבא רצה לתת אותו לנועם.",
+        "he": "סבא אמר שהטלפון too small and too complicated, ואז שם אותו במגירה. לא נאמר שהוא שבור או שסבא רצה לתת אותו לנועם.",
         "en": "Grandpa said the phone was too small and too complicated, and then he put it in a drawer."
       },
       "interests": [
@@ -265,7 +265,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה סבא אומר באותו משפט? I don't need your help anymore.",
+          "he": "מה סבא אומר על העזרה של נועם באותו משפט?",
           "en": "What does Grandpa say in the same sentence?"
         }
       ],
@@ -316,7 +316,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: Now Grandpa calls Maya every Sunday evening, כלומר פעם בשבוע. סבא בן שבעים ושמונה (seventy-eight), ונועם מבקר בימי שישי (Every Friday), לא בימי ראשון.",
+        "he": "בקטע: סבא מתקשר למאיה every Sunday evening, כלומר פעם בשבוע. סבא בן שבעים ושמונה (seventy-eight), ונועם מבקר בימי שישי (Every Friday), לא בימי ראשון.",
         "en": "Grandpa calls Maya every Sunday evening, which is once a week. He is seventy-eight, and Noam visits on Fridays."
       },
       "interests": [
@@ -362,7 +362,7 @@
         }
       ],
       "explanation": {
-        "he": "סבא אומר: please come on Friday anyway, כלומר תבוא בכל זאת. The coffee is better when you're here מראה שהוא נהנה מהחברה של נועם. זה לא קשור לטלפון או למי שמכין את הקפה.",
+        "he": "סבא אומר please come on Friday anyway, כלומר תבוא בכל זאת. הוא מוסיף שהקפה טעים יותר כשנועם שם, וזה מראה שהוא נהנה מהחברה שלו. זה לא קשור לטלפון או למי שמכין את הקפה.",
         "en": "Grandpa asks Noam to come anyway because he enjoys his company, not because he needs help."
       },
       "interests": [
@@ -454,7 +454,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: On the tag there was a name, Pita, and a phone number. האישה בקיוסק רק עזרה להתקשר. הילדה הגיעה מאוחר יותר עם אבא שלה.",
+        "he": "על התג היו השם Pita ומספר טלפון (a phone number). האישה בקיוסק רק עזרה להתקשר. הילדה הגיעה מאוחר יותר עם אבא שלה.",
         "en": "The tag on the collar had a phone number. The kiosk woman only helped make the call."
       },
       "interests": [
@@ -684,7 +684,7 @@
         }
       ],
       "explanation": {
-        "he": "האיש אמר: Pita ran away from our garden. לתמר לא היה טלפון (Tamar did not have a phone), והבעלים הגיעו במכונית (a car stopped).",
+        "he": "האיש אמר שפיתה ברחה מהגינה (ran away from our garden). לתמר לא היה טלפון, והבעלים הגיעו במכונית (a car stopped).",
         "en": "The man said Pita ran away from their garden. Tamar had no phone, and the owner came by car."
       },
       "interests": [
@@ -725,7 +725,7 @@
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לקרוא את מה שארי אומר: I already know how to help one.",
+          "he": "לקרוא מה ארי אומר בסוף על עזרה לכלב.",
           "en": "Read what Ari says: I already know how to help one."
         }
       ],
@@ -960,7 +960,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: In the afternoon, the sun came out, and they saw a big rainbow. המדרגות הסודיות היו בביקור במבצר לפני הצהריים, והרדיו היה בבוקר.",
+        "he": "בקטע: In the afternoon השמש יצאה והם ראו קשת גדולה. המדרגות הסודיות היו בביקור במבצר לפני הצהריים, והרדיו היה בבוקר.",
         "en": "In the afternoon the sun came out and they saw a rainbow. The staircase was before lunch, and the radio was in the morning."
       },
       "interests": [
@@ -1052,7 +1052,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: they ate their sandwiches in the car. איתן הוא Shira's little brother, ולכן שירה גדולה ממנו. השמש יצאה רק אחר הצהריים.",
+        "he": "בקטע: הם אכלו את הכריכים in the car. איתן הוא Shira's little brother, ולכן שירה גדולה ממנו. השמש יצאה רק אחר הצהריים.",
         "en": "They ate in the car. Eitan is Shira's little brother, so she is older. The sun came out in the afternoon."
       },
       "interests": [
@@ -1285,7 +1285,7 @@
         }
       ],
       "explanation": {
-        "he": "המשפט הקודם: she had written some of the numbers in the wrong columns. הילה תיקנה את המספרים האלה ושרטטה את הגרף מחדש.",
+        "he": "המשפט הקודם מספר שהילה רשמה חלק מהמספרים in the wrong columns. הילה תיקנה את המספרים האלה ושרטטה את הגרף מחדש.",
         "en": "The sentence before talks about numbers in the wrong columns. Hila corrected those numbers."
       },
       "interests": [
@@ -1473,7 +1473,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: All the plants had grown more or less the same. הילה עצמה מצאה את הטעות, והשופטת שיבחה אותה ולא כעסה.",
+        "he": "בקטע: אחרי התיקון כל הצמחים גדלו more or less the same, כלומר פחות או יותר אותו דבר. הילה עצמה מצאה את הטעות, והשופטת שיבחה אותה ולא כעסה.",
         "en": "After the correction all the plants had grown about the same. Hila found the mistake herself, and the judge praised her."
       },
       "interests": [
@@ -1661,7 +1661,7 @@
         }
       ],
       "explanation": {
-        "he": "המשפט: The coach shouted instructions in fast Hebrew, and Daniel didn't understand them. דניאל לא הבין את ההוראות. הכרטיסים הופיעו רק אחר כך.",
+        "he": "המאמן צעק instructions בעברית מהירה, ודניאל לא הבין אותן. them הן ההוראות. הכרטיסים הופיעו רק אחר כך.",
         "en": "The coach shouted instructions, and Daniel did not understand them. The cards came later."
       },
       "interests": [
@@ -1849,7 +1849,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: In Paris, he had played on a team for four years. עידו, לא רועי, לימד את המילים. דניאל קלע בעשר השניות האחרונות.",
+        "he": "בקטע: In Paris דניאל שיחק בקבוצה ארבע שנים. עידו, לא רועי, לימד את המילים. דניאל קלע בעשר השניות האחרונות.",
         "en": "Daniel played in Paris for four years. Ido taught him the words, and he scored at the very end."
       },
       "interests": [
@@ -2037,7 +2037,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: it has only one queen. Her job is to lay eggs. איסוף מזון ובניית תאי שעווה הם התפקידים של הפועלות.",
+        "he": "בקטע: Her job is to lay eggs, כלומר התפקיד של המלכה הוא להטיל ביצים. איסוף מזון ובניית תאי שעווה הם התפקידים של הפועלות.",
         "en": "The queen's job is to lay eggs. Collecting food and building cells are the workers' jobs."
       },
       "interests": [
@@ -2178,7 +2178,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: the longer she waggles, the farther away the food is. אורך הכשכוש מראה מרחק. הכיוון ביחס לשמש נקבע לפי כיוון הריצה הישרה, לא לפי האורך.",
+        "he": "בקטע: ככל שהדבורה מכשכשת זמן רב יותר (the longer she waggles), המזון רחוק יותר. אורך הכשכוש מראה מרחק. הכיוון ביחס לשמש נקבע לפי כיוון הריצה הישרה, לא לפי האורך.",
         "en": "The longer the waggle, the farther the food. The direction comes from the straight run, not the length."
       },
       "interests": [
@@ -2225,7 +2225,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: she returns and performs a \"waggle dance\". קודם היא חוזרת ורוקדת, ורק אחר כך דבורים אחרות הולכות אחריה. פועלות לא מטילות ביצים לפי הקטע.",
+        "he": "בקטע: הפועלת חוזרת (returns) ורוקדת waggle dance. קודם היא חוזרת ורוקדת, ורק אחר כך דבורים אחרות הולכות אחריה. פועלות לא מטילות ביצים לפי הקטע.",
         "en": "She returns and dances. Then the other bees follow her message."
       },
       "interests": [
@@ -2366,7 +2366,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: when they are older, fly out to collect food. האבקה (pollen) היא שעשירה בחלבון, לא הצוף. על פון פריש נאמר שחקר דבורים, לא שהיה הראשון שגידל אותן.",
+        "he": "בקטע: הפועלות יוצאות לאסוף מזון when they are older. האבקה (pollen) היא שעשירה בחלבון, לא הצוף. על פון פריש נאמר שחקר דבורים, לא שהיה הראשון שגידל אותן.",
         "en": "Workers fly out when they are older. Pollen, not nectar, is rich in protein. Von Frisch studied bees."
       },
       "interests": [
@@ -2459,7 +2459,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: the doctor told her that she couldn't go up and down the stairs for at least two months. היא גרה בקומה שלישית, ולכן לא יכלה לצאת לשוק. לא נאמר שהשוק סגור או שהעגלה שבורה.",
+        "he": "בקטע: הרופא אמר שהיא לא יכולה לעלות ולרדת במדרגות for at least two months. היא גרה בקומה שלישית, ולכן לא יכלה לצאת לשוק. לא נאמר שהשוק סגור או שהעגלה שבורה.",
         "en": "The doctor said she could not use the stairs for two months, and she lives on the third floor."
       },
       "interests": [
@@ -2478,7 +2478,7 @@
       "skill": "reading.sequence",
       "level": "B1",
       "difficulty": 0.4,
-      "prompt": "What was the FIRST thing Efrat did to help Mrs. Klein?",
+      "prompt": "Which of these did Efrat do FIRST to help Mrs. Klein?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -2873,7 +2873,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: so the judges could hear the players but not see them. המטרה הייתה שהשופטים ישפטו רק לפי הנגינה. על הבמה או על הלחץ של הנגנים לא נאמר דבר.",
+        "he": "בקטע: השופטים יכלו לשמוע את הנגנים (hear the players) אבל לא לראות אותם. המטרה הייתה שהשופטים ישפטו רק לפי הנגינה. על הבמה או על הלחץ של הנגנים לא נאמר דבר.",
         "en": "The text says the judges could hear the players but not see them. Nothing is said about the stage or nerves."
       },
       "interests": [
@@ -2900,7 +2900,7 @@
       "options": [
         {
           "id": "a",
-          "text": "She did not enjoy saying it, but she knew Lior was talented."
+          "text": "It was hard for her to accept, but she knew Lior was very talented."
         },
         {
           "id": "b",
@@ -3057,7 +3057,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: Instead of congratulating him, which would have felt false. ברכה לא הייתה כנה, כי יעל עדיין התאכזבה. היא ידעה שליאור זכה (ראתה את הרשימה), והיא כן דיברה איתו בהפסקה.",
+        "he": "בקטע: ברכה would have felt false, כלומר הייתה מרגישה מזויפת ולא כנה, כי יעל עדיין התאכזבה. היא ידעה שליאור זכה (ראתה את הרשימה), והיא כן דיברה איתו בהפסקה.",
         "en": "Congratulating him \"would have felt false\", so it was not sincere. She knew he won, and she did talk in the break."
       },
       "interests": [
@@ -3084,7 +3084,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Lior made Yael stand up with him."
+          "text": "Lior asked Yael to stand up with him."
         },
         {
           "id": "b",
@@ -3103,7 +3103,7 @@
         }
       ],
       "explanation": {
-        "he": "הטיפ על הנשימה ניתן בחזרה הבאה, השבח של המנצח הגיע במהלך החודשים שאחריה, ובסוף, בקונצרט האביב, ליאור הקים את יעל לצידו.",
+        "he": "הטיפ על הנשימה ניתן בחזרה הבאה, השבח של המנצח הגיע במהלך החודשים שאחריה, ובסוף, בקונצרט האביב, ליאור ביקש מיעל לקום לצידו.",
         "en": "The breathing tip came first, then the conductor's praise over the months, and last the spring concert."
       },
       "interests": [
@@ -3149,7 +3149,7 @@
         }
       ],
       "explanation": {
-        "he": "המשפט מתחיל: She noticed that he was nervous. הקשת הרועדת מוכיחה שהוא לחוץ, ולכן יעל נותנת לו טיפ. ליאור מוכשר מאוד, והמנצח לא כעס עליו.",
+        "he": "באותו משפט כתוב he was nervous. הקשת הרועדת מוכיחה שהוא לחוץ, ולכן יעל נותנת לו טיפ. ליאור מוכשר מאוד, והמנצח לא כעס עליו.",
         "en": "The sentence says he was nervous, and the shaking bow shows it. That is why Yael helps him."
       },
       "interests": [
@@ -3195,7 +3195,7 @@
         }
       ],
       "explanation": {
-        "he": "הסבא had played the cello in an orchestra for forty years. ליאור צעיר מיעל בשנה (a year younger than her), ויעל רק שקלה לעזוב ולא עזבה.",
+        "he": "הסבא ניגן בצ'לו בתזמורת for forty years. ליאור צעיר מיעל בשנה (a year younger than her), ויעל רק שקלה לעזוב ולא עזבה.",
         "en": "The grandfather played in an orchestra for forty years. Lior was younger, and Yael never left."
       },
       "interests": [
@@ -3288,7 +3288,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: his results would be influenced by what he already knew. הברות חסרות משמעות לא קשורות לשום דבר בזיכרון, ולכן הידע הקודם לא משפיע על התוצאות.",
+        "he": "בקטע: עם מילים אמיתיות, התוצאות היו מושפעות ממה שכבר ידע (what he already knew). הברות חסרות משמעות לא קשורות לשום דבר בזיכרון, ולכן הידע הקודם לא משפיע על התוצאות.",
         "en": "Real words would be influenced by what he already knew. Meaningless syllables had no connection to his memory."
       },
       "interests": [
@@ -3335,7 +3335,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: Most forgetting happens very quickly, within the first hours and days after learning. אחר כך השכחה מואטת, ולכן היא לא באותו קצב כל הזמן.",
+        "he": "בקטע: Most forgetting happens very quickly, כלומר רוב השכחה קורית מהר מאוד, בשעות ובימים הראשונים אחרי הלמידה. אחר כך השכחה מואטת, ולכן היא לא באותו קצב כל הזמן.",
         "en": "Most forgetting happens in the first hours and days. After that it slows down."
       },
       "interests": [
@@ -3429,7 +3429,7 @@
         }
       ],
       "explanation": {
-        "he": "המשפט: the effort of remembering is not a sign that learning is failing; it is part of how learning happens. המאמץ להיזכר הוא חלק מתהליך הלמידה. it לא יכול להיות learning, כי אי אפשר לומר שהלמידה היא חלק מאיך שהלמידה קורית.",
+        "he": "בקטע: the effort of remembering הוא לא סימן לכישלון; it הוא חלק מתהליך הלמידה. כלומר המאמץ להיזכר הוא חלק מהלמידה. it לא יכול להיות learning, כי אי אפשר לומר שהלמידה היא חלק מאיך שהלמידה קורית.",
         "en": "The effort of remembering is not a sign of failure; it (the effort) is part of learning."
       },
       "interests": [
@@ -3570,7 +3570,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: The results, published in 1885. אבינגהאוס בדק רק את עצמו (using himself as the only subject), ואת אפקט הבחינה הוסיף מחקר מאוחר יותר (More recent research).",
+        "he": "בקטע: התוצאות פורסמו ב־1885 (published in 1885). אבינגהאוס בדק רק את עצמו (himself), ואת אפקט הבחינה הוסיף מחקר מאוחר יותר (More recent research).",
         "en": "The results were published in 1885. He tested only himself, and the testing effect came from later research."
       },
       "interests": [
@@ -3745,7 +3745,7 @@
         },
         {
           "id": "c",
-          "text": "He had left his phone at the station in Tel Aviv."
+          "text": "He had left his phone at the station where they got on."
         }
       ],
       "correctOptionId": "a",
@@ -3756,7 +3756,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: his phone, which was completely dead. He had... forgotten to charge it. הסוללה נגמרה בגלל המשחקים. לא נאמר דבר על קליטה, והטלפון היה איתו.",
+        "he": "בקטע: הטלפון היה completely dead, כי אבי שכח לטעון אותו (forgotten to charge it). הסוללה נגמרה בגלל המשחקים. לא נאמר דבר על קליטה, והטלפון היה איתו.",
         "en": "His phone was dead because he played games and forgot to charge it."
       },
       "interests": [
@@ -3802,7 +3802,7 @@
         }
       ],
       "explanation": {
-        "he": "המשפט הקודם: Avi realised that if he panicked, she would too. נוגה כמעט בכתה, ואבי הבין שעליו להירגע כדי שגם היא תירגע.",
+        "he": "המשפט הקודם: אבי הבין שאם ייבהל (if he panicked), גם נוגה תיבהל. נוגה כמעט בכתה, ואבי הבין שעליו להירגע כדי שגם היא תירגע.",
         "en": "Avi realised that if he panicked, Noga would panic too, so he calmed himself."
       },
       "interests": [
@@ -3940,7 +3940,7 @@
         }
       ],
       "explanation": {
-        "he": "בתחנה בתל אביב, לפני העלייה לרכבת, אבי קנה חטיפים. השדות נראו עשרים דקות אחרי היציאה, והפקידה נתנה את הטלפון בתחנה הבאה.",
+        "he": "בתחנה שבה עלו, לפני העלייה לרכבת, אבי קנה חטיפים. השדות נראו עשרים דקות אחרי היציאה, והפקידה נתנה את הטלפון בתחנה הבאה.",
         "en": "Avi bought snacks before they got on. The fields and the clerk came later."
       },
       "interests": [
@@ -4124,7 +4124,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: not because it had finished, but because Itamar left the table and went to play with his toy cars. המשחק לא נגמר בניצחון, ולא נאמר שקלפים אבדו.",
+        "he": "בקטע: המשחק נעצר לא כי נגמר (not because it had finished), אלא כי איתמר קם מהשולחן והלך לשחק במכוניות שלו. אף אחד לא ניצח, ולא נאמר שקלפים אבדו.",
         "en": "The game ended because Itamar left to play with his toy cars, not because someone won."
       },
       "interests": [
@@ -4170,7 +4170,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: Shai stayed longer, mostly to be polite. הוא נשאר מנימוס, כדי לא לפגוע באלי. הוא לא הבין את החוקים, כי שאל כל הזמן למה אי אפשר לקנות פלפל.",
+        "he": "בקטע: שי נשאר mostly to be polite, כלומר בעיקר מנימוס, כדי לא לפגוע באלי. הוא לא הבין את החוקים, כי שאל כל הזמן למה אי אפשר לקנות פלפל.",
         "en": "Shai stayed \"to be polite\", so as not to hurt Eli. He kept asking questions, so he did not understand the rules."
       },
       "interests": [
@@ -4354,7 +4354,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: because he had no idea how a game was \"supposed\" to work. איתמר הקטן לא חשב לפי כללים קבועים, ולכן הציע רעיונות חדשים. מי שקרא ראיון היה אלי.",
+        "he": "בקטע: איתמר לא ידע איך משחק \"אמור\" (supposed) לעבוד. הוא לא חשב לפי כללים קבועים, ולכן הציע רעיונות חדשים. מי שקרא ראיון היה אלי.",
         "en": "Itamar had no idea how a game was \"supposed\" to work, so he was free to suggest new ideas. Eli read the interview."
       },
       "interests": [
@@ -4447,7 +4447,7 @@
       ],
       "explanation": {
         "he": "הקלפים צומצמו מ־120 ל־40. אלי שמר את הגרסה הראשונה בקופסה מתחת למיטה, ואת מרוצי הגמלים הציע איתמר.",
-        "en": "The cards went from 120 to 40. Eli kept the first version, and Itamar suggested the races."
+        "en": "The cards went from 120 to 40. Eli still keeps the first version, and Itamar suggested the races."
       },
       "interests": [
         "games"
@@ -4539,7 +4539,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: The main cause is simple: less water is flowing in, כי משתמשים במי הירדן לשתייה ולחקלאות. המליחות העולה היא תוצאה של ההתכווצות, לא הסיבה, והתיירים לא לוקחים מים.",
+        "he": "בקטע: The main cause, הסיבה העיקרית, היא שפחות מים זורמים לים (less water is flowing in), כי משתמשים במי הירדן לשתייה ולחקלאות. המליחות העולה היא תוצאה של ההתכווצות, לא הסיבה, והתיירים לא לוקחים מים.",
         "en": "The main cause is that less water flows in from the Jordan. Rising salt is a result, not the cause."
       },
       "interests": [
@@ -4633,7 +4633,7 @@
         }
       ],
       "explanation": {
-        "he": "המשפט: mineral companies pump water into shallow pools in the south, where it evaporates. המים שנשאבו לבריכות מתאדים ומשאירים מינרלים.",
+        "he": "בקטע: חברות המינרלים שואבות מים (pump water) לבריכות רדודות בדרום, ושם המים (it) מתאדים ומשאירים מינרלים.",
         "en": "The companies pump water into pools, and the water evaporates and leaves minerals."
       },
       "interests": [
@@ -4821,7 +4821,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: So far, none of the major plans has been carried out. הכותב אומר במפורש The Dead Sea will not disappear completely, ודגים לא שורדים בו (Fish and plants cannot survive in it).",
+        "he": "בקטע: So far, none of the major plans, כלומר אף תוכנית גדולה עוד לא בוצעה. הכותב אומר במפורש שהים will not disappear completely, ודגים לא שורדים בו (cannot survive).",
         "en": "No major plan has been carried out. The writer says the sea will not disappear, and fish cannot live in it."
       },
       "interests": [
@@ -5009,7 +5009,7 @@
         }
       ],
       "explanation": {
-        "he": "בביקור השלישי, while she was asking about the tools in an old photograph, מרדכי שתק זמן רב ואז סיפר על שמעון. הסבא קרא את העבודה רק בסוף, ומכתב לא מוזכר.",
+        "he": "בביקור השלישי אדינה שאלה על הכלים בתמונה ישנה (the tools in an old photograph), ומרדכי שתק זמן רב ואז סיפר על שמעון. הסבא קרא את העבודה רק בסוף, ומכתב לא מוזכר.",
         "en": "During the third visit Adina asked about the tools in a photograph, and Mordechai began to talk about Shimon."
       },
       "interests": [
@@ -5385,7 +5385,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: they find their way to the water by moving towards the brightest horizon. בחוף טבעי האופק הבהיר ביותר הוא מעל הים. לא נאמר שהם הולכים אחרי האם או מקשיבים לגלים.",
+        "he": "בקטע: הצבים הקטנים מוצאים את הדרך למים כשהם נעים לעבר האופק הבהיר ביותר (the brightest horizon). בחוף טבעי האופק הבהיר ביותר הוא מעל הים. לא נאמר שהם הולכים אחרי האם או מקשיבים לגלים.",
         "en": "Hatchlings move towards the brightest horizon, which on a natural beach is over the sea."
       },
       "interests": [
@@ -5479,7 +5479,7 @@
         }
       ],
       "explanation": {
-        "he": "המשפט: Many species migrate at night, and bright lights... can confuse them. מינים של ציפורים נודדות הם אלה שמתבלבלים וסוטים מהדרך. האורות הם מה שמבלבל אותם.",
+        "he": "בפסקה על הציפורים: מינים רבים נודדים בלילה, והאורות can confuse them. הציפורים הנודדות הן אלה שמתבלבלות וסוטות מהדרך. האורות הם מה שמבלבל אותן.",
         "en": "Many bird species migrate at night, and the lights confuse them. \"them\" means the birds."
       },
       "interests": [
@@ -5573,7 +5573,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: since insects are food for many other animals, the effect can spread through an entire ecosystem. ציפורים, לא חרקים, הן שעפות לחלונות, ואין קשר בין חרקים לצבים.",
+        "he": "בקטע: חרקים הם מזון לבעלי חיים רבים (food for many other animals), ולכן הנזק יכול להתפשט במערכת אקולוגית שלמה. ציפורים, לא חרקים, הן שעפות לחלונות, ואין קשר בין חרקים לצבים.",
         "en": "Insects are food for many animals, so harm to insects spreads. Birds fly into windows, not insects."
       },
       "interests": [
@@ -5714,7 +5714,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: None of this requires us to live in darkness. הצבים בוקעים בדרך כלל בלילה (usually at night), וזיהום האור נעלם כשמכבים את האור.",
+        "he": "הכותב אומר שאין צורך לחיות בחושך (to live in darkness). הצבים בוקעים בדרך כלל בלילה (usually at night), וזיהום האור נעלם כשמכבים את האור.",
         "en": "The writer says we do not need to live in darkness. Turtles usually hatch at night, and the problem ends when lights go off."
       },
       "interests": [
@@ -5808,7 +5808,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: the rules of the competition did not allow it, and in any case her coach refused to consider it. הסבא דיבר איתה רק באותו ערב, ולא החליט על הצד שלה.",
+        "he": "בקטע: החוקים לא אפשרו להחליף צד (did not allow it), והמאמנת בכל מקרה סירבה לשקול זאת (refused to consider it). הסבא דיבר איתה רק באותו ערב, ולא החליט על הצד שלה.",
         "en": "The rules did not allow a change, and the coach refused. The grandfather did not decide her side."
       },
       "interests": [
@@ -6043,7 +6043,7 @@
         }
       ],
       "explanation": {
-        "he": "המשפט הקודם: Some of her arguments... were really just preferences. מיכל הבינה שהריח הוא העדפה אישית ולא הוכחה. היא עדיין אוהבת ספרי נייר, כמו שהיא אומרת בסוף.",
+        "he": "המשפט הקודם אומר שחלק מהטיעונים שלה היו רק העדפות (just preferences). מיכל הבינה שהריח הוא העדפה אישית ולא הוכחה. היא עדיין אוהבת ספרי נייר, כמו שהיא אומרת בסוף.",
         "en": "Michal saw that some arguments were just preferences. She still loves paper books."
       },
       "interests": [
@@ -6137,7 +6137,7 @@
         }
       ],
       "explanation": {
-        "he": "בקטע: She did not pretend that tablets were perfect. Instead, she admitted their weaknesses... השופט אמר שזה מה שהפך את הטיעון שלה למשכנע. על אורך הדיבור לא נאמר דבר.",
+        "he": "בקטע: מיכל לא העמידה פנים שהטאבלטים מושלמים (perfect), אלא הודתה בחולשות שלהם (admitted their weaknesses). השופט אמר שזה מה שהפך את הטיעון שלה למשכנע. על אורך הדיבור לא נאמר דבר.",
         "en": "She admitted the weaknesses and said they could be managed, and the judge said this made her case convincing."
       },
       "interests": [
@@ -6167,7 +6167,7 @@
       "id": "passage.un1-dog-at-bus-stop",
       "title": "The Dog at the Bus Stop",
       "level": "A2",
-      "text": "On Tuesday, Tamar and her brother Ari were waiting for the bus after school. Suddenly, a small brown dog ran to them. It was wet and dirty, and it was shaking.\n\n\"Is it lost?\" Ari asked.\n\nTamar looked at the dog. It had a blue collar with a small metal tag. On the tag there was a name, Pita, and a phone number.\n\nTamar did not have a phone, but the woman at the kiosk next to the bus stop did. Tamar asked her for help, and the woman called the number. A man answered. He sounded very worried. \"Pita ran away from our garden two hours ago!\" he said. \"Please wait there. I'm coming.\"\n\nThe children missed their bus, so Tamar called their mother from the kiosk phone too. \"Stay there with the dog,\" their mother said. \"I'll come and pick you up.\"\n\nWhile they waited, Ari gave Pita some water in a paper cup.\n\nTwenty minutes later, a car stopped next to the bus stop. A man and a little girl jumped out. \"Pita!\" the girl shouted, and the dog ran into her arms.\n\n\"Thank you so much,\" the man said to Tamar and Ari. \"You are good kids.\"\n\nLater, Ari asked his mother, \"Can we get a dog too? I already know how to help one.\"",
+      "text": "On Tuesday, Tamar and her brother Ari were waiting for the bus after school. Suddenly, a small brown dog ran up to them. It was wet and dirty, and it was shaking.\n\n\"Is it lost?\" Ari asked.\n\nTamar looked at the dog. It had a blue collar with a small metal tag. On the tag there was a name, Pita, and a phone number.\n\nTamar did not have a phone, but the woman at the kiosk next to the bus stop did. Tamar asked her for help, and the woman called the number. A man answered. He sounded very worried. \"Pita ran away from our garden two hours ago!\" he said. \"Please wait there. I'm coming.\"\n\nThe children missed their bus, so Tamar called their mother from the kiosk phone too. \"Stay there with the dog,\" their mother said. \"I'll come and pick you up.\"\n\nWhile they waited, Ari gave Pita some water in a paper cup.\n\nTwenty minutes later, a car stopped next to the bus stop. A man and a little girl jumped out. \"Pita!\" the girl shouted, and the dog ran into her arms.\n\n\"Thank you so much,\" the man said to Tamar and Ari. \"You are good kids.\"\n\nLater, Ari asked his mother, \"Can we get a dog too? I already know how to help one.\"",
       "interests": [
         "animals"
       ],
@@ -6209,7 +6209,7 @@
       "id": "passage.un1-honeybee-dance",
       "title": "How Bees Give Directions",
       "level": "B1",
-      "text": "A honeybee colony can have tens of thousands of bees, but it has only one queen. Her job is to lay eggs. Almost all the other bees are female workers. They clean the hive, feed the young bees, build wax cells and, when they are older, fly out to collect food.\n\nThe food comes from flowers. Bees drink a sweet liquid called nectar, which they later turn into honey, and they collect pollen, which is rich in protein. As a bee moves from flower to flower, some pollen sticks to its body and falls onto the next flower. This helps plants make fruit and seeds. Many of the fruits and vegetables that people eat depend on this process, which is called pollination.\n\nBut how does one bee tell the others where the best flowers are? In the twentieth century, an Austrian scientist named Karl von Frisch spent years watching bees, and he discovered something amazing: bees dance.\n\nWhen a worker finds good food far from the hive, she returns and performs a \"waggle dance\" on the honeycomb. She runs forward in a straight line while shaking her body from side to side. Then she circles back and repeats the movement again and again. The direction of the straight run shows the direction of the food compared to the sun. The length of the waggle shows the distance: the longer she waggles, the farther away the food is. Other bees follow her closely, learn the message and fly off to find the flowers.\n\nIn 1973, von Frisch received the Nobel Prize for his work on animal behaviour. Today, scientists are still studying bees, partly because bees in many parts of the world face serious problems, such as disease and the loss of wild flowers. In my opinion, every school garden should grow flowers for bees. It is a small thing, but these tiny dancers deserve our help.",
+      "text": "A honeybee colony can have tens of thousands of bees, but it has only one queen. Her job is to lay eggs. Almost all the other bees are female workers. They clean the hive, feed the young bees, build wax cells and, when they are older, fly out to collect food.\n\nThe food comes from flowers. Bees drink a sweet liquid called nectar, which they later turn into honey, and they collect pollen, which is rich in protein. As a bee moves from flower to flower, some pollen sticks to its body and falls onto the next flower. This helps plants make fruit and seeds. Many of the fruits and vegetables that people eat depend on this process, which is called pollination.\n\nBut how does one bee tell the others where the best flowers are? In the twentieth century, an Austrian scientist named Karl von Frisch spent years watching bees, and he discovered something amazing: bees use dances to share information.\n\nWhen a worker finds good food far from the hive, she returns and performs a \"waggle dance\" on the honeycomb. She runs forward in a straight line while shaking her body from side to side. Then she circles back and repeats the movement many times. The direction of the straight run shows the direction of the food compared to the sun. The length of the waggle shows the distance: the longer she waggles, the farther away the food is. Other bees follow her closely, learn the message and fly off to find the flowers.\n\nIn 1973, von Frisch received the Nobel Prize for his work on animal behaviour. Today, scientists are still studying bees, partly because bees in many parts of the world face serious problems, such as disease and the loss of wild flowers. In my opinion, every school garden should grow flowers for bees. It is a small thing, but these tiny dancers deserve our help.",
       "interests": [
         "animals",
         "science"
@@ -6230,7 +6230,7 @@
       "id": "passage.un1-second-violin",
       "title": "The Second Seat",
       "level": "B2",
-      "text": "For three years, Yael had dreamed of becoming the first violin, the leader of the youth orchestra. It was the seat right next to the conductor, the one whose player performs the solos, tunes the orchestra and shakes the conductor's hand at the end of each concert. When Rivka, the old leader, finished high school, everyone assumed the place would go to Yael. She practised two hours a day, and she had never missed a rehearsal.\n\nThe auditions were held behind a curtain, so the judges could hear the players but not see them. A week later, the list went up on the noticeboard. Yael read it twice before she understood. First violin: Lior Ben-David. Second: Yael Mizrahi.\n\nLior had joined the orchestra only six months earlier. He was quiet, a year younger than her and, she had to admit, very talented. Yael went home and refused to talk to anyone. That night she seriously considered leaving the orchestra.\n\nWhat changed her mind was a conversation with her grandfather, who had played the cello in an orchestra for forty years. He listened without interrupting, and then said something she had not expected. \"When I was young, I also thought the most important seat was the first one. But an orchestra is not a race. The person in the second seat has a job too: to make the leader sound better. If you do that well, people won't notice you. They'll just notice that the music is beautiful.\"\n\nAt the next rehearsal, Yael watched Lior more carefully. She noticed that he was nervous; his bow shook slightly during the solo, and he kept looking at the conductor as if he were asking for permission. During the break, she went over to him. Instead of congratulating him, which would have felt false, she offered him a practical tip about breathing before a solo. He looked surprised, then grateful.\n\nOver the following months, something unexpected happened. Yael began to enjoy her new role. She learned to follow Lior's bow so closely that the two of them seemed to play as one. The conductor said that the violin section had never sounded so united.\n\nAt the spring concert, Lior played the solo without a single mistake. When the audience applauded, he did something no leader had done before: he turned around, took Yael's hand and made her stand up with him. She still hoped to be first violin one day. But that evening, for the first time, she understood what her grandfather had meant.",
+      "text": "For three years, Yael had dreamed of becoming the first violin, the leader of the youth orchestra. It was the seat right next to the conductor, the one whose player performs the solos, tunes the orchestra and shakes the conductor's hand at the end of each concert. When Rivka, the old leader, finished high school, everyone assumed the place would go to Yael. She practised two hours a day, and she had never missed a rehearsal.\n\nThe auditions were held behind a curtain, so the judges could hear the players but not see them. A week later, the list went up on the noticeboard. Yael read it twice before she understood. First violin: Lior Ben-David. Second: Yael Mizrahi.\n\nLior had joined the orchestra only six months earlier. He was quiet, a year younger than her and, she had to admit, very talented. Yael went home and refused to talk to anyone. That night she seriously considered leaving the orchestra.\n\nWhat changed her mind was a conversation with her grandfather, who had played the cello in an orchestra for forty years. He listened without interrupting, and then said something she had not expected. \"When I was young, I also thought the most important seat was the first one. But an orchestra is not a race. The person in the second seat has a job too: to make the leader sound better. If you do that well, people won't notice you. They'll just notice that the music is beautiful.\"\n\nAt the next rehearsal, Yael watched Lior more carefully. She noticed that he was nervous; his bow shook slightly during the solo, and he kept looking at the conductor as if he were asking for permission. During the break, she went over to him. Instead of congratulating him, which would have felt false, she offered him a practical tip about breathing before a solo. He looked surprised, then grateful.\n\nOver the following months, something unexpected happened. Yael began to enjoy her new role. She learned to follow Lior's bow so closely that the two of them seemed to play as one. The conductor said that the violin section had never sounded so united.\n\nAt the spring concert, Lior played the solo without a single mistake. When the audience applauded, he did something no leader had done before: he turned around, pointed to Yael and asked her to stand up with him. She still hoped to be first violin one day. But that evening, for the first time, she understood what her grandfather had meant.",
       "interests": [
         "music"
       ],
@@ -6240,7 +6240,7 @@
       "id": "passage.un1-forgetting-curve",
       "title": "The Forgetting Curve",
       "level": "B2",
-      "text": "Have you ever studied hard for a test, done well, and then discovered a week later that you could hardly remember a thing? If so, you are in good company. In the 1880s, a German psychologist named Hermann Ebbinghaus became one of the first people to study this problem scientifically.\n\nEbbinghaus faced a difficulty. If he tried to memorise poems or real words, his results would be influenced by what he already knew. So he invented a long list of meaningless syllables, such as \"DAX\" and \"BOK\", which had no connection to anything in his memory. Then, using himself as the only subject, he learned lists of these syllables and tested how much he remembered after different periods of time: twenty minutes, an hour, a day, a month.\n\nThe results, published in 1885, showed a clear pattern that is now known as the \"forgetting curve\". Most forgetting happens very quickly, within the first hours and days after learning. After that, forgetting slows down, and what remains tends to stay longer. Ebbinghaus also noticed something encouraging: relearning a list he had partly forgotten took less time than learning it the first time. Even \"forgotten\" information leaves a trace.\n\nPerhaps his most useful discovery was what researchers now call the spacing effect. Ebbinghaus found that repetitions spread out over several days were more effective than the same number of repetitions crammed into one session. Since then, this finding has been confirmed in hundreds of studies, with learners of all ages and with all kinds of material, from vocabulary to mathematics.\n\nMore recent research has added another important idea: the testing effect. Trying to remember information, for example by answering questions without looking at your notes, strengthens memory more than simply reading the material again. In other words, the effort of remembering is not a sign that learning is failing; it is part of how learning happens.\n\nWhat does this mean for students? First, a single long night of study before an exam is one of the least effective ways to learn, even if it feels productive at the time. Second, short reviews spread over days and weeks work better than long ones done all at once. Third, closing the book and testing yourself is worth more than reading the same page five times. Many language-learning apps are built on exactly these principles.\n\nMore than a century later, Ebbinghaus's simple experiments with nonsense syllables still influence the way people study and teach.",
+      "text": "Have you ever studied hard for a test, done well, and then discovered a week later that you could hardly remember a thing? If so, you are in good company. In the 1880s, a German psychologist named Hermann Ebbinghaus became one of the first people to study this problem scientifically.\n\nEbbinghaus faced a difficulty. If he tried to memorise poems or real words, his results would be influenced by what he already knew. So he invented a long list of meaningless syllables, such as \"DAX\" and \"BOK\", which had no connection to anything in his memory. Then, using himself as the only subject, he learned lists of these syllables and tested how much he remembered after different periods of time, from twenty minutes to a month.\n\nThe results, published in 1885, showed a clear pattern that is now known as the \"forgetting curve\". Most forgetting happens very quickly, within the first hours and days after learning. After that, forgetting slows down, and what remains tends to stay longer. Ebbinghaus also noticed something encouraging: relearning a list he had partly forgotten took less time than learning it the first time. Even \"forgotten\" information leaves a trace.\n\nPerhaps his most useful discovery was what researchers now call the spacing effect. Ebbinghaus found that repetitions spread out over several days were more effective than the same number of repetitions crammed into one session. Since then, this finding has been confirmed in hundreds of studies, with learners of all ages and with all kinds of material, from vocabulary to mathematics.\n\nMore recent research has added another important idea: the testing effect. Trying to remember information, for example by answering questions without looking at your notes, strengthens memory more than simply reading the material again. In other words, the effort of remembering is not a sign that learning is failing; it is part of how learning happens.\n\nWhat does this mean for students? First, a single long night of study before an exam is one of the least effective ways to learn, even if it feels productive at the time. Second, short reviews spread over days and weeks work better than long ones done all at once. Third, closing the book and testing yourself is worth more than reading the same page five times. Many language-learning apps are built on exactly these principles.\n\nMore than a century later, Ebbinghaus's simple experiments with nonsense syllables still influence the way people study and teach.",
       "interests": [
         "science",
         "school"
@@ -6251,7 +6251,7 @@
       "id": "passage.un1-wrong-train",
       "title": "The Wrong Train",
       "level": "B2",
-      "text": "It was Thursday, 6:40 p.m. Avi and his younger sister Noga were supposed to be at their grandparents' house in Haifa by eight. It was the first time their parents had let them travel alone, and Avi, who was fifteen, had promised to keep his phone on and to send a message from every station.\n\nAt the station in Tel Aviv, the board showed two trains leaving from the same platform within five minutes. Avi was busy buying snacks, and when a train arrived, Noga said, \"That's ours!\" They jumped on just before the doors closed.\n\nTwenty minutes later, Avi looked out of the window and frowned. The sea should have been on their left. Instead, there were fields and an industrial area that he had never seen. He checked the screen above the door: the train was heading south, towards Beersheba.\n\nHis first reaction was panic. His second was to reach for his phone, which was completely dead. He had spent the afternoon playing games on it and had forgotten to charge it.\n\nNoga, who was eleven, looked as if she was about to cry. Avi realised that if he panicked, she would too. He took a deep breath and tried to think clearly. They needed to do three things: get off at the next station, find the right train back, and tell their parents that they were safe.\n\nAt the next stop, they got off and went straight to the information desk. The clerk, a tired-looking woman, explained that the next train back would leave in fifteen minutes. When Avi asked if he could use a phone, she hesitated for a moment, then handed him her own.\n\nHis mother answered on the first ring. She had already tried to call him four times. To Avi's surprise, she didn't shout. \"You made a mistake,\" she said, \"but you fixed it calmly. That's what matters.\"\n\nThey arrived in Haifa at half past ten, two and a half hours late. Their grandmother had kept dinner warm, and their grandfather wanted to hear every detail. Noga told most of the story, and to Avi's relief, she made him sound like a hero.\n\nLater, lying in bed, Avi made a list in his head of what he would do differently next time: check the screen before getting on, keep his phone charged and, maybe, let his little sister read the departure board. After all, she had not been wrong about the platform, only about the train.",
+      "text": "It was Thursday, 6:40 p.m. Avi and his younger sister Noga were supposed to be at their grandparents' house in Haifa by eight. It was the first time their parents had let them travel alone, and Avi, who was fifteen, had promised to keep his phone on and to send a message from every station.\n\nAt the busy central station in their city, the board showed two trains leaving from the same platform within five minutes. Avi was busy buying snacks, and when a train arrived, Noga said, \"That's ours!\" They jumped on just before the doors closed.\n\nTwenty minutes later, Avi looked out of the window and frowned. The sea should have been on their left. Instead, there were fields and an industrial area that he had never seen. He checked the screen above the door: the train was heading south, towards Beersheba.\n\nHis first reaction was panic. His second was to reach for his phone, which was completely dead. He had spent the afternoon playing games on it and had forgotten to charge it.\n\nNoga, who was eleven, looked as if she was about to cry. Avi realised that if he panicked, she would too. He took a deep breath and tried to think clearly. They needed to do three things: get off at the next station, find the right train back, and tell their parents that they were safe.\n\nAt the next stop, they got off and went straight to the information desk. The clerk, a tired-looking woman, explained that the next train back would leave in fifteen minutes. When Avi asked if he could use a phone, she hesitated for a moment, then handed him her own.\n\nHis mother answered on the first ring. She had already tried to call him four times. To Avi's surprise, she didn't shout. \"You made a mistake,\" she said, \"but you fixed it calmly. That's what matters.\"\n\nThey arrived in Haifa at half past ten, two and a half hours late. Their grandmother had kept dinner warm, and their grandfather wanted to hear every detail. Noga told most of the story, and to Avi's relief, she made him sound like a hero.\n\nLater, lying in bed, Avi made a list in his head of what he would do differently next time: check the screen before getting on, keep his phone charged and, maybe, let his little sister read the departure board. After all, she had not been wrong about the platform, only about the train.",
       "interests": [
         "travel"
       ],
@@ -6261,7 +6261,7 @@
       "id": "passage.un1-desert-caravan",
       "title": "The Game That Didn't Work",
       "level": "B2",
-      "text": "When Eli's younger brothers got bored during the long summer holiday, he decided to design a board game for them. Eli was sixteen and loved strategy games, so he spent a whole week on it. The game was called Desert Caravan. The players were traders crossing a desert with camels, buying and selling spices and trying to avoid sandstorms. There were 120 cards, four kinds of coins and a rulebook that was eleven pages long.\n\nHe was very proud of it. One morning he laid the board out on the kitchen table and called his brothers: Shai, who was nine, and Itamar, who was seven.\n\nThe first game lasted twenty minutes. That was not because it had finished, but because Itamar left the table and went to play with his toy cars. Shai stayed longer, mostly to be polite, but he kept asking, \"Wait, why can't I buy the pepper now?\" Eventually he admitted, \"It's kind of boring.\"\n\nEli was hurt. He wanted to say that they were simply too young to understand it. Then he remembered something he had read in an interview with a professional game designer: \"If players don't enjoy your game, the problem is the game, not the players.\"\n\nSo instead of arguing, he did something harder. He asked questions. What was the most fun part? (Rolling the dice and the sandstorm cards.) What was the most boring part? (Waiting, and counting coins.) What would make it better? Itamar thought for a moment and said, \"Camels that can race.\"\n\nOver the next two weeks, Eli rebuilt the game almost from the beginning. He reduced the rules to a single page and cut the cards from 120 to 40. He replaced the four kinds of coins with one. He added camel races and made the sandstorms more dramatic. After every change, he tested the game with his brothers again and wrote down what happened. Some ideas worked immediately; others failed and had to be removed. He also noticed something interesting: the best ideas often came from Itamar, the youngest, because he had no idea how a game was \"supposed\" to work.\n\nBy the end of the summer, Desert Caravan had become the family's favourite game. Even Eli's father, who usually said he was too tired for games, asked to play.\n\nEli kept the first version in a box under his bed. Sometimes he takes it out and looks at the eleven-page rulebook. It reminds him that the first version of anything is rarely the best one, and that the people who criticise your work can be your most useful partners.",
+      "text": "When Eli's younger brothers got bored during the long summer holiday, he decided to design a board game for them. Eli was sixteen and loved strategy games, so he spent a whole week on it. The game was called Desert Caravan. The players were traders crossing a desert with camels, buying and selling spices and trying to avoid sandstorms. There were 120 cards, four kinds of coins and a rulebook that was eleven pages long.\n\nHe was very proud of it. One morning he laid the board out on the kitchen table and called his brothers: Shai, who was nine, and Itamar, who was seven.\n\nThe first game lasted twenty minutes. That was not because it had finished, but because Itamar left the table and went to play with his toy cars. Shai stayed longer, mostly to be polite, but he kept asking, \"Wait, why can't I buy the pepper now?\" Eventually he admitted, \"It's kind of boring.\"\n\nEli was hurt. He wanted to say that they were simply too young to understand it. Then he remembered something he had read in an interview with a professional game designer: \"If players don't enjoy your game, the problem is the game, not the players.\"\n\nSo instead of arguing, he did something harder. He asked questions. What was the most fun part? (Rolling the dice and the sandstorm cards.) What was the most boring part? (Waiting, and counting coins.) What would make it better? Itamar thought for a moment and said, \"Camels that can race.\"\n\nOver the next two weeks, Eli rebuilt the game almost from the beginning. He reduced the rules to a single page and cut the cards from 120 to 40. He replaced the four kinds of coins with one. He added camel races and made the sandstorms more dramatic. After every change, he tested the game with his brothers again and wrote down what happened. Some ideas worked immediately; others failed and had to be removed. He also noticed something interesting: the best ideas often came from Itamar, the youngest, because he had no idea how a game was \"supposed\" to work.\n\nBy the end of the summer, Desert Caravan had become the family's favourite game. Even Eli's father, who usually said he was too tired for games, asked to play.\n\nEli still keeps the first version in a box under his bed. Sometimes he takes it out and looks at the eleven-page rulebook. It reminds him that the first version of anything is rarely the best one, and that the people who criticise your work can be your most useful partners.",
       "interests": [
         "games"
       ],
@@ -6271,7 +6271,7 @@
       "id": "passage.un1-shrinking-dead-sea",
       "title": "The Shrinking Sea",
       "level": "B2",
-      "text": "Every year, thousands of tourists come to the shores of the Dead Sea to do something they cannot do anywhere else: lie on their backs in the water and read a newspaper without sinking. The water is so salty, almost ten times saltier than ordinary sea water, that the human body floats on it easily. The salt also explains the lake's name. Fish and plants cannot survive in it, although scientists have found tiny living things, such as certain bacteria, in its water.\n\nThe Dead Sea is famous for another reason too. Its shores are the lowest place on land anywhere on Earth, more than 400 metres below sea level. Unfortunately, they are getting lower every year, because the sea itself is shrinking. Since the 1960s, its surface has dropped by more than 30 metres, and today it continues to fall by about a metre a year.\n\nThe main cause is simple: less water is flowing in. For thousands of years, the Jordan River carried fresh water into the Dead Sea from the north. During the twentieth century, as the population of the region grew, the countries in the area began to use more and more of the river's water for drinking and farming. Today only a small part of the original flow reaches the sea. At the same time, the hot, dry climate causes large amounts of water to evaporate. In addition, mineral companies pump water into shallow pools in the south, where it evaporates and leaves behind valuable minerals.\n\nThe results can be seen clearly along the shore. Beaches and buildings that were once at the water's edge now stand far from it. Even more worrying are sinkholes: deep holes that suddenly open in the ground. As the sea goes down, fresh underground water dissolves layers of salt below the surface, leaving empty spaces. Eventually, the ground above them collapses. Thousands of sinkholes have appeared around the Dead Sea, damaging roads, farms and buildings, and some areas have been closed to visitors.\n\nCan the Dead Sea be saved? Over the years, experts have suggested several solutions. One idea was to bring water from the Red Sea through a long pipeline. Others believe that the answer is to let more water from the Jordan River flow south again. So far, none of the major plans has been carried out, partly because of their high cost and partly because of concerns about their effect on the environment.\n\nThe Dead Sea will not disappear completely. As it gets smaller, its water becomes even saltier and evaporates more slowly. But without action, the lake that visitors know today will continue to change, and the lowest place on Earth will keep getting lower. In my view, protecting it is a responsibility shared by everyone who lives in the region.",
+      "text": "Every year, large numbers of tourists come to the shores of the Dead Sea to do something they cannot do anywhere else: lie on their backs in the water and read a newspaper without sinking. The water is so salty, almost ten times saltier than ordinary sea water, that the human body floats on it easily. The salt also explains the lake's name. Fish and plants cannot survive in it, although scientists have found tiny living things, such as certain bacteria, in its water.\n\nThe Dead Sea is famous for another reason too. Its shores are the lowest place on land anywhere on Earth, more than 400 metres below sea level. Unfortunately, they are getting lower every year, because the sea itself is shrinking. Since the 1960s, its surface has dropped by more than 30 metres, and today it continues to fall by about a metre a year.\n\nThe main cause is simple: less water is flowing in. For thousands of years, the Jordan River carried fresh water into the Dead Sea from the north. During the twentieth century, as the population of the region grew, the countries in the area began to use more and more of the river's water for drinking and farming. Today only a small part of the original flow reaches the sea. At the same time, the hot, dry climate causes large amounts of water to evaporate. In addition, mineral companies pump water into shallow pools in the south, where it evaporates and leaves behind valuable minerals.\n\nThe results can be seen clearly along the shore. Beaches and buildings that were once at the water's edge now stand far from it. Even more worrying are sinkholes: deep holes that suddenly open in the ground. As the sea goes down, fresh underground water dissolves layers of salt below the surface, leaving empty spaces. Eventually, the ground above them collapses. Thousands of sinkholes have appeared around the Dead Sea, damaging roads, farms and buildings, and some areas have been closed to visitors.\n\nCan the Dead Sea be saved? Over the years, experts have suggested several solutions. One idea was to bring water from the Red Sea through a long pipeline. Others believe that the answer is to let more water from the Jordan River flow south again. So far, none of the major plans has been carried out, partly because of their high cost and partly because of concerns about their effect on the environment.\n\nThe Dead Sea will not disappear completely. As it gets smaller, its water becomes even saltier and evaporates more slowly. But without action, the lake that visitors know today will continue to change, and the lowest place on Earth will keep getting lower. In my view, protecting it is a responsibility shared by everyone who lives in the region.",
       "interests": [
         "travel",
         "science"
