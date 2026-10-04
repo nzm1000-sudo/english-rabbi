@@ -1,6 +1,6 @@
 """Renders Hebrew phrases with Gemini TTS, several phrases per request.
 
-Called by hebrew.mjs with {model, checkModels, batch, jobs: [{text, say?, voice, style, out}]}
+Called by hebrew.mjs with {checkModels, batch, jobs: [{text, say?, model, voice, style, out}]}
 (say: the text with niqqud where the voice misreads it; the check compares with text)
 on stdin. The free tier allows only a few TTS requests a day, so each request
 reads a batch of lines with long pauses between them; the audio is cut at
@@ -149,43 +149,47 @@ def main():
     cfg = json.load(sys.stdin)
     by_voice = {}
     for j in cfg['jobs']:
-        by_voice.setdefault((j['voice'], j['style']), []).append(j)
+        by_voice.setdefault((j['model'], j['voice'], j['style']), []).append(j)
     done = failed = 0
-    try:
-        for (voice, style), jobs in by_voice.items():
-            for i in range(0, len(jobs), cfg['batch']):
-                batch = jobs[i : i + cfg['batch']]
-                lines = [j['text'] for j in batch]
-                spoken = [j.get('say', j['text']) for j in batch]
-                print(f'{voice}: {" / ".join(spoken)}', flush=True)
-                try:
-                    pcm = speak(cfg['model'], voice, style, spoken)
-                except RuntimeError as e:
-                    print(f'  {str(e)[:120]}; will retry next run', flush=True)
-                    failed += len(batch)
+    spent = set()  # models whose daily quota is used up; the other models go on
+    for (model, voice, style), jobs in by_voice.items():
+        for i in range(0, len(jobs), cfg['batch']):
+            if model in spent:
+                break
+            batch = jobs[i : i + cfg['batch']]
+            lines = [j['text'] for j in batch]
+            spoken = [j.get('say', j['text']) for j in batch]
+            print(f'{voice}: {" / ".join(spoken)}', flush=True)
+            try:
+                pcm = speak(model, voice, style, spoken)
+            except DailyQuota:
+                print(f'daily quota of {model} used up; run again after the reset', flush=True)
+                spent.add(model)
+                break
+            except RuntimeError as e:
+                print(f'  {str(e)[:120]}; will retry next run', flush=True)
+                failed += len(batch)
+                continue
+            cut = pieces(pcm, len(batch))
+            if not cut:
+                print('  could not find the pauses; will retry next run', flush=True)
+                failed += len(batch)
+                continue
+            wavs = [wav(pcm[a:b]) for a, b in cut]
+            try:
+                ok, heard = check(cfg['checkModels'], wavs, lines)
+            except RuntimeError as e:
+                print(f'  {e}', flush=True)
+                failed += len(batch)
+                continue
+            for j, w, good, h in zip(batch, wavs, ok, heard):
+                if not good:
+                    print(f'  rejected "{j["text"]}" (heard "{h}")', flush=True)
+                    failed += 1
                     continue
-                cut = pieces(pcm, len(batch))
-                if not cut:
-                    print('  could not find the pauses; will retry next run', flush=True)
-                    failed += len(batch)
-                    continue
-                wavs = [wav(pcm[a:b]) for a, b in cut]
-                try:
-                    ok, heard = check(cfg['checkModels'], wavs, lines)
-                except RuntimeError as e:
-                    print(f'  {e}', flush=True)
-                    failed += len(batch)
-                    continue
-                for j, w, good, h in zip(batch, wavs, ok, heard):
-                    if not good:
-                        print(f'  rejected "{j["text"]}" (heard "{h}")', flush=True)
-                        failed += 1
-                        continue
-                    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', '-', '-ac', '1', '-ar', str(RATE), '-b:a', '48k', j['out']],
-                                   input=w, check=True)
-                    done += 1
-    except DailyQuota as e:
-        print(f'daily quota of {e} used up; run again tomorrow', flush=True)
+                subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', '-', '-ac', '1', '-ar', str(RATE), '-b:a', '48k', j['out']],
+                               input=w, check=True)
+                done += 1
     print(f'{done} rendered, {failed} rejected', flush=True)
 
 

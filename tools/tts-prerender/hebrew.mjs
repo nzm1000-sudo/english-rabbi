@@ -30,7 +30,10 @@ const RATE = '-8%';
 const GEMINI_KEYS = { little: 'gemini-he-1', young: 'gemini-he-young-1' };
 // Chosen by ear on 2026-10-03 from samples of this model.
 // batch: phrases per request. 1 on a paid key; about 12 on the free tier (cut at the pauses).
-const GEMINI = { model: 'gemini-3.1-flash-tts-preview', checkModels: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.5-flash', 'gemini-flash-latest'], batch: Number(process.env.GEMINI_BATCH ?? 1) };
+// Each set keeps one model so its voice never changes mid-game. The 7-8 set
+// uses the newer model (its own daily quota).
+const MODELS = { little: 'gemini-3.1-flash-tts-preview', young: 'gemini-3.8-flash-tts' };
+const GEMINI = { checkModels: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.5-flash', 'gemini-flash-latest'], batch: Number(process.env.GEMINI_BATCH ?? 1) };
 const GUIDE_VOICE = 'Achernar';
 const NAME_VOICE = 'Algieba';
 const HE = 'in natural, native Israeli Hebrew with clear diction';
@@ -82,7 +85,7 @@ function trimSilence(file) {
 const manifestPath = path.join(outDir, 'manifest.json');
 fs.mkdirSync(outDir, { recursive: true });
 const manifest = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, 'utf8')) : { version: 1, entries: {} };
-manifest.engine = `${GEMINI.model} ${GUIDE_VOICE} (guide) / ${NAME_VOICE} (names); fallback edge-tts ${VOICE} ${RATE}`;
+manifest.engine = `${MODELS.little} (3-6) / ${MODELS.young} (7-8): ${GUIDE_VOICE} (guide) / ${NAME_VOICE} (names); fallback edge-tts ${VOICE} ${RATE}`;
 const phrases = collectPhrases();
 const texts = [...phrases.keys()];
 const keyOf = (t) => audioKey(VOICE, 'normal', t);
@@ -117,7 +120,7 @@ const gJobs = STAGES.flatMap((stage) =>
     .filter(({ key }) => !manifest.entries[key])
     .map(({ t, key }) => {
       const { voice, kind } = phrases.get(t);
-      return { text: t, say: withNiqqud(t), key, voice, style: STYLES[stage][kind], out: path.join(outDir, `${key}.mp3`) };
+      return { text: t, say: withNiqqud(t), key, model: MODELS[stage], voice, style: STYLES[stage][kind], out: path.join(outDir, `${key}.mp3`) };
     }),
 );
 console.log(`Gemini: ${gJobs.length} to render`);
