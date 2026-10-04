@@ -224,6 +224,16 @@ describe('pre-rendered provider', () => {
     expect(playback.rates).toEqual([0.8]);
   });
 
+  it('fast plays the normal recording faster', async () => {
+    const manifest = { version: 1, engine: 'k', entries: { [audioKey(PRE, 'normal', 'beautiful')]: 'audio/n.mp3' } };
+    const fetchFn = (async (u: string) => (u === 'm' ? new Response(JSON.stringify(manifest)) : new Response(new Blob([u])))) as unknown as typeof fetch;
+    const playback = new FakePlayback();
+    const p = new PrerenderedProvider(playback, 'm', fetchFn);
+    await p.speak({ text: 'beautiful', accent: 'en-US', rate: 'fast' });
+    expect(await (playback.played[0] as Blob).text()).toBe('audio/n.mp3');
+    expect(playback.rates).toEqual([1.25]);
+  });
+
   it('downloads every file for offline use', async () => {
     const manifest = { version: 1, engine: 'k', entries: { a: 'audio/1.mp3', b: 'audio/2.mp3', c: 'audio/2.mp3' } };
     const fetchFn = (async (u: string) => (u === 'm' ? new Response(JSON.stringify(manifest)) : u.endsWith('2.mp3') ? new Response('', { status: 404 }) : new Response('x'))) as unknown as typeof fetch;

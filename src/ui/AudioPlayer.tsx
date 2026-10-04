@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, useSyncExternalStore, type CSSProperties, type Ref } from 'react';
 import { useServices } from '@/app/services';
 import { useSpeechPrefs } from '@/app/speechPrefs';
-import type { Speaker, SpeechRate } from '@/services/speech/types';
+import type { Speaker } from '@/services/speech/types';
 import { canonicalSpeechText } from '@/services/speech/textPrep';
 import { SpeakButton } from './SpeakButton';
 import { Back5Icon, NextIcon, PauseIcon, PlayIcon, PrevIcon } from './icons';
@@ -15,20 +15,25 @@ export interface AudioPlayerHandle {
   playFrom(index: number): void;
 }
 
-type Clip = { url: string; segment: number; duration: number; rate: number };
+/** One recorded file: `src` is its object URL in memory, `rate` its own playback speed. */
+type Clip = { url: string; src: string; segment: number; duration: number; rate: number };
+/** Recordings of a text: normal speed, and recorded slow. */
+type FileSet = 'normal' | 'slow';
+type Sets = { text: string } & Partial<Record<FileSet, Clip[] | 'missing'>>;
 
 /**
  * The speed chip cycles through these. `rate` picks the recordings (slow ones
  * are recorded slow, not stretched); `factor` speeds the normal ones up on
  * playback, which sounds natural and needs no reload.
  */
-const SPEEDS: { key: string; rate: SpeechRate; factor: number; label: string; he: string }[] = [
-  { key: '1', rate: 'normal', factor: 1, label: '1×', he: 'רגיל' },
-  { key: '1.25', rate: 'normal', factor: 1.25, label: '1.25×', he: 'מהיר' },
-  { key: '1.5', rate: 'normal', factor: 1.5, label: '1.5×', he: 'מהיר מאוד' },
-  { key: '0.65', rate: 'slower', factor: 1, label: '0.65×', he: 'איטי מאוד' },
-  { key: '0.8', rate: 'slow', factor: 1, label: '0.8×', he: 'איטי' },
+const SPEEDS: { key: string; file: FileSet; factor: number; label: string; he: string }[] = [
+  { key: '1', file: 'normal', factor: 1, label: '1×', he: 'רגיל' },
+  { key: '1.25', file: 'normal', factor: 1.25, label: '1.25×', he: 'מהיר' },
+  { key: '1.5', file: 'normal', factor: 1.5, label: '1.5×', he: 'מהיר מאוד' },
+  { key: '0.65', file: 'slow', factor: 0.8, label: '0.65×', he: 'איטי מאוד' },
+  { key: '0.8', file: 'slow', factor: 1, label: '0.8×', he: 'איטי' },
 ];
+const otherSet = (f: FileSet): FileSet => (f === 'normal' ? 'slow' : 'normal');
 
 /**
  * Seekable player for a text made of recorded sentences: pause and resume
@@ -47,36 +52,34 @@ export function AudioPlayer({
 }) {
   const { recorded, speech } = useServices();
   const prefs = useSpeechPrefs();
-  const [speedKey, setSpeedKey] = useState(() => (prefs.rate === 'slow' ? '0.8' : prefs.rate === 'slower' ? '0.65' : '1'));
+  const [speedKey, setSpeedKey] = useState(() => (prefs.rate === 'slow' ? '0.8' : prefs.rate === 'slower' ? '0.65' : prefs.rate === 'fast' ? '1.25' : '1'));
   const speed = SPEEDS.find((x) => x.key === speedKey) ?? SPEEDS[0]!;
-  const rate = speed.rate;
   const factor = useRef(speed.factor);
   factor.current = speed.factor;
-  const [clips, setClips] = useState<Clip[] | null | 'missing'>(null);
+  const [sets, setSets] = useState<Sets>({ text: '' });
   const [playing, setPlaying] = useState(false);
   const [pos, setPos] = useState(0);
   const audio = useRef<HTMLAudioElement | null>(null);
   const index = useRef(0);
-  const urls = useRef<string[]>([]);
   const selfStop = useRef(false);
-  /** Files of the clips being replaced (another speed): freed once the new ones play. */
-  const oldUrls = useRef<string[]>([]);
-  const loadedText = useRef<string | null>(null);
+  /** Object URLs of earlier texts: freed once nothing plays them. */
+  const retired = useRef<string[]>([]);
   const speechState = useSyncExternalStore(speech.subscribe, speech.getState);
   const textKey = segments.map((s) => `${s.speaker ?? 'A'}:${s.text}`).join('|');
 
-  // Load the clips and their lengths for this text and speed.
+  // Load both recordings of this text once: the current speed first, the
+  // other right after, so changing speed later is instant (no download).
   useEffect(() => {
     let live = true;
-    // A new text starts empty; a new speed keeps playing the old clips until the new ones are ready.
-    if (loadedText.current !== textKey) setClips(null);
-    (async () => {
+    const mine: string[] = [];
+    setSets({ text: textKey });
+    const loadSet = async (file: FileSet): Promise<Clip[] | 'missing'> => {
       const out: Clip[] = [];
       for (let i = 0; i < segments.length; i++) {
         const s = segments[i]!;
-        const found = await recorded.clipsFor({ text: canonicalSpeechText(s.text), accent: prefs.accent, rate, ...(s.speaker ? { speaker: s.speaker } : {}) });
-        if (!found) return live && setClips('missing');
-        for (const u of found.urls) out.push({ url: u, segment: i, duration: 0, rate: found.playbackRate });
+        const found = await recorded.clipsFor({ text: canonicalSpeechText(s.text), accent: prefs.accent, rate: file, ...(s.speaker ? { speaker: s.speaker } : {}) });
+        if (!found) return 'missing';
+        for (const u of found.urls) out.push({ url: u, src: '', segment: i, duration: 0, rate: found.playbackRate });
       }
       const blobs = await Promise.all(
         out.map((c) =>
@@ -86,37 +89,47 @@ export function AudioPlayer({
           }),
         ),
       );
-      if (!live) return;
-      const fresh = blobs.map((b) => URL.createObjectURL(b));
-      const probe = fresh;
+      out.forEach((c, i) => {
+        c.src = URL.createObjectURL(blobs[i]!);
+        mine.push(c.src);
+      });
       await Promise.all(
-        probe.map(
-          (u, i) =>
+        out.map(
+          (c) =>
             new Promise<void>((resolve) => {
               const a = new Audio();
               a.preload = 'metadata';
               a.onloadedmetadata = () => {
-                out[i]!.duration = Number.isFinite(a.duration) ? a.duration : 0;
+                c.duration = Number.isFinite(a.duration) ? a.duration : 0;
                 resolve();
               };
               a.onerror = () => resolve();
-              a.src = u;
+              a.src = c.src;
             }),
         ),
       );
-      if (!live) return fresh.forEach((u) => URL.revokeObjectURL(u));
-      oldUrls.current.push(...urls.current);
-      urls.current = fresh;
-      loadedText.current = textKey;
-      // A file that cannot be played (broken or not audio) means no player: use the speaker button.
-      setClips(out.every((c) => c.duration > 0) ? out : 'missing');
-    })().catch(() => live && setClips('missing'));
+      // A file that cannot be played (broken or not audio) counts as not recorded.
+      return out.every((c) => c.duration > 0) ? out : 'missing';
+    };
+    (async () => {
+      const first = (SPEEDS.find((x) => x.key === speedKey) ?? SPEEDS[0]!).file;
+      for (const file of [first, otherSet(first)]) {
+        const got = await loadSet(file).catch((): 'missing' => 'missing');
+        if (!live) return;
+        setSets((cur) => (cur.text === textKey ? { ...cur, [file]: got } : cur));
+      }
+    })();
     return () => {
       live = false;
+      retired.current.push(...mine);
     };
-    // segments are compared by content (textKey).
+    // segments are compared by content (textKey); the speed only picks which set loads first.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [textKey, rate, prefs.accent, recorded]);
+  }, [textKey, prefs.accent, recorded]);
+
+  const ready = (f: FileSet) => (Array.isArray(sets[f]) ? (sets[f] as Clip[]) : null);
+  // The current speed's recordings, or the other set while those still load.
+  const clips: Clip[] | null | 'missing' = ready(speed.file) ?? ready(otherSet(speed.file)) ?? (sets.normal === 'missing' && sets.slow === 'missing' ? 'missing' : sets[speed.file] === 'missing' && sets[otherSet(speed.file)] === 'missing' ? 'missing' : null);
 
   const list = useMemo(() => (Array.isArray(clips) ? clips : []), [clips]);
   const starts = useMemo(() => {
@@ -156,7 +169,7 @@ export function AudioPlayer({
       if (!c) return;
       index.current = i;
       const el = (audio.current ??= new Audio());
-      el.src = urls.current[i]!;
+      el.src = c.src;
       (el as HTMLAudioElement & { webkitPreservesPitch?: boolean }).webkitPreservesPitch = true;
       el.preservesPitch = true;
       el.defaultPlaybackRate = c.rate * factor.current;
@@ -204,20 +217,22 @@ export function AudioPlayer({
   useEffect(() => {
     const el = audio.current;
     const free = () => {
-      oldUrls.current.forEach((u) => URL.revokeObjectURL(u));
-      oldUrls.current = [];
+      const keep = el?.getAttribute('src') ? el.src : '';
+      retired.current.filter((u) => u !== keep).forEach((u) => URL.revokeObjectURL(u));
+      retired.current = retired.current.filter((u) => u === keep);
     };
-    if (!el?.getAttribute('src') || !list.length || urls.current.includes(el.src)) return free();
-    const i = Math.min(index.current, list.length - 1);
+    if (!el?.getAttribute('src') || !list.length || list.some((c) => c.src === el.src)) return free();
+    const old = [...(ready('normal') ?? []), ...(ready('slow') ?? [])].find((c) => c.src === el.src);
+    const i = Math.min(old ? list.findIndex((c) => c.segment === old.segment) : index.current, list.length - 1);
     const part = el.duration > 0 ? Math.min(1, el.currentTime / el.duration) : 0;
     const wasPlaying = !el.paused && !el.ended;
-    if (wasPlaying) load(i, part * list[i]!.duration, true);
+    if (wasPlaying) load(Math.max(0, i), part * list[Math.max(0, i)]!.duration, true);
     else {
       el.pause();
       el.removeAttribute('src');
       el.load();
-      index.current = i;
-      setPos(starts[i]! + part * list[i]!.duration);
+      index.current = Math.max(0, i);
+      setPos(starts[Math.max(0, i)]! + part * list[Math.max(0, i)]!.duration);
     }
     free();
     // Only when the clips change; load and starts follow them.
@@ -231,9 +246,8 @@ export function AudioPlayer({
     return () => {
       document.removeEventListener('visibilitychange', hide);
       audio.current?.pause();
-      [...urls.current, ...oldUrls.current].forEach((u) => URL.revokeObjectURL(u));
-      urls.current = [];
-      oldUrls.current = [];
+      retired.current.forEach((u) => URL.revokeObjectURL(u));
+      retired.current = [];
     };
   }, [pause]);
 
@@ -311,7 +325,7 @@ export function AudioPlayer({
             // Same recordings (1×, 1.25×, 1.5×): change speed in place, without a pause.
             const el = audio.current;
             const c = list[index.current];
-            if (el && c && nextSpeed.rate === rate) el.playbackRate = c.rate * nextSpeed.factor;
+            if (el && c && nextSpeed.file === speed.file) el.playbackRate = c.rate * nextSpeed.factor;
             setSpeedKey(nextSpeed.key);
           }}
         >
