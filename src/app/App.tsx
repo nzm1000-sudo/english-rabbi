@@ -4,7 +4,6 @@ import { useServices } from './services';
 import { StudentPicker } from '@/features/students/StudentPicker';
 import { StudentForm } from '@/features/students/StudentForm';
 import { HomeScreen } from '@/features/home/HomeScreen';
-import { MorePractice } from '@/features/home/MorePractice';
 import { PracticeScreen } from '@/features/practice/PracticeScreen';
 import { ParentDashboard } from '@/features/parent/ParentDashboard';
 import { VoiceLab } from '@/features/voice-lab/VoiceLab';
@@ -39,7 +38,8 @@ export function App() {
         <Route path="/s/:sid" element={<KnownStudent />}>
           <Route index element={<WithStudentSpeech><HomeScreen /></WithStudentSpeech>} />
           <Route path="settings" element={<StudentForm />} />
-          <Route path="more" element={<MorePractice />} />
+          {/* The old "more practice" screen: its groups now open on the home screen. */}
+          <Route path="more" element={<Navigate to=".." relative="path" replace />} />
           <Route path="practice/:mode" element={<WithStudentSpeech><PracticeScreen /></WithStudentSpeech>} />
           <Route path="learn" element={<WithStudentSpeech><LearnHub /></WithStudentSpeech>} />
           <Route path="learn/:lessonId" element={<WithStudentSpeech><LessonScreen /></WithStudentSpeech>} />

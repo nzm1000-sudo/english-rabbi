@@ -20,10 +20,15 @@ import {
 } from '@/ui/icons';
 
 type Entry = { path: string; art: ArtName; tone: string; icon: ReactNode; title: string; sub: string };
+export type PracticeGroup = { id: string; title: string; lead: string; art: ArtName; tone: string; icon: ReactNode; items: Entry[] };
 
-/** Every practice mode that is not on the home screen, by what it trains. */
-export const GROUPS: { title: string; lead: string; items: Entry[] }[] = [
+/** Every practice mode beyond the lesson and the four skills, by what it trains (home screen groups). */
+export const GROUPS: PracticeGroup[] = [
   {
+    id: 'read-speak',
+    art: 'stories',
+    tone: 'reading',
+    icon: <BookIcon />,
     title: 'קוראים ומדברים',
     lead: 'סיפורים, מילים שנשמרו והגייה',
     items: [
@@ -33,6 +38,10 @@ export const GROUPS: { title: string; lead: string; items: Entry[] }[] = [
     ],
   },
   {
+    id: 'write-fix',
+    art: 'writing',
+    tone: 'writing',
+    icon: <TranslateIcon />,
     title: 'כותבים ומתקנים',
     lead: 'לבנות משפטים נכונים באנגלית',
     items: [
@@ -44,6 +53,10 @@ export const GROUPS: { title: string; lead: string; items: Entry[] }[] = [
     ],
   },
   {
+    id: 'games',
+    art: 'games',
+    tone: 'games',
+    icon: <TrophyIcon />,
     title: 'משחקים ואתגרים',
     lead: 'לבדוק את עצמי, בקצב שלי או נגד השעון',
     items: [
@@ -55,6 +68,10 @@ export const GROUPS: { title: string; lead: string; items: Entry[] }[] = [
     ],
   },
   {
+    id: 'learn',
+    art: 'lessons',
+    tone: 'grammar',
+    icon: <LessonIcon />,
     title: 'לומדים ומחזקים',
     lead: 'הסברים, וחזרה על מה שקשה',
     items: [
@@ -65,5 +82,7 @@ export const GROUPS: { title: string; lead: string; items: Entry[] }[] = [
   },
 ];
 
-export const MORE_COUNT = GROUPS.reduce((n, g) => n + g.items.length, 0);
+/** The group whose header shows how many words wait for review. */
+export const REVIEW_GROUP = 'learn';
+export const REVIEW_PATH = 'practice/review';
 
