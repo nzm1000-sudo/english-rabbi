@@ -52,7 +52,7 @@ const STYLES = {
 };
 
 // Words the voice misreads without vowels: only the text sent to Gemini gets the niqqud.
-const NIQQUD = { טלה: 'טָלֶה', חלה: 'חַלָּה', 'פרת משה רבנו': 'פָּרַת מֹשֶׁה רַבֵּנוּ', המילה: 'הַמִּלָּה', 'עץ אלון': 'עֵץ אַלּוֹן' };
+const NIQQUD = { טלה: 'טָלֶה', חלה: 'חַלָּה', 'פרת משה רבנו': 'פָּרַת מֹשֶׁה רַבֵּנוּ', המילה: 'הַמִּלָּה', 'עץ אלון': 'עֵץ אַלּוֹן', באיזו: 'בְּאֵיזוֹ', שופר: 'שׁוֹפָר', 'רעיון מאיר': 'רַעְיוֹן מֵאִיר' };
 const withNiqqud = (t) => Object.entries(NIQQUD).reduce((s, [plain, vowelled]) => s.replace(new RegExp(`(^|\\s|!)${plain}(?=$|\\s|[!?.])`, 'g'), `$1${vowelled}`), t);
 
 /** Every phrase with its Gemini voice and kind: the female guide talks during games, names are said by the male voice. */
