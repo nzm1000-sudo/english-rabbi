@@ -1,0 +1,5828 @@
+{
+ "packId": "vocab-gaps-1",
+ "schemaVersion": 1,
+ "title": "Vocabulary gaps: synonyms, phrasal verbs, idioms, C1 words",
+ "items": [
+  {
+   "id": "vg1.ant.tidy",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "A2",
+   "difficulty": 0.25,
+   "unit": "word:tidy",
+   "word": {
+    "lemma": "tidy",
+    "pos": "adjective",
+    "he": "מסודר",
+    "example": "Noa's room is always tidy: her books are on the shelf and her clothes are in the closet."
+   },
+   "prompt": "\"Noa's room is always tidy: her books are on the shelf and her clothes are in the closet.\" Which word means the opposite of \"tidy\"?",
+   "audioText": "Noa's room is always tidy: her books are on the shelf and her clothes are in the closet.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "messy"
+    },
+    {
+     "id": "b",
+     "text": "clean"
+    },
+    {
+     "id": "c",
+     "text": "small"
+    },
+    {
+     "id": "d",
+     "text": "quiet"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המשפט מתאר ספרים על המדף ובגדים בארון. ההפך הוא חדר שהכול זרוק בו.",
+     "en": "Books on the shelf, clothes in the closet. The opposite is a room where things are everywhere."
+    }
+   ],
+   "explanation": {
+    "he": "tidy = מסודר. ההפך: messy = מבולגן. clean = נקי, וזה קרוב במשמעות ל־tidy ולא הפוך. small = קטן, quiet = שקט.",
+    "en": "tidy means neat and in order. The opposite is messy. clean is close in meaning, not opposite."
+   },
+   "interests": [
+    "school"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.ant.rude",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "A2",
+   "difficulty": 0.35,
+   "unit": "word:rude",
+   "word": {
+    "lemma": "rude",
+    "pos": "adjective",
+    "he": "לא מנומס, גס רוח",
+    "example": "It was rude of Eitan to look at his phone while his grandmother was talking to him."
+   },
+   "prompt": "\"It was rude of Eitan to look at his phone while his grandmother was talking to him.\" Which word means the opposite of \"rude\"?",
+   "audioText": "It was rude of Eitan to look at his phone while his grandmother was talking to him.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "polite"
+    },
+    {
+     "id": "b",
+     "text": "impolite"
+    },
+    {
+     "id": "c",
+     "text": "funny"
+    },
+    {
+     "id": "d",
+     "text": "lazy"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "האם זה יפה להסתכל בטלפון כשסבתא מדברת? ההפך הוא התנהגות יפה.",
+     "en": "Is it nice to look at your phone while Grandma is talking? The opposite is good manners."
+    }
+   ],
+   "explanation": {
+    "he": "rude = לא מנומס. ההפך: polite = מנומס. impolite פירושה בדיוק כמו rude, ולכן היא לא ההפך.",
+    "en": "rude means not polite. The opposite is polite. impolite means the same as rude."
+   },
+   "interests": [
+    "technology"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.syn.wealthy",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B1",
+   "difficulty": 0.3,
+   "unit": "word:wealthy",
+   "word": {
+    "lemma": "wealthy",
+    "pos": "adjective",
+    "he": "עשיר",
+    "example": "The new museum was built with money from a wealthy family who loved art."
+   },
+   "prompt": "\"The new museum was built with money from a wealthy family who loved art.\" Which word means almost the same as \"wealthy\"?",
+   "audioText": "The new museum was built with money from a wealthy family who loved art.",
+   "instruction": {
+    "he": "לבחור מילה שפירושה כמעט אותו דבר",
+    "en": "Choose the word that means almost the same"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "rich"
+    },
+    {
+     "id": "b",
+     "text": "famous"
+    },
+    {
+     "id": "c",
+     "text": "large"
+    },
+    {
+     "id": "d",
+     "text": "healthy"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "למשפחה היה הרבה כסף כדי לבנות מוזיאון.",
+     "en": "The family had a lot of money to build a museum."
+    }
+   ],
+   "explanation": {
+    "he": "wealthy = עשיר, כמו rich. healthy = בריא, היא רק נשמעת דומה. famous = מפורסם, large = גדול.",
+    "en": "wealthy means rich. healthy only sounds similar."
+   },
+   "interests": [
+    "travel"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.syn.vanish",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B1",
+   "difficulty": 0.4,
+   "unit": "word:vanish",
+   "word": {
+    "lemma": "vanish",
+    "pos": "verb",
+    "he": "להיעלם",
+    "example": "The magician waved his hand, and the coin vanished."
+   },
+   "prompt": "\"The magician waved his hand, and the coin vanished.\" Which word means almost the same as \"vanished\"?",
+   "audioText": "The magician waved his hand, and the coin vanished.",
+   "instruction": {
+    "he": "לבחור מילה שפירושה כמעט אותו דבר",
+    "en": "Choose the word that means almost the same"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "disappeared"
+    },
+    {
+     "id": "b",
+     "text": "appeared"
+    },
+    {
+     "id": "c",
+     "text": "rolled"
+    },
+    {
+     "id": "d",
+     "text": "broke"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "מה קוסם עושה למטבע?",
+     "en": "What does a magician do to a coin?"
+    }
+   ],
+   "explanation": {
+    "he": "vanish = להיעלם, כמו disappear. appeared = הופיע, וזה ההפך. rolled = התגלגל, broke = נשבר.",
+    "en": "vanish means disappear. appear is the opposite."
+   },
+   "interests": [
+    "movies"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.syn.purchase",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B1",
+   "difficulty": 0.45,
+   "unit": "word:purchase",
+   "word": {
+    "lemma": "purchase",
+    "pos": "verb",
+    "he": "לקנות, לרכוש",
+    "example": "You can purchase tickets for the concert online or at the entrance."
+   },
+   "prompt": "\"You can purchase tickets for the concert online or at the entrance.\" Which word means almost the same as \"purchase\"?",
+   "audioText": "You can purchase tickets for the concert online or at the entrance.",
+   "instruction": {
+    "he": "לבחור מילה שפירושה כמעט אותו דבר",
+    "en": "Choose the word that means almost the same"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "buy"
+    },
+    {
+     "id": "b",
+     "text": "sell"
+    },
+    {
+     "id": "c",
+     "text": "check"
+    },
+    {
+     "id": "d",
+     "text": "find"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "מה עושים עם כרטיסים לפני הופעה, באינטרנט או בכניסה?",
+     "en": "What do you do with tickets before a concert?"
+    }
+   ],
+   "explanation": {
+    "he": "purchase = לרכוש, לקנות, כמו buy. זו מילה רשמית יותר. sell = למכור, וזה ההפך.",
+    "en": "purchase is a formal word for buy. sell is the opposite."
+   },
+   "interests": [
+    "music"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.ant.generous",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B1",
+   "difficulty": 0.45,
+   "unit": "word:generous",
+   "word": {
+    "lemma": "generous",
+    "pos": "adjective",
+    "he": "נדיב",
+    "example": "Our neighbor is very generous: she always shares the vegetables from her garden with everyone on the street."
+   },
+   "prompt": "\"Our neighbor is very generous: she always shares the vegetables from her garden with everyone on the street.\" Which word means the opposite of \"generous\"?",
+   "audioText": "Our neighbor is very generous: she always shares the vegetables from her garden with everyone on the street.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "selfish"
+    },
+    {
+     "id": "b",
+     "text": "kind"
+    },
+    {
+     "id": "c",
+     "text": "honest"
+    },
+    {
+     "id": "d",
+     "text": "busy"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "השכנה מחלקת ירקות לכולם. ההפך הוא מישהו שחושב רק על עצמו.",
+     "en": "She shares with everyone. The opposite is someone who thinks only about themselves."
+    }
+   ],
+   "explanation": {
+    "he": "generous = נדיב, מישהו שאוהב לתת. ההפך: selfish = אנוכי. kind = נחמד, טוב לב, וזה קרוב ל־generous ולא הפוך.",
+    "en": "generous means happy to give. The opposite is selfish. kind is close in meaning."
+   },
+   "interests": [
+    "food"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.syn.furious",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B1",
+   "difficulty": 0.5,
+   "unit": "word:furious",
+   "word": {
+    "lemma": "furious",
+    "pos": "adjective",
+    "he": "זועם, כועס מאוד",
+    "example": "Dad was furious when he saw the long scratch on his new car."
+   },
+   "prompt": "\"Dad was furious when he saw the long scratch on his new car.\" Which word means almost the same as \"furious\"?",
+   "audioText": "Dad was furious when he saw the long scratch on his new car.",
+   "instruction": {
+    "he": "לבחור מילה שפירושה כמעט אותו דבר",
+    "en": "Choose the word that means almost the same"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "very angry"
+    },
+    {
+     "id": "b",
+     "text": "very calm"
+    },
+    {
+     "id": "c",
+     "text": "very tired"
+    },
+    {
+     "id": "d",
+     "text": "very excited"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "איך מרגישים כשרואים שריטה על מכונית חדשה?",
+     "en": "How do you feel when you see a scratch on your new car?"
+    }
+   ],
+   "explanation": {
+    "he": "furious = זועם, כועס מאוד. very calm = רגוע מאוד, וזה ההפך. excited = נרגש, וזה רגש שמח.",
+    "en": "furious means very angry."
+   },
+   "interests": [],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.syn.conceal",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B2",
+   "difficulty": 0.5,
+   "unit": "word:conceal",
+   "word": {
+    "lemma": "conceal",
+    "pos": "verb",
+    "he": "להסתיר",
+    "example": "He tried to conceal his disappointment, but his face showed how he really felt."
+   },
+   "prompt": "\"He tried to conceal his disappointment, but his face showed how he really felt.\" Which word means almost the same as \"conceal\"?",
+   "audioText": "He tried to conceal his disappointment, but his face showed how he really felt.",
+   "instruction": {
+    "he": "לבחור מילה שפירושה כמעט אותו דבר",
+    "en": "Choose the word that means almost the same"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "hide"
+    },
+    {
+     "id": "b",
+     "text": "show"
+    },
+    {
+     "id": "c",
+     "text": "explain"
+    },
+    {
+     "id": "d",
+     "text": "forget"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "but his face showed: הוא ניסה לעשות את ההפך מ־show.",
+     "en": "but his face showed: he tried to do the opposite of show."
+    }
+   ],
+   "explanation": {
+    "he": "conceal = להסתיר, כמו hide. show = להראות, וזה ההפך. המילה but מראה שהניסיון להסתיר לא הצליח.",
+    "en": "conceal means hide. show is the opposite."
+   },
+   "interests": [],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.ant.reject",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B1",
+   "difficulty": 0.5,
+   "unit": "word:reject",
+   "word": {
+    "lemma": "reject",
+    "pos": "verb",
+    "he": "לדחות, לסרב לקבל",
+    "example": "The principal rejected our plan for a school garden because it was too expensive."
+   },
+   "prompt": "\"The principal rejected our plan for a school garden because it was too expensive.\" Which word means the opposite of \"rejected\"?",
+   "audioText": "The principal rejected our plan for a school garden because it was too expensive.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "accepted"
+    },
+    {
+     "id": "b",
+     "text": "refused"
+    },
+    {
+     "id": "c",
+     "text": "changed"
+    },
+    {
+     "id": "d",
+     "text": "discussed"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "because it was too expensive: המנהל אמר לא. מה ההפך מלומר לא לתוכנית?",
+     "en": "It was too expensive, so the answer was no. What is the opposite of saying no to a plan?"
+    }
+   ],
+   "explanation": {
+    "he": "reject = לדחות, לא להסכים. ההפך: accept = לקבל, לאשר. refused = סירב, וזה קרוב ל־rejected ולא הפוך.",
+    "en": "reject means say no to something. The opposite is accept. refuse is close in meaning."
+   },
+   "interests": [
+    "school"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.ant.shallow",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B1",
+   "difficulty": 0.4,
+   "unit": "word:shallow",
+   "word": {
+    "lemma": "shallow",
+    "pos": "adjective",
+    "he": "רדוד",
+    "example": "The water at this end of the pool is shallow, so small children can play here safely."
+   },
+   "prompt": "\"The water at this end of the pool is shallow, so small children can play here safely.\" Which word means the opposite of \"shallow\"?",
+   "audioText": "The water at this end of the pool is shallow, so small children can play here safely.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "deep"
+    },
+    {
+     "id": "b",
+     "text": "low"
+    },
+    {
+     "id": "c",
+     "text": "warm"
+    },
+    {
+     "id": "d",
+     "text": "clear"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "ילדים קטנים יכולים לשחק כאן בבטחה. מה ההפך ממים שעומדים בהם בקלות?",
+     "en": "Small children are safe here. What is the opposite of water you can easily stand in?"
+    }
+   ],
+   "explanation": {
+    "he": "shallow = רדוד, לא עמוק. ההפך: deep = עמוק. low = נמוך, וזה קרוב במשמעות ל־shallow ולא הפוך.",
+    "en": "shallow means not deep. The opposite is deep."
+   },
+   "interests": [
+    "sports"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.syn.fragile",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B2",
+   "difficulty": 0.45,
+   "unit": "word:fragile",
+   "word": {
+    "lemma": "fragile",
+    "pos": "adjective",
+    "he": "שביר",
+    "example": "Be careful with that box: there are fragile glasses inside."
+   },
+   "prompt": "\"Be careful with that box: there are fragile glasses inside.\" Which word means almost the same as \"fragile\"?",
+   "audioText": "Be careful with that box: there are fragile glasses inside.",
+   "instruction": {
+    "he": "לבחור מילה שפירושה כמעט אותו דבר",
+    "en": "Choose the word that means almost the same"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "breakable"
+    },
+    {
+     "id": "b",
+     "text": "expensive"
+    },
+    {
+     "id": "c",
+     "text": "heavy"
+    },
+    {
+     "id": "d",
+     "text": "strong"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "למה צריך להיזהר עם קופסה שיש בה כוסות?",
+     "en": "Why must you be careful with a box of glasses?"
+    }
+   ],
+   "explanation": {
+    "he": "fragile = שביר, כמו breakable. strong = חזק, וזה ההפך. expensive = יקר, heavy = כבד. גם הם סיבות להיזהר, אבל זה לא הפירוש של fragile.",
+    "en": "fragile means easily broken, like breakable. strong is the opposite."
+   },
+   "interests": [],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.syn.assist",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B1",
+   "difficulty": 0.35,
+   "unit": "word:assist",
+   "word": {
+    "lemma": "assist",
+    "pos": "verb",
+    "he": "לעזור, לסייע",
+    "example": "Two parents will assist the teacher on the class trip to the Galilee."
+   },
+   "prompt": "\"Two parents will assist the teacher on the class trip to the Galilee.\" Which word means almost the same as \"assist\"?",
+   "audioText": "Two parents will assist the teacher on the class trip to the Galilee.",
+   "instruction": {
+    "he": "לבחור מילה שפירושה כמעט אותו דבר",
+    "en": "Choose the word that means almost the same"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "help"
+    },
+    {
+     "id": "b",
+     "text": "replace"
+    },
+    {
+     "id": "c",
+     "text": "follow"
+    },
+    {
+     "id": "d",
+     "text": "warn"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "מה הורים עושים בטיול כדי שיהיה למורה קל יותר?",
+     "en": "What do parents do on a trip to make it easier for the teacher?"
+    }
+   ],
+   "explanation": {
+    "he": "assist = לסייע, לעזור, כמו help. replace = להחליף, follow = ללכת אחרי, warn = להזהיר.",
+    "en": "assist is a formal word for help."
+   },
+   "interests": [
+    "travel",
+    "school"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.syn.precise",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B2",
+   "difficulty": 0.45,
+   "unit": "word:precise",
+   "word": {
+    "lemma": "precise",
+    "pos": "adjective",
+    "he": "מדויק",
+    "example": "The recipe gives precise amounts, so measure the flour carefully."
+   },
+   "prompt": "\"The recipe gives precise amounts, so measure the flour carefully.\" Which word means almost the same as \"precise\"?",
+   "audioText": "The recipe gives precise amounts, so measure the flour carefully.",
+   "instruction": {
+    "he": "לבחור מילה שפירושה כמעט אותו דבר",
+    "en": "Choose the word that means almost the same"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "exact"
+    },
+    {
+     "id": "b",
+     "text": "rough"
+    },
+    {
+     "id": "c",
+     "text": "large"
+    },
+    {
+     "id": "d",
+     "text": "simple"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "so measure carefully: למה צריך למדוד בזהירות?",
+     "en": "Why do you need to measure carefully?"
+    }
+   ],
+   "explanation": {
+    "he": "precise = מדויק, כמו exact. rough = משוער, בערך, וזה ההפך. large = גדול, simple = פשוט.",
+    "en": "precise means exact. rough means approximate, the opposite."
+   },
+   "interests": [
+    "food"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.ant.humble",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B2",
+   "difficulty": 0.55,
+   "unit": "word:humble",
+   "word": {
+    "lemma": "humble",
+    "pos": "adjective",
+    "he": "צנוע",
+    "example": "Even after she won the prize, the scientist stayed humble and thanked her whole team."
+   },
+   "prompt": "\"Even after she won the prize, the scientist stayed humble and thanked her whole team.\" Which word means the opposite of \"humble\"?",
+   "audioText": "Even after she won the prize, the scientist stayed humble and thanked her whole team.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "arrogant"
+    },
+    {
+     "id": "b",
+     "text": "modest"
+    },
+    {
+     "id": "c",
+     "text": "nervous"
+    },
+    {
+     "id": "d",
+     "text": "famous"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "היא הודתה לכל הצוות ולא אמרה שהיא הכי טובה. ההפך הוא מישהו שחושב שהוא יותר טוב מכולם.",
+     "en": "She thanked her team. The opposite is someone who thinks they are better than everyone."
+    }
+   ],
+   "explanation": {
+    "he": "humble = צנוע. ההפך: arrogant = יהיר, שחצן. modest פירושה גם צנוע, ולכן היא לא ההפך.",
+    "en": "humble means not proud of yourself. The opposite is arrogant. modest means the same as humble."
+   },
+   "interests": [
+    "science"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.ant.frequent",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B1",
+   "difficulty": 0.5,
+   "unit": "word:frequent",
+   "word": {
+    "lemma": "frequent",
+    "pos": "adjective",
+    "he": "תכוף, קורה לעתים קרובות",
+    "example": "Power cuts are frequent in the village during winter storms."
+   },
+   "prompt": "\"Power cuts are frequent in the village during winter storms.\" Which word means the opposite of \"frequent\"?",
+   "audioText": "Power cuts are frequent in the village during winter storms.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "rare"
+    },
+    {
+     "id": "b",
+     "text": "common"
+    },
+    {
+     "id": "c",
+     "text": "dangerous"
+    },
+    {
+     "id": "d",
+     "text": "short"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "frequent קשורה ל־how often. ההפך הוא משהו שכמעט לא קורה.",
+     "en": "frequent is about how often. The opposite is something that almost never happens."
+    }
+   ],
+   "explanation": {
+    "he": "frequent = קורה לעתים קרובות. ההפך: rare = נדיר. common = נפוץ, וזה קרוב ל־frequent ולא הפוך.",
+    "en": "frequent means happening often. The opposite is rare. common is close in meaning."
+   },
+   "interests": [],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.syn.cautious",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B2",
+   "difficulty": 0.45,
+   "unit": "word:cautious",
+   "word": {
+    "lemma": "cautious",
+    "pos": "adjective",
+    "he": "זהיר",
+    "example": "Be cautious when you cross this road: the cars drive very fast."
+   },
+   "prompt": "\"Be cautious when you cross this road: the cars drive very fast.\" Which word means almost the same as \"cautious\"?",
+   "audioText": "Be cautious when you cross this road: the cars drive very fast.",
+   "instruction": {
+    "he": "לבחור מילה שפירושה כמעט אותו דבר",
+    "en": "Choose the word that means almost the same"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "careful"
+    },
+    {
+     "id": "b",
+     "text": "careless"
+    },
+    {
+     "id": "c",
+     "text": "quick"
+    },
+    {
+     "id": "d",
+     "text": "quiet"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המכוניות נוסעות מהר. איך כדאי לחצות את הכביש?",
+     "en": "The cars are fast. How should you cross the road?"
+    }
+   ],
+   "explanation": {
+    "he": "cautious = זהיר, כמו careful. careless = לא זהיר, וזה ההפך. הסיומת less פירושה בלי.",
+    "en": "cautious means careful. careless is the opposite."
+   },
+   "interests": [],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.ant.genuine",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B2",
+   "difficulty": 0.5,
+   "unit": "word:genuine",
+   "word": {
+    "lemma": "genuine",
+    "pos": "adjective",
+    "he": "אמיתי, מקורי",
+    "example": "The expert examined the old coin and said that it was genuine."
+   },
+   "prompt": "\"The expert examined the old coin and said that it was genuine.\" Which word means the opposite of \"genuine\"?",
+   "audioText": "The expert examined the old coin and said that it was genuine.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "fake"
+    },
+    {
+     "id": "b",
+     "text": "real"
+    },
+    {
+     "id": "c",
+     "text": "valuable"
+    },
+    {
+     "id": "d",
+     "text": "heavy"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "מומחה בודק מטבע כדי לדעת אם הוא אמיתי. מה ההפך?",
+     "en": "An expert checks if a coin is real. What is the opposite?"
+    }
+   ],
+   "explanation": {
+    "he": "genuine = אמיתי, מקורי. ההפך: fake = מזויף. real = אמיתי, וזה בדיוק כמו genuine. valuable = בעל ערך, heavy = כבד.",
+    "en": "genuine means real. The opposite is fake. real means the same as genuine."
+   },
+   "interests": [
+    "science"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.ant.optimistic",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B1",
+   "difficulty": 0.45,
+   "unit": "word:optimistic",
+   "word": {
+    "lemma": "optimistic",
+    "pos": "adjective",
+    "he": "אופטימי",
+    "example": "Maya is optimistic about the final: she thinks her team can win."
+   },
+   "prompt": "\"Maya is optimistic about the final: she thinks her team can win.\" Which word means the opposite of \"optimistic\"?",
+   "audioText": "Maya is optimistic about the final: she thinks her team can win.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "pessimistic"
+    },
+    {
+     "id": "b",
+     "text": "hopeful"
+    },
+    {
+     "id": "c",
+     "text": "excited"
+    },
+    {
+     "id": "d",
+     "text": "honest"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "she thinks her team can win: היא מצפה לטוב. ההפך הוא מישהו שמצפה לרע.",
+     "en": "She expects good things. The opposite is someone who expects bad things."
+    }
+   ],
+   "explanation": {
+    "he": "optimistic = אופטימי, מצפה לטוב. ההפך: pessimistic = פסימי, מצפה לרע. hopeful = מלא תקווה, וזה קרוב ל־optimistic ולא הפוך.",
+    "en": "optimistic means expecting good things. The opposite is pessimistic. hopeful is close in meaning."
+   },
+   "interests": [
+    "sports"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.ant.expand",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B2",
+   "difficulty": 0.55,
+   "unit": "word:expand",
+   "word": {
+    "lemma": "expand",
+    "pos": "verb",
+    "he": "להתרחב, להגדיל",
+    "example": "The company plans to expand and open three new stores next year."
+   },
+   "prompt": "\"The company plans to expand and open three new stores next year.\" Which word means the opposite of \"expand\"?",
+   "audioText": "The company plans to expand and open three new stores next year.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "shrink"
+    },
+    {
+     "id": "b",
+     "text": "grow"
+    },
+    {
+     "id": "c",
+     "text": "move"
+    },
+    {
+     "id": "d",
+     "text": "advertise"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "open three new stores: החברה נעשית גדולה יותר. מה ההפך?",
+     "en": "Three new stores: the company gets bigger. What is the opposite?"
+    }
+   ],
+   "explanation": {
+    "he": "expand = להתרחב, לגדול. ההפך: shrink = להתכווץ, לקטון. grow = לגדול, וזה קרוב ל־expand ולא הפוך.",
+    "en": "expand means get bigger. The opposite is shrink. grow is close in meaning."
+   },
+   "interests": [
+    "technology"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.syn.loyal",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B2",
+   "difficulty": 0.5,
+   "unit": "word:loyal",
+   "word": {
+    "lemma": "loyal",
+    "pos": "adjective",
+    "he": "נאמן",
+    "example": "Rex is a loyal dog: he waits by the door every day until the children come home."
+   },
+   "prompt": "\"Rex is a loyal dog: he waits by the door every day until the children come home.\" Which word means almost the same as \"loyal\"?",
+   "audioText": "Rex is a loyal dog: he waits by the door every day until the children come home.",
+   "instruction": {
+    "he": "לבחור מילה שפירושה כמעט אותו דבר",
+    "en": "Choose the word that means almost the same"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "faithful"
+    },
+    {
+     "id": "b",
+     "text": "lazy"
+    },
+    {
+     "id": "c",
+     "text": "clever"
+    },
+    {
+     "id": "d",
+     "text": "wild"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "הכלב מחכה לילדים כל יום. מה זה אומר על היחס שלו אליהם?",
+     "en": "The dog waits for the children every day. What does it show about him?"
+    }
+   ],
+   "explanation": {
+    "he": "loyal = נאמן, כמו faithful. lazy = עצלן, clever = חכם, wild = פראי. אף אחת מהן לא אומרת נאמן.",
+    "en": "loyal means faithful: always staying with and supporting someone."
+   },
+   "interests": [
+    "animals"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.ant.scarce",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B2",
+   "difficulty": 0.6,
+   "unit": "word:scarce",
+   "word": {
+    "lemma": "scarce",
+    "pos": "adjective",
+    "he": "מועט, חסר",
+    "example": "In the desert, water is scarce, so every drop is precious."
+   },
+   "prompt": "\"In the desert, water is scarce, so every drop is precious.\" Which word means the opposite of \"scarce\"?",
+   "audioText": "In the desert, water is scarce, so every drop is precious.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "plentiful"
+    },
+    {
+     "id": "b",
+     "text": "rare"
+    },
+    {
+     "id": "c",
+     "text": "expensive"
+    },
+    {
+     "id": "d",
+     "text": "clean"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "every drop is precious: יש מעט מים. ההפך הוא שיש הרבה.",
+     "en": "Every drop is precious: there is little water. The opposite is a lot."
+    }
+   ],
+   "explanation": {
+    "he": "scarce = מועט, יש ממנו מעט מאוד. ההפך: plentiful = מצוי בשפע. rare = נדיר, וזה קרוב ל־scarce ולא הפוך.",
+    "en": "scarce means there is very little of it. The opposite is plentiful. rare is close in meaning."
+   },
+   "interests": [
+    "science",
+    "travel"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.ant.hostile",
+   "type": "choice",
+   "skill": "vocabulary.synonyms-antonyms",
+   "level": "B2",
+   "difficulty": 0.6,
+   "unit": "word:hostile",
+   "word": {
+    "lemma": "hostile",
+    "pos": "adjective",
+    "he": "עוין",
+    "example": "The cat was hostile to the new puppy and hissed at it all day."
+   },
+   "prompt": "\"The cat was hostile to the new puppy and hissed at it all day.\" Which word means the opposite of \"hostile\"?",
+   "audioText": "The cat was hostile to the new puppy and hissed at it all day.",
+   "instruction": {
+    "he": "לבחור את המילה שפירושה הפוך",
+    "en": "Choose the word with the opposite meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "friendly"
+    },
+    {
+     "id": "b",
+     "text": "unfriendly"
+    },
+    {
+     "id": "c",
+     "text": "afraid"
+    },
+    {
+     "id": "d",
+     "text": "curious"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "החתולה נשפה על הגור כל היום. ההפך הוא התנהגות חמה ונעימה.",
+     "en": "The cat hissed all day. The opposite is warm, nice behavior."
+    }
+   ],
+   "explanation": {
+    "he": "hostile = עוין, לא ידידותי. ההפך: friendly = ידידותי. unfriendly פירושה כמעט כמו hostile, ולכן היא לא ההפך.",
+    "en": "hostile means unfriendly and ready to fight. The opposite is friendly."
+   },
+   "interests": [
+    "animals"
+   ],
+   "tags": [
+    "vocabulary",
+    "synonyms-antonyms",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.put-up-with",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B2",
+   "difficulty": 0.55,
+   "unit": "pv:put-up-with",
+   "prompt": "I can't ___ this noise any longer. I'm going to talk to the neighbors.",
+   "audioText": "I can't put up with this noise any longer. I'm going to talk to the neighbors.",
+   "instruction": {
+    "he": "לבחור את הצירוף המתאים",
+    "en": "Choose the correct phrasal verb"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "put up with"
+    },
+    {
+     "id": "b",
+     "text": "put down",
+     "misconception": "phrasal.wrong-particle"
+    },
+    {
+     "id": "c",
+     "text": "put away",
+     "misconception": "phrasal.wrong-particle"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "הדובר כבר לא יכול לסבול את הרעש.",
+     "en": "The speaker can't stand the noise anymore."
+    }
+   ],
+   "explanation": {
+    "he": "put up with = לסבול, להשלים עם משהו לא נעים. put down = להניח, put away = להחזיר למקום.",
+    "en": "put up with = accept something unpleasant. put down = place on a surface. put away = put back in its place."
+   },
+   "interests": [],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.end-up",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B1",
+   "difficulty": 0.5,
+   "unit": "pv:end-up",
+   "prompt": "\"We got lost and ended up in a small village we had never heard of.\" What does \"ended up\" mean?",
+   "audioText": "We got lost and ended up in a small village we had never heard of.",
+   "instruction": {
+    "he": "לבחור את הפירוש הנכון",
+    "en": "Choose the correct meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "finally arrived without planning to"
+    },
+    {
+     "id": "b",
+     "text": "planned to visit"
+    },
+    {
+     "id": "c",
+     "text": "refused to stay"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "they got lost: האם הם תכננו להגיע לכפר?",
+     "en": "They got lost. Did they plan to get to the village?"
+    }
+   ],
+   "explanation": {
+    "he": "end up = למצוא את עצמך בסוף במקום או במצב, בלי שתכננת. בעברית אפשר לומר 'בסוף הגענו ל...'.",
+    "en": "end up = finally be in a place or situation you didn't plan."
+   },
+   "interests": [
+    "travel"
+   ],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.turn-out",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B2",
+   "difficulty": 0.55,
+   "unit": "pv:turn-out",
+   "prompt": "The test looked hard, but it ___ that I knew most of the answers.",
+   "audioText": "The test looked hard, but it turned out that I knew most of the answers.",
+   "instruction": {
+    "he": "לבחור את הצירוף המתאים",
+    "en": "Choose the correct phrasal verb"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "turned out"
+    },
+    {
+     "id": "b",
+     "text": "turned off",
+     "misconception": "phrasal.wrong-particle"
+    },
+    {
+     "id": "c",
+     "text": "turned over",
+     "misconception": "phrasal.wrong-particle"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "but: משהו התברר בסוף, אחרי שהמבחן נראה קשה.",
+     "en": "but: something became clear in the end."
+    }
+   ],
+   "explanation": {
+    "he": "it turned out that = התברר ש. turn off = לכבות, turn over = להפוך לצד השני.",
+    "en": "it turned out that = in the end, it became clear that. turn off = stop a machine. turn over = flip."
+   },
+   "interests": [
+    "school"
+   ],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.point-out",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B1",
+   "difficulty": 0.45,
+   "unit": "pv:point-out",
+   "prompt": "The teacher ___ a few spelling mistakes in my essay.",
+   "audioText": "The teacher pointed out a few spelling mistakes in my essay.",
+   "instruction": {
+    "he": "לבחור את הצירוף המתאים",
+    "en": "Choose the correct phrasal verb"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "pointed out"
+    },
+    {
+     "id": "b",
+     "text": "gave out",
+     "misconception": "phrasal.wrong-particle"
+    },
+    {
+     "id": "c",
+     "text": "went out",
+     "misconception": "phrasal.wrong-particle"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "מה המורה עשתה עם הטעויות? היא הראתה אותן לי.",
+     "en": "What did the teacher do with the mistakes? She showed them to me."
+    }
+   ],
+   "explanation": {
+    "he": "point out = להצביע על, להעיר על משהו כדי שמישהו ישים לב. give out = לחלק, go out = לצאת.",
+    "en": "point out = show or tell someone about something. give out = hand out. go out = leave."
+   },
+   "interests": [
+    "school"
+   ],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.come-across",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B1",
+   "difficulty": 0.5,
+   "unit": "pv:come-across",
+   "prompt": "\"While cleaning the storage room, I came across some old letters from my grandfather.\" What does \"came across\" mean?",
+   "audioText": "While cleaning the storage room, I came across some old letters from my grandfather.",
+   "instruction": {
+    "he": "לבחור את הפירוש הנכון",
+    "en": "Choose the correct meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "found by chance"
+    },
+    {
+     "id": "b",
+     "text": "walked over",
+     "misconception": "phrasal.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "threw away"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "האם הדובר חיפש את המכתבים?",
+     "en": "Was the speaker looking for the letters?"
+    }
+   ],
+   "explanation": {
+    "he": "come across = למצוא במקרה, להיתקל במשהו. across לא אומר כאן לעבור מעל משהו.",
+    "en": "come across = find something by chance."
+   },
+   "interests": [
+    "books"
+   ],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.catch-up-with",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B1",
+   "difficulty": 0.5,
+   "unit": "pv:catch-up-with",
+   "prompt": "Start walking without me. I'll ___ you before you reach the bus stop.",
+   "audioText": "Start walking without me. I'll catch up with you before you reach the bus stop.",
+   "instruction": {
+    "he": "לבחור את הצירוף המתאים",
+    "en": "Choose the correct phrasal verb"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "catch up with"
+    },
+    {
+     "id": "b",
+     "text": "run out of"
+    },
+    {
+     "id": "c",
+     "text": "look up to"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "הדובר יוצא אחריהם ורוצה להגיע אליהם בדרך.",
+     "en": "The speaker leaves later and wants to reach them on the way."
+    }
+   ],
+   "explanation": {
+    "he": "catch up with = להשיג מישהו שהקדים אותך, להדביק אותו. run out of = לגמור משהו (שנגמר המלאי), look up to = להעריץ.",
+    "en": "catch up with = reach someone who is ahead of you."
+   },
+   "interests": [],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.look-up-to",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B1",
+   "difficulty": 0.45,
+   "unit": "pv:look-up-to",
+   "prompt": "\"Tamar really looks up to her older sister, who is a doctor.\" What does \"looks up to\" mean?",
+   "audioText": "Tamar really looks up to her older sister, who is a doctor.",
+   "instruction": {
+    "he": "לבחור את הפירוש הנכון",
+    "en": "Choose the correct meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "admires"
+    },
+    {
+     "id": "b",
+     "text": "takes care of"
+    },
+    {
+     "id": "c",
+     "text": "looks at from below",
+     "misconception": "phrasal.literal-meaning"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "איך מרגישים לפעמים כלפי אחות גדולה שהיא רופאה?",
+     "en": "How might you feel about an older sister who is a doctor?"
+    }
+   ],
+   "explanation": {
+    "he": "look up to = להעריץ, להעריך מאוד ולראות בו דוגמה. זה לא קשור להסתכל למעלה. ההפך: look down on = לזלזל.",
+    "en": "look up to = admire and respect someone. The opposite is look down on."
+   },
+   "interests": [],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.take-after",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B1",
+   "difficulty": 0.5,
+   "unit": "pv:take-after",
+   "prompt": "Ido ___ his father: they both have curly hair and love to tell jokes.",
+   "audioText": "Ido takes after his father: they both have curly hair and love to tell jokes.",
+   "instruction": {
+    "he": "לבחור את הצירוף המתאים",
+    "en": "Choose the correct phrasal verb"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "takes after"
+    },
+    {
+     "id": "b",
+     "text": "takes over",
+     "misconception": "phrasal.wrong-particle"
+    },
+    {
+     "id": "c",
+     "text": "takes off",
+     "misconception": "phrasal.wrong-particle"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "עידו ואבא שלו דומים במראה ובאופי.",
+     "en": "Ido and his father are similar in looks and character."
+    }
+   ],
+   "explanation": {
+    "he": "take after = להיות דומה להורה או לקרוב משפחה מבוגר. take over = להשתלט, לקחת אחריות. take off = להמריא, להוריד בגד.",
+    "en": "take after = be like an older family member. take over = take control. take off = leave the ground, remove clothes."
+   },
+   "interests": [],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.let-down",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B1",
+   "difficulty": 0.5,
+   "unit": "pv:let-down",
+   "prompt": "\"I promised to help Yael move to her new flat, so I can't let her down.\" What does \"let her down\" mean?",
+   "audioText": "I promised to help Yael move to her new flat, so I can't let her down.",
+   "instruction": {
+    "he": "לבחור את הפירוש הנכון",
+    "en": "Choose the correct meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "disappoint her"
+    },
+    {
+     "id": "b",
+     "text": "carry her",
+     "misconception": "phrasal.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "call her"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "הבטחתי. מה קורה אם לא מקיימים הבטחה?",
+     "en": "I promised. What happens if you break a promise?"
+    }
+   ],
+   "explanation": {
+    "he": "let someone down = לאכזב מישהו שסמך עלינו.",
+    "en": "let someone down = disappoint someone who trusted you."
+   },
+   "interests": [],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.run-into",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B1",
+   "difficulty": 0.45,
+   "unit": "pv:run-into",
+   "prompt": "\"I ran into my old teacher at the supermarket yesterday.\" What does \"ran into\" mean?",
+   "audioText": "I ran into my old teacher at the supermarket yesterday.",
+   "instruction": {
+    "he": "לבחור את הפירוש הנכון",
+    "en": "Choose the correct meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "met by chance"
+    },
+    {
+     "id": "b",
+     "text": "crashed into while running",
+     "misconception": "phrasal.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "argued with"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "האם הדובר תכנן לפגוש את המורה בסופר?",
+     "en": "Did the speaker plan to meet the teacher?"
+    }
+   ],
+   "explanation": {
+    "he": "run into someone = לפגוש מישהו במקרה, להיתקל בו. לא צריך לרוץ ולא להתנגש.",
+    "en": "run into someone = meet them by chance."
+   },
+   "interests": [
+    "food"
+   ],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.give-in",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B2",
+   "difficulty": 0.55,
+   "unit": "pv:give-in",
+   "prompt": "Ari asked for a dog for months, and in the end his parents ___.",
+   "audioText": "Ari asked for a dog for months, and in the end his parents gave in.",
+   "instruction": {
+    "he": "לבחור את הצירוף המתאים",
+    "en": "Choose the correct phrasal verb"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "gave in"
+    },
+    {
+     "id": "b",
+     "text": "gave away",
+     "misconception": "phrasal.wrong-particle"
+    },
+    {
+     "id": "c",
+     "text": "gave back",
+     "misconception": "phrasal.wrong-particle"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "ההורים סירבו הרבה זמן. מה קרה בסוף?",
+     "en": "The parents said no for a long time. What happened in the end?"
+    }
+   ],
+   "explanation": {
+    "he": "give in = להיכנע, להסכים אחרי שהתנגדת הרבה זמן. give away = לתת במתנה, give back = להחזיר. שני אלה צריכים מושא (משהו).",
+    "en": "give in = finally agree after saying no. give away and give back need an object."
+   },
+   "interests": [
+    "animals"
+   ],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.stand-out",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B2",
+   "difficulty": 0.5,
+   "unit": "pv:stand-out",
+   "prompt": "\"In her bright red coat, she really stood out in the crowd.\" What does \"stood out\" mean?",
+   "audioText": "In her bright red coat, she really stood out in the crowd.",
+   "instruction": {
+    "he": "לבחור את הפירוש הנכון",
+    "en": "Choose the correct meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "was easy to notice"
+    },
+    {
+     "id": "b",
+     "text": "stood outside",
+     "misconception": "phrasal.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "left early"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "מעיל אדום בוהק בתוך קהל: מה קורה כשמסתכלים?",
+     "en": "A bright red coat in a crowd: what happens when people look?"
+    }
+   ],
+   "explanation": {
+    "he": "stand out = לבלוט, למשוך תשומת לב כי משהו או מישהו שונה מהשאר.",
+    "en": "stand out = be easy to notice because you are different."
+   },
+   "interests": [
+    "fashion"
+   ],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.drop-out",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B2",
+   "difficulty": 0.55,
+   "unit": "pv:drop-out",
+   "prompt": "He ___ of university after one year to start his own company.",
+   "audioText": "He dropped out of university after one year to start his own company.",
+   "instruction": {
+    "he": "לבחור את הצירוף המתאים",
+    "en": "Choose the correct phrasal verb"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "dropped out"
+    },
+    {
+     "id": "b",
+     "text": "dropped off",
+     "misconception": "phrasal.wrong-particle"
+    },
+    {
+     "id": "c",
+     "text": "dropped in",
+     "misconception": "phrasal.wrong-particle"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "הוא עזב את הלימודים לפני שסיים.",
+     "en": "He left his studies before finishing."
+    }
+   ],
+   "explanation": {
+    "he": "drop out (of) = לנשור, לעזוב לימודים באמצע. drop off = להוריד מישהו ברכב, drop in = לקפוץ לביקור.",
+    "en": "drop out of = leave school or university before finishing. drop off = take someone somewhere by car. drop in = visit briefly."
+   },
+   "interests": [
+    "technology",
+    "school"
+   ],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.set-off",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B1",
+   "difficulty": 0.5,
+   "unit": "pv:set-off",
+   "prompt": "We ___ early in the morning to avoid the heat on the trail.",
+   "audioText": "We set off early in the morning to avoid the heat on the trail.",
+   "instruction": {
+    "he": "לבחור את הצירוף המתאים",
+    "en": "Choose the correct phrasal verb"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "set off"
+    },
+    {
+     "id": "b",
+     "text": "set back",
+     "misconception": "phrasal.wrong-particle"
+    },
+    {
+     "id": "c",
+     "text": "set aside",
+     "misconception": "phrasal.wrong-particle"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "מה עושים בבוקר מוקדם לפני טיול?",
+     "en": "What do you do early in the morning before a hike?"
+    }
+   ],
+   "explanation": {
+    "he": "set off = לצאת לדרך. set back = לעכב, set aside = לשים בצד, לחסוך.",
+    "en": "set off = start a journey. set back = delay. set aside = keep for later."
+   },
+   "interests": [
+    "travel"
+   ],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.sort-out",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B2",
+   "difficulty": 0.5,
+   "unit": "pv:sort-out",
+   "prompt": "\"Don't worry about the problem with your phone. We'll sort it out tomorrow.\" What does \"sort it out\" mean?",
+   "audioText": "Don't worry about the problem with your phone. We'll sort it out tomorrow.",
+   "instruction": {
+    "he": "לבחור את הפירוש הנכון",
+    "en": "Choose the correct meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "solve it"
+    },
+    {
+     "id": "b",
+     "text": "sell it"
+    },
+    {
+     "id": "c",
+     "text": "arrange it by size",
+     "misconception": "phrasal.literal-meaning"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "יש בעיה בטלפון. מה עושים עם בעיה?",
+     "en": "There is a problem. What do you do with a problem?"
+    }
+   ],
+   "explanation": {
+    "he": "sort out = לסדר, לפתור בעיה. sort לבד = למיין, אבל sort out a problem = לפתור אותה.",
+    "en": "sort out a problem = solve it."
+   },
+   "interests": [
+    "technology"
+   ],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.keep-up-with",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B2",
+   "difficulty": 0.6,
+   "unit": "pv:keep-up-with",
+   "prompt": "Ella walks so fast that I can hardly ___ her.",
+   "audioText": "Ella walks so fast that I can hardly keep up with her.",
+   "instruction": {
+    "he": "לבחור את הצירוף המתאים",
+    "en": "Choose the correct phrasal verb"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "keep up with"
+    },
+    {
+     "id": "b",
+     "text": "keep off",
+     "misconception": "phrasal.wrong-particle"
+    },
+    {
+     "id": "c",
+     "text": "keep out of",
+     "misconception": "phrasal.wrong-particle"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "אלה הולכת מהר. מה קשה לדובר?",
+     "en": "Ella walks fast. What is hard for the speaker?"
+    }
+   ],
+   "explanation": {
+    "he": "keep up with = לעמוד בקצב של מישהו, לא לפגר אחריו. keep off = לא לעלות על, להתרחק. keep out of = לא להיכנס ל.",
+    "en": "keep up with = move at the same speed as someone. keep off = stay away from. keep out of = not enter."
+   },
+   "interests": [
+    "sports"
+   ],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.fall-out",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B2",
+   "difficulty": 0.6,
+   "unit": "pv:fall-out",
+   "prompt": "\"Dana and Shira fell out over a silly argument, and they haven't spoken since.\" What does \"fell out\" mean?",
+   "audioText": "Dana and Shira fell out over a silly argument, and they haven't spoken since.",
+   "instruction": {
+    "he": "לבחור את הפירוש הנכון",
+    "en": "Choose the correct meaning"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "stopped being friends"
+    },
+    {
+     "id": "b",
+     "text": "fell down together",
+     "misconception": "phrasal.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "went out together"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "they haven't spoken since: מה קרה ביניהן?",
+     "en": "They haven't spoken since. What happened between them?"
+    }
+   ],
+   "explanation": {
+    "he": "fall out (with someone) = לריב עם מישהו ולהפסיק להיות חברים. בעברית: 'הן הסתכסכו'.",
+    "en": "fall out with someone = argue and stop being friends."
+   },
+   "interests": [],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.pv.calm-down",
+   "type": "choice",
+   "skill": "vocabulary.phrasal-verbs",
+   "level": "B1",
+   "difficulty": 0.3,
+   "unit": "pv:calm-down",
+   "prompt": "Please ___. It's only a small scratch, and it will heal soon.",
+   "audioText": "Please calm down. It's only a small scratch, and it will heal soon.",
+   "instruction": {
+    "he": "לבחור את הצירוף המתאים",
+    "en": "Choose the correct phrasal verb"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "calm down"
+    },
+    {
+     "id": "b",
+     "text": "show off",
+     "misconception": "phrasal.wrong-particle"
+    },
+    {
+     "id": "c",
+     "text": "take off",
+     "misconception": "phrasal.wrong-particle"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "אומרים למישהו שזו רק שריטה קטנה. מה רוצים שירגיש?",
+     "en": "It's only a small scratch. How should the person feel?"
+    }
+   ],
+   "explanation": {
+    "he": "calm down = להירגע. show off = להשוויץ, take off = להמריא, להוריד בגד.",
+    "en": "calm down = become relaxed again. show off = try to impress. take off = leave the ground, remove clothes."
+   },
+   "interests": [],
+   "tags": [
+    "phrasal"
+   ],
+   "estimatedTimeSec": 20,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.tip-of-the-iceberg",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.5,
+   "unit": "idiom:tip-of-the-iceberg",
+   "prompt": "\"The broken window is just the tip of the iceberg: the whole building needs repairs.\" What does the speaker mean?",
+   "audioText": "The broken window is just the tip of the iceberg: the whole building needs repairs.",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "There are much bigger problems."
+    },
+    {
+     "id": "b",
+     "text": "The window is very cold.",
+     "misconception": "idioms.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "The problem is very small."
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "the whole building needs repairs: החלון הוא רק חלק קטן.",
+     "en": "The whole building needs repairs: the window is only a small part."
+    }
+   ],
+   "explanation": {
+    "he": "the tip of the iceberg = קצה הקרחון. בדיוק כמו בעברית: מה שרואים הוא רק חלק קטן מבעיה גדולה בהרבה.",
+    "en": "the tip of the iceberg = a small part of a much bigger problem."
+   },
+   "interests": [],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.drop-in-the-ocean",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.5,
+   "unit": "idiom:drop-in-the-ocean",
+   "prompt": "\"We collected 200 shekels for the new hospital wing, but it needs millions. It's a drop in the ocean.\" What does the speaker mean?",
+   "audioText": "We collected 200 shekels for the new hospital wing, but it needs millions. It's a drop in the ocean.",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "It's a tiny amount compared to what is needed."
+    },
+    {
+     "id": "b",
+     "text": "It's a lot of money."
+    },
+    {
+     "id": "c",
+     "text": "The money fell into the sea.",
+     "misconception": "idioms.literal-meaning"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "השוו 200 שקלים למיליונים.",
+     "en": "Compare 200 shekels to millions."
+    }
+   ],
+   "explanation": {
+    "he": "a drop in the ocean = טיפה בים. כמו בעברית: כמות קטנה מאוד לעומת מה שצריך.",
+    "en": "a drop in the ocean = a very small amount compared to what is needed."
+   },
+   "interests": [],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.in-the-same-boat",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.4,
+   "unit": "idiom:in-the-same-boat",
+   "prompt": "\"Don't worry, you're not the only one who failed the quiz. We're all in the same boat.\" What does the speaker mean?",
+   "audioText": "Don't worry, you're not the only one who failed the quiz. We're all in the same boat.",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "We all have the same problem."
+    },
+    {
+     "id": "b",
+     "text": "We are all going on a boat trip.",
+     "misconception": "idioms.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "We all sit at the same table."
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "you're not the only one who failed: מה משותף לכולם?",
+     "en": "You're not the only one who failed. What do they all share?"
+    }
+   ],
+   "explanation": {
+    "he": "in the same boat = באותה סירה. כמו בעברית: כולנו באותו מצב קשה.",
+    "en": "in the same boat = in the same difficult situation."
+   },
+   "interests": [
+    "school"
+   ],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.add-fuel-to-the-fire",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.55,
+   "unit": "idiom:add-fuel-to-the-fire",
+   "prompt": "\"They were already arguing, and his rude joke only added fuel to the fire.\" What did the joke do?",
+   "audioText": "They were already arguing, and his rude joke only added fuel to the fire.",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "It made the situation worse."
+    },
+    {
+     "id": "b",
+     "text": "It helped them calm down."
+    },
+    {
+     "id": "c",
+     "text": "It started a real fire.",
+     "misconception": "idioms.literal-meaning"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "they were already arguing: הוויכוח כבר היה. מה הבדיחה הגסה עשתה לו?",
+     "en": "They were already arguing. What did the rude joke do to it?"
+    }
+   ],
+   "explanation": {
+    "he": "add fuel to the fire = להוסיף שמן למדורה. כמו בעברית: להחמיר מצב שכבר רע.",
+    "en": "add fuel to the fire = make a bad situation worse."
+   },
+   "interests": [],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.storm-in-a-teacup",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.6,
+   "unit": "idiom:storm-in-a-teacup",
+   "prompt": "\"Everyone shouted about the new lunch menu, but it was a storm in a teacup, and by Friday nobody cared.\" What does the speaker mean?",
+   "audioText": "Everyone shouted about the new lunch menu, but it was a storm in a teacup, and by Friday nobody cared.",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "People got upset about something unimportant."
+    },
+    {
+     "id": "b",
+     "text": "There was bad weather at lunch.",
+     "misconception": "idioms.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "It was a serious problem that lasted long."
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "by Friday nobody cared: האם זה היה חשוב באמת?",
+     "en": "By Friday nobody cared. Was it really important?"
+    }
+   ],
+   "explanation": {
+    "he": "a storm in a teacup = סערה בכוס מים. כמו בעברית: הרבה רעש על דבר לא חשוב.",
+    "en": "a storm in a teacup = a lot of anger about something unimportant."
+   },
+   "interests": [
+    "food",
+    "school"
+   ],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.elephant-in-the-room",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.6,
+   "unit": "idiom:elephant-in-the-room",
+   "prompt": "\"Nobody mentioned the bad grades at dinner. They were the elephant in the room.\" What were the bad grades?",
+   "audioText": "Nobody mentioned the bad grades at dinner. They were the elephant in the room.",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "An obvious problem everyone avoided talking about"
+    },
+    {
+     "id": "b",
+     "text": "A big, noisy guest at dinner",
+     "misconception": "idioms.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "A topic everyone loved to discuss"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "nobody mentioned: כולם ידעו, אבל אף אחד לא דיבר.",
+     "en": "Nobody mentioned it: everyone knew, but nobody spoke."
+    }
+   ],
+   "explanation": {
+    "he": "the elephant in the room = הפיל שבחדר. כמו בעברית: בעיה גדולה שכולם רואים ואף אחד לא מדבר עליה.",
+    "en": "the elephant in the room = a big problem everyone knows about but nobody talks about."
+   },
+   "interests": [
+    "school"
+   ],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.beat-around-the-bush",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.55,
+   "unit": "idiom:beat-around-the-bush",
+   "prompt": "\"Stop beating around the bush and tell me what happened to my bike!\" What does the speaker want?",
+   "audioText": "Stop beating around the bush and tell me what happened to my bike!",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "To hear the main point directly"
+    },
+    {
+     "id": "b",
+     "text": "To work in the garden together",
+     "misconception": "idioms.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "To hear the story more slowly"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "tell me what happened: הדובר רוצה לשמוע את העיקר.",
+     "en": "tell me what happened: the speaker wants the main point."
+    }
+   ],
+   "explanation": {
+    "he": "beat around the bush = לדבר מסביב, לא לגשת ישר לעניין. בעברית אומרים גם 'למרוח'.",
+    "en": "beat around the bush = avoid saying the important thing directly."
+   },
+   "interests": [],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.back-to-square-one",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.5,
+   "unit": "idiom:back-to-square-one",
+   "prompt": "\"The computer crashed before I saved my project, so I'm back to square one.\" What does the speaker mean?",
+   "audioText": "The computer crashed before I saved my project, so I'm back to square one.",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "I have to start again from the beginning."
+    },
+    {
+     "id": "b",
+     "text": "I'm going back to my first school.",
+     "misconception": "idioms.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "I've finished the first part."
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "before I saved: מה קרה לכל העבודה?",
+     "en": "before I saved: what happened to all the work?"
+    }
+   ],
+   "explanation": {
+    "he": "back to square one = חזרה לנקודת ההתחלה. כל ההתקדמות אבדה וצריך להתחיל מחדש.",
+    "en": "back to square one = back at the start, with no progress."
+   },
+   "interests": [
+    "technology"
+   ],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.miss-the-boat",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.55,
+   "unit": "idiom:miss-the-boat",
+   "prompt": "\"The tickets sold out in an hour. If you didn't buy one this morning, you missed the boat.\" What does the speaker mean?",
+   "audioText": "The tickets sold out in an hour. If you didn't buy one this morning, you missed the boat.",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "You lost your chance."
+    },
+    {
+     "id": "b",
+     "text": "You arrived late at the port.",
+     "misconception": "idioms.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "You saved some money."
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "the tickets sold out: אפשר עוד לקנות?",
+     "en": "The tickets sold out. Can you still buy one?"
+    }
+   ],
+   "explanation": {
+    "he": "miss the boat = לפספס את ההזדמנות. בעברית אומרים 'לפספס את הרכבת'. באנגלית זו סירה.",
+    "en": "miss the boat = lose a chance because you were too slow."
+   },
+   "interests": [
+    "music"
+   ],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.go-the-extra-mile",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.5,
+   "unit": "idiom:go-the-extra-mile",
+   "prompt": "\"Our coach always goes the extra mile: she stays after practice to help anyone who needs it.\" What does the coach do?",
+   "audioText": "Our coach always goes the extra mile: she stays after practice to help anyone who needs it.",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "She does more than she has to."
+    },
+    {
+     "id": "b",
+     "text": "She runs very long distances.",
+     "misconception": "idioms.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "She leaves practice early."
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "she stays after practice: האם היא חייבת?",
+     "en": "She stays after practice. Does she have to?"
+    }
+   ],
+   "explanation": {
+    "he": "go the extra mile = לעשות יותר ממה שצריך, להשקיע מאמץ נוסף. בעברית אפשר לומר 'ללכת עוד צעד'.",
+    "en": "go the extra mile = do more than you have to."
+   },
+   "interests": [
+    "sports"
+   ],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.cut-corners",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.6,
+   "unit": "idiom:cut-corners",
+   "prompt": "\"The builders cut corners to finish early, and now the roof leaks.\" What did the builders do?",
+   "audioText": "The builders cut corners to finish early, and now the roof leaks.",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "They did the work cheaply and badly."
+    },
+    {
+     "id": "b",
+     "text": "They made the rooms round.",
+     "misconception": "idioms.literal-meaning"
+    },
+    {
+     "id": "c",
+     "text": "They worked very carefully."
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "now the roof leaks: איך הם עבדו?",
+     "en": "Now the roof leaks. How did they work?"
+    }
+   ],
+   "explanation": {
+    "he": "cut corners = לעגל פינות. כמו בעברית: לעבוד מהר ובזול על חשבון האיכות.",
+    "en": "cut corners = do something quickly or cheaply and badly."
+   },
+   "interests": [],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.idiom.rule-of-thumb",
+   "type": "choice",
+   "skill": "vocabulary.idioms",
+   "level": "B2",
+   "difficulty": 0.45,
+   "unit": "idiom:rule-of-thumb",
+   "prompt": "\"As a rule of thumb, drink a glass of water every time you drink coffee.\" What is \"a rule of thumb\"?",
+   "audioText": "As a rule of thumb, drink a glass of water every time you drink coffee.",
+   "instruction": {
+    "he": "לבחור מה הביטוי אומר כאן",
+    "en": "Choose what the expression means here"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A simple practical guideline"
+    },
+    {
+     "id": "b",
+     "text": "A strict law"
+    },
+    {
+     "id": "c",
+     "text": "A way to measure your finger",
+     "misconception": "idioms.literal-meaning"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "זו עצה מעשית, לא חוק.",
+     "en": "It is practical advice, not a law."
+    }
+   ],
+   "explanation": {
+    "he": "a rule of thumb = כלל אצבע. כמו בעברית: עצה פשוטה ומעשית שבדרך כלל נכונה, לא כלל מדויק.",
+    "en": "a rule of thumb = a simple, practical guideline that is usually right."
+   },
+   "interests": [
+    "food"
+   ],
+   "tags": [
+    "idiom"
+   ],
+   "estimatedTimeSec": 25,
+   "source": "original"
+  },
+  {
+   "id": "vg1.meaning.ambiguous",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:ambiguous",
+   "word": {
+    "lemma": "ambiguous",
+    "pos": "adjective",
+    "he": "דו־משמעי, לא חד",
+    "example": "The question was ambiguous, so half the class understood it differently."
+   },
+   "interests": [
+    "school"
+   ],
+   "source": "original",
+   "difficulty": 0.3,
+   "prompt": "ambiguous",
+   "audioText": "ambiguous",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "דו־משמעי"
+    },
+    {
+     "id": "b",
+     "text": "שאפתני"
+    },
+    {
+     "id": "c",
+     "text": "מדויק"
+    },
+    {
+     "id": "d",
+     "text": "זהיר"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: The question was ambiguous, so half the class understood it differently.",
+     "en": "Look at it in a sentence: The question was ambiguous, so half the class understood it differently."
+    }
+   ],
+   "explanation": {
+    "he": "ambiguous פירושה דו־משמעי, לא חד. דוגמה: The question was ambiguous, so half the class understood it differently. לא להתבלבל עם ambitious = שאפתני.",
+    "en": "ambiguous means having more than one possible meaning. Example: The question was ambiguous, so half the class understood it differently."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.ambiguous",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:ambiguous",
+   "word": {
+    "lemma": "ambiguous",
+    "pos": "adjective",
+    "he": "דו־משמעי, לא חד",
+    "example": "The question was ambiguous, so half the class understood it differently."
+   },
+   "interests": [
+    "school"
+   ],
+   "source": "original",
+   "difficulty": 0.6,
+   "prompt": "דו־משמעי (אפשר להבין בכמה דרכים)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "ambiguous"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות a",
+     "en": "It starts with a"
+    },
+    {
+     "he": "יש בה 9 אותיות.",
+     "en": "It has 9 letters."
+    }
+   ],
+   "explanation": {
+    "he": "דו־משמעי, לא חד באנגלית: ambiguous. דוגמה: The question was ambiguous, so half the class understood it differently.",
+    "en": "The word is ambiguous (having more than one possible meaning). Example: The question was ambiguous, so half the class understood it differently."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.ambiguous",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:ambiguous",
+   "word": {
+    "lemma": "ambiguous",
+    "pos": "adjective",
+    "he": "דו־משמעי, לא חד",
+    "example": "The question was ambiguous, so half the class understood it differently."
+   },
+   "interests": [
+    "school"
+   ],
+   "source": "original",
+   "difficulty": 0.4,
+   "prompt": "The instructions were so ___ that every student understood them in a different way.",
+   "audioText": "The instructions were so ambiguous that every student understood them in a different way.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "ambiguous"
+    },
+    {
+     "id": "b",
+     "text": "ambitious"
+    },
+    {
+     "id": "c",
+     "text": "accurate"
+    },
+    {
+     "id": "d",
+     "text": "efficient"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "כל תלמיד הבין אחרת. מה הבעיה בהוראות?",
+     "en": "Every student understood differently. What was wrong with the instructions?"
+    }
+   ],
+   "explanation": {
+    "he": "ambiguous = דו־משמעי. הוראות שאפשר להבין בכמה דרכים. ambitious = שאפתני, accurate = מדויק, efficient = יעיל.",
+    "en": "Instructions that can be understood in more than one way are ambiguous."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.feasible",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:feasible",
+   "word": {
+    "lemma": "feasible",
+    "pos": "adjective",
+    "he": "בר־ביצוע, אפשרי מעשית",
+    "example": "Building the new bridge in one year is not feasible."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.35,
+   "prompt": "feasible",
+   "audioText": "feasible",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "בר־ביצוע"
+    },
+    {
+     "id": "b",
+     "text": "מסוכן"
+    },
+    {
+     "id": "c",
+     "text": "מפורסם"
+    },
+    {
+     "id": "d",
+     "text": "זמני"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: Building the new bridge in one year is not feasible.",
+     "en": "Look at it in a sentence: Building the new bridge in one year is not feasible."
+    }
+   ],
+   "explanation": {
+    "he": "feasible פירושה בר־ביצוע, אפשרי מעשית. דוגמה: Building the new bridge in one year is not feasible.",
+    "en": "feasible means possible to do in practice. Example: Building the new bridge in one year is not feasible."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.feasible",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:feasible",
+   "word": {
+    "lemma": "feasible",
+    "pos": "adjective",
+    "he": "בר־ביצוע, אפשרי מעשית",
+    "example": "Building the new bridge in one year is not feasible."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.65,
+   "prompt": "בר־ביצוע (אפשר לעשות את זה בפועל)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "feasible",
+    "viable",
+    "doable",
+    "workable",
+    "practicable"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות f",
+     "en": "It starts with f"
+    },
+    {
+     "he": "יש בה 8 אותיות.",
+     "en": "It has 8 letters."
+    }
+   ],
+   "explanation": {
+    "he": "בר־ביצוע, אפשרי מעשית באנגלית: feasible. דוגמה: Building the new bridge in one year is not feasible.",
+    "en": "The word is feasible (possible to do in practice). Example: Building the new bridge in one year is not feasible."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.feasible",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:feasible",
+   "word": {
+    "lemma": "feasible",
+    "pos": "adjective",
+    "he": "בר־ביצוע, אפשרי מעשית",
+    "example": "Building the new bridge in one year is not feasible."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.5,
+   "prompt": "With only two weeks and no money, the plan simply isn't ___.",
+   "audioText": "With only two weeks and no money, the plan simply isn't feasible.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "feasible"
+    },
+    {
+     "id": "b",
+     "text": "mutual"
+    },
+    {
+     "id": "c",
+     "text": "reluctant"
+    },
+    {
+     "id": "d",
+     "text": "prevalent"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "שבועיים ובלי כסף: אפשר בכלל לבצע את התוכנית?",
+     "en": "Two weeks and no money: can the plan be done at all?"
+    }
+   ],
+   "explanation": {
+    "he": "feasible = בר־ביצוע. בלי זמן ובלי כסף אי אפשר לבצע את התוכנית. mutual = הדדי, reluctant = מסרב, לא רוצה, prevalent = נפוץ.",
+    "en": "A plan that can really be done is feasible. Without time or money, it isn't."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.implement",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:implement",
+   "word": {
+    "lemma": "implement",
+    "pos": "verb",
+    "he": "ליישם, להוציא לפועל",
+    "example": "The school will implement the new rules next month."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.25,
+   "prompt": "implement",
+   "audioText": "implement",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "ליישם"
+    },
+    {
+     "id": "b",
+     "text": "להמציא"
+    },
+    {
+     "id": "c",
+     "text": "להשוות"
+    },
+    {
+     "id": "d",
+     "text": "להתנגד"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: The school will implement the new rules next month.",
+     "en": "Look at it in a sentence: The school will implement the new rules next month."
+    }
+   ],
+   "explanation": {
+    "he": "implement פירושה ליישם, להוציא לפועל. דוגמה: The school will implement the new rules next month.",
+    "en": "implement means put a plan into action. Example: The school will implement the new rules next month."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.implement",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:implement",
+   "word": {
+    "lemma": "implement",
+    "pos": "verb",
+    "he": "ליישם, להוציא לפועל",
+    "example": "The school will implement the new rules next month."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.5,
+   "prompt": "ליישם (להוציא תוכנית לפועל)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "implement",
+    "carry out",
+    "execute",
+    "apply"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות i",
+     "en": "It starts with i"
+    },
+    {
+     "he": "יש בה 9 אותיות.",
+     "en": "It has 9 letters."
+    }
+   ],
+   "explanation": {
+    "he": "ליישם, להוציא לפועל באנגלית: implement. דוגמה: The school will implement the new rules next month.",
+    "en": "The word is implement (put a plan into action). Example: The school will implement the new rules next month."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.implement",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:implement",
+   "word": {
+    "lemma": "implement",
+    "pos": "verb",
+    "he": "ליישם, להוציא לפועל",
+    "example": "The school will implement the new rules next month."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.45,
+   "prompt": "The city council approved the plan, but it will take two years to ___ it.",
+   "audioText": "The city council approved the plan, but it will take two years to implement it.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "implement"
+    },
+    {
+     "id": "b",
+     "text": "imply"
+    },
+    {
+     "id": "c",
+     "text": "impress"
+    },
+    {
+     "id": "d",
+     "text": "insist"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "התוכנית אושרה. מה עושים איתה עכשיו?",
+     "en": "The plan was approved. What happens to it now?"
+    }
+   ],
+   "explanation": {
+    "he": "implement a plan = ליישם תוכנית, להוציא אותה לפועל. imply = לרמוז, impress = להרשים, insist = להתעקש.",
+    "en": "You implement a plan when you put it into action."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.allocate",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:allocate",
+   "word": {
+    "lemma": "allocate",
+    "pos": "verb",
+    "he": "להקצות",
+    "example": "The government allocated more money to hospitals this year."
+   },
+   "interests": [
+    "school",
+    "science"
+   ],
+   "source": "original",
+   "difficulty": 0.4,
+   "prompt": "allocate",
+   "audioText": "allocate",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "להקצות"
+    },
+    {
+     "id": "b",
+     "text": "לאתר"
+    },
+    {
+     "id": "c",
+     "text": "להאשים"
+    },
+    {
+     "id": "d",
+     "text": "לבטל"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: The government allocated more money to hospitals this year.",
+     "en": "Look at it in a sentence: The government allocated more money to hospitals this year."
+    }
+   ],
+   "explanation": {
+    "he": "allocate פירושה להקצות. דוגמה: The government allocated more money to hospitals this year. לא להתבלבל עם locate = לאתר.",
+    "en": "allocate means give an amount of something for a purpose. Example: The government allocated more money to hospitals this year."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.allocate",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:allocate",
+   "word": {
+    "lemma": "allocate",
+    "pos": "verb",
+    "he": "להקצות",
+    "example": "The government allocated more money to hospitals this year."
+   },
+   "interests": [
+    "school",
+    "science"
+   ],
+   "source": "original",
+   "difficulty": 0.6,
+   "prompt": "להקצות (לתת כסף או זמן למטרה מסוימת)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "allocate",
+    "allot",
+    "assign"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות a",
+     "en": "It starts with a"
+    },
+    {
+     "he": "יש בה 8 אותיות.",
+     "en": "It has 8 letters."
+    }
+   ],
+   "explanation": {
+    "he": "להקצות באנגלית: allocate. דוגמה: The government allocated more money to hospitals this year.",
+    "en": "The word is allocate (give an amount of something for a purpose). Example: The government allocated more money to hospitals this year."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.allocate",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:allocate",
+   "word": {
+    "lemma": "allocate",
+    "pos": "verb",
+    "he": "להקצות",
+    "example": "The government allocated more money to hospitals this year."
+   },
+   "interests": [
+    "school",
+    "science"
+   ],
+   "source": "original",
+   "difficulty": 0.55,
+   "prompt": "Next year the school will ___ more hours to science and fewer to sport.",
+   "audioText": "Next year the school will allocate more hours to science and fewer to sport.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "allocate"
+    },
+    {
+     "id": "b",
+     "text": "accuse"
+    },
+    {
+     "id": "c",
+     "text": "abolish"
+    },
+    {
+     "id": "d",
+     "text": "admire"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "שעות למדע: מחליטים כמה שעות לתת לכל מקצוע.",
+     "en": "Hours for science: deciding how many hours each subject gets."
+    }
+   ],
+   "explanation": {
+    "he": "allocate X to Y = להקצות X ל־Y. accuse = להאשים, abolish = לבטל, admire = להעריץ.",
+    "en": "You allocate time or money to a purpose."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.subsequent",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:subsequent",
+   "word": {
+    "lemma": "subsequent",
+    "pos": "adjective",
+    "he": "שבא אחר כך, הבא",
+    "example": "The first test was hard, but the subsequent tests were easier."
+   },
+   "interests": [
+    "science"
+   ],
+   "source": "original",
+   "difficulty": 0.45,
+   "prompt": "subsequent",
+   "audioText": "subsequent",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "שבא אחר כך"
+    },
+    {
+     "id": "b",
+     "text": "שבא קודם"
+    },
+    {
+     "id": "c",
+     "text": "מקורי"
+    },
+    {
+     "id": "d",
+     "text": "חובה"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: The first test was hard, but the subsequent tests were easier.",
+     "en": "Look at it in a sentence: The first test was hard, but the subsequent tests were easier."
+    }
+   ],
+   "explanation": {
+    "he": "subsequent פירושה שבא אחר כך, הבא. דוגמה: The first test was hard, but the subsequent tests were easier.",
+    "en": "subsequent means coming after something else. Example: The first test was hard, but the subsequent tests were easier."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.subsequent",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:subsequent",
+   "word": {
+    "lemma": "subsequent",
+    "pos": "adjective",
+    "he": "שבא אחר כך, הבא",
+    "example": "The first test was hard, but the subsequent tests were easier."
+   },
+   "interests": [
+    "science"
+   ],
+   "source": "original",
+   "difficulty": 0.7,
+   "prompt": "שבא אחרי, שלאחר מכן (תואר)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "subsequent",
+    "following",
+    "later",
+    "succeeding"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות s",
+     "en": "It starts with s"
+    },
+    {
+     "he": "יש בה 10 אותיות.",
+     "en": "It has 10 letters."
+    }
+   ],
+   "explanation": {
+    "he": "שבא אחר כך, הבא באנגלית: subsequent. דוגמה: The first test was hard, but the subsequent tests were easier.",
+    "en": "The word is subsequent (coming after something else). Example: The first test was hard, but the subsequent tests were easier."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.subsequent",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:subsequent",
+   "word": {
+    "lemma": "subsequent",
+    "pos": "adjective",
+    "he": "שבא אחר כך, הבא",
+    "example": "The first test was hard, but the subsequent tests were easier."
+   },
+   "interests": [
+    "science"
+   ],
+   "source": "original",
+   "difficulty": 0.55,
+   "prompt": "The first experiment failed, but ___ experiments were much more successful.",
+   "audioText": "The first experiment failed, but subsequent experiments were much more successful.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "subsequent"
+    },
+    {
+     "id": "b",
+     "text": "previous"
+    },
+    {
+     "id": "c",
+     "text": "reluctant"
+    },
+    {
+     "id": "d",
+     "text": "jealous"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "the first experiment: איזה ניסויים יכולים לבוא אחרי הראשון?",
+     "en": "the first experiment: which experiments can come after the first?"
+    }
+   ],
+   "explanation": {
+    "he": "subsequent = שבאו אחר כך. previous = קודמים, אבל לניסוי הראשון אין ניסויים קודמים. reluctant = לא רוצה, jealous = מקנא.",
+    "en": "subsequent means coming after. Nothing comes before the first experiment, so previous is wrong."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.fluctuate",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:fluctuate",
+   "word": {
+    "lemma": "fluctuate",
+    "pos": "verb",
+    "he": "לעלות ולרדת, להשתנות שוב ושוב",
+    "example": "Vegetable prices fluctuate from season to season."
+   },
+   "interests": [
+    "science",
+    "travel"
+   ],
+   "source": "original",
+   "difficulty": 0.5,
+   "prompt": "fluctuate",
+   "audioText": "fluctuate",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "לעלות ולרדת"
+    },
+    {
+     "id": "b",
+     "text": "לצוף"
+    },
+    {
+     "id": "c",
+     "text": "להישאר קבוע"
+    },
+    {
+     "id": "d",
+     "text": "להתמוטט"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: Vegetable prices fluctuate from season to season.",
+     "en": "Look at it in a sentence: Vegetable prices fluctuate from season to season."
+    }
+   ],
+   "explanation": {
+    "he": "fluctuate פירושה לעלות ולרדת, להשתנות שוב ושוב. דוגמה: Vegetable prices fluctuate from season to season.",
+    "en": "fluctuate means go up and down again and again. Example: Vegetable prices fluctuate from season to season."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.fluctuate",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:fluctuate",
+   "word": {
+    "lemma": "fluctuate",
+    "pos": "verb",
+    "he": "לעלות ולרדת, להשתנות שוב ושוב",
+    "example": "Vegetable prices fluctuate from season to season."
+   },
+   "interests": [
+    "science",
+    "travel"
+   ],
+   "source": "original",
+   "difficulty": 0.75,
+   "prompt": "לעלות ולרדת שוב ושוב (מחירים, טמפרטורה)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "fluctuate",
+    "vary"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות f",
+     "en": "It starts with f"
+    },
+    {
+     "he": "יש בה 9 אותיות.",
+     "en": "It has 9 letters."
+    }
+   ],
+   "explanation": {
+    "he": "לעלות ולרדת, להשתנות שוב ושוב באנגלית: fluctuate. דוגמה: Vegetable prices fluctuate from season to season.",
+    "en": "The word is fluctuate (go up and down again and again). Example: Vegetable prices fluctuate from season to season."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.fluctuate",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:fluctuate",
+   "word": {
+    "lemma": "fluctuate",
+    "pos": "verb",
+    "he": "לעלות ולרדת, להשתנות שוב ושוב",
+    "example": "Vegetable prices fluctuate from season to season."
+   },
+   "interests": [
+    "science",
+    "travel"
+   ],
+   "source": "original",
+   "difficulty": 0.45,
+   "prompt": "In the desert, temperatures ___ a lot: it is very hot during the day and cold at night.",
+   "audioText": "In the desert, temperatures fluctuate a lot: it is very hot during the day and cold at night.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "fluctuate"
+    },
+    {
+     "id": "b",
+     "text": "accumulate"
+    },
+    {
+     "id": "c",
+     "text": "cooperate"
+    },
+    {
+     "id": "d",
+     "text": "hesitate"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "חם ביום, קר בלילה: מה הטמפרטורה עושה?",
+     "en": "Hot by day, cold at night: what does the temperature do?"
+    }
+   ],
+   "explanation": {
+    "he": "fluctuate = לעלות ולרדת. accumulate = להצטבר, cooperate = לשתף פעולה, hesitate = להסס.",
+    "en": "Temperatures that go up and down fluctuate."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.plausible",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:plausible",
+   "word": {
+    "lemma": "plausible",
+    "pos": "adjective",
+    "he": "סביר, מתקבל על הדעת",
+    "example": "His excuse sounded plausible, so the teacher believed him."
+   },
+   "interests": [
+    "movies"
+   ],
+   "source": "original",
+   "difficulty": 0.4,
+   "prompt": "plausible",
+   "audioText": "plausible",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "מתקבל על הדעת"
+    },
+    {
+     "id": "b",
+     "text": "ראוי לשבח"
+    },
+    {
+     "id": "c",
+     "text": "מנומס"
+    },
+    {
+     "id": "d",
+     "text": "מבולבל"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: His excuse sounded plausible, so the teacher believed him.",
+     "en": "Look at it in a sentence: His excuse sounded plausible, so the teacher believed him."
+    }
+   ],
+   "explanation": {
+    "he": "plausible פירושה סביר, מתקבל על הדעת. דוגמה: His excuse sounded plausible, so the teacher believed him.",
+    "en": "plausible means seeming likely to be true. Example: His excuse sounded plausible, so the teacher believed him."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.plausible",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:plausible",
+   "word": {
+    "lemma": "plausible",
+    "pos": "adjective",
+    "he": "סביר, מתקבל על הדעת",
+    "example": "His excuse sounded plausible, so the teacher believed him."
+   },
+   "interests": [
+    "movies"
+   ],
+   "source": "original",
+   "difficulty": 0.7,
+   "prompt": "מתקבל על הדעת, נשמע אמין",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "plausible",
+    "believable",
+    "credible",
+    "reasonable"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות p",
+     "en": "It starts with p"
+    },
+    {
+     "he": "יש בה 9 אותיות.",
+     "en": "It has 9 letters."
+    }
+   ],
+   "explanation": {
+    "he": "סביר, מתקבל על הדעת באנגלית: plausible. דוגמה: His excuse sounded plausible, so the teacher believed him.",
+    "en": "The word is plausible (seeming likely to be true). Example: His excuse sounded plausible, so the teacher believed him."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.plausible",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:plausible",
+   "word": {
+    "lemma": "plausible",
+    "pos": "adjective",
+    "he": "סביר, מתקבל על הדעת",
+    "example": "His excuse sounded plausible, so the teacher believed him."
+   },
+   "interests": [
+    "movies"
+   ],
+   "source": "original",
+   "difficulty": 0.5,
+   "prompt": "The detective didn't believe the story because it wasn't ___: nobody can run 20 kilometers in half an hour.",
+   "audioText": "The detective didn't believe the story because it wasn't plausible: nobody can run 20 kilometers in half an hour.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "plausible"
+    },
+    {
+     "id": "b",
+     "text": "flexible"
+    },
+    {
+     "id": "c",
+     "text": "edible"
+    },
+    {
+     "id": "d",
+     "text": "portable"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "למה הבלש לא האמין? אף אחד לא יכול לרוץ כל כך מהר.",
+     "en": "Why didn't the detective believe it? Nobody can run that fast."
+    }
+   ],
+   "explanation": {
+    "he": "plausible = מתקבל על הדעת. סיפור שלא יכול לקרות הוא לא plausible. flexible = גמיש, edible = אכיל, portable = נייד.",
+    "en": "A story that could really be true is plausible."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.undermine",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:undermine",
+   "word": {
+    "lemma": "undermine",
+    "pos": "verb",
+    "he": "לערער, להחליש",
+    "example": "Constant criticism can undermine a child's confidence."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.45,
+   "prompt": "undermine",
+   "audioText": "undermine",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "לערער, להחליש"
+    },
+    {
+     "id": "b",
+     "text": "לחזק"
+    },
+    {
+     "id": "c",
+     "text": "להדגיש"
+    },
+    {
+     "id": "d",
+     "text": "להסתיר"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: Constant criticism can undermine a child's confidence.",
+     "en": "Look at it in a sentence: Constant criticism can undermine a child's confidence."
+    }
+   ],
+   "explanation": {
+    "he": "undermine פירושה לערער, להחליש. דוגמה: Constant criticism can undermine a child's confidence. לא להתבלבל עם underline = להדגיש בקו.",
+    "en": "undermine means slowly make something weaker. Example: Constant criticism can undermine a child's confidence."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.undermine",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:undermine",
+   "word": {
+    "lemma": "undermine",
+    "pos": "verb",
+    "he": "לערער, להחליש",
+    "example": "Constant criticism can undermine a child's confidence."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.7,
+   "prompt": "לערער, להחליש (אמון, ביטחון)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "undermine",
+    "weaken"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות u",
+     "en": "It starts with u"
+    },
+    {
+     "he": "יש בה 9 אותיות.",
+     "en": "It has 9 letters."
+    }
+   ],
+   "explanation": {
+    "he": "לערער, להחליש באנגלית: undermine. דוגמה: Constant criticism can undermine a child's confidence.",
+    "en": "The word is undermine (slowly make something weaker). Example: Constant criticism can undermine a child's confidence."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.undermine",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:undermine",
+   "word": {
+    "lemma": "undermine",
+    "pos": "verb",
+    "he": "לערער, להחליש",
+    "example": "Constant criticism can undermine a child's confidence."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.6,
+   "prompt": "Telling lies, even small ones, can ___ people's trust in you.",
+   "audioText": "Telling lies, even small ones, can undermine people's trust in you.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "undermine"
+    },
+    {
+     "id": "b",
+     "text": "underline"
+    },
+    {
+     "id": "c",
+     "text": "undertake"
+    },
+    {
+     "id": "d",
+     "text": "unfold"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "מה שקרים עושים לאמון?",
+     "en": "What do lies do to trust?"
+    }
+   ],
+   "explanation": {
+    "he": "undermine = לערער, להחליש לאט. underline = לסמן בקו, undertake = לקבל על עצמך משימה, unfold = לפתוח קיפול, להתגלות.",
+    "en": "Lies slowly weaken trust: they undermine it."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.compensate",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:compensate",
+   "word": {
+    "lemma": "compensate",
+    "pos": "verb",
+    "he": "לפצות",
+    "example": "The airline compensated the passengers for the long delay."
+   },
+   "interests": [
+    "technology"
+   ],
+   "source": "original",
+   "difficulty": 0.3,
+   "prompt": "compensate",
+   "audioText": "compensate",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "לפצות"
+    },
+    {
+     "id": "b",
+     "text": "להתחרות"
+    },
+    {
+     "id": "c",
+     "text": "להתלונן"
+    },
+    {
+     "id": "d",
+     "text": "להתרכז"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: The airline compensated the passengers for the long delay.",
+     "en": "Look at it in a sentence: The airline compensated the passengers for the long delay."
+    }
+   ],
+   "explanation": {
+    "he": "compensate פירושה לפצות. דוגמה: The airline compensated the passengers for the long delay.",
+    "en": "compensate means pay or give something for a loss. Example: The airline compensated the passengers for the long delay."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.compensate",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:compensate",
+   "word": {
+    "lemma": "compensate",
+    "pos": "verb",
+    "he": "לפצות",
+    "example": "The airline compensated the passengers for the long delay."
+   },
+   "interests": [
+    "technology"
+   ],
+   "source": "original",
+   "difficulty": 0.55,
+   "prompt": "לפצות (לתת משהו בתמורה לנזק או להפסד)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "compensate",
+    "make up for",
+    "reimburse"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות c",
+     "en": "It starts with c"
+    },
+    {
+     "he": "יש בה 10 אותיות.",
+     "en": "It has 10 letters."
+    }
+   ],
+   "explanation": {
+    "he": "לפצות באנגלית: compensate. דוגמה: The airline compensated the passengers for the long delay.",
+    "en": "The word is compensate (pay or give something for a loss). Example: The airline compensated the passengers for the long delay."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.compensate",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:compensate",
+   "word": {
+    "lemma": "compensate",
+    "pos": "verb",
+    "he": "לפצות",
+    "example": "The airline compensated the passengers for the long delay."
+   },
+   "interests": [
+    "technology"
+   ],
+   "source": "original",
+   "difficulty": 0.5,
+   "prompt": "The company had to ___ its customers for the broken products.",
+   "audioText": "The company had to compensate its customers for the broken products.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "compensate"
+    },
+    {
+     "id": "b",
+     "text": "complain"
+    },
+    {
+     "id": "c",
+     "text": "compete"
+    },
+    {
+     "id": "d",
+     "text": "compose"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "הלקוחות קיבלו מוצרים שבורים. מה החברה צריכה לעשות?",
+     "en": "The customers got broken products. What must the company do?"
+    }
+   ],
+   "explanation": {
+    "he": "compensate someone for something = לפצות מישהו על משהו. complain = להתלונן, compete = להתחרות, compose = לחבר (מוזיקה, טקסט).",
+    "en": "You compensate someone for a loss or damage."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.advocate",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:advocate",
+   "word": {
+    "lemma": "advocate",
+    "pos": "verb",
+    "he": "לצדד ב, לתמוך בפומבי",
+    "example": "Many doctors advocate later school start times for teenagers."
+   },
+   "interests": [
+    "animals"
+   ],
+   "source": "original",
+   "difficulty": 0.5,
+   "prompt": "advocate",
+   "audioText": "advocate",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "לתמוך בפומבי ב"
+    },
+    {
+     "id": "b",
+     "text": "להתנגד ל"
+    },
+    {
+     "id": "c",
+     "text": "לחקור"
+    },
+    {
+     "id": "d",
+     "text": "להזהיר"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: Many doctors advocate later school start times for teenagers.",
+     "en": "Look at it in a sentence: Many doctors advocate later school start times for teenagers."
+    }
+   ],
+   "explanation": {
+    "he": "advocate פירושה לצדד ב, לתמוך בפומבי. דוגמה: Many doctors advocate later school start times for teenagers. כשם עצם, advocate = מי שתומך ברעיון, וגם עורך דין.",
+    "en": "advocate means publicly support an idea. Example: Many doctors advocate later school start times for teenagers."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.advocate",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:advocate",
+   "word": {
+    "lemma": "advocate",
+    "pos": "verb",
+    "he": "לצדד ב, לתמוך בפומבי",
+    "example": "Many doctors advocate later school start times for teenagers."
+   },
+   "interests": [
+    "animals"
+   ],
+   "source": "original",
+   "difficulty": 0.75,
+   "prompt": "לצדד ב, לתמוך בפומבי ברעיון",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "advocate",
+    "support",
+    "champion",
+    "promote"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות a",
+     "en": "It starts with a"
+    },
+    {
+     "he": "יש בה 8 אותיות.",
+     "en": "It has 8 letters."
+    }
+   ],
+   "explanation": {
+    "he": "לצדד ב, לתמוך בפומבי באנגלית: advocate. דוגמה: Many doctors advocate later school start times for teenagers.",
+    "en": "The word is advocate (publicly support an idea). Example: Many doctors advocate later school start times for teenagers."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.advocate",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:advocate",
+   "word": {
+    "lemma": "advocate",
+    "pos": "verb",
+    "he": "לצדד ב, לתמוך בפומבי",
+    "example": "Many doctors advocate later school start times for teenagers."
+   },
+   "interests": [
+    "animals"
+   ],
+   "source": "original",
+   "difficulty": 0.6,
+   "prompt": "The organization has ___ for animal rights for over fifty years.",
+   "audioText": "The organization has advocated for animal rights for over fifty years.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "advocated"
+    },
+    {
+     "id": "b",
+     "text": "avoided"
+    },
+    {
+     "id": "c",
+     "text": "admitted"
+    },
+    {
+     "id": "d",
+     "text": "adjusted"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "ארגון שפועל למען זכויות בעלי חיים. מה הוא עושה?",
+     "en": "An organization for animal rights. What does it do?"
+    }
+   ],
+   "explanation": {
+    "he": "advocate (for) = לפעול ולתמוך בפומבי למען. avoid = להימנע, admit = להודות, adjust = להתאים. אף אחד מהם לא בא עם for במשמעות הזאת.",
+    "en": "To advocate for something is to publicly support it."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.bias",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:bias",
+   "word": {
+    "lemma": "bias",
+    "pos": "noun",
+    "he": "הטיה, משוא פנים",
+    "example": "A good judge must decide without bias."
+   },
+   "interests": [
+    "sports"
+   ],
+   "source": "original",
+   "difficulty": 0.35,
+   "prompt": "bias",
+   "audioText": "bias",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "הטיה"
+    },
+    {
+     "id": "b",
+     "text": "בסיס"
+    },
+    {
+     "id": "c",
+     "text": "עונש"
+    },
+    {
+     "id": "d",
+     "text": "ויכוח"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: A good judge must decide without bias.",
+     "en": "Look at it in a sentence: A good judge must decide without bias."
+    }
+   ],
+   "explanation": {
+    "he": "bias פירושה הטיה, משוא פנים. דוגמה: A good judge must decide without bias. לא להתבלבל עם basis = בסיס.",
+    "en": "bias means unfair preference for one side. Example: A good judge must decide without bias."
+   },
+   "tags": [
+    "vocabulary",
+    "noun",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.bias",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:bias",
+   "word": {
+    "lemma": "bias",
+    "pos": "noun",
+    "he": "הטיה, משוא פנים",
+    "example": "A good judge must decide without bias."
+   },
+   "interests": [
+    "sports"
+   ],
+   "source": "original",
+   "difficulty": 0.55,
+   "prompt": "הטיה, משוא פנים (העדפה לא הוגנת)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "bias",
+    "prejudice"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות b",
+     "en": "It starts with b"
+    },
+    {
+     "he": "יש בה 4 אותיות.",
+     "en": "It has 4 letters."
+    }
+   ],
+   "explanation": {
+    "he": "הטיה, משוא פנים באנגלית: bias. דוגמה: A good judge must decide without bias.",
+    "en": "The word is bias (unfair preference for one side). Example: A good judge must decide without bias."
+   },
+   "tags": [
+    "vocabulary",
+    "noun",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.bias",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:bias",
+   "word": {
+    "lemma": "bias",
+    "pos": "noun",
+    "he": "הטיה, משוא פנים",
+    "example": "A good judge must decide without bias."
+   },
+   "interests": [
+    "sports"
+   ],
+   "source": "original",
+   "difficulty": 0.45,
+   "prompt": "The referee showed clear ___: every decision went in favor of the home team.",
+   "audioText": "The referee showed clear bias: every decision went in favor of the home team.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "bias"
+    },
+    {
+     "id": "b",
+     "text": "basis"
+    },
+    {
+     "id": "c",
+     "text": "balance"
+    },
+    {
+     "id": "d",
+     "text": "budget"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "כל ההחלטות היו לטובת קבוצה אחת. האם זה הוגן?",
+     "en": "Every decision helped one team. Is that fair?"
+    }
+   ],
+   "explanation": {
+    "he": "bias = הטיה, העדפה לא הוגנת של צד אחד. basis = בסיס, balance = איזון (ההפך ממה שקרה), budget = תקציב.",
+    "en": "Unfair support for one side is bias."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.scrutiny",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:scrutiny",
+   "word": {
+    "lemma": "scrutiny",
+    "pos": "noun",
+    "he": "בדיקה קפדנית",
+    "example": "The new medicine is under close scrutiny before it reaches pharmacies."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.6,
+   "prompt": "scrutiny",
+   "audioText": "scrutiny",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "בדיקה קפדנית"
+    },
+    {
+     "id": "b",
+     "text": "סודיות"
+    },
+    {
+     "id": "c",
+     "text": "תוצאה"
+    },
+    {
+     "id": "d",
+     "text": "שבח"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: The new medicine is under close scrutiny before it reaches pharmacies.",
+     "en": "Look at it in a sentence: The new medicine is under close scrutiny before it reaches pharmacies."
+    }
+   ],
+   "explanation": {
+    "he": "scrutiny פירושה בדיקה קפדנית. דוגמה: The new medicine is under close scrutiny before it reaches pharmacies.",
+    "en": "scrutiny means careful and critical examination. Example: The new medicine is under close scrutiny before it reaches pharmacies."
+   },
+   "tags": [
+    "vocabulary",
+    "noun",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.scrutiny",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:scrutiny",
+   "word": {
+    "lemma": "scrutiny",
+    "pos": "noun",
+    "he": "בדיקה קפדנית",
+    "example": "The new medicine is under close scrutiny before it reaches pharmacies."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.85,
+   "prompt": "בדיקה קפדנית וביקורתית",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "scrutiny",
+    "examination",
+    "inspection"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות s",
+     "en": "It starts with s"
+    },
+    {
+     "he": "יש בה 8 אותיות.",
+     "en": "It has 8 letters."
+    }
+   ],
+   "explanation": {
+    "he": "בדיקה קפדנית באנגלית: scrutiny. דוגמה: The new medicine is under close scrutiny before it reaches pharmacies.",
+    "en": "The word is scrutiny (careful and critical examination). Example: The new medicine is under close scrutiny before it reaches pharmacies."
+   },
+   "tags": [
+    "vocabulary",
+    "noun",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.scrutiny",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:scrutiny",
+   "word": {
+    "lemma": "scrutiny",
+    "pos": "noun",
+    "he": "בדיקה קפדנית",
+    "example": "The new medicine is under close scrutiny before it reaches pharmacies."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.7,
+   "prompt": "Before the election, every word the candidates said came under public ___.",
+   "audioText": "Before the election, every word the candidates said came under public scrutiny.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "scrutiny"
+    },
+    {
+     "id": "b",
+     "text": "security"
+    },
+    {
+     "id": "c",
+     "text": "sympathy"
+    },
+    {
+     "id": "d",
+     "text": "surplus"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "הציבור בדק כל מילה של המועמדים.",
+     "en": "The public checked every word the candidates said."
+    }
+   ],
+   "explanation": {
+    "he": "come under scrutiny = לעמוד לבדיקה קפדנית. security = ביטחון, sympathy = אהדה, surplus = עודף.",
+    "en": "When people examine something very carefully, it comes under scrutiny."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.hinder",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:hinder",
+   "word": {
+    "lemma": "hinder",
+    "pos": "verb",
+    "he": "לעכב, להפריע",
+    "example": "Heavy snow hindered the rescue teams."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.45,
+   "prompt": "hinder",
+   "audioText": "hinder",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "לעכב, להפריע"
+    },
+    {
+     "id": "b",
+     "text": "להסתיר"
+    },
+    {
+     "id": "c",
+     "text": "לעזור"
+    },
+    {
+     "id": "d",
+     "text": "לרמוז"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: Heavy snow hindered the rescue teams.",
+     "en": "Look at it in a sentence: Heavy snow hindered the rescue teams."
+    }
+   ],
+   "explanation": {
+    "he": "hinder פירושה לעכב, להפריע. דוגמה: Heavy snow hindered the rescue teams.",
+    "en": "hinder means make something harder to do. Example: Heavy snow hindered the rescue teams."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.hinder",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:hinder",
+   "word": {
+    "lemma": "hinder",
+    "pos": "verb",
+    "he": "לעכב, להפריע",
+    "example": "Heavy snow hindered the rescue teams."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.8,
+   "prompt": "לעכב, להפריע להתקדמות",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "hinder",
+    "hamper",
+    "impede",
+    "obstruct",
+    "delay"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות h",
+     "en": "It starts with h"
+    },
+    {
+     "he": "יש בה 6 אותיות.",
+     "en": "It has 6 letters."
+    }
+   ],
+   "explanation": {
+    "he": "לעכב, להפריע באנגלית: hinder. דוגמה: Heavy snow hindered the rescue teams.",
+    "en": "The word is hinder (make something harder to do). Example: Heavy snow hindered the rescue teams."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.hinder",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:hinder",
+   "word": {
+    "lemma": "hinder",
+    "pos": "verb",
+    "he": "לעכב, להפריע",
+    "example": "Heavy snow hindered the rescue teams."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.5,
+   "prompt": "Strong winds ___ the firefighters' efforts to put out the fire.",
+   "audioText": "Strong winds hindered the firefighters' efforts to put out the fire.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "hindered"
+    },
+    {
+     "id": "b",
+     "text": "hinted"
+    },
+    {
+     "id": "c",
+     "text": "hired"
+    },
+    {
+     "id": "d",
+     "text": "honored"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "מה רוח חזקה עושה לכבאים שמנסים לכבות אש?",
+     "en": "What do strong winds do to firefighters' work?"
+    }
+   ],
+   "explanation": {
+    "he": "hinder = לעכב, להקשות. hint = לרמוז, hire = להעסיק, honor = לכבד.",
+    "en": "Strong winds made the work harder: they hindered it."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.arbitrary",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:arbitrary",
+   "word": {
+    "lemma": "arbitrary",
+    "pos": "adjective",
+    "he": "שרירותי",
+    "example": "The rule seemed arbitrary: nobody could explain why it existed."
+   },
+   "interests": [
+    "school"
+   ],
+   "source": "original",
+   "difficulty": 0.5,
+   "prompt": "arbitrary",
+   "audioText": "arbitrary",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "שרירותי"
+    },
+    {
+     "id": "b",
+     "text": "מסורתי"
+    },
+    {
+     "id": "c",
+     "text": "חובה"
+    },
+    {
+     "id": "d",
+     "text": "זמני"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: The rule seemed arbitrary: nobody could explain why it existed.",
+     "en": "Look at it in a sentence: The rule seemed arbitrary: nobody could explain why it existed."
+    }
+   ],
+   "explanation": {
+    "he": "arbitrary פירושה שרירותי. דוגמה: The rule seemed arbitrary: nobody could explain why it existed.",
+    "en": "arbitrary means not based on a reason or system. Example: The rule seemed arbitrary: nobody could explain why it existed."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.arbitrary",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:arbitrary",
+   "word": {
+    "lemma": "arbitrary",
+    "pos": "adjective",
+    "he": "שרירותי",
+    "example": "The rule seemed arbitrary: nobody could explain why it existed."
+   },
+   "interests": [
+    "school"
+   ],
+   "source": "original",
+   "difficulty": 0.8,
+   "prompt": "שרירותי (בלי סיבה הגיונית)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "arbitrary",
+    "random"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות a",
+     "en": "It starts with a"
+    },
+    {
+     "he": "יש בה 9 אותיות.",
+     "en": "It has 9 letters."
+    }
+   ],
+   "explanation": {
+    "he": "שרירותי באנגלית: arbitrary. דוגמה: The rule seemed arbitrary: nobody could explain why it existed.",
+    "en": "The word is arbitrary (not based on a reason or system). Example: The rule seemed arbitrary: nobody could explain why it existed."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.arbitrary",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:arbitrary",
+   "word": {
+    "lemma": "arbitrary",
+    "pos": "adjective",
+    "he": "שרירותי",
+    "example": "The rule seemed arbitrary: nobody could explain why it existed."
+   },
+   "interests": [
+    "school"
+   ],
+   "source": "original",
+   "difficulty": 0.65,
+   "prompt": "The choice of who went first was ___: the teacher just pointed at someone without any reason.",
+   "audioText": "The choice of who went first was arbitrary: the teacher just pointed at someone without any reason.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "arbitrary"
+    },
+    {
+     "id": "b",
+     "text": "deliberate"
+    },
+    {
+     "id": "c",
+     "text": "mutual"
+    },
+    {
+     "id": "d",
+     "text": "vulnerable"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "without any reason: איך נבחר מי ראשון?",
+     "en": "without any reason: how was the first person chosen?"
+    }
+   ],
+   "explanation": {
+    "he": "arbitrary = שרירותי, בלי סיבה או שיטה. deliberate = מכוון, בכוונה, וזה ההפך. mutual = הדדי, vulnerable = פגיע.",
+    "en": "A choice made without any reason is arbitrary. deliberate is the opposite."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.coherent",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:coherent",
+   "word": {
+    "lemma": "coherent",
+    "pos": "adjective",
+    "he": "קוהרנטי, הגיוני ומסודר",
+    "example": "Her essay was coherent: each paragraph led clearly to the next."
+   },
+   "interests": [
+    "school"
+   ],
+   "source": "original",
+   "difficulty": 0.4,
+   "prompt": "coherent",
+   "audioText": "coherent",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "הגיוני ומסודר"
+    },
+    {
+     "id": "b",
+     "text": "מבולבל"
+    },
+    {
+     "id": "c",
+     "text": "ארוך מדי"
+    },
+    {
+     "id": "d",
+     "text": "נועז"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: Her essay was coherent: each paragraph led clearly to the next.",
+     "en": "Look at it in a sentence: Her essay was coherent: each paragraph led clearly to the next."
+    }
+   ],
+   "explanation": {
+    "he": "coherent פירושה קוהרנטי, הגיוני ומסודר. דוגמה: Her essay was coherent: each paragraph led clearly to the next.",
+    "en": "coherent means logical and easy to follow. Example: Her essay was coherent: each paragraph led clearly to the next."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.coherent",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:coherent",
+   "word": {
+    "lemma": "coherent",
+    "pos": "adjective",
+    "he": "קוהרנטי, הגיוני ומסודר",
+    "example": "Her essay was coherent: each paragraph led clearly to the next."
+   },
+   "interests": [
+    "school"
+   ],
+   "source": "original",
+   "difficulty": 0.75,
+   "prompt": "קוהרנטי, מאורגן בהיגיון וקל להבנה",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "coherent",
+    "logical"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות c",
+     "en": "It starts with c"
+    },
+    {
+     "he": "יש בה 8 אותיות.",
+     "en": "It has 8 letters."
+    }
+   ],
+   "explanation": {
+    "he": "קוהרנטי, הגיוני ומסודר באנגלית: coherent. דוגמה: Her essay was coherent: each paragraph led clearly to the next.",
+    "en": "The word is coherent (logical and easy to follow). Example: Her essay was coherent: each paragraph led clearly to the next."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.coherent",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:coherent",
+   "word": {
+    "lemma": "coherent",
+    "pos": "adjective",
+    "he": "קוהרנטי, הגיוני ומסודר",
+    "example": "Her essay was coherent: each paragraph led clearly to the next."
+   },
+   "interests": [
+    "school"
+   ],
+   "source": "original",
+   "difficulty": 0.55,
+   "prompt": "He was so tired that he couldn't give a ___ answer. His words made no sense.",
+   "audioText": "He was so tired that he couldn't give a coherent answer. His words made no sense.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "coherent"
+    },
+    {
+     "id": "b",
+     "text": "curious"
+    },
+    {
+     "id": "c",
+     "text": "generous"
+    },
+    {
+     "id": "d",
+     "text": "hostile"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "his words made no sense: מה חסר בתשובה?",
+     "en": "His words made no sense. What was missing from the answer?"
+    }
+   ],
+   "explanation": {
+    "he": "coherent = הגיוני ומסודר, שאפשר להבין. curious = סקרן, generous = נדיב, hostile = עוין.",
+    "en": "An answer that makes sense is coherent."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.alleviate",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:alleviate",
+   "word": {
+    "lemma": "alleviate",
+    "pos": "verb",
+    "he": "להקל על",
+    "example": "This medicine helps alleviate headaches."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.55,
+   "prompt": "alleviate",
+   "audioText": "alleviate",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "להקל על"
+    },
+    {
+     "id": "b",
+     "text": "להחמיר"
+    },
+    {
+     "id": "c",
+     "text": "להרים למעלה"
+    },
+    {
+     "id": "d",
+     "text": "לאבחן"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: This medicine helps alleviate headaches.",
+     "en": "Look at it in a sentence: This medicine helps alleviate headaches."
+    }
+   ],
+   "explanation": {
+    "he": "alleviate פירושה להקל על. דוגמה: This medicine helps alleviate headaches. לא להתבלבל עם elevate = להרים, להגביה.",
+    "en": "alleviate means make a problem or pain less severe. Example: This medicine helps alleviate headaches."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.alleviate",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:alleviate",
+   "word": {
+    "lemma": "alleviate",
+    "pos": "verb",
+    "he": "להקל על",
+    "example": "This medicine helps alleviate headaches."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.8,
+   "prompt": "להקל על (כאב, סבל, בעיה)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "alleviate",
+    "relieve",
+    "ease"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות a",
+     "en": "It starts with a"
+    },
+    {
+     "he": "יש בה 9 אותיות.",
+     "en": "It has 9 letters."
+    }
+   ],
+   "explanation": {
+    "he": "להקל על באנגלית: alleviate. דוגמה: This medicine helps alleviate headaches.",
+    "en": "The word is alleviate (make a problem or pain less severe). Example: This medicine helps alleviate headaches."
+   },
+   "tags": [
+    "vocabulary",
+    "verb",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.alleviate",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:alleviate",
+   "word": {
+    "lemma": "alleviate",
+    "pos": "verb",
+    "he": "להקל על",
+    "example": "This medicine helps alleviate headaches."
+   },
+   "interests": [],
+   "source": "original",
+   "difficulty": 0.6,
+   "prompt": "The city built new roads to ___ traffic jams in the center.",
+   "audioText": "The city built new roads to alleviate traffic jams in the center.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "alleviate"
+    },
+    {
+     "id": "b",
+     "text": "accelerate"
+    },
+    {
+     "id": "c",
+     "text": "appreciate"
+    },
+    {
+     "id": "d",
+     "text": "associate"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "למה עירייה בונה כבישים חדשים? כדי שיהיו פחות פקקים.",
+     "en": "Why build new roads? So there are fewer traffic jams."
+    }
+   ],
+   "explanation": {
+    "he": "alleviate = להקל, להפחית בעיה. accelerate = להאיץ, appreciate = להעריך, associate = לקשר.",
+    "en": "New roads make traffic jams less bad: they alleviate them."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.prevalent",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:prevalent",
+   "word": {
+    "lemma": "prevalent",
+    "pos": "adjective",
+    "he": "נפוץ, רווח",
+    "example": "Sleep problems are prevalent among teenagers who use screens late at night."
+   },
+   "interests": [
+    "science"
+   ],
+   "source": "original",
+   "difficulty": 0.5,
+   "prompt": "prevalent",
+   "audioText": "prevalent",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "נפוץ"
+    },
+    {
+     "id": "b",
+     "text": "מונע"
+    },
+    {
+     "id": "c",
+     "text": "נדיר"
+    },
+    {
+     "id": "d",
+     "text": "יקר"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: Sleep problems are prevalent among teenagers who use screens late at night.",
+     "en": "Look at it in a sentence: Sleep problems are prevalent among teenagers who use screens late at night."
+    }
+   ],
+   "explanation": {
+    "he": "prevalent פירושה נפוץ, רווח. דוגמה: Sleep problems are prevalent among teenagers who use screens late at night. לא להתבלבל עם prevent = למנוע.",
+    "en": "prevalent means common in a place or group. Example: Sleep problems are prevalent among teenagers who use screens late at night."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.prevalent",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:prevalent",
+   "word": {
+    "lemma": "prevalent",
+    "pos": "adjective",
+    "he": "נפוץ, רווח",
+    "example": "Sleep problems are prevalent among teenagers who use screens late at night."
+   },
+   "interests": [
+    "science"
+   ],
+   "source": "original",
+   "difficulty": 0.75,
+   "prompt": "נפוץ, רווח (בקרב קבוצה או במקום)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "prevalent",
+    "common",
+    "widespread",
+    "prevailing"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות p",
+     "en": "It starts with p"
+    },
+    {
+     "he": "יש בה 9 אותיות.",
+     "en": "It has 9 letters."
+    }
+   ],
+   "explanation": {
+    "he": "נפוץ, רווח באנגלית: prevalent. דוגמה: Sleep problems are prevalent among teenagers who use screens late at night.",
+    "en": "The word is prevalent (common in a place or group). Example: Sleep problems are prevalent among teenagers who use screens late at night."
+   },
+   "tags": [
+    "vocabulary",
+    "adjective",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.prevalent",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:prevalent",
+   "word": {
+    "lemma": "prevalent",
+    "pos": "adjective",
+    "he": "נפוץ, רווח",
+    "example": "Sleep problems are prevalent among teenagers who use screens late at night."
+   },
+   "interests": [
+    "science"
+   ],
+   "source": "original",
+   "difficulty": 0.5,
+   "prompt": "This disease is more ___ in hot countries, where there are many mosquitoes.",
+   "audioText": "This disease is more prevalent in hot countries, where there are many mosquitoes.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "prevalent"
+    },
+    {
+     "id": "b",
+     "text": "previous"
+    },
+    {
+     "id": "c",
+     "text": "precious"
+    },
+    {
+     "id": "d",
+     "text": "polite"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "הרבה יתושים: איפה המחלה מופיעה יותר?",
+     "en": "Many mosquitoes: where does the disease appear more?"
+    }
+   ],
+   "explanation": {
+    "he": "prevalent = נפוץ. previous = קודם, precious = יקר ערך, polite = מנומס.",
+    "en": "Something that exists widely in a place or group is prevalent."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  },
+  {
+   "id": "vg1.meaning.incentive",
+   "type": "choice",
+   "skill": "vocabulary.meaning",
+   "level": "C1",
+   "unit": "word:incentive",
+   "word": {
+    "lemma": "incentive",
+    "pos": "noun",
+    "he": "תמריץ",
+    "example": "Free pizza was a good incentive for students to stay after school."
+   },
+   "interests": [
+    "technology"
+   ],
+   "source": "original",
+   "difficulty": 0.3,
+   "prompt": "incentive",
+   "audioText": "incentive",
+   "promptLanguage": "en",
+   "instruction": {
+    "he": "מה פירוש המילה?",
+    "en": "What does this word mean?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "תמריץ"
+    },
+    {
+     "id": "b",
+     "text": "המצאה"
+    },
+    {
+     "id": "c",
+     "text": "תקרית"
+    },
+    {
+     "id": "d",
+     "text": "עלבון"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "המילה במשפט: Free pizza was a good incentive for students to stay after school.",
+     "en": "Look at it in a sentence: Free pizza was a good incentive for students to stay after school."
+    }
+   ],
+   "explanation": {
+    "he": "incentive פירושה תמריץ. דוגמה: Free pizza was a good incentive for students to stay after school. לא להתבלבל עם incident = תקרית.",
+    "en": "incentive means something that encourages you to act. Example: Free pizza was a good incentive for students to stay after school."
+   },
+   "tags": [
+    "vocabulary",
+    "noun",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 12
+  },
+  {
+   "id": "vg1.recall.incentive",
+   "type": "typed",
+   "skill": "vocabulary.recall",
+   "level": "C1",
+   "unit": "word:incentive",
+   "word": {
+    "lemma": "incentive",
+    "pos": "noun",
+    "he": "תמריץ",
+    "example": "Free pizza was a good incentive for students to stay after school."
+   },
+   "interests": [
+    "technology"
+   ],
+   "source": "original",
+   "difficulty": 0.6,
+   "prompt": "תמריץ (משהו שמעודד לעשות משהו)",
+   "promptLanguage": "he",
+   "instruction": {
+    "he": "איך אומרים באנגלית?",
+    "en": "How do you say it in English?"
+   },
+   "answers": [
+    "incentive",
+    "inducement",
+    "motivation"
+   ],
+   "hints": [
+    {
+     "he": "המילה מתחילה באות i",
+     "en": "It starts with i"
+    },
+    {
+     "he": "יש בה 9 אותיות.",
+     "en": "It has 9 letters."
+    }
+   ],
+   "explanation": {
+    "he": "תמריץ באנגלית: incentive. דוגמה: Free pizza was a good incentive for students to stay after school.",
+    "en": "The word is incentive (something that encourages you to act). Example: Free pizza was a good incentive for students to stay after school."
+   },
+   "tags": [
+    "vocabulary",
+    "noun",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20,
+   "alsoSkills": [
+    {
+     "id": "writing.spelling",
+     "weight": 0.4
+    }
+   ]
+  },
+  {
+   "id": "vg1.context.incentive",
+   "type": "choice",
+   "skill": "vocabulary.context",
+   "level": "C1",
+   "unit": "word:incentive",
+   "word": {
+    "lemma": "incentive",
+    "pos": "noun",
+    "he": "תמריץ",
+    "example": "Free pizza was a good incentive for students to stay after school."
+   },
+   "interests": [
+    "technology"
+   ],
+   "source": "original",
+   "difficulty": 0.45,
+   "prompt": "The company offers a bonus as an ___ for workers to finish projects early.",
+   "audioText": "The company offers a bonus as an incentive for workers to finish projects early.",
+   "instruction": {
+    "he": "איזו מילה מתאימה למשפט?",
+    "en": "Which word fits the sentence?"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "incentive"
+    },
+    {
+     "id": "b",
+     "text": "incident"
+    },
+    {
+     "id": "c",
+     "text": "insult"
+    },
+    {
+     "id": "d",
+     "text": "index"
+    }
+   ],
+   "correctOptionId": "a",
+   "hints": [
+    {
+     "he": "בונוס למי שמסיים מוקדם: מה תפקידו?",
+     "en": "A bonus for finishing early: what is its job?"
+    }
+   ],
+   "explanation": {
+    "he": "incentive = תמריץ, משהו שמעודד לפעול. incident = תקרית, insult = עלבון, index = מפתח, אינדקס.",
+    "en": "A bonus that encourages workers is an incentive."
+   },
+   "tags": [
+    "vocabulary",
+    "context",
+    "bagrut"
+   ],
+   "estimatedTimeSec": 20
+  }
+ ],
+ "passages": [],
+ "lessons": []
+}

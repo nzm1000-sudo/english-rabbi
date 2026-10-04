@@ -1,0 +1,86 @@
+[
+  {
+    "id": "conditionals.type-mix",
+    "skill": "grammar.conditionals",
+    "note": {
+      "he": "מערבב/ת סוגי תנאי (if + הווה עם would, או if + עבר עם will)",
+      "en": "Mixes conditional types (if + present with would, if + past with will)"
+    },
+    "tip": {
+      "he": "שני החלקים צריכים להתאים: if + הווה → will. if + עבר → would. if + had + V3 → would have + V3.",
+      "en": "Match the two parts: if + present → will; if + past → would; if + had + V3 → would have + V3."
+    }
+  },
+  {
+    "id": "wish.would-self",
+    "skill": "grammar.wish",
+    "note": {
+      "he": "משתמש/ת ב־wish + would על עצמו/ה (I wish I would have)",
+      "en": "Uses wish + would about oneself (I wish I would have)"
+    },
+    "tip": {
+      "he": "wish + would רק כשרוצים שמישהו אחר או משהו אחר ישתנה. על עצמי: I wish I had / could.",
+      "en": "wish + would is for other people or things changing. About yourself: I wish I had / could."
+    }
+  },
+  {
+    "id": "wish.hope-wish",
+    "skill": "grammar.wish",
+    "note": {
+      "he": "משתמש/ת ב־wish לאיחול אמיתי לעתיד במקום hope",
+      "en": "Uses wish for a real hope about the future instead of hope"
+    },
+    "tip": {
+      "he": "משהו אפשרי: hope + הווה (I hope you win). משהו לא מציאותי: wish + עבר (I wish I were taller).",
+      "en": "Possible: hope + present. Unreal: wish + past."
+    }
+  },
+  {
+    "id": "modals.deduction-certainty",
+    "skill": "grammar.modals.deduction",
+    "note": {
+      "he": "מתבלבל/ת בין must (בטוח) ל־might (אולי)",
+      "en": "Confuses must (sure) and might (maybe)"
+    },
+    "tip": {
+      "he": "must = בטוח שכן. can't = בטוח שלא. might / may / could = אולי.",
+      "en": "must = sure it's true; can't = sure it isn't; might / may / could = maybe."
+    }
+  },
+  {
+    "id": "question-tags.pronoun",
+    "skill": "grammar.question-tags",
+    "note": {
+      "he": "חוזר/ת על השם או בוחר/ת כינוי לא נכון ב־tag (isn't this, doesn't Maya)",
+      "en": "Repeats the noun or uses the wrong pronoun in the tag (isn't this, doesn't Maya)"
+    },
+    "tip": {
+      "he": "ב־tag תמיד כינוי גוף: Maya → she, this → it, There is → isn't there.",
+      "en": "The tag always uses a pronoun: Maya → she, this → it, There is → isn't there."
+    }
+  },
+  {
+    "id": "reported.time-words",
+    "skill": "grammar.reported-speech",
+    "note": {
+      "he": "משאיר/ה מילות זמן כמו tomorrow ו־tonight בדיווח על העבר",
+      "en": "Keeps time words like tomorrow and tonight when reporting the past"
+    },
+    "tip": {
+      "he": "tomorrow → the next day, tonight → that night, yesterday → the day before.",
+      "en": "tomorrow → the next day, tonight → that night, yesterday → the day before."
+    }
+  },
+  {
+    "id": "reported.command-form",
+    "skill": "grammar.reported-speech",
+    "note": {
+      "he": "מדווח/ת ציווי בלי to (told us don't, asked us close)",
+      "en": "Reports a command without to (told us don't, asked us close)"
+    },
+    "tip": {
+      "he": "ציווי ובקשה: told / asked + מישהו + (not) to + פועל.",
+      "en": "Commands and requests: told / asked + person + (not) to + verb."
+    }
+  }
+]

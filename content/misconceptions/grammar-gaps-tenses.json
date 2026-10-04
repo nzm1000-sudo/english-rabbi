@@ -1,0 +1,38 @@
+[
+  {
+    "id": "past-simple.ago-before",
+    "skill": "grammar.past-simple",
+    "note": {
+      "he": "משתמש/ת ב־before במקום ago (two days before), כמו \"לפני\" בעברית",
+      "en": "Uses before instead of ago (two days before), like Hebrew לפני"
+    },
+    "tip": {
+      "he": "כשסופרים אחורה מעכשיו: משך זמן + ago. two days ago = לפני יומיים.",
+      "en": "Counting back from now: length of time + ago. two days ago."
+    }
+  },
+  {
+    "id": "plurals.spelling",
+    "skill": "grammar.plurals",
+    "note": {
+      "he": "מוסיף/ה רק s כשהאיות משתנה ברבים (babys, boxs, leafs)",
+      "en": "Adds only -s when the plural spelling changes (babys, boxs, leafs)"
+    },
+    "tip": {
+      "he": "עיצור + y = ies (babies). אחרי s, sh, ch, x = es (boxes). הרבה מילים עם f = ves (leaves).",
+      "en": "consonant + y = -ies (babies). After s, sh, ch, x = -es (boxes). Many f words = -ves (leaves)."
+    }
+  },
+  {
+    "id": "adverbs.hard-hardly",
+    "skill": "grammar.adverbs",
+    "note": {
+      "he": "מבלבל/ת בין hard ו־hardly, או בין late ו־lately",
+      "en": "Confuses hard and hardly, or late and lately"
+    },
+    "tip": {
+      "he": "hard = במאמץ, hardly = כמעט לא. late = מאוחר, lately = לאחרונה.",
+      "en": "hard = with effort, hardly = almost not. late = not on time, lately = recently."
+    }
+  }
+]
