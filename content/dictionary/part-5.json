@@ -23,6 +23,18 @@
    "he": "שנות ה־80"
   }
  ],
+ "9th": [
+  {
+   "lemma": "9th",
+   "he": "התשיעית"
+  }
+ ],
+ "abbasid": [
+  {
+   "lemma": "Abbasid",
+   "he": "עבאסי (שושלת מוסלמית)"
+  }
+ ],
  "achievement": [
   {
    "lemma": "achievement",
@@ -123,6 +135,12 @@
    "he": "של אמיר (שם)"
   }
  ],
+ "antiquities": [
+  {
+   "lemma": "antiquity",
+   "he": "עתיקות"
+  }
+ ],
  "appointment": [
   {
    "lemma": "appointment",
@@ -183,6 +201,18 @@
    "he": "לסייע, לעזור"
   }
  ],
+ "attached": [
+  {
+   "lemma": "attach",
+   "he": "חיבר, הצמיד"
+  }
+ ],
+ "authority": [
+  {
+   "lemma": "authority",
+   "he": "רשות"
+  }
+ ],
  "autumn": [
   {
    "lemma": "autumn",
@@ -205,6 +235,12 @@
   {
    "lemma": "Ayelet",
    "he": "איילת (שם)"
+  }
+ ],
+ "azrieli": [
+  {
+   "lemma": "Azrieli",
+   "he": "עזריאלי (מגדלי עזריאלי)"
   }
  ],
  "bagrut": [
@@ -349,6 +385,12 @@
    "he": "בנאים, פועלי בניין"
   }
  ],
+ "buried": [
+  {
+   "lemma": "bury",
+   "he": "קבר, הטמין באדמה"
+  }
+ ],
  "burned": [
   {
    "lemma": "burn",
@@ -373,6 +415,12 @@
    "he": "זמזם"
   }
  ],
+ "byzantine": [
+  {
+   "lemma": "Byzantine",
+   "he": "ביזנטי"
+  }
+ ],
  "caesarea": [
   {
    "lemma": "Caesarea",
@@ -389,6 +437,12 @@
   {
    "lemma": "candidate",
    "he": "מועמדים"
+  }
+ ],
+ "capital": [
+  {
+   "lemma": "capital",
+   "he": "עיר בירה"
   }
  ],
  "case": [
@@ -417,6 +471,24 @@
   {
    "lemma": "cave",
    "he": "מערות"
+  }
+ ],
+ "ce": [
+  {
+   "lemma": "CE",
+   "he": "לספירה"
+  }
+ ],
+ "central": [
+  {
+   "lemma": "central",
+   "he": "מרכזי"
+  }
+ ],
+ "century": [
+  {
+   "lemma": "century",
+   "he": "מאה"
   }
  ],
  "chain": [
@@ -503,6 +575,12 @@
    "he": "התנגשויות"
   }
  ],
+ "colony": [
+  {
+   "lemma": "colony",
+   "he": "מושבה (קבוצת בעלי חיים שחיים יחד)"
+  }
+ ],
  "column": [
   {
    "lemma": "column",
@@ -537,6 +615,12 @@
    "he": "לפצות"
   }
  ],
+ "complete": [
+  {
+   "lemma": "complete",
+   "he": "שלם"
+  }
+ ],
  "conceal": [
   {
    "lemma": "conceal",
@@ -553,6 +637,12 @@
   {
    "lemma": "connection",
    "he": "חיבור"
+  }
+ ],
+ "constantinople": [
+  {
+   "lemma": "Constantinople",
+   "he": "קונסטנטינופול"
   }
  ],
  "cool": [
@@ -671,6 +761,12 @@
    "he": "כיוון"
   }
  ],
+ "directors": [
+  {
+   "lemma": "director",
+   "he": "מנהלים"
+  }
+ ],
  "directs": [
   {
    "lemma": "direct",
@@ -743,6 +839,18 @@
    "he": "אפרת (שם)"
   }
  ],
+ "egypt": [
+  {
+   "lemma": "Egypt",
+   "he": "מצרים"
+  }
+ ],
+ "egyptian": [
+  {
+   "lemma": "Egyptian",
+   "he": "מצרי"
+  }
+ ],
  "eitan": [
   {
    "lemma": "Eitan",
@@ -767,6 +875,12 @@
    "he": "פיל"
   }
  ],
+ "elie": [
+  {
+   "lemma": "Elie",
+   "he": "אלי (שם פרטי)"
+  }
+ ],
  "ella": [
   {
    "lemma": "Ella",
@@ -777,6 +891,12 @@
   {
    "lemma": "embarrassed",
    "he": "נבוך"
+  }
+ ],
+ "emperor": [
+  {
+   "lemma": "emperor",
+   "he": "קיסר"
   }
  ],
  "energy": [
@@ -809,6 +929,12 @@
    "he": "בדק"
   }
  ],
+ "excavated": [
+  {
+   "lemma": "excavate",
+   "he": "חפר"
+  }
+ ],
  "excavation": [
   {
    "lemma": "excavation",
@@ -837,6 +963,12 @@
   {
    "lemma": "expert",
    "he": "מומחים"
+  }
+ ],
+ "expressed": [
+  {
+   "lemma": "express",
+   "he": "הביע"
   }
  ],
  "extra": [
@@ -997,6 +1129,12 @@
    "he": "זועם"
   }
  ],
+ "fustat": [
+  {
+   "lemma": "Fustat",
+   "he": "פוסטאט (עיר עתיקה במצרים)"
+  }
+ ],
  "g": [
   {
    "lemma": "G",
@@ -1057,6 +1195,18 @@
    "he": "הגולן"
   }
  ],
+ "gps": [
+  {
+   "lemma": "GPS",
+   "he": "ג'י־פי־אס (מערכת איתור)"
+  }
+ ],
+ "grams": [
+  {
+   "lemma": "gram",
+   "he": "גרמים"
+  }
+ ],
  "graphics": [
   {
    "lemma": "graphics",
@@ -1091,6 +1241,12 @@
   {
    "lemma": "heal",
    "he": "להחלים, להירפא"
+  }
+ ],
+ "hidden": [
+  {
+   "lemma": "hide",
+   "he": "הוסתר"
   }
  ],
  "hides": [
@@ -1135,6 +1291,12 @@
    "he": "עוין"
   }
  ],
+ "human": [
+  {
+   "lemma": "human",
+   "he": "אנושי, בן אדם"
+  }
+ ],
  "humans": [
   {
    "lemma": "human",
@@ -1151,6 +1313,12 @@
   {
    "lemma": "hummus",
    "he": "חומוס"
+  }
+ ],
+ "iaa": [
+  {
+   "lemma": "IAA",
+   "he": "רשות העתיקות"
   }
  ],
  "iceberg": [
@@ -1263,6 +1431,12 @@
    "he": "יפני"
   }
  ],
+ "journal": [
+  {
+   "lemma": "journal",
+   "he": "כתב עת"
+  }
+ ],
  "journey": [
   {
    "lemma": "journey",
@@ -1273,6 +1447,12 @@
   {
    "lemma": "Judean",
    "he": "יהודה (מדבר יהודה)"
+  }
+ ],
+ "july": [
+  {
+   "lemma": "July",
+   "he": "יולי"
   }
  ],
  "june": [
@@ -1311,6 +1491,12 @@
    "he": "הכנרת"
   }
  ],
+ "kool": [
+  {
+   "lemma": "Kool",
+   "he": "קול (שם משפחה)"
+  }
+ ],
  "lamp": [
   {
    "lemma": "lamp",
@@ -1321,6 +1507,12 @@
   {
    "lemma": "lamp",
    "he": "מנורות"
+  }
+ ],
+ "landmarks": [
+  {
+   "lemma": "landmark",
+   "he": "נקודות ציון"
   }
  ],
  "laser": [
@@ -1357,6 +1549,12 @@
    "he": "רמות"
   }
  ],
+ "liat": [
+  {
+   "lemma": "Liat",
+   "he": "ליאת (שם פרטי)"
+  }
+ ],
  "lie": [
   {
    "lemma": "lie",
@@ -1389,6 +1587,12 @@
   {
    "lemma": "loyal",
    "he": "נאמן"
+  }
+ ],
+ "luxurious": [
+  {
+   "lemma": "luxurious",
+   "he": "מפואר, יוקרתי"
   }
  ],
  "magic": [
@@ -1485,6 +1689,18 @@
    "he": "שרירים"
   }
  ],
+ "mystery": [
+  {
+   "lemma": "mystery",
+   "he": "תעלומה"
+  }
+ ],
+ "nadav-ziv": [
+  {
+   "lemma": "Nadav-Ziv",
+   "he": "נדב־זיו (שם משפחה)"
+  }
+ ],
  "nations": [
   {
    "lemma": "nation",
@@ -1501,6 +1717,12 @@
   {
    "lemma": "Negev",
    "he": "הנגב"
+  }
+ ],
+ "neighbourhoods": [
+  {
+   "lemma": "neighbourhood",
+   "he": "שכונות"
   }
  ],
  "neta": [
@@ -1669,6 +1891,12 @@
    "he": "להופיע"
   }
  ],
+ "period": [
+  {
+   "lemma": "period",
+   "he": "תקופה"
+  }
+ ],
  "pharmacist": [
   {
    "lemma": "pharmacist",
@@ -1741,6 +1969,12 @@
    "he": "נפוץ, רווח"
   }
  ],
+ "previously": [
+  {
+   "lemma": "previously",
+   "he": "בעבר, קודם לכן"
+  }
+ ],
  "principal": [
   {
    "lemma": "principal",
@@ -1757,6 +1991,18 @@
   {
    "lemma": "produce",
    "he": "ייצר"
+  }
+ ],
+ "prof": [
+  {
+   "lemma": "Prof.",
+   "he": "פרופסור (פרופ')"
+  }
+ ],
+ "program": [
+  {
+   "lemma": "program",
+   "he": "תוכנה, תוכנית"
   }
  ],
  "properly": [
@@ -1781,6 +2027,12 @@
   {
    "lemma": "purchase",
    "he": "לרכוש, לקנות"
+  }
+ ],
+ "pure": [
+  {
+   "lemma": "pure",
+   "he": "טהור"
   }
  ],
  "purple": [
@@ -1841,6 +2093,12 @@
   {
    "lemma": "Rav-Kav",
    "he": "רב־קו"
+  }
+ ],
+ "recognise": [
+  {
+   "lemma": "recognise",
+   "he": "לזהות"
   }
  ],
  "recommend": [
@@ -1913,10 +2171,22 @@
    "he": "דו\"חות"
   }
  ],
+ "retrieve": [
+  {
+   "lemma": "retrieve",
+   "he": "להחזיר לעצמו, לקחת בחזרה"
+  }
+ ],
  "review": [
   {
    "lemma": "review",
    "he": "ביקורת (על סרט, משחק)"
+  }
+ ],
+ "robert": [
+  {
+   "lemma": "Robert",
+   "he": "רוברט (שם פרטי)"
   }
  ],
  "roi's": [
@@ -2009,6 +2279,12 @@
    "he": "בדיקה קפדנית"
   }
  ],
+ "secured": [
+  {
+   "lemma": "secure",
+   "he": "חיזק, קיבע"
+  }
+ ],
  "seems": [
   {
    "lemma": "seem",
@@ -2071,6 +2347,12 @@
   {
    "lemma": "shape",
    "he": "עיצב"
+  }
+ ],
+ "shortcuts": [
+  {
+   "lemma": "shortcut",
+   "he": "קיצורי דרך"
   }
  ],
  "shrugged": [
@@ -2249,6 +2531,12 @@
    "he": "שבא אחר כך"
   }
  ],
+ "sum": [
+  {
+   "lemma": "sum",
+   "he": "סכום"
+  }
+ ],
  "sunburn": [
   {
    "lemma": "sunburn",
@@ -2343,6 +2631,12 @@
    "he": "מונח"
   }
  ],
+ "theophilos": [
+  {
+   "lemma": "Theophilos",
+   "he": "תאופילוס (קיסר ביזנטי)"
+  }
+ ],
  "thermal": [
   {
    "lemma": "thermal",
@@ -2413,10 +2707,22 @@
    "he": "לעקוב אחרי"
   }
  ],
+ "trackers": [
+  {
+   "lemma": "tracker",
+   "he": "מכשירי מעקב"
+  }
+ ],
  "trail": [
   {
    "lemma": "trail",
    "he": "שביל"
+  }
+ ],
+ "treasure": [
+  {
+   "lemma": "treasure",
+   "he": "אוצר"
   }
  ],
  "uncovered": [
@@ -2489,6 +2795,12 @@
    "he": "עשיר"
   }
  ],
+ "weighs": [
+  {
+   "lemma": "weigh",
+   "he": "שוקל"
+  }
+ ],
  "welcome": [
   {
    "lemma": "welcome",
@@ -2541,6 +2853,12 @@
    "he": "יעל (שם)"
   }
  ],
+ "yavne": [
+  {
+   "lemma": "Yavne",
+   "he": "יבנה"
+  }
+ ],
  "yellow": [
   {
    "lemma": "yellow",
@@ -2553,10 +2871,22 @@
    "he": "יונתן (שם)"
   }
  ],
+ "yossi": [
+  {
+   "lemma": "Yossi",
+   "he": "יוסי (שם פרטי)"
+  }
+ ],
  "youth": [
   {
    "lemma": "youth",
    "he": "נוער"
+  }
+ ],
+ "yovel": [
+  {
+   "lemma": "Yovel",
+   "he": "יובל (שם משפחה)"
   }
  ]
 }

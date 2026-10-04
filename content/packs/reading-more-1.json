@@ -2065,7 +2065,7 @@
       "source": "original"
     },
     {
-      "id": "rm1.bat-scientist.1",
+      "id": "rm1.bat-researcher.1",
       "type": "choice",
       "skill": "reading.main-idea",
       "level": "B1",
@@ -2078,27 +2078,27 @@
       "options": [
         {
           "id": "a",
-          "text": "The life and work of a scientist who studied bats"
+          "text": "The research of a team that studies how fruit bats communicate and find their way"
         },
         {
           "id": "b",
-          "text": "Why people in villages are afraid of bats"
+          "text": "Why people in Tel Aviv are afraid of bats"
         },
         {
           "id": "c",
-          "text": "How to visit caves in the Judean Desert"
+          "text": "How to build a small GPS tracker at home"
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "זו ביוגרפיה. על מי היא?",
-          "en": "This is a biography. Who is it about?"
+          "he": "על מה עוסקות כל הפסקאות יחד?",
+          "en": "What are all the paragraphs about together?"
         }
       ],
       "explanation": {
-        "he": "הטקסט עוקב אחרי Leah Doron מהילדות ועד הפרישה, ומתאר את המחקר שלה על עטלפים. הפחד של השכנים והמערה הם חלקים קטנים בסיפור.",
-        "en": "The text follows Leah Doron from childhood to retirement and describes her research. The neighbours' fear and the cave are small parts of it."
+        "he": "הטקסט מתאר את הצוות של Prof. Yossi Yovel ושני מחקרים: על הקולות של עטלפים ועל הדרך שבה הם מוצאים את דרכם. אין בטקסט פחד מעטלפים, וה־GPS הוא רק כלי במחקר.",
+        "en": "The text describes Yovel's team and two studies: bat calls and how bats find their way. Fear of bats is not mentioned, and the GPS is only a tool."
       },
       "interests": [
         "animals",
@@ -2108,16 +2108,16 @@
         "bagrut"
       ],
       "estimatedTimeSec": 45,
-      "passageId": "passage.rm1-bat-scientist",
+      "passageId": "passage.rm1-bat-researcher",
       "source": "original"
     },
     {
-      "id": "rm1.bat-scientist.2",
+      "id": "rm1.bat-researcher.2",
       "type": "choice",
       "skill": "reading.sequence",
       "level": "B1",
       "difficulty": 0.5,
-      "prompt": "Which of these happened FIRST?",
+      "prompt": "In the study of bat calls, what did the team do AFTER they recorded the bats?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -2125,27 +2125,27 @@
       "options": [
         {
           "id": "a",
-          "text": "Leah served in the army."
+          "text": "They used a computer program to sort the calls."
         },
         {
           "id": "b",
-          "text": "Leah counted bats in a cave."
+          "text": "They attached GPS trackers to the bats."
         },
         {
           "id": "c",
-          "text": "Leah built a machine for listening to bats."
+          "text": "They followed the bats around the city."
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לחפש תאריכים ומילים כמו After ו־then.",
-          "en": "Look for dates and words like After and then."
+          "he": "לחפש את המילה Then בפסקה השנייה.",
+          "en": "Look for the word Then in the second paragraph."
         }
       ],
       "explanation": {
-        "he": "After finishing school, Leah served in the army, אחר כך למדה ביולוגיה, ב־1978 ספרה עטלפים במערה, ובשנות ה־80 בנתה את המכשיר.",
-        "en": "After school she served in the army, then studied, counted bats in 1978 and built the machine in the 1980s."
+        "he": "בפסקה השנייה: the team recorded 22 fruit bats... Then they used a computer program. מכשירי ה־GPS והמעקב בעיר שייכים למחקר אחר, בפסקה השלישית.",
+        "en": "The team recorded the bats, then they used a computer program. The GPS trackers and the city flights belong to a different study."
       },
       "interests": [
         "animals",
@@ -2155,16 +2155,16 @@
         "bagrut"
       ],
       "estimatedTimeSec": 45,
-      "passageId": "passage.rm1-bat-scientist",
+      "passageId": "passage.rm1-bat-researcher",
       "source": "original"
     },
     {
-      "id": "rm1.bat-scientist.3",
+      "id": "rm1.bat-researcher.3",
       "type": "choice",
       "skill": "reading.details",
       "level": "B1",
       "difficulty": 0.4,
-      "prompt": "Why do bats make very high sounds?",
+      "prompt": "What was the computer program first built to do?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -2172,27 +2172,27 @@
       "options": [
         {
           "id": "a",
-          "text": "To find food by listening for the echo"
+          "text": "Recognise human voices"
         },
         {
           "id": "b",
-          "text": "To call other bats to the cave"
+          "text": "Track bats with GPS"
         },
         {
           "id": "c",
-          "text": "To frighten people away"
+          "text": "Translate English into Hebrew"
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לקרוא את תחילת הפסקה השלישית.",
-          "en": "Read the beginning of the third paragraph."
+          "he": "לקרוא את המשפט שמתחיל ב־Then they used.",
+          "en": "Read the sentence that begins with Then they used."
         }
       ],
       "explanation": {
-        "he": "בקטע: Bats find food by making very high sounds and listening for the echo. העטלף שומע את ההד וכך מוצא חרקים. שאר התשובות לא מופיעות בקטע.",
-        "en": "The text says bats find food by making high sounds and listening for the echo. The other answers are not in the text."
+        "he": "בקטע: a computer program that was first built to recognise human voices. הצוות השתמש בתוכנה הזאת כדי למיין קולות של עטלפים. שאר התשובות לא מופיעות בקטע.",
+        "en": "The text says the program was first built to recognise human voices. The other answers are not in the text."
       },
       "interests": [
         "animals",
@@ -2202,16 +2202,16 @@
         "bagrut"
       ],
       "estimatedTimeSec": 45,
-      "passageId": "passage.rm1-bat-scientist",
+      "passageId": "passage.rm1-bat-researcher",
       "source": "original"
     },
     {
-      "id": "rm1.bat-scientist.4",
+      "id": "rm1.bat-researcher.4",
       "type": "choice",
       "skill": "reading.reference",
       "level": "B1",
       "difficulty": 0.4,
-      "prompt": "The word \"it\" in \"With it, she discovered\" refers to...",
+      "prompt": "The word \"them\" in \"attached them to 22 young bats\" refers to...",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -2219,27 +2219,27 @@
       "options": [
         {
           "id": "a",
-          "text": "the machine Leah built"
+          "text": "the very small GPS trackers"
         },
         {
           "id": "b",
-          "text": "the cave in the Judean Desert"
+          "text": "the 22 young bats"
         },
         {
           "id": "c",
-          "text": "the echo of the bat calls"
+          "text": "the people in the team"
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה Leah עשתה במשפט הקודם?",
-          "en": "What did Leah do in the sentence before?"
+          "he": "מה הצוות בנה רגע לפני כן?",
+          "en": "What did the team build just before?"
         }
       ],
       "explanation": {
-        "he": "במשפט הקודם Leah built a small machine. בעזרת המכשיר (With it) גילתה שעטלפים שונים מדברים אחרת. המערה מוזכרת בפסקה אחרת.",
-        "en": "In the sentence before, Leah built a small machine. With it, she made her discovery."
+        "he": "במשפט: the team built very small GPS trackers and attached them to 22 young bats. הצוות בנה מכשירי GPS קטנים וחיבר אותם (them) לעטלפים. העטלפים הם מי שקיבלו את המכשירים, לא them.",
+        "en": "The team built small GPS trackers and attached them to the young bats. The bats received the trackers, so them means the trackers."
       },
       "interests": [
         "animals",
@@ -2249,11 +2249,11 @@
         "bagrut"
       ],
       "estimatedTimeSec": 45,
-      "passageId": "passage.rm1-bat-scientist",
+      "passageId": "passage.rm1-bat-researcher",
       "source": "original"
     },
     {
-      "id": "rm1.bat-scientist.5",
+      "id": "rm1.bat-researcher.5",
       "type": "choice",
       "skill": "reading.fact-opinion",
       "level": "B1",
@@ -2266,31 +2266,31 @@
       "options": [
         {
           "id": "a",
-          "text": "In my view, she was one of the most important nature scientists of her generation."
+          "text": "To me, it is amazing that such a small animal can learn a whole city."
         },
         {
           "id": "b",
-          "text": "Leah Doron was born in 1951 in a small village in the Galilee."
+          "text": "The team collected about 15,000 calls."
         },
         {
           "id": "c",
-          "text": "Humans cannot hear these sounds."
+          "text": "The results were published in July 2020 in the journal Science."
         },
         {
           "id": "d",
-          "text": "Several caves were closed to visitors to protect the animals."
+          "text": "The bats used big buildings as landmarks."
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לחפש ביטוי כמו In my view.",
-          "en": "Look for a phrase like In my view."
+          "he": "לחפש ביטוי כמו To me.",
+          "en": "Look for a phrase like To me."
         }
       ],
       "explanation": {
-        "he": "In my view ו־one of the most important הם סימני דעה: זו הערכה של הכותב. שנת הלידה, העובדה שבני אדם לא שומעים את הקולות וסגירת המערות הם עובדות.",
-        "en": "In my view and one of the most important show the writer's judgement. The other sentences are facts that can be checked."
+        "he": "To me ו־amazing מראים רגש והערכה של הכותב. מספר הקולות, תאריך הפרסום והשימוש בבניינים כנקודות ציון הם עובדות שאפשר לבדוק.",
+        "en": "To me and amazing show the writer's feeling. The number of calls, the publication date and the landmarks are facts that can be checked."
       },
       "interests": [
         "animals",
@@ -2300,16 +2300,16 @@
         "bagrut"
       ],
       "estimatedTimeSec": 45,
-      "passageId": "passage.rm1-bat-scientist",
+      "passageId": "passage.rm1-bat-researcher",
       "source": "original"
     },
     {
-      "id": "rm1.bat-scientist.6",
+      "id": "rm1.bat-researcher.6",
       "type": "choice",
       "skill": "reading.purpose",
       "level": "B1",
       "difficulty": 0.5,
-      "prompt": "Why does the writer mention that a single bat can eat hundreds of insects in one night?",
+      "prompt": "Why does the writer mention the Azrieli Towers?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -2317,27 +2317,27 @@
       "options": [
         {
           "id": "a",
-          "text": "To explain how bats help farmers"
+          "text": "As an example of a landmark that helped the bats find their way"
         },
         {
           "id": "b",
-          "text": "To show that bats are dangerous animals"
+          "text": "To explain where Tel Aviv University is"
         },
         {
           "id": "c",
-          "text": "To explain why Leah's neighbours were afraid of bats"
+          "text": "To show that fruit bats sleep in tall buildings"
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לקרוא את כל המשפט. מה בא לפני because?",
-          "en": "Read the whole sentence. What comes before because?"
+          "he": "לקרוא את המשפט כולו. מה בא אחרי such as?",
+          "en": "Read the whole sentence. What comes after such as?"
         }
       ],
       "explanation": {
-        "he": "המשפט: bats help farmers, because a single bat can eat hundreds of insects. הנתון מסביר למה עטלפים מועילים לחקלאים: הם אוכלים חרקים שפוגעים ביבול. אין כאן טענה שעטלפים מסוכנים.",
-        "en": "The fact explains why bats help farmers: they eat many insects. It does not say bats are dangerous."
+        "he": "בקטע: The bats used big buildings, such as the Azrieli Towers, as landmarks. such as מציג דוגמה: המגדלים הם דוגמה לנקודת ציון. לא נאמר בקטע איפה האוניברסיטה או איפה העטלפים ישנים.",
+        "en": "such as gives an example: the towers are an example of a landmark. The text does not say where the university is or where bats sleep."
       },
       "interests": [
         "animals",
@@ -2347,16 +2347,16 @@
         "bagrut"
       ],
       "estimatedTimeSec": 45,
-      "passageId": "passage.rm1-bat-scientist",
+      "passageId": "passage.rm1-bat-researcher",
       "source": "original"
     },
     {
-      "id": "rm1.bat-scientist.7",
+      "id": "rm1.bat-researcher.7",
       "type": "choice",
       "skill": "reading.inference",
       "level": "B1",
       "difficulty": 0.7,
-      "prompt": "What did Leah probably mean by \"People fear what they don't understand\"?",
+      "prompt": "What do Yovel's words about \"get out of here!\" suggest?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -2364,27 +2364,27 @@
       "options": [
         {
           "id": "a",
-          "text": "Learning about bats can make people less afraid of them."
+          "text": "Bat calls carry more information than scientists once believed."
         },
         {
           "id": "b",
-          "text": "Bats are dangerous, so people are right to fear them."
+          "text": "All bat calls really mean \"get out of here!\""
         },
         {
           "id": "c",
-          "text": "People should not go into caves without a guide."
+          "text": "Humans will never understand bat calls."
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "להיזכר מה השכנים של Leah הרגישו כלפי עטלפים, ומה Leah רצתה לדעת.",
-          "en": "Remember how Leah's neighbours felt about bats, and what Leah wanted to know."
+          "he": "לשים לב למילים previously were thought ו־actually.",
+          "en": "Notice the words previously were thought and actually."
         }
       ],
       "explanation": {
-        "he": "השכנים פחדו מעטלפים, ו־Leah רצתה להבין אותם. היא כתבה ספרים לילדים כדי שיכירו את העטלפים. המשפט רומז שידע מקטין פחד. אין בטקסט רמז שעטלפים מסוכנים.",
-        "en": "Her neighbours feared bats, while Leah wanted to understand them, and she wrote books for children. Her words suggest that knowledge reduces fear."
+        "he": "previously were thought פירושו שבעבר חשבו כך, ו־actually מראה שהמחקר גילה משהו אחר: בקולות יש a lot of information. לכן הקולות אומרים יותר ממה שחשבו. אין בטקסט טענה שבני אדם לעולם לא יבינו אותם.",
+        "en": "previously were thought shows the old belief, and actually shows the new finding: the calls contain a lot of information. Nothing says humans will never understand them."
       },
       "interests": [
         "animals",
@@ -2394,7 +2394,7 @@
         "bagrut"
       ],
       "estimatedTimeSec": 45,
-      "passageId": "passage.rm1-bat-scientist",
+      "passageId": "passage.rm1-bat-researcher",
       "source": "original"
     },
     {
@@ -3723,7 +3723,7 @@
       "source": "original"
     },
     {
-      "id": "rm1.mosaic-volunteers.1",
+      "id": "rm1.yavne-gold.1",
       "type": "choice",
       "skill": "reading.main-idea",
       "level": "B2",
@@ -3736,15 +3736,15 @@
       "options": [
         {
           "id": "a",
-          "text": "An important discovery made by young volunteers at a dig"
+          "text": "A rare treasure of gold coins found by young volunteers at a dig"
         },
         {
           "id": "b",
-          "text": "How mosaics were made 1,600 years ago"
+          "text": "How gold coins were made 1,100 years ago"
         },
         {
           "id": "c",
-          "text": "A new museum that is opening in the Lower Galilee"
+          "text": "Daily life in the city of Fustat"
         }
       ],
       "correctOptionId": "a",
@@ -3755,22 +3755,22 @@
         }
       ],
       "explanation": {
-        "he": "הפסקה הראשונה מסכמת: מתנדבים בני נוער חשפו רצפת פסיפס עתיקה. שאר הכתבה מפרטת איך זה קרה ומה יקרה עכשיו. אין הסבר איך הכינו פסיפסים, והמוזיאון הוא רק אפשרות לעתיד.",
-        "en": "The first paragraph sums it up: teen volunteers uncovered an ancient mosaic. There is no explanation of how mosaics were made, and the museum is only a future option."
+        "he": "הפסקה הראשונה מסכמת: מתנדבים צעירים חשפו ליד יבנה אוצר של 425 מטבעות זהב. שאר הכתבה מפרטת את הממצא. אין הסבר איך הכינו מטבעות, ו־Fustat מוזכרת רק כדי להראות כמה הסכום היה גדול.",
+        "en": "The first paragraph sums it up: young volunteers uncovered 425 gold coins near Yavne. There is no explanation of how coins were made, and Fustat is only mentioned to show the value."
       },
       "interests": [
-        "school",
+        "science",
         "travel"
       ],
       "tags": [
         "bagrut"
       ],
       "estimatedTimeSec": 55,
-      "passageId": "passage.rm1-mosaic-volunteers",
+      "passageId": "passage.rm1-yavne-gold",
       "source": "original"
     },
     {
-      "id": "rm1.mosaic-volunteers.2",
+      "id": "rm1.yavne-gold.2",
       "type": "choice",
       "skill": "reading.sequence",
       "level": "B2",
@@ -3783,50 +3783,46 @@
       "options": [
         {
           "id": "a",
-          "text": "The volunteers dug at the site for two weeks."
+          "text": "Someone secured the jar with a nail."
         },
         {
           "id": "b",
-          "text": "Noam's brush touched small coloured stones."
+          "text": "A volunteer saw what looked like thin leaves."
         },
         {
           "id": "c",
-          "text": "The archaeologists stopped all other work in that area."
-        },
-        {
-          "id": "d",
-          "text": "The mosaic was covered with cloth and sand."
+          "text": "The IAA announced the find."
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לשים לב לזמן had been digging for two weeks.",
-          "en": "Notice the tense in had been digging for two weeks."
+          "he": "לשים לב לזמן had been buried.",
+          "en": "Notice the tense in had been buried."
         }
       ],
       "explanation": {
-        "he": "had been digging (Past Perfect Progressive) מראה שהחפירה נמשכה שבועיים לפני הגילוי. רק On the last Thursday המברשת נגעה באבנים, אחר כך עצרו את העבודה, ובסוף כיסו את הפסיפס.",
-        "en": "had been digging shows the two weeks of digging came before the discovery. Then the brush touched the stones, work stopped, and finally the floor was covered."
+        "he": "had been buried (Past Perfect) מראה שהמטבעות נקברו הרבה לפני הגילוי, לפני כ־1,100 שנה. אז האדם שקבר אותם חיזק את הכד במסמר. רק ב־2020 המתנדב ראה את \"העלים\", ואחר כך רשות העתיקות הודיעה על הממצא.",
+        "en": "had been buried shows the coins were hidden long before, about 1,100 years ago, when the owner secured the jar with a nail. Only in 2020 did the volunteer see the 'leaves', and then the IAA announced the find."
       },
       "interests": [
-        "school",
+        "science",
         "travel"
       ],
       "tags": [
         "bagrut"
       ],
       "estimatedTimeSec": 55,
-      "passageId": "passage.rm1-mosaic-volunteers",
+      "passageId": "passage.rm1-yavne-gold",
       "source": "original"
     },
     {
-      "id": "rm1.mosaic-volunteers.3",
+      "id": "rm1.yavne-gold.3",
       "type": "choice",
       "skill": "reading.sequence",
       "level": "B2",
       "difficulty": 0.6,
-      "prompt": "What happened right AFTER the archaeologists stopped all other work in that area?",
+      "prompt": "What happened right AFTER the volunteer saw what looked like very thin leaves?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -3834,46 +3830,46 @@
       "options": [
         {
           "id": "a",
-          "text": "The team spent four days carefully removing the soil."
+          "text": "The volunteer looked again and saw they were gold coins."
         },
         {
           "id": "b",
-          "text": "Noam saw the shape of a bird's wing."
+          "text": "The owner secured the jar with a nail."
         },
         {
           "id": "c",
-          "text": "Experts decided to move the floor to a museum."
+          "text": "Robert Kool studied the coin of Theophilos in Constantinople."
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לחפש את הביטוי Over the following four days.",
-          "en": "Look for the phrase Over the following four days."
+          "he": "לקרוא את הציטוט של המתנדב עד הסוף.",
+          "en": "Read the volunteer's quote to the end."
         }
       ],
       "explanation": {
-        "he": "Over the following four days פירושו בארבעת הימים שאחרי, כלומר מיד אחרי העצירה ניקו את האדמה בזהירות. Noam ראה את הכנף לפני כן, וההחלטה על מוזיאון עוד לא התקבלה (next year).",
-        "en": "Over the following four days, the team removed the soil. Noam saw the wing earlier, and the museum decision will only come next year."
+        "he": "בציטוט: When I looked again, I saw these were gold coins. מיד אחרי שראה \"עלים דקים\" הסתכל שוב והבין שאלה מטבעות זהב. המסמר שייך לעבר הרחוק, ו־Kool לא נסע לקונסטנטינופול.",
+        "en": "When I looked again, I saw these were gold coins. The nail belongs to the distant past, and Kool did not go to Constantinople."
       },
       "interests": [
-        "school",
+        "science",
         "travel"
       ],
       "tags": [
         "bagrut"
       ],
       "estimatedTimeSec": 55,
-      "passageId": "passage.rm1-mosaic-volunteers",
+      "passageId": "passage.rm1-yavne-gold",
       "source": "original"
     },
     {
-      "id": "rm1.mosaic-volunteers.4",
+      "id": "rm1.yavne-gold.4",
       "type": "choice",
       "skill": "reading.details",
       "level": "B2",
       "difficulty": 0.4,
-      "prompt": "Why was the mosaic covered with cloth and sand?",
+      "prompt": "What were the small pieces of gold used for?",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -3881,46 +3877,46 @@
       "options": [
         {
           "id": "a",
-          "text": "To keep it safe from sun and rain"
+          "text": "As small change"
         },
         {
           "id": "b",
-          "text": "To hide it from visitors"
+          "text": "As jewellery"
         },
         {
           "id": "c",
-          "text": "To prepare it for the move to a museum"
+          "text": "To close the clay jar"
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לחפש בפסקה החמישית את המילים to keep it.",
-          "en": "Look for the words to keep it in the fifth paragraph."
+          "he": "לחפש בפסקה השלישית את המילים were used as.",
+          "en": "Look for the words were used as in the third paragraph."
         }
       ],
       "explanation": {
-        "he": "בקטע: covered with a protective layer... to keep it safe from sun and rain. לא נאמר דבר על הסתרה ממבקרים, ועוד לא הוחלט אם להעביר אותו למוזיאון.",
-        "en": "It was covered to keep it safe from sun and rain. Hiding it is not mentioned, and no decision about a museum has been made."
+        "he": "בקטע: These pieces were used as small change, כלומר כסף קטן לקניות זולות. לא נאמר שהם שימשו כתכשיטים, והכד נסגר בעזרת מסמר ולא בעזרת חתיכות זהב.",
+        "en": "The text says the pieces were used as small change. Jewellery is not mentioned, and the nail, not the gold, held the jar in place."
       },
       "interests": [
-        "school",
+        "science",
         "travel"
       ],
       "tags": [
         "bagrut"
       ],
       "estimatedTimeSec": 55,
-      "passageId": "passage.rm1-mosaic-volunteers",
+      "passageId": "passage.rm1-yavne-gold",
       "source": "original"
     },
     {
-      "id": "rm1.mosaic-volunteers.5",
+      "id": "rm1.yavne-gold.5",
       "type": "choice",
       "skill": "reading.reference",
       "level": "B2",
       "difficulty": 0.5,
-      "prompt": "The word \"it\" in \"At first I thought it was just gravel\" refers to...",
+      "prompt": "The word \"it\" in \"must have expected to retrieve it\" refers to...",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -3928,46 +3924,46 @@
       "options": [
         {
           "id": "a",
-          "text": "the small coloured stones that Noam's brush touched"
+          "text": "the treasure"
         },
         {
           "id": "b",
-          "text": "the stone wall that Noam was cleaning"
+          "text": "the nail"
         },
         {
           "id": "c",
-          "text": "the shape of a bird's wing"
+          "text": "the city of Yavne"
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "במה המברשת של Noam נגעה רגע לפני שדיבר?",
-          "en": "What did Noam's brush touch just before he spoke?"
+          "he": "מה האדם קבר?",
+          "en": "What did the person bury?"
         }
       ],
       "explanation": {
-        "he": "המברשת נגעה ב־small coloured stones, ובהתחלה Noam חשב שהן סתם חצץ (gravel). רק אחר כך ראה קו אדום וכנף. את הקיר הוא ניקה, אבל לא חשב שהקיר הוא חצץ.",
-        "en": "His brush touched small coloured stones, and at first he thought they were gravel. He saw the wing only later."
+        "he": "במשפט: the person who buried it \"must have expected to retrieve it\". האדם קבר את האוצר ותכנן לחזור ולקחת אותו. המסמר רק החזיק את הכד, ואת העיר יבנה אי אפשר לקבור.",
+        "en": "The person buried the treasure and planned to come back for it. The nail only held the jar, and a city cannot be buried."
       },
       "interests": [
-        "school",
+        "science",
         "travel"
       ],
       "tags": [
         "bagrut"
       ],
       "estimatedTimeSec": 55,
-      "passageId": "passage.rm1-mosaic-volunteers",
+      "passageId": "passage.rm1-yavne-gold",
       "source": "original"
     },
     {
-      "id": "rm1.mosaic-volunteers.6",
+      "id": "rm1.yavne-gold.6",
       "type": "choice",
-      "skill": "reading.fact-opinion",
+      "skill": "reading.vocabulary-in-context",
       "level": "B2",
       "difficulty": 0.6,
-      "prompt": "Which sentence from the report is an OPINION?",
+      "prompt": "In the report, the word \"retrieve\" probably means...",
       "instruction": {
         "he": "לבחור את התשובה הנכונה לפי הקטע",
         "en": "Choose the correct answer according to the text"
@@ -3975,45 +3971,41 @@
       "options": [
         {
           "id": "a",
-          "text": "\"It is one of the finest mosaics found in this region in the past decade.\""
+          "text": "get back"
         },
         {
           "id": "b",
-          "text": "The volunteers were aged 16 to 18."
+          "text": "hide"
         },
         {
           "id": "c",
-          "text": "The floor measures about six metres by four."
-        },
-        {
-          "id": "d",
-          "text": "The programme has run every summer since 2015."
+          "text": "sell"
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "לחפש מילת הערכה כמו finest.",
-          "en": "Look for a judgement word like finest."
+          "he": "לקרוא את השאלה בתחילת הפסקה הרביעית: why did nobody come back for it?",
+          "en": "Read the question at the start of the fourth paragraph: why did nobody come back for it?"
         }
       ],
       "explanation": {
-        "he": "finest (המשובח ביותר) היא הערכה של ד\"ר אפרת. גם מומחית מביעה לפעמים דעה. הגילים, המידות של הרצפה והשנה שבה התחילה התוכנית הן עובדות שאפשר למדוד או לבדוק.",
-        "en": "finest is Dr. Efrat's judgement; even an expert can give an opinion. The ages, the size and the starting year can be measured or checked."
+        "he": "הפסקה שואלת למה איש לא חזר לקחת את האוצר (come back for it). מי שקבר אותו ציפה לחזור ולקחת אותו בחזרה, ולכן retrieve פירושו להחזיר לעצמו, לקבל בחזרה. להסתיר הוא כבר הסתיר, ולמכור לא קשור להקשר.",
+        "en": "The paragraph asks why nobody came back for the treasure, so retrieve means get back. He had already hidden it, and selling does not fit."
       },
       "interests": [
-        "school",
+        "science",
         "travel"
       ],
       "tags": [
         "bagrut"
       ],
       "estimatedTimeSec": 55,
-      "passageId": "passage.rm1-mosaic-volunteers",
+      "passageId": "passage.rm1-yavne-gold",
       "source": "original"
     },
     {
-      "id": "rm1.mosaic-volunteers.7",
+      "id": "rm1.yavne-gold.7",
       "type": "choice",
       "skill": "reading.true-false",
       "level": "B2",
@@ -4026,37 +4018,37 @@
       "options": [
         {
           "id": "a",
-          "text": "It is not yet clear what kind of building the floor belonged to."
+          "text": "Nobody knows who the owner of the treasure was."
         },
         {
           "id": "b",
-          "text": "The mosaic has already been moved to a museum."
+          "text": "All the coins were made in Constantinople."
         },
         {
           "id": "c",
-          "text": "The mosaic was found on the first day of the dig."
+          "text": "The coins were found in Fustat, in Egypt."
         }
       ],
       "correctOptionId": "a",
       "hints": [
         {
-          "he": "מה אמרה ד\"ר אפרת על הבית או המבנה?",
-          "en": "What did Dr. Efrat say about the house or building?"
+          "he": "מה נאמר בסוף הפסקה הרביעית?",
+          "en": "What does the end of the fourth paragraph say?"
         }
       ],
       "explanation": {
-        "he": "ד\"ר אפרת אמרה probably... or perhaps ו־We will only know after we study the whole structure, ולכן עוד לא ברור. הפסיפס עדיין באתר, וההחלטה תתקבל next year. הגילוי היה ביום חמישי האחרון של החפירה.",
-        "en": "Dr. Efrat says they will only know after studying the structure. The mosaic is still at the site, and it was found on the last Thursday of the dig."
+        "he": "בקטע: Who the owner was, however, remains a mystery, כלומר לא יודעים מי היה הבעלים. רק חתיכה אחת נעשתה בקונסטנטינופול, ורוב המטבעות מהתקופה העבאסית. המטבעות נמצאו ליד יבנה, ו־Fustat מוזכרת רק כדי להשוות את הערך.",
+        "en": "The owner remains a mystery. Only one piece came from Constantinople, and the coins were found near Yavne, not in Fustat."
       },
       "interests": [
-        "school",
+        "science",
         "travel"
       ],
       "tags": [
         "bagrut"
       ],
       "estimatedTimeSec": 55,
-      "passageId": "passage.rm1-mosaic-volunteers",
+      "passageId": "passage.rm1-yavne-gold",
       "source": "original"
     },
     {
@@ -4471,10 +4463,10 @@
       "source": "original"
     },
     {
-      "id": "passage.rm1-bat-scientist",
-      "title": "The Woman Who Listened to Bats",
+      "id": "passage.rm1-bat-researcher",
+      "title": "The Scientist Who Listens to Bats",
       "level": "B1",
-      "text": "This is a made-up story. Leah Doron was born in 1951 in a small village in the Galilee. As a child, she spent summer evenings on the roof of her house, watching bats fly over the fields. Most of her neighbours were afraid of them, but Leah wanted to know how they found insects in the dark.\n\nAfter finishing school, Leah served in the army and then studied biology. In 1978 she visited a cave in the Judean Desert for the first time. There she counted more than two thousand bats sleeping upside down. She later said that this day changed her life.\n\nBats find food by making very high sounds and listening for the echo. Humans cannot hear these sounds. In the 1980s, Leah built a small machine that turned bat calls into sounds that people could hear. With it, she discovered that different kinds of bats \"speak\" in different ways.\n\nHer work also showed that bats help farmers, because a single bat can eat hundreds of insects in one night. Thanks to her reports, several caves were closed to visitors to protect the animals.\n\nLeah taught at a university for thirty years and wrote two books for children about bats. When she retired, she said, \"People fear what they don't understand.\" Today, many young scientists continue her research. In my view, she was one of the most important nature scientists of her generation.",
+      "text": "Prof. Yossi Yovel is a scientist at Tel Aviv University, where he leads a team that studies the Egyptian fruit bat, a bat that lives in Israel. The team asks two questions that are simple but hard to answer: What do bats \"say\" to each other? And how do they find their way at night?\n\nTo study the first question, the team recorded 22 fruit bats for 75 days and collected about 15,000 calls. Then they used a computer program that was first built to recognise human voices. The program sorted about 60 percent of the calls into four groups. The calls turned out to be arguments, for example about food, about places to sleep, or about another bat sitting too close. As Yovel explained, many calls \"previously were thought to all mean the same thing, something like 'get out of here!'\" but they \"actually contain a lot of information.\" The study was published in 2016.\n\nMany people believe that bats find their way only by using sound. To study the second question, the team built very small GPS trackers and attached them to 22 young bats that were born in a colony at the university. They followed the young bats from their first flights until they were adults, as the bats searched the city for fruit.\n\nThe results were published in July 2020 in the journal Science. The bats used big buildings, such as the Azrieli Towers, as landmarks. When they took a new route, they flew above the buildings, where the towers were easy to see. They could even find shortcuts. In other words, the bats built a map of the city in their heads, much like people do. To me, it is amazing that such a small animal can learn a whole city.",
       "interests": [
         "animals",
         "science"
@@ -4525,12 +4517,12 @@
       "source": "original"
     },
     {
-      "id": "passage.rm1-mosaic-volunteers",
-      "title": "Teen Volunteers Uncover Ancient Mosaic",
+      "id": "passage.rm1-yavne-gold",
+      "title": "Young Volunteers Uncover Ancient Gold Coins",
       "level": "B2",
-      "text": "This news story is made up, but finds like it are real. A colourful mosaic floor, believed to be about 1,600 years old, has been uncovered by teenage volunteers during a summer excavation in the Lower Galilee, archaeologists announced on Monday.\n\nThe discovery was made by chance. The group of 35 volunteers, aged 16 to 18, had been digging for two weeks at the site of an ancient farming village. On the last Thursday of the dig, 17-year-old Noam Katz was cleaning soil from the bottom of a stone wall when his brush touched small coloured stones. \"At first I thought it was just gravel,\" he said. \"Then I saw a red line, and then the shape of a bird's wing.\"\n\nThe archaeologists immediately stopped all other work in that area. Over the following four days, the team carefully removed the soil with brushes and small tools. The floor, which measures about six metres by four, shows birds, grapes and a large vase surrounded by vines.\n\nAccording to Dr. Ronit Efrat, who directs the excavation, the floor probably belonged to the house of a wealthy family, or perhaps to a public building. \"We will only know after we study the whole structure,\" she said. \"Either way, it is one of the finest mosaics found in this region in the past decade.\"\n\nThe mosaic has now been photographed and covered with a protective layer of cloth and sand to keep it safe from sun and rain. Experts will decide next year whether to move it to a museum or to protect it where it was found.\n\nThe volunteer programme, which has run every summer since 2015, gives young people a chance to experience real archaeological work. Its organisers say this year's discovery shows that anyone can make history, sometimes with nothing more than a paintbrush.",
+      "text": "Young volunteers taking part in an excavation near the city of Yavne, in central Israel, have uncovered a rare treasure: 425 gold coins, about 1,100 years old. The Israel Antiquities Authority (IAA) announced the find in August 2020 and described it as \"extremely rare\".\n\nThe coins had been buried in a clay jar. One of the volunteers described the moment of discovery: \"I dug in the ground and, when I excavated the soil, saw what looked like very thin leaves. When I looked again, I saw these were gold coins.\"\n\nThe treasure weighs about 845 grams and is made of pure gold. Most of the coins are from the Abbasid period, at the end of the 9th century CE. Besides the complete coins, the jar held about 270 small pieces that had been cut from gold coins. These pieces were used as small change. One of them is especially rare: it was cut from a gold coin of the Byzantine emperor Theophilos, made in Constantinople, and it is the first of its kind ever found in an excavation in Israel.\n\nWhy was the treasure hidden, and why did nobody come back for it? According to the excavation directors, Liat Nadav-Ziv and Elie Haddad, the person who buried it \"must have expected to retrieve it\", and had even secured the jar with a nail so that it would not move. Who the owner was, however, remains a mystery.\n\nThe sum was a large one. According to coin expert Robert Kool, it could have bought a luxurious house in one of the best neighbourhoods of Fustat, the wealthy capital of Egypt at that time. Kool also expressed the hope that studying the coins \"will tell us more about a period of which we still know very little.\"",
       "interests": [
-        "school",
+        "science",
         "travel"
       ],
       "source": "original"
