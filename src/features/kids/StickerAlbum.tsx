@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useServices } from '@/app/services';
 import { stickers, type StickerInfo } from '@content/kids';
+import { useStudent } from '@/app/hooks';
+import { stageOf } from '@/domain/student/student';
 import { speakHebrew } from '@/services/speech/hebrewVoice';
 import { CloseIcon, HomeIcon, LockIcon } from './KidIcons';
 import { KidsIconLink, KidsMessage, KidsTopBar } from './KidsChrome';
@@ -16,6 +18,8 @@ const NEXT = 3;
 export function StickerAlbum() {
   const { sid } = useParams();
   const { store } = useServices();
+  const student = useStudent(sid);
+  const stage = student && stageOf(student) === 'little' ? 'little' : 'young';
   const earned = useLiveQuery(() => (sid ? store.stickersEarned(sid) : []), [store, sid]);
   const [big, setBig] = useState<StickerInfo | null>(null);
   const have = new Set(earned ?? []);
@@ -27,7 +31,7 @@ export function StickerAlbum() {
 
   const open = (s: StickerInfo) => {
     setBig(s);
-    void speakHebrew(s.he);
+    void speakHebrew(s.he, stage);
   };
 
   return (

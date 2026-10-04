@@ -67,7 +67,7 @@ export function KidsBooks() {
       {books.length ? (
         <div className="k-shelf">
           {books.map((b, i) => (
-            <Link key={b.id} to={`/s/${student.id}/kids/books/${b.id}`} className="k-book" data-tint={TINTS[i % TINTS.length]} onClick={() => void speakHebrew(b.title.he)}>
+            <Link key={b.id} to={`/s/${student.id}/kids/books/${b.id}`} className="k-book" data-tint={TINTS[i % TINTS.length]} onClick={() => void speakHebrew(b.title.he, stage)}>
               <span className="k-book-art">
                 <Scene pics={coverPics(b)} fallback={b.cover} />
               </span>
