@@ -728,3 +728,26 @@ a.row-card:active, button.row-card:active { transform: scale(calc(1 - 0.01 * var
   .pgroup-due { border: 1px solid CanvasText; }
   .pgroup[data-open] .pgroup-btn { outline: 1px solid CanvasText; }
 }
+/* Row titles with a small tag ("אחרון", "מומלץ לך"). */
+.row-title { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.pgroup-tag {
+  font-size: var(--fs-micro); line-height: var(--lh-micro); font-weight: var(--fw-medium);
+  color: var(--muted); background: var(--surface-2); border: 1px solid var(--border);
+  padding: 0 var(--space-2); border-radius: var(--radius-full); white-space: nowrap;
+}
+.pgroup-tag-pick { color: var(--success-ink); background: var(--success-weak); border-color: transparent; }
+/* This week's share of the group's modes: a hairline under the header text. */
+.pgroup-btn { position: relative; }
+.pgroup-week {
+  position: absolute; inset-inline: calc(var(--space-3) + 44px + var(--space-3)) var(--space-3); bottom: 7px;
+  height: 3px; border-radius: var(--radius-full); background: var(--surface-3); overflow: hidden;
+}
+.pgroup-week > span {
+  display: block; block-size: 100%; border-radius: inherit; background: var(--accent-fg);
+  transition: inline-size calc(var(--dur-3) * var(--motion)) var(--ease-out);
+}
+@media (forced-colors: active) {
+  .pgroup-tag { border-color: CanvasText; }
+  .pgroup-week { border: 1px solid CanvasText; }
+  .pgroup-week > span { background: Highlight; }
+}
