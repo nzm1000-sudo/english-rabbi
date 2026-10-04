@@ -11,7 +11,7 @@
   { "id": "kind-heart", "he": "לב טוב", "en": "Kindness Heart", "theme": "values" },
   { "id": "turtle", "he": "צב", "en": "Turtle", "theme": "animals" },
   { "id": "bee", "he": "דבורה ופרח", "en": "Busy Bee", "theme": "nature" },
-  { "id": "challah", "he": "חלה", "en": "Challah", "theme": "jewish" },
+  { "id": "challah", "he": "לחם", "en": "Bread", "theme": "jewish" },
   { "id": "whale", "he": "לווייתן", "en": "Whale", "theme": "animals" },
   { "id": "star", "he": "כוכב מצטיין", "en": "Star of Excellence", "theme": "values" },
   { "id": "lion-cub", "he": "גור אריות", "en": "Lion Cub", "theme": "animals" },
