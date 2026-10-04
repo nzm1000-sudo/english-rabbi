@@ -427,3 +427,37 @@
 .order-line > .muted:first-child { flex: 1; text-align: center; }
 @media (max-width: 399px) { .resume-note .resume-icon { display: none; } }
 .resume-note strong { white-space: nowrap; }
+
+/* Full explanation by age (ExplainCard) ----------------------------------- */
+.explain-card {
+  display: flex; flex-direction: column; gap: var(--space-4); padding: var(--space-4); border-radius: var(--radius-lg);
+  background: var(--surface-1); border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent); box-shadow: var(--e1);
+  font-size: var(--fs-body-lg); line-height: var(--lh-body-lg);
+}
+.explain-head { display: flex; align-items: center; gap: var(--space-3); }
+.explain-title { margin: 0; font-size: 21px; line-height: 1.35; font-weight: var(--fw-black); }
+.explain-sec { display: flex; flex-direction: column; gap: var(--space-1); }
+.explain-sec-label { display: flex; align-items: center; gap: var(--space-2); font-size: var(--fs-body); font-weight: var(--fw-black); color: var(--accent-fg); }
+.explain-sec-icon { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 9px; background: var(--accent-weak); font-size: 15px; line-height: 1; }
+.explain-examples { display: flex; flex-direction: column; gap: var(--space-3); }
+.explain-pair { display: flex; flex-direction: column; gap: var(--space-1); }
+.explain-ex { display: flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-3); border-radius: var(--radius-md); }
+.explain-ex .en { text-align: left; font-size: var(--fs-body-lg); font-weight: var(--fw-bold); }
+.explain-ex[data-tone='ok'] { background: var(--success-weak); }
+.explain-ex[data-tone='bad'] { background: var(--danger-weak); }
+.explain-ex[data-tone='bad'] .en { text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--danger) 60%, transparent); }
+.explain-mark { flex: none; width: 20px; text-align: center; font-weight: var(--fw-black); }
+.explain-ex[data-tone='ok'] .explain-mark { color: var(--success); }
+.explain-ex[data-tone='bad'] .explain-mark { color: var(--danger); }
+.explain-meaning { color: var(--ink-2); font-size: var(--fs-body); padding-inline-start: var(--space-3); }
+.explain-check { margin: 0; display: flex; flex-direction: column; gap: var(--space-1); }
+.explain-check > div { display: flex; justify-content: space-between; gap: var(--space-3); padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); background: var(--surface-2); }
+.explain-check dt, .explain-check dd { margin: 0; }
+.explain-check dd { font-weight: var(--fw-bold); text-align: end; }
+.explain-remember {
+  display: flex; flex-direction: column; gap: 2px; padding: var(--space-3) var(--space-4); border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--hero-from), var(--hero-to)); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  font-weight: var(--fw-bold);
+}
+.explain-remember-label { font-size: var(--fs-caption); color: var(--accent-fg); font-weight: var(--fw-black); }
+.sheet .explain-card { background: var(--surface-1); }
