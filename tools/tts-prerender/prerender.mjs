@@ -29,7 +29,7 @@ const limit = limitArg > 0 ? Number(process.argv[limitArg + 1]) : Infinity;
 // Keep in sync with PRERENDER_VOICES in src/services/speech/voiceProfiles.ts.
 // en-US: Microsoft neural voices (edge-tts), chosen by ear on 2026-10-04 over
 // Kokoro, which sounded nasal. en-GB stays on Kokoro (not rendered by default).
-const VOICES = { 'en-US': { A: 'en-US-JennyNeural', B: 'en-US-AndrewNeural' }, 'en-GB': { A: 'bf_emma', B: 'bm_george' } };
+const VOICES = { 'en-US': { A: 'en-US-AndrewNeural', B: 'en-US-JennyNeural' }, 'en-GB': { A: 'bf_emma', B: 'bm_george' } };
 const isEdge = (voice) => voice.endsWith('Neural');
 const EDGE_RATE = { normal: '+0%', slow: '-20%' };
 // Accents to render. Chosen by ear on 2026-10-02: American only.
