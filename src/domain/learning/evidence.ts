@@ -8,7 +8,8 @@ import type { ReviewGrade } from './srs';
  * slow answers, suspected guesses, skips. The function is pure and versioned
  * so that a better interpretation can be replayed over old events.
  */
-export const EVIDENCE_MODEL_VERSION = 1;
+// 2: a wrong first try is graded Again even when later solved (docs/research/learning-science.md, change 1).
+export const EVIDENCE_MODEL_VERSION = 2;
 
 export type EvidenceFlag =
   | 'clean'
@@ -56,7 +57,11 @@ export function toEvidence(item: ItemSnapshot, o: ItemOutcome, predicted?: numbe
 
   const helped = o.hintsUsed > 0 || retries > 0 || o.explanationShown;
   let weight = 1;
-  let grade: ReviewGrade = helped ? (o.explanationShown ? 'again' : 'hard') : 'good';
+  // A wrong first try means the memory failed, even if the learner then found
+  // the answer (by a hint or by eliminating options): bring it back soon.
+  // Grading it Hard would lengthen the interval of a mature card instead.
+  // A hint alone, with no wrong answer, is a weak but real recall: Hard.
+  let grade: ReviewGrade = retries > 0 || o.explanationShown ? 'again' : helped ? 'hard' : 'good';
 
   // Response time. Listening items include audio time, so they get more room.
   const room = item.modality === 'listen' ? 2 : 1;

@@ -18,7 +18,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { audioKey } from '../../src/services/speech/audioKey.ts';
-import { questionSpeech, splitSentences } from '../../src/services/speech/textPrep.ts';
+import { dialogueLines, questionSpeech, splitSentences } from '../../src/services/speech/textPrep.ts';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '../..');
@@ -61,7 +61,10 @@ function collectTexts() {
   for (const f of fs.readdirSync(packDir).filter((f) => f.endsWith('.json'))) {
     const pack = JSON.parse(fs.readFileSync(path.join(packDir, f), 'utf8'));
     for (const it of pack.items ?? []) {
-      if (it.audioText) add(it.audioText);
+      // A written dialogue is played line by line in two voices (SpeakButton).
+      const lines = it.audioText && dialogueLines(it.audioText);
+      if (lines) for (const l of lines) add(l.text, l.speaker);
+      else if (it.audioText) add(it.audioText);
       if (it.word?.lemma) add(it.word.lemma);
       if (it.word?.example) add(it.word.example);
       addQuestion(it);

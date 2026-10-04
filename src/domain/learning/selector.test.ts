@@ -41,7 +41,7 @@ describe('adaptive selector', () => {
   const hard = choiceItem({ id: 'hard', level: 'C1', difficulty: 0.8 });
 
   it('prefers items near the target success rate', () => {
-    const skills = new Map([['grammar.quantifiers', skill('grammar.quantifiers', -0.6)]]);
+    const skills = new Map([['grammar.quantifiers', skill('grammar.quantifiers', 0)]]);
     const ranked = rankCandidates(ctx({ items: [easy, right, hard], skills, targetSuccess: 0.75 }));
     expect(ranked[0]!.item.id).toBe('right');
     expect(ranked.at(-1)!.item.id).toBe('hard');
@@ -95,6 +95,23 @@ describe('adaptive selector', () => {
     const a = choiceItem({ id: 'a', unit: 'u:a' });
     const b = choiceItem({ id: 'b', unit: 'u:b', interests: ['music'] });
     expect(rankCandidates(ctx({ items: [a, b], interests: ['music'] }))[0]!.item.id).toBe('b');
+  });
+
+  it('prefers producing an answer over recognising it at the same difficulty', () => {
+    const skills = new Map([['grammar.quantifiers', skill('grammar.quantifiers', 0)]]);
+    const pick = choiceItem({ id: 'pick', unit: 'u:pick', difficulty: 0.5 });
+    const write = typedItem({ id: 'write', unit: 'u:write', skill: 'grammar.quantifiers', difficulty: 0.5 });
+    expect(rankCandidates(ctx({ items: [pick, write], skills }))[0]!.item.id).toBe('write');
+  });
+
+  it('lowers an often repeated item only while its skill still has unseen ones', () => {
+    const old = choiceItem({ id: 'old', unit: 'u:old' });
+    const fresh = choiceItem({ id: 'fresh', unit: 'u:fresh' });
+    const worn = unit('u:old', -1);
+    const units = new Map([['u:old', { ...worn, card: { ...worn.card, reps: 6 } }]]);
+    const alone = rankCandidates(ctx({ items: [old], units }))[0]!.score;
+    const withNew = rankCandidates(ctx({ items: [old, fresh], units })).find((c) => c.item.id === 'old')!.score;
+    expect(withNew).toBeLessThan(alone);
   });
 
   it('skips items without auto-scoring and returns null when nothing is left', () => {

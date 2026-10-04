@@ -56,6 +56,11 @@ export interface Candidate {
 }
 
 const RECENT_UNIT_WINDOW = 3;
+const PRODUCTION = new Set<ContentItem['type']>(['typed', 'order', 'fix']);
+const PRODUCTION_BONUS = 1.2;
+/** Candidates within this share of the best score are picked at random. */
+const NEAR_BEST = 0.75;
+const NEAR_MAX = 6;
 
 export function guessChance(item: ContentItem): number {
   return item.type === 'choice' ? 1 / item.options.length : 0;
@@ -98,6 +103,13 @@ export function rankCandidates(ctx: SelectionContext): Candidate[] {
     return it ? domainOf(it.skill) : '';
   });
 
+  // Items of each skill the learner has never seen: when there are some, an
+  // item already answered several times gives way to them (variety).
+  const unseenBySkill = new Map<string, number>();
+  if (ctx.mode === 'practice')
+    for (const item of ctx.items)
+      if (item.type !== 'open-writing' && !ctx.units.has(unitOf(item))) unseenBySkill.set(item.skill, (unseenBySkill.get(item.skill) ?? 0) + 1);
+
   const out: Candidate[] = [];
   for (const item of ctx.items) {
     if (item.type === 'open-writing') continue; // needs an evaluator; not auto-selected yet
@@ -109,7 +121,11 @@ export function rankCandidates(ctx: SelectionContext): Candidate[] {
     const ability = abilityFor(item.skill, ctx.skills, ctx.now);
     const predicted = expectedSuccess(ability, difficultyOf(item), guessChance(item));
     const target = ctx.targetSuccess ?? (ctx.mode === 'placement' ? 0.5 : 0.75);
-    const fit = Math.exp(-((predicted - target) ** 2) / (2 * 0.15 ** 2));
+    // Fit is judged on what the learner knows, without the chance of guessing:
+    // otherwise multiple choice always looks "just right" and production
+    // items (typing, building, fixing) are never chosen.
+    const known = expectedSuccess(ability, difficultyOf(item), 0);
+    const fit = Math.exp(-((known - target) ** 2) / (2 * 0.15 ** 2));
     if (fit > 0.8) reasons.push('good-difficulty');
 
     let score: number;
@@ -139,6 +155,13 @@ export function rankCandidates(ctx: SelectionContext): Candidate[] {
       if (mastery < 0.5 && (ctx.skills.get(item.skill)?.evidence ?? 0) >= 1) reasons.push('weak-skill');
 
       score = value * fit * weakness;
+
+      // Producing an answer teaches more than recognising one (generation effect).
+      if (PRODUCTION.has(item.type)) score *= PRODUCTION_BONUS;
+
+      // Seen several times while the same skill still has unseen items: let the new ones in.
+      const reps = mem?.card.reps ?? 0;
+      if (reps > 2 && (unseenBySkill.get(item.skill) ?? 0) > 0) score /= 1 + 0.5 * (reps - 2);
     }
 
     const misconceptions = itemMisconceptions(item);
@@ -166,14 +189,15 @@ export function rankCandidates(ctx: SelectionContext): Candidate[] {
 
 /**
  * Picks the next item. With an rng, picks randomly among near-best candidates
- * (within 10% of the top score) so sessions do not feel scripted.
+ * (within 25% of the top score, up to 6) so sessions vary and near-equal items
+ * of other types get their turn.
  */
 export function pickNext(ctx: SelectionContext, rng?: () => number): Candidate | null {
   const ranked = rankCandidates(ctx);
   if (!ranked.length) return null;
   if (!rng) return ranked[0]!;
   const top = ranked[0]!.score;
-  const near = ranked.filter((c) => c.score >= top * 0.9).slice(0, 4);
+  const near = ranked.filter((c) => c.score >= top * NEAR_BEST).slice(0, NEAR_MAX);
   return near[Math.floor(rng() * near.length)] ?? ranked[0]!;
 }
 

@@ -3,6 +3,7 @@ import { TutorDB } from './schema';
 import { LearningStore } from './store';
 import { choiceItem, outcome, typedItem } from '@/domain/learning/testUtils';
 import { DEFAULT_PREFERENCES } from '@/domain/student/student';
+import { EVIDENCE_MODEL_VERSION } from '@/domain/learning/evidence';
 
 let n = 0;
 function fresh(clockStart = 1_700_000_000_000) {
@@ -116,6 +117,25 @@ describe('event log is the source of truth', () => {
     await store.rebuildDerived(s.id);
     expect(await store.loadLearnerState(s.id)).toEqual(incremental);
     expect(await store.dailyStats(s.id)).toEqual(dailyBefore);
+  });
+});
+
+describe('grading model upgrades', () => {
+  it('replays every student once when the evidence model changed, then does nothing', async () => {
+    const { store, db } = fresh();
+    const s = await store.createStudent({ name: 'Test' });
+    await store.completeItem({ studentId: s.id, item: choiceItem(), outcome: outcome() });
+    // Pretend the derived state was built by an older model and is now stale.
+    await db.meta.put({ key: 'evidenceModelVersion', value: 1 });
+    await db.unitMemories.clear();
+
+    await store.migrateDerived();
+    expect(await db.unitMemories.where('studentId').equals(s.id).count()).toBe(1);
+    expect((await db.meta.get('evidenceModelVersion'))?.value).toBe(EVIDENCE_MODEL_VERSION);
+
+    await db.unitMemories.clear();
+    await store.migrateDerived();
+    expect(await db.unitMemories.count()).toBe(0);
   });
 });
 

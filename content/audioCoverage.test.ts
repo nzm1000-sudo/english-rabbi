@@ -1,7 +1,7 @@
 import { contentRegistry as reg } from './index';
 import { kidBooks, kidWords, phonics } from './kids';
 import { audioKey } from '@/services/speech/audioKey';
-import { canonicalSpeechText, questionSpeech, splitSentences } from '@/services/speech/textPrep';
+import { canonicalSpeechText, dialogueLines, questionSpeech, splitSentences } from '@/services/speech/textPrep';
 import { NEURAL_VOICES } from '@/services/speech/voiceProfiles';
 
 /**
@@ -18,7 +18,12 @@ function speakable(): { text: string; speaker: 'A' | 'B' }[] {
   const out = new Set<string>();
   const byB = new Set<string>();
   for (const i of reg.items) {
-    if ('audioText' in i && i.audioText) out.add(i.audioText);
+    if ('audioText' in i && i.audioText) {
+      // Written dialogues play line by line in two voices.
+      const lines = dialogueLines(i.audioText);
+      if (lines) for (const l of lines) (l.speaker === 'B' ? byB : out).add(l.text);
+      else out.add(i.audioText);
+    }
     if (i.word) {
       out.add(i.word.lemma);
       if (i.word.example) out.add(i.word.example);

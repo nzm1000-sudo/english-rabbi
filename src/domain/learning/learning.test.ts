@@ -133,6 +133,13 @@ describe('evidence', () => {
     expect(e.grade).toBe('hard');
   });
 
+  it('a wrong first try is graded Again even when solved on the second', () => {
+    const e = toEvidence(snap, outcome({ attempts: [{ answer: 'x', correct: false, atMs: 3000 }, { answer: 'a', correct: true, atMs: 6000 }] }));
+    expect(e.grade).toBe('again');
+    // The ability model still gets partial credit.
+    expect(e.score).toBeCloseTo(0.8);
+  });
+
   it('success after the explanation is graded Again', () => {
     expect(toEvidence(snap, outcome({ hintsUsed: 2, explanationShown: true })).grade).toBe('again');
   });
@@ -193,6 +200,17 @@ describe('spaced repetition', () => {
     const a = reviewCard(reviewCard(newCard(0), 'good', 0), 'hard', 3 * DAY);
     const b = reviewCard(reviewCard(newCard(0), 'good', 0), 'hard', 3 * DAY);
     expect(a).toEqual(b);
+  });
+
+  it('a learning card that keeps getting Hard graduates after a night, instead of looping', () => {
+    let card = reviewCard(newCard(0), 'again', 0);
+    // Same session: Hard keeps it on a short step.
+    const soon = reviewCard(card, 'hard', 10 * 60_000);
+    expect(soon.due - 10 * 60_000).toBeLessThan(DAY);
+    // Next day: Hard now moves it on like Good.
+    card = soon;
+    const nextDay = 20 * 60 * 60_000;
+    expect(reviewCard(card, 'hard', nextDay)).toEqual(reviewCard(card, 'good', nextDay));
   });
 
   it('new cards are due immediately', () => {
