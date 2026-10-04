@@ -18,6 +18,7 @@ import { Confetti } from '@/ui/Confetti';
 import { sounds } from '@/services/sound';
 import { BoltIcon, CheckIcon, RepeatIcon, StarIcon, TrophyIcon } from '@/ui/icons';
 import { Art } from '@/ui/Art';
+import { AnchorCard } from '@/ui/AnchorCard';
 import { Button } from '@/ui/Button';
 import { TopBar } from '@/ui/TopBar';
 import { Stack } from '@/ui/layout';
@@ -288,6 +289,7 @@ function Summary({
   for (const r of results) for (const m of r.misconceptions) counts.set(m, (counts.get(m) ?? 0) + 1);
   const top = [...counts.entries()].sort((a, b) => b[1] - a[1])[0];
   const tip = top ? content.misconceptions.get(top[0]) : undefined;
+  const tipAnchor = tip ? content.anchorFor({ skill: tip.skill, anchor: undefined }) : undefined;
   // itemFor also finds items made for this session (my words), which are not in the registry.
   const wrong = results.filter((r) => !r.correct).map((r) => itemFor(r.itemId)).filter((i) => !!i);
   // Retry looks items up in the registry, so only those can be practiced again.
@@ -380,6 +382,12 @@ function Summary({
         <div className="panel stack">
           <strong>נקודה אחת לזכור</strong>
           <p><He>{tip.tip.he}</He></p>
+          {tipAnchor?.levels && (
+            <details className="why-not">
+              <summary>להסבר המלא, עם דוגמאות</summary>
+              <AnchorCard anchor={tipAnchor} />
+            </details>
+          )}
         </div>
       )}
       {wrong.length > 0 && (

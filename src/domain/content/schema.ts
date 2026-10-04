@@ -355,6 +355,29 @@ export function glossFor(story: Pick<Story, 'glossary'>, word: string) {
  * for present simple). The same card comes back with every related mistake
  * until the rule sticks.
  */
+/**
+ * A full explanation for one age group. Hebrew text may contain English;
+ * the UI isolates it (see He). Written for learners who know little English:
+ * short sentences, every rule shown with examples.
+ */
+export const Explain = z.object({
+  /** A question the learner would ask, e.g. "זהיר או בזהירות?". */
+  title: z.string().min(1),
+  /** The rule, one to three short sentences. */
+  rule: z.string().min(1),
+  /** Why Hebrew speakers get it wrong: a comparison with Hebrew. */
+  why: z.string().min(1),
+  /** Right and wrong side by side; `he` is the meaning of `ok`. */
+  examples: z.array(z.object({ ok: z.string().min(1), bad: z.string().optional(), he: z.string().min(1) })).min(2),
+  /** How to decide in a question: "when you see X" -> "write Y", with an English example. */
+  check: z.array(z.object({ when: z.string().min(1), then: z.string().min(1), example: z.string().optional() })).default([]),
+  /** Each exception in Hebrew, with its English example apart. */
+  exceptions: z.array(z.object({ he: z.string().min(1), en: z.string().optional() })).default([]),
+  /** One sentence to remember. */
+  remember: z.string().min(1),
+});
+export type Explain = z.infer<typeof Explain>;
+
 export const Anchor = z.object({
   id: z.string().regex(/^[a-z0-9][a-z0-9.-]*$/),
   emoji: z.string().min(1),
@@ -369,6 +392,8 @@ export const Anchor = z.object({
   examples: z.array(z.object({ en: z.string().min(1), he: z.string().min(1) })).default([]),
   /** Why Hebrew speakers get it wrong. */
   hebrewTrap: z.string().default(''),
+  /** Full explanations by age: kids (up to 12) and adults (13 and up). */
+  levels: z.object({ kids: Explain, adult: Explain }).optional(),
   source: SourceRef,
 });
 export type Anchor = z.infer<typeof Anchor>;

@@ -10,7 +10,7 @@ import type { ReactNode } from 'react';
  *   "(o אחת)" the "(" belongs to the Hebrew, so it mirrors correctly.
  * - "=" after English never starts a line by itself.
  */
-const LATIN_RUN = /(["(]?[A-Za-z][A-Za-z0-9'’\-+/=→ .,!?:;"()]*[A-Za-z0-9'’.!?")]|[A-Za-z])/g;
+const LATIN_RUN = /((?:["(]|(?<!\S)-(?=[A-Za-z]))?[A-Za-z][A-Za-z0-9'’\-+/=→ .,!?:;"()]*[A-Za-z0-9'’.!?")]|[A-Za-z])/g;
 const BLOCK_WORDS = 4;
 
 export type BidiPart = { kind: 'he' | 'en' | 'en-line'; text: string };
@@ -95,7 +95,22 @@ export function layoutBidi(text: string, inline = false): BidiPart[] {
     const words = t.split(/\s+/).filter((w) => /[A-Za-z]/.test(w)).length;
     // Its own line only when it reads as a sentence, not as a list inside a Hebrew sentence.
     const sentenceLike = /^["(]?[A-Z]/.test(t) || /[.!?]["')]?$/.test(t);
-    parts.push({ kind: !inline && words >= BLOCK_WORDS && sentenceLike ? 'en-line' : 'en', text: t });
+    const kind = !inline && words >= BLOCK_WORDS && sentenceLike ? 'en-line' : 'en';
+    // "עם he / she / it מוסיפים s.": the full stop ends the Hebrew sentence, so it
+    // goes to the Hebrew side and shows at the line's left end, not inside the word.
+    const stop = kind === 'en' && !/^["(]?[A-Z].*\s/.test(t) ? t.match(/^(.*[A-Za-z0-9'’")])([.,;:])$/) : null;
+    if (stop) {
+      parts.push({ kind, text: stop[1]! }, { kind: 'he', text: stop[2]! });
+      continue;
+    }
+    parts.push({ kind, text: t });
+  }
+  // A full stop moved off English can sit next to another Hebrew fragment: join them.
+  for (let i = parts.length - 1; i > 0; i--) {
+    if (parts[i]!.kind === 'he' && parts[i - 1]!.kind === 'he') {
+      parts[i - 1]!.text += parts[i]!.text;
+      parts.splice(i, 1);
+    }
   }
   // "ask a question = לשאול שאלה": after an English line the "=" ends that
   // line; after inline English it is glued so it never opens a line.
@@ -123,7 +138,12 @@ export function layoutBidi(text: string, inline = false): BidiPart[] {
       if (nextLine) t = t.replace(/\s+$/, '');
       return { ...p, text: t };
     })
-    .filter((p, i) => p.kind !== 'he' || /[^\s.,;:]/.test(p.text) || (/^\s+$/.test(p.text) && parts[i - 1]?.kind === 'en' && parts[i + 1]?.kind === 'en'));
+    .filter((p, i, all) => {
+      if (p.kind !== 'he' || /[^\s.,;:]/.test(p.text)) return true;
+      if (/^\s+$/.test(p.text)) return all[i - 1]?.kind === 'en' && all[i + 1]?.kind === 'en';
+      // Punctuation after inline English stays; next to an English line it is dropped.
+      return p.text.trim() !== '' && all[i - 1]?.kind === 'en' && all[i + 1]?.kind !== 'en-line';
+    });
 }
 
 /** Short English runs (a word or a pattern) never break across lines. */

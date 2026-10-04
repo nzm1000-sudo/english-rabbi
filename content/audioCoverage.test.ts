@@ -54,7 +54,10 @@ function normalOnly(): { text: string; speaker: 'A' | 'B' }[] {
     if ((i.type === 'choice' || i.type === 'typed') && i.promptLanguage === 'en' && !he.test(i.prompt)) out.add(questionSpeech(i.prompt));
     if (i.type === 'choice') for (const o of i.options) if (!he.test(o.text)) out.add(o.text);
   }
-  for (const a of reg.anchors.values()) for (const e of a.examples) out.add(e.en);
+  for (const a of reg.anchors.values()) {
+    for (const e of a.examples) out.add(e.en);
+    for (const lv of Object.values(a.levels ?? {})) for (const e of lv.examples) out.add(e.ok);
+  }
   for (const w of kidWords) {
     out.add(w.en);
     if (w.sentence) out.add(w.sentence.en);

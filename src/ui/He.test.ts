@@ -30,7 +30,9 @@ describe('bidi layout', () => {
   it('puts an English sentence on its own line and keeps short words inline', async () => {
     const { layoutBidi } = await import('./He');
     const parts = layoutBidi('apologize for + ing: He apologized for being late. בעברית "על", באנגלית for.');
-    expect(parts.map((p) => p.kind)).toEqual(['en-line', 'he', 'en']);
+    // The closing full stop belongs to the Hebrew sentence, not to "for".
+    expect(parts.map((p) => p.kind)).toEqual(['en-line', 'he', 'en', 'he']);
+    expect(parts.at(-1)!.text).toBe('.');
     expect(parts[0]!.text).toBe('apologize for + ing: He apologized for being late.');
     expect(parts[1]!.text).toBe('בעברית "על", באנגלית ');
   });
@@ -44,7 +46,7 @@ describe('bidi layout', () => {
 describe('bidi layout heuristics', () => {
   it('keeps short or list-like English inline', async () => {
     const { layoutBidi } = await import('./He');
-    expect(layoutBidi('עם he / she / it מוסיפים s.').map((p) => p.kind)).toEqual(['he', 'en', 'he', 'en']);
+    expect(layoutBidi('עם he / she / it מוסיפים s.').map((p) => p.text)).toEqual(['עם ', 'he / she / it', ' מוסיפים ', 's', '.']);
     expect(layoutBidi('מילים כמו every day, usually, always, often הן סימן').map((p) => p.kind)).toEqual(['he', 'en', 'he']);
   });
 });
@@ -106,5 +108,22 @@ describe('bidi sentence spacing', () => {
   it('keeps it in inline mode too', async () => {
     const { layoutBidi } = await import('./He');
     expect(layoutBidi("I forgot something. I'm sorry.", true).map((p) => p.text).join('')).toBe("I forgot something. I'm sorry.");
+  });
+});
+
+describe('suffixes and full stops', () => {
+  it('keeps a hyphen with the English suffix it belongs to', async () => {
+    const { layoutBidi } = await import('./He');
+    // Was shown as "ly-." on screen: the hyphen and the stop sat on the Hebrew side of the word.
+    expect(layoutBidi('ופועל מתואר בתואר פועל עם -ly.').map((p) => [p.kind, p.text])).toEqual([
+      ['he', 'ופועל מתואר בתואר פועל עם '],
+      ['en', '-ly'],
+      ['he', '.'],
+    ]);
+  });
+
+  it('leaves a stop inside an English sentence that runs inline', async () => {
+    const { layoutBidi } = await import('./He');
+    expect(layoutBidi('כותבים I go.', true).map((p) => p.text)).toEqual(['כותבים ', 'I go.']);
   });
 });

@@ -3,12 +3,16 @@ import { En } from './En';
 import { He } from './He';
 import { SpeakButton } from './SpeakButton';
 import { LessonIcon } from './icons';
+import { ExplainCard, useExplainLevel } from './ExplainCard';
 
 /**
  * Memory anchor: the same picture comes back with every mistake of this kind,
  * so the rule is remembered as an image, not as a sentence.
  */
 export function AnchorCard({ anchor, compact = false }: { anchor: Anchor; compact?: boolean }) {
+  const level = useExplainLevel();
+  // A full explanation for the learner's age replaces the short card.
+  if (!compact && anchor.levels) return <ExplainCard anchor={anchor} explain={anchor.levels[level]} />;
   return (
     <div className="anchor-card">
       <div className="anchor-head">
