@@ -12,7 +12,7 @@ import { domainNameHe } from '@/domain/student/profile';
 import { domainOf } from '@/domain/skills/taxonomy';
 import { ExerciseView } from './ExerciseView';
 import { isPracticeMode, MODES, type PracticeMode } from './modes';
-import { lightningScore, useSession, type SessionResult } from './useSession';
+import { firstTry, lightningScore, useSession, type SessionResult } from './useSession';
 import { useGameHistory } from './useGameHistory';
 import { Confetti } from '@/ui/Confetti';
 import { sounds } from '@/services/sound';
@@ -86,7 +86,8 @@ function Session({
   const progress = s.deadline || empty ? null : Math.round(((done ? s.total : Math.max(0, s.index - 1)) / s.total) * 100);
   const combo = useCombo(s.results.map((r) => r.correct));
   const title = mode === 'skill' && params.skill ? (content.lessonsForSkill(params.skill)[0]?.title.he ?? def.title) : def.title;
-  const counter = s.status === 'loading' || empty ? '' : `${done ? s.total : Math.min(s.index, s.total)}/${s.total}`;
+  // Done early (e.g. fewer words due than the round's length): count what was asked.
+  const counter = s.status === 'loading' || empty ? '' : done ? `${s.index}/${s.index}` : `${Math.min(s.index, s.total)}/${s.total}`;
 
   return (
     <main className="screen tight">
@@ -279,9 +280,10 @@ function Summary({
   // Other modes of the same home-screen group, not tried this week first.
   const more = nextInGroup(`practice/${mode}`, used ?? new Map(), weekStart(Date.now()));
   const correct = results.filter((r) => r.correct).length;
-  const clean = results.filter((r) => r.evidence.flags.includes('clean') || r.evidence.flags.includes('fast')).length;
+  const first = results.filter(firstTry).length;
   const xp = results.reduce((s, r) => s + r.evidence.xp, 0);
-  const pct = results.length ? Math.round((correct / results.length) * 100) : 0;
+  // The score counts first tries: an answer found after a mistake is learning, not knowing.
+  const pct = results.length ? Math.round((first / results.length) * 100) : 0;
   const counts = new Map<string, number>();
   for (const r of results) for (const m of r.misconceptions) counts.set(m, (counts.get(m) ?? 0) + 1);
   const top = [...counts.entries()].sort((a, b) => b[1] - a[1])[0];
@@ -307,7 +309,10 @@ function Summary({
   } else if (mode === 'quiz' || mode === 'exam' || mode === 'daily' || mode === 'riddles') {
     headline = mode === 'exam' ? 'תוצאת המבחן' : mode === 'daily' ? 'האתגר היומי הושלם' : 'סיום';
     big = `${pct}`;
-    sub = `${correct} מתוך ${results.length} נכונות`;
+    sub = `${first} מתוך ${results.length} בניסיון ראשון`;
+  } else if (mode === 'review' && results.length < total) {
+    // The round ends when nothing else is due: say so, or it looks cut short.
+    sub = `${heCount(results.length, 'מילה אחת חיכתה', 'מילים חיכו')} לחזרה היום`;
   }
 
   // Exam: score per domain, a real picture instead of one number.
@@ -344,7 +349,7 @@ function Summary({
           <b className="num" dir="ltr">
             {correct}/{results.length}
           </b>
-          <span>נכונות</span>
+          <span>נכונות בסוף</span>
         </div>
         <div className="stat">
           <StarIcon size={22} />
@@ -353,7 +358,9 @@ function Summary({
         </div>
         <div className="stat">
           <BoltIcon size={22} />
-          <b className="num">{clean}</b>
+          <b className="num" dir="ltr">
+            {first}/{results.length}
+          </b>
           <span>בניסיון ראשון</span>
         </div>
       </div>

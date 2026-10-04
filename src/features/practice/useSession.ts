@@ -10,6 +10,10 @@ import type { Student } from '@/domain/student/student';
 import type { ContentItem } from '@/domain/content/schema';
 import { MODES, type PoolContext, type PracticeMode } from './modes';
 
+/** Right on the first attempt, without a hint or the explanation. */
+export const firstTry = (r: SessionResult): boolean =>
+  r.correct && !r.evidence.flags.some((f) => f === 'after-retry' || f === 'after-hint' || f === 'after-explanation');
+
 export interface SessionResult {
   itemId: string;
   correct: boolean;
