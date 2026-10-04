@@ -136,7 +136,7 @@ export function ExerciseView({ item, passage, support, seed, policy = 'teach', f
           </div>
         )}
 
-        {(item.type === 'order' ? item.promptLanguage === 'he' : item.type !== 'fix') && (
+        {(item.type === 'order' ? item.promptLanguage === 'he' : item.type !== 'fix') && !(listen && GENERIC_LISTEN_PROMPT.test(item.prompt)) && (
           <Prompt item={item} finished={finished} canSpeak={canSpeakPrompt && !listen} glossLocked={glossLocked} />
         )}
 
@@ -699,6 +699,13 @@ function Help({ item, flow, last, support }: { item: Props['item']; flow: FlowSt
   }
   return blocks.length ? <div className="stack gap-2" aria-live="polite">{blocks}</div> : null;
 }
+
+/**
+ * Listening prompts that only repeat the instruction ("Type the word you hear.").
+ * They are hidden: their speaker read the instruction, and learners took it
+ * for the word to write. The play buttons above say the word.
+ */
+const GENERIC_LISTEN_PROMPT = /^(type the word you hear|which word did you hear)\b/i;
 
 const PRAISE = ['מצוין!', 'נכון!', 'יפה מאוד!', 'בדיוק!', 'כל הכבוד!'];
 
