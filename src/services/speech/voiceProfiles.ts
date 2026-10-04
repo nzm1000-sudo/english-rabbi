@@ -11,5 +11,15 @@ export const NEURAL_VOICES: Record<Accent, Record<Speaker, string>> = {
   'en-GB': { A: 'bf_emma', B: 'bm_george' },
 };
 
+/**
+ * Voices of the pre-rendered files (tools/tts-prerender). American English is
+ * recorded with Microsoft's neural voices, which sound clearer than Kokoro;
+ * British English is not pre-rendered, so it keeps the Kokoro names.
+ */
+export const PRERENDER_VOICES: Record<Accent, Record<Speaker, string>> = {
+  'en-US': { A: 'en-US-JennyNeural', B: 'en-US-AndrewNeural' },
+  'en-GB': NEURAL_VOICES['en-GB'],
+};
+
 /** Speaking-rate multipliers. Slow is generated slower by the engine, not stretched. */
 export const RATE_FACTOR = { slower: 0.65, slow: 0.8, normal: 1, fast: 1.15 } as const;

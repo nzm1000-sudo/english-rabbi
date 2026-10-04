@@ -1,7 +1,7 @@
 import { audioKey } from '../audioKey';
 import type { AudioPlayback } from '../playback/audioPlayer';
 import { abortError, type SpeakRequest, type SpeechProvider, type SpeechVoice } from '../types';
-import { NEURAL_VOICES } from '../voiceProfiles';
+import { PRERENDER_VOICES } from '../voiceProfiles';
 import { splitSentences } from '../textPrep';
 
 /**
@@ -51,7 +51,7 @@ export class PrerenderedProvider implements SpeechProvider {
    * sentence for long texts (reading passages). Undefined if any is missing.
    */
   private urlsFor(req: SpeakRequest, m: PrerenderManifest): Playable | undefined {
-    const voice = NEURAL_VOICES[req.accent][req.speaker ?? 'A'];
+    const voice = PRERENDER_VOICES[req.accent][req.speaker ?? 'A'];
     const find = (rate: string): string[] | undefined => {
       const whole = m.entries[audioKey(voice, rate, req.text)];
       if (whole) return [whole];
@@ -136,7 +136,7 @@ export class PrerenderedProvider implements SpeechProvider {
   }
 
   async voices(): Promise<SpeechVoice[]> {
-    return Object.entries(NEURAL_VOICES).flatMap(([accent, v]) =>
+    return Object.entries(PRERENDER_VOICES).flatMap(([accent, v]) =>
       Object.values(v).map((id) => ({ id, name: id, lang: accent, accent: accent as SpeechVoice['accent'], quality: 'neural' as const, provider: this.id, offline: true })),
     );
   }

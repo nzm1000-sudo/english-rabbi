@@ -9,6 +9,9 @@ import { abortError, type SpeakRequest, type SpeechProvider, type SpeechVoice } 
 import type { AudioPlayback } from './playback/audioPlayer';
 import { DexieAudioCache } from '@/data/audioCache';
 import { TutorDB } from '@/data/schema';
+import { PRERENDER_VOICES } from './voiceProfiles';
+
+const PRE = PRERENDER_VOICES['en-US'].A;
 
 describe('sentence splitting', () => {
   it('splits at sentence ends but not at abbreviations or decimals', () => {
@@ -183,7 +186,7 @@ describe('audio cache', () => {
 
 describe('pre-rendered provider', () => {
   it('plays only texts that exist in the manifest', async () => {
-    const manifest = { version: 1, engine: 'kokoro', entries: { [audioKey('af_heart', 'normal', 'beautiful')]: 'audio/x.mp3' } };
+    const manifest = { version: 1, engine: 'kokoro', entries: { [audioKey(PRE, 'normal', 'beautiful')]: 'audio/x.mp3' } };
     const fetched: string[] = [];
     const fetchFn = (async (u: string) => {
       fetched.push(u);
@@ -202,7 +205,7 @@ describe('pre-rendered provider', () => {
   it('plays a long text sentence by sentence when every sentence is pre-rendered', async () => {
     const a = 'The ground was dry.';
     const b = 'The students did not give up.';
-    const manifest = { version: 1, engine: 'kokoro', entries: { [audioKey('af_heart', 'normal', a)]: 'audio/a.mp3', [audioKey('af_heart', 'normal', b)]: 'audio/b.mp3' } };
+    const manifest = { version: 1, engine: 'kokoro', entries: { [audioKey(PRE, 'normal', a)]: 'audio/a.mp3', [audioKey(PRE, 'normal', b)]: 'audio/b.mp3' } };
     const playback = new FakePlayback();
     const fetchFn = (async (u: string) => (u === 'm' ? new Response(JSON.stringify(manifest)) : new Response(new Blob([u])))) as unknown as typeof fetch;
     const p = new PrerenderedProvider(playback, 'm', fetchFn);
@@ -212,7 +215,7 @@ describe('pre-rendered provider', () => {
   });
 
   it('very slow plays the slow recording a little slower, pitch kept by the player', async () => {
-    const manifest = { version: 1, engine: 'k', entries: { [audioKey('af_heart', 'slow', 'beautiful')]: 'audio/slow.mp3' } };
+    const manifest = { version: 1, engine: 'k', entries: { [audioKey(PRE, 'slow', 'beautiful')]: 'audio/slow.mp3' } };
     const fetchFn = (async (u: string) => (u === 'm' ? new Response(JSON.stringify(manifest)) : new Response(new Blob([u])))) as unknown as typeof fetch;
     const playback = new FakePlayback();
     const p = new PrerenderedProvider(playback, 'm', fetchFn);
