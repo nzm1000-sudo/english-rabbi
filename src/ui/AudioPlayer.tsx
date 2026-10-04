@@ -17,11 +17,17 @@ export interface AudioPlayerHandle {
 
 type Clip = { url: string; segment: number; duration: number; rate: number };
 
-/** The speed chip cycles through these. Factors match RATE_FACTOR (voiceProfiles). */
-const SPEEDS: { rate: SpeechRate; label: string; he: string }[] = [
-  { rate: 'normal', label: '1×', he: 'רגיל' },
-  { rate: 'slow', label: '0.8×', he: 'איטי' },
-  { rate: 'slower', label: '0.65×', he: 'איטי מאוד' },
+/**
+ * The speed chip cycles through these. `rate` picks the recordings (slow ones
+ * are recorded slow, not stretched); `factor` speeds the normal ones up on
+ * playback, which sounds natural and needs no reload.
+ */
+const SPEEDS: { key: string; rate: SpeechRate; factor: number; label: string; he: string }[] = [
+  { key: '1', rate: 'normal', factor: 1, label: '1×', he: 'רגיל' },
+  { key: '1.25', rate: 'normal', factor: 1.25, label: '1.25×', he: 'מהיר' },
+  { key: '1.5', rate: 'normal', factor: 1.5, label: '1.5×', he: 'מהיר מאוד' },
+  { key: '0.65', rate: 'slower', factor: 1, label: '0.65×', he: 'איטי מאוד' },
+  { key: '0.8', rate: 'slow', factor: 1, label: '0.8×', he: 'איטי' },
 ];
 
 /**
@@ -41,7 +47,11 @@ export function AudioPlayer({
 }) {
   const { recorded, speech } = useServices();
   const prefs = useSpeechPrefs();
-  const [rate, setRate] = useState<SpeechRate>(prefs.rate === 'fast' ? 'normal' : prefs.rate);
+  const [speedKey, setSpeedKey] = useState(() => (prefs.rate === 'slow' ? '0.8' : prefs.rate === 'slower' ? '0.65' : '1'));
+  const speed = SPEEDS.find((x) => x.key === speedKey) ?? SPEEDS[0]!;
+  const rate = speed.rate;
+  const factor = useRef(speed.factor);
+  factor.current = speed.factor;
   const [clips, setClips] = useState<Clip[] | null | 'missing'>(null);
   const [playing, setPlaying] = useState(false);
   const [pos, setPos] = useState(0);
@@ -49,13 +59,17 @@ export function AudioPlayer({
   const index = useRef(0);
   const urls = useRef<string[]>([]);
   const selfStop = useRef(false);
+  /** Files of the clips being replaced (another speed): freed once the new ones play. */
+  const oldUrls = useRef<string[]>([]);
+  const loadedText = useRef<string | null>(null);
   const speechState = useSyncExternalStore(speech.subscribe, speech.getState);
   const textKey = segments.map((s) => `${s.speaker ?? 'A'}:${s.text}`).join('|');
 
   // Load the clips and their lengths for this text and speed.
   useEffect(() => {
     let live = true;
-    setClips(null);
+    // A new text starts empty; a new speed keeps playing the old clips until the new ones are ready.
+    if (loadedText.current !== textKey) setClips(null);
     (async () => {
       const out: Clip[] = [];
       for (let i = 0; i < segments.length; i++) {
@@ -73,10 +87,10 @@ export function AudioPlayer({
         ),
       );
       if (!live) return;
-      urls.current.forEach((u) => URL.revokeObjectURL(u));
-      urls.current = blobs.map((b) => URL.createObjectURL(b));
+      const fresh = blobs.map((b) => URL.createObjectURL(b));
+      const probe = fresh;
       await Promise.all(
-        urls.current.map(
+        probe.map(
           (u, i) =>
             new Promise<void>((resolve) => {
               const a = new Audio();
@@ -90,7 +104,10 @@ export function AudioPlayer({
             }),
         ),
       );
-      if (!live) return;
+      if (!live) return fresh.forEach((u) => URL.revokeObjectURL(u));
+      oldUrls.current.push(...urls.current);
+      urls.current = fresh;
+      loadedText.current = textKey;
       // A file that cannot be played (broken or not audio) means no player: use the speaker button.
       setClips(out.every((c) => c.duration > 0) ? out : 'missing');
     })().catch(() => live && setClips('missing'));
@@ -142,8 +159,8 @@ export function AudioPlayer({
       el.src = urls.current[i]!;
       (el as HTMLAudioElement & { webkitPreservesPitch?: boolean }).webkitPreservesPitch = true;
       el.preservesPitch = true;
-      el.defaultPlaybackRate = c.rate;
-      el.playbackRate = c.rate;
+      el.defaultPlaybackRate = c.rate * factor.current;
+      el.playbackRate = c.rate * factor.current;
       el.currentTime = offset;
       onSegment?.(c.segment);
       setPos(starts[i]! + offset);
@@ -182,20 +199,30 @@ export function AudioPlayer({
   useEffect(() => speech.onStop(() => selfStop.current || pause()), [speech, pause]);
 
   // New clips (another speed, or a new line in the story): the element still
-  // holds a file of the old list. Drop it and keep the place, so play
-  // continues from the same point in the new clips.
+  // holds a file of the old list. Move to the same point in the new clips and
+  // keep playing if it was playing, so a speed change never stops the reading.
   useEffect(() => {
     const el = audio.current;
-    if (!el?.getAttribute('src') || !list.length || urls.current.includes(el.src)) return;
+    const free = () => {
+      oldUrls.current.forEach((u) => URL.revokeObjectURL(u));
+      oldUrls.current = [];
+    };
+    if (!el?.getAttribute('src') || !list.length || urls.current.includes(el.src)) return free();
     const i = Math.min(index.current, list.length - 1);
     const part = el.duration > 0 ? Math.min(1, el.currentTime / el.duration) : 0;
-    el.pause();
-    el.removeAttribute('src');
-    el.load();
-    index.current = i;
-    setPlaying(false);
-    setPos(starts[i]! + part * list[i]!.duration);
-  }, [list, starts]);
+    const wasPlaying = !el.paused && !el.ended;
+    if (wasPlaying) load(i, part * list[i]!.duration, true);
+    else {
+      el.pause();
+      el.removeAttribute('src');
+      el.load();
+      index.current = i;
+      setPos(starts[i]! + part * list[i]!.duration);
+    }
+    free();
+    // Only when the clips change; load and starts follow them.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [list]);
 
   // Leaving the screen or the app stops the player.
   useEffect(() => {
@@ -204,8 +231,9 @@ export function AudioPlayer({
     return () => {
       document.removeEventListener('visibilitychange', hide);
       audio.current?.pause();
-      urls.current.forEach((u) => URL.revokeObjectURL(u));
+      [...urls.current, ...oldUrls.current].forEach((u) => URL.revokeObjectURL(u));
       urls.current = [];
+      oldUrls.current = [];
     };
   }, [pause]);
 
@@ -239,7 +267,6 @@ export function AudioPlayer({
   const currentSeg = list[index.current]?.segment ?? 0;
   const fmt = (t: number) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
 
-  const speed = SPEEDS.find((x) => x.rate === rate) ?? SPEEDS[0]!;
   const nextSpeed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length]!;
   const pct = total ? (Math.min(pos, total) / total) * 100 : 0;
 
@@ -280,8 +307,12 @@ export function AudioPlayer({
           className="player-speed"
           aria-label={`מהירות: ${speed.he}. להקיש למהירות ${nextSpeed.he}`}
           onClick={() => {
-            pause();
-            setRate(nextSpeed.rate);
+            factor.current = nextSpeed.factor;
+            // Same recordings (1×, 1.25×, 1.5×): change speed in place, without a pause.
+            const el = audio.current;
+            const c = list[index.current];
+            if (el && c && nextSpeed.rate === rate) el.playbackRate = c.rate * nextSpeed.factor;
+            setSpeedKey(nextSpeed.key);
           }}
         >
           {speed.label}

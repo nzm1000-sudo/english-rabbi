@@ -86,7 +86,12 @@ function Session({
   const empty = s.status === 'empty';
   const progress = s.deadline || empty ? null : Math.round(((done ? s.total : Math.max(0, s.index - 1)) / s.total) * 100);
   const combo = useCombo(s.results.map((r) => r.correct));
-  const title = mode === 'skill' && params.skill ? (content.lessonsForSkill(params.skill)[0]?.title.he ?? def.title) : def.title;
+  const title =
+    mode === 'skill' && params.skill
+      ? (content.lessonsForSkill(params.skill)[0]?.title.he ?? def.title)
+      : mode === 'unseen' && params.passage
+        ? (content.passages.get(params.passage)?.title ?? def.title)
+        : def.title;
   // Done early (e.g. fewer words due than the round's length): count what was asked.
   const counter = s.status === 'loading' || empty ? '' : done ? `${s.index}/${s.index}` : `${Math.min(s.index, s.total)}/${s.total}`;
 
