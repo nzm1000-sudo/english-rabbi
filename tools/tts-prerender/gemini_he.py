@@ -109,6 +109,8 @@ def norm(s):
     s = re.sub(r'[֑-ׇ]', '', s)  # niqqud and cantillation
     s = re.sub(r'[^א-תA-Za-z0-9 ]', ' ', s)
     s = re.sub(r'[וי]', '', s)  # full and defective spelling (לחמנייה / לחמניה) sound the same
+    # Letters that sound alike in Israeli Hebrew: the transcript may pick either.
+    s = s.translate(str.maketrans('טקחעםןץףך', 'תככאמנצפכ'))
     return ' '.join(s.split())
 
 
@@ -181,7 +183,7 @@ def main():
                                    input=w, check=True)
                     done += 1
     except DailyQuota as e:
-        print(f'daily free quota of {e} used up; run again tomorrow', flush=True)
+        print(f'daily quota of {e} used up; run again tomorrow', flush=True)
     print(f'{done} rendered, {failed} rejected', flush=True)
 
 
