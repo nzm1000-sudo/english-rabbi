@@ -56,7 +56,7 @@ def call(model, body, tries=5, url=None):
             return json.load(urllib.request.urlopen(req, timeout=300))
         except urllib.error.HTTPError as e:
             msg = e.read().decode(errors='replace')
-            if e.code == 429 and 'PerDay' in msg:
+            if e.code == 429 and ('PerDay' in msg or 'per day' in msg.lower()):
                 raise DailyQuota(model) from None
             if e.code not in (429, 500, 502, 503) or attempt == tries - 1:
                 raise RuntimeError(f'{model} {e.code}: {msg[:300]}') from None
