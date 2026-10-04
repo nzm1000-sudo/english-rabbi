@@ -23,6 +23,12 @@
    "he": "שנות ה־80"
   }
  ],
+ "3rd": [
+  {
+   "lemma": "3rd",
+   "he": "השלישי (בתאריך)"
+  }
+ ],
  "9th": [
   {
    "lemma": "9th",
@@ -503,6 +509,12 @@
    "he": "מאה"
   }
  ],
+ "ch": [
+  {
+   "lemma": "ch",
+   "he": "הצירוף ch (נהגה כמו צ')"
+  }
+ ],
  "chain": [
   {
    "lemma": "chain",
@@ -573,6 +585,12 @@
   {
    "lemma": "clever",
    "he": "חכם, מחוכם"
+  }
+ ],
+ "cleverer": [
+  {
+   "lemma": "clever",
+   "he": "חכם יותר, פיקח יותר"
   }
  ],
  "coherent": [
@@ -797,6 +815,12 @@
    "he": "אכזבה"
   }
  ],
+ "discuss": [
+  {
+   "lemma": "discuss",
+   "he": "לדון ב־"
+  }
+ ],
  "doron": [
   {
    "lemma": "Doron",
@@ -830,7 +854,7 @@
  "drill": [
   {
    "lemma": "drill",
-   "he": "תרגיל (תרגיל אש)"
+   "he": "תרגיל (כמו תרגיל כיבוי אש)"
   }
  ],
  "driver": [
@@ -947,6 +971,12 @@
    "he": "ציוד"
   }
  ],
+ "est": [
+  {
+   "lemma": "-est",
+   "he": "סיומת של \"הכי\" (tallest)"
+  }
+ ],
  "estimated": [
   {
    "lemma": "estimate",
@@ -1025,6 +1055,12 @@
    "he": "אייל (שם)"
   }
  ],
+ "f": [
+  {
+   "lemma": "f",
+   "he": "האות f"
+  }
+ ],
  "fail": [
   {
    "lemma": "fail",
@@ -1043,10 +1079,22 @@
    "he": "חקלאות"
   }
  ],
+ "farther": [
+  {
+   "lemma": "far",
+   "he": "רחוק יותר"
+  }
+ ],
  "favourite": [
   {
    "lemma": "favourite",
    "he": "אהוב (ביותר)"
+  }
+ ],
+ "fe": [
+  {
+   "lemma": "fe",
+   "he": "הסיומת fe"
   }
  ],
  "fear": [
@@ -1171,6 +1219,16 @@
    "he": "זועם"
   }
  ],
+ "further": [
+  {
+   "lemma": "far",
+   "he": "רחוק יותר"
+  },
+  {
+   "lemma": "further",
+   "he": "נוסף, עוד"
+  }
+ ],
  "fustat": [
   {
    "lemma": "Fustat",
@@ -1187,6 +1245,12 @@
   {
    "lemma": "Galilee",
    "he": "הגליל"
+  }
+ ],
+ "gemara": [
+  {
+   "lemma": "Gemara",
+   "he": "גמרא"
   }
  ],
  "generous": [
@@ -1273,6 +1337,18 @@
    "he": "לתלות"
   }
  ],
+ "happier": [
+  {
+   "lemma": "happy",
+   "he": "שמח יותר"
+  }
+ ],
+ "happiest": [
+  {
+   "lemma": "happy",
+   "he": "הכי שמח"
+  }
+ ],
  "hashanah": [
   {
    "lemma": "Rosh Hashanah",
@@ -1289,6 +1365,12 @@
   {
    "lemma": "heal",
    "he": "להחלים, להירפא"
+  }
+ ],
+ "herzl": [
+  {
+   "lemma": "Herzl",
+   "he": "הרצל (שם)"
   }
  ],
  "hidden": [
@@ -1379,6 +1461,18 @@
   {
    "lemma": "Ido",
    "he": "עידו (שם)"
+  }
+ ],
+ "ier": [
+  {
+   "lemma": "-ier",
+   "he": "סיומת השוואה אחרי y (happier)"
+  }
+ ],
+ "iest": [
+  {
+   "lemma": "-iest",
+   "he": "סיומת של \"הכי\" אחרי y (happiest)"
   }
  ],
  "immediately": [
@@ -1599,6 +1693,12 @@
    "he": "מוביל, מדריך"
   }
  ],
+ "leaf": [
+  {
+   "lemma": "leaf",
+   "he": "עלה (של עץ)"
+  }
+ ],
  "leaks": [
   {
    "lemma": "leak",
@@ -1643,6 +1743,16 @@
    "he": "מציל"
   }
  ],
+ "lock": [
+  {
+   "lemma": "lock",
+   "he": "לנעול"
+  },
+  {
+   "lemma": "lock",
+   "he": "מנעול"
+  }
+ ],
  "lottery": [
   {
    "lemma": "lottery",
@@ -1681,6 +1791,12 @@
   {
    "lemma": "manage",
    "he": "הצליח (לעשות)"
+  }
+ ],
+ "marry": [
+  {
+   "lemma": "marry",
+   "he": "להתחתן עם"
   }
  ],
  "mediterranean": [
@@ -1809,10 +1925,22 @@
    "he": "של נועה (שם)"
   }
  ],
+ "noon": [
+  {
+   "lemma": "noon",
+   "he": "צהריים (12:00)"
+  }
+ ],
  "noticing": [
   {
    "lemma": "notice",
    "he": "לשים לב"
+  }
+ ],
+ "o": [
+  {
+   "lemma": "o",
+   "he": "האות o"
   }
  ],
  "objects": [
@@ -1885,6 +2013,12 @@
   {
    "lemma": "organization",
    "he": "ארגון"
+  }
+ ],
+ "ought": [
+  {
+   "lemma": "ought to",
+   "he": "צריך, כדאי"
   }
  ],
  "overall": [
@@ -2005,6 +2139,12 @@
    "he": "פולין"
   }
  ],
+ "potato": [
+  {
+   "lemma": "potato",
+   "he": "תפוח אדמה"
+  }
+ ],
  "potter": [
   {
    "lemma": "potter",
@@ -2123,6 +2263,12 @@
   {
    "lemma": "quick",
    "he": "מהיר"
+  }
+ ],
+ "quieter": [
+  {
+   "lemma": "quiet",
+   "he": "שקט יותר"
   }
  ],
  "quiz": [
@@ -2409,6 +2555,12 @@
    "he": "תפור"
   }
  ],
+ "sh": [
+  {
+   "lemma": "sh",
+   "he": "הצירוף sh (נהגה כמו ש)"
+  }
+ ],
  "shallow": [
   {
    "lemma": "shallow",
@@ -2431,6 +2583,12 @@
   {
    "lemma": "shape",
    "he": "עיצב"
+  }
+ ],
+ "shofar": [
+  {
+   "lemma": "shofar",
+   "he": "שופר"
   }
  ],
  "shortcuts": [
@@ -2961,10 +3119,22 @@
    "he": "חוט חשמל"
   }
  ],
+ "wise": [
+  {
+   "lemma": "wise",
+   "he": "חכם"
+  }
+ ],
  "wonders": [
   {
    "lemma": "wonder",
    "he": "פלאים"
+  }
+ ],
+ "x": [
+  {
+   "lemma": "x",
+   "he": "האות x"
   }
  ],
  "yael": [

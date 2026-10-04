@@ -1,0 +1,468 @@
+{
+ "actor": [
+  {
+   "lemma": "actor",
+   "he": "שחקן"
+  }
+ ],
+ "adjective": [
+  {
+   "lemma": "adjective",
+   "he": "שם תואר"
+  }
+ ],
+ "al": [
+  {
+   "lemma": "-al",
+   "he": "סיומת של שם תואר"
+  }
+ ],
+ "ambitious": [
+  {
+   "lemma": "ambitious",
+   "he": "שאפתן"
+  }
+ ],
+ "antonym": [
+  {
+   "lemma": "antonym",
+   "he": "מילה הפוכה"
+  }
+ ],
+ "b": [
+  {
+   "lemma": "b",
+   "he": "האות b"
+  }
+ ],
+ "begining": [
+  {
+   "lemma": "beginning",
+   "he": "צורה שגויה (נכון: beginning)"
+  }
+ ],
+ "boots": [
+  {
+   "lemma": "boot",
+   "he": "מגפיים"
+  }
+ ],
+ "ceiling": [
+  {
+   "lemma": "ceiling",
+   "he": "תקרה"
+  }
+ ],
+ "climed": [
+  {
+   "lemma": "climbed",
+   "he": "צורה שגויה (נכון: climbed)"
+  }
+ ],
+ "closest": [
+  {
+   "lemma": "close",
+   "he": "הכי קרוב"
+  }
+ ],
+ "complicated": [
+  {
+   "lemma": "complicated",
+   "he": "מסובך"
+  }
+ ],
+ "cried": [
+  {
+   "lemma": "cry",
+   "he": "בכה"
+  }
+ ],
+ "deep": [
+  {
+   "lemma": "deep",
+   "he": "עמוק"
+  }
+ ],
+ "dis": [
+  {
+   "lemma": "dis-",
+   "he": "תחילית שלילה או היפוך"
+  }
+ ],
+ "dislike": [
+  {
+   "lemma": "dislike",
+   "he": "לא לאהוב"
+  }
+ ],
+ "ears": [
+  {
+   "lemma": "ear",
+   "he": "אוזניים"
+  }
+ ],
+ "ei": [
+  {
+   "lemma": "ei",
+   "he": "צירוף אותיות, כמו ב־receive"
+  }
+ ],
+ "entertain": [
+  {
+   "lemma": "entertain",
+   "he": "לבדר"
+  }
+ ],
+ "er": [
+  {
+   "lemma": "-er",
+   "he": "סיומת של עושה פעולה (teacher)"
+  },
+  {
+   "lemma": "-er",
+   "he": "סיומת השוואה (taller)"
+  }
+ ],
+ "excitement": [
+  {
+   "lemma": "excitement",
+   "he": "התרגשות"
+  }
+ ],
+ "frend": [
+  {
+   "lemma": "friend",
+   "he": "צורה שגויה (נכון: friend)"
+  }
+ ],
+ "ful": [
+  {
+   "lemma": "-ful",
+   "he": "סיומת של שם תואר (מלא ב־)"
+  }
+ ],
+ "goodbye": [
+  {
+   "lemma": "goodbye",
+   "he": "שלום (בפרידה)"
+  }
+ ],
+ "hike": [
+  {
+   "lemma": "hike",
+   "he": "טיול רגלי"
+  }
+ ],
+ "hugged": [
+  {
+   "lemma": "hug",
+   "he": "חיבק"
+  }
+ ],
+ "ie": [
+  {
+   "lemma": "ie",
+   "he": "צירוף אותיות שנהגה לרוב \"אִי\""
+  }
+ ],
+ "ight": [
+  {
+   "lemma": "-ight",
+   "he": "צירוף אותיות שנהגה \"אַיט\""
+  }
+ ],
+ "il": [
+  {
+   "lemma": "il-",
+   "he": "תחילית שלילה לפני l"
+  }
+ ],
+ "im": [
+  {
+   "lemma": "im-",
+   "he": "תחילית שלילה לפני p, b, m"
+  }
+ ],
+ "incorrect": [
+  {
+   "lemma": "incorrect",
+   "he": "לא נכון, שגוי"
+  }
+ ],
+ "ir": [
+  {
+   "lemma": "ir-",
+   "he": "תחילית שלילה לפני r"
+  }
+ ],
+ "irregular": [
+  {
+   "lemma": "irregular",
+   "he": "לא סדיר, חריג"
+  }
+ ],
+ "ist": [
+  {
+   "lemma": "-ist",
+   "he": "סיומת של בעל מקצוע או עיסוק"
+  }
+ ],
+ "ity": [
+  {
+   "lemma": "-ity",
+   "he": "סיומת של שם עצם"
+  }
+ ],
+ "ive": [
+  {
+   "lemma": "-ive",
+   "he": "סיומת של שם תואר"
+  }
+ ],
+ "k": [
+  {
+   "lemma": "k",
+   "he": "האות k"
+  }
+ ],
+ "kitten": [
+  {
+   "lemma": "kitten",
+   "he": "חתלתול"
+  }
+ ],
+ "kn": [
+  {
+   "lemma": "kn-",
+   "he": "צירוף שבו k שקטה"
+  }
+ ],
+ "l": [
+  {
+   "lemma": "l",
+   "he": "האות l"
+  }
+ ],
+ "lawyer": [
+  {
+   "lemma": "lawyer",
+   "he": "עורך דין"
+  }
+ ],
+ "lisen": [
+  {
+   "lemma": "listen",
+   "he": "צורה שגויה (נכון: listen)"
+  }
+ ],
+ "ly": [
+  {
+   "lemma": "-ly",
+   "he": "סיומת של תואר הפועל"
+  }
+ ],
+ "mb": [
+  {
+   "lemma": "-mb",
+   "he": "צירוף שבו b שקטה (climb)"
+  }
+ ],
+ "ment": [
+  {
+   "lemma": "-ment",
+   "he": "סיומת של שם עצם"
+  }
+ ],
+ "muddy": [
+  {
+   "lemma": "muddy",
+   "he": "בוצי"
+  }
+ ],
+ "nait": [
+  {
+   "lemma": "night",
+   "he": "צורה שגויה (נכון: night)"
+  }
+ ],
+ "ness": [
+  {
+   "lemma": "-ness",
+   "he": "סיומת של שם עצם"
+  }
+ ],
+ "nife": [
+  {
+   "lemma": "knife",
+   "he": "צורה שגויה (נכון: knife)"
+  }
+ ],
+ "nomad": [
+  {
+   "lemma": "nomad",
+   "he": "נווד"
+  }
+ ],
+ "ok": [
+  {
+   "lemma": "OK",
+   "he": "בסדר, אוקיי"
+  }
+ ],
+ "ous": [
+  {
+   "lemma": "-ous",
+   "he": "סיומת של שם תואר"
+  }
+ ],
+ "outgoing": [
+  {
+   "lemma": "outgoing",
+   "he": "חברותי, פתוח"
+  }
+ ],
+ "psychology": [
+  {
+   "lemma": "psychology",
+   "he": "פסיכולוגיה"
+  }
+ ],
+ "r": [
+  {
+   "lemma": "r",
+   "he": "האות r"
+  }
+ ],
+ "rapid": [
+  {
+   "lemma": "rapid",
+   "he": "מהיר"
+  }
+ ],
+ "recieved": [
+  {
+   "lemma": "received",
+   "he": "צורה שגויה (נכון: received)"
+  }
+ ],
+ "rite": [
+  {
+   "lemma": "rite",
+   "he": "טקס"
+  }
+ ],
+ "rote": [
+  {
+   "lemma": "rote",
+   "he": "שינון (by rote)"
+  }
+ ],
+ "ruined": [
+  {
+   "lemma": "ruin",
+   "he": "הרס"
+  }
+ ],
+ "shoe": [
+  {
+   "lemma": "shoe",
+   "he": "נעל"
+  }
+ ],
+ "signature": [
+  {
+   "lemma": "signature",
+   "he": "חתימה"
+  }
+ ],
+ "stingy": [
+  {
+   "lemma": "stingy",
+   "he": "קמצן"
+  }
+ ],
+ "straight": [
+  {
+   "lemma": "straight",
+   "he": "ישר"
+  }
+ ],
+ "synonym": [
+  {
+   "lemma": "synonym",
+   "he": "מילה נרדפת"
+  }
+ ],
+ "t": [
+  {
+   "lemma": "t",
+   "he": "האות t"
+  }
+ ],
+ "talkative": [
+  {
+   "lemma": "talkative",
+   "he": "פטפטן"
+  }
+ ],
+ "task": [
+  {
+   "lemma": "task",
+   "he": "משימה"
+  }
+ ],
+ "th": [
+  {
+   "lemma": "th",
+   "he": "צליל עם הלשון בין השיניים"
+  }
+ ],
+ "tion": [
+  {
+   "lemma": "-tion",
+   "he": "סיומת של שם עצם, נהגית \"שן\""
+  }
+ ],
+ "un": [
+  {
+   "lemma": "un-",
+   "he": "תחילית שלילה (לא)"
+  }
+ ],
+ "v": [
+  {
+   "lemma": "v",
+   "he": "האות v"
+  }
+ ],
+ "v3": [
+  {
+   "lemma": "V3",
+   "he": "הצורה השלישית של הפועל"
+  }
+ ],
+ "w": [
+  {
+   "lemma": "w",
+   "he": "האות w"
+  }
+ ],
+ "wr": [
+  {
+   "lemma": "wr-",
+   "he": "צירוף שבו w שקטה"
+  }
+ ],
+ "y": [
+  {
+   "lemma": "y",
+   "he": "האות y"
+  }
+ ],
+ "yawned": [
+  {
+   "lemma": "yawn",
+   "he": "פיהק"
+  }
+ ]
+}

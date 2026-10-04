@@ -1,0 +1,927 @@
+[
+  {
+    "id": "vocab-meaning",
+    "emoji": "🗝️",
+    "title": "מילה עם משפט משלה",
+    "skills": ["vocabulary.meaning", "vocabulary.recall"],
+    "image": "תמר לא כותבת במחברת מילים בודדות. ליד כל מילה חדשה היא כותבת משפט קצר מהחיים שלה: borrow, Can I borrow your pen? כך המילה נשמרת יחד עם הסיפור שלה.",
+    "rule": "לדעת מילה זה לדעת שלושה דברים: מה היא אומרת, איזה סוג מילה היא (פועל, שם עצם, שם תואר) ואיך כותבים אותה. לומדים כל מילה בתוך משפט שלם, וכשצריך לשלוף אותה נעזרים במשפט שזוכרים ובאות הראשונה.",
+    "pattern": "מילה + משפט שלי + אות ראשונה",
+    "examples": [
+      { "en": "Can I borrow your pen?", "he": "אפשר לשאול את העט שלך?" },
+      { "en": "I lent Ari my bike.", "he": "השאלתי לארי את האופניים שלי." },
+      { "en": "Ima reminded me to take my coat.", "he": "אמא הזכירה לי לקחת את המעיל." }
+    ],
+    "hebrewTrap": "בעברית \"לשאול\" זה גם לבקש תשובה וגם לקחת משהו בהשאלה, ובאנגלית אלה ask ו־borrow. מי שמתרגם מילה אחת מול מילה אחת כותב ask your pen. כך גם \"לזכור\" ו\"להזכיר\", שבאנגלית הן remember ו־remind.",
+    "levels": {
+      "kids": {
+        "title": "איך זוכרים מילה חדשה?",
+        "rule": "לא לומדים מילה לבד. כותבים לידה משפט קצר מהחיים שלכם. כשצריך לכתוב את המילה, נזכרים במשפט ובאות הראשונה.",
+        "why": "בעברית \"לשאול\" זה גם לשאול שאלה וגם לקחת משהו לזמן קצר. באנגלית אלה שתי מילים: ask ו־borrow. לכן כותבים בטעות ask your pencil.",
+        "examples": [
+          { "ok": "Can I borrow your pencil?", "bad": "Can I ask your pencil?", "he": "אפשר לשאול את העיפרון שלך?" },
+          { "ok": "Tamar asked a question in class.", "he": "תמר שאלה שאלה בכיתה." },
+          { "ok": "Ima reminded me to take my snack.", "bad": "Ima remembered me to take my snack.", "he": "אמא הזכירה לי לקחת את החטיף." }
+        ],
+        "check": [
+          { "when": "כתוב מה המילה אומרת, ויש אות ראשונה", "then": "נזכרים במשפט שבו שמעתם את המילה, ומתחילים באות הזאת", "example": "b: Can I borrow it?" },
+          { "when": "יש כמה מילים לבחירה", "then": "שמים כל מילה במשפט ובודקים איזו מתאימה", "example": "I borrowed a book from the library." }
+        ],
+        "exceptions": [
+          { "he": "זוגות שנשמעים דומה אבל אומרים דבר אחר:", "en": "borrow, lend · remember, remind" }
+        ],
+        "remember": "מילה בלי משפט היא כמו נעל בלי זוג: קל לאבד אותה."
+      },
+      "adult": {
+        "title": "איך לומדים מילה כך שתישאר?",
+        "rule": "לדעת מילה זה לדעת משמעות, חלק דיבר, מילים שבאות איתה ואיות. בשאלת משמעות מציבים כל תשובה במשפט ופוסלים. בשאלת שליפה נעזרים בהגדרה, באות הראשונה ובמשפט שזוכרים, ובודקים את האיות אות אחרי אות.",
+        "why": "לפעמים מילה עברית אחת מכסה שתי מילים באנגלית: \"לשאול\" זה ask וגם borrow, ו\"להזכיר\" זה remind ולא remember. מי שמתרגם מילה מול מילה בוחר את הלא נכונה.",
+        "examples": [
+          { "ok": "Could you lend me your notes?", "bad": "Could you borrow me your notes?", "he": "תוכלו להשאיל לי את הסיכומים שלכם?" },
+          { "ok": "This photo reminds me of our trip.", "bad": "This photo remembers me of our trip.", "he": "התמונה הזאת מזכירה לי את הטיול שלנו." },
+          { "ok": "The instructions were ambiguous, so we asked the teacher.", "he": "ההוראות היו דו־משמעיות, אז שאלנו את המורה." }
+        ],
+        "check": [
+          { "when": "שאלת משמעות עם כמה אפשרויות", "then": "מציבים כל אפשרות במשפט ופוסלים את מה שלא מתאים", "example": "The plan isn't feasible: we have no money." },
+          { "when": "הגדרה בעברית ואות ראשונה", "then": "שולפים מילה מחלק הדיבר הנכון: פועל, שם עצם או שם תואר", "example": "ambiguous (adjective)" },
+          { "when": "כתבתם את המילה", "then": "בודקים אותיות כפולות ואותיות שלא שומעים", "example": "necessary, receive, knowledge" }
+        ],
+        "exceptions": [
+          { "he": "borrow זה לקחת בהשאלה, lend זה לתת בהשאלה.", "en": "I borrowed a book. She lent me a book." },
+          { "he": "אחרי remind בא האדם שמזכירים לו, ואחרי remember לא.", "en": "Remind me later. I remember it." }
+        ],
+        "remember": "לומדים מילה עם משפט, עם סוג המילה ועם המילים שבאות איתה."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "context-clues",
+    "emoji": "🔍",
+    "title": "רמזים מסביב למילה",
+    "skills": ["vocabulary.context", "reading.vocabulary-in-context"],
+    "image": "ארי מוצא בטקסט מילה שהוא לא מכיר. הוא לא נבהל: הוא מסתכל על המילים שלפניה ואחריה כמו בלש. but רומז על הפך, because על סיבה, ו־so על תוצאה.",
+    "rule": "כשחסרה מילה או כשמילה לא מוכרת, מחפשים רמזים במשפט: מילת קישור (but, because, so), הסבר או דוגמה, ומה שקורה אחר כך. קודם מחליטים מה המשמעות צריכה להיות, ורק אחר כך בוחרים מילה.",
+    "pattern": "רמז במשפט ← משמעות ← מילה",
+    "examples": [
+      { "en": "The instructions were so ambiguous that every student understood them differently.", "he": "ההוראות היו כל כך דו־משמעיות שכל תלמיד הבין אותן אחרת." },
+      { "en": "Ari was exhausted after the long hike, so he went straight to bed.", "he": "ארי היה מותש אחרי הטיול הארוך, אז הוא הלך ישר לישון." },
+      { "en": "Rivka is usually talkative, but today she was silent.", "he": "רבקה בדרך כלל פטפטנית, אבל היום היא שתקה." }
+    ],
+    "hebrewTrap": "מי שקורא בעברית רגיל להבין כל מילה, ולכן נתקע על מילה לא מוכרת. באנגלית של מבחן, מילה קטנה כמו but או so אומרת יותר מהתרגום של המילה הקשה. מלכודת נוספת: לבחור תשובה רק כי היא נראית דומה, כמו ambitious במקום ambiguous.",
+    "levels": {
+      "kids": {
+        "title": "מה עושים כשלא מכירים מילה?",
+        "rule": "לא עוצרים! קוראים את כל המשפט ומחפשים רמז: but אומר הפוך, because אומר למה, so אומר מה קרה בגלל זה. מנחשים מה המילה צריכה להגיד.",
+        "why": "בעברית אנחנו מכירים כמעט כל מילה, אז לא מתאמנים בניחוש. באנגלית תמיד יש מילים חדשות. מי שעוצר בכל מילה מתעייף ולא מבין את הסיפור.",
+        "examples": [
+          { "ok": "Ari was exhausted after the hike, so he went to bed early.", "he": "ארי היה מותש אחרי הטיול, אז הוא הלך לישון מוקדם. הרמז: הלך לישון." },
+          { "ok": "The puppy was tiny, not big like his mother.", "he": "הגור היה קטנטן, לא גדול כמו אמא שלו. הרמז: not big." },
+          { "ok": "Tamar was furious because her brother broke her bike.", "he": "תמר הייתה זועמת כי אחיה שבר לה את האופניים. הרמז: because." }
+        ],
+        "check": [
+          { "when": "יש but במשפט", "then": "המילה החסרה הפוכה למה שלפני but", "example": "The soup was cold, but the tea was hot." },
+          { "when": "יש because או so", "then": "חושבים: מה הסיבה ומה קרה בגללה?", "example": "He was hungry, so he ate a sandwich." }
+        ],
+        "exceptions": [
+          { "he": "לפעמים ההסבר כתוב ממש אחרי המילה, אחרי פסיק או or.", "en": "a kitten, or a baby cat" }
+        ],
+        "remember": "מילה לא מוכרת? תהיו בלשים: הרמז מחכה במילה הסמוכה."
+      },
+      "adult": {
+        "title": "איך מנחשים מילה מההקשר?",
+        "rule": "קוראים את כל המשפט ומנסחים בעברית מה המילה צריכה להגיד. מחפשים סימנים: but ו־although לניגוד, because ו־so לסיבה ותוצאה, פסיק או that is להסבר. רק אז בודקים איזו אפשרות מתאימה גם במשמעות וגם בחלק הדיבר.",
+        "why": "קוראים עבריים נוטים לתרגם מילה מול מילה, ולבחור תשובה שנראית או נשמעת כמו מילה במשפט (ambiguous, ambitious). המסיחים בנויים בדיוק כדי לתפוס את מי שבוחר לפי מראה ולא לפי הקשר.",
+        "examples": [
+          { "ok": "The instructions were so ambiguous that every student understood them differently.", "bad": "The instructions were so ambitious that every student understood them differently.", "he": "ההוראות היו כל כך דו־משמעיות שכל תלמיד הבין אותן אחרת." },
+          { "ok": "Although the task looked simple, it was actually complicated.", "he": "למרות שהמשימה נראתה פשוטה, היא הייתה בעצם מסובכת. although מסמן ניגוד." },
+          { "ok": "With only two weeks and no money, the plan simply isn't feasible.", "he": "עם שבועיים בלבד ובלי כסף, התוכנית פשוט לא ניתנת לביצוע." }
+        ],
+        "check": [
+          { "when": "מילת ניגוד: but, although, however", "then": "המילה החסרה הפוכה לחלק השני", "example": "He is usually shy, but today he was very outgoing." },
+          { "when": "סיבה ותוצאה: because, so", "then": "המילה מסבירה את התוצאה או נובעת מהסיבה", "example": "She was so tired that she fell asleep." },
+          { "when": "הסבר אחרי פסיק, or או that is", "then": "המשמעות כתובה בטקסט עצמו", "example": "a nomad, that is, a person with no fixed home" },
+          { "when": "שתי אפשרויות נראות דומות", "then": "בודקים משמעות וחלק דיבר, לא מראה", "example": "ambiguous / ambitious" }
+        ],
+        "exceptions": [
+          { "he": "בשאלה \"מה פירוש המילה בטקסט\" בודקים את המשמעות בהקשר הזה, לא את הפירוש הראשון במילון.", "en": "The bank of the river was muddy." }
+        ],
+        "remember": "קודם מה המילה צריכה להגיד, ורק אחר כך איזו מילה אומרת את זה."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "collocations",
+    "emoji": "🧲",
+    "title": "מילים שבאות בזוג",
+    "skills": ["vocabulary.collocations"],
+    "image": "באנגלית יש מילים שהן חברות טובות והולכות תמיד יחד. אומרים make a decision ו־do homework, heavy rain ולא strong rain. את הזוגות האלה לא מנחשים, לומדים אותם כמו שהם.",
+    "rule": "קולוקציה היא צירוף קבוע של מילים. אין חוק שמסביר למה אומרים make a mistake ולא do a mistake, ולכן לומדים את הצירוף כולו. כלל עזר: make לרוב ליצירה (make a cake, make a plan), ו־do לעבודה ולמטלה (do homework, do the dishes).",
+    "pattern": "פועל או שם תואר + שם עצם קבוע",
+    "examples": [
+      { "en": "I made a mistake in the test.", "he": "עשיתי טעות במבחן." },
+      { "en": "Tamar does her homework after lunch.", "he": "תמר מכינה שיעורי בית אחרי ארוחת הצהריים." },
+      { "en": "There was heavy rain last night.", "he": "ירד גשם חזק אתמול בלילה." }
+    ],
+    "hebrewTrap": "בעברית \"עושים\" כמעט הכול: עושים טעות, עושים שיעורים, עושים רעש. באנגלית צריך לבחור בין make ל־do. ובעברית \"מקבלים החלטה\" ו\"יורד גשם חזק\", ולכן כותבים בטעות receive a decision ו־strong rain.",
+    "levels": {
+      "kids": {
+        "title": "make או do?",
+        "rule": "יש מילים שתמיד באות יחד. אומרים do homework אבל make a cake. כשיוצרים משהו חדש, לרוב make. כשעושים עבודה או מטלה, לרוב do.",
+        "why": "בעברית אומרים \"עושים\" על הכול: עוגה, שיעורים, רעש. באנגלית יש שתי מילים, ולכן כותבים בטעות do a cake.",
+        "examples": [
+          { "ok": "Ima and I made a cake for Shabbat.", "bad": "Ima and I did a cake for Shabbat.", "he": "אמא ואני הכנו עוגה לשבת." },
+          { "ok": "Ari does his homework after school.", "bad": "Ari makes his homework after school.", "he": "ארי מכין שיעורי בית אחרי בית הספר." },
+          { "ok": "Please don't make noise. Grandpa is sleeping.", "bad": "Please don't do noise. Grandpa is sleeping.", "he": "בבקשה לא לעשות רעש. סבא ישן." }
+        ],
+        "check": [
+          { "when": "יוצרים משהו חדש: עוגה, רעש, תוכנית", "then": "make", "example": "make a sandwich" },
+          { "when": "עושים עבודה או מטלה: שיעורים, כלים", "then": "do", "example": "do the dishes" }
+        ],
+        "exceptions": [
+          { "he": "זוגות שפשוט זוכרים:", "en": "make a mistake · make friends · do your best" }
+        ],
+        "remember": "make בונה, do עובד. ואת הזוגות המיוחדים לומדים בעל פה."
+      },
+      "adult": {
+        "title": "איך בוחרים את המילה שבאה בזוג?",
+        "rule": "קולוקציה היא צירוף שדוברים משתמשים בו קבוע, גם כשמילה אחרת נשמעת הגיונית. make לרוב ליצירה ולתוצאה (החלטה, התקדמות), ו־do לפעילות ולמטלה (מחקר, קניות). גם שמות תואר נבחרים כך: גשם הוא heavy, קפה הוא strong, ומחיר הוא high.",
+        "why": "בעברית \"עושים\" כמעט הכול, ולכן כותבים do a decision. כך גם \"גשם חזק\" שהופך ל־strong rain, ו\"מחיר יקר\" שהופך ל־expensive price. באנגלית המחיר high, והמוצר expensive.",
+        "examples": [
+          { "ok": "It took me a week to make a decision.", "bad": "It took me a week to do a decision.", "he": "לקח לי שבוע לקבל החלטה." },
+          { "ok": "There was heavy rain all night.", "bad": "There was strong rain all night.", "he": "ירד גשם חזק כל הלילה." },
+          { "ok": "The price of the tickets is very high.", "bad": "The price of the tickets is very expensive.", "he": "המחיר של הכרטיסים יקר מאוד." }
+        ],
+        "check": [
+          { "when": "יצירה או תוצאה: החלטה, טעות, תוכנית", "then": "make", "example": "make a plan, make progress" },
+          { "when": "מטלה, עבודה, פעילות כללית", "then": "do", "example": "do research, do the shopping" },
+          { "when": "לפני rain או traffic", "then": "heavy, לא strong", "example": "heavy traffic" },
+          { "when": "price, salary, cost", "then": "high או low, לא expensive", "example": "a high price, a low salary" }
+        ],
+        "exceptions": [
+          { "he": "יש צירופים עם take ו־have שבעברית הם \"לעשות\".", "en": "take a shower, take a photo, have a party" },
+          { "he": "make the bed, למרות שזו מטלה.", "en": "Make your bed, please." }
+        ],
+        "remember": "לא מתרגמים את \"עושים\". שואלים: איזה זוג אומרים דוברי אנגלית?"
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "word-formation",
+    "emoji": "🧩",
+    "title": "שורש וסיומת",
+    "skills": ["vocabulary.word-formation"],
+    "image": "מהמילה success בונים משפחה שלמה: succeed, successful, successfully. כמו שבעברית מ\"הצלחה\" יוצאים \"מצליח\" ו\"הצליח\", באנגלית הסיומת אומרת איזה תפקיד יש למילה במשפט.",
+    "rule": "בשאלת יצירת מילים קובעים קודם איזה חלק דיבר חסר במשפט, ורק אז בוחרים סיומת. ness, ment, tion, ity יוצרים שמות עצם, ful, ous, able, al יוצרים שמות תואר, ly יוצר תואר הפועל, ו־un, dis, im הופכים את המשמעות.",
+    "pattern": "תחילית + שורש + סיומת",
+    "examples": [
+      { "en": "She is very successful.", "he": "היא מצליחה מאוד." },
+      { "en": "We were surprised by her kindness.", "he": "הופתענו מהאדיבות שלה." },
+      { "en": "It is impossible to finish this today.", "he": "אי אפשר לסיים את זה היום." }
+    ],
+    "hebrewTrap": "בעברית \"הצלחה\" ו\"מצליחה\" נבדלות בתבנית ולא בסיומת, ולכן קל לשכוח את הסיומת באנגלית ולכתוב very success. ו\"אי\" בעברית היא תחילית אחת, ובאנגלית יש כמה: unhappy, impossible, dislike.",
+    "levels": {
+      "kids": {
+        "title": "למה success הופך ל־successful?",
+        "rule": "למילה באנגלית יש משפחה, והסוף שלה משתנה לפי התפקיד. אחרי is very באה מילה שמתארת, כמו successful או windy. אחרי the בא לרוב שם של דבר, כמו success.",
+        "why": "בעברית \"הצלחה\" ו\"מצליח\" נראות שונה כבר מההתחלה. באנגלית ההבדל רק בסוף המילה, אז קל לשכוח אותו ולכתוב very success.",
+        "examples": [
+          { "ok": "Tamar is very successful at school.", "bad": "Tamar is very success at school.", "he": "תמר מאוד מצליחה בבית הספר." },
+          { "ok": "It is very windy today.", "bad": "It is very wind today.", "he": "יש היום הרבה רוח." },
+          { "ok": "Ari was unhappy because it rained.", "he": "ארי היה עצוב כי ירד גשם. un הופך את happy להפך." }
+        ],
+        "check": [
+          { "when": "לפני החסר יש is very, או שהמילה מתארת מישהו", "then": "מילה שמתארת, עם סוף כמו ful, y, ous", "example": "very helpful" },
+          { "when": "לפני החסר יש the ואחריו of", "then": "שם של דבר, עם סוף כמו ness, ment, tion", "example": "the excitement of Purim" }
+        ],
+        "exceptions": [
+          { "he": "un בהתחלה הופך את המשמעות:", "en": "happy, unhappy · kind, unkind" }
+        ],
+        "remember": "השורש אומר מה, הסוף אומר תפקיד: success זה דבר, successful מתאר."
+      },
+      "adult": {
+        "title": "איזו צורה של המילה מתאימה למשפט?",
+        "rule": "קודם מזהים מה חסר. אחרי a, the, my או לפני of: שם עצם (ness, ment, tion, ity). לפני שם עצם או אחרי be (גם be very): שם תואר (ful, ous, able, ive). ליד פועל: תואר הפועל (ly). אחר כך בודקים אם המשמעות חיובית או שלילית (un, in, dis).",
+        "why": "בעברית חלקי הדיבר נבדלים בתבנית (הצלחה, מצליח, בהצלחה), ולכן הסיומת האנגלית נראית כמו קישוט ונשכחת: very success. ו\"אי\" היא תחילית אחת, כשבאנגלית צריך לבחור בין un, in, im, dis.",
+        "examples": [
+          { "ok": "She is a very successful lawyer.", "bad": "She is a very success lawyer.", "he": "היא עורכת דין מצליחה מאוד." },
+          { "ok": "We noticed a big improvement in his English.", "bad": "We noticed a big improve in his English.", "he": "שמנו לב לשיפור גדול באנגלית שלו." },
+          { "ok": "It is impossible to finish the project today.", "bad": "It is unpossible to finish the project today.", "he": "אי אפשר לסיים את הפרויקט היום." }
+        ],
+        "check": [
+          { "when": "אחרי a, the, my או לפני of", "then": "שם עצם", "example": "the importance of sleep" },
+          { "when": "לפני שם עצם, או אחרי be או be very", "then": "שם תואר", "example": "a dangerous road" },
+          { "when": "החסר מתאר איך עושים את הפעולה", "then": "תואר הפועל, עם ly", "example": "She answered politely." },
+          { "when": "המשמעות הפוכה", "then": "תחילית שלילה: un, in, im, dis", "example": "unusual, incorrect, impolite, dishonest" }
+        ],
+        "exceptions": [
+          { "he": "התחילית in משתנה: im לפני p, b, m, ו־il לפני l, ו־ir לפני r.", "en": "impossible, illegal, irregular" },
+          { "he": "שמות של אנשים נוצרים לרוב עם er, or, ist.", "en": "teacher, actor, scientist" }
+        ],
+        "remember": "קודם התפקיד במשפט, אחר כך הסיומת: דבר, תיאור או אופן."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "phrasal-verbs",
+    "emoji": "🚪",
+    "title": "פועל עם מילה קטנה",
+    "skills": ["vocabulary.phrasal-verbs"],
+    "image": "look לבד זה להסתכל, אבל look after זה לשמור על מישהו. כשתמר אומרת I look after my little brother, היא לא מסתכלת אחריו, היא שומרת עליו. המילה הקטנה משנה את כל המשמעות.",
+    "rule": "פועל צירופי הוא פועל עם מילית (up, after, out, off, for) שיחד יוצרים משמעות חדשה. לא מתרגמים כל מילה לחוד, אלא את הצירוף כולו, ובודקים במשפט אם המשמעות המילולית בכלל הגיונית.",
+    "pattern": "פועל + up / out / after / off",
+    "examples": [
+      { "en": "Tamar looks after her little brother.", "he": "תמר שומרת על אחיה הקטן." },
+      { "en": "Ari is looking for his keys.", "he": "ארי מחפש את המפתחות שלו." },
+      { "en": "Ari gave up the piano after a year.", "he": "ארי ויתר על הפסנתר אחרי שנה." }
+    ],
+    "hebrewTrap": "בעברית לכל משמעות יש פועל משלה: לשמור, לחפש, לוותר. לכן קוראים look after כ\"להסתכל אחרי\" ו־give up כ\"לתת למעלה\". ובכתיבה שוכחים את המילית: looking my keys במקום looking for my keys.",
+    "levels": {
+      "kids": {
+        "title": "למה look after זה לא להסתכל אחרי?",
+        "rule": "יש פעלים שמקבלים מילה קטנה, ואז יש להם משמעות חדשה. look זה להסתכל, אבל look for זה לחפש. לומדים את שתי המילים יחד, כמו מילה אחת.",
+        "why": "בעברית יש מילה אחת לכל דבר: לחפש, לשמור, לוותר. באנגלית זה פועל ועוד מילה קטנה. מי שמתרגם כל מילה לבד מבין look after כ\"להסתכל אחרי\".",
+        "examples": [
+          { "ok": "Tamar looks after her little brother.", "he": "תמר שומרת על אחיה הקטן. היא לא מסתכלת אחריו!" },
+          { "ok": "Ari is looking for his shoe.", "bad": "Ari is looking his shoe.", "he": "ארי מחפש את הנעל שלו." },
+          { "ok": "Get up! It's time for school.", "he": "לקום! הגיע הזמן ללכת לבית הספר." }
+        ],
+        "check": [
+          { "when": "יש פועל ואחריו up, for, after", "then": "קוראים את שתי המילים יחד", "example": "look for, look after" },
+          { "when": "התרגום של כל מילה נשמע מצחיק", "then": "זה פועל עם משמעות חדשה", "example": "give up" }
+        ],
+        "exceptions": [
+          { "he": "פעלים שכדאי לזכור:", "en": "get up · put on · give up · find out" }
+        ],
+        "remember": "פועל ומילה קטנה הם זוג: מתרגמים אותם יחד."
+      },
+      "adult": {
+        "title": "איך מבינים פועל צירופי?",
+        "rule": "פועל צירופי הוא פועל ומילית (כמו up, out, off) עם משמעות חדשה, לפעמים רחוקה מהמילולית. במבחן קוראים את כל המשפט, מנסחים מה קורה ובוחרים לפי ההקשר. יש צירופים שנפרדים (turn it off) ויש שלא (look after her).",
+        "why": "בעברית יש פועל אחד לכל משמעות (לגלות, לוותר, לדחות), ולכן מתרגמים find out כ\"למצוא בחוץ\" ו־put off כ\"לשים כבוי\". ובצירוף נפרד שמים את הכינוי בסוף, כמו בעברית: turn off it.",
+        "examples": [
+          { "ok": "We put off the trip because of the rain.", "he": "דחינו את הטיול בגלל הגשם." },
+          { "ok": "I found out the truth yesterday.", "he": "גיליתי את האמת אתמול." },
+          { "ok": "Turn it off, please.", "bad": "Turn off it, please.", "he": "בבקשה לכבות את זה." }
+        ],
+        "check": [
+          { "when": "המשמעות המילולית לא מתאימה להקשר", "then": "פועל צירופי: מנחשים מהמשפט", "example": "The meeting was called off." },
+          { "when": "בצירוף נפרד בא כינוי (it, them)", "then": "הכינוי בין הפועל למילית", "example": "Pick them up." },
+          { "when": "כמה אפשרויות עם אותו פועל", "then": "המילית קובעת את המשמעות", "example": "look for, look after, look up" }
+        ],
+        "exceptions": [
+          { "he": "יש צירופים עם שתי מיליות.", "en": "I can't put up with this noise." },
+          { "he": "לפעמים לאותו צירוף יש משמעות מילולית וגם משמעות חדשה.", "en": "He took off his coat. The plane took off." }
+        ],
+        "remember": "פועל ומילית מתרגמים כיחידה אחת, וכינוי נכנס ביניהם: turn it off."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "idioms",
+    "emoji": "🌧️",
+    "title": "ביטוי שלא מתרגמים מילה במילה",
+    "skills": ["vocabulary.idioms"],
+    "image": "סבא יוסף אומר It's raining cats and dogs. ארי מסתכל מהחלון ולא רואה חתולים. בביטוי, המשמעות של כולו שונה מהמשמעות של כל מילה.",
+    "rule": "ניב הוא ביטוי קבוע שהמשמעות שלו לא נובעת מהמילים. כשהתרגום המילולי לא הגיוני במשפט, זה כנראה ניב: מחפשים בהקשר מה הדובר מרגיש או מתכוון, ולומדים את הביטוי כיחידה אחת.",
+    "pattern": "ביטוי שלם = משמעות אחת",
+    "examples": [
+      { "en": "It's raining cats and dogs.", "he": "יורד גשם זלעפות." },
+      { "en": "The test was a piece of cake.", "he": "המבחן היה קלי קלות." },
+      { "en": "Break a leg in the school play!", "he": "בהצלחה בהצגה של בית הספר!" }
+    ],
+    "hebrewTrap": "גם בעברית יש ניבים (\"על הפנים\", \"לשבת על הספרים\"), אבל כשמתרגמים אותם מילה במילה לאנגלית יוצא משהו לא מובן: on the face. ובכיוון ההפוך, קוראים a piece of cake ומחפשים עוגה.",
+    "levels": {
+      "kids": {
+        "title": "למה יורדים חתולים וכלבים?",
+        "rule": "יש משפטים באנגלית שנשמעים מצחיק אם מתרגמים כל מילה. זה ביטוי. לומדים אותו שלם, כמו שבעברית יודעים ש\"שבר את הראש\" פירושו חשב הרבה.",
+        "why": "בעברית יש לנו ביטויים משלנו, ואנחנו מבינים אותם בלי לחשוב. באנגלית הביטויים אחרים. מי שמתרגם מילה במילה מחפש עוגה ב־a piece of cake.",
+        "examples": [
+          { "ok": "The math test was a piece of cake.", "he": "המבחן בחשבון היה קל מאוד." },
+          { "ok": "It's raining cats and dogs, so take an umbrella.", "he": "יורד גשם חזק מאוד, אז קחו מטרייה." },
+          { "ok": "Tell me the story, Abba. I'm all ears!", "he": "ספר לי את הסיפור, אבא. אני כולי אוזן!" }
+        ],
+        "check": [
+          { "when": "התרגום של כל מילה נשמע מצחיק", "then": "זה ביטוי: מנחשים מהסיפור", "example": "a piece of cake" },
+          { "when": "יש כמה תשובות לבחירה", "then": "בוחרים מה שמתאים למצב בסיפור", "example": "I'm all ears." }
+        ],
+        "exceptions": [],
+        "remember": "ביטוי הוא סוד של השפה: מבינים את כולו, לא כל מילה."
+      },
+      "adult": {
+        "title": "איך מבינים ניב באנגלית?",
+        "rule": "ניב הוא ביטוי קבוע שמשמעותו אינה סכום המילים. אם הקריאה המילולית לא מתאימה למשפט, מחפשים בהקשר את הכוונה: רגש, הצלחה, קושי. בכתיבה לא משנים מילים בניב.",
+        "why": "מתרגמים ניבים עבריים מילה במילה ויוצא משהו לא מובן: on the face במקום \"על הפנים\". ובקריאה מבינים hit the books מילולית, כאילו מכים ספרים, במקום \"לשבת על הספרים\".",
+        "examples": [
+          { "ok": "I have to hit the books tonight; the exam is tomorrow.", "he": "הלילה צריך לשבת על הספרים; המבחן מחר." },
+          { "ok": "Don't worry, the interview will be a piece of cake.", "he": "אל תדאגו, הראיון יהיה קלי קלות." },
+          { "ok": "The concert was terrible.", "bad": "The concert was on the face.", "he": "ההופעה הייתה על הפנים." }
+        ],
+        "check": [
+          { "when": "הקריאה המילולית לא הגיונית במשפט", "then": "ניב: מנחשים מההקשר", "example": "He let the cat out of the bag." },
+          { "when": "בוחרים משמעות מכמה אפשרויות", "then": "פוסלים תשובות שמתרגמות מילה במילה", "example": "hit the books = study hard" },
+          { "when": "משתמשים בניב בכתיבה", "then": "רק בניסוח המדויק, בלי לשנות מילים", "example": "It was a piece of cake." }
+        ],
+        "exceptions": [
+          { "he": "יש ניבים שזהים לעברית, אבל זה לא הכלל.", "en": "We're all in the same boat." }
+        ],
+        "remember": "ניב מבינים מההקשר ולא מהמילים, וכותבים אותו בדיוק כמו שהוא."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "synonyms-antonyms",
+    "emoji": "⚖️",
+    "title": "אותו דבר או ההפך",
+    "skills": ["vocabulary.synonyms-antonyms"],
+    "image": "big ו־large הם כמו תאומים: כמעט אותו דבר. big ו־small הם שני צדדים של מאזניים: הפוכים. בשאלה צריך לשים לב אם מבקשים תאום או צד שני.",
+    "rule": "מילה נרדפת (synonym) אומרת כמעט אותו דבר, ומילה הפוכה (antonym) אומרת את ההפך. קודם קוראים אם השאלה מבקשת same או opposite, ואז בודקים שהתשובה מאותו חלק דיבר ומתאימה למשפט.",
+    "pattern": "same = נרדפת · opposite = הפוכה",
+    "examples": [
+      { "en": "The test was difficult. It was really hard.", "he": "המבחן היה קשה. ממש קשה." },
+      { "en": "The water is cold, not hot.", "he": "המים קרים, לא חמים." },
+      { "en": "Rivka is happy, but her brother is sad.", "he": "רבקה שמחה, אבל אחיה עצוב." }
+    ],
+    "hebrewTrap": "בחיפזון מסמנים את המילה הראשונה שקשורה לנושא, בלי לבדוק אם ביקשו same או opposite. ומילים נרדפות לא תמיד מתחלפות: בעברית \"גדול\" מתאים גם לגיל, ובאנגלית אומרים my big brother ולא my large brother.",
+    "levels": {
+      "kids": {
+        "title": "אותו דבר או הפוך?",
+        "rule": "same זה מילה שאומרת אותו דבר: big, large. opposite זה הפוך: big, small. קודם קוראים מה שואלים, ורק אחר כך בוחרים.",
+        "why": "כשממהרים, בוחרים מילה שקשורה לנושא. למשל בשאלה על happy מסמנים sad, גם כשביקשו מילה שאומרת אותו דבר.",
+        "examples": [
+          { "ok": "Ari's room is big. It's a large room.", "he": "החדר של ארי גדול. large אומר אותו דבר." },
+          { "ok": "Tamar is happy, but the cat is sad.", "he": "תמר שמחה, אבל החתול עצוב. happy ו־sad הפוכים." },
+          { "ok": "The soup is hot, and the ice cream is cold.", "he": "המרק חם, והגלידה קרה." }
+        ],
+        "check": [
+          { "when": "כתוב same או means", "then": "מילה שאומרת אותו דבר", "example": "glad = happy" },
+          { "when": "כתוב opposite", "then": "מילה הפוכה", "example": "early, late" }
+        ],
+        "exceptions": [],
+        "remember": "same זה תאום, opposite זה הצד השני של המאזניים."
+      },
+      "adult": {
+        "title": "נרדפת או הפוכה, ומה מתאים במשפט?",
+        "rule": "השאלה מבקשת synonym (מילה נרדפת) או antonym (מילה הפוכה). מילים נרדפות קרובות במשמעות, אבל לא תמיד מתחלפות בכל משפט. הבדיקה: מחליפים את המילה במשפט ושואלים אם המשמעות והניסוח נשארים טבעיים.",
+        "why": "בעברית \"גדול\" מתאים גם לגיל וגם לגודל, ולכן כותבים my large brother במקום my big brother. ובחיפזון מסמנים מילה מאותו נושא בלי לבדוק אם ביקשו את ההפך.",
+        "examples": [
+          { "ok": "My big brother is in the army.", "bad": "My large brother is in the army.", "he": "אחי הגדול בצבא." },
+          { "ok": "The task was difficult, but we didn't give up.", "he": "המשימה הייתה קשה, אבל לא ויתרנו. difficult = hard." },
+          { "ok": "Some shops are open late, while others close early.", "he": "חלק מהחנויות פתוחות עד מאוחר, ואחרות נסגרות מוקדם. late הפוך ל־early." }
+        ],
+        "check": [
+          { "when": "closest in meaning או same", "then": "מילה נרדפת מאותו חלק דיבר", "example": "rapid = fast" },
+          { "when": "opposite", "then": "מילה הפוכה, ופוסלים מילה נרדפת שמופיעה כמסיח", "example": "generous, stingy" },
+          { "when": "שתי מילים נרדפות נראות נכונות", "then": "מציבים כל אחת במשפט ובודקים מה טבעי", "example": "a big decision, a large amount" }
+        ],
+        "exceptions": [
+          { "he": "לפעמים המילה ההפוכה נוצרת בתחילית.", "en": "possible, impossible" },
+          { "he": "למילה עם כמה משמעויות יש כמה הפכים.", "en": "a light bag, a heavy bag · a light room, a dark room" }
+        ],
+        "remember": "קודם same או opposite, ואחר כך מבחן ההחלפה במשפט."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "translation",
+    "emoji": "🔁",
+    "title": "מתרגמים רעיון, לא מילים",
+    "skills": ["writing.translation"],
+    "image": "כשמתרגמים משפט, בונים אותו מחדש לפי הסדר האנגלי: מי, עושה מה, את מה, איפה, מתי. כמו להעביר רהיטים לבית חדש: אותם רהיטים, אבל מסדרים אותם לפי החדרים של הבית החדש.",
+    "rule": "מתרגמים בשלושה שלבים: מוצאים נושא ופועל, בוחרים זמן (עכשיו, תמיד, עבר), ובונים לפי הסדר האנגלי: נושא, פועל, מושא, מקום, זמן. אחר כך בודקים את מה שאין בעברית: a או the, s בגוף שלישי, ופועל עזר בשאלה ובשלילה.",
+    "pattern": "נושא + פועל + מושא + מקום + זמן",
+    "examples": [
+      { "en": "Abba makes kiddush every Shabbat.", "he": "אבא עושה קידוש בכל שבת." },
+      { "en": "Ari goes to the synagogue every morning.", "he": "ארי הולך לבית הכנסת בכל בוקר." },
+      { "en": "Where do you live?", "he": "איפה אתם גרים?" }
+    ],
+    "hebrewTrap": "בעברית אין \"is\" באמצע המשפט, אין a, ואין do בשאלה. לכן תרגום מילה במילה יוצא He teacher או Where you live. וגם \"בכל שבת\" מתורגם בטעות in every Shabbat במקום every Shabbat.",
+    "levels": {
+      "kids": {
+        "title": "איך מתרגמים משפט לאנגלית?",
+        "rule": "לא מתרגמים מילה אחרי מילה. שואלים: מי? עושה מה? איפה? מתי? ובונים את המשפט בסדר הזה. אחרי he או she מוסיפים s לפועל.",
+        "why": "בעברית אומרים \"תמר שמחה\" בלי מילה באמצע. באנגלית חייבים is: Tamar is happy. ובעברית שואלים בלי מילת עזר, אז כותבים בטעות Where you live.",
+        "examples": [
+          { "ok": "Abba makes kiddush every Shabbat.", "bad": "Abba make kiddush in every Shabbat.", "he": "אבא עושה קידוש בכל שבת." },
+          { "ok": "Tamar is happy today.", "bad": "Tamar happy today.", "he": "תמר שמחה היום." },
+          { "ok": "Where do you live?", "bad": "Where you live?", "he": "איפה אתם גרים?" }
+        ],
+        "check": [
+          { "when": "בעברית יש \"אני\", \"הוא\" ומילה שמתארת", "then": "מוסיפים am, is או are", "example": "She is tired." },
+          { "when": "שאלה עם פועל רגיל", "then": "מוסיפים do או does", "example": "What do you want?" },
+          { "when": "בסוף המשפט \"בכל יום\"", "then": "every day, בלי in", "example": "I read every day." }
+        ],
+        "exceptions": [],
+        "remember": "מי, עושה מה, איפה, מתי: זה הסדר של המשפט באנגלית."
+      },
+      "adult": {
+        "title": "איך מתרגמים משפט מעברית בלי טעויות?",
+        "rule": "מזהים נושא ופועל. בוחרים זמן לפי מילות הזמן (כל יום, עכשיו, אתמול, כבר). בונים: נושא, פועל, מושא, מקום, זמן. ומוסיפים את מה שהעברית לא אומרת: be, do, a או the, ו־s בגוף שלישי.",
+        "why": "העברית מוותרת על אוגד בהווה (\"הוא מורה\"), על a ועל פועל עזר בשאלה, ומאפשרת סדר מילים חופשי. תרגום צמוד יוצר He teacher, או Where you work, או like very much pizza.",
+        "examples": [
+          { "ok": "He is a teacher.", "bad": "He teacher.", "he": "הוא מורה." },
+          { "ok": "We like pizza very much.", "bad": "We like very much pizza.", "he": "אנחנו מאוד אוהבים פיצה." },
+          { "ok": "Ari has been learning English for two years.", "bad": "Ari learns English for two years.", "he": "ארי לומד אנגלית כבר שנתיים." }
+        ],
+        "check": [
+          { "when": "משפט בלי פועל: \"היא רופאה\"", "then": "מוסיפים be, ו־a לפני מקצוע", "example": "She is a doctor." },
+          { "when": "שאלה או שלילה עם פועל רגיל", "then": "do, does או did", "example": "Where does he work?" },
+          { "when": "\"כבר\" עם משך זמן שעדיין נמשך", "then": "present perfect, לא הווה פשוט", "example": "I have lived here for five years." },
+          { "when": "\"מאוד\", \"טוב\", \"כל יום\"", "then": "אחרי המושא, לא בין הפועל למושא", "example": "She speaks English well." }
+        ],
+        "exceptions": [
+          { "he": "שמות של מנהגים יהודיים נשארים לרוב בתעתיק.", "en": "kiddush, sukkah, Shabbat" }
+        ],
+        "remember": "מתרגמים משפט שלם: קודם המבנה האנגלי, אחר כך המילים."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "spelling",
+    "emoji": "✏️",
+    "title": "שומעים דבר אחד, כותבים אחר",
+    "skills": ["writing.spelling"],
+    "image": "באנגלית יש אותיות שקטות: ב־knife לא שומעים את ה־k, וב־write לא שומעים את ה־w. הן נכתבות אבל לא משמיעות קול, כמו אורחים שקטים בסלון.",
+    "rule": "באנגלית לא כותבים בדיוק מה ששומעים. כשמקלידים מילה ששמעתם: מחלקים להברות, חושבים על המשפחה של המילה (sign, signature), ובודקים אותיות כפולות, אותיות שקטות וצירופים נפוצים (tion, ight).",
+    "pattern": "הברה + הברה + סיומת",
+    "examples": [
+      { "en": "I wrote a letter to Grandpa.", "he": "כתבתי מכתב לסבא." },
+      { "en": "Be careful with the knife.", "he": "זהירות עם הסכין." },
+      { "en": "Tamar is my best friend.", "he": "תמר החברה הכי טובה שלי." }
+    ],
+    "hebrewTrap": "בעברית הכתיב קרוב לצליל, ולכן כותבים באנגלית מה ששומעים: nife במקום knife, lisen במקום listen. ומי שרגיל לכתוב בלי ניקוד משמיט תנועות: frend במקום friend.",
+    "levels": {
+      "kids": {
+        "title": "למה יש אותיות שלא שומעים?",
+        "rule": "באנגלית יש אותיות שכותבים ולא שומעים, כמו k ב־knife. מקלידים לאט, הברה אחרי הברה, וחושבים איך המילה נראתה בספר.",
+        "why": "בעברית כותבים כמעט מה ששומעים. באנגלית לא תמיד, ולכן כותבים בטעות nife במקום knife.",
+        "examples": [
+          { "ok": "Be careful with the knife.", "bad": "Be careful with the nife.", "he": "זהירות עם הסכין." },
+          { "ok": "Tamar is my best friend.", "bad": "Tamar is my best frend.", "he": "תמר החברה הכי טובה שלי." },
+          { "ok": "It's night. Time to sleep.", "bad": "It's nait. Time to sleep.", "he": "לילה. הגיע הזמן לישון." }
+        ],
+        "check": [
+          { "when": "שומעים \"נ\" בהתחלה", "then": "אולי kn, כמו knife ו־know", "example": "knee, knock" },
+          { "when": "שומעים \"אַיט\" בסוף", "then": "בודקים אם זה ight", "example": "light, night, right" }
+        ],
+        "exceptions": [
+          { "he": "מילים עם אותיות שקטות:", "en": "write · know · climb · listen" }
+        ],
+        "remember": "אותיות שקטות הן כמו ילדים בספרייה: הן שם, אבל לא משמיעות קול."
+      },
+      "adult": {
+        "title": "איך מקלידים נכון מילה ששומעים?",
+        "rule": "מחלקים להברות וכותבים כל הברה. בודקים מוקשים קבועים: אותיות שקטות (kn, wr, mb), צירופים (ight, tion), עיצור כפול אחרי תנועה קצרה (running, beginning) ו־ie או ei. עוזר להיזכר במילה קרובה: sign, signature.",
+        "why": "בעברית הכתיב קרוב לצליל, ותנועות בכלל לא כותבים. לכן משמיטים אותיות שקטות ותנועות (frend, nife), או כותבים לפי הצליל: lisen במקום listen.",
+        "examples": [
+          { "ok": "We climbed a high mountain.", "bad": "We climed a high mountain.", "he": "טיפסנו על הר גבוה." },
+          { "ok": "She received a letter from school.", "bad": "She recieved a letter from school.", "he": "היא קיבלה מכתב מבית הספר." },
+          { "ok": "The beginning of the film was boring.", "bad": "The begining of the film was boring.", "he": "ההתחלה של הסרט הייתה משעממת." }
+        ],
+        "check": [
+          { "when": "צליל \"שן\" בסוף המילה", "then": "לרוב tion", "example": "station, information" },
+          { "when": "אחרי c שומעים \"אִי\"", "then": "ei, לא ie", "example": "receive, ceiling" },
+          { "when": "מילה קצרה עם תנועה קצרה, ועוד סיומת", "then": "מכפילים את העיצור האחרון", "example": "run, running · stop, stopped" },
+          { "when": "האות הראשונה לא נשמעת", "then": "בודקים kn, wr, ps", "example": "know, write, psychology" }
+        ],
+        "exceptions": [
+          { "he": "יש הבדלי כתיב בין בריטניה לארצות הברית, ושניהם נכונים.", "en": "colour, color · centre, center" },
+          { "he": "ie אחרי c מופיע בכמה מילים.", "en": "science, ancient" }
+        ],
+        "remember": "שומעים, מחלקים להברות, ואז בודקים מוקשים: אותיות שקטות, כפולות ו־ie."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "listening-words",
+    "emoji": "👂",
+    "title": "ship או sheep",
+    "skills": ["listening.words"],
+    "image": "בעברית יש \"אִי\" אחת. באנגלית יש שתיים: ship קצרה כמו קפיצה, ו־sheep ארוכה כמו מתיחה. מי שמקשיב רק לעיצורים שומע את אותה מילה פעמיים.",
+    "rule": "בשאלה \"איזו מילה שמעתם\" מקשיבים בעיקר לתנועה: קצרה או ארוכה (ship, sheep; live, leave), ולצלילים שאין בעברית (th, w). אם אפשר, משמיעים שוב ואומרים כל אפשרות בשקט.",
+    "pattern": "ship קצר · sheep ארוך",
+    "examples": [
+      { "en": "I saw a big ship.", "he": "ראיתי ספינה גדולה." },
+      { "en": "The sheep are eating grass.", "he": "הכבשים אוכלות עשב." },
+      { "en": "We live near the school.", "he": "אנחנו גרים ליד בית הספר." }
+    ],
+    "hebrewTrap": "בעברית אין הבדל בין \"אִי\" קצרה לארוכה, ולכן ship ו־sheep, live ו־leave נשמעים זהים. גם th נשמע לדוברי עברית כמו t, s או d, ו־w נשמע כמו v: three נשמע כמו tree.",
+    "levels": {
+      "kids": {
+        "title": "איך שומעים את ההבדל?",
+        "rule": "יש מילים שנשמעות כמעט אותו דבר. מקשיבים לאמצע המילה: ship קצר, sheep ארוך. אפשר לשמוע שוב, ולהגיד כל מילה בשקט.",
+        "why": "בעברית יש רק \"אִי\" אחד. באנגלית יש קצר וארוך, ולכן ship ו־sheep נשמעים לנו אותו דבר.",
+        "examples": [
+          { "ok": "Look at the big ship!", "he": "תסתכלו על הספינה הגדולה! ship קצר." },
+          { "ok": "The sheep is eating grass.", "he": "הכבשה אוכלת עשב. sheep ארוך." },
+          { "ok": "I have three pencils.", "he": "יש לי שלושה עפרונות. three, לא tree." }
+        ],
+        "check": [
+          { "when": "שתי מילים כמעט זהות", "then": "מקשיבים: קצר או ארוך?", "example": "ship, sheep" },
+          { "when": "שומעים צליל עם הלשון בין השיניים", "then": "זה th", "example": "three, thank you" }
+        ],
+        "exceptions": [],
+        "remember": "ship קופץ, sheep נמתח."
+      },
+      "adult": {
+        "title": "איך מבחינים בין מילים שנשמעות דומה?",
+        "rule": "רוב הטעויות בזיהוי מילים הן בתנועות: ship או sheep, full או fool, cap או cup. בעיצורים: th מול t או s, ו־w מול v. מקשיבים שוב, משווים בין האפשרויות, ואם יש משפט, בודקים איזו מילה מתאימה גם במשמעות.",
+        "why": "בעברית יש חמש תנועות בלי הבחנה באורך, ובאנגלית יש יותר מעשר. האוזן העברית מקבצת אותן, ולכן live ו־leave, full ו־fool נשמעים זהים. גם th חסר בעברית ונשמע כמו t או s.",
+        "examples": [
+          { "ok": "Please don't leave yet.", "he": "בבקשה אל תלכו עדיין. leave ארוך." },
+          { "ok": "I'm full, thanks.", "he": "שבעתי, תודה. full קצר, fool ארוך." },
+          { "ok": "I think it's a good idea.", "he": "נראה לי שזה רעיון טוב. think, לא sink." }
+        ],
+        "check": [
+          { "when": "האפשרויות נבדלות בתנועה", "then": "קצרה או ארוכה, ומה מתאים במשפט", "example": "live, leave" },
+          { "when": "האפשרויות נבדלות ב־th", "then": "לשון בין השיניים: th", "example": "three, tree · think, sink" },
+          { "when": "w מול v", "then": "ב־w השפתיים עגולות, ב־v השיניים נוגעות בשפה", "example": "west, vest" }
+        ],
+        "exceptions": [
+          { "he": "יש מילים שנשמעות בדיוק אותו דבר, ורק ההקשר מכריע.", "en": "right, write · there, their" }
+        ],
+        "remember": "בתנועה האנגלית יש אורך: קצרה וארוכה הן שתי מילים שונות."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "listening-comprehension",
+    "emoji": "🎧",
+    "title": "קודם השאלה, אחר כך ההקלטה",
+    "skills": ["listening.sentences", "listening.dialogues"],
+    "image": "לפני שתמר לוחצת על play, היא קוראת את השאלה: When does the office open? עכשיו היא יודעת שהיא מחפשת שעה, והאוזן שלה מסננת את כל השאר.",
+    "rule": "קוראים את השאלה ואת התשובות לפני ההאזנה ומסמנים מה מחפשים: שעה, מקום, איך, למה. בזמן ההאזנה לא מתרגמים כל מילה. שימו לב לתיקונים (no, actually, sorry) ולשלילה, כי הם משנים את התשובה.",
+    "pattern": "שאלה ← מילת מפתח ← האזנה ← תשובה",
+    "examples": [
+      { "en": "The office opens at nine. No, sorry, at half past nine.", "he": "המשרד נפתח בתשע. לא, סליחה, בתשע וחצי." },
+      { "en": "Ari usually takes the bus, but today he walked.", "he": "ארי בדרך כלל נוסע באוטובוס, אבל היום הוא הלך ברגל." },
+      { "en": "Shall we meet at the park? It's going to rain. Let's meet at the library.", "he": "ניפגש בפארק? עומד לרדת גשם. בואו ניפגש בספרייה." }
+    ],
+    "hebrewTrap": "מי שמתרגם בראש כל מילה לעברית נשאר מאחור ומפספס את המשפט הבא. ומלכודת קבועה: ההקלטה מזכירה כמה אפשרויות (אוטובוס, רכב, ברגל), ובוחרים את הראשונה ששמעו במקום את הנכונה.",
+    "levels": {
+      "kids": {
+        "title": "איך מקשיבים לשאלה באנגלית?",
+        "rule": "קודם קוראים את השאלה. When? מחפשים זמן. Where? מחפשים מקום. אחר כך מקשיבים רק למה שמחפשים. לא צריך להבין כל מילה.",
+        "why": "כשמנסים לתרגם כל מילה לעברית, ההקלטה ממשיכה ואנחנו נשארים מאחור. עדיף לחפש רק את המילה החשובה.",
+        "examples": [
+          { "ok": "When does the shop open? At nine o'clock.", "he": "מתי החנות נפתחת? בשעה תשע. When מחפש זמן." },
+          { "ok": "Ari usually takes the bus, but today he walked.", "he": "ארי בדרך כלל נוסע באוטובוס, אבל היום הלך ברגל. אחרי but מגיעה התשובה." },
+          { "ok": "Where is my bag? It's under the table.", "he": "איפה התיק שלי? מתחת לשולחן. Where מחפש מקום." }
+        ],
+        "check": [
+          { "when": "השאלה מתחילה ב־When", "then": "מחפשים זמן", "example": "at five, on Sunday" },
+          { "when": "שומעים but או no", "then": "התשובה הנכונה באה אחרי", "example": "Not on Monday, on Tuesday." }
+        ],
+        "exceptions": [],
+        "remember": "שאלה קודם, אוזניים אחר כך: יודעים מה מחפשים לפני שמתחילים לשמוע."
+      },
+      "adult": {
+        "title": "איך עונים על שאלת האזנה?",
+        "rule": "לפני ההאזנה קוראים את השאלה ואת התשובות ומסמנים את סוג המידע (זמן, מקום, סיבה, דעה). בזמן ההאזנה עוקבים אחרי מילות מפנה: but, actually, no, instead. בדיאלוג מקשיבים מי אומר מה ואיך השיחה נגמרת, כי ההחלטה בסוף היא בדרך כלל התשובה.",
+        "why": "ההקלטה מזכירה בכוונה כמה אפשרויות שמופיעות גם בתשובות. מי שמתרגם בראש ותופס את המילה הראשונה ששמע נופל במסיח. באנגלית שינוי דעה מגיע לפעמים במילה קטנה אחת: actually.",
+        "examples": [
+          { "ok": "The ticket office opens at nine. Sorry, I mean half past nine.", "he": "הקופה נפתחת בתשע. סליחה, התכוונתי לתשע וחצי. התשובה היא התיקון." },
+          { "ok": "Let's take the car. Actually, the train is faster. OK, the train then.", "he": "ניסע ברכב. בעצם, הרכבת מהירה יותר. טוב, אז ברכבת. ההחלטה בסוף." },
+          { "ok": "Tamar would love to come, but she has to look after her sister.", "he": "תמר הייתה שמחה לבוא, אבל היא צריכה לשמור על אחותה. הסיבה באה אחרי but." }
+        ],
+        "check": [
+          { "when": "כמה אפשרויות מוזכרות בהקלטה", "then": "בוחרים את מה שנשאר בסוף, אחרי התיקון", "example": "Not Monday. Tuesday, then." },
+          { "when": "שאלה על דיאלוג: מה הם יעשו?", "then": "מקשיבים להחלטה בסוף השיחה", "example": "OK, let's do that." },
+          { "when": "שאלה על רגש או דעה", "then": "מקשיבים לטון ולמילים כמו love, hate, boring", "example": "That sounds boring." },
+          { "when": "לא שמעתם את התשובה בבירור", "then": "פוסלים את מה שבטוח לא נאמר, ובוחרים מהשאר" }
+        ],
+        "exceptions": [],
+        "remember": "יודעים מה מחפשים לפני ההאזנה, וסומכים על המילה האחרונה, לא על הראשונה."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "main-idea-purpose",
+    "emoji": "🎯",
+    "title": "על מה הטקסט, ולמה נכתב",
+    "skills": ["reading.main-idea", "reading.purpose"],
+    "image": "רעיון מרכזי הוא כמו כותרת לאלבום תמונות שלם, לא לתמונה אחת. ומטרה היא התשובה לשאלה: למה מישהו טרח לכתוב את זה? כדי להזמין, להסביר, להזהיר או לספר.",
+    "rule": "רעיון מרכזי הוא מה שכל הפסקאות יחד אומרות, לא פרט אחד. מוצאים אותו בכותרת, במשפט הראשון ובמשפט האחרון. מטרת הכותב נקבעת לפי סוג הטקסט ולפי הפעלים: מודעה מזמינה או משכנעת, הוראות מסבירות, שלט מזהיר.",
+    "pattern": "כותרת + פתיחה + סיום = הרעיון",
+    "examples": [
+      { "en": "Join our beach clean-up this Friday! Bring gloves and a bag.", "he": "הצטרפו לניקיון החוף ביום שישי! הביאו כפפות ושקית. המטרה: להזמין." },
+      { "en": "Please do not touch the lamps. They are very old and break easily.", "he": "נא לא לגעת במנורות. הן עתיקות מאוד ונשברות בקלות. המטרה: להזהיר." },
+      { "en": "First, mix the flour and the water. Then add salt.", "he": "קודם מערבבים את הקמח והמים. אחר כך מוסיפים מלח. המטרה: להסביר איך עושים." }
+    ],
+    "hebrewTrap": "בוחרים תשובה שמופיעה בטקסט כמעט מילה במילה, אבל היא רק פרט קטן ולא הרעיון המרכזי. ובשאלת מטרה מתבלבלים בין to inform (למסור מידע) לבין to persuade (לשכנע).",
+    "levels": {
+      "kids": {
+        "title": "על מה כל הסיפור?",
+        "rule": "רעיון מרכזי זה על מה כל הטקסט, לא רק שורה אחת. קוראים את הכותרת, את ההתחלה ואת הסוף. אחר כך שואלים: למה כתבו את זה? כדי לספר, להסביר, להזהיר או להזמין?",
+        "why": "קל לבחור תשובה שראינו בטקסט מילה במילה. אבל לפעמים זה רק פרט קטן, ולא מה שכל הטקסט מדבר עליו.",
+        "examples": [
+          { "ok": "Come to our Purim party on Sunday!", "he": "בואו למסיבת פורים שלנו ביום ראשון! הטקסט מזמין." },
+          { "ok": "Do not swim here. The water is deep.", "he": "אסור לשחות כאן. המים עמוקים. הטקסט מזהיר." },
+          { "ok": "First wash your hands, then cut the bread.", "he": "קודם שוטפים ידיים, ואז חותכים את הלחם. הטקסט מסביר איך." }
+        ],
+        "check": [
+          { "when": "שואלים מה הרעיון המרכזי", "then": "בוחרים משהו שמתאים לכל הטקסט", "example": "The text is about saving water." },
+          { "when": "שואלים למה כתבו את הטקסט", "then": "לספר, להסביר, להזהיר או להזמין?", "example": "to warn, to invite" }
+        ],
+        "exceptions": [],
+        "remember": "רעיון מרכזי הוא הכותרת של כל האלבום, לא של תמונה אחת."
+      },
+      "adult": {
+        "title": "איך מזהים רעיון מרכזי ומטרה?",
+        "rule": "רעיון מרכזי: קוראים כותרת, משפט ראשון ומשפט אחרון, ושואלים מה משותף לכל הפסקאות. פוסלים תשובות צרות מדי (פרט אחד) ורחבות מדי. מטרה: לפי סוג הטקסט והפעלים: Join או Buy משכנעים, Do not מזהיר, First ו־Then מסבירים.",
+        "why": "בוחרים משפט שמופיע בטקסט כמעט מילה במילה, אבל המסיחים בנויים בדיוק מפרטים כאלה. ובשאלת מטרה מבלבלים בין inform (למסור מידע), persuade (לשכנע) ו־entertain (לבדר).",
+        "examples": [
+          { "ok": "Join our beach clean-up this Friday! Bring gloves and a bag.", "he": "הצטרפו לניקיון החוף ביום שישי! הביאו כפפות ושקית. המטרה: to persuade." },
+          { "ok": "The museum is open from 9:00 to 17:00, except on Saturdays.", "he": "המוזיאון פתוח מ־9:00 עד 17:00, חוץ מימי שבת. המטרה: to inform." },
+          { "ok": "Please do not touch the lamps. They break easily.", "he": "נא לא לגעת במנורות. הן נשברות בקלות. המטרה: to warn." }
+        ],
+        "check": [
+          { "when": "תשובה שמתאימה רק לפסקה אחת", "then": "צרה מדי: פוסלים" },
+          { "when": "תשובה כללית שהטקסט לא מתעמק בה", "then": "רחבה מדי: פוסלים" },
+          { "when": "ציווי: Join, Come, Buy", "then": "to persuade או to invite", "example": "Come and see!" },
+          { "when": "מספרים, שעות, מחירים בלי שיפוט", "then": "to inform", "example": "Tickets cost 20 shekels." }
+        ],
+        "exceptions": [
+          { "he": "ביקורת על סרט או ספר מוסרת מידע, אבל המטרה העיקרית שלה היא לרוב להמליץ או להזהיר.", "en": "You must see this film!" }
+        ],
+        "remember": "רעיון מרכזי מכסה את כל הטקסט, והמטרה נשמעת בפעלים: מזמין, מזהיר, מסביר."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "details-true-false",
+    "emoji": "🔎",
+    "title": "חוזרים לטקסט ובודקים",
+    "skills": ["reading.details", "reading.true-false"],
+    "image": "שאלה על פרט היא כמו לחפש מפתחות בבית: לא מנחשים איפה הם, הולכים למקום ומסתכלים. מחפשים בטקסט את המילה מהשאלה, וקוראים את המשפט סביבה.",
+    "rule": "בשאלת פרטים או נכון ולא נכון: בוחרים מילת מפתח מהשאלה (שם, מספר, מקום), מוצאים אותה בטקסט וקוראים את כל המשפט. בודקים כל חלק בתשובה: מילה אחת כמו only, all, never יכולה להפוך תשובה לשגויה.",
+    "pattern": "מילת מפתח ← שורה בטקסט ← השוואה מדויקת",
+    "examples": [
+      { "en": "Children under 12 must come with an adult.", "he": "ילדים מתחת לגיל 12 חייבים להגיע עם מבוגר." },
+      { "en": "The clean-up starts at 8:00 in the morning.", "he": "הניקיון מתחיל בשמונה בבוקר." },
+      { "en": "Visitors may not touch the lamps in Case 3.", "he": "אסור למבקרים לגעת במנורות שבוויטרינה 3." }
+    ],
+    "hebrewTrap": "עונים מהזיכרון או מהידע הכללי במקום לחזור לטקסט. ומלכודת נוספת: תשובה שמשתמשת באותן מילים כמו הטקסט אבל משנה פרט אחד, כמו evening במקום morning, או all במקום some.",
+    "levels": {
+      "kids": {
+        "title": "איך מוצאים תשובה בטקסט?",
+        "rule": "לוקחים מילה חשובה מהשאלה, כמו שם או מספר. מחפשים אותה בטקסט עם האצבע. קוראים את כל המשפט, ורק אז עונים.",
+        "why": "קל לענות מהזיכרון או לפי מה שנשמע הגיוני. אבל התשובה צריכה להיות כתובה בטקסט, לא בראש שלנו.",
+        "examples": [
+          { "ok": "The party starts at five o'clock.", "he": "המסיבה מתחילה בחמש. השאלה: מתי? מחפשים שעה." },
+          { "ok": "Ari's dog is called Rex.", "he": "לכלב של ארי קוראים רקס. השאלה: איך קוראים לכלב? מחפשים שם." },
+          { "ok": "Tamar has two brothers and one sister.", "he": "לתמר יש שני אחים ואחות אחת. כמה אחים? שניים." }
+        ],
+        "check": [
+          { "when": "שואלים מתי, איפה או כמה", "then": "מחפשים בטקסט זמן, מקום או מספר", "example": "at five, in the park, two" },
+          { "when": "שואלים מה נכון (TRUE)", "then": "בודקים כל תשובה מול הטקסט", "example": "Tamar has two brothers." }
+        ],
+        "exceptions": [],
+        "remember": "לא מנחשים, מצביעים: התשובה מחכה בטקסט."
+      },
+      "adult": {
+        "title": "איך בודקים פרט או נכון ולא נכון?",
+        "rule": "מסמנים מילת מפתח בשאלה (שם, מספר, תאריך), סורקים עד שמוצאים אותה, וקוראים משפט לפני ואחרי. בשאלת TRUE בודקים כל חלק בתשובה מול הטקסט: מילה אחת משנה הכול (all, only, some, must). התשובה מנוסחת לרוב במילים אחרות, אז משווים משמעות.",
+        "why": "בוחרים תשובה שחוזרת על מילים מהטקסט, אבל המסיח משנה פרט אחד: evening במקום morning, all במקום some. ויש מי שעונים מהידע הכללי, גם כשהטקסט אומר אחרת.",
+        "examples": [
+          { "ok": "Volunteers under 14 must come with an adult.", "he": "מתנדבים מתחת לגיל 14 חייבים להגיע עם מבוגר. ולכן נכון: חלק מהמתנדבים צריכים מבוגר." },
+          { "ok": "Lamps with pictures were more expensive.", "he": "מנורות עם ציורים היו יקרות יותר. ובניסוח אחר: they cost more money." },
+          { "ok": "The clean-up starts at 8:00 a.m.", "he": "הניקיון מתחיל ב־8:00 בבוקר. ולכן לא נכון: in the evening." }
+        ],
+        "check": [
+          { "when": "שאלת פרט: מתי, איפה, כמה, מי", "then": "סורקים למילת המפתח וקוראים את כל המשפט", "example": "When does it start? At 8:00." },
+          { "when": "בתשובה יש all, only, never, always", "then": "בודקים שהטקסט אומר בדיוק את זה", "example": "Only school groups can take part." },
+          { "when": "התשובה מנוסחת במילים אחרות", "then": "משווים משמעות, לא מילים", "example": "more expensive = cost more money" },
+          { "when": "השאלה היא NOT TRUE", "then": "מחפשים את התשובה שהטקסט סותר" }
+        ],
+        "exceptions": [],
+        "remember": "כל חלק בתשובה צריך אחיזה בטקסט, ומילה כמו only מספיקה כדי לפסול."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "inference",
+    "emoji": "🕵️",
+    "title": "מה שלא כתוב, אבל ברור",
+    "skills": ["reading.inference"],
+    "image": "בטקסט כתוב: Ari took his umbrella and his boots. לא כתוב שיורד גשם, אבל ברור שארי חושב שירד. הסקה היא לחבר רמזים בטקסט למסקנה, כמו בלש.",
+    "rule": "בשאלת הסקה התשובה לא כתובה במילים, אבל הטקסט תומך בה. אוספים רמזים (מעשים, רגשות, תיאורים), ובוחרים את המסקנה שהטקסט תומך בה בבירור. אם צריך לדמיין מידע שאין בטקסט, התשובה רחוקה מדי.",
+    "pattern": "רמז + רמז = מסקנה",
+    "examples": [
+      { "en": "Ari took his umbrella and his boots.", "he": "ארי לקח מטרייה ומגפיים. אפשר להסיק: הוא חשב שירד גשם." },
+      { "en": "Tamar smiled and hugged her new puppy.", "he": "תמר חייכה וחיבקה את הגור החדש שלה. אפשר להסיק: היא שמחה." },
+      { "en": "When the teacher came in, the room went silent.", "he": "כשהמורה נכנס, החדר השתתק. אפשר להסיק: לפני כן התלמידים דיברו." }
+    ],
+    "hebrewTrap": "מחפשים בטקסט משפט שאומר את התשובה במפורש, ומסמנים את התשובה שיש בה מילים מהטקסט. בהסקה זה בדיוק המסיח. מלכודת שנייה: לבחור משהו שנכון בעולם, אבל הטקסט לא מראה אותו.",
+    "levels": {
+      "kids": {
+        "title": "איך יודעים מה שלא כתוב?",
+        "rule": "לפעמים הטקסט לא אומר הכול, אבל נותן רמזים. אם ארי לוקח מטרייה, כנראה יורד גשם. מחברים את הרמזים ומגלים את התשובה.",
+        "why": "אנחנו מחפשים את התשובה כתובה בדיוק. אבל בשאלות כאלה היא לא כתובה, וצריך לחשוב כמו בלש.",
+        "examples": [
+          { "ok": "Ari took his umbrella and his boots.", "he": "ארי לקח מטרייה ומגפיים. כנראה יורד גשם." },
+          { "ok": "Tamar smiled and hugged her new puppy.", "he": "תמר חייכה וחיבקה את הגור החדש. כנראה היא שמחה." },
+          { "ok": "Grandpa Yosef yawned and closed his eyes.", "he": "סבא יוסף פיהק ועצם את העיניים. כנראה הוא עייף." }
+        ],
+        "check": [
+          { "when": "שואלים איך מישהו מרגיש", "then": "מסתכלים מה הוא עושה: מחייך, בוכה, צועק", "example": "He cried. He was sad." },
+          { "when": "התשובה לא כתובה בטקסט", "then": "בוחרים את מה שהרמזים מראים", "example": "She put on a coat. It was cold." }
+        ],
+        "exceptions": [],
+        "remember": "בלש לא מחכה שיגידו לו: הוא מחבר רמזים."
+      },
+      "adult": {
+        "title": "איך עונים על שאלת הסקה?",
+        "rule": "מאתרים את החלק הרלוונטי ואוספים רמזים: פעולות, תגובות, תיאורים ומילים טעונות. בוחרים את המסקנה שהטקסט תומך בה בלי להוסיף מידע מבחוץ. פוסלים תשובות קיצוניות ותשובות שנכונות בעולם אבל לא מופיעות בטקסט.",
+        "why": "מי שרגיל למצוא תשובה כתובה בוחר בשאלת הסקה את התשובה שחוזרת על מילים מהטקסט. מלכודת שנייה: להסיק יותר מדי, ולבחור מסקנה דרמטית שהטקסט לא מצדיק.",
+        "examples": [
+          { "ok": "After the game, the players walked slowly to the bus without saying a word.", "he": "אחרי המשחק השחקנים הלכו לאט לאוטובוס בלי לומר מילה. אפשר להסיק: הם היו מאוכזבים." },
+          { "ok": "Rivka looked at the clock again and again.", "he": "רבקה הסתכלה על השעון שוב ושוב. אפשר להסיק: היא חיכתה למשהו או מיהרה." },
+          { "ok": "When the teacher came in, the room went silent.", "he": "כשהמורה נכנס, החדר השתתק. אפשר להסיק: לפני כן התלמידים דיברו." }
+        ],
+        "check": [
+          { "when": "בשאלה כתוב probably או suggests", "then": "תשובה שלא כתובה במפורש, אבל רמזים תומכים בה", "example": "The writer suggests that the players were sad." },
+          { "when": "תשובה קיצונית: always, everyone, never", "then": "בדרך כלל רחוקה מדי", "example": "Everyone hated the game." },
+          { "when": "תשובה נכונה בעולם אבל לא בטקסט", "then": "פוסלים: רק הטקסט קובע" }
+        ],
+        "exceptions": [],
+        "remember": "הסקה טובה עומדת על רמזים מהטקסט, לא על הדמיון."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "reference",
+    "emoji": "👉",
+    "title": "למי it מצביע",
+    "skills": ["reading.reference"],
+    "image": "מילים כמו it, they, this הן חצים שמצביעים אחורה בטקסט. כדי לדעת למה הן מתכוונות, הולכים אחורה עד שם העצם שמתאים להן ביחיד או ברבים ובמשמעות.",
+    "rule": "מילת הפניה (it, they, them, this, there, he, she, who, which) מחליפה משהו שכבר הוזכר. מחפשים אחורה את מה שמתאים במספר (it ליחיד, they לרבים), בסוג (he לאדם, it לדבר) ובמשמעות. בודקים בהחלפה: שמים את התשובה במקום המילה וקוראים.",
+    "pattern": "it → דבר אחד · they → כמה",
+    "examples": [
+      { "en": "The lamps are in Case 3. They are very old.", "he": "המנורות נמצאות בוויטרינה 3. הן עתיקות מאוד. They = המנורות." },
+      { "en": "Tamar found a kitten and took it home.", "he": "תמר מצאה חתלתול ולקחה אותו הביתה. it = החתלתול." },
+      { "en": "We visited Haifa and stayed there for two days.", "he": "ביקרנו בחיפה ונשארנו שם יומיים. there = חיפה." }
+    ],
+    "hebrewTrap": "בעברית לכל דבר יש מין, ו\"הוא\" יכול להיות שולחן או ספר. באנגלית he ו־she הם בעיקר לאנשים, ודבר הוא it. ועוד מלכודת: בוחרים את שם העצם הכי קרוב ולא בודקים יחיד או רבים.",
+    "levels": {
+      "kids": {
+        "title": "מה זה it?",
+        "rule": "it, he, she, they הן מילים שמחליפות שם. הולכים אחורה בטקסט ומחפשים את מי שהן מחליפות. they זה כמה, it זה דבר אחד.",
+        "why": "בעברית שולחן הוא \"הוא\". באנגלית שולחן הוא it, ו־he זה בן אדם. אז אם כתוב he, מחפשים ילד או איש.",
+        "examples": [
+          { "ok": "Tamar found a kitten and took it home.", "he": "תמר מצאה חתלתול ולקחה אותו הביתה. it = החתלתול." },
+          { "ok": "Ari has two dogs. They love to play.", "he": "לארי יש שני כלבים. הם אוהבים לשחק. They = הכלבים." },
+          { "ok": "Abba bought a cake. He put it on the table.", "he": "אבא קנה עוגה. הוא שם אותה על השולחן. He = אבא, it = העוגה." }
+        ],
+        "check": [
+          { "when": "כתוב they או them", "then": "מחפשים כמה דברים או אנשים", "example": "two dogs: they" },
+          { "when": "כתוב it", "then": "מחפשים דבר אחד, לא אדם", "example": "a cake: it" }
+        ],
+        "exceptions": [],
+        "remember": "it הוא חץ: הולכים אחורה עד שמוצאים למה הוא מצביע."
+      },
+      "adult": {
+        "title": "למה מילת ההפניה מתייחסת?",
+        "rule": "חוזרים אחורה מהמילה ומחפשים מה שמתאים במספר (it, this ליחיד; they, these לרבים), בסוג (he, she, who לאנשים; it, which לדברים) ובמשמעות. מציבים את המועמד במקום המילה וקוראים: אם המשפט הגיוני, זו התשובה.",
+        "why": "בעברית לכל דבר יש מין, ולכן מחברים he לחפץ שבעברית הוא זכר. וגם בוחרים אוטומטית את שם העצם הקרוב ביותר, בלי לבדוק התאמה במספר ובמשמעות.",
+        "examples": [
+          { "ok": "We collected a lot of rubbish on the beach. Most of it was plastic.", "he": "אספנו הרבה זבל בחוף. רובו היה פלסטיק. it = הזבל, לא החוף." },
+          { "ok": "The lamps are kept behind glass because they break easily.", "he": "המנורות שמורות מאחורי זכוכית כי הן נשברות בקלות. they = המנורות, לא הזכוכית." },
+          { "ok": "Rivka called her grandmother, who lives in Haifa.", "he": "רבקה התקשרה לסבתא שלה, שגרה בחיפה. who = הסבתא." }
+        ],
+        "check": [
+          { "when": "it, this או that", "then": "דבר אחד, או רעיון שלם שנאמר קודם", "example": "He lied. This made her angry." },
+          { "when": "they, them או these", "then": "שם עצם ברבים", "example": "The lamps are old. They break easily." },
+          { "when": "there או then", "then": "there למקום, then לזמן", "example": "We went to Haifa and stayed there." },
+          { "when": "כמה מועמדים מתאימים", "then": "מציבים כל אחד במקום המילה ובודקים משמעות", "example": "Most of the rubbish was plastic." }
+        ],
+        "exceptions": [
+          { "he": "they משמש גם לאדם אחד כשלא ידוע מי הוא.", "en": "Someone left their bag. They forgot it." },
+          { "he": "this יכול להתייחס למשפט שלם, לא רק למילה.", "en": "It rained all day. This ruined the trip." }
+        ],
+        "remember": "מילת הפניה מתאימה במספר, בסוג ובמשמעות, ובודקים אותה בהחלפה."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "sequence",
+    "emoji": "🔢",
+    "title": "מה קרה קודם",
+    "skills": ["reading.sequence"],
+    "image": "סיפור הוא כמו רכבת: כל קרון במקום שלו. מילים כמו first, then, after that, finally הן השלטים בתחנות, והן אומרות באיזה סדר הדברים קרו.",
+    "rule": "בשאלת סדר מחפשים מילות זמן ורצף: first, then, after that, before, when, later, finally. שימו לב שסדר הכתיבה הוא לא תמיד סדר ההתרחשות: אחרי before בא מה שקרה מאוחר יותר.",
+    "pattern": "first → then → after that → finally",
+    "examples": [
+      { "en": "First, Ari washed his hands. Then he ate.", "he": "קודם ארי שטף ידיים. אחר כך הוא אכל." },
+      { "en": "Before she left, Tamar closed the window.", "he": "לפני שיצאה, תמר סגרה את החלון. סגירת החלון קרתה קודם." },
+      { "en": "After the rain stopped, we went outside.", "he": "אחרי שהגשם נפסק, יצאנו החוצה." }
+    ],
+    "hebrewTrap": "קוראים מהר ומניחים שמה שכתוב ראשון קרה ראשון. אבל אחרי before המשפט מזכיר קודם את מה שקרה אחר כך. וגם had ועוד V3 מסמן משהו שקרה עוד לפני.",
+    "levels": {
+      "kids": {
+        "title": "מה קרה קודם ומה אחר כך?",
+        "rule": "מחפשים מילות סדר: first זה קודם, then ו־after that זה אחר כך, finally זה בסוף. הן עוזרות לסדר את הסיפור.",
+        "why": "בסיפור ארוך קל לשכוח מה קרה קודם. מילות הסדר הן השלטים שלנו, ומי שמדלג עליהן מתבלבל.",
+        "examples": [
+          { "ok": "First, Ari put on his shoes. Then he went outside.", "he": "קודם ארי נעל נעליים. אחר כך הוא יצא החוצה." },
+          { "ok": "After lunch, we went to the park.", "he": "אחרי ארוחת הצהריים הלכנו לפארק." },
+          { "ok": "Finally, Tamar went to bed.", "he": "בסוף תמר הלכה לישון." }
+        ],
+        "check": [
+          { "when": "כתוב first", "then": "זה קרה ראשון", "example": "First, wash your hands." },
+          { "when": "כתוב finally או in the end", "then": "זה קרה אחרון", "example": "Finally, we said goodbye." }
+        ],
+        "exceptions": [
+          { "he": "before הפוך: מה שבא אחריו קרה אחר כך.", "en": "Before school, I eat breakfast." }
+        ],
+        "remember": "מילות סדר הן שלטי תחנות: first בהתחלה, finally בסוף."
+      },
+      "adult": {
+        "title": "איך מסדרים אירועים לפי הסדר?",
+        "rule": "מסמנים את האירועים ומחפשים סמני זמן: first, then, after, before, וגם while, by the time ותאריכים. סדר ההתרחשות הוא לא תמיד סדר הכתיבה: אחרי before בא האירוע המאוחר, ו־past perfect (had left) מסמן את מה שקרה קודם.",
+        "why": "קוראים את הטקסט כרצף ומניחים שמה שנכתב ראשון קרה ראשון. אבל עם before ועם had done האנגלית מזכירה את האירועים בסדר הפוך, ומי שלא שם לב מסדר אותם לא נכון.",
+        "examples": [
+          { "ok": "Before the guests arrived, Ima had set the table.", "he": "לפני שהאורחים הגיעו, אמא כבר ערכה את השולחן. השולחן נערך קודם." },
+          { "ok": "When we got to the station, the train had already left.", "he": "כשהגענו לתחנה, הרכבת כבר יצאה. הרכבת יצאה קודם." },
+          { "ok": "While Ari was reading, the phone rang.", "he": "בזמן שארי קרא, הטלפון צלצל. הצלצול קרה באמצע הקריאה." }
+        ],
+        "check": [
+          { "when": "before ואחריו אירוע", "then": "האירוע הזה קרה אחרי האירוע השני", "example": "Before he left, he called me." },
+          { "when": "had ועוד V3", "then": "האירוע הזה קרה קודם", "example": "The film had started when we arrived." },
+          { "when": "while, או when עם ing", "then": "שני אירועים באותו זמן", "example": "While I was cooking, he called." },
+          { "when": "שאלה: מה קרה אחרון?", "then": "מחפשים finally, in the end או תאריך מאוחר", "example": "In the end, they won." }
+        ],
+        "exceptions": [],
+        "remember": "לא סומכים על סדר המשפטים: סמני הזמן קובעים מה קרה קודם."
+      }
+    },
+    "source": "original"
+  },
+  {
+    "id": "fact-opinion",
+    "emoji": "🧐",
+    "title": "עובדה או דעה",
+    "skills": ["reading.fact-opinion"],
+    "image": "עובדה אפשר לבדוק בשעון, בסרגל או במפה: The museum opens at nine. דעה היא מה שמישהו מרגיש או חושב: The museum is boring. על עובדה לא מתווכחים, על דעה כן.",
+    "rule": "עובדה אפשר לבדוק ולהוכיח (מספרים, תאריכים, מקומות). דעה מבטאת הרגשה או שיפוט, ומילים מסגירות אותה: I think, in my opinion, best, worst, beautiful, should. השאלה: האם אפשר לבדוק את המשפט, או רק להסכים איתו או לא?",
+    "pattern": "אפשר לבדוק = עובדה · אפשר להתווכח = דעה",
+    "examples": [
+      { "en": "The museum opens at nine.", "he": "המוזיאון נפתח בתשע. עובדה." },
+      { "en": "The museum is the most interesting place in town.", "he": "המוזיאון הוא המקום הכי מעניין בעיר. דעה." },
+      { "en": "I think everyone should visit it.", "he": "לדעתי כולם צריכים לבקר בו. דעה." }
+    ],
+    "hebrewTrap": "משפט שנאמר בביטחון נשמע כמו עובדה, בעברית ובאנגלית. אבל the best film ever הוא דעה גם בלי I think. ובכיוון ההפוך, משפט עם מספר מפתיע נשמע כמו דעה, אף שאפשר לבדוק אותו.",
+    "levels": {
+      "kids": {
+        "title": "עובדה או מה שמישהו חושב?",
+        "rule": "עובדה אפשר לבדוק: כמה, מתי, איפה. דעה זה מה שמישהו מרגיש או חושב: יפה, משעמם, הכי טוב. מילים כמו I think, best, boring אומרות: זו דעה.",
+        "why": "כשמישהו אומר משהו בביטחון, זה נשמע לנו כמו עובדה. אבל \"הפיצה הכי טעימה\" היא דעה, גם אם אומרים אותה בקול רם.",
+        "examples": [
+          { "ok": "Our school has twenty classrooms.", "he": "בבית הספר שלנו יש עשרים כיתות. עובדה: אפשר לספור." },
+          { "ok": "Pizza is the best food in the world.", "he": "פיצה היא האוכל הכי טוב בעולם. דעה." },
+          { "ok": "I think dogs are better than cats.", "he": "לדעתי כלבים יותר טובים מחתולים. דעה." }
+        ],
+        "check": [
+          { "when": "אפשר לספור, למדוד או לבדוק", "then": "עובדה", "example": "The bus leaves at 8:00." },
+          { "when": "יש best או boring, או I think", "then": "דעה", "example": "This game is boring." }
+        ],
+        "exceptions": [],
+        "remember": "עובדה בודקים, על דעה מתווכחים."
+      },
+      "adult": {
+        "title": "איך מבחינים בין עובדה לדעה?",
+        "rule": "עובדה ניתנת לבדיקה: מספרים, תאריכים, מקומות, אירועים. דעה היא שיפוט, רגש או המלצה, ומסגירות אותה מילים כמו should ו־I believe, או best, amazing ו־too expensive. המבחן: האם אפשר להוכיח את המשפט, או רק להסכים איתו או לא?",
+        "why": "משפט שנאמר בביטחון נשמע כמו עובדה. תלמידים מסווגים the best film ever כעובדה כי אין בו I think, ומסווגים משפט עם מספר מפתיע כדעה, אף שאפשר לבדוק אותו.",
+        "examples": [
+          { "ok": "The film is two hours long.", "he": "הסרט נמשך שעתיים. עובדה." },
+          { "ok": "The film is far too long.", "he": "הסרט ארוך מדי. דעה: too long הוא שיפוט." },
+          { "ok": "Everyone should see this film.", "he": "כולם צריכים לראות את הסרט הזה. דעה: should ממליץ." }
+        ],
+        "check": [
+          { "when": "מספר, תאריך, מקום או אירוע", "then": "עובדה, אם אפשר לבדוק אותה", "example": "The shop closes at 7 p.m." },
+          { "when": "שם תואר שופט: best, terrible, amazing", "then": "דעה", "example": "It's an amazing place." },
+          { "when": "should, I believe או in my opinion", "then": "דעה", "example": "You should try it." }
+        ],
+        "exceptions": [
+          { "he": "משפט עובדתי הוא משפט שאפשר לבדוק, גם אם מתברר שהוא שגוי." }
+        ],
+        "remember": "אם אפשר לבדוק, זו עובדה. אם אפשר רק להסכים או להתווכח, זו דעה."
+      }
+    },
+    "source": "original"
+  }
+]

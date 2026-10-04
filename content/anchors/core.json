@@ -25,6 +25,117 @@
       }
     ],
     "hebrewTrap": "בעברית אין 'להיות' בהווה: אומרים 'אמא במטבח' בלי שום פועל. לכן משמיטים בטעות את הכובע ואומרים Ima in the kitchen.",
+    "levels": {
+      "kids": {
+        "title": "מתי am, מתי is ומתי are?",
+        "rule": "אחרי I כותבים am. אחרי אחד (he, she, it, אבא, הכלב) כותבים is. אחרי you, we, they או כמה כותבים are.",
+        "why": "בעברית אומרים \"תמר בבית הספר\", בלי שום מילה באמצע. באנגלית חייבים מילה כזאת, ולכן כותבים בטעות Tamar at school.",
+        "examples": [
+          {
+            "ok": "Ari is nine years old.",
+            "bad": "Ari nine years old.",
+            "he": "ארי בן תשע."
+          },
+          {
+            "ok": "Tamar is at school.",
+            "bad": "Tamar at school.",
+            "he": "תמר בבית הספר."
+          },
+          {
+            "ok": "Ari and Tamar are in the sukkah.",
+            "bad": "Ari and Tamar is in the sukkah.",
+            "he": "ארי ותמר בסוכה."
+          }
+        ],
+        "check": [
+          {
+            "when": "מדברים על I",
+            "then": "am",
+            "example": "I am happy."
+          },
+          {
+            "when": "מדברים על אחד: he, she, it, תמר, הכלב",
+            "then": "is",
+            "example": "The dog is hungry."
+          },
+          {
+            "when": "מדברים על you, we, they או על כמה",
+            "then": "are",
+            "example": "We are ready."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "you תמיד עם are, גם כשמדברים אל ילד אחד.",
+            "en": "Ari, you are late!"
+          },
+          {
+            "he": "אפשר לקצר:",
+            "en": "I'm, he's, they're"
+          }
+        ],
+        "remember": "שלושה כובעים על המתלה: I חובש am, אחד חובש is, וכל השאר חובשים are."
+      },
+      "adult": {
+        "title": "am, is או are, ולמה אי אפשר לוותר עליהם?",
+        "rule": "הפועל to be מתאים את עצמו לנושא: אחרי I בא am, אחרי יחיד ושם עצם לא נספר בא is, ואחרי רבים ו־you בא are. משפט באנגלית צריך פועל, ולכן לפני שם תואר, שם עצם או מקום חייבים את be.",
+        "why": "בעברית אין \"להיות\" בהווה: \"אבא עייף\", \"הם בבית\". לכן משמיטים את הפועל: Abba tired. ובכיוון ההפוך, מוסיפים am או is ליד פועל אחר: I am go.",
+        "examples": [
+          {
+            "ok": "My parents are at work.",
+            "bad": "My parents at work.",
+            "he": "ההורים שלי בעבודה."
+          },
+          {
+            "ok": "I go to school by bus.",
+            "bad": "I am go to school by bus.",
+            "he": "אני נוסע לבית הספר באוטובוס."
+          },
+          {
+            "ok": "The news is good.",
+            "bad": "The news are good.",
+            "he": "החדשות טובות."
+          }
+        ],
+        "check": [
+          {
+            "when": "הנושא I",
+            "then": "am",
+            "example": "I am a student."
+          },
+          {
+            "when": "יחיד, לא נספר, או everyone",
+            "then": "is",
+            "example": "Everyone is here."
+          },
+          {
+            "when": "רבים, you, או שני נושאים עם and",
+            "then": "are",
+            "example": "Ari and Tamar are cousins."
+          },
+          {
+            "when": "יש במשפט פועל אחר, בלי ing",
+            "then": "בלי am, is, are",
+            "example": "She lives in Haifa."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "news ו־physics נראים כמו רבים, אבל באים עם is.",
+            "en": "Physics is difficult."
+          },
+          {
+            "he": "people, police ו־children הם רבים, ובאים עם are.",
+            "en": "The police are here."
+          },
+          {
+            "he": "בשאלה am, is, are עוברים לפני הנושא, בלי do.",
+            "en": "Are you ready? Is Abba home?"
+          }
+        ],
+        "remember": "בעברית אפשר בלי פועל, באנגלית לא: אם אין פועל אחר, חובשים כובע am, is או are."
+      }
+    },
     "source": "original"
   },
   {
@@ -52,6 +163,101 @@
       }
     ],
     "hebrewTrap": "בעברית 'אני אוכל' יכול להיות גם הרגל וגם משהו שקורה עכשיו. באנגלית אלה שני זמנים שונים, ולכן אומרים בטעות I am eat breakfast every day במקום I eat breakfast every day.",
+    "levels": {
+      "kids": {
+        "title": "איך מספרים מה עושים כל יום?",
+        "rule": "כשמשהו קורה כל יום, תמיד או בדרך כלל, כותבים את הפועל הרגיל, בלי am ובלי is: I play. כשמדברים על אחד מוסיפים s: Ari plays.",
+        "why": "בעברית \"אנחנו אוכלים\" מתאים גם לעכשיו וגם לכל יום. באנגלית הרגל בא בלי are, אבל מי שמתרגם מילה במילה כותב We are eat.",
+        "examples": [
+          {
+            "ok": "We eat breakfast every morning.",
+            "bad": "We are eat breakfast every morning.",
+            "he": "אנחנו אוכלים ארוחת בוקר כל בוקר."
+          },
+          {
+            "ok": "Tamar rides her bike to school.",
+            "bad": "Tamar ride her bike to school.",
+            "he": "תמר רוכבת על האופניים לבית הספר."
+          },
+          {
+            "ok": "We always sing at the Shabbat table.",
+            "he": "אנחנו תמיד שרים ליד שולחן השבת."
+          }
+        ],
+        "check": [
+          {
+            "when": "כתוב every day, always או usually",
+            "then": "הפועל הרגיל, בלי am",
+            "example": "I always walk to school."
+          },
+          {
+            "when": "מדברים על אחד: he, she, אבא",
+            "then": "פועל + s",
+            "example": "Abba drinks coffee."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "על משהו שקורה עכשיו, ממש ברגע זה, משתמשים ב־ing.",
+            "en": "Look! Ari is running."
+          }
+        ],
+        "remember": "מה שכתוב בלוח על המקרר קורה כל שבוע: בלי am, רק הפועל."
+      },
+      "adult": {
+        "title": "הווה פשוט או הווה מתמשך?",
+        "rule": "הווה פשוט מתאר הרגל, דבר שחוזר, עובדה קבועה ולוח זמנים. הפועל בבסיס, ועם he, she, it מקבל s. בשאלה ובשלילה נכנסים do ו־does. פעולה שקורית עכשיו או לזמן קצוב באה עם am, is, are + ing.",
+        "why": "בעברית \"אני עובד\" מתאים גם להרגל וגם לעכשיו. באנגלית בוחרים: הרגל בלי ing, ועכשיו עם ing. מי שמתרגם מילה במילה כותב I am work, צורה שלא נכונה בשום מקרה.",
+        "examples": [
+          {
+            "ok": "Grandpa Yosef walks to shul every morning.",
+            "bad": "Grandpa Yosef is walk to shul every morning.",
+            "he": "סבא יוסף הולך ברגל לבית הכנסת כל בוקר."
+          },
+          {
+            "ok": "Water boils at 100 degrees.",
+            "he": "מים רותחים ב־100 מעלות."
+          },
+          {
+            "ok": "The train leaves at six tomorrow.",
+            "he": "הרכבת יוצאת מחר בשש."
+          }
+        ],
+        "check": [
+          {
+            "when": "מילת תדירות: always, usually, every day",
+            "then": "הווה פשוט",
+            "example": "She usually takes the bus."
+          },
+          {
+            "when": "עובדה קבועה או אמת כללית",
+            "then": "הווה פשוט",
+            "example": "The sun rises in the east."
+          },
+          {
+            "when": "now, right now, Look!",
+            "then": "am, is, are + ing",
+            "example": "Look! It's snowing."
+          },
+          {
+            "when": "לוח זמנים קבוע: רכבת, שיעור, סרט",
+            "then": "הווה פשוט, גם על העתיד",
+            "example": "The film starts at eight."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "פעלי מצב (know, like, want) באים בהווה פשוט גם כשמדובר בעכשיו.",
+            "en": "I know the answer."
+          },
+          {
+            "he": "always עם ing מביע תלונה על הרגל מעצבן.",
+            "en": "He's always losing his keys!"
+          }
+        ],
+        "remember": "הרגל, עובדה ולוח זמנים: בלי ing. רק מה שקורה עכשיו, או לזמן קצר, מקבל ing."
+      }
+    },
     "source": "original"
   },
   {
@@ -115,7 +321,7 @@
         ],
         "exceptions": [
           {
-            "he": "במקום have אומרים has.",
+            "he": "עם he, she, it אומרים has במקום have.",
             "en": "She has a cat."
           },
           {
@@ -178,7 +384,7 @@
             "en": "studies, tries · plays"
           },
           {
-            "he": "has, is, ופעלים מודאליים (can, must, will) בלי s לעולם.",
+            "he": "have נהיה has, ו־be נהיה is. פעלים מודאליים (can, must, will) לא מקבלים s לעולם.",
             "en": "She has a car. She can swim."
           }
         ],
@@ -212,6 +418,117 @@
       }
     ],
     "hebrewTrap": "בעברית שאלה היא רק שינוי בטון ('ארי אוהב דג?'), ושלילה היא רק 'לא'. לכן אומרים בטעות Ari like fish? או Ari not like fish, או משאירים s כפולה: Does he likes.",
+    "levels": {
+      "kids": {
+        "title": "איך שואלים שאלה באנגלית, ואיך אומרים \"לא\"?",
+        "rule": "בשאלה מתחילים ב־Do, ועם he, she, it מתחילים ב־Does. כדי לומר \"לא\" כותבים don't או doesn't לפני הפועל. אחרי does הפועל בלי s.",
+        "why": "בעברית שואלים רק בטון: \"ארי אוהב פיצה?\". ובשלילה מוסיפים רק \"לא\". לכן כותבים בטעות Ari no like pizza.",
+        "examples": [
+          {
+            "ok": "Does Ari like pizza?",
+            "bad": "Does Ari likes pizza?",
+            "he": "ארי אוהב פיצה?"
+          },
+          {
+            "ok": "We don't like onions.",
+            "bad": "We no like onions.",
+            "he": "אנחנו לא אוהבים בצל."
+          },
+          {
+            "ok": "Tamar doesn't eat meat.",
+            "bad": "Tamar don't eat meat.",
+            "he": "תמר לא אוכלת בשר."
+          }
+        ],
+        "check": [
+          {
+            "when": "מדברים על I, you, we, they",
+            "then": "Do או don't",
+            "example": "Do you have a bike?"
+          },
+          {
+            "when": "מדברים על אחד: he, she, it, תמר",
+            "then": "Does או doesn't",
+            "example": "Does Tamar have a bike?"
+          },
+          {
+            "when": "יש do או does במשפט",
+            "then": "הפועל בלי s",
+            "example": "He doesn't play."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "עם am, is, are לא צריך do: מזיזים אותם להתחלה.",
+            "en": "Is Ari home? Are you ready?"
+          },
+          {
+            "he": "גם עם can לא צריך do.",
+            "en": "Can you swim?"
+          }
+        ],
+        "remember": "does לוקח את ה־s לעצמו, והפועל נשאר נקי."
+      },
+      "adult": {
+        "title": "do או does, ולמה הפועל מאבד את ה־s?",
+        "rule": "בשאלה ובשלילה בהווה פשוט נכנס פועל עזר: do, ועם גוף שלישי יחיד does. סימן הגוף עובר לפועל העזר, והפועל העיקרי חוזר לבסיס. סדר השאלה: מילת שאלה, do או does, נושא, פועל.",
+        "why": "בעברית שאלה היא רק טון, ושלילה היא רק \"לא\". לכן כותבים Where you live? או He not like. ומי שזוכר את does משאיר בכל זאת s בפועל: Does she works?",
+        "examples": [
+          {
+            "ok": "Where does your brother work?",
+            "bad": "Where your brother works?",
+            "he": "איפה אח שלך עובד?"
+          },
+          {
+            "ok": "Rivka doesn't drink coffee.",
+            "bad": "Rivka doesn't drinks coffee.",
+            "he": "רבקה לא שותה קפה."
+          },
+          {
+            "ok": "Do your parents speak English?",
+            "bad": "Does your parents speak English?",
+            "he": "ההורים שלך מדברים אנגלית?"
+          }
+        ],
+        "check": [
+          {
+            "when": "נושא ביחיד: he, she, it, שם אחד",
+            "then": "does או doesn't + פועל בסיס",
+            "example": "Does it rain a lot here?"
+          },
+          {
+            "when": "נושא ברבים, או I, you, we, they",
+            "then": "do או don't + פועל בסיס",
+            "example": "Why do they live there?"
+          },
+          {
+            "when": "שואלים מי עשה: Who או What הם הנושא",
+            "then": "בלי do, הפועל כרגיל",
+            "example": "Who wants ice cream?"
+          },
+          {
+            "when": "יש be או מודאלי (can, must)",
+            "then": "בלי do",
+            "example": "Is she a doctor? Can he drive?"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "have כפועל רגיל מקבל do. בבריטניה נפוץ גם Have you got.",
+            "en": "Do you have a pen? Have you got a pen?"
+          },
+          {
+            "he": "do יכול להיות גם הפועל העיקרי, ואז הוא מופיע פעמיים.",
+            "en": "What do you do? She doesn't do her homework."
+          },
+          {
+            "he": "במשפט חיובי אפשר להוסיף do כדי להדגיש.",
+            "en": "I do like your cake!"
+          }
+        ],
+        "remember": "סימן אחד בלבד: ה־s עוברת ל־does, והפועל אחריו חוזר לבסיס."
+      }
+    },
     "source": "original"
   },
   {
@@ -239,6 +556,110 @@
       }
     ],
     "hebrewTrap": "בעברית אומרים 'היא הולכת' בלי פועל עזר, ולכן שוכחים את is (she going) או מוסיפים is לפועל בלי ing (she is go). צריך את שני החלקים יחד: she is going.",
+    "levels": {
+      "kids": {
+        "title": "איך אומרים מה קורה עכשיו?",
+        "rule": "כשמשהו קורה עכשיו, צריך שני חלקים: am, is או are, ואחריו פועל עם ing. אם אחד מהם חסר, המשפט לא נכון.",
+        "why": "בעברית אומרים \"תמר אוכלת\", במילה אחת. באנגלית צריך שתיים, ולכן שוכחים חלק: Tamar eating, או Tamar is eat.",
+        "examples": [
+          {
+            "ok": "Ari is riding his bike.",
+            "bad": "Ari riding his bike.",
+            "he": "ארי רוכב על האופניים שלו."
+          },
+          {
+            "ok": "Look! Tamar is eating a snack.",
+            "bad": "Look! Tamar is eat a snack.",
+            "he": "תראו! תמר אוכלת חטיף."
+          },
+          {
+            "ok": "We are building a sukkah.",
+            "he": "אנחנו בונים סוכה."
+          }
+        ],
+        "check": [
+          {
+            "when": "כתוב now, Look! או Listen!",
+            "then": "am, is או are + ing",
+            "example": "Listen! The baby is crying."
+          },
+          {
+            "when": "מדברים על I",
+            "then": "am + ing",
+            "example": "I am reading."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "פועל שנגמר ב־e מאבד את ה־e.",
+            "en": "make, making · ride, riding"
+          },
+          {
+            "he": "בפעלים קצרים כמו run ו־swim, האות האחרונה מוכפלת.",
+            "en": "run, running · swim, swimming"
+          }
+        ],
+        "remember": "מצלמה בשידור חי צריכה שניים: am, is או are מלפנים, ו־ing מאחור."
+      },
+      "adult": {
+        "title": "מתי משתמשים ב־ing בהווה?",
+        "rule": "am, is, are ופועל עם ing מתארים פעולה שקורית ברגע הדיבור, מצב זמני (this week, these days), שינוי שמתמשך, או תוכנית שנקבעה לעתיד הקרוב. שני החלקים חובה.",
+        "why": "בעברית אין פועל עזר בהווה, ולכן שוכחים את be וכותבים She working. ומי שלמד את ing מוסיף אותו גם להרגלים, ליד every day, ושם הוא לא מתאים.",
+        "examples": [
+          {
+            "ok": "Rivka is studying for an exam this week.",
+            "bad": "Rivka studying for an exam this week.",
+            "he": "רבקה לומדת השבוע למבחן."
+          },
+          {
+            "ok": "We are flying to London on Sunday.",
+            "he": "אנחנו טסים ללונדון ביום ראשון."
+          },
+          {
+            "ok": "Abba drives to work every day.",
+            "bad": "Abba is drive to work every day.",
+            "he": "אבא נוסע לעבודה כל יום."
+          }
+        ],
+        "check": [
+          {
+            "when": "now, right now ו־at the moment",
+            "then": "am, is, are + ing",
+            "example": "She is talking on the phone right now."
+          },
+          {
+            "when": "מצב זמני: this week, these days",
+            "then": "am, is, are + ing",
+            "example": "I'm staying with my cousins this week."
+          },
+          {
+            "when": "הרגל: every day, usually",
+            "then": "הווה פשוט, בלי ing",
+            "example": "I usually walk to work."
+          },
+          {
+            "when": "תוכנית שכבר נקבעה, עם זמן עתידי",
+            "then": "am, is, are + ing",
+            "example": "We're meeting Grandpa tomorrow."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "פעלי מצב כמו know, want, like בדרך כלל לא מקבלים ing.",
+            "en": "I want a drink."
+          },
+          {
+            "he": "כתיב: e בסוף נופלת, ועיצור אחרי תנועה קצרה מוטעמת מוכפל.",
+            "en": "write, writing · sit, sitting"
+          },
+          {
+            "he": "ie בסוף הפועל נהיה y.",
+            "en": "lie, lying · die, dying"
+          }
+        ],
+        "remember": "מה שקורה עכשיו, או רק לזמן מה: am, is, are ועוד ing. מה שקורה תמיד: בלי ing."
+      }
+    },
     "source": "original"
   },
   {
@@ -266,6 +687,108 @@
       }
     ],
     "hebrewTrap": "בעברית אין הבדל בין מצב לבין פעולה שקורית עכשיו. מי שלמד את ing שם אותו בכל דבר שקורה עכשיו, ואומר בטעות I am knowing או I am wanting.",
+    "levels": {
+      "kids": {
+        "title": "למה אי אפשר לומר I am knowing?",
+        "rule": "יש פעלים שהם לא פעולה, אלא משהו שבראש או בלב: know, like, want ו־need. הם לא מקבלים ing, גם כשמדובר בעכשיו.",
+        "why": "בעברית \"ארי רוצה\" נשמע בדיוק כמו \"ארי רץ\". אבל באנגלית רצים עם ing, ורוצים בלי ing. לכן כותבים בטעות Ari is wanting.",
+        "examples": [
+          {
+            "ok": "Ari wants a snack.",
+            "bad": "Ari is wanting a snack.",
+            "he": "ארי רוצה חטיף."
+          },
+          {
+            "ok": "Tamar knows the answer.",
+            "bad": "Tamar is knowing the answer.",
+            "he": "תמר יודעת את התשובה."
+          },
+          {
+            "ok": "We need a bigger sukkah.",
+            "bad": "We are needing a bigger sukkah.",
+            "he": "אנחנו צריכים סוכה גדולה יותר."
+          }
+        ],
+        "check": [
+          {
+            "when": "אפשר לצלם את זה: רץ, אוכל, כותב",
+            "then": "עם ing",
+            "example": "Ari is running."
+          },
+          {
+            "when": "זה בראש או בלב: יודע, רוצה, אוהב",
+            "then": "בלי ing",
+            "example": "Ari wants a drink."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "have במובן \"אוכלים\" כן מקבל ing.",
+            "en": "We are having lunch."
+          }
+        ],
+        "remember": "את מה שבראש ובלב אי אפשר לצלם, ולכן אין לו ing."
+      },
+      "adult": {
+        "title": "למה know ו־want לא מקבלים ing?",
+        "rule": "פעלי מצב מתארים ידיעה, דעה, רגש, רצון, חושים ובעלות, לא פעולה. הם באים בהווה פשוט גם כשמדובר בעכשיו. חלקם מקבלים ing כשהמשמעות שלהם הופכת לפעולה.",
+        "why": "בעברית אין הבדל בצורה בין \"אני רוצה\" לבין \"אני כותב\". מי שלמד ש\"עכשיו\" באנגלית זה ing מוסיף אותו לכל פועל, וכותב I am understanding.",
+        "examples": [
+          {
+            "ok": "I understand the question now.",
+            "bad": "I am understanding the question now.",
+            "he": "עכשיו אני מבין את השאלה."
+          },
+          {
+            "ok": "This cake tastes great.",
+            "bad": "This cake is tasting great.",
+            "he": "העוגה הזאת טעימה מאוד."
+          },
+          {
+            "ok": "Rivka has two brothers.",
+            "bad": "Rivka is having two brothers.",
+            "he": "לרבקה יש שני אחים."
+          }
+        ],
+        "check": [
+          {
+            "when": "ידיעה ודעה: know, believe, understand",
+            "then": "הווה פשוט",
+            "example": "I believe you."
+          },
+          {
+            "when": "רגש ורצון: like, love, want, need",
+            "then": "הווה פשוט",
+            "example": "She needs help."
+          },
+          {
+            "when": "בעלות: have, own, belong",
+            "then": "הווה פשוט",
+            "example": "This bag belongs to me."
+          },
+          {
+            "when": "הפועל מתאר פעולה: have lunch, think about",
+            "then": "אפשר ing",
+            "example": "I'm thinking about the test."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "think במובן דעה בא בלי ing, ובמובן תהליך של מחשבה בא עם ing.",
+            "en": "I think it's true. I'm thinking about it."
+          },
+          {
+            "he": "taste ו־smell: תכונה בלי ing, פעולה מכוונת עם ing.",
+            "en": "The soup tastes good. Ima is tasting the soup."
+          },
+          {
+            "he": "בדיבור שומעים לפעמים love עם ing להדגשה, אבל במבחן כותבים בלי ing.",
+            "en": "I love this song."
+          }
+        ],
+        "remember": "פעולה מצלמים, מצב מרגישים: מה שבראש ובלב נשאר בלי ing."
+      }
+    },
     "source": "original"
   },
   {
@@ -423,6 +946,104 @@
       }
     ],
     "hebrewTrap": "בעברית הפועל עצמו מראה עבר ('הלכת?'), ולכן רוצים לשים עבר גם בפועל: Did you went? או I didn't saw. באנגלית מספיק סימן עבר אחד, ו־did כבר לקחה אותו.",
+    "levels": {
+      "kids": {
+        "title": "איך שואלים על אתמול?",
+        "rule": "בשאלה על העבר מתחילים ב־Did. כדי לומר \"לא\" בעבר כותבים didn't. אחרי did הפועל חוזר להיות רגיל: go, ולא went.",
+        "why": "בעברית \"הלכת?\" כבר בעבר, ולכן רוצים לשים עבר גם בפועל באנגלית: Did you went? אבל did כבר אומרת \"עבר\", ופעם אחת מספיק.",
+        "examples": [
+          {
+            "ok": "Did you go to school today?",
+            "bad": "Did you went to school today?",
+            "he": "הלכת היום לבית הספר?"
+          },
+          {
+            "ok": "Ari didn't eat his snack.",
+            "bad": "Ari didn't ate his snack.",
+            "he": "ארי לא אכל את החטיף שלו."
+          },
+          {
+            "ok": "Did Tamar see the rainbow?",
+            "bad": "Did Tamar saw the rainbow?",
+            "he": "תמר ראתה את הקשת?"
+          }
+        ],
+        "check": [
+          {
+            "when": "שואלים על העבר",
+            "then": "Did + הפועל הרגיל",
+            "example": "Did you play?"
+          },
+          {
+            "when": "אומרים \"לא\" על העבר",
+            "then": "didn't + הפועל הרגיל",
+            "example": "I didn't play."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "עם was ו־were לא צריך did.",
+            "en": "Were you at school? I wasn't tired."
+          }
+        ],
+        "remember": "did היא מכונת זמן: היא לוקחת את המשפט לעבר, והפועל נשאר בבית."
+      },
+      "adult": {
+        "title": "did, ומה קורה לפועל שאחריו?",
+        "rule": "בשאלה ובשלילה בעבר פשוט נכנס did לכל הגופים. did נושא את סימן העבר, ולכן הפועל העיקרי חוזר לבסיס, בלי ed ובלי צורה חריגה. סדר השאלה: מילת שאלה, did, נושא, פועל.",
+        "why": "בעברית העבר נמצא בתוך הפועל (\"ראית?\"), ולכן מסמנים עבר פעמיים: Did you saw? או I didn't went. ובלי did בכלל יוצא Where you went?",
+        "examples": [
+          {
+            "ok": "Where did you go on Sukkot?",
+            "bad": "Where did you went on Sukkot?",
+            "he": "לאן נסעתם בסוכות?"
+          },
+          {
+            "ok": "Grandpa Yosef didn't hear the phone.",
+            "bad": "Grandpa Yosef didn't heard the phone.",
+            "he": "סבא יוסף לא שמע את הטלפון."
+          },
+          {
+            "ok": "Why did Rivka leave early?",
+            "bad": "Why Rivka left early?",
+            "he": "למה רבקה יצאה מוקדם?"
+          }
+        ],
+        "check": [
+          {
+            "when": "שאלה או שלילה בעבר, עם פועל רגיל",
+            "then": "did או didn't + פועל בסיס",
+            "example": "Did they win?"
+          },
+          {
+            "when": "שואלים מי עשה: Who או What הם הנושא",
+            "then": "בלי did, הפועל בעבר",
+            "example": "Who broke the glass?"
+          },
+          {
+            "when": "הפועל be: was או were",
+            "then": "בלי did",
+            "example": "Was it cold? It wasn't cold."
+          },
+          {
+            "when": "מודאלי בעבר, כמו could",
+            "then": "בלי did",
+            "example": "I couldn't find it."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "במשפט חיובי אפשר להוסיף did כדי להדגיש.",
+            "en": "I did lock the door!"
+          },
+          {
+            "he": "have בעבר מקבל did, כמו כל פועל רגיל.",
+            "en": "Did you have a good time?"
+          }
+        ],
+        "remember": "סימן עבר אחד בלבד: אם יש did, הפועל חוזר לבסיס."
+      }
+    },
     "source": "original"
   },
   {
@@ -576,6 +1197,107 @@
       }
     ],
     "hebrewTrap": "בעברית אומרים 'אני גר כאן עשר שנים' בהווה, ולכן אומרים בטעות I live here for ten years. וגם 'כבר' ו'מאז' מתערבבים: since ten years במקום for ten years.",
+    "levels": {
+      "kids": {
+        "title": "for או since?",
+        "rule": "for בא לפני כמה זמן, כמו for two hours. since בא לפני מתי זה התחיל, כמו since Sunday.",
+        "why": "בעברית אומרים \"מחכים כבר שעתיים\" וגם \"מחכים משמונה\". באנגלית בוחרים מילה לפי מה שבא אחריה: כמה זמן, או מתי זה התחיל.",
+        "examples": [
+          {
+            "ok": "We have lived here for three years.",
+            "bad": "We have lived here since three years.",
+            "he": "אנחנו גרים כאן כבר שלוש שנים."
+          },
+          {
+            "ok": "Tamar has been at school since eight o'clock.",
+            "bad": "Tamar has been at school for eight o'clock.",
+            "he": "תמר בבית הספר מאז שמונה."
+          },
+          {
+            "ok": "Tamar has known Ari since first grade.",
+            "he": "תמר מכירה את ארי מכיתה א'."
+          }
+        ],
+        "check": [
+          {
+            "when": "כמה זמן: שעתיים, שבוע, שלוש שנים",
+            "then": "for",
+            "example": "for two weeks"
+          },
+          {
+            "when": "מתי זה התחיל: יום, שעה, שנה",
+            "then": "since",
+            "example": "since Monday"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "עם for ו־since כותבים בדרך כלל have או has.",
+            "en": "I have been here for an hour."
+          }
+        ],
+        "remember": "for סופר כמה זמן עבר, כמו שעון חול. since נועץ דגל ביום שבו הכל התחיל."
+      },
+      "adult": {
+        "title": "for או since, ואיזה זמן בא איתם?",
+        "rule": "for בא לפני משך זמן (for ten minutes), ו־since לפני נקודת התחלה (since 2019), גם לפני משפט שלם. כשהמצב נמשך עד היום, משתמשים ב־have או has + V3, או ב־have been + ing.",
+        "why": "בעברית \"אני גר כאן עשר שנים\" נאמר בהווה, ולכן כותבים בטעות live במקום have lived. ו\"מזה עשר שנים\" מתורגם בטעות ל־since ten years.",
+        "examples": [
+          {
+            "ok": "Rivka has worked at the bank for ten years.",
+            "bad": "Rivka works at the bank for ten years.",
+            "he": "רבקה עובדת בבנק כבר עשר שנים."
+          },
+          {
+            "ok": "I haven't seen Grandpa since Pesach.",
+            "bad": "I don't see Grandpa since Pesach.",
+            "he": "לא ראיתי את סבא מאז פסח."
+          },
+          {
+            "ok": "We have been waiting since nine o'clock.",
+            "bad": "We are waiting since nine o'clock.",
+            "he": "אנחנו מחכים מאז תשע."
+          }
+        ],
+        "check": [
+          {
+            "when": "משך זמן: two days או a long time",
+            "then": "for",
+            "example": "for a long time"
+          },
+          {
+            "when": "נקודת התחלה: Monday, 2019, Pesach",
+            "then": "since",
+            "example": "since Monday"
+          },
+          {
+            "when": "since ואחריו משפט שלם",
+            "then": "המשפט שאחרי since בדרך כלל בעבר פשוט",
+            "example": "I have known her since we were six."
+          },
+          {
+            "when": "המצב נמשך עד היום",
+            "then": "have או has + V3",
+            "example": "She has lived here for years."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "for מתאים גם לעבר שנגמר ולעתיד, כי הוא רק אומר כמה זמן.",
+            "en": "I lived in London for two years."
+          },
+          {
+            "he": "ago מודד מעכשיו אחורה, ובא עם עבר פשוט.",
+            "en": "I moved here two years ago."
+          },
+          {
+            "he": "שאלה על משך מתחילה ב־How long, עם present perfect.",
+            "en": "How long have you lived here?"
+          }
+        ],
+        "remember": "שעון חול סופר: for. דגל מסמן התחלה: since. ושניהם מחברים את העבר להיום עם have."
+      }
+    },
     "source": "original"
   },
   {
@@ -603,6 +1325,107 @@
       }
     ],
     "hebrewTrap": "בעברית 'יש' היא מילה אחת קצרה, ולכן מתרגמים מילה במילה: Have a cake in the fridge, או It has a cake. ובגלל 'יש לי' מבלבלים בין there is לבין I have.",
+    "levels": {
+      "kids": {
+        "title": "איך אומרים \"יש\" באנגלית?",
+        "rule": "כשמשהו נמצא במקום כלשהו, אומרים there is על אחד ו־there are על כמה. כשאין, אומרים there isn't או there aren't.",
+        "why": "בעברית \"יש\" זו מילה אחת קצרה. לכן מתרגמים בטעות Have a cat. באנגלית צריך שתי מילים: there is.",
+        "examples": [
+          {
+            "ok": "There is a cat in the garden.",
+            "bad": "Have a cat in the garden.",
+            "he": "יש חתול בגינה."
+          },
+          {
+            "ok": "There are three apples on the table.",
+            "bad": "Have three apples on the table.",
+            "he": "יש שלושה תפוחים על השולחן."
+          },
+          {
+            "ok": "There is no milk in the fridge.",
+            "he": "אין חלב במקרר."
+          }
+        ],
+        "check": [
+          {
+            "when": "דבר אחד",
+            "then": "There is",
+            "example": "There is a dog."
+          },
+          {
+            "when": "כמה דברים",
+            "then": "There are",
+            "example": "There are two dogs."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "\"יש לי\" זה לא there is, אלא I have.",
+            "en": "I have a bike."
+          }
+        ],
+        "remember": "אצבע מצביעה ומכריזה: There is על אחד, There are על הרבה."
+      },
+      "adult": {
+        "title": "there is, there are או have?",
+        "rule": "there is ו־there are אומרים שמשהו קיים או נמצא במקום. הפועל מתאים לשם העצם שאחריו: יחיד או לא נספר is, רבים are. בעבר: there was, there were. \"יש לי\" הוא בעלות, ולכן have.",
+        "why": "בעברית \"יש\" משמש גם לקיום וגם לבעלות, ולכן כותבים have או it has במקום there is. ו\"היו הרבה אנשים\" מתורגם בטעות ל־There was many people.",
+        "examples": [
+          {
+            "ok": "There is a park near my house.",
+            "bad": "It has a park near my house.",
+            "he": "יש פארק ליד הבית שלי."
+          },
+          {
+            "ok": "There were many people at the wedding.",
+            "bad": "There was many people at the wedding.",
+            "he": "היו הרבה אנשים בחתונה."
+          },
+          {
+            "ok": "Is there a pharmacy around here?",
+            "bad": "Have a pharmacy around here?",
+            "he": "יש בית מרקחת בסביבה?"
+          }
+        ],
+        "check": [
+          {
+            "when": "קיום במקום: \"יש\", \"אין\", \"היה\"",
+            "then": "there + be",
+            "example": "There was a storm last night."
+          },
+          {
+            "when": "שם העצם שאחרי be ביחיד או לא נספר",
+            "then": "is או was",
+            "example": "There is some bread."
+          },
+          {
+            "when": "שם העצם ברבים",
+            "then": "are או were",
+            "example": "There are two cars outside."
+          },
+          {
+            "when": "\"יש לי\", \"יש לה\": בעלות",
+            "then": "have או has",
+            "example": "Tamar has a dog."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "בשאלה is או are עוברים לפני there.",
+            "en": "Is there any milk? Are there any questions?"
+          },
+          {
+            "he": "ברשימה, הפועל מתאים לפריט הראשון.",
+            "en": "There is a table and two chairs."
+          },
+          {
+            "he": "בדיבור שומעים there's גם לפני רבים, אבל בכתיבה כותבים there are.",
+            "en": "There are three apples."
+          }
+        ],
+        "remember": "יש במקום: there is. יש לי: I have. ו־is או are נקבעים לפי מה שבא אחריהם."
+      }
+    },
     "source": "original"
   },
   {
@@ -679,7 +1502,7 @@
       "adult": {
         "title": "a, an, the או בלי כלום?",
         "rule": "שם עצם נספר ביחיד לא עומד לבד: לפניו a, an, the, my וכדומה. a או an כשמזכירים לראשונה או כשלא משנה איזה, the כשהשומע יודע בדיוק איזה. ברבים ובלא נספר, בהכללה, לא כותבים כלום.",
-        "why": "בעברית אין יידוע לא מסוים, ולכן \"אבא מורה\" נכתב בטעות בלי a. ה\"א הידיעה מופיעה בעברית גם בהכללות (\"החיים יפים\"), ולכן מוסיפים the במקום שאין בו צורך: the life.",
+        "why": "בעברית אין מילה כמו a, ולכן \"אבא מורה\" נכתב בטעות בלי a. ה\"א הידיעה מופיעה בעברית גם בהכללות (\"החיים יפים\"), ולכן מוסיפים the במקום שאין בו צורך: the life.",
         "examples": [
           {
             "ok": "Abba is a teacher.",
@@ -763,6 +1586,104 @@
       }
     ],
     "hebrewTrap": "בעברית יש רק צורת עתיד אחת ('נבקר'), ולכן משתמשים ב־will לכל דבר, גם לתוכנית שכבר ביומן. וגם מוסיפים to בטעות: I will to go.",
+    "levels": {
+      "kids": {
+        "title": "will או going to?",
+        "rule": "going to מתאים למשהו שכבר תכננו. will מתאים להחלטה של עכשיו, להבטחה או לניחוש. אחרי will בא פועל רגיל, בלי to.",
+        "why": "בעברית יש דרך אחת לדבר על העתיד: \"נבקר\". באנגלית יש שתיים. וקל להוסיף to מיותר אחרי will, וכך יוצא I will to go.",
+        "examples": [
+          {
+            "ok": "We are going to visit Grandpa on Sunday.",
+            "he": "אנחנו הולכים לבקר את סבא ביום ראשון."
+          },
+          {
+            "ok": "It's hot. I will open the window.",
+            "bad": "It's hot. I will to open the window.",
+            "he": "חם. אני אפתח את החלון."
+          },
+          {
+            "ok": "Abba thinks Tamar will win the game.",
+            "he": "אבא חושב שתמר תנצח במשחק."
+          }
+        ],
+        "check": [
+          {
+            "when": "כבר תכננו: ביומן, בתוכנית",
+            "then": "going to",
+            "example": "I'm going to play soccer tomorrow."
+          },
+          {
+            "when": "מחליטים עכשיו, מבטיחים או מנחשים",
+            "then": "will",
+            "example": "I'll help you!"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "אחרי will ואחרי going to בא פועל בלי s.",
+            "en": "She will come. She is going to come."
+          }
+        ],
+        "remember": "תוכנית ביומן: going to. רעיון של רגע: will."
+      },
+      "adult": {
+        "title": "will, going to או הווה מתמשך?",
+        "rule": "going to: כוונה שכבר הוחלטה, או תחזית לפי סימן שרואים עכשיו. will: החלטה ברגע הדיבור, הבטחה, הצעה, או ניחוש ודעה (I think, probably). הווה מתמשך: הסדר קבוע עם זמן. אחרי will בא פועל בסיס.",
+        "why": "בעברית יש צורת עתיד אחת, ולכן כותבים will לכל דבר, גם לתוכנית שכבר ביומן. ובהשפעת \"אני הולך ל־\" מוסיפים to אחרי will, וכותבים I will to call.",
+        "examples": [
+          {
+            "ok": "Look at those clouds. It's going to rain.",
+            "he": "תראו את העננים האלה. עומד לרדת גשם."
+          },
+          {
+            "ok": "The phone is ringing. I'll answer it.",
+            "bad": "The phone is ringing. I will to answer it.",
+            "he": "הטלפון מצלצל. אני אענה."
+          },
+          {
+            "ok": "We're having dinner with Grandma tonight.",
+            "he": "אנחנו אוכלים הערב ארוחת ערב אצל סבתא."
+          }
+        ],
+        "check": [
+          {
+            "when": "כוונה שהוחלטה קודם",
+            "then": "going to",
+            "example": "I'm going to study medicine."
+          },
+          {
+            "when": "רואים סימן עכשיו",
+            "then": "going to",
+            "example": "Watch out! You're going to fall."
+          },
+          {
+            "when": "החלטה של הרגע, הבטחה או הצעה",
+            "then": "will",
+            "example": "I'll carry that for you."
+          },
+          {
+            "when": "הסדר עם זמן קבוע, כמו פגישה",
+            "then": "הווה מתמשך",
+            "example": "I'm meeting Ari at six."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "אחרי when, if, before ו־after לא כותבים will, גם כשמדובר בעתיד.",
+            "en": "Call me when you arrive."
+          },
+          {
+            "he": "shall בא בעיקר בהצעה ובשאלה, עם I ו־we.",
+            "en": "Shall we go?"
+          },
+          {
+            "he": "בתחזית רגילה מתאימים לרוב גם will וגם going to.",
+            "en": "I think it will rain. I think it's going to rain."
+          }
+        ],
+        "remember": "ביומן כבר כתוב: going to. נולד עכשיו בראש: will."
+      }
+    },
     "source": "original"
   },
   {
@@ -794,6 +1715,112 @@
       }
     ],
     "hebrewTrap": "בעברית אומרים 'אם ירד גשם' בעתיד, ולכן שמים will גם אחרי if: If it will rain. ו'היה' משמש בעברית לכל התנאים הדמיוניים, ולכן מבלבלים בין would לבין would have.",
+    "levels": {
+      "kids": {
+        "title": "מה כותבים אחרי if?",
+        "rule": "אחרי if כותבים הווה, גם כשמדברים על מחר. את will כותבים רק בחלק השני של המשפט, אחרי הפסיק.",
+        "why": "בעברית אומרים \"אם ירד גשם\", בעתיד. לכן רוצים לכתוב will גם אחרי if, וכך יוצא If it will rain. באנגלית זה לא נכון.",
+        "examples": [
+          {
+            "ok": "If it rains, we will eat inside.",
+            "bad": "If it will rain, we will eat inside.",
+            "he": "אם ירד גשם, נאכל בפנים."
+          },
+          {
+            "ok": "If you finish your homework, you can play.",
+            "bad": "If you will finish your homework, you can play.",
+            "he": "אם תסיימו את שיעורי הבית, תוכלו לשחק."
+          },
+          {
+            "ok": "If Ari had wings, he would fly to Grandpa.",
+            "he": "אם היו לארי כנפיים, הוא היה עף לסבא."
+          }
+        ],
+        "check": [
+          {
+            "when": "החלק עם if, על מחר או על העתיד",
+            "then": "הווה, בלי will",
+            "example": "If Tamar comes, we will play."
+          },
+          {
+            "when": "החלק השני של המשפט",
+            "then": "will",
+            "example": "We will play if Tamar comes."
+          },
+          {
+            "when": "חלום, משהו שלא באמת קורה",
+            "then": "if + עבר, ואחר כך would",
+            "example": "If I were a bird, I would fly."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "בחלום כותבים If I were, ובדיבור אומרים גם If I was.",
+            "en": "If I were a king, I would build a big sukkah."
+          }
+        ],
+        "remember": "if לא אוהב את will: will מחכה בצד השני של הפסיק."
+      },
+      "adult": {
+        "title": "איזה זמן בא אחרי if?",
+        "rule": "אפשרי: if + הווה, ובחלק השני will. דמיוני בהווה: if + עבר, ובחלק השני would. דמיוני בעבר: if + had + V3, ובחלק השני would have + V3. בכתיבה תקנית לא כותבים will או would אחרי if.",
+        "why": "בעברית \"אם ירד גשם\" בעתיד, ולכן כותבים If it will rain. ו\"אילו היה לי\" משמש בעברית גם לעכשיו וגם לעבר, ולכן מבלבלים בין would לבין would have.",
+        "examples": [
+          {
+            "ok": "If you study, you will pass the test.",
+            "bad": "If you will study, you will pass the test.",
+            "he": "אם תלמדו, תעברו את המבחן."
+          },
+          {
+            "ok": "If I had more time, I would learn Spanish.",
+            "bad": "If I would have more time, I would learn Spanish.",
+            "he": "אילו היה לי יותר זמן, הייתי לומד ספרדית."
+          },
+          {
+            "ok": "If we had left earlier, we wouldn't have missed the train.",
+            "bad": "If we would have left earlier, we wouldn't have missed the train.",
+            "he": "אילו יצאנו מוקדם יותר, לא היינו מפספסים את הרכבת."
+          }
+        ],
+        "check": [
+          {
+            "when": "אפשרות אמיתית בעתיד",
+            "then": "if + הווה, ובחלק השני will",
+            "example": "If it's sunny, we'll go to the beach."
+          },
+          {
+            "when": "דמיון על עכשיו, או אחרי I wish",
+            "then": "עבר: had, were, could",
+            "example": "I wish I had a dog."
+          },
+          {
+            "when": "חרטה על עבר שכבר נגמר",
+            "then": "if + had + V3, ובחלק השני would have + V3",
+            "example": "If I had known, I would have called."
+          },
+          {
+            "when": "אמת כללית, דבר שתמיד קורה",
+            "then": "הווה בשני החלקים",
+            "example": "If you heat ice, it melts."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "אחרי if מותר will או would כשמבקשים בנימוס, במובן \"אם תואילו\".",
+            "en": "If you will wait here, I'll call him."
+          },
+          {
+            "he": "were עם I ו־he בתנאי דמיוני הוא הצורה התקנית. was נפוץ בדיבור.",
+            "en": "If I were you, I'd ask."
+          },
+          {
+            "he": "unless פירושו \"אלא אם\", והוא כבר כולל את השלילה.",
+            "en": "We'll go unless it rains."
+          }
+        ],
+        "remember": "ככל שמתרחקים מהמציאות, הפועל אחרי if זז צעד אחורה בזמן, ו־will נשאר בחוץ."
+      }
+    },
     "source": "original"
   },
   {
@@ -821,6 +1848,112 @@
       }
     ],
     "hebrewTrap": "בעברית תמיד מוסיפים מילה ('יותר גבוה'), ולכן אומרים more tall או גם וגם: more taller. וה'מ' של ההשוואה מתורגמת בטעות ל־from: taller from Tamar.",
+    "levels": {
+      "kids": {
+        "title": "איך אומרים \"יותר גבוה\" באנגלית?",
+        "rule": "למילה קצרה מוסיפים er, ו־tall נהיה taller. לפני מילה ארוכה כותבים more, כמו more beautiful. אחר כך בא than, שפירושו \"מ־\".",
+        "why": "בעברית תמיד מוסיפים \"יותר\", ולכן כותבים בטעות more tall. וה\"מ־\" של \"גבוה מתמר\" מתורגמת בטעות ל־from.",
+        "examples": [
+          {
+            "ok": "Ari is taller than Tamar.",
+            "bad": "Ari is more tall than Tamar.",
+            "he": "ארי גבוה יותר מתמר."
+          },
+          {
+            "ok": "My bike is faster than your bike.",
+            "bad": "My bike is faster from your bike.",
+            "he": "האופניים שלי מהירים יותר מהאופניים שלך."
+          },
+          {
+            "ok": "This game is more exciting than that one.",
+            "he": "המשחק הזה מרגש יותר מההוא."
+          }
+        ],
+        "check": [
+          {
+            "when": "מילה קצרה: tall, big, fast",
+            "then": "er",
+            "example": "bigger, faster"
+          },
+          {
+            "when": "מילה ארוכה: beautiful, interesting",
+            "then": "more",
+            "example": "more interesting"
+          },
+          {
+            "when": "משווים למישהו אחר",
+            "then": "than",
+            "example": "Abba is taller than Ima."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "good ו־bad משנים צורה לגמרי.",
+            "en": "good, better · bad, worse"
+          }
+        ],
+        "remember": "מילה קצרה מקבלת זנב er, מילה ארוכה מקבלת more, ואף פעם לא שניהם."
+      },
+      "adult": {
+        "title": "er או more, ומתי the ו־est?",
+        "rule": "תואר בן הברה אחת, או בן שתיים שנגמר ב־y, מקבל er ו־est. תואר ארוך יותר מקבל more ו־most. בהשוואה בין שניים באים er או more, ואחריהם than. ב\"הכי\" באים the ו־est או most.",
+        "why": "בעברית \"יותר\" ו\"הכי\" הן מילים נפרדות, ולכן כותבים more tall, ואפילו more taller. ו\"גבוה ממנו\" מתורגם בטעות ל־taller from him.",
+        "examples": [
+          {
+            "ok": "Rivka is older than her brother.",
+            "bad": "Rivka is more old than her brother.",
+            "he": "רבקה מבוגרת יותר מאח שלה."
+          },
+          {
+            "ok": "This is the most beautiful shul in the city.",
+            "bad": "This is the more beautiful shul in the city.",
+            "he": "זה בית הכנסת הכי יפה בעיר."
+          },
+          {
+            "ok": "Today is hotter than yesterday.",
+            "bad": "Today is more hotter than yesterday.",
+            "he": "היום חם יותר מאתמול."
+          }
+        ],
+        "check": [
+          {
+            "when": "הברה אחת: old, big, hot",
+            "then": "er, est",
+            "example": "bigger, the biggest"
+          },
+          {
+            "when": "שתי הברות שנגמרות ב־y",
+            "then": "y נהיה ier ו־iest",
+            "example": "happy, happier, the happiest"
+          },
+          {
+            "when": "שתי הברות ומעלה: modern, expensive",
+            "then": "more, most",
+            "example": "more expensive, the most expensive"
+          },
+          {
+            "when": "משווים בין שניים",
+            "then": "than אחרי ההשוואה",
+            "example": "She is taller than me."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "חריגים שצריך לזכור:",
+            "en": "good, better, best · bad, worse, worst · far, farther / further"
+          },
+          {
+            "he": "יש תארים בני שתי הברות שמקבלים את שתי הדרכים.",
+            "en": "quieter, more quiet · cleverer, more clever"
+          },
+          {
+            "he": "השוואה של שוויון: as + תואר + as.",
+            "en": "Ari is as tall as Abba."
+          }
+        ],
+        "remember": "קצר מקבל er, ארוך מקבל more, ואף פעם לא שניהם. ואחרי ההשוואה בא than, לא from."
+      }
+    },
     "source": "original"
   },
   {
@@ -848,6 +1981,109 @@
       }
     ],
     "hebrewTrap": "בעברית יש מילת יחס אחת לכל הזמנים: ב־ ('בשבע', 'בשבת', 'באדר'). לכן בוחרים באנגלית מילה אחת ומשתמשים בה תמיד, למשל in Shabbat או in 7:00.",
+    "levels": {
+      "kids": {
+        "title": "at, on או in לפני זמן?",
+        "rule": "לפני שעה כותבים at, כמו at 7:00. לפני יום כותבים on, כמו on Monday. לפני חודש, שנה או עונה כותבים in, כמו in winter.",
+        "why": "בעברית יש מילה אחת לכל הזמנים: \"בשבע\", \"בשבת\", \"בחורף\". באנגלית יש שלוש, ולכן כותבים בטעות in Monday.",
+        "examples": [
+          {
+            "ok": "School starts at eight o'clock.",
+            "bad": "School starts in eight o'clock.",
+            "he": "הלימודים מתחילים בשמונה."
+          },
+          {
+            "ok": "We go to the park on Friday.",
+            "bad": "We go to the park in Friday.",
+            "he": "אנחנו הולכים לפארק ביום שישי."
+          },
+          {
+            "ok": "My birthday is in July.",
+            "bad": "My birthday is on July.",
+            "he": "יום ההולדת שלי ביולי."
+          }
+        ],
+        "check": [
+          {
+            "when": "שעה",
+            "then": "at",
+            "example": "at 5:00"
+          },
+          {
+            "when": "יום או תאריך",
+            "then": "on",
+            "example": "on Shabbat"
+          },
+          {
+            "when": "חודש, שנה או עונה",
+            "then": "in",
+            "example": "in the summer"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "אומרים in the morning, אבל at night.",
+            "en": "in the morning · at night"
+          }
+        ],
+        "remember": "פירמידה: at בקודקוד הצר, on באמצע, in בבסיס הרחב."
+      },
+      "adult": {
+        "title": "at, on, in, או בלי מילת יחס?",
+        "rule": "at בא לפני נקודת זמן: שעה, noon, night. on בא לפני יום ותאריך, גם on Friday night. in בא לפני חלקי היום, חודש, שנה ועונה, ובמובן \"בעוד\": in two days.",
+        "why": "בעברית \"ב־\" משמשת לכל זמן, ולכן כותבים in Monday או on 2020. ומוסיפים מילת יחס גם לפני next ו־last, כי בעברית אומרים \"בשבוע הבא\".",
+        "examples": [
+          {
+            "ok": "The wedding is on June 3rd.",
+            "bad": "The wedding is in June 3rd.",
+            "he": "החתונה ב־3 ביוני."
+          },
+          {
+            "ok": "Grandpa Yosef was born in 1948.",
+            "bad": "Grandpa Yosef was born on 1948.",
+            "he": "סבא יוסף נולד ב־1948."
+          },
+          {
+            "ok": "We're flying to New York next week.",
+            "bad": "We're flying to New York in next week.",
+            "he": "אנחנו טסים לניו יורק בשבוע הבא."
+          }
+        ],
+        "check": [
+          {
+            "when": "שעה, או noon, night, midnight",
+            "then": "at",
+            "example": "at midnight"
+          },
+          {
+            "when": "יום, תאריך, או חלק של יום מסוים",
+            "then": "on",
+            "example": "on Tuesday morning"
+          },
+          {
+            "when": "חודש, שנה, עונה, the morning",
+            "then": "in",
+            "example": "in the evening"
+          },
+          {
+            "when": "next, last, every ו־this",
+            "then": "בלי מילת יחס",
+            "example": "I'll see you next Sunday."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "סוף שבוע: at the weekend בבריטניה, on the weekend בארצות הברית.",
+            "en": "See you on the weekend."
+          },
+          {
+            "he": "on time פירושו \"בדיוק בזמן\", ו־in time פירושו \"לא מאוחר מדי\".",
+            "en": "The train left on time. We arrived in time for Kiddush."
+          }
+        ],
+        "remember": "שעה בקודקוד (at), יום באמצע (on), וכל השאר בבסיס (in). ולפני next ו־last, בלי כלום."
+      }
+    },
     "source": "original"
   },
   {
@@ -875,6 +2111,107 @@
       }
     ],
     "hebrewTrap": "בעברית אומרים 'בגלל שקמתי מוקדם, אז הייתי עייף', ולכן משלבים בטעות את שני השלטים במשפט אחד: Because I got up early, so I was tired. באנגלית בוחרים רק אחד.",
+    "levels": {
+      "kids": {
+        "title": "and, but, because או so?",
+        "rule": "and מוסיף עוד דבר. but מביא משהו הפוך. because אומר למה. so אומר מה קרה בגלל זה.",
+        "why": "בעברית אומרים \"בגלל שירד גשם, אז נשארנו בבית\", עם שתי מילים. באנגלית בוחרים רק אחת: because או so.",
+        "examples": [
+          {
+            "ok": "I stayed home because it was raining.",
+            "he": "נשארתי בבית כי ירד גשם."
+          },
+          {
+            "ok": "It was raining, so I stayed home.",
+            "bad": "Because it was raining, so I stayed home.",
+            "he": "ירד גשם, אז נשארתי בבית."
+          },
+          {
+            "ok": "Ari likes soccer, but Tamar likes basketball.",
+            "he": "ארי אוהב כדורגל, אבל תמר אוהבת כדורסל."
+          }
+        ],
+        "check": [
+          {
+            "when": "מסבירים למה",
+            "then": "because",
+            "example": "I'm happy because it's Shabbat."
+          },
+          {
+            "when": "אומרים מה קרה בגלל זה",
+            "then": "so",
+            "example": "I was hungry, so I ate."
+          },
+          {
+            "when": "משהו הפוך או מפתיע",
+            "then": "but",
+            "example": "It's cold, but it's sunny."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "לפני so ו־but כותבים בדרך כלל פסיק.",
+            "en": "I was tired, so I went to bed."
+          }
+        ],
+        "remember": "because מצביע אחורה אל הסיבה, so מצביע קדימה אל התוצאה. שלט אחד בכל משפט."
+      },
+      "adult": {
+        "title": "because, so, although או but?",
+        "rule": "because ו־since מביאים סיבה, so מביא תוצאה, but ו־although מביאים ניגוד. because of בא לפני שם עצם, ו־because לפני משפט. לכל קשר במשפט בוחרים מילת קישור אחת.",
+        "why": "בעברית אומרים \"אף על פי שהיה קר, אבל יצאנו\" ו\"בגלל שקמתי מוקדם, אז הייתי עייף\". לכן משלבים בטעות although עם but, או because עם so, באותו משפט.",
+        "examples": [
+          {
+            "ok": "Although it was cold, we went out.",
+            "bad": "Although it was cold, but we went out.",
+            "he": "אף על פי שהיה קר, יצאנו."
+          },
+          {
+            "ok": "The game was cancelled because of the rain.",
+            "bad": "The game was cancelled because the rain.",
+            "he": "המשחק בוטל בגלל הגשם."
+          },
+          {
+            "ok": "Rivka missed the bus, so she was late.",
+            "bad": "Because Rivka missed the bus, so she was late.",
+            "he": "רבקה פספסה את האוטובוס, ולכן איחרה."
+          }
+        ],
+        "check": [
+          {
+            "when": "סיבה, ואחריה משפט שלם",
+            "then": "because",
+            "example": "We stayed in because it rained."
+          },
+          {
+            "when": "סיבה, ואחריה שם עצם",
+            "then": "because of",
+            "example": "We stayed in because of the rain."
+          },
+          {
+            "when": "תוצאה",
+            "then": "so",
+            "example": "It rained, so we stayed in."
+          },
+          {
+            "when": "ניגוד בתוך משפט אחד",
+            "then": "although או but, לא שניהם",
+            "example": "Although he's young, he's very wise."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "however מחבר בין שני משפטים נפרדים, ואחריו פסיק.",
+            "en": "It was late. However, nobody left."
+          },
+          {
+            "he": "despite ו־in spite of באים לפני שם עצם או פועל עם ing.",
+            "en": "Despite the rain, we went out."
+          }
+        ],
+        "remember": "שלט אחד לכל צומת: because או so, although או but, אף פעם לא שניהם."
+      }
+    },
     "source": "original"
   },
   {
@@ -902,6 +2239,108 @@
       }
     ],
     "hebrewTrap": "בעברית הסביל מוסתר בתוך הפועל עצמו ('נאפתה', 'נבנתה'). לכן שוכחים את be ואומרים The challah baked this morning, כאילו החלה אפתה את עצמה.",
+    "levels": {
+      "kids": {
+        "title": "איך אומרים \"נבנה\" או \"נאכל\" באנגלית?",
+        "rule": "כשלא חשוב מי עשה, אלא מה קרה לדבר, כותבים is, are, was או were, ואחריו צורה מיוחדת של הפועל, כמו built או eaten. אפשר להוסיף by ומי שעשה.",
+        "why": "בעברית \"נבנתה\" זו מילה אחת. באנגלית צריך שתיים: was built. ואם שוכחים את was, יוצא שהדבר עשה את הפעולה בעצמו.",
+        "examples": [
+          {
+            "ok": "The sukkah was built by Abba.",
+            "bad": "The sukkah built by Abba.",
+            "he": "הסוכה נבנתה על ידי אבא."
+          },
+          {
+            "ok": "The cookies were eaten by the kids.",
+            "bad": "The cookies were ate by the kids.",
+            "he": "העוגיות נאכלו על ידי הילדים."
+          },
+          {
+            "ok": "English is spoken in many countries.",
+            "bad": "English speaks in many countries.",
+            "he": "מדברים אנגלית בהרבה ארצות."
+          }
+        ],
+        "check": [
+          {
+            "when": "לא חשוב מי עשה, או שלא יודעים",
+            "then": "is, are, was או were + הצורה המיוחדת",
+            "example": "My bike was stolen!"
+          },
+          {
+            "when": "רוצים לומר מי עשה",
+            "then": "מוסיפים by",
+            "example": "It was made by Ima."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "לפעלים מיוחדים יש צורה שלישית שצריך לזכור.",
+            "en": "eat, ate, eaten · write, wrote, written"
+          }
+        ],
+        "remember": "הזרקור על החפץ: was או is מלפנים, והפועל בצורה השלישית."
+      },
+      "adult": {
+        "title": "מתי משתמשים בסביל, ואיך בונים אותו?",
+        "rule": "סביל בנוי מ־be בזמן הנדרש ועוד V3. משתמשים בו כשהפעולה חשובה יותר ממי שעשה אותה, או כשהעושה לא ידוע. הזמן נמצא רק ב־be, והפועל תמיד V3. את העושה אפשר להוסיף אחרי by.",
+        "why": "בעברית הסביל בנוי בתוך הפועל (\"נכתב\"), ולכן שוכחים את be, או כותבים עבר במקום V3: was wrote. ולפעמים מתרגמים גם \"קרה\" לסביל: was happened.",
+        "examples": [
+          {
+            "ok": "The letter was written in 1920.",
+            "bad": "The letter was wrote in 1920.",
+            "he": "המכתב נכתב ב־1920."
+          },
+          {
+            "ok": "The new road will be opened next year.",
+            "bad": "The new road will opened next year.",
+            "he": "הכביש החדש ייפתח בשנה הבאה."
+          },
+          {
+            "ok": "The accident happened at night.",
+            "bad": "The accident was happened at night.",
+            "he": "התאונה קרתה בלילה."
+          }
+        ],
+        "check": [
+          {
+            "when": "מה שעבר את הפעולה עומד בתחילת המשפט",
+            "then": "be + V3",
+            "example": "The windows are cleaned every week."
+          },
+          {
+            "when": "צריך זמן אחר",
+            "then": "משנים רק את be",
+            "example": "It has been sold. It will be sold."
+          },
+          {
+            "when": "פועל בלי מושא: happen, arrive, die",
+            "then": "אין סביל",
+            "example": "He arrived late."
+          },
+          {
+            "when": "חשוב לומר מי עשה",
+            "then": "by + העושה",
+            "example": "The song was written by my grandfather."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "בדיבור נפוץ גם get + V3, בעיקר לאירוע או לשינוי.",
+            "en": "He got hurt in the game."
+          },
+          {
+            "he": "born בא תמיד בסביל.",
+            "en": "I was born in Haifa."
+          },
+          {
+            "he": "בסביל מתמשך מוסיפים being.",
+            "en": "The room is being painted."
+          }
+        ],
+        "remember": "הזמן גר ב־be, והפועל עומד תמיד ב־V3. פעולה בלי מושא, כמו happen, לא נכנסת לסביל."
+      }
+    },
     "source": "original"
   },
   {
@@ -930,6 +2369,108 @@
       }
     ],
     "hebrewTrap": "בעברית אחרי 'יכול', 'צריך' ו'כדאי' בא שם פועל עם ל' ('יכול לקרוא'), ולכן מוסיפים to: he can to read. וגם 'הוא יכול' גורם להוסיף s: he cans או he can reads.",
+    "levels": {
+      "kids": {
+        "title": "מה כותבים אחרי can?",
+        "rule": "אחרי can, must, should ו־will בא פועל רגיל, בלי to ובלי s. גם can עצמו לא מקבל s.",
+        "why": "בעברית אומרים \"יכול לשחות\", עם ל'. לכן רוצים להוסיף to, וכותבים I can to swim. ובגלל \"הוא יכול\" מוסיפים s, וכותבים he cans.",
+        "examples": [
+          {
+            "ok": "Ari can swim.",
+            "bad": "Ari can to swim.",
+            "he": "ארי יודע לשחות."
+          },
+          {
+            "ok": "Tamar can ride a bike.",
+            "bad": "Tamar cans ride a bike.",
+            "he": "תמר יודעת לרכוב על אופניים."
+          },
+          {
+            "ok": "You must wash your hands.",
+            "bad": "You must to wash your hands.",
+            "he": "אתם חייבים לשטוף ידיים."
+          }
+        ],
+        "check": [
+          {
+            "when": "יש can, must או should",
+            "then": "פועל רגיל, בלי to",
+            "example": "I can jump."
+          },
+          {
+            "when": "מדברים על he או she",
+            "then": "can בלי s, והפועל בלי s",
+            "example": "She can read."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "have to ו־want to כן באים עם to. הם לא כמו can.",
+            "en": "I want to play. I have to go."
+          }
+        ],
+        "remember": "can הוא כלי חזק: הוא עובד לבד, בלי to ובלי s."
+      },
+      "adult": {
+        "title": "can, must, should: מה בא אחריהם?",
+        "rule": "אחרי מודאלי, כמו can, must ו־should, בא פועל בסיס בלי to. המודאלי לא מקבל s ולא צריך do. בניחוש: must פירושו \"בטח\", might או could פירושם \"אולי\", ו־can't פירושו \"בטוח שלא\".",
+        "why": "בעברית \"יכול\", \"צריך\" ו\"חייב\" באים עם שם פועל (\"צריך ללכת\"), ולכן כותבים should to go. ובגלל \"הוא יכול\" מוסיפים s, או בונים שאלה עם do: Do you can?",
+        "examples": [
+          {
+            "ok": "You should call Grandma.",
+            "bad": "You should to call Grandma.",
+            "he": "כדאי שתתקשרו לסבתא."
+          },
+          {
+            "ok": "Can Rivka come tomorrow?",
+            "bad": "Does Rivka can come tomorrow?",
+            "he": "רבקה יכולה לבוא מחר?"
+          },
+          {
+            "ok": "Their car is here, so they must be home.",
+            "bad": "Their car is here, so they must to be home.",
+            "he": "המכונית שלהם כאן, אז הם בטח בבית."
+          }
+        ],
+        "check": [
+          {
+            "when": "אחרי מודאלי",
+            "then": "פועל בסיס, בלי to ובלי s",
+            "example": "She might come."
+          },
+          {
+            "when": "שאלה או שלילה",
+            "then": "המודאלי עצמו זז או מקבל not, בלי do",
+            "example": "Can you help? I can't help."
+          },
+          {
+            "when": "ניחוש בטוח",
+            "then": "must, ובשלילה can't",
+            "example": "He must be tired. That can't be true."
+          },
+          {
+            "when": "ניחוש על העבר",
+            "then": "מודאלי + have + V3",
+            "example": "She must have forgotten."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "have to, need to ו־ought to באים עם to.",
+            "en": "I have to leave early."
+          },
+          {
+            "he": "mustn't פירושו \"אסור\", ו־don't have to פירושו \"לא חייבים\".",
+            "en": "You mustn't run here. You don't have to come."
+          },
+          {
+            "he": "בעבר can נהיה could, ו־must נהיה had to.",
+            "en": "I couldn't sleep. I had to work."
+          }
+        ],
+        "remember": "מודאלי הוא כלי שעובד לבד: בלי to, בלי s ובלי do."
+      }
+    },
     "source": "original"
   },
   {
@@ -957,6 +2498,112 @@
       }
     ],
     "hebrewTrap": "בעברית אחרי מילת יחס בא שם פועל או שם פעולה ('לפני לאכול', 'טובה בציור'), ולכן אומרים בטעות before to eat או good at draw.",
+    "levels": {
+      "kids": {
+        "title": "to swim או swimming?",
+        "rule": "אחרי want ו־need בא to ופועל, כמו want to play. אחרי at, before ו־after בא פועל עם ing, כמו good at drawing.",
+        "why": "בעברית אחרי \"טובה ב־\" ו\"לפני\" אפשר לשים \"לצייר\" או \"לאכול\". לכן כותבים בטעות before to eat או good at draw.",
+        "examples": [
+          {
+            "ok": "Tamar is good at drawing.",
+            "bad": "Tamar is good at draw.",
+            "he": "תמר טובה בציור."
+          },
+          {
+            "ok": "Wash your hands before eating.",
+            "bad": "Wash your hands before to eat.",
+            "he": "שטפו ידיים לפני האוכל."
+          },
+          {
+            "ok": "We want to play outside.",
+            "bad": "We want play outside.",
+            "he": "אנחנו רוצים לשחק בחוץ."
+          }
+        ],
+        "check": [
+          {
+            "when": "אחרי want, need או hope",
+            "then": "to + פועל",
+            "example": "I need to go."
+          },
+          {
+            "when": "אחרי at, before, after, about",
+            "then": "פועל + ing",
+            "example": "after eating"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "אחרי enjoy ו־finish בא ing.",
+            "en": "I enjoy reading."
+          },
+          {
+            "he": "אחרי like ו־love אפשר את שניהם.",
+            "en": "I like swimming. I like to swim."
+          }
+        ],
+        "remember": "מילת יחס היא חלק פאזל: רק פועל עם ing נכנס בה."
+      },
+      "adult": {
+        "title": "to + פועל או פועל + ing?",
+        "rule": "אחרי מילת יחס בא תמיד פועל עם ing, גם כש־to היא מילת יחס (look forward to). פעלים כמו enjoy, finish, avoid, mind מקבלים ing. פעלים כמו want, decide, hope ו־agree מקבלים to ופועל.",
+        "why": "בעברית אחרי מילת יחס בא שם פועל (\"לפני ללכת\"), ולכן כותבים before to go. וגם \"מחכה לראות\" מתורגם בטעות ל־look forward to see.",
+        "examples": [
+          {
+            "ok": "I'm looking forward to seeing you.",
+            "bad": "I'm looking forward to see you.",
+            "he": "אני מחכה לראות אתכם."
+          },
+          {
+            "ok": "Rivka avoids eating sugar.",
+            "bad": "Rivka avoids to eat sugar.",
+            "he": "רבקה נמנעת מלאכול סוכר."
+          },
+          {
+            "ok": "We decided to stay home.",
+            "bad": "We decided staying home.",
+            "he": "החלטנו להישאר בבית."
+          }
+        ],
+        "check": [
+          {
+            "when": "אחרי מילת יחס: in, of, about, without",
+            "then": "פועל + ing",
+            "example": "Thanks for helping."
+          },
+          {
+            "when": "enjoy, finish, avoid ו־mind",
+            "then": "פועל + ing",
+            "example": "Do you mind waiting?"
+          },
+          {
+            "when": "want, decide, hope, plan",
+            "then": "to + פועל",
+            "example": "She hopes to win."
+          },
+          {
+            "when": "to כמילת יחס, כמו look forward to",
+            "then": "to + פועל + ing",
+            "example": "I'm used to waking up early."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "stop + ing: מפסיקים פעולה. stop + to: עוצרים כדי לעשות משהו אחר.",
+            "en": "He stopped smoking. He stopped to rest."
+          },
+          {
+            "he": "remember ו־forget עם to: משהו שצריך לעשות. עם ing: זיכרון ממה שכבר קרה.",
+            "en": "Remember to call Grandma. I remember meeting her."
+          },
+          {
+            "he": "start, begin ו־like מקבלים את שתי הצורות כמעט בלי הבדל.",
+            "en": "It started raining. It started to rain."
+          }
+        ],
+        "remember": "אחרי מילת יחס תמיד ing. אחרי פועל בודקים: want ו־decide לוקחים to, enjoy ו־finish לוקחים ing."
+      }
+    },
     "source": "original"
   },
   {
@@ -984,6 +2631,107 @@
       }
     ],
     "hebrewTrap": "בעברית ש' משמשת לאנשים ולחפצים כאחד, ולפעמים חוזרים על המילה ('הספר שקראתי אותו'). לכן אומרים בטעות the man which או the book that I read it.",
+    "levels": {
+      "kids": {
+        "title": "who או which?",
+        "rule": "כדי לומר \"ש־\" אחרי אדם כותבים who. אחרי חפץ או חיה כותבים which. that מתאים לשניהם.",
+        "why": "בעברית יש מילה אחת, \"ש־\", לאנשים וגם לחפצים. באנגלית בוחרים לפי מה שבא לפניה, אדם או חפץ. לכן כותבים בטעות the boy which.",
+        "examples": [
+          {
+            "ok": "Ari is the boy who sits next to me.",
+            "bad": "Ari is the boy which sits next to me.",
+            "he": "ארי הוא הילד שיושב לידי."
+          },
+          {
+            "ok": "This is the bike which Abba bought.",
+            "bad": "This is the bike which Abba bought it.",
+            "he": "אלה האופניים שאבא קנה."
+          },
+          {
+            "ok": "I have a dog that loves snacks.",
+            "he": "יש לי כלב שאוהב חטיפים."
+          }
+        ],
+        "check": [
+          {
+            "when": "לפני כן יש אדם",
+            "then": "who או that",
+            "example": "the girl who sings"
+          },
+          {
+            "when": "לפני כן יש חפץ או חיה",
+            "then": "which או that",
+            "example": "the cake which Ima made"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "אחרי who או which לא חוזרים על he, she או it.",
+            "en": "the boy who sings · the bike that I ride"
+          }
+        ],
+        "remember": "who תולה אנשים, which תולה חפצים, ו־that מתאים לכל וו."
+      },
+      "adult": {
+        "title": "who, which, that, או בלי כלום?",
+        "rule": "who בא אחרי אנשים, which אחרי חפצים ובעלי חיים, ו־that אחרי שניהם בפסוקית מגבילה. whose פירושו \"ש... שלו\". כשמילת הזיקה היא המושא, אפשר להשמיט אותה. היא מחליפה את השם, ולכן לא חוזרים עליו.",
+        "why": "בעברית \"ש־\" אחת לכולם, ולכן כותבים the man which. ובעברית אפשר לחזור על השם (\"הספר שקראתי אותו\"), ולכן כותבים בטעות that I read it.",
+        "examples": [
+          {
+            "ok": "The woman who lives next door is a doctor.",
+            "bad": "The woman which lives next door is a doctor.",
+            "he": "האישה שגרה בבית הסמוך היא רופאה."
+          },
+          {
+            "ok": "This is the book I told you about.",
+            "bad": "This is the book that I told you about it.",
+            "he": "זה הספר שסיפרתי לכם עליו."
+          },
+          {
+            "ok": "I know a boy whose father is a pilot.",
+            "bad": "I know a boy that his father is a pilot.",
+            "he": "אני מכיר ילד שאבא שלו טייס."
+          }
+        ],
+        "check": [
+          {
+            "when": "אדם",
+            "then": "who או that",
+            "example": "the teacher who helped me"
+          },
+          {
+            "when": "חפץ או בעל חיים",
+            "then": "which או that",
+            "example": "the car which he bought"
+          },
+          {
+            "when": "\"ש... שלו\", \"ש... שלה\"",
+            "then": "whose",
+            "example": "the girl whose bag is red"
+          },
+          {
+            "when": "מילת הזיקה היא המושא, ואחריה בא נושא חדש",
+            "then": "אפשר להשמיט אותה",
+            "example": "the cake (that) Ima baked"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "פסוקית בין פסיקים, שרק מוסיפה מידע: who או which, אף פעם לא that.",
+            "en": "My brother, who lives in Haifa, is a teacher."
+          },
+          {
+            "he": "אחרי מילת יחס: which או whom, לא that.",
+            "en": "the house in which I grew up"
+          },
+          {
+            "he": "where בא במקום \"ש... בו\" כשמדובר במקום.",
+            "en": "the town where I was born"
+          }
+        ],
+        "remember": "מילת הזיקה כבר תופסת את מקום השם: אחרי who או which לא חוזרים עליו."
+      }
+    },
     "source": "original"
   },
   {
@@ -1139,6 +2887,101 @@
       }
     ],
     "hebrewTrap": "בעברית יש רק עבר אחד ('אכלנו'), ולכן משתמשים בעבר פשוט גם לפעולה הארוכה: We ate in the sukkah when it started to rain. כך זה נשמע כאילו התחילו לאכול רק כשהגשם התחיל.",
+    "levels": {
+      "kids": {
+        "title": "איך אומרים \"הייתי באמצע\" באנגלית?",
+        "rule": "כשמשהו היה באמצע בעבר, כותבים was או were, ואחריו פועל עם ing. was בא אחרי I, he, she, it, ו־were אחרי you, we, they.",
+        "why": "בעברית \"אכלתי\" מתאים גם לפעולה קצרה וגם למשהו שהיה באמצע. באנגלית צריך was ו־ing כדי להראות את האמצע.",
+        "examples": [
+          {
+            "ok": "I was eating when Abba came home.",
+            "bad": "I was eat when Abba came home.",
+            "he": "אכלתי כשאבא הגיע הביתה."
+          },
+          {
+            "ok": "We were playing in the sukkah.",
+            "bad": "We was playing in the sukkah.",
+            "he": "שיחקנו בסוכה."
+          },
+          {
+            "ok": "Tamar was sleeping at nine o'clock.",
+            "he": "תמר ישנה בתשע."
+          }
+        ],
+        "check": [
+          {
+            "when": "I, he, she, it או שם של אחד",
+            "then": "was + ing",
+            "example": "Ari was reading."
+          },
+          {
+            "when": "you, we, they או כמה",
+            "then": "were + ing",
+            "example": "They were reading."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "משהו קצר שקטע את האמצע בא בעבר רגיל.",
+            "en": "I was reading when the phone rang."
+          }
+        ],
+        "remember": "סרט ארוך שמתנגן: was או were ועוד ing. הצלצול שקוטע אותו: עבר רגיל."
+      },
+      "adult": {
+        "title": "עבר פשוט או עבר מתמשך?",
+        "rule": "was או were + ing מתארים פעולה שהייתה באמצעה בזמן מסוים בעבר, או רקע לסיפור. פעולה קצרה שקטעה אותה באה בעבר פשוט, לרוב אחרי when. אחרי while באה בדרך כלל הפעולה הארוכה.",
+        "why": "בעברית יש עבר אחד, ולכן משתמשים בעבר פשוט גם לפעולה הארוכה, ונשמע כאילו היא התחילה רק ברגע שנקטעה. ובכיוון ההפוך כותבים was בלי ing: I was read.",
+        "examples": [
+          {
+            "ok": "Grandpa was reading when the lights went out.",
+            "bad": "Grandpa was read when the lights went out.",
+            "he": "סבא קרא כשהאורות כבו."
+          },
+          {
+            "ok": "While Rivka was cooking, the children set the table.",
+            "he": "בזמן שרבקה בישלה, הילדים ערכו את השולחן."
+          },
+          {
+            "ok": "The sun was shining and the birds were singing.",
+            "he": "השמש זרחה והציפורים שרו."
+          }
+        ],
+        "check": [
+          {
+            "when": "פעולה ארוכה שהייתה באמצע",
+            "then": "was או were + ing",
+            "example": "I was walking home."
+          },
+          {
+            "when": "פעולה קצרה שקטעה אותה",
+            "then": "עבר פשוט, לרוב אחרי when",
+            "example": "I was walking home when I saw Ari."
+          },
+          {
+            "when": "while",
+            "then": "בדרך כלל was או were + ing",
+            "example": "While we were eating, it started to rain."
+          },
+          {
+            "when": "פעולות ברצף, אחת אחרי השנייה",
+            "then": "עבר פשוט",
+            "example": "He opened the door and went in."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "פעלי מצב (know, want) נשארים בעבר פשוט.",
+            "en": "I knew the answer."
+          },
+          {
+            "he": "שתי פעולות ארוכות במקביל: שתיהן עם ing.",
+            "en": "Ima was cooking while Abba was cleaning."
+          }
+        ],
+        "remember": "הסרט הארוך מקבל was ו־ing, והצלצול שקוטע אותו מקבל עבר פשוט."
+      }
+    },
     "source": "original"
   },
   {
@@ -1166,6 +3009,108 @@
       }
     ],
     "hebrewTrap": "בעברית הסדר גמיש ('כל ערב לומד ארי גמרא'), ושם התואר בא אחרי השם ('סוכה גדולה'). לכן מעבירים לאנגלית סדר עברי: a sukkah big, או Ari learns every night Gemara.",
+    "levels": {
+      "kids": {
+        "title": "באיזה סדר שמים את המילים?",
+        "rule": "באנגלית הסדר קבוע: מי, עושה, מה, איפה, מתי. מילה שמתארת, כמו big, באה לפני הדבר: a big dog.",
+        "why": "בעברית אומרים \"כלב גדול\", והמילה המתארת באה אחרי. באנגלית הפוך, ולכן כותבים בטעות a dog big.",
+        "examples": [
+          {
+            "ok": "I have a big dog.",
+            "bad": "I have a dog big.",
+            "he": "יש לי כלב גדול."
+          },
+          {
+            "ok": "Ari plays soccer in the park every day.",
+            "bad": "Ari plays every day soccer in the park.",
+            "he": "ארי משחק כדורגל בפארק כל יום."
+          },
+          {
+            "ok": "Tamar has a red bike.",
+            "bad": "Tamar has a bike red.",
+            "he": "לתמר יש אופניים אדומים."
+          }
+        ],
+        "check": [
+          {
+            "when": "מילה שמתארת: big, red, new",
+            "then": "לפני הדבר",
+            "example": "a new bike"
+          },
+          {
+            "when": "איפה ומתי",
+            "then": "בסוף המשפט: קודם איפה, אחר כך מתי",
+            "example": "We play at school every day."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "always ו־never באים לפני הפועל, אבל אחרי am, is, are.",
+            "en": "I always brush my teeth."
+          }
+        ],
+        "remember": "הרכבת נוסעת בסדר קבוע: מי, עושה, מה, איפה, מתי."
+      },
+      "adult": {
+        "title": "מה הסדר הנכון במשפט באנגלית?",
+        "rule": "הסדר הבסיסי: נושא, פועל, מושא, ואחריהם אופן, מקום וזמן. בין הפועל למושא לא מכניסים מילים. שם תואר בא לפני שם העצם. מילות תדירות באות לפני פועל רגיל, ואחרי be ופועל עזר.",
+        "why": "בעברית הסדר גמיש, ולכן מכניסים מילים בין הפועל למושא: like very much chocolate. ו\"מכונית חדשה\" מתורגמת בטעות ל־a car new.",
+        "examples": [
+          {
+            "ok": "I like chocolate very much.",
+            "bad": "I like very much chocolate.",
+            "he": "אני מאוד אוהב שוקולד."
+          },
+          {
+            "ok": "Ari has never seen snow.",
+            "bad": "Ari has seen never snow.",
+            "he": "ארי אף פעם לא ראה שלג."
+          },
+          {
+            "ok": "Do you know where the station is?",
+            "bad": "Do you know where is the station?",
+            "he": "אתם יודעים איפה התחנה?"
+          }
+        ],
+        "check": [
+          {
+            "when": "יש מילה בין הפועל למושא",
+            "then": "מעבירים אותה לסוף",
+            "example": "She speaks English well."
+          },
+          {
+            "when": "מילת תדירות ופועל רגיל",
+            "then": "לפני הפועל",
+            "example": "We often eat out."
+          },
+          {
+            "when": "מילת תדירות ו־be או פועל עזר",
+            "then": "אחרי be או אחרי פועל העזר",
+            "example": "He is never late. I have never seen it."
+          },
+          {
+            "when": "שאלה בתוך משפט, אחרי know או ask",
+            "then": "סדר רגיל: נושא ואז פועל",
+            "example": "I don't know what she wants."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "כמה שמות תואר יחד: דעה, גודל, גיל, צבע, חומר.",
+            "en": "a lovely big old red wooden box"
+          },
+          {
+            "he": "מקום וזמן אפשר להעביר גם לתחילת המשפט, כדי להדגיש.",
+            "en": "Every night, Ari learns Gemara."
+          },
+          {
+            "he": "אחרי Never או Rarely בתחילת משפט, בסגנון רשמי, הסדר מתהפך.",
+            "en": "Never have I seen such a storm."
+          }
+        ],
+        "remember": "הרכבת לא מחליפה קרונות: מי, עושה, מה, איך, איפה, מתי. ושום קרון לא נכנס בין \"עושה\" ל\"מה\"."
+      }
+    },
     "source": "original"
   },
   {
@@ -1228,7 +3173,7 @@
         ],
         "exceptions": [
           {
-            "he": "במקום good אומרים well.",
+            "he": "כשמתארים איך עושים, אומרים well ולא good.",
             "en": "You did well!"
           },
           {
@@ -1326,6 +3271,106 @@
       }
     ],
     "hebrewTrap": "בעברית משאירים את הזמן המקורי ('אמר שהוא רעב'), ולכן אומרים בטעות He said he is hungry. ו'נכון?' בעברית מתאים לכל משפט, ולכן שוכחים לבנות זנב מהפועל: It's cold, yes?",
+    "levels": {
+      "kids": {
+        "title": "איך מספרים מה מישהו אמר?",
+        "rule": "כשמספרים מה מישהו אמר, אחרי said הזמן זז אחורה: is נהיה was, ו־can נהיה could. וגם I נהיה he או she.",
+        "why": "בעברית אומרים \"ארי אמר שהוא רעב\", בהווה. באנגלית, אחרי said, עוברים לעבר: he was hungry.",
+        "examples": [
+          {
+            "ok": "Ari said he was hungry.",
+            "bad": "Ari said I am hungry.",
+            "he": "ארי אמר שהוא רעב."
+          },
+          {
+            "ok": "Tamar said she could swim.",
+            "he": "תמר אמרה שהיא יודעת לשחות."
+          },
+          {
+            "ok": "Abba said that we were late.",
+            "he": "אבא אמר שאנחנו מאחרים."
+          }
+        ],
+        "check": [
+          {
+            "when": "המילים המקוריות היו is או am",
+            "then": "was",
+            "example": "She said she was tired."
+          },
+          {
+            "when": "המילים המקוריות היו can",
+            "then": "could",
+            "example": "He said he could help."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "אם מה שנאמר עדיין נכון, מותר להשאיר את הזמן.",
+            "en": "Tamar said she likes pizza."
+          }
+        ],
+        "remember": "המילים כבר מאחורינו, אז גם הזמן זז צעד אחורה."
+      },
+      "adult": {
+        "title": "מה משתנה בדיבור עקיף?",
+        "rule": "אחרי פועל אמירה בעבר (said, told) הזמן זז לרוב צעד אחורה: הווה לעבר, עבר ל־had + V3, will ל־would. גם כינויי גוף, זמן ומקום משתנים. בשאלה עקיפה הסדר רגיל, בלי do ובלי סימן שאלה.",
+        "why": "בעברית שומרים על הזמן המקורי (\"אמר שהוא עייף\"), ולכן לא מזיזים אותו אחורה. ושאלה עקיפה נשארת בעברית בסדר של שאלה, ולכן כותבים where do I live.",
+        "examples": [
+          {
+            "ok": "Rivka told me she was tired.",
+            "bad": "Rivka said me she was tired.",
+            "he": "רבקה אמרה לי שהיא עייפה."
+          },
+          {
+            "ok": "She asked me where I lived.",
+            "bad": "She asked me where did I live.",
+            "he": "היא שאלה אותי איפה אני גר."
+          },
+          {
+            "ok": "Abba asked if we were ready.",
+            "bad": "Abba asked are we ready.",
+            "he": "אבא שאל אם אנחנו מוכנים."
+          }
+        ],
+        "check": [
+          {
+            "when": "said או told בעבר",
+            "then": "הזמן זז צעד אחורה",
+            "example": "She said she was tired."
+          },
+          {
+            "when": "told",
+            "then": "אחריו בא בדרך כלל מי ששמע: told me",
+            "example": "He told me the news."
+          },
+          {
+            "when": "שאלה עקיפה עם where, what, when",
+            "then": "נושא לפני פועל, בלי do",
+            "example": "I asked what time it was."
+          },
+          {
+            "when": "שאלת כן או לא",
+            "then": "if או whether",
+            "example": "She asked if I was hungry."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "אם מה שנאמר עדיין נכון, מותר להשאיר את הזמן.",
+            "en": "He said the shop opens at nine."
+          },
+          {
+            "he": "would, could, should ו־might לא זזים.",
+            "en": "She said she might come."
+          },
+          {
+            "he": "שאלת זנב: משפט חיובי מקבל זנב שלילי, ומשפט שלילי מקבל זנב חיובי.",
+            "en": "It's cold, isn't it? You can't come, can you?"
+          }
+        ],
+        "remember": "המילים כבר מאחורינו, אז הזמן זז צעד אחורה. ושאלה שמספרים עליה כבר אינה שאלה: בלי do ובלי סימן שאלה."
+      }
+    },
     "source": "original"
   },
   {
@@ -1353,6 +3398,107 @@
       }
     ],
     "hebrewTrap": "בעברית אומרים 'הייתי רוכב', ולכן מתרגמים בטעות I was ride. וגם used to נשמע כמו 'רגיל ל־', ולכן מבלבלים אותו עם I am used to (להיות רגיל למשהו).",
+    "levels": {
+      "kids": {
+        "title": "איך אומרים \"פעם הייתי...\"?",
+        "rule": "used to ואחריו פועל רגיל מספר על משהו שעשינו פעם, ועכשיו כבר לא. הוא נשאר אותו דבר לכולם: I used to וגם she used to.",
+        "why": "בעברית אומרים \"הוא היה משחק\", ולכן כותבים בטעות he was play. באנגלית אומרים he used to play.",
+        "examples": [
+          {
+            "ok": "Ari used to sleep with a teddy bear.",
+            "bad": "Ari was sleep with a teddy bear.",
+            "he": "פעם ארי היה ישן עם דובי."
+          },
+          {
+            "ok": "Tamar used to have long hair.",
+            "he": "פעם היה לתמר שיער ארוך."
+          },
+          {
+            "ok": "Grandpa Yosef used to ride a horse.",
+            "bad": "Grandpa Yosef use to ride a horse.",
+            "he": "סבא יוסף היה רוכב על סוס."
+          }
+        ],
+        "check": [
+          {
+            "when": "פעם כן, היום כבר לא",
+            "then": "used to + פועל רגיל",
+            "example": "I used to cry a lot."
+          },
+          {
+            "when": "שאלה או \"לא\"",
+            "then": "did + use to, בלי d",
+            "example": "Did you use to play?"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "be used to זה משהו אחר: \"רגיל ל־\".",
+            "en": "I am used to the cold."
+          }
+        ],
+        "remember": "תמונה דהויה מהאלבום: used to, משהו שהיה ונגמר."
+      },
+      "adult": {
+        "title": "used to, would או be used to?",
+        "rule": "used to + פועל בסיס מתאר הרגל או מצב בעבר שכבר לא קיימים. בשאלה ובשלילה: did + use to. be used to + שם עצם או ing פירושו \"רגיל ל־\", ו־get used to פירושו \"מתרגל ל־\".",
+        "why": "בעברית \"הייתי הולך\" מתורגם בטעות ל־I was go. ובגלל ש\"רגיל ל־\" נשמע כמו \"ל־\" ופועל, כותבים אחרי be used to פועל בסיס במקום פועל עם ing.",
+        "examples": [
+          {
+            "ok": "We used to live in Tel Aviv.",
+            "bad": "We use to live in Tel Aviv.",
+            "he": "פעם גרנו בתל אביב."
+          },
+          {
+            "ok": "I'm used to getting up early.",
+            "bad": "I'm used to get up early.",
+            "he": "אני רגיל לקום מוקדם."
+          },
+          {
+            "ok": "Did you use to play the piano?",
+            "bad": "Did you used to play the piano?",
+            "he": "ניגנתם פעם בפסנתר?"
+          }
+        ],
+        "check": [
+          {
+            "when": "הרגל או מצב בעבר שנגמרו",
+            "then": "used to + פועל בסיס",
+            "example": "She used to be shy."
+          },
+          {
+            "when": "שאלה או שלילה",
+            "then": "did או didn't + use to",
+            "example": "I didn't use to like coffee."
+          },
+          {
+            "when": "\"רגיל ל־\": מצב של היום",
+            "then": "be used to + שם עצם או ing",
+            "example": "Abba is used to the noise."
+          },
+          {
+            "when": "\"מתרגל ל־\": תהליך",
+            "then": "get used to + שם עצם או ing",
+            "example": "You'll get used to it."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "גם would מתאר הרגל בעבר, אבל רק פעולות, לא מצבים.",
+            "en": "Every summer we would go to the beach."
+          },
+          {
+            "he": "בהווה אין used to. להרגל של היום משתמשים בהווה פשוט.",
+            "en": "I usually walk to work."
+          },
+          {
+            "he": "didn't used to נשמע בדיבור, אבל בכתיבה ובמבחן כותבים use.",
+            "en": "I didn't use to like fish."
+          }
+        ],
+        "remember": "used to מתאר את מה שהיה. be used to מתאר את מה שרגילים אליו, ואחריו שם עצם או ing."
+      }
+    },
     "source": "original"
   },
   {
@@ -1380,6 +3526,105 @@
       }
     ],
     "hebrewTrap": "בעברית יש רק עבר אחד, ולכן לא מרגישים צורך ב־had. אבל When Ari got to shul, the davening ended נשמע כאילו התפילה נגמרה בדיוק כשהוא נכנס.",
+    "levels": {
+      "kids": {
+        "title": "איך מראים מה קרה קודם?",
+        "rule": "כשמספרים על שני דברים בעבר, את מה שקרה קודם אפשר לכתוב עם had ועוד צורה מיוחדת של הפועל, כמו had eaten. had מתאים לכולם.",
+        "why": "בעברית יש רק עבר אחד: \"אכלנו\". באנגלית had עוזר להבין מה קרה קודם, גם כשמספרים עליו אחר כך.",
+        "examples": [
+          {
+            "ok": "When Ari got home, Tamar had eaten all the cookies.",
+            "bad": "When Ari got home, Tamar has eaten all the cookies.",
+            "he": "כשארי הגיע הביתה, תמר כבר אכלה את כל העוגיות."
+          },
+          {
+            "ok": "The bus had left when we got to the stop.",
+            "he": "האוטובוס כבר נסע כשהגענו לתחנה."
+          },
+          {
+            "ok": "I had never seen snow before that day.",
+            "he": "אף פעם לא ראיתי שלג לפני היום ההוא."
+          }
+        ],
+        "check": [
+          {
+            "when": "שני דברים בעבר, ומה שקרה קודם",
+            "then": "had + הצורה המיוחדת",
+            "example": "I had finished my homework."
+          },
+          {
+            "when": "מה שקרה אחר כך",
+            "then": "עבר רגיל",
+            "example": "Then I went out to play."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "עם before או after אפשר גם בלי had, כי כבר ברור מה קרה קודם.",
+            "en": "I ate before I went to school."
+          }
+        ],
+        "remember": "על ציר הזמן, הנקודה הרחוקה יותר מקבלת had."
+      },
+      "adult": {
+        "title": "מתי צריך had + V3?",
+        "rule": "עבר מושלם (had + V3) מציין פעולה שקרתה לפני נקודה אחרת בעבר. הוא זהה לכל הגופים, והפעולה המאוחרת באה בעבר פשוט. כשהסדר ברור מ־before או after, עבר פשוט מספיק.",
+        "why": "בעברית יש עבר אחד, ולכן לא מרגישים צורך ב־had. אבל בלעדיו המשמעות משתנה: \"כשהגענו, הסרט התחיל\" פירושו שהוא התחיל בדיוק כשנכנסנו. ויש מי שכותב has במקום had.",
+        "examples": [
+          {
+            "ok": "When we arrived, the film had already started.",
+            "bad": "When we arrived, the film has already started.",
+            "he": "כשהגענו, הסרט כבר התחיל."
+          },
+          {
+            "ok": "Rivka was tired because she hadn't slept all night.",
+            "bad": "Rivka was tired because she hasn't slept all night.",
+            "he": "רבקה הייתה עייפה כי היא לא ישנה כל הלילה."
+          },
+          {
+            "ok": "I recognized him because I had met him before.",
+            "he": "זיהיתי אותו כי פגשתי אותו קודם."
+          }
+        ],
+        "check": [
+          {
+            "when": "שתי פעולות בעבר, והמוקדמת חשובה להבנה",
+            "then": "had + V3 למוקדמת",
+            "example": "The shop had closed when I got there."
+          },
+          {
+            "when": "already, never ו־by the time בסיפור על העבר",
+            "then": "had + V3",
+            "example": "By the time Abba came, we had eaten."
+          },
+          {
+            "when": "פעולות ברצף, לפי הסדר שבו קרו",
+            "then": "עבר פשוט",
+            "example": "I woke up, got dressed and went out."
+          },
+          {
+            "when": "דיבור עקיף על העבר",
+            "then": "had + V3",
+            "example": "She said she had lost her keys."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "אחרי before ו־after אפשר גם עבר פשוט, כי הסדר כבר ברור.",
+            "en": "We ate after Abba came home."
+          },
+          {
+            "he": "בתנאי על העבר, had + V3 בא אחרי if.",
+            "en": "If I had known, I would have come."
+          },
+          {
+            "he": "had had תקין: had כפועל עזר, ועוד had כפועל עיקרי.",
+            "en": "She had had a long day."
+          }
+        ],
+        "remember": "שתי נקודות בעבר: המוקדמת מקבלת had, המאוחרת מקבלת עבר פשוט."
+      }
+    },
     "source": "original"
   },
   {
@@ -1407,6 +3652,112 @@
       }
     ],
     "hebrewTrap": "בעברית 'עצות', 'רהיטים' ו'שיעורי בית' הם ברבים, ולכן מוסיפים s גם באנגלית: advices, furnitures, homeworks.",
+    "levels": {
+      "kids": {
+        "title": "איך הופכים מילה לרבים?",
+        "rule": "לרוב המילים מוסיפים s, כמו one cat, two cats. אחרי s, sh, ch ו־x מוסיפים es, כמו boxes. יש מילים מיוחדות שמשנות צורה: child נהיה children.",
+        "why": "בעברית יש סיומות \"ים\" ו\"ות\" שקל לשמוע. באנגלית ה־s קטנה, ולכן שוכחים אותה אחרי מספר: two cat. ומי שזוכר אותה מוסיף אותה גם למילה מיוחדת: childs.",
+        "examples": [
+          {
+            "ok": "I have two cats.",
+            "bad": "I have two cat.",
+            "he": "יש לי שני חתולים."
+          },
+          {
+            "ok": "There are three boxes in the sukkah.",
+            "bad": "There are three boxs in the sukkah.",
+            "he": "יש שלוש קופסאות בסוכה."
+          },
+          {
+            "ok": "The children are playing outside.",
+            "bad": "The childs are playing outside.",
+            "he": "הילדים משחקים בחוץ."
+          }
+        ],
+        "check": [
+          {
+            "when": "יותר מאחד",
+            "then": "מוסיפים s",
+            "example": "two books"
+          },
+          {
+            "when": "המילה נגמרת ב־s, sh, ch או x",
+            "then": "מוסיפים es",
+            "example": "glasses, dishes, watches"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "מילים מיוחדות שכדאי לזכור:",
+            "en": "man, men · woman, women · foot, feet · tooth, teeth"
+          },
+          {
+            "he": "homework לא מקבל s.",
+            "en": "I have a lot of homework."
+          }
+        ],
+        "remember": "רוב המילים מקבלות זנב s, וכמה מילים עקשניות מחליפות צורה."
+      },
+      "adult": {
+        "title": "s, es, ies או צורה אחרת?",
+        "rule": "ברבים מוסיפים s. אחרי s, sh, ch ו־x מוסיפים es. עיצור ועוד y נהיה ies. חלק מהמילים שנגמרות ב־f או fe נהיות ves. שמות עצם לא נספרים (information, advice, furniture) לא מקבלים s ולא a.",
+        "why": "בעברית \"עצות\" ו\"רהיטים\" הם ברבים, ולכן כותבים advices ו־furnitures. ו־people נשמע כמו יחיד, אבל הוא רבים, ולכן כותבים בטעות peoples.",
+        "examples": [
+          {
+            "ok": "Can you give me some advice?",
+            "bad": "Can you give me some advices?",
+            "he": "אתם יכולים לתת לי עצה?"
+          },
+          {
+            "ok": "Many people were waiting for the bus.",
+            "bad": "Many peoples were waiting for the bus.",
+            "he": "הרבה אנשים חיכו לאוטובוס."
+          },
+          {
+            "ok": "We bought new furniture for the living room.",
+            "bad": "We bought new furnitures for the living room.",
+            "he": "קנינו רהיטים חדשים לסלון."
+          }
+        ],
+        "check": [
+          {
+            "when": "עיצור ועוד y",
+            "then": "ies",
+            "example": "baby, babies · city, cities"
+          },
+          {
+            "when": "תנועה ועוד y",
+            "then": "רק s",
+            "example": "boy, boys · day, days"
+          },
+          {
+            "when": "f או fe בסוף המילה",
+            "then": "הרבה פעמים ves, אבל לא תמיד (roofs)",
+            "example": "leaf, leaves · knife, knives"
+          },
+          {
+            "when": "לא נספר: advice, information, news",
+            "then": "בלי s. כדי לספור: a piece of",
+            "example": "a piece of advice"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "רבים חריגים:",
+            "en": "child, children · person, people · mouse, mice"
+          },
+          {
+            "he": "יש מילים שזהות ביחיד וברבים.",
+            "en": "one sheep, two sheep · one fish, two fish"
+          },
+          {
+            "he": "מילים שנגמרות ב־o מקבלות לפעמים es ולפעמים s.",
+            "en": "tomatoes, potatoes · photos, pianos"
+          }
+        ],
+        "remember": "קודם שואלים אם סופרים. אם כן, s או es. ואם לא, כמו advice, אין s ואין a."
+      }
+    },
     "source": "original"
   },
   {
@@ -1434,6 +3785,111 @@
       }
     ],
     "hebrewTrap": "בעברית אומרים \"ב\" כמעט לכל מקום: בשולחן, בתחנה, בבית. באנגלית צריך לבחור: בתוך (in), על (on) או בנקודה (at).",
+    "levels": {
+      "kids": {
+        "title": "in, on או at?",
+        "rule": "in פירושו בתוך, כמו in the box. on פירושו על, כמו on the table. at פירושו ליד נקודה או במקום מוכר, כמו at the door או at school.",
+        "why": "בעברית אומרים \"ב־\" כמעט לכל מקום: בקופסה, בבית הספר, בתחנה. באנגלית בוחרים מילה לפי המקום: בתוך, על או נקודה.",
+        "examples": [
+          {
+            "ok": "The ball is in the box.",
+            "he": "הכדור בתוך הקופסה."
+          },
+          {
+            "ok": "My snack is on the table.",
+            "bad": "My snack is in the table.",
+            "he": "החטיף שלי על השולחן."
+          },
+          {
+            "ok": "Grandma is at the bus stop.",
+            "he": "סבתא בתחנת האוטובוס."
+          }
+        ],
+        "check": [
+          {
+            "when": "בתוך משהו: קופסה, תיק, חדר",
+            "then": "in",
+            "example": "in my bag"
+          },
+          {
+            "when": "על משהו: שולחן, קיר, רצפה",
+            "then": "on",
+            "example": "on the floor"
+          },
+          {
+            "when": "נקודה או מקום שהולכים אליו: דלת, תחנה, בית ספר",
+            "then": "at",
+            "example": "at the bus stop"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "אומרים at home, בלי the.",
+            "en": "Tamar is at home."
+          }
+        ],
+        "remember": "קופסה: in. שולחן: on. נקודה: at."
+      },
+      "adult": {
+        "title": "in, on או at במקום?",
+        "rule": "in: בתוך שטח או מקום סגור, וגם עיר ומדינה. on: על משטח, קו או קומה (on the second floor). at: נקודה, כתובת מדויקת, או מקום שמגיעים אליו לפעילות (at work).",
+        "why": "בעברית \"ב־\" מכסה את כל המקומות, ולכן כותבים in the bus stop או in the third floor. ובאוטובוס ורכבת באנגלית נמצאים \"על\": on the bus, אבל in the car.",
+        "examples": [
+          {
+            "ok": "Grandpa Yosef lives in Jerusalem.",
+            "bad": "Grandpa Yosef lives at Jerusalem.",
+            "he": "סבא יוסף גר בירושלים."
+          },
+          {
+            "ok": "Rivka's office is on the third floor.",
+            "bad": "Rivka's office is in the third floor.",
+            "he": "המשרד של רבקה בקומה השלישית."
+          },
+          {
+            "ok": "We met at the bus stop.",
+            "bad": "We met in the bus stop.",
+            "he": "נפגשנו בתחנת האוטובוס."
+          }
+        ],
+        "check": [
+          {
+            "when": "עיר, מדינה, חדר, בתוך בניין",
+            "then": "in",
+            "example": "in Haifa, in the kitchen"
+          },
+          {
+            "when": "משטח, קיר, קומה, אוטובוס ורכבת",
+            "then": "on",
+            "example": "on the wall, on the train"
+          },
+          {
+            "when": "נקודה, כתובת, אירוע או מקום של פעילות",
+            "then": "at",
+            "example": "at the corner, at a wedding"
+          },
+          {
+            "when": "מכונית ומונית",
+            "then": "in",
+            "example": "in the car, in a taxi"
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "at home ו־at work באים בלי the.",
+            "en": "Abba is at work."
+          },
+          {
+            "he": "כתובת עם מספר בית: at. רחוב בלי מספר: in בבריטניה, on בארצות הברית.",
+            "en": "at 5 Herzl Street · on Herzl Street"
+          },
+          {
+            "he": "באמריקה in school פירושו גם \"עדיין לומד, תלמיד\".",
+            "en": "Is your son still in school?"
+          }
+        ],
+        "remember": "בתוך: in. על: on. נקודה על המפה: at."
+      }
+    },
     "source": "original"
   },
   {
@@ -1461,6 +3917,118 @@
       }
     ],
     "hebrewTrap": "בעברית אומרים \"טובה ב\", \"מחכים ל\", \"מקשיבים ל\". באנגלית מילת היחס שונה: good at, wait for, listen to. תרגום מילה במילה מוביל לטעות.",
+    "levels": {
+      "kids": {
+        "title": "למה afraid of ולא afraid from?",
+        "rule": "יש מילים שתמיד באות עם מילה קטנה מסוימת אחריהן, כמו good at ו־afraid of, או wait for ו־listen to. לומדים אותן כזוג.",
+        "why": "בעברית אומרים \"מפחד מ־\" ו\"מחכה ל־\". מי שמתרגם מילה במילה כותב afraid from או wait to. באנגלית המילה הקטנה אחרת.",
+        "examples": [
+          {
+            "ok": "Ari is afraid of the dark.",
+            "bad": "Ari is afraid from the dark.",
+            "he": "ארי מפחד מהחושך."
+          },
+          {
+            "ok": "We are waiting for the bus.",
+            "bad": "We are waiting to the bus.",
+            "he": "אנחנו מחכים לאוטובוס."
+          },
+          {
+            "ok": "Listen to the teacher.",
+            "bad": "Listen the teacher.",
+            "he": "תקשיבו למורה."
+          }
+        ],
+        "check": [
+          {
+            "when": "מחכים",
+            "then": "wait for",
+            "example": "Wait for me!"
+          },
+          {
+            "when": "מקשיבים",
+            "then": "listen to",
+            "example": "I listen to music."
+          },
+          {
+            "when": "מפחדים",
+            "then": "afraid of",
+            "example": "I'm afraid of bees."
+          },
+          {
+            "when": "טובים במשהו",
+            "then": "good at",
+            "example": "Ari is good at soccer."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "כשלא אומרים למה מקשיבים, כותבים רק listen.",
+            "en": "Listen! Can you hear the shofar?"
+          }
+        ],
+        "remember": "כמו נעל ושרוך: good הולכת עם at, ו־wait הולך עם for."
+      },
+      "adult": {
+        "title": "איזו מילת יחס באה אחרי המילה?",
+        "rule": "פעלים, שמות תואר ושמות עצם רבים באים עם מילת יחס קבועה, שאינה תמיד התרגום של מילת היחס בעברית. לומדים את הצירוף כולו. ואחרי מילת היחס, פועל בא עם ing: interested in learning.",
+        "why": "בעברית \"תלוי ב־\", \"נשואה ל־\" ו\"נכנס ל־\". מתרגמים ישירות וכותבים depend in, married with או enter to. באנגלית: depend on, married to, ו־enter בלי מילת יחס.",
+        "examples": [
+          {
+            "ok": "It depends on the weather.",
+            "bad": "It depends in the weather.",
+            "he": "זה תלוי במזג האוויר."
+          },
+          {
+            "ok": "Rivka is married to a doctor.",
+            "bad": "Rivka is married with a doctor.",
+            "he": "רבקה נשואה לרופא."
+          },
+          {
+            "ok": "Abba entered the room quietly.",
+            "bad": "Abba entered to the room quietly.",
+            "he": "אבא נכנס לחדר בשקט."
+          }
+        ],
+        "check": [
+          {
+            "when": "בעברית \"ב־\"",
+            "then": "לא תמיד in, למשל good at, depend on",
+            "example": "She's interested in art."
+          },
+          {
+            "when": "בעברית \"ל־\"",
+            "then": "לא תמיד to, למשל wait for, ask for",
+            "example": "We asked for the bill."
+          },
+          {
+            "when": "בעברית \"מ־\"",
+            "then": "לא תמיד from, למשל afraid of, proud of",
+            "example": "I'm proud of you."
+          },
+          {
+            "when": "פועל אחרי מילת היחס",
+            "then": "פועל + ing",
+            "example": "Thank you for coming."
+          }
+        ],
+        "exceptions": [
+          {
+            "he": "יש פעלים שבעברית צריכים מילת יחס, ובאנגלית לא: enter, marry, discuss, answer.",
+            "en": "We discussed the plan. Answer the question."
+          },
+          {
+            "he": "arrive at לנקודה או לבניין, arrive in לעיר ולמדינה, ו־arrive home בלי מילת יחס.",
+            "en": "We arrived in London. We arrived at the hotel."
+          },
+          {
+            "he": "מילת יחס אחרת משנה את המשמעות: מסתכל, מחפש, שומר על.",
+            "en": "look at · look for · look after"
+          }
+        ],
+        "remember": "כמו נעל ושרוך: לומדים את המילה יחד עם מילת היחס שלה, ולא מתרגמים מהעברית."
+      }
+    },
     "source": "original"
   }
 ]
