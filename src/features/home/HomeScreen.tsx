@@ -10,10 +10,8 @@ import { Sheet } from '@/ui/Sheet';
 import { DomainIcon } from '@/ui/DomainIcon';
 import { ButtonLink } from '@/ui/Button';
 import {
-  BookIcon,
   FlameIcon,
   GearIcon,
-  GridIcon,
   LessonIcon,
   RepeatIcon,
   StarIcon,
@@ -32,7 +30,7 @@ import { stageOf } from '@/domain/student/student';
 import { KidsHome } from '@/features/kids/KidsHome';
 import { Row, Stack } from '@/ui/layout';
 import type { ArtName } from '@/ui/art';
-import { MORE_COUNT } from './moreModes';
+import { PracticeGroups } from './PracticeGroups';
 import { RowLink } from '@/ui/RowLink';
 import { heCount } from '@/domain/text/heCount';
 
@@ -44,8 +42,8 @@ const PRACTICE: { domain: Domain; title: string; en: string }[] = [
 ];
 
 /**
- * Home, at most a screen and a half: the lesson of the day, what to pick up
- * today, four skills, and one door to everything else.
+ * Home: the lesson of the day, what to pick up today, four skills, then every
+ * other practice mode in four groups that open in place (one at a time).
  */
 export function HomeScreen() {
   const { sid } = useParams();
@@ -178,14 +176,13 @@ export function HomeScreen() {
         </div>
       </section>
 
-      <section className="stack gap-2" aria-labelledby="explore-title">
-        <h2 className="section-title" id="explore-title">
-          עוד בשבילך
+      <section className="stack gap-2" aria-labelledby="groups-title">
+        <h2 className="section-title" id="groups-title">
+          כל התרגולים
         </h2>
+        <PracticeGroups key={student.id} studentId={student.id} due={p.words.due} />
         <div className="list">
           <RowLink to={`${base}/path`} art="path" tone="primary" icon={<TargetIcon />} title="המסלול שלי" sub={`${rank.current.he} · דרגה ${rank.current.level}${p.activity.frozenDays > 0 ? ' · מגן הרצף שמר על הרצף' : ''}`} />
-          <RowLink to={`${base}/stories`} art="stories" tone="reading" icon={<BookIcon />} title="סיפורים" sub="סיפורים ושיחות על משפחת שפירו, בכל הרמות" />
-          <RowLink to={`${base}/more`} art="games" tone="games" icon={<GridIcon />} title="עוד תרגולים" sub={`${MORE_COUNT} דרכים לתרגל: משחקים, מבחן, תרגום ועוד`} />
         </div>
       </section>
 

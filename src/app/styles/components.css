@@ -683,3 +683,48 @@ a.row-card:active, button.row-card:active { transform: scale(calc(1 - 0.01 * var
 .hero-art { margin-top: calc(-1 * var(--space-3)); margin-bottom: calc(-1 * var(--space-3)); margin-inline-end: calc(-1 * var(--space-3)); }
 .skill-tile-top .art { margin-top: calc(-1 * var(--space-2)); margin-inline-start: calc(-1 * var(--space-1)); }
 .ach[data-earned='false'] .ach-badge > svg { filter: grayscale(1); opacity: 0.6; }
+
+/* Practice groups on the home screen (src/features/home/PracticeGroups.tsx):
+   accordion rows; the open one fans out its practice modes below it. */
+.pgroup-h { margin: 0; font: inherit; }
+.pgroup-btn { cursor: pointer; }
+.pgroup-btn:hover { background: var(--surface-2); }
+.pgroup-btn:active { background: var(--surface-3); }
+.pgroup-btn:focus-visible { outline-offset: -3px; border-radius: var(--radius-lg); }
+.pgroup[data-open] .pgroup-btn { background: var(--surface-2); }
+.pgroup-title { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+/* A quiet count: small, soft colour, never louder than the title. */
+.pgroup-due {
+  font-size: var(--fs-micro); line-height: var(--lh-micro); font-weight: var(--fw-medium);
+  font-variant-numeric: tabular-nums; color: var(--accent-fg);
+  background: var(--accent-weak); padding: 1px var(--space-2); border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+/* The chevron points down when closed and up when open (the icon itself points to the start side). */
+.pgroup-chev { transform: rotate(-90deg); transition: transform calc(var(--dur-2) * var(--motion)) var(--ease-out); }
+.pgroup[data-open] .pgroup-chev { transform: rotate(90deg); }
+/* Height animates from 0 to auto through a one-row grid. */
+.pgroup-panel {
+  display: grid; grid-template-rows: 0fr;
+  transition: grid-template-rows calc(var(--dur-3) * var(--motion)) var(--ease-out);
+}
+.pgroup[data-open] .pgroup-panel { grid-template-rows: 1fr; }
+/* The modes sit one step in, on a faintly tinted band, so they read as part of the group. */
+.pgroup-items { overflow: hidden; min-height: 0; background: color-mix(in srgb, var(--surface-2) 55%, var(--surface-1)); }
+.pgroup-items .list-item { min-height: 60px; }
+.pgroup-items .art { width: 36px; height: 36px; }
+.pgroup-items > * {
+  border-top: 1px solid var(--border); padding-inline-start: calc(var(--space-3) + 20px);
+  opacity: 0; transform: translateY(calc(-6px * var(--motion)));
+  transition: opacity calc(var(--dur-2) * var(--motion)) var(--ease-out), transform calc(var(--dur-2) * var(--motion)) var(--ease-out);
+}
+/* The fan: rows arrive one after another. */
+.pgroup[data-open] .pgroup-items > * { opacity: 1; transform: none; }
+.pgroup[data-open] .pgroup-items > :nth-child(2) { transition-delay: calc(40ms * var(--motion)); }
+.pgroup[data-open] .pgroup-items > :nth-child(3) { transition-delay: calc(80ms * var(--motion)); }
+.pgroup[data-open] .pgroup-items > :nth-child(4) { transition-delay: calc(120ms * var(--motion)); }
+.pgroup[data-open] .pgroup-items > :nth-child(5) { transition-delay: calc(160ms * var(--motion)); }
+@media (forced-colors: active) {
+  .pgroup-due { border: 1px solid CanvasText; }
+  .pgroup[data-open] .pgroup-btn { outline: 1px solid CanvasText; }
+}
