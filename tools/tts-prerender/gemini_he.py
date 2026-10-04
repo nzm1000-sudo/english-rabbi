@@ -1,6 +1,7 @@
 """Renders Hebrew phrases with Gemini TTS, several phrases per request.
 
-Called by hebrew.mjs with {model, checkModels, batch, jobs: [{text, voice, style, out}]}
+Called by hebrew.mjs with {model, checkModels, batch, jobs: [{text, say?, voice, style, out}]}
+(say: the text with niqqud where the voice misreads it; the check compares with text)
 on stdin. The free tier allows only a few TTS requests a day, so each request
 reads a batch of lines with long pauses between them; the audio is cut at
 the longest pauses and every piece is checked by transcription before it is
@@ -155,9 +156,10 @@ def main():
             for i in range(0, len(jobs), cfg['batch']):
                 batch = jobs[i : i + cfg['batch']]
                 lines = [j['text'] for j in batch]
-                print(f'{voice}: {" / ".join(lines)}', flush=True)
+                spoken = [j.get('say', j['text']) for j in batch]
+                print(f'{voice}: {" / ".join(spoken)}', flush=True)
                 try:
-                    pcm = speak(cfg['model'], voice, style, lines)
+                    pcm = speak(cfg['model'], voice, style, spoken)
                 except RuntimeError as e:
                     print(f'  {str(e)[:120]}; will retry next run', flush=True)
                     failed += len(batch)

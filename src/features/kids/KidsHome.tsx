@@ -34,7 +34,7 @@ export function KidsHome({ student, stage }: { student: Student; stage: KidStage
   const limit = kidsLimit(student);
   const timeUp = !!limit && (minutes ?? 0) >= limit && !unlocked;
   const topics = KID_TOPICS.filter((t) => kidWords.filter((w) => w.topic === t && w.stages.includes(stage)).length >= 3);
-  const say = (he: string) => () => void speakHebrew(he);
+  const say = (he: string) => () => void speakHebrew(he, stage);
 
   const exit = (
     <HoldButton label={stage === 'little' ? 'יציאה (להחזיק לחוץ)' : 'החלפה (להחזיק לחוץ)'} onDone={() => nav('/')}>

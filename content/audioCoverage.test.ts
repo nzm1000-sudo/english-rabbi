@@ -98,8 +98,10 @@ describe('Hebrew phrases for children', () => {
       ...kidBooks.map((b) => b.title.he),
       ...Object.values(TOPIC_INFO).map((t) => t.he),
     ];
-    // The Gemini voice, or the older Microsoft one until it is re-rendered.
-    const missing = texts.filter((t) => !he[audioKey(HEBREW_VOICE, 'normal', t)] && !he[audioKey(HEBREW_FALLBACK_VOICE, 'normal', t)]);
+    // For each age: its Gemini version, or the older Microsoft one until that is recorded.
+    const missing = (['little', 'young'] as const).flatMap((stage) =>
+      texts.filter((t) => !he[audioKey(HEBREW_VOICE[stage], 'normal', t)] && !he[audioKey(HEBREW_FALLBACK_VOICE, 'normal', t)]).map((t) => `${stage}: ${t}`),
+    );
     expect(missing).toEqual([]);
     for (const url of Object.values(he)) expect(heFiles.has(url)).toBe(true);
   });

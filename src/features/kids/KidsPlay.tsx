@@ -85,6 +85,7 @@ function Round({ student, stage, game, topic, onAgain }: { student: Student; sta
     [speech, prefs],
   );
 
+  const sayHe = useCallback((text: string) => speakHebrew(text, stage), [stage]);
   const finish = useCallback(
     (correct: number, total: number) => {
       setScore({ correct, total });
@@ -142,7 +143,7 @@ function Round({ student, stage, game, topic, onAgain }: { student: Student; sta
   if (!known) return <main className="screen kids-screen" data-mood="kids" />;
 
   const back = `/s/${student.id}`;
-  const common = { sayEn, onFinish: finish, back };
+  const common = { sayEn, sayHe, onFinish: finish, back };
   if (game === 'memory') return <MemoryGame {...common} words={kidWords.filter((w) => w.stages.includes(stage) && (!topic || w.topic === topic))} seed={seed} />;
   if (game === 'letters') return <LettersGame {...common} seed={seed} />;
   if (game === 'build') return <BuildGame {...common} seed={seed} />;
@@ -152,6 +153,8 @@ function Round({ student, stage, game, topic, onAgain }: { student: Student; sta
 
 type Common = {
   sayEn: (text: string, slow?: boolean) => Promise<unknown>;
+  /** Hebrew in the version for the child's age. */
+  sayHe: (text: string) => Promise<void>;
   onFinish: (correct: number, total: number) => void;
   back: string;
 };
@@ -195,6 +198,7 @@ function PictureGame({
   seed,
   read,
   sayEn,
+  sayHe,
   onFinish,
   onRecord,
   back,
@@ -217,8 +221,8 @@ function PictureGame({
 
   useEffect(() => {
     shownAt.current = Date.now();
-    if (q && !read) void run(() => speakHebrew('איפה'), () => sayEn(q.say));
-  }, [q, read, run, sayEn]);
+    if (q && !read) void run(() => sayHe('איפה'), () => sayEn(q.say));
+  }, [q, read, run, sayEn, sayHe]);
 
   if (!questions.length) return <EmptyGame back={back} />;
   if (!q) return null;
@@ -232,7 +236,7 @@ function PictureGame({
       if (first) setCorrect((c) => c + 1);
       onRecord(q.target, first, wrong.size, Date.now() - shownAt.current);
       void run(
-        () => speakHebrew(PRAISE[(i + correct) % PRAISE.length]!),
+        () => sayHe(PRAISE[(i + correct) % PRAISE.length]!),
         () => sayEn(q.target.sentence?.en ?? q.target.en),
         pause(500),
       ).then(() => {
@@ -246,7 +250,7 @@ function PictureGame({
       });
     } else {
       setWrong((s) => new Set(s).add(w.id));
-      void run(() => sayEn(w.en), () => speakHebrew('נסו שוב'), () => sayEn(q.say));
+      void run(() => sayEn(w.en), () => sayHe('נסו שוב'), () => sayEn(q.say));
     }
   };
   const replay = (slow = false) => void run(() => sayEn(q.say, slow));
@@ -298,7 +302,7 @@ function PictureGame({
   );
 }
 
-function LettersGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
+function LettersGame({ seed, sayEn, sayHe, onFinish, back }: Common & { seed: string }) {
   const questions = useMemo(() => firstLetterQuestions(phonics, seed), [seed]);
   const [i, setI] = useState(0);
   const [wrong, setWrong] = useState<Set<string>>(new Set());
@@ -307,8 +311,8 @@ function LettersGame({ seed, sayEn, onFinish, back }: Common & { seed: string })
   const { run, alive } = useSpeechSteps();
   const q = questions[i];
   useEffect(() => {
-    if (q) void run(() => speakHebrew('באיזו אות זה מתחיל?'), () => sayEn(q.word));
-  }, [q, run, sayEn]);
+    if (q) void run(() => sayHe('באיזו אות זה מתחיל?'), () => sayEn(q.word));
+  }, [q, run, sayEn, sayHe]);
   if (!questions.length) return <EmptyGame back={back} />;
   if (!q) return null;
   const tap = (c: string) => {
@@ -318,7 +322,7 @@ function LettersGame({ seed, sayEn, onFinish, back }: Common & { seed: string })
       sounds.correct();
       const first = wrong.size === 0;
       if (first) setCorrect((x) => x + 1);
-      void run(() => speakHebrew(PRAISE[i % PRAISE.length]!), () => sayEn(q.word), pause(400)).then(() => {
+      void run(() => sayHe(PRAISE[i % PRAISE.length]!), () => sayEn(q.word), pause(400)).then(() => {
         if (!alive()) return;
         if (i + 1 >= questions.length) onFinish(correct + (first ? 1 : 0), questions.length);
         else {
@@ -329,7 +333,7 @@ function LettersGame({ seed, sayEn, onFinish, back }: Common & { seed: string })
       });
     } else {
       setWrong((s) => new Set(s).add(c));
-      void run(() => speakHebrew('נסו שוב'), () => sayEn(q.word));
+      void run(() => sayHe('נסו שוב'), () => sayEn(q.word));
     }
   };
   return (
@@ -363,7 +367,7 @@ function LettersGame({ seed, sayEn, onFinish, back }: Common & { seed: string })
   );
 }
 
-function BuildGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
+function BuildGame({ seed, sayEn, sayHe, onFinish, back }: Common & { seed: string }) {
   const questions = useMemo(() => buildQuestions(phonics, seed), [seed]);
   const [i, setI] = useState(0);
   const [placed, setPlaced] = useState<number[]>([]);
@@ -373,8 +377,8 @@ function BuildGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
   const { run, alive } = useSpeechSteps();
   const q = questions[i];
   useEffect(() => {
-    if (q) void run(() => speakHebrew('בונים את המילה'), () => sayEn(q.word));
-  }, [q, run, sayEn]);
+    if (q) void run(() => sayHe('בונים את המילה'), () => sayEn(q.word));
+  }, [q, run, sayEn, sayHe]);
   if (!questions.length) return <EmptyGame back={back} />;
   if (!q) return null;
   const built = placed.map((p) => q.tiles[p]).join('');
@@ -395,7 +399,7 @@ function BuildGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
       sounds.correct();
       const clean = mistakes === 0;
       if (clean) setCorrect((c) => c + 1);
-      void run(() => speakHebrew(PRAISE[i % PRAISE.length]!), () => sayEn(q.word), pause(500)).then(() => {
+      void run(() => sayHe(PRAISE[i % PRAISE.length]!), () => sayEn(q.word), pause(500)).then(() => {
         if (!alive()) return;
         if (i + 1 >= questions.length) onFinish(correct + (clean ? 1 : 0), questions.length);
         else {
@@ -438,7 +442,7 @@ function BuildGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
   );
 }
 
-function SightGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
+function SightGame({ seed, sayEn, sayHe, onFinish, back }: Common & { seed: string }) {
   const questions = useMemo(() => sightQuestions(phonics, seed, 3), [seed]);
   const [i, setI] = useState(0);
   const [wrong, setWrong] = useState<Set<string>>(new Set());
@@ -447,8 +451,8 @@ function SightGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
   const { run, alive } = useSpeechSteps();
   const q = questions[i];
   useEffect(() => {
-    if (q) void run(() => speakHebrew('איפה המילה'), () => sayEn(q.word));
-  }, [q, run, sayEn]);
+    if (q) void run(() => sayHe('איפה המילה'), () => sayEn(q.word));
+  }, [q, run, sayEn, sayHe]);
   if (!questions.length) return <EmptyGame back={back} />;
   if (!q) return null;
   const tap = (w: string) => {
@@ -458,7 +462,7 @@ function SightGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
       sounds.correct();
       const first = wrong.size === 0;
       if (first) setCorrect((c) => c + 1);
-      void run(() => speakHebrew(PRAISE[i % PRAISE.length]!), () => sayEn(q.sentence.en), pause(400)).then(() => {
+      void run(() => sayHe(PRAISE[i % PRAISE.length]!), () => sayEn(q.sentence.en), pause(400)).then(() => {
         if (!alive()) return;
         if (i + 1 >= questions.length) onFinish(correct + (first ? 1 : 0), questions.length);
         else {
@@ -469,7 +473,7 @@ function SightGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
       });
     } else {
       setWrong((s) => new Set(s).add(w));
-      void run(() => sayEn(w), () => speakHebrew('נסו שוב'), () => sayEn(q.word));
+      void run(() => sayEn(w), () => sayHe('נסו שוב'), () => sayEn(q.word));
     }
   };
   return (
@@ -502,7 +506,7 @@ function SightGame({ seed, sayEn, onFinish, back }: Common & { seed: string }) {
 }
 
 /** Memory: turn two cards, find the pairs. Each card says its word when it turns. */
-function MemoryGame({ words, seed, sayEn, onFinish, back }: Common & { words: KidWord[]; seed: string }) {
+function MemoryGame({ words, seed, sayEn, sayHe, onFinish, back }: Common & { words: KidWord[]; seed: string }) {
   const pool = useMemo(() => shuffle(words.filter((w) => w.picture.emoji), seeded(seed)), [words, seed]);
   const cards = useMemo(() => memoryCards(pool, seed, 6), [pool, seed]);
   const [open, setOpen] = useState<string[]>([]);
@@ -526,7 +530,7 @@ function MemoryGame({ words, seed, sayEn, onFinish, back }: Common & { words: Ki
           setFound(f);
           setOpen([]);
           if (f.size * 2 === cards.length)
-            void run(() => speakHebrew('כל הכבוד!')).then(() => {
+            void run(() => sayHe('כל הכבוד!')).then(() => {
               if (!alive()) return;
               // Scored by memory (mismatches), see memoryScore.
               const score = memoryScore(cards.length / 2, misses.current);

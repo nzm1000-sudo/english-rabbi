@@ -26,7 +26,8 @@ const outDir = path.join(root, 'public/audio/he');
 // Keep in sync with HEBREW_FALLBACK_VOICE / HEBREW_VOICE in src/services/speech/hebrewVoice.ts
 const VOICE = 'he-IL-AvriNeural';
 const RATE = '-8%';
-const GEMINI_KEY = 'gemini-he-1';
+// One recording set per age: lively for 3-6 (little), calm for 7-8 (young).
+const GEMINI_KEYS = { little: 'gemini-he-1', young: 'gemini-he-young-1' };
 // Chosen by ear on 2026-10-03 from samples of this model.
 // batch: phrases per request. 1 on a paid key; about 12 on the free tier (cut at the pauses).
 const GEMINI = { model: 'gemini-3.1-flash-tts-preview', checkModels: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.5-flash', 'gemini-flash-latest'], batch: Number(process.env.GEMINI_BATCH ?? 1) };
@@ -34,15 +35,27 @@ const GUIDE_VOICE = 'Achernar';
 const NAME_VOICE = 'Algieba';
 const HE = 'in natural, native Israeli Hebrew with clear diction';
 const STYLES = {
-  praise: `Say with real joy and warm excitement, ${HE}, like a loving kindergarten teacher proud of a small child`,
-  guide: `Say warmly, gently and encouragingly, ${HE}, like a kind kindergarten teacher inviting a small child to play`,
-  name: `Say warmly and clearly with a friendly smile, ${HE}, naming it for a small child`,
+  little: {
+    praise: `Say with real joy and warm excitement, ${HE}, like a loving kindergarten teacher proud of a small child`,
+    guide: `Say warmly, gently and encouragingly, ${HE}, like a kind kindergarten teacher inviting a small child to play`,
+    name: `Say warmly and clearly with a friendly smile, ${HE}, naming it for a small child`,
+  },
+  // Ages 7-8 found the kindergarten tone too childish: calm, natural, no sing-song.
+  young: {
+    praise: `Say with calm, sincere approval, ${HE}, in a natural adult voice, like a friendly teacher speaking to an 8-year-old. Not childish, not sing-song, not exaggerated`,
+    guide: `Say calmly and clearly in a natural, friendly tone, ${HE}, like a teacher giving a short instruction to an 8-year-old. Not childish, not sing-song`,
+    name: `Say clearly in a natural, friendly tone, ${HE}, like reading out a title to an 8-year-old. Not childish, not sing-song`,
+  },
 };
 
-/** Every phrase with its Gemini voice and style: the female guide talks during games, names are said by the male voice. */
+// Words the voice misreads without vowels: only the text sent to Gemini gets the niqqud.
+const NIQQUD = { טלה: 'טָלֶה', חלה: 'חַלָּה', 'פרת משה רבנו': 'פָּרַת מֹשֶׁה רַבֵּנוּ', המילה: 'הַמִּלָּה' };
+const withNiqqud = (t) => Object.entries(NIQQUD).reduce((s, [plain, vowelled]) => s.replace(new RegExp(`(^|\\s|!)${plain}(?=$|\\s|[!?.])`, 'g'), `$1${vowelled}`), t);
+
+/** Every phrase with its Gemini voice and kind: the female guide talks during games, names are said by the male voice. */
 function collectPhrases() {
   const out = new Map();
-  const add = (t, voice, style) => out.has(t) || out.set(t, { voice, style: STYLES[style] });
+  const add = (t, voice, kind) => out.has(t) || out.set(t, { voice, kind });
   const kid = (f) => JSON.parse(fs.readFileSync(path.join(root, 'content/kids', f), 'utf8'));
   const praise = new Set([...PRAISE, 'כל הכבוד! אספתם את כל המדבקות']);
   for (const t of GUIDE_PHRASES) add(t, GUIDE_VOICE, praise.has(t) ? 'praise' : 'guide');
@@ -73,10 +86,11 @@ manifest.engine = `${GEMINI.model} ${GUIDE_VOICE} (guide) / ${NAME_VOICE} (names
 const phrases = collectPhrases();
 const texts = [...phrases.keys()];
 const keyOf = (t) => audioKey(VOICE, 'normal', t);
-const geminiKeyOf = (t) => audioKey(GEMINI_KEY, 'normal', t);
+const geminiKeyOf = (stage, t) => audioKey(GEMINI_KEYS[stage], 'normal', t);
+const STAGES = ['little', 'young'];
 
 if (process.argv.includes('--prune')) {
-  const keep = new Set([...texts.map(keyOf), ...texts.map(geminiKeyOf)]);
+  const keep = new Set([...texts.map(keyOf), ...STAGES.flatMap((st) => texts.map((t) => geminiKeyOf(st, t)))]);
   for (const [key, url] of Object.entries(manifest.entries)) {
     if (keep.has(key)) continue;
     fs.rmSync(path.join(root, 'public', url), { force: true });
@@ -96,14 +110,23 @@ if (jobs.length) {
   if (r.status !== 0) console.error('some phrases failed; run again to retry');
 }
 
-const gJobs = texts.filter((t) => !manifest.entries[geminiKeyOf(t)]).map((t) => ({ text: t, ...phrases.get(t), out: path.join(outDir, `${geminiKeyOf(t)}.mp3`) }));
+// The little ones' set first: it is the one most played.
+const gJobs = STAGES.flatMap((stage) =>
+  texts
+    .map((t) => ({ t, key: geminiKeyOf(stage, t) }))
+    .filter(({ key }) => !manifest.entries[key])
+    .map(({ t, key }) => {
+      const { voice, kind } = phrases.get(t);
+      return { text: t, say: withNiqqud(t), key, voice, style: STYLES[stage][kind], out: path.join(outDir, `${key}.mp3`) };
+    }),
+);
 console.log(`Gemini: ${gJobs.length} to render`);
 if (gJobs.length) {
   const r = spawnSync('python3', [path.join(here, 'gemini_he.py')], { input: JSON.stringify({ ...GEMINI, jobs: gJobs }), stdio: ['pipe', 'inherit', 'inherit'] });
   for (const j of gJobs) {
     if (!fs.existsSync(j.out) || !fs.statSync(j.out).size) continue;
     trimSilence(j.out);
-    manifest.entries[geminiKeyOf(j.text)] = `audio/he/${geminiKeyOf(j.text)}.mp3`;
+    manifest.entries[j.key] = `audio/he/${j.key}.mp3`;
   }
   if (r.status !== 0) console.error('Gemini failed; run again to retry');
 }

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useServices } from '@/app/services';
 import { stickers, type StickerInfo } from '@content/kids';
-import type { Student } from '@/domain/student/student';
+import { stageOf, type Student } from '@/domain/student/student';
 import { speakHebrew } from '@/services/speech/hebrewVoice';
 import { Confetti } from '@/ui/Confetti';
 import { newStickerPhrase } from './hebrewPhrases';
@@ -41,6 +41,7 @@ export function Reward({
   const { store } = useServices();
   const [outcome, setOutcome] = useState<Outcome | undefined>(undefined);
   const deserves = earnedProp ?? earnsSticker(score);
+  const stage = stageOf(student) === 'little' ? 'little' : 'young';
   // The award runs once, even when the effect runs twice (StrictMode).
   const job = useRef<Promise<Outcome> | null>(null);
 
@@ -58,12 +59,15 @@ export function Reward({
     void job.current.then((out) => {
       if (!live) return;
       setOutcome(out);
-      void speakHebrew(out.kind === 'sticker' ? newStickerPhrase(out.sticker.he) : out.kind === 'all' ? 'כל הכבוד! אספתם את כל המדבקות' : 'כל הכבוד!');
+      void speakHebrew(
+        out.kind === 'sticker' ? newStickerPhrase(out.sticker.he) : out.kind === 'all' ? 'כל הכבוד! אספתם את כל המדבקות' : 'כל הכבוד!',
+        stage,
+      );
     });
     return () => {
       live = false;
     };
-  }, [store, student.id, source, deserves]);
+  }, [store, student.id, source, deserves, stage]);
   const sticker = outcome?.kind === 'sticker' ? outcome.sticker : outcome ? null : undefined;
 
   const base = `/s/${student.id}`;
