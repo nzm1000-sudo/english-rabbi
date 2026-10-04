@@ -2,7 +2,6 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import { useLocation, useParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useServices } from '@/app/services';
-import { useSpeechPrefs } from '@/app/speechPrefs';
 import { loadDictionary, lookup, wordKey } from '@/services/dictionary';
 import type { Sense } from '@content/dictionary';
 import { STORY_STOPWORDS } from '@/domain/content/schema';
@@ -26,8 +25,9 @@ export interface GlossEntry {
 const Ctx = createContext<{ open: (g: GlossEntry) => void; closeScope: (scope: symbol) => void } | null>(null);
 
 /**
- * Shows the meaning of a tapped English word at the bottom of the screen,
- * reads it aloud, and keeps it in "my words". One per screen.
+ * Shows the meaning of a tapped English word at the bottom of the screen and
+ * keeps it in "my words". One per screen. It is silent: a reading that is
+ * playing goes on; the word is read only from its own speaker button.
  */
 export function GlossProvider({ children }: { children: ReactNode }) {
   // Kept with the screen it was opened on: another screen (the next story) starts without it.
@@ -35,8 +35,7 @@ export function GlossProvider({ children }: { children: ReactNode }) {
   const { pathname } = useLocation();
   const gloss = opened?.path === pathname ? opened.entry : null;
   const { sid } = useParams();
-  const { store, speech } = useServices();
-  const prefs = useSpeechPrefs();
+  const { store } = useServices();
   const saved = useLiveQuery(() => (sid ? store.savedWords(sid) : []), [store, sid]);
   const savedSet = useMemo(() => new Set((saved ?? []).map((w) => w.lemma)), [saved]);
 
@@ -45,11 +44,10 @@ export function GlossProvider({ children }: { children: ReactNode }) {
       setGloss({ entry: g, path: pathname });
       const first = g.senses[0];
       if (!first) return;
-      void speech.speak(first.lemma, { ...prefs, key: `gloss-${first.lemma}` });
       // Very common words ("the", "is") are shown but not saved.
       if (sid && g.save !== false && !STORY_STOPWORDS.has(first.lemma.toLowerCase())) void store.saveWord(sid, { lemma: first.lemma, he: g.senses.map((s) => s.he).join(', '), ...(g.sentence ? { example: g.sentence } : {}), ...(g.storyId ? { storyId: g.storyId } : {}) });
     },
-    [pathname, prefs, sid, speech, store],
+    [pathname, sid, store],
   );
 
   const closeScope = useCallback((scope: symbol) => setGloss((o) => (o?.entry.scope === scope ? null : o)), []);

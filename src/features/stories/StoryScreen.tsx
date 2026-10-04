@@ -108,8 +108,8 @@ function StoryReader({ student, story, support }: { student: Student; story: Sto
     setAnswered((m) => new Map(m).set(id, outcome.finalCorrect && !outcome.revealed));
   };
 
-  // One meaning popup for the whole screen (the questions use it too): it reads
-  // the word aloud and saves it to "my words".
+  // One meaning popup for the whole screen (the questions use it too): it shows
+  // the meaning without stopping the reading, and saves the word to "my words".
   const tapWord = (key: string, word: string, line: string) => {
     const g = glossFor(story, key);
     if (g) glossPopup?.open({ word, senses: [{ lemma: g.lemma, he: g.he }], sentence: line, storyId: story.id });

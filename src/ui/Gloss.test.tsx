@@ -92,3 +92,27 @@ it('a scope can show without saving, and closes its popup when it ends', async (
   await act(async () => next());
   expect(screen.queryByRole('dialog')).toBeNull();
 });
+
+/** Owner's request: tapping a word while a story plays must not stop it, so the popup does not speak. */
+it('shows the meaning without speaking, so a playing reading goes on', () => {
+  const speak = vi.fn(async () => 'done');
+  const stop = vi.fn();
+  const services = {
+    store: { savedWords: async () => [], saveWord: vi.fn(async () => {}), removeWord: vi.fn() },
+    speech: { speak, stop, subscribe: () => () => {}, getState: () => IDLE },
+    settings: { get: () => undefined },
+  } as unknown as AppServices;
+  render(
+    <ServicesProvider services={services}>
+      <MemoryRouter initialEntries={['/s/x/stories/a']}>
+        <Routes>
+          <Route path="/s/:sid/stories/:storyId" element={<GlossProvider><Screen /></GlossProvider>} />
+        </Routes>
+      </MemoryRouter>
+    </ServicesProvider>,
+  );
+  fireEvent.click(screen.getByText('word'));
+  expect(screen.getByRole('dialog', { name: 'פירוש המילה' })).toBeInTheDocument();
+  expect(speak).not.toHaveBeenCalled();
+  expect(stop).not.toHaveBeenCalled();
+});
