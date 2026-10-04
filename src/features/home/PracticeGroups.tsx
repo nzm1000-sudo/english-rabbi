@@ -4,6 +4,7 @@ import { RowLink } from '@/ui/RowLink';
 import { ChevronIcon } from '@/ui/icons';
 import { heCount } from '@/domain/text/heCount';
 import { GROUPS, REVIEW_GROUP, REVIEW_PATH } from './practiceCatalog';
+import { lastInGroup, triedSince, weekStart } from './practiceActivity';
 
 const storageKey = (studentId: string) => `home.openGroup.${studentId}`;
 
@@ -30,8 +31,26 @@ function saveOpen(studentId: string, id: string | null): void {
  * time and fans out its practice modes below it (WAI-ARIA accordion: header
  * buttons with aria-expanded, arrow keys move between headers). The open group
  * is remembered per student (render it with key={studentId}).
+ *
+ * With the student's activity it also marks the mode used last in each group,
+ * the one recommended for their weakest area, and shows under each header how
+ * many of its modes were tried this week.
  */
-export function PracticeGroups({ studentId, due }: { studentId: string; due: number }) {
+export function PracticeGroups({
+  studentId,
+  due,
+  used,
+  recommended = null,
+  now = Date.now(),
+}: {
+  studentId: string;
+  due: number;
+  /** Catalog path -> last used (usePracticeActivity). */
+  used?: ReadonlyMap<string, number>;
+  recommended?: string | null;
+  now?: number;
+}) {
+  const since = weekStart(now);
   const [open, setOpen] = useState<string | null>(() => readOpen(studentId));
   const uid = useId();
   const headers = useRef<(HTMLButtonElement | null)[]>([]);
@@ -71,6 +90,9 @@ export function PracticeGroups({ studentId, due }: { studentId: string; due: num
         const headId = `${uid}-h-${g.id}`;
         const panelId = `${uid}-p-${g.id}`;
         const reviewDue = g.id === REVIEW_GROUP && due > 0;
+        const last = used ? lastInGroup(g, used) : null;
+        const tried = used ? triedSince(g, used, since) : 0;
+        const hasPick = !!recommended && g.items.some((it) => it.path === recommended);
         return (
           <div key={g.id} className="pgroup" data-open={isOpen || undefined}>
             <h3 className="pgroup-h">
@@ -91,6 +113,7 @@ export function PracticeGroups({ studentId, due }: { studentId: string; due: num
                   <span className="pgroup-title">
                     <strong>{g.title}</strong>
                     {reviewDue && <span className="pgroup-due">{due} לחזרה</span>}
+                    {hasPick && <span className="pgroup-tag pgroup-tag-pick">מומלץ לך</span>}
                   </span>
                   <span className="small muted clamp-1">
                     {heCount(g.items.length, 'תרגול אחד', 'תרגולים')} · {g.lead}
@@ -99,6 +122,16 @@ export function PracticeGroups({ studentId, due }: { studentId: string; due: num
                 <span className="chev pgroup-chev" aria-hidden="true">
                   <ChevronIcon />
                 </span>
+                {used && (
+                  <>
+                    <span className="pgroup-week" aria-hidden="true">
+                      <span style={{ inlineSize: `${(tried / g.items.length) * 100}%` }} />
+                    </span>
+                    <span className="sr-only">
+                      , {tried === 0 ? 'עוד לא תורגלו השבוע' : `${tried} מתוך ${g.items.length} תורגלו השבוע`}
+                    </span>
+                  </>
+                )}
               </button>
             </h3>
             <div
@@ -123,6 +156,13 @@ export function PracticeGroups({ studentId, due }: { studentId: string; due: num
                     tone={it.tone}
                     icon={it.icon}
                     title={it.title}
+                    tag={
+                      it.path === recommended ? (
+                        <span className="pgroup-tag pgroup-tag-pick">מומלץ לך</span>
+                      ) : it.path === last ? (
+                        <span className="pgroup-tag">אחרון</span>
+                      ) : undefined
+                    }
                     sub={it.path === REVIEW_PATH && due > 0 ? `${heCount(due, 'מילה אחת', 'מילים')} לחזרה היום` : it.sub}
                   />
                 ))}

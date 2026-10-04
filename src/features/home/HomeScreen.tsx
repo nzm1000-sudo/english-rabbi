@@ -20,7 +20,7 @@ import {
   PlayIcon,
 } from '@/ui/icons';
 import type { DomainSummary } from '@/domain/student/profile';
-import type { Domain } from '@/domain/skills/taxonomy';
+import { domainOf, type Domain } from '@/domain/skills/taxonomy';
 import { rankOf } from '@/domain/learning/progression';
 import { useGameHistory } from '@/features/practice/useGameHistory';
 import { localDay } from '@/domain/learning/events';
@@ -31,6 +31,8 @@ import { KidsHome } from '@/features/kids/KidsHome';
 import { Row, Stack } from '@/ui/layout';
 import type { ArtName } from '@/ui/art';
 import { PracticeGroups } from './PracticeGroups';
+import { recommendedPath } from './practiceActivity';
+import { usePracticeActivity } from './usePracticeActivity';
 import { RowLink } from '@/ui/RowLink';
 import { heCount } from '@/domain/text/heCount';
 
@@ -50,6 +52,7 @@ export function HomeScreen() {
   const student = useStudent(sid);
   const profile = useProfile(student);
   const games = useGameHistory(student?.id);
+  const used = usePracticeActivity(student?.id);
   const [profileOpen, setProfileOpen] = useState(false);
 
   if (student === null) return <main className="screen empty">התלמיד לא נמצא</main>;
@@ -180,7 +183,13 @@ export function HomeScreen() {
         <h2 className="section-title" id="groups-title">
           כל התרגולים
         </h2>
-        <PracticeGroups key={student.id} studentId={student.id} due={p.words.due} />
+        <PracticeGroups
+          key={student.id}
+          studentId={student.id}
+          due={p.words.due}
+          used={used}
+          recommended={recommendedPath(weak ? domainOf(weak.skillId) : null, p.words.due)}
+        />
         <div className="list">
           <RowLink to={`${base}/path`} art="path" tone="primary" icon={<TargetIcon />} title="המסלול שלי" sub={`${rank.current.he} · דרגה ${rank.current.level}${p.activity.frozenDays > 0 ? ' · מגן הרצף שמר על הרצף' : ''}`} />
         </div>

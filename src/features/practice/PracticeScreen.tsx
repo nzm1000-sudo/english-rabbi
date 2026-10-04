@@ -22,6 +22,9 @@ import { Button } from '@/ui/Button';
 import { TopBar } from '@/ui/TopBar';
 import { Stack } from '@/ui/layout';
 import { heCount } from '@/domain/text/heCount';
+import { RowLink } from '@/ui/RowLink';
+import { nextInGroup, weekStart } from '@/features/home/practiceActivity';
+import { usePracticeActivity } from '@/features/home/usePracticeActivity';
 
 export function PracticeScreen() {
   const { sid, mode } = useParams();
@@ -269,9 +272,12 @@ function Summary({
   const { content } = useServices();
   const nav = useNavigate();
   const history = useGameHistory(student.id);
+  const used = usePracticeActivity(student.id);
   useEffect(() => {
     sounds.finish();
   }, []);
+  // Other modes of the same home-screen group, not tried this week first.
+  const more = nextInGroup(`practice/${mode}`, used ?? new Map(), weekStart(Date.now()));
   const correct = results.filter((r) => r.correct).length;
   const clean = results.filter((r) => r.evidence.flags.includes('clean') || r.evidence.flags.includes('fast')).length;
   const xp = results.reduce((s, r) => s + r.evidence.xp, 0);
@@ -415,6 +421,18 @@ function Summary({
           חזרה למסך הבית
         </Button>
       </Stack>
+      {more && more.items.length > 0 && (
+        <Stack as="section" gap={2} aria-labelledby="more-in-group">
+          <h3 className="section-label" id="more-in-group">
+            עוד מ{more.group.title}
+          </h3>
+          <div className="list">
+            {more.items.map((it) => (
+              <RowLink key={it.path} to={`/s/${student.id}/${it.path}`} art={it.art} tone={it.tone} icon={it.icon} title={it.title} sub={it.sub} />
+            ))}
+          </div>
+        </Stack>
+      )}
     </Stack>
   );
 }

@@ -4,10 +4,11 @@ import { MemoryRouter } from 'react-router-dom';
 import { PracticeGroups } from './PracticeGroups';
 import { GROUPS } from './practiceCatalog';
 
-const show = (props: { studentId?: string; due?: number } = {}) =>
+type Props = { studentId?: string; due?: number; used?: Map<string, number>; recommended?: string | null; now?: number };
+const show = (props: Props = {}) =>
   render(
     <MemoryRouter>
-      <PracticeGroups studentId={props.studentId ?? 'st-1'} due={props.due ?? 0} />
+      <PracticeGroups studentId={props.studentId ?? 'st-1'} due={props.due ?? 0} used={props.used} recommended={props.recommended} now={props.now} />
     </MemoryRouter>,
   );
 
@@ -77,5 +78,34 @@ describe('PracticeGroups', () => {
     expect(last).toHaveFocus();
     fireEvent.keyDown(last!, { key: 'Home' });
     expect(first).toHaveFocus();
+  });
+
+  it('marks the last used mode and the recommended one, and tells how much was tried this week', () => {
+    const now = new Date(2026, 9, 7, 12).getTime(); // a Wednesday; the week began Sunday 4 Oct
+    const thisWeek = new Date(2026, 9, 5).getTime();
+    const lastWeek = new Date(2026, 8, 30).getTime();
+    const used = new Map([
+      ['practice/quiz', thisWeek],
+      ['practice/exam', lastWeek],
+    ]);
+    show({ used, recommended: 'practice/fix', now });
+
+    const games = header('משחקים ואתגרים');
+    expect(games).toHaveAccessibleName(expect.stringContaining('1 מתוך 5 תורגלו השבוע'));
+    expect(header('קוראים ומדברים')).toHaveAccessibleName(expect.stringContaining('עוד לא תורגלו השבוע'));
+    expect(header('כותבים ומתקנים')).toHaveTextContent('מומלץ לך');
+    expect(games).not.toHaveTextContent('מומלץ לך');
+
+    fireEvent.click(games);
+    expect(screen.getByRole('link', { name: /חידון/ })).toHaveTextContent('אחרון');
+    expect(screen.getByRole('link', { name: /מבחן/ })).not.toHaveTextContent('אחרון');
+
+    fireEvent.click(header('כותבים ומתקנים'));
+    expect(screen.getByRole('link', { name: /מצא את הטעות/ })).toHaveTextContent('מומלץ לך');
+  });
+
+  it('shows no marks or bars before the activity has loaded', () => {
+    show();
+    expect(header('משחקים ואתגרים')).not.toHaveAccessibleName(expect.stringContaining('השבוע'));
   });
 });
