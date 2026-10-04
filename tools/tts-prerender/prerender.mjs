@@ -26,8 +26,12 @@ const outDir = path.join(root, 'public/audio');
 const limitArg = process.argv.indexOf('--limit');
 const limit = limitArg > 0 ? Number(process.argv[limitArg + 1]) : Infinity;
 
-// Keep in sync with src/services/speech/voiceProfiles.ts
-const VOICES = { 'en-US': { A: 'af_heart', B: 'am_michael' }, 'en-GB': { A: 'bf_emma', B: 'bm_george' } };
+// Keep in sync with PRERENDER_VOICES in src/services/speech/voiceProfiles.ts.
+// en-US: Microsoft neural voices (edge-tts), chosen by ear on 2026-10-04 over
+// Kokoro, which sounded nasal. en-GB stays on Kokoro (not rendered by default).
+const VOICES = { 'en-US': { A: 'en-US-JennyNeural', B: 'en-US-AndrewNeural' }, 'en-GB': { A: 'bf_emma', B: 'bm_george' } };
+const isEdge = (voice) => voice.endsWith('Neural');
+const EDGE_RATE = { normal: '+0%', slow: '-20%' };
 // Accents to render. Chosen by ear on 2026-10-02: American only.
 // Add en-GB with: --accents en-US,en-GB
 const accArg = process.argv.indexOf('--accents');
@@ -105,14 +109,16 @@ function collectTexts() {
       for (const lv of Object.values(a.levels ?? {})) for (const e of lv.examples ?? []) add(e.ok, 'A', ['normal']);
     }
   }
-  return [...texts.values()];
+  // Everything also gets a real slow recording: slowing a normal one down on
+  // playback made the voice warble.
+  return [...texts.values()].map((t) => ({ ...t, rates: ALL_RATES }));
 }
 
 const manifestPath = path.join(outDir, 'manifest.json');
 fs.mkdirSync(outDir, { recursive: true });
 const manifest = fs.existsSync(manifestPath)
   ? JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
-  : { version: 1, engine: 'kokoro-82m-v1.0', entries: {} };
+  : { version: 1, engine: 'edge-neural', entries: {} };
 
 const texts = collectTexts().slice(0, limit);
 
@@ -144,10 +150,27 @@ for (const { text, speaker, rates } of texts) {
 console.log(`${texts.length} texts, ${jobs.length} files to render`);
 if (!jobs.length) process.exit(0);
 
-const tts = await KokoroTTS.from_pretrained('onnx-community/Kokoro-82M-v1.0-ONNX', { dtype: 'fp32', device: 'cpu' });
-const tmp = path.join(here, '.tmp.wav');
 let n = 0;
-for (const j of jobs) {
+const save = () => fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 1));
+
+// Microsoft voices: rendered in batches by edge_en.py, a few at a time.
+const edgeJobs = jobs.filter((j) => isEdge(j.voice));
+for (let i = 0; i < edgeJobs.length; i += 200) {
+  const batch = edgeJobs.slice(i, i + 200).map((j) => ({ ...j, out: path.join(outDir, `${j.key}.mp3`) }));
+  const input = JSON.stringify({ jobs: batch.map((j) => ({ text: j.text, voice: j.voice, rate: EDGE_RATE[j.rate], out: j.out })) });
+  const log = execFileSync('python3', [path.join(here, 'edge_en.py')], { input, encoding: 'utf8', maxBuffer: 1 << 26 });
+  for (const j of batch) if (fs.existsSync(j.out)) manifest.entries[j.key] = `audio/${j.key}.mp3`;
+  const failed = log.split('\n').filter((l) => l.startsWith('fail'));
+  for (const f of failed) console.log(f);
+  n += batch.length - failed.length;
+  save();
+  console.log(`${Math.min(i + 200, edgeJobs.length)}/${edgeJobs.length}`);
+}
+
+const kokoroJobs = jobs.filter((j) => !isEdge(j.voice));
+const tts = kokoroJobs.length ? await KokoroTTS.from_pretrained('onnx-community/Kokoro-82M-v1.0-ONNX', { dtype: 'fp32', device: 'cpu' }) : null;
+const tmp = path.join(here, '.tmp.wav');
+for (const j of kokoroJobs) {
   const audio = await tts.generate(j.text, { voice: j.voice, speed: j.speed });
   await audio.save(tmp);
   const file = `${j.key}.mp3`;

@@ -2,7 +2,7 @@ import { contentRegistry as reg } from './index';
 import { kidBooks, kidWords, phonics } from './kids';
 import { audioKey } from '@/services/speech/audioKey';
 import { canonicalSpeechText, dialogueLines, questionSpeech, splitSentences } from '@/services/speech/textPrep';
-import { NEURAL_VOICES } from '@/services/speech/voiceProfiles';
+import { PRERENDER_VOICES } from '@/services/speech/voiceProfiles';
 
 /**
  * Every English text the app can speak must have pre-rendered natural audio
@@ -38,7 +38,7 @@ function speakable(): { text: string; speaker: 'A' | 'B' }[] {
 }
 
 function covered({ text, speaker }: { text: string; speaker: 'A' | 'B' }, rate: 'normal' | 'slow'): boolean {
-  const voice = NEURAL_VOICES['en-US'][speaker];
+  const voice = PRERENDER_VOICES['en-US'][speaker];
   const t = canonicalSpeechText(text);
   if (manifest.entries[audioKey(voice, rate, t)]) return true;
   const parts = splitSentences(t);
