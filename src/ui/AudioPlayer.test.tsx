@@ -88,7 +88,7 @@ afterEach(() => {
 });
 
 describe('AudioPlayer', () => {
-  it('after a speed change, play continues with the new recording, not the old one', async () => {
+  it('speeds up in place and switches to slow recordings without stopping', async () => {
     setup();
     const play = await screen.findByRole('button', { name: 'ניגון' });
     await waitFor(() => expect(play).toBeEnabled());
@@ -96,13 +96,37 @@ describe('AudioPlayer', () => {
     const el = elements.find((e) => !e.paused)!;
     expect(fileOf.get(el.src)).toBe('normal.mp3');
     el.currentTime = 1;
+    const chip = () => screen.getByRole('button', { name: /^מהירות/ });
+    // Faster: same file, faster playback, still playing.
+    fireEvent.click(chip());
+    expect(chip()).toHaveTextContent('1.25×');
+    expect(fileOf.get(el.src)).toBe('normal.mp3');
+    expect(el.playbackRate).toBeCloseTo(1.25);
+    expect(el.paused).toBe(false);
+    fireEvent.click(chip());
+    expect(el.playbackRate).toBeCloseTo(1.5);
+    // Slower: the slow recording takes over at the same point and keeps playing.
+    fireEvent.click(chip());
+    expect(chip()).toHaveTextContent('0.65×');
+    await waitFor(() => expect(fileOf.get(el.src)).toBe('slower.mp3'));
+    expect(el.paused).toBe(false);
+    expect(el.currentTime).toBeCloseTo(1);
+    expect(el.playbackRate).toBeCloseTo(1);
+  });
+
+  it('after a speed change while paused, play resumes in the new recording at the same place', async () => {
+    setup();
+    const play = await screen.findByRole('button', { name: 'ניגון' });
+    await waitFor(() => expect(play).toBeEnabled());
+    await act(async () => fireEvent.click(play));
+    const el = elements.find((e) => !e.paused)!;
+    el.currentTime = 1;
     await act(async () => fireEvent.click(screen.getByRole('button', { name: 'השהיה' })));
-    fireEvent.click(screen.getByRole('button', { name: /^מהירות/ }));
+    for (let i = 0; i < 4; i++) fireEvent.click(screen.getByRole('button', { name: /^מהירות/ }));
     await waitFor(() => expect(screen.getByRole('button', { name: /^מהירות/ })).toHaveTextContent('0.8×'));
     await waitFor(() => expect(el.getAttribute('src')).toBeNull());
     await act(async () => fireEvent.click(screen.getByRole('button', { name: 'ניגון' })));
     expect(fileOf.get(el.src)).toBe('slow.mp3');
-    // Same place: half way through the sentence.
     expect(el.currentTime).toBeCloseTo(1);
   });
 
