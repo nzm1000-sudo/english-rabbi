@@ -32,9 +32,9 @@
         "why": "בעברית אומרים \"תמר בבית הספר\", בלי שום מילה באמצע. באנגלית חייבים מילה כזאת, ולכן כותבים בטעות Tamar at school.",
         "examples": [
           {
-            "ok": "I am nine years old.",
-            "bad": "I nine years old.",
-            "he": "אני בן תשע."
+            "ok": "Ari is nine years old.",
+            "bad": "Ari nine years old.",
+            "he": "ארי בן תשע."
           },
           {
             "ok": "Tamar is at school.",
@@ -167,12 +167,12 @@
       "kids": {
         "title": "איך מספרים מה עושים כל יום?",
         "rule": "כשמשהו קורה כל יום, תמיד או בדרך כלל, כותבים את הפועל הרגיל, בלי am ובלי is: I play. כשמדברים על אחד מוסיפים s: Ari plays.",
-        "why": "בעברית \"אני אוכל\" מתאים גם לעכשיו וגם לכל יום. באנגלית הרגל בא בלי am, אבל מי שמתרגם מילה במילה כותב I am eat.",
+        "why": "בעברית \"אנחנו אוכלים\" מתאים גם לעכשיו וגם לכל יום. באנגלית הרגל בא בלי are, אבל מי שמתרגם מילה במילה כותב We are eat.",
         "examples": [
           {
-            "ok": "I eat breakfast every morning.",
-            "bad": "I am eat breakfast every morning.",
-            "he": "אני אוכל ארוחת בוקר כל בוקר."
+            "ok": "We eat breakfast every morning.",
+            "bad": "We are eat breakfast every morning.",
+            "he": "אנחנו אוכלים ארוחת בוקר כל בוקר."
           },
           {
             "ok": "Tamar rides her bike to school.",
@@ -321,7 +321,7 @@
         ],
         "exceptions": [
           {
-            "he": "במקום have אומרים has.",
+            "he": "עם he, she, it אומרים has במקום have.",
             "en": "She has a cat."
           },
           {
@@ -384,7 +384,7 @@
             "en": "studies, tries · plays"
           },
           {
-            "he": "has, is, ופעלים מודאליים (can, must, will) בלי s לעולם.",
+            "he": "have נהיה has, ו־be נהיה is. פעלים מודאליים (can, must, will) לא מקבלים s לעולם.",
             "en": "She has a car. She can swim."
           }
         ],
@@ -430,9 +430,9 @@
             "he": "ארי אוהב פיצה?"
           },
           {
-            "ok": "I don't like onions.",
-            "bad": "I no like onions.",
-            "he": "אני לא אוהב בצל."
+            "ok": "We don't like onions.",
+            "bad": "We no like onions.",
+            "he": "אנחנו לא אוהבים בצל."
           },
           {
             "ok": "Tamar doesn't eat meat.",
@@ -691,12 +691,12 @@
       "kids": {
         "title": "למה אי אפשר לומר I am knowing?",
         "rule": "יש פעלים שהם לא פעולה, אלא משהו שבראש או בלב: know, like, want ו־need. הם לא מקבלים ing, גם כשמדובר בעכשיו.",
-        "why": "בעברית \"אני רוצה\" נשמע בדיוק כמו \"אני רץ\". אבל באנגלית רצים עם ing, ורוצים בלי ing. לכן כותבים בטעות I am wanting.",
+        "why": "בעברית \"ארי רוצה\" נשמע בדיוק כמו \"ארי רץ\". אבל באנגלית רצים עם ing, ורוצים בלי ing. לכן כותבים בטעות Ari is wanting.",
         "examples": [
           {
-            "ok": "I want a snack.",
-            "bad": "I am wanting a snack.",
-            "he": "אני רוצה חטיף."
+            "ok": "Ari wants a snack.",
+            "bad": "Ari is wanting a snack.",
+            "he": "ארי רוצה חטיף."
           },
           {
             "ok": "Tamar knows the answer.",
@@ -1201,7 +1201,7 @@
       "kids": {
         "title": "for או since?",
         "rule": "for בא לפני כמה זמן, כמו for two hours. since בא לפני מתי זה התחיל, כמו since Sunday.",
-        "why": "בעברית אומרים \"אני מחכה כבר שעתיים\" וגם \"אני מחכה משמונה\". באנגלית בוחרים מילה לפי מה שבא אחריה: כמה זמן, או מתי זה התחיל.",
+        "why": "בעברית אומרים \"מחכים כבר שעתיים\" וגם \"מחכים משמונה\". באנגלית בוחרים מילה לפי מה שבא אחריה: כמה זמן, או מתי זה התחיל.",
         "examples": [
           {
             "ok": "We have lived here for three years.",
@@ -1214,8 +1214,8 @@
             "he": "תמר בבית הספר מאז שמונה."
           },
           {
-            "ok": "I have known Ari since first grade.",
-            "he": "אני מכיר את ארי מכיתה א'."
+            "ok": "Tamar has known Ari since first grade.",
+            "he": "תמר מכירה את ארי מכיתה א'."
           }
         ],
         "check": [
@@ -1272,7 +1272,7 @@
           },
           {
             "when": "since ואחריו משפט שלם",
-            "then": "המשפט שאחרי since בעבר פשוט",
+            "then": "המשפט שאחרי since בדרך כלל בעבר פשוט",
             "example": "I have known her since we were six."
           },
           {
@@ -1502,7 +1502,7 @@
       "adult": {
         "title": "a, an, the או בלי כלום?",
         "rule": "שם עצם נספר ביחיד לא עומד לבד: לפניו a, an, the, my וכדומה. a או an כשמזכירים לראשונה או כשלא משנה איזה, the כשהשומע יודע בדיוק איזה. ברבים ובלא נספר, בהכללה, לא כותבים כלום.",
-        "why": "בעברית אין יידוע לא מסוים, ולכן \"אבא מורה\" נכתב בטעות בלי a. ה\"א הידיעה מופיעה בעברית גם בהכללות (\"החיים יפים\"), ולכן מוסיפים the במקום שאין בו צורך: the life.",
+        "why": "בעברית אין מילה כמו a, ולכן \"אבא מורה\" נכתב בטעות בלי a. ה\"א הידיעה מופיעה בעברית גם בהכללות (\"החיים יפים\"), ולכן מוסיפים the במקום שאין בו צורך: the life.",
         "examples": [
           {
             "ok": "Abba is a teacher.",
@@ -1602,8 +1602,8 @@
             "he": "חם. אני אפתח את החלון."
           },
           {
-            "ok": "I think Tamar will win the game.",
-            "he": "אני חושב שתמר תנצח במשחק."
+            "ok": "Abba thinks Tamar will win the game.",
+            "he": "אבא חושב שתמר תנצח במשחק."
           }
         ],
         "check": [
@@ -1732,8 +1732,8 @@
             "he": "אם תסיימו את שיעורי הבית, תוכלו לשחק."
           },
           {
-            "ok": "If I had wings, I would fly to Grandpa.",
-            "he": "אם היו לי כנפיים, הייתי עף לסבא."
+            "ok": "If Ari had wings, he would fly to Grandpa.",
+            "he": "אם היו לארי כנפיים, הוא היה עף לסבא."
           }
         ],
         "check": [
@@ -1763,7 +1763,7 @@
       },
       "adult": {
         "title": "איזה זמן בא אחרי if?",
-        "rule": "אפשרי: if + הווה, ובחלק השני will. דמיוני בהווה: if + עבר, ובחלק השני would. דמיוני בעבר: if + had + V3, ובחלק השני would have + V3. אחרי if לא כותבים will או would.",
+        "rule": "אפשרי: if + הווה, ובחלק השני will. דמיוני בהווה: if + עבר, ובחלק השני would. דמיוני בעבר: if + had + V3, ובחלק השני would have + V3. בכתיבה תקנית לא כותבים will או would אחרי if.",
         "why": "בעברית \"אם ירד גשם\" בעתיד, ולכן כותבים If it will rain. ו\"אילו היה לי\" משמש בעברית גם לעכשיו וגם לעבר, ולכן מבלבלים בין would לבין would have.",
         "examples": [
           {
@@ -1806,7 +1806,7 @@
         ],
         "exceptions": [
           {
-            "he": "אחרי if מותר will כשמבקשים בנימוס, במובן \"אם תואילו\".",
+            "he": "אחרי if מותר will או would כשמבקשים בנימוס, במובן \"אם תואילו\".",
             "en": "If you will wait here, I'll call him."
           },
           {
@@ -2242,7 +2242,7 @@
     "levels": {
       "kids": {
         "title": "איך אומרים \"נבנה\" או \"נאכל\" באנגלית?",
-        "rule": "כשלא חשוב מי עשה, אלא מה קרה לדבר, כותבים is או was, ואחריו צורה מיוחדת של הפועל, כמו built או eaten. אפשר להוסיף by ומי שעשה.",
+        "rule": "כשלא חשוב מי עשה, אלא מה קרה לדבר, כותבים is, are, was או were, ואחריו צורה מיוחדת של הפועל, כמו built או eaten. אפשר להוסיף by ומי שעשה.",
         "why": "בעברית \"נבנתה\" זו מילה אחת. באנגלית צריך שתיים: was built. ואם שוכחים את was, יוצא שהדבר עשה את הפעולה בעצמו.",
         "examples": [
           {
@@ -2264,7 +2264,7 @@
         "check": [
           {
             "when": "לא חשוב מי עשה, או שלא יודעים",
-            "then": "is או was + הצורה המיוחדת",
+            "then": "is, are, was או were + הצורה המיוחדת",
             "example": "My bike was stolen!"
           },
           {
@@ -2515,9 +2515,9 @@
             "he": "שטפו ידיים לפני האוכל."
           },
           {
-            "ok": "I want to play outside.",
-            "bad": "I want play outside.",
-            "he": "אני רוצה לשחק בחוץ."
+            "ok": "We want to play outside.",
+            "bad": "We want play outside.",
+            "he": "אנחנו רוצים לשחק בחוץ."
           }
         ],
         "check": [
@@ -2572,7 +2572,7 @@
             "example": "Thanks for helping."
           },
           {
-            "when": "enjoy, finish, avoid ו־suggest",
+            "when": "enjoy, finish, avoid ו־mind",
             "then": "פועל + ing",
             "example": "Do you mind waiting?"
           },
@@ -3045,7 +3045,7 @@
         ],
         "exceptions": [
           {
-            "he": "always ו־never באים לפני הפועל.",
+            "he": "always ו־never באים לפני הפועל, אבל אחרי am, is, are.",
             "en": "I always brush my teeth."
           }
         ],
@@ -3062,9 +3062,9 @@
             "he": "אני מאוד אוהב שוקולד."
           },
           {
-            "ok": "Rivka is always on time.",
-            "bad": "Rivka always is on time.",
-            "he": "רבקה תמיד מגיעה בזמן."
+            "ok": "Ari has never seen snow.",
+            "bad": "Ari has seen never snow.",
+            "he": "ארי אף פעם לא ראה שלג."
           },
           {
             "ok": "Do you know where the station is?",
@@ -3173,7 +3173,7 @@
         ],
         "exceptions": [
           {
-            "he": "במקום good אומרים well.",
+            "he": "כשמתארים איך עושים, אומרים well ולא good.",
             "en": "You did well!"
           },
           {
@@ -3340,7 +3340,7 @@
           },
           {
             "when": "told",
-            "then": "אחריו בא תמיד מי ששמע",
+            "then": "אחריו בא בדרך כלל מי ששמע: told me",
             "example": "He told me the news."
           },
           {
@@ -3402,12 +3402,12 @@
       "kids": {
         "title": "איך אומרים \"פעם הייתי...\"?",
         "rule": "used to ואחריו פועל רגיל מספר על משהו שעשינו פעם, ועכשיו כבר לא. הוא נשאר אותו דבר לכולם: I used to וגם she used to.",
-        "why": "בעברית אומרים \"הייתי משחק\", ולכן כותבים בטעות I was play. באנגלית אומרים used to play.",
+        "why": "בעברית אומרים \"הוא היה משחק\", ולכן כותבים בטעות he was play. באנגלית אומרים he used to play.",
         "examples": [
           {
-            "ok": "I used to sleep with a teddy bear.",
-            "bad": "I was sleep with a teddy bear.",
-            "he": "פעם הייתי ישן עם דובי."
+            "ok": "Ari used to sleep with a teddy bear.",
+            "bad": "Ari was sleep with a teddy bear.",
+            "he": "פעם ארי היה ישן עם דובי."
           },
           {
             "ok": "Tamar used to have long hair.",
@@ -3442,7 +3442,7 @@
       "adult": {
         "title": "used to, would או be used to?",
         "rule": "used to + פועל בסיס מתאר הרגל או מצב בעבר שכבר לא קיימים. בשאלה ובשלילה: did + use to. be used to + שם עצם או ing פירושו \"רגיל ל־\", ו־get used to פירושו \"מתרגל ל־\".",
-        "why": "בעברית \"הייתי הולך\" מתורגם בטעות ל־I was go. ובגלל ש\"רגיל ל־\" נשמע כמו used to, כותבים used to wake up במקום used to waking up.",
+        "why": "בעברית \"הייתי הולך\" מתורגם בטעות ל־I was go. ובגלל ש\"רגיל ל־\" נשמע כמו \"ל־\" ופועל, כותבים אחרי be used to פועל בסיס במקום פועל עם ing.",
         "examples": [
           {
             "ok": "We used to live in Tel Aviv.",
@@ -3496,7 +3496,7 @@
             "en": "I didn't use to like fish."
           }
         ],
-        "remember": "used to מתאר את מה שהיה. be used to מתאר את מה שאני רגיל אליו, ואחריו שם עצם או ing."
+        "remember": "used to מתאר את מה שהיה. be used to מתאר את מה שרגילים אליו, ואחריו שם עצם או ing."
       }
     },
     "source": "original"
@@ -3732,7 +3732,7 @@
           },
           {
             "when": "f או fe בסוף המילה",
-            "then": "לרוב ves",
+            "then": "הרבה פעמים ves, אבל לא תמיד (roofs)",
             "example": "leaf, leaves · knife, knives"
           },
           {

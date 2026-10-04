@@ -185,7 +185,7 @@
     "levels": {
       "kids": {
         "title": "למה success הופך ל־successful?",
-        "rule": "למילה באנגלית יש משפחה, והסוף שלה משתנה לפי התפקיד. אחרי very באה מילה שמתארת, כמו successful או windy. אחרי the בא לרוב שם של דבר, כמו success.",
+        "rule": "למילה באנגלית יש משפחה, והסוף שלה משתנה לפי התפקיד. אחרי is very באה מילה שמתארת, כמו successful או windy. אחרי the בא לרוב שם של דבר, כמו success.",
         "why": "בעברית \"הצלחה\" ו\"מצליח\" נראות שונה כבר מההתחלה. באנגלית ההבדל רק בסוף המילה, אז קל לשכוח אותו ולכתוב very success.",
         "examples": [
           { "ok": "Tamar is very successful at school.", "bad": "Tamar is very success at school.", "he": "תמר מאוד מצליחה בבית הספר." },
@@ -193,7 +193,7 @@
           { "ok": "Ari was unhappy because it rained.", "he": "ארי היה עצוב כי ירד גשם. un הופך את happy להפך." }
         ],
         "check": [
-          { "when": "לפני החסר יש very, או שהמילה מתארת מישהו", "then": "מילה שמתארת, עם סוף כמו ful, y, ous", "example": "very helpful" },
+          { "when": "לפני החסר יש is very, או שהמילה מתארת מישהו", "then": "מילה שמתארת, עם סוף כמו ful, y, ous", "example": "very helpful" },
           { "when": "לפני החסר יש the ואחריו of", "then": "שם של דבר, עם סוף כמו ness, ment, tion", "example": "the excitement of Purim" }
         ],
         "exceptions": [
@@ -203,7 +203,7 @@
       },
       "adult": {
         "title": "איזו צורה של המילה מתאימה למשפט?",
-        "rule": "קודם מזהים מה חסר. אחרי a, the, my או לפני of: שם עצם (ness, ment, tion, ity). לפני שם עצם או אחרי be ו־very: שם תואר (ful, ous, able, ive). ליד פועל: תואר הפועל (ly). אחר כך בודקים אם המשמעות חיובית או שלילית (un, in, dis).",
+        "rule": "קודם מזהים מה חסר. אחרי a, the, my או לפני of: שם עצם (ness, ment, tion, ity). לפני שם עצם או אחרי be (גם be very): שם תואר (ful, ous, able, ive). ליד פועל: תואר הפועל (ly). אחר כך בודקים אם המשמעות חיובית או שלילית (un, in, dis).",
         "why": "בעברית חלקי הדיבר נבדלים בתבנית (הצלחה, מצליח, בהצלחה), ולכן הסיומת האנגלית נראית כמו קישוט ונשכחת: very success. ו\"אי\" היא תחילית אחת, כשבאנגלית צריך לבחור בין un, in, im, dis.",
         "examples": [
           { "ok": "She is a very successful lawyer.", "bad": "She is a very success lawyer.", "he": "היא עורכת דין מצליחה מאוד." },
@@ -212,7 +212,7 @@
         ],
         "check": [
           { "when": "אחרי a, the, my או לפני of", "then": "שם עצם", "example": "the importance of sleep" },
-          { "when": "לפני שם עצם, או אחרי be ו־very", "then": "שם תואר", "example": "a dangerous road" },
+          { "when": "לפני שם עצם, או אחרי be או be very", "then": "שם תואר", "example": "a dangerous road" },
           { "when": "החסר מתאר איך עושים את הפעולה", "then": "תואר הפועל, עם ly", "example": "She answered politely." },
           { "when": "המשמעות הפוכה", "then": "תחילית שלילה: un, in, im, dis", "example": "unusual, incorrect, impolite, dishonest" }
         ],
@@ -298,12 +298,12 @@
     "levels": {
       "kids": {
         "title": "למה יורדים חתולים וכלבים?",
-        "rule": "יש משפטים באנגלית שנשמעים מצחיק אם מתרגמים כל מילה. זה ביטוי. לומדים אותו שלם, כמו שבעברית יודעים ש\"חבל על הזמן\" זה דבר טוב.",
+        "rule": "יש משפטים באנגלית שנשמעים מצחיק אם מתרגמים כל מילה. זה ביטוי. לומדים אותו שלם, כמו שבעברית יודעים ש\"שבר את הראש\" פירושו חשב הרבה.",
         "why": "בעברית יש לנו ביטויים משלנו, ואנחנו מבינים אותם בלי לחשוב. באנגלית הביטויים אחרים. מי שמתרגם מילה במילה מחפש עוגה ב־a piece of cake.",
         "examples": [
           { "ok": "The math test was a piece of cake.", "he": "המבחן בחשבון היה קל מאוד." },
           { "ok": "It's raining cats and dogs, so take an umbrella.", "he": "יורד גשם חזק מאוד, אז קחו מטרייה." },
-          { "ok": "Tell me the story, Abba. I'm all ears!", "he": "ספר לי את הסיפור, אבא. אני מקשיב בכל הכוח!" }
+          { "ok": "Tell me the story, Abba. I'm all ears!", "he": "ספר לי את הסיפור, אבא. אני כולי אוזן!" }
         ],
         "check": [
           { "when": "התרגום של כל מילה נשמע מצחיק", "then": "זה ביטוי: מנחשים מהסיפור", "example": "a piece of cake" },
@@ -406,10 +406,10 @@
       "kids": {
         "title": "איך מתרגמים משפט לאנגלית?",
         "rule": "לא מתרגמים מילה אחרי מילה. שואלים: מי? עושה מה? איפה? מתי? ובונים את המשפט בסדר הזה. אחרי he או she מוסיפים s לפועל.",
-        "why": "בעברית אומרים \"אני שמח\" בלי מילה באמצע. באנגלית חייבים am: I am happy. ובעברית שואלים בלי מילת עזר, אז כותבים בטעות Where you live.",
+        "why": "בעברית אומרים \"תמר שמחה\" בלי מילה באמצע. באנגלית חייבים is: Tamar is happy. ובעברית שואלים בלי מילת עזר, אז כותבים בטעות Where you live.",
         "examples": [
           { "ok": "Abba makes kiddush every Shabbat.", "bad": "Abba make kiddush in every Shabbat.", "he": "אבא עושה קידוש בכל שבת." },
-          { "ok": "I am happy today.", "bad": "I happy today.", "he": "אני שמח היום." },
+          { "ok": "Tamar is happy today.", "bad": "Tamar happy today.", "he": "תמר שמחה היום." },
           { "ok": "Where do you live?", "bad": "Where you live?", "he": "איפה אתם גרים?" }
         ],
         "check": [
@@ -456,7 +456,7 @@
       { "en": "Be careful with the knife.", "he": "זהירות עם הסכין." },
       { "en": "Tamar is my best friend.", "he": "תמר החברה הכי טובה שלי." }
     ],
-    "hebrewTrap": "בעברית הכתיב קרוב לצליל, ולכן כותבים באנגלית מה ששומעים: nife במקום knife, rite במקום write. ומי שרגיל לכתוב בלי ניקוד משמיט תנועות: frend במקום friend.",
+    "hebrewTrap": "בעברית הכתיב קרוב לצליל, ולכן כותבים באנגלית מה ששומעים: nife במקום knife, lisen במקום listen. ומי שרגיל לכתוב בלי ניקוד משמיט תנועות: frend במקום friend.",
     "levels": {
       "kids": {
         "title": "למה יש אותיות שלא שומעים?",
@@ -465,7 +465,7 @@
         "examples": [
           { "ok": "Be careful with the knife.", "bad": "Be careful with the nife.", "he": "זהירות עם הסכין." },
           { "ok": "Tamar is my best friend.", "bad": "Tamar is my best frend.", "he": "תמר החברה הכי טובה שלי." },
-          { "ok": "It's night. Time to sleep.", "bad": "It's nite. Time to sleep.", "he": "לילה. הגיע הזמן לישון." }
+          { "ok": "It's night. Time to sleep.", "bad": "It's nait. Time to sleep.", "he": "לילה. הגיע הזמן לישון." }
         ],
         "check": [
           { "when": "שומעים \"נ\" בהתחלה", "then": "אולי kn, כמו knife ו־know", "example": "knee, knock" },
@@ -479,9 +479,9 @@
       "adult": {
         "title": "איך מקלידים נכון מילה ששומעים?",
         "rule": "מחלקים להברות וכותבים כל הברה. בודקים מוקשים קבועים: אותיות שקטות (kn, wr, mb), צירופים (ight, tion), עיצור כפול אחרי תנועה קצרה (running, beginning) ו־ie או ei. עוזר להיזכר במילה קרובה: sign, signature.",
-        "why": "בעברית הכתיב קרוב לצליל, ותנועות בכלל לא כותבים. לכן משמיטים אותיות שקטות ותנועות (frend, nife), או כותבים לפי הצליל: rite במקום write.",
+        "why": "בעברית הכתיב קרוב לצליל, ותנועות בכלל לא כותבים. לכן משמיטים אותיות שקטות ותנועות (frend, nife), או כותבים לפי הצליל: lisen במקום listen.",
         "examples": [
-          { "ok": "I wrote a long message.", "bad": "I rote a long message.", "he": "כתבתי הודעה ארוכה." },
+          { "ok": "We climbed a high mountain.", "bad": "We climed a high mountain.", "he": "טיפסנו על הר גבוה." },
           { "ok": "She received a letter from school.", "bad": "She recieved a letter from school.", "he": "היא קיבלה מכתב מבית הספר." },
           { "ok": "The beginning of the film was boring.", "bad": "The begining of the film was boring.", "he": "ההתחלה של הסרט הייתה משעממת." }
         ],
@@ -642,7 +642,7 @@
         "why": "בוחרים משפט שמופיע בטקסט כמעט מילה במילה, אבל המסיחים בנויים בדיוק מפרטים כאלה. ובשאלת מטרה מבלבלים בין inform (למסור מידע), persuade (לשכנע) ו־entertain (לבדר).",
         "examples": [
           { "ok": "Join our beach clean-up this Friday! Bring gloves and a bag.", "he": "הצטרפו לניקיון החוף ביום שישי! הביאו כפפות ושקית. המטרה: to persuade." },
-          { "ok": "The museum is open from 9:00 to 17:00, except on Saturdays.", "he": "המוזיאון פתוח מ־9:00 עד 17:00, חוץ מבשבת. המטרה: to inform." },
+          { "ok": "The museum is open from 9:00 to 17:00, except on Saturdays.", "he": "המוזיאון פתוח מ־9:00 עד 17:00, חוץ מימי שבת. המטרה: to inform." },
           { "ok": "Please do not touch the lamps. They break easily.", "he": "נא לא לגעת במנורות. הן נשברות בקלות. המטרה: to warn." }
         ],
         "check": [

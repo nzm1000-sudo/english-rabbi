@@ -35,6 +35,12 @@
    "he": "האות b"
   }
  ],
+ "begining": [
+  {
+   "lemma": "beginning",
+   "he": "צורה שגויה (נכון: beginning)"
+  }
+ ],
  "boots": [
   {
    "lemma": "boot",
@@ -45,6 +51,12 @@
   {
    "lemma": "ceiling",
    "he": "תקרה"
+  }
+ ],
+ "climed": [
+  {
+   "lemma": "climbed",
+   "he": "צורה שגויה (נכון: climbed)"
   }
  ],
  "closest": [
@@ -105,6 +117,10 @@
   {
    "lemma": "-er",
    "he": "סיומת של עושה פעולה (teacher)"
+  },
+  {
+   "lemma": "-er",
+   "he": "סיומת השוואה (taller)"
   }
  ],
  "excitement": [
@@ -233,6 +249,12 @@
    "he": "עורך דין"
   }
  ],
+ "lisen": [
+  {
+   "lemma": "listen",
+   "he": "צורה שגויה (נכון: listen)"
+  }
+ ],
  "ly": [
   {
    "lemma": "-ly",
@@ -257,6 +279,12 @@
    "he": "בוצי"
   }
  ],
+ "nait": [
+  {
+   "lemma": "night",
+   "he": "צורה שגויה (נכון: night)"
+  }
+ ],
  "ness": [
   {
    "lemma": "-ness",
@@ -267,12 +295,6 @@
   {
    "lemma": "knife",
    "he": "צורה שגויה (נכון: knife)"
-  }
- ],
- "nite": [
-  {
-   "lemma": "night",
-   "he": "צורה שגויה (נכון: night)"
   }
  ],
  "nomad": [
@@ -327,20 +349,12 @@
   {
    "lemma": "rite",
    "he": "טקס"
-  },
-  {
-   "lemma": "write",
-   "he": "בטעות במקום write"
   }
  ],
  "rote": [
   {
    "lemma": "rote",
    "he": "שינון (by rote)"
-  },
-  {
-   "lemma": "wrote",
-   "he": "בטעות במקום wrote"
   }
  ],
  "ruined": [
