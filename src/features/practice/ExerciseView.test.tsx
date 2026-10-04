@@ -96,3 +96,21 @@ it('gives a gentle note when checking before answering', () => {
   expect(screen.queryByText('רמז 1')).not.toBeInTheDocument();
   expect(onAnswer).not.toHaveBeenCalled();
 });
+
+/** Regression: the dictation screen's only English line was the instruction, and its speaker read it instead of the word. */
+it('dictation shows only the play buttons for the word, not the English instruction', () => {
+  const item = contentRegistry.items.find((i): i is TypedItem => i.type === 'typed' && i.modality === 'listen' && i.prompt.startsWith('Type the word you hear'))!;
+  const idle = { speaking: false };
+  const speech = { stop: vi.fn(), speak: vi.fn(async (_text: string) => 'done'), subscribe: () => () => {}, getState: () => idle };
+  const settings = { get: () => undefined };
+  const services = { content: contentRegistry, speech, settings } as unknown as AppServices;
+  render(
+    <ServicesProvider services={services}>
+      <ExerciseView item={item} support="he" seed="s" policy="teach" feedback="full" onAnswer={vi.fn()} onDone={vi.fn()} />
+    </ServicesProvider>,
+  );
+  expect(screen.queryByText(/Type the word you hear/)).toBeNull();
+  expect(screen.queryByRole('button', { name: 'הקראת השאלה' })).toBeNull();
+  fireEvent.click(screen.getByRole('button', { name: 'השמעה' }));
+  expect(speech.speak.mock.calls[0]![0]).toBe(item.audioText);
+});
