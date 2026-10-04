@@ -1,4 +1,4 @@
-import { render, screen, act } from '@testing-library/react';
+import { render, screen, act, fireEvent } from '@testing-library/react';
 import { App } from './App';
 import { ServicesProvider, type AppServices } from './services';
 import { Settings } from './settings';
@@ -32,16 +32,26 @@ describe('parent gate', () => {
         <App />
       </ServicesProvider>,
     );
-    await screen.findByText('למי התור ללמוד?');
-    parentGate.unlock();
-    await act(async () => {
-      window.location.hash = '#/parent';
-    });
+    const gate = await screen.findByRole('button', { name: 'מצב הורה: להחזיק לחוץ כדי להיכנס' });
+    // The press is timed with animation frames: fake them (only them) so a busy machine cannot stretch it.
+    vi.useFakeTimers({ toFake: ['requestAnimationFrame', 'cancelAnimationFrame', 'performance'] });
+    try {
+      fireEvent.pointerDown(gate);
+      act(() => vi.advanceTimersByTime(1400));
+      expect(parentGate.isUnlocked()).toBe(false);
+      act(() => vi.advanceTimersByTime(200));
+    } finally {
+      vi.useRealTimers();
+    }
+    expect(parentGate.isUnlocked()).toBe(true);
     expect(await screen.findByText('מצב הורה', { selector: 'h1, .topbar *' })).toBeInTheDocument();
+    // Wait for the router inside act, so the picker's effect (the lock) has run before the check.
     await act(async () => {
+      const changed = new Promise((r) => window.addEventListener('hashchange', r, { once: true }));
       window.location.hash = '#/';
+      await changed;
     });
-    await screen.findByText('למי התור ללמוד?');
+    expect(screen.getByText('למי התור ללמוד?')).toBeInTheDocument();
     expect(parentGate.isUnlocked()).toBe(false);
   });
 });
