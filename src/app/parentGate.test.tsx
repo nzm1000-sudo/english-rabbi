@@ -1,4 +1,4 @@
-import { render, screen, act } from '@testing-library/react';
+import { render, screen, act, waitFor } from '@testing-library/react';
 import { App } from './App';
 import { ServicesProvider, type AppServices } from './services';
 import { Settings } from './settings';
@@ -42,6 +42,7 @@ describe('parent gate', () => {
       window.location.hash = '#/';
     });
     await screen.findByText('למי התור ללמוד?');
-    expect(parentGate.isUnlocked()).toBe(false);
+    // The picker locks in an effect, which can run just after its first paint.
+    await waitFor(() => expect(parentGate.isUnlocked()).toBe(false));
   });
 });
