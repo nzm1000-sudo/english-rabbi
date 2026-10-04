@@ -138,6 +138,8 @@ def norm(s):
     s = re.sub(r'[וי]', '', s)  # full and defective spelling (לחמנייה / לחמניה) sound the same
     # Letters that sound alike in Israeli Hebrew: the transcript may pick either.
     s = s.translate(str.maketrans('טקחעםןץףך', 'תככאמנצפכ'))
+    # The definite article is barely voiced in fast speech ("איפה המילה" heard as "איפה מילה").
+    s = re.sub(r'(^| )ה', r'\1', s)
     return ' '.join(s.split())
 
 
