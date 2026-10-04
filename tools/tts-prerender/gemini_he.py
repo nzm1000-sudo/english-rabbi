@@ -33,12 +33,25 @@ class DailyQuota(Exception):
     pass
 
 
-def call(model, body, tries=5):
+def interact(model, voice, style, text):
+    """Gemini 3.8 TTS: the text is read verbatim, the style goes in an annotation (Interactions API)."""
+    body = {
+        'model': model,
+        'input': [{'type': 'user_input', 'content': [{'type': 'text', 'text': text, 'annotations': [{'type': 'speech_metadata', 'style': style}]}]}],
+        'response_format': {'type': 'audio'},
+        'generation_config': {'speech_config': [{'voice': voice}]},
+    }
+    r = call(model, body, url=f'{API.rsplit("/", 1)[0]}/interactions')
+    part = next(c for step in r['steps'] for c in step.get('content', []) if c.get('data'))
+    return {'mimeType': part.get('mime_type', 'audio/wav'), 'data': part['data']}
+
+
+def call(model, body, tries=5, url=None):
     headers = {'Content-Type': 'application/json'}
     if os.environ.get('GEMINI_API_KEY'):
         headers['x-goog-api-key'] = os.environ['GEMINI_API_KEY']
     for attempt in range(tries):
-        req = urllib.request.Request(f'{API}/{model}:generateContent', data=json.dumps(body).encode(), headers=headers)
+        req = urllib.request.Request(url or f'{API}/{model}:generateContent', data=json.dumps(body).encode(), headers=headers)
         try:
             return json.load(urllib.request.urlopen(req, timeout=300))
         except urllib.error.HTTPError as e:
@@ -63,11 +76,19 @@ def speak(model, voice, style, lines):
     """Raw audio for these lines, kept on disk so a failed check costs no new TTS request."""
     os.makedirs(CACHE, exist_ok=True)
     prompt = style + (PAUSES + ':\n' if len(lines) > 1 else ': ') + '\n'.join(lines)
-    name = hashlib.sha1(json.dumps([model, voice, prompt]).encode()).hexdigest()
+    # The 3.8 key differs: its earlier generateContent takes read the style aloud.
+    api = 'interactions' if model.startswith('gemini-3.8') else 'generate'
+    name = hashlib.sha1(json.dumps([model, voice, prompt] + ([api] if api == 'interactions' else [])).encode()).hexdigest()
     path = os.path.join(CACHE, name + '.pcm')
     if os.path.exists(path):
         with open(path, 'rb') as f:
             return f.read()
+    if model.startswith('gemini-3.8'):
+        if len(lines) != 1:
+            raise RuntimeError('gemini-3.8 TTS records one phrase per request (batch 1)')
+        part = interact(model, voice, style, lines[0])
+    else:
+        part = None
     body = {
         'contents': [{'parts': [{'text': prompt}]}],
         'generationConfig': {
@@ -75,10 +96,15 @@ def speak(model, voice, style, lines):
             'speechConfig': {'voiceConfig': {'prebuiltVoiceConfig': {'voiceName': voice}}},
         },
     }
-    part = call(model, body)['candidates'][0]['content']['parts'][0]['inlineData']
-    if not part['mimeType'].startswith('audio/l16'):
+    part = part or call(model, body)['candidates'][0]['content']['parts'][0]['inlineData']
+    data = base64.b64decode(part['data'])
+    if part['mimeType'].startswith('audio/l16'):
+        pcm = data
+    elif part['mimeType'] in ('audio/wav', 'audio/x-wav'):  # newer models send a WAV file
+        pcm = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', '-', '-f', 's16le', '-ar', str(RATE), '-ac', '1', '-'],
+                             input=data, capture_output=True, check=True).stdout
+    else:
         raise RuntimeError(f'unexpected audio {part["mimeType"]}')
-    pcm = base64.b64decode(part['data'])
     with open(path, 'wb') as f:
         f.write(pcm)
     return pcm
