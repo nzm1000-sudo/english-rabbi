@@ -174,7 +174,7 @@ export function HomeScreen() {
         </h2>
         <div className="grid-2 skill-grid">
           {PRACTICE.map((x) => (
-            <SkillTile key={x.domain} to={`${base}/practice/${x.domain}`} d={p.domains.find((d) => d.domain === x.domain)!} title={x.title} en={x.en} />
+            <SkillTile key={x.domain} to={x.domain === 'reading' ? `${base}/unseen` : `${base}/practice/${x.domain}`} d={p.domains.find((d) => d.domain === x.domain)!} title={x.title} en={x.en} />
           ))}
         </div>
       </section>

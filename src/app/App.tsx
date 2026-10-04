@@ -13,6 +13,7 @@ import { FamilySetup } from '@/features/students/FamilySetup';
 import { MatchGame } from '@/features/games/MatchGame';
 import { PathScreen } from '@/features/path/PathScreen';
 import { StoriesScreen } from '@/features/stories/StoriesScreen';
+import { UnseenScreen } from '@/features/unseen/UnseenScreen';
 import { StoryScreen } from '@/features/stories/StoryScreen';
 import { MyWordsScreen } from '@/features/words/MyWordsScreen';
 import { ShadowScreen } from '@/features/speaking/ShadowScreen';
@@ -47,6 +48,7 @@ export function App() {
           <Route path="match" element={<WithStudentSpeech><MatchGame /></WithStudentSpeech>} />
           <Route path="path" element={<PathScreen />} />
           <Route path="stories" element={<StoriesScreen />} />
+          <Route path="unseen" element={<UnseenScreen />} />
           <Route path="stories/:storyId" element={<WithStudentSpeech><StoryScreen /></WithStudentSpeech>} />
           <Route path="words" element={<WithStudentSpeech><MyWordsScreen /></WithStudentSpeech>} />
           <Route path="kids/play" element={<WithStudentSpeech><KidsPlay /></WithStudentSpeech>} />

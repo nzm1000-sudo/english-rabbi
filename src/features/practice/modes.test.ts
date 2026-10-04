@@ -73,3 +73,16 @@ it('the lesson pretest card counts what the pretest can ask', () => {
   const grammar = [...contentRegistry.lessons.values()].find((l) => l.skill.startsWith('grammar.'))!;
   expect(MODES.pretest.pool(ctx({ params: { skill: grammar.skill } }))).toEqual(pretestItems(contentRegistry, grammar.skill));
 });
+
+describe('unseen', () => {
+  it('asks every question of the chosen passage, in order', () => {
+    const passages = [...contentRegistry.passages.values()].filter((p) => p.id.startsWith('passage.un'));
+    expect(passages.length).toBe(15);
+    const p = passages[0]!;
+    const expected = contentRegistry.items.filter((i) => i.passageId === p.id).map((i) => i.id);
+    const got = MODES.unseen.fixed!(ctx({ params: { passage: p.id } })).map((i) => i.id);
+    expect(got).toEqual(expected);
+    expect(got.length).toBeGreaterThanOrEqual(8);
+    expect(MODES.unseen.fixed!(ctx())).toEqual([]);
+  });
+});

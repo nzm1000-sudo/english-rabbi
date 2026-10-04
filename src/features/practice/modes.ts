@@ -17,7 +17,7 @@ import { myWordsSession } from '@/features/words/wordItems';
 export type PracticeMode =
   | 'lesson' | 'placement' | 'vocabulary' | 'grammar' | 'reading' | 'listening' | 'review'
   | 'skill' | 'mistakes' | 'riddles' | 'quiz' | 'lightning' | 'exam' | 'daily' | 'retry' | 'pretest' | 'sentences'
-  | 'translate' | 'fix' | 'chunks' | 'families' | 'mywords';
+  | 'translate' | 'fix' | 'chunks' | 'families' | 'mywords' | 'unseen';
 
 export interface PoolContext {
   registry: ContentRegistry;
@@ -137,6 +137,15 @@ export const MODES: Record<PracticeMode, ModeDef> = {
     game: 'exam',
     pool: () => [],
     fixed: (c) => buildExam(c),
+  },
+  unseen: {
+    title: 'Unseen',
+    english: 'Unseen',
+    length: 10,
+    ...teach,
+    pool: () => [],
+    // One long passage and all its questions, in order (Bagrut style).
+    fixed: (c) => c.registry.items.filter((i) => auto(i) && !!c.params.passage && i.passageId === c.params.passage),
   },
   retry: {
     title: 'תרגול חוזר',
