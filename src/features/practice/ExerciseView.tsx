@@ -283,8 +283,7 @@ function Prompt({ item, finished, canSpeak, glossLocked }: { item: Props['item']
   const fill = finished ? modelAnswer(item) : undefined;
   const content = renderCloze(item.prompt, fill, isHe ? undefined : { locked: glossLocked });
   const speakText = canSpeak ? item.prompt : finished && fill && item.prompt.includes('___') ? item.prompt.replace('___', fill) : questionSpeech(item.prompt);
-  // Questions are read by the male voice; listening texts keep the main voice.
-  const speak = (canSpeak || !isHe) && <SpeakButton text={speakText} label={canSpeak ? 'השמעה' : 'הקראת השאלה'} {...(canSpeak ? {} : { speaker: 'B' as const })} />;
+  const speak = (canSpeak || !isHe) && <SpeakButton text={speakText} label={canSpeak ? 'השמעה' : 'הקראת השאלה'} />;
   // English prompts read left to right with the speaker at the line's end.
   return (
     <div className={`prompt-card prompt-row${isWord ? ' is-word' : ''}`} dir={isHe ? 'rtl' : 'ltr'}>
@@ -507,7 +506,7 @@ function ChoiceInput({
         // After answering, English options can be tapped word by word.
         const text = isEnglish ? <En>{finished ? <TapText text={o.text} /> : o.text}</En> : <He>{o.text}</He>;
         // Hearing the options of a listening item would give the answer away.
-        const speak = isEnglish && !(listen && !finished) && <SpeakButton text={o.text} size="inline" speaker="B" label="הקראת התשובה" />;
+        const speak = isEnglish && !(listen && !finished) && <SpeakButton text={o.text} size="inline" label="הקראת התשובה" />;
         return (
           <OptionRow
             key={o.id}

@@ -48,13 +48,11 @@ function covered({ text, speaker }: { text: string; speaker: 'A' | 'B' }, rate: 
 /** Questions, English options and anchor examples: recorded at normal speed only. */
 function normalOnly(): { text: string; speaker: 'A' | 'B' }[] {
   const out = new Set<string>();
-  // Questions and their options are read by the male voice (speaker B).
-  const questions = new Set<string>();
   const he = /[\u0590-\u05ff]/;
   const items = [...reg.items, ...[...reg.stories.values()].flatMap((st) => st.questions.map((q) => q.item))];
   for (const i of items) {
-    if ((i.type === 'choice' || i.type === 'typed') && i.promptLanguage === 'en' && !he.test(i.prompt)) questions.add(questionSpeech(i.prompt));
-    if (i.type === 'choice') for (const o of i.options) if (!he.test(o.text)) questions.add(o.text);
+    if ((i.type === 'choice' || i.type === 'typed') && i.promptLanguage === 'en' && !he.test(i.prompt)) out.add(questionSpeech(i.prompt));
+    if (i.type === 'choice') for (const o of i.options) if (!he.test(o.text)) out.add(o.text);
   }
   for (const a of reg.anchors.values()) {
     for (const e of a.examples) out.add(e.en);
@@ -71,7 +69,7 @@ function normalOnly(): { text: string; speaker: 'A' | 'B' }[] {
     out.add(s.sentence.en);
   }
   for (const b of kidBooks) for (const pg of b.pages) out.add(pg.en);
-  return [...[...out].map((text) => ({ text, speaker: 'A' as const })), ...[...questions].map((text) => ({ text, speaker: 'B' as const }))];
+  return [...out].map((text) => ({ text, speaker: 'A' as const }));
 }
 
 describe('pre-rendered audio', () => {

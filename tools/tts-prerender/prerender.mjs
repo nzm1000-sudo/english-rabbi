@@ -57,10 +57,9 @@ function collectTexts() {
   // Questions and English answer options: normal speed only (slowed on playback).
   const addQuestion = (it) => {
     if ((it.type === 'choice' || it.type === 'typed') && (it.promptLanguage ?? 'en') === 'en' && !HEBREW.test(it.prompt)) {
-      add(questionSpeech(it.prompt), 'B', ['normal']);
+      add(questionSpeech(it.prompt), 'A', ['normal']);
     }
-    // Questions and their options are read by the male voice (owner's choice, 2026-10-04).
-    if (it.type === 'choice') for (const o of it.options) if (!HEBREW.test(o.text)) add(o.text, 'B', ['normal']);
+    if (it.type === 'choice') for (const o of it.options) if (!HEBREW.test(o.text)) add(o.text, 'A', ['normal']);
   };
   const packDir = path.join(root, 'content/packs');
   for (const f of fs.readdirSync(packDir).filter((f) => f.endsWith('.json'))) {
