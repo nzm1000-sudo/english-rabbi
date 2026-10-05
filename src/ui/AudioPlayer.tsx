@@ -35,6 +35,16 @@ const SPEEDS: { key: string; file: FileSet; factor: number; label: string; he: s
 ];
 const otherSet = (f: FileSet): FileSet => (f === 'normal' ? 'slow' : 'normal');
 
+/** Points an element at a clip, at its speed, `offset` seconds in. */
+function prepare(el: HTMLAudioElement, c: Clip, offset: number, factor: number) {
+  if (el.src !== c.src) el.src = c.src;
+  (el as HTMLAudioElement & { webkitPreservesPitch?: boolean }).webkitPreservesPitch = true;
+  el.preservesPitch = true;
+  el.defaultPlaybackRate = c.rate * factor;
+  el.playbackRate = c.rate * factor;
+  el.currentTime = offset;
+}
+
 /**
  * Seekable player for a text made of recorded sentences: pause and resume
  * where it stopped, drag to any point, 5 seconds back, previous and next
@@ -59,7 +69,16 @@ export function AudioPlayer({
   const [sets, setSets] = useState<Sets>({ text: '' });
   const [playing, setPlaying] = useState(false);
   const [pos, setPos] = useState(0);
+  /** The element that plays now. A second one stands by to take over a speed change without a gap. */
   const audio = useRef<HTMLAudioElement | null>(null);
+  const pair = useRef<HTMLAudioElement[]>([]);
+  const elements = useCallback(() => {
+    if (!pair.current.length) pair.current = [new Audio(), new Audio()];
+    audio.current ??= pair.current[0]!;
+    return pair.current;
+  }, []);
+  /** Bumped by every load, pause and hand-off, so a hand-off still preparing gives way. */
+  const turn = useRef(0);
   const index = useRef(0);
   const selfStop = useRef(false);
   /** Object URLs of earlier texts: freed once nothing plays them. */
@@ -144,7 +163,8 @@ export function AudioPlayer({
   const total = list.reduce((sum, c) => sum + c.duration, 0);
 
   const pause = useCallback(() => {
-    audio.current?.pause();
+    turn.current++;
+    pair.current.forEach((el) => el.pause());
     setPlaying(false);
   }, []);
 
@@ -167,14 +187,11 @@ export function AudioPlayer({
     (i: number, offset: number, autoplay: boolean) => {
       const c = list[i];
       if (!c) return;
+      turn.current++;
       index.current = i;
-      const el = (audio.current ??= new Audio());
-      el.src = c.src;
-      (el as HTMLAudioElement & { webkitPreservesPitch?: boolean }).webkitPreservesPitch = true;
-      el.preservesPitch = true;
-      el.defaultPlaybackRate = c.rate * factor.current;
-      el.playbackRate = c.rate * factor.current;
-      el.currentTime = offset;
+      elements();
+      const el = audio.current!;
+      prepare(el, c, offset, factor.current);
       onSegment?.(c.segment);
       setPos(starts[i]! + offset);
       if (autoplay) {
@@ -182,27 +199,74 @@ export function AudioPlayer({
         playEl(el);
       }
     },
-    [list, starts, onSegment, stopOthers, playEl],
+    [list, starts, onSegment, stopOthers, playEl, elements],
+  );
+
+  /**
+   * Moves the reading to clip `i` at `offset` while it plays, without a gap:
+   * the standby element opens the file and seeks while the current one keeps
+   * reading, and takes over only once it can play.
+   */
+  const handOff = useCallback(
+    (i: number, offset: number) => {
+      const c = list[i];
+      if (!c) return;
+      const [a, b] = elements();
+      const old = audio.current!;
+      const next = old === a ? b! : a!;
+      const mine = ++turn.current;
+      prepare(next, c, offset, factor.current);
+      let done = false;
+      const go = () => {
+        if (done || mine !== turn.current) return;
+        done = true;
+        // The speed may have changed again while it prepared.
+        next.defaultPlaybackRate = c.rate * factor.current;
+        next.playbackRate = c.rate * factor.current;
+        old.pause();
+        audio.current = next;
+        index.current = i;
+        onSegment?.(c.segment);
+        stopOthers();
+        playEl(next);
+        old.removeAttribute('src');
+        old.load();
+      };
+      if (next.readyState >= 3) go();
+      else {
+        next.addEventListener('canplay', go, { once: true });
+        setTimeout(go, 400);
+      }
+    },
+    [list, onSegment, stopOthers, playEl, elements],
   );
 
   // Advance through the clips and keep the position up to date.
+  // Only the element that plays now counts; the standby one may be seeking.
   useEffect(() => {
-    const el = (audio.current ??= new Audio());
-    const onTime = () => el.getAttribute('src') && setPos((starts[index.current] ?? 0) + el.currentTime);
-    const onEnded = () => {
+    const els = elements();
+    const onTime = (e: Event) => {
+      const el = e.currentTarget as HTMLAudioElement;
+      if (el === audio.current && el.getAttribute('src')) setPos((starts[index.current] ?? 0) + el.currentTime);
+    };
+    const onEnded = (e: Event) => {
+      if (e.currentTarget !== audio.current) return;
       if (index.current + 1 < list.length) load(index.current + 1, 0, true);
       else {
         setPlaying(false);
         onSegment?.(null);
       }
     };
-    el.addEventListener('timeupdate', onTime);
-    el.addEventListener('ended', onEnded);
-    return () => {
-      el.removeEventListener('timeupdate', onTime);
-      el.removeEventListener('ended', onEnded);
-    };
-  }, [list, starts, load, onSegment]);
+    els.forEach((el) => {
+      el.addEventListener('timeupdate', onTime);
+      el.addEventListener('ended', onEnded);
+    });
+    return () =>
+      els.forEach((el) => {
+        el.removeEventListener('timeupdate', onTime);
+        el.removeEventListener('ended', onEnded);
+      });
+  }, [list, starts, load, onSegment, elements]);
 
   // Another sound starting (a speaker button) pauses the player, and so
   // does any "stop all sound" (recording, leaving the screen).
@@ -221,12 +285,19 @@ export function AudioPlayer({
       retired.current.filter((u) => u !== keep).forEach((u) => URL.revokeObjectURL(u));
       retired.current = retired.current.filter((u) => u === keep);
     };
-    if (!el?.getAttribute('src') || !list.length || list.some((c) => c.src === el.src)) return free();
+    const same = list.find((c) => c.src === el?.src);
+    if (same && el) {
+      // Back on the recordings it already plays: drop a hand-off still preparing.
+      turn.current++;
+      el.defaultPlaybackRate = same.rate * factor.current;
+      el.playbackRate = same.rate * factor.current;
+    }
+    if (!el?.getAttribute('src') || !list.length || same) return free();
     const old = [...(ready('normal') ?? []), ...(ready('slow') ?? [])].find((c) => c.src === el.src);
     const i = Math.min(old ? list.findIndex((c) => c.segment === old.segment) : index.current, list.length - 1);
     const part = el.duration > 0 ? Math.min(1, el.currentTime / el.duration) : 0;
     const wasPlaying = !el.paused && !el.ended;
-    if (wasPlaying) load(Math.max(0, i), part * list[Math.max(0, i)]!.duration, true);
+    if (wasPlaying) handOff(Math.max(0, i), part * list[Math.max(0, i)]!.duration);
     else {
       el.pause();
       el.removeAttribute('src');
@@ -235,7 +306,7 @@ export function AudioPlayer({
       setPos(starts[Math.max(0, i)]! + part * list[Math.max(0, i)]!.duration);
     }
     free();
-    // Only when the clips change; load and starts follow them.
+    // Only when the clips change; handOff and starts follow them.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [list]);
 
@@ -245,7 +316,7 @@ export function AudioPlayer({
     document.addEventListener('visibilitychange', hide);
     return () => {
       document.removeEventListener('visibilitychange', hide);
-      audio.current?.pause();
+      pair.current.forEach((el) => el.pause());
       retired.current.forEach((u) => URL.revokeObjectURL(u));
       retired.current = [];
     };
@@ -325,7 +396,10 @@ export function AudioPlayer({
             // Same recordings (1×, 1.25×, 1.5×): change speed in place, without a pause.
             const el = audio.current;
             const c = list[index.current];
-            if (el && c && nextSpeed.file === speed.file) el.playbackRate = c.rate * nextSpeed.factor;
+            if (el && c && nextSpeed.file === speed.file) {
+              el.defaultPlaybackRate = c.rate * nextSpeed.factor;
+              el.playbackRate = c.rate * nextSpeed.factor;
+            }
             setSpeedKey(nextSpeed.key);
           }}
         >
