@@ -20,6 +20,7 @@ class FakeAudio extends EventTarget {
   playbackRate = 1;
   defaultPlaybackRate = 1;
   preservesPitch = true;
+  readyState = 0;
   onloadedmetadata: (() => void) | null = null;
   onerror: (() => void) | null = null;
   constructor() {
@@ -33,7 +34,12 @@ class FakeAudio extends EventTarget {
     this.source = v;
     this.currentTime = 0;
     this.duration = 2;
-    setTimeout(() => this.onloadedmetadata?.(), 0);
+    this.readyState = 0;
+    setTimeout(() => {
+      this.onloadedmetadata?.();
+      this.readyState = 4;
+      this.dispatchEvent(new Event('canplay'));
+    }, 0);
   }
   getAttribute(name: string) {
     return name === 'src' && this.source ? this.source : null;
@@ -105,13 +111,43 @@ describe('AudioPlayer', () => {
     expect(el.paused).toBe(false);
     fireEvent.click(chip());
     expect(el.playbackRate).toBeCloseTo(1.5);
-    // Slower: the slow recording takes over at the same point and keeps playing.
+    // Slower: the standby element opens the slow recording at the same point
+    // while the first keeps reading, then takes over.
     fireEvent.click(chip());
     expect(chip()).toHaveTextContent('0.65×');
-    await waitFor(() => expect(fileOf.get(el.src)).toBe('slow.mp3'));
+    const next = elements.find((e) => e !== el && fileOf.get(e.src) === 'slow.mp3' && !e.onloadedmetadata)!;
+    expect(next.currentTime).toBeCloseTo(1);
     expect(el.paused).toBe(false);
-    expect(el.currentTime).toBeCloseTo(1);
-    expect(el.playbackRate).toBeCloseTo(0.8);
+    await waitFor(() => expect(next.paused).toBe(false));
+    expect(el.paused).toBe(true);
+    expect(next.playbackRate).toBeCloseTo(0.8);
+    // Back to normal speed: the first element takes over again.
+    fireEvent.click(chip());
+    fireEvent.click(chip());
+    await waitFor(() => expect(fileOf.get(el.src)).toBe('normal.mp3'));
+    await waitFor(() => expect(el.paused).toBe(false));
+    expect(next.paused).toBe(true);
+    expect(el.playbackRate).toBeCloseTo(1);
+  });
+
+  it('a quick tap back to the recording that plays cancels the hand-off', async () => {
+    setup();
+    const play = await screen.findByRole('button', { name: 'ניגון' });
+    await waitFor(() => expect(play).toBeEnabled());
+    await act(async () => fireEvent.click(play));
+    const el = elements.find((e) => !e.paused)!;
+    const chip = () => screen.getByRole('button', { name: /^מהירות/ });
+    fireEvent.click(chip());
+    fireEvent.click(chip());
+    // 1.5× -> 0.65× (slow file, hand-off starts) -> 0.8× -> 1× before it is ready.
+    fireEvent.click(chip());
+    fireEvent.click(chip());
+    fireEvent.click(chip());
+    expect(chip()).toHaveTextContent('1×');
+    await new Promise((r) => setTimeout(r, 450));
+    expect(elements.filter((e) => !e.paused)).toEqual([el]);
+    expect(fileOf.get(el.src)).toBe('normal.mp3');
+    expect(el.playbackRate).toBeCloseTo(1);
   });
 
   it('downloads each speed once: many speed taps never fetch again', async () => {
@@ -120,10 +156,9 @@ describe('AudioPlayer', () => {
     await waitFor(() => expect(play).toBeEnabled());
     await waitFor(() => expect(recorded.clipsFor).toHaveBeenCalledTimes(2));
     await act(async () => fireEvent.click(play));
-    const el = elements.find((e) => !e.paused)!;
     const fetches = vi.mocked(fetch).mock.calls.length;
     for (let i = 0; i < 12; i++) fireEvent.click(screen.getByRole('button', { name: /^מהירות/ }));
-    await waitFor(() => expect(el.paused).toBe(false));
+    await waitFor(() => expect(elements.filter((e) => !e.paused)).toHaveLength(1));
     expect(vi.mocked(fetch).mock.calls.length).toBe(fetches);
     expect(recorded.clipsFor).toHaveBeenCalledTimes(2);
   });
