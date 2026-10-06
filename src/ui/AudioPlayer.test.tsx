@@ -94,12 +94,16 @@ afterEach(() => {
 });
 
 describe('AudioPlayer', () => {
+  /** The audio element of the player (the others only read file lengths). */
+  const player = () => elements.find((e) => !e.onloadedmetadata && e.getAttribute('src'))!;
+
   it('speeds up in place and switches to slow recordings without stopping', async () => {
     setup();
     const play = await screen.findByRole('button', { name: 'ניגון' });
     await waitFor(() => expect(play).toBeEnabled());
     await act(async () => fireEvent.click(play));
-    const el = elements.find((e) => !e.paused)!;
+    const el = player();
+    expect(el.paused).toBe(false);
     expect(fileOf.get(el.src)).toBe('normal.mp3');
     el.currentTime = 1;
     const chip = () => screen.getByRole('button', { name: /^מהירות/ });
@@ -111,43 +115,13 @@ describe('AudioPlayer', () => {
     expect(el.paused).toBe(false);
     fireEvent.click(chip());
     expect(el.playbackRate).toBeCloseTo(1.5);
-    // Slower: the standby element opens the slow recording at the same point
-    // while the first keeps reading, then takes over.
-    fireEvent.click(chip());
+    // Slower: the slow recording takes over at the same point and keeps playing.
+    await act(async () => fireEvent.click(chip()));
     expect(chip()).toHaveTextContent('0.65×');
-    const next = elements.find((e) => e !== el && fileOf.get(e.src) === 'slow.mp3' && !e.onloadedmetadata)!;
-    expect(next.currentTime).toBeCloseTo(1);
+    await waitFor(() => expect(fileOf.get(el.src)).toBe('slow.mp3'));
     expect(el.paused).toBe(false);
-    await waitFor(() => expect(next.paused).toBe(false));
-    expect(el.paused).toBe(true);
-    expect(next.playbackRate).toBeCloseTo(0.8);
-    // Back to normal speed: the first element takes over again.
-    fireEvent.click(chip());
-    fireEvent.click(chip());
-    await waitFor(() => expect(fileOf.get(el.src)).toBe('normal.mp3'));
-    await waitFor(() => expect(el.paused).toBe(false));
-    expect(next.paused).toBe(true);
-    expect(el.playbackRate).toBeCloseTo(1);
-  });
-
-  it('a quick tap back to the recording that plays cancels the hand-off', async () => {
-    setup();
-    const play = await screen.findByRole('button', { name: 'ניגון' });
-    await waitFor(() => expect(play).toBeEnabled());
-    await act(async () => fireEvent.click(play));
-    const el = elements.find((e) => !e.paused)!;
-    const chip = () => screen.getByRole('button', { name: /^מהירות/ });
-    fireEvent.click(chip());
-    fireEvent.click(chip());
-    // 1.5× -> 0.65× (slow file, hand-off starts) -> 0.8× -> 1× before it is ready.
-    fireEvent.click(chip());
-    fireEvent.click(chip());
-    fireEvent.click(chip());
-    expect(chip()).toHaveTextContent('1×');
-    await new Promise((r) => setTimeout(r, 450));
-    expect(elements.filter((e) => !e.paused)).toEqual([el]);
-    expect(fileOf.get(el.src)).toBe('normal.mp3');
-    expect(el.playbackRate).toBeCloseTo(1);
+    expect(el.currentTime).toBeCloseTo(1);
+    expect(el.playbackRate).toBeCloseTo(0.8);
   });
 
   it('downloads each speed once: many speed taps never fetch again', async () => {
@@ -157,8 +131,8 @@ describe('AudioPlayer', () => {
     await waitFor(() => expect(recorded.clipsFor).toHaveBeenCalledTimes(2));
     await act(async () => fireEvent.click(play));
     const fetches = vi.mocked(fetch).mock.calls.length;
-    for (let i = 0; i < 12; i++) fireEvent.click(screen.getByRole('button', { name: /^מהירות/ }));
-    await waitFor(() => expect(elements.filter((e) => !e.paused)).toHaveLength(1));
+    for (let i = 0; i < 12; i++) await act(async () => fireEvent.click(screen.getByRole('button', { name: /^מהירות/ })));
+    expect(player().paused).toBe(false);
     expect(vi.mocked(fetch).mock.calls.length).toBe(fetches);
     expect(recorded.clipsFor).toHaveBeenCalledTimes(2);
   });
@@ -168,15 +142,16 @@ describe('AudioPlayer', () => {
     const play = await screen.findByRole('button', { name: 'ניגון' });
     await waitFor(() => expect(play).toBeEnabled());
     await act(async () => fireEvent.click(play));
-    const el = elements.find((e) => !e.paused)!;
+    const el = player();
     el.currentTime = 1;
     await act(async () => fireEvent.click(screen.getByRole('button', { name: 'השהיה' })));
-    for (let i = 0; i < 4; i++) fireEvent.click(screen.getByRole('button', { name: /^מהירות/ }));
-    await waitFor(() => expect(screen.getByRole('button', { name: /^מהירות/ })).toHaveTextContent('0.8×'));
-    await waitFor(() => expect(el.getAttribute('src')).toBeNull());
+    for (let i = 0; i < 4; i++) await act(async () => fireEvent.click(screen.getByRole('button', { name: /^מהירות/ })));
+    expect(screen.getByRole('button', { name: /^מהירות/ })).toHaveTextContent('0.8×');
+    expect(el.paused).toBe(true);
     await act(async () => fireEvent.click(screen.getByRole('button', { name: 'ניגון' })));
     expect(fileOf.get(el.src)).toBe('slow.mp3');
     expect(el.currentTime).toBeCloseTo(1);
+    expect(el.paused).toBe(false);
   });
 
   it('falls back to a speaker button when the files cannot be loaded', async () => {
