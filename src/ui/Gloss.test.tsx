@@ -116,3 +116,53 @@ it('shows the meaning without speaking, so a playing reading goes on', () => {
   expect(speak).not.toHaveBeenCalled();
   expect(stop).not.toHaveBeenCalled();
 });
+
+it('the first touch outside the popup only closes it, and does not press what is under it', async () => {
+  const services = {
+    store: { savedWords: async () => [], saveWord: vi.fn(async () => {}), removeWord: vi.fn() },
+    speech: { speak: vi.fn(async () => 'done'), subscribe: () => () => {}, getState: () => IDLE },
+    settings: { get: () => undefined },
+  } as unknown as AppServices;
+  const other = vi.fn();
+  function Page() {
+    const g = useGloss();
+    return (
+      <main className="screen">
+        <button onClick={() => g?.open({ word: 'kitchen', senses: [{ lemma: 'kitchen', he: 'מטבח' }] })}>word</button>
+        <button onClick={other}>next</button>
+      </main>
+    );
+  }
+  render(
+    <ServicesProvider services={services}>
+      <MemoryRouter initialEntries={['/s/x/stories/a']}>
+        <Routes>
+          <Route
+            path="/s/:sid/stories/:storyId"
+            element={
+              <GlossProvider>
+                <Page />
+              </GlossProvider>
+            }
+          />
+        </Routes>
+      </MemoryRouter>
+    </ServicesProvider>,
+  );
+  fireEvent.click(screen.getByText('word'));
+  const next = screen.getByText('next');
+  // A touch on the popup itself keeps it open.
+  fireEvent.pointerDown(screen.getByRole('dialog'));
+  expect(screen.getByRole('dialog')).toBeInTheDocument();
+  // First touch elsewhere: the popup closes and the button is not pressed.
+  await act(async () => {
+    fireEvent.pointerDown(next);
+    fireEvent.click(next);
+  });
+  expect(screen.queryByRole('dialog')).toBeNull();
+  expect(other).not.toHaveBeenCalled();
+  // The next touch works as usual.
+  fireEvent.pointerDown(next);
+  fireEvent.click(next);
+  expect(other).toHaveBeenCalledTimes(1);
+});
