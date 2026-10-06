@@ -34,7 +34,7 @@
 .listen-stage { display: flex; align-items: center; justify-content: center; gap: var(--space-4); min-height: 160px; }
 .blank { display: inline-block; min-width: 3em; height: 0.9em; border-bottom: 3px solid var(--accent-fg); margin: 0 2px; vertical-align: baseline; border-radius: 1px; }
 .fill { color: var(--success-ink); }
-.passage { font-family: var(--font-en); font-size: var(--fs-body-lg); line-height: var(--lh-body-lg); max-height: 32vh; overflow-y: auto; }
+.passage { font-family: var(--font-en); font-size: calc(var(--fs-body-lg) + 2px); line-height: calc(var(--lh-body-lg) + 4px); max-height: 32vh; overflow-y: auto; }
 
 /* Answer options: [key | text | speaker] in one row (C.7). */
 .options { display: flex; flex-direction: column; gap: var(--space-2); }
@@ -272,7 +272,7 @@
 .story-speaker-A { border-inline-start: var(--space-1) solid var(--t-writing-fg); }
 .story-speaker-B { border-inline-start: var(--space-1) solid var(--t-grammar-fg); }
 .story-name { font-size: var(--fs-micro); line-height: var(--lh-micro); font-weight: var(--fw-bold); color: var(--muted); }
-.story-text { font-family: var(--font-en); font-size: var(--fs-body-lg); line-height: var(--lh-body-lg); margin: 0; }
+.story-text { font-family: var(--font-en); font-size: calc(var(--fs-body-lg) + 2px); line-height: calc(var(--lh-body-lg) + 4px); margin: 0; }
 .story-he { color: var(--muted); }
 .story-answered { display: flex; align-items: center; gap: var(--space-2); color: var(--muted); }
 .story-answered.good { color: var(--success-ink); }
@@ -282,9 +282,8 @@
 .word-tap {
   font: inherit; color: inherit; background: none; border: 0; margin: 0; cursor: pointer;
   padding: var(--space-1) 1px; border-radius: var(--space-1);
-  text-decoration: underline dotted color-mix(in srgb, var(--ink) 30%, transparent); text-underline-offset: 4px;
 }
-.word-tap[data-saved='true'] { background: var(--accent-weak); text-decoration: none; }
+.word-tap[data-saved='true'] { background: var(--accent-weak); }
 .word-tap:active { background: var(--accent-weak); }
 .sent { border-radius: var(--space-1); transition: background var(--dur-2); }
 .sent[data-on='true'] { background: color-mix(in srgb, var(--accent) 18%, transparent); }

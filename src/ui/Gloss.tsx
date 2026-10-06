@@ -53,12 +53,39 @@ export function GlossProvider({ children }: { children: ReactNode }) {
   const closeScope = useCallback((scope: symbol) => setGloss((o) => (o?.entry.scope === scope ? null : o)), []);
 
   const lemma = gloss?.senses[0]?.lemma;
+  const pop = useRef<HTMLDivElement>(null);
+
+  // The first touch outside the popup only closes it: the tap does not reach
+  // what is under it (another word, a button), so nothing opens by mistake.
+  const shown = !!(gloss && lemma);
+  useEffect(() => {
+    if (!shown) return;
+    let guard: ReturnType<typeof setTimeout> | undefined;
+    const swallow = (e: Event) => {
+      e.stopPropagation();
+      e.preventDefault();
+    };
+    const release = () => {
+      clearTimeout(guard);
+      window.removeEventListener('click', swallow, true);
+    };
+    const down = (e: PointerEvent) => {
+      if (pop.current?.contains(e.target as Node)) return;
+      window.addEventListener('click', swallow, { capture: true, once: true });
+      // A touch that scrolls ends without a click: drop the guard after it.
+      guard = setTimeout(release, 800);
+      setGloss(null);
+    };
+    window.addEventListener('pointerdown', down, true);
+    // The click guard outlives the popup: it waits for the click of the closing touch.
+    return () => window.removeEventListener('pointerdown', down, true);
+  }, [shown]);
 
   return (
     <Ctx.Provider value={useMemo(() => ({ open, closeScope }), [open, closeScope])}>
       {children}
       {gloss && lemma && (
-        <div className="gloss-pop" role="dialog" aria-label="פירוש המילה">
+        <div ref={pop} className="gloss-pop" role="dialog" aria-label="פירוש המילה">
           <div className="spread">
             <div className="row gap-2">
               <En className="gloss-word">{lemma}</En>
