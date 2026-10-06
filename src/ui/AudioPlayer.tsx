@@ -3,6 +3,7 @@ import { useServices } from '@/app/services';
 import { useSpeechPrefs } from '@/app/speechPrefs';
 import type { Speaker } from '@/services/speech/types';
 import { canonicalSpeechText } from '@/services/speech/textPrep';
+import { createClipEngine, type ClipEngine, type PreparedClip } from '@/services/speech/playback/clipEngine';
 import { SpeakButton } from './SpeakButton';
 import { Back5Icon, NextIcon, PauseIcon, PlayIcon, PrevIcon } from './icons';
 
@@ -15,16 +16,15 @@ export interface AudioPlayerHandle {
   playFrom(index: number): void;
 }
 
-/** One recorded file: `src` is its object URL in memory, `rate` its own playback speed. */
-type Clip = { url: string; src: string; segment: number; duration: number; rate: number };
+/** One recorded file of a sentence, at the speed `rate` it plays at. */
+type Clip = PreparedClip & { segment: number; rate: number };
 /** Recordings of a text: normal speed, and recorded slow. */
 type FileSet = 'normal' | 'slow';
 type Sets = { text: string } & Partial<Record<FileSet, Clip[] | 'missing'>>;
 
 /**
- * The speed chip cycles through these. `rate` picks the recordings (slow ones
- * are recorded slow, not stretched); `factor` speeds the normal ones up on
- * playback, which sounds natural and needs no reload.
+ * The speed chip cycles through these. `file` picks the recordings (slow ones
+ * are recorded slow, not stretched); `factor` speeds them up or down on playback.
  */
 const SPEEDS: { key: string; file: FileSet; factor: number; label: string; he: string }[] = [
   { key: '1', file: 'normal', factor: 1, label: '1×', he: 'רגיל' },
@@ -34,16 +34,6 @@ const SPEEDS: { key: string; file: FileSet; factor: number; label: string; he: s
   { key: '0.8', file: 'slow', factor: 1, label: '0.8×', he: 'איטי' },
 ];
 const otherSet = (f: FileSet): FileSet => (f === 'normal' ? 'slow' : 'normal');
-
-/** Points an element at a clip, at its speed, `offset` seconds in. */
-function prepare(el: HTMLAudioElement, c: Clip, offset: number, factor: number) {
-  if (el.src !== c.src) el.src = c.src;
-  (el as HTMLAudioElement & { webkitPreservesPitch?: boolean }).webkitPreservesPitch = true;
-  el.preservesPitch = true;
-  el.defaultPlaybackRate = c.rate * factor;
-  el.playbackRate = c.rate * factor;
-  el.currentTime = offset;
-}
 
 /**
  * Seekable player for a text made of recorded sentences: pause and resume
@@ -66,69 +56,54 @@ export function AudioPlayer({
   const speed = SPEEDS.find((x) => x.key === speedKey) ?? SPEEDS[0]!;
   const factor = useRef(speed.factor);
   factor.current = speed.factor;
+  const [engine, setEngine] = useState<ClipEngine | null>(null);
   const [sets, setSets] = useState<Sets>({ text: '' });
   const [playing, setPlaying] = useState(false);
   const [pos, setPos] = useState(0);
-  /** The element that plays now. A second one stands by to take over a speed change without a gap. */
-  const audio = useRef<HTMLAudioElement | null>(null);
-  const pair = useRef<HTMLAudioElement[]>([]);
-  const elements = useCallback(() => {
-    if (!pair.current.length) pair.current = [new Audio(), new Audio()];
-    audio.current ??= pair.current[0]!;
-    return pair.current;
-  }, []);
-  /** Bumped by every load, pause and hand-off, so a hand-off still preparing gives way. */
-  const turn = useRef(0);
   const index = useRef(0);
   const selfStop = useRef(false);
-  /** Object URLs of earlier texts: freed once nothing plays them. */
-  const retired = useRef<string[]>([]);
   const speechState = useSyncExternalStore(speech.subscribe, speech.getState);
   const textKey = segments.map((s) => `${s.speaker ?? 'A'}:${s.text}`).join('|');
+
+  useEffect(() => {
+    let live = true;
+    let mine: ClipEngine | null = null;
+    void createClipEngine().then((e) => {
+      if (live) setEngine((mine = e));
+      else e.dispose();
+    });
+    return () => {
+      live = false;
+      mine?.dispose();
+    };
+  }, []);
 
   // Load both recordings of this text once: the current speed first, the
   // other right after, so changing speed later is instant (no download).
   useEffect(() => {
+    if (!engine) return;
     let live = true;
-    const mine: string[] = [];
+    const mine: Clip[] = [];
     setSets({ text: textKey });
     const loadSet = async (file: FileSet): Promise<Clip[] | 'missing'> => {
-      const out: Clip[] = [];
+      const found: { url: string; segment: number; rate: number }[] = [];
       for (let i = 0; i < segments.length; i++) {
         const s = segments[i]!;
-        const found = await recorded.clipsFor({ text: canonicalSpeechText(s.text), accent: prefs.accent, rate: file, ...(s.speaker ? { speaker: s.speaker } : {}) });
-        if (!found) return 'missing';
-        for (const u of found.urls) out.push({ url: u, src: '', segment: i, duration: 0, rate: found.playbackRate });
+        const got = await recorded.clipsFor({ text: canonicalSpeechText(s.text), accent: prefs.accent, rate: file, ...(s.speaker ? { speaker: s.speaker } : {}) });
+        if (!got) return 'missing';
+        for (const u of got.urls) found.push({ url: u, segment: i, rate: got.playbackRate });
       }
-      const blobs = await Promise.all(
-        out.map((c) =>
-          fetch(c.url).then((r) => {
-            if (!r.ok) throw new Error(`audio ${r.status}`);
-            return r.blob();
-          }),
-        ),
-      );
-      out.forEach((c, i) => {
-        c.src = URL.createObjectURL(blobs[i]!);
-        mine.push(c.src);
-      });
-      await Promise.all(
-        out.map(
-          (c) =>
-            new Promise<void>((resolve) => {
-              const a = new Audio();
-              a.preload = 'metadata';
-              a.onloadedmetadata = () => {
-                c.duration = Number.isFinite(a.duration) ? a.duration : 0;
-                resolve();
-              };
-              a.onerror = () => resolve();
-              a.src = c.src;
-            }),
-        ),
+      const out = await Promise.all(
+        found.map(async (f) => {
+          const r = await fetch(f.url);
+          if (!r.ok) throw new Error(`audio ${r.status}`);
+          const c = await engine.prepare(await r.blob());
+          if (c) mine.push({ ...c, segment: f.segment, rate: f.rate });
+          return c && { ...c, segment: f.segment, rate: f.rate };
+        }),
       );
       // A file that cannot be played (broken or not audio) counts as not recorded.
-      return out.every((c) => c.duration > 0) ? out : 'missing';
+      return out.every((c) => !!c) ? (out as Clip[]) : 'missing';
     };
     (async () => {
       const first = (SPEEDS.find((x) => x.key === speedKey) ?? SPEEDS[0]!).file;
@@ -140,15 +115,16 @@ export function AudioPlayer({
     })();
     return () => {
       live = false;
-      retired.current.push(...mine);
+      // Freed a little later: the new text keeps reading from the same point first.
+      setTimeout(() => mine.forEach((c) => engine.release(c)), 3000);
     };
     // segments are compared by content (textKey); the speed only picks which set loads first.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [textKey, prefs.accent, recorded]);
+  }, [textKey, prefs.accent, recorded, engine]);
 
   const ready = (f: FileSet) => (Array.isArray(sets[f]) ? (sets[f] as Clip[]) : null);
   // The current speed's recordings, or the other set while those still load.
-  const clips: Clip[] | null | 'missing' = ready(speed.file) ?? ready(otherSet(speed.file)) ?? (sets.normal === 'missing' && sets.slow === 'missing' ? 'missing' : sets[speed.file] === 'missing' && sets[otherSet(speed.file)] === 'missing' ? 'missing' : null);
+  const clips: Clip[] | null | 'missing' = ready(speed.file) ?? ready(otherSet(speed.file)) ?? (sets.normal === 'missing' && sets.slow === 'missing' ? 'missing' : null);
 
   const list = useMemo(() => (Array.isArray(clips) ? clips : []), [clips]);
   const starts = useMemo(() => {
@@ -161,20 +137,28 @@ export function AudioPlayer({
     return out;
   }, [list]);
   const total = list.reduce((sum, c) => sum + c.duration, 0);
+  /** The clip the engine holds now (it may belong to an earlier list). */
+  const current = useRef<Clip | null>(null);
+
+  /** The next sentence, and this one at the other speed, ready to start at once. */
+  const preloadAround = useCallback(
+    (i: number) => {
+      const c = list[i];
+      if (!engine || !c) return;
+      const next = list[i + 1];
+      if (next) engine.preload(next);
+      const other = [ready('normal'), ready('slow')].find((l) => l && l !== list)?.find((x) => x.segment === c.segment);
+      if (other) engine.preload(other);
+    },
+    // ready reads sets.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [list, engine, sets],
+  );
 
   const pause = useCallback(() => {
-    turn.current++;
-    pair.current.forEach((el) => el.pause());
+    engine?.pause();
     setPlaying(false);
-  }, []);
-
-  /** A play cut short by a newer load (dragging the bar) is not a stop. */
-  const playEl = useCallback((el: HTMLAudioElement) => {
-    el.play().then(
-      () => setPlaying(true),
-      (e: unknown) => (e as Error)?.name !== 'AbortError' && setPlaying(false),
-    );
-  }, []);
+  }, [engine]);
 
   /** Silences any other sound before this player plays (without pausing itself). */
   const stopOthers = useCallback(() => {
@@ -186,87 +170,41 @@ export function AudioPlayer({
   const load = useCallback(
     (i: number, offset: number, autoplay: boolean) => {
       const c = list[i];
-      if (!c) return;
-      turn.current++;
+      if (!c || !engine) return;
       index.current = i;
-      elements();
-      const el = audio.current!;
-      prepare(el, c, offset, factor.current);
+      current.current = c;
       onSegment?.(c.segment);
       setPos(starts[i]! + offset);
-      if (autoplay) {
-        stopOthers();
-        playEl(el);
+      if (!autoplay) {
+        engine.pause();
+        return;
       }
+      stopOthers();
+      setPlaying(true);
+      engine.play(c, offset, c.rate * factor.current).catch(() => setPlaying(false));
+      preloadAround(i);
     },
-    [list, starts, onSegment, stopOthers, playEl, elements],
+    [list, starts, engine, onSegment, stopOthers, preloadAround],
   );
 
-  /**
-   * Moves the reading to clip `i` at `offset` while it plays, without a gap:
-   * the standby element opens the file and seeks while the current one keeps
-   * reading, and takes over only once it can play.
-   */
-  const handOff = useCallback(
-    (i: number, offset: number) => {
-      const c = list[i];
-      if (!c) return;
-      const [a, b] = elements();
-      const old = audio.current!;
-      const next = old === a ? b! : a!;
-      const mine = ++turn.current;
-      prepare(next, c, offset, factor.current);
-      let done = false;
-      const go = () => {
-        if (done || mine !== turn.current) return;
-        done = true;
-        // The speed may have changed again while it prepared.
-        next.defaultPlaybackRate = c.rate * factor.current;
-        next.playbackRate = c.rate * factor.current;
-        old.pause();
-        audio.current = next;
-        index.current = i;
-        onSegment?.(c.segment);
-        stopOthers();
-        playEl(next);
-        old.removeAttribute('src');
-        old.load();
-      };
-      if (next.readyState >= 3) go();
-      else {
-        next.addEventListener('canplay', go, { once: true });
-        setTimeout(go, 400);
-      }
-    },
-    [list, onSegment, stopOthers, playEl, elements],
-  );
-
-  // Advance through the clips and keep the position up to date.
-  // Only the element that plays now counts; the standby one may be seeking.
+  // Advance through the clips.
   useEffect(() => {
-    const els = elements();
-    const onTime = (e: Event) => {
-      const el = e.currentTarget as HTMLAudioElement;
-      if (el === audio.current && el.getAttribute('src')) setPos((starts[index.current] ?? 0) + el.currentTime);
-    };
-    const onEnded = (e: Event) => {
-      if (e.currentTarget !== audio.current) return;
+    if (!engine) return;
+    engine.onEnded = () => {
       if (index.current + 1 < list.length) load(index.current + 1, 0, true);
       else {
         setPlaying(false);
         onSegment?.(null);
       }
     };
-    els.forEach((el) => {
-      el.addEventListener('timeupdate', onTime);
-      el.addEventListener('ended', onEnded);
-    });
-    return () =>
-      els.forEach((el) => {
-        el.removeEventListener('timeupdate', onTime);
-        el.removeEventListener('ended', onEnded);
-      });
-  }, [list, starts, load, onSegment, elements]);
+  }, [engine, list, load, onSegment]);
+
+  // Keep the position up to date while it plays.
+  useEffect(() => {
+    if (!playing || !engine) return;
+    const id = setInterval(() => setPos((starts[index.current] ?? 0) + engine.time()), 200);
+    return () => clearInterval(id);
+  }, [playing, engine, starts]);
 
   // Another sound starting (a speaker button) pauses the player, and so
   // does any "stop all sound" (recording, leaving the screen).
@@ -275,51 +213,30 @@ export function AudioPlayer({
   }, [speechState.status, pause]);
   useEffect(() => speech.onStop(() => selfStop.current || pause()), [speech, pause]);
 
-  // New clips (another speed, or a new line in the story): the element still
-  // holds a file of the old list. Move to the same point in the new clips and
-  // keep playing if it was playing, so a speed change never stops the reading.
+  // New clips (another speed, or a new line in the story): move to the same
+  // point in the new clips. While it plays the engine switches without a gap.
   useEffect(() => {
-    const el = audio.current;
-    const free = () => {
-      const keep = el?.getAttribute('src') ? el.src : '';
-      retired.current.filter((u) => u !== keep).forEach((u) => URL.revokeObjectURL(u));
-      retired.current = retired.current.filter((u) => u === keep);
-    };
-    const same = list.find((c) => c.src === el?.src);
-    if (same && el) {
-      // Back on the recordings it already plays: drop a hand-off still preparing.
-      turn.current++;
-      el.defaultPlaybackRate = same.rate * factor.current;
-      el.playbackRate = same.rate * factor.current;
+    const old = current.current;
+    if (!engine || !old || !list.length || list.includes(old)) return;
+    const i = Math.max(0, Math.min(list.findIndex((c) => c.segment === old.segment), list.length - 1));
+    const c = list[i]!;
+    const at = c.segment === old.segment ? engine.map(old, engine.time(), c) : 0;
+    index.current = i;
+    current.current = c;
+    setPos(starts[i]! + at);
+    if (engine.playing) {
+      engine.play(c, at, c.rate * factor.current).catch(() => setPlaying(false));
+      preloadAround(i);
     }
-    if (!el?.getAttribute('src') || !list.length || same) return free();
-    const old = [...(ready('normal') ?? []), ...(ready('slow') ?? [])].find((c) => c.src === el.src);
-    const i = Math.min(old ? list.findIndex((c) => c.segment === old.segment) : index.current, list.length - 1);
-    const part = el.duration > 0 ? Math.min(1, el.currentTime / el.duration) : 0;
-    const wasPlaying = !el.paused && !el.ended;
-    if (wasPlaying) handOff(Math.max(0, i), part * list[Math.max(0, i)]!.duration);
-    else {
-      el.pause();
-      el.removeAttribute('src');
-      el.load();
-      index.current = Math.max(0, i);
-      setPos(starts[Math.max(0, i)]! + part * list[Math.max(0, i)]!.duration);
-    }
-    free();
-    // Only when the clips change; handOff and starts follow them.
+    // Only when the clips change; starts follows them.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [list]);
+  }, [list, engine]);
 
   // Leaving the screen or the app stops the player.
   useEffect(() => {
     const hide = () => document.visibilityState === 'hidden' && pause();
     document.addEventListener('visibilitychange', hide);
-    return () => {
-      document.removeEventListener('visibilitychange', hide);
-      pair.current.forEach((el) => el.pause());
-      retired.current.forEach((u) => URL.revokeObjectURL(u));
-      retired.current = [];
-    };
+    return () => document.removeEventListener('visibilitychange', hide);
   }, [pause]);
 
   const seek = (t: number, autoplay = playing) => {
@@ -342,12 +259,9 @@ export function AudioPlayer({
 
   const toggle = () => {
     if (!list.length) return;
+    engine?.unlock();
     if (playing) return pause();
-    const el = audio.current;
-    if (el && el.src && el.currentTime > 0 && !el.ended) {
-      stopOthers();
-      playEl(el);
-    } else seek(pos >= total - 0.1 ? 0 : pos, true);
+    seek(pos >= total - 0.1 ? 0 : pos, true);
   };
   const currentSeg = list[index.current]?.segment ?? 0;
   const fmt = (t: number) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
@@ -393,13 +307,10 @@ export function AudioPlayer({
           aria-label={`מהירות: ${speed.he}. להקיש למהירות ${nextSpeed.he}`}
           onClick={() => {
             factor.current = nextSpeed.factor;
-            // Same recordings (1×, 1.25×, 1.5×): change speed in place, without a pause.
-            const el = audio.current;
-            const c = list[index.current];
-            if (el && c && nextSpeed.file === speed.file) {
-              el.defaultPlaybackRate = c.rate * nextSpeed.factor;
-              el.playbackRate = c.rate * nextSpeed.factor;
-            }
+            // Same recordings (1×, 1.25×, 1.5×): the running stream changes speed.
+            // Other recordings: the clips change, and the effect above switches.
+            const c = current.current;
+            if (engine && c && nextSpeed.file === speed.file) engine.setRate(c.rate * nextSpeed.factor);
             setSpeedKey(nextSpeed.key);
           }}
         >
